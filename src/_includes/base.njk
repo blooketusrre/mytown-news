@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ pageTitle or title or site.name }}</title>
+  <meta name="description" content="{{ pageDesc or site.description }}">
+  <meta property="og:title" content="{{ pageTitle or site.name }}">
+  <meta property="og:description" content="{{ pageDesc or site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+</head>
+<body{% if clusterSlug %} data-cluster="{{ clusterSlug }}"{% endif %}>
+
+  {{ content | safe }}
+
+  <script>
+    // PDF download
+    document.querySelectorAll('.btn-pdf').forEach(btn => {
+      btn.addEventListener('click', () => window.print());
+    });
+
+    // Newsletter form (placeholder — wire to your email provider)
+    document.querySelectorAll('.newsletter__form').forEach(form => {
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const email = form.querySelector('input[type="email"]').value;
+        if (email) {
+          form.innerHTML = '<p style="color:rgba(255,255,255,0.7);font-family:var(--font-ui);font-size:0.875rem;">Thanks! You\'re on the list. First issue arrives Friday.</p>';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

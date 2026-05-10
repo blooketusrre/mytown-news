@@ -1,0 +1,287 @@
+---
+layout: base.njk
+---
+{# ── PDF download bar ─────────────────────────────────────────────────── #}
+<div class="pdf-bar">
+  <span class="pdf-bar__label">Save this week's edition:</span>
+  <button class="btn-pdf" aria-label="Download as PDF">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="8 17 12 21 16 17"/><line x1="12" y1="12" x2="12" y2="21"/>
+      <path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"/>
+    </svg>
+    Download PDF
+  </button>
+</div>
+
+{# ── Masthead ──────────────────────────────────────────────────────────── #}
+<header class="masthead" role="banner">
+  <div class="masthead__inner container">
+    <p class="masthead__eyebrow">{{ site.tagline }}</p>
+    <h1 class="masthead__title">My Town <em>News</em><br>{{ issue.clusterName }}</h1>
+    <div class="masthead__ornament" aria-hidden="true">
+      <span class="masthead__ornament-rule"></span>
+      <span class="masthead__ornament-diamond"></span>
+      <span class="masthead__ornament-rule"></span>
+    </div>
+    <p class="masthead__subtitle">
+      {% for n in issue.neighborhoods %}{{ n }}{% if not loop.last %} &nbsp;·&nbsp; {% endif %}{% endfor %}
+    </p>
+  </div>
+  <div class="masthead__bar">
+    <div class="masthead__bar-inner container">
+      <span>Week of {{ issue.weekLabel }} &nbsp;·&nbsp; Vol. {{ issue.volume }}, Issue {{ issue.issueNumber }}</span>
+      <a href="{{ site.url }}" class="masthead__bar-url">{{ site.url | replace("https://","") }}</a>
+      <span>{{ site.city }} &nbsp;·&nbsp; Free &amp; Independent</span>
+    </div>
+  </div>
+</header>
+
+<div class="gold-rule"></div>
+
+{# ── Sticky nav ───────────────────────────────────────────────────────── #}
+<nav class="site-nav" aria-label="Cluster sections">
+  <div class="site-nav__inner container">
+    <ul class="site-nav__links" role="list">
+      <li><a href="/">← All Clusters</a></li>
+      <li><a href="#top-stories">Top Stories</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#more-news">More News</a></li>
+      <li><a href="#directory">Directory</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ul>
+    <span class="site-nav__meta">{{ issue.weekLabel }} Edition</span>
+  </div>
+</nav>
+
+{# ── Main content ─────────────────────────────────────────────────────── #}
+<main class="page-main" id="main">
+
+  <div class="container">
+
+    {# Top Stories #}
+    <section id="top-stories" aria-labelledby="top-stories-heading">
+      <div class="section-head">
+        <h2 class="section-head__label" id="top-stories-heading">This Week's Top Stories</h2>
+        <span class="section-head__line" aria-hidden="true"></span>
+      </div>
+
+      <div class="top-stories">
+
+        {# Main story #}
+        {% set s = issue.topStories[0] %}
+        <article class="story-main">
+          <span class="nbadge">{{ s.neighborhood }}</span>
+          <p class="tag">{{ s.tag }}</p>
+          <h3>{{ s.headline }}</h3>
+          <p class="byline">{{ s.byline }} &nbsp;·&nbsp; {{ s.date }}</p>
+          <div class="story-body">
+            {% for para in s.body.split('\n\n') %}
+              {% if para.trim() %}<p>{{ para.trim() }}</p>{% endif %}
+            {% endfor %}
+          </div>
+          <a href="{{ s.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="source-link">
+            Source: {{ s.sourceName }} →
+          </a>
+        </article>
+
+        {# Side stories #}
+        {% for s in issue.topStories.slice(1) %}
+        <article class="story-side">
+          <span class="nbadge">{{ s.neighborhood }}</span>
+          <p class="tag">{{ s.tag }}</p>
+          <h3>{{ s.headline }}</h3>
+          <p class="byline">{{ s.byline }} &nbsp;·&nbsp; {{ s.date }}</p>
+          <div class="story-body">
+            {% for para in s.body.split('\n\n') %}
+              {% if para.trim() %}<p>{{ para.trim() }}</p>{% endif %}
+            {% endfor %}
+          </div>
+          <a href="{{ s.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="source-link">
+            Source: {{ s.sourceName }} →
+          </a>
+        </article>
+        {% endfor %}
+
+      </div>
+    </section>
+
+    {# Events #}
+    <section id="events" aria-labelledby="events-heading">
+      <div class="events-band">
+        <div class="section-head section-head--light">
+          <h2 class="section-head__label" id="events-heading">Upcoming &amp; Ongoing in the Neighborhood</h2>
+          <span class="section-head__line" aria-hidden="true"></span>
+        </div>
+
+        <div class="events-grid">
+          {% for ev in issue.events %}
+          <div class="event-card">
+            {% if ev.ongoing %}
+              <span class="event-card__badge">Ongoing</span>
+            {% else %}
+              <p class="event-card__date">{{ ev.date }}{% if ev.recurring %} &nbsp;·&nbsp; {{ ev.recurring }}{% endif %}</p>
+            {% endif %}
+            <h3 class="event-card__title">{{ ev.title }}</h3>
+            <p class="event-card__desc">{{ ev.description }}</p>
+            <p class="event-card__meta">
+              📍 {{ ev.location }}<br>
+              {% if ev.time %}🕐 {{ ev.time }}<br>{% endif %}
+              {% if ev.price %}🎟 {{ ev.price }}{% endif %}
+            </p>
+            {% if ev.sourceUrl %}
+            <a href="{{ ev.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="event-card__source">
+              Verify details →
+            </a>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    {# More News #}
+    <section id="more-news" aria-labelledby="more-news-heading">
+      <div class="section-head">
+        <h2 class="section-head__label" id="more-news-heading">More from the Neighborhood</h2>
+        <span class="section-head__line" aria-hidden="true"></span>
+      </div>
+
+      <div class="more-news-grid">
+        {% for s in issue.moreNews %}
+        <article class="news-card">
+          <span class="nbadge">{{ s.neighborhood }}</span>
+          <p class="tag">{{ s.tag }}</p>
+          <h3>{{ s.headline }}</h3>
+          <p class="byline">{{ s.byline }} &nbsp;·&nbsp; {{ s.date }}</p>
+          <div class="story-body">
+            {% for para in s.body.split('\n\n') %}
+              {% if para.trim() %}<p>{{ para.trim() }}</p>{% endif %}
+            {% endfor %}
+          </div>
+          <a href="{{ s.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="source-link">
+            Source: {{ s.sourceName }} →
+          </a>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    {# Directory #}
+    <section id="directory" aria-labelledby="directory-heading">
+      <div class="directory">
+        <div class="section-head">
+          <h2 class="section-head__label" id="directory-heading">Neighborhood Directory</h2>
+          <span class="section-head__line" aria-hidden="true"></span>
+        </div>
+
+        <div class="dir-cols">
+
+          <div>
+            <h3 class="dir-col__heading">🍽 Restaurants &amp; Cafés</h3>
+            {% for e in issue.directory.restaurants %}
+            <div class="dir-entry">
+              {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
+              {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
+              <p class="dir-entry__name">{{ e.name }}</p>
+              <p class="dir-entry__type">{{ e.type }}</p>
+              <p class="dir-entry__detail">
+                {{ e.description }}
+                {% if e.address %}<br>{{ e.address }}{% endif %}
+                {% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}
+              </p>
+            </div>
+            {% endfor %}
+          </div>
+
+          <div>
+            <h3 class="dir-col__heading">🏨 Hotels &amp; Lodging</h3>
+            {% for e in issue.directory.hotels %}
+            <div class="dir-entry">
+              {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
+              {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
+              <p class="dir-entry__name">{{ e.name }}</p>
+              <p class="dir-entry__type">{{ e.type }}</p>
+              <p class="dir-entry__detail">
+                {{ e.description }}
+                {% if e.address %}<br>{{ e.address }}{% endif %}
+                {% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}
+              </p>
+            </div>
+            {% endfor %}
+          </div>
+
+          <div>
+            <h3 class="dir-col__heading">🛍 Shops, Books &amp; Services</h3>
+            {% for e in issue.directory.shops %}
+            <div class="dir-entry">
+              {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
+              {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
+              <p class="dir-entry__name">{{ e.name }}</p>
+              <p class="dir-entry__type">{{ e.type }}</p>
+              <p class="dir-entry__detail">
+                {{ e.description }}
+                {% if e.address %}<br>{{ e.address }}{% endif %}
+                {% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}
+              </p>
+            </div>
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    {# Sources #}
+    <section id="sources" aria-labelledby="sources-heading">
+      <div class="sources-section">
+        <div class="section-head">
+          <h2 class="section-head__label" id="sources-heading">Sources &amp; Editorial Notes</h2>
+          <span class="section-head__line" aria-hidden="true"></span>
+        </div>
+
+        <div class="editorial-note">
+          Stories in My Town News are compiled from public sources, and with assistance from AI.
+          Please verify important details at the cited source.
+          All named individuals appear only in their publicly documented roles.
+          Directory listings reflect publicly available contact information and are updated periodically.
+        </div>
+
+        <div class="sources-grid">
+          {% for src in issue.sources %}
+          <div class="source-item">
+            <span class="source-num">{{ loop.index }}</span>
+            <div>
+              <p class="source-item__title">{{ src.title }}</p>
+              <p class="source-item__org">
+                {{ src.org }} &nbsp;·&nbsp;
+                <a href="{{ src.url }}" target="_blank" rel="noopener noreferrer">{{ src.url }}</a>
+              </p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+  </div>{# /container #}
+
+  {# Newsletter #}
+  <div class="container">
+    <div class="newsletter">
+      <p class="newsletter__eyebrow">Stay connected</p>
+      <h2 class="newsletter__headline">Get the North Waterfront<br>delivered every Friday</h2>
+      <p class="newsletter__sub">The week's neighborhood news, events, and directory — straight to your inbox. Free.</p>
+      <form class="newsletter__form" aria-label="Newsletter signup">
+        <input class="newsletter__input" type="email" placeholder="your@email.com" required aria-label="Email address">
+        <button class="newsletter__btn" type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter__note">No ads. No spam. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
+</main>
+
+{# Footer #}
+{% include "partials/footer.njk" %}

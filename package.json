@@ -1,0 +1,22 @@
+{
+  "name": "mytown-news",
+  "version": "1.0.0",
+  "description": "mytown.news — SF hyperlocal neighborhood news site",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "build:prod": "NODE_ENV=production eleventy",
+    "generate": "node pipeline/generate-issue.js",
+    "generate:cluster": "node pipeline/generate-issue.js --cluster"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "glob": "^10.3.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

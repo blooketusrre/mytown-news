@@ -1,0 +1,81 @@
+---
+layout: base.njk
+pageTitle: "About & Editorial Standards — My Town News"
+pageDesc: "How My Town News researches, writes, and publishes neighborhood news for San Francisco."
+---
+
+{% include "partials/footer.njk" %}
+
+<div class="masthead">
+  <div class="masthead__inner container">
+    <p class="masthead__eyebrow">{{ site.tagline }}</p>
+    <h1 class="masthead__title">My Town <em>News</em></h1>
+    <div class="masthead__ornament" aria-hidden="true">
+      <span class="masthead__ornament-rule"></span>
+      <span class="masthead__ornament-diamond"></span>
+      <span class="masthead__ornament-rule"></span>
+    </div>
+  </div>
+</div>
+<div class="gold-rule"></div>
+
+<nav class="site-nav">
+  <div class="site-nav__inner container">
+    <ul class="site-nav__links">
+      <li><a href="/">← Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#standards">Editorial Standards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page-main">
+  <div class="container">
+    <div class="prose">
+
+      <section id="about">
+        <h1>About My Town News</h1>
+        <p>My Town News is a free, independent weekly publication covering San Francisco's neighborhoods in depth. We publish every Friday, with a dedicated issue for each of the city's neighborhood clusters — from North Waterfront to Bayview & Excelsior.</p>
+        <p>We are not affiliated with any city agency, advertiser, political organization, or real estate interest. Our only obligation is to the readers who live in these neighborhoods.</p>
+      </section>
+
+      <section id="standards">
+        <h2>Editorial Standards</h2>
+
+        <h2>How we research and write</h2>
+        <p>Stories in My Town News are compiled from public sources, with assistance from AI. Our reporting process works as follows:</p>
+        <ul>
+          <li>We search and review public sources including city agency announcements, neighborhood association communications, established local media, library and cultural institution event calendars, and business websites.</li>
+          <li>AI tools assist in researching, drafting, and organizing content from these sources.</li>
+          <li>Every factual claim is traceable to a source listed on the Sources page of each issue.</li>
+          <li>Readers should verify important details at the cited source before acting on them.</li>
+        </ul>
+
+        <h2>Quotes and attribution</h2>
+        <p>We do not use invented or illustrative quotes. Statements attributed to individuals appear only when sourced to a verifiable public statement, press release, or published interview — with the source listed on the sources page. Named individuals appear only in their publicly documented roles. When the source is an organization or agency rather than a named individual, we attribute to the organization.</p>
+
+        <h2>Images</h2>
+        <p>We use photography from Unsplash, with photographer credit displayed on each image. Images are selected to match story content and geography.</p>
+
+        <h2>Directory listings</h2>
+        <p>Directory listings are assembled from public business listings, business websites, and the SF Chamber of Commerce. They are editorial-only; no business pays to appear in the directory. We refresh listings quarterly, or when stories surface new openings or closures.</p>
+
+        <h2>Corrections</h2>
+        <p>We correct errors promptly. If you spot an error, please <a href="mailto:{{ site.email }}">email us</a> or use the tip form below.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          General: <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+          Tips: <a href="/submit-tip/">Submit a Tip</a><br>
+          Advertising inquiries: <a href="/advertise/">Advertise</a>
+        </p>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+{% include "partials/footer.njk" %}

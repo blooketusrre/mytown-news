@@ -1,0 +1,23 @@
+[build]
+  command   = "npm run build:prod"
+  publish   = "_site"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Clean URLs — /north-waterfront/ instead of /north-waterfront/index.html
+[[redirects]]
+  from   = "/:path"
+  to     = "/:path/"
+  status = 301
+  conditions = {Path = ["*[^/]", "!*.*"]}
+
+# 404
+[[redirects]]
+  from   = "/*"
+  to     = "/404.html"
+  status = 404
+
+[dev]
+  command = "npm start"
+  port    = 8080

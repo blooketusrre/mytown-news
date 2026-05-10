@@ -1,0 +1,457 @@
+{
+  "cluster": "north-waterfront",
+  "clusterName": "North Waterfront",
+  "neighborhoods": ["North Beach", "Telegraph Hill", "Levi Plaza", "Fisherman's Wharf"],
+  "weekLabel": "April 14–20, 2026",
+  "volume": 1,
+  "issueNumber": 1,
+
+  "topStories": [
+    {
+      "neighborhood": "Fisherman's Wharf",
+      "tag": "Waterfront",
+      "headline": "'Chonkers,' a 2,000-Pound Steller Sea Lion, Draws National Attention to Pier 39",
+      "byline": "Fisherman's Wharf Desk",
+      "date": "April 14, 2026",
+      "body": "A massive Steller sea lion — nicknamed 'Chonkers' by the online community after a Pier 39 Instagram post went viral in mid-March — has been drawing an unusual surge of visitors to the pier's K-Dock marine area. The animal, estimated at 2,000 to 2,500 pounds, is roughly a third larger than the California sea lions that have colonized the docks since the late 1980s.\n\nThe Pier 39 post was picked up by the Wall Street Journal and dozens of international outlets in the weeks since, bringing visitors from across the Bay Area and beyond specifically to catch a glimpse of the outsized animal lounging among its considerably smaller neighbors.\n\nSteller sea lions (Eumetopias jubatus) are the largest of the eared seals and are less commonly seen in the Bay than their California counterparts. The Marine Mammal Center, which monitors the local sea lion population, noted that individual Steller sea lions do sometimes visit the K-Dock but rarely for extended stays.\n\nPier 39 staff ask visitors to keep a respectful distance and observe posted viewing guidelines. The sea lion area is visible from the free public observation deck at no charge.",
+      "sourceUrl": "https://sfist.com/2026/04/28/extra-large-sea-lion-whos-been-hanging-out-by-pier-39-makes-national-news/",
+      "sourceName": "SFist / Pier 39",
+      "imageQuery": "sea lion pier San Francisco dock",
+      "photo": {
+        "url": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=1200&q=80&auto=format&fit=crop",
+        "credit": "NOAA",
+        "creditUrl": "https://unsplash.com/photos/brown-and-white-sea-lion-on-water-during-daytime-1564349683136"
+      }
+    },
+    {
+      "neighborhood": "Fisherman's Wharf",
+      "tag": "Development",
+      "headline": "Wharf Records One Million March Visitors — and the World's Top 'Tourist Trap' Title, Again",
+      "byline": "Fisherman's Wharf Desk",
+      "date": "April 16, 2026",
+      "body": "Fisherman's Wharf recorded its first one-million-visitor March since the pandemic — a 24 percent increase over March 2024, according to the Fisherman's Wharf Community Benefit District. The milestone arrived alongside an unwelcome honor: a travel data analysis by eSIM provider Nomad ranked Fisherman's Wharf the world's number-one 'tourist trap' for the second consecutive year, based on aggregated online reviews.\n\nDistrict representatives pointed to $1.4 million in recent Promenade improvements and a wave of new businesses along the waterfront as evidence of meaningful evolution. The Port of San Francisco's larger Fisherman's Wharf Forward project — a roughly $10 million public-private renovation — is on schedule for a summer 2026 completion.\n\nA new public plaza is under construction on Taylor Street on the site of the former Alioto's Restaurant, which was demolished in January. The design includes public seating with views of the Golden Gate Bridge, space for outdoor retail or beverage service, windscreens, and landscaping. A new inner lagoon overlook along Al Scoma Way and new lighting celebrating the fishing fleet are also planned for summer completion.",
+      "sourceUrl": "https://kioncentralcoast.com/news/top-stories/2026/04/16/san-franciscos-fishermans-wharf-striving-to-evolve-from-tourist-trap-designation/",
+      "sourceName": "KION / CBS News SF / Port of San Francisco",
+      "imageQuery": "Fisherman's Wharf San Francisco waterfront promenade",
+      "photo": {
+        "url": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200&q=80&auto=format&fit=crop",
+        "credit": "Vidar Nordli-Mathisen",
+        "creditUrl": "https://unsplash.com/@vidarnm"
+      }
+    },
+    {
+      "neighborhood": "North Beach",
+      "tag": "Housing",
+      "headline": "Demolition of Fire-Damaged Verdi Building on Union Street Halted by Tenants Appeal",
+      "byline": "North Beach Desk",
+      "date": "April 14, 2026",
+      "body": "Demolition of the Verdi Club building at 659 Union Street — vacant since a 2018 fire left it structurally compromised — has been halted after the North Beach Tenants Committee filed an appeal of the emergency demolition permit obtained by developer Red Bridge.\n\nThe committee argues the 2023 permit described work limited to a 50-foot rear wall section, not a full teardown, and that the building may be eligible for the National Register of Historic Places — a threshold that would require a full environmental review before demolition could proceed. The committee also alleges that demolition would circumvent prior commitments to rehouse residents displaced by the 2018 fire.\n\nRed Bridge and city agencies have characterized the 'fifty-foot section' language as a clerical error and maintain the full structure poses a public safety risk. Separate partial demolition permits have been filed with the city, according to SF YIMBY.\n\nThe appeal is pending a hearing date. The building, a neighborhood landmark on the corner of Union and Powell, has been supported by temporary shoring for eight years.",
+      "sourceUrl": "https://sfstandard.com/2026/04/22/verdi-building-north-beach-demolition/",
+      "sourceName": "SF Standard / SF YIMBY / ABC7 News",
+      "imageQuery": "North Beach San Francisco street Victorian building historic",
+      "photo": {
+        "url": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&q=80&auto=format&fit=crop",
+        "credit": "Todd Quackenbush",
+        "creditUrl": "https://unsplash.com/@toddquackenbush"
+      }
+    }
+  ],
+
+  "events": [
+    {
+      "date": "Tue Apr 14",
+      "recurring": "Every Tuesday",
+      "title": "Tuesdays at North Beach: Poetry Reading Series",
+      "description": "Weekly poetry readings at the North Beach Branch Library. Open to all; no registration required. Part of an ongoing series hosted in partnership with the Friends of the San Francisco Public Library.",
+      "location": "North Beach Branch Library, 850 Columbus Ave.",
+      "time": "6:30 PM",
+      "price": "Free",
+      "sourceUrl": "https://www.friendssfpl.org/tuesdays-at-north-beach.html"
+    },
+    {
+      "date": "Mon–Thu",
+      "ongoing": true,
+      "title": "Off the Grid Food Trucks at Levi's Plaza",
+      "description": "Rotating food truck market in the sunken plaza, with regular appearances by Curry Up Now, Cousins Maine Lobster, and others. Outdoor seating in the plaza with Bay Area sunshine (fog permitting).",
+      "location": "Levi's Plaza, 1155 Battery St.",
+      "time": "11 AM – 2 PM",
+      "price": "Free entry; food prices vary",
+      "sourceUrl": "https://offthegrid.com/event/levis-plaza/"
+    },
+    {
+      "date": "Ongoing",
+      "ongoing": true,
+      "title": "'Chonkers' the Steller Sea Lion at Pier 39 K-Dock",
+      "description": "The unusually large Steller sea lion nicknamed 'Chonkers' continues to draw visitors to the K-Dock sea lion viewing area. Free to view from the public observation deck. Pier 39 asks visitors to observe posted distance guidelines.",
+      "location": "Pier 39, K-Dock sea lion area",
+      "time": "Daytime hours",
+      "price": "Free",
+      "sourceUrl": "https://pier39.com"
+    },
+    {
+      "date": "Sat Apr 18",
+      "title": "Aquarium of the Bay: Special Programs Day",
+      "description": "The Aquarium of the Bay at Pier 39 hosts rotating special programs for families and adults. Check the aquarium's website for current featured experiences and timed-entry ticket availability.",
+      "location": "Aquarium of the Bay, Pier 39",
+      "time": "All day",
+      "price": "Admission required — see aquariumofthebay.org",
+      "sourceUrl": "https://www.aquariumofthebay.org/"
+    },
+    {
+      "date": "Daily",
+      "ongoing": true,
+      "title": "Coit Tower Open — Pioneer Park & WPA Murals",
+      "description": "Pioneer Park and the ground-floor WPA murals painted by 26 artists in 1934 are free and open daily. The observation deck at the summit is accessible by elevator (fee applies). The Coit Tower parking lot and Telegraph Hill Boulevard repaving, completed in 2025, are fully open.",
+      "location": "Coit Tower, 1 Telegraph Hill Blvd.",
+      "time": "Daily 10 AM – 6 PM (April–October)",
+      "price": "Ground floor & murals: free. Elevator to top: fee applies.",
+      "sourceUrl": "https://sfrecpark.org/facilities/facility/details/Coit-Tower-290"
+    },
+    {
+      "date": "Ongoing",
+      "ongoing": true,
+      "title": "Fisherman's Wharf Forward — Taylor St. Plaza Under Construction",
+      "description": "The Port of San Francisco's new public plaza on Taylor Street — on the footprint of the former Alioto's Restaurant — is under active construction, with a summer 2026 target. The surrounding Wharf Promenade remains open during construction.",
+      "location": "Taylor St. at Jefferson St., Fisherman's Wharf",
+      "time": "Construction ongoing",
+      "price": "N/A",
+      "sourceUrl": "https://www.sfport.com/fwforward"
+    },
+    {
+      "date": "Survey closes May 21",
+      "ongoing": true,
+      "title": "Public Survey: Embarcadero Plaza & Sue Bierman Park Redesign",
+      "description": "SF Rec & Parks and partners seek input on a $40 million redesign merging Embarcadero Plaza and Sue Bierman Park into a single 5-acre waterfront park. A community meeting follows on April 28. Survey available at sfrecpark.org.",
+      "location": "Online — sfrecpark.org",
+      "time": "Survey open through May 21",
+      "price": "Free",
+      "sourceUrl": "https://sfrecpark.org/CivicAlerts.aspx?AID=2846"
+    },
+    {
+      "date": "Mon Apr 28",
+      "title": "Community Meeting: Embarcadero Plaza / Sue Bierman Park",
+      "description": "Third public design meeting for the $40 million renovation that would replace the Vaillancourt Fountain with green space and recreational features. Venue TBD — verify at sfrecpark.org before attending.",
+      "location": "TBD — check sfrecpark.org/CivicAlerts.aspx?AID=2846",
+      "time": "5:30 PM – 7:00 PM",
+      "price": "Free",
+      "sourceUrl": "https://sfrecpark.org/m/newsflash/home/detail/2854"
+    }
+  ],
+
+  "moreNews": [
+    {
+      "neighborhood": "North Beach / Fisherman's Wharf",
+      "tag": "Retail",
+      "headline": "Grocery Outlet Build-Out Underway at Former North Beach Safeway Site",
+      "byline": "North Beach Desk",
+      "date": "April 14, 2026",
+      "body": "Construction is underway at the former Safeway space at NorthPoint Centre near Fisherman's Wharf, where Grocery Outlet Bargain Market is building out a roughly 30,000-square-foot store. The Safeway closed in May 2023, leaving thousands of North Beach, Russian Hill, Telegraph Hill, and Fisherman's Wharf residents without a full-service grocery within easy walking distance. A 15-year lease was signed in January 2025. The opening, initially projected for early 2026, is running slightly behind schedule according to Hoodline's reporting. The investment is approximately $5 million and is expected to create more than 50 jobs.",
+      "sourceUrl": "https://hoodline.com/2026/03/grocery-outlet-is-actually-finally-genuinely-under-construction-at-the-old-north-beach-safeway-we-have-photos/",
+      "sourceName": "Hoodline / SF Standard",
+      "imageQuery": "grocery store construction retail San Francisco neighborhood",
+      "photo": {
+        "url": "https://images.unsplash.com/photo-1534723328310-e82dad3ee43f?w=800&q=80&auto=format&fit=crop",
+        "credit": "Hanson Lu",
+        "creditUrl": "https://unsplash.com/@hansonluphotos"
+      }
+    },
+    {
+      "neighborhood": "North Beach",
+      "tag": "Community",
+      "headline": "Private Fireworks Near Pier 27 Surprises Neighborhood — Second Year Running",
+      "byline": "North Beach Desk",
+      "date": "April 13, 2026",
+      "body": "A private fireworks display launched from near Pier 27 on the Embarcadero around 9:45 PM on Saturday caught North Beach and waterfront residents off guard for the second consecutive year. The roughly 10-to-12-minute show was staged by Walnut Creek-based Computers and Structures, Inc. for a company anniversary celebration and had been approved by the Port of San Francisco. The city chose not to publicize the event in advance to avoid drawing large crowds requiring additional police resources. Dog owners in North Beach and along the northern Embarcadero were particularly affected. The Port has indicated it is reviewing its approach to advance notice for approved private fireworks events.",
+      "sourceUrl": "https://sfist.com/2026/04/13/north-beach-caught-off-guard-by-surprise-fireworks/",
+      "sourceName": "SFist",
+      "imageQuery": "San Francisco Bay fireworks night waterfront",
+      "photo": {
+        "url": "https://images.unsplash.com/photo-1563306406-e66174fa3787?w=800&q=80&auto=format&fit=crop",
+        "credit": "Sebastian Staines",
+        "creditUrl": "https://unsplash.com/@sebastianstaines"
+      }
+    },
+    {
+      "neighborhood": "North Beach",
+      "tag": "Food & Drink",
+      "headline": "Qua O La Opens Croatian-Italian Wine Bar on Grant Avenue",
+      "byline": "North Beach Desk",
+      "date": "April 14, 2026",
+      "body": "A new wine bar at 1318 Grant Ave. is bringing what its owners describe as the first Croatian-inflected menu in San Francisco since the longtime Dalmatian restaurant Albona closed in 2018. Qua O La offers ćevapi (grilled minced meat), burek (flaky pastry), and a wine list emphasizing Croatian and Italian producers alongside familiar Italian selections. The opening adds to a string of new food and beverage concepts along Grant Avenue's North Beach restaurant corridor in recent months.",
+      "sourceUrl": "https://hoodline.com",
+      "sourceName": "Hoodline",
+      "imageQuery": "wine bar intimate interior candles San Francisco",
+      "photo": {
+        "url": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80&auto=format&fit=crop",
+        "credit": "Terry Vlisidis",
+        "creditUrl": "https://unsplash.com/@vlisidis"
+      }
+    }
+  ],
+
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Caffè Trieste",
+        "neighborhood": "North Beach",
+        "type": "Espresso Bar / Café",
+        "address": "601 Vallejo St.",
+        "phone": "(415) 392-6739",
+        "description": "San Francisco's first espresso bar, open since 1956. Famous for Saturday accordion performances. Celebrating its 70th anniversary in 2026.",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Tony's Pizza Napoletana",
+        "neighborhood": "North Beach",
+        "type": "Pizza",
+        "address": "1570 Stockton St.",
+        "phone": "(415) 835-9888",
+        "description": "World champion Neapolitan pizza with multiple specialty wood-burning ovens. Reservations strongly recommended for dinner."
+      },
+      {
+        "name": "Sotto Mare",
+        "neighborhood": "North Beach",
+        "type": "Seafood",
+        "address": "552 Green St.",
+        "phone": "(415) 398-3181",
+        "description": "Classic cioppino and local seafood in a no-frills room. A neighborhood institution. Cash preferred at lunch."
+      },
+      {
+        "name": "Vesuvio Café",
+        "neighborhood": "North Beach",
+        "type": "Bar / Café",
+        "address": "255 Columbus Ave.",
+        "phone": "(415) 362-3370",
+        "description": "Iconic Beat-era bar across the alley from City Lights. Full bar; light snacks."
+      },
+      {
+        "name": "North Beach Restaurant",
+        "neighborhood": "North Beach",
+        "type": "Italian",
+        "address": "1512 Stockton St.",
+        "phone": "(415) 392-1700",
+        "description": "Long-running neighborhood Italian, recently renovated. Classic pasta, seafood, and Tuscan-style entrées."
+      },
+      {
+        "name": "Qua O La",
+        "neighborhood": "North Beach",
+        "type": "Wine Bar",
+        "address": "1318 Grant Ave.",
+        "description": "New Croatian-Italian wine bar on Grant Avenue. Features ćevapi, burek, and Croatian and Italian wines. Opened April 2026.",
+        "notable": "New"
+      },
+      {
+        "name": "Scoma's Restaurant",
+        "neighborhood": "Fisherman's Wharf",
+        "type": "Seafood",
+        "address": "Pier 47",
+        "phone": "(415) 771-4383",
+        "description": "A Fisherman's Wharf institution since 1965. Fresh Dungeness crab, sand dabs, Bay views. Valet parking available."
+      },
+      {
+        "name": "Fog Harbor Fish House",
+        "neighborhood": "Fisherman's Wharf",
+        "type": "Seafood",
+        "address": "Pier 39",
+        "phone": "(415) 421-2442",
+        "description": "Sustainably sourced seafood with wide Bay views. Full bar; outdoor deck."
+      },
+      {
+        "name": "Boudin Bakery & Café",
+        "neighborhood": "Fisherman's Wharf",
+        "type": "Bakery / Café",
+        "address": "160 Jefferson St.",
+        "phone": "(415) 928-1849",
+        "description": "San Francisco sourdough since 1849. Clam chowder in sourdough bread bowls. On-site museum and open bakery viewing."
+      },
+      {
+        "name": "Il Fornaio",
+        "neighborhood": "Levi Plaza",
+        "type": "Italian",
+        "address": "1265 Battery St.",
+        "phone": "(415) 986-0100",
+        "description": "Upscale Italian with housemade pasta and a sun-drenched plaza terrace. Popular business lunch spot."
+      },
+      {
+        "name": "The Buena Vista Café",
+        "neighborhood": "Fisherman's Wharf",
+        "type": "American / Bar",
+        "address": "2765 Hyde St.",
+        "phone": "(415) 474-5044",
+        "description": "Credited with introducing Irish Coffee to the United States in 1952. Classic American breakfasts. Always busy on weekends."
+      }
+    ],
+    "hotels": [
+      {
+        "name": "The Argonaut Hotel",
+        "neighborhood": "Fisherman's Wharf",
+        "type": "Boutique Hotel",
+        "address": "495 Jefferson St.",
+        "phone": "(415) 563-0800",
+        "description": "Boutique hotel inside the 1907 Del Monte Cannery building. Nautical décor, Bay-view rooms, pet-friendly. A Kimpton property."
+      },
+      {
+        "name": "Hyatt Centric Fisherman's Wharf",
+        "neighborhood": "Fisherman's Wharf",
+        "type": "Full-Service Hotel",
+        "address": "555 North Point St.",
+        "phone": "(415) 563-1234",
+        "description": "316-room hotel with 19,000+ sq ft of meeting space. Completed a sustainability-focused renovation in April 2026.",
+        "notable": "Recently Renovated"
+      },
+      {
+        "name": "Hotel Bohème",
+        "neighborhood": "North Beach",
+        "type": "Boutique Hotel",
+        "address": "444 Columbus Ave.",
+        "phone": "(415) 433-9111",
+        "description": "Intimate 15-room hotel decorated in 1950s Beat-era style in the heart of North Beach."
+      },
+      {
+        "name": "San Francisco Marriott Fisherman's Wharf",
+        "neighborhood": "Fisherman's Wharf",
+        "type": "Full-Service Hotel",
+        "address": "1250 Columbus Ave.",
+        "phone": "(415) 775-7555",
+        "description": "Large full-service hotel with conference facilities, fitness center, and on-site dining. Walking distance to Pier 39."
+      }
+    ],
+    "shops": [
+      {
+        "name": "City Lights Booksellers & Publishers",
+        "neighborhood": "North Beach",
+        "type": "Independent Bookstore",
+        "address": "261 Columbus Ave.",
+        "phone": "(415) 362-8193",
+        "description": "Legendary independent bookstore and publisher founded by Lawrence Ferlinghetti in 1953. Open daily 10 AM – 10 PM.",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Levi Strauss & Co. Campus Store",
+        "neighborhood": "Levi Plaza",
+        "type": "Apparel",
+        "address": "1155 Battery St.",
+        "description": "The historic Levi's HQ campus store. Full apparel range plus SF-exclusive styles and brand archive pieces."
+      },
+      {
+        "name": "Columbus Cutlery",
+        "neighborhood": "North Beach",
+        "type": "Kitchen & Knives",
+        "address": "358 Columbus Ave.",
+        "phone": "(415) 362-1342",
+        "description": "Neighborhood kitchen supply and knife shop since 1948. On-site knife sharpening service available."
+      },
+      {
+        "name": "Ghirardelli Square",
+        "neighborhood": "Fisherman's Wharf",
+        "type": "Shopping Destination",
+        "address": "900 North Point St.",
+        "description": "Historic chocolate factory turned marketplace. The Ghirardelli Ice Cream & Chocolate Shop, galleries, and boutiques."
+      },
+      {
+        "name": "Pier 39 Marketplace",
+        "neighborhood": "Fisherman's Wharf",
+        "type": "Shopping Destination",
+        "address": "Pier 39",
+        "phone": "(415) 705-5500",
+        "description": "Open-air shopping village with 60+ specialty retailers and restaurants, plus the free K-Dock sea lion viewing area."
+      },
+      {
+        "name": "Grocery Outlet (Coming Soon)",
+        "neighborhood": "North Beach / Fisherman's Wharf",
+        "type": "Grocery",
+        "address": "NorthPoint Centre (former Safeway location)",
+        "description": "30,000-sq-ft grocery under construction in the former Safeway space. Opening expected 2026. First full-service grocery in the area since May 2023.",
+        "notable": "Coming Soon"
+      }
+    ]
+  },
+
+  "sources": [
+    {
+      "title": "'Chonkers' the Steller Sea Lion Goes Viral at Pier 39",
+      "org": "SFist",
+      "url": "https://sfist.com/2026/04/28/extra-large-sea-lion-whos-been-hanging-out-by-pier-39-makes-national-news/"
+    },
+    {
+      "title": "Chonkers — Background on Steller Sea Lions",
+      "org": "Smithsonian Magazine",
+      "url": "https://www.smithsonianmag.com/smart-news/chonkers-the-massive-sea-lion-drew-crowds-to-san-franciscos-famed-pier-39-then-a-new-chunky-showstopper-stole-his-identity-180988691/"
+    },
+    {
+      "title": "Fisherman's Wharf Visitor Milestone and 'Tourist Trap' Ranking",
+      "org": "KION / CBS News SF",
+      "url": "https://kioncentralcoast.com/news/top-stories/2026/04/16/san-franciscos-fishermans-wharf-striving-to-evolve-from-tourist-trap-designation/"
+    },
+    {
+      "title": "Fisherman's Wharf Forward — Project Overview and Construction Updates",
+      "org": "Port of San Francisco",
+      "url": "https://www.sfport.com/fwforward"
+    },
+    {
+      "title": "Alioto's Demolition to Make Way for New Plaza",
+      "org": "Hoodline",
+      "url": "https://hoodline.com/2026/01/wharf-icon-alioto-s-comes-down-as-city-clears-way-for-new-plaza/"
+    },
+    {
+      "title": "Verdi Building Demolition Appeal — North Beach Tenants Committee",
+      "org": "SF Standard",
+      "url": "https://sfstandard.com/2026/04/22/verdi-building-north-beach-demolition/"
+    },
+    {
+      "title": "Partial Demolition Permits Filed for Verdi Building",
+      "org": "SF YIMBY",
+      "url": "https://sfyimby.com/2026/04/partial-demolition-permits-filed-for-verdi-building-san-francisco.html"
+    },
+    {
+      "title": "Verdi Building — Historic Preservation Questions",
+      "org": "CBS News SF",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-historic-verdi-building-uncertain-future/"
+    },
+    {
+      "title": "Grocery Outlet Construction at Former North Beach Safeway",
+      "org": "Hoodline",
+      "url": "https://hoodline.com/2026/03/grocery-outlet-is-actually-finally-genuinely-under-construction-at-the-old-north-beach-safeway-we-have-photos/"
+    },
+    {
+      "title": "Grocery Outlet Lease and Opening Timeline",
+      "org": "SF Standard",
+      "url": "https://sfstandard.com/2025/01/23/grocery-outlet-signs-lease-for-former-north-beach-safeway-heres-when-it-plans-to-open/"
+    },
+    {
+      "title": "Private Fireworks Near Pier 27 — Neighborhood Impact",
+      "org": "SFist",
+      "url": "https://sfist.com/2026/04/13/north-beach-caught-off-guard-by-surprise-fireworks/"
+    },
+    {
+      "title": "Qua O La Croatian-Italian Wine Bar Opens on Grant Avenue",
+      "org": "Hoodline",
+      "url": "https://hoodline.com"
+    },
+    {
+      "title": "Embarcadero Plaza / Sue Bierman Park Redesign — Community Meeting Notice",
+      "org": "SF Recreation and Parks Department",
+      "url": "https://sfrecpark.org/CivicAlerts.aspx?AID=2846"
+    },
+    {
+      "title": "Embarcadero Plaza Redesign Survey and Project Overview",
+      "org": "SF Recreation and Parks Department",
+      "url": "https://sfrecpark.org/m/newsflash/home/detail/2854"
+    },
+    {
+      "title": "Tuesdays at North Beach Poetry Reading Series",
+      "org": "Friends of SF Public Library",
+      "url": "https://www.friendssfpl.org/tuesdays-at-north-beach.html"
+    },
+    {
+      "title": "Off the Grid at Levi's Plaza — Schedule",
+      "org": "Off the Grid SF",
+      "url": "https://offthegrid.com/event/levis-plaza/"
+    },
+    {
+      "title": "Coit Tower — Hours, Operations, and WPA Murals",
+      "org": "SF Recreation and Parks Department",
+      "url": "https://sfrecpark.org/facilities/facility/details/Coit-Tower-290"
+    }
+  ]
+}
