@@ -1,0 +1,392 @@
+{
+  "clusterSlug": "north-waterfront",
+  "clusterName": "North Waterfront",
+  "weekOf": "2026-06-19",
+  "topStories": [
+    {
+      "headline": "72nd Annual North Beach Festival Takes Over 11 Blocks This Weekend",
+      "dek": "San Francisco's oldest outdoor street fair returns Saturday and Sunday with 200-plus vendors, live music, beer gardens, and the beloved Blessing of the Animals.",
+      "body": "The 72nd annual North Beach Festival arrives this Father's Day weekend, June 20–21, filling 11 blocks of Grant Avenue and Columbus Avenue with food, art, and live entertainment from 11 a.m. to 7 p.m. each day. Admission is free.\n\nThe festival, presented by Zoox, features more than 200 vendors offering local art, crafts, jewelry, apparel, home décor, and vintage fashion. Returning favorites include Italian Street Painting, beer gardens, multiple live music stages, a kids' Fun Zone, and the annual Blessing of the Animals. Proceeds from the festival support local community organizations providing free meals, after-school activities, job training, and temporary housing.\n\nThe SFMTA warns of significant transit and traffic impacts all weekend. Streets including Grant Avenue between Columbus and Filbert, Green Street between Columbus and Grant, and Columbus between Broadway and Green will be closed to vehicle traffic from midnight Saturday through 11:59 p.m. Sunday. The 8 Bayshore, 39 Coit, and 45 Union/Stockton Muni routes will be rerouted around the festival area. Additionally, Muni will operate on a Sunday service schedule on Friday, June 19, in observance of the Juneteenth holiday.\n\nThe festival is centered around Columbus and Green Streets in the heart of North Beach. Organizers recommend taking public transit, as there is no onsite parking. Dogs on leashes are welcome.",
+      "sourceUrl": "https://www.sfmta.com/project-updates/north-beach-festival",
+      "sourceName": "SFMTA",
+      "tags": [
+        "north-beach",
+        "festival",
+        "arts",
+        "community"
+      ]
+    },
+    {
+      "headline": "Pier 39 Hosts 'Soccer with the Sea Lions' World Cup Watch Parties",
+      "dek": "Fisherman's Wharf's iconic waterfront pier is broadcasting select FIFA World Cup 2026 matches on a big outdoor screen, with an activated Entertainment Zone for fans.",
+      "body": "Pier 39 has launched its \"Soccer with the Sea Lions\" World Cup watch party series, broadcasting select FIFA World Cup 2026 matches on an outdoor screen at the Bay End of the pier. The series runs from June 12 through the World Cup Final on July 19, making Fisherman's Wharf a hub for fútbol fans all summer long.\n\nAll three USMNT group stage matches are being shown — including Friday, June 19 and Thursday, June 25 — along with Round of 16, quarterfinal, semifinal, and final broadcasts. Pier 39's Entertainment Zone will be activated on match days, allowing fans 21 and older to purchase alcoholic beverages and enjoy them outdoors within the designated zone while watching the games.\n\nThe watch parties are part of a broader citywide effort coordinated by the SF Bay Area FIFA World Cup 2026 Host Committee, which has organized more than 30 official fan zone experiences across the region. San Francisco is part of the host region, with Levi's Stadium in Santa Clara hosting six tournament matches between June 13 and July 1.",
+      "sourceUrl": "https://www.pier39.com/soccer/",
+      "sourceName": "PIER 39",
+      "tags": [
+        "fishermans-wharf",
+        "world-cup",
+        "events",
+        "sports"
+      ]
+    },
+    {
+      "headline": "Fisherman's Wharf Forward: New Taylor Street Plaza Nears Summer Completion",
+      "dek": "The Port of San Francisco's multi-phase revitalization project is on track to open a new public plaza where the shuttered Alioto's Restaurant once stood.",
+      "body": "The Fisherman's Wharf Forward project — the Port of San Francisco's ambitious plan to reinvigorate the heart of the Wharf — is approaching a key milestone. The new public plaza on Taylor Street, built on the site of the former Alioto's Restaurant, has a target completion date of June 2026, according to Port planning documents from a November 2025 advisory committee meeting.\n\nDesigned by San Francisco-based architectural firm SITELAB urban studio, the plaza will include a café space, outdoor seating, benches overlooking the Inner Lagoon, sculptural art, and lighting. The project also encompasses a Smokehouse overlook and new Inner Lagoon lighting to highlight the historic fishing fleet. Temporary sidewalk and traffic lane closures along Taylor Street between Jefferson Street and The Embarcadero have been in effect during the construction period.\n\nThe Wharf attracted more than 10 million visitors in 2024, making it the city's most visited destination. The near-term improvements are part of a longer-term effort that will focus on seismic resilience, sea level rise protections, and continued placemaking through 2033 and beyond. Longer-term plans include strengthening or replacing the seawall and wharves, flood-proofing buildings, and improving facilities for the fishing fleet.\n\nAn April 30, 2026, community meeting provided the most recent public update. Meeting minutes and presentation materials are available on the Port's Fisherman's Wharf Forward project page.",
+      "sourceUrl": "https://www.sfport.com/fwforward",
+      "sourceName": "Port of San Francisco",
+      "tags": [
+        "fishermans-wharf",
+        "development",
+        "waterfront",
+        "infrastructure"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "72nd Annual North Beach Festival",
+      "date": "Saturday–Sunday, June 20–21",
+      "time": "11:00 AM – 7:00 PM",
+      "location": "Grant Avenue & Columbus Avenue, North Beach",
+      "description": "San Francisco's oldest outdoor festival with 200+ vendors, live music, beer gardens, Italian Street Painting, Blessing of the Animals, kids' Fun Zone, and gourmet food from North Beach restaurants. Free admission.",
+      "sourceUrl": "https://sf.funcheap.com/north-beach-festival-2026/",
+      "sourceName": "Funcheap SF"
+    },
+    {
+      "title": "Soccer with the Sea Lions — FIFA World Cup Watch Parties at Pier 39",
+      "date": "Through Sunday, July 19",
+      "time": "Various times",
+      "location": "PIER 39, The Embarcadero, Fisherman's Wharf",
+      "description": "Outdoor screenings of select FIFA World Cup 2026 matches, including all USMNT group stage games (June 19 and June 25 upcoming). Entertainment Zone activated on match days.",
+      "sourceUrl": "https://www.pier39.com/soccer/",
+      "sourceName": "PIER 39"
+    },
+    {
+      "title": "Dear San Francisco — Immersive Circus at Club Fugazi",
+      "date": "Ongoing through October 31",
+      "time": "Various times (typically 7:30 PM; 2:00 PM matinees)",
+      "location": "Club Fugazi, 678 Green Street, North Beach",
+      "description": "The critically acclaimed immersive circus show featuring world-class acrobatics, live original music, and a love letter to San Francisco. Tickets from $86.90.",
+      "sourceUrl": "https://boxoffice.clubfugazisf.com/clubfugazisf/events",
+      "sourceName": "Club Fugazi"
+    },
+    {
+      "title": "Ferry Plaza Farmers Market",
+      "date": "Every Tuesday, Thursday, and Saturday",
+      "time": "Tue & Thu 10:00 AM – 2:00 PM; Sat 8:00 AM – 2:00 PM",
+      "location": "Ferry Building, 1 Ferry Building, Embarcadero",
+      "description": "The Bay Area's premier farmers market featuring over 100 farmers and vendors on Saturdays, with fresh produce, artisan foods, and cooking demonstrations.",
+      "sourceUrl": "https://www.ferrybuildingmarketplace.com/",
+      "sourceName": "Ferry Building Marketplace"
+    },
+    {
+      "title": "SF Pride Parade and Celebration",
+      "date": "Saturday–Sunday, June 27–28",
+      "time": "Festival 11:00 AM – 6:00 PM; Parade starts 10:30 AM Sunday",
+      "location": "Market Street from Embarcadero to Civic Center",
+      "description": "The 56th annual San Francisco Pride Parade, one of the world's largest LGBTQ+ celebrations, steps off from Embarcadero Plaza on Sunday, June 28 with over 250 contingents. Free and open to all.",
+      "sourceUrl": "https://sfpride.org/",
+      "sourceName": "San Francisco Pride"
+    },
+    {
+      "title": "Juneteenth Holiday — Muni Sunday Service Schedule",
+      "date": "Friday, June 19",
+      "time": "All day",
+      "location": "Citywide (impacts North Waterfront routes)",
+      "description": "Muni operates on a Sunday service schedule for the Juneteenth federal holiday. Parking meters and loading zones are not enforced.",
+      "sourceUrl": "https://www.sfmta.com/press-releases/sfmta-transit-and-traffic-advisory-holiday-week-thursday-june-18-through-wednesday-june-24-2026",
+      "sourceName": "SFMTA"
+    },
+    {
+      "title": "Coit Tower — Open Daily",
+      "date": "Ongoing",
+      "time": "9:30 AM – 6:00 PM daily",
+      "location": "Coit Tower, Telegraph Hill",
+      "description": "Visit the iconic Art Deco tower atop Telegraph Hill for 360-degree views and free access to the 1930s WPA murals on the ground floor. Elevator ride to observation deck is $10 ($7 for SF residents).",
+      "sourceUrl": "https://sfrecpark.org/facilities/facility/details/Coit-Tower-290",
+      "sourceName": "SF Recreation and Parks"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "$40 Million Embarcadero Plaza Redesign Moves Forward with New Designs",
+      "body": "San Francisco officials in late April unveiled five revised concept designs for a sweeping $40 million redevelopment of Embarcadero Plaza and Sue Bierman Park near the foot of Market Street. The project, a partnership between SF Recreation & Parks, the Downtown SF Partnership, and real estate firm BXP, would merge the existing plaza with surrounding park space to create a unified 5-acre waterfront park.\n\nPlans include a large central lawn, performance space, walking paths, a dog park, food truck areas, and recreational zones. Workers have already begun deconstructing the controversial Vaillancourt Fountain. While the project site is just south of the North Waterfront cluster, the redesigned park will directly serve Embarcadero North pedestrians and improve connectivity to the Ferry Building.",
+      "sourceUrl": "https://abc7news.com/post/new-designs-unveiled-renovation-san-franciscos-embarcadero-plaza-sue-bierman-park/18993148/",
+      "sourceName": "ABC7 San Francisco",
+      "tags": [
+        "embarcadero",
+        "parks",
+        "development"
+      ]
+    },
+    {
+      "headline": "SFMTA Reroutes Three Muni Lines for North Beach Festival Weekend",
+      "body": "The SFMTA has issued a detailed transit advisory for the June 20–21 North Beach Festival weekend. The 8 Bayshore, 39 Coit, and 45 Union/Stockton routes will all be rerouted around the festival area. Multiple streets in the heart of North Beach — including Grant Avenue, Green Street, Vallejo Street, and portions of Columbus Avenue and Stockton Street — will be closed to vehicle traffic from midnight Saturday through late Sunday. Residents should plan alternate routes and allow extra travel time.",
+      "sourceUrl": "https://www.sfmta.com/project-updates/north-beach-festival",
+      "sourceName": "SFMTA",
+      "tags": [
+        "transit",
+        "north-beach",
+        "traffic"
+      ]
+    },
+    {
+      "headline": "Fisherman's Wharf Entertainment Zones Expand with New Programming",
+      "body": "The Fisherman's Wharf Community Benefit District has been rolling out expanded entertainment zone programming across three activation areas: Jefferson Street between Powell and Hyde, the Beach Street/Ghirardelli Square area, and Crab Wheel Plaza with the Wharf Promenade. Planned activities include the revival of Wharf Fest, concerts, Cars & Coffee gatherings, bar crawls, and cultural events, with two to three events per month rotating among the zones. The entertainment zones launched in spring 2026 with support from the Port of San Francisco.",
+      "sourceUrl": "https://www.sfport.com/meetings/fishermans-wharf-advisory-committee-fwac-november-5-2025",
+      "sourceName": "Port of San Francisco",
+      "tags": [
+        "fishermans-wharf",
+        "entertainment",
+        "nightlife"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Tosca Cafe",
+        "cuisine": "Italian",
+        "address": "242 Columbus Ave, San Francisco, CA 94133",
+        "website": "https://www.toscacafesf.com",
+        "badge": ""
+      },
+      {
+        "name": "Tony's Pizza Napoletana",
+        "cuisine": "Pizza / Italian",
+        "address": "1570 Stockton St, San Francisco, CA 94133",
+        "website": "https://www.tonyspizzanapoletana.com",
+        "badge": ""
+      },
+      {
+        "name": "Sotto Mare Oysteria & Seafood",
+        "cuisine": "Seafood / Italian",
+        "address": "552 Green St, San Francisco, CA 94133",
+        "website": "https://www.sottomaresf.com",
+        "badge": ""
+      },
+      {
+        "name": "The Stinking Rose",
+        "cuisine": "Italian / Garlic",
+        "address": "325 Columbus Ave, San Francisco, CA 94133",
+        "website": "https://www.thestinkingrose.com",
+        "badge": ""
+      },
+      {
+        "name": "Scoma's",
+        "cuisine": "Seafood",
+        "address": "1965 Al Scoma Way, San Francisco, CA 94133",
+        "website": "https://www.scomas.com",
+        "badge": ""
+      },
+      {
+        "name": "Trattoria Contadina",
+        "cuisine": "Italian",
+        "address": "1800 Mason St, San Francisco, CA 94133",
+        "website": "https://www.trattoriacontadina.com",
+        "badge": ""
+      },
+      {
+        "name": "Cafe Zoetrope",
+        "cuisine": "Italian / Wine Bar",
+        "address": "916 Kearny St, San Francisco, CA 94133",
+        "website": "https://www.cafezoetrope.com",
+        "badge": ""
+      },
+      {
+        "name": "Fog Harbor Fish House",
+        "cuisine": "Seafood",
+        "address": "Pier 39, Space 237, San Francisco, CA 94133",
+        "website": "https://www.fogharbor.com",
+        "badge": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hotel Bohème",
+        "stars": 3,
+        "address": "444 Columbus Ave, San Francisco, CA 94133",
+        "website": "https://www.hotelboheme.com",
+        "badge": ""
+      },
+      {
+        "name": "San Remo Hotel",
+        "stars": 2,
+        "address": "2237 Mason St, San Francisco, CA 94133",
+        "website": "https://www.sanremohotel.com",
+        "badge": ""
+      },
+      {
+        "name": "Argonaut Hotel",
+        "stars": 4,
+        "address": "495 Jefferson St, San Francisco, CA 94109",
+        "website": "https://www.argonauthotel.com",
+        "badge": ""
+      },
+      {
+        "name": "Hyatt Centric Fisherman's Wharf",
+        "stars": 4,
+        "address": "555 North Point St, San Francisco, CA 94133",
+        "website": "https://www.hyatt.com/hyatt-centric/sfofw-hyatt-centric-fishermans-wharf-san-francisco",
+        "badge": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "City Lights Booksellers & Publishers",
+        "type": "Bookstore",
+        "address": "261 Columbus Ave, San Francisco, CA 94133",
+        "website": "https://www.citylights.com",
+        "badge": ""
+      },
+      {
+        "name": "Schein & Schein",
+        "type": "Antique Maps & Prints",
+        "address": "1435 Grant Ave, San Francisco, CA 94133",
+        "website": "https://www.scheinandschein.com",
+        "badge": ""
+      },
+      {
+        "name": "Lola of North Beach",
+        "type": "Women's Clothing & Accessories",
+        "address": "1415 Grant Ave, San Francisco, CA 94133",
+        "website": "https://www.lolaofnorthbeach.com",
+        "badge": ""
+      },
+      {
+        "name": "Aria Antiques",
+        "type": "Antiques & Vintage",
+        "address": "1522 Grant Ave, San Francisco, CA 94133",
+        "website": "https://www.ariaantiques.com",
+        "badge": ""
+      },
+      {
+        "name": "101 Music",
+        "type": "Vintage Records & Music",
+        "address": "1414 Grant Ave, San Francisco, CA 94133",
+        "website": "",
+        "badge": ""
+      },
+      {
+        "name": "Ghirardelli Chocolate Marketplace",
+        "type": "Chocolate & Gifts",
+        "address": "900 North Point St, San Francisco, CA 94109",
+        "website": "https://www.ghirardellisq.com",
+        "badge": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "North Beach Festival 2026 (June 20-21)",
+      "url": "https://sf.funcheap.com/north-beach-festival-2026/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "North Beach Festival: Saturday & Sunday, June 20-21, 2026",
+      "url": "https://www.sfmta.com/project-updates/north-beach-festival",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "SFMTA Transit and Traffic Advisory, June 18–24, 2026",
+      "url": "https://www.sfmta.com/press-releases/sfmta-transit-and-traffic-advisory-holiday-week-thursday-june-18-through-wednesday-june-24-2026",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "North Beach Festival 2026 — dothebay",
+      "url": "https://dothebay.com/events/2026/6/20/north-beach-festival-2026-tickets",
+      "publication": "DoTheBay"
+    },
+    {
+      "title": "North Beach Festival — Sunset Mercantile",
+      "url": "https://sunsetmercantilesf.com/northbeachfestival2026/",
+      "publication": "Sunset Mercantile"
+    },
+    {
+      "title": "Soccer with the Sea Lions at PIER 39",
+      "url": "https://www.pier39.com/soccer/",
+      "publication": "PIER 39"
+    },
+    {
+      "title": "San Francisco Fan Zone at Pier 39 — FIFA World Cup 26",
+      "url": "https://www.sfbayareafwc26.com/bay-area-events/san-francisco-watch-party-at-pier-39",
+      "publication": "SF Bay Area FWC26"
+    },
+    {
+      "title": "Where to watch World Cup games in the Bay Area",
+      "url": "https://www.kron4.com/sports/world-cup-2026/where-to-watch-world-cup-games-in-the-bay-area/",
+      "publication": "KRON4"
+    },
+    {
+      "title": "Your Guide to FIFA World Cup 2026 Watch Parties in San Francisco",
+      "url": "https://www.sftravel.com/article/your-guide-to-fifa-world-cup-2026-watch-parties-san-francisco",
+      "publication": "San Francisco Travel"
+    },
+    {
+      "title": "Fisherman's Wharf Forward",
+      "url": "https://www.sfport.com/fwforward",
+      "publication": "Port of San Francisco"
+    },
+    {
+      "title": "Port Announces Fisherman's Wharf Forward",
+      "url": "https://www.sfport.com/about/news/port-announces-fishermans-wharf-forward-reinvigorate-heart-fishermans-wharf",
+      "publication": "Port of San Francisco"
+    },
+    {
+      "title": "Fisherman's Wharf Advisory Committee (FWAC) — November 5, 2025",
+      "url": "https://www.sfport.com/meetings/fishermans-wharf-advisory-committee-fwac-november-5-2025",
+      "publication": "Port of San Francisco"
+    },
+    {
+      "title": "Plans for new San Francisco Fisherman's Wharf public plaza unveiled",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-fishermans-wharf-public-plaza-artist-renderings/",
+      "publication": "CBS San Francisco"
+    },
+    {
+      "title": "New designs unveiled for renovation of Embarcadero Plaza and Sue Bierman Park",
+      "url": "https://abc7news.com/post/new-designs-unveiled-renovation-san-franciscos-embarcadero-plaza-sue-bierman-park/18993148/",
+      "publication": "ABC7 San Francisco"
+    },
+    {
+      "title": "Revised Plans For Embarcadero Plaza Renovation Unveiled",
+      "url": "https://sfist.com/2026/04/29/revised-plans-for-embarcadero-plaza-renovation-unveiled/",
+      "publication": "SFist"
+    },
+    {
+      "title": "'A world-class park': Renderings of Embarcadero Plaza Park upgrades released",
+      "url": "https://www.kron4.com/news/bay-area/a-world-class-park-renderings-of-embarcadero-plaza-park-upgrades-released/",
+      "publication": "KRON4"
+    },
+    {
+      "title": "Official Ticket Sales — Club Fugazi SF",
+      "url": "https://boxoffice.clubfugazisf.com/clubfugazisf/events",
+      "publication": "Club Fugazi"
+    },
+    {
+      "title": "Dear San Francisco at Club Fugazi — SF Station",
+      "url": "https://www.sfstation.com/dear-san-francisco-e2471187",
+      "publication": "SF Station"
+    },
+    {
+      "title": "56th Annual SF Pride Parade",
+      "url": "https://sfpride.org/",
+      "publication": "San Francisco Pride"
+    },
+    {
+      "title": "2026 San Francisco Pride Parade",
+      "url": "https://sf.funcheap.com/san-francisco-pride-parade/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Coit Tower — SF Recreation and Parks",
+      "url": "https://sfrecpark.org/facilities/facility/details/Coit-Tower-290",
+      "publication": "SF Recreation and Parks"
+    },
+    {
+      "title": "Embarcadero Plaza and Sue Bierman Park Renovation Project",
+      "url": "https://sfrecpark.org/1819/Embarcadero-Plaza-and-Sue-Bierman-Park-R",
+      "publication": "SF Recreation and Parks"
+    }
+  ]
+}
