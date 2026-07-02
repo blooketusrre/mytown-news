@@ -1,0 +1,28 @@
+{
+  "slug": "marina-pacific-heights",
+  "name": "Marina & Pacific Heights",
+  "live": true,
+  "neighborhoods": [
+    "Marina District",
+    "Cow Hollow",
+    "Pacific Heights",
+    "Presidio Heights"
+  ],
+  "accentColor": "#2a9d8f",
+  "description": "Victorian mansions, boutique dining strips, and a front-row seat to the Bay.",
+  "primarySearchTerms": [
+    "Marina District San Francisco",
+    "Cow Hollow San Francisco",
+    "Pacific Heights San Francisco",
+    "Presidio Heights San Francisco"
+  ],
+  "sourceHints": [
+    "https://www.sfstandard.com",
+    "https://sfist.com",
+    "https://hoodline.com/neighborhoods/marina",
+    "https://hoodline.com/neighborhoods/pacific-heights",
+    "https://www.sfrecpark.org",
+    "https://sfpl.org",
+    "https://www.abc7news.com/tag/san-francisco"
+  ]
+}

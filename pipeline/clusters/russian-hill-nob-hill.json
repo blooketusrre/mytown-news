@@ -1,0 +1,28 @@
+{
+  "slug": "russian-hill-nob-hill",
+  "name": "Russian Hill & Nob Hill",
+  "live": true,
+  "neighborhoods": [
+    "Russian Hill",
+    "Nob Hill",
+    "Polk Gulch",
+    "Chinatown"
+  ],
+  "accentColor": "#8b2635",
+  "description": "Cable cars, crooked streets, Chinatown dim sum, and the city's steepest views.",
+  "primarySearchTerms": [
+    "Russian Hill San Francisco",
+    "Nob Hill San Francisco",
+    "Polk Gulch San Francisco",
+    "Chinatown San Francisco"
+  ],
+  "sourceHints": [
+    "https://www.sfstandard.com",
+    "https://sfist.com",
+    "https://hoodline.com/neighborhoods/russian-hill",
+    "https://hoodline.com/neighborhoods/nob-hill",
+    "https://hoodline.com/neighborhoods/chinatown",
+    "https://www.sfrecpark.org",
+    "https://sfpl.org"
+  ]
+}

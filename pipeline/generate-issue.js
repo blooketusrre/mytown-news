@@ -165,21 +165,30 @@ QUANTITY TARGETS:
 - directory: 6–12 restaurants, 2–5 hotels, 4–8 shops (real establishments only)
 - sources: deduplicated list of every source referenced above
 
-IMPORTANT: Respond with ONLY the raw JSON object. No markdown fences, no commentary before or after.`;
+CRITICAL: Your response must be ONLY the raw JSON object — nothing else. Do not write any introduction, explanation, or commentary. Do not say "I'll research" or "Here is the issue." Begin your response with { and end with }. No markdown fences.`;
 }
 
 /** Extract JSON from Claude response (handles tool-use turns and plain text) */
 function extractJson(response) {
-  // Walk content blocks looking for text
-  for (const block of response.content || []) {
-    if (block.type === "text") {
-      const text = block.text.trim();
-      // Strip markdown fences if present
-      const cleaned = text.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "");
-      return JSON.parse(cleaned);
+  const blocks = response.content || [];
+  const textBlocks = blocks.filter(b => b.type === "text");
+
+  // Scan from last text block backwards — the final JSON output comes last,
+  // after any "I'll research..." preamble or tool-use blocks.
+  for (const block of [...textBlocks].reverse()) {
+    const text = block.text.trim();
+    const cleaned = text.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "").trim();
+    // Find a JSON object anywhere in this block
+    const match = cleaned.match(/\{[\s\S]*\}/);
+    if (match) {
+      try {
+        return JSON.parse(match[0]);
+      } catch (e) {
+        // not valid JSON, try the next block
+      }
     }
   }
-  throw new Error("No text block found in Claude response");
+  throw new Error("No JSON found in Claude response");
 }
 
 // ─── Validation ─────────────────────────────────────────────────────────────

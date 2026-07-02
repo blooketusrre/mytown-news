@@ -14,7 +14,7 @@
     "name": "Marina & Pacific Heights",
     "neighborhoods": ["Marina District", "Cow Hollow", "Pacific Heights", "Presidio Heights"],
     "accent": "#2a9d8f",
-    "live": false,
+    "live": true,
     "zipCodes": ["94123", "94115"],
     "description": "Victorian mansions, boutique dining strips, and a front-row seat to the Bay.",
     "mapLabel": { "x": 200, "y": 90 }
@@ -34,7 +34,7 @@
     "name": "Russian Hill & Nob Hill",
     "neighborhoods": ["Russian Hill", "Nob Hill", "Polk Gulch", "Chinatown"],
     "accent": "#8b2635",
-    "live": false,
+    "live": true,
     "zipCodes": ["94109", "94108"],
     "description": "Cable cars, crooked streets, Chinatown dim sum, and the city's steepest views.",
     "mapLabel": { "x": 285, "y": 160 }
