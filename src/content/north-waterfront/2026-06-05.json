@@ -1,0 +1,381 @@
+{
+  "clusterSlug": "north-waterfront",
+  "clusterName": "North Waterfront",
+  "weekOf": "2026-06-05",
+  "topStories": [
+    {
+      "headline": "Festa Italiana Returns to North Beach This Weekend With 105th Statuto Race",
+      "dek": "San Francisco's only Italian street festival takes over Stockton Street June 6–7 with food, music, pizza tossing, and the historic Statuto Race.",
+      "body": "North Beach's beloved Festa Italiana, also known as the Festa Coloniale Italiana, returns this weekend on Saturday and Sunday, June 6–7. The San Francisco Italian Athletic Club Foundation hosts the free, family-friendly celebration of Italian food, wine, music, and culture on Stockton Street between Union and Filbert streets, from 11 a.m. to 6 p.m. both days.\n\nHighlights include nonstop live Italian music, a pizza toss performance by 13-time World Champion and restaurateur Tony Gemignani of Tony's Pizza Napoletana, Italian cuisine and wine tasting, a kids' corner with tarantella dancing lessons, and an Italian vendor faire featuring local favorites such as Mozzeria, Graffeo, and Poesia Cafe.\n\nThe centerpiece of Sunday morning is the 105th running of the Statuto Race, one of North Beach's most storied athletic traditions. Registration is open through the SFIAC Foundation.\n\nSFMTA has announced that Stockton Street between Union and Filbert will be closed to through traffic from 4 a.m. Saturday to 10 p.m. Sunday, and Muni's 39 Coit line will reroute around the event for all hours of service. Riders should consult SFMTA's website for details on affected stops.",
+      "sourceUrl": "https://www.sfmta.com/travel-updates/festa-coloniale-italiana-saturday-sunday-june-6-7-2026",
+      "sourceName": "SFMTA",
+      "tags": [
+        "festivals",
+        "north-beach",
+        "italian-heritage",
+        "community"
+      ]
+    },
+    {
+      "headline": "New Fisherman's Wharf Public Plaza Nears Summer Opening as Port Seeks Input on Long-Term Resilience",
+      "dek": "The 5,000-square-foot Taylor Street plaza where Alioto's once stood is on track to open this summer, while the Port gathers community feedback on seismic and flood protections.",
+      "body": "The new public plaza at the heart of Fisherman's Wharf is on track for a summer 2026 opening, according to the SF Examiner. The 5,000-square-foot space on Taylor Street occupies the site where the shuttered Alioto's restaurant — a Wharf landmark for nearly a century — once stood. The building was demolished as part of the $10 million Fisherman's Wharf Forward initiative.\n\nThe plaza will feature wave-shaped seating, picnic tables, string lights, and sweeping views of the Golden Gate Bridge, San Francisco Bay, and the fishing boats of the inner lagoon. An additional inner lagoon overlook along Al Scoma Way and upgraded lighting to highlight the fishing fleet are also part of the near-term improvements.\n\nMeanwhile, as reported by the SF Examiner on May 3, the Port of San Francisco has entered the next phase of the project — a roughly four-month community engagement process to shape long-term seismic and flood resilience goals for the Wharf. Some community members have launched an effort to name the new plaza after the Alioto family, which first came to San Francisco over 100 years ago.\n\nThe timing of the plaza opening aligns with FIFA World Cup 2026, which begins June 11 at Bay Area venues. PIER 39 has announced it will host free outdoor World Cup watch parties — dubbed \"Soccer with the Sea Lions\" — on a big screen at the bay end of the pier for select matches throughout the tournament.",
+      "sourceUrl": "https://www.sfexaminer.com/news/community/port-of-sf-addressing-floods-quakes-in-fishermans-wharf/article_8fbfdcdb-0ef6-4e1c-b207-42b584a4d2a1.html",
+      "sourceName": "San Francisco Examiner",
+      "tags": [
+        "fishermans-wharf",
+        "development",
+        "port-of-sf",
+        "world-cup"
+      ]
+    },
+    {
+      "headline": "Escape From Alcatraz Triathlon Takes Over the Waterfront This Weekend",
+      "dek": "The 46th-year iconic triathlon sends athletes plunging from a boat near Alcatraz Island on Sunday, June 7, with a free fitness festival at Marina Green.",
+      "body": "The Escape From Alcatraz Triathlon returns to San Francisco's waterfront this weekend for its 46th year, with the pro race on Saturday, June 6, and the legendary amateur triathlon on Sunday, June 7. The event features a daring 1.5-mile swim from waters near Alcatraz Island, an 18-mile bike ride through the Presidio and Golden Gate Park, and a grueling 8-mile run including the famous Sand Ladder at Baker Beach.\n\nThe race draws thousands of athletes from all 50 states and over 50 countries. This year's edition has drawn heightened attention to safety following an incident at the 2025 race in which a participant was seriously injured during the swim start. The 2026 athlete guide devotes a full page to jump procedures, and organizers have emphasized updated safety protocols, according to Triathlete magazine.\n\nNorth Waterfront residents and visitors can enjoy the free Fitness Festival at Marina Green on both days — Saturday from 9 a.m. to 2:30 p.m. and Sunday from 7 a.m. to 2:30 p.m. — featuring merchandise, a beer garden, local food trucks, and sponsor activations. Expect road closures and heavy spectator traffic along the Embarcadero, Marina Boulevard, and through the Presidio on race morning.",
+      "sourceUrl": "https://www.escapealcatraztri.com/",
+      "sourceName": "Escape From Alcatraz Triathlon",
+      "tags": [
+        "sports",
+        "waterfront",
+        "triathlon",
+        "community-events"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Festa Coloniale Italiana (Festa Italiana)",
+      "date": "Saturday–Sunday, June 6–7",
+      "time": "11:00 AM–6:00 PM",
+      "location": "Stockton Street between Union and Filbert, North Beach",
+      "description": "Free Italian street festival featuring live music, pizza toss by Tony Gemignani, wine tasting, Italian vendors, kids' activities, and the 105th Statuto Race on Sunday morning.",
+      "sourceUrl": "https://sfiacfoundation.org/festa",
+      "sourceName": "SFIAC Foundation"
+    },
+    {
+      "title": "Escape From Alcatraz Triathlon & Fitness Festival",
+      "date": "Saturday–Sunday, June 6–7",
+      "time": "6:00 AM (race); Festival 9:00 AM–2:30 PM Sat, 7:00 AM–2:30 PM Sun",
+      "location": "Marina Green / San Francisco Bay waterfront",
+      "description": "The 46th-year iconic triathlon with a 1.5-mile swim from Alcatraz, 18-mile bike, and 8-mile run. Free Fitness Festival open to the public at Marina Green both days.",
+      "sourceUrl": "https://www.escapealcatraztri.com/",
+      "sourceName": "Escape From Alcatraz Triathlon"
+    },
+    {
+      "title": "Soccer with the Sea Lions: FIFA World Cup Watch Parties at PIER 39",
+      "date": "Starting Saturday, June 12",
+      "time": "Various times",
+      "location": "PIER 39, Bay End big screen, Fisherman's Wharf",
+      "description": "Free outdoor screenings of select FIFA World Cup 2026 matches at the bay end of PIER 39, including Team USA games. Schedule runs through July 19.",
+      "sourceUrl": "https://dothebay.com/events/2026/6/12/soccer-with-the-sea-lions-fifa-world-cup-watch-parties-tickets",
+      "sourceName": "DoTheBay / PIER 39"
+    },
+    {
+      "title": "72nd Annual North Beach Festival",
+      "date": "Saturday–Sunday, June 20–21",
+      "time": "11:00 AM–7:00 PM",
+      "location": "Grant Avenue and Columbus Avenue, North Beach",
+      "description": "One of the country's original outdoor festivals returns with 200+ vendors on 11 blocks, beer gardens, live music, Italian street painting, the Blessing of the Animals, and a kids' Fun Zone. Free admission.",
+      "sourceUrl": "https://sf.funcheap.com/north-beach-festival-2026/",
+      "sourceName": "Funcheap SF"
+    },
+    {
+      "title": "Dear San Francisco — Immersive Circus Show",
+      "date": "Ongoing through October 31",
+      "time": "7:30 PM (most shows)",
+      "location": "Club Fugazi, 678 Green Street, North Beach",
+      "description": "The critically acclaimed acrobatic circus show by The 7 Fingers celebrates San Francisco's history and spirit in an intimate 300-seat venue. Tickets from $86.90.",
+      "sourceUrl": "https://www.clubfugazisf.com/dear-san-francisco",
+      "sourceName": "Club Fugazi"
+    },
+    {
+      "title": "Juneteenth on the Waterfront",
+      "date": "Sunday, June 7",
+      "time": "Various times",
+      "location": "San Francisco Waterfront",
+      "description": "Sixth annual celebration of local Black-owned businesses on the waterfront, coinciding with Juneteenth commemorations across the city.",
+      "sourceUrl": "https://www.sftravel.com/article/san-francisco-festivals-events-june",
+      "sourceName": "San Francisco Travel"
+    },
+    {
+      "title": "Critical Mass Bike Ride",
+      "date": "Friday, June 26",
+      "time": "6:00 PM meet, 6:30 PM ride",
+      "location": "Embarcadero Plaza (foot of Market Street)",
+      "description": "The monthly mass bicycle ride departs from the Embarcadero. Open to all cyclists.",
+      "sourceUrl": "https://sf.funcheap.com/region/embarcadero/",
+      "sourceName": "Funcheap SF"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "PIER 39 Designated Official FIFA World Cup 2026 Watch Party Venue",
+      "body": "PIER 39 at Fisherman's Wharf is one of more than 30 official Bay Area venues hosting free FIFA World Cup 2026 watch parties, the Bay Area Host Committee announced. The venue will broadcast select matches — including Team USA group-stage games, knockout rounds, and the Final — on a big screen at the bay end of the pier, beginning June 12. The World Cup arrives at Bay Area venues starting June 11, with six matches at Levi's Stadium in Santa Clara.",
+      "sourceUrl": "https://bayareahostcommittee.com/newsroom/bay-area-host-committee-announces-fan-zones-for-the-fifa-world-cup-2026",
+      "sourceName": "Bay Area Host Committee",
+      "tags": [
+        "world-cup",
+        "fishermans-wharf"
+      ]
+    },
+    {
+      "headline": "Wharf's Pop-Up Fish Market Thrives as Season Shifts from Crab to Salmon",
+      "body": "The weekly pop-up fish market at Al Scoma Way in Fisherman's Wharf, which launched in January 2026, has been a success, averaging 77 customers per week with a high of 117, according to minutes from the March 4 Fisherman's Wharf Advisory Committee meeting. The market operates alongside off-the-boat crab sales at Wharf J9. The Fisherman's Wharf Community Benefit District reports that with the fishing season transitioning from Dungeness crab to salmon, the market hopes to sustain its momentum through summer.",
+      "sourceUrl": "https://www.sfport.com/meetings/fishermans-wharf-advisory-committee-fwac-march-4-2026",
+      "sourceName": "Port of San Francisco / FWAC Minutes",
+      "tags": [
+        "fishermans-wharf",
+        "seafood",
+        "small-business"
+      ]
+    },
+    {
+      "headline": "Fisherman's Wharf Entertainment Zone Approved for Open-Air Drinks",
+      "body": "The Fisherman's Wharf Community Benefit District's Entertainment Zone has received city approval, according to the FWAC meeting minutes. The zone — a City of San Francisco designation allowing open-air alcohol consumption — spans the area between Polk and Powell streets and from Beach Street to the Little Embarcadero. The FWCBD planned to launch its first event in the new zone with an annual chowder competition.",
+      "sourceUrl": "https://www.sfport.com/meetings/fishermans-wharf-advisory-committee-fwac-march-4-2026",
+      "sourceName": "Port of San Francisco / FWAC Minutes",
+      "tags": [
+        "fishermans-wharf",
+        "nightlife",
+        "policy"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Tony's Pizza Napoletana",
+        "cuisine": "Italian / Pizza",
+        "address": "1570 Stockton Street, North Beach",
+        "website": "https://tonyspizzanapoletana.com",
+        "badge": "Local Legend"
+      },
+      {
+        "name": "Scoma's Restaurant",
+        "cuisine": "Seafood",
+        "address": "1965 Al Scoma Way, Fisherman's Wharf",
+        "website": "https://scomas.com",
+        "badge": "Waterfront Classic"
+      },
+      {
+        "name": "Poesia Cafe",
+        "cuisine": "Italian Cafe",
+        "address": "4072 18th Street (also a Festa Italiana vendor)",
+        "website": "https://www.poesiasf.com",
+        "badge": ""
+      },
+      {
+        "name": "Sotto Mare Oysteria & Seafood",
+        "cuisine": "Seafood / Italian",
+        "address": "552 Green Street, North Beach",
+        "website": "https://www.sottomaresf.com",
+        "badge": ""
+      },
+      {
+        "name": "Capo's",
+        "cuisine": "Italian / Pizza",
+        "address": "641 Vallejo Street, North Beach",
+        "website": "https://www.sfcapos.com",
+        "badge": ""
+      },
+      {
+        "name": "Cafe Zoetrope",
+        "cuisine": "Italian",
+        "address": "916 Kearny Street, North Beach",
+        "website": "https://www.cafezoetrope.com",
+        "badge": ""
+      },
+      {
+        "name": "The Stinking Rose",
+        "cuisine": "Italian / Garlic",
+        "address": "325 Columbus Avenue, North Beach",
+        "website": "https://thestinkingrose.com",
+        "badge": ""
+      },
+      {
+        "name": "Fog Harbor Fish House",
+        "cuisine": "Seafood",
+        "address": "PIER 39, Fisherman's Wharf",
+        "website": "https://fogharbor.com",
+        "badge": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hotel Bohème",
+        "stars": 3,
+        "address": "444 Columbus Avenue, North Beach",
+        "website": "https://hotelboheme.com",
+        "badge": "Beat Generation Charm"
+      },
+      {
+        "name": "San Remo Hotel",
+        "stars": 2,
+        "address": "2237 Mason Street, North Beach",
+        "website": "https://www.sanremohotel.com",
+        "badge": "Historic"
+      },
+      {
+        "name": "SF Marriott Fisherman's Wharf",
+        "stars": 4,
+        "address": "1250 Columbus Avenue, Fisherman's Wharf",
+        "website": "https://www.marriott.com",
+        "badge": ""
+      },
+      {
+        "name": "Argonaut Hotel",
+        "stars": 4,
+        "address": "495 Jefferson Street, Fisherman's Wharf",
+        "website": "https://www.argonauthotel.com",
+        "badge": "Waterfront"
+      }
+    ],
+    "shops": [
+      {
+        "name": "City Lights Bookstore",
+        "type": "Bookstore",
+        "address": "261 Columbus Avenue, North Beach",
+        "website": "https://citylights.com",
+        "badge": "Landmark"
+      },
+      {
+        "name": "Graffeo Coffee",
+        "type": "Coffee Roaster",
+        "address": "735 Columbus Avenue, North Beach",
+        "website": "https://www.graffeo.com",
+        "badge": "Since 1935"
+      },
+      {
+        "name": "Aria Antiques",
+        "type": "Antiques & Vintage",
+        "address": "1522 Grant Avenue, North Beach",
+        "website": "",
+        "badge": ""
+      },
+      {
+        "name": "Lola of North Beach",
+        "type": "Women's Boutique",
+        "address": "1415 Grant Avenue, North Beach",
+        "website": "https://www.lolaofnorthbeach.com",
+        "badge": ""
+      },
+      {
+        "name": "PIER 39 Shops",
+        "type": "Waterfront Shopping Complex",
+        "address": "PIER 39, The Embarcadero at Beach Street",
+        "website": "https://www.pier39.com",
+        "badge": ""
+      },
+      {
+        "name": "Ghirardelli Square Shops",
+        "type": "Shopping & Chocolate",
+        "address": "900 North Point Street, Fisherman's Wharf",
+        "website": "https://www.ghirardellisq.com",
+        "badge": "Historic"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Festa Coloniale Italiana: Saturday & Sunday, June 6-7, 2026",
+      "url": "https://www.sfmta.com/travel-updates/festa-coloniale-italiana-saturday-sunday-june-6-7-2026",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "Festa Italiana — The SFIAC Foundation",
+      "url": "https://sfiacfoundation.org/festa",
+      "publication": "SFIAC Foundation"
+    },
+    {
+      "title": "SF's 'Festa Italiana' Street Fair 2026 (June 6-7)",
+      "url": "https://sf.funcheap.com/event-series/festa-italiana-street-fair-north-beach/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Port of SF addressing floods, quakes in Fisherman's Wharf",
+      "url": "https://www.sfexaminer.com/news/community/port-of-sf-addressing-floods-quakes-in-fishermans-wharf/article_8fbfdcdb-0ef6-4e1c-b207-42b584a4d2a1.html",
+      "publication": "San Francisco Examiner"
+    },
+    {
+      "title": "Fisherman's Wharf is Getting a $10 Million Makeover",
+      "url": "https://sf.funcheap.com/city-guide/fishermans-wharf-10-million-makeover/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Mayor Lurie Unveils New Concepts For Fisherman's Wharf",
+      "url": "https://www.sfport.com/about/news/mayor-lurie-unveils-new-concepts-fishermans-wharf-following-projected-tourism-growth",
+      "publication": "Port of San Francisco"
+    },
+    {
+      "title": "Plans for new San Francisco Fisherman's Wharf public plaza unveiled",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-fishermans-wharf-public-plaza-artist-renderings/",
+      "publication": "CBS San Francisco"
+    },
+    {
+      "title": "Fisherman's Wharf Advisory Committee (FWAC) - March 4, 2026",
+      "url": "https://www.sfport.com/meetings/fishermans-wharf-advisory-committee-fwac-march-4-2026",
+      "publication": "Port of San Francisco"
+    },
+    {
+      "title": "Escape From Alcatraz Triathlon",
+      "url": "https://www.escapealcatraztri.com/",
+      "publication": "Escape From Alcatraz Triathlon"
+    },
+    {
+      "title": "Legal Battle Casts Shadow on 2026 Escape from Alcatraz Triathlon",
+      "url": "https://www.triathlete.com/culture/news/legal-battle-casts-shadow-on-2026-escape-from-alcatraz-triathlon/",
+      "publication": "Triathlete"
+    },
+    {
+      "title": "2026 Escape From Alcatraz Triathlon - Challenged Athletes Foundation",
+      "url": "https://www.challengedathletes.org/events/escape-from-alcatraz/",
+      "publication": "Challenged Athletes Foundation"
+    },
+    {
+      "title": "North Beach Festival 2026 (June 20-21)",
+      "url": "https://sf.funcheap.com/north-beach-festival-2026/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "North Beach Festival: 2026 Event Details",
+      "url": "https://www.sftourismtips.com/north-beach-festival.html",
+      "publication": "SF Tourism Tips"
+    },
+    {
+      "title": "Soccer with the Sea Lions: FIFA World Cup Watch Parties at PIER 39",
+      "url": "https://dothebay.com/events/2026/6/12/soccer-with-the-sea-lions-fifa-world-cup-watch-parties-tickets",
+      "publication": "DoTheBay / PIER 39"
+    },
+    {
+      "title": "Bay Area Host Committee Announces Fan Zones for the FIFA World Cup 2026",
+      "url": "https://bayareahostcommittee.com/newsroom/bay-area-host-committee-announces-fan-zones-for-the-fifa-world-cup-2026",
+      "publication": "Bay Area Host Committee"
+    },
+    {
+      "title": "World Cup 2026 Levi's Stadium: Everything to know",
+      "url": "https://abc7news.com/post/world-cup-2026-levis-stadium-everything-know-bay-area-games-played-santa-clara-watch-parties-tickets/19235435/",
+      "publication": "ABC7 San Francisco"
+    },
+    {
+      "title": "San Francisco Festivals and Events in June",
+      "url": "https://www.sftravel.com/article/san-francisco-festivals-events-june",
+      "publication": "San Francisco Travel"
+    },
+    {
+      "title": "Dear San Francisco — Club Fugazi",
+      "url": "https://www.clubfugazisf.com/dear-san-francisco",
+      "publication": "Club Fugazi"
+    },
+    {
+      "title": "San Francisco's Fisherman's Wharf striving to evolve from 'tourist trap' designation",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-franciscos-fishermans-wharf-tourist-trap-designation/",
+      "publication": "CBS San Francisco"
+    },
+    {
+      "title": "Fisherman's Wharf Forward",
+      "url": "https://www.sfport.com/fwforward",
+      "publication": "Port of San Francisco"
+    }
+  ]
+}

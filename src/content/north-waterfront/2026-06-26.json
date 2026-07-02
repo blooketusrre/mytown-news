@@ -1,0 +1,361 @@
+{
+  "clusterSlug": "north-waterfront",
+  "clusterName": "North Waterfront",
+  "weekOf": "2026-06-26",
+  "topStories": [
+    {
+      "headline": "New Public Plaza at Former Alioto's Site Set to Open This Summer",
+      "dek": "The Port of San Francisco's $10 million Fisherman's Wharf Forward project nears completion, transforming the site of the nearly century-old shuttered restaurant into an open-air gathering space with bay views.",
+      "body": "The new public plaza at Fisherman's Wharf, built on the site where the former Alioto's Restaurant once stood, is on track for a summer 2026 opening as part of the Port of San Francisco's Fisherman's Wharf Forward initiative. The roughly 5,500-square-foot plaza on Taylor Street will feature seating, landscaping, wind screens, and views of the Golden Gate Bridge, San Francisco Bay, and the Inner Lagoon fishing fleet.\n\nThe $10 million multi-phase project also includes a new Inner Lagoon overlook along Al Scoma Way and upgraded lighting to celebrate the historic fishing fleet. Temporary sidewalk and traffic lane closures along Taylor Street between Jefferson Street and The Embarcadero have been in effect since December 2025 during demolition work. Alioto's Restaurant had operated for nearly 100 years before closing during the pandemic in 2020, and the Port determined the deteriorating three-story structure was too costly to rehabilitate for a new tenant.\n\nSome community members have launched an effort to name the plaza after the Alioto family, which first came to San Francisco over 100 years ago. The Port is also gathering feedback from waterfront stakeholders through a series of public meetings throughout 2026 to shape the longer-term goals of the project, which include seismic and sea-level rise resilience improvements extending through 2030.\n\nFisherman's Wharf Community Benefit District Executive Director Bri Maughan has called the initiative \"the kind of investment our neighborhood has long deserved,\" noting that upgrades will \"ensure our position as a world-class destination.\"",
+      "sourceUrl": "https://www.sfexaminer.com/news/community/port-of-sf-addressing-floods-quakes-in-fishermans-wharf/article_8fbfdcdb-0ef6-4e1c-b207-42b584a4d2a1.html",
+      "sourceName": "San Francisco Examiner",
+      "tags": [
+        "development",
+        "Fisherman's Wharf",
+        "waterfront"
+      ]
+    },
+    {
+      "headline": "Pride Weekend Brings Citywide Celebrations — and Transit Impacts — to North Waterfront",
+      "dek": "The 56th annual San Francisco Pride Celebration and Parade takes over Civic Center this weekend, with the Pride Parade route starting at Embarcadero Plaza on Sunday morning and Muni reroutes affecting waterfront service.",
+      "body": "San Francisco Pride 2026, themed \"Resistance in Action,\" kicks off this weekend with the two-day Celebration at Civic Center on Saturday, June 27, and Sunday, June 28. The free festival runs from noon to 6 p.m. both days, featuring world-class entertainment on the Main Stage and multiple community stages. The Pride Parade steps off at 10:30 a.m. Sunday from Market Street at Embarcadero Plaza — directly adjacent to North Waterfront neighborhoods — and proceeds to Civic Center.\n\nSFMTA has announced street closures and Muni service changes beginning Friday, June 26, and lasting through approximately 6 a.m. Monday, June 29. Routes serving the waterfront, including the F Market & Wharves line, will be affected. SFMTA advises riders to consult the Travel & Transit Update page for details on bus substitutions during Pride Weekend. Organizers say the event returns stronger than ever, with over 250 parade contingents.\n\nToday, Friday, June 26, the San Francisco Trans March — one of the largest trans-specific gatherings in the world — begins at Dolores Park at 3 p.m. with a rally, performances, and a resources fair before the march steps off at 6 p.m. toward Civic Center. The Trans March has been the traditional opening event of Pride Weekend since 2004.",
+      "sourceUrl": "https://sfpride.org/",
+      "sourceName": "San Francisco Pride",
+      "tags": [
+        "Pride",
+        "events",
+        "transit"
+      ]
+    },
+    {
+      "headline": "72nd Annual North Beach Festival Drew Crowds Last Weekend",
+      "dek": "One of the country's original outdoor festivals celebrated its 72nd year with 200-plus vendors on 11 blocks, live music, and Italian Street Painting on Father's Day weekend.",
+      "body": "The North Beach Festival, considered one of the nation's original outdoor festivals, celebrated its 72nd year on Saturday and Sunday, June 20–21, drawing visitors to the heart of North Beach for two full days of art, food, and live entertainment. Presented by Zoox, the free festival spanned 11 blocks centered around Columbus Avenue and Green Street, running from 11 a.m. to 7 p.m. each day.\n\nThe expanded festival footprint, which added two blocks of Stockton Street to Filbert last year, featured more than 200 vendors offering local art, crafts, jewelry, apparel, and vintage fashion. Three stages offered live music from Bay Area musicians, Club Fugazi acrobats, and live poetry readings, while traditional highlights including Italian Street Painting and the Blessing of the Animals returned. Outdoor bars benefited local community organizations.\n\nSFMTA had rerouted the 8 Bayshore, 39 Coit, and 45 Union/Stockton bus routes around the event area for the weekend. Proceeds from the festival are granted to local community organizations supporting free meals, after-school activities, job training, and temporary housing.",
+      "sourceUrl": "https://sf.funcheap.com/sfs-north-beach-festival-2026-june-20-21/",
+      "sourceName": "Funcheap SF",
+      "tags": [
+        "North Beach",
+        "festivals",
+        "community"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "San Francisco Pride Celebration",
+      "date": "Saturday–Sunday, June 27–28",
+      "time": "12:00 PM–6:00 PM",
+      "location": "Civic Center Plaza, San Francisco",
+      "description": "The 56th annual SF Pride Celebration features world-class entertainment on multiple stages, community pavilions, and a vendor marketplace. Free and open to all, with a suggested donation of $5–$10.",
+      "sourceUrl": "https://sfpride.org/celebration/",
+      "sourceName": "San Francisco Pride"
+    },
+    {
+      "title": "San Francisco Pride Parade",
+      "date": "Sunday, June 28",
+      "time": "10:30 AM",
+      "location": "Market Street, from Embarcadero Plaza to 8th Street/Civic Center",
+      "description": "Over 250 contingents march down Market Street in one of the world's largest LGBTQ+ parades. The route begins at Embarcadero Plaza and ends near Civic Center. Free to watch.",
+      "sourceUrl": "https://www.sfmta.com/project-updates/san-francisco-pride-parade",
+      "sourceName": "SFMTA"
+    },
+    {
+      "title": "FIFA World Cup Watch Parties at PIER 39",
+      "date": "Through Sunday, July 19",
+      "time": "Various times",
+      "location": "PIER 39, The Embarcadero, San Francisco",
+      "description": "PIER 39 broadcasts select FIFA World Cup matches throughout the tournament, including Team USA games and knockout rounds. Free admission with food, drinks, and attractions on-site.",
+      "sourceUrl": "https://www.sfbayareafwc26.com/bay-area-events/san-francisco-watch-party-at-pier-39",
+      "sourceName": "FIFA World Cup 26 SF Bay Area"
+    },
+    {
+      "title": "Dear San Francisco: The Pride Edition at Club Fugazi",
+      "date": "Through Saturday, June 27",
+      "time": "7:30 PM (varies)",
+      "location": "Club Fugazi, 678 Green Street, North Beach",
+      "description": "The critically acclaimed immersive circus show celebrates Pride Month with pop-in performances by iconic LGBTQ+ artists, a special dessert menu, and dinner packages. Tickets from $59.",
+      "sourceUrl": "https://dearsf.clubfugazisf.com/",
+      "sourceName": "Club Fugazi"
+    },
+    {
+      "title": "Coit Tower Mural Tours",
+      "date": "Ongoing (Wednesdays and Saturdays)",
+      "time": "10:00 AM",
+      "location": "Coit Tower, Telegraph Hill",
+      "description": "SF City Guides offers free docent-led tours of the landmark's Depression-era murals, including second-floor works not usually open to the public. Sign-up required; groups of 4–6.",
+      "sourceUrl": "https://sfcityguides.org/tour/coit-tower-murals/",
+      "sourceName": "SF City Guides"
+    },
+    {
+      "title": "4th of July Fireworks at Fisherman's Wharf",
+      "date": "Saturday, July 4",
+      "time": "9:30 PM (fireworks); 2:00 PM–9:15 PM (live music)",
+      "location": "Fisherman's Wharf / PIER 39 / Aquatic Park",
+      "description": "San Francisco's annual fireworks display launches from two barges near PIER 39 and Aquatic Park. New for 2026: an additional launch from the Golden Gate Bridge for the nation's 250th anniversary. Free live entertainment at Crab Wheel Plaza all afternoon.",
+      "sourceUrl": "https://www.fishermanswharf.org/events/annual-events/4th-of-july/",
+      "sourceName": "Fisherman's Wharf Community Benefit District"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Fisherman's Wharf Visitor Numbers Rebound to Pre-Pandemic Levels",
+      "body": "Fisherman's Wharf recorded one million visitors in a single month earlier this year — a first since the pandemic — representing a 24% increase over the same period in 2024, according to the San Francisco Examiner. The milestone comes even as the Wharf was named the world's most-cited \"tourist trap\" in online reviews for the second consecutive year, per a study by travel eSIM provider Nomad eSIM. Fisherman's Wharf Community Benefit District Executive Director Bri Maughan has emphasized that the neighborhood is evolving, calling it \"a dynamic, evolving neighborhood where history and new experiences complement one another.\"",
+      "sourceUrl": "https://www.cbsnews.com/sanfrancisco/news/san-franciscos-fishermans-wharf-tourist-trap-designation/",
+      "sourceName": "CBS San Francisco",
+      "tags": [
+        "Fisherman's Wharf",
+        "tourism"
+      ]
+    },
+    {
+      "headline": "North Beach Restaurant Thriving Under New Ownership",
+      "body": "The 55-year-old North Beach Restaurant at 1512 Stockton Street is thriving under restaurateur Francesco Covucci, who acquired the Italian eatery last year from longtime family ownership. Covucci, who also oversees Barbara Pinseria and Il Casaro, has maintained the beloved institution's classic menu while welcoming new customers. The SF Examiner reports lingering favorites include a 32-ounce T-bone steak and rigatoni with prosciutto and mushroom.",
+      "sourceUrl": "https://www.sfexaminer.com/news/the-city/reopened-north-beach-restaurant-thriving-under-new-ownership/article_dd5fdd67-94b5-4f01-86f0-1374ef5a9181.html",
+      "sourceName": "San Francisco Examiner",
+      "tags": [
+        "North Beach",
+        "restaurants"
+      ]
+    },
+    {
+      "headline": "Remembering Mark Bittner, the Wild Parrots of Telegraph Hill's Best-Known Friend",
+      "body": "Mark Bittner, the writer and musician made famous by the 2005 documentary \"The Wild Parrots of Telegraph Hill,\" passed away earlier this year at age 74. Bittner spent years cultivating a relationship with the flock of wild parrots around Telegraph Hill, and filmmaker Judy Irving's documentary about him grossed $3 million and became the highest-rated program on public television in 2007. Bittner also wrote a memoir of the same name. The Telegraph Hill parrots — now San Francisco's official city animal — continue to be a beloved neighborhood fixture.",
+      "sourceUrl": "https://sfist.com/2026/03/12/mark-bittner-writer-and-musician-known-for-the-wild-parrots-of-telegraph-hill-dies-at/",
+      "sourceName": "SFist",
+      "tags": [
+        "Telegraph Hill",
+        "community",
+        "wildlife"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Original Joe's",
+        "cuisine": "Italian-American",
+        "address": "601 Union Street, San Francisco, CA 94133",
+        "website": "https://www.originaljoes.com/north-beach",
+        "badge": ""
+      },
+      {
+        "name": "Flour + Water Pizzeria",
+        "cuisine": "Pizza",
+        "address": "532 Columbus Avenue, San Francisco, CA 94133",
+        "website": "https://resy.com/cities/san-francisco-ca/venues/fw-pizzeria-north-beach",
+        "badge": ""
+      },
+      {
+        "name": "North Beach Restaurant",
+        "cuisine": "Italian",
+        "address": "1512 Stockton Street, San Francisco, CA 94133",
+        "website": "https://northbeachrestaurant.com",
+        "badge": ""
+      },
+      {
+        "name": "Scoma's Restaurant",
+        "cuisine": "Seafood",
+        "address": "1965 Al Scoma Way, San Francisco, CA 94133",
+        "website": "https://www.scomas.com",
+        "badge": ""
+      },
+      {
+        "name": "Molinari Delicatessen",
+        "cuisine": "Italian Deli",
+        "address": "373 Columbus Avenue, San Francisco, CA 94133",
+        "website": "https://www.molinariandson.com",
+        "badge": ""
+      },
+      {
+        "name": "Bodega SF",
+        "cuisine": "Wine Bar / Small Plates",
+        "address": "700 Columbus Avenue, San Francisco, CA 94133",
+        "website": "https://www.bodegasf.com",
+        "badge": ""
+      },
+      {
+        "name": "Tony's Pizza Napoletana",
+        "cuisine": "Pizza",
+        "address": "1570 Stockton Street, San Francisco, CA 94133",
+        "website": "https://tonyspizzanapoletana.com",
+        "badge": ""
+      },
+      {
+        "name": "Caffe Sport",
+        "cuisine": "Italian / Seafood",
+        "address": "574 Green Street, San Francisco, CA 94133",
+        "website": "",
+        "badge": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hotel Zephyr",
+        "stars": 4,
+        "address": "250 Beach Street, San Francisco, CA 94133",
+        "website": "https://www.hotelzephyrsf.com",
+        "badge": ""
+      },
+      {
+        "name": "Argonaut Hotel",
+        "stars": 4,
+        "address": "495 Jefferson Street, San Francisco, CA 94109",
+        "website": "https://www.argonauthotel.com",
+        "badge": ""
+      },
+      {
+        "name": "San Remo Hotel",
+        "stars": 2,
+        "address": "2237 Mason Street, San Francisco, CA 94133",
+        "website": "https://www.sanremohotel.com",
+        "badge": ""
+      },
+      {
+        "name": "Fairmont Heritage Place, Ghirardelli Square",
+        "stars": 5,
+        "address": "900 North Point Street, San Francisco, CA 94109",
+        "website": "https://www.fairmont.com/ghirardelli",
+        "badge": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "City Lights Booksellers & Publishers",
+        "type": "Bookstore",
+        "address": "261 Columbus Avenue, San Francisco, CA 94133",
+        "website": "https://citylights.com",
+        "badge": ""
+      },
+      {
+        "name": "Lola of North Beach",
+        "type": "Boutique",
+        "address": "507 Columbus Avenue, San Francisco, CA 94133",
+        "website": "https://www.lolaofnorthbeach.com",
+        "badge": ""
+      },
+      {
+        "name": "Aria Antiques",
+        "type": "Antiques",
+        "address": "1522 Grant Avenue, San Francisco, CA 94133",
+        "website": "",
+        "badge": ""
+      },
+      {
+        "name": "101 Music",
+        "type": "Music / Records",
+        "address": "1414 Grant Avenue, San Francisco, CA 94133",
+        "website": "",
+        "badge": ""
+      },
+      {
+        "name": "Ghirardelli Chocolate Marketplace",
+        "type": "Chocolate / Gifts",
+        "address": "900 North Point Street, San Francisco, CA 94109",
+        "website": "https://www.ghirardelli.com",
+        "badge": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "North Beach Festival 2026 (June 20-21)",
+      "url": "https://sf.funcheap.com/sfs-north-beach-festival-2026-june-20-21/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "North Beach Festival: Saturday & Sunday, June 20-21, 2026",
+      "url": "https://www.sfmta.com/project-updates/north-beach-festival",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "San Francisco's Fisherman's Wharf striving to evolve from 'tourist trap' designation",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-franciscos-fishermans-wharf-tourist-trap-designation/",
+      "publication": "CBS San Francisco"
+    },
+    {
+      "title": "Port of SF addressing floods, quakes in Fisherman's Wharf",
+      "url": "https://www.sfexaminer.com/news/community/port-of-sf-addressing-floods-quakes-in-fishermans-wharf/article_8fbfdcdb-0ef6-4e1c-b207-42b584a4d2a1.html",
+      "publication": "San Francisco Examiner"
+    },
+    {
+      "title": "Fisherman's Wharf Forward",
+      "url": "https://www.sfport.com/fwforward",
+      "publication": "Port of San Francisco"
+    },
+    {
+      "title": "Mayor Lurie Unveils New Concepts For Fisherman's Wharf",
+      "url": "https://www.sfport.com/about/news/mayor-lurie-unveils-new-concepts-fishermans-wharf-following-projected-tourism-growth",
+      "publication": "Port of San Francisco"
+    },
+    {
+      "title": "Wharf Icon Alioto's Comes Down as City Clears Way for New Plaza",
+      "url": "https://hoodline.com/2026/01/wharf-icon-alioto-s-comes-down-as-city-clears-way-for-new-plaza/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "SF Pride 2026: Parade & Celebration - June 27-28, 2026",
+      "url": "https://sfpride.org/",
+      "publication": "San Francisco Pride"
+    },
+    {
+      "title": "Going to San Francisco Pride 2026 This Weekend?",
+      "url": "https://www.kqed.org/news/12086888/sf-pride-2026-parade-route-times-street-closures-parking-safety-lgbtq",
+      "publication": "KQED"
+    },
+    {
+      "title": "SF Pride Parade: Sunday, June 28, 2026",
+      "url": "https://www.sfmta.com/project-updates/san-francisco-pride-parade",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "SF Pride Trans March: Friday, June 26, 2026",
+      "url": "https://www.sfmta.com/travel-updates/sf-pride-trans-march-friday-june-26-2026",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "San Francisco Fan Zone at Pier 39",
+      "url": "https://www.sfbayareafwc26.com/bay-area-events/san-francisco-watch-party-at-pier-39",
+      "publication": "FIFA World Cup 26 SF Bay Area"
+    },
+    {
+      "title": "Dear San Francisco — Immersive Circus Show at Club Fugazi",
+      "url": "https://dearsf.clubfugazisf.com/",
+      "publication": "Club Fugazi"
+    },
+    {
+      "title": "Dear San Francisco at Club Fugazi",
+      "url": "https://www.sfstation.com/dear-san-francisco-e2471187",
+      "publication": "SF Station"
+    },
+    {
+      "title": "July 4th at Fisherman's Wharf",
+      "url": "https://www.fishermanswharf.org/events/annual-events/4th-of-july/",
+      "publication": "Fisherman's Wharf Community Benefit District"
+    },
+    {
+      "title": "San Francisco Fireworks: 4th of July (2026)",
+      "url": "https://sf.funcheap.com/san-francisco-4th-july-fireworks-show/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Coit Tower Murals Tour",
+      "url": "https://sfcityguides.org/tour/coit-tower-murals/",
+      "publication": "SF City Guides"
+    },
+    {
+      "title": "Reopened North Beach Restaurant thriving under new ownership",
+      "url": "https://www.sfexaminer.com/news/the-city/reopened-north-beach-restaurant-thriving-under-new-ownership/article_dd5fdd67-94b5-4f01-86f0-1374ef5a9181.html",
+      "publication": "San Francisco Examiner"
+    },
+    {
+      "title": "Mark Bittner, Writer and Musician Known for 'The Wild Parrots of Telegraph Hill,' Dies at 74",
+      "url": "https://sfist.com/2026/03/12/mark-bittner-writer-and-musician-known-for-the-wild-parrots-of-telegraph-hill-dies-at/",
+      "publication": "SFist"
+    },
+    {
+      "title": "San Francisco's Annual Trans March 2026",
+      "url": "https://sf.funcheap.com/event-series/trans-march-san-francisco/",
+      "publication": "Funcheap SF"
+    }
+  ]
+}
