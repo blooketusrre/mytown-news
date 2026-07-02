@@ -7,7 +7,7 @@ name: Weekly Publish
 on:
   schedule:
     # 07:00 UTC Thursday = 11 PM PT Wednesday = Friday morning PT after midnight
-    - cron: '0 7 * * 5'   # Every Friday 7:00 UTC (Thursday 11 PM PT)
+    - cron: '0 3 * * 5'   # Every Friday 3:00 UTC (Thursday 8 PM PT)
   workflow_dispatch:       # Allow manual trigger from GitHub Actions UI
     inputs:
       cluster:
