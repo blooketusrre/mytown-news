@@ -1,0 +1,400 @@
+{
+  "clusterSlug": "russian-hill-nob-hill",
+  "clusterName": "Russian Hill & Nob Hill",
+  "weekOf": "2026-07-03",
+  "topStories": [
+    {
+      "headline": "Historic July 4th Fireworks to Light Up Golden Gate Bridge — Visible From Russian Hill Heights",
+      "dek": "San Francisco celebrates America's 250th birthday with a rare fireworks display launched directly from the Golden Gate Bridge towers, with prime viewing from neighborhood hilltops.",
+      "body": "San Francisco will mark the nation's semiquincentennial on Saturday, July 4, with a historic fireworks display launched directly from the towers of the Golden Gate Bridge — only the third time in the bridge's nearly 90-year history that fireworks have been deployed from the iconic span. The free public display is expected to begin at approximately 9:30 p.m. and will be complemented by the traditional waterfront show near Pier 39.\n\nResidents of Russian Hill and Nob Hill are among the best-positioned in the city to catch the spectacle from their own neighborhoods, thanks to elevated vantage points with clear sightlines to the bridge. Official recommended viewing locations include Crissy Field, Marina Green, and Pier 39 and the Northern Embarcadero, but hilltop perches across Russian Hill offer unobstructed views as well.\n\nThe Golden Gate Bridge will be fully closed to vehicle traffic from 8:00 p.m. to 11:00 p.m. on July 4, and Caltrans will assist with lane and ramp closures on area freeways beginning at 8 p.m. Significant traffic congestion is expected throughout the region beginning in the late afternoon. Muni will operate on a Saturday schedule with extra service to and from the waterfront area, though delays are expected around Fisherman's Wharf, Aquatic Park, and the Embarcadero.\n\nAs many as 200,000 people are expected in the event area along the waterfront. Public transportation is highly recommended, and the city advises avoiding the Ferry Building and Embarcadero waterfront, as those spots will not have a view of the Golden Gate Bridge display.",
+      "sourceUrl": "https://www.kqed.org/news/12088123/where-to-see-fireworks-4th-july-independence-day-san-francisco-bay-area-golden-gate-bridge-fourth-america-250",
+      "sourceName": "KQED",
+      "tags": [
+        "fourth-of-july",
+        "fireworks",
+        "golden-gate-bridge",
+        "russian-hill",
+        "america-250"
+      ]
+    },
+    {
+      "headline": "Portsmouth Square Closes for $73 Million Renovation — Chinatown's 'Living Room' to Reopen in 2028",
+      "dek": "Construction fencing went up in late June as the first major overhaul of Chinatown's beloved plaza in nearly 50 years gets underway.",
+      "body": "Chinatown's most iconic public gathering space is now officially under construction. City leaders including Mayor Daniel Lurie, City Attorney David Chiu, and District 3 Supervisor Danny Sauter held a groundbreaking ceremony on June 9 for the $73 million Portsmouth Square Improvement Project. Construction fencing went up the following day, and the park is now closed for an estimated two years.\n\nThe renovation — the first comprehensive overhaul in more than half a century — will transform the 1.3-acre plaza with a new flexible outdoor event space with an elevated stage, a new 8,500-square-foot community clubhouse with solar panels and air conditioning, improved lighting, seating, planting, and drainage systems, and new public art including an outdoor sculpture by Cathy Lu and a ceramic tile mural by Jenifer K. Wofford. The project will also remove the widely disliked pedestrian bridge over Kearny Street, adding approximately 20,000 square feet of pedestrian space and restoring historic sight lines.\n\nDuring the closure, nearby parks and restrooms remain available at St. Mary's Square, Willie \"Woo Woo\" Wong Playground at 830 Sacramento Street, and the Betty Ann Ong Chinese Recreation Center. Kearny Street between Clay and Washington streets will be fully closed for two weekends during bridge removal, though local business access will be maintained.\n\nThe project is funded primarily by the 2020 Health and Recovery Bond, Transit Center impact fees, the Downtown Park Fund, and a $6 million state allocation. Swinerton Builders submitted the winning bid at just under $48 million. The renovated park is expected to reopen in fall 2028.",
+      "sourceUrl": "https://www.nbcbayarea.com/news/local/sf-chinatown-portsmouth-square-transformation/4097334/",
+      "sourceName": "NBC Bay Area",
+      "tags": [
+        "chinatown",
+        "portsmouth-square",
+        "renovation",
+        "parks"
+      ]
+    },
+    {
+      "headline": "Nob Hill Landlord's Eviction Push Against Elderly Rent-Controlled Tenants Draws Legal Battle",
+      "dek": "An LA-based landlord is pursuing eviction notices against longtime tenants at a Lower Nob Hill building, with the Asian Law Caucus stepping in to defend them.",
+      "body": "A Lower Nob Hill apartment building at 1120 Jackson Street, located along the Powell-Hyde cable car line, has become the center of a heated tenant rights dispute. Since March, six of the building's 16 units have received eviction notices from Nabob Hill LLC, a Los Angeles-based company that purchased the rent-controlled property in July 2025 for $1.5 million — a remarkably low price for a 16-unit building, likely due to its rent-controlled status.\n\nAmong the affected tenants is 92-year-old Sue Yeng Yan, who has lived in the building for 43 years and pays $281.42 per month. The eviction notices cite nuisance claims related to clutter, but Shelby Nacino, housing rights program director at the Asian Law Caucus, has said the claims appear to be part of an effort to increase the building's profitability rather than a genuine health and safety concern. The Asian Law Caucus is representing several of the tenants.\n\nThe case highlights broader pressures on San Francisco renters. According to rental platform Apartment List, the average asking price for a one-bedroom apartment in San Francisco this month was $3,478 — a year-over-year increase of 17%. Nabob Hill LLC has filed an unlawful detainer claim against one tenant and could begin formal legal proceedings against others at any time. The landlord's attorneys have stated the notices were intended only to bring units into compliance.",
+      "sourceUrl": "https://sfstandard.com/2026/06/22/nob-hill-landlord-evicts-rent-control/",
+      "sourceName": "The San Francisco Standard",
+      "tags": [
+        "nob-hill",
+        "housing",
+        "tenant-rights",
+        "eviction"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Fourth of July Fireworks on the Golden Gate Bridge",
+      "date": "Saturday, July 4",
+      "time": "9:30 PM",
+      "location": "Golden Gate Bridge / Crissy Field / Marina Green / Pier 39",
+      "description": "A rare fireworks display launched from the Golden Gate Bridge towers to celebrate America's 250th anniversary. Free to attend; public transit highly recommended.",
+      "sourceUrl": "https://www.sf.gov/event-20260704-fourth-of-july-fireworks-on-golden-gate-bridge",
+      "sourceName": "SF.gov"
+    },
+    {
+      "title": "Fillmore Jazz Festival 2026",
+      "date": "Saturday–Sunday, July 4–5",
+      "time": "Various times",
+      "location": "Fillmore Street, Jackson to Eddy Streets, San Francisco",
+      "description": "The West Coast's largest free jazz festival returns with multiple stages, artisan booths, food vendors, and live performances across 12 blocks of San Francisco's historic Fillmore District.",
+      "sourceUrl": "https://www.fillmorejazzfest.com/",
+      "sourceName": "Fillmore Jazz Festival"
+    },
+    {
+      "title": "Chinatown Night Market",
+      "date": "Friday, July 10",
+      "time": "5:00 PM–9:00 PM",
+      "location": "Grant Avenue, California to Pacific Streets, Chinatown",
+      "description": "The free monthly street festival returns with five blocks of food vendors, cultural performances, lion dancing, art, beer and wine gardens, and local merchants. Voted the #1 night market in the country for the second year running.",
+      "sourceUrl": "https://sf.funcheap.com/event-series/sfs-chinatown-night-market-returns/",
+      "sourceName": "Funcheap SF"
+    },
+    {
+      "title": "Yoga on the Labyrinth at Grace Cathedral",
+      "date": "Tuesdays, July 14, 21, 28",
+      "time": "6:15 PM–7:30 PM",
+      "location": "Grace Cathedral, 1100 California Street, Nob Hill",
+      "description": "Weekly all-levels yoga class set to live music inside the awe-inspiring Gothic architecture of Grace Cathedral. Tickets $22; bring your own mat.",
+      "sourceUrl": "https://gracecathedral.org/calendar-events/category/yoga/page/2/",
+      "sourceName": "Grace Cathedral"
+    },
+    {
+      "title": "Future of Us Festival 2026",
+      "date": "Saturday–Sunday, July 4–12",
+      "time": "Various times",
+      "location": "Various venues across San Francisco",
+      "description": "A 10-day citywide festival with 50+ free events timed to America's 250th anniversary, featuring a signature showcase at The Pearl in Dogpatch and programming from 20+ collaborating organizations.",
+      "sourceUrl": "https://sf.funcheap.com/city-guide/july-street-fairs-festivals/",
+      "sourceName": "Funcheap SF"
+    },
+    {
+      "title": "Grace Cathedral Sunday Services",
+      "date": "Sundays, July 5, 12, 19",
+      "time": "8:30 AM / 11:00 AM / 6:00 PM",
+      "location": "Grace Cathedral, 1100 California Street, Nob Hill",
+      "description": "Weekly services including 8:30 a.m. Holy Eucharist with Hymns, 11 a.m. Choral Eucharist (also livestreamed), and 6 p.m. Vesper Light Evening Eucharist around the indoor labyrinth.",
+      "sourceUrl": "https://gracecathedral.org/calendar-events/category/eucharist/",
+      "sourceName": "Grace Cathedral"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Adult and Child in Stroller Struck by Elderly Driver at Chinatown-Nob Hill Border",
+      "body": "An adult and a child in a stroller were injured on July 1 after being struck by a vehicle at the intersection of Sacramento and Powell streets, on the border of Chinatown and Nob Hill. San Francisco firefighters responded around 3:45 p.m. The victims were transported to the hospital with minor to moderate injuries. The elderly driver was also injured but declined hospital transport. Police said drugs and alcohol do not appear to have been factors in the crash.",
+      "sourceUrl": "https://sfist.com/2026/07/02/elderly-driver-strikes-injures-adult-and-child-near-sfs-chinatown-nob-hill/",
+      "sourceName": "SFist",
+      "tags": [
+        "pedestrian-safety",
+        "chinatown",
+        "nob-hill"
+      ]
+    },
+    {
+      "headline": "Huntington Hotel Marks First Months Back on Nob Hill After Six-Year Closure",
+      "body": "The Huntington Hotel at 1075 California Street has been welcoming guests since its March 2026 reopening following a six-year shutdown and extensive renovation. The property, acquired in 2023 by Greg Flynn's Flynn Properties and Highgate Hotels, features 143 rooms and suites redesigned by Ken Fulk, the revived Big Four restaurant celebrating its 50th anniversary, a new cocktail salon called Arabella's, and the three-level Nob Hill Spa. The hotel was added to the National Register of Historic Places in September 2025.",
+      "sourceUrl": "https://hoodline.com/2026/04/nob-hill-s-huntington-hotel-stages-grand-comeback-after-luxe-overhaul/",
+      "sourceName": "Hoodline",
+      "tags": [
+        "nob-hill",
+        "hotels",
+        "huntington"
+      ]
+    },
+    {
+      "headline": "Major Repaving Planned for Russian Hill, Nob Hill, and Chinatown Streets Starting in 2027",
+      "body": "San Francisco's Department of Public Works will begin repaving a 29-block stretch of Russian Hill centered on Union Street and a 26-block stretch across Chinatown, Nob Hill, Pacific Heights, and Russian Hill in early 2027, with work expected to wrap by October 2028. The work is part of a broader $90 million citywide repaving effort funded by $33 million in gas-tax revenue. District 3, which includes Chinatown, North Beach, and Fisherman's Wharf, is receiving 37% of all repaving in the current phase.",
+      "sourceUrl": "https://sfstandard.com/2026/04/22/sf-street-repaving-map-2026/",
+      "sourceName": "The San Francisco Standard",
+      "tags": [
+        "infrastructure",
+        "russian-hill",
+        "nob-hill",
+        "chinatown"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Acquerello",
+        "cuisine": "Italian Fine Dining",
+        "address": "1722 Sacramento St",
+        "website": "https://www.acquerello.com",
+        "badge": "Michelin-starred"
+      },
+      {
+        "name": "Swan Oyster Depot",
+        "cuisine": "Seafood",
+        "address": "1517 Polk St",
+        "website": "",
+        "badge": "Legacy Business"
+      },
+      {
+        "name": "Street Restaurant",
+        "cuisine": "New American",
+        "address": "2141 Polk St",
+        "website": "https://streetrestaurant.com",
+        "badge": ""
+      },
+      {
+        "name": "Goldenette",
+        "cuisine": "Retro Diner / Breakfast",
+        "address": "1748 Polk St",
+        "website": "https://www.instagram.com/goldenettesf/",
+        "badge": "New"
+      },
+      {
+        "name": "The Big Four",
+        "cuisine": "American / Classic Fine Dining",
+        "address": "1075 California St (Huntington Hotel)",
+        "website": "https://www.thehuntingtonhotel.com",
+        "badge": "Reopened 2026"
+      },
+      {
+        "name": "House of Nanking",
+        "cuisine": "Chinese",
+        "address": "919 Kearny St",
+        "website": "",
+        "badge": ""
+      },
+      {
+        "name": "Bob's Donuts",
+        "cuisine": "Donuts / Bakery",
+        "address": "1621 Polk St",
+        "website": "https://www.bobsdonutssf.com",
+        "badge": "Open 24/7"
+      },
+      {
+        "name": "Good Mong Kok Bakery",
+        "cuisine": "Chinese Bakery / Dim Sum",
+        "address": "1039 Stockton St",
+        "website": "",
+        "badge": ""
+      },
+      {
+        "name": "The New Spot On Polk",
+        "cuisine": "Breakfast / Brunch",
+        "address": "2099 Polk St",
+        "website": "",
+        "badge": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "The Huntington Hotel",
+        "stars": 5,
+        "address": "1075 California St",
+        "website": "https://www.thehuntingtonhotel.com",
+        "badge": "Reopened 2026"
+      },
+      {
+        "name": "Fairmont San Francisco",
+        "stars": 5,
+        "address": "950 Mason St",
+        "website": "https://www.fairmont.com/san-francisco/",
+        "badge": ""
+      },
+      {
+        "name": "The Ritz-Carlton, San Francisco",
+        "stars": 5,
+        "address": "600 Stockton St",
+        "website": "https://www.ritzcarlton.com/en/hotels/california/san-francisco",
+        "badge": ""
+      },
+      {
+        "name": "Stanford Court San Francisco",
+        "stars": 4,
+        "address": "905 California St",
+        "website": "https://www.stanfordcourt.com",
+        "badge": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Golden Gate Fortune Cookie Factory",
+        "type": "Specialty Food / Tourist Attraction",
+        "address": "56 Ross Alley, Chinatown",
+        "website": "",
+        "badge": ""
+      },
+      {
+        "name": "Molte Cose",
+        "type": "Home Goods & Gifts",
+        "address": "2036 Polk St",
+        "website": "",
+        "badge": ""
+      },
+      {
+        "name": "Good Vibrations",
+        "type": "Wellness / Retail",
+        "address": "1620 Polk St",
+        "website": "https://www.goodvibes.com",
+        "badge": ""
+      },
+      {
+        "name": "Chinatown Kite Shop",
+        "type": "Toys & Souvenirs",
+        "address": "717 Grant Ave",
+        "website": "",
+        "badge": ""
+      },
+      {
+        "name": "Cable Car Museum",
+        "type": "Museum / Gift Shop",
+        "address": "1201 Mason St, Nob Hill",
+        "website": "https://www.cablecarmuseum.org",
+        "badge": "Free Admission"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Fourth of July Fireworks 2026: Shows, Parades and Events Around the Bay Area",
+      "url": "https://www.kqed.org/news/12088123/where-to-see-fireworks-4th-july-independence-day-san-francisco-bay-area-golden-gate-bridge-fourth-america-250",
+      "publication": "KQED"
+    },
+    {
+      "title": "Fourth of July fireworks on Golden Gate Bridge",
+      "url": "https://www.sf.gov/event-20260704-fourth-of-july-fireworks-on-golden-gate-bridge",
+      "publication": "SF.gov"
+    },
+    {
+      "title": "Full closure of Golden Gate Bridge for Fourth of July Fireworks Display",
+      "url": "https://dot.ca.gov/caltrans-near-me/district-4/d4-projects/d4-san-francisco-freeway-and-road-rehabilitation/d4-golden-gate-fireworks-display-july-2026",
+      "publication": "Caltrans"
+    },
+    {
+      "title": "Fourth of July Fireworks on the Golden Gate Bridge",
+      "url": "https://business.sfchamber.com/events/details/fourth-of-july-fireworks-on-the-golden-gate-bridge-13398",
+      "publication": "San Francisco Chamber of Commerce"
+    },
+    {
+      "title": "July 4 Golden Gate Bridge Fireworks",
+      "url": "https://www.marincounty.gov/departments/executive/communications/july-4-golden-gate-bridge-fireworks",
+      "publication": "Marin County"
+    },
+    {
+      "title": "San Francisco Fireworks: 4th of July (2026)",
+      "url": "https://sf.funcheap.com/san-francisco-4th-july-fireworks-show/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Fourth of July 2026: SF fireworks show, festivals, parties",
+      "url": "https://www.sfexaminer.com/news/community/fourth-of-july-2026-sf-fireworks-show-festivals-parties/article_85404b13-3aa6-447c-a889-355177458159.html",
+      "publication": "San Francisco Examiner"
+    },
+    {
+      "title": "Mayor, SF Chinatown community break ground on Portsmouth Square transformation",
+      "url": "https://www.nbcbayarea.com/news/local/sf-chinatown-portsmouth-square-transformation/4097334/",
+      "publication": "NBC Bay Area"
+    },
+    {
+      "title": "San Francisco breaks ground on major Portsmouth Square renovation after nearly 50 years",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-breaks-ground-on-major-portsmouth-square-renovation-after-nearly-50-years/",
+      "publication": "CBS San Francisco"
+    },
+    {
+      "title": "SF mayor, Chinatown leaders break ground on $73M Portsmouth Square transformation",
+      "url": "https://localnewsmatters.org/2026/06/11/portsmouth-square-transformation-groundbreaking/",
+      "publication": "Local News Matters"
+    },
+    {
+      "title": "Portsmouth Square Improvement Project",
+      "url": "https://sfpublicworks.org/portsmouthsquare",
+      "publication": "SF Public Works"
+    },
+    {
+      "title": "With Contractor Lined Up, Portsmouth Square Renovation Moves Toward Summer 2026 Groundbreaking",
+      "url": "https://sfrecpark.org/m/newsflash/home/detail/2684",
+      "publication": "SF Recreation and Parks"
+    },
+    {
+      "title": "'I am so afraid': Nob Hill landlord threatens to evict 92-year-old over clutter",
+      "url": "https://sfstandard.com/2026/06/22/nob-hill-landlord-evicts-rent-control/",
+      "publication": "The San Francisco Standard"
+    },
+    {
+      "title": "Elderly Driver Strikes, Injures Adult and Child Near SF's Chinatown, Nob Hill",
+      "url": "https://sfist.com/2026/07/02/elderly-driver-strikes-injures-adult-and-child-near-sfs-chinatown-nob-hill/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Child in stroller struck by vehicle in SF's Nob Hill neighborhood",
+      "url": "https://www.kron4.com/news/bay-area/child-in-stroller-struck-by-vehicle-in-sfs-nob-hill-neighborhood-officials/",
+      "publication": "KRON4"
+    },
+    {
+      "title": "Nob Hill's Huntington Hotel Stages Grand Comeback After Luxe Overhaul",
+      "url": "https://hoodline.com/2026/04/nob-hill-s-huntington-hotel-stages-grand-comeback-after-luxe-overhaul/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "San Francisco's Huntington Hotel Reopens on Nob Hill with the Return of The Big Four",
+      "url": "https://www.hautelivingsf.com/2026/03/09/san-franciscos-huntington-hotel-reopens-on-nob-hill-with-the-return-of-the-big-four/",
+      "publication": "Haute Living San Francisco"
+    },
+    {
+      "title": "Huntington Hotel officially reopens on Nob Hill",
+      "url": "https://www.sfexaminer.com/huntington-hotel-officially-reopens-on-nob-hill/article_7e0104f4-59da-41ad-850a-1ed37289a9d9.html",
+      "publication": "San Francisco Examiner"
+    },
+    {
+      "title": "Mapped: The top-priority city streets, potholes slated for repair",
+      "url": "https://sfstandard.com/2026/04/22/sf-street-repaving-map-2026/",
+      "publication": "The San Francisco Standard"
+    },
+    {
+      "title": "SF's Chinatown Night Market Returns for 2026",
+      "url": "https://sf.funcheap.com/event-series/sfs-chinatown-night-market-returns/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Fillmore Jazz Festival – July 4-5, 2026",
+      "url": "https://www.fillmorejazzfest.com/",
+      "publication": "Fillmore Jazz Festival"
+    },
+    {
+      "title": "Yoga on the Labyrinth",
+      "url": "https://gracecathedral.org/calendar-events/category/yoga/page/2/",
+      "publication": "Grace Cathedral"
+    },
+    {
+      "title": "Grace Cathedral Eucharist Services",
+      "url": "https://gracecathedral.org/calendar-events/category/eucharist/",
+      "publication": "Grace Cathedral"
+    },
+    {
+      "title": "San Francisco July Festivals & Street Fairs (2026)",
+      "url": "https://sf.funcheap.com/city-guide/july-street-fairs-festivals/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "SWA to begin construction on renovation of Portsmouth Square",
+      "url": "https://www.archpaper.com/2026/02/swa-mei-architects-portsmouth-square/",
+      "publication": "The Architect's Newspaper"
+    }
+  ]
+}
