@@ -25,6 +25,17 @@ module.exports = function (eleventyConfig) {
     return "landmark";
   });
 
+  // Groups an array of objects by a named key → { groupName: [items, …] }
+  eleventyConfig.addFilter("groupBy", (arr, key) => {
+    if (!Array.isArray(arr)) return {};
+    return arr.reduce((acc, item) => {
+      const group = (item && item[key]) ? String(item[key]).trim() : "Other";
+      if (!acc[group]) acc[group] = [];
+      acc[group].push(item);
+      return acc;
+    }, {});
+  });
+
   // ── Global data: load latest issue for each cluster ──────────────────
   // The pipeline writes dated JSON files to src/content/<cluster>/.
   // This picks up the newest file each build so archives accumulate naturally.
@@ -36,9 +47,8 @@ module.exports = function (eleventyConfig) {
   }
 
   eleventyConfig.addGlobalData("northWaterfront", () => latestIssue("north-waterfront"));
-
-  // Add more clusters here as they go live:
-  // eleventyConfig.addGlobalData("marinaAndPacificHeights", () => latestIssue("marina-pacific-heights"));
+  eleventyConfig.addGlobalData("marinaPacificHeights", () => latestIssue("marina-pacific-heights"));
+  eleventyConfig.addGlobalData("russianHillNobHill", () => latestIssue("russian-hill-nob-hill"));
 
   // ── Collection: all cluster issues for archive ───────────────────────
   eleventyConfig.addCollection("allIssues", () => {

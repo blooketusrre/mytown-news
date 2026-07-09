@@ -144,13 +144,63 @@ CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
   ],
   "directory": {
     "restaurants": [
-      { "name": "...", "cuisine": "...", "address": "...", "website": "...", "badge": "" }
+      {
+        "name": "...",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian delicatessen",
+        "description": "One sentence about this place.",
+        "address": "373 Columbus Ave",
+        "phone": "415-421-2337",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      }
     ],
     "hotels": [
-      { "name": "...", "stars": 4, "address": "...", "website": "...", "badge": "" }
+      {
+        "name": "...",
+        "type": "Boutique hotel",
+        "description": "One sentence about this hotel.",
+        "address": "...",
+        "phone": "...",
+        "neighborhood": "...",
+        "notable": ""
+      }
     ],
     "shops": [
-      { "name": "...", "type": "...", "address": "...", "website": "...", "badge": "" }
+      {
+        "name": "...",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "One sentence about this shop.",
+        "address": "...",
+        "phone": "...",
+        "neighborhood": "...",
+        "notable": "Landmark"
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "...",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery",
+        "description": "One sentence about this venue.",
+        "address": "...",
+        "phone": "...",
+        "neighborhood": "...",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "...",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "One sentence about this venue.",
+        "address": "...",
+        "phone": "...",
+        "neighborhood": "...",
+        "notable": ""
+      }
     ]
   },
   "sources": [
@@ -158,11 +208,22 @@ CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
   ]
 }
 
+DIRECTORY GROUPING GUIDANCE:
+- cuisineGroup options: "Coffee & Cafés", "Italian & Deli", "Seafood & American", "Asian", "Mexican & Latin American", "Mediterranean & Middle Eastern", "Brunch & Breakfast", "Pizza & Sandwiches", "Bars & Wine Bars", "Bakeries & Desserts", "Vegetarian & Vegan", "Other"
+- shopGroup options: "Books & Literature", "Fashion & Clothing", "Home & Gifts", "Specialty Food & Wine", "Beauty & Wellness", "Art Supplies & Hobby", "Hardware & Services", "Other"
+- venueGroup (art): "Art Galleries", "Theater & Comedy", "Music Venues", "Cinema", "Museums & Cultural"
+- venueGroup (gyms): "Yoga & Pilates", "Gyms & CrossFit", "Sports & Courts", "Cycling & Rowing", "Martial Arts", "Pools & Aquatics", "Parks & Outdoor Recreation"
+- notable field: "Landmark" for long-established institutions, "New" for opened in the last year, or "" for standard listings
+
 QUANTITY TARGETS:
 - topStories: 3 (minimum 1 if it's a slow news week — never fabricate to fill)
 - events: 4–8 (upcoming or ongoing within ~3 weeks)
 - moreNews: 2–4 briefs
-- directory: 6–12 restaurants, 2–5 hotels, 4–8 shops (real establishments only)
+- restaurants: 15–30 (comprehensive coverage — every notable café, restaurant, bar, and bakery in the cluster)
+- hotels: 5–15 (all hotels and inns in the cluster)
+- shops: 10–20 (notable independent shops, bookstores, specialty stores, services)
+- artEntertainment: 8–15 (galleries, theaters, music venues, cinemas, museums)
+- gymsRecreation: 8–15 (gyms, yoga studios, sports courts, pools, notable parks)
 - sources: deduplicated list of every source referenced above
 
 CRITICAL: Your response must be ONLY the raw JSON object — nothing else. Do not write any introduction, explanation, or commentary. Do not say "I'll research" or "Here is the issue." Begin your response with { and end with }. No markdown fences.`;

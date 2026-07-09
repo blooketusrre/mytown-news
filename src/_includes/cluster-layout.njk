@@ -190,60 +190,235 @@ layout: base.njk
           <span class="section-head__line" aria-hidden="true"></span>
         </div>
 
-        <div class="dir-cols">
-
-          <div>
-            <h3 class="dir-col__heading">🍽 Restaurants &amp; Cafés</h3>
-            {% for e in issue.directory.restaurants %}
-            <div class="dir-entry">
-              {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
-              {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
-              <p class="dir-entry__name">{{ e.name }}</p>
-              <p class="dir-entry__type">{{ e.type }}</p>
-              <p class="dir-entry__detail">
-                {{ e.description }}
-                {% if e.address %}<br>{{ e.address }}{% endif %}
-                {% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}
-              </p>
-            </div>
-            {% endfor %}
+        {# ── Restaurants & Cafés ──────────────────────────────────── #}
+        {% if issue.directory and issue.directory.restaurants %}
+          {% set restList = issue.directory.restaurants %}
+        {% else %}
+          {% set restList = [] %}
+        {% endif %}
+        <div class="dir-section{{ ' dir-section--collapsible' if restList.length > 15 }}" id="dir-restaurants">
+          <button class="dir-section__toggle"
+                  aria-expanded="{{ 'false' if restList.length > 15 else 'true' }}"
+                  aria-controls="dir-restaurants-body"
+                  type="button">
+            <span class="dir-section__emoji">🍽</span>
+            <span class="dir-section__title">Restaurants &amp; Cafés</span>
+            {% if restList.length %}<span class="dir-section__count">{{ restList.length }}</span>{% endif %}
+            <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="dir-section__body{{ ' is-collapsed' if restList.length > 15 }}" id="dir-restaurants-body">
+            {% if restList.length %}
+              {% set restGroups = restList | groupBy("cuisineGroup") %}
+              {% for groupName, entries in restGroups %}
+              <div class="dir-group">
+                {% if groupName %}<h4 class="dir-group__heading">{{ groupName }}</h4>{% endif %}
+                <div class="dir-group__entries">
+                  {% for e in entries %}
+                  <div class="dir-entry">
+                    <div class="dir-entry__badges">
+                      {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
+                      {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
+                    </div>
+                    <p class="dir-entry__name">{{ e.name }}</p>
+                    <p class="dir-entry__type">{{ e.type or e.cuisine }}</p>
+                    {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
+                    <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+            {% else %}
+              <p class="dir-empty">No listings yet — check back after the first issue.</p>
+            {% endif %}
           </div>
-
-          <div>
-            <h3 class="dir-col__heading">🏨 Hotels &amp; Lodging</h3>
-            {% for e in issue.directory.hotels %}
-            <div class="dir-entry">
-              {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
-              {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
-              <p class="dir-entry__name">{{ e.name }}</p>
-              <p class="dir-entry__type">{{ e.type }}</p>
-              <p class="dir-entry__detail">
-                {{ e.description }}
-                {% if e.address %}<br>{{ e.address }}{% endif %}
-                {% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}
-              </p>
-            </div>
-            {% endfor %}
-          </div>
-
-          <div>
-            <h3 class="dir-col__heading">🛍 Shops, Books &amp; Services</h3>
-            {% for e in issue.directory.shops %}
-            <div class="dir-entry">
-              {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
-              {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
-              <p class="dir-entry__name">{{ e.name }}</p>
-              <p class="dir-entry__type">{{ e.type }}</p>
-              <p class="dir-entry__detail">
-                {{ e.description }}
-                {% if e.address %}<br>{{ e.address }}{% endif %}
-                {% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}
-              </p>
-            </div>
-            {% endfor %}
-          </div>
-
         </div>
+
+        {# ── Hotels & Lodging ─────────────────────────────────────── #}
+        {% if issue.directory and issue.directory.hotels %}
+          {% set hotelList = issue.directory.hotels %}
+        {% else %}
+          {% set hotelList = [] %}
+        {% endif %}
+        <div class="dir-section{{ ' dir-section--collapsible' if hotelList.length > 15 }}" id="dir-hotels">
+          <button class="dir-section__toggle"
+                  aria-expanded="{{ 'false' if hotelList.length > 15 else 'true' }}"
+                  aria-controls="dir-hotels-body"
+                  type="button">
+            <span class="dir-section__emoji">🏨</span>
+            <span class="dir-section__title">Hotels &amp; Lodging</span>
+            {% if hotelList.length %}<span class="dir-section__count">{{ hotelList.length }}</span>{% endif %}
+            <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="dir-section__body{{ ' is-collapsed' if hotelList.length > 15 }}" id="dir-hotels-body">
+            {% if hotelList.length %}
+              <div class="dir-group">
+                <div class="dir-group__entries">
+                  {% for e in hotelList %}
+                  <div class="dir-entry">
+                    <div class="dir-entry__badges">
+                      {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
+                      {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
+                    </div>
+                    <p class="dir-entry__name">{{ e.name }}</p>
+                    <p class="dir-entry__type">{{ e.type }}</p>
+                    {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
+                    <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% else %}
+              <p class="dir-empty">No listings yet.</p>
+            {% endif %}
+          </div>
+        </div>
+
+        {# ── Shops, Books & Services ──────────────────────────────── #}
+        {% if issue.directory and issue.directory.shops %}
+          {% set shopList = issue.directory.shops %}
+        {% else %}
+          {% set shopList = [] %}
+        {% endif %}
+        <div class="dir-section{{ ' dir-section--collapsible' if shopList.length > 15 }}" id="dir-shops">
+          <button class="dir-section__toggle"
+                  aria-expanded="{{ 'false' if shopList.length > 15 else 'true' }}"
+                  aria-controls="dir-shops-body"
+                  type="button">
+            <span class="dir-section__emoji">🛍</span>
+            <span class="dir-section__title">Shops, Books &amp; Services</span>
+            {% if shopList.length %}<span class="dir-section__count">{{ shopList.length }}</span>{% endif %}
+            <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="dir-section__body{{ ' is-collapsed' if shopList.length > 15 }}" id="dir-shops-body">
+            {% if shopList.length %}
+              {% set shopGroups = shopList | groupBy("shopGroup") %}
+              {% for groupName, entries in shopGroups %}
+              <div class="dir-group">
+                {% if groupName %}<h4 class="dir-group__heading">{{ groupName }}</h4>{% endif %}
+                <div class="dir-group__entries">
+                  {% for e in entries %}
+                  <div class="dir-entry">
+                    <div class="dir-entry__badges">
+                      {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
+                      {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
+                    </div>
+                    <p class="dir-entry__name">{{ e.name }}</p>
+                    <p class="dir-entry__type">{{ e.type }}</p>
+                    {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
+                    <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+            {% else %}
+              <p class="dir-empty">No listings yet.</p>
+            {% endif %}
+          </div>
+        </div>
+
+        {# ── Art & Entertainment ───────────────────────────────────── #}
+        {% if issue.directory and issue.directory.artEntertainment %}
+          {% set artList = issue.directory.artEntertainment %}
+        {% else %}
+          {% set artList = [] %}
+        {% endif %}
+        <div class="dir-section{{ ' dir-section--collapsible' if artList.length > 15 }}" id="dir-art">
+          <button class="dir-section__toggle"
+                  aria-expanded="{{ 'false' if artList.length > 15 else 'true' }}"
+                  aria-controls="dir-art-body"
+                  type="button">
+            <span class="dir-section__emoji">🎭</span>
+            <span class="dir-section__title">Art &amp; Entertainment</span>
+            {% if artList.length %}<span class="dir-section__count">{{ artList.length }}</span>{% endif %}
+            <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="dir-section__body{{ ' is-collapsed' if artList.length > 15 }}" id="dir-art-body">
+            {% if artList.length %}
+              {% set artGroups = artList | groupBy("venueGroup") %}
+              {% for groupName, entries in artGroups %}
+              <div class="dir-group">
+                {% if groupName %}<h4 class="dir-group__heading">{{ groupName }}</h4>{% endif %}
+                <div class="dir-group__entries">
+                  {% for e in entries %}
+                  <div class="dir-entry">
+                    <div class="dir-entry__badges">
+                      {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
+                      {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
+                    </div>
+                    <p class="dir-entry__name">{{ e.name }}</p>
+                    <p class="dir-entry__type">{{ e.type }}</p>
+                    {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
+                    <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+            {% else %}
+              <p class="dir-empty">No listings yet.</p>
+            {% endif %}
+          </div>
+        </div>
+
+        {# ── Gyms & Recreation ────────────────────────────────────── #}
+        {% if issue.directory and issue.directory.gymsRecreation %}
+          {% set gymList = issue.directory.gymsRecreation %}
+        {% else %}
+          {% set gymList = [] %}
+        {% endif %}
+        <div class="dir-section{{ ' dir-section--collapsible' if gymList.length > 15 }}" id="dir-gyms">
+          <button class="dir-section__toggle"
+                  aria-expanded="{{ 'false' if gymList.length > 15 else 'true' }}"
+                  aria-controls="dir-gyms-body"
+                  type="button">
+            <span class="dir-section__emoji">🏃</span>
+            <span class="dir-section__title">Gyms &amp; Recreation</span>
+            {% if gymList.length %}<span class="dir-section__count">{{ gymList.length }}</span>{% endif %}
+            <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="dir-section__body{{ ' is-collapsed' if gymList.length > 15 }}" id="dir-gyms-body">
+            {% if gymList.length %}
+              {% set gymGroups = gymList | groupBy("venueGroup") %}
+              {% for groupName, entries in gymGroups %}
+              <div class="dir-group">
+                {% if groupName %}<h4 class="dir-group__heading">{{ groupName }}</h4>{% endif %}
+                <div class="dir-group__entries">
+                  {% for e in entries %}
+                  <div class="dir-entry">
+                    <div class="dir-entry__badges">
+                      {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
+                      {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
+                    </div>
+                    <p class="dir-entry__name">{{ e.name }}</p>
+                    <p class="dir-entry__type">{{ e.type }}</p>
+                    {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
+                    <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+            {% else %}
+              <p class="dir-empty">No listings yet.</p>
+            {% endif %}
+          </div>
+        </div>
+
+        <script>
+        (function() {
+          document.querySelectorAll('.dir-section__toggle').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+              var isExpanded = btn.getAttribute('aria-expanded') === 'true';
+              btn.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+              var body = document.getElementById(btn.getAttribute('aria-controls'));
+              if (body) body.classList.toggle('is-collapsed', isExpanded);
+            });
+          });
+        })();
+        </script>
+
       </div>
     </section>
 
