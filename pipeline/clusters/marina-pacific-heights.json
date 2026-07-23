@@ -1,6 +1,7 @@
 {
   "slug": "marina-pacific-heights",
   "name": "Marina & Pacific Heights",
+  "city": "San Francisco",
   "live": true,
   "neighborhoods": [
     "Marina District",

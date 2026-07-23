@@ -1,6 +1,7 @@
 {
   "slug": "north-waterfront",
   "name": "North Waterfront",
+  "city": "San Francisco",
   "live": true,
   "neighborhoods": [
     "North Beach",

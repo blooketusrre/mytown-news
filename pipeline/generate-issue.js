@@ -24,11 +24,13 @@ const clusterArg = (() => {
 })();
 
 // ─── Config ────────────────────────────────────────────────────────────────
-const ROOT          = path.resolve(__dirname, "..");
-const CLUSTERS_DIR  = path.join(__dirname, "clusters");
-const CONTENT_DIR   = path.join(ROOT, "src", "content");
-const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY;
-const MODEL         = "claude-opus-4-6";
+const ROOT            = path.resolve(__dirname, "..");
+const CLUSTERS_DIR    = path.join(__dirname, "clusters");
+const CONTENT_DIR     = path.join(ROOT, "src", "content");
+const ANTHROPIC_KEY   = process.env.ANTHROPIC_API_KEY;
+const BUTTONDOWN_KEY  = process.env.BUTTONDOWN_API_KEY;
+const SITE_URL        = "https://mytown.news";
+const MODEL           = "claude-opus-4-6";
 
 if (!ANTHROPIC_KEY) { console.error("Missing ANTHROPIC_API_KEY"); process.exit(1); }
 
@@ -334,6 +336,150 @@ async function generateCluster(clusterConfig) {
   console.log(`     ${issue.topStories.length} top stories, ${(issue.events||[]).length} events, ${(issue.moreNews||[]).length} briefs`);
 }
 
+// ─── Email HTML builder ──────────────────────────────────────────────────────
+
+function buildEmailHtml(issue, cluster) {
+  const issueUrl = `${SITE_URL}/${cluster.slug}/`;
+  const accent   = cluster.accentColor || "#c8943a";
+
+  const storiesHtml = (issue.topStories || []).map(s => `
+    <tr><td style="padding:0 0 28px 0;border-bottom:1px solid #e8e3da;">
+      <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:${accent};">${s.tag || ""}</p>
+      <h2 style="margin:0 0 8px 0;font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:900;line-height:1.2;color:#1a2744;">${s.headline}</h2>
+      <p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">${s.byline || ""} · ${s.date || ""}</p>
+      <p style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:15px;line-height:1.68;color:#1c1c1e;">${(s.body || "").split("\n\n")[0]}</p>
+      <a href="${s.sourceUrl || "#"}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">Source: ${s.sourceName || ""} →</a>
+    </td></tr>
+    <tr><td style="height:24px;"></td></tr>
+  `).join("");
+
+  const eventsHtml = (issue.events || []).slice(0, 5).map(ev => `
+    <tr><td style="padding:12px 0;border-bottom:1px solid #d8d2c8;">
+      <p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${accent};">${ev.date || ""}</p>
+      <p style="margin:0 0 3px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${ev.title || ""}</p>
+      <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6b6560;">📍 ${ev.location || ""}${ev.time ? " · " + ev.time : ""}</p>
+    </td></tr>
+  `).join("");
+
+  const moreHtml = (issue.moreNews || []).map(s => `
+    <tr><td style="padding:10px 0;border-bottom:1px solid #e8e3da;">
+      <p style="margin:0 0 4px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${s.headline}</p>
+      <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;line-height:1.55;color:#6b6560;">${(s.body || "").split("\n\n")[0].slice(0, 160)}…</p>
+    </td></tr>
+  `).join("");
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${issue.clusterName} — My Town News</title>
+</head>
+<body style="margin:0;padding:0;background:#faf8f3;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#faf8f3;">
+<tr><td align="center" style="padding:24px 16px;">
+<table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+
+  <!-- Masthead -->
+  <tr><td style="background:#1a2744;padding:32px 40px 24px;text-align:center;">
+    <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:${accent};">${cluster.city || "San Francisco"} · Free &amp; Independent · Every Friday</p>
+    <h1 style="margin:0 0 6px 0;font-family:Georgia,'Times New Roman',serif;font-size:36px;font-weight:900;color:#ffffff;letter-spacing:-1px;">My Town <span style="color:${accent};">News</span></h1>
+    <p style="margin:6px 0 0 0;font-family:Arial,sans-serif;font-size:14px;color:rgba(255,255,255,0.65);">${issue.clusterName}</p>
+    <p style="margin:4px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.3);">Week of ${issue.weekOf || ""}</p>
+  </td></tr>
+  <tr><td style="height:3px;background:${accent};"></td></tr>
+
+  <!-- Top Stories -->
+  <tr><td style="background:#ffffff;padding:32px 40px 8px;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr><td style="padding:0 0 20px 0;border-bottom:2px solid #1a2744;">
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a2744;">This Week's Top Stories</p>
+      </td></tr>
+      <tr><td style="height:24px;"></td></tr>
+      ${storiesHtml}
+    </table>
+  </td></tr>
+
+  ${eventsHtml ? `
+  <!-- Events -->
+  <tr><td style="background:#f0ede6;padding:28px 40px;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr><td style="padding:0 0 4px 0;border-bottom:2px solid #1a2744;">
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a2744;">Upcoming Events</p>
+      </td></tr>
+      ${eventsHtml}
+    </table>
+  </td></tr>` : ""}
+
+  ${moreHtml ? `
+  <!-- More News -->
+  <tr><td style="background:#ffffff;padding:24px 40px 8px;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr><td style="padding:0 0 4px 0;border-bottom:2px solid #1a2744;">
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a2744;">More from the Neighborhood</p>
+      </td></tr>
+      ${moreHtml}
+    </table>
+  </td></tr>` : ""}
+
+  <!-- CTA -->
+  <tr><td style="background:#1a2744;padding:28px 40px;text-align:center;">
+    <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:13px;color:rgba(255,255,255,0.55);">Read the full issue — including the complete neighborhood directory — online:</p>
+    <a href="${issueUrl}" style="display:inline-block;background:${accent};color:#ffffff;font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:13px 28px;border-radius:2px;">Read Full Issue →</a>
+  </td></tr>
+
+  <!-- Footer -->
+  <tr><td style="padding:20px 40px;text-align:center;">
+    <p style="margin:0 0 4px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">My Town News · mytown.news · ${cluster.city || "San Francisco"}</p>
+    <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;color:#a09890;">Free &amp; Independent. No ads. No spam.</p>
+  </td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>`;
+}
+
+// ─── Buttondown sender ───────────────────────────────────────────────────────
+
+async function sendClusterEmail(cluster, issue) {
+  const subject = `My Town News — ${cluster.name} ${cluster.city || ""}`.trim();
+  const body    = buildEmailHtml(issue, cluster);
+
+  const payload = JSON.stringify({
+    subject,
+    body,
+    status: "about_to_send",
+    included_tags: [cluster.slug],   // send only to subscribers tagged with this cluster
+  });
+
+  return new Promise((resolve, reject) => {
+    const req = https.request(
+      {
+        hostname: "api.buttondown.email",
+        path: "/v1/emails",
+        method: "POST",
+        headers: {
+          "Authorization": `Token ${BUTTONDOWN_KEY}`,
+          "Content-Type": "application/json",
+          "Content-Length": Buffer.byteLength(payload),
+        },
+      },
+      (res) => {
+        let data = "";
+        res.on("data", (chunk) => (data += chunk));
+        res.on("end", () => {
+          try { resolve(JSON.parse(data)); } catch (e) { resolve({ raw: data }); }
+        });
+      }
+    );
+    req.on("error", reject);
+    req.write(payload);
+    req.end();
+  });
+}
+
 // ─── Entry point ─────────────────────────────────────────────────────────────
 
 async function main() {
@@ -368,9 +514,12 @@ async function main() {
   console.log(`Clusters to generate: ${targets.map((c) => c.slug).join(", ")}`);
 
   let failed = 0;
+  const generated = [];
+
   for (const cluster of targets) {
     try {
       await generateCluster(cluster);
+      generated.push(cluster);
     } catch (err) {
       console.error(`\n✗ Failed for ${cluster.slug}: ${err.message}`);
       failed++;
@@ -383,6 +532,28 @@ async function main() {
   }
 
   console.log("\n✅ All clusters generated successfully.");
+
+  // ── Send newsletters via Buttondown ──────────────────────────────────────
+  if (BUTTONDOWN_KEY) {
+    console.log("\n📧 Sending newsletters via Buttondown…");
+    for (const cluster of generated) {
+      try {
+        const weekDate  = thisWeekDate();
+        const issueFile = path.join(CONTENT_DIR, cluster.slug, `${weekDate}.json`);
+        const issue     = JSON.parse(fs.readFileSync(issueFile, "utf8"));
+        const result    = await sendClusterEmail(cluster, issue);
+        if (result.id) {
+          console.log(`  ✅ Queued: "${cluster.name}" (id: ${result.id})`);
+        } else {
+          console.log(`  ⚠ Unexpected response for ${cluster.slug}:`, JSON.stringify(result).slice(0, 200));
+        }
+      } catch (err) {
+        console.error(`  ✗ Email failed for ${cluster.slug}: ${err.message}`);
+      }
+    }
+  } else {
+    console.log("\n⚠ BUTTONDOWN_API_KEY not set — skipping email send.");
+  }
 }
 
 main().catch((err) => {

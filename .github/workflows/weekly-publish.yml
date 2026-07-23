@@ -1,13 +1,12 @@
 # My Town News — Weekly Content Pipeline
-# Runs every Thursday at 11 PM PT (Friday 7 AM UTC)
+# Runs every Thursday at 8 PM PT (Friday 3 AM UTC)
 # Generates a fresh issue for every live cluster, commits, and Netlify auto-deploys.
 
 name: Weekly Publish
 
 on:
   schedule:
-    # 07:00 UTC Thursday = 11 PM PT Wednesday = Friday morning PT after midnight
-    - cron: '0 3 * * 5'   # Every Friday 3:00 UTC (Thursday 8 PM PT)
+    - cron: '0 3 * * 5'   # Every Friday 3:00 AM UTC = Thursday 8 PM PDT / 7 PM PST
   workflow_dispatch:       # Allow manual trigger from GitHub Actions UI
     inputs:
       cluster:
@@ -31,15 +30,15 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: '24'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Generate this week's issues
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
           TARGET_CLUSTER: ${{ github.event.inputs.cluster }}
         run: |
           node pipeline/generate-issue.js \
