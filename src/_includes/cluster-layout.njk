@@ -462,8 +462,12 @@ layout: base.njk
       <p class="newsletter__eyebrow">Stay connected</p>
       <h2 class="newsletter__headline">Get the {{ issue.clusterName }}<br>delivered every Friday</h2>
       <p class="newsletter__sub">The week's neighborhood news, events, and directory — straight to your inbox. Free.</p>
-      <form class="newsletter__form" aria-label="Newsletter signup">
-        <input class="newsletter__input" type="email" placeholder="your@email.com" required aria-label="Email address">
+      <form class="newsletter__form" aria-label="Newsletter signup"
+            action="https://buttondown.com/api/emails/embed-subscribe/backus"
+            method="post" target="popupwindow"
+            onsubmit="window.open('https://buttondown.com/backus','popupwindow')">
+        <input type="hidden" name="tag" value="{{ clusterSlug }}">
+        <input class="newsletter__input" type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
         <button class="newsletter__btn" type="submit">Subscribe</button>
       </form>
       <p class="newsletter__note">No ads. No spam. Unsubscribe anytime.</p>
