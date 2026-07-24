@@ -527,11 +527,11 @@ async function main() {
   }
 
   if (failed > 0) {
-    console.error(`\n${failed} cluster(s) failed.`);
-    process.exit(1);
+    console.warn(`\n⚠ ${failed} cluster(s) had errors — see above. Continuing to commit what was generated.`);
   }
 
-  console.log("\n✅ All clusters generated successfully.");
+  const successCount = generated.length;
+  console.log(`\n✅ ${successCount} cluster(s) generated successfully.`);
 
   // ── Send newsletters via Buttondown ──────────────────────────────────────
   if (BUTTONDOWN_KEY) {

@@ -45,10 +45,11 @@ jobs:
             ${TARGET_CLUSTER:+--cluster $TARGET_CLUSTER}
 
       - name: Build site
+        if: always()
         run: npm run build:prod
 
       - name: Commit new issue files
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: always() && github.event.inputs.dry_run != 'true'
         run: |
           git config user.name  "mytown-news-bot"
           git config user.email "bot@mytown.news"

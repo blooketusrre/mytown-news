@@ -17,19 +17,19 @@ layout: base.njk
 <header class="masthead" role="banner">
   <div class="masthead__inner container">
     <p class="masthead__eyebrow">{{ site.tagline }}</p>
-    <h1 class="masthead__title">My Town <em>News</em><br>{{ issue.clusterName }}</h1>
+    <h1 class="masthead__title">My Town <em>News</em><br>{{ issue.clusterName if issue else clusterName }}</h1>
     <div class="masthead__ornament" aria-hidden="true">
       <span class="masthead__ornament-rule"></span>
       <span class="masthead__ornament-diamond"></span>
       <span class="masthead__ornament-rule"></span>
     </div>
     <p class="masthead__subtitle">
-      {% for n in issue.neighborhoods %}{{ n }}{% if not loop.last %} &nbsp;·&nbsp; {% endif %}{% endfor %}
+      {% if issue %}{% for n in issue.neighborhoods %}{{ n }}{% if not loop.last %} &nbsp;·&nbsp; {% endif %}{% endfor %}{% endif %}
     </p>
   </div>
   <div class="masthead__bar">
     <div class="masthead__bar-inner container">
-      <span>Week of {{ issue.weekLabel }} &nbsp;·&nbsp; Vol. {{ issue.volume }}, Issue {{ issue.issueNumber }}</span>
+      <span>{% if issue %}Week of {{ issue.weekLabel }} &nbsp;·&nbsp; Vol. {{ issue.volume }}, Issue {{ issue.issueNumber }}{% else %}Coming Friday{% endif %}</span>
       <a href="{{ site.url }}" class="masthead__bar-url">{{ site.url | replace("https://","") }}</a>
       <span>{{ site.city }} &nbsp;·&nbsp; Free &amp; Independent</span>
     </div>
