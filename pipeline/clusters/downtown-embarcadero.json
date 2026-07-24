@@ -1,0 +1,11 @@
+{
+  "slug": "downtown-embarcadero",
+  "name": "Downtown & Embarcadero",
+  "city": "San Francisco",
+  "live": true,
+  "neighborhoods": ["Financial District", "Jackson Square", "Union Square", "Embarcadero", "Rincon Hill"],
+  "accentColor": "#1e4a8a",
+  "description": "The Ferry Building, the Salesforce tower, and the city's commercial and civic heartbeat.",
+  "primarySearchTerms": ["Financial District San Francisco", "Embarcadero San Francisco", "Union Square San Francisco", "Ferry Building San Francisco"],
+  "sourceHints": ["https://www.sfstandard.com","https://sfist.com","https://hoodline.com/neighborhoods/financial-district","https://www.ferrybuildingmarketplace.com","https://www.sfrecpark.org","https://sfpl.org"]
+}

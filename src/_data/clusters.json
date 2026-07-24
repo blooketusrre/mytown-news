@@ -24,7 +24,7 @@
     "name": "Presidio & Richmond",
     "neighborhoods": ["Presidio", "Sea Cliff", "Inner Richmond", "Outer Richmond", "Lone Mountain"],
     "accent": "#2d6a4f",
-    "live": false,
+    "live": true,
     "zipCodes": ["94129", "94121", "94118"],
     "description": "Ancient forests, Clement Street dim sum, and the quieter side of the peninsula.",
     "mapLabel": { "x": 105, "y": 175 }
@@ -44,7 +44,7 @@
     "name": "Downtown & Embarcadero",
     "neighborhoods": ["Financial District", "Jackson Square", "Union Square", "Embarcadero", "Rincon Hill"],
     "accent": "#1e4a8a",
-    "live": false,
+    "live": true,
     "zipCodes": ["94105", "94111", "94104"],
     "description": "The Ferry Building, the Salesforce tower, and the city's commercial and civic heartbeat.",
     "mapLabel": { "x": 380, "y": 195 }
@@ -54,7 +54,7 @@
     "name": "Civic Center & Hayes Valley",
     "neighborhoods": ["Civic Center", "Tenderloin", "Mid-Market", "Hayes Valley", "Alamo Square", "NoPa"],
     "accent": "#6b3fa0",
-    "live": false,
+    "live": true,
     "zipCodes": ["94102", "94103"],
     "description": "City Hall, the symphony, painted ladies, and a bustling arts-and-restaurant corridor.",
     "mapLabel": { "x": 255, "y": 255 }
@@ -64,7 +64,7 @@
     "name": "SoMa & Mission Bay",
     "neighborhoods": ["South of Market", "Mission Bay", "Dogpatch", "Potrero Hill"],
     "accent": "#c05928",
-    "live": false,
+    "live": true,
     "zipCodes": ["94103", "94107", "94158"],
     "description": "Tech campuses, Oracle Park, converted warehouses, and the city's fastest-changing waterfront.",
     "mapLabel": { "x": 370, "y": 295 }
@@ -74,7 +74,7 @@
     "name": "Haight & Cole Valley",
     "neighborhoods": ["Haight-Ashbury", "Lower Haight", "Cole Valley", "Panhandle"],
     "accent": "#b8860b",
-    "live": false,
+    "live": true,
     "zipCodes": ["94117"],
     "description": "The original Summer of Love neighborhood: record shops, vintage stores, and Golden Gate Park at the doorstep.",
     "mapLabel": { "x": 165, "y": 270 }
@@ -84,7 +84,7 @@
     "name": "Castro & Noe Valley",
     "neighborhoods": ["Castro", "Duboce Triangle", "Eureka Valley", "Noe Valley", "Glen Park", "Diamond Heights"],
     "accent": "#b5334a",
-    "live": false,
+    "live": true,
     "zipCodes": ["94114", "94131"],
     "description": "One of the world's most celebrated LGBTQ+ communities, plus sunny Noe Valley's stroller-friendly 24th Street.",
     "mapLabel": { "x": 265, "y": 340 }
@@ -94,7 +94,7 @@
     "name": "Mission & Bernal Heights",
     "neighborhoods": ["Mission District", "Bernal Heights", "Outer Mission"],
     "accent": "#c4442a",
-    "live": false,
+    "live": true,
     "zipCodes": ["94110", "94112"],
     "description": "Murals, taquerias, tech workers, and longtime Latino families — the Mission's contradictions are its vitality.",
     "mapLabel": { "x": 310, "y": 400 }
@@ -104,7 +104,7 @@
     "name": "The Sunset",
     "neighborhoods": ["Inner Sunset", "Outer Sunset", "West Portal", "Forest Hill", "St. Francis Wood", "Miraloma Park"],
     "accent": "#3d6b8f",
-    "live": false,
+    "live": true,
     "zipCodes": ["94116", "94122"],
     "description": "Fog, surf, N Judah streetcars, and Irving Street restaurants stretching all the way to the ocean.",
     "mapLabel": { "x": 120, "y": 360 }
@@ -114,7 +114,7 @@
     "name": "Bayview & Excelsior",
     "neighborhoods": ["Bayview–Hunters Point", "Visitacion Valley", "Excelsior", "Crocker Amazon", "Ingleside"],
     "accent": "#6b8c3a",
-    "live": false,
+    "live": true,
     "zipCodes": ["94124", "94134", "94112"],
     "description": "The city's largest and most diverse cluster — working-class communities, new development, and deep roots.",
     "mapLabel": { "x": 290, "y": 460 }

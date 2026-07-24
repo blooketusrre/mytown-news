@@ -46,9 +46,18 @@ module.exports = function (eleventyConfig) {
     return require(files[0]);
   }
 
-  eleventyConfig.addGlobalData("northWaterfront", () => latestIssue("north-waterfront"));
-  eleventyConfig.addGlobalData("marinaPacificHeights", () => latestIssue("marina-pacific-heights"));
-  eleventyConfig.addGlobalData("russianHillNobHill", () => latestIssue("russian-hill-nob-hill"));
+  eleventyConfig.addGlobalData("northWaterfront",         () => latestIssue("north-waterfront"));
+  eleventyConfig.addGlobalData("marinaPacificHeights",    () => latestIssue("marina-pacific-heights"));
+  eleventyConfig.addGlobalData("russianHillNobHill",      () => latestIssue("russian-hill-nob-hill"));
+  eleventyConfig.addGlobalData("presidioRichmond",        () => latestIssue("presidio-richmond"));
+  eleventyConfig.addGlobalData("downtownEmbarcadero",     () => latestIssue("downtown-embarcadero"));
+  eleventyConfig.addGlobalData("civicCenterHayesValley",  () => latestIssue("civic-center-hayes-valley"));
+  eleventyConfig.addGlobalData("somaMissionBay",          () => latestIssue("soma-mission-bay"));
+  eleventyConfig.addGlobalData("haightColeValley",        () => latestIssue("haight-cole-valley"));
+  eleventyConfig.addGlobalData("castroNoeValley",         () => latestIssue("castro-noe-valley"));
+  eleventyConfig.addGlobalData("missionBernalHeights",    () => latestIssue("mission-bernal-heights"));
+  eleventyConfig.addGlobalData("theSunset",               () => latestIssue("the-sunset"));
+  eleventyConfig.addGlobalData("bayviewExcelsior",        () => latestIssue("bayview-excelsior"));
 
   // ── Collection: all cluster issues for archive ───────────────────────
   eleventyConfig.addCollection("allIssues", () => {

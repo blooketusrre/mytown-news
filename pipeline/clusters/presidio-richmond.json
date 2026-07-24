@@ -1,0 +1,11 @@
+{
+  "slug": "presidio-richmond",
+  "name": "Presidio & Richmond",
+  "city": "San Francisco",
+  "live": true,
+  "neighborhoods": ["Presidio", "Sea Cliff", "Inner Richmond", "Outer Richmond", "Lone Mountain"],
+  "accentColor": "#2d6a4f",
+  "description": "Ancient forests, Clement Street dim sum, and the quieter side of the peninsula.",
+  "primarySearchTerms": ["Presidio San Francisco", "Richmond District San Francisco", "Clement Street San Francisco", "Sea Cliff San Francisco"],
+  "sourceHints": ["https://www.sfstandard.com","https://sfist.com","https://hoodline.com/neighborhoods/richmond","https://www.nps.gov/prsf/index.htm","https://www.sfrecpark.org","https://sfpl.org"]
+}
