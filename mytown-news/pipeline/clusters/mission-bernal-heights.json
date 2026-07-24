@@ -1,0 +1,11 @@
+{
+  "slug": "mission-bernal-heights",
+  "name": "Mission & Bernal Heights",
+  "city": "San Francisco",
+  "live": true,
+  "neighborhoods": ["Mission District", "Bernal Heights", "Outer Mission"],
+  "accentColor": "#c4442a",
+  "description": "Murals, taquerias, tech workers, and longtime Latino families — the Mission's contradictions are its vitality.",
+  "primarySearchTerms": ["Mission District San Francisco", "Bernal Heights San Francisco", "Valencia Street San Francisco", "24th Street Mission San Francisco"],
+  "sourceHints": ["https://www.sfstandard.com","https://sfist.com","https://hoodline.com/neighborhoods/mission","https://hoodline.com/neighborhoods/bernal-heights","https://missionlocal.org","https://sfpl.org"]
+}

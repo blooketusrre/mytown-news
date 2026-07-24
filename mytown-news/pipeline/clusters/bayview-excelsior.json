@@ -1,0 +1,11 @@
+{
+  "slug": "bayview-excelsior",
+  "name": "Bayview & Excelsior",
+  "city": "San Francisco",
+  "live": true,
+  "neighborhoods": ["Bayview–Hunters Point", "Visitacion Valley", "Excelsior", "Crocker Amazon", "Ingleside"],
+  "accentColor": "#6b8c3a",
+  "description": "The city's largest and most diverse cluster — working-class communities, new development, and deep roots.",
+  "primarySearchTerms": ["Bayview San Francisco", "Hunters Point San Francisco", "Excelsior San Francisco", "Visitacion Valley San Francisco"],
+  "sourceHints": ["https://www.sfstandard.com","https://sfist.com","https://hoodline.com/neighborhoods/bayview","https://www.sfrecpark.org","https://sfpl.org"]
+}

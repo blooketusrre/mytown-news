@@ -1,0 +1,482 @@
+---
+layout: base.njk
+---
+{# ── PDF download bar ─────────────────────────────────────────────────── #}
+<div class="pdf-bar">
+  <span class="pdf-bar__label">Save this week's edition:</span>
+  <button class="btn-pdf" aria-label="Download as PDF">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="8 17 12 21 16 17"/><line x1="12" y1="12" x2="12" y2="21"/>
+      <path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"/>
+    </svg>
+    Download PDF
+  </button>
+</div>
+
+{# ── Masthead ──────────────────────────────────────────────────────────── #}
+<header class="masthead" role="banner">
+  <div class="masthead__inner container">
+    <p class="masthead__eyebrow">{{ site.tagline }}</p>
+    <h1 class="masthead__title">My Town <em>News</em><br>{{ issue.clusterName }}</h1>
+    <div class="masthead__ornament" aria-hidden="true">
+      <span class="masthead__ornament-rule"></span>
+      <span class="masthead__ornament-diamond"></span>
+      <span class="masthead__ornament-rule"></span>
+    </div>
+    <p class="masthead__subtitle">
+      {% for n in issue.neighborhoods %}{{ n }}{% if not loop.last %} &nbsp;·&nbsp; {% endif %}{% endfor %}
+    </p>
+  </div>
+  <div class="masthead__bar">
+    <div class="masthead__bar-inner container">
+      <span>Week of {{ issue.weekLabel }} &nbsp;·&nbsp; Vol. {{ issue.volume }}, Issue {{ issue.issueNumber }}</span>
+      <a href="{{ site.url }}" class="masthead__bar-url">{{ site.url | replace("https://","") }}</a>
+      <span>{{ site.city }} &nbsp;·&nbsp; Free &amp; Independent</span>
+    </div>
+  </div>
+</header>
+
+<div class="gold-rule"></div>
+
+{# ── Sticky nav ───────────────────────────────────────────────────────── #}
+<nav class="site-nav" aria-label="Cluster sections">
+  <div class="site-nav__inner container">
+    <ul class="site-nav__links" role="list">
+      <li><a href="/">← All Clusters</a></li>
+      <li><a href="#top-stories">Top Stories</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#more-news">More News</a></li>
+      <li><a href="#directory">Directory</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ul>
+    <span class="site-nav__meta">{{ issue.weekLabel }} Edition</span>
+  </div>
+</nav>
+
+{# ── Main content ─────────────────────────────────────────────────────── #}
+<main class="page-main" id="main">
+
+  <div class="container">
+
+  {% if not issue or not issue.topStories or issue.topStories.length == 0 %}
+
+    {# No content yet — first issue coming soon #}
+    <div style="text-align:center;padding:80px 20px 100px;max-width:480px;margin:0 auto">
+      <p style="font-family:var(--font-head);font-size:3rem;margin-bottom:8px">📰</p>
+      <h2 style="font-family:var(--font-head);font-size:1.75rem;font-weight:900;color:var(--navy);margin-bottom:16px">First Issue Coming Friday</h2>
+      <p style="font-size:var(--text-md);line-height:1.7;color:var(--muted)">
+        My Town News publishes every Friday. The first issue for this cluster is on its way — check back soon, or <a href="/#newsletter" style="color:var(--accent)">sign up for the newsletter</a> to be notified.
+      </p>
+      <a href="/" style="display:inline-block;margin-top:32px;font-family:var(--font-ui);font-size:var(--text-xs);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">← Back to all clusters</a>
+    </div>
+
+  {% else %}
+
+    {# Top Stories #}
+    <section id="top-stories" aria-labelledby="top-stories-heading">
+      <div class="section-head">
+        <h2 class="section-head__label" id="top-stories-heading">This Week's Top Stories</h2>
+        <span class="section-head__line" aria-hidden="true"></span>
+      </div>
+
+      <div class="top-stories">
+
+        {# Main story #}
+        {% set s = issue.topStories[0] %}
+        <article class="story-main">
+          <span class="nbadge">{{ s.neighborhood }}</span>
+          <p class="tag">{{ s.tag }}</p>
+          <h3>{{ s.headline }}</h3>
+          <p class="byline">{{ s.byline }} &nbsp;·&nbsp; {{ s.date }}</p>
+          <div class="story-body">
+            {% for para in s.body.split('\n\n') %}
+              {% if para.trim() %}<p>{{ para.trim() }}</p>{% endif %}
+            {% endfor %}
+          </div>
+          <a href="{{ s.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="source-link">
+            Source: {{ s.sourceName }} →
+          </a>
+        </article>
+
+        {# Side stories #}
+        {% for s in issue.topStories.slice(1) %}
+        <article class="story-side">
+          <span class="nbadge">{{ s.neighborhood }}</span>
+          <p class="tag">{{ s.tag }}</p>
+          <h3>{{ s.headline }}</h3>
+          <p class="byline">{{ s.byline }} &nbsp;·&nbsp; {{ s.date }}</p>
+          <div class="story-body">
+            {% for para in s.body.split('\n\n') %}
+              {% if para.trim() %}<p>{{ para.trim() }}</p>{% endif %}
+            {% endfor %}
+          </div>
+          <a href="{{ s.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="source-link">
+            Source: {{ s.sourceName }} →
+          </a>
+        </article>
+        {% endfor %}
+
+      </div>
+    </section>
+
+    {# Events #}
+    <section id="events" aria-labelledby="events-heading">
+      <div class="events-band">
+        <div class="section-head section-head--light">
+          <h2 class="section-head__label" id="events-heading">Upcoming &amp; Ongoing in the Neighborhood</h2>
+          <span class="section-head__line" aria-hidden="true"></span>
+        </div>
+
+        <div class="events-grid">
+          {% for ev in issue.events %}
+          <div class="event-card">
+            {% if ev.ongoing %}
+              <span class="event-card__badge">Ongoing</span>
+            {% else %}
+              <p class="event-card__date">{{ ev.date }}{% if ev.recurring %} &nbsp;·&nbsp; {{ ev.recurring }}{% endif %}</p>
+            {% endif %}
+            <h3 class="event-card__title">{{ ev.title }}</h3>
+            <p class="event-card__desc">{{ ev.description }}</p>
+            <p class="event-card__meta">
+              📍 {{ ev.location }}<br>
+              {% if ev.time %}🕐 {{ ev.time }}<br>{% endif %}
+              {% if ev.price %}🎟 {{ ev.price }}{% endif %}
+            </p>
+            {% if ev.sourceUrl %}
+            <a href="{{ ev.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="event-card__source">
+              Verify details →
+            </a>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    {# More News #}
+    <section id="more-news" aria-labelledby="more-news-heading">
+      <div class="section-head">
+        <h2 class="section-head__label" id="more-news-heading">More from the Neighborhood</h2>
+        <span class="section-head__line" aria-hidden="true"></span>
+      </div>
+
+      <div class="more-news-grid">
+        {% for s in issue.moreNews %}
+        <article class="news-card">
+          <span class="nbadge">{{ s.neighborhood }}</span>
+          <p class="tag">{{ s.tag }}</p>
+          <h3>{{ s.headline }}</h3>
+          <p class="byline">{{ s.byline }} &nbsp;·&nbsp; {{ s.date }}</p>
+          <div class="story-body">
+            {% for para in s.body.split('\n\n') %}
+              {% if para.trim() %}<p>{{ para.trim() }}</p>{% endif %}
+            {% endfor %}
+          </div>
+          <a href="{{ s.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="source-link">
+            Source: {{ s.sourceName }} →
+          </a>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    {# Directory #}
+    <section id="directory" aria-labelledby="directory-heading">
+      <div class="directory">
+        <div class="section-head">
+          <h2 class="section-head__label" id="directory-heading">Neighborhood Directory</h2>
+          <span class="section-head__line" aria-hidden="true"></span>
+        </div>
+
+        {# ── Restaurants & Cafés ──────────────────────────────────── #}
+        {% if issue.directory and issue.directory.restaurants %}
+          {% set restList = issue.directory.restaurants %}
+        {% else %}
+          {% set restList = [] %}
+        {% endif %}
+        <div class="dir-section{{ ' dir-section--collapsible' if restList.length > 15 }}" id="dir-restaurants">
+          <button class="dir-section__toggle"
+                  aria-expanded="{{ 'false' if restList.length > 15 else 'true' }}"
+                  aria-controls="dir-restaurants-body"
+                  type="button">
+            <span class="dir-section__emoji">🍽</span>
+            <span class="dir-section__title">Restaurants &amp; Cafés</span>
+            {% if restList.length %}<span class="dir-section__count">{{ restList.length }}</span>{% endif %}
+            <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="dir-section__body{{ ' is-collapsed' if restList.length > 15 }}" id="dir-restaurants-body">
+            {% if restList.length %}
+              {% set restGroups = restList | groupBy("cuisineGroup") %}
+              {% for groupName, entries in restGroups %}
+              <div class="dir-group">
+                {% if groupName %}<h4 class="dir-group__heading">{{ groupName }}</h4>{% endif %}
+                <div class="dir-group__entries">
+                  {% for e in entries %}
+                  <div class="dir-entry">
+                    <div class="dir-entry__badges">
+                      {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
+                      {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
+                    </div>
+                    <p class="dir-entry__name">{{ e.name }}</p>
+                    <p class="dir-entry__type">{{ e.type or e.cuisine }}</p>
+                    {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
+                    <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+            {% else %}
+              <p class="dir-empty">No listings yet — check back after the first issue.</p>
+            {% endif %}
+          </div>
+        </div>
+
+        {# ── Hotels & Lodging ─────────────────────────────────────── #}
+        {% if issue.directory and issue.directory.hotels %}
+          {% set hotelList = issue.directory.hotels %}
+        {% else %}
+          {% set hotelList = [] %}
+        {% endif %}
+        <div class="dir-section{{ ' dir-section--collapsible' if hotelList.length > 15 }}" id="dir-hotels">
+          <button class="dir-section__toggle"
+                  aria-expanded="{{ 'false' if hotelList.length > 15 else 'true' }}"
+                  aria-controls="dir-hotels-body"
+                  type="button">
+            <span class="dir-section__emoji">🏨</span>
+            <span class="dir-section__title">Hotels &amp; Lodging</span>
+            {% if hotelList.length %}<span class="dir-section__count">{{ hotelList.length }}</span>{% endif %}
+            <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="dir-section__body{{ ' is-collapsed' if hotelList.length > 15 }}" id="dir-hotels-body">
+            {% if hotelList.length %}
+              <div class="dir-group">
+                <div class="dir-group__entries">
+                  {% for e in hotelList %}
+                  <div class="dir-entry">
+                    <div class="dir-entry__badges">
+                      {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
+                      {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
+                    </div>
+                    <p class="dir-entry__name">{{ e.name }}</p>
+                    <p class="dir-entry__type">{{ e.type }}</p>
+                    {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
+                    <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% else %}
+              <p class="dir-empty">No listings yet.</p>
+            {% endif %}
+          </div>
+        </div>
+
+        {# ── Shops, Books & Services ──────────────────────────────── #}
+        {% if issue.directory and issue.directory.shops %}
+          {% set shopList = issue.directory.shops %}
+        {% else %}
+          {% set shopList = [] %}
+        {% endif %}
+        <div class="dir-section{{ ' dir-section--collapsible' if shopList.length > 15 }}" id="dir-shops">
+          <button class="dir-section__toggle"
+                  aria-expanded="{{ 'false' if shopList.length > 15 else 'true' }}"
+                  aria-controls="dir-shops-body"
+                  type="button">
+            <span class="dir-section__emoji">🛍</span>
+            <span class="dir-section__title">Shops, Books &amp; Services</span>
+            {% if shopList.length %}<span class="dir-section__count">{{ shopList.length }}</span>{% endif %}
+            <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="dir-section__body{{ ' is-collapsed' if shopList.length > 15 }}" id="dir-shops-body">
+            {% if shopList.length %}
+              {% set shopGroups = shopList | groupBy("shopGroup") %}
+              {% for groupName, entries in shopGroups %}
+              <div class="dir-group">
+                {% if groupName %}<h4 class="dir-group__heading">{{ groupName }}</h4>{% endif %}
+                <div class="dir-group__entries">
+                  {% for e in entries %}
+                  <div class="dir-entry">
+                    <div class="dir-entry__badges">
+                      {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
+                      {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
+                    </div>
+                    <p class="dir-entry__name">{{ e.name }}</p>
+                    <p class="dir-entry__type">{{ e.type }}</p>
+                    {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
+                    <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+            {% else %}
+              <p class="dir-empty">No listings yet.</p>
+            {% endif %}
+          </div>
+        </div>
+
+        {# ── Art & Entertainment ───────────────────────────────────── #}
+        {% if issue.directory and issue.directory.artEntertainment %}
+          {% set artList = issue.directory.artEntertainment %}
+        {% else %}
+          {% set artList = [] %}
+        {% endif %}
+        <div class="dir-section{{ ' dir-section--collapsible' if artList.length > 15 }}" id="dir-art">
+          <button class="dir-section__toggle"
+                  aria-expanded="{{ 'false' if artList.length > 15 else 'true' }}"
+                  aria-controls="dir-art-body"
+                  type="button">
+            <span class="dir-section__emoji">🎭</span>
+            <span class="dir-section__title">Art &amp; Entertainment</span>
+            {% if artList.length %}<span class="dir-section__count">{{ artList.length }}</span>{% endif %}
+            <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="dir-section__body{{ ' is-collapsed' if artList.length > 15 }}" id="dir-art-body">
+            {% if artList.length %}
+              {% set artGroups = artList | groupBy("venueGroup") %}
+              {% for groupName, entries in artGroups %}
+              <div class="dir-group">
+                {% if groupName %}<h4 class="dir-group__heading">{{ groupName }}</h4>{% endif %}
+                <div class="dir-group__entries">
+                  {% for e in entries %}
+                  <div class="dir-entry">
+                    <div class="dir-entry__badges">
+                      {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
+                      {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
+                    </div>
+                    <p class="dir-entry__name">{{ e.name }}</p>
+                    <p class="dir-entry__type">{{ e.type }}</p>
+                    {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
+                    <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+            {% else %}
+              <p class="dir-empty">No listings yet.</p>
+            {% endif %}
+          </div>
+        </div>
+
+        {# ── Gyms & Recreation ────────────────────────────────────── #}
+        {% if issue.directory and issue.directory.gymsRecreation %}
+          {% set gymList = issue.directory.gymsRecreation %}
+        {% else %}
+          {% set gymList = [] %}
+        {% endif %}
+        <div class="dir-section{{ ' dir-section--collapsible' if gymList.length > 15 }}" id="dir-gyms">
+          <button class="dir-section__toggle"
+                  aria-expanded="{{ 'false' if gymList.length > 15 else 'true' }}"
+                  aria-controls="dir-gyms-body"
+                  type="button">
+            <span class="dir-section__emoji">🏃</span>
+            <span class="dir-section__title">Gyms &amp; Recreation</span>
+            {% if gymList.length %}<span class="dir-section__count">{{ gymList.length }}</span>{% endif %}
+            <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+          <div class="dir-section__body{{ ' is-collapsed' if gymList.length > 15 }}" id="dir-gyms-body">
+            {% if gymList.length %}
+              {% set gymGroups = gymList | groupBy("venueGroup") %}
+              {% for groupName, entries in gymGroups %}
+              <div class="dir-group">
+                {% if groupName %}<h4 class="dir-group__heading">{{ groupName }}</h4>{% endif %}
+                <div class="dir-group__entries">
+                  {% for e in entries %}
+                  <div class="dir-entry">
+                    <div class="dir-entry__badges">
+                      {% if e.neighborhood %}<span class="dir-entry__badge">{{ e.neighborhood }}</span>{% endif %}
+                      {% if e.notable %}<span class="dir-entry__badge dir-entry__badge--{{ e.notable | badgeClass }}">{{ e.notable }}</span>{% endif %}
+                    </div>
+                    <p class="dir-entry__name">{{ e.name }}</p>
+                    <p class="dir-entry__type">{{ e.type }}</p>
+                    {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
+                    <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              {% endfor %}
+            {% else %}
+              <p class="dir-empty">No listings yet.</p>
+            {% endif %}
+          </div>
+        </div>
+
+        <script>
+        (function() {
+          document.querySelectorAll('.dir-section__toggle').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+              var isExpanded = btn.getAttribute('aria-expanded') === 'true';
+              btn.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+              var body = document.getElementById(btn.getAttribute('aria-controls'));
+              if (body) body.classList.toggle('is-collapsed', isExpanded);
+            });
+          });
+        })();
+        </script>
+
+      </div>
+    </section>
+
+    {# Sources #}
+    <section id="sources" aria-labelledby="sources-heading">
+      <div class="sources-section">
+        <div class="section-head">
+          <h2 class="section-head__label" id="sources-heading">Sources &amp; Editorial Notes</h2>
+          <span class="section-head__line" aria-hidden="true"></span>
+        </div>
+
+        <div class="editorial-note">
+          Stories in My Town News are compiled from public sources, and with assistance from AI.
+          Please verify important details at the cited source.
+          All named individuals appear only in their publicly documented roles.
+          Directory listings reflect publicly available contact information and are updated periodically.
+        </div>
+
+        <div class="sources-grid">
+          {% for src in issue.sources %}
+          <div class="source-item">
+            <span class="source-num">{{ loop.index }}</span>
+            <div>
+              <p class="source-item__title">{{ src.title }}</p>
+              <p class="source-item__org">
+                {{ src.org }} &nbsp;·&nbsp;
+                <a href="{{ src.url }}" target="_blank" rel="noopener noreferrer">{{ src.url }}</a>
+              </p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+  </div>{# /container #}
+
+  {# Newsletter #}
+  <div class="container">
+    <div class="newsletter">
+      <p class="newsletter__eyebrow">Stay connected</p>
+      <h2 class="newsletter__headline">Get the {{ issue.clusterName }}<br>delivered every Friday</h2>
+      <p class="newsletter__sub">The week's neighborhood news, events, and directory — straight to your inbox. Free.</p>
+      <form class="newsletter__form" aria-label="Newsletter signup"
+            action="https://buttondown.com/api/emails/embed-subscribe/backus"
+            method="post" target="popupwindow"
+            onsubmit="window.open('https://buttondown.com/backus','popupwindow')">
+        <input type="hidden" name="tag" value="{{ clusterSlug }}">
+        <input class="newsletter__input" type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button class="newsletter__btn" type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter__note">No ads. No spam. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
+  {% endif %}
+
+</main>
+
+{# Footer #}
+{% include "partials/footer.njk" %}

@@ -1,0 +1,11 @@
+{
+  "slug": "the-sunset",
+  "name": "The Sunset",
+  "city": "San Francisco",
+  "live": true,
+  "neighborhoods": ["Inner Sunset", "Outer Sunset", "West Portal", "Forest Hill", "St. Francis Wood", "Miraloma Park"],
+  "accentColor": "#3d6b8f",
+  "description": "Fog, surf, N Judah streetcars, and Irving Street restaurants stretching all the way to the ocean.",
+  "primarySearchTerms": ["Inner Sunset San Francisco", "Outer Sunset San Francisco", "Irving Street San Francisco", "West Portal San Francisco", "Ocean Beach San Francisco"],
+  "sourceHints": ["https://www.sfstandard.com","https://sfist.com","https://hoodline.com/neighborhoods/sunset","https://www.sfrecpark.org","https://sfpl.org","https://outtersunset.com"]
+}

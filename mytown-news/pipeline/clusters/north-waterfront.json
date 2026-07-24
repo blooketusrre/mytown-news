@@ -1,0 +1,32 @@
+{
+  "slug": "north-waterfront",
+  "name": "North Waterfront",
+  "city": "San Francisco",
+  "live": true,
+  "neighborhoods": [
+    "North Beach",
+    "Telegraph Hill",
+    "Fisherman's Wharf",
+    "Levi's Plaza / Embarcadero North"
+  ],
+  "accentColor": "#c8943a",
+  "description": "San Francisco's historic north waterfront — from the bocce courts of North Beach to the sea lions of Pier 39.",
+  "primarySearchTerms": [
+    "North Beach San Francisco",
+    "Fisherman's Wharf San Francisco",
+    "Telegraph Hill San Francisco",
+    "Levi Plaza San Francisco"
+  ],
+  "sourceHints": [
+    "https://www.sfstandard.com",
+    "https://sfist.com",
+    "https://hoodline.com/neighborhoods/north-beach",
+    "https://hoodline.com/neighborhoods/fishermans-wharf",
+    "https://www.sfrecpark.org",
+    "https://sfpl.org",
+    "https://www.pier39.com/news",
+    "https://portofsan francisco.com/news",
+    "https://offthegrid.com/events",
+    "https://www.abc7news.com/tag/san-francisco"
+  ]
+}

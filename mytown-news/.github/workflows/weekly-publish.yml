@@ -1,0 +1,59 @@
+# My Town News — Weekly Content Pipeline
+# Runs every Thursday at 8 PM PT (Friday 3 AM UTC)
+# Generates a fresh issue for every live cluster, commits, and Netlify auto-deploys.
+
+name: Weekly Publish
+
+on:
+  schedule:
+    - cron: '0 3 * * 5'   # Every Friday 3:00 AM UTC = Thursday 8 PM PDT / 7 PM PST
+  workflow_dispatch:       # Allow manual trigger from GitHub Actions UI
+    inputs:
+      cluster:
+        description: 'Run for a single cluster slug (leave blank for all)'
+        required: false
+        default: ''
+      dry_run:
+        description: 'Dry run — generate content but do not commit'
+        type: boolean
+        default: false
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate this week's issues
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          TARGET_CLUSTER: ${{ github.event.inputs.cluster }}
+        run: |
+          node pipeline/generate-issue.js \
+            ${TARGET_CLUSTER:+--cluster $TARGET_CLUSTER}
+
+      - name: Build site
+        run: npm run build:prod
+
+      - name: Commit new issue files
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name  "mytown-news-bot"
+          git config user.email "bot@mytown.news"
+          git add src/content/
+          WEEK=$(date +%Y-%m-%d)
+          git diff --cached --quiet || \
+            git commit -m "chore: publish week of ${WEEK}"
+          git push

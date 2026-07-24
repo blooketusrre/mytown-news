@@ -1,0 +1,11 @@
+{
+  "slug": "castro-noe-valley",
+  "name": "Castro & Noe Valley",
+  "city": "San Francisco",
+  "live": true,
+  "neighborhoods": ["Castro", "Duboce Triangle", "Eureka Valley", "Noe Valley", "Glen Park", "Diamond Heights"],
+  "accentColor": "#b5334a",
+  "description": "One of the world's most celebrated LGBTQ+ communities, plus sunny Noe Valley's stroller-friendly 24th Street.",
+  "primarySearchTerms": ["Castro San Francisco", "Noe Valley San Francisco", "Glen Park San Francisco", "Duboce Triangle San Francisco"],
+  "sourceHints": ["https://www.sfstandard.com","https://sfist.com","https://hoodline.com/neighborhoods/castro","https://hoodline.com/neighborhoods/noe-valley","https://www.castrosf.com","https://sfpl.org"]
+}

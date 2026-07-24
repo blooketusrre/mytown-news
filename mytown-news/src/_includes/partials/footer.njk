@@ -1,0 +1,39 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="site-footer__inner">
+      <div>
+        <div class="site-footer__brand">My Town <em>News</em></div>
+        <p class="site-footer__tagline">{{ site.tagline }}</p>
+        <nav class="site-footer__links" aria-label="Footer navigation">
+          <a href="/about/">About &amp; Editorial Standards</a>
+          <a href="/about/#contact">Contact</a>
+          <a href="/submit-tip/">Submit a Tip</a>
+          <a href="/advertise/">Advertise</a>
+          <a href="/privacy/">Privacy Policy</a>
+        </nav>
+        <p class="site-footer__copy">
+          © {{ site.currentYear }} My Town News &nbsp;·&nbsp; <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          &nbsp;·&nbsp; <a href="{{ site.url }}">{{ site.url | replace("https://","") }}</a>
+        </p>
+      </div>
+
+      <div>
+        <div class="site-footer__cluster-links">
+          <p class="site-footer__cluster-links-head">All Neighborhoods</p>
+          {% for c in clusters %}
+            {% if c.live %}
+              <a href="/{{ c.slug }}/">{{ c.name }}</a>
+            {% else %}
+              <span style="color:rgba(255,255,255,0.2);font-size:0.625rem;">{{ c.name }} — coming soon</span>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p style="font-family:var(--font-ui);font-size:0.5625rem;color:rgba(255,255,255,0.18);letter-spacing:0.04em;">
+      Stories are compiled from public sources with AI assistance. Verify important details at the linked source before acting on them.
+      My Town News is an independent publication and is not affiliated with any city agency, business, or political organization.
+    </p>
+  </div>
+</footer>
