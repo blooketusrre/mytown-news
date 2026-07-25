@@ -57,4 +57,5 @@ jobs:
           WEEK=$(date +%Y-%m-%d)
           git diff --cached --quiet || \
             git commit -m "chore: publish week of ${WEEK}"
+          git pull --rebase origin main
           git push
