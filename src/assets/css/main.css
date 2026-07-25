@@ -1229,6 +1229,22 @@ ul, ol { list-style: none; }
   display: none;
 }
 
+.zip-lookup__result--warn,
+.zip-lookup__result--multi { display: block; }
+
+.zip-lookup__result--warn { color: var(--muted); }
+
+.zip-lookup__result--multi {
+  color: var(--text);
+  line-height: 1.5;
+}
+.zip-lookup__result--multi a {
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: none;
+}
+.zip-lookup__result--multi a:hover { text-decoration: underline; }
+
 /* ── Homepage: Editor's Picks ──────────────────────────────────────── */
 .editors-picks {
   padding-block: var(--sp-12);

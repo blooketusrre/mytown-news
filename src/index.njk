@@ -233,4 +233,63 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
 
 {% include "partials/footer.njk" %}
 
-<script src="/assets/js/cluster-map.js"></script>
+<script>
+(function () {
+  /* ZIP → cluster index (auto-generated from clusters.json via Nunjucks).
+     ZIPs that span two clusters produce an array with both entries,
+     so the user is offered a choice rather than silently picking one. */
+  var zipIndex = {};
+  [
+    {% for c in clusters %}{% if c.live %}{% for z in c.zipCodes %}
+    { zip: "{{ z }}", slug: "{{ c.slug }}", name: "{{ c.name }}", url: "/{{ c.slug }}/" },
+    {% endfor %}{% endif %}{% endfor %}
+  ].forEach(function (e) {
+    if (!zipIndex[e.zip]) zipIndex[e.zip] = [];
+    zipIndex[e.zip].push({ slug: e.slug, name: e.name, url: e.url });
+  });
+
+  var input  = document.getElementById('zip-input');
+  var btn    = document.getElementById('zip-btn');
+  var result = document.getElementById('zip-result');
+  if (!input || !btn || !result) return;
+
+  function lookup() {
+    var zip = (input.value || '').trim();
+
+    /* Reset */
+    result.innerHTML = '';
+    result.className = 'zip-lookup__result';
+
+    if (!/^\d{5}$/.test(zip)) {
+      result.textContent = 'Please enter a 5-digit ZIP code.';
+      result.className += ' zip-lookup__result--warn';
+      return;
+    }
+
+    var matches = zipIndex[zip];
+
+    if (!matches || matches.length === 0) {
+      result.textContent = 'ZIP ' + zip + ' isn’t in our coverage area yet. Browse the map above to find your neighborhood.';
+      result.className += ' zip-lookup__result--warn';
+      return;
+    }
+
+    if (matches.length === 1) {
+      window.location.href = matches[0].url;
+      return;
+    }
+
+    /* ZIP spans two clusters — let the reader choose */
+    result.innerHTML = 'ZIP ' + zip + ' spans two neighborhoods: ' +
+      matches.map(function (m) {
+        return '<a href="' + m.url + '">' + m.name + '</a>';
+      }).join(' &nbsp;&middot;&nbsp; ');
+    result.className += ' zip-lookup__result--multi';
+  }
+
+  btn.addEventListener('click', lookup);
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') lookup();
+  });
+})();
+</script>
