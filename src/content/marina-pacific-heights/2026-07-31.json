@@ -1,0 +1,931 @@
+{
+  "clusterSlug": "marina-pacific-heights",
+  "clusterName": "Marina & Pacific Heights",
+  "weekOf": "2026-07-31",
+  "topStories": [
+    {
+      "headline": "Hundreds Pack Fort Mason to Oppose 25-Story Marina Safeway Tower as City Deadline Looms",
+      "dek": "A community showdown over Align Real Estate's 790-unit mixed-use tower at 15 Marina Boulevard intensified this week as the San Francisco Planning Department faces an August 1 approval deadline.",
+      "body": "The future of the Marina District's beloved Safeway — and the skyline above it — came to a head Thursday night at Fort Mason, where roughly 250 residents gathered to oppose Align Real Estate's proposal to replace the single-story grocery store at 15 Marina Boulevard with a 25-story, 790-unit residential tower. The packed community meeting underscored the depth of opposition in one of San Francisco's most vocal neighborhoods, even as state housing law has left local officials with limited tools to block the project.\n\nThe San Francisco Planning Department issued a notice of conditional eligibility for the project under Assembly Bill 2011 on March 24, 2026, placing the estimated $500 million redevelopment on a legislative fast track. Under that state law, the city is mandated to complete its design review and issue a final decision by August 1, 2026. The 297-foot tower, designed by Miami-based firm Arquitectonica, would be the tallest structure on San Francisco's northern waterfront.\n\nThe proposal includes 790 housing units — 86 of them designated affordable or below market rate — along with 485 one-bedroom apartments, 88 studios, 132 two-bedroom units, and 85 three-bedroom units. A rebuilt Safeway grocery store at the base would be roughly 57% larger than the current one. Critics have raised concerns about shadow impacts on Marina Green and Moscone Playground under Proposition K, the seismic vulnerability of the site's landfill foundation, and what they describe as token affordability.\n\nThe Marina Community Association has publicly stated it supports housing at the site but has called for a building in the 6-to-8-story range, citing comparable Safeway redevelopments in Bernal Heights, the Outer Richmond, and San Mateo. The opposition movement has also connected to a broader statewide ballot initiative effort targeting California's housing mandates, though that campaign remains in early stages and would need hundreds of thousands of signatures to qualify. The Planning Department's August 1 design-review deadline means a final decision on the project's eligibility is imminent.",
+      "sourceUrl": "https://sfstandard.com/2026/07/24/marina-safeway-project-ballot-measure-housing/",
+      "sourceName": "The San Francisco Standard",
+      "tags": [
+        "housing",
+        "development",
+        "Marina District",
+        "Safeway",
+        "planning"
+      ]
+    },
+    {
+      "headline": "New Six-Story Infill Proposed for Cow Hollow's Lombard Street Under City Density Program",
+      "dek": "Plans filed July 14 call for a 65-foot, 15-unit building at 2629 Lombard Street, invoking the city's Housing Choice San Francisco program to achieve density above base zoning.",
+      "body": "A new residential infill project has been proposed for the corner of Lombard and Richardson streets in Cow Hollow, adding to the growing list of development applications reshaping the neighborhood's low-rise corridor. Plans filed on July 14, 2026, call for a six-story, 65-foot building at 2629 Lombard Street that would replace a 1932-era two-story house. Studio 12 Architecture is listed as the designer on the application.\n\nThe proposed structure would yield approximately 20,550 square feet spread across 15 units, with a mix of two studios, seven one-bedroom apartments, and six two-bedroom homes. Three of the 15 units would be deed-restricted as affordable housing. The plans do not include any on-site parking, a reflection of the project's transit-accessible location near Lombard Street's busy bus corridor. The application invokes the Housing Choice San Francisco (HC-SF) program, an incentive created under the city's recently passed Family Zoning plan that functions similarly to the State Density Bonus law to allow higher density than base zoning would otherwise permit.\n\nThe proposal is the latest in a string of Lombard Street infill projects as developers respond to the city's upzoned height limits in Cow Hollow, which now allow structures of at least 65 feet along the corridor. The area has become a flashpoint in San Francisco's broader housing debate, with the Cow Hollow Association and affiliated organizations arguing that rapid upzoning will displace small businesses and alter the neighborhood's historic character. State law, however, limits local governments' ability to deny projects that comply with applicable zoning and density bonus rules.",
+      "sourceUrl": "https://sfyimby.com/2026/07/hc-sf-proposal-for-2629-lombard-street-in-cow-hollow-san-francisco.html",
+      "sourceName": "SF YIMBY",
+      "tags": [
+        "housing",
+        "development",
+        "Cow Hollow",
+        "Lombard Street",
+        "zoning"
+      ]
+    },
+    {
+      "headline": "Gashouse Cove Waterfront Park Moves Forward After Rec & Park Commission Approval",
+      "dek": "San Francisco's Recreation and Park Commission has given conceptual approval to transform the Marina's long-contaminated Gashouse Cove site into a new 5-acre public waterfront park.",
+      "body": "San Francisco is moving ahead with plans to convert Gashouse Cove in the Marina's East Harbor into a new 5-acre public waterfront park adjacent to Marina Green, following conceptual approval from the Recreation and Park Commission. The project, years in the making, is tied to a remediation settlement with PG&E over pollution from a former coal gasification plant that operated near the harbor for decades.\n\nThe approved conceptual plan opens up more of the shoreline for public use, including a community dock for kayaks and nonmotorized boating, expanded Bay Trail access, picnic areas, beach volleyball courts, and landscaped open space. Boat infrastructure is also being reorganized: fewer slips overall, with changes to distribution between the East and West Harbors, and the Gashouse Cove fuel dock relocated near the St. Francis Yacht Club. Officials say fuel service will continue without interruption during construction.\n\nThe project stems from a 2021 settlement in which PG&E committed to paying up to $160–$190 million to clean up harbor pollution caused by polycyclic aromatic hydrocarbons found in East Harbor sediments. While timelines for construction have not been finalized, the commission's approval marks a significant step toward opening a long-industrialized stretch of waterfront to public use. Some Marina Community Association members have raised concerns about the placement of volleyball courts near Marina Boulevard, and debates over the precise number and location of boat slips are ongoing.",
+      "sourceUrl": "https://www.sfexaminer.com/news/urban-development/marinas-gashouse-cove-approved-to-become-a-waterfront-park/article_22775207-2641-43fd-b650-e531ac6fc30e.html",
+      "sourceName": "San Francisco Examiner",
+      "tags": [
+        "waterfront",
+        "parks",
+        "Marina District",
+        "Gashouse Cove",
+        "PG&E",
+        "environment"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Fort Mason Night Market — August Edition",
+      "date": "Friday, August 21",
+      "time": "5:00 PM",
+      "location": "Fort Mason Center for Arts & Culture, 2 Marina Blvd, Marina District",
+      "description": "The free monthly waterfront night market returns with 80+ craft vendors curated by West Coast Craft, food trucks and bar service from Off the Grid, DJs, live music, and pop-ups on the historic Fort Mason campus. Free and open to all ages; runs until 10:00 PM.",
+      "sourceUrl": "https://fortmason.org/series/fort-mason-night-market-2026/",
+      "sourceName": "Fort Mason Center for Arts & Culture"
+    },
+    {
+      "title": "Sundown Cinema: The Parent Trap (1998) at Marina Green",
+      "date": "Friday, August 21",
+      "time": "6:00 PM",
+      "location": "Marina Green, Marina Boulevard & Scott Street, Marina District",
+      "description": "The San Francisco Standard's free outdoor movie series screens the 1998 classic The Parent Trap on the Marina Green waterfront lawn, with food trucks, themed pre-show entertainment, and sunset views. Admission is free; bring blankets and low-back chairs.",
+      "sourceUrl": "https://sfstandard.com/sundown-cinema/",
+      "sourceName": "The San Francisco Standard / SF Station"
+    },
+    {
+      "title": "San Francisco Aerial Arts Festival 2026",
+      "date": "Friday, August 7 through Sunday, August 9",
+      "time": "Various times",
+      "location": "Fort Mason Center for Arts & Culture, 2 Marina Blvd — Cowell Theater & Gateway Pavilion",
+      "description": "Zaccho Dance Theatre and Fort Mason Art present the seventh biennial SFAAF, a three-day celebration featuring 15 choreographers, 6 youth companies, and 20 aerial films spanning circus arts, contemporary aerial dance, and site-responsive performance. Tickets $15–$75; aerial film screenings are free.",
+      "sourceUrl": "https://fortmason.org/series/san-francisco-aerial-arts-festival-2026/",
+      "sourceName": "Fort Mason Center for Arts & Culture / Zaccho Dance Theatre"
+    },
+    {
+      "title": "Renegade Craft Summer Fair",
+      "date": "Saturday, August 1 and Sunday, August 2",
+      "time": "11:00 AM",
+      "location": "Fort Mason Center Festival Pavilion, 2 Marina Blvd, Marina District",
+      "description": "The popular indoor craft fair features over 250 independent makers and artisans selling ceramics, apparel, accessories, paper goods, home goods, and more, with outdoor food trucks and live music. Free entry (suggested $5 donation at the door); runs until 5:00 PM each day.",
+      "sourceUrl": "https://sf.funcheap.com/renegade-craft-fair-at-fort-mason-center-august-2-3-2/",
+      "sourceName": "Funcheap SF / Renegade Craft"
+    },
+    {
+      "title": "Andy Goldsworthy: Red Flags — Final Week",
+      "date": "Through July 30",
+      "time": "Various times",
+      "location": "Gateway Pavilion, Fort Mason Center, 2 Marina Blvd, Marina District",
+      "description": "Artist Andy Goldsworthy's site-responsive installation Red Flags, presented by FOR-SITE and Fort Mason Art to mark the 250th anniversary of American independence, transforms the Gateway Pavilion into a meditation on borders and national symbols. Free and open to the public through July 30.",
+      "sourceUrl": "https://sfartweek.com/fort-mason-center-for-arts-and-culture/",
+      "sourceName": "SF Art Week / Fort Mason Center for Arts & Culture"
+    },
+    {
+      "title": "PLEASE. STAY. TOUCH. — Jess Curtis Experiments with Gravity (Exhibition)",
+      "date": "Through August 15",
+      "time": "Various times",
+      "location": "The Store House, Landmark Building D, Fort Mason Center, 2 Marina Blvd",
+      "description": "A memorial exhibition and living laboratory honoring the life and practice of pioneering experimental choreographer Jess Curtis (1962–2024), presented by Fort Mason Center for Arts & Culture and GRAVITY. Part exhibition, part ongoing performance laboratory; free and open to the public.",
+      "sourceUrl": "https://sfartweek.com/fort-mason-center-for-arts-and-culture/",
+      "sourceName": "Fort Mason Center for Arts & Culture"
+    },
+    {
+      "title": "Chris Ramsay: It's Probably Nothing… 2026 Live Tour",
+      "date": "Thursday, August 13",
+      "time": "8:00 PM",
+      "location": "Palace of Fine Arts Theatre, 3301 Lyon St, Marina District",
+      "description": "Magician and content creator Chris Ramsay brings his 2026 live tour to the Palace of Fine Arts Theatre for an evening of magic, comedy, and interactive performance. Tickets available via the Palace of Fine Arts website.",
+      "sourceUrl": "https://dothebay.com/venues/palace-of-fine-arts",
+      "sourceName": "DoTheBay / Palace of Fine Arts Theatre"
+    },
+    {
+      "title": "Fort Mason Night Market — July Edition (this Friday)",
+      "date": "Friday, July 24 — this week's market",
+      "time": "5:00 PM",
+      "location": "Fort Mason Center for Arts & Culture, 2 Marina Blvd, Marina District",
+      "description": "The July edition of the free monthly waterfront night market brings together 80+ craft vendors, food trucks from Off the Grid, live music, and DJs on the Fort Mason waterfront campus. Free; runs until 10:00 PM.",
+      "sourceUrl": "https://fortmason.org/series/fort-mason-night-market-2026/",
+      "sourceName": "Fort Mason Center for Arts & Culture / West Coast Craft"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Union Street Repaving Included in City's $90M Road Program, Work Slated for Early 2027",
+      "body": "A 29-block stretch of the Marina and Russian Hill centered on Union Street is among the corridors targeted in San Francisco's multi-phase street resurfacing program, with work expected to begin in early 2027 and run through October 2028. The broader program, funded by $33 million in state gas-tax revenue plus additional city allocations, covers nearly $90 million in repaving work citywide over the next two years. A separate 26-block stretch across Chinatown, Nob Hill, and Pacific Heights is also included in the same construction phase. Residents on affected blocks should expect temporary lane restrictions and noise during construction periods.",
+      "sourceUrl": "https://sfstandard.com/2026/04/22/sf-street-repaving-map-2026/",
+      "sourceName": "The San Francisco Standard",
+      "tags": [
+        "infrastructure",
+        "Union Street",
+        "Marina District",
+        "Pacific Heights"
+      ]
+    },
+    {
+      "headline": "Cow Hollow Real Estate Hits Record Pace as Inventory Stays Tight",
+      "body": "Cow Hollow's housing market entered summer 2026 at a notable pace, with April data showing condo buyers paying an average of 118.3% of list price in the neighborhood, according to Compass market data reported by real estate publication Helena 7x7. The 12-month rolling median house price through early 2026 was $6.45 million, with individual sales reaching as high as $16.8 million. Analysts attribute the frenzy to a collision between scarce inventory — just 835 single-family homes were listed across the entire city as of April 1, roughly 265 fewer than typical for that time of year — and a persistent pool of high-net-worth buyers drawn to Cow Hollow's walkability, historic architecture, and proximity to the Presidio and bay.",
+      "sourceUrl": "https://www.helena7x7.com/cow-hollow-real-estate-guide/",
+      "sourceName": "Helena 7x7",
+      "tags": [
+        "real estate",
+        "Cow Hollow",
+        "housing market"
+      ]
+    },
+    {
+      "headline": "District 2 Supervisor Race Heads to November General Election",
+      "body": "Supervisor Stephen Sherrill, appointed to the District 2 seat in December 2024 by then-Mayor London Breed after Catherine Stefani was elected to the California State Assembly, is running for a full term this fall. Because Sherrill was appointed rather than elected, his seat was up for vote in the June 2, 2026 primary, and will again be contested in the November 3, 2026 general election. District 2 covers the Marina, Pacific Heights, Cow Hollow, and Presidio Heights neighborhoods — a cluster at the center of some of San Francisco's most contentious housing and development debates this year.",
+      "sourceUrl": "https://en.wikipedia.org/wiki/2026_San_Francisco_Board_of_Supervisors_election",
+      "sourceName": "Wikipedia / SF Elections records",
+      "tags": [
+        "politics",
+        "District 2",
+        "election",
+        "Marina",
+        "Pacific Heights"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Atelier Crenn",
+        "cuisineGroup": "Other",
+        "type": "Three-Michelin-star French tasting menu",
+        "description": "Chef Dominique Crenn's flagship, the only female-led three-Michelin-star restaurant in the US, serving poetic pescatarian tasting menus inspired by her French upbringing and California's coast.",
+        "address": "3127 Fillmore St",
+        "phone": "415-440-0460",
+        "neighborhood": "Cow Hollow",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Greens Restaurant",
+        "cuisineGroup": "Vegetarian & Vegan",
+        "type": "Landmark vegetarian restaurant",
+        "description": "A San Francisco institution since 1979, Greens serves seasonal vegetarian California cuisine with sweeping bay and Golden Gate Bridge views from its Fort Mason waterfront location.",
+        "address": "2 Marina Blvd, Bldg A, Fort Mason",
+        "phone": "415-771-6222",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "A16",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Southern Italian restaurant and wine bar",
+        "description": "A neighborhood mainstay named for the highway connecting Naples to Puglia, serving blistered Neapolitan pizzas, housemade pastas, and an extensive southern Italian wine list.",
+        "address": "2355 Chestnut St",
+        "phone": "415-771-2216",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Delarosa",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Roman-style pizza and aperitivo bar",
+        "description": "A go-to Marina spot for thin-crust Roman pizzas, craft cocktails, and a convivial Italian-inspired aperitivo hour popular with the neighborhood crowd.",
+        "address": "2175 Chestnut St",
+        "phone": "415-441-7672",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Causwells",
+        "cuisineGroup": "Seafood & American",
+        "type": "Casual American bar and restaurant",
+        "description": "A Marina staple known for shareable American plates, a well-crafted burger, and a casual bar atmosphere popular for weekend brunch and weeknight dinners.",
+        "address": "2346 Chestnut St",
+        "phone": "415-447-6081",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Pacific Catch",
+        "cuisineGroup": "Seafood & American",
+        "type": "Casual Pacific Rim seafood restaurant",
+        "description": "A laid-back seafood spot with a Pacific Rim twist, offering everything from fresh fish tacos to poke bowls and sushi-style plates for lunch and dinner.",
+        "address": "2027 Chestnut St",
+        "phone": "415-440-1950",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Blackwood",
+        "cuisineGroup": "Asian",
+        "type": "Thai fusion restaurant",
+        "description": "A relaxed Chestnut Street spot serving Thai fusion favorites including red curry, mushroom rolls, and inventive Benedicts at brunch, drawing a loyal neighborhood following.",
+        "address": "2150 Chestnut St",
+        "phone": "415-931-9663",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Tacolicious",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Modern Mexican taqueria and bar",
+        "description": "A beloved local mini-chain known for creative tacos, strong margaritas, and a festive atmosphere that fills up fast on weekend nights along Chestnut Street.",
+        "address": "2250 Chestnut St",
+        "phone": "415-346-1966",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Balboa Cafe",
+        "cuisineGroup": "Seafood & American",
+        "type": "Classic American bar and grill",
+        "description": "A Cow Hollow landmark since 1913, the Balboa Cafe is famed for its legendary burger, lively bar scene, and weekend brunch that packs the room with neighborhood regulars.",
+        "address": "3199 Fillmore St",
+        "phone": "415-921-3944",
+        "neighborhood": "Cow Hollow",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Horseshoe Tavern",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Classic neighborhood dive bar",
+        "description": "A well-loved Marina dive bar known to regulars as 'The Shoe,' offering cold beers, a jukebox, pool tables, and multiple TVs for sports — a genuine no-frills SF institution.",
+        "address": "2024 Chestnut St",
+        "phone": "415-346-1430",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Bus Stop",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Old-school neighborhood bar",
+        "description": "A low-key Cow Hollow bar with an old-school SF atmosphere, serving well-priced drinks and drawing a mixed crowd of long-time regulars and younger Union Street visitors.",
+        "address": "1901 Union St",
+        "phone": "415-567-6905",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "The Interval at Long Now",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Bar, café, and museum at Fort Mason",
+        "description": "A bar and café housed within the Long Now Foundation at Fort Mason, featuring an eclectic cocktail menu, natural wines, and rotating exhibits on long-term thinking in a stunning waterfront setting.",
+        "address": "2 Marina Blvd, Bldg A, Fort Mason",
+        "phone": "415-200-1189",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Radhaus",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Alpine beerhall and restaurant",
+        "description": "A Fort Mason beerhall serving German-inspired food and a rotating selection of craft and imported beers in a spacious, communal setting with bay views on the Fort Mason campus.",
+        "address": "2 Marina Blvd, Bldg A, Fort Mason",
+        "phone": "415-829-7059",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Bar Darling",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft cocktail bar",
+        "description": "A stylish cocktail bar on Chestnut Street known for its creative seasonal cocktail menu, intimate atmosphere, and quality spirits program drawing a discerning Marina crowd.",
+        "address": "2250 Chestnut St",
+        "phone": "",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Sully's Marina Lounge",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Sports bar and lounge",
+        "description": "A popular Marina sports bar and lounge with a neighborhood-friendly vibe, multiple screens, and a full bar menu drawing locals for game days and weekend outings.",
+        "address": "2256 Chestnut St",
+        "phone": "415-292-7059",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "The Black Horse London Pub",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Tiny British-style pub",
+        "description": "One of San Francisco's smallest and most beloved bars, this cozy Union Street nook captures an authentic British pub atmosphere with a tight curated beer list and a famously intimate space for regulars.",
+        "address": "1514 Union St",
+        "phone": "415-928-2414",
+        "neighborhood": "Cow Hollow",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Peet's Coffee",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Specialty coffee chain",
+        "description": "A popular local anchor on Chestnut Street's retail strip, Peet's serves the Bay Area coffee chain's signature dark-roast coffees and espresso drinks, a neighborhood morning staple.",
+        "address": "2257 Chestnut St",
+        "phone": "415-931-8552",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Roam Artisan Burgers",
+        "cuisineGroup": "Seafood & American",
+        "type": "Artisan burger restaurant",
+        "description": "A Marina outpost of the local burger mini-chain, serving grass-fed beef, bison, turkey, and veggie burgers with responsibly sourced ingredients and a focus on sustainability.",
+        "address": "1785 Union St",
+        "phone": "415-440-7626",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Betelnut",
+        "cuisineGroup": "Asian",
+        "type": "Pan-Asian restaurant and bar",
+        "description": "A longtime Union Street fixture, Betelnut serves Southeast and East Asian street-food-inspired dishes alongside an extensive cocktail and Asian beer menu in a bustling, vibrant dining room.",
+        "address": "2030 Union St",
+        "phone": "415-929-8855",
+        "neighborhood": "Cow Hollow",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sweetgreen",
+        "cuisineGroup": "Vegetarian & Vegan",
+        "type": "Health-focused salad and grain bowl chain",
+        "description": "A Chestnut Street location of the national salad-and-grain-bowl chain popular with the Marina's health-conscious crowd for customizable seasonal bowls and sourced-ingredient salads.",
+        "address": "2352 Chestnut St",
+        "phone": "415-569-8030",
+        "neighborhood": "Marina District",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hotel Drisco Pacific Heights",
+        "type": "Luxury boutique hotel",
+        "description": "A 48-room 1903 Edwardian boutique hotel on a quiet Pacific Heights hilltop, celebrated for its complimentary gourmet breakfast, evening wine reception, private chauffeur service, and e-bike lending — a longtime local favorite for understated luxury.",
+        "address": "2901 Pacific Ave",
+        "phone": "415-346-2880",
+        "neighborhood": "Pacific Heights",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Cow Hollow Inn & Suites",
+        "type": "Motor inn and suites",
+        "description": "A well-situated motor inn on Lombard Street offering comfortable rooms and free self-parking — a practical choice for visitors who want walkable access to Union Street restaurants and Chestnut Street shops.",
+        "address": "2190 Lombard St",
+        "phone": "415-921-5800",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Infinity Hotel San Francisco, Tapestry Collection by Hilton",
+        "type": "Boutique hotel",
+        "description": "A Hilton Tapestry Collection property in the Marina District featuring rooftop fire pits, a zen garden, and spacious rooms within easy walking distance of Chestnut Street dining and the bay.",
+        "address": "1750 Lombard St",
+        "phone": "415-922-1010",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Hotel Del Sol",
+        "type": "Boutique motor inn",
+        "description": "A colorful, family-friendly boutique motor inn with a heated outdoor pool and playful California-inspired décor set around a courtyard, a cheerful option near the Marina Green.",
+        "address": "3100 Webster St",
+        "phone": "415-921-5520",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Seaside Inn",
+        "type": "Budget inn",
+        "description": "A no-frills, affordable inn in the Marina District within a 10-minute walk of Marina Green, Chestnut Street shops, and Union Street restaurants — a practical base for exploring the northern neighborhoods.",
+        "address": "1750 Lombard St",
+        "phone": "415-921-5900",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Marina Motel",
+        "type": "Classic motor court motel",
+        "description": "One of the Marina's oldest motor courts, the Marina Motel features enclosed parking, a garden courtyard, and simple, well-maintained rooms a short walk from the waterfront.",
+        "address": "2576 Lombard St",
+        "phone": "415-921-9406",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Greenwich Inn San Francisco",
+        "type": "Boutique inn",
+        "description": "A charming boutique inn on the edge of Pacific Heights and the Marina, offering comfortable rooms and a tour desk, a 9-minute walk from Fillmore Street's shops and restaurants.",
+        "address": "3201 Steiner St",
+        "phone": "415-921-5162",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Union Street Inn",
+        "type": "Bed and breakfast inn",
+        "description": "An intimate bed and breakfast on Cow Hollow's Union Street, offering individually decorated rooms in a restored Edwardian building with a secluded garden and full breakfast each morning.",
+        "address": "2229 Union St",
+        "phone": "415-346-0424",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Pacific Heights Inn",
+        "type": "Budget motor inn",
+        "description": "A quiet, affordable motor inn in the residential edge of Pacific Heights and Cow Hollow, recommended for travelers wanting a peaceful alternative to the busier Lombard Street corridor.",
+        "address": "1555 Union St",
+        "phone": "415-776-3310",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Coventry Motor Inn",
+        "type": "Motor inn",
+        "description": "A well-located motor inn on Lombard Street offering straightforward, clean accommodations with free parking and easy access to the Marina, Cow Hollow, and Fisherman's Wharf.",
+        "address": "1901 Lombard St",
+        "phone": "415-567-1200",
+        "neighborhood": "Marina District",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "FLAX Art & Design",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Art supply and design store",
+        "description": "A beloved San Francisco institution housed at Fort Mason Center, FLAX carries an extensive selection of fine art supplies, drafting materials, papers, and design goods for professionals and hobbyists alike.",
+        "address": "2 Marina Blvd, Bldg D, Fort Mason",
+        "phone": "415-530-3510",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Arion Press",
+        "shopGroup": "Books & Literature",
+        "type": "Fine press letterpress printer and bookshop",
+        "description": "A world-renowned fine-press letterpress printing studio and shop at Fort Mason Center, producing limited-edition artist books that are collected by libraries and private collectors internationally.",
+        "address": "2 Marina Blvd, Bldg B, Fort Mason",
+        "phone": "415-668-2542",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Taylor Stitch",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Men's sustainable clothing brand and flagship store",
+        "description": "San Francisco-founded Taylor Stitch sells durable, sustainability-focused men's clothing — shirts, denim, outerwear, and footwear — from its Chestnut Street flagship, emphasizing quality over fast fashion.",
+        "address": "2329 Chestnut St",
+        "phone": "415-872-4430",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Books Inc.",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "A Marina outpost of San Francisco's beloved independent bookstore chain, Books Inc. carries a curated selection of fiction, nonfiction, children's books, and local authors with knowledgeable staff recommendations.",
+        "address": "2251 Chestnut St",
+        "phone": "415-931-3633",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Union Street Goldsmith",
+        "shopGroup": "Home & Gifts",
+        "type": "Independent jewelry studio and gallery",
+        "description": "A long-running Union Street jewelry studio where artisan goldsmiths design and fabricate custom fine jewelry on-site, with a gallery of ready-to-wear pieces in gold, platinum, and gemstones.",
+        "address": "1909 Union St",
+        "phone": "415-776-8048",
+        "neighborhood": "Cow Hollow",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Betsy Fisher",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's contemporary boutique",
+        "description": "A Union Street boutique curating contemporary women's clothing, accessories, and gifts from emerging and established designers, known for its personal styling approach and well-edited seasonal collections.",
+        "address": "1992 Union St",
+        "phone": "415-738-9090",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Plumpjack Wine & Spirits",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Wine and spirits retailer",
+        "description": "The flagship retail shop of the Plumpjack Group, offering an expertly curated selection of California and international wines, craft spirits, and knowledgeable staff guidance in the heart of Cow Hollow.",
+        "address": "3201 Fillmore St",
+        "phone": "415-346-9870",
+        "neighborhood": "Cow Hollow",
+        "notable": "Landmark"
+      },
+      {
+        "name": "California Wine Merchant",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "California-focused wine shop",
+        "description": "A neighborhood wine shop dedicated exclusively to California wines, with a broad selection spanning small-production Napa and Sonoma producers alongside coastal and Central Valley labels.",
+        "address": "2113 Chestnut St",
+        "phone": "415-567-0646",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Sanrio",
+        "shopGroup": "Home & Gifts",
+        "type": "Japanese character goods and gifts store",
+        "description": "A well-stocked Chestnut Street Sanrio outpost carrying Hello Kitty and other Japanese character merchandise — stationery, accessories, plush toys, and gifts popular with shoppers of all ages.",
+        "address": "2301 Chestnut St",
+        "phone": "415-922-8010",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Zinc Details",
+        "shopGroup": "Home & Gifts",
+        "type": "Modern home décor and design store",
+        "description": "A Cow Hollow design shop curating contemporary furniture, lighting, and home accessories from international designers, appreciated for its clean aesthetic and thoughtfully selected merchandise.",
+        "address": "1905 Fillmore St",
+        "phone": "415-776-2100",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Sur La Table",
+        "shopGroup": "Home & Gifts",
+        "type": "Kitchen and cooking retail store",
+        "description": "A Chestnut Street outpost of the kitchen retail chain, stocking professional-grade cookware, bakeware, small appliances, and culinary tools, with regular cooking classes offered on-site.",
+        "address": "2227 Chestnut St",
+        "phone": "415-346-5048",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Ambiance",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's clothing boutique",
+        "description": "A San Francisco–based women's clothing boutique with a Union Street location, known for its accessible mix of casual and dressy styles for everyday wear and special occasions.",
+        "address": "1864 Union St",
+        "phone": "415-923-9797",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Palace of Fine Arts Theatre",
+        "venueGroup": "Music Venues",
+        "type": "Performing arts theater",
+        "description": "An intimate 1,000-seat theater housed within the iconic 1915 Palace of Fine Arts rotunda, hosting a diverse calendar of live music, comedy, dance, and theatrical performances throughout the year.",
+        "address": "3301 Lyon St",
+        "phone": "415-567-6642",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Fort Mason Center for Arts & Culture",
+        "venueGroup": "Museums & Cultural",
+        "type": "Multi-venue cultural campus",
+        "description": "A sprawling waterfront cultural campus at the edge of the Marina, hosting hundreds of events annually across theaters, galleries, and pavilions — from aerial arts festivals and craft fairs to exhibitions and improv comedy.",
+        "address": "2 Marina Blvd",
+        "phone": "415-345-7500",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "BATS Improv",
+        "venueGroup": "Theater & Comedy",
+        "type": "Improvisational comedy theater",
+        "description": "The Bay Area's premier improvisational theater company, based at Fort Mason Center, offering weekly performances, jams, workshops, and special events in the intimate BATS Annex and main theater.",
+        "address": "2 Marina Blvd, Fort Mason Center",
+        "phone": "415-474-6776",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Cowell Theater at Fort Mason",
+        "venueGroup": "Theater & Comedy",
+        "type": "Midsize performing arts theater",
+        "description": "A 440-seat performing arts theater at Fort Mason Center hosting dance, theater, film, and special events as part of the campus's vibrant year-round cultural programming.",
+        "address": "2 Marina Blvd, Pier 2, Fort Mason",
+        "phone": "415-345-7500",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Gateway Pavilion at Fort Mason",
+        "venueGroup": "Museums & Cultural",
+        "type": "Exhibition and event pavilion",
+        "description": "A large, flexible event and exhibition space at Fort Mason Center's Pier 2, used for major art installations, festivals, and public programs including the annual Aerial Arts Festival and West Coast Craft fairs.",
+        "address": "2 Marina Blvd, Pier 2, Fort Mason",
+        "phone": "415-345-7500",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "The Haas-Lilienthal House",
+        "venueGroup": "Museums & Cultural",
+        "type": "Victorian house museum",
+        "description": "A beautifully preserved 1886 Queen Anne Victorian mansion in Pacific Heights operated by San Francisco Heritage, open for guided tours offering a vivid window into upper-class Gilded Age life in the city.",
+        "address": "2007 Franklin St",
+        "phone": "415-441-3004",
+        "neighborhood": "Pacific Heights",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Marina Green",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Waterfront park and event lawn",
+        "description": "San Francisco's most iconic urban lawn, stretching along the bayfront with views of the Golden Gate Bridge, Alcatraz, and Marin — a gathering point for kite flying, outdoor movies, running, and community events.",
+        "address": "Marina Blvd at Scott St",
+        "phone": "",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Alta Plaza Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Hilltop park with city views",
+        "description": "A beautifully terraced Pacific Heights park atop a hill with sweeping views of the city and bay, popular for picnics, dog walking, tennis, and community gatherings.",
+        "address": "Jackson St & Steiner St",
+        "phone": "",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "Lafayette Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood hilltop park",
+        "description": "A beloved Pacific Heights park offering tennis courts, off-leash dog runs, picnic lawns, and panoramic views of the bay and city skyline, a community anchor for the surrounding residential neighborhood.",
+        "address": "Laguna St & Sacramento St",
+        "phone": "",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "Wave Organ",
+        "venueGroup": "Museums & Cultural",
+        "type": "Sound sculpture and public art installation",
+        "description": "An acoustic sculpture at the tip of the Marina jetty consisting of 25 organ pipes that produce musical sounds as bay waves move through them — a free and unique sensory experience on the waterfront.",
+        "address": "1 Yacht Rd, Marina District",
+        "phone": "",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Yoga Flow SF — Union Street",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Full-service yoga studio",
+        "description": "A popular Cow Hollow yoga studio offering a wide range of yoga styles and workshops across multiple class times, set in an airy second-floor space with floor-to-ceiling windows on Union Street.",
+        "address": "Union St, Cow Hollow",
+        "phone": "",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Karma Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "A neighborhood yoga studio at 2219 Filbert Street in Cow Hollow offering a consistent and community-focused yoga practice across a range of class levels and styles.",
+        "address": "2219 Filbert St",
+        "phone": "",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Hot 8 Yoga — Marina",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Hot yoga studio",
+        "description": "A Marina location of the Hot 8 Yoga brand offering heated yoga classes in multiple styles — from Power and Vinyasa to Yin and Sculpt — known for its spa-clean facilities and community atmosphere.",
+        "address": "Chestnut St, Marina District",
+        "phone": "",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "CorePower Yoga — The Marina",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Hot yoga and yoga sculpt studio",
+        "description": "A Marina location of the national CorePower Yoga chain, offering heated power yoga, yoga sculpt, and restoration classes in a well-equipped studio near Chestnut Street.",
+        "address": "Chestnut St, Marina District",
+        "phone": "",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Barre Union",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Barre fitness studio",
+        "description": "A boutique Marina barre studio offering low-impact, high-intensity classes combining ballet barre technique with Pilates and strength training, popular with the neighborhood's fitness-focused community.",
+        "address": "Chestnut St, Marina District",
+        "phone": "",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "CORE40 Marina (Lagree Fitness)",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Lagree Fitness Megaformer studio",
+        "description": "A Marina boutique fitness studio offering Lagree Method classes on Megaformer machines — a high-intensity, low-impact workout combining Pilates, yoga, and strength training principles.",
+        "address": "Marina District",
+        "phone": "",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Crunch Fitness — Marina",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "A Marina location of the national Crunch Fitness chain, offering a compact but well-equipped gym floor with cardio machines, free weights, and group fitness classes for members.",
+        "address": "Marina District",
+        "phone": "",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "The Pad Studios",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga and movement studio",
+        "description": "A boutique Marina movement studio offering yoga, stretching, and bodywork sessions designed to improve flexibility and mobility, with an approachable, personalized class environment.",
+        "address": "Marina District",
+        "phone": "",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Presidio YMCA",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "YMCA community fitness center",
+        "description": "A full-service YMCA facility within the Presidio, offering gym equipment, group fitness classes, youth programming, and swimming; also serves as a complimentary amenity for Hotel Drisco guests.",
+        "address": "63 Funston Ave, Presidio",
+        "phone": "415-447-9622",
+        "neighborhood": "Presidio Heights",
+        "notable": ""
+      },
+      {
+        "name": "Marina Green Running Path & Bay Trail",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Waterfront running and cycling path",
+        "description": "A flat, paved multi-use path running along the Marina waterfront and connecting to the Bay Trail, one of the city's most popular running, cycling, and rollerblading routes with unobstructed bay views.",
+        "address": "Marina Blvd, Marina District",
+        "phone": "",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Anchor Meditation",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Meditation and mindfulness studio",
+        "description": "A Cow Hollow studio offering guided meditation classes, breathwork sessions, and mindfulness workshops in a calm, welcoming environment designed for both beginners and experienced practitioners.",
+        "address": "Cow Hollow / Marina District",
+        "phone": "",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Hundreds voice opposition over plan to develop San Francisco Marina Safeway site into twin tower high-rise",
+      "url": "https://abc7news.com/post/hundreds-voice-opposition-plan-develop-san-francisco-marina-safeway-site-twin-tower-high-rise/19566811/",
+      "publication": "ABC7 News / KGO-TV"
+    },
+    {
+      "title": "Marina Safeway fight fuels NIMBY pushback on state housing mandates",
+      "url": "https://sfstandard.com/2026/07/24/marina-safeway-project-ballot-measure-housing/",
+      "publication": "The San Francisco Standard"
+    },
+    {
+      "title": "Residents Protest Proposed 25-Story Marina Safeway Redevelopment",
+      "url": "https://sfist.com/2026/04/02/residents-protest-proposed-25-story-marina-safeway-redevelopment/",
+      "publication": "SFist"
+    },
+    {
+      "title": "SF Marina residents protest proposed Safeway redevelopment",
+      "url": "https://www.kron4.com/news/bay-area/sf-marina-residents-protest-proposed-safeway-redevelopment/",
+      "publication": "KRON4"
+    },
+    {
+      "title": "The Marina Safeway Makeover: Why the 25-Story 'Swoop' is Fast-Tracking to Reality",
+      "url": "https://www.atlas-premier.com/the-marina-safeway-makeover-why-the-25-story-swoop-is-fast-tracking-to-reality-%E2%80%BD/",
+      "publication": "Atlas Premier"
+    },
+    {
+      "title": "HC-SF Proposal for 2629 Lombard Street in Cow Hollow, San Francisco",
+      "url": "https://sfyimby.com/2026/07/hc-sf-proposal-for-2629-lombard-street-in-cow-hollow-san-francisco.html",
+      "publication": "SF YIMBY"
+    },
+    {
+      "title": "Bay Area Development and Construction Brief: July 15 through July 21, 2026",
+      "url": "https://www.atlas-premier.com/bay-area-development-and-construction-brief-july-15-through-july-21-2026/",
+      "publication": "Atlas Premier"
+    },
+    {
+      "title": "SF gives green light to new waterfront park in the Marina",
+      "url": "https://www.sfexaminer.com/news/urban-development/marinas-gashouse-cove-approved-to-become-a-waterfront-park/article_22775207-2641-43fd-b650-e531ac6fc30e.html",
+      "publication": "San Francisco Examiner"
+    },
+    {
+      "title": "SF's Marina Getting New 5-Acre Waterfront Park",
+      "url": "https://sf.funcheap.com/city-guide/5acre-park-finally-coming-marina-waterfront/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Mapped: The top-priority city streets, potholes slated for repair",
+      "url": "https://sfstandard.com/2026/04/22/sf-street-repaving-map-2026/",
+      "publication": "The San Francisco Standard"
+    },
+    {
+      "title": "What does a 'mansion shortage' look like? A Cow Hollow home setting San Francisco's 21st-century record for overbidding",
+      "url": "https://sfstandard.com/2026/05/14/cow-hollow-home-millions-over-asking/",
+      "publication": "The San Francisco Standard"
+    },
+    {
+      "title": "Cow Hollow Real Estate Guide",
+      "url": "https://www.helena7x7.com/cow-hollow-real-estate-guide/",
+      "publication": "Helena 7x7"
+    },
+    {
+      "title": "2026 San Francisco Board of Supervisors election",
+      "url": "https://en.wikipedia.org/wiki/2026_San_Francisco_Board_of_Supervisors_election",
+      "publication": "Wikipedia"
+    },
+    {
+      "title": "Fort Mason Night Market 2026",
+      "url": "https://fortmason.org/series/fort-mason-night-market-2026/",
+      "publication": "Fort Mason Center for Arts & Culture"
+    },
+    {
+      "title": "Sundown Cinema 2026",
+      "url": "https://sfstandard.com/sundown-cinema/",
+      "publication": "The San Francisco Standard"
+    },
+    {
+      "title": "Sundown Cinema — UCSF Events Calendar",
+      "url": "https://calendar.ucsf.edu/event/sundown-cinema",
+      "publication": "UCSF Events Calendar"
+    },
+    {
+      "title": "San Francisco Aerial Arts Festival 2026",
+      "url": "https://fortmason.org/series/san-francisco-aerial-arts-festival-2026/",
+      "publication": "Fort Mason Center for Arts & Culture"
+    },
+    {
+      "title": "San Francisco Aerial Arts Festival 2026 — Zaccho Dance Theatre",
+      "url": "https://zaccho.org/?sfaaf-2026=",
+      "publication": "Zaccho Dance Theatre"
+    },
+    {
+      "title": "2026 Renegade Craft Summer Fair at Fort Mason Center (August 1-2)",
+      "url": "https://sf.funcheap.com/renegade-craft-fair-at-fort-mason-center-august-2-3-2/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Fort Mason Center for Arts & Culture — Summer 2026 Programming",
+      "url": "https://sfartweek.com/fort-mason-center-for-arts-and-culture/",
+      "publication": "SF Art Week"
+    },
+    {
+      "title": "Palace of Fine Arts — Upcoming Events",
+      "url": "https://dothebay.com/venues/palace-of-fine-arts",
+      "publication": "DoTheBay"
+    },
+    {
+      "title": "Greens Restaurant — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Greens_Restaurant",
+      "publication": "Wikipedia"
+    },
+    {
+      "title": "Atelier Crenn — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Atelier_Crenn",
+      "publication": "Wikipedia"
+    },
+    {
+      "title": "Atelier Crenn — North America's 50 Best Restaurants 2026",
+      "url": "https://www.theworlds50best.com/northamerica/en/the-list/atelier-crenn.html",
+      "publication": "North America's 50 Best Restaurants"
+    },
+    {
+      "title": "Hotel Drisco Pacific Heights — Location and Amenities",
+      "url": "https://hoteldrisco.com/hotel/location/",
+      "publication": "Hotel Drisco"
+    },
+    {
+      "title": "Fort Mason Night Market: Attend — West Coast Craft",
+      "url": "https://www.westcoastcraft.com/fort-mason-night-market-attend",
+      "publication": "West Coast Craft"
+    },
+    {
+      "title": "Fort Mason Night Market — Timeout San Francisco",
+      "url": "https://www.timeout.com/san-francisco/things-to-do/fort-mason-night-market",
+      "publication": "Time Out San Francisco"
+    }
+  ]
+}
