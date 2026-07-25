@@ -50,7 +50,7 @@ function thisWeekDate() {
 async function callClaude(systemPrompt, userMessage, tools = []) {
   const body = JSON.stringify({
     model: MODEL,
-    max_tokens: 16000,
+    max_tokens: 24000,
     system: systemPrompt,
     messages: [{ role: "user", content: userMessage }],
     ...(tools.length ? { tools } : {}),
@@ -455,7 +455,8 @@ async function sendClusterEmail(cluster, issue) {
     subject,
     body,
     status: "about_to_send",
-    included_tags: [cluster.slug],   // send only to subscribers tagged with this cluster
+    // TODO: add tag filtering once Buttondown API field name is confirmed
+    // (included_tags was removed in a Buttondown API update)
   });
 
   return new Promise((resolve, reject) => {
