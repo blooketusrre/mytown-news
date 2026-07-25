@@ -29,7 +29,7 @@ layout: base.njk
   </div>
   <div class="masthead__bar">
     <div class="masthead__bar-inner container">
-      <span>{% if issue %}Week of {{ issue.weekLabel }} &nbsp;·&nbsp; Vol. {{ issue.volume }}, Issue {{ issue.issueNumber }}{% else %}Coming Friday{% endif %}</span>
+      {% if issue %}<span class="masthead__bar-date">Week of <strong>{{ issue.weekOf | date_short }}</strong></span>{% else %}<span class="masthead__bar-date">Coming Friday</span>{% endif %}
       <a href="{{ site.url }}" class="masthead__bar-url">{{ site.url | replace("https://","") }}</a>
       <span>{{ site.city }} &nbsp;·&nbsp; Free &amp; Independent</span>
     </div>
@@ -49,7 +49,7 @@ layout: base.njk
       <li><a href="#directory">Directory</a></li>
       <li><a href="#sources">Sources</a></li>
     </ul>
-    <span class="site-nav__meta">{{ issue.weekLabel }} Edition</span>
+    <span class="site-nav__meta">{% if issue %}{{ issue.weekOf | date_short }}{% endif %}</span>
   </div>
 </nav>
 

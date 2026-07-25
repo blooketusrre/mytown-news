@@ -107,7 +107,8 @@ EDITORIAL RULES — NON-NEGOTIABLE:
 3. Named individuals appear only in their publicly documented roles (officials, business owners, published authors). No private individuals unless they have given a public statement.
 4. Do NOT fabricate events, dates, business names, or addresses.
 5. If a story cannot be verified, omit it entirely. A shorter issue with real news beats a longer issue with invented content.
-6. Search the web for current news. Prioritize stories from the last 14 days; events should be upcoming or ongoing.
+6. Search the web for current news. Only include stories published within the last 10 days. Do not include events or news that occurred more than 10 days ago (e.g., no July 4th stories if today is July 14 or later).
+7. Sort events in this exact order: first, multi-day/through-date events (e.g., "Through August 15"); second, events labeled "Ongoing" with no fixed end; third, single-date upcoming events in chronological order by date.
 
 CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
 {

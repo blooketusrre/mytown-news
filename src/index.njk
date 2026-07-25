@@ -9,6 +9,9 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
   <div class="container">
     <p class="home-hero__eyebrow">San Francisco · Free &amp; Independent · Every Friday</p>
     <h1 class="home-hero__title">My Town <em>News</em></h1>
+    {% if northWaterfront %}
+    <p class="home-hero__week">Week of <strong>{{ northWaterfront.weekOf | date_short }}</strong></p>
+    {% endif %}
     <p class="home-hero__desc">
       Hyperlocal news for every San Francisco neighborhood — sourced, verified, and delivered to your inbox every Friday.
     </p>
