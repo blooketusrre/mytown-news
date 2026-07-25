@@ -1,0 +1,791 @@
+{
+  "clusterSlug": "presidio-richmond",
+  "clusterName": "Presidio & Richmond",
+  "weekOf": "2026-07-31",
+  "topStories": [
+    {
+      "headline": "Waymo Fleet Chaos in the Presidio on July 4 Triggers Federal Ultimatum to Robotaxi Industry",
+      "dek": "Dozens of autonomous Waymo vehicles stalled and had to be towed from Presidio streets after July 4 fireworks, prompting federal regulators to demand fixes from the entire robotaxi industry by month's end.",
+      "body": "The Presidio became the unlikely epicenter of a national debate about autonomous vehicle safety after the Fourth of July holiday, when dozens of Waymo robotaxis became stranded in post-fireworks gridlock on the park's winding roads. Some vehicles ran out of battery power and had to be towed, while at least one occupied Waymo drove over a lit firework. A separate, unoccupied Waymo Ojai model caught fire after doing the same. No injuries were reported in either incident.\n\nThe chaos unfolded as more than 100,000 people attempted to leave the Presidio and surrounding areas after fireworks were launched from the Golden Gate Bridge—which was fully closed that evening. Video verified by multiple news outlets showed at least a dozen stationary Waymo vehicles, many of them Jaguar I-PACE models, lined up on Presidio streets. Waymo said in a statement that extreme traffic congestion disrupted normal operations and that the company worked with San Francisco's Emergency Operations Center to clear vehicles from the area.\n\nThe incident drew a swift federal response. On July 8, NHTSA Administrator Jonathan Morrison issued a formal directive to all autonomous vehicle developers, demanding that they present concrete engineering solutions to prevent emergency interference by the end of July 2026—or face enforcement action. The letter cited a documented pattern of robotaxis driving into active emergency scenes, blocking ambulances and fire trucks, and failing to recognize flashing lights, cones, and smoke. The directive did not name any specific company, but Waymo operates the largest robotaxi fleet in the United States.\n\nFor Presidio neighbors and regular park visitors, the July 4 gridlock has heightened concerns about how autonomous vehicle operators coordinate with city planners during major public events. Waymo said it is 'always evaluating ways to strengthen Waymo's resilience in major traffic disruptions.' The federal deadline for the industry to submit solutions falls this week.",
+      "sourceUrl": "https://abc7news.com/post/waymo-fleet-clogs-presidio-july-4-fireworks-leaving-vehicles-stranded-towed/19455862/",
+      "sourceName": "ABC7 San Francisco / KGO-TV",
+      "tags": [
+        "Waymo",
+        "Presidio",
+        "autonomous vehicles",
+        "transportation",
+        "public safety"
+      ]
+    },
+    {
+      "headline": "Richmond District Grocery Outlet Quietly Deploys Facial Recognition at Its Doors",
+      "dek": "The Richmond District's Grocery Outlet store is among four San Francisco locations of the discount chain now using AI-powered face-matching software to flag suspected shoplifters—sparking privacy concerns from civil liberties advocates.",
+      "body": "Shoppers at the Richmond District Grocery Outlet may have noticed a small sign near the front door in recent weeks disclosing that the store is using 'Face Matching software' to prevent shoplifting. The store is one of four San Francisco Grocery Outlet locations—along with the Mission, Portola, and Bayview stores—that have deployed SAFR Guard, an AI-powered facial recognition system made by a company called SAFR. The story was first reported by Mission Local.\n\nThe SAFR system works by scanning the faces of customers as they enter, comparing them against a watchlist of repeat offenders or suspects identified by the business. If a face matches a person on the watchlist, store employees are alerted. SAFR says that if a customer's image does not match anyone on the watchlist, the image is deleted immediately. Individual stores can choose to build their own watchlists or pool data with other retailers.\n\nGrocery Outlet is headquartered in Emeryville and leases its stores to independent operators, which makes it unclear how many other locations use the system or how long it has been in place at specific stores. The company did not respond to multiple requests for comment from news organizations. Signs at some locations were printed on a transparent background, making them difficult for customers to read as they entered.\n\nCivil liberties attorneys have raised concerns about the practical ability of lower-income shoppers to opt out. San Francisco's 2019 ban on facial recognition applies only to city agencies, not private businesses, and California privacy law does not require businesses to obtain affirmative consent before collecting biometric data—though shoppers do have a right to opt out of the sale or sharing of that data after it is gathered.",
+      "sourceUrl": "https://missionlocal.org/2026/07/sf-grocery-outlet-facial-recognition/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "facial recognition",
+        "Richmond District",
+        "privacy",
+        "retail",
+        "Grocery Outlet"
+      ]
+    },
+    {
+      "headline": "The Presidio Turns 250: A Year of Archaeology, Exhibitions, and a September Milestone Celebration",
+      "dek": "As the Presidio of San Francisco marks the 250th anniversary of its founding by Spain in September 1776, a summer of archaeological discoveries, new exhibitions, and a major gala event at the Presidio Theatre are bringing the park's layered history into the spotlight.",
+      "body": "This year, the Presidio of San Francisco is celebrating a milestone that parallels the nation's own semiquincentennial: the 250th anniversary of the founding of El Presidio de San Francisco on September 17, 1776—the same year the Declaration of Independence was signed on the East Coast. The convergence of these two anniversaries has made the Presidio a focal point for America 250 programming throughout the summer.\n\nArchaeologists have been busy on the Main Post. A crew digging a trench in a Presidio road recently unearthed multiple colorfully painted pieces of pottery from the Spanish colonial era. The Presidio Trust's archaeology lab, which already holds more than 526,000 relics, is processing the new finds. The ongoing EXCLUSION exhibition at the Presidio Officers' Club—documenting the Presidio's role in the World War II incarceration of 120,000 Japanese Americans—has been running Fridays through Sundays, free of charge, through the end of July.\n\nLooking ahead to September 17, the exact 250th anniversary of the Presidio's official founding, the Presidio Historical Association has planned a milestone evening at the beautifully restored, historic 600-seat Presidio Theatre. Filmmaker Luis Valle will present the premiere of his completed documentary Documenting Anza by Bike—an account of his bicycle journey retracing the route from Sonora, Mexico, to the Presidio—followed by a champagne reception celebrating the Presidio's birthday.\n\nThe newly opened Mess Hall food hall at 201 Halleck Street, adjacent to Presidio Tunnel Tops, is also part of the park's 2026 renewal story. The 6,200-square-foot space, housed in a restored former U.S. Army building, features three food concepts—Korean restaurant Boda, sandwich-and-burger counter Breadwinner, and seafood specialist Dayboat Seafood—alongside a café serving Wrecking Ball Coffee, a full bar, and a market. James Beard Award-winning chef Peter Serpico oversaw the culinary development of the hall.",
+      "sourceUrl": "https://presidio.gov/about/press/whats-new-at-the-presidio-of-san-francisco-in-2026",
+      "sourceName": "Presidio Trust",
+      "tags": [
+        "Presidio",
+        "250th anniversary",
+        "history",
+        "archaeology",
+        "Mess Hall",
+        "America 250"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Fiesta en el Parque at Presidio Tunnel Tops",
+      "date": "Saturday, August 1",
+      "time": "1:00 PM–4:00 PM",
+      "location": "Presidio Tunnel Tops, East Meadow, 210 Lincoln Blvd., Presidio",
+      "description": "The fourth annual free festival presented by Telemundo 48 and NBC Bay Area in partnership with the Presidio Trust, featuring live Latin music, salsa, merengue, and cumbia dance lessons, arts and crafts, face painting, and lawn games with Golden Gate Bridge views. Bring a picnic or visit Presidio Pop Up for food.",
+      "sourceUrl": "https://presidio.gov/explore/events/fiesta-en-el-parque-3",
+      "sourceName": "Presidio Trust"
+    },
+    {
+      "title": "Presidio Forest Stewards Volunteer Morning",
+      "date": "Friday, July 31",
+      "time": "9:00 AM–12:00 PM",
+      "location": "Presidio of San Francisco (meeting location provided via registration confirmation)",
+      "description": "Volunteer with the Golden Gate National Parks Conservancy to tend young trees in the Presidio's reforestation areas through planting, weeding, mulching, and pruning. No experience needed; all ages welcome. Registration required at parksconservancy.org.",
+      "sourceUrl": "https://www.parksconservancy.org/programs/presidio-forest-stewards",
+      "sourceName": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "NPS Ranger Campfire Program at Presidio Tunnel Tops",
+      "date": "Through Labor Day (daily)",
+      "time": "3:00 PM–3:30 PM",
+      "location": "Presidio Tunnel Tops Campfire Circle, near the Presidio Visitor Center, Presidio",
+      "description": "National Park Service rangers lead free daily campfire talks at the Campfire Circle through Labor Day. Drop in any afternoon for a brief, engaging ranger-led program.",
+      "sourceUrl": "https://www.parksconservancy.org/presidio-tunnel-tops-events",
+      "sourceName": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "EXCLUSION Exhibition at Presidio Officers' Club",
+      "date": "Through July 31",
+      "time": "10:00 AM–4:00 PM",
+      "location": "Presidio Officers' Club, 50 Moraga Avenue, Presidio",
+      "description": "The award-winning free exhibition documents the Presidio's role in the unjust World War II incarceration of 120,000 Japanese Americans. Presented in partnership with the Korematsu Institute and the National Japanese American Historical Society. Open Fridays through Sundays.",
+      "sourceUrl": "https://presidio.gov/about/press/whats-new-at-the-presidio-of-san-francisco-in-2026",
+      "sourceName": "Presidio Trust"
+    },
+    {
+      "title": "Presidio Habitat Stewards Volunteer Morning",
+      "date": "Saturday, August 1",
+      "time": "9:00 AM–12:00 PM",
+      "location": "Presidio of San Francisco (meeting location provided via registration confirmation)",
+      "description": "Help restore and preserve the Presidio's natural areas through weeding, watering, mulching, and planting. Free; registration required through the Golden Gate National Parks Conservancy website. All ages welcome.",
+      "sourceUrl": "https://www.parksconservancy.org/programs/presidio-habitat-stewards",
+      "sourceName": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "250 Years on the Presidio — Ranger Walk",
+      "date": "Sunday, August 9",
+      "time": "11:00 AM–12:00 PM",
+      "location": "Presidio Visitor Center, Presidio",
+      "description": "A monthly ranger-led walk exploring the Presidio's 250 years of layered history, from its Spanish colonial origins to its life as a national park. Free; no registration required.",
+      "sourceUrl": "https://www.parksconservancy.org/parks/presidio-san-francisco",
+      "sourceName": "Golden Gate National Parks Conservancy"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Ocean Indian Cuisine on Geary Blvd. Refreshes Menu Under New Executive Chef",
+      "body": "Ocean Indian Cuisine, the family-run Indian and Nepali (Himalayan) restaurant at 6127 Geary Blvd. in the Richmond District, is rolling out seasonal menus and new dishes under Executive Chef Ghanashyam 'Sam' Kandel, who joined the restaurant in October 2025. Kandel's culinary background spans Nepal, India, and Japan, and he has been featured in The Kathmandu Post and The Rising Nepal for his promotion of Nepali cuisine. The restaurant previously earned a spot on Yelp's 2024 Top 100 Places to Eat in the United States—the only San Francisco restaurant on that list. More information is available at oicsf.com.",
+      "sourceUrl": "https://richmondsunsetnews.com/2026/07/10/announcements-july-2026/",
+      "sourceName": "Richmond Review / Sunset Beacon",
+      "tags": [
+        "Richmond District",
+        "restaurants",
+        "food"
+      ]
+    },
+    {
+      "headline": "Balboa Theatre Celebrated Its Centennial This Spring with Mural and Community Screenings",
+      "body": "The Balboa Theatre at 3630 Balboa St. in the Outer Richmond marked its 100th anniversary in April 2026 with a weeklong celebration that included a fundraiser gala, free community screenings, and the unveiling of a tile mural at the theater's entrance. The mural, titled 'A Century of Filmmaking in San Francisco,' was created by artists Sandow Birk and Elyse Pignolet. The celebration also honored Oscar-nominated costume designer Aggie Rodgers, whose credits include The Color Purple, Beetlejuice, and Fruitvale Station, with the inaugural Balboa Award. Opened in 1926 and now operated as a nonprofit by CinemaSFBay—which also runs the Vogue and 4 Star theaters—the Balboa presents more than 500 films annually across its two screens and remains one of San Francisco's oldest continuously operating movie houses.",
+      "sourceUrl": "https://www.sfexaminer.com/culture/movies-and-tv/sf-residents-celebrate-balboa-theatres-100th-anniversary/article_6b3809aa-633f-4f4a-89f0-ee5cc28f4ffb.html",
+      "sourceName": "San Francisco Examiner",
+      "tags": [
+        "Balboa Theatre",
+        "Outer Richmond",
+        "cinema",
+        "arts",
+        "centennial"
+      ]
+    },
+    {
+      "headline": "SF Marathon Brings Road Closures to Presidio and Park Approaches",
+      "body": "The San Francisco Marathon on July 26 brought temporary road closures to the Presidio and Golden Gate National Recreation Area approaches, including Lincoln Boulevard. The official race advisory called for no bridge access through the Presidio between approximately 4:30 a.m. and 10 a.m. on race day. San Francisco Recreation and Parks aimed to reopen all listed park roads by 11 a.m. after the early-morning course closures. Runners, cyclists, and drivers heading to Baker Beach, Crissy Field, or the Golden Gate Bridge were advised to plan alternate routes.",
+      "sourceUrl": "https://deeparrival.com/news/sf-marathon-road-closures-july-26-2026/",
+      "sourceName": "Deep Arrival",
+      "tags": [
+        "SF Marathon",
+        "Presidio",
+        "transportation",
+        "road closures"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Burma Superstar",
+        "cuisineGroup": "Asian",
+        "type": "Burmese restaurant",
+        "description": "A Richmond District institution since 1992, known for its famous tea leaf salad, samusa soup, and generous portions of inventive Burmese dishes drawing from Indian, Chinese, and Thai flavors.",
+        "address": "309 Clement St.",
+        "phone": "415-387-2147",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "B Star",
+        "cuisineGroup": "Asian",
+        "type": "Burmese-Asian fusion restaurant",
+        "description": "Sister restaurant to Burma Superstar a few blocks away, serving many of the same Burmese favorites alongside fusion dishes with typically shorter waits.",
+        "address": "127 Clement St.",
+        "phone": "415-933-9900",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Chapeau!",
+        "cuisineGroup": "Other",
+        "type": "French bistro",
+        "description": "A neighborhood classic celebrating over 30 years in the Inner Richmond, known for consistent classic French cuisine and warm hospitality, with à la carte and three-course prix-fixe options.",
+        "address": "126 Clement St.",
+        "phone": "415-750-9787",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Aziza",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Moroccan-Californian restaurant",
+        "description": "Michelin-recommended restaurant offering innovative Moroccan-Californian cuisine with creative cocktails in a vibrant setting featuring Moroccan lamps and geometric tiles.",
+        "address": "5800 Geary Blvd.",
+        "phone": "415-752-2222",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Kitchen Istanbul",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Turkish restaurant",
+        "description": "Elevated neighborhood Turkish restaurant on Clement St., named one of the Bay Area's Top 100 Restaurants by the SF Chronicle, led by owner Emrah Kilicoglu and known for genuine hospitality and regional cuisine.",
+        "address": "234 Clement St.",
+        "phone": "415-702-6004",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Fiorella",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian-American pizzeria",
+        "description": "Beloved neighborhood Italian restaurant and pizzeria serving sourdough-based pies, house-made pastas, meatballs, and a fried chicken dish that has developed a cult following.",
+        "address": "2339 Clement St.",
+        "phone": "415-340-3049",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Violet's",
+        "cuisineGroup": "Seafood & American",
+        "type": "American bar and restaurant",
+        "description": "Sister restaurant to Fiorella, serving elevated American small plates—including seafood platters, clam toast, and shrimp louie rolls—at a long curved bar with crushable cocktails.",
+        "address": "2301 Clement St.",
+        "phone": "415-655-9542",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Giorgio's Pizzeria",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Family Italian restaurant",
+        "description": "Family-owned Italian restaurant serving the Inner Richmond neighborhood for over 40 years with classic pizza, pasta, and other Italian staples.",
+        "address": "151 Clement St.",
+        "phone": "415-668-1321",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ocean Indian Cuisine",
+        "cuisineGroup": "Asian",
+        "type": "Indian and Nepali restaurant",
+        "description": "Family-run Indian and Himalayan restaurant and the only SF restaurant named to Yelp's 2024 Top 100 list in the US, now debuting seasonal menus under Executive Chef Ghanashyam 'Sam' Kandel.",
+        "address": "6127 Geary Blvd.",
+        "phone": "415-386-3075",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Mandalay Restaurant",
+        "cuisineGroup": "Asian",
+        "type": "Burmese restaurant",
+        "description": "Family-owned and operated Burmese restaurant in the Inner Richmond open for over 40 years, known for fresh, flavorful dishes served in a casual neighborhood setting.",
+        "address": "4348 California St.",
+        "phone": "415-386-3895",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Cafe Bunn Mi",
+        "cuisineGroup": "Asian",
+        "type": "Vietnamese sandwich counter",
+        "description": "Cash-only neighborhood favorite on Clement St. serving generously filled Vietnamese sandwiches including crab pho and crispy duck banh mi.",
+        "address": "417 Clement St.",
+        "phone": "415-668-8908",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Cinderella Bakery & Café",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Russian bakery and café",
+        "description": "SF Legacy Business and Richmond District staple since 1953, serving traditional Russian baked goods, borscht, and Eastern European café fare in the heart of 'Little Russia.'",
+        "address": "436 Balboa St.",
+        "phone": "415-751-9690",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lokma",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Turkish breakfast and brunch café",
+        "description": "Popular Richmond District café celebrated for its Turkish breakfast spread, specialty egg dishes, and pastries, drawing neighborhood regulars and weekend brunch crowds.",
+        "address": "397 Arguello Blvd.",
+        "phone": "415-742-5568",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Hologram",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Café",
+        "description": "Neighborhood café in the Richmond with great breakfast sandwiches, quality coffee drinks, and a comfortable space for working or lingering.",
+        "address": "503 Clement St.",
+        "phone": "",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Blue Danube Coffee House",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Coffee house",
+        "description": "Laid-back, spacious coffee house known for its smoothies, cozy couches, and an extensive menu of breakfast and lunch options, conveniently near Green Apple Books.",
+        "address": "306 Clement St.",
+        "phone": "415-221-9041",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Spices!",
+        "cuisineGroup": "Asian",
+        "type": "Sichuan restaurant",
+        "description": "Outer Richmond Sichuan restaurant known for bold, generous entrees and a menu spanning the full range of fiery Sichuan classics.",
+        "address": "294 8th Ave.",
+        "phone": "415-752-8884",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Rose Pizzeria",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Pizzeria",
+        "description": "Highly regarded Richmond District pizza spot suited for family dinners and date nights, praised for its thoughtfully crafted pies and welcoming environment.",
+        "address": "372 Arguello Blvd.",
+        "phone": "415-742-5541",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Dumpling Baby China Bistro",
+        "cuisineGroup": "Asian",
+        "type": "Chinese dumpling restaurant",
+        "description": "Inner Richmond spot popular for crispy pork lumpia, soup dumplings, and bao buns, available for dine-in or takeout.",
+        "address": "3751 Geary Blvd.",
+        "phone": "415-876-0909",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Ah Ma's Kitchen",
+        "cuisineGroup": "Asian",
+        "type": "Hong Kong-style restaurant",
+        "description": "Richmond District restaurant serving comforting Hong Kong-style homestyle dishes, ideal for an easy and satisfying weeknight dinner.",
+        "address": "2102 Clement St.",
+        "phone": "415-379-8878",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Dayboat Seafood",
+        "cuisineGroup": "Seafood & American",
+        "type": "Seafood restaurant",
+        "description": "One of three concepts inside the new Mess Hall food hall at Presidio Tunnel Tops, specializing in oysters on the half shell, scallops, and other seafood classics with sweeping Bay views.",
+        "address": "201 Halleck St. (Mess Hall, Presidio Tunnel Tops)",
+        "phone": "",
+        "neighborhood": "Presidio",
+        "notable": "New"
+      },
+      {
+        "name": "Boda",
+        "cuisineGroup": "Asian",
+        "type": "Korean restaurant",
+        "description": "Korean concept inside the new Mess Hall food hall at Presidio Tunnel Tops, serving fried chicken, banchan, and mandu from a shared central kitchen.",
+        "address": "201 Halleck St. (Mess Hall, Presidio Tunnel Tops)",
+        "phone": "",
+        "neighborhood": "Presidio",
+        "notable": "New"
+      },
+      {
+        "name": "Breadwinner",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Sandwich and burger counter",
+        "description": "Casual counter inside the Mess Hall at Presidio Tunnel Tops serving smashburgers, hoagies, and vegetarian sandwich options with Bay and bridge views.",
+        "address": "201 Halleck St. (Mess Hall, Presidio Tunnel Tops)",
+        "phone": "",
+        "neighborhood": "Presidio",
+        "notable": "New"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Inn at the Presidio",
+        "type": "Historic boutique hotel",
+        "description": "A registered Historic Hotel of America housed in the restored 1903 Georgian Revival-style Pershing Hall on the Presidio Main Post, offering 22 rooms including 17 suites with gas fireplaces, complimentary breakfast, and nightly wine-and-cheese receptions.",
+        "address": "42 Moraga Ave., Presidio",
+        "phone": "415-800-7356",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lodge at the Presidio",
+        "type": "Historic boutique hotel",
+        "description": "Housed in the historic 1895–1897 Montgomery Street Barracks within the Presidio National Park, offering pet-friendly rooms and suites with complimentary breakfast, nightly receptions, and unobstructed views of the Golden Gate Bridge and Alcatraz.",
+        "address": "105 Montgomery St., Presidio",
+        "phone": "415-561-1234",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      }
+    ],
+    "shops": [
+      {
+        "name": "Green Apple Books & Music",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "SF Legacy Business founded in 1967 and perennially voted the best bookstore in the Bay Area, stocking over 250,000 new and used titles across multiple floors at the corner of Clement and 6th Avenue.",
+        "address": "506 Clement St.",
+        "phone": "415-387-2272",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Cinderella Bakery Shop",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Russian bakery and specialty food shop",
+        "description": "SF Legacy Business since 1953, selling traditional Russian baked goods, breads, and Eastern European provisions in the heart of the Richmond's 'Little Russia' corridor.",
+        "address": "436 Balboa St.",
+        "phone": "415-751-9690",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sports Basement Presidio",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Outdoor and sporting goods store",
+        "description": "Large Bay Area outdoor and sporting goods retailer housed in a former Army building at the Presidio, offering gear for hiking, cycling, camping, and all outdoor pursuits alongside rental equipment.",
+        "address": "610 Old Mason St., Presidio",
+        "phone": "415-437-0100",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Clement Street Farmers' Market",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Outdoor farmers' market",
+        "description": "Weekly neighborhood farmers' market on Clement Street offering fresh produce, local artisan foods, and specialty items in the heart of the Richmond's main commercial corridor.",
+        "address": "Clement St. between 2nd and 4th Aves.",
+        "phone": "",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Plough and Stars",
+        "shopGroup": "Other",
+        "type": "Irish pub",
+        "description": "SF Legacy Business and beloved Richmond District Irish pub offering live traditional music sessions, a full bar, and a welcoming neighborhood atmosphere since 1975.",
+        "address": "116 Clement St.",
+        "phone": "415-751-1122",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Browser Books",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Intimate neighborhood bookstore on Sacramento Street in Lone Mountain, affiliated with Green Apple Books and serving the Presidio-adjacent community with a carefully curated selection.",
+        "address": "2195 Fillmore St.",
+        "phone": "415-567-8027",
+        "neighborhood": "Lone Mountain",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Walt Disney Family Museum Gift Shop",
+        "shopGroup": "Home & Gifts",
+        "type": "Museum gift shop",
+        "description": "Museum store inside the Walt Disney Family Museum carrying Disney art prints, collectibles, books, and unique memorabilia tied to the museum's exhibitions.",
+        "address": "104 Montgomery St., Presidio",
+        "phone": "415-345-6800",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Ghien Banh Mi",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Vietnamese sandwich shop",
+        "description": "Solid Vietnamese sandwich counter in the Richmond serving freshly assembled banh mi on crisp baguettes at lunch, with a loyal neighborhood following.",
+        "address": "642 Clement St.",
+        "phone": "415-750-9197",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Constance Tea & Matcha",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Matcha and tea café-shop",
+        "description": "Outer Richmond café specializing in excellent freshly milled matcha drinks and premium loose-leaf teas in a minimalist, neighborhood-focused setting.",
+        "address": "3918 Balboa St.",
+        "phone": "",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Kamei Restaurant Supply",
+        "shopGroup": "Home & Gifts",
+        "type": "Asian kitchenware and housewares shop",
+        "description": "Well-known Richmond District supplier of Japanese and Asian kitchenware, tableware, and home goods at accessible prices, popular with home cooks and restaurant professionals alike.",
+        "address": "547 Clay St.",
+        "phone": "415-982-4823",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Walt Disney Family Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Cultural museum",
+        "description": "A 40,000-square-foot nonprofit museum in a restored 1897 Army barracks on the Presidio's Main Post, chronicling the life of Walt Disney through ten interactive galleries, over 200 video screens, and a spectacular model of Disneyland.",
+        "address": "104 Montgomery St., Presidio",
+        "phone": "415-345-6800",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Presidio Officers' Club",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic cultural venue and museum",
+        "description": "The oldest building in San Francisco and a hub for Presidio history programming, hosting free exhibitions including the current EXCLUSION show documenting Japanese American incarceration (Fridays–Sundays through July).",
+        "address": "50 Moraga Ave., Presidio",
+        "phone": "415-561-4323",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Presidio Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Historic theater",
+        "description": "A beautifully restored 600-seat historic theater on the Presidio Main Post hosting live performances, film screenings, and special events including the upcoming Presidio 250th anniversary gala in September.",
+        "address": "99 Moraga Ave., Presidio",
+        "phone": "415-346-3847",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Balboa Theatre",
+        "venueGroup": "Cinema",
+        "type": "Independent neighborhood cinema",
+        "description": "One of San Francisco's oldest continuously operating movie houses, opened in 1926 in Spanish Mission-Alhambra style and now operated as a nonprofit by CinemaSFBay, presenting over 500 films annually across two screens.",
+        "address": "3630 Balboa St.",
+        "phone": "415-221-8184",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "4 Star Theater",
+        "venueGroup": "Cinema",
+        "type": "Independent neighborhood cinema",
+        "description": "Richmond District neighborhood cinema operated by CinemaSFBay nonprofit, showing a mix of independent, foreign-language, documentary, and classic films.",
+        "address": "2200 Clement St.",
+        "phone": "415-666-3488",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Presidio Chapel",
+        "venueGroup": "Music Venues",
+        "type": "Historic chapel and concert venue",
+        "description": "Historic chapel at the Presidio's Main Post hosting free classical and choral concerts through the Presidio Chapel Concert Series, including the well-attended monthly Opera Gala series.",
+        "address": "130 Fisher Loop, Presidio",
+        "phone": "",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Presidio Tunnel Tops",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Outdoor cultural and event space",
+        "description": "The Presidio's signature park space over Highway 101 tunnels featuring public art installations, the Campfire Circle, the East Meadow event lawn, and sweeping views of the Golden Gate Bridge and San Francisco Bay.",
+        "address": "210 Lincoln Blvd., Presidio",
+        "phone": "415-561-5300",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "de Young Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Fine art museum",
+        "description": "San Francisco's premier fine art museum in Golden Gate Park, adjacent to the Richmond neighborhoods, featuring American art, international contemporary works, and the Hamon Tower observation deck with city panoramas.",
+        "address": "50 Hagiwara Tea Garden Dr., Golden Gate Park",
+        "phone": "415-750-3600",
+        "neighborhood": "Inner Richmond (adjacent)",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Presidio Tunnel Tops Playground",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Outdoor playground and park",
+        "description": "San Francisco's largest public playground at Presidio Tunnel Tops, featuring climbing structures, slides, and open lawn space with Golden Gate Bridge views, free and open to all ages.",
+        "address": "210 Lincoln Blvd., Presidio",
+        "phone": "415-561-5300",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Sports Basement Presidio",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Outdoor gear and fitness retail with community programs",
+        "description": "Popular outdoor sporting goods retailer that also hosts free community fitness classes and events, located in a former Army building at the Presidio.",
+        "address": "610 Old Mason St., Presidio",
+        "phone": "415-437-0100",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Presidio Golf Course",
+        "venueGroup": "Sports & Courts",
+        "type": "Public golf course",
+        "description": "Historic 18-hole golf course inside the Presidio National Park, open to the public and offering one of the most scenic rounds of golf in the country with views of the Bay and forest surroundings.",
+        "address": "300 Finley Rd., Presidio",
+        "phone": "415-561-4653",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Crissy Field",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Waterfront park and recreation area",
+        "description": "Restored tidal marsh and promenade along the Presidio waterfront offering walking, running, cycling, windsurfing, and kite flying with iconic Golden Gate Bridge backdrops.",
+        "address": "1199 E. Beach, Presidio",
+        "phone": "415-561-7690",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lands End Trail",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Coastal hiking trail",
+        "description": "Scenic 3.5-mile coastal trail along the Outer Richmond's wild shoreline connecting the ruins of the Sutro Baths to the Legion of Honor, offering dramatic Pacific Ocean and Golden Gate Bridge views.",
+        "address": "Merrie Way (trailhead), Outer Richmond",
+        "phone": "415-426-5240",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Baker Beach",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Beach and recreation area",
+        "description": "A mile-long sandy beach at the base of the Presidio offering some of the most dramatic views of the Golden Gate Bridge in the city, managed by the National Park Service.",
+        "address": "Baker Beach, Presidio",
+        "phone": "415-561-4323",
+        "neighborhood": "Presidio / Sea Cliff",
+        "notable": ""
+      },
+      {
+        "name": "Inner Richmond Fitness",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Neighborhood fitness center",
+        "description": "Full-service community gym in the Inner Richmond offering strength training, cardio equipment, and fitness classes convenient to Clement Street.",
+        "address": "360 5th Ave.",
+        "phone": "415-831-6800",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Presidio YMCA",
+        "venueGroup": "Pools & Aquatics",
+        "type": "Community recreation center and pool",
+        "description": "YMCA branch serving the Presidio and Richmond neighborhoods with indoor pools, fitness facilities, youth programs, and community wellness classes.",
+        "address": "63 Funston Ave., Presidio",
+        "phone": "415-447-9622",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Fort Miley Recreation Area",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Coastal park and open space",
+        "description": "Parkland at the western edge of the Richmond District with ocean views, picnic areas, and trails connecting to Lands End and the Coastal Trail network.",
+        "address": "Clement St. at 34th Ave., Outer Richmond",
+        "phone": "415-561-4700",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Waymo fleet clogs Presidio after July 4 fireworks, leaving some vehicles stranded and towed",
+      "url": "https://abc7news.com/post/waymo-fleet-clogs-presidio-july-4-fireworks-leaving-vehicles-stranded-towed/19455862/",
+      "publication": "ABC7 San Francisco / KGO-TV"
+    },
+    {
+      "title": "Waymo cars ran out of charge, blocked roads during SF's July 4 fireworks",
+      "url": "https://sfstandard.com/2026/07/05/waymo-sf-gridlock-fourth-of-july-2026/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "Feds Give Robotaxi Companies a Month to Fix Emergency Failures After Waymo's July 4 Breakdown",
+      "url": "https://easternherald.com/2026/07/13/nhtsa-waymo-robotaxi-emergency-responder-deadline/",
+      "publication": "Eastern Herald"
+    },
+    {
+      "title": "San Francisco Grocery Outlet stores are using AI facial surveillance",
+      "url": "https://missionlocal.org/2026/07/sf-grocery-outlet-facial-recognition/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Four SF Grocery Outlet Stores Are Now Using Facial Recognition Software at Entrances",
+      "url": "https://sfist.com/2026/07/14/four-sf-grocery-outlet-stores-are-now-using-facial-recognition-software-at-entrances/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Grocery Outlet stores deploy SAFR facial recognition to ID suspected shoplifters",
+      "url": "https://www.biometricupdate.com/202607/grocery-outlet-stores-deploy-safr-facial-recognition-to-id-suspected-shoplifters",
+      "publication": "Biometric Update"
+    },
+    {
+      "title": "What's New at the Presidio of San Francisco in 2026",
+      "url": "https://presidio.gov/about/press/whats-new-at-the-presidio-of-san-francisco-in-2026",
+      "publication": "Presidio Trust"
+    },
+    {
+      "title": "Presidio Unveils Vibrant 2026 Summer Event Lineup",
+      "url": "https://presidio.gov/about/press/presidio-unveils-vibrant-2026-summer-event-lineup",
+      "publication": "Presidio Trust"
+    },
+    {
+      "title": "The Presidio of San Francisco turns 250 years old this year",
+      "url": "https://www.sfexaminer.com/news/the-city/the-presidio-of-san-francisco-turns-250-years-old-this-year/article_970e4751-f0df-4226-8432-132a3acdff6b.html",
+      "publication": "San Francisco Examiner"
+    },
+    {
+      "title": "Presidio 250th Founding Anniversary – Presidio Historical Association",
+      "url": "https://presidioassociation.org/",
+      "publication": "Presidio Historical Association"
+    },
+    {
+      "title": "Fiesta en el Parque — Free Events in San Francisco",
+      "url": "https://presidio.gov/explore/events/fiesta-en-el-parque-3",
+      "publication": "Presidio Trust"
+    },
+    {
+      "title": "Presidio Tunnel Tops Events",
+      "url": "https://www.parksconservancy.org/presidio-tunnel-tops-events",
+      "publication": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "Presidio Forest Stewards",
+      "url": "https://www.parksconservancy.org/programs/presidio-forest-stewards",
+      "publication": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "Presidio Habitat Stewards",
+      "url": "https://www.parksconservancy.org/programs/presidio-habitat-stewards",
+      "publication": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "SF residents celebrate Balboa Theatre's 100th anniversary",
+      "url": "https://www.sfexaminer.com/culture/movies-and-tv/sf-residents-celebrate-balboa-theatres-100th-anniversary/article_6b3809aa-633f-4f4a-89f0-ee5cc28f4ffb.html",
+      "publication": "San Francisco Examiner"
+    },
+    {
+      "title": "Balboa 100th Anniversary Celebration (4/13–4/19)",
+      "url": "https://www.balboamovies.com/balboa-100th-anniversary-celebration",
+      "publication": "CinemaSFBay / Balboa Movies"
+    },
+    {
+      "title": "Announcements: July 2026",
+      "url": "https://richmondsunsetnews.com/2026/07/10/announcements-july-2026/",
+      "publication": "Richmond Review / Sunset Beacon"
+    },
+    {
+      "title": "SF Marathon Closes Embarcadero Presidio and Park Roads July 26",
+      "url": "https://deeparrival.com/news/sf-marathon-road-closures-july-26-2026/",
+      "publication": "Deep Arrival"
+    },
+    {
+      "title": "Exclusive: Here's what's opening — and when — at SF's big new food hall",
+      "url": "https://www.yahoo.com/lifestyle/articles/exclusive-heres-whats-opening-f-120000948.html",
+      "publication": "Yahoo Lifestyle / SF Chronicle"
+    },
+    {
+      "title": "Inn at the Presidio",
+      "url": "https://presidiolodging.com/inn-at-the-presidio/",
+      "publication": "Presidio Lodging"
+    },
+    {
+      "title": "Lodge at the Presidio",
+      "url": "https://presidiolodging.com/lodge-at-the-presidio/",
+      "publication": "Presidio Lodging"
+    },
+    {
+      "title": "Green Apple Books & Music — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Green_Apple_Books_%26_Music",
+      "publication": "Wikipedia"
+    },
+    {
+      "title": "Walt Disney Family Museum — Visit",
+      "url": "https://www.waltdisney.org/visit",
+      "publication": "Walt Disney Family Museum"
+    },
+    {
+      "title": "Modern Guide to Inner Richmond",
+      "url": "https://www.7x7.com/inner-richmond-san-francisco-guide-1787127895.html",
+      "publication": "7x7 Bay Area"
+    },
+    {
+      "title": "Richmond District Legacy Business Spotlight",
+      "url": "https://www.sfheritage.org/news/richmond-district-legacy-business-spotlight-plough-and-stars-green-apple-books-cinderella-bakery-pacific-cafe/",
+      "publication": "San Francisco Heritage"
+    }
+  ]
+}

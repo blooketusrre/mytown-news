@@ -1,0 +1,821 @@
+{
+  "clusterSlug": "the-sunset",
+  "clusterName": "The Sunset",
+  "weekOf": "2026-07-31",
+  "topStories": [
+    {
+      "headline": "Great Highway Ballot Measure Officially Qualifies for November Vote",
+      "dek": "San Francisco voters will decide for a second time whether to reopen the former Upper Great Highway to weekday car traffic, after elections officials confirmed the 'Great Highway for Everyone Act' gathered enough signatures.",
+      "body": "San Francisco's Department of Elections confirmed on July 23 that a measure to reopen the Upper Great Highway to cars has officially qualified for the November 2026 ballot. The 'Great Highway for Everyone Act,' spearheaded by the group Great Highway for Everyone, submitted more than 15,600 signatures to city officials — well above the roughly 10,600 required for ballot qualification.\n\nIf approved, the measure would reopen the two-mile stretch of the former coastal road to private vehicles on weekdays, while keeping it closed to cars on weekends and holidays, effectively reversing portions of Proposition K, which was approved by approximately 54% of San Francisco voters in November 2024. That earlier vote transformed the Upper Great Highway into Sunset Dunes Park, which has been open to pedestrians, cyclists, and skaters since March 2025.\n\nDistrict 4 Supervisor Alan Wong has been a public supporter of restoring weekday vehicle access. Earlier in 2026, Wong attempted to place the measure on the June ballot but was unsuccessful, after which he pledged support for the community-driven petition effort. Opponents of the new measure warn that reopening the highway to cars would require the removal of park features including picnic areas, seating, and the skate park — a process that city analysts from the SFMTA and SF Recreation and Parks estimated could cost up to $14 million.\n\nA separate but related cost question has also emerged: according to an SFMTA analysis reported by SFist, restoring and replacing aging traffic signals along the Upper Great Highway would cost approximately $13.2 million if the road were reopened to vehicles. Supporters of the park contend that the measure, if passed, would undo a popular and heavily used public space that has drawn visitors from across the city. The measure will appear on the citywide November 3 ballot.",
+      "sourceUrl": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-great-highway-sunset-dunes-november-2026-election/",
+      "sourceName": "CBS San Francisco",
+      "tags": [
+        "Great Highway",
+        "Sunset Dunes",
+        "ballot measure",
+        "transportation",
+        "parks"
+      ]
+    },
+    {
+      "headline": "Ocean Beach Senior Housing Permits Resubmitted — But Project Remains 'On Hiatus'",
+      "dek": "Developers of the stalled 199-unit affordable senior housing complex at 1234 Great Highway resubmitted preliminary permits in mid-July, keeping the project alive while financing remains unresolved.",
+      "body": "Preliminary project permits for the proposed 199-unit affordable senior housing complex at 1234 Great Highway in the Outer Sunset were resubmitted on July 15, 2026, but the project's manager confirmed it remains officially 'on hiatus.' The Tenderloin Neighborhood Development Corporation (TNDC) and Self-Help for the Elderly, the joint developers, placed the project on an extended pause in January 2026 due to financing challenges.\n\nThe proposed development would replace the existing Motel 6 at the site — a narrow, roughly 0.8-acre lot bounded by Great Highway and La Playa Street, just across from the west end of Golden Gate Park and Ocean Beach. The eight-story building would contain 88 studios, 107 one-bedroom units, and four two-bedroom apartments, all reserved for low-income seniors, with a portion set aside for formerly homeless seniors. A single-story adult day health care center is also part of the plan.\n\nAccording to Mission Local, project manager Jacob Goldstein wrote that a path forward depends significantly on California's Proposition I, a state bond measure on the November ballot that would authorize $11.25 billion in bonds for income-qualified housing. If Proposition I passes, TNDC plans to restart the financing process in January 2027, with construction potentially beginning in early 2028 and taking approximately two years to complete.\n\nThe project has faced neighborhood opposition since its inception, though housing advocates point out that the Outer Sunset contributes less than 1% of the city's new housing supply despite containing nearly 10% of San Francisco's population. The resubmission of permits signals the developers' continued commitment to eventually moving the project forward.",
+      "sourceUrl": "https://missionlocal.org/2026/07/san-francisco-1234-great-highway-permits/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "affordable housing",
+        "Outer Sunset",
+        "Great Highway",
+        "senior housing",
+        "development"
+      ]
+    },
+    {
+      "headline": "Sunset District Home Prices Hit Multi-Year High as Bidding Wars Intensify",
+      "dek": "A new market analysis shows Sunset District homes closing at more than 130% of list price in 2026, with a median of just 12 days on market — the most competitive conditions the area has seen in over a decade.",
+      "body": "A comprehensive market report published this week by Kinoko Real Estate, drawing on closed MLS data current as of July 21, 2026, reveals that the Sunset District is experiencing its most competitive home-buying environment in more than a decade. Closed sales across the Inner, Central, and Outer Sunset neighborhoods are showing 2026 sale prices running at 130% or more of list price, with homes closing in a median of just 12 days.\n\nThe Outer Sunset continues to offer the lowest entry price of the three sub-neighborhoods even as it appreciates the fastest. Inner Sunset condos and TIC units — which make up roughly 40% of that neighborhood's sales — provide a lower-cost entry point compared to the single-family home market, which dominates Central and Outer Sunset sales at approximately 94% of transactions.\n\nThe data reflects a citywide trend of strong buyer demand on San Francisco's west side. Real estate data service Redfin scored the Sunset District at 94 out of 100 on its competitiveness index, noting that most homes attract multiple offers, often with waived contingencies, and that average sale prices have been running about 32% above list price. Hot homes have been going pending in as few as nine days.\n\nFor buyers, the report notes that late fall and January historically bring somewhat reduced competition, while sellers are advised that spring remains the strongest season for maximizing both speed and price. The analysis underscores the tension between the neighborhood's high desirability and the limited affordable housing supply, which advocates say makes projects like the stalled 1234 Great Highway development all the more critical.",
+      "sourceUrl": "https://kinokorealestate.com/blog/sunset-district-market-report-2026",
+      "sourceName": "Kinoko Real Estate",
+      "tags": [
+        "real estate",
+        "housing market",
+        "Outer Sunset",
+        "Inner Sunset",
+        "home prices"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Stern Grove Festival — Violent Femmes",
+      "date": "Sunday, August 2",
+      "time": "2:00 PM",
+      "location": "Stern Grove, 19th Ave & Sloat Blvd, Outer Sunset",
+      "description": "San Francisco's beloved free outdoor concert series continues its 89th season with a performance by the Violent Femmes. Free tickets via lottery or Community Box Office; reserve in advance as capacity is limited to 10,000.",
+      "sourceUrl": "https://dothebay.com/stern-grove-festival-free-san-francisco",
+      "sourceName": "Do The Bay / Stern Grove Festival"
+    },
+    {
+      "title": "Stern Grove Festival — Patti LaBelle",
+      "date": "Sunday, August 9",
+      "time": "2:00 PM",
+      "location": "Stern Grove, 19th Ave & Sloat Blvd, Outer Sunset",
+      "description": "The legendary Patti LaBelle headlines the Stern Grove amphitheater in the eucalyptus grove for a free Sunday afternoon concert. Free tickets via the festival's online lottery or Community Box Office.",
+      "sourceUrl": "https://dothebay.com/stern-grove-festival-free-san-francisco",
+      "sourceName": "Do The Bay / Stern Grove Festival"
+    },
+    {
+      "title": "Inner Sunset Flea Market — 'Dog Days of Summer'",
+      "date": "Sunday, August 9",
+      "time": "10:00 AM",
+      "location": "Irving Street between 9th & 11th Avenues, Inner Sunset",
+      "description": "The 11th-season monthly flea market returns with its 'Dog Days of Summer' theme, featuring over 30 vendors of vintage goods, local artisans, community organizations, live music, and family-friendly activities. Free admission; dogs on leashes welcome.",
+      "sourceUrl": "https://sunsetmercantilesf.com/innersunsetflea/",
+      "sourceName": "Sunset Mercantile / Inner Sunset Flea Market"
+    },
+    {
+      "title": "Outer Sunset Farmers Market & Mercantile",
+      "date": "Every Sunday through December",
+      "time": "9:00 AM",
+      "location": "37th Avenue at Ortega Street, Outer Sunset",
+      "description": "The weekly year-round community market features local farmers, ranchers, food artisans, award-winning chefs, food trucks, makers, artists, and live music on each block. EBT and WIC accepted.",
+      "sourceUrl": "https://sunsetmercantilesf.com/osfmm/",
+      "sourceName": "Sunset Mercantile"
+    },
+    {
+      "title": "Stern Grove Festival — Big Picnic Weekend: Public Enemy",
+      "date": "Saturday, August 15",
+      "time": "2:00 PM",
+      "location": "Stern Grove, 19th Ave & Sloat Blvd, Outer Sunset",
+      "description": "Day one of the annual Big Picnic Weekend grand finale features hip-hop legends Public Enemy. This is the festival's annual fundraising finale; reserved tables available for purchase to support the nonprofit.",
+      "sourceUrl": "https://www.sftravel.com/article/how-to-experience-stern-groves-summer-concert-series",
+      "sourceName": "SF Travel / Stern Grove Festival"
+    },
+    {
+      "title": "Stern Grove Festival — Big Picnic Weekend: Al Green",
+      "date": "Sunday, August 16",
+      "time": "2:00 PM",
+      "location": "Stern Grove, 19th Ave & Sloat Blvd, Outer Sunset",
+      "description": "The 89th season's finale brings soul legend Al Green alongside the GLIDE Ensemble and Goapele to the natural amphitheater for the free Big Picnic Weekend closing show.",
+      "sourceUrl": "https://www.sftravel.com/article/how-to-experience-stern-groves-summer-concert-series",
+      "sourceName": "SF Travel / Stern Grove Festival"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "West Portal Has Become a Bona Fide Restaurant Destination",
+      "body": "A June 2026 profile in the SF Standard declared West Portal a full-fledged culinary hotbed, noting that the neighborhood — once considered a quiet, old-fashioned strip — has become a place people travel to on purpose to eat, even from across the city. Recent arrivals like Elena's Mexican Restaurant, Hardware Coffee Co., and the steakhouse-bar Tur have joined long-standing spots like Little Original Joe's and Trattoria da Vittorio. The corridor on West Portal Avenue has drawn comparisons to other neighborhood dining destinations, with the Standard noting it was 'like a sleeping giant surrounded by $5 million homes but stuck in 1985' before its recent dining renaissance.",
+      "sourceUrl": "https://sfstandard.com/2026/06/03/west-portal-dining-desination/",
+      "sourceName": "SF Standard",
+      "tags": [
+        "West Portal",
+        "restaurants",
+        "dining",
+        "small business"
+      ]
+    },
+    {
+      "headline": "Green Apple Books' Inner Sunset Location Gets Literary Co-Working Space Upstairs",
+      "body": "The long-empty mezzanine above Green Apple Books on the Park at 1231 9th Avenue in the Inner Sunset has been filled by a writer-focused co-working space called the Backstory Above, SFist reported in January 2026. The space, which maintains a library-silence policy in keeping with the bookstore below, offers monthly memberships and daily drop-in passes. Green Apple Books on the Park, a branch of the beloved San Francisco independent bookseller founded in 1967, opened its Inner Sunset location in 2014 adjacent to Golden Gate Park. The addition of a dedicated literary workspace adds a new dimension to one of the neighborhood's most beloved commercial anchors.",
+      "sourceUrl": "https://sfist.com/2026/01/19/green-apple-books-sunset-location-finally-gets-a-new-tenant-for-upstairs-mezzanine-a-literary-co-working-space/",
+      "sourceName": "SFist",
+      "tags": [
+        "Inner Sunset",
+        "bookstore",
+        "small business",
+        "Green Apple Books"
+      ]
+    },
+    {
+      "headline": "Shirley Chisholm Village Community Room Now Open via Children's After School Arts",
+      "body": "After more than a year of neighborhood frustration over a locked, unused community room at the 135-unit Shirley Chisholm Village affordable housing complex at 1360 43rd Avenue in the Outer Sunset, a resolution arrived in April 2026. Children's After School Arts (CASA) signed a lease for the space — now branded the 'CASA Clubhouse' — and opened it to the community in June 2026. The 749-square-foot community room is available for public reservation, while CASA also uses the broader 1,562-square-foot space for its own art and wellness programming. Developer MidPen Housing had faced community criticism for delaying the room's opening pending the identification of a nonprofit tenant.",
+      "sourceUrl": "https://www.midpen-housing.org/news-and-happenings/media-center/casa-clubhouse-coming-soon-to-san-franciscos-outer-sunset/",
+      "sourceName": "MidPen Housing",
+      "tags": [
+        "Outer Sunset",
+        "community",
+        "affordable housing",
+        "Shirley Chisholm Village"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Outerlands",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Seasonal California brunch restaurant",
+        "description": "Beloved Outer Sunset destination famous for Dutch baby pancakes and house-baked bread, with organic, height-of-season ingredients and a rustic beachy interior.",
+        "address": "4001 Judah St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Tung",
+        "cuisineGroup": "Asian",
+        "type": "Chinese restaurant",
+        "description": "Legendary Inner Sunset institution known citywide for its addictive dry-fried chicken wings, noodles, and dumplings — perennial lines out the door are part of the experience.",
+        "address": "1342 Irving St",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Andytown Coffee Roasters",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Specialty coffee roaster and café",
+        "description": "Founded in 2014 by Michael McCrory and Lauren Crabbe, this neighborhood anchor roasts small-batch beans in-house and is celebrated for the 'Snowy Plover' espresso soda with housemade whipped cream.",
+        "address": "3655 Lawton St",
+        "phone": "(415) 753-9775",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Devil's Teeth Baking Company",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Neighborhood bakery and breakfast spot",
+        "description": "Cult-favorite Outer Sunset bakery renowned for its buttermilk biscuit breakfast sandwiches, cheddar bacon beer muffins, and pastries.",
+        "address": "3876 Noriega St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Trouble Coffee",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Specialty coffee and toast café",
+        "description": "Quirky Outer Sunset original offering espresso, fresh whole coconuts, and thick slices of signature cinnamon-sugar toast at a driftwood-adorned parklet.",
+        "address": "4033 Judah St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hook Fish Co.",
+        "cuisineGroup": "Seafood & American",
+        "type": "Sustainable seafood counter",
+        "description": "Beloved Outer Sunset fish shack serving ultra-fresh fish tacos, fish burritos, and plates with a standout house hot sauce bar.",
+        "address": "4542 Irving St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Fiorella",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Neighborhood Italian restaurant",
+        "description": "Popular Inner Sunset trattoria known for fresh pizza and pasta, with a sought-after rooftop seating area.",
+        "address": "2339 Irving St",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Art's Café",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Classic American diner with Korean influences",
+        "description": "Long-running Inner Sunset diner serving big-portioned, affordable breakfasts and lunches — named best breakfast in the city more than once over its 30-plus years in business.",
+        "address": "747 Irving St",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Marnee Thai",
+        "cuisineGroup": "Asian",
+        "type": "Thai restaurant",
+        "description": "Inner Sunset staple for authentic Thai cuisine, particularly praised for its khao soy chicken and Thai-style fried rice.",
+        "address": "1243 9th Ave",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Riptide",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood dive bar",
+        "description": "84-year-old beachside honky-tonk on Taraval with a brick floor, fireplace decorated with sand dollars, karaoke nights, and live music.",
+        "address": "3639 Taraval St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "White Cap",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft cocktail bar",
+        "description": "Stylish cocktail bar on outer Taraval Street serving the Sunset's best Manhattans, martinis, and boozy slushies in a cozy upscale setting.",
+        "address": "3608 Taraval St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "The Little Shamrock",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Irish pub",
+        "description": "One of San Francisco's oldest pubs, a cash-only neighborhood institution on the Inner Sunset's southern edge with dark wood, mismatched furniture, and an authentic Irish pub atmosphere.",
+        "address": "807 Lincoln Way",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Java Beach Café",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Beach café",
+        "description": "Casual Outer Sunset café near Ocean Beach serving coffees, breakfast burritos, lavash wraps, and specialty bagels — a popular pre-beach stop.",
+        "address": "1396 La Playa St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Arizmendi Bakery",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Worker-owned cooperative bakery",
+        "description": "Worker-owned cooperative bakery beloved for freshly baked pastries and breads, with a public parklet outside for neighbors to gather.",
+        "address": "1331 9th Ave",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Judahlicious",
+        "cuisineGroup": "Vegetarian & Vegan",
+        "type": "Vegan café and juice bar",
+        "description": "Outer Sunset vegan spot serving heaping açaí bowls, fresh juices, and plant-based dishes popular with surfers and health-conscious locals alike.",
+        "address": "3906 Judah St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Toyose",
+        "cuisineGroup": "Asian",
+        "type": "Late-night Korean comfort food restaurant",
+        "description": "A hole-in-the-wall Korean restaurant in a converted Noriega Street garage, open until midnight or later, serving soju-paired comfort classics.",
+        "address": "3814 Noriega St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Dumpling Kitchen",
+        "cuisineGroup": "Asian",
+        "type": "Chinese dumpling restaurant",
+        "description": "Highly regarded Taraval Street dumpling house serving Shanghai-style pan-fried pork buns, soup dumplings, and hand-rolled noodles.",
+        "address": "1935 Taraval St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Caché",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "French café and restaurant",
+        "description": "Elegant French café on 9th Avenue in the Inner Sunset, opened in 2025 by two chefs with Michelin-starred French restaurant experience, known for its sea bream sashimi and lobster rolls.",
+        "address": "1235 9th Ave",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Tur",
+        "cuisineGroup": "Seafood & American",
+        "type": "Upscale steakhouse and bar",
+        "description": "West Portal's splashy newcomer offering prime steaks, craft cocktails including the signature Butcher's Old Fashioned, in a cozy dim-lit dining room.",
+        "address": "135 West Portal Ave",
+        "phone": "",
+        "neighborhood": "West Portal",
+        "notable": "New"
+      },
+      {
+        "name": "Little Original Joe's",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian-American restaurant",
+        "description": "West Portal institution serving classic Italian-American comfort food including pasta, chops, and the neighborhood's favorite chicken dishes.",
+        "address": "101 West Portal Ave",
+        "phone": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Elena's Mexican Restaurant",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican restaurant",
+        "description": "One of San Francisco's Best New Restaurants of 2024 according to The Infatuation, this West Portal Mexican spot earned rave reviews for its vibrant atmosphere and authentic dishes.",
+        "address": "255 West Portal Ave",
+        "phone": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Trattoria da Vittorio",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian trattoria",
+        "description": "Beloved West Portal Italian spot fitting seamlessly into the neighborhood's small-town charm, with classic pastas and a welcoming dining room.",
+        "address": "3 West Portal Ave",
+        "phone": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Hardware Coffee Co.",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Specialty coffee shop",
+        "description": "Stylish West Portal café from the Bacchus restaurant group (Spruce, Village Pub), offering exceptional espresso drinks and pastries in a beautifully designed space.",
+        "address": "50 West Portal Ave",
+        "phone": "",
+        "neighborhood": "West Portal",
+        "notable": "New"
+      },
+      {
+        "name": "Polly Ann Ice Cream",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Classic ice cream parlor",
+        "description": "Outer Sunset neighborhood ice cream shop famous for its extensive rotating roster of flavors and the novelty spinning flavor wheel for the adventurous.",
+        "address": "3138 Noriega St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Snowbird Coffee",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Multi-roaster coffee shop",
+        "description": "Cozy Inner Sunset multi-roaster café recommended by SF.gov as the perfect neighborhood morning coffee stop, with something for every palate.",
+        "address": "1352 9th Ave",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Sunset Edwardian Bed and Breakfast at Golden Gate Park",
+        "type": "Bed and breakfast",
+        "description": "Charming Edwardian-style B&B in the Inner Sunset offering complimentary breakfast and an ideal base for exploring Golden Gate Park and the N-Judah corridor.",
+        "address": "1270 19th Ave",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Green Apple Books on the Park",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Inner Sunset branch of San Francisco's beloved Green Apple Books, situated one block from Golden Gate Park, stocking new books, magazines, and novelties; now home to the Backstory Above literary co-working space upstairs.",
+        "address": "1231 9th Ave",
+        "phone": "(415) 742-5833",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Black Bird Bookstore & Café",
+        "shopGroup": "Books & Literature",
+        "type": "Bookstore café",
+        "description": "Light-filled, minimalist Outer Sunset bookstore with an attached café serving seasonal drinks including Rocky's matcha, with regular author events.",
+        "address": "4033 Judah St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Mollusk Surf Shop",
+        "shopGroup": "Other",
+        "type": "Surf shop and lifestyle boutique",
+        "description": "The definitive Outer Sunset surf shop, carrying wetsuits, surfboards, casual summer wear, and sunglasses — a gathering place for the neighborhood's surf community.",
+        "address": "4500 Irving St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "General Store",
+        "shopGroup": "Home & Gifts",
+        "type": "Lifestyle and home goods boutique",
+        "description": "Curated Judah Street shop beloved for well-made sweaters, jewelry, household items, and small treasures, with a photogenic backyard garden.",
+        "address": "4035 Judah St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Franpsycho",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Locally designed clothing and accessories",
+        "description": "Iconic Sunset District shop offering locally designed and screen-printed clothes, accessories, and art celebrating San Francisco surf and skate culture.",
+        "address": "771 Irving St",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Pemulis Water and Power",
+        "shopGroup": "Other",
+        "type": "Surf, vintage, and lifestyle shop",
+        "description": "Eclectic Outer Sunset shop selling surf gear, curated vintage goods, and hand-poured candles made on site in the back of the store.",
+        "address": "3816 Judah St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Shapers",
+        "shopGroup": "Other",
+        "type": "Custom surfboard manufacturer",
+        "description": "Fully integrated Outer Sunset surfboard manufacturing center open since 2010, building boards start-to-finish with in-house shaping, art, and glassing.",
+        "address": "3951 Judah St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Hunt & Gather",
+        "shopGroup": "Home & Gifts",
+        "type": "Curated art and lifestyle shop",
+        "description": "Inner Sunset gallery-style shop featuring locally made and thoughtfully curated art, home goods, and gifts.",
+        "address": "1338 9th Ave",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "The Kira Shop",
+        "shopGroup": "Home & Gifts",
+        "type": "Whimsical gifts and lifestyle shop",
+        "description": "Charming Outer Sunset shop stocking whimsical gifts, home goods, and accessories with a beachy neighborhood sensibility.",
+        "address": "4201 Judah St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Amazing Fantasy Comics & Games",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Comic book and games shop",
+        "description": "Inner Sunset comic book shop with over 1,000 graphic novels and new issues arriving every Wednesday, a favorite stop on the 9th Avenue corridor.",
+        "address": "1329 9th Ave",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Unwined",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Wine shop",
+        "description": "West Portal neighborhood wine shop popular as an after-work stop, offering a well-curated selection of bottles and knowledgeable staff.",
+        "address": "52 West Portal Ave",
+        "phone": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Stern Grove",
+        "venueGroup": "Music Venues",
+        "type": "Outdoor natural amphitheater",
+        "description": "San Francisco's treasured eucalyptus-lined natural amphitheater, home to the nation's longest-running free outdoor music festival since 1938, hosting major artists every Sunday in summer.",
+        "address": "19th Ave & Sloat Blvd",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Conservatory of Flowers",
+        "venueGroup": "Museums & Cultural",
+        "type": "Victorian botanical conservatory",
+        "description": "Golden Gate Park's magnificent Victorian-era glass conservatory housing rare tropical plants, special exhibitions, and — as of July 2026 — a blooming corpse flower.",
+        "address": "100 John F. Kennedy Dr, Golden Gate Park",
+        "phone": "",
+        "neighborhood": "Inner Sunset / Golden Gate Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "de Young Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Fine arts museum",
+        "description": "San Francisco's premier fine arts museum in Golden Gate Park, featuring American art, international textiles, and a free observation tower with panoramic city views.",
+        "address": "50 Hagiwara Tea Garden Dr, Golden Gate Park",
+        "phone": "(415) 750-3600",
+        "neighborhood": "Inner Sunset / Golden Gate Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "California Academy of Sciences",
+        "venueGroup": "Museums & Cultural",
+        "type": "Natural history museum, planetarium, and aquarium",
+        "description": "World-class science institution in Golden Gate Park housing a living rainforest, coral reef aquarium, Morrison Planetarium, and a renowned living roof.",
+        "address": "55 Music Concourse Dr, Golden Gate Park",
+        "phone": "(415) 379-8000",
+        "neighborhood": "Inner Sunset / Golden Gate Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sunset Dunes Park",
+        "venueGroup": "Museums & Cultural",
+        "type": "Oceanfront linear park",
+        "description": "San Francisco's newest park, created from the former Upper Great Highway, stretching two miles along Ocean Beach with a skate park, picnic areas, murals, and coastal trail from Golden Gate Park to the SF Zoo.",
+        "address": "Great Highway between Lincoln Way & Sloat Blvd",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "SF Women Artists Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Artist-run contemporary gallery",
+        "description": "Inner Sunset gallery operated by and showcasing works from San Francisco women artists, with rotating exhibitions and community programming.",
+        "address": "647 Irving St",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Ocean Beach",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public beach and coastal recreation area",
+        "description": "San Francisco's wild 3.5-mile Pacific coastline offering kite flying, surfing, bonfires in designated fire rings, and dramatic sunsets — the defining natural feature of the Sunset District.",
+        "address": "Great Highway, Outer Sunset",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Forest Hill Clubhouse",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic community clubhouse",
+        "description": "Landmark 1919 Craftsman-style community clubhouse designed by renowned architect Bernard Maybeck, serving the historic Forest Hill residence park neighborhood.",
+        "address": "381 Magellan Ave",
+        "phone": "",
+        "neighborhood": "Forest Hill",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Yoga Beach",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Bright, welcoming Outer Sunset yoga studio with natural light and ocean breezes, offering all-levels classes just blocks from the beach at 4501 Irving Street.",
+        "address": "4501 Irving St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Ocean Beach Yoga SF",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Outer Sunset yoga studio providing a personalized approach to yoga, offering new students a complimentary second class.",
+        "address": "Outer Sunset",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Studio By Live Better",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga and Pilates studio",
+        "description": "Intimate Outer Sunset mind-body studio offering yoga, Pilates, and wellness classes in a clean, calm space a short walk from the beach.",
+        "address": "Outer Sunset",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Gym",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Neighborhood gym",
+        "description": "Local fitness gym in the Inner Sunset serving the neighborhood with comprehensive equipment and studio spaces.",
+        "address": "Inner Sunset",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Stern Grove",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public park and amphitheater",
+        "description": "Beloved 33-acre park featuring the natural eucalyptus and redwood-lined amphitheater, lawns, picnic areas, and tennis courts at the southern edge of the Sunset.",
+        "address": "19th Ave & Sloat Blvd",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sunset Dunes Skate Park",
+        "venueGroup": "Sports & Courts",
+        "type": "Public skate park",
+        "description": "Free public skate park within the new Sunset Dunes coastal park on the former Great Highway, open to skateboarders and inline skaters of all skill levels.",
+        "address": "Great Highway near Noriega St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Koret Health and Recreation Center (UCSF)",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "University recreation and fitness center",
+        "description": "Full-service fitness and recreation facility on the UCSF Parnassus campus at the Inner Sunset's eastern edge, open to UCSF affiliates and community members.",
+        "address": "500 Parnassus Ave",
+        "phone": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "San Francisco Zoo",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public zoological garden",
+        "description": "Established in the 1920s at the southern end of the Outer Sunset, the SF Zoo houses over 2,000 animals and connects directly to Ocean Beach and Sunset Dunes Park.",
+        "address": "Sloat Blvd & The Great Highway",
+        "phone": "(415) 753-7080",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Golden Gate Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban park",
+        "description": "San Francisco's iconic 1,017-acre urban park bordering the Inner and Outer Sunset to the north, offering trails, sports fields, fly-casting pools, bike paths, and world-class museums.",
+        "address": "Bordered by Fulton St, Stanyan St, Lincoln Way & the Pacific Ocean",
+        "phone": "",
+        "neighborhood": "Inner Sunset / Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Mollusk Surf Shop (Surf Lessons)",
+        "venueGroup": "Sports & Courts",
+        "type": "Surf shop with surf culture community hub",
+        "description": "Beyond retail, Mollusk's Judah Street location is the heart of the Outer Sunset surf community, connecting residents with local surf instructors, wetsuit rentals, and board repairs.",
+        "address": "4500 Irving St",
+        "phone": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "San Francisco voters to again decide on Great Highway in November 2026 election",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-great-highway-sunset-dunes-november-2026-election/",
+      "publication": "CBS San Francisco"
+    },
+    {
+      "title": "Great Highway measure to reopen San Francisco road set for ballot",
+      "url": "https://missionlocal.org/2026/07/san-francisco-great-highway-ballot-measure/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Yes, San Franciscans Will Be Voting on the Closure of the Great Highway One More Time In November",
+      "url": "https://sfist.com/2026/07/23/yes-san-franciscans-will-be-voting-on-the-closure-of-the-great-highway-one-more-time-in-november/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Great Highway Would Need New Traffic Lights If Reopened to Cars, Costing $13.2 Million",
+      "url": "https://sfist.com/2026/07/13/great-highway-would-need-new-traffic-lights-if-reopened-to-cars-costing-13-2-million/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Permits for 1234 Great Highway San Francisco resubmitted",
+      "url": "https://missionlocal.org/2026/07/san-francisco-1234-great-highway-permits/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Preliminary Permits Resubmitted For 1234 Great Highway, San Francisco",
+      "url": "https://sfyimby.com/2026/07/preliminary-permits-resubmitted-for-1234-great-highway-san-francisco.html",
+      "publication": "SF YIMBY"
+    },
+    {
+      "title": "1234 Great Highway Project Page",
+      "url": "https://www.tndc.org/property/1234-great-highway",
+      "publication": "Tenderloin Neighborhood Development Corporation"
+    },
+    {
+      "title": "Sunset District 2026 Market Report: Bidding Wars Heat Up",
+      "url": "https://kinokorealestate.com/blog/sunset-district-market-report-2026",
+      "publication": "Kinoko Real Estate"
+    },
+    {
+      "title": "Sunset Grove Festival 2026 – Full Lineup",
+      "url": "https://dothebay.com/stern-grove-festival-free-san-francisco",
+      "publication": "Do The Bay"
+    },
+    {
+      "title": "How to Experience Stern Grove's 2026 Summer Concert Series",
+      "url": "https://www.sftravel.com/article/how-to-experience-stern-groves-summer-concert-series",
+      "publication": "SF Travel"
+    },
+    {
+      "title": "Stern Grove Festival 2026: Calendar & Tips",
+      "url": "https://www.sftourismtips.com/stern-grove-festival.html",
+      "publication": "SF Tourism Tips"
+    },
+    {
+      "title": "Inner Sunset Flea Market 2026 Season Schedule",
+      "url": "https://sunsetmercantilesf.com/innersunsetflea/",
+      "publication": "Sunset Mercantile"
+    },
+    {
+      "title": "Outer Sunset Farmers Market & Mercantile",
+      "url": "https://sunsetmercantilesf.com/osfmm/",
+      "publication": "Sunset Mercantile"
+    },
+    {
+      "title": "How West Portal got its restaurant groove on",
+      "url": "https://sfstandard.com/2026/06/03/west-portal-dining-desination/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "CASA Clubhouse Coming Soon to San Francisco's Outer Sunset",
+      "url": "https://www.midpen-housing.org/news-and-happenings/media-center/casa-clubhouse-coming-soon-to-san-franciscos-outer-sunset/",
+      "publication": "MidPen Housing"
+    },
+    {
+      "title": "Green Apple Books' Sunset Location Finally Gets a New Tenant In Upstairs Mezzanine",
+      "url": "https://sfist.com/2026/01/19/green-apple-books-sunset-location-finally-gets-a-new-tenant-for-upstairs-mezzanine-a-literary-co-working-space/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Delayed community room access fuels frustration in SF's Outer Sunset",
+      "url": "https://abc7news.com/post/delayed-community-room-access-shirley-chisholm-village-fuels-frustration-san-franciscos-outer-sunset/18830075/",
+      "publication": "ABC7 San Francisco"
+    },
+    {
+      "title": "The 9 Best Restaurants In West Portal – The Infatuation",
+      "url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-west-portal-san-francisco",
+      "publication": "The Infatuation"
+    },
+    {
+      "title": "Perfect Day in the Inner Sunset",
+      "url": "https://www.sf.gov/perfect-day-inner-sunset",
+      "publication": "SF.gov / City and County of San Francisco"
+    },
+    {
+      "title": "Modern Guide to the Outer Sunset",
+      "url": "https://www.7x7.com/outer-sunset-san-francisco-guide-1787022633.html",
+      "publication": "7x7 Bay Area"
+    },
+    {
+      "title": "Andytown Coffee Roasters – About",
+      "url": "https://www.andytownsf.com/about",
+      "publication": "Andytown Coffee Roasters"
+    },
+    {
+      "title": "Green Apple Books Inner Sunset Location",
+      "url": "https://greenapplebooks.com/inner-sunset-location",
+      "publication": "Green Apple Books"
+    },
+    {
+      "title": "One for the NIMBYs: Sunset affordable housing project on hold",
+      "url": "https://sfstandard.com/2026/01/19/1234-great-highway-hold/",
+      "publication": "SF Standard"
+    }
+  ]
+}
