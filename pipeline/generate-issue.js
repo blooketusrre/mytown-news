@@ -30,7 +30,7 @@ const CONTENT_DIR     = path.join(ROOT, "src", "content");
 const ANTHROPIC_KEY   = process.env.ANTHROPIC_API_KEY;
 const BUTTONDOWN_KEY  = process.env.BUTTONDOWN_API_KEY;
 const SITE_URL        = "https://mytown.news";
-const MODEL           = "claude-opus-4-6";
+const MODEL           = "claude-sonnet-4-6";
 
 if (!ANTHROPIC_KEY) { console.error("Missing ANTHROPIC_API_KEY"); process.exit(1); }
 
@@ -50,7 +50,7 @@ function thisWeekDate() {
 async function callClaude(systemPrompt, userMessage, tools = []) {
   const body = JSON.stringify({
     model: MODEL,
-    max_tokens: 8192,
+    max_tokens: 16000,
     system: systemPrompt,
     messages: [{ role: "user", content: userMessage }],
     ...(tools.length ? { tools } : {}),
@@ -310,6 +310,10 @@ async function generateCluster(clusterConfig) {
   // Handle agentic loop — Claude may do multiple web_search tool calls before
   // returning final text. We do a simplified single-turn extraction here since
   // the Anthropic API's web_search tool resolves results server-side.
+  if (response.stop_reason === "max_tokens") {
+    console.error("  ✗ Response cut off — hit max_tokens limit. Increase max_tokens.");
+  }
+
   let issue;
   try {
     issue = extractJson(response);
