@@ -1,0 +1,192 @@
+---
+layout: base.njk
+pageTitle: "Subscribe — My Town News"
+pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivered every Friday. Free, no ads, unsubscribe anytime."
+---
+
+{# ── Masthead ──────────────────────────────────────────────────────────────── #}
+<header class="masthead home-hero" role="banner" style="padding-bottom:var(--sp-8)">
+  <div class="container">
+    <p class="home-hero__eyebrow">San Francisco · Free &amp; Independent · Every Friday</p>
+    <h1 class="home-hero__title" style="font-size:clamp(2rem,5vw,3.25rem)">Choose Your<br><em>Neighborhoods</em></h1>
+    <p class="home-hero__desc" style="max-width:540px">
+      Pick as many clusters as you like. You'll get one email per neighborhood, every Friday — real local news, no fluff, no ads.
+    </p>
+  </div>
+  <div class="gold-rule"></div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <div class="sub-page">
+
+      {# ── Email input ──────────────────────────────────────────────────── #}
+      <div class="sub-email-wrap">
+        <label class="sub-label" for="sub-email">Your email address</label>
+        <input class="sub-email" id="sub-email" type="email"
+               placeholder="you@example.com" required
+               aria-required="true" autocomplete="email">
+      </div>
+
+      {# ── Cluster picker ───────────────────────────────────────────────── #}
+      <div class="sub-section-head">
+        <h2 class="sub-section-title">Select neighborhoods</h2>
+        <div class="sub-controls">
+          <button class="sub-ctrl-btn" id="select-all" type="button">Select all</button>
+          <span class="sub-ctrl-sep">·</span>
+          <button class="sub-ctrl-btn" id="clear-all" type="button">Clear</button>
+        </div>
+      </div>
+
+      <div class="sub-grid" role="group" aria-label="Neighborhood clusters">
+        {% for c in clusters %}{% if c.live %}
+        <label class="sub-card" data-slug="{{ c.slug }}">
+          <input class="sub-card__check" type="checkbox"
+                 name="cluster" value="{{ c.slug }}"
+                 aria-label="{{ c.name }}">
+          <span class="sub-card__dot" style="background:{{ c.accent }}"></span>
+          <span class="sub-card__body">
+            <span class="sub-card__name">{{ c.name }}</span>
+            <span class="sub-card__hoods">{{ c.neighborhoods | join(' · ') }}</span>
+          </span>
+          <span class="sub-card__check-icon" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="7.5" stroke="currentColor"/>
+              <path d="M4.5 8l2.5 2.5 5-5" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </label>
+        {% endif %}{% endfor %}
+      </div>
+
+      {# ── Submit ───────────────────────────────────────────────────────── #}
+      <div class="sub-footer">
+        <button class="sub-submit" id="sub-submit" type="button" disabled>
+          <span class="sub-submit__label">Subscribe to selected neighborhoods</span>
+          <span class="sub-submit__spinner" aria-hidden="true"></span>
+        </button>
+        <p class="sub-note">No ads. No spam. Unsubscribe from any edition anytime.</p>
+      </div>
+
+      {# ── Result message ───────────────────────────────────────────────── #}
+      <div class="sub-result" id="sub-result" role="status" aria-live="polite"></div>
+
+    </div>
+  </div>
+</main>
+
+<script>
+(function () {
+  var BUTTONDOWN_SLUG = "backus";
+  var emailInput  = document.getElementById("sub-email");
+  var submitBtn   = document.getElementById("sub-submit");
+  var resultEl    = document.getElementById("sub-result");
+  var selectAll   = document.getElementById("select-all");
+  var clearAll    = document.getElementById("clear-all");
+  var cards       = document.querySelectorAll(".sub-card");
+  var checkboxes  = document.querySelectorAll(".sub-card__check");
+
+  /* ── Checkbox / card interaction ──────────────────────────────────── */
+  cards.forEach(function (card) {
+    card.addEventListener("click", function (e) {
+      if (e.target.type === "checkbox") return; // let checkbox handle itself
+      var cb = card.querySelector(".sub-card__check");
+      cb.checked = !cb.checked;
+      card.classList.toggle("is-selected", cb.checked);
+      updateSubmit();
+    });
+  });
+
+  checkboxes.forEach(function (cb) {
+    cb.addEventListener("change", function () {
+      cb.closest(".sub-card").classList.toggle("is-selected", cb.checked);
+      updateSubmit();
+    });
+  });
+
+  selectAll.addEventListener("click", function () {
+    checkboxes.forEach(function (cb) {
+      cb.checked = true;
+      cb.closest(".sub-card").classList.add("is-selected");
+    });
+    updateSubmit();
+  });
+
+  clearAll.addEventListener("click", function () {
+    checkboxes.forEach(function (cb) {
+      cb.checked = false;
+      cb.closest(".sub-card").classList.remove("is-selected");
+    });
+    updateSubmit();
+  });
+
+  emailInput.addEventListener("input", updateSubmit);
+
+  function updateSubmit() {
+    var email    = emailInput.value.trim();
+    var anySelected = [...checkboxes].some(function (cb) { return cb.checked; });
+    var validEmail  = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    submitBtn.disabled = !(validEmail && anySelected);
+  }
+
+  /* ── Subscribe ─────────────────────────────────────────────────────── */
+  submitBtn.addEventListener("click", function () {
+    var email = emailInput.value.trim();
+    var selected = [...checkboxes]
+      .filter(function (cb) { return cb.checked; })
+      .map(function (cb) { return cb.value; });
+
+    if (!email || !selected.length) return;
+
+    setLoading(true);
+    resultEl.textContent = "";
+    resultEl.className   = "sub-result";
+
+    /* Send one request per selected cluster to Buttondown's embed endpoint.
+       mode: 'no-cors' matches how the standard embed form works — we can't
+       read the response body but the subscription goes through. */
+    var url = "https://buttondown.com/api/emails/embed-subscribe/" + BUTTONDOWN_SLUG;
+    var calls = selected.map(function (slug) {
+      return fetch(url, {
+        method: "POST",
+        mode:   "no-cors",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body:   new URLSearchParams({ email: email, tag: slug }),
+      }).then(function () { return { slug: slug, ok: true }; })
+        .catch(function (err) { return { slug: slug, ok: false, err: err }; });
+    });
+
+    Promise.all(calls).then(function (results) {
+      setLoading(false);
+      var failed = results.filter(function (r) { return !r.ok; });
+      if (failed.length === 0) {
+        showSuccess(selected.length);
+      } else {
+        showError();
+      }
+    });
+  });
+
+  function setLoading(on) {
+    submitBtn.classList.toggle("is-loading", on);
+    submitBtn.disabled = on;
+  }
+
+  function showSuccess(count) {
+    var noun = count === 1 ? "neighborhood" : "neighborhoods";
+    resultEl.className   = "sub-result sub-result--success";
+    resultEl.innerHTML   =
+      "<strong>You’re subscribed to " + count + " " + noun + "!</strong> " +
+      "Check your inbox for a confirmation email from Buttondown. " +
+      "You’ll receive each edition every Friday morning.";
+  }
+
+  function showError() {
+    resultEl.className   = "sub-result sub-result--error";
+    resultEl.innerHTML   =
+      "Something went wrong — please try again or email us at " +
+      "<a href=\"mailto:{{ site.email }}\">{{ site.email }}</a>.";
+  }
+})();
+</script>
