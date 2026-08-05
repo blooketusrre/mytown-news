@@ -101,6 +101,9 @@ Today is ${today}. You are preparing the issue for the week of ${thisWeekDate()}
 Your cluster: ${cluster.name}
 Neighborhoods: ${cluster.neighborhoods.join(", ")}
 
+DIRECTORY VERIFICATION RULE — NON-NEGOTIABLE:
+Before including any venue in the directory, confirm it is currently open by finding one of: (a) an active website updated within the last 2 years, (b) a Google Maps or Yelp listing with reviews from 2024 or later showing it is open, or (c) a social media presence active within the last year. Record the best current URL in the "website" field. If you cannot find current evidence of operation, OMIT the venue entirely. Do not include businesses that have closed, even if they were historically prominent.
+
 EDITORIAL RULES — NON-NEGOTIABLE:
 1. Every factual claim must be traceable to a real, verifiable public source (city agency, established news outlet, neighborhood association, business website, library/cultural calendar, official press release).
 2. Do NOT invent quotes. If a quote appears, it must come from a verifiable published statement — include the exact source URL.
@@ -154,6 +157,7 @@ CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
         "description": "One sentence about this place.",
         "address": "373 Columbus Ave",
         "phone": "415-421-2337",
+        "website": "https://...",
         "neighborhood": "North Beach",
         "notable": "Landmark"
       }
@@ -165,6 +169,7 @@ CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
         "description": "One sentence about this hotel.",
         "address": "...",
         "phone": "...",
+        "website": "https://...",
         "neighborhood": "...",
         "notable": ""
       }
@@ -177,6 +182,7 @@ CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
         "description": "One sentence about this shop.",
         "address": "...",
         "phone": "...",
+        "website": "https://...",
         "neighborhood": "...",
         "notable": "Landmark"
       }
@@ -189,6 +195,7 @@ CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
         "description": "One sentence about this venue.",
         "address": "...",
         "phone": "...",
+        "website": "https://...",
         "neighborhood": "...",
         "notable": ""
       }
@@ -201,6 +208,7 @@ CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
         "description": "One sentence about this venue.",
         "address": "...",
         "phone": "...",
+        "website": "https://...",
         "neighborhood": "...",
         "notable": ""
       }

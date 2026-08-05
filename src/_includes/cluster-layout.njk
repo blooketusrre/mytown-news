@@ -223,6 +223,7 @@ layout: base.njk
                     <p class="dir-entry__type">{{ e.type or e.cuisine }}</p>
                     {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
                     <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                    {% if e.website %}<a class="dir-entry__website" href="{{ e.website }}" target="_blank" rel="noopener noreferrer">Visit website →</a>{% endif %}
                   </div>
                   {% endfor %}
                 </div>
@@ -264,6 +265,7 @@ layout: base.njk
                     <p class="dir-entry__type">{{ e.type }}</p>
                     {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
                     <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                    {% if e.website %}<a class="dir-entry__website" href="{{ e.website }}" target="_blank" rel="noopener noreferrer">Visit website →</a>{% endif %}
                   </div>
                   {% endfor %}
                 </div>
@@ -307,6 +309,7 @@ layout: base.njk
                     <p class="dir-entry__type">{{ e.type }}</p>
                     {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
                     <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                    {% if e.website %}<a class="dir-entry__website" href="{{ e.website }}" target="_blank" rel="noopener noreferrer">Visit website →</a>{% endif %}
                   </div>
                   {% endfor %}
                 </div>
@@ -351,6 +354,7 @@ layout: base.njk
                     <p class="dir-entry__type">{{ e.type }}</p>
                     {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
                     <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                    {% if e.website %}<a class="dir-entry__website" href="{{ e.website }}" target="_blank" rel="noopener noreferrer">Visit website →</a>{% endif %}
                   </div>
                   {% endfor %}
                 </div>
@@ -395,6 +399,7 @@ layout: base.njk
                     <p class="dir-entry__type">{{ e.type }}</p>
                     {% if e.description %}<p class="dir-entry__detail">{{ e.description }}</p>{% endif %}
                     <p class="dir-entry__meta">{% if e.address %}{{ e.address }}{% endif %}{% if e.phone %} &nbsp;·&nbsp; {{ e.phone }}{% endif %}</p>
+                    {% if e.website %}<a class="dir-entry__website" href="{{ e.website }}" target="_blank" rel="noopener noreferrer">Visit website →</a>{% endif %}
                   </div>
                   {% endfor %}
                 </div>
@@ -418,6 +423,13 @@ layout: base.njk
           });
         })();
         </script>
+
+        {# ── Report a correction ────────────────────────────────── #}
+        <div class="dir-correction">
+          <p>Know of a listing that's wrong or a business that's closed?
+            <a href="mailto:{{ site.email }}?subject=Directory correction: {{ issue.clusterName if issue else clusterName }}&body=Venue name: %0ACorrection: %0A%0AThank you!" class="dir-correction__link">Report a correction →</a>
+          </p>
+        </div>
 
       </div>
     </section>

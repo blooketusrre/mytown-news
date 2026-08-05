@@ -773,6 +773,34 @@ ul, ol { list-style: none; }
   margin-top: var(--sp-1);
 }
 
+.dir-entry__website {
+  display: inline-block;
+  margin-top: var(--sp-1);
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.dir-entry__website:hover { color: var(--accent); }
+
+.dir-correction {
+  margin-top: var(--sp-6);
+  padding-top: var(--sp-5);
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--muted);
+}
+.dir-correction__link {
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.dir-correction__link:hover { color: var(--accent); }
+
 /* ── Empty-state message ─────────────────────────────────────────── */
 .dir-empty {
   font-family: var(--font-ui);
