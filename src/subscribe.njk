@@ -1,5 +1,8 @@
 ---
-permalink: false
+layout: base.njk
+permalink: /subscribe/
+pageTitle: "Subscribe — My Town News"
+pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivered every Friday. Free, no ads, unsubscribe anytime."
 ---
 
 {# ── Masthead ──────────────────────────────────────────────────────────────── #}
@@ -122,8 +125,8 @@ permalink: false
   emailInput.addEventListener("input", updateSubmit);
 
   function updateSubmit() {
-    var email    = emailInput.value.trim();
-    var anySelected = [...checkboxes].some(function (cb) { return cb.checked; });
+    var email       = emailInput.value.trim();
+    var anySelected = Array.prototype.some.call(checkboxes, function (cb) { return cb.checked; });
     var validEmail  = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     submitBtn.disabled = !(validEmail && anySelected);
   }
@@ -131,9 +134,8 @@ permalink: false
   /* ── Subscribe ─────────────────────────────────────────────────────── */
   submitBtn.addEventListener("click", function () {
     var email = emailInput.value.trim();
-    var selected = [...checkboxes]
-      .filter(function (cb) { return cb.checked; })
-      .map(function (cb) { return cb.value; });
+    var selected = Array.prototype.filter.call(checkboxes, function (cb) { return cb.checked; })
+                        .map(function (cb) { return cb.value; });
 
     if (!email || !selected.length) return;
 
@@ -141,9 +143,6 @@ permalink: false
     resultEl.textContent = "";
     resultEl.className   = "sub-result";
 
-    /* Send one request per selected cluster to Buttondown's embed endpoint.
-       mode: 'no-cors' matches how the standard embed form works — we can't
-       read the response body but the subscription goes through. */
     var url = "https://buttondown.com/api/emails/embed-subscribe/" + BUTTONDOWN_SLUG;
     var calls = selected.map(function (slug) {
       return fetch(url, {
@@ -173,17 +172,17 @@ permalink: false
 
   function showSuccess(count) {
     var noun = count === 1 ? "neighborhood" : "neighborhoods";
-    resultEl.className   = "sub-result sub-result--success";
-    resultEl.innerHTML   =
-      "<strong>You’re subscribed to " + count + " " + noun + "!</strong> " +
+    resultEl.className = "sub-result sub-result--success";
+    resultEl.innerHTML =
+      "<strong>You're subscribed to " + count + " " + noun + "!</strong> " +
       "Check your inbox for a confirmation email from Buttondown. " +
-      "You’ll receive each edition every Friday morning.";
+      "You'll receive each edition every Friday morning.";
   }
 
   function showError() {
-    resultEl.className   = "sub-result sub-result--error";
-    resultEl.innerHTML   =
-      "Something went wrong — please try again or email us at " +
+    resultEl.className = "sub-result sub-result--error";
+    resultEl.innerHTML =
+      "Something went wrong — please try again or email " +
       "<a href=\"mailto:{{ site.email }}\">{{ site.email }}</a>.";
   }
 })();
