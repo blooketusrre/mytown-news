@@ -23,16 +23,7 @@
       btn.addEventListener('click', () => window.print());
     });
 
-    // Newsletter form (placeholder — wire to your email provider)
-    document.querySelectorAll('.newsletter__form').forEach(form => {
-      form.addEventListener('submit', e => {
-        e.preventDefault();
-        const email = form.querySelector('input[type="email"]').value;
-        if (email) {
-          form.innerHTML = '<p style="color:rgba(255,255,255,0.7);font-family:var(--font-ui);font-size:0.875rem;">Thanks! You\'re on the list. First issue arrives Friday.</p>';
-        }
-      });
-    });
+    // Newsletter form handled per-page (cluster-layout.njk, subscribe/index.njk)
   </script>
 
 </body>
