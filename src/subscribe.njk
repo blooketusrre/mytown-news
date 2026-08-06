@@ -85,20 +85,11 @@ pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivere
   var resultEl    = document.getElementById("sub-result");
   var selectAll   = document.getElementById("select-all");
   var clearAll    = document.getElementById("clear-all");
-  var cards       = document.querySelectorAll(".sub-card");
   var checkboxes  = document.querySelectorAll(".sub-card__check");
 
   /* ── Checkbox / card interaction ──────────────────────────────────── */
-  cards.forEach(function (card) {
-    card.addEventListener("click", function (e) {
-      if (e.target.type === "checkbox") return; // let checkbox handle itself
-      var cb = card.querySelector(".sub-card__check");
-      cb.checked = !cb.checked;
-      card.classList.toggle("is-selected", cb.checked);
-      updateSubmit();
-    });
-  });
-
+  /* The <label> cards handle checkbox toggling natively — just sync the
+     visual state via the change event. */
   checkboxes.forEach(function (cb) {
     cb.addEventListener("change", function () {
       cb.closest(".sub-card").classList.toggle("is-selected", cb.checked);
