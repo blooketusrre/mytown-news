@@ -456,17 +456,52 @@ function buildEmailHtml(issue, cluster) {
 
 // ─── Buttondown sender ───────────────────────────────────────────────────────
 
-async function sendClusterEmail(cluster, issue) {
+/** Fetch all Buttondown tags and return a map of tag name → tag ID */
+async function fetchButtondownTagIds() {
+  return new Promise((resolve, reject) => {
+    const req = https.request(
+      {
+        hostname: "api.buttondown.email",
+        path: "/v1/tags?limit=100",
+        method: "GET",
+        headers: { "Authorization": `Token ${BUTTONDOWN_KEY}` },
+      },
+      (res) => {
+        let data = "";
+        res.on("data", (chunk) => (data += chunk));
+        res.on("end", () => {
+          try {
+            const parsed = JSON.parse(data);
+            const tagMap = {};
+            const tags = parsed.results || parsed;
+            if (Array.isArray(tags)) {
+              tags.forEach((t) => { if (t.name && t.id) tagMap[t.name] = t.id; });
+            }
+            resolve(tagMap);
+          } catch (e) {
+            console.warn("  ⚠ Could not parse tag list response:", data.slice(0, 200));
+            resolve({});
+          }
+        });
+      }
+    );
+    req.on("error", reject);
+    req.end();
+  });
+}
+
+async function sendClusterEmail(cluster, issue, tagId) {
   const subject = `My Town News — ${cluster.name} ${cluster.city || ""}`.trim();
   const body    = buildEmailHtml(issue, cluster);
 
-  const payload = JSON.stringify({
-    subject,
-    body,
-    status: "about_to_send",
-    // TODO: add tag filtering once Buttondown API field name is confirmed
-    // (included_tags was removed in a Buttondown API update)
-  });
+  // Build audience filter: send only to subscribers tagged with this cluster.
+  // Buttondown replaced included_tags with a structured filters object (2024-08-15).
+  // Filter value must be the tag's ID (UUID/TypeID), not its name.
+  const filters = tagId
+    ? { filters: [{ field: "subscriber.tags", operator: "contains", value: tagId }], groups: [], predicate: "and" }
+    : { filters: [], groups: [], predicate: "and" };
+
+  const payload = JSON.stringify({ subject, body, status: "about_to_send", filters });
 
   return new Promise((resolve, reject) => {
     const req = https.request(
@@ -550,14 +585,24 @@ async function main() {
   // ── Send newsletters via Buttondown ──────────────────────────────────────
   if (BUTTONDOWN_KEY) {
     console.log("\n📧 Sending newsletters via Buttondown…");
+
+    // Fetch tag name → ID map once (Buttondown filters require IDs, not names)
+    const tagMap = await fetchButtondownTagIds();
+    const tagCount = Object.keys(tagMap).length;
+    console.log(`  ℹ Fetched ${tagCount} Buttondown tag(s):`, Object.keys(tagMap).join(", ") || "(none)");
+
     for (const cluster of generated) {
       try {
         const weekDate  = thisWeekDate();
         const issueFile = path.join(CONTENT_DIR, cluster.slug, `${weekDate}.json`);
         const issue     = JSON.parse(fs.readFileSync(issueFile, "utf8"));
-        const result    = await sendClusterEmail(cluster, issue);
+        const tagId     = tagMap[cluster.slug];
+        if (!tagId) {
+          console.warn(`  ⚠ No Buttondown tag found for slug "${cluster.slug}" — email will send to ALL subscribers`);
+        }
+        const result    = await sendClusterEmail(cluster, issue, tagId);
         if (result.id) {
-          console.log(`  ✅ Queued: "${cluster.name}" (id: ${result.id})`);
+          console.log(`  ✅ Queued: "${cluster.name}" → tag: ${tagId || "ALL"} (email id: ${result.id})`);
         } else {
           console.log(`  ⚠ Unexpected response for ${cluster.slug}:`, JSON.stringify(result).slice(0, 200));
         }
