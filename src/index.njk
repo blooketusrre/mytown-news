@@ -1,190 +1,300 @@
 ---
-permalink: false
+layout: base.njk
+pageTitle: "My Town News — SF Neighborhood News, Every Friday"
+pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhood. Published every Friday."
 ---
 
-{# ── Masthead ──────────────────────────────────────────────────────────────── #}
-<header class="masthead home-hero" role="banner" style="padding-bottom:var(--sp-8)">
+{# ── Hero ──────────────────────────────────────────────────────────────── #}
+<header class="masthead home-hero" role="banner">
   <div class="container">
     <p class="home-hero__eyebrow">San Francisco · Free &amp; Independent · Every Friday</p>
-    <h1 class="home-hero__title" style="font-size:clamp(2rem,5vw,3.25rem)">Choose Your<br><em>Neighborhoods</em></h1>
-    <p class="home-hero__desc" style="max-width:540px">
-      Pick as many clusters as you like. You'll get one email per neighborhood, every Friday — real local news, no fluff, no ads.
+    <h1 class="home-hero__title">My Town <em>News</em></h1>
+    {% if northWaterfront %}
+    <p class="home-hero__week">Week of <strong>{{ northWaterfront.weekOf | date_short }}</strong></p>
+    {% endif %}
+    <p class="home-hero__desc">
+      Hyperlocal news for every San Francisco neighborhood — sourced, verified, and delivered to your inbox every Friday.
     </p>
   </div>
   <div class="gold-rule"></div>
 </header>
 
-<main id="main">
-  <div class="container">
-    <div class="sub-page">
+{# ── Sticky nav ────────────────────────────────────────────────────────── #}
+<nav class="site-nav" aria-label="Site navigation">
+  <div class="site-nav__inner container">
+    <ul class="site-nav__links" role="list">
+      <li><a href="#neighborhoods">Neighborhoods</a></li>
+      <li><a href="#this-week">This Week</a></li>
+      <li><a href="/subscribe/">Subscribe</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+    <span class="site-nav__meta">mytown.news</span>
+  </div>
+</nav>
 
-      {# ── Email input ──────────────────────────────────────────────────── #}
-      <div class="sub-email-wrap">
-        <label class="sub-label" for="sub-email">Your email address</label>
-        <input class="sub-email" id="sub-email" type="email"
-               placeholder="you@example.com" required
-               aria-required="true" autocomplete="email">
+<main id="main">
+
+  {# ── Cluster Map Section ─────────────────────────────────────────────── #}
+  <section id="neighborhoods" class="cluster-map-section" aria-labelledby="map-heading">
+    <div class="container">
+      <div class="cluster-map-section__intro">
+        <h2 class="cluster-map-section__title" id="map-heading">Find Your Neighborhood</h2>
+        <p class="cluster-map-section__sub">Click your part of the city or type your ZIP code below.</p>
       </div>
 
-      {# ── Cluster picker ───────────────────────────────────────────────── #}
-      <div class="sub-section-head">
-        <h2 class="sub-section-title">Select neighborhoods</h2>
-        <div class="sub-controls">
-          <button class="sub-ctrl-btn" id="select-all" type="button">Select all</button>
-          <span class="sub-ctrl-sep">·</span>
-          <button class="sub-ctrl-btn" id="clear-all" type="button">Clear</button>
+      <div class="cluster-map-wrap">
+
+        {# ── Real Leaflet Map (OpenStreetMap) ────────────────────────── #}
+        <div>
+          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+          <div id="sf-map" style="height:480px;border-radius:6px;border:1px solid var(--rule);overflow:hidden;" aria-label="San Francisco neighborhood map"></div>
+          <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+          <script>
+          (function() {
+            var map = L.map('sf-map', {
+              center: [37.766, -122.435],
+              zoom: 12,
+              scrollWheelZoom: false,
+              zoomControl: true
+            });
+
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+              subdomains: 'abcd',
+              maxZoom: 16
+            }).addTo(map);
+
+            var clusters = [
+              { slug:'north-waterfront', name:'North Waterfront', lat:37.806, lng:-122.413, color:'#c8943a', live:true,  url:'/north-waterfront/', hoods:'North Beach · Telegraph Hill · Fisherman\'s Wharf' },
+              { slug:'marina-pacific-heights', name:'Marina & Pacific Heights', lat:37.799, lng:-122.436, color:'#2a9d8f', live:true, url:'/marina-pacific-heights/', hoods:'Marina · Cow Hollow · Pacific Heights · Presidio Heights' },
+              { slug:'presidio-richmond',       name:'Presidio & Richmond',      lat:37.778, lng:-122.468, color:'#2d6a4f', live:true,  url:'/presidio-richmond/',       hoods:'Presidio · Sea Cliff · Inner & Outer Richmond' },
+              { slug:'russian-hill-nob-hill',   name:'Russian Hill & Nob Hill',  lat:37.793, lng:-122.415, color:'#8b2635', live:true,  url:'/russian-hill-nob-hill/',   hoods:'Russian Hill · Nob Hill · Polk Gulch · Chinatown' },
+              { slug:'downtown-embarcadero',    name:'Downtown & Embarcadero',   lat:37.787, lng:-122.397, color:'#1e4a8a', live:true,  url:'/downtown-embarcadero/',    hoods:'Financial District · Union Square · Embarcadero' },
+              { slug:'civic-center-hayes-valley',name:'Civic Center & Hayes Valley',lat:37.776,lng:-122.421,color:'#6b3fa0',live:true, url:'/civic-center-hayes-valley/',hoods:'Civic Center · Hayes Valley · Tenderloin · NoPa' },
+              { slug:'soma-mission-bay',        name:'SoMa & Mission Bay',       lat:37.772, lng:-122.394, color:'#c05928', live:true,  url:'/soma-mission-bay/',        hoods:'SoMa · Mission Bay · Dogpatch · Potrero Hill' },
+              { slug:'haight-cole-valley',      name:'Haight & Cole Valley',     lat:37.769, lng:-122.449, color:'#b8860b', live:true,  url:'/haight-cole-valley/',      hoods:'Haight-Ashbury · Lower Haight · Cole Valley' },
+              { slug:'castro-noe-valley',       name:'Castro & Noe Valley',      lat:37.757, lng:-122.432, color:'#b5334a', live:true,  url:'/castro-noe-valley/',       hoods:'Castro · Noe Valley · Glen Park · Duboce Triangle' },
+              { slug:'mission-bernal-heights',  name:'Mission & Bernal Heights', lat:37.748, lng:-122.418, color:'#c4442a', live:true,  url:'/mission-bernal-heights/',  hoods:'Mission District · Bernal Heights · Outer Mission' },
+              { slug:'the-sunset',              name:'The Sunset',               lat:37.756, lng:-122.483, color:'#3d6b8f', live:true,  url:'/the-sunset/',              hoods:'Inner Sunset · Outer Sunset · West Portal' },
+              { slug:'bayview-excelsior',       name:'Bayview & Excelsior',      lat:37.726, lng:-122.397, color:'#6b8c3a', live:true,  url:'/bayview-excelsior/',       hoods:'Bayview · Hunters Point · Excelsior · Visitacion Valley' }
+            ];
+
+            clusters.forEach(function(c) {
+              var radius = c.live ? 16 : 11;
+              var marker = L.circleMarker([c.lat, c.lng], {
+                radius: radius,
+                fillColor: c.live ? c.color : '#b0aaa4',
+                color: '#fff',
+                weight: 2,
+                opacity: 1,
+                fillOpacity: c.live ? 0.92 : 0.55
+              }).addTo(map);
+
+              var label = '<strong>' + c.name + '</strong><br><span style="font-size:0.8em;color:#666">' + c.hoods + '</span>';
+              if (!c.live) label += '<br><em style="font-size:0.75em;color:#999">Coming soon</em>';
+              marker.bindTooltip(label, { sticky: true, direction: 'top', offset: [0, -8] });
+
+              if (c.live) {
+                marker.getElement() && (marker.getElement().style.cursor = 'pointer');
+                marker.on('click', function() { window.location.href = c.url; });
+                marker.on('add', function() {
+                  var el = marker.getElement();
+                  if (el) el.style.cursor = 'pointer';
+                });
+              }
+            });
+          })();
+          </script>
+        </div>
+
+        {# ── Cluster list + ZIP lookup ──────────────────────────────── #}
+        <div>
+          <nav class="cluster-list" aria-label="Neighborhood clusters">
+            {% for c in clusters %}
+            {% if c.live %}
+            <a class="cluster-list__item" href="/{{ c.slug }}/"
+               data-cluster="{{ c.slug }}"
+               aria-label="{{ c.name }}: {{ c.neighborhoods | join(', ') }}">
+              <span class="cluster-list__dot" style="background:{{ c.accent }}"></span>
+              <div>
+                <div class="cluster-list__name">{{ c.name }}</div>
+                <div class="cluster-list__hoods">{{ c.neighborhoods | join(' · ') }}</div>
+              </div>
+              <span class="cluster-list__badge" style="background:{{ c.accent }}">Live</span>
+            </a>
+            {% else %}
+            <div class="cluster-list__item" style="cursor:default;opacity:0.55"
+                 data-cluster="{{ c.slug }}">
+              <span class="cluster-list__dot" style="background:{{ c.accent }}"></span>
+              <div>
+                <div class="cluster-list__name">{{ c.name }}</div>
+                <div class="cluster-list__hoods">{{ c.neighborhoods | join(' · ') }}</div>
+              </div>
+              <span style="font-family:var(--font-ui);font-size:0.5625rem;color:var(--muted);letter-spacing:0.08em;">Soon</span>
+            </div>
+            {% endif %}
+            {% endfor %}
+          </nav>
+
+          {# ZIP lookup #}
+          <div class="zip-lookup">
+            <label class="zip-lookup__label" for="zip-input">Find by ZIP code</label>
+            <div class="zip-lookup__row">
+              <input class="zip-lookup__input" id="zip-input" type="text"
+                     inputmode="numeric" pattern="[0-9]{5}"
+                     maxlength="5" placeholder="e.g. 94133" aria-label="Enter SF ZIP code">
+              <button class="zip-lookup__btn" id="zip-btn" type="button">Go</button>
+            </div>
+            <div class="zip-lookup__result" id="zip-result" role="status" aria-live="polite"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  {# ── This Week — Editor's Picks ──────────────────────────────────────── #}
+  <section id="this-week" class="editors-picks" aria-labelledby="picks-heading">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-head__label" id="picks-heading">This Week — Editor's Picks</h2>
+        <span class="section-head__line" aria-hidden="true"></span>
+      </div>
+
+      {# Feature the live cluster's top story #}
+      {% set nwStory = northWaterfront.topStories[0] if (northWaterfront and northWaterfront.topStories and northWaterfront.topStories.length) else null %}
+      {% if nwStory %}
+      <div class="top-stories" style="grid-template-columns:2fr 1fr">
+        <article class="story-main">
+          <span class="nbadge" style="--accent:#c8943a;border-color:#c8943a;color:#c8943a">North Waterfront</span>
+          {% if nwStory.tags and nwStory.tags.length %}<p class="tag" style="color:#c8943a">{{ nwStory.tags[0] }}</p>{% endif %}
+          <h3 style="font-family:var(--font-head);font-size:clamp(1.25rem,2.2vw,1.75rem);font-weight:900;line-height:1.18;margin-bottom:12px;letter-spacing:-0.02em">
+            {{ nwStory.headline }}
+          </h3>
+          {% if nwStory.dek %}<p class="byline">{{ nwStory.dek }}</p>{% endif %}
+          <p style="font-size:var(--text-md);line-height:1.7;color:var(--text)">
+            {{ (nwStory.body or "") | truncate(350) }}
+          </p>
+          <a href="/north-waterfront/" style="display:inline-flex;align-items:center;gap:6px;font-family:var(--font-ui);font-size:var(--text-xs);font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#c8943a;text-decoration:none;margin-top:16px;border-bottom:1px solid #c8943a">
+            Read the full North Waterfront issue →
+          </a>
+        </article>
+
+        {% if northWaterfront.topStories.length > 1 %}
+        <div class="story-side" style="display:flex;flex-direction:column;gap:24px">
+          {% for s in northWaterfront.topStories %}{% if loop.index > 1 %}
+          <article>
+            {% if s.tags and s.tags.length %}<span class="nbadge" style="--accent:#c8943a;border-color:#c8943a;color:#c8943a">{{ s.tags[0] }}</span>{% endif %}
+            <h3 style="font-family:var(--font-head);font-size:1rem;font-weight:700;line-height:1.3;margin-top:4px;margin-bottom:8px">{{ s.headline }}</h3>
+            <p style="font-size:var(--text-sm);line-height:1.65;color:var(--muted)">{{ (s.body or "") | truncate(160) }}</p>
+          </article>
+          {% endif %}{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {# Live cluster grid — all neighborhoods now active #}
+      <div style="margin-top:40px">
+        <div class="section-head">
+          <h2 class="section-head__label">All SF Neighborhoods</h2>
+          <span class="section-head__line"></span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px">
+          {% for c in clusters %}
+          {% if c.live %}
+          <a href="/{{ c.slug }}/" style="display:block;background:white;border:1px solid var(--rule);border-radius:var(--radius);padding:20px;border-top:3px solid {{ c.accent }};text-decoration:none;color:inherit;transition:box-shadow 0.15s ease;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.08)'" onmouseout="this.style.boxShadow='none'">
+            <p style="font-family:var(--font-ui);font-size:var(--text-xs);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:{{ c.accent }};margin-bottom:6px">This Week →</p>
+            <h3 style="font-family:var(--font-head);font-size:1rem;font-weight:700;margin-bottom:6px;color:var(--navy)">{{ c.name }}</h3>
+            <p style="font-family:var(--font-ui);font-size:var(--text-xs);color:var(--muted);line-height:1.5">{{ c.neighborhoods | join(' · ') }}</p>
+          </a>
+          {% endif %}
+          {% endfor %}
         </div>
       </div>
 
-      <div class="sub-grid" role="group" aria-label="Neighborhood clusters">
-        {% for c in clusters %}{% if c.live %}
-        <label class="sub-card" data-slug="{{ c.slug }}">
-          <input class="sub-card__check" type="checkbox"
-                 name="cluster" value="{{ c.slug }}"
-                 aria-label="{{ c.name }}">
-          <span class="sub-card__dot" style="background:{{ c.accent }}"></span>
-          <span class="sub-card__body">
-            <span class="sub-card__name">{{ c.name }}</span>
-            <span class="sub-card__hoods">{{ c.neighborhoods | join(' · ') }}</span>
-          </span>
-          <span class="sub-card__check-icon" aria-hidden="true">
-            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="8" cy="8" r="7.5" stroke="currentColor"/>
-              <path d="M4.5 8l2.5 2.5 5-5" stroke="currentColor" stroke-width="1.6"
-                    stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </label>
-        {% endif %}{% endfor %}
-      </div>
-
-      {# ── Submit ───────────────────────────────────────────────────────── #}
-      <div class="sub-footer">
-        <button class="sub-submit" id="sub-submit" type="button" disabled>
-          <span class="sub-submit__label">Subscribe to selected neighborhoods</span>
-          <span class="sub-submit__spinner" aria-hidden="true"></span>
-        </button>
-        <p class="sub-note">No ads. No spam. Unsubscribe from any edition anytime.</p>
-      </div>
-
-      {# ── Result message ───────────────────────────────────────────────── #}
-      <div class="sub-result" id="sub-result" role="status" aria-live="polite"></div>
-
     </div>
-  </div>
+  </section>
+
+  {# ── Newsletter ───────────────────────────────────────────────────────── #}
+  <section id="newsletter" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <div class="newsletter">
+        <p class="newsletter__eyebrow">Free. Independent. Weekly.</p>
+        <h2 class="newsletter__headline" id="newsletter-heading">Get My Town News<br>every Friday morning</h2>
+        <p class="newsletter__sub">
+          Neighborhood news, events, and your local directory — for every SF cluster, every week.
+        </p>
+        <form class="newsletter__form" aria-label="Newsletter signup">
+          <input class="newsletter__input" type="email" placeholder="your@email.com" required aria-label="Email address">
+          <button class="newsletter__btn" type="submit">Subscribe</button>
+        </form>
+        <p class="newsletter__note">No ads. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
 </main>
+
+{% include "partials/footer.njk" %}
 
 <script>
 (function () {
-  var BUTTONDOWN_SLUG = "backus";
-  var emailInput  = document.getElementById("sub-email");
-  var submitBtn   = document.getElementById("sub-submit");
-  var resultEl    = document.getElementById("sub-result");
-  var selectAll   = document.getElementById("select-all");
-  var clearAll    = document.getElementById("clear-all");
-  var cards       = document.querySelectorAll(".sub-card");
-  var checkboxes  = document.querySelectorAll(".sub-card__check");
-
-  /* ── Checkbox / card interaction ──────────────────────────────────── */
-  cards.forEach(function (card) {
-    card.addEventListener("click", function (e) {
-      if (e.target.type === "checkbox") return; // let checkbox handle itself
-      var cb = card.querySelector(".sub-card__check");
-      cb.checked = !cb.checked;
-      card.classList.toggle("is-selected", cb.checked);
-      updateSubmit();
-    });
+  /* ZIP → cluster index (auto-generated from clusters.json via Nunjucks).
+     ZIPs that span two clusters produce an array with both entries,
+     so the user is offered a choice rather than silently picking one. */
+  var zipIndex = {};
+  [
+    {% for c in clusters %}{% if c.live %}{% for z in c.zipCodes %}
+    { zip: "{{ z }}", slug: "{{ c.slug }}", name: "{{ c.name }}", url: "/{{ c.slug }}/" },
+    {% endfor %}{% endif %}{% endfor %}
+  ].forEach(function (e) {
+    if (!zipIndex[e.zip]) zipIndex[e.zip] = [];
+    zipIndex[e.zip].push({ slug: e.slug, name: e.name, url: e.url });
   });
 
-  checkboxes.forEach(function (cb) {
-    cb.addEventListener("change", function () {
-      cb.closest(".sub-card").classList.toggle("is-selected", cb.checked);
-      updateSubmit();
-    });
-  });
+  var input  = document.getElementById('zip-input');
+  var btn    = document.getElementById('zip-btn');
+  var result = document.getElementById('zip-result');
+  if (!input || !btn || !result) return;
 
-  selectAll.addEventListener("click", function () {
-    checkboxes.forEach(function (cb) {
-      cb.checked = true;
-      cb.closest(".sub-card").classList.add("is-selected");
-    });
-    updateSubmit();
-  });
+  function lookup() {
+    var zip = (input.value || '').trim();
 
-  clearAll.addEventListener("click", function () {
-    checkboxes.forEach(function (cb) {
-      cb.checked = false;
-      cb.closest(".sub-card").classList.remove("is-selected");
-    });
-    updateSubmit();
-  });
+    /* Reset */
+    result.innerHTML = '';
+    result.className = 'zip-lookup__result';
 
-  emailInput.addEventListener("input", updateSubmit);
+    if (!/^\d{5}$/.test(zip)) {
+      result.textContent = 'Please enter a 5-digit ZIP code.';
+      result.className += ' zip-lookup__result--warn';
+      return;
+    }
 
-  function updateSubmit() {
-    var email    = emailInput.value.trim();
-    var anySelected = [...checkboxes].some(function (cb) { return cb.checked; });
-    var validEmail  = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    submitBtn.disabled = !(validEmail && anySelected);
+    var matches = zipIndex[zip];
+
+    if (!matches || matches.length === 0) {
+      result.textContent = 'ZIP ' + zip + ' isn’t in our coverage area yet. Browse the map above to find your neighborhood.';
+      result.className += ' zip-lookup__result--warn';
+      return;
+    }
+
+    if (matches.length === 1) {
+      window.location.href = matches[0].url;
+      return;
+    }
+
+    /* ZIP spans two clusters — let the reader choose */
+    result.innerHTML = 'ZIP ' + zip + ' spans two neighborhoods: ' +
+      matches.map(function (m) {
+        return '<a href="' + m.url + '">' + m.name + '</a>';
+      }).join(' &nbsp;&middot;&nbsp; ');
+    result.className += ' zip-lookup__result--multi';
   }
 
-  /* ── Subscribe ─────────────────────────────────────────────────────── */
-  submitBtn.addEventListener("click", function () {
-    var email = emailInput.value.trim();
-    var selected = [...checkboxes]
-      .filter(function (cb) { return cb.checked; })
-      .map(function (cb) { return cb.value; });
-
-    if (!email || !selected.length) return;
-
-    setLoading(true);
-    resultEl.textContent = "";
-    resultEl.className   = "sub-result";
-
-    /* Send one request per selected cluster to Buttondown's embed endpoint.
-       mode: 'no-cors' matches how the standard embed form works — we can't
-       read the response body but the subscription goes through. */
-    var url = "https://buttondown.com/api/emails/embed-subscribe/" + BUTTONDOWN_SLUG;
-    var calls = selected.map(function (slug) {
-      return fetch(url, {
-        method: "POST",
-        mode:   "no-cors",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body:   new URLSearchParams({ email: email, tag: slug }),
-      }).then(function () { return { slug: slug, ok: true }; })
-        .catch(function (err) { return { slug: slug, ok: false, err: err }; });
-    });
-
-    Promise.all(calls).then(function (results) {
-      setLoading(false);
-      var failed = results.filter(function (r) { return !r.ok; });
-      if (failed.length === 0) {
-        showSuccess(selected.length);
-      } else {
-        showError();
-      }
-    });
+  btn.addEventListener('click', lookup);
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') lookup();
   });
-
-  function setLoading(on) {
-    submitBtn.classList.toggle("is-loading", on);
-    submitBtn.disabled = on;
-  }
-
-  function showSuccess(count) {
-    var noun = count === 1 ? "neighborhood" : "neighborhoods";
-    resultEl.className   = "sub-result sub-result--success";
-    resultEl.innerHTML   =
-      "<strong>You’re subscribed to " + count + " " + noun + "!</strong> " +
-      "Check your inbox for a confirmation email from Buttondown. " +
-      "You’ll receive each edition every Friday morning.";
-  }
-
-  function showError() {
-    resultEl.className   = "sub-result sub-result--error";
-    resultEl.innerHTML   =
-      "Something went wrong — please try again or email us at " +
-      "<a href=\"mailto:{{ site.email }}\">{{ site.email }}</a>.";
-  }
 })();
 </script>
