@@ -1,0 +1,929 @@
+{
+  "clusterSlug": "downtown-embarcadero",
+  "clusterName": "Downtown & Embarcadero",
+  "weekOf": "2026-08-07",
+  "topStories": [
+    {
+      "headline": "Downtown SF Partnership Expands to Waterfront, Doubles Budget to $11 Million",
+      "dek": "Mayor Lurie signs legislation bringing Ferry Building, Embarcadero Plaza, and Jackson Square fully into the city's premier community benefit district.",
+      "body": "San Francisco's downtown core officially grew this week. Mayor Daniel Lurie signed legislation approving the expansion and renewal of the Downtown SF Partnership Community Benefit District, more than doubling the organization's privately funded annual budget from approximately $4.8 million to $11 million and extending its service area to the waterfront for the first time. The Board of Supervisors had voted unanimously on July 22 to approve the proposal, which now brings the Ferry Building, Embarcadero Plaza, and the entirety of Jackson Square under the district's umbrella, expanding the footprint from 43 blocks to 70.\n\nThe enlarged district, which takes effect in January 2027, is a significant milestone for the neighborhoods covered by My Town News's Downtown & Embarcadero cluster. For the first time, the Port of San Francisco will join a community benefit district (CBD), paying $882,000 in assessments in its first year. District 3 Supervisor Danny Sauter, who represents the downtown area, called the ballot process notable given the current economic environment.\n\nThe expansion is tied directly to Mayor Lurie's 'Heart of the City' plan, which envisions downtown San Francisco as a place where people live, work, play, and learn. The renewed agreement, which will run for ten years, supports enhanced cleaning, safety, homeless outreach, business attraction, and ground-floor activation throughout the district. It will also fund continued investment in the Public Realm Action Plan, developed with SITELAB urban studio, which is designed to transition the district into a social destination.\n\nThe news comes as the Downtown SF Partnership's own midyear data shows momentum building: nonresident district visits in 2026 have already exceeded 10 million, with average daily visits up 34.7% over Q4 2025. The organization attributes that surge to major events and new ground-floor business openings throughout the district.",
+      "sourceUrl": "https://sfrecpark.org/m/newsflash/home/detail/2989",
+      "sourceName": "SF Recreation and Parks / Mayor's Office",
+      "tags": [
+        "development",
+        "policy",
+        "Financial District",
+        "Embarcadero",
+        "Jackson Square"
+      ]
+    },
+    {
+      "headline": "Downtown Visitor Numbers Surge as SF Tourism Heads for Record $9.9B Year",
+      "dek": "San Francisco Travel projects 24.2 million visitors and $9.9 billion in spending for 2026, surpassing the city's pre-pandemic record, with downtown foot traffic leading the way.",
+      "body": "San Francisco is on track for its strongest tourism year on record, with the San Francisco Travel Association projecting 24.2 million visitors and $9.9 billion in spending for 2026 — a figure that would surpass the city's previous all-time high of $9.6 billion set in 2019. Much of that momentum is visible right here in the Financial District, Embarcadero, and Union Square, where foot traffic has been climbing steadily throughout the year.\n\nThe recovery is being propelled in part by a robust convention pipeline: 38 events at Moscone Center in 2026 are expected to generate more than 674,000 hotel room nights, with AI and technology conferences — including events tied to companies such as Snowflake and Databricks — driving significant business travel. International visitation is also recovering, with overnight international visitors expected to reach 2.3 million, up from 2.2 million in 2025, and international visitor spending projected to rise 5.8% to $5.2 billion.\n\nFor the downtown neighborhoods, the picture is mixed but improving. Tourism added 3,300 jobs in the San Francisco area from May 2025 to May 2026, and restaurants and bars accounted for 2,600 of those new positions. Hotel occupancy, however, remains below pre-pandemic levels even as RevPAR grew nearly 8% on top of the prior year's 14% gain. Analysts at SF Standard noted in late June that while leisure and hospitality show consistent growth, broader office employment indicators suggest downtown's full recovery is still a work in progress.\n\nThe tourism gains have direct fiscal benefits for San Francisco residents: in 2025 alone, tourism generated $655 million in tax revenue for the city's General Fund — equivalent to roughly $778 in tax relief per resident — a $50 million increase over 2024.",
+      "sourceUrl": "https://www.sfexaminer.com/news/the-city/sf-tourism-spending-trends-a-half-billion-more-than-in-2025/article_bbcd06fe-5abb-449f-b855-15ef3a41dcd6.html",
+      "sourceName": "SF Examiner",
+      "tags": [
+        "tourism",
+        "economy",
+        "Financial District",
+        "Embarcadero",
+        "Union Square"
+      ]
+    },
+    {
+      "headline": "Exploratorium's 'Life in Space' Brings NASA-Backed Science to Pier 15 This Summer",
+      "dek": "The Embarcadero science museum's immersive new summer exhibition, open through September 13, explores what it would really take for humans to live beyond Earth.",
+      "body": "If you haven't yet made it to the Exploratorium this summer, the clock is ticking: 'Life in Space,' the museum's major summer exhibition at Pier 15, runs through September 13 and has drawn strong crowds since its June 11 opening. The multisensory show — developed with contributions from NASA and timed to the renewed global interest in space exploration fueled by the Artemis II mission — invites visitors of all ages to confront the practical realities of surviving beyond Earth.\n\nWith more than 50 exhibits, activities, and artworks, 'Life in Space' covers topics from radiation and microgravity to food systems and habitat design. One crowd-pleasing interactive, the Floating Puzzle, challenges visitors to complete a simple puzzle while pieces constantly drift out of place, mimicking microgravity conditions. The exhibition also includes real video and imagery showing how astronauts live in low-gravity environments, as well as a search for extraterrestrial life through art, astronomy, and emerging scientific discoveries.\n\nThe Exploratorium, located at Pier 15 on The Embarcadero, is open Tuesday through Sunday. Admission is required for the exhibition; members receive free access plus invitations to special Thursday evening programming. The museum's August calendar also includes Family Studio drop-in sessions on Sunday mornings and a Thursday Night Workshop on August 13 featuring a gallery drawing session led by four Bay Area artists.",
+      "sourceUrl": "https://www.exploratorium.edu/press-office/press-releases/life-space-lands-exploratorium-summer",
+      "sourceName": "Exploratorium",
+      "tags": [
+        "science",
+        "museum",
+        "Embarcadero",
+        "family",
+        "exhibition"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "'Life in Space' Exhibition at the Exploratorium",
+      "date": "Through September 13",
+      "time": "Various times",
+      "location": "Exploratorium, Pier 15, Embarcadero",
+      "description": "NASA-backed immersive exhibition with 50+ hands-on exhibits exploring what it would take to survive and live beyond Earth. Open Tuesday–Sunday; admission required.",
+      "sourceUrl": "https://www.exploratorium.edu/press-office/press-releases/life-space-lands-exploratorium-summer",
+      "sourceName": "Exploratorium"
+    },
+    {
+      "title": "SFMOMA Current Exhibitions: Graciela Iturbide & Reimagined Fisher Collection",
+      "date": "Ongoing",
+      "time": "10:00 AM – 5:00 PM",
+      "location": "SFMOMA, 151 3rd Street, SoMa/Union Square",
+      "description": "SFMOMA's summer season features the expansive retrospective 'Graciela Iturbide: Between Two Worlds' alongside the major reinstallation 'Reimagined: The Fisher Collection at 10.' A new site-specific installation by Jacob Hashimoto opens August 22 in the free-admission Roberts Family Gallery.",
+      "sourceUrl": "https://www.sfmoma.org/press-release/sfmoma-announces-2026-exhibitions-including-transformed-fisher-collection-galleries-matisses-femme-au-chapeau-and-rm-x-sfmoma/",
+      "sourceName": "SFMOMA"
+    },
+    {
+      "title": "Free Weekly Programming in Union Square (Dance, Music & More)",
+      "date": "Ongoing",
+      "time": "Various times",
+      "location": "Union Square, Union Square",
+      "description": "Every week, Union Square offers free outdoor programming including live music, chess lessons, crafting, and juggling; second Saturdays feature special cultural themes (August 8: Pacific Islander Cultural District presentation).",
+      "sourceUrl": "https://visitunionsquaresf.com/park-programs",
+      "sourceName": "Visit Union Square SF"
+    },
+    {
+      "title": "Ferry Plaza Farmers Market — National Farmers Market Week",
+      "date": "Saturday, August 8",
+      "time": "8:00 AM – 2:00 PM",
+      "location": "Ferry Building, 1 Ferry Building, Embarcadero",
+      "description": "The beloved weekly Ferry Plaza Farmers Market takes place during National Farmers Market Week, featuring local farmers, artisan food producers, and seasonal California produce.",
+      "sourceUrl": "https://downtownsf.org/go/ferry-building-1",
+      "sourceName": "Downtown SF Partnership"
+    },
+    {
+      "title": "Pickwick Vintage Show at the Ferry Building",
+      "date": "Sunday, August 9",
+      "time": "10:00 AM – 4:00 PM",
+      "location": "Ferry Building, 1 Ferry Building, Embarcadero",
+      "description": "A curated vintage retail market inside and around the historic Ferry Building, featuring vendors selling clothing, accessories, and collectibles from across the decades.",
+      "sourceUrl": "https://downtownsf.org/go/ferry-building-1",
+      "sourceName": "Downtown SF Partnership"
+    },
+    {
+      "title": "SFMOMA Thursday Night Workshop: Gallery Drawing",
+      "date": "Thursday, August 13",
+      "time": "6:00 PM",
+      "location": "SFMOMA, 151 3rd Street, SoMa/Union Square",
+      "description": "A drop-in evening workshop in SFMOMA's galleries led by Bay Area artists Wally A. Corona, Aleo Landeta, Sun Park, and Craig Calderwood — no drawing experience required.",
+      "sourceUrl": "https://www.sfmoma.org/events/",
+      "sourceName": "SFMOMA"
+    },
+    {
+      "title": "Fridays on Front Street: Golden State Valkyries' Game Night",
+      "date": "Friday, August 21",
+      "time": "4:00 PM – 9:00 PM",
+      "location": "Front Street between California and Sacramento Streets, Financial District",
+      "description": "The Downtown SF Partnership's free after-work block party returns with a Golden State Valkyries game night theme, featuring an outdoor big screen, DJ sets by official WNBA Valkyries DJ LadyRyan, post-game performances, bar specials, and giveaways.",
+      "sourceUrl": "https://downtownsf.org/things-to-do/fridays-on-front-street",
+      "sourceName": "Downtown SF Partnership"
+    },
+    {
+      "title": "Free Outdoor Movie: 'Pokémon Detective Pikachu' at Union Square",
+      "date": "Saturday, August 29",
+      "time": "5:00 PM (pre-show); 8:00 PM (film)",
+      "location": "Union Square, Union Square",
+      "description": "Free outdoor Cinema Under the Stars screening celebrating the Pokémon World Championships in San Francisco; bring a blanket and layers for this family-friendly evening in the square.",
+      "sourceUrl": "https://sf.funcheap.com/union-squares-cinema-under-the-stars-the-birdcage/",
+      "sourceName": "Funcheap SF"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "SFMOMA to Open Free Jacob Hashimoto Installation August 22",
+      "body": "San Francisco Museum of Modern Art will debut 'Jacob Hashimoto: Giant Arc' on August 22 in the Roberts Family Gallery on Floor 1 — one of the museum's free-admission spaces. The monumental immersive installation weaves painting, video projection, and sound into a meditation on time, nature, and the ephemerality of images, according to the museum. The opening adds to a rich summer season at SFMOMA that already includes the Graciela Iturbide retrospective and the reimagined Fisher Collection galleries. The museum is located at 151 3rd Street near Union Square.",
+      "sourceUrl": "https://www.sfmoma.org/press-release/sfmoma-announces-2026-exhibitions-including-transformed-fisher-collection-galleries-matisses-femme-au-chapeau-and-rm-x-sfmoma/",
+      "sourceName": "SFMOMA",
+      "tags": [
+        "arts",
+        "museum",
+        "Union Square",
+        "free"
+      ]
+    },
+    {
+      "headline": "Jackson Square Now Fully Covered by Downtown Community Benefit District",
+      "body": "With the Downtown SF Partnership's expansion signed into law, the entirety of Jackson Square — long one of San Francisco's most coveted addresses for AI firms, law offices, and high-end boutiques — is now formally part of the city's most active community benefit district. The neighborhood, which the SF Heritage has described as 'Sand Hill Road North' for its concentration of tech and venture capital tenants, will now receive the same level of street cleaning, safety ambassadors, and public-realm programming as the core Financial District. The district's expanded footprint is expected to be operational by January 1, 2027.",
+      "sourceUrl": "https://sfstandard.com/2026/07/22/jackson-square-downtown-sf-partnership/",
+      "sourceName": "SF Standard",
+      "tags": [
+        "Jackson Square",
+        "development",
+        "community"
+      ]
+    },
+    {
+      "headline": "Restaurants and Bars Lead Downtown Job Recovery, Adding 2,600 Positions",
+      "body": "New data from the California Employment Development Department shows San Francisco's leisure and hospitality sector added 3,300 jobs from May 2025 to May 2026, with restaurants and bars accounting for 2,600 of those gains. The figures reflect what analysts and business owners have described as a long-awaited recovery of the downtown dining scene, with new openings in the Financial District and Embarcadero joining established landmarks in serving a returning lunchtime and after-work crowd. Hotel occupancy, however, remains below pre-pandemic levels even as revenue per available room continues to climb.",
+      "sourceUrl": "https://sfstandard.com/2026/06/26/hospitality-tech-jobs-growth-2026/",
+      "sourceName": "SF Standard",
+      "tags": [
+        "economy",
+        "restaurants",
+        "jobs",
+        "Financial District"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Tadich Grill",
+        "cuisineGroup": "Seafood & American",
+        "type": "Historic seafood grill",
+        "description": "California's oldest continuously operated restaurant, serving classic seafood including cioppino, sand dabs, and Dungeness crab in an iconic Art Deco dining room since 1849.",
+        "address": "240 California St",
+        "phone": "415-391-1849",
+        "website": "https://tadichgrillsf.com",
+        "neighborhood": "Financial District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Kokkari Estiatorio",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Greek-Mediterranean fine dining",
+        "description": "Celebrated upscale Greek restaurant in Jackson Square known for its wood-burning fireplace, rotisserie meats, grilled lamb chops, and warm taverna atmosphere; a perennial OpenTable Top 100 pick.",
+        "address": "200 Jackson St",
+        "phone": "415-981-0983",
+        "website": "https://kokkari.com",
+        "neighborhood": "Jackson Square",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Wayfare Tavern",
+        "cuisineGroup": "Seafood & American",
+        "type": "American tavern",
+        "description": "Tyler Florence's flagship American restaurant, relocated to a new Pine Street home in summer 2025, celebrated for free popovers, fried chicken, and a convivial power-lunch atmosphere.",
+        "address": "201 Pine St",
+        "phone": "415-772-9060",
+        "website": "https://www.wayfaretavern.com",
+        "neighborhood": "Financial District",
+        "notable": ""
+      },
+      {
+        "name": "Waterbar",
+        "cuisineGroup": "Seafood & American",
+        "type": "Seafood restaurant & bar",
+        "description": "Lively waterfront seafood restaurant on the Embarcadero with a raw bar, California coastal cuisine, and sweeping bay views of the Bay Bridge.",
+        "address": "399 The Embarcadero",
+        "phone": "415-284-9922",
+        "website": "https://waterbarsf.com",
+        "neighborhood": "Embarcadero",
+        "notable": ""
+      },
+      {
+        "name": "Kusakabe",
+        "cuisineGroup": "Asian",
+        "type": "Japanese omakase",
+        "description": "Intimate 18-course omakase restaurant in the Financial District featuring bluefin tuna, house-crafted nigiri, and meticulously sourced Japanese ingredients; counter seating offers the best view of the craft.",
+        "address": "584 Washington St",
+        "phone": "415-757-0155",
+        "website": "https://kusakabe-sf.com",
+        "neighborhood": "Financial District",
+        "notable": ""
+      },
+      {
+        "name": "Bix",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Supper club & cocktail lounge",
+        "description": "Glamorous 1930s-inspired supper club tucked down a Gold Rush-era alley in Jackson Square, renowned for expertly crafted cocktails, live jazz, and a sophisticated small-plates menu.",
+        "address": "56 Gold St",
+        "phone": "415-433-6300",
+        "website": "https://bixrestaurant.com",
+        "neighborhood": "Jackson Square",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Perbacco",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Northern Italian restaurant",
+        "description": "Sophisticated Northern Italian restaurant in the Financial District offering an extensive Piemontese menu, house-made pastas, and a celebrated Barolo-heavy wine list in a warm, wood-paneled room.",
+        "address": "230 California St",
+        "phone": "415-955-0663",
+        "website": "https://perbaccosf.com",
+        "neighborhood": "Financial District",
+        "notable": ""
+      },
+      {
+        "name": "Schroeder's",
+        "cuisineGroup": "Other",
+        "type": "German beer hall",
+        "description": "The West Coast's oldest Bavarian restaurant and a Front Street anchor, famous for its 72 flowing taps, signature cocktails, hearty German fare, and its central role in the Fridays on Front Street block parties.",
+        "address": "240 Front St",
+        "phone": "415-421-4778",
+        "website": "https://schroederssf.com",
+        "neighborhood": "Financial District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Harrington's Bar & Grill",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Irish bar & grill",
+        "description": "A beloved FiDi Irish institution since 1935, serving after-work pints, pub classics, and serving as a cornerstone anchor in the Front Street Entertainment Zone.",
+        "address": "245 Front St",
+        "phone": "415-392-7595",
+        "website": "https://harringtons-sf.com",
+        "neighborhood": "Financial District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Slanted Door (at Ferry Building)",
+        "cuisineGroup": "Asian",
+        "type": "Vietnamese restaurant",
+        "description": "Charles Phan's landmark modern Vietnamese restaurant occupying a prime spot at the Ferry Building, celebrated for its seasonal California-Vietnamese cuisine and bay views.",
+        "address": "1 Ferry Building, Shop 3",
+        "phone": "415-861-8032",
+        "website": "https://slanteddoor.com",
+        "neighborhood": "Embarcadero",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hog Island Oyster Co.",
+        "cuisineGroup": "Seafood & American",
+        "type": "Oyster bar",
+        "description": "The Ferry Building's beloved oyster bar and raw-seafood counter, sourcing directly from Hog Island's own Marshall, CA farm for impeccably fresh bivalves and chowder.",
+        "address": "1 Ferry Building, Shop 11",
+        "phone": "415-391-7117",
+        "website": "https://hogislandoysters.com",
+        "neighborhood": "Embarcadero",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Peet's Coffee (Ferry Building)",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Specialty coffee café",
+        "description": "Bay Area-born coffee roaster with a prime Ferry Building location offering single-origin coffees, espresso drinks, and light bites with waterfront views.",
+        "address": "1 Ferry Building, Shop 5",
+        "phone": "415-983-7900",
+        "website": "https://www.peets.com",
+        "neighborhood": "Embarcadero",
+        "notable": ""
+      },
+      {
+        "name": "Blue Bottle Coffee (Ferry Building)",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Specialty coffee café",
+        "description": "Oakland-founded specialty roaster with a Ferry Building café known for meticulous pour-overs and espresso drinks just steps from the bay.",
+        "address": "1 Ferry Building, Shop 7",
+        "phone": "",
+        "website": "https://bluebottlecoffee.com",
+        "neighborhood": "Embarcadero",
+        "notable": ""
+      },
+      {
+        "name": "Anzu Restaurant",
+        "cuisineGroup": "Asian",
+        "type": "Japanese-California fusion",
+        "description": "Hotel Nikko's signature restaurant near Union Square offering an innovative Japanese-California menu, fresh sushi, and an extensive sake list in a sleek contemporary setting.",
+        "address": "222 Mason St",
+        "phone": "415-394-1100",
+        "website": "https://www.hotelnikkosf.com/dining/anzu",
+        "neighborhood": "Union Square",
+        "notable": ""
+      },
+      {
+        "name": "Trestle",
+        "cuisineGroup": "Seafood & American",
+        "type": "Contemporary American",
+        "description": "Approachable Jackson Square restaurant celebrated for its prix-fixe three-course dinner at a set price, making refined seasonal American cooking accessible to all.",
+        "address": "531 Jackson St",
+        "phone": "415-772-0922",
+        "website": "https://trestlesf.com",
+        "neighborhood": "Jackson Square",
+        "notable": ""
+      },
+      {
+        "name": "The Bird",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Fast-casual chicken sandwich shop",
+        "description": "Popular quick-service FiDi staple known for its crispy fried chicken sandwiches and bowls with long lunchtime lines; a reliable downtown workhorse.",
+        "address": "115 New Montgomery St",
+        "phone": "415-872-9825",
+        "website": "https://thebirdsf.com",
+        "neighborhood": "Financial District",
+        "notable": ""
+      },
+      {
+        "name": "Epoch Café & Wine Bar",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Wine bar & café",
+        "description": "A neighborhood wine bar and café in Rincon Hill offering a curated wine list, small plates, and a relaxed atmosphere catering to the growing residential community south of the Bay Bridge.",
+        "address": "388 Beale St",
+        "phone": "415-543-4346",
+        "website": "https://epochsf.com",
+        "neighborhood": "Rincon Hill",
+        "notable": ""
+      },
+      {
+        "name": "Caffe Museo",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Museum café",
+        "description": "SFMOMA's street-level café offering high-quality coffee, pastries, and light lunch items; accessible to the public without museum admission.",
+        "address": "151 3rd St",
+        "phone": "415-357-4500",
+        "website": "https://www.sfmoma.org/visit/cafes-and-restaurants/",
+        "neighborhood": "Union Square",
+        "notable": ""
+      },
+      {
+        "name": "Oasis Grill",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Mediterranean fast-casual",
+        "description": "Popular FiDi lunch spot serving falafel, shawarma, gyros, and fresh Mediterranean bowls at a reasonable price point to the downtown office crowd.",
+        "address": "225 Bush St",
+        "phone": "415-433-0488",
+        "website": "https://oasisgrillsf.com",
+        "neighborhood": "Financial District",
+        "notable": ""
+      },
+      {
+        "name": "Fog Harbor Fish House",
+        "cuisineGroup": "Seafood & American",
+        "type": "Seafood restaurant",
+        "description": "A top-rated Bay Area seafood destination at the Embarcadero serving Dungeness crab, clam chowder, and sustainably sourced fish with views of the waterfront.",
+        "address": "1 Embarcadero Ctr, Promenade Level",
+        "phone": "415-421-2442",
+        "website": "https://fogharbor.com",
+        "neighborhood": "Embarcadero",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Palace Hotel, a Luxury Collection Hotel",
+        "type": "Historic luxury hotel",
+        "description": "San Francisco's first luxury hotel, opened in 1875, featuring the spectacular glass-domed Garden Court restaurant, a sky-lit indoor pool, and 556 refined rooms steps from the Financial District.",
+        "address": "2 New Montgomery St",
+        "phone": "415-512-1111",
+        "website": "https://www.sfpalace.com",
+        "neighborhood": "Financial District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hyatt Regency San Francisco",
+        "type": "Full-service convention hotel",
+        "description": "Recently renovated landmark hotel at Embarcadero Center with a dramatic atrium lobby, 806 rooms, and a prime waterfront location steps from the Ferry Building and BART.",
+        "address": "5 Embarcadero Center",
+        "phone": "415-788-1234",
+        "website": "https://www.hyatt.com/hyatt-regency/en-US/sfors-hyatt-regency-san-francisco",
+        "neighborhood": "Embarcadero",
+        "notable": ""
+      },
+      {
+        "name": "Four Seasons Hotel San Francisco at Embarcadero",
+        "type": "Luxury boutique hotel",
+        "description": "Two-Michelin-Key luxury hotel occupying the top 11 floors of a 48-story landmark tower at 345 California Center, offering 155 rooms and suites with panoramic Bay views and personalized service.",
+        "address": "222 Sansome St",
+        "phone": "415-276-9888",
+        "website": "https://www.fourseasons.com/embarcadero/",
+        "neighborhood": "Financial District",
+        "notable": ""
+      },
+      {
+        "name": "The Westin St. Francis San Francisco on Union Square",
+        "type": "Historic luxury hotel",
+        "description": "An iconic Union Square landmark since 1904, the Westin St. Francis features elegantly renovated Landmark Building suites, grand event ballrooms, and a front-row seat on Union Square.",
+        "address": "335 Powell St",
+        "phone": "415-397-7000",
+        "website": "https://www.marriott.com/en-us/hotels/sfouw-the-westin-st-francis-san-francisco-on-union-square/overview/",
+        "neighborhood": "Union Square",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hilton San Francisco Union Square",
+        "type": "Large full-service hotel",
+        "description": "One of the largest hotels in San Francisco, offering over 1,900 rooms in twin towers with contemporary amenities, multiple restaurants, and direct access to Union Square shopping.",
+        "address": "333 O'Farrell St",
+        "phone": "415-771-1400",
+        "website": "https://www.hilton.com/en/hotels/sfofhhh-hilton-san-francisco-union-square/",
+        "neighborhood": "Union Square",
+        "notable": ""
+      },
+      {
+        "name": "Taj Campton Place",
+        "type": "Boutique luxury hotel",
+        "description": "Intimate five-star boutique hotel on Stockton Street overlooking Union Square, known for impeccable personalized service and its acclaimed restaurant.",
+        "address": "340 Stockton St",
+        "phone": "415-781-5555",
+        "website": "https://www.tajhotels.com/en-in/taj/taj-campton-place-san-francisco/",
+        "neighborhood": "Union Square",
+        "notable": ""
+      },
+      {
+        "name": "San Francisco Marriott Union Square",
+        "type": "Full-service business hotel",
+        "description": "Modern Marriott property in the heart of Union Square offering a concierge lounge, a lobby cocktail bar, and contemporary rooms well-suited for both business and leisure travelers.",
+        "address": "480 Sutter St",
+        "phone": "415-398-8900",
+        "website": "https://www.marriott.com/en-us/hotels/sfous-san-francisco-marriott-union-square/overview/",
+        "neighborhood": "Union Square",
+        "notable": ""
+      },
+      {
+        "name": "citizenM San Francisco Union Square",
+        "type": "Boutique tech-forward hotel",
+        "description": "Design-forward, tech-enabled boutique hotel opened in 2021 offering compact but cleverly appointed rooms, a sociable lobby lounge, and a buffet breakfast roughly four blocks from Union Square.",
+        "address": "226 Powell St",
+        "phone": "415-800-4400",
+        "website": "https://www.citizenm.com/hotels/united-states/san-francisco/san-francisco-union-square-hotel",
+        "neighborhood": "Union Square",
+        "notable": ""
+      },
+      {
+        "name": "Hotel Nikko San Francisco",
+        "type": "Full-service hotel",
+        "description": "Sleek 532-room hotel in the Theater District steps from Union Square, featuring an indoor pool, the Anzu restaurant, and Feinstein's cabaret lounge.",
+        "address": "222 Mason St",
+        "phone": "415-394-1111",
+        "website": "https://www.hotelnikkosf.com",
+        "neighborhood": "Union Square",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Book Passage San Francisco",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "The Ferry Building outpost of beloved Bay Area independent bookseller Book Passage, hosting frequent author readings, literary events, and a well-curated selection of travel, food, and Bay Area titles.",
+        "address": "1 Ferry Building, Shop 42",
+        "phone": "415-835-1020",
+        "website": "https://www.bookpassage.com/store/san-francisco",
+        "neighborhood": "Embarcadero",
+        "notable": ""
+      },
+      {
+        "name": "Golden Gate Fortune Cookie Factory (nearby)",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Artisan food producer",
+        "description": "San Francisco institution hand-making fortune cookies on vintage presses; the closest outpost to the Financial District for a classic souvenir treat.",
+        "address": "56 Ross Alley",
+        "phone": "415-781-3956",
+        "website": "https://www.goldengatecookies.net",
+        "neighborhood": "Financial District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Recchiuti Confections (Ferry Building)",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Artisan chocolatier",
+        "description": "Award-winning San Francisco chocolatier Michael Recchiuti's Ferry Building shop offering hand-crafted truffles, caramels, and seasonal chocolate confections made with premium cacao.",
+        "address": "1 Ferry Building, Shop 30",
+        "phone": "415-834-9494",
+        "website": "https://www.recchiuti.com",
+        "neighborhood": "Embarcadero",
+        "notable": ""
+      },
+      {
+        "name": "Acme Bread Company (Ferry Building)",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Artisan bakery",
+        "description": "Bay Area institution founded in 1983, selling wood-fired sourdough loaves, baguettes, and pastries from its iconic Ferry Building counter.",
+        "address": "1 Ferry Building, Shop 15",
+        "phone": "415-288-2978",
+        "website": "https://www.acmebread.com",
+        "neighborhood": "Embarcadero",
+        "notable": "Landmark"
+      },
+      {
+        "name": "McEvoy Ranch (Ferry Building)",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Olive oil & specialty food shop",
+        "description": "Marin County's celebrated organic olive oil producer with a Ferry Building boutique selling estate-grown extra-virgin olive oils, tapenades, and pantry goods.",
+        "address": "1 Ferry Building, Shop 18",
+        "phone": "415-291-7224",
+        "website": "https://mcevoyranch.com",
+        "neighborhood": "Embarcadero",
+        "notable": ""
+      },
+      {
+        "name": "See's Candies (Market St)",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Confectionery shop",
+        "description": "Classic California candy brand with a longtime downtown location near Market Street, beloved for its hand-dipped chocolates and lollipops.",
+        "address": "542 Market St",
+        "phone": "415-362-5352",
+        "website": "https://www.sees.com",
+        "neighborhood": "Financial District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Gump's",
+        "shopGroup": "Home & Gifts",
+        "type": "Luxury home & gift shop",
+        "description": "San Francisco institution since 1861, Gump's offers exquisite jewelry, Asian antiques, fine tableware, and curated home décor — a Union Square-area landmark for discerning shoppers.",
+        "address": "135 Post St",
+        "phone": "415-982-1616",
+        "website": "https://www.gumps.com",
+        "neighborhood": "Union Square",
+        "notable": "Landmark"
+      },
+      {
+        "name": "SFMOMA MuseumStore",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Museum gift shop",
+        "description": "Street-level shop accessible without museum admission, stocking design objects, art books, prints, jewelry, and exclusive SFMOMA-branded merchandise.",
+        "address": "151 3rd St",
+        "phone": "415-357-4035",
+        "website": "https://museumstore.sfmoma.org",
+        "neighborhood": "Union Square",
+        "notable": ""
+      },
+      {
+        "name": "Financial District ACE Hardware",
+        "shopGroup": "Hardware & Services",
+        "type": "Hardware store",
+        "description": "A rare and welcome independent hardware store in the heart of the Financial District, serving both downtown residents and office tenants with tools, supplies, and home essentials.",
+        "address": "140 Pine St",
+        "phone": "415-989-6900",
+        "website": "https://www.acehardware.com",
+        "neighborhood": "Financial District",
+        "notable": ""
+      },
+      {
+        "name": "Banana Republic Flagship (Union Square)",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Clothing retailer",
+        "description": "The original San Francisco flagship of this globally recognized apparel brand, occupying a prime Union Square corner with multiple floors of men's and women's clothing.",
+        "address": "256 Grant Ave",
+        "phone": "415-788-3087",
+        "website": "https://bananarepublic.gap.com",
+        "neighborhood": "Union Square",
+        "notable": ""
+      },
+      {
+        "name": "Shreve & Co.",
+        "shopGroup": "Home & Gifts",
+        "type": "Fine jeweler",
+        "description": "San Francisco's oldest jeweler, established in 1852, presenting fine diamonds, estate jewelry, and luxury timepieces from a landmark Post Street location near Union Square.",
+        "address": "150 Post St",
+        "phone": "415-421-2600",
+        "website": "https://www.shreveandco.com",
+        "neighborhood": "Union Square",
+        "notable": "Landmark"
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "San Francisco Museum of Modern Art (SFMOMA)",
+        "venueGroup": "Museums & Cultural",
+        "type": "Modern art museum",
+        "description": "The West Coast's premier modern and contemporary art museum, housing 33,000 works including major holdings of Matisse, Calder, and Warhol, with the beloved free-admission Roberts Family Gallery on the ground floor.",
+        "address": "151 3rd St",
+        "phone": "415-357-4000",
+        "website": "https://www.sfmoma.org",
+        "neighborhood": "Union Square",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Exploratorium",
+        "venueGroup": "Museums & Cultural",
+        "type": "Interactive science museum",
+        "description": "World-renowned hands-on science, art, and perception museum at Pier 15 on The Embarcadero, featuring 600+ exhibits including the summer 2026 'Life in Space' exhibition; adults-only Thursday evenings available.",
+        "address": "Pier 15, The Embarcadero",
+        "phone": "415-528-4444",
+        "website": "https://www.exploratorium.edu",
+        "neighborhood": "Embarcadero",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Punch Line Comedy Club",
+        "venueGroup": "Theater & Comedy",
+        "type": "Comedy club",
+        "description": "San Francisco's longest-running and only full-time comedy club, at 444 Battery Street in the Financial District, featuring national touring headliners and hometown showcases nightly Tuesday through Sunday.",
+        "address": "444 Battery St",
+        "phone": "415-397-7573",
+        "website": "https://www.punchlinecomedyclub.com",
+        "neighborhood": "Financial District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "American Conservatory Theater (ACT) – Toni Rembe Theater",
+        "venueGroup": "Theater & Comedy",
+        "type": "Regional theater",
+        "description": "Tony Award–winning regional theater company in its historic Union Square home presenting world-class productions of classic and contemporary plays in an ornate 1910 theater.",
+        "address": "415 Geary St",
+        "phone": "415-749-2228",
+        "website": "https://www.act-sf.org",
+        "neighborhood": "Union Square",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Curran Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Broadway theater",
+        "description": "Beautifully restored 1922 theater on Geary Street presenting touring Broadway productions, innovative new works, and an intimate connection between performers and audience.",
+        "address": "445 Geary St",
+        "phone": "415-358-1220",
+        "website": "https://sfcurran.com",
+        "neighborhood": "Union Square",
+        "notable": "Landmark"
+      },
+      {
+        "name": "August Hall",
+        "venueGroup": "Music Venues",
+        "type": "Live music venue",
+        "description": "Versatile 800-capacity music and event venue at 420 Mason Street near Union Square, hosting concerts, DJ nights, private events, and comedy shows in a stylish converted space.",
+        "address": "420 Mason St",
+        "phone": "415-992-7670",
+        "website": "https://augusthallsf.com",
+        "neighborhood": "Union Square",
+        "notable": ""
+      },
+      {
+        "name": "Biscuits & Blues",
+        "venueGroup": "Music Venues",
+        "type": "Blues music club",
+        "description": "Intimate basement blues club at 401 Mason Street near Union Square, presenting live regional and national blues acts nightly in a cozy room with Southern food and cold drinks.",
+        "address": "401 Mason St",
+        "phone": "415-292-2583",
+        "website": "https://www.biscuitsandblues.com",
+        "neighborhood": "Union Square",
+        "notable": ""
+      },
+      {
+        "name": "Feinstein's at the Nikko",
+        "venueGroup": "Music Venues",
+        "type": "Cabaret & supper club",
+        "description": "Elegant supper club inside Hotel Nikko near Union Square, presenting intimate cabaret performances, jazz vocalists, and themed evenings in a sophisticated setting.",
+        "address": "222 Mason St",
+        "phone": "415-394-1111",
+        "website": "https://www.feinsteinssf.com",
+        "neighborhood": "Union Square",
+        "notable": ""
+      },
+      {
+        "name": "Shack15",
+        "venueGroup": "Music Venues",
+        "type": "Members club & event space",
+        "description": "Vibrant members' club and public event space on the second floor of the Ferry Building, hosting concerts, talks, startup networking events, and community gatherings with bay views.",
+        "address": "1 Ferry Building, Suite 201",
+        "phone": "415-843-9400",
+        "website": "https://shack15.com",
+        "neighborhood": "Embarcadero",
+        "notable": ""
+      },
+      {
+        "name": "Embarcadero Center Cinema",
+        "venueGroup": "Cinema",
+        "type": "Art-house cinema",
+        "description": "Downtown's premier independent cinema at Embarcadero Center screening first-run art-house, foreign, and independent films in a comfortable multi-screen setting.",
+        "address": "1 Embarcadero Ctr, Promenade Level",
+        "phone": "415-352-0810",
+        "website": "https://www.landmarktheatres.com/san-francisco/embarcadero-center-cinema",
+        "neighborhood": "Embarcadero",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Equinox Pine Street",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Luxury fitness club",
+        "description": "Premium fitness club inside the historic Pacific Coast Stock Exchange building at 301 Pine Street, offering state-of-the-art equipment, a Pilates studio, cycling studio, yoga and barre classes, boxing, and an in-house spa.",
+        "address": "301 Pine St",
+        "phone": "415-778-0905",
+        "website": "https://www.equinox.com/clubs/northern-california/pinest",
+        "neighborhood": "Financial District",
+        "notable": ""
+      },
+      {
+        "name": "Embarcadero YMCA",
+        "venueGroup": "Pools & Aquatics",
+        "type": "Full-service community fitness center",
+        "description": "Downtown's most comprehensive community fitness facility on Steuart Street, featuring an indoor pool, basketball courts, tennis, pickleball, yoga, Pilates, and group exercise classes with panoramic Bay Bridge views from the cardio deck.",
+        "address": "169 Steuart St",
+        "phone": "415-957-9622",
+        "website": "https://www.ymcasf.org/location/embarcadero-ymca/",
+        "neighborhood": "Embarcadero",
+        "notable": "Landmark"
+      },
+      {
+        "name": "FITNESS SF Embarcadero",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "Locally owned Bay Area gym chain with a convenient Embarcadero Center location offering group fitness classes, personal training, free weights, and cardio equipment.",
+        "address": "2 Embarcadero Center",
+        "phone": "415-362-3583",
+        "website": "https://www.fitnesssf.com",
+        "neighborhood": "Embarcadero",
+        "notable": ""
+      },
+      {
+        "name": "Bay Club San Francisco",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Premium health & fitness club",
+        "description": "Upscale FiDi fitness club offering a newly renovated lobby, full fitness center, group exercise, Pilates, yoga, and personalized training in the heart of the Financial District.",
+        "address": "150 Greenwich St",
+        "phone": "415-433-2200",
+        "website": "https://www.bayclubs.com/sf",
+        "neighborhood": "Financial District",
+        "notable": ""
+      },
+      {
+        "name": "Hot 8 Yoga FiDi",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Hot yoga studio",
+        "description": "Boutique heated yoga studio in the Financial District known for a spotlessly clean facility, strong community vibe, and a broad class menu from beginner Power 1 to cardio-intensive Sculpt and Yoga Barre.",
+        "address": "345 Spear St",
+        "phone": "415-800-5676",
+        "website": "https://www.hot8yoga.com/studio/san-francisco-fidi",
+        "neighborhood": "Rincon Hill",
+        "notable": ""
+      },
+      {
+        "name": "BODYROK Financial District",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Pilates reformer studio",
+        "description": "High-energy 45-minute full-body Pilates-inspired strength training classes on custom reformers, popular with FiDi office workers seeking an efficient and effective lunchtime or after-work workout.",
+        "address": "300 Pine St",
+        "phone": "415-354-5722",
+        "website": "https://www.bodyrok.com",
+        "neighborhood": "Financial District",
+        "notable": ""
+      },
+      {
+        "name": "Bar Method Downtown San Francisco",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Barre fitness studio",
+        "description": "Newest downtown location of the national boutique barre studio chain, opened June 2025 and offering low-impact, high-intensity classes blending ballet, Pilates, and orthopedic exercise.",
+        "address": "1 Post St",
+        "phone": "415-363-7040",
+        "website": "https://www.barmethod.com/studios/downtown-san-francisco/",
+        "neighborhood": "Financial District",
+        "notable": "New"
+      },
+      {
+        "name": "The Embarcadero (Waterfront Promenade)",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Waterfront park & promenade",
+        "description": "San Francisco's iconic 3.5-mile waterfront promenade running the length of the bay from the Bay Bridge north toward Fisherman's Wharf, ideal for running, cycling, and walking with panoramic bay and bridge views.",
+        "address": "The Embarcadero",
+        "phone": "",
+        "website": "https://sfport.com/embarcadero",
+        "neighborhood": "Embarcadero",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Rincon Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Waterfront park",
+        "description": "Small but beloved bay-view park at the foot of the Bay Bridge featuring the Cupid's Span sculpture, open lawns, and a front-row seat to bay sunsets — a popular gathering place for Rincon Hill residents.",
+        "address": "The Embarcadero at Folsom St",
+        "phone": "",
+        "website": "https://sfrecpark.org/parks-open-spaces/rincon-park/",
+        "neighborhood": "Rincon Hill",
+        "notable": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Mayor Lurie Signs Legislation Bringing New Investment Downtown",
+      "url": "https://sfrecpark.org/m/newsflash/home/detail/2989",
+      "publication": "SF Recreation and Parks / Mayor's Office"
+    },
+    {
+      "title": "SF's downtown district expands to include Jackson Square, Ferry Building",
+      "url": "https://sfstandard.com/2026/07/22/jackson-square-downtown-sf-partnership/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "Downtown SF Partnership Renewal & Expansion",
+      "url": "https://downtownsf.org/partnership/renewal-and-expansion",
+      "publication": "Downtown SF Partnership"
+    },
+    {
+      "title": "SF tourism spending trends a half-billion more than in 2025",
+      "url": "https://www.sfexaminer.com/news/the-city/sf-tourism-spending-trends-a-half-billion-more-than-in-2025/article_bbcd06fe-5abb-449f-b855-15ef3a41dcd6.html",
+      "publication": "SF Examiner"
+    },
+    {
+      "title": "Conventions Help Drive San Francisco's Tourism Recovery",
+      "url": "https://meetings.skift.com/2026/05/08/conventions-help-drive-san-franciscos-tourism-recovery/",
+      "publication": "Skift Meetings"
+    },
+    {
+      "title": "Tech is in flux; tourism is sluggish. SF's recovery hangs in the balance.",
+      "url": "https://sfstandard.com/2026/06/26/hospitality-tech-jobs-growth-2026/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "Life in Space lands at the Exploratorium this summer",
+      "url": "https://www.exploratorium.edu/press-office/press-releases/life-space-lands-exploratorium-summer",
+      "publication": "Exploratorium"
+    },
+    {
+      "title": "Exploratorium summer exhibition tackles life in outer space",
+      "url": "https://www.sfexaminer.com/culture/museums-and-galleries/exploratorium-summer-exhibition-tackles-life-in-outer-space/article_731a26cd-4bda-4ee2-b0c9-fa06b3d8b944.html",
+      "publication": "SF Examiner"
+    },
+    {
+      "title": "SFMOMA Announces 2026 Exhibitions",
+      "url": "https://www.sfmoma.org/press-release/sfmoma-announces-2026-exhibitions-including-transformed-fisher-collection-galleries-matisses-femme-au-chapeau-and-rm-x-sfmoma/",
+      "publication": "SFMOMA"
+    },
+    {
+      "title": "SFMOMA Events Calendar August 2026",
+      "url": "https://www.sfmoma.org/events/",
+      "publication": "SFMOMA"
+    },
+    {
+      "title": "Fridays on Front Street 2026",
+      "url": "https://downtownsf.org/things-to-do/fridays-on-front-street",
+      "publication": "Downtown SF Partnership"
+    },
+    {
+      "title": "Fridays on Front Street returns with Charli-XCX-themed kickoff, Valkyries night",
+      "url": "https://riffmagazine.com/news/fridays-on-front-street-2026/",
+      "publication": "Riff Magazine"
+    },
+    {
+      "title": "Ferry Building August Events Calendar",
+      "url": "https://downtownsf.org/go/ferry-building-1",
+      "publication": "Downtown SF Partnership"
+    },
+    {
+      "title": "Union Square Park Programs: Second Saturdays",
+      "url": "https://visitunionsquaresf.com/park-programs",
+      "publication": "Visit Union Square SF"
+    },
+    {
+      "title": "Union Square's Free Outdoor Movie Night: Pokémon Detective Pikachu",
+      "url": "https://sf.funcheap.com/union-squares-cinema-under-the-stars-the-birdcage/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Downtown SF Partnership – Fitness Clubs and Gyms",
+      "url": "https://downtownsf.org/post/fitness-clubs-and-gyms-in-downtown-san-francisco",
+      "publication": "Downtown SF Partnership"
+    },
+    {
+      "title": "Ground Floor Goldmine: Where Downtown San Francisco Shines Again",
+      "url": "https://downtownsf.org/post/shaping-the-streets-downtown-sf-s-latest-ground-floor-business-openings",
+      "publication": "Downtown SF Partnership"
+    },
+    {
+      "title": "The Punch Line – Downtown San Francisco",
+      "url": "https://downtownsf.org/go/the-punch-line",
+      "publication": "Downtown SF Partnership"
+    },
+    {
+      "title": "The Best Restaurants in the Financial District",
+      "url": "https://www.theinfatuation.com/san-francisco/guides/the-best-restaurants-in-the-financial-district",
+      "publication": "The Infatuation"
+    },
+    {
+      "title": "Embarcadero YMCA",
+      "url": "https://www.ymcasf.org/location/embarcadero-ymca/",
+      "publication": "YMCA of Greater San Francisco"
+    },
+    {
+      "title": "Four Seasons Hotel San Francisco at Embarcadero – Press Room",
+      "url": "https://press.fourseasons.com/embarcadero/",
+      "publication": "Four Seasons Hotels"
+    },
+    {
+      "title": "Palace Hotel – Marriott Luxury Collection",
+      "url": "https://www.sfpalace.com",
+      "publication": "Palace Hotel San Francisco"
+    },
+    {
+      "title": "What's on now at San Francisco museums, August 2026",
+      "url": "https://missionlocal.org/2026/08/whats-on-now-at-san-francisco-museums-august-2026/",
+      "publication": "Mission Local"
+    }
+  ]
+}

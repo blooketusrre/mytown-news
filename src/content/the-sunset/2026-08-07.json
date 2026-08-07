@@ -1,0 +1,773 @@
+{
+  "clusterSlug": "the-sunset",
+  "clusterName": "The Sunset",
+  "weekOf": "2026-08-07",
+  "topStories": [
+    {
+      "headline": "Neighborhood Group 'Friends of Sunset Boulevard' Embroiled in Name-and-Mission Dispute",
+      "dek": "A legal and community fight over who owns the identity — and the mailing list — of the eight-year-old beautification group has split the corridor's advocates.",
+      "body": "A community organization that spent years lobbying City Hall to beautify Sunset Boulevard has fractured into two rival factions, each now claiming the name 'Friends of Sunset Boulevard.' Co-founder Lorraine Patterson, who says she started the all-volunteer group in mid-2018 with neighbors on 36th Avenue, told the SF Standard that she is ceding the name after a rival faction incorporated as a nonprofit under the same name and sent her a cease-and-desist letter demanding she hand over the group's website, Instagram account, and distribution list.\n\nThe rival faction, which filed nonprofit paperwork with the California Secretary of State in March 2026, contends it has been actively executing on the group's original mission. In a public response, faction leader Lisa Arjes stated that the naming matter was settled on July 16, 2026 — ten days before the SF Standard story appeared — and that the incorporated nonprofit had already installed a native meadow pilot project, adopted the boulevard through the Department of Public Works Adopt-A-Street program, and removed more than a ton of trash from the median.\n\nThe dispute has drawn attention to broader questions about how Sunset Boulevard's greenbelt is managed. The corridor is overseen by the Department of Public Works rather than Recreation and Parks, and both factions have advocated for improvements. District 4 Supervisor Alan Wong has separately been working with Mayor Lurie's office to explore how Rec and Park can become involved in beautifying the boulevard.",
+      "sourceUrl": "https://sfstandard.com/2026/07/26/friends-of-sunset-boulevard-san-francisco/",
+      "sourceName": "SF Standard",
+      "tags": [
+        "community",
+        "Sunset Boulevard",
+        "neighborhood groups",
+        "District 4"
+      ]
+    },
+    {
+      "headline": "West Portal's Restaurant Boom Keeps Rolling With New Café in Former Hardware Store",
+      "dek": "Hardware Coffee Co. opened in May 2026 inside the former Papenhausen Hardware building, adding another chapter to West Portal Avenue's emergence as a dining and café destination.",
+      "body": "West Portal Avenue, long considered a sleepy shopping strip, has quietly become one of San Francisco's most talked-about dining corridors — and the opening of Hardware Coffee Co. at 32 West Portal Ave. in May 2026 underscores just how fast things have changed. The all-day café, built into the space where Papenhausen Hardware operated for nearly a century, pairs premium coffee sourced from Oakland's Grand Coffee Roasters with beer, wine, and a full-service florist run by artist Sandra Bautista of Dasluz.\n\nOwner Sam Pederson, a former tech worker who said the project is funded by his immediate family, told the San Francisco Chronicle the name is an homage to the hardware store predecessor and a statement about 'high quality, solid offerings, reliability and being part of the community.' Reviewers at The Infatuation described the two-story space as sun-drenched and airy, with an attached florist, standing room at an upstairs communal table, and a rotating lineup of seasonal slushies.\n\nThe opening fits a pattern the SF Standard described in June 2026: a West Portal restaurant boom that began with Little Original Joe's in 2020 and accelerated with the arrivals of Elena's Mexican Restaurant, Khao Tiew, Binu Bonu, and George's Donuts & Merriment. The Standard noted that the corridor had gone from 'stuck in 1985' to a neighborhood 'people go to on purpose to eat, even people who don't live there.'",
+      "sourceUrl": "https://hardwarecoffee.co/pages/west-portal",
+      "sourceName": "Hardware Coffee Co. / SF Standard",
+      "tags": [
+        "West Portal",
+        "restaurants",
+        "new business",
+        "coffee"
+      ]
+    },
+    {
+      "headline": "Inner Sunset Landmark Corner Gets New Life: Maggie & Mac's Open at 9th & Irving",
+      "dek": "The long-vacant Social Kitchen & Brewery space on 9th Avenue finally has a new tenant, with the New American restaurant Maggie & Mac's opening in June to neighborhood fanfare.",
+      "body": "A corner that sat dark for more than six years has a heartbeat again. Maggie & Mac's, a New American restaurant and bar from Scott and Caitlyn Morton of the downtown institution MoMo's, opened at 1326 9th Ave. in June 2026, taking over the storefront that Social Kitchen & Brewery vacated in March 2020 when its operators and the landlord could not agree on a new lease.\n\nThe Richmond Review/Sunset Beacon, which covered the opening, described the restaurant as a place that 'feels less like an opening and more like a place that was always supposed to be in the neighborhood.' The Mortons have outfitted the two-story space with green and brown booths, wooden mezzanine tables, skylights, and a tucked-away back room called the Cable Car Room. The restaurant does not take reservations; all tables are first-come, first-served.\n\nThe Mortons have described their vision as 'a spot for weeknight burgers, Saturday negronis and Sunday hangs — a place for all the small moments that make a neighborhood feel like yours.' Maggie & Mac's is open Tuesday through Friday from noon to 9:30 p.m., Saturday from 11 a.m. to 9:30 p.m., and Sunday from 11 a.m. to 9 p.m. The opening was widely watched as a signal of continued commercial momentum along the 9th and Irving corridor.",
+      "sourceUrl": "https://richmondsunsetnews.com/2026/07/14/everything-nice-maggie-macs-opens/",
+      "sourceName": "Richmond Review/Sunset Beacon",
+      "tags": [
+        "Inner Sunset",
+        "restaurants",
+        "new business",
+        "Irving Street",
+        "9th Avenue"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Stern Grove Festival 2026 — Final Concerts (Through Aug. 16)",
+      "date": "Through August 16",
+      "time": "2:00 PM",
+      "location": "Stern Grove, 19th Ave & Sloat Blvd, Outer Sunset",
+      "description": "The 89th season of San Francisco's free outdoor concert series concludes with Patti LaBelle on August 9, Public Enemy on August 15, and Al Green on August 16 for the annual Big Picnic Weekend finale. Free admission; advance ticket reservation required via lottery or Community Box Office.",
+      "sourceUrl": "https://www.sterngrove.org/lineup2026",
+      "sourceName": "Stern Grove Festival"
+    },
+    {
+      "title": "Outer Sunset Farmers Market & Mercantile",
+      "date": "Ongoing",
+      "time": "9:00 AM–2:00 PM",
+      "location": "37th Avenue at Ortega, Outer Sunset",
+      "description": "The year-round weekly Sunday market features local farmers, food artisans, food trucks, live music on two stages, makers, merchants, and all-ages activities. EBT/WIC accepted; no dogs permitted inside the market.",
+      "sourceUrl": "https://sunsetmercantilesf.com/osfmm/",
+      "sourceName": "Sunset Mercantile"
+    },
+    {
+      "title": "Inner Sunset Flea Market — 'Dog Days of Summer' Edition",
+      "date": "Sunday, August 9",
+      "time": "10:00 AM–4:00 PM",
+      "location": "Irving Street between 9th & 11th Ave, Inner Sunset",
+      "description": "The 11th-season monthly flea market on Irving Street features vintage finds, local makers, community organizations, live music, and free family-friendly activities under the August 'Dog Days of Summer' theme. Free admission; street parking is free all day Sundays.",
+      "sourceUrl": "https://sunsetmercantilesf.com/innersunsetflea/",
+      "sourceName": "Sunset Mercantile / Inner Sunset Flea"
+    },
+    {
+      "title": "Stern Grove Big Picnic Weekend — Public Enemy",
+      "date": "Saturday, August 15",
+      "time": "12:00 PM (doors)",
+      "location": "Stern Grove, 19th Ave & Sloat Blvd, Outer Sunset",
+      "description": "Public Enemy headlines the first night of the annual Big Picnic Weekend, the fundraising finale of the 2026 Stern Grove Festival season. Free admission; tickets required via lottery or Community Box Office.",
+      "sourceUrl": "https://www.sterngrove.org/lineup2026",
+      "sourceName": "Stern Grove Festival"
+    },
+    {
+      "title": "Stern Grove Big Picnic Weekend — Al Green",
+      "date": "Sunday, August 16",
+      "time": "12:00 PM (doors)",
+      "location": "Stern Grove, 19th Ave & Sloat Blvd, Outer Sunset",
+      "description": "Al Green, The GLIDE Ensemble, and Goapele close out the 89th season of the Stern Grove Festival on the final day of Big Picnic Weekend. Free admission; tickets required.",
+      "sourceUrl": "https://www.sterngrove.org/lineup2026",
+      "sourceName": "Stern Grove Festival"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Shirley Chisholm Village Community Room Finally Opens to Public After Year-Long Wait",
+      "body": "A 749-square-foot community room at Shirley Chisholm Village — the 135-unit affordable housing complex for San Francisco teachers and school staff at 1360 43rd Ave. in the Outer Sunset — has been unlocked after sitting inaccessible for more than a year after the building's 2024 completion. Children's After School Arts (CASA) signed a lease in April 2026 to occupy the space as its 'CASA Clubhouse,' with a reservation system for public use launched on June 1. The room had been promised to the broader Outer Sunset community as a public gathering space, and its prolonged closure drew vocal criticism from local activists.",
+      "sourceUrl": "https://www.midpen-housing.org/news-and-happenings/media-center/casa-clubhouse-coming-soon-to-san-franciscos-outer-sunset/",
+      "sourceName": "MidPen Housing",
+      "tags": [
+        "Outer Sunset",
+        "affordable housing",
+        "community space",
+        "Shirley Chisholm Village"
+      ]
+    },
+    {
+      "headline": "Supervisor Wong's Irish Cultural District Takes First Formal Steps",
+      "body": "The San Francisco Board of Supervisors voted unanimously on St. Patrick's Day 2026 to express the city's intent to establish an official Irish Cultural District in the Sunset neighborhood, following legislation introduced by District 4 Supervisor Alan Wong. Wong said the district would unlock $240,000 in funding to support the Irish community's cultural institutions and programming. A boundary committee is now conducting outreach with cultural leaders, residents, and small businesses to shape the district's formal boundaries and programming priorities.",
+      "sourceUrl": "https://richmondsunsetnews.com/2026/04/12/steps-taken-for-sf-to-establish-irish-cultural-district-in-sunset/",
+      "sourceName": "Richmond Review/Sunset Beacon",
+      "tags": [
+        "West Sunset",
+        "Irish Cultural District",
+        "Supervisor Alan Wong",
+        "District 4",
+        "legislation"
+      ]
+    },
+    {
+      "headline": "Sunset Housing Market Runs Well Above Asking Price in 2026",
+      "body": "Homes across the Inner, Central, and Outer Sunset are closing at more than 130% of list price in 2026, with a median of just 12 days on market, according to a market report from Kinoko Real Estate published in late July 2026. Per-square-foot prices rose 5% to 8% year over year across all three sub-neighborhoods, with the Inner Sunset median sale price at roughly $2.23 million and the Outer Sunset at approximately $1.61 million as of early 2026. Real estate advisors note that Outer Sunset still offers the lowest absolute entry price of the three sub-markets, even as it appreciates at the fastest rate.",
+      "sourceUrl": "https://kinokorealestate.com/blog/sunset-district-market-report-2026",
+      "sourceName": "Kinoko Real Estate",
+      "tags": [
+        "real estate",
+        "Inner Sunset",
+        "Outer Sunset",
+        "housing market"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Maggie & Mac's",
+        "cuisineGroup": "Seafood & American",
+        "type": "New American restaurant and bar",
+        "description": "Neighborhood bar and restaurant from the MoMo's team, serving burgers, cocktails, and weekend brunch in the former Social Kitchen & Brewery space.",
+        "address": "1326 9th Ave, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.maggieandmacs.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "San Tung",
+        "cuisineGroup": "Asian",
+        "type": "Northern Chinese restaurant",
+        "description": "Beloved Inner Sunset institution famous for its dry-fried chicken wings and extensive Northern Chinese menu.",
+        "address": "1031 Irving St, San Francisco, CA 94122",
+        "phone": "415-242-0828",
+        "website": "https://www.santungrestaurant.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ebisu",
+        "cuisineGroup": "Asian",
+        "type": "Japanese sushi restaurant",
+        "description": "A neighborhood sushi staple for over 40 years, serving fresh sashimi, nigiri, and creative rolls near Golden Gate Park.",
+        "address": "1283 9th Ave, San Francisco, CA 94122",
+        "phone": "415-566-1770",
+        "website": "https://www.ebisusushi.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Fiorella",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant with wood-fired pizza",
+        "description": "Upscale neighborhood Italian serving wood-fired pizzas, pastas, and craft cocktails with a rooftop balcony seating area.",
+        "address": "1240 9th Ave, San Francisco, CA 94122",
+        "phone": "415-416-6959",
+        "website": "https://fiorellasf.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Manna Korean BBQ",
+        "cuisineGroup": "Asian",
+        "type": "Korean barbecue restaurant",
+        "description": "Neighborhood go-to for Korean barbecue, bibimbap, soft tofu soup, and kimchi fried rice in the heart of Irving Street.",
+        "address": "845 Irving St, San Francisco, CA 94122",
+        "phone": "415-665-5969",
+        "website": "https://www.mannasf.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Lavash",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Persian restaurant",
+        "description": "Authentic Persian cuisine served in a cozy spot on Irving Street with a parklet decorated with fresh flowers and greenery.",
+        "address": "511 Irving St, San Francisco, CA 94122",
+        "phone": "415-664-5555",
+        "website": "https://www.lavashsf.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Arizmendi Bakery",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Worker-owned bakery and pizzeria",
+        "description": "Beloved worker-owned cooperative two blocks from Golden Gate Park, known for artisan breads, seasonal scones, and gourmet daily pizza.",
+        "address": "1331 9th Ave, San Francisco, CA 94122",
+        "phone": "415-566-3117",
+        "website": "https://www.arizmendibakery.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Snowbird Coffee",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Specialty coffee shop",
+        "description": "Expert pour-overs and locally roasted single-origin beans in a compact neighborhood café on 9th Avenue.",
+        "address": "1352A 9th Ave, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.snowbirdcoffee.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Andytown Coffee Roasters",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Artisan coffee roaster and café",
+        "description": "Outer Sunset–born specialty roaster with multiple locations, celebrated for the 'Snowy Plover' espresso drink, soda-bread scones, and Irish-founded community ethos.",
+        "address": "3655 Lawton St, San Francisco, CA 94122",
+        "phone": "415-753-9775",
+        "website": "https://andytownsf.com/",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Art's Café",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Classic American breakfast café",
+        "description": "A 30-plus-year Inner Sunset institution serving large-portioned breakfasts at affordable prices, repeatedly named best breakfast in San Francisco.",
+        "address": "747 Irving St, San Francisco, CA 94122",
+        "phone": "415-665-7440",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Pasquale's Pizzeria",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Casual pizzeria",
+        "description": "Longtime neighborhood pizzeria serving classic pies and pastas in a relaxed, family-friendly setting on Irving Street.",
+        "address": "700 Irving St, San Francisco, CA 94122",
+        "phone": "415-664-8001",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Elena's",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican-American restaurant",
+        "description": "Sweeping, 100-seat Mexican restaurant from the Original Joe's family, quickly established as West Portal's flagship dining destination with spicy margaritas and candlelit atmosphere.",
+        "address": "255 West Portal Ave, San Francisco, CA 94127",
+        "phone": "415-340-8588",
+        "website": "https://elenaswp.com/",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Little Original Joe's",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian-American restaurant",
+        "description": "The beloved neighborhood anchor that sparked West Portal's dining renaissance, known for pizzas, pastas, and classic Joe's-style parmigiana.",
+        "address": "393 West Portal Ave, San Francisco, CA 94127",
+        "phone": "415-566-5637",
+        "website": "https://www.littleoriginaljoes.com/",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Khao Tiew",
+        "cuisineGroup": "Asian",
+        "type": "Modern Thai restaurant",
+        "description": "First brick-and-mortar from a popular Thai pop-up, serving elevated Thai cuisine with notable dishes like duck breast panang curry to consistent hours-long waits.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "https://www.khaotiewsf.com/",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Binu Bonu",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Italian wine bar and bottle shop",
+        "description": "Intimate Sardinian wine bar and bottle shop from the original owners of La Ciccia, offering 100+ sustainable Italian wines and charcuterie in a pocket-sized West Portal space.",
+        "address": "230 West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "https://www.binubonu.com/",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Hardware Coffee Co.",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "All-day café with florist",
+        "description": "Sun-drenched two-story café with premium coffee, beer, wine, and a full-service flower shop, opened May 2026 in the former Papenhausen Hardware building.",
+        "address": "32 West Portal Ave, San Francisco, CA 94127",
+        "phone": "415-742-4255",
+        "website": "https://hardwarecoffee.co/pages/west-portal",
+        "neighborhood": "West Portal",
+        "notable": "New"
+      },
+      {
+        "name": "George's Donuts & Merriment",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Artisan donut and pastry café",
+        "description": "Stylish café slinging fancy crullers and sweet-and-savory pastries in a marble-and-velvet space that has become a West Portal destination since opening in early 2025.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "https://www.georgesdonuts.com/",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Java Beach Café",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Neighborhood café",
+        "description": "Long-running community café near Ocean Beach, a Outer Sunset gathering spot and co-host of the annual Green Fest Block Party.",
+        "address": "1396 La Playa St, San Francisco, CA 94122",
+        "phone": "415-665-5282",
+        "website": "https://www.javabeachcafe.com/",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Ocean Park Motel",
+        "type": "Boutique motel",
+        "description": "A well-maintained Art Deco motel near Ocean Beach and the San Francisco Zoo, one of the few lodging options in the Outer Sunset.",
+        "address": "2690 46th Ave, San Francisco, CA 94116",
+        "phone": "415-566-7020",
+        "website": "https://www.oceanparkmotel.com/",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "San Franpsycho",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Locally designed streetwear and accessories",
+        "description": "Sunset District–bred brand selling locally designed and printed clothes, accessories, and art celebrating San Francisco and its west-side neighborhoods.",
+        "address": "739 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.sanfranpsycho.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sunset Mercantile Emporium",
+        "shopGroup": "Home & Gifts",
+        "type": "Community gift shop and event hub",
+        "description": "Inner Sunset retail and community space operated by Sunset Mercantile, offering local gifts, rotating art, and serving as a hub for the Inner Sunset Flea and neighborhood events.",
+        "address": "Irving St at 8th Ave, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://sunsetmercantilesf.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Luke's Local",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Specialty grocery and provisions",
+        "description": "Neighborhood specialty grocer stocking curated local and artisan food, beverages, and pantry staples in the Inner Sunset.",
+        "address": "1145 9th Ave, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.lukeslocal.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Andronico's Community Markets",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Independent community supermarket",
+        "description": "Well-stocked neighborhood supermarket serving the Inner Sunset with a strong selection of organic, local, and specialty products.",
+        "address": "1200 Irving St, San Francisco, CA 94122",
+        "phone": "415-661-3220",
+        "website": "https://www.andronicos.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hunt & Gather",
+        "shopGroup": "Home & Gifts",
+        "type": "Seasonal art gallery and gift shop",
+        "description": "Thoughtfully curated art gallery and gift shop on Irving Street showcasing locally made and nationally sourced art and home goods.",
+        "address": "1108 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.huntandgathersf.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "The Beanery",
+        "shopGroup": "Other",
+        "type": "Coffee shop and café",
+        "description": "Neighborhood café with two Inner Sunset locations, serving hot and cold coffees using 100% Arabica beans in a laid-back setting.",
+        "address": "1307 9th Ave, San Francisco, CA 94122",
+        "phone": "415-731-4453",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sunset Branch Library",
+        "shopGroup": "Other",
+        "type": "San Francisco Public Library branch",
+        "description": "SFPL branch in the Inner Sunset offering children's story time, teen programs, adult classes, and community meeting space.",
+        "address": "1305 18th Ave, San Francisco, CA 94122",
+        "phone": "415-753-7120",
+        "website": "https://sfpl.org/locations/sunset/",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Shaw's Candy & Ice Cream",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Old-fashioned candy and ice cream shop",
+        "description": "A nearly century-old West Portal sweet shop that has remained a neighborhood fixture through the corridor's transformation.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "415-681-7820",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Philosopher's Club",
+        "shopGroup": "Other",
+        "type": "Neighborhood dive bar",
+        "description": "A well-worn West Portal dive bar that has anchored the neighborhood's social life for decades, serving reliable pours and a welcoming community vibe.",
+        "address": "824 Ulloa St, San Francisco, CA 94127",
+        "phone": "415-661-0235",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Little Shamrock",
+        "shopGroup": "Other",
+        "type": "Historic Irish pub",
+        "description": "One of the oldest pubs in San Francisco, a cozy Inner Sunset institution serving pints of Guinness and maintaining an authentically old-school neighborhood atmosphere.",
+        "address": "807 Lincoln Way, San Francisco, CA 94122",
+        "phone": "415-661-0060",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Stern Grove Festival",
+        "venueGroup": "Music Venues",
+        "type": "Outdoor amphitheater and free concert series",
+        "description": "America's longest-running free nonprofit music festival, held in a natural eucalyptus-ringed amphitheater in the Outer Sunset every Sunday from June through August.",
+        "address": "19th Ave & Sloat Blvd, San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://www.sterngrove.org/",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Francisco Circus Center",
+        "venueGroup": "Theater & Comedy",
+        "type": "Circus arts training and performance venue",
+        "description": "The Bay Area's premier circus arts school and performance space, offering classes in aerial, acrobatics, and juggling for all ages, located in the Inner Sunset near Golden Gate Park.",
+        "address": "755 Frederick St, San Francisco, CA 94117",
+        "phone": "415-759-8123",
+        "website": "https://circuscenter.org/",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "de Young Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Fine arts museum",
+        "description": "The city's preeminent fine arts museum in Golden Gate Park, housing American art from the 17th century to the present alongside international textiles and decorative arts.",
+        "address": "50 Hagiwara Tea Garden Dr, San Francisco, CA 94118",
+        "phone": "415-750-3600",
+        "website": "https://www.famsf.org/visit/de-young",
+        "neighborhood": "Inner Sunset (Golden Gate Park)",
+        "notable": "Landmark"
+      },
+      {
+        "name": "California Academy of Sciences",
+        "venueGroup": "Museums & Cultural",
+        "type": "Natural history museum, aquarium, and planetarium",
+        "description": "World-class natural history complex in Golden Gate Park combining a four-story rainforest, living coral reef aquarium, planetarium, and natural history museum under one living roof.",
+        "address": "55 Music Concourse Dr, San Francisco, CA 94118",
+        "phone": "415-379-8000",
+        "website": "https://www.calacademy.org/",
+        "neighborhood": "Inner Sunset (Golden Gate Park)",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sunset Dunes Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Linear coastal park",
+        "description": "A 77-acre, 2-mile coastal park on the former Great Highway featuring separated walking and cycling paths, art installations, exercise equipment, log benches, and hammocks along Ocean Beach.",
+        "address": "Great Highway between Lincoln Way and Sloat Blvd, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://sfrecpark.org/1601/Sunset-Dunes",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "United Irish Cultural Center",
+        "venueGroup": "Museums & Cultural",
+        "type": "Irish cultural and community center",
+        "description": "The cultural and community hub for San Francisco's Irish community, home to the Patrick J. Dowling Library, traditional music events, and the focal point of the city's proposed Irish Cultural District in the Sunset.",
+        "address": "2700 45th Ave, San Francisco, CA 94116",
+        "phone": "415-661-2700",
+        "website": "https://www.irishculturalsf.org/",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Marrow Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery",
+        "description": "A small Inner Sunset gallery open Fridays and by appointment, showcasing paintings and mixed-media works by local, national, and international artists, visible anytime through street-facing windows.",
+        "address": "548 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Golden Gate Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban park",
+        "description": "The 1,017-acre park bordering the Sunset District offers boating, tennis, lawn bowling, pickleball, cycling, birdwatching, free concerts, archery, and museums — the Sunset's perpetual backyard.",
+        "address": "Fulton St & Stanyan St, San Francisco, CA 94117",
+        "phone": "415-831-2700",
+        "website": "https://sfrecpark.org/destination/golden-gate-park/",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Sunset Recreation Center",
+        "venueGroup": "Sports & Courts",
+        "type": "City recreation center",
+        "description": "SF Rec & Parks community center in the Outer Sunset offering basketball, tennis, baseball, dance classes, and one of the city's most popular table tennis rooms.",
+        "address": "2201 Lawton St, San Francisco, CA 94122",
+        "phone": "415-242-1070",
+        "website": "https://sfrecpark.org/706/Sunset-Recreation-Center",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Gym",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Neighborhood gym",
+        "description": "Full-service neighborhood fitness center in the Inner Sunset serving the local community with comprehensive equipment and class offerings.",
+        "address": "Inner Sunset, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "The Yoga Shala",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Heated vinyasa yoga studio",
+        "description": "Sunset District yoga studio offering heated vinyasa classes designed for all levels, opened in September 2022.",
+        "address": "Sunset District, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.theyogashalasf.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Purusha Yoga & Pilates",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga and Pilates studio",
+        "description": "Bay Area studio with over 25 years of experience, housed in a historic Freemason building in the Sunset area.",
+        "address": "Sunset District, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.purushayoga.com/",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Koret Health and Recreation Center (UCSF)",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "University recreation center",
+        "description": "Large fitness and recreation center at UCSF's Parnassus campus, open to students, faculty, staff, and community members near the Inner Sunset.",
+        "address": "500 Parnassus Ave, San Francisco, CA 94143",
+        "phone": "415-476-1115",
+        "website": "https://campuslifeservices.ucsf.edu/transportation/services/koret_health_and_recreation_center",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Dunes Park — Outdoor Fitness",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Outdoor fitness and recreational space",
+        "description": "The 77-acre Sunset Dunes coastal park includes outdoor exercise equipment, separated walking and cycling paths, and hammocks along the former Great Highway adjacent to Ocean Beach.",
+        "address": "Great Highway between Lincoln Way and Sloat Blvd, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://sfrecpark.org/1601/Sunset-Dunes",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Golden Gate Park Lawn Bowling Club",
+        "venueGroup": "Sports & Courts",
+        "type": "Lawn bowling club",
+        "description": "One of the few public lawn bowling clubs in the U.S., operating on beautifully maintained greens in Golden Gate Park adjacent to the Inner Sunset.",
+        "address": "Bowling Green Dr, Golden Gate Park, San Francisco, CA 94117",
+        "phone": "415-487-8787",
+        "website": "https://www.goldengateparkbowlingclub.org/",
+        "neighborhood": "Inner Sunset (Golden Gate Park)",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Millberry Fitness & Recreation Center",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Multi-use fitness and recreation center",
+        "description": "Full-service recreation center near the UCSF Medical Center with fitness equipment, group classes, and sports courts serving the Inner Sunset community.",
+        "address": "500 Parnassus Ave, San Francisco, CA 94143",
+        "phone": "415-476-4420",
+        "website": "https://campuslifeservices.ucsf.edu/transportation/services/koret_health_and_recreation_center",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Glen Canyon Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban hiking and recreation park",
+        "description": "A popular park bordering Miraloma Park with winding hiking trails, rock climbing, a large playground, and a recreation center.",
+        "address": "Elk St & Chenery St, San Francisco, CA 94131",
+        "phone": "415-337-4705",
+        "website": "https://sfrecpark.org/destination/glen-canyon-park/",
+        "neighborhood": "Miraloma Park",
+        "notable": ""
+      },
+      {
+        "name": "Mount Davidson Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Forested hilltop park",
+        "description": "Heavily forested park surrounding the highest point in San Francisco with winding trails, scenic vistas, and a dense network of hiking paths bordering Miraloma Park and St. Francis Wood.",
+        "address": "Myra Way & Dalewood Way, San Francisco, CA 94127",
+        "phone": "415-831-2700",
+        "website": "https://sfrecpark.org/destination/mount-davidson/",
+        "neighborhood": "Miraloma Park",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Who owns 'Friends of Sunset Boulevard'? A neighborhood dispute over a name and a mission",
+      "url": "https://sfstandard.com/2026/07/26/friends-of-sunset-boulevard-san-francisco/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "Setting the Record Straight (Friends of Sunset Boulevard response)",
+      "url": "https://crabtreej.substack.com/p/setting-the-record-straight",
+      "publication": "Substack / Lisa Arjes"
+    },
+    {
+      "title": "Hardware Coffee Co. West Portal location",
+      "url": "https://hardwarecoffee.co/pages/west-portal",
+      "publication": "Hardware Coffee Co."
+    },
+    {
+      "title": "West Portal's Old Hardware Store Gets Retrofit With Lattes and Lilies",
+      "url": "https://hoodline.com/2026/04/west-portal-s-old-hardware-store-gets-retrofit-with-lattes-and-lilies/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "Hardware Coffee — West Portal review",
+      "url": "https://www.theinfatuation.com/san-francisco/reviews/hardware-coffee-co",
+      "publication": "The Infatuation"
+    },
+    {
+      "title": "Everything Nice: Maggie & Mac's Opens",
+      "url": "https://richmondsunsetnews.com/2026/07/14/everything-nice-maggie-macs-opens/",
+      "publication": "Richmond Review/Sunset Beacon"
+    },
+    {
+      "title": "Maggie & Mac's, a new restaurant opens in the Inner Sunset",
+      "url": "https://sfstandard.com/2026/06/05/maggie-macs-new-restaurant-kids-menu/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "Stern Grove Festival 2026 Lineup",
+      "url": "https://www.sterngrove.org/lineup2026",
+      "publication": "Stern Grove Festival"
+    },
+    {
+      "title": "SF's Free Stern Grove Concerts Back for 2026 (Full Lineup)",
+      "url": "https://sf.funcheap.com/city-guide/stern-grove-festival-drops-epic-2026-lineup/",
+      "publication": "SF Funcheap"
+    },
+    {
+      "title": "Inner Sunset Flea Market 2026 Season Schedule",
+      "url": "https://sunsetmercantilesf.com/innersunsetflea/",
+      "publication": "Sunset Mercantile"
+    },
+    {
+      "title": "Inner Sunset Flea Market — August 9, 2026",
+      "url": "https://www.eventbrite.com/e/inner-sunset-flea-market-tickets-1991933620079",
+      "publication": "Eventbrite / Sunset Mercantile"
+    },
+    {
+      "title": "Outer Sunset Farmers Market & Mercantile",
+      "url": "https://sunsetmercantilesf.com/osfmm/",
+      "publication": "Sunset Mercantile"
+    },
+    {
+      "title": "CASA Clubhouse Coming Soon to San Francisco's Outer Sunset",
+      "url": "https://www.midpen-housing.org/news-and-happenings/media-center/casa-clubhouse-coming-soon-to-san-franciscos-outer-sunset/",
+      "publication": "MidPen Housing"
+    },
+    {
+      "title": "Steps Taken for SF to Establish Irish Cultural District in Sunset",
+      "url": "https://richmondsunsetnews.com/2026/04/12/steps-taken-for-sf-to-establish-irish-cultural-district-in-sunset/",
+      "publication": "Richmond Review/Sunset Beacon"
+    },
+    {
+      "title": "SF legislation introduced to establish Irish Cultural District",
+      "url": "https://localnewsmatters.org/2026/03/16/bcn-14-sf-legislation-introduced-to-establish-irish-cultural-district-in-city-march-16-2026/",
+      "publication": "Local News Matters / Bay City News"
+    },
+    {
+      "title": "Sunset District 2026 Market Report: Bidding Wars Heat Up",
+      "url": "https://kinokorealestate.com/blog/sunset-district-market-report-2026",
+      "publication": "Kinoko Real Estate"
+    },
+    {
+      "title": "How West Portal got its restaurant groove on",
+      "url": "https://sfstandard.com/2026/06/03/west-portal-dining-desination/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "The Best Restaurants in West Portal",
+      "url": "https://www.7x7.com/west-portal-buzz-2668950846/the-best-restaurants-in-west-portal",
+      "publication": "7x7 Bay Area"
+    },
+    {
+      "title": "Modern Guide to the Inner Sunset",
+      "url": "https://www.7x7.com/inner-sunset-san-francisco-guide-2658200102.html",
+      "publication": "7x7 Bay Area"
+    },
+    {
+      "title": "Andytown Coffee Roasters locations",
+      "url": "https://andytownsf.com/pages/locations",
+      "publication": "Andytown Coffee Roasters"
+    },
+    {
+      "title": "Sunset Dunes — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sunset_Dunes",
+      "publication": "Wikipedia"
+    },
+    {
+      "title": "Sunset Recreation Center",
+      "url": "https://sfrecpark.org/706/Sunset-Recreation-Center",
+      "publication": "SF Recreation & Parks"
+    }
+  ]
+}

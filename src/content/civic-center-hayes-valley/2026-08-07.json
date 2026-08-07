@@ -1,0 +1,885 @@
+{
+  "clusterSlug": "civic-center-hayes-valley",
+  "clusterName": "Civic Center & Hayes Valley",
+  "weekOf": "2026-08-07",
+  "topStories": [
+    {
+      "headline": "Early-Morning Fillmore Street Fire Displaces 19 Residents, Rescuers Pull 18 from Windows",
+      "dek": "A 2-alarm blaze tore through a mixed-use building on the 800 block of Fillmore Street early Thursday, triggering a dramatic ladder rescue.",
+      "body": "San Francisco firefighters responded at approximately 1:56 a.m. Thursday, August 6, to a reported structure fire on the 800 block of Fillmore Street. First-arriving crews found a three-story, multi-residential building over commercial space with heavy fire showing, and quickly called a second alarm. Using ground and aerial ladders from multiple trucks, crews rescued 18 occupants stranded at second- and third-floor windows. One civilian was injured and is expected to recover.\n\nThe fire spread to a neighboring building at 855 Fillmore Street before being contained around 3:25 a.m. and declared under control at 3:33 a.m. A total of 19 residents from four units were displaced as a result of the blaze. The San Francisco Municipal Transportation Agency provided a Muni bus as temporary shelter while the San Francisco Human Services Agency and the American Red Cross dispatched teams to assist.\n\nThe cause of the fire remains under investigation, and the total number of displaced residents is still being formally determined by city officials. The 900 block of Fillmore — the address also identified in some reports — sits within Supervisorial District 5, represented by Supervisor Bilal Mahmood. In July, Mahmood had already requested a public Board of Supervisors hearing to examine tenant oversight, safety conditions, and maintenance standards at multi-unit residential properties in the Western Addition.\n\nMayor Daniel Lurie thanked first responders in a social media post, noting that their quick action saved lives. The Board of Supervisors is currently in its annual summer legislative recess, which runs through August 28, meaning any formal city review of building safety tied to the incident would likely occur after the recess.",
+      "sourceUrl": "https://sfist.com/2026/08/06/firefighters-rescue-18-people-trapped-in-fillmore-district-apartment-blaze/",
+      "sourceName": "SFist",
+      "tags": [
+        "fire",
+        "public safety",
+        "housing",
+        "NoPa",
+        "Fillmore"
+      ]
+    },
+    {
+      "headline": "SF Opera Unveils 2026–27 Season, Opening Night Set for September 12 at City Hall and War Memorial",
+      "dek": "The company's 104th season launches with Verdi's Simon Boccanegra and a free Opera in the Park concert, as individual tickets go on sale now.",
+      "body": "San Francisco Opera has announced its 2026–27 season, led by Music Director Eun Sun Kim. The 104th season opens September 12 with Giuseppe Verdi's Simon Boccanegra — a new-to-the-company production — under Kim's baton, with the annual Opera Ball kicking off festivities at San Francisco City Hall and the War Memorial Opera House. The season runs through summer 2027 and concludes with Richard Wagner's Das Rheingold and Giacomo Puccini's Tosca.\n\nHighlights include a new co-production with English National Opera of Thea Musgrave's Mary, Queen of Scots (September 20–October 4), and Das Rheingold, the prologue of Wagner's four-opera Ring cycle, in preparation for a full Ring mounting in 2028. Mozart's The Marriage of Figaro and Massenet's Manon round out the mainstage lineup. A free Opera in the Park concert returns to Robin Williams Meadow in Golden Gate Park on September 13, featuring Kim conducting the San Francisco Opera Orchestra and artists from the fall season.\n\nThe company will also continue its Dolby Tickets initiative, offering $10 tickets to eligible first-time Bay Area patrons, and will livestream the third performance of each mainstage production as part of its digital programming. Individual tickets went on sale July 7.",
+      "sourceUrl": "https://www.sfopera.com/press/press-releases/San-Francisco-Opera-2026-27-season/",
+      "sourceName": "San Francisco Opera",
+      "tags": [
+        "opera",
+        "arts",
+        "Civic Center",
+        "War Memorial Opera House",
+        "culture"
+      ]
+    },
+    {
+      "headline": "Youth Urbanists Reimagine Downtown as DDC's Mid-Market Revival Gains Momentum",
+      "dek": "High school students partnered with the San Francisco Downtown Development Corporation to propose bold new visions for Mid-Market, even as the DDC's $25M business fund begins dispersing grants.",
+      "body": "A summer program led by an urbanist youth nonprofit and the Downtown Development Corporation prompted San Francisco high schoolers to reimagine the downtown core, including proposals to replace the San Francisco Centre mall with housing and a public plaza. The SF Standard reported on the program July 28, highlighting student mockups that envision a more mixed-use, pedestrian-friendly Mid-Market corridor.\n\nThe exercise comes as the DDC's broader revitalization push enters a new phase. In April, the DDC and its partners launched a $25 million Downtown Business Fund designed to help businesses open and expand in San Francisco's downtown corridors, including Mid-Market. The fund offers grants up to $500,000 and loans from $100,000 to $1 million, with SF New Deal serving as an operating partner to assist small businesses in accessing resources.\n\nThe DDC, launched in 2025 under CEO Shola Olatoye, has already raised over $60 million in private, corporate, and philanthropic contributions from backers including Google, Ripple, Amazon, and Thoma Bravo. Its programs focus on five areas: clean and safe streets, business support, public spaces, arts and culture, and real estate. The effort is part of Mayor Daniel Lurie's broader downtown comeback strategy, which the SF Standard has described as the city's dominant recovery narrative heading into 2026.",
+      "sourceUrl": "https://sfstandard.com/2026/07/28/summer-program-students-redesign-downtown-urbanism/",
+      "sourceName": "SF Standard",
+      "tags": [
+        "Mid-Market",
+        "downtown",
+        "development",
+        "economic recovery",
+        "DDC"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "FX Harsono: Writing in the Rain — Asian Art Museum",
+      "date": "Through September 7",
+      "time": "Various times",
+      "location": "Asian Art Museum, 200 Larkin St, Civic Center",
+      "description": "In this poetic video installation, the Indonesian artist's act of writing his own name becomes a reclamation of erased identity. The museum is open Thursday 1–8 PM and Friday–Monday 10 AM–5 PM.",
+      "sourceUrl": "https://exhibitions.asianart.org/",
+      "sourceName": "Asian Art Museum"
+    },
+    {
+      "title": "A Sound Work by Lala Rukh: Subh-e-Umeed — Asian Art Museum",
+      "date": "Through September 7",
+      "time": "Various times",
+      "location": "Asian Art Museum, 200 Larkin St, Civic Center",
+      "description": "The first West Coast exhibition of work by Pakistani artist and activist Lala Rukh (1948–2017), presenting a sonic archive of a morning in Lahore during Pakistan's politically charged Lawyer Movement.",
+      "sourceUrl": "https://sfartweek.com/asian-art-museum/",
+      "sourceName": "SF Art Week"
+    },
+    {
+      "title": "Heart of the City Farmers' Market",
+      "date": "Ongoing",
+      "time": "7:00 AM–5:00 PM",
+      "location": "United Nations Plaza, Market St & Hyde St, Civic Center",
+      "description": "San Francisco's only independent, farmer-operated nonprofit market runs every Wednesday and Sunday year-round at UN Plaza above Civic Center BART, with nearly 30 local farmers and artisan food vendors.",
+      "sourceUrl": "https://hotcfarmersmarket.org/",
+      "sourceName": "Heart of the City Farmers Market"
+    },
+    {
+      "title": "Dance at the Plaza — Free Dance Classes at UN Plaza",
+      "date": "Ongoing",
+      "time": "Various times",
+      "location": "Fitness Court at UN Plaza, Civic Center",
+      "description": "Rae Studios, in partnership with SF Recreation & Parks and the Civic Center CBD, presents free weekly outdoor dance classes in styles including K-Pop, Hip Hop, Jazz Funk, and RnB throughout August.",
+      "sourceUrl": "https://www.raestudios-sf.com/post/un-plaza-summer-schedule",
+      "sourceName": "Rae Studios"
+    },
+    {
+      "title": "Harry Potter and the Deathly Hallows Part 2 in Concert",
+      "date": "Saturday, August 8 & Sunday, August 9",
+      "time": "1:00 PM",
+      "location": "Davies Symphony Hall (Louise M. Davies), 201 Van Ness Ave, Civic Center",
+      "description": "Innovation Arts and Entertainment presents a live-orchestra screening of Harry Potter and the Deathly Hallows Part 2, with a full ensemble performing John Williams' score alongside the film.",
+      "sourceUrl": "https://sfwarmemorial.org/",
+      "sourceName": "San Francisco War Memorial"
+    },
+    {
+      "title": "Domingo Flamenco — Inaugural Sunday Flamenco Series",
+      "date": "Sunday, August 9",
+      "time": "2:30 PM",
+      "location": "San Francisco War Memorial Veterans Building, 401 Van Ness Ave, Suite 212, Civic Center",
+      "description": "The inaugural Domingo Flamenco series celebrates the tradition and artistry of flamenco with cante by Roberto Zamora, guitar by Jesse Torre, and baile by Melissa Cruz and Mizuho Sato, plus a pre-show palmas workshop and complimentary tapas.",
+      "sourceUrl": "https://www.eventbrite.com/e/domingo-flamenco-tickets-1991504885723",
+      "sourceName": "Eventbrite"
+    },
+    {
+      "title": "41st Annual Miss Asian Global Pageant",
+      "date": "Saturday, August 15",
+      "time": "2:00 PM",
+      "location": "Herbst Theatre, 401 Van Ness Ave, Civic Center",
+      "description": "The Asian America Foundation presents the 41st Annual Miss Asian Global Pageant at the landmark Herbst Theatre in the War Memorial Veterans Building.",
+      "sourceUrl": "https://sfwarmemorial.org/",
+      "sourceName": "San Francisco War Memorial"
+    },
+    {
+      "title": "5th Annual Summer Festival Chorus — SF Choral Society",
+      "date": "Saturday, August 15",
+      "time": "7:00 PM",
+      "location": "Davies Symphony Hall, 201 Van Ness Ave, Civic Center",
+      "description": "The San Francisco Choral Society presents its 5th Annual Summer Festival Chorus at Davies Symphony Hall, featuring choral performances in the city's premier concert hall.",
+      "sourceUrl": "https://sfwarmemorial.org/",
+      "sourceName": "San Francisco War Memorial"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "SF Opera Season Tickets Available Now as 104th Season Approaches",
+      "body": "With the San Francisco Opera's 2026–27 season opening September 12, the company announced that individual tickets went on sale July 7 via sfopera.com or by calling (415) 864-3330. The season features six mainstage productions including the West Coast premiere of Thea Musgrave's Mary, Queen of Scots and Wagner's Das Rheingold. The company will also continue its Dolby Tickets program offering $10 seats to first-time Bay Area patrons.",
+      "sourceUrl": "https://www.sfopera.com/press/press-releases/San-Francisco-Opera-2026-27-season/",
+      "sourceName": "San Francisco Opera",
+      "tags": [
+        "opera",
+        "arts",
+        "Civic Center"
+      ]
+    },
+    {
+      "headline": "Asian Art Museum Announces Landmark Ha Chong-Hyun Retrospective Opening September 25",
+      "body": "The Asian Art Museum will present Ha Chong-Hyun: Retrospective, on view September 25, 2026 through January 25, 2027, marking the first major North American museum exhibition by the pioneering Korean contemporary artist. The show features more than 50 paintings tracing Ha's creative evolution over more than six decades, including two new works completed in 2025. The exhibition coincides with San Francisco's 50th anniversary of its sister city relationship with Seoul. Members can attend a preview and opening night on September 24.",
+      "sourceUrl": "https://about.asianart.org/press/ha-chong-hyun-retrospective/",
+      "sourceName": "Asian Art Museum",
+      "tags": [
+        "art",
+        "museum",
+        "Civic Center",
+        "Korean culture"
+      ]
+    },
+    {
+      "headline": "Phoenix Hotel Lives On After Last-Minute Ownership Shift",
+      "body": "The iconic rock-and-roll Phoenix Hotel at 601 Eddy St. in the Tenderloin survived its reported New Year's closure after a last-minute change in operator. Despite announcing it would close January 1, 2026, the hotel's Instagram account rang in the new year with a statement that it was staying open. Mission Local reported in February that the property, purchased in 2024 by pastry chef Michel Suas, had new operators in place. The hotel's website continues to advertise summer poolside packages, keeping alive a cultural institution that has hosted everyone from David Bowie to Kurt Cobain.",
+      "sourceUrl": "https://missionlocal.org/2026/02/sf-phoenix-hotel-tenderloin-closed-patel-suas/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "hotels",
+        "Tenderloin",
+        "culture",
+        "small business"
+      ]
+    },
+    {
+      "headline": "Supervisor Mahmood Called for Tenant Safety Hearings Before This Week's Fillmore Fire",
+      "body": "Weeks before the August 6 Fillmore Street fire, District 5 Supervisor Bilal Mahmood had already requested a public Board of Supervisors hearing to examine tenant oversight, safety conditions, and maintenance standards at multi-unit residential properties across the Western Addition, according to Mission Local. The hearing push followed tenant complaints at local housing developments. Any formal city review of the fire will have to wait until the Board's summer recess ends August 28, though special meetings can be called if needed.",
+      "sourceUrl": "https://hoodline.com/2026/08/fillmore-street-building-erupts-in-2-alarm-fire-crews-rescue-multiple-residents/",
+      "sourceName": "Hoodline",
+      "tags": [
+        "housing",
+        "public safety",
+        "NoPa",
+        "Western Addition",
+        "Board of Supervisors"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Zuni Café",
+        "cuisineGroup": "Seafood & American",
+        "type": "California cuisine landmark",
+        "description": "Iconic James Beard Award–winning restaurant with a wood-fired oven and daily-changing seasonal menu of French- and Italian-inspired California cuisine, open since 1979.",
+        "address": "1658 Market St",
+        "phone": "415-552-2522",
+        "website": "https://www.zunicafe.com",
+        "neighborhood": "Hayes Valley / Mid-Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Rich Table",
+        "cuisineGroup": "Seafood & American",
+        "type": "California neighborhood restaurant",
+        "description": "Chefs Evan and Sarah Rich present inventive Northern California cuisine in a casual fine-dining setting, consistently ranked among the city's best.",
+        "address": "199 Gough St",
+        "phone": "415-355-9085",
+        "website": "https://www.richtablesf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "RT Bistro",
+        "cuisineGroup": "Seafood & American",
+        "type": "California bistro",
+        "description": "The newer, more casual à la carte sibling to Rich Table from chefs Evan and Sarah Rich, open nightly for dinner.",
+        "address": "199 Gough St",
+        "phone": "415-355-9085",
+        "website": "https://www.richtablesf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "New"
+      },
+      {
+        "name": "Absinthe Brasserie & Bar",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "French brasserie",
+        "description": "A Hayes Valley institution since 1998 serving creative French brasserie fare and classic cocktails in lively, turn-of-the-century Parisian décor.",
+        "address": "398 Hayes St",
+        "phone": "415-551-1590",
+        "website": "https://www.absinthe.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Suppenküche",
+        "cuisineGroup": "Other",
+        "type": "German restaurant and beer hall",
+        "description": "A Hayes Valley institution for over 30 years serving authentic Southern German dishes — schnitzels, sauerbraten, spaetzle — alongside imported German beers in communal-table seating.",
+        "address": "525 Laguna St",
+        "phone": "415-252-9289",
+        "website": "https://www.suppenkuche.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Souvla",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Modern Greek fast-casual",
+        "description": "Popular fast-casual Greek spot on Hayes Street known for rotisserie-style meats, Greek-inspired salads, and natural wines, open daily 11 AM–10 PM.",
+        "address": "517 Hayes St",
+        "phone": "415-570-6500",
+        "website": "https://www.souvla.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Souvla NoPa",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Modern Greek fast-casual",
+        "description": "The NoPa outpost of the popular Greek rotisserie chain, serving the same acclaimed menu of slow-roasted meats and wine at 531 Divisadero.",
+        "address": "531 Divisadero St",
+        "phone": "415-374-9940",
+        "website": "https://www.souvla.com/location/souvla-nopa/",
+        "neighborhood": "NoPa",
+        "notable": ""
+      },
+      {
+        "name": "Nopa",
+        "cuisineGroup": "Seafood & American",
+        "type": "Wood-fired American restaurant",
+        "description": "Beloved NoPa anchor known for its wood-fired cooking, extraordinary cocktails, and late-night dinner service until 1 AM in a gorgeous former bank building on Divisadero.",
+        "address": "560 Divisadero St",
+        "phone": "415-864-8643",
+        "website": "https://www.nopasf.com",
+        "neighborhood": "NoPa",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Happy Crane",
+        "cuisineGroup": "Asian",
+        "type": "Modern Cantonese restaurant",
+        "description": "Acclaimed modern Chinese restaurant in Hayes Valley offering a refined, unpretentious take on Cantonese cuisine with a highly regarded chef's tasting menu.",
+        "address": "Civic Center / Hayes Valley",
+        "phone": "",
+        "website": "https://www.thehappycranesf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Hazie's",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "New American cocktail bar and restaurant",
+        "description": "A lively Hayes Valley neighborhood spot with standout cocktails, brunch, and New American dinner, well-regarded for its welcoming atmosphere.",
+        "address": "Hayes Valley",
+        "phone": "",
+        "website": "https://www.haziesbar.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Mr. Tipple's Jazz Club",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Jazz club and craft cocktail bar",
+        "description": "An intimate, 1950s-NYC-inspired basement jazz club named best jazz club in the city by San Francisco Magazine, featuring live local jazz artists and craft cocktails.",
+        "address": "Civic Center / Hayes Valley / Van Ness",
+        "phone": "",
+        "website": "https://www.mrtipples.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Nightbird",
+        "cuisineGroup": "Seafood & American",
+        "type": "Contemporary tasting menu restaurant",
+        "description": "Chef Kim Alter's acclaimed intimate tasting menu restaurant in Hayes Valley, known for creative, produce-forward California cooking.",
+        "address": "330 Gough St",
+        "phone": "415-829-7565",
+        "website": "https://www.nightbirdsf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Espetus Churrascaria",
+        "cuisineGroup": "Other",
+        "type": "Brazilian steakhouse",
+        "description": "Authentic Churrascaria tradition with endless tableside skewers of succulent meats carved by Gaucho chefs, plus an extensive salad bar.",
+        "address": "1686 Market St",
+        "phone": "415-552-8792",
+        "website": "https://www.espetus.com",
+        "neighborhood": "Hayes Valley / Mid-Market",
+        "notable": ""
+      },
+      {
+        "name": "Chez Maman West",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "French bistro",
+        "description": "Cozy French bistro in Hayes Valley with moules frites, crêpes, and a charming Parisian neighborhood vibe.",
+        "address": "401 Gough St",
+        "phone": "415-355-9821",
+        "website": "https://www.chezmamansf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Papito Hayes",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican restaurant",
+        "description": "Bright, popular Mexican spot in Hayes Valley serving tacos, burritos, and aguas frescas with fresh ingredients in a casual setting.",
+        "address": "317 Gough St",
+        "phone": "415-626-7200",
+        "website": "https://www.papitosf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Dumpling Home",
+        "cuisineGroup": "Asian",
+        "type": "Shanghai-style dumpling restaurant",
+        "description": "Beloved Hayes Valley spot celebrated for handcrafted soup dumplings and Shanghai noodles, frequently cited as one of the best dumpling restaurants in the city.",
+        "address": "298 Gough St",
+        "phone": "415-829-2289",
+        "website": "https://www.dumplinghomesf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "a Mano",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian pasta restaurant",
+        "description": "Handcrafted fresh pasta and Italian small plates in an intimate Hayes Valley setting, known for quality and seasonal ingredients.",
+        "address": "450 Hayes St",
+        "phone": "415-829-2261",
+        "website": "https://www.amanosf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Bosque",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian cocktail bar and pizzeria",
+        "description": "Lively Italian-inspired cocktail bar and restaurant with artisan pizzas, pasta, and aperitivo spirits in Hayes Valley.",
+        "address": "531 Hayes St",
+        "phone": "",
+        "website": "https://www.bosquesf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Pacifico",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican seafood restaurant",
+        "description": "Vibrant Hayes Valley Mexican seafood spot with ceviches, tacos, and coastal Mexican flavors in a welcoming, casual environment.",
+        "address": "Hayes Valley",
+        "phone": "",
+        "website": "https://www.pacificosf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Biergarten",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Outdoor German beer garden",
+        "description": "A sunny outdoor beer garden on Octavia serving imported German beers alongside schnitzels and pretzels, run by the same team as Suppenküche.",
+        "address": "424 Octavia St",
+        "phone": "415-252-9289",
+        "website": "https://www.biergartensf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "San Francisco Proper Hotel",
+        "type": "Boutique design hotel",
+        "description": "A Michelin-listed boutique hotel in a landmark 1904 Beaux-Arts flatiron building, designed by Kelly Wearstler, with 131 rooms, the Villon restaurant, and Charmaine's rooftop lounge.",
+        "address": "1100 Market St (entrance at 45 McAllister St)",
+        "phone": "415-735-7777",
+        "website": "https://www.properhotel.com/san-francisco/",
+        "neighborhood": "Mid-Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Phoenix Hotel",
+        "type": "Boutique rock-and-roll motor lodge",
+        "description": "An iconic Tenderloin motor lodge and cultural landmark since 1987, beloved by musicians and favored by touring bands, with a heated outdoor pool and the Chambers eat + drink restaurant.",
+        "address": "601 Eddy St",
+        "phone": "415-776-1380",
+        "website": "https://www.phoenixhotelsf.com/",
+        "neighborhood": "Tenderloin",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hayes Valley Inn",
+        "type": "European-style inn",
+        "description": "A centrally located European-style inn just five minutes' walk from City Hall and the War Memorial Opera House, offering rooms with free WiFi at an affordable price point.",
+        "address": "417 Gough St",
+        "phone": "415-431-9131",
+        "website": "https://www.hayesvalleyinn.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Inn at the Opera",
+        "type": "Boutique hotel",
+        "description": "An intimate boutique hotel a half-block from the War Memorial Opera House and Davies Symphony Hall, favored by performers and classical music patrons.",
+        "address": "333 Fulton St",
+        "phone": "415-863-8400",
+        "website": "https://www.innattheopera.com",
+        "neighborhood": "Civic Center / Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Edwardian Hotel",
+        "type": "Boutique hotel",
+        "description": "A 28-room boutique hotel on Market Street near the Civic Center, within walking distance of Bill Graham Civic Auditorium and the Asian Art Museum.",
+        "address": "1668 Market St",
+        "phone": "415-864-1271",
+        "website": "https://www.edwardianhotel.com",
+        "neighborhood": "Mid-Market",
+        "notable": ""
+      },
+      {
+        "name": "YOTEL San Francisco",
+        "type": "Lifestyle hotel",
+        "description": "A modern lifestyle hotel on Market Street with compact, smartly designed cabins, a gym, and a lively lobby bar, steps from Civic Center BART.",
+        "address": "1095 Market St",
+        "phone": "415-829-0000",
+        "website": "https://www.yotel.com/en/hotels/yotel-san-francisco",
+        "neighborhood": "Mid-Market",
+        "notable": ""
+      },
+      {
+        "name": "BEI San Francisco (Trademark Collection by Wyndham)",
+        "type": "Full-service hotel",
+        "description": "A Wyndham Trademark Collection hotel on 8th Street near the Civic Center, offering modern rooms and convenient access to downtown arts and transit.",
+        "address": "50 8th St",
+        "phone": "415-626-6103",
+        "website": "https://www.beisanfrancisco.com",
+        "neighborhood": "Mid-Market",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Aether Apparel — Hayes Valley",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Technical outdoor apparel boutique",
+        "description": "Sleek Hayes Street boutique carrying Aether's premium technical and lifestyle outerwear for urban and outdoor adventures.",
+        "address": "Hayes Valley",
+        "phone": "",
+        "website": "https://www.aetherapparel.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Reliquary",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's lifestyle boutique",
+        "description": "A curated women's fashion boutique on Hayes Street known for its thoughtfully selected clothing, jewelry, and accessories with a bohemian sensibility.",
+        "address": "537 Hayes St",
+        "phone": "415-431-4000",
+        "website": "https://www.reliquarysf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Métier",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's designer clothing boutique",
+        "description": "A refined Hayes Valley boutique offering an edit of women's contemporary designer clothing and accessories in an elegant, minimalist space.",
+        "address": "Hayes Valley",
+        "phone": "",
+        "website": "https://www.metiersf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Marine Layer — Hayes Valley",
+        "shopGroup": "Fashion & Clothing",
+        "type": "California casual clothing store",
+        "description": "San Francisco-born clothing brand on Hayes Street specializing in buttery-soft, sustainably made casual basics for men and women.",
+        "address": "Hayes Valley",
+        "phone": "",
+        "website": "https://www.marinelayer.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Buck Mason — Hayes Valley",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Men's essentials boutique",
+        "description": "Elevated American-made men's essentials in Hayes Valley — the brand's second San Francisco outpost — specializing in quality basics and timeless wardrobe staples.",
+        "address": "Hayes Valley",
+        "phone": "",
+        "website": "https://www.buckmason.com/pages/buck-mason-hayes-valley",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Fig & Thistle",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Wine, beer, cheese, and charcuterie bar-shop",
+        "description": "A beloved Hayes Valley neighborhood wine and beer shop with cheese and charcuterie, doubling as a cozy spot to drink in.",
+        "address": "313 Ivy St",
+        "phone": "",
+        "website": "https://www.figandthistlesf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Dark Garden",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Custom corsetry and lingerie atelier",
+        "description": "A nationally recognized Hayes Valley atelier specializing in custom-made corsets, lingerie, and couture garments since 1989.",
+        "address": "321 Linden St",
+        "phone": "415-431-7684",
+        "website": "https://www.darkgarden.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ahlem Eyewear — Hayes Valley",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Designer eyewear boutique",
+        "description": "The Hayes Valley outpost of French-Algerian designer Ahlem Manai-Platt's handcrafted eyewear brand, known for elegant and distinctive frames.",
+        "address": "416 Hayes St",
+        "phone": "415-400-4442",
+        "website": "https://www.ahlemeyewear.com/pages/stores",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "McRoskey Mattress Company",
+        "shopGroup": "Home & Gifts",
+        "type": "Handmade mattress maker",
+        "description": "San Francisco's storied mattress manufacturer, handcrafting mattresses in the city since 1899 at their Hayes Valley showroom.",
+        "address": "1687 Market St",
+        "phone": "415-861-4532",
+        "website": "https://www.mcroskey.com",
+        "neighborhood": "Hayes Valley / Mid-Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Tint Gallery",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Art gallery and design shop",
+        "description": "A Hayes Valley gallery and shop presenting contemporary art, design objects, and prints in a bright, accessible space at 149 Gough Street.",
+        "address": "149 Gough St",
+        "phone": "415-829-7692",
+        "website": "https://www.thetintgallery.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "War Memorial Opera House",
+        "venueGroup": "Music Venues",
+        "type": "Historic opera and ballet house",
+        "description": "The ornate Beaux-Arts home of the San Francisco Opera and San Francisco Ballet, and site of the signing of the United Nations Charter in 1945.",
+        "address": "301 Van Ness Ave",
+        "phone": "415-864-3330",
+        "website": "https://www.sfopera.com",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Davies Symphony Hall (Louise M. Davies)",
+        "venueGroup": "Music Venues",
+        "type": "Concert hall",
+        "description": "The 2,743-seat home of the San Francisco Symphony, known for its warm acoustics and striking glass facade overlooking Civic Center Plaza, opened in 1980.",
+        "address": "201 Van Ness Ave",
+        "phone": "415-621-6600",
+        "website": "https://www.sfsymphony.org",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      },
+      {
+        "name": "SFJAZZ Center",
+        "venueGroup": "Music Venues",
+        "type": "Jazz performance center",
+        "description": "The country's only stand-alone building purpose-built for jazz, opened in 2013 on Franklin Street, presenting over 100 concerts annually and running acclaimed education programs.",
+        "address": "201 Franklin St",
+        "phone": "866-920-5299",
+        "website": "https://www.sfjazz.org",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Asian Art Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Art museum",
+        "description": "One of the world's most comprehensive Asian art collections, with over 18,000 works spanning 6,000 years in the landmark former San Francisco Public Library building.",
+        "address": "200 Larkin St",
+        "phone": "415-581-3500",
+        "website": "https://www.asianart.org",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bill Graham Civic Auditorium",
+        "venueGroup": "Music Venues",
+        "type": "Large concert and event hall",
+        "description": "An 8,500-capacity Civic Center landmark built in 1915 and named for legendary promoter Bill Graham, hosting top national touring acts year-round.",
+        "address": "99 Grove St",
+        "phone": "415-974-4060",
+        "website": "https://www.billgrahamcivic.com",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Herbst Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Intimate concert and performance hall",
+        "description": "A 928-seat landmark theater in the War Memorial Veterans Building hosting classical concerts, lectures, and cultural events; site of the signing of the UN Charter in 1945.",
+        "address": "401 Van Ness Ave",
+        "phone": "415-621-6600",
+        "website": "https://sfwarmemorial.org",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Independent",
+        "venueGroup": "Music Venues",
+        "type": "Intimate music venue",
+        "description": "A 500-capacity NoPa concert hall considered one of the best mid-sized music venues in the city, hosting nationally recognized artists in an intimate setting.",
+        "address": "628 Divisadero St",
+        "phone": "415-771-1421",
+        "website": "https://www.theindependentsf.com",
+        "neighborhood": "NoPa",
+        "notable": "Landmark"
+      },
+      {
+        "name": "African American Art & Culture Complex",
+        "venueGroup": "Museums & Cultural",
+        "type": "Cultural arts center",
+        "description": "A landmark community arts center on Fulton Street presenting African American visual art, performing arts, and cultural programming for over 50 years.",
+        "address": "762 Fulton St",
+        "phone": "415-922-2049",
+        "website": "https://www.aaacc.org",
+        "neighborhood": "NoPa / Western Addition",
+        "notable": "Landmark"
+      },
+      {
+        "name": "SF Public Library — Main Branch",
+        "venueGroup": "Museums & Cultural",
+        "type": "Public library and cultural institution",
+        "description": "The landmark main branch of the San Francisco Public Library in Civic Center, offering a rich calendar of free public programs, exhibitions, and the used-book sale every Wednesday on the Larkin Street steps.",
+        "address": "100 Larkin St",
+        "phone": "415-557-4400",
+        "website": "https://sfpl.org",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Alamo Square Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "City hilltop park",
+        "description": "A beloved hilltop park offering sweeping views of the downtown skyline, the iconic Painted Ladies Victorian row, open lawns for picnics, and a beloved off-leash dog area.",
+        "address": "Steiner St & Hayes St",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/alamo-square/",
+        "neighborhood": "Alamo Square",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Panhandle",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Linear neighborhood park",
+        "description": "An eight-block-long narrow green space linking NoPa to Golden Gate Park, popular for jogging, cycling, dog walking, and impromptu community gatherings.",
+        "address": "Fell St & Oak St, between Baker and Stanyan",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "NoPa",
+        "notable": ""
+      },
+      {
+        "name": "UN Plaza Fitness Court",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Outdoor fitness court and event space",
+        "description": "An open-air fitness court in United Nations Plaza that hosts free summer dance classes, chess, and community programming through the Civic Center CBD.",
+        "address": "United Nations Plaza, Market St & Hyde St",
+        "phone": "",
+        "website": "https://sfciviccenter.org/events/",
+        "neighborhood": "Civic Center",
+        "notable": ""
+      },
+      {
+        "name": "Patricia's Green",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood pocket park",
+        "description": "The green heart of Hayes Valley featuring rotating public art installations, a playground, and ample space for people-watching and community gathering.",
+        "address": "Octavia Blvd between Hayes and Fell",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/patricias-green/",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Studio 55 Fitness",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service fitness center",
+        "description": "A well-equipped Mid-Market fitness center offering strength training, cardio equipment, and group fitness classes near the Civic Center.",
+        "address": "55 Taylor St",
+        "phone": "415-771-5555",
+        "website": "https://www.studio55fitness.com",
+        "neighborhood": "Tenderloin / Mid-Market",
+        "notable": ""
+      },
+      {
+        "name": "Yoga Garden SF",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "A welcoming, community-focused yoga studio near Hayes Valley offering a full schedule of Vinyasa, Yin, and restorative yoga classes for all levels.",
+        "address": "730 Divisadero St",
+        "phone": "415-552-9642",
+        "website": "https://www.yogagardensf.com",
+        "neighborhood": "NoPa",
+        "notable": ""
+      },
+      {
+        "name": "Ritual Gym",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Boutique functional fitness gym",
+        "description": "A popular boutique gym near Hayes Valley offering group functional fitness, personal training, and strength conditioning in a motivating community environment.",
+        "address": "Hayes Valley / NoPa area",
+        "phone": "",
+        "website": "https://www.ritualgym.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "UCSF/Mount Zion Fitness Center",
+        "venueGroup": "Pools & Aquatics",
+        "type": "Hospital-affiliated fitness center and pool",
+        "description": "The UCSF Mount Zion campus fitness center offers a pool, gym equipment, and fitness classes to members in the NoPa / Western Addition corridor.",
+        "address": "2330 Post St",
+        "phone": "415-885-7000",
+        "website": "https://www.ucsfhealth.org",
+        "neighborhood": "NoPa / Western Addition",
+        "notable": ""
+      },
+      {
+        "name": "SF Recreation & Parks — Civic Center / Main Library Playground",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood playground and open space",
+        "description": "A family-friendly playground and open space adjacent to the SF Main Library in Civic Center, managed by SF Recreation & Parks.",
+        "address": "Larkin St & McAllister St",
+        "phone": "415-831-2700",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Civic Center",
+        "notable": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Firefighters Rescue 18 People Trapped In SF's Fillmore District Apartment Blaze",
+      "url": "https://sfist.com/2026/08/06/firefighters-rescue-18-people-trapped-in-fillmore-district-apartment-blaze/",
+      "publication": "SFist"
+    },
+    {
+      "title": "18 rescued in overnight apartment fire in San Francisco's Alamo Square",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-alamo-square-apartment-fire-fillmore-grove-streets/",
+      "publication": "CBS News San Francisco"
+    },
+    {
+      "title": "Fillmore Street Building Erupts in 2-Alarm Fire, Crews Rescue Multiple Residents",
+      "url": "https://hoodline.com/2026/08/fillmore-street-building-erupts-in-2-alarm-fire-crews-rescue-multiple-residents/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "SF firefighters rescue more than 18 people from burning apartment building",
+      "url": "https://www.aol.com/articles/sf-firefighters-rescue-more-18-124812000.html",
+      "publication": "AOL / Nexstar"
+    },
+    {
+      "title": "San Francisco Opera's 2026-27 Season announced",
+      "url": "https://www.sfopera.com/press/press-releases/San-Francisco-Opera-2026-27-season/",
+      "publication": "San Francisco Opera"
+    },
+    {
+      "title": "San Francisco Opera Unveils 2026-27 Season Featuring SIMON BOCCANEGRA, MANON, DAS RHEINGOLD & More",
+      "url": "https://www.broadwayworld.com/san-francisco/article/San-Francisco-Opera-Unveils-2026-27-Season-Featuring-SIMON-BOCCANEGRA-MANON-DAS-RHEINGOLD-More-20260720",
+      "publication": "BroadwayWorld"
+    },
+    {
+      "title": "SF isn't sure what to do with downtown. It's asking high schoolers for ideas",
+      "url": "https://sfstandard.com/2026/07/28/summer-program-students-redesign-downtown-urbanism/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "San Francisco Downtown Development Corporation and Partners Launch $25M Downtown Business Fund",
+      "url": "https://www.prnewswire.com/news-releases/san-francisco-downtown-development-corporation-and-partners-launch-25m-downtown-business-fund-to-help-businesses-open-and-expand-in-san-franciscos-core-302744030.html",
+      "publication": "PR Newswire"
+    },
+    {
+      "title": "San Francisco Downtown Development Corporation Announces Over $60 Million",
+      "url": "https://www.prnewswire.com/news-releases/san-francisco-downtown-development-corporation-announces-over-60-million-in-early-contributions-and-commitments-to-revitalize-and-reimagine-downtown-302636826.html",
+      "publication": "PR Newswire"
+    },
+    {
+      "title": "The Phoenix Hotel rises: Famed S.F. rock-and-roll inn stays open under new owner",
+      "url": "https://missionlocal.org/2026/02/sf-phoenix-hotel-tenderloin-closed-patel-suas/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Ha Chong-Hyun: Retrospective — Press Release",
+      "url": "https://about.asianart.org/press/ha-chong-hyun-retrospective/",
+      "publication": "Asian Art Museum"
+    },
+    {
+      "title": "Ha Chong-Hyun: Retrospective — Exhibition Page",
+      "url": "https://exhibitions.asianart.org/exhibitions/ha-chong-hyun-retrospective/",
+      "publication": "Asian Art Museum"
+    },
+    {
+      "title": "Asian Art Museum Calendar — August 2026",
+      "url": "https://calendar.asianart.org/",
+      "publication": "Asian Art Museum"
+    },
+    {
+      "title": "San Francisco War Memorial — Upcoming Events",
+      "url": "https://sfwarmemorial.org/",
+      "publication": "San Francisco War Memorial"
+    },
+    {
+      "title": "Domingo Flamenco — Eventbrite",
+      "url": "https://www.eventbrite.com/e/domingo-flamenco-tickets-1991504885723",
+      "publication": "Eventbrite"
+    },
+    {
+      "title": "Dance at the Plaza — Summer 2026 Schedule",
+      "url": "https://www.raestudios-sf.com/post/un-plaza-summer-schedule",
+      "publication": "Rae Studios"
+    },
+    {
+      "title": "Heart of the City Farmers Market",
+      "url": "https://hotcfarmersmarket.org/",
+      "publication": "Heart of the City Farmers Market"
+    },
+    {
+      "title": "SFJAZZ Center Calendar",
+      "url": "https://www.sfjazz.org/calendar/",
+      "publication": "SFJAZZ"
+    },
+    {
+      "title": "Bill Graham Civic Auditorium — Event Listing",
+      "url": "https://billgrahamcivic.com/event-listing/",
+      "publication": "Bill Graham Civic Auditorium"
+    },
+    {
+      "title": "San Francisco Opera 2026-27 Season — KQED",
+      "url": "https://www.kqed.org/arts/13986222/sf-opera-new-season-2026-27-announced-san-francisco",
+      "publication": "KQED"
+    }
+  ]
+}

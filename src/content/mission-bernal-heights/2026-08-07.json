@@ -1,0 +1,775 @@
+{
+  "clusterSlug": "mission-bernal-heights",
+  "clusterName": "Mission & Bernal Heights",
+  "weekOf": "2026-08-07",
+  "topStories": [
+    {
+      "headline": "New Vendor Law Shows Early Results on Mission Street, But Nighttime Challenges Persist",
+      "dek": "Nearly 400 warnings and 52 citations issued in first two months under California's SB 276, which targets suspected stolen goods sold without permits.",
+      "body": "Two months after San Francisco began enforcing SB 276 — a law authored by state Senator Scott Wiener and co-sponsored by Mayor Daniel Lurie specifically for San Francisco — the Mission District's commercial corridors are showing signs of improvement, according to vendors, police, and business owners. The law authorizes SFPD to cite people selling commonly stolen goods without a permit or proof of purchase, addressing a gap created by a 2018 state law that decriminalized sidewalk vending.\n\nAccording to city data, police have issued 396 warnings, 46 first-time citations, and six second-time citations. No misdemeanor arrests have been made. SFPD Officer Robert Rueca described the department's approach as education-first: \"It's really about teaching these violators that there's better ways to conduct business,\" he told ABC7.\n\nRodrigo Lopez, president of the Mission Street Vendors Association, said the city has made significant progress. He noted that the neighborhood's 33 permitted vendors are now operating in designated locations between 22nd and 25th streets, and he supports enforcement targeting unpermitted sellers. \"The city has control over that issue,\" Lopez said.\n\nOfficials acknowledge that enforcement challenges remain, particularly during overnight hours due to staffing limitations. The Board of Supervisors approved a list of more than 100 commonly stolen items subject to the new rules when the law took effect last December. SB 276 applies strictly to non-food merchandise; street food vendors operate under a separate ordinance, SB 395, which the Board approved in March over objections from vendors who said its commissary kitchen requirements are too costly.",
+      "sourceUrl": "https://hoodline.com/2026/08/mission-street-crackdown-in-sf-nets-396-warnings-6-tickets-and-zero-arrests/",
+      "sourceName": "Hoodline / ABC7 San Francisco",
+      "tags": [
+        "public safety",
+        "street vending",
+        "Mission District",
+        "legislation"
+      ]
+    },
+    {
+      "headline": "ICE Electronic Monitoring of Immigrants Expands Across San Francisco Area, Including Mission",
+      "dek": "New Mission Local reporting reveals thousands of Bay Area immigrants — many without criminal records — are tethered to ankle monitors, smartphone apps, and wrist devices under the federal ISAP program.",
+      "body": "A new investigation by Mission Local published August 5 documents the growing use of electronic monitoring devices on immigrants in the San Francisco area, including Mission District residents. According to a July data release by U.S. Immigration and Customs Enforcement, 16,765 people in the program use the SmartLINK smartphone app, 3,624 wear ankle monitors, and 415 wear wrist-worn devices.\n\nImmigration attorneys cited in the report say they are observing a significant increase — both in the frequency of electronic monitoring and the duration that immigrants are required to wear the devices — under the Trump administration's approach to the ICE Alternatives to Detention (ISAP) program. The devices intensively track location and can complicate work and daily life.\n\nThe story follows a pattern documented by national reporters: a June 2025 internal ICE memo directed officers to equip noncitizens in the program with GPS monitors \"whenever possible,\" and the number of people wearing ankle monitors nearly tripled in the months that followed. Immigration advocates in the Mission have been organizing support for affected families, and legal aid organizations have flagged concerns about the lack of individualized assessment before devices are assigned.",
+      "sourceUrl": "https://missionlocal.org/2026/08/ice-ankle-monitors-immigrants-isap/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "immigration",
+        "ICE",
+        "Mission District",
+        "community"
+      ]
+    },
+    {
+      "headline": "Former Mission KFC-Taco Bell to Become Affordable Community Recording Studio",
+      "dek": "San Francisco musician Jeremy Rosenblum has purchased the long-vacant fast-food building at Duboce and Guerrero to transform it into an accessible hub for independent artists.",
+      "body": "A shuttered KFC-Taco Bell at the corner of Duboce Avenue and Guerrero Street in the Mission District is being reimagined as an affordable recording studio and creative space for local musicians, CBS San Francisco reported in May. Musician and independent recording engineer Jeremy Rosenblum purchased the long-vacant property with plans to serve artists who lack access to professional equipment.\n\nRosenblum told KPIX that his intention is to help people who would not otherwise be able to go into a first-class studio record and distribute their music. He described the building as an \"iconic piece\" of the neighborhood that residents recognized immediately. The project draws on Rosenblum's experience running Studio SQ, an affordable studio he operated in Bayview from 2003 to 2013.\n\nAccording to KRON4, construction was expected to begin in June 2026 once a final building permit was approved, with the full renovation estimated to take 18 months to two years. When complete, the space aims to provide a community music hub at a location long familiar to Mission residents — bringing new creative energy to a corridor that has seen years of commercial vacancy.",
+      "sourceUrl": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-mission-district-taco-bell-kfc-music-studio-duboce-guerrero/",
+      "sourceName": "CBS San Francisco / KPIX",
+      "tags": [
+        "arts",
+        "music",
+        "Mission District",
+        "development",
+        "community"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Bernal Heights Hillwide Garage Sale",
+      "date": "Saturday, August 8",
+      "time": "9:00 AM – 2:00 PM",
+      "location": "Neighborhood-wide, Bernal Heights (map at hillwide.com)",
+      "description": "San Francisco's largest neighborhood garage sale, with 100+ participating homes across Bernal Heights offering clothing, books, furniture, collectibles, and vintage finds. Proceeds benefit the Bernal Heights Neighborhood Center.",
+      "sourceUrl": "https://hillwide.com/",
+      "sourceName": "Hillwide Garage Sale / Bernal Heights Neighborhood Center"
+    },
+    {
+      "title": "Inside the Opera Audition Room — The Singer's Gym at CMC",
+      "date": "Saturday, August 9",
+      "time": "1:30 PM – 5:30 PM",
+      "location": "CMC Recital Hall, 544 Capp Street, Mission District",
+      "description": "Observe singers receiving world-class coaching as they prepare for the fall audition season at the San Francisco Community Music Center. A rare, public window into the professional opera audition process.",
+      "sourceUrl": "https://sfcmc.org/events/",
+      "sourceName": "San Francisco Community Music Center"
+    },
+    {
+      "title": "Valencia LIVE! August Street Party",
+      "date": "Thursday, August 13",
+      "time": "5:00 PM – 10:00 PM",
+      "location": "Valencia Street between 17th and 20th Streets, Mission District",
+      "description": "A free, all-ages monthly neighborhood celebration with live music curated by Carnaval SF, outdoor dining, art, and shopping along Valencia Street in the American Indian Cultural District. Presented by the Valencia Corridors Merchants Association.",
+      "sourceUrl": "https://www.visitvalenciastreet.com/live",
+      "sourceName": "Valencia Corridor Merchants Association / Eventbrite"
+    },
+    {
+      "title": "Bernal Village Marketplace Pop-Up",
+      "date": "Saturday, August 16",
+      "time": "11:00 AM – 5:00 PM",
+      "location": "433 Cortland Ave, Bernal Heights",
+      "description": "A free indoor pop-up market transforming the historic 1924 former Bank of America building into a vibrant showcase of local artists, ceramicists, jewelers, bakers, and makers — mostly Bernal Heights residents. Free admission, family- and pet-friendly.",
+      "sourceUrl": "https://bernalconnect.com/bernal-heights-calendar/",
+      "sourceName": "Bernal Connect"
+    },
+    {
+      "title": "35th Annual Fiesta on the Hill",
+      "date": "Sunday, September 20",
+      "time": "10:00 AM – 4:00 PM",
+      "location": "Cortland Avenue between Bocana & Folsom Street, Bernal Heights",
+      "description": "The Bernal Heights Neighborhood Center's biggest annual fundraiser and community celebration, featuring 7+ blocks of live music, local vendors, food, arts and crafts, a costume parade, and family activities. Free to attend.",
+      "sourceUrl": "https://bhnc.org/events/",
+      "sourceName": "Bernal Heights Neighborhood Center"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "CMC Garden Volunteer Day Kicks Off New Quarter at Mission District Music School",
+      "body": "The San Francisco Community Music Center at 544 Capp Street in the Mission District is inviting community volunteers to a summer gardening session on Saturday, August 8, from 8 AM to noon. Volunteers are asked to bring shears and gloves for a community beautification effort in the Mozart Garden and Courtyard ahead of the new fall quarter. Coffee and donuts provided. The CMC, founded in 1921, serves over 3,100 students annually from its Mission District branch.",
+      "sourceUrl": "https://sfcmc.org/events/",
+      "sourceName": "San Francisco Community Music Center",
+      "tags": [
+        "community",
+        "arts",
+        "Mission District"
+      ]
+    },
+    {
+      "headline": "Bernal Heights Village Marketplace Returns Three More Saturdays in August",
+      "body": "The Bernal Village Marketplace, which transforms a historic 1924 former Bank of America building at 433 Cortland Avenue into a curated indoor pop-up market, is scheduled for three consecutive Saturdays in August: the 16th, 23rd, and 30th, from 11 AM to 5 PM. The marketplace features 10–12 rotating vendors offering handmade goods at accessible price points — vendor fees run $40–$50, far below the $100–$500+ charged at many other SF markets — making it a launchpad for emerging local entrepreneurs. Free admission.",
+      "sourceUrl": "https://bernalconnect.com/bernal-heights-calendar/",
+      "sourceName": "Bernal Connect",
+      "tags": [
+        "Bernal Heights",
+        "community",
+        "shopping",
+        "local makers"
+      ]
+    },
+    {
+      "headline": "Precita Eyes Mural Tours Continue Every Weekend Through Summer",
+      "body": "Precita Eyes Muralists, the nonprofit founded in 1977 at 2981 24th Street in the Mission District, continues to offer weekend guided mural walks led by muralists through the end of summer. Tours cover Balmy Alley and the wider Mission District, exploring murals both historic and newly painted. Tickets are available at the door on Saturday mornings starting at 11 AM: $25 general admission, $15 seniors, $10 youth. Private and group tours are also available by appointment any day of the week.",
+      "sourceUrl": "https://www.precitaeyes.org/tours.html",
+      "sourceName": "Precita Eyes Muralists",
+      "tags": [
+        "arts",
+        "murals",
+        "Mission District",
+        "community",
+        "tours"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Flour + Water",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian pasta restaurant",
+        "description": "Michelin-recognized Mission stalwart serving daily-changing handmade pastas and Neapolitan-style pizza with a Northern California influence since 2009.",
+        "address": "2401 Harrison St, San Francisco, CA 94110",
+        "phone": "415-826-7000",
+        "website": "https://www.flourandwater.com/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Foreign Cinema",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "California cuisine restaurant & cinema",
+        "description": "Iconic Mission restaurant where seasonal California cuisine is served in a dramatic courtyard while art films are projected on a rear wall; beloved for weekend brunch.",
+        "address": "2534 Mission St, San Francisco, CA 94110",
+        "phone": "415-648-7600",
+        "website": "https://foreigncinema.com/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Ho Won",
+        "cuisineGroup": "Asian",
+        "type": "Korean restaurant",
+        "description": "Acclaimed Korean barbecue and banchan restaurant by chef Corey Lee, ranked among the best restaurants in the city by multiple guides.",
+        "address": "2170 Bryant St, San Francisco, CA 94110",
+        "phone": "415-374-7995",
+        "website": "https://www.sanhowon.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Rintaro",
+        "cuisineGroup": "Asian",
+        "type": "Japanese izakaya",
+        "description": "Handcrafted Japanese izakaya in a stunning hand-built timber dining room, serving exceptional skewers, sashimi, and house-made tofu.",
+        "address": "82 14th St, San Francisco, CA 94103",
+        "phone": "415-589-7022",
+        "website": "https://izakayarintaro.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Taqueria El Farolito",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Taqueria",
+        "description": "Legendary Mission late-night taqueria famous for its enormous super burritos, al pastor tacos, and salsa bar — cash only and open until nearly 4 AM on weekends.",
+        "address": "2779 Mission St, San Francisco, CA 94110",
+        "phone": "415-824-7877",
+        "website": "https://elfarolitosf.com/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lolinda",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Argentine steakhouse",
+        "description": "Lively Mission restaurant serving Argentine-style wood-fired meats, ceviche, and Latin cocktails in a stylish two-story space.",
+        "address": "2518 Mission St, San Francisco, CA 94110",
+        "phone": "415-550-6970",
+        "website": "https://lolinda.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Sangria & Salt",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Tapas and small plates bar",
+        "description": "Vibrant Mission tapas spot known for housemade sangria, jerk chicken tacos, ceviche, and a lively weekend atmosphere.",
+        "address": "3116 16th St, San Francisco, CA 94103",
+        "phone": "415-829-7789",
+        "website": "https://www.sangriaandsalt.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Mijoté",
+        "cuisineGroup": "Other",
+        "type": "French bistro",
+        "description": "Unmarked French neighborhood bistro on a corner in the Mission, beloved by locals for classic Gallic cooking in an intimate, no-frills setting.",
+        "address": "1751 Shotwell St, San Francisco, CA 94110",
+        "phone": "415-814-2920",
+        "website": "https://mijotesf.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Loló",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican restaurant and mezcaleria",
+        "description": "Creative Mexican kitchen with vibrant Oaxacan-influenced plates and an extensive mezcal list in a colorful Mission dining room.",
+        "address": "974 Valencia St, San Francisco, CA 94110",
+        "phone": "415-643-5656",
+        "website": "https://lolosf.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Ernest",
+        "cuisineGroup": "Other",
+        "type": "New American restaurant",
+        "description": "One of the most exciting restaurants in San Francisco, Ernest serves inventive New American cuisine in a stylish, convivial Mission dining room.",
+        "address": "1890 Bryant St, San Francisco, CA 94110",
+        "phone": "415-654-8818",
+        "website": "https://www.ernestsf.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Farmhouse Kitchen Thai Cuisine",
+        "cuisineGroup": "Asian",
+        "type": "Thai restaurant",
+        "description": "Highly popular Thai restaurant known for rich curries, pad thai, and decorative Thai vintage décor; consistently ranked among the best Thai in the Bay Area.",
+        "address": "710 Florida St, San Francisco, CA 94110",
+        "phone": "415-814-2920",
+        "website": "https://www.farmhousekitchenthai.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Taqueria Cancún",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Taqueria",
+        "description": "Classic Mission taqueria famous for super burritos stuffed with carne asada, among the most recommended in the neighborhood.",
+        "address": "2288 Mission St, San Francisco, CA 94110",
+        "phone": "415-252-9560",
+        "website": "https://www.taqueria-cancun.com/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bi-Rite Market",
+        "cuisineGroup": "Specialty Food & Wine",
+        "type": "Community grocery and specialty food market",
+        "description": "Beloved Mission neighborhood market carrying local, organic, and artisan products from Northern California farms and producers, with a famous creamery next door.",
+        "address": "3639 18th St, San Francisco, CA 94110",
+        "phone": "415-241-9760",
+        "website": "https://biritemarket.com/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Dumpling Story",
+        "cuisineGroup": "Asian",
+        "type": "Dumpling restaurant",
+        "description": "Lively Valencia Street spot serving hand-folded xiao long bao, shengjianbao, and boiled pork dumplings in a vibey space with green booths and a full bar.",
+        "address": "3258 21st St, San Francisco, CA 94110",
+        "phone": "415-655-9268",
+        "website": "https://dumplingstory.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Picaro",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Spanish tapas restaurant",
+        "description": "High-energy Spanish restaurant in the Mission serving sangria, tapas, and paella in a festive space great for large groups and celebrations.",
+        "address": "3120 16th St, San Francisco, CA 94103",
+        "phone": "415-431-4089",
+        "website": "https://picarosf.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "La Lengua",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican restaurant",
+        "description": "Neighborhood Mexican spot in Bernal Heights serving pozole, tamales, and enchiladas with local, seasonal ingredients.",
+        "address": "2754 20th St, San Francisco, CA 94110",
+        "phone": "415-824-0000",
+        "website": "https://www.lalenguasf.com/",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "Hillside Supper Club",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood bar and kitchen",
+        "description": "Cozy Bernal Heights neighborhood bar serving classic cocktails and comfort food in an intimate, low-key setting on Cortland Avenue.",
+        "address": "300 Precita Ave, San Francisco, CA 94110",
+        "phone": "415-285-6005",
+        "website": "https://hillsidesupperclub.com/",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "Flour + Water Pasta Shop",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Casual pasta and sandwich café",
+        "description": "Casual daytime sibling to the flagship restaurant, serving house-made pasta dishes, hearty sandwiches, and salads to go on Valencia Street.",
+        "address": "2435 Mission St, San Francisco, CA 94110",
+        "phone": "415-826-7005",
+        "website": "https://www.flourandwater.com/pasta-shop",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Mission Cheese",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Cheese bar and wine bar",
+        "description": "Dedicated American cheese bar on Valencia Street pairing domestic artisan cheeses with craft beers and natural wines.",
+        "address": "736 Valencia St, San Francisco, CA 94110",
+        "phone": "415-553-8667",
+        "website": "https://missioncheese.net/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "El Mil Amores",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Oaxacan restaurant",
+        "description": "Vibrant Oaxacan restaurant in the Mission serving mezcal-fueled cocktails, mole, tlayudas, and other regional dishes in a colorful space.",
+        "address": "3152 Mission St, San Francisco, CA 94110",
+        "phone": "415-800-7535",
+        "website": "https://www.elmilsamores.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Parker Guest House",
+        "type": "Boutique bed and breakfast inn",
+        "description": "A charming 19-room LGBTQIA+-owned inn set between the Castro and Mission, featuring garden terraces, free continental breakfast, and a daily wine social.",
+        "address": "520 Church St, San Francisco, CA 94114",
+        "phone": "415-621-3222",
+        "website": "https://www.parkerguesthouse.com/",
+        "neighborhood": "Mission District / Castro border",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Dog Eared Books",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Beloved Mission District bookstore carrying a well-curated selection of new and used books, with strong staff picks and a local author focus.",
+        "address": "900 Valencia St, San Francisco, CA 94110",
+        "phone": "415-282-1901",
+        "website": "https://www.dogearedbooks.com/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Paxton Gate",
+        "shopGroup": "Home & Gifts",
+        "type": "Natural curiosities and garden shop",
+        "description": "Wonderfully eclectic Mission shop selling natural history specimens, taxidermy, unusual plants, and handmade gifts with a cabinet-of-curiosities aesthetic.",
+        "address": "824 Valencia St, San Francisco, CA 94110",
+        "phone": "415-824-1872",
+        "website": "https://www.paxtongate.com/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "826 Valencia Pirate Supply Store",
+        "shopGroup": "Home & Gifts",
+        "type": "Novelty shop and literacy nonprofit storefront",
+        "description": "The quirky front for Dave Eggers' 826 Valencia literacy nonprofit, stocking genuine nautical supplies, lard, and other pirate essentials — proceeds support youth writing programs.",
+        "address": "826 Valencia St, San Francisco, CA 94110",
+        "phone": "415-642-5905",
+        "website": "https://826valencia.org/store/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Gravel & Gold",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Independent clothing and lifestyle boutique",
+        "description": "Mission feminist boutique and micro-publisher selling women's clothing, zines, art objects, and locally made goods with a progressive, community-rooted ethos.",
+        "address": "3266 21st St, San Francisco, CA 94110",
+        "phone": "415-552-0112",
+        "website": "https://gravelandgold.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Needles and Pens",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Zine shop, gallery, and art supply store",
+        "description": "Long-running Mission gallery and shop specializing in zines, independent publications, screenprinting supplies, and artist-made goods.",
+        "address": "3253 16th St, San Francisco, CA 94103",
+        "phone": "415-255-1534",
+        "website": "https://www.needles-pens.com/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Medicine for Nightmares",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Mission bookstore focusing on social justice, Latinx, BIPOC, and radical political literature, also hosting community events and readings.",
+        "address": "3036 24th St, San Francisco, CA 94110",
+        "phone": "415-643-8897",
+        "website": "https://www.medicinefornightmares.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Bi-Rite Market",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Community grocery and specialty food market",
+        "description": "Iconic Mission market celebrated for its curated selection of local, organic, and artisan food products from Northern California farms and producers.",
+        "address": "3639 18th St, San Francisco, CA 94110",
+        "phone": "415-241-9760",
+        "website": "https://biritemarket.com/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Omnivore Books on Food",
+        "shopGroup": "Books & Literature",
+        "type": "Culinary bookstore",
+        "description": "The only independent bookstore in San Francisco dedicated entirely to culinary literature, stocking new, used, and rare food and wine titles along with vintage menus.",
+        "address": "3885A Cesar Chavez St, San Francisco, CA 94131",
+        "phone": "415-282-4712",
+        "website": "https://omnivorebooks.com/",
+        "neighborhood": "Outer Mission",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Dandelion Chocolate",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Bean-to-bar chocolate factory and café",
+        "description": "Mission bean-to-bar chocolate maker producing single-origin bars from scratch, with a café, factory tours, and a pastry program on-site.",
+        "address": "740 Valencia St, San Francisco, CA 94110",
+        "phone": "415-349-0942",
+        "website": "https://www.dandelionchocolate.com/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Therapy Stores",
+        "shopGroup": "Home & Gifts",
+        "type": "Home goods and gift boutique",
+        "description": "Well-curated Mission boutique offering playful, design-forward home goods, stationery, and gifts at accessible price points.",
+        "address": "545 Valencia St, San Francisco, CA 94110",
+        "phone": "415-865-0981",
+        "website": "https://therapystores.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Bernal Cutlery",
+        "shopGroup": "Hardware & Services",
+        "type": "Knife shop and sharpening service",
+        "description": "Bernal Heights specialty shop offering an excellent selection of kitchen and pocket knives, plus professional sharpening services.",
+        "address": "339 Cortland Ave, San Francisco, CA 94110",
+        "phone": "415-285-5444",
+        "website": "https://www.bernalcutlery.com/",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Mission Cultural Center for Latino Arts (MCCLA)",
+        "venueGroup": "Museums & Cultural",
+        "type": "Latino arts nonprofit and gallery",
+        "description": "City landmark founded in 1977 offering gallery exhibitions, a theater, art studio space, and classes celebrating Latino arts and culture in the heart of the Mission.",
+        "address": "2868 Mission St, San Francisco, CA 94110",
+        "phone": "415-821-1155",
+        "website": "https://missionculturalcenter.org/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Precita Eyes Mural Arts Center",
+        "venueGroup": "Museums & Cultural",
+        "type": "Community mural arts nonprofit and visitor center",
+        "description": "Founded in 1977, this nonprofit runs weekend guided mural walks through Balmy Alley and the Mission District, led by working muralists, plus art classes and a small gallery.",
+        "address": "2981 24th St, San Francisco, CA 94110",
+        "phone": "415-285-2287",
+        "website": "https://www.precitaeyes.org/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Francisco Community Music Center (CMC)",
+        "venueGroup": "Music Venues",
+        "type": "Community music school and concert hall",
+        "description": "Founded in 1921, the CMC offers affordable music education, a 200-seat concert hall, and a regular free and low-cost public concert series at its expanded Mission District campus.",
+        "address": "544 Capp St, San Francisco, CA 94110",
+        "phone": "415-647-6015",
+        "website": "https://sfcmc.org/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Brava Theater Center",
+        "venueGroup": "Theater & Comedy",
+        "type": "Feminist performing arts theater",
+        "description": "Mission theater dedicated to women, people of color, and LGBTQ artists, presenting theater, dance, and performance art in an intimate neighborhood venue.",
+        "address": "2781 24th St, San Francisco, CA 94110",
+        "phone": "415-641-7657",
+        "website": "https://www.brava.org/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Chapel",
+        "venueGroup": "Music Venues",
+        "type": "Music venue and bar",
+        "description": "Intimate 500-capacity live music venue housed in a beautifully restored 1914 mortuary chapel, booking an eclectic mix of indie, folk, electronic, and world music acts.",
+        "address": "777 Valencia St, San Francisco, CA 94110",
+        "phone": "415-551-5157",
+        "website": "https://www.thechapelsf.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Brick & Mortar Music Hall",
+        "venueGroup": "Music Venues",
+        "type": "Independent music venue",
+        "description": "Grassroots Mission music club presenting emerging and underground artists in a raw, unpretentious setting on Mission Street.",
+        "address": "1710 Mission St, San Francisco, CA 94103",
+        "phone": "415-800-8782",
+        "website": "https://www.brickandmortarsf.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Voss Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery",
+        "description": "Mission gallery specializing in works from emerging and mid-career artists, known for accessible prices on original art and signed prints.",
+        "address": "Stephen Dodson, 2232 Mission St, San Francisco, CA 94110",
+        "phone": "415-926-6968",
+        "website": "https://vossgallery.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "City Art Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Cooperative art gallery",
+        "description": "Artist-run cooperative gallery on Valencia Street showcasing affordable original work by local San Francisco artists across all media.",
+        "address": "828 Valencia St, San Francisco, CA 94110",
+        "phone": "415-970-9900",
+        "website": "https://cityartgallery.org/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Bernal Heights Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Hilltop park and open space",
+        "description": "The iconic off-leash hilltop park overlooking all of San Francisco, beloved for its panoramic views, resident hawks, and the legendary (if periodically removed) hilltop rope swing.",
+        "address": "Bernal Heights Blvd, San Francisco, CA 94110",
+        "phone": "",
+        "website": "https://sfrecpark.org/",
+        "neighborhood": "Bernal Heights",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Mission Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Hot yoga and pilates studio",
+        "description": "One of San Francisco's longest-running yoga studios, serving the Mission community since 2001 with Hot Yoga, Inferno Hot Pilates, Buti Yoga, and floatation therapy.",
+        "address": "3876 17th St, San Francisco, CA 94114",
+        "phone": "415-503-2818",
+        "website": "https://newmissionyoga.com/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "HAUM Studios",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Spacious, light-filled Mission yoga studio offering a wide range of yoga styles and class times, consistently praised for exceptional instruction and beautiful facilities.",
+        "address": "1824 Mission St, San Francisco, CA 94103",
+        "phone": "",
+        "website": "https://www.haumstudios.com/san-francisco/mission-studio/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Yoga Flow SF — Ocean Avenue",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Heated vinyasa yoga studio",
+        "description": "Studio specializing in heated Vinyasa flow in a stunning former Masonic hall with lofted ceilings and infrared heat, just south of the Mission near City College.",
+        "address": "460 Ocean Ave, San Francisco, CA 94112",
+        "phone": "",
+        "website": "https://yogaflowsf.com/yoga-on-ocean-avenue/",
+        "neighborhood": "Outer Mission",
+        "notable": ""
+      },
+      {
+        "name": "Yoga Society of San Francisco",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Long-established Mission yoga center offering classes in traditional Hatha and Sivananda yoga traditions at community-accessible prices.",
+        "address": "2872 Folsom St, San Francisco, CA 94110",
+        "phone": "415-285-5537",
+        "website": "https://yogasocietysf.com/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bernal Heights Playground",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Renovated neighborhood playground",
+        "description": "Newly renovated $1.3-million playground at 500 Moultrie Street featuring all-new Robinia wood play structures and fully ADA-accessible surfacing, completed in late 2025 under SF's new Playground Renewal Program.",
+        "address": "500 Moultrie St, San Francisco, CA 94110",
+        "phone": "",
+        "website": "https://sfrecpark.org/1814/Bernal-Heights-Playground-Renewal",
+        "neighborhood": "Bernal Heights",
+        "notable": "New"
+      },
+      {
+        "name": "Mission Dolores Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban park",
+        "description": "San Francisco's most beloved urban park, a sprawling hilltop green space with tennis courts, a playground, a dog run, and stunning skyline views.",
+        "address": "Dolores St & 18th St, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://sfrecpark.org/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Precita Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood park",
+        "description": "Beloved Bernal-Mission border park featuring a lawn, playground, and community garden — home to the annual Urban Youth Arts Festival and community gatherings.",
+        "address": "Precita Ave & Folsom St, San Francisco, CA 94110",
+        "phone": "",
+        "website": "https://sfrecpark.org/",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "Gold's Gym — Mission",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "Full-service gym in the Mission District offering cardio equipment, free weights, group fitness classes, and personal training.",
+        "address": "1001 Brannan St, San Francisco, CA 94103",
+        "phone": "415-552-4653",
+        "website": "https://www.goldsgym.com/sanfranciscoca/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "24 Hour Fitness — Mission",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "Large 24-hour fitness center in the Mission with an extensive cardio floor, free weights, group exercise studio, and pool.",
+        "address": "100 Potrero Ave, San Francisco, CA 94103",
+        "phone": "415-503-1822",
+        "website": "https://www.24hourfitness.com/",
+        "neighborhood": "Mission District",
+        "notable": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Dozens of Unpermitted Mission District Vendors Cited, Nearly 400 Issued Warnings Under New Law",
+      "url": "https://sfist.com/2026/08/04/dozens-of-unpermitted-vendors-cited-nearly-400-issued-warnings-in-sfs-mission-under-new-law/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Mission Street Crackdown in SF Nets 396 Warnings, 6 Tickets and Zero Arrests",
+      "url": "https://hoodline.com/2026/08/mission-street-crackdown-in-sf-nets-396-warnings-6-tickets-and-zero-arrests/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "SF issues 396 warnings under Mission Street vendor law aimed at curbing suspected stolen goods",
+      "url": "https://abc7news.com/post/san-francisco-issues-396-warnings-mission-street-vendor-law-aimed-curbing-suspected-stolen-goods/19621808/",
+      "publication": "ABC7 San Francisco / KGO-TV"
+    },
+    {
+      "title": "ICE steps up surveillance of immigrants with increased electronic monitoring",
+      "url": "https://missionlocal.org/2026/08/ice-ankle-monitors-immigrants-isap/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "SF Musician Plans to Turn Former Mission Taco Bell Into Affordable Recording Studio",
+      "url": "https://sfist.com/2026/05/26/sf-musician-plans-to-turn-former-mission-taco-bell-into-affordable-recording-studio/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Shuttered KFC/Taco Bell in San Francisco Could Become Music Studio for Independent Artists",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-mission-district-taco-bell-kfc-music-studio-duboce-guerrero/",
+      "publication": "CBS San Francisco / KPIX"
+    },
+    {
+      "title": "Hillwide Garage Sale — Saturday August 8th 2026",
+      "url": "https://hillwide.com/",
+      "publication": "Hillwide Garage Sale"
+    },
+    {
+      "title": "Events — San Francisco Community Music Center",
+      "url": "https://sfcmc.org/events/",
+      "publication": "San Francisco Community Music Center"
+    },
+    {
+      "title": "Valencia LIVE! 2026 — Eventbrite",
+      "url": "https://www.eventbrite.com/e/valencia-live-2026-tickets-1987554005534",
+      "publication": "Eventbrite / Valencia Corridor Merchants Association"
+    },
+    {
+      "title": "Valencia LIVE! — VCMA Official Site",
+      "url": "https://www.visitvalenciastreet.com/live",
+      "publication": "Valencia Corridor Merchants Association"
+    },
+    {
+      "title": "Bernal Heights Calendar — Bernal Connect",
+      "url": "https://bernalconnect.com/bernal-heights-calendar/",
+      "publication": "Bernal Connect"
+    },
+    {
+      "title": "Join Us at the 35th Annual Fiesta on the Hill – September 20, 2026",
+      "url": "https://www.eventbrite.com/e/join-us-at-the-35th-annual-fiesta-on-the-hill-september-20-2026-tickets-1992583474812",
+      "publication": "Eventbrite / Bernal Heights Neighborhood Center"
+    },
+    {
+      "title": "Fiesta on the Hill — BHNC Events",
+      "url": "https://bhnc.org/events/",
+      "publication": "Bernal Heights Neighborhood Center"
+    },
+    {
+      "title": "Renewed Bernal Heights Playground Unveiled with Ribbon Cutting",
+      "url": "https://sfrecpark.org/m/newsflash/home/detail/2545",
+      "publication": "SF Recreation and Parks Department"
+    },
+    {
+      "title": "Precita Eyes Muralists — Mural Tours",
+      "url": "https://www.precitaeyes.org/tours.html",
+      "publication": "Precita Eyes Muralists"
+    },
+    {
+      "title": "S.F. supervisors OK new street-food law that vendors fear will force them out",
+      "url": "https://missionlocal.org/2026/03/street-food-regulations-supervisors-vote/",
+      "publication": "Mission Local"
+    }
+  ]
+}
