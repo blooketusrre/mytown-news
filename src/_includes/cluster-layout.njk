@@ -1,6 +1,40 @@
 ---
 layout: base.njk
 ---
+{# ── Story rendering macros ───────────────────────────────────────────────
+   These tolerate BOTH the original pipeline schema (neighborhood/tag/byline/
+   date) and the current one (tags[]/dek). Fields are rendered only when
+   present, so a future schema change degrades quietly instead of leaving
+   orphaned separators or blank lines on the page. #}
+
+{% macro storyHead(s) %}
+  {% set badge = s.neighborhood or (s.tags[0] if s.tags and s.tags.length else "") %}
+  {% if badge %}<span class="nbadge">{{ badge }}</span>{% endif %}
+  {% if s.tag %}<p class="tag">{{ s.tag }}</p>{% endif %}
+  <h3>{{ s.headline }}</h3>
+  {% if s.dek %}<p class="dek">{{ s.dek }}</p>{% endif %}
+  {% if s.byline and s.date %}
+    <p class="byline">{{ s.byline }} &nbsp;·&nbsp; {{ s.date }}</p>
+  {% elif s.byline %}
+    <p class="byline">{{ s.byline }}</p>
+  {% elif s.date %}
+    <p class="byline">{{ s.date }}</p>
+  {% endif %}
+{% endmacro %}
+
+{% macro storyBody(s) %}
+  <div class="story-body">
+    {% for para in (s.body or "").split('\n\n') %}
+      {% if para.trim() %}<p>{{ para.trim() }}</p>{% endif %}
+    {% endfor %}
+  </div>
+  {% if s.sourceUrl %}
+  <a href="{{ s.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="source-link">
+    Source: {{ s.sourceName or "view source" }} →
+  </a>
+  {% endif %}
+{% endmacro %}
+
 {# ── PDF download bar ─────────────────────────────────────────────────── #}
 <div class="pdf-bar">
   <span class="pdf-bar__label">Save this week's edition:</span>
@@ -41,16 +75,19 @@ layout: base.njk
 {# ── Sticky nav ───────────────────────────────────────────────────────── #}
 <nav class="site-nav" aria-label="Cluster sections">
   <div class="site-nav__inner container">
+    <span class="site-nav__label">{{ issue.clusterName if issue else clusterName }}</span>
     <ul class="site-nav__links" role="list">
-      <li><a href="/">← All Clusters</a></li>
       <li><a href="#top-stories">Top Stories</a></li>
       <li><a href="#events">Events</a></li>
       <li><a href="#more-news">More News</a></li>
       <li><a href="#directory">Directory</a></li>
       <li><a href="#sources">Sources</a></li>
     </ul>
-    <a class="site-nav__subscribe-btn" href="/subscribe/">Subscribe</a>
-    <span class="site-nav__meta">{% if issue %}{{ issue.weekOf | date_short }}{% endif %}</span>
+    <div class="site-nav__right">
+      <a class="site-nav__home" href="/">All San Francisco neighborhoods</a>
+      <a class="site-nav__subscribe-btn" href="/subscribe/">Subscribe</a>
+      <span class="site-nav__meta">{% if issue %}{{ issue.weekOf | date_short }}{% endif %}</span>
+    </div>
   </div>
 </nav>
 
@@ -83,39 +120,18 @@ layout: base.njk
       <div class="top-stories">
 
         {# Main story #}
-        {% set s = issue.topStories[0] %}
         <article class="story-main">
-          <span class="nbadge">{{ s.neighborhood }}</span>
-          <p class="tag">{{ s.tag }}</p>
-          <h3>{{ s.headline }}</h3>
-          <p class="byline">{{ s.byline }} &nbsp;·&nbsp; {{ s.date }}</p>
-          <div class="story-body">
-            {% for para in s.body.split('\n\n') %}
-              {% if para.trim() %}<p>{{ para.trim() }}</p>{% endif %}
-            {% endfor %}
-          </div>
-          <a href="{{ s.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="source-link">
-            Source: {{ s.sourceName }} →
-          </a>
+          {{ storyHead(issue.topStories[0]) }}
+          {{ storyBody(issue.topStories[0]) }}
         </article>
 
         {# Side stories #}
-        {% for s in issue.topStories.slice(1) %}
+        {% for s in issue.topStories %}{% if loop.index > 1 %}
         <article class="story-side">
-          <span class="nbadge">{{ s.neighborhood }}</span>
-          <p class="tag">{{ s.tag }}</p>
-          <h3>{{ s.headline }}</h3>
-          <p class="byline">{{ s.byline }} &nbsp;·&nbsp; {{ s.date }}</p>
-          <div class="story-body">
-            {% for para in s.body.split('\n\n') %}
-              {% if para.trim() %}<p>{{ para.trim() }}</p>{% endif %}
-            {% endfor %}
-          </div>
-          <a href="{{ s.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="source-link">
-            Source: {{ s.sourceName }} →
-          </a>
+          {{ storyHead(s) }}
+          {{ storyBody(s) }}
         </article>
-        {% endfor %}
+        {% endif %}{% endfor %}
 
       </div>
     </section>
@@ -131,9 +147,9 @@ layout: base.njk
         <div class="events-grid">
           {% for ev in issue.events %}
           <div class="event-card">
-            {% if ev.ongoing %}
+            {% if ev.ongoing or ev.date == "Ongoing" %}
               <span class="event-card__badge">Ongoing</span>
-            {% else %}
+            {% elif ev.date %}
               <p class="event-card__date">{{ ev.date }}{% if ev.recurring %} &nbsp;·&nbsp; {{ ev.recurring }}{% endif %}</p>
             {% endif %}
             <h3 class="event-card__title">{{ ev.title }}</h3>
@@ -164,18 +180,8 @@ layout: base.njk
       <div class="more-news-grid">
         {% for s in issue.moreNews %}
         <article class="news-card">
-          <span class="nbadge">{{ s.neighborhood }}</span>
-          <p class="tag">{{ s.tag }}</p>
-          <h3>{{ s.headline }}</h3>
-          <p class="byline">{{ s.byline }} &nbsp;·&nbsp; {{ s.date }}</p>
-          <div class="story-body">
-            {% for para in s.body.split('\n\n') %}
-              {% if para.trim() %}<p>{{ para.trim() }}</p>{% endif %}
-            {% endfor %}
-          </div>
-          <a href="{{ s.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="source-link">
-            Source: {{ s.sourceName }} →
-          </a>
+          {{ storyHead(s) }}
+          {{ storyBody(s) }}
         </article>
         {% endfor %}
       </div>
