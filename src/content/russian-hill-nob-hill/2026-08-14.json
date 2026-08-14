@@ -1,0 +1,812 @@
+{
+  "clusterSlug": "russian-hill-nob-hill",
+  "clusterName": "Russian Hill & Nob Hill",
+  "weekOf": "2026-08-14",
+  "topStories": [
+    {
+      "headline": "Chinatown's $150 Million Transformation Reaches Peak Disruption — Broadway Tunnel Closes Sunday",
+      "dek": "A full closure of the Broadway Tunnel begins Sunday as San Francisco undertakes its largest investment in Chinatown infrastructure in decades.",
+      "body": "San Francisco's Chinatown is in the thick of a multi-front construction surge this week as three simultaneous public works projects reshape the neighborhood's key corridors. The Broadway Tunnel is scheduled to be fully closed from 7 a.m. Sunday, August 16, through 5 a.m. Monday, August 17, followed immediately by a partial closure — one bore at a time — lasting through approximately October 2027. The closures are tied to seismic retrofitting and other upgrades at the Chinatown Public Health Center, which sits directly atop the tunnel's east entrance.\n\nSeparately, the pedestrian bridge connecting Portsmouth Square to the Hilton Hotel on Kearny Street has been demolished as part of the $73 million Portsmouth Square Improvement Project. According to the San Francisco Recreation and Park Department, crews completed removal of the bridge section over Kearny during the first of two full weekend closures in early August, with partial lane restrictions on Kearny Street between Clay and Washington continuing through August 15. The Portsmouth Square garage will reopen to normal operations as the partial closures wind down.\n\nCity officials say removing the 300-foot concrete-and-steel bridge will unlock 20,000 additional square feet of usable open space, setting the stage for a redesigned plaza with a flexible outdoor event stage, a new zero-carbon community clubhouse, and improved sight lines throughout the square. Construction is expected to wrap by mid-2028. A third project — renovation of the Chinatown branch library — rounds out the trifecta at a combined cost of $150 million across all three efforts.\n\nDrivers and Muni riders are advised to allow extra travel time and check SFMTA.com/GoChinatown for the latest detour maps and transit reroutes before heading into the neighborhood. The 8 Bayshore bus will continue operating with adjusted stops during various closure phases.",
+      "sourceUrl": "https://sfpublicworks.org/index.php/pressreleases/chinatownimprovements-7-20-2026",
+      "sourceName": "SF Public Works",
+      "tags": [
+        "Chinatown",
+        "construction",
+        "transportation",
+        "Portsmouth Square"
+      ]
+    },
+    {
+      "headline": "The Huntington Hotel Is Back: Nob Hill's Storied Grande Dame Reopened This Spring",
+      "dek": "After five years shuttered and a sweeping renovation, the Huntington Hotel on Nob Hill reopened in March 2026 with reimagined interiors, a revitalized spa, and the return of the beloved Big Four restaurant.",
+      "body": "One of Nob Hill's most iconic addresses is welcoming guests again. The Huntington Hotel, at 1075 California Street, reopened on March 2, 2026, following a comprehensive restoration led by Flynn Properties and Highgate after the hotel closed during the COVID-19 pandemic in 2020. The 12-story Georgian-style brick building — added to the National Register of Historic Places in September 2025 — now offers 71 guest rooms and 72 suites, with interior design by San Francisco's own Ken Fulk that honors the building's 1920s architectural bones while introducing modern comforts.\n\nThe revived hotel brings back two beloved institutions under one roof: the Nob Hill Spa, reimagined as a three-level wellness destination, and the Big Four restaurant, which reopened in its 50th anniversary year alongside a new bar called Arabella's. The restaurant, named for the railroad tycoons who once dominated the hilltop, features a revamped menu and updated dining space while retaining its storied atmosphere.\n\nThe Huntington has long attracted luminaries including Truman Capote, Marlene Dietrich, and Princess Margaret. Its return signals growing confidence in Nob Hill's hospitality sector, alongside the ongoing centennial celebrations at the InterContinental Mark Hopkins next door. The hotel's intimate scale — averaging around 581 square feet per room, nearly three times the industry standard — underscores its positioning as an urban retreat rather than a convention property.",
+      "sourceUrl": "https://sfstandard.com/2026/04/08/huntington-hotel-sf-reopens/",
+      "sourceName": "San Francisco Standard",
+      "tags": [
+        "Nob Hill",
+        "hotels",
+        "hospitality",
+        "renovation"
+      ]
+    },
+    {
+      "headline": "Top of the Mark Toasts 100 Years With a 100-Martini Revival",
+      "dek": "The InterContinental Mark Hopkins San Francisco is celebrating its centennial year with year-round special events, including the return of the legendary 100 Martini Passport program at its iconic sky lounge.",
+      "body": "The InterContinental Mark Hopkins San Francisco, perched atop Nob Hill at 999 California Street, is marking a milestone in 2026: the hotel's 100th anniversary, with the official centennial date falling on December 4. To anchor a year of celebrations, the hotel revived its famed 100 Martini experience at Top of the Mark on May 25, 2026. Guests receive a passport-styled booklet and earn a stamp with each martini ordered from a menu of 100 drinks ranging from classic preparations to contemporary spirit-forward cocktails, priced between $22 and $26.\n\nThroughout the centennial year, the hotel is rolling out curated guest experiences, historical storytelling, culinary programming, and special events tracing the property's century atop one of the city's most recognizable hills. The Top of the Mark, a 19th-floor sky lounge with nearly 360-degree views of the bay and skyline, has been a gathering place for San Franciscans since its original opening in 1939 — including serving as a farewell stop for tens of thousands of World War II servicemen.\n\nThe hotel is also hosting monthly dance evenings in the Peacock Court ballroom, led by bandleader Alex Mendham and his 11-piece orchestra, as part of the centennial series. Guests and locals interested in sharing memories of the Mark Hopkins are invited to do so at TheCentennialMark@ihg.com.",
+      "sourceUrl": "https://thevoicesf.org/top-of-the-mark-revives-legendary-100-martini-passport-for-hotels-centennial/",
+      "sourceName": "The Voice of San Francisco",
+      "tags": [
+        "Nob Hill",
+        "hotels",
+        "centennial",
+        "Top of the Mark"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Chinatown Dragon at the Great Star Theater",
+      "date": "Through August 20",
+      "time": "2:00 PM (matinée) / 7:00 PM (evening)",
+      "location": "Great Star Theater, 636 Jackson St, Chinatown",
+      "description": "A family-friendly acrobatics, martial arts, and music show running through August 20 at the oldest Chinese theater in the United States. Matinée doors at 1:30 PM; evening doors at 6:30 PM.",
+      "sourceUrl": "https://www.greatstartheater.org/chinatown-dragon",
+      "sourceName": "Great Star Theater"
+    },
+    {
+      "title": "Chinatown Night Market",
+      "date": "Friday, August 14",
+      "time": "5:00 PM–9:00 PM",
+      "location": "Grant Ave. from California to Pacific, Chinatown",
+      "description": "The free monthly street festival — voted #1 night market in the country — takes over five blocks of Grant Avenue with 40+ local restaurants, merchants, live entertainment, beer and wine gardens, and Asian American DJs.",
+      "sourceUrl": "https://sf.funcheap.com/event-series/sfs-chinatown-night-market-returns/",
+      "sourceName": "Funcheap SF"
+    },
+    {
+      "title": "Broadway Tunnel Full Closure — Plan Alternate Routes",
+      "date": "Sunday, August 17",
+      "time": "7:00 AM–5:00 AM (Aug 17)",
+      "location": "Broadway Tunnel, Chinatown/Russian Hill border",
+      "description": "The Broadway Tunnel will be fully closed for 22 hours beginning 7 a.m. Sunday, August 16, followed by a long-term partial closure of one bore at a time through approximately October 2027. Check SFMTA.com/GoChinatown for detour maps.",
+      "sourceUrl": "https://www.sfmta.com/traffic-impacts-chinatown-public-health-center-construction",
+      "sourceName": "SFMTA"
+    },
+    {
+      "title": "\"Ties vs. High Heels\" at the Great Star Theater",
+      "date": "Saturday, August 15 & Sunday, August 16",
+      "time": "Various times",
+      "location": "Great Star Theater, 636 Jackson St, Chinatown",
+      "description": "A classic Bay Area dark comedy adapted by playwright Shen Yue, exploring the lives of Chinese immigrant families in the Bay Area, directed by alumni of the Beijing Film Academy and the Central Academy of Drama.",
+      "sourceUrl": "https://www.greatstartheater.org/",
+      "sourceName": "Great Star Theater"
+    },
+    {
+      "title": "Chinatown Night Market — September Edition",
+      "date": "Friday, September 11",
+      "time": "5:00 PM–9:00 PM",
+      "location": "Grant Ave. from California to Pacific, Chinatown",
+      "description": "The next installment of the free monthly Chinatown Night Market featuring food vendors, shopping, live entertainment, and cultural performances along Grant Avenue.",
+      "sourceUrl": "https://sf.funcheap.com/event-series/sfs-chinatown-night-market-returns/",
+      "sourceName": "Funcheap SF"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Sam Wo Chinatown Restaurant Thriving Under New Ownership After September 2025 Reopening",
+      "body": "After the closure of the century-old Sam Wo restaurant in January 2025 when longtime owner David Ho retired, the Chinatown institution at 713 Clay Street reopened in September 2025 under new ownership led by Bay Area restaurateurs Norris Song and Ming Duong. The revived restaurant has maintained most of the beloved original menu, including its signature BBQ pork rice noodle rolls, fish porridge, and dim sum staples, while honoring the restaurant's more-than-100-year heritage in San Francisco's Chinatown.",
+      "sourceUrl": "https://sfist.com/2025/09/03/chinatowns-sam-wo-restaurant-is-indeed-reopening-hopes-to-return-to-late-night-glory/",
+      "sourceName": "SFist",
+      "tags": [
+        "Chinatown",
+        "restaurants",
+        "food"
+      ]
+    },
+    {
+      "headline": "FITNESS SF Coming to Polk Gulch: 42,000-Sq-Ft Gym Slated for September Opening",
+      "body": "A major new fitness facility is on the way for Polk Gulch, Russian Hill, and Nob Hill residents. FITNESS SF Polk is scheduled to open in September 2026 at 1600 Jackson Street in a 42,000-square-foot space at the heart of the Polk corridor. The gym — a new location from the local FITNESS SF chain — was developed with extensive community input, including survey feedback and behind-the-scenes tours for neighbors. Founding memberships are currently available at pre-sale pricing through the company's website before the grand opening.",
+      "sourceUrl": "https://experience.fitnesssf.com/why-polk-street-needs-fitness-sf",
+      "sourceName": "FITNESS SF",
+      "tags": [
+        "Polk Gulch",
+        "fitness",
+        "new business"
+      ]
+    },
+    {
+      "headline": "Kearny Street Partial Closures Continue Through August 15 as Bridge Demolition Wraps",
+      "body": "San Francisco Recreation and Parks confirmed this week that demolition of the Kearny Street pedestrian bridge at Portsmouth Square is on schedule and nearly complete. During the first of two full-weekend closures in early August, crews successfully removed the section of the bridge spanning over Kearny Street. Partial closures on Kearny between Clay and Washington streets continue through August 15, with at least two lanes remaining open at all times. The Portsmouth Square garage remains open during partial closure periods; local business access on the east side of Kearny is maintained throughout.",
+      "sourceUrl": "https://sfrecpark.org/m/newsflash/home/detail/3010",
+      "sourceName": "SF Recreation and Parks",
+      "tags": [
+        "Chinatown",
+        "construction",
+        "Portsmouth Square"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Nob Hill Cafe",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Neighborhood Italian restaurant",
+        "description": "A beloved family-run Tuscan-style spot on Nob Hill serving fresh-made pastas, gnocchi, pizza, and veal; no reservations.",
+        "address": "1152 Taylor St",
+        "phone": "415-776-6500",
+        "website": "https://www.nobhillcafe.com",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sorella",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Contemporary Italian restaurant and bar",
+        "description": "A spirited Italian restaurant from the team behind Acquerello, with seasonal small plates, inventive cocktails, and floor-to-ceiling windows overlooking Polk Street.",
+        "address": "1760 Polk St",
+        "phone": "415-359-1212",
+        "website": "https://www.sorellasf.com",
+        "neighborhood": "Russian Hill / Polk Gulch",
+        "notable": ""
+      },
+      {
+        "name": "Swan Oyster Depot",
+        "cuisineGroup": "Seafood & American",
+        "type": "Seafood counter and fish market",
+        "description": "A James Beard Award–winning icon open since 1912, serving fresh oysters, chowder, crab, and seafood cocktails from an 18-stool marble counter; cash only, no reservations.",
+        "address": "1517 Polk St",
+        "phone": "415-673-1101",
+        "website": "https://swanoysterdepot.net",
+        "neighborhood": "Polk Gulch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bob's Donuts & Pastry Shop",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "24-hour donut shop",
+        "description": "A Polk Street institution since 1960, open around the clock with classic handmade donuts, apple fritters, and the legendary giant-donut challenge.",
+        "address": "1720 Polk St",
+        "phone": "415-776-3141",
+        "website": "https://www.bobsdonutssf.com",
+        "neighborhood": "Polk Gulch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Golden Gate Bakery",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Cantonese bakery",
+        "description": "A legendary Chinatown institution famous for its silky, flaky egg custard tarts; hours vary daily and the bakery closes when the day's supply sells out.",
+        "address": "1029 Grant Ave",
+        "phone": "415-781-2627",
+        "website": "https://goldengatebakerysf.com",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sam Wo Restaurant",
+        "cuisineGroup": "Asian",
+        "type": "Cantonese noodle restaurant",
+        "description": "A Chinatown institution dating to 1908, reopened in September 2025 under new ownership and serving its beloved BBQ pork rice noodle rolls, porridge, and late-night Cantonese fare.",
+        "address": "713 Clay St",
+        "phone": "415-397-4150",
+        "website": "https://samworestaurant.com",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Four Kings",
+        "cuisineGroup": "Asian",
+        "type": "Cantonese restaurant",
+        "description": "A well-reviewed Cantonese spot opened in 2024 by Mister Jiu's alumni, offering wok-fired dishes and modern takes on Hong Kong-style classics.",
+        "address": "710 Commercial St",
+        "phone": "",
+        "website": "https://www.itsfourkings.com",
+        "neighborhood": "Chinatown",
+        "notable": "New"
+      },
+      {
+        "name": "AA Bakery & Cafe",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Chinese bakery and café",
+        "description": "A Chinatown bakery praised for its egg custard tarts, baked goods, and café drinks, open daily from 7 AM on Stockton Street.",
+        "address": "1068 Stockton St",
+        "phone": "415-982-1849",
+        "website": "https://www.yelp.com/biz/aa-bakery-cafe-san-francisco",
+        "neighborhood": "Chinatown",
+        "notable": ""
+      },
+      {
+        "name": "The Big Four Restaurant",
+        "cuisineGroup": "Seafood & American",
+        "type": "Historic American restaurant and bar",
+        "description": "The storied restaurant inside the newly reopened Huntington Hotel, celebrating its 50th anniversary with a revamped menu honoring the railroad barons of Nob Hill's golden era.",
+        "address": "1075 California St",
+        "phone": "415-771-1140",
+        "website": "https://www.thehuntingtonhotel.com",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Grubstake",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Late-night diner",
+        "description": "A Polk Gulch diner housed in a converted streetcar, serving burgers, breakfast plates, shakes, and fries until 4 AM.",
+        "address": "1525 Pine St",
+        "phone": "415-673-8268",
+        "website": "https://www.yelp.com/biz/grubstake-san-francisco",
+        "neighborhood": "Polk Gulch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sushi Sato",
+        "cuisineGroup": "Asian",
+        "type": "Modern Japanese sushi restaurant",
+        "description": "A well-regarded Polk Gulch Japanese restaurant known for its fresh, modern sushi and intimate dining room.",
+        "address": "1726 Polk St",
+        "phone": "415-345-9388",
+        "website": "https://www.yelp.com/biz/sushi-sato-san-francisco",
+        "neighborhood": "Polk Gulch",
+        "notable": ""
+      },
+      {
+        "name": "Mezcalito",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mezcal bar and restaurant",
+        "description": "A Russian Hill favorite that functions as a mezcal bar first and restaurant second, with a focused menu and a serious agave spirits selection.",
+        "address": "2323 Polk St",
+        "phone": "415-655-3209",
+        "website": "https://www.mezcalitosf.com",
+        "neighborhood": "Russian Hill",
+        "notable": ""
+      },
+      {
+        "name": "Bar Bibi",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Natural wine bar",
+        "description": "A Nob Hill natural wine bar with excellent small plates, also home to Better Half Coffee during daytime hours.",
+        "address": "1319 California St",
+        "phone": "415-655-9300",
+        "website": "https://www.barbibisf.com",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      },
+      {
+        "name": "Top of the Mark",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Sky lounge and cocktail bar",
+        "description": "The iconic 19th-floor lounge at the InterContinental Mark Hopkins, offering nearly 360-degree city views and a 100-martini menu as part of the hotel's centennial celebrations.",
+        "address": "999 California St (19th Floor)",
+        "phone": "415-616-6916",
+        "website": "https://www.ihg.com/intercontinental/hotels/us/en/san-francisco/sfoha/hoteldetail/dining/top-of-the-mark",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Café Nook",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Neighborhood café",
+        "description": "An easy-going Hyde Street café in Russian Hill popular for bagels, soups, salads, sandwiches, and free weekday Wi-Fi.",
+        "address": "1500 Hyde St",
+        "phone": "415-447-4100",
+        "website": "https://www.yelp.com/biz/cafe-nook-san-francisco",
+        "neighborhood": "Russian Hill",
+        "notable": ""
+      },
+      {
+        "name": "Great Eastern Restaurant",
+        "cuisineGroup": "Asian",
+        "type": "Cantonese seafood restaurant",
+        "description": "A well-known Chinatown Cantonese restaurant celebrated for its live seafood tanks and classic Hong Kong–style seafood preparations.",
+        "address": "649 Jackson St",
+        "phone": "415-986-2500",
+        "website": "https://www.yelp.com/biz/great-eastern-restaurant-san-francisco",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "House of Nanking",
+        "cuisineGroup": "Asian",
+        "type": "Chinese restaurant",
+        "description": "A tiny, celebrated Chinatown restaurant beloved for its signature dishes and the chef's knack for recommending exactly what you should eat.",
+        "address": "919 Kearny St",
+        "phone": "415-421-1429",
+        "website": "https://www.yelp.com/biz/house-of-nanking-san-francisco",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ramen Sho Ryu",
+        "cuisineGroup": "Asian",
+        "type": "Ramen restaurant",
+        "description": "A quick and satisfying ramen shop in Nob Hill, popular for its rich broths and convenient location for a fast weeknight dinner.",
+        "address": "1495 California St",
+        "phone": "415-767-3663",
+        "website": "https://www.yelp.com/biz/ramen-sho-ryu-san-francisco",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Fairmont San Francisco",
+        "type": "Grand luxury hotel",
+        "description": "A Beaux Arts landmark atop Nob Hill since 1907, with 591 rooms, two restaurants, a full-service spa, and sweeping bay and city views.",
+        "address": "950 Mason St",
+        "phone": "415-772-5000",
+        "website": "https://www.fairmont.com/en/hotels/san-francisco/fairmont-san-francisco.html",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "InterContinental Mark Hopkins San Francisco",
+        "type": "Historic luxury hotel",
+        "description": "A 19-story Nob Hill landmark celebrating its 100th anniversary in 2026, home to the iconic Top of the Mark sky lounge with panoramic city views.",
+        "address": "999 California St",
+        "phone": "415-392-3434",
+        "website": "https://www.ihg.com/intercontinental/hotels/us/en/san-francisco/sfoha/hoteldetail",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Huntington Hotel",
+        "type": "Boutique luxury hotel",
+        "description": "A storied Nob Hill icon reopened in March 2026 after a sweeping renovation, offering 71 rooms and 72 suites with Georgian architecture, a three-level spa, and the revived Big Four restaurant.",
+        "address": "1075 California St",
+        "phone": "415-474-5400",
+        "website": "https://www.thehuntingtonhotel.com",
+        "neighborhood": "Nob Hill",
+        "notable": "New"
+      },
+      {
+        "name": "Stanford Court San Francisco",
+        "type": "Lifestyle hotel",
+        "description": "A stylish hotel on Nob Hill at the intersection of the California Street cable car line, with renovated rooms and a vibrant restaurant and bar scene.",
+        "address": "905 California St",
+        "phone": "415-989-3500",
+        "website": "https://www.stanfordcourt.com",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      },
+      {
+        "name": "Executive Hotel Vintage Court",
+        "type": "Boutique hotel",
+        "description": "A wine-themed boutique hotel steps from Grace Cathedral on Nob Hill, known for its nightly complimentary wine hour and personalized service.",
+        "address": "650 Bush St",
+        "phone": "415-392-4100",
+        "website": "https://www.executivehotels.net/vintage-court-san-francisco",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      },
+      {
+        "name": "Nob Hill Inn",
+        "type": "Victorian inn",
+        "description": "An intimate 1907 Edwardian inn offering antique-furnished rooms with fireplaces and afternoon tea service in the heart of Nob Hill.",
+        "address": "1000 Pine St",
+        "phone": "415-673-6080",
+        "website": "https://www.nobhillinn.com",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Russian Hill Bookstore",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "A city-designated Legacy Business on Polk Street, independently owned and open daily from 10 AM to 8 PM, carrying new and used books plus cards, gifts, and games.",
+        "address": "2162 Polk St",
+        "phone": "415-440-0203",
+        "website": "https://www.russianhillbookstore.com",
+        "neighborhood": "Russian Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "On Waverly",
+        "shopGroup": "Home & Gifts",
+        "type": "Chinatown gift and lifestyle shop",
+        "description": "A curated gift shop in the heart of Chinatown on Waverly Place, offering locally crafted goods, art, and goods that celebrate Chinese American culture.",
+        "address": "Waverly Pl, Chinatown",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/on-waverly-san-francisco",
+        "neighborhood": "Chinatown",
+        "notable": ""
+      },
+      {
+        "name": "Sino-American Books & Arts",
+        "shopGroup": "Books & Literature",
+        "type": "Chinese-language bookstore and art shop",
+        "description": "A Chinatown bookstore carrying Chinese-language books, magazines, music, and art supplies serving the local community for decades.",
+        "address": "751 Jackson St",
+        "phone": "415-421-3345",
+        "website": "https://www.yelp.com/biz/sino-american-books-and-arts-san-francisco",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Best Cleaners",
+        "shopGroup": "Hardware & Services",
+        "type": "Dry cleaner",
+        "description": "A reliable full-service dry cleaner and laundry serving the Russian Hill and Polk Gulch neighborhoods.",
+        "address": "1901 Polk St",
+        "phone": "415-776-0234",
+        "website": "https://www.yelp.com/biz/best-cleaners-san-francisco",
+        "neighborhood": "Polk Gulch",
+        "notable": ""
+      },
+      {
+        "name": "Polanco",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Mexican folk art and fine art gallery shop",
+        "description": "A Polk Street shop and gallery specializing in authentic Mexican folk art, fine crafts, and Day of the Dead collectibles.",
+        "address": "393 Hayes St",
+        "phone": "415-252-5753",
+        "website": "https://www.yelp.com/biz/polanco-san-francisco",
+        "neighborhood": "Polk Gulch",
+        "notable": ""
+      },
+      {
+        "name": "Cottage Industry",
+        "shopGroup": "Home & Gifts",
+        "type": "Home goods and gift boutique",
+        "description": "A charming Polk Gulch shop carrying a curated selection of home décor, gifts, cards, and locally made goods.",
+        "address": "1640 Polk St",
+        "phone": "415-771-2773",
+        "website": "https://www.yelp.com/biz/cottage-industry-san-francisco",
+        "neighborhood": "Polk Gulch",
+        "notable": ""
+      },
+      {
+        "name": "The Wok Shop",
+        "shopGroup": "Home & Gifts",
+        "type": "Chinese cookware and kitchen specialty store",
+        "description": "A Chinatown institution since 1969, stocking woks, bamboo steamers, cleavers, and every utensil needed for Chinese and Asian cooking.",
+        "address": "718 Grant Ave",
+        "phone": "415-989-3797",
+        "website": "https://www.wokshop.com",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Clarion Music Center",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Chinese and world instruments store",
+        "description": "A unique Chinatown shop specializing in Chinese musical instruments — erhu, guzheng, pipa — alongside world music instruments and sheet music.",
+        "address": "816 Sacramento St",
+        "phone": "415-391-1317",
+        "website": "https://www.yelp.com/biz/clarion-music-center-san-francisco",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ten Ren Tea",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Chinese tea shop",
+        "description": "A Chinatown branch of the renowned Taiwanese tea chain, offering a wide selection of oolong, green, and specialty Chinese teas, sold loose or by the pot.",
+        "address": "949 Grant Ave",
+        "phone": "415-362-0656",
+        "website": "https://www.tenren.com",
+        "neighborhood": "Chinatown",
+        "notable": ""
+      },
+      {
+        "name": "Kite Shop (Chinatown Kite Shop)",
+        "shopGroup": "Home & Gifts",
+        "type": "Kite and novelty shop",
+        "description": "A Chinatown landmark selling hand-crafted kites, Chinese lanterns, fans, and novelty gifts on Grant Avenue for decades.",
+        "address": "717 Grant Ave",
+        "phone": "415-989-5182",
+        "website": "https://www.yelp.com/biz/chinatown-kite-shop-san-francisco",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Great Star Theater",
+        "venueGroup": "Theater & Comedy",
+        "type": "Historic community performing arts theater",
+        "description": "The oldest Chinese theater in the United States, founded in 1925, hosting acrobatics, Chinese opera, comedy, cabaret, film, and live music in the heart of Chinatown.",
+        "address": "636 Jackson St",
+        "phone": "415-829-2285",
+        "website": "https://www.greatstartheater.org",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Grace Cathedral",
+        "venueGroup": "Museums & Cultural",
+        "type": "Gothic Episcopal cathedral and cultural venue",
+        "description": "A Nob Hill landmark since 1964, offering sound bath concerts, sound sculpture installations, labyrinths, stunning stained glass, and regular arts and cultural programming open to all faiths.",
+        "address": "1100 California St",
+        "phone": "415-749-6300",
+        "website": "https://www.gracecathedral.org",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Masonic",
+        "venueGroup": "Music Venues",
+        "type": "Concert hall",
+        "description": "A 3,300-seat Nob Hill concert hall and event venue hosting major national and international touring acts in an intimate setting.",
+        "address": "1111 California St",
+        "phone": "415-776-4917",
+        "website": "https://www.themasonic.com",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chinese Historical Society of America Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Museum",
+        "description": "The nation's oldest and largest institution dedicated to the history and culture of Chinese Americans, located in a 1932 Julia Morgan–designed building in Chinatown.",
+        "address": "965 Clay St",
+        "phone": "415-391-1188",
+        "website": "https://www.chsa.org",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chinese Culture Center of San Francisco",
+        "venueGroup": "Museums & Cultural",
+        "type": "Cultural center and gallery",
+        "description": "A Chinatown cultural hub offering art exhibitions, community programs, history tours, and educational resources celebrating Chinese and Chinese American heritage.",
+        "address": "750 Kearny St, 3rd Floor",
+        "phone": "415-986-1822",
+        "website": "https://www.cccsf.us",
+        "neighborhood": "Chinatown",
+        "notable": ""
+      },
+      {
+        "name": "Nob Hill Masonic Center — Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Gallery space",
+        "description": "An exhibition and event space within the historic Masonic Center on California Street, hosting rotating visual arts exhibitions and cultural programming.",
+        "address": "1111 California St",
+        "phone": "415-776-4917",
+        "website": "https://www.themasonic.com",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      },
+      {
+        "name": "Tin How Temple",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic temple and cultural site",
+        "description": "San Francisco's oldest Chinese temple, dating to 1852, tucked above Waverly Place in Chinatown and dedicated to the goddess Tian Hou; open to respectful visitors.",
+        "address": "125 Waverly Pl",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/tin-how-temple-san-francisco",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Kong Chow Temple",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic temple and cultural site",
+        "description": "A Chinatown landmark Taoist temple atop the Chinatown post office building, open to visitors and featuring an ornate altar dating to the mid-19th century.",
+        "address": "855 Stockton St (4th Floor)",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/kong-chow-temple-san-francisco",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "FITNESS SF Polk (Opening September 2026)",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "A brand-new 42,000-square-foot gym coming to Polk Gulch in September 2026, built with community input and offering free parking; founding memberships available now.",
+        "address": "1600 Jackson St",
+        "phone": "",
+        "website": "https://www.fitnesssf.com/location/sf-polk",
+        "neighborhood": "Polk Gulch",
+        "notable": "New"
+      },
+      {
+        "name": "Mighty Pilates Russian Hill",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Reformer Pilates studio",
+        "description": "A Polk Gulch–area Pilates studio offering reformer, functional, and fit Pilates classes for all levels.",
+        "address": "2118 Polk St",
+        "phone": "415-359-1813",
+        "website": "https://www.mightypilates.com",
+        "neighborhood": "Polk Gulch / Russian Hill",
+        "notable": ""
+      },
+      {
+        "name": "Huntington Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood park",
+        "description": "A serene Nob Hill square at the corner of California and Taylor streets, directly opposite Grace Cathedral, with a central fountain and benches popular with locals.",
+        "address": "California St & Taylor St",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/huntington-park/",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      },
+      {
+        "name": "Ina Coolbrith Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Terraced hillside park",
+        "description": "A quiet, terraced Russian Hill park with sweeping views of the bay, Alcatraz, and Coit Tower, named for California's first poet laureate.",
+        "address": "Vallejo St & Taylor St",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/ina-coolbrith-park/",
+        "neighborhood": "Russian Hill",
+        "notable": ""
+      },
+      {
+        "name": "MacondrayLane & Russian Hill Open Space",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Pedestrian lane and parkland",
+        "description": "A beloved pedestrian-only wooded lane in Russian Hill flanked by cottage gardens, flower trellises, and stunning views — the inspiration for Armistead Maupin's Barbary Lane.",
+        "address": "Macondray Ln (Taylor to Jones)",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Russian Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Nob Hill Spa at The Huntington",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Three-level luxury spa",
+        "description": "The revived Nob Hill Spa inside the freshly reopened Huntington Hotel, reimagined as a three-level wellness destination with a pool, fitness center, and treatment rooms.",
+        "address": "1075 California St",
+        "phone": "415-474-5400",
+        "website": "https://www.thehuntingtonhotel.com",
+        "neighborhood": "Nob Hill",
+        "notable": "New"
+      },
+      {
+        "name": "St. Mary's Square",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Downtown pocket park",
+        "description": "A pleasant Chinatown-adjacent plaza featuring a statue of Sun Yat-sen and serving as an alternative gathering space while Portsmouth Square undergoes renovation.",
+        "address": "California St & Grant Ave",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/st-marys-square/",
+        "neighborhood": "Chinatown",
+        "notable": ""
+      },
+      {
+        "name": "Willie 'Woo Woo' Wong Playground",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Community playground and recreation area",
+        "description": "A Chinatown community recreation area on Sacramento Street, serving as one of the primary alternative open spaces while Portsmouth Square is closed for renovation through 2028.",
+        "address": "830 Sacramento St",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Chinatown",
+        "notable": ""
+      },
+      {
+        "name": "24 Hour Fitness — Polk St",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "A full-service fitness club on Polk Street with weight training, cardio equipment, group fitness classes, and pool access for the Nob Hill and Polk Gulch community.",
+        "address": "1200 Van Ness Ave",
+        "phone": "415-776-2200",
+        "website": "https://www.24hourfitness.com",
+        "neighborhood": "Polk Gulch",
+        "notable": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Major Upgrades to Chinatown's Health Center, Library and Portsmouth Square Move Forward",
+      "url": "https://sfpublicworks.org/index.php/pressreleases/chinatownimprovements-7-20-2026",
+      "publication": "SF Public Works"
+    },
+    {
+      "title": "Major street closures in San Francisco's Chinatown start this weekend",
+      "url": "https://www.nbcbayarea.com/news/local/street-closures-san-francisco-chinatown/4120516/",
+      "publication": "NBC Bay Area"
+    },
+    {
+      "title": "San Francisco Chinatown construction to bring street closures, detours starting this week",
+      "url": "https://thevoicesf.org/san-francisco-chinatown-construction-to-bring-street-closures-detours-starting-this-week/",
+      "publication": "The Voice of San Francisco"
+    },
+    {
+      "title": "Portsmouth Square Improvement Project",
+      "url": "https://sfpublicworks.org/portsmouthsquare",
+      "publication": "SF Public Works"
+    },
+    {
+      "title": "Portsmouth Square Improvements | REMINDER: Kearny Street Traffic and Muni Changes Continue This Week",
+      "url": "https://sfrecpark.org/m/newsflash/home/detail/3010",
+      "publication": "SF Recreation and Parks"
+    },
+    {
+      "title": "Traffic Impacts from Chinatown Portsmouth Square Construction",
+      "url": "https://www.sfmta.com/traffic-impacts-chinatown-portsmouth-square-construction",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "Traffic Impacts from Chinatown Public Health Center Construction",
+      "url": "https://www.sfmta.com/traffic-impacts-chinatown-public-health-center-construction",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "SFMTA Transit and Traffic Advisory for the Week, August 13–19, 2026",
+      "url": "https://www.sfmta.com/press-releases/sfmta-transit-and-traffic-advisory-week-thursday-august-13-through-wednesday-august-19-2026",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "The Huntington Hotel's revival offers a rebirth of old San Francisco",
+      "url": "https://sfstandard.com/2026/04/08/huntington-hotel-sf-reopens/",
+      "publication": "San Francisco Standard"
+    },
+    {
+      "title": "Nob Hill's Huntington Hotel finally set to return in 2026",
+      "url": "https://sfstandard.com/2025/12/05/the-huntington-hotel-nob-hill-2026/",
+      "publication": "San Francisco Standard"
+    },
+    {
+      "title": "The Huntington Hotel Returns: A Nob Hill Icon Rises Again",
+      "url": "https://www.goodlifereport.com/featured/the-huntington-hotel-returns-a-nob-hill-icon-rises-again/",
+      "publication": "Good Life Report"
+    },
+    {
+      "title": "Top of the Mark revives legendary 100 Martini Passport for hotel's centennial",
+      "url": "https://thevoicesf.org/top-of-the-mark-revives-legendary-100-martini-passport-for-hotels-centennial/",
+      "publication": "The Voice of San Francisco"
+    },
+    {
+      "title": "100 Years at Mark Hopkins — InterContinental Mark Hopkins SF Centennial",
+      "url": "https://www.ihg.com/intercontinental/hotels/us/en/san-francisco/sfoha/hoteldetail/the-centennial-mark",
+      "publication": "InterContinental Hotels Group"
+    },
+    {
+      "title": "SF's Chinatown Night Market 2026 (Every Second Friday)",
+      "url": "https://sf.funcheap.com/event-series/sfs-chinatown-night-market-returns/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Chinatown Night Market — SF Station event listing, August 14, 2026",
+      "url": "https://www.sfstation.com/chinatown-night-market-fair-e417561",
+      "publication": "SF Station"
+    },
+    {
+      "title": "Great Star Theater — What's Playing",
+      "url": "https://www.greatstartheater.org/whats-playing",
+      "publication": "Great Star Theater"
+    },
+    {
+      "title": "Chinatown Dragon at the Great Star Theater",
+      "url": "https://www.greatstartheater.org/chinatown-dragon",
+      "publication": "Great Star Theater"
+    },
+    {
+      "title": "Chinatown's Sam Wo Restaurant Is Indeed Reopening, Hopes to Return to Late-Night Glory",
+      "url": "https://sfist.com/2025/09/03/chinatowns-sam-wo-restaurant-is-indeed-reopening-hopes-to-return-to-late-night-glory/",
+      "publication": "SFist"
+    },
+    {
+      "title": "FITNESS SF Polk Community Updates — Why Polk Street Needs FITNESS SF",
+      "url": "https://experience.fitnesssf.com/why-polk-street-needs-fitness-sf",
+      "publication": "FITNESS SF"
+    },
+    {
+      "title": "Russian Hill Bookstore — About",
+      "url": "https://www.russianhillbookstore.com/about",
+      "publication": "Russian Hill Bookstore"
+    },
+    {
+      "title": "Golden Gate Bakery SF",
+      "url": "https://goldengatebakerysf.com",
+      "publication": "Golden Gate Bakery"
+    },
+    {
+      "title": "Sam Wo Restaurant",
+      "url": "https://samworestaurant.com",
+      "publication": "Sam Wo Restaurant"
+    },
+    {
+      "title": "Major Chinatown street closures start this week — and will go on for months",
+      "url": "https://www.yahoo.com/news/us/articles/major-chinatown-street-closures-start-120000014.html",
+      "publication": "Yahoo News"
+    }
+  ]
+}
