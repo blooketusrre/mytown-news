@@ -30,6 +30,7 @@ const STATIC_PAGES = [
   "privacy/index.html",
   "submit-tip/index.html",
   "subscribe/index.html",
+  "subscribed/index.html",
 ];
 
 /* Assets that must have been copied through. */

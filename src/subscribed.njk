@@ -1,0 +1,62 @@
+---
+layout: base.njk
+permalink: /subscribed/
+pageTitle: "You're subscribed — My Town News"
+pageDesc: "Thanks for subscribing to My Town News. Check your inbox to confirm, and your first issue arrives Friday."
+eleventyExcludeFromCollections: true
+---
+
+{# Landing page for Buttondown's subscription_redirect_url. Buttondown posts
+   the signup, then sends the reader back here so the journey ends on our own
+   site rather than on buttondown.com. #}
+
+<header class="masthead home-hero" role="banner" style="padding-bottom:var(--sp-8)">
+  <div class="container">
+    <p class="home-hero__eyebrow">San Francisco · Free &amp; Independent · Every Friday</p>
+    <h1 class="home-hero__title" style="font-size:clamp(2rem,5vw,3.25rem)">You're<br><em>Subscribed</em></h1>
+    <p class="home-hero__desc" style="max-width:540px">
+      One more step — check your inbox for a confirmation email from Buttondown
+      and click the link inside. Your first issue lands the following Friday morning.
+    </p>
+  </div>
+  <div class="gold-rule"></div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <div class="sub-page">
+
+      <div class="sub-result sub-result--success" role="status" style="display:block">
+        <strong>Almost there.</strong> Confirmation emails usually arrive within a
+        minute. If nothing shows up, check your spam or promotions folder — and
+        add <a href="mailto:{{ site.email }}">{{ site.email }}</a> to your contacts
+        so future issues land in your inbox.
+      </div>
+
+      <div class="sub-section-head" style="margin-top:var(--sp-10)">
+        <h2 class="sub-section-title">While you wait</h2>
+      </div>
+
+      <p style="font-size:var(--text-md);line-height:1.7;color:var(--muted);margin-bottom:var(--sp-6)">
+        Every neighbourhood edition is free to read on the site — no subscription
+        needed. Here's this week's coverage.
+      </p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--sp-4);margin-bottom:var(--sp-10)">
+        {% for c in clusters %}{% if c.live %}
+        <a href="/{{ c.slug }}/"
+           style="display:block;background:var(--white);border:1px solid var(--rule);border-radius:var(--radius);padding:var(--sp-5);border-top:3px solid {{ c.accent }};text-decoration:none;color:inherit">
+          <h3 style="font-family:var(--font-head);font-size:1rem;font-weight:700;margin-bottom:4px;color:var(--navy)">{{ c.name }}</h3>
+          <p style="font-family:var(--font-ui);font-size:var(--text-xs);color:var(--muted);line-height:1.5">{{ c.neighborhoods | join(' · ') }}</p>
+        </a>
+        {% endif %}{% endfor %}
+      </div>
+
+      <p class="sub-note">
+        Changed your mind about which neighbourhoods?
+        <a href="/subscribe/" style="color:var(--accent);font-weight:700">Update your selection →</a>
+      </p>
+
+    </div>
+  </div>
+</main>

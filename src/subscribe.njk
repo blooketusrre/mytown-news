@@ -19,12 +19,21 @@ pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivere
 
 <main id="main">
   <div class="container">
-    <div class="sub-page">
+    {# One native form post carrying every selected tag. Buttondown accepts
+       repeated `tag` inputs in a single submission, so the whole picker works
+       without JavaScript — the previous version fired one no-cors fetch per
+       cluster, which Buttondown does not support and which silently failed. #}
+    <form class="sub-page embeddable-buttondown-form"
+          id="sub-form"
+          action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondownUser }}"
+          method="post">
+
+      <input type="hidden" name="embed" value="1">
 
       {# ── Email input ──────────────────────────────────────────────────── #}
       <div class="sub-email-wrap">
         <label class="sub-label" for="sub-email">Your email address</label>
-        <input class="sub-email" id="sub-email" type="email"
+        <input class="sub-email" id="sub-email" name="email" type="email"
                placeholder="you@example.com" required
                aria-required="true" autocomplete="email">
       </div>
@@ -43,7 +52,7 @@ pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivere
         {% for c in clusters %}{% if c.live %}
         <label class="sub-card" data-slug="{{ c.slug }}">
           <input class="sub-card__check" type="checkbox"
-                 name="cluster" value="{{ c.slug }}"
+                 name="tag" value="{{ c.slug }}"
                  aria-label="{{ c.name }}">
           <span class="sub-card__dot" style="background:{{ c.accent }}"></span>
           <span class="sub-card__body">
@@ -63,29 +72,34 @@ pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivere
 
       {# ── Submit ───────────────────────────────────────────────────────── #}
       <div class="sub-footer">
-        <button class="sub-submit" id="sub-submit" type="button" disabled>
+        <button class="sub-submit" id="sub-submit" type="submit" disabled>
           <span class="sub-submit__label">Subscribe to selected neighborhoods</span>
           <span class="sub-submit__spinner" aria-hidden="true"></span>
         </button>
         <p class="sub-note">No ads. No spam. Unsubscribe from any edition anytime.</p>
       </div>
 
-      {# ── Result message ───────────────────────────────────────────────── #}
-      <div class="sub-result" id="sub-result" role="status" aria-live="polite"></div>
+      {# Shown only if JS is off, where the button cannot be enabled #}
+      <noscript>
+        <p class="sub-note" style="margin-top:var(--sp-3)">
+          JavaScript is disabled, so the button above stays greyed out.
+          Subscribe from any single neighbourhood page instead.
+        </p>
+      </noscript>
 
-    </div>
+    </form>
   </div>
 </main>
 
 <script>
 (function () {
-  var BUTTONDOWN_SLUG = "backus";
+  var form        = document.getElementById("sub-form");
   var emailInput  = document.getElementById("sub-email");
   var submitBtn   = document.getElementById("sub-submit");
-  var resultEl    = document.getElementById("sub-result");
   var selectAll   = document.getElementById("select-all");
   var clearAll    = document.getElementById("clear-all");
   var checkboxes  = document.querySelectorAll(".sub-card__check");
+  if (!form) return;
 
   /* ── Checkbox / card interaction ──────────────────────────────────── */
   /* The <label> cards handle checkbox toggling natively — just sync the
@@ -122,59 +136,12 @@ pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivere
     submitBtn.disabled = !(validEmail && anySelected);
   }
 
-  /* ── Subscribe ─────────────────────────────────────────────────────── */
-  submitBtn.addEventListener("click", function () {
-    var email = emailInput.value.trim();
-    var selected = Array.prototype.filter.call(checkboxes, function (cb) { return cb.checked; })
-                        .map(function (cb) { return cb.value; });
-
-    if (!email || !selected.length) return;
-
-    setLoading(true);
-    resultEl.textContent = "";
-    resultEl.className   = "sub-result";
-
-    var url = "https://buttondown.com/api/emails/embed-subscribe/" + BUTTONDOWN_SLUG;
-    var calls = selected.map(function (slug) {
-      return fetch(url, {
-        method: "POST",
-        mode:   "no-cors",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body:   new URLSearchParams({ email: email, tag: slug }),
-      }).then(function () { return { slug: slug, ok: true }; })
-        .catch(function (err) { return { slug: slug, ok: false, err: err }; });
-    });
-
-    Promise.all(calls).then(function (results) {
-      setLoading(false);
-      var failed = results.filter(function (r) { return !r.ok; });
-      if (failed.length === 0) {
-        showSuccess(selected.length);
-      } else {
-        showError();
-      }
-    });
+  /* ── Submit ────────────────────────────────────────────────────────
+     No interception: the browser posts the form to Buttondown natively so
+     CAPTCHA and validation can complete. We only show the pending state. */
+  form.addEventListener("submit", function () {
+    submitBtn.classList.add("is-loading");
+    submitBtn.disabled = true;
   });
-
-  function setLoading(on) {
-    submitBtn.classList.toggle("is-loading", on);
-    submitBtn.disabled = on;
-  }
-
-  function showSuccess(count) {
-    var noun = count === 1 ? "neighborhood" : "neighborhoods";
-    resultEl.className = "sub-result sub-result--success";
-    resultEl.innerHTML =
-      "<strong>You're subscribed to " + count + " " + noun + "!</strong> " +
-      "Check your inbox for a confirmation email from Buttondown. " +
-      "You'll receive each edition every Friday morning.";
-  }
-
-  function showError() {
-    resultEl.className = "sub-result sub-result--error";
-    resultEl.innerHTML =
-      "Something went wrong — please try again or email " +
-      "<a href=\"mailto:{{ site.email }}\">{{ site.email }}</a>.";
-  }
 })();
 </script>
