@@ -1,0 +1,819 @@
+{
+  "clusterSlug": "soma-mission-bay",
+  "clusterName": "SoMa & Mission Bay",
+  "weekOf": "2026-08-14",
+  "topStories": [
+    {
+      "headline": "Potrero Hill Apartment Complex Sells for $132M in City's Priciest Multifamily Deal in Two Years",
+      "dek": "Stockbridge Capital Group's acquisition of Alta Potrero reflects surging demand from AI-industry workers priced close to Mission Bay.",
+      "body": "Stockbridge Capital Group has paid $132 million for the 172-unit Alta Potrero apartment complex at 1301 16th Street on Potrero Hill — the most expensive multifamily acquisition in San Francisco on a per-unit basis since 2024. The San Francisco-based investment firm paid just over $767,000 per unit for the studios-to-three-bedroom property, which includes 29 subsidized units and 6,700 square feet of ground-floor retail.\n\nThe deal was reported by The Real Deal and confirmed by Hoodline on August 13, 2026. The buyer is listed in public records as SCG 1301 16th Street LLC, a Delaware corporation tied to Stockbridge, with Mark Carlson, Stockbridge's managing director of transactions, named in the filing. Sausalito-based Wood Partners, which broke ground on the project in 2018 and completed it in 2020, was the seller.\n\nAnalysts say the sale is the clearest signal yet that institutional buyers will pay a steep premium for newly built rental housing steps from San Francisco's booming AI employers. OpenAI and Y Combinator have contributed to rising housing demand in Potrero Hill, with the neighborhood attracting high-paid employees seeking quieter housing close to Mission Bay offices. Compass data shows Potrero Hill homes have been selling at 42 percent over asking amid what some real estate observers have dubbed the 'Area AI' effect.\n\nThe transaction arrives amid a broader city debate over San Francisco's 6 percent transfer tax on real estate sales of $25 million or more. Mayor Daniel Lurie and Supervisor Bilal Mahmood introduced the BUILD Act earlier in 2026 to cut that tax in half, arguing it would encourage more institutional investment and accelerate housing production.",
+      "sourceUrl": "https://hoodline.com/2026/08/stockbridge-pays-132m-for-potrero-hill-flats-priciest-sf-deal-in-two-years/",
+      "sourceName": "Hoodline",
+      "tags": [
+        "real estate",
+        "Potrero Hill",
+        "housing",
+        "AI economy"
+      ]
+    },
+    {
+      "headline": "SoMa's Foundry Ditches Corporate Events for EDM and Phone-Free Dance Floors",
+      "dek": "New ownership is transforming the Folsom Street venue into a music-forward nightclub set to reopen August 22.",
+      "body": "A team of Bay Area nightlife veterans is taking over the Foundry at 1425 Folsom Street in SoMa and pivoting the 4,400-square-foot venue away from corporate retreats toward electronic dance music and community programming. Andrew Wasilewski, who co-founded the Faight Collective artist space in Lower Haight, signed the final paperwork July 31 with a group of music industry professionals and is now the incoming owner and general manager, according to the San Francisco Standard.\n\nThe Folsom Street Foundry stopped operations July 27 and is expected to reopen August 22. Wasilewski told the Chronicle that the new operators plan a mix of electronic music — from listening parties to full DJ nights — along with lectures, dating events, and falafel and kabobs. A cornerstone of the relaunch is a phone-free dance floor policy, with community guidelines emphasizing presence, consent, and respect.\n\nThe first announced lineup under new leadership includes Italian DJ Kybba on September 18, New York sibling duo Tinzo and Jojo for a two-night run October 24–25, and Florida-based producer Wonkywilla on October 30. On weeknights, the team plans to program listening parties and ambient music events where attendees bring their own records to play on the venue's sound system.\n\nThe pivot arrives as SoMa's nightlife scene navigates significant volatility; nearby drag club Oasis announced its closure at 11th and Folsom in July 2025. The Foundry building itself dates to 1936, constructed as an Art Deco brick warehouse in what is now Western SoMa's Light Industrial Historic District.",
+      "sourceUrl": "https://sfstandard.com/2026/08/11/sf-foundry-folsom-soma-music-venue/",
+      "sourceName": "San Francisco Standard",
+      "tags": [
+        "nightlife",
+        "SoMa",
+        "music",
+        "venue"
+      ]
+    },
+    {
+      "headline": "SF Planning Department Poised to Rule on Prologis's $8B Fourth & King Railyard Megaproject",
+      "dek": "The ambitious 20-acre mixed-use development at the Caltrain terminus would stitch together SoMa, Mission Bay, and Showplace Square with 2,500 homes and a towering transit hub.",
+      "body": "The San Francisco Planning Department is moving toward a decision on developer Prologis's application to remake the Caltrain railyard at Fourth and King Street into a dense, mixed-use district featuring roughly 2,500 residences, approximately four million square feet of commercial space, and an 850-foot mixed-use tower rising directly above a rebuilt Caltrain station. The Potrero View reported in June 2026 that a planning approval is imminent, following the city's April publication of a complete application notice that established a formal decision deadline.\n\nPrologis, best known for warehouse logistics real estate, submitted the application to the Planning Department in March 2026 in a joint venture with Caltrain. At full build-out — projected at 15 to 20 years — the project would encompass between 7 and 8 million square feet including the commercial and residential components. The redeveloped site would also include a promenade on Townsend Street, a public plaza on 5th Street, and a park on 6th Street.\n\nSupporters argue the project would physically reconnect the SoMa, Showplace Square, and Mission Bay neighborhoods, which the current railyard effectively divides. The site is also expected to serve as the city's gateway to the California High-Speed Rail network. Mayor Daniel Lurie said in a statement that the project 'will continue that momentum up into SoMa, leading with public space and transit access.'\n\nCaltrain spokesperson Dan Lieberman said the project does not propose changes to current Caltrain service, though temporary schedule adjustments could be necessary during construction. Environmental review of the proposal is underway.",
+      "sourceUrl": "https://www.potreroview.net/sf-railyards-poised-to-become-the-citys-next-big-development/",
+      "sourceName": "Potrero View",
+      "tags": [
+        "development",
+        "SoMa",
+        "Mission Bay",
+        "Caltrain",
+        "housing"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "SFMOMA: Reimagined — The Fisher Collection at 10",
+      "date": "Through December 2026",
+      "time": "Various times",
+      "location": "SFMOMA, 151 Third St, SoMa",
+      "description": "A complete reimagining of the Doris and Donald Fisher Collection across four floors, featuring nearly 250 works by 35 artists in a bold new presentation — the first full transformation of the Fisher Collection galleries since 2016.",
+      "sourceUrl": "https://www.sfmoma.org/press-release/sfmoma-announces-2026-exhibitions-including-transformed-fisher-collection-galleries-matisses-femme-au-chapeau-and-rm-x-sfmoma/",
+      "sourceName": "SFMOMA"
+    },
+    {
+      "title": "Yerba Buena Gardens Festival — Free Outdoor Performances",
+      "date": "Through November 2026",
+      "time": "Various times",
+      "location": "Yerba Buena Gardens, Mission St. between 3rd & 4th Sts., SoMa",
+      "description": "Now in its 26th year, the free festival presents music, dance, theater, poetry, circus, and children's programs several days a week through November, with Lunchtime Concerts every Thursday at 12:30 PM.",
+      "sourceUrl": "https://sf.funcheap.com/city-guide/yerba-buena-gardens-festival-guide/",
+      "sourceName": "SF Funcheap"
+    },
+    {
+      "title": "Minnesota Street Project: New Exhibitions",
+      "date": "Through October 3, 2026",
+      "time": "Various times",
+      "location": "1275 Minnesota St, Dogpatch",
+      "description": "Multiple galleries are open with rotating exhibitions, including the new Ruth Asawa Lanier, Inc. gallery — the first permanent public venue dedicated to the beloved San Francisco artist's wire sculptures and drawings.",
+      "sourceUrl": "https://minnesotastreetproject.com/exhibitions",
+      "sourceName": "Minnesota Street Project"
+    },
+    {
+      "title": "SOMA Nights — Monthly Block Party & Night Market",
+      "date": "Thursday, August 27",
+      "time": "5:00 PM",
+      "location": "Folsom St. between 6th & 12th Sts., SoMa",
+      "description": "The free monthly street party returns to the Folsom Corridor, spotlighting the neighborhood's creative spirit with local food, pop-up vendors, art, music, and unexpected performances, with more than 20 businesses participating.",
+      "sourceUrl": "https://sf.funcheap.com/event-series/soma-nights-sf/",
+      "sourceName": "SF Funcheap"
+    },
+    {
+      "title": "Folsom Street Fair 2026",
+      "date": "Sunday, September 27",
+      "time": "11:00 AM",
+      "location": "Folsom St. between 8th & 13th Sts., SoMa",
+      "description": "Now in its 43rd year, the world's largest leather and kink street fair takes over six blocks of SoMa from 11 AM to 6 PM, raising funds for Bay Area charities and drawing an estimated 400,000 attendees.",
+      "sourceUrl": "https://www.folsomstreet.org/folsom-street-fair-1",
+      "sourceName": "Folsom Street Events"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Potrero Hill's 'Area AI' Housing Boom Spreads to Dogpatch",
+      "body": "OpenAI's nearly one-million-square-foot campus in Mission Bay has turned San Francisco's southeastern neighborhoods into what real estate insiders call 'Area AI,' where Potrero Hill homes have been selling 42 percent over asking and condo prices are surging. Compass agent Jerry Rice Jr. told The Real Deal in July that the Dogpatch neighborhood — long characterized by warehouses — is the next beneficiary, with residential prices already creeping upward. The median condo price in the corridor rose 7.3 percent over the past year to $1.1 million, with total condo sales up 15.2 percent.",
+      "sourceUrl": "https://therealdeal.com/san-francisco/2026/07/18/inside-area-ai-san-franciscos-hottest-housing-market/",
+      "sourceName": "The Real Deal",
+      "tags": [
+        "real estate",
+        "AI economy",
+        "Dogpatch",
+        "Potrero Hill"
+      ]
+    },
+    {
+      "headline": "Yerba Buena Gardens Festival Still Going Strong at Midseason",
+      "body": "KALW reported this week that the Yerba Buena Gardens Festival — the only curated arts park in San Francisco fully dedicated to free cultural programming — is barely past its midpoint, with performances continuing through November. Located in the SoMa neighborhood between Mission and Howard Streets, the 26th-season festival offers poetry and dance workshops alongside an eclectic lineup of local and international musical acts several days a week, all free to attend.",
+      "sourceUrl": "https://www.kalw.org/kalw-music/2026-08-13/yerba-buena-festival-where-you-can-still-stumble-onto-music-poetry-and-magic",
+      "sourceName": "KALW",
+      "tags": [
+        "arts",
+        "SoMa",
+        "free events",
+        "music"
+      ]
+    },
+    {
+      "headline": "Dogpatch Arts Hub Minnesota Street Project Welcomes Ruth Asawa Gallery",
+      "body": "The Minnesota Street Project in Dogpatch opened a permanent gallery run by Ruth Asawa Lanier, Inc. this spring, giving San Franciscans a steady place to see the beloved artist's wire sculptures, drawings, and community projects. The 1,714-square-foot space — the first permanent venue providing regular public access to Asawa's looped-wire work — is now open at 1275 Minnesota Street. Multiple exhibitions run through October 3, 2026, with admission free to the public.",
+      "sourceUrl": "https://hoodline.com/2026/03/dogpatch-snags-permanent-ruth-asawa-gallery-as-minnesota-street-project-reinvents-itself/",
+      "sourceName": "Hoodline",
+      "tags": [
+        "arts",
+        "Dogpatch",
+        "gallery",
+        "Ruth Asawa"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Marlowe",
+        "cuisineGroup": "Seafood & American",
+        "type": "New American bistro",
+        "description": "Popular SoMa bistro known for its near-mythical Marlowe Burger, brussels sprout chips, and classic comfort food with flavorful twists, designed by Ken Fulk.",
+        "address": "500 Brannan St",
+        "phone": "415-777-1413",
+        "website": "https://www.marlowesf.com",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "SOMA Restaurant & Bar",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Mediterranean-Italian restaurant and bar",
+        "description": "Neighborhood gem at 5th Street serving authentic Mediterranean and Italian cuisine with fresh seasonal ingredients, open for lunch, dinner, and late-night cocktails.",
+        "address": "85 5th St",
+        "phone": "415-778-8500",
+        "website": "https://www.yelp.com/biz/soma-restaurant-and-bar-san-francisco",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Burma Love Downtown",
+        "cuisineGroup": "Asian",
+        "type": "Modern Burmese restaurant",
+        "description": "SoMa outpost of the acclaimed Burma Superstar group serving modern Burmese cuisine at Mint Plaza, rated 8/10 by The Infatuation.",
+        "address": "8 Mint Plaza",
+        "phone": "",
+        "website": "https://www.burmalove.com",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Piccino",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian trattoria",
+        "description": "Beloved Dogpatch trattoria serving fresh pasta, thin-crust pizza, and seasonal Northern California-sourced Italian cuisine in a cozy setting adjacent to Bar Piccino.",
+        "address": "1001 Minnesota St",
+        "phone": "415-824-4224",
+        "website": "https://piccino.com",
+        "neighborhood": "Dogpatch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Moshi Moshi",
+        "cuisineGroup": "Asian",
+        "type": "Japanese sushi and full-service restaurant",
+        "description": "A Dogpatch SF Legacy Business since 1987, serving creative Japanese cuisine with a full bar, an exceptional Japanese whisky collection, and off-street garden seating.",
+        "address": "2092 3rd St",
+        "phone": "415-861-8285",
+        "website": "https://www.facebook.com/MoshiMoshiSF/",
+        "neighborhood": "Dogpatch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Plow",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Brunch restaurant",
+        "description": "Legendary Potrero Hill brunch spot on the 18th Street Corridor, celebrated for its lemon ricotta pancakes, housemade sausage, and habitually long lines of devoted fans.",
+        "address": "1299 18th St",
+        "phone": "",
+        "website": "https://www.eatatplow.com",
+        "neighborhood": "Potrero Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chez Maman East",
+        "cuisineGroup": "Other",
+        "type": "French bistro",
+        "description": "Charming French bistro on Potrero Hill's 18th Street Corridor offering classic French café fare in a warm, neighborhood setting.",
+        "address": "1401 18th St",
+        "phone": "",
+        "website": "https://www.chezmamansf.com",
+        "neighborhood": "Potrero Hill",
+        "notable": ""
+      },
+      {
+        "name": "Mochica",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Peruvian restaurant",
+        "description": "Popular Peruvian restaurant on the Potrero Hill dining corridor, serving classic ceviche, lomo saltado, and pisco-based cocktails.",
+        "address": "1469 18th St",
+        "phone": "",
+        "website": "https://www.mochicasf.com",
+        "neighborhood": "Potrero Hill",
+        "notable": ""
+      },
+      {
+        "name": "Papito",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican restaurant",
+        "description": "Bright neighborhood Mexican restaurant on 18th Street in Potrero Hill, known for fresh tacos, burritos, and agave-forward cocktails.",
+        "address": "1457 18th St",
+        "phone": "",
+        "website": "https://www.papitosf.com",
+        "neighborhood": "Potrero Hill",
+        "notable": ""
+      },
+      {
+        "name": "Stem Kitchen and Garden",
+        "cuisineGroup": "Vegetarian & Vegan",
+        "type": "Farm-to-table lunch café",
+        "description": "Dogpatch farm-to-table restaurant that grows ingredients on-site, open weekdays only for lunch with a seasonally changing menu emphasizing hyper-local produce.",
+        "address": "499 Illinois St",
+        "phone": "",
+        "website": "https://www.stemkitchen.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Sunflower Vietnamese",
+        "cuisineGroup": "Asian",
+        "type": "Vietnamese restaurant",
+        "description": "Casual and beloved Vietnamese restaurant on Connecticut Street in Potrero Hill, serving pho, bánh mì, and traditional Vietnamese comfort food.",
+        "address": "288 Connecticut St",
+        "phone": "",
+        "website": "https://www.sunflowersf.com",
+        "neighborhood": "Potrero Hill",
+        "notable": ""
+      },
+      {
+        "name": "Californios",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Michelin-starred Mexican fine dining",
+        "description": "Two-Michelin-starred restaurant by chef Val M. Cantu offering an innovative tasting menu rooted in Mexican culinary tradition and Northern California ingredients.",
+        "address": "355 11th St",
+        "phone": "",
+        "website": "https://www.californiossf.com",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Miller & Lux",
+        "cuisineGroup": "Seafood & American",
+        "type": "Modern American steakhouse",
+        "description": "Tyler Florence's refined modern American steakhouse at the Chase Center, offering an upscale dining experience steps from Golden State Warriors games.",
+        "address": "1 Warriors Way (Chase Center)",
+        "phone": "",
+        "website": "https://www.millerandlux.com",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "Long Bridge Pizza",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Neighborhood pizzeria",
+        "description": "Family-owned and operated Dogpatch pizzeria delivering consistently delicious pies with a friendly, neighborhood atmosphere and delivery and takeout options.",
+        "address": "3110 24th St",
+        "phone": "",
+        "website": "https://www.longbridgepizza.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Tropisueno",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican cantina",
+        "description": "Lively SoMa Mexican cantina with both indoor and outdoor seating, popular for its margaritas, fish tacos, and spirited pre-game crowds near Oracle Park.",
+        "address": "75 Yerba Buena Ln",
+        "phone": "415-243-0300",
+        "website": "https://www.tropisueno.com",
+        "neighborhood": "South of Market",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "LUMA Hotel San Francisco",
+        "type": "Design hotel",
+        "description": "Mission Bay's first hotel features 299 contemporary rooms, large-scale local art installations, robot delivery service, and the Cavaña rooftop lounge serving Latin-inspired cocktails and small plates with bay views.",
+        "address": "100 Channel St",
+        "phone": "415-266-9999",
+        "website": "https://www.lumahotels.com/san-francisco/",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "InterContinental San Francisco by IHG",
+        "type": "Luxury hotel",
+        "description": "32-story glass tower in the heart of SoMa offering panoramic Bay Area views, a Michelin star-rated on-site restaurant (Bistro 888), a full-service spa, and proximity to Moscone Center and SFMOMA.",
+        "address": "888 Howard St",
+        "phone": "415-616-6500",
+        "website": "https://www.ihg.com/intercontinental/hotels/us/en/san-francisco/sfohb/hoteldetail",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Francisco Marriott Marquis",
+        "type": "Convention hotel",
+        "description": "Iconic 39-floor, 1,362-room SoMa convention hotel adjacent to Moscone Center, home to The View Lounge on the 39th floor with panoramic city and Bay vistas.",
+        "address": "55 Fourth St",
+        "phone": "415-896-1600",
+        "website": "https://www.marriott.com/en-us/hotels/sfodt-san-francisco-marriott-marquis/overview/",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hotel Zelos",
+        "type": "Boutique hotel",
+        "description": "High-style boutique hotel occupying the top floors of the Pacific Building in SoMa, featuring modern art, sleek 1930s-inspired furnishings, and the Dirty Habit restaurant and outdoor patio.",
+        "address": "12 4th St",
+        "phone": "415-348-1111",
+        "website": "https://www.hotelzelos.com",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Hyatt Regency San Francisco Downtown SOMA",
+        "type": "Full-service hotel",
+        "description": "Contemporary full-service hotel in the heart of SoMa with well-appointed rooms, multiple dining options, and easy access to Moscone Center and the Caltrain station.",
+        "address": "1 Convention Plaza",
+        "phone": "415-896-1234",
+        "website": "https://www.hyatt.com/en-US/hotel/california/hyatt-regency-san-francisco-downtown-soma/sfors",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Canopy by Hilton San Francisco SoMa",
+        "type": "Lifestyle hotel",
+        "description": "Modern lifestyle hotel in SoMa offering neighborhood-inspired design, locally sourced food and drink, and a curated connection to the surrounding arts and technology community.",
+        "address": "250 Howard St",
+        "phone": "415-856-4100",
+        "website": "https://www.hilton.com/en/hotels/sfocapy-canopy-san-francisco-soma/",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "W San Francisco",
+        "type": "Luxury lifestyle hotel",
+        "description": "Bold, design-forward luxury hotel in SoMa steps from SFMOMA, featuring stylish rooms, a vibrant lobby bar, and a city-facing fitness center.",
+        "address": "181 3rd St",
+        "phone": "415-777-5300",
+        "website": "https://www.marriott.com/en-us/hotels/sfowh-w-san-francisco/overview/",
+        "neighborhood": "South of Market",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Minnesota Street Project Foundation",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Nonprofit arts organization and exhibition space",
+        "description": "Dogpatch arts campus spanning three historic warehouses with free-admission galleries, artist studios, and a nonprofit dedicated to sustaining San Francisco's contemporary art community.",
+        "address": "1275 Minnesota St",
+        "phone": "",
+        "website": "https://minnesotastreetproject.com",
+        "neighborhood": "Dogpatch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Britex Fabrics",
+        "shopGroup": "Home & Gifts",
+        "type": "Fabric and sewing supply store",
+        "description": "San Francisco institution offering four floors of fabrics, trims, notions, and sewing supplies, beloved by designers, costumers, and home sewists throughout the Bay Area.",
+        "address": "146 Geary St",
+        "phone": "415-392-2910",
+        "website": "https://www.britexfabrics.com",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Dandelion Chocolate",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Bean-to-bar chocolate factory and café",
+        "description": "Mission Bay-adjacent craft chocolate factory and café sourcing single-origin cacao, offering factory tours, tastings, and a full café menu alongside bars and bonbons.",
+        "address": "740 Valencia St",
+        "phone": "415-349-0942",
+        "website": "https://www.dandelionchocolate.com",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "RH San Francisco — The Gallery at the Historic Bethlehem Steel Building",
+        "shopGroup": "Home & Gifts",
+        "type": "Luxury home furnishings gallery",
+        "description": "Stunning RH flagship occupying the landmarked Bethlehem Steel Building in Dogpatch, featuring three floors of curated furniture, design galleries, and the Palm Court restaurant.",
+        "address": "1 Arkansas St",
+        "phone": "415-558-5900",
+        "website": "https://rh.com/content/page.jsp?id=page-locations-sanfrancisco",
+        "neighborhood": "Dogpatch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Fog City News",
+        "shopGroup": "Books & Literature",
+        "type": "Newsstand and specialty magazine shop",
+        "description": "SoMa staple stocking an extraordinary selection of international newspapers, literary magazines, and specialty periodicals alongside a curated range of confections.",
+        "address": "455 Market St",
+        "phone": "415-543-7400",
+        "website": "https://www.fogcitynews.com",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Heath Ceramics",
+        "shopGroup": "Home & Gifts",
+        "type": "Ceramics factory store",
+        "description": "Dogpatch flagship and working factory for the iconic California ceramics brand, offering the full Heath collection, factory seconds, and tours of the production facility.",
+        "address": "2900 18th St",
+        "phone": "415-361-5552",
+        "website": "https://www.heathceramics.com",
+        "neighborhood": "Dogpatch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Rickshaw Bagworks",
+        "shopGroup": "Other",
+        "type": "Custom bag and accessories manufacturer",
+        "description": "Dogpatch maker of sustainably produced, American-made bags and accessories, offering a factory showroom where visitors can customize their own from over 100 fabric swatches.",
+        "address": "2315 3rd St",
+        "phone": "415-904-3944",
+        "website": "https://www.rickshawbags.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "General Store",
+        "shopGroup": "Home & Gifts",
+        "type": "Curated lifestyle and home goods shop",
+        "description": "Thoughtfully curated shop carrying housewares, clothing, plants, and gifts from independent makers, with a carefully edited selection reflecting a California-coastal sensibility.",
+        "address": "4035 Judah St",
+        "phone": "415-682-0600",
+        "website": "https://www.visitgeneralstore.com",
+        "neighborhood": "Potrero Hill",
+        "notable": ""
+      },
+      {
+        "name": "Creativity Explored",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Gallery and studio space supporting artists with developmental disabilities",
+        "description": "Nonprofit art center and gallery in the SoMa arts corridor where artists with developmental disabilities create and sell original work, with rotating gallery exhibitions open to the public.",
+        "address": "3245 16th St",
+        "phone": "415-863-2108",
+        "website": "https://www.creativityexplored.org",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Yield Wine Bar",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Wine bar and bottle shop",
+        "description": "Dogpatch neighborhood wine bar and retail shop led by Master Sommelier Rebecca Fineman, offering a well-curated selection of local and international bottles and knowledgeable staff.",
+        "address": "2490 3rd St",
+        "phone": "415-401-8984",
+        "website": "https://www.yieldwinebar.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "San Francisco Museum of Modern Art (SFMOMA)",
+        "venueGroup": "Museums & Cultural",
+        "type": "Contemporary and modern art museum",
+        "description": "One of the largest modern art museums in the United States, currently featuring the reimagined Doris and Donald Fisher Collection across four floors alongside exhibitions by Graciela Iturbide and Matisse.",
+        "address": "151 Third St",
+        "phone": "415-357-4000",
+        "website": "https://www.sfmoma.org",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Minnesota Street Project",
+        "venueGroup": "Art Galleries",
+        "type": "Multi-gallery contemporary arts campus",
+        "description": "Dogpatch complex spanning three historic warehouses and housing multiple free-admission galleries, artist studios, and the new permanent Ruth Asawa Lanier, Inc. gallery.",
+        "address": "1275 Minnesota St",
+        "phone": "",
+        "website": "https://minnesotastreetproject.com",
+        "neighborhood": "Dogpatch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Institute of Contemporary Art San Francisco (ICA SF)",
+        "venueGroup": "Museums & Cultural",
+        "type": "Contemporary art museum",
+        "description": "Free 11,000-square-foot museum in Dogpatch with no permanent collection, offering constantly rotating contemporary art exhibitions and programming.",
+        "address": "901 Minnesota St",
+        "phone": "415-226-9250",
+        "website": "https://www.icasf.org",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Yerba Buena Center for the Arts (YBCA)",
+        "venueGroup": "Museums & Cultural",
+        "type": "Multidisciplinary arts center",
+        "description": "SoMa's major multidisciplinary arts hub presenting visual art, performance, film, and community engagement programs adjacent to Yerba Buena Gardens.",
+        "address": "701 Mission St",
+        "phone": "415-978-2700",
+        "website": "https://ybca.org",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Midway",
+        "venueGroup": "Music Venues",
+        "type": "Large-format event and performance venue",
+        "description": "Dogpatch's premier large-format venue hosting corporate events, concerts, art installations, and experiential brand activations in a dynamic industrial space.",
+        "address": "900 Marin St",
+        "phone": "",
+        "website": "https://themidwaysf.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "The Foundry SF",
+        "venueGroup": "Music Venues",
+        "type": "Music venue and nightclub",
+        "description": "Historic 1936 Art Deco brick warehouse in SoMa relaunching August 22 under new ownership as an EDM-focused nightclub with a phone-free dance floor and community-centered programming.",
+        "address": "1425 Folsom St",
+        "phone": "415-795-3644",
+        "website": "https://www.thefoundrysf.com",
+        "neighborhood": "South of Market",
+        "notable": "New"
+      },
+      {
+        "name": "Oracle Park",
+        "venueGroup": "Music Venues",
+        "type": "Major league baseball park and event venue",
+        "description": "Home of the San Francisco Giants, Oracle Park also hosts major concerts and events along Mission Bay's waterfront with iconic bay views.",
+        "address": "24 Willie Mays Plaza",
+        "phone": "415-972-2000",
+        "website": "https://www.mlb.com/giants/ballpark",
+        "neighborhood": "Mission Bay",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chase Center",
+        "venueGroup": "Music Venues",
+        "type": "Arena and entertainment venue",
+        "description": "State-of-the-art 18,000-seat arena in Mission Bay, home of the Golden State Warriors and a top-tier concert and entertainment destination.",
+        "address": "1 Warriors Way",
+        "phone": "888-479-4667",
+        "website": "https://www.chasecenter.com",
+        "neighborhood": "Mission Bay",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Gray Area",
+        "venueGroup": "Music Venues",
+        "type": "Art and technology cultural center",
+        "description": "SoMa nonprofit cultural incubator presenting immersive digital art, live performances, and community programming at the intersection of art and technology.",
+        "address": "2665 Mission St",
+        "phone": "",
+        "website": "https://grayarea.org",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Creativity Explored Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Nonprofit gallery",
+        "description": "Gallery space at Creativity Explored presenting rotating exhibitions of original artwork by artists with developmental disabilities, open to the public.",
+        "address": "3245 16th St",
+        "phone": "415-863-2108",
+        "website": "https://www.creativityexplored.org",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Fitness SF — SoMa",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "Large, well-equipped full-service gym in SoMa open from 5 AM to midnight on weekdays, offering cardio, weights, hot yoga classes, and a positive community atmosphere.",
+        "address": "1001 Brannan St",
+        "phone": "415-348-6377",
+        "website": "https://www.fitnesssf.com",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Ritual Hot Yoga — SoMa",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Hot yoga studio",
+        "description": "All-inclusive, candlelit infrared-heated yoga studio offering 50-minute flows with hands-on assists, curated music, and full amenities including mats, towels, and showers.",
+        "address": "1122 Howard St",
+        "phone": "415-619-8282",
+        "website": "https://ritualhotyoga.com/soma/",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Dogpatch Boulders",
+        "venueGroup": "Sports & Courts",
+        "type": "Indoor bouldering gym",
+        "description": "Touchstone Climbing family gym in Dogpatch offering bouldering, strength training, barbell lifting clinics, and reciprocal membership access to 11 California climbing gyms.",
+        "address": "2573 3rd St",
+        "phone": "415-800-8121",
+        "website": "https://touchstoneclimbing.com/dogpatch-boulders/",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Mission Bay Parks & Waterfront",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Waterfront park network",
+        "description": "A network of landscaped parks, open lawns, and waterfront promenades in Mission Bay ideal for running, cycling, dog walking, and picnicking along Mission Creek and the bay.",
+        "address": "Mission Bay, SF 94158",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "Crane Cove Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Waterfront park",
+        "description": "Dogpatch's newest waterfront park featuring a sandy beach, historic crane structures, playgrounds, lawn space, and direct access to the bay for kayaking and swimming.",
+        "address": "Illinois St & 19th St",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/crane-cove-park/",
+        "neighborhood": "Dogpatch",
+        "notable": "New"
+      },
+      {
+        "name": "Potrero Hill Recreation Center",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Community recreation center and park",
+        "description": "Hilltop recreation center with tennis courts, a swimming pool, gymnasium, and panoramic views of the city skyline, serving the Potrero Hill and Dogpatch communities.",
+        "address": "801 Arkansas St",
+        "phone": "415-695-5009",
+        "website": "https://sfrecpark.org/destination/potrero-hill-recreation-center/",
+        "neighborhood": "Potrero Hill",
+        "notable": ""
+      },
+      {
+        "name": "CorePower Yoga — SoMa/Fremont",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "National yoga studio chain with a SoMa location offering heated vinyasa, sculpt, and restorative classes for all levels with a robust daily class schedule.",
+        "address": "1 Fremont St",
+        "phone": "",
+        "website": "https://www.corepoweryoga.com",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Showplace Square Greenway",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban greenway and walking trail",
+        "description": "Landscaped linear park and pedestrian greenway connecting SoMa and Potrero Hill neighborhoods, popular with joggers, cyclists, and dog walkers.",
+        "address": "Showplace Square, SF 94107",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "South of Market",
+        "notable": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Stockbridge Pays $132M for Potrero Hill Flats, Priciest SF Deal in Two Years",
+      "url": "https://hoodline.com/2026/08/stockbridge-pays-132m-for-potrero-hill-flats-priciest-sf-deal-in-two-years/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "Stockbridge buys Potrero Hill apartments for $132M in SF's priciest multifamily bet in two years",
+      "url": "https://therealdeal.com/san-francisco/2026/08/11/stockbridge-pays-767000-per-unit-for-sf-luxury-multifamily/",
+      "publication": "The Real Deal"
+    },
+    {
+      "title": "As SoMa's The Foundry rebrands, it will also raise the BPM",
+      "url": "https://sfstandard.com/2026/08/11/sf-foundry-folsom-soma-music-venue/",
+      "publication": "San Francisco Standard"
+    },
+    {
+      "title": "SoMa's Foundry Ditches Corporate Rentals, Bets on EDM and Phone-Free Dance Floors",
+      "url": "https://hoodline.com/2026/08/soma-s-foundry-ditches-corporate-rentals-bets-on-edm-and-phone-free-dance-floors/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "The Foundry In SF's SoMa Changes Leadership, Aims to Host More EDM, Community Events",
+      "url": "https://sfist.com/2026/08/11/the-foundry-sf-in-soma-changes-leadership-aims-to-host-more-edm-community-events/",
+      "publication": "SFist"
+    },
+    {
+      "title": "SF Railyards Poised to Become the City's Next Big Development",
+      "url": "https://www.potreroview.net/sf-railyards-poised-to-become-the-citys-next-big-development/",
+      "publication": "Potrero View"
+    },
+    {
+      "title": "Prologis submits plans for Caltrain Railyard project in SF",
+      "url": "https://sfstandard.com/2026/03/10/prologis-san-francisco-railyards-caltrain-development/",
+      "publication": "San Francisco Standard"
+    },
+    {
+      "title": "Inside 'Area AI,' San Francisco's Hottest Housing Market",
+      "url": "https://therealdeal.com/san-francisco/2026/07/18/inside-area-ai-san-franciscos-hottest-housing-market/",
+      "publication": "The Real Deal"
+    },
+    {
+      "title": "What's on now at San Francisco museums, August 2026",
+      "url": "https://missionlocal.org/2026/08/whats-on-now-at-san-francisco-museums-august-2026/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "SFMOMA Announces 2026 Exhibitions",
+      "url": "https://www.sfmoma.org/press-release/sfmoma-announces-2026-exhibitions-including-transformed-fisher-collection-galleries-matisses-femme-au-chapeau-and-rm-x-sfmoma/",
+      "publication": "SFMOMA"
+    },
+    {
+      "title": "Yerba Buena Gardens Festival 2026",
+      "url": "https://sf.funcheap.com/city-guide/yerba-buena-gardens-festival-guide/",
+      "publication": "SF Funcheap"
+    },
+    {
+      "title": "Yerba Buena Festival: Where you can still stumble onto music, poetry, and magic",
+      "url": "https://www.kalw.org/kalw-music/2026-08-13/yerba-buena-festival-where-you-can-still-stumble-onto-music-poetry-and-magic",
+      "publication": "KALW"
+    },
+    {
+      "title": "SOMA Nights 2026: Neighborhood Block Party + Night Market",
+      "url": "https://sf.funcheap.com/event-series/soma-nights-sf/",
+      "publication": "SF Funcheap"
+    },
+    {
+      "title": "Folsom Street Fair 2026",
+      "url": "https://www.folsomstreet.org/folsom-street-fair-1",
+      "publication": "Folsom Street Events"
+    },
+    {
+      "title": "Dogpatch Snags Permanent Ruth Asawa Gallery as Minnesota Street Project Reinvents Itself",
+      "url": "https://hoodline.com/2026/03/dogpatch-snags-permanent-ruth-asawa-gallery-as-minnesota-street-project-reinvents-itself/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "Minnesota Street Project Exhibitions",
+      "url": "https://minnesotastreetproject.com/exhibitions",
+      "publication": "Minnesota Street Project"
+    },
+    {
+      "title": "Best Restaurants in Potrero Hill SF: The 18th Street Guide",
+      "url": "https://realestatenovo.com/blog/11-best-restaurants-in-potrero-hill-san-francisco",
+      "publication": "Novo Real Estate"
+    },
+    {
+      "title": "LUMA Hotel San Francisco Opens in Mission Bay",
+      "url": "https://www.hospitalitynet.org/announcement/41008223.html",
+      "publication": "Hospitality Net"
+    },
+    {
+      "title": "InterContinental San Francisco by IHG — Hotel Detail",
+      "url": "https://www.ihg.com/intercontinental/hotels/us/en/san-francisco/sfohb/hoteldetail",
+      "publication": "IHG"
+    },
+    {
+      "title": "San Francisco Marriott Marquis — Official Site",
+      "url": "https://www.marriott.com/en-us/hotels/sfodt-san-francisco-marriott-marquis/overview/",
+      "publication": "Marriott International"
+    },
+    {
+      "title": "Dogpatch Boulders — Yelp, Updated August 2026",
+      "url": "https://www.yelp.com/biz/dogpatch-boulders-san-francisco",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Ritual Hot Yoga — SoMa, Updated May 2026",
+      "url": "https://ritualhotyoga.com/soma/",
+      "publication": "Ritual Hot Yoga"
+    },
+    {
+      "title": "Piccino Restaurant — Yelp, Updated July 2026",
+      "url": "https://www.yelp.com/biz/piccino-restaurant-san-francisco-2",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Moshi Moshi — Yelp, Updated July 2026",
+      "url": "https://www.yelp.com/biz/moshi-moshi-san-francisco",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Marlowe Restaurant — Yelp, Updated July 2026",
+      "url": "https://www.yelp.com/biz/marlowe-san-francisco-2",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Fitness SF SoMa — Yelp, Updated August 2026",
+      "url": "https://m.yelp.com/biz/fitness-sf-soma-san-francisco-2",
+      "publication": "Yelp"
+    }
+  ]
+}
