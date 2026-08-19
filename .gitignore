@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Build output
+_site/
+
+# Local env / secrets — never commit tokens or API keys
+.env
+.env.*
+*.token
+gh-token.txt
+
+# OS cruft
+.DS_Store
+Thumbs.db
