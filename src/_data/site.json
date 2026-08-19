@@ -5,5 +5,6 @@
   "email": "hello@mytown.news",
   "city": "San Francisco, CA",
   "description": "Hyperlocal weekly news for every San Francisco neighborhood. Free, independent, community-focused.",
-  "currentYear": 2026
+  "currentYear": 2026,
+  "buttondownUser": "backus"
 }
