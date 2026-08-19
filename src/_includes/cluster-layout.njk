@@ -86,7 +86,8 @@ layout: base.njk
       <li><a href="#sources">Sources</a></li>
     </ul>
     <div class="site-nav__right">
-      <a class="site-nav__home" href="/">All San Francisco neighborhoods</a>
+      <a class="site-nav__home" href="/"
+         aria-label="All San Francisco neighborhoods">&larr; All neighborhoods</a>
       <a class="site-nav__subscribe-btn" href="/subscribe/">Subscribe</a>
       <span class="site-nav__meta">{% if issue %}{{ issue.weekOf | date_short }}{% endif %}</span>
     </div>
