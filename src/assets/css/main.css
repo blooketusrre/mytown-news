@@ -19,8 +19,12 @@
   --bg-light:  #f0ede6;
   --bg-dark:   #111827;
 
-  /* Cluster accent — overridden per-cluster via data attribute */
-  --accent:    var(--gold);
+  /* Cluster accent — overridden per-cluster via data attribute.
+     Defaults are the gold brand hue; see the [data-cluster] block below. */
+  --accent:         var(--gold);
+  --accent-on-dark: var(--gold);   /* legible on the navy events band */
+  --accent-btn:     var(--gold);   /* solid button background          */
+  --accent-ink:     var(--navy);   /* text colour on --accent-btn      */
 
   /* Typography */
   --font-head: 'Playfair Display', Georgia, 'Times New Roman', serif;
@@ -63,19 +67,55 @@
   --ease: 0.18s ease;
 }
 
-/* ── Cluster accent overrides ──────────────────────────────────────── */
-[data-cluster="north-waterfront"]      { --accent: #c8943a; }
-[data-cluster="marina-pacific-heights"]{ --accent: #2a9d8f; }
-[data-cluster="presidio-richmond"]     { --accent: #2d6a4f; }
-[data-cluster="russian-hill-nob-hill"] { --accent: #8b2635; }
-[data-cluster="downtown-embarcadero"]  { --accent: #1e4a8a; }
-[data-cluster="civic-center-hayes-valley"] { --accent: #6b3fa0; }
-[data-cluster="soma-mission-bay"]      { --accent: #c05928; }
-[data-cluster="haight-cole-valley"]    { --accent: #b8860b; }
-[data-cluster="castro-noe-valley"]     { --accent: #b5334a; }
-[data-cluster="mission-bernal-heights"]{ --accent: #c4442a; }
-[data-cluster="the-sunset"]            { --accent: #3d6b8f; }
-[data-cluster="bayview-excelsior"]     { --accent: #6b8c3a; }
+/* ── Cluster accent overrides ────────────────────────────────────────
+   Each cluster carries three accent tokens, not one, because a single hue
+   cannot stay legible on both a white card and the navy events band:
+
+     --accent          the brand hue. Use on white/cream backgrounds only.
+     --accent-on-dark  lightened until it clears 4.5:1 against --navy.
+                       Use for any text or icon sitting on a dark panel.
+     --accent-btn      background for solid buttons, darkened where needed.
+     --accent-ink      the one text colour that is legible on --accent-btn.
+
+   Ratios were computed against #1a2744 (navy) and #ffffff; all pass WCAG AA.
+   If you add a cluster, run the contrast check before shipping — 10 of the
+   original 12 failed on the events band. */
+[data-cluster="north-waterfront"] {
+  --accent: #c8943a; --accent-on-dark: #c8943a; --accent-btn: #c8943a; --accent-ink: #1a2744;
+}
+[data-cluster="marina-pacific-heights"] {
+  --accent: #2a9d8f; --accent-on-dark: #2da99a; --accent-btn: #228175; --accent-ink: #ffffff;
+}
+[data-cluster="presidio-richmond"] {
+  --accent: #2d6a4f; --accent-on-dark: #48aa7f; --accent-btn: #2d6a4f; --accent-ink: #ffffff;
+}
+[data-cluster="russian-hill-nob-hill"] {
+  --accent: #8b2635; --accent-on-dark: #db7a88; --accent-btn: #8b2635; --accent-ink: #ffffff;
+}
+[data-cluster="downtown-embarcadero"] {
+  --accent: #1e4a8a; --accent-on-dark: #6898de; --accent-btn: #1e4a8a; --accent-ink: #ffffff;
+}
+[data-cluster="civic-center-hayes-valley"] {
+  --accent: #6b3fa0; --accent-on-dark: #a989d0; --accent-btn: #6b3fa0; --accent-ink: #ffffff;
+}
+[data-cluster="soma-mission-bay"] {
+  --accent: #c05928; --accent-on-dark: #db8054; --accent-btn: #bc5727; --accent-ink: #ffffff;
+}
+[data-cluster="haight-cole-valley"] {
+  --accent: #b8860b; --accent-on-dark: #c28d0c; --accent-btn: #b8860b; --accent-ink: #1a2744;
+}
+[data-cluster="castro-noe-valley"] {
+  --accent: #b5334a; --accent-on-dark: #d97a8b; --accent-btn: #b5334a; --accent-ink: #ffffff;
+}
+[data-cluster="mission-bernal-heights"] {
+  --accent: #c4442a; --accent-on-dark: #de7b66; --accent-btn: #c4442a; --accent-ink: #ffffff;
+}
+[data-cluster="the-sunset"] {
+  --accent: #3d6b8f; --accent-on-dark: #6c9cc0; --accent-btn: #3d6b8f; --accent-ink: #ffffff;
+}
+[data-cluster="bayview-excelsior"] {
+  --accent: #6b8c3a; --accent-on-dark: #7ea544; --accent-btn: #607e34; --accent-ink: #ffffff;
+}
 
 /* ── Reset & Base ──────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -200,7 +240,7 @@ ul, ol { list-style: none; }
   font-weight: 600;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-on-dark);
   margin-bottom: var(--sp-1);
 }
 
@@ -213,7 +253,7 @@ ul, ol { list-style: none; }
 }
 
 .masthead__title em {
-  color: var(--accent);
+  color: var(--accent-on-dark);
   font-style: normal;
 }
 
@@ -228,14 +268,14 @@ ul, ol { list-style: none; }
 .masthead__ornament-rule {
   height: 1px;
   width: 44px;
-  background: var(--accent);
+  background: var(--accent-on-dark);
   opacity: 0.6;
 }
 
 .masthead__ornament-diamond {
   width: 6px;
   height: 6px;
-  background: var(--accent);
+  background: var(--accent-on-dark);
   transform: rotate(45deg);
 }
 
@@ -261,7 +301,7 @@ ul, ol { list-style: none; }
   letter-spacing: 0.03em;
 }
 .masthead__bar-date strong {
-  color: var(--accent);
+  color: var(--accent-on-dark);
   font-weight: 800;
   font-size: 1rem;
 }
@@ -280,7 +320,7 @@ ul, ol { list-style: none; }
 }
 
 .masthead__bar-url {
-  color: var(--accent);
+  color: var(--accent-on-dark);
   font-weight: 600;
   text-decoration: none;
 }
@@ -308,9 +348,16 @@ ul, ol { list-style: none; }
   gap: var(--sp-4);
 }
 
-/* Display-serif label naming the sections that follow */
+/* Display-serif label naming the sections that follow.
+   Allowed to shrink and ellipsise: "Civic Center & Hayes Valley" is nearly
+   twice the width of "The Sunset" and was pushing the section tabs into the
+   right-hand group. */
 .site-nav__label {
-  flex-shrink: 0;
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 15em;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-family: var(--font-head);
   font-size: 1.0625rem;
   font-weight: 700;
@@ -322,11 +369,17 @@ ul, ol { list-style: none; }
   white-space: nowrap;
 }
 
+/* Tabs scroll rather than overlap when space runs out. */
 .site-nav__links {
   display: flex;
   flex: 1 1 auto;
   min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
 }
+
+.site-nav__links::-webkit-scrollbar { display: none; }
 
 .site-nav__links a {
   display: block;
@@ -403,17 +456,18 @@ ul, ol { list-style: none; }
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--navy);
-  background: var(--accent);
+  /* Ink is paired to the button background per cluster — navy text on the
+     dark purple or navy-blue accents was effectively invisible. */
+  color: var(--accent-ink);
+  background: var(--accent-btn);
   border-radius: 4px;
   padding: 4px 10px;
   line-height: 1.4;
   text-decoration: none;
-  transition: background 0.15s, color 0.15s;
+  transition: filter 0.15s;
 }
 .site-nav__subscribe-btn:hover {
-  background: #e6a800;
-  color: var(--navy);
+  filter: brightness(1.12);
 }
 
 /* ── Section Heading ───────────────────────────────────────────────── */
@@ -690,7 +744,7 @@ ul, ol { list-style: none; }
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #f0b84a;
+  color: var(--accent-on-dark);
   margin-bottom: var(--sp-2);
 }
 
@@ -698,7 +752,7 @@ ul, ol { list-style: none; }
   display: inline-block;
   background: rgba(200,148,58,0.18);
   border: 1px solid rgba(200,148,58,0.4);
-  color: var(--accent);
+  color: var(--accent-on-dark);
   font-family: var(--font-ui);
   font-size: 0.625rem;
   font-weight: 700;
@@ -749,7 +803,7 @@ ul, ol { list-style: none; }
   width: 13px;
   height: 13px;
   margin-top: 1px;
-  color: var(--accent);
+  color: var(--accent-on-dark);
   flex-shrink: 0;
 }
 
@@ -780,7 +834,7 @@ ul, ol { list-style: none; }
   transition: color var(--ease);
 }
 
-.event-card__source:hover { color: var(--accent); }
+.event-card__source:hover { color: var(--accent-on-dark); }
 
 /* ── More News Grid ────────────────────────────────────────────────── */
 .more-news-grid {
@@ -1113,7 +1167,7 @@ ul, ol { list-style: none; }
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-on-dark);
   margin-bottom: var(--sp-3);
 }
 
@@ -1153,12 +1207,12 @@ ul, ol { list-style: none; }
 }
 
 .newsletter__input::placeholder { color: rgba(255,255,255,0.35); }
-.newsletter__input:focus { border-color: var(--accent); }
+.newsletter__input:focus { border-color: var(--accent-on-dark); }
 
 .newsletter__btn {
   padding: 11px var(--sp-5);
-  background: var(--accent);
-  color: var(--white);
+  background: var(--accent-btn);
+  color: var(--accent-ink);
   border: none;
   border-radius: var(--radius);
   font-family: var(--font-ui);
@@ -1171,7 +1225,7 @@ ul, ol { list-style: none; }
   transition: background var(--ease), transform var(--ease);
 }
 
-.newsletter__btn:hover { background: #d4a54a; transform: translateY(-1px); }
+.newsletter__btn:hover { filter: brightness(1.12); transform: translateY(-1px); }
 
 .newsletter__note {
   margin-top: var(--sp-3);
@@ -1204,7 +1258,7 @@ ul, ol { list-style: none; }
 }
 
 .site-footer__brand em {
-  color: var(--accent);
+  color: var(--accent-on-dark);
   font-style: normal;
 }
 
@@ -1230,7 +1284,7 @@ ul, ol { list-style: none; }
   transition: color var(--ease);
 }
 
-.site-footer__links a:hover { color: var(--accent); }
+.site-footer__links a:hover { color: var(--accent-on-dark); }
 
 .site-footer__copy {
   font-family: var(--font-ui);
@@ -1263,7 +1317,7 @@ ul, ol { list-style: none; }
   transition: color var(--ease);
 }
 
-.site-footer__cluster-links a:hover { color: var(--accent); }
+.site-footer__cluster-links a:hover { color: var(--accent-on-dark); }
 
 .footer-divider {
   border: none;
@@ -1799,6 +1853,34 @@ hr.divider {
   .cluster-map-wrap { grid-template-columns: 1fr; }
 }
 
+/* Nav crowding — shed the least useful items first, before anything overlaps.
+   The date is the first to go: the masthead bar right above it already says
+   "Week of ...", so it is pure duplication. */
+@media (max-width: 1100px) {
+  .site-nav__meta { display: none; }
+}
+
+@media (max-width: 900px) {
+  /* Two rows: identity + actions on top, scrolling section tabs beneath. */
+  .site-nav__inner {
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    padding-block: var(--sp-2);
+  }
+  .site-nav__label {
+    border-right: none;
+    padding-right: 0;
+    max-width: none;
+    flex: 1 1 auto;
+  }
+  .site-nav__links {
+    order: 3;
+    flex-basis: 100%;
+    border-top: 1px solid var(--rule);
+  }
+  .site-nav__links a { padding-left: 0; padding-right: var(--sp-4); }
+}
+
 @media (max-width: 768px) {
   .top-stories {
     grid-template-columns: 1fr;
@@ -1811,42 +1893,15 @@ hr.divider {
   .dir-group__entries { grid-template-columns: 1fr 1fr; }
   .sources-grid { grid-template-columns: 1fr; }
   .site-footer__inner { grid-template-columns: 1fr; }
-  .site-nav__links {
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-  }
-  .site-nav__links::-webkit-scrollbar { display: none; }
-  .site-nav__links a { padding: var(--sp-3) var(--sp-3); font-size: 0.625rem; }
-  /* Date is already in the masthead bar — drop it here to save room */
-  .site-nav__meta { display: none; }
-  .site-nav__label {
-    font-size: 0.9375rem;
-    padding-right: var(--sp-3);
-  }
+  .site-nav__links a { padding-inline: var(--sp-3); font-size: 0.625rem; }
+  .site-nav__label { font-size: 0.9375rem; }
   .newsletter__form { flex-direction: column; }
   .masthead__bar-inner { flex-direction: column; text-align: center; gap: var(--sp-1); }
 }
 
 @media (max-width: 620px) {
-  /* Stack: label + home link on top, scrolling section tabs beneath */
-  .site-nav__inner {
-    flex-wrap: wrap;
-    gap: var(--sp-2);
-    padding-block: var(--sp-2);
-  }
-  .site-nav__label {
-    border-right: none;
-    padding-right: 0;
-    font-size: 0.875rem;
-  }
-  .site-nav__links {
-    order: 3;
-    flex-basis: 100%;
-    border-top: 1px solid var(--rule);
-  }
-  .site-nav__links a { padding: var(--sp-2) var(--sp-3) var(--sp-2) 0; }
-  .site-nav__links a:first-child { padding-left: 0; }
+  .site-nav__label { font-size: 0.875rem; }
+  .site-nav__links a { padding-top: var(--sp-2); padding-bottom: var(--sp-2); }
   .site-nav__home { font-size: 0.5625rem; }
 }
 
