@@ -5,7 +5,8 @@
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
-    "build:prod": "NODE_ENV=production eleventy",
+    "build:prod": "NODE_ENV=production eleventy && npm run verify",
+    "verify": "node scripts/verify-build.js",
     "generate": "node pipeline/generate-issue.js",
     "generate:cluster": "node pipeline/generate-issue.js --cluster"
   },

@@ -60,14 +60,27 @@
         });
       });
 
+      // Publish the real nav height so scroll-padding-top matches it exactly.
+      // Measured rather than hard-coded because the nav wraps on narrow
+      // screens, which would otherwise leave headings hidden underneath it.
+      var nav = document.querySelector('.site-nav');
+      function syncNavHeight() {
+        var h = nav ? Math.round(nav.getBoundingClientRect().height) : 52;
+        document.documentElement.style.setProperty('--nav-h', h + 'px');
+        return h;
+      }
+      var navH = syncNavHeight();
+      window.addEventListener('resize', function () { navH = syncNavHeight(); }, { passive: true });
+
       if (!('IntersectionObserver' in window)) return;
 
-      var nav    = document.querySelector('.site-nav');
-      var navH   = nav ? nav.offsetHeight : 56;
-      var onView = {};
+      var onView    = {};
+      var lastId    = sections[sections.length - 1].id;
+      var atBottom  = false;
 
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (e) { onView[e.target.id] = e.isIntersecting; });
+        if (atBottom) return;
         // Highlight the topmost section currently crossing the band
         for (var i = 0; i < sections.length; i++) {
           if (onView[sections[i].id]) { setActive(sections[i].id); return; }
@@ -80,9 +93,20 @@
 
       sections.forEach(function (s) { observer.observe(s); });
 
-      // At the very top of the page nothing should look selected
       window.addEventListener('scroll', function () {
-        if (window.scrollY < 8) setActive(null);
+        // Nothing selected at the very top of the page
+        if (window.scrollY < 8) { atBottom = false; setActive(null); return; }
+
+        // The final section is often too short to reach the detection band —
+        // once the page bottoms out, keep it lit rather than falling back.
+        var remaining = document.documentElement.scrollHeight
+                      - window.scrollY - window.innerHeight;
+        if (remaining < 120) {
+          atBottom = true;
+          setActive(lastId);
+        } else if (atBottom) {
+          atBottom = false;
+        }
       }, { passive: true });
     })();
   </script>

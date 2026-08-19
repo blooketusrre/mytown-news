@@ -22,15 +22,17 @@ layout: base.njk
   {% endif %}
 {% endmacro %}
 
-{% macro storyBody(s) %}
+{# Excerpt rather than full text: enough to hook the reader, short enough that
+   every card in a row settles at the same height. The wider lead story gets a
+   larger word budget so it fills the same number of lines as its narrower
+   neighbours. CSS line-clamps as a backstop for unusually long sentences. #}
+{% macro storyBody(s, words) %}
   <div class="story-body">
-    {% for para in (s.body or "").split('\n\n') %}
-      {% if para.trim() %}<p>{{ para.trim() }}</p>{% endif %}
-    {% endfor %}
+    <p>{{ s.body | excerpt(words or 60) }}</p>
   </div>
   {% if s.sourceUrl %}
   <a href="{{ s.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="source-link">
-    Source: {{ s.sourceName or "view source" }} →
+    Read the full story: {{ s.sourceName or "source" }} →
   </a>
   {% endif %}
 {% endmacro %}
@@ -119,17 +121,17 @@ layout: base.njk
 
       <div class="top-stories">
 
-        {# Main story #}
+        {# Main story — widest column, so the largest word budget #}
         <article class="story-main">
           {{ storyHead(issue.topStories[0]) }}
-          {{ storyBody(issue.topStories[0]) }}
+          {{ storyBody(issue.topStories[0], 110) }}
         </article>
 
         {# Side stories #}
         {% for s in issue.topStories %}{% if loop.index > 1 %}
         <article class="story-side">
           {{ storyHead(s) }}
-          {{ storyBody(s) }}
+          {{ storyBody(s, 55) }}
         </article>
         {% endif %}{% endfor %}
 
@@ -154,11 +156,35 @@ layout: base.njk
             {% endif %}
             <h3 class="event-card__title">{{ ev.title }}</h3>
             <p class="event-card__desc">{{ ev.description }}</p>
-            <p class="event-card__meta">
-              📍 {{ ev.location }}<br>
-              {% if ev.time %}🕐 {{ ev.time }}<br>{% endif %}
-              {% if ev.price %}🎟 {{ ev.price }}{% endif %}
-            </p>
+            <ul class="event-card__meta" role="list">
+              {% if ev.location %}
+              <li>
+                <svg class="event-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M13 6.6c0 3.9-5 8.4-5 8.4S3 10.5 3 6.6a5 5 0 0 1 10 0Z"/>
+                  <circle cx="8" cy="6.5" r="1.9"/>
+                </svg>
+                <span class="u-visually-hidden">Location:</span>{{ ev.location }}
+              </li>
+              {% endif %}
+              {% if ev.time %}
+              <li>
+                <svg class="event-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="8" cy="8" r="6.2"/>
+                  <path d="M8 4.4V8l2.5 1.6"/>
+                </svg>
+                <span class="u-visually-hidden">Time:</span>{{ ev.time }}
+              </li>
+              {% endif %}
+              {% if ev.price %}
+              <li>
+                <svg class="event-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2 6.3V4.4a.9.9 0 0 1 .9-.9h10.2a.9.9 0 0 1 .9.9v1.9a1.7 1.7 0 0 0 0 3.4v1.9a.9.9 0 0 1-.9.9H2.9a.9.9 0 0 1-.9-.9V9.7a1.7 1.7 0 0 0 0-3.4Z"/>
+                  <path d="M9.6 5.9v.9M9.6 9.2v.9"/>
+                </svg>
+                <span class="u-visually-hidden">Price:</span>{{ ev.price }}
+              </li>
+              {% endif %}
+            </ul>
             {% if ev.sourceUrl %}
             <a href="{{ ev.sourceUrl }}" target="_blank" rel="noopener noreferrer" class="event-card__source">
               Verify details →
@@ -181,7 +207,7 @@ layout: base.njk
         {% for s in issue.moreNews %}
         <article class="news-card">
           {{ storyHead(s) }}
-          {{ storyBody(s) }}
+          {{ storyBody(s, 50) }}
         </article>
         {% endfor %}
       </div>
@@ -203,9 +229,9 @@ layout: base.njk
         {% else %}
           {% set restList = [] %}
         {% endif %}
-        <div class="dir-section{{ ' dir-section--collapsible' if restList.length > 15 }}" id="dir-restaurants">
+        <div class="dir-section dir-section--collapsible" id="dir-restaurants">
           <button class="dir-section__toggle"
-                  aria-expanded="{{ 'false' if restList.length > 15 else 'true' }}"
+                  aria-expanded="false"
                   aria-controls="dir-restaurants-body"
                   type="button">
             <span class="dir-section__emoji">🍽</span>
@@ -213,7 +239,7 @@ layout: base.njk
             {% if restList.length %}<span class="dir-section__count">{{ restList.length }}</span>{% endif %}
             <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
           </button>
-          <div class="dir-section__body{{ ' is-collapsed' if restList.length > 15 }}" id="dir-restaurants-body">
+          <div class="dir-section__body is-collapsed" id="dir-restaurants-body">
             {% if restList.length %}
               {% set restGroups = restList | groupBy("cuisineGroup") %}
               {% for groupName, entries in restGroups %}
@@ -248,9 +274,9 @@ layout: base.njk
         {% else %}
           {% set hotelList = [] %}
         {% endif %}
-        <div class="dir-section{{ ' dir-section--collapsible' if hotelList.length > 15 }}" id="dir-hotels">
+        <div class="dir-section dir-section--collapsible" id="dir-hotels">
           <button class="dir-section__toggle"
-                  aria-expanded="{{ 'false' if hotelList.length > 15 else 'true' }}"
+                  aria-expanded="false"
                   aria-controls="dir-hotels-body"
                   type="button">
             <span class="dir-section__emoji">🏨</span>
@@ -258,7 +284,7 @@ layout: base.njk
             {% if hotelList.length %}<span class="dir-section__count">{{ hotelList.length }}</span>{% endif %}
             <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
           </button>
-          <div class="dir-section__body{{ ' is-collapsed' if hotelList.length > 15 }}" id="dir-hotels-body">
+          <div class="dir-section__body is-collapsed" id="dir-hotels-body">
             {% if hotelList.length %}
               <div class="dir-group">
                 <div class="dir-group__entries">
@@ -289,9 +315,9 @@ layout: base.njk
         {% else %}
           {% set shopList = [] %}
         {% endif %}
-        <div class="dir-section{{ ' dir-section--collapsible' if shopList.length > 15 }}" id="dir-shops">
+        <div class="dir-section dir-section--collapsible" id="dir-shops">
           <button class="dir-section__toggle"
-                  aria-expanded="{{ 'false' if shopList.length > 15 else 'true' }}"
+                  aria-expanded="false"
                   aria-controls="dir-shops-body"
                   type="button">
             <span class="dir-section__emoji">🛍</span>
@@ -299,7 +325,7 @@ layout: base.njk
             {% if shopList.length %}<span class="dir-section__count">{{ shopList.length }}</span>{% endif %}
             <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
           </button>
-          <div class="dir-section__body{{ ' is-collapsed' if shopList.length > 15 }}" id="dir-shops-body">
+          <div class="dir-section__body is-collapsed" id="dir-shops-body">
             {% if shopList.length %}
               {% set shopGroups = shopList | groupBy("shopGroup") %}
               {% for groupName, entries in shopGroups %}
@@ -334,9 +360,9 @@ layout: base.njk
         {% else %}
           {% set artList = [] %}
         {% endif %}
-        <div class="dir-section{{ ' dir-section--collapsible' if artList.length > 15 }}" id="dir-art">
+        <div class="dir-section dir-section--collapsible" id="dir-art">
           <button class="dir-section__toggle"
-                  aria-expanded="{{ 'false' if artList.length > 15 else 'true' }}"
+                  aria-expanded="false"
                   aria-controls="dir-art-body"
                   type="button">
             <span class="dir-section__emoji">🎭</span>
@@ -344,7 +370,7 @@ layout: base.njk
             {% if artList.length %}<span class="dir-section__count">{{ artList.length }}</span>{% endif %}
             <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
           </button>
-          <div class="dir-section__body{{ ' is-collapsed' if artList.length > 15 }}" id="dir-art-body">
+          <div class="dir-section__body is-collapsed" id="dir-art-body">
             {% if artList.length %}
               {% set artGroups = artList | groupBy("venueGroup") %}
               {% for groupName, entries in artGroups %}
@@ -379,9 +405,9 @@ layout: base.njk
         {% else %}
           {% set gymList = [] %}
         {% endif %}
-        <div class="dir-section{{ ' dir-section--collapsible' if gymList.length > 15 }}" id="dir-gyms">
+        <div class="dir-section dir-section--collapsible" id="dir-gyms">
           <button class="dir-section__toggle"
-                  aria-expanded="{{ 'false' if gymList.length > 15 else 'true' }}"
+                  aria-expanded="false"
                   aria-controls="dir-gyms-body"
                   type="button">
             <span class="dir-section__emoji">🏃</span>
@@ -389,7 +415,7 @@ layout: base.njk
             {% if gymList.length %}<span class="dir-section__count">{{ gymList.length }}</span>{% endif %}
             <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
           </button>
-          <div class="dir-section__body{{ ' is-collapsed' if gymList.length > 15 }}" id="dir-gyms-body">
+          <div class="dir-section__body is-collapsed" id="dir-gyms-body">
             {% if gymList.length %}
               {% set gymGroups = gymList | groupBy("venueGroup") %}
               {% for groupName, entries in gymGroups %}

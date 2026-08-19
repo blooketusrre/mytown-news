@@ -17,6 +17,43 @@ module.exports = function (eleventyConfig) {
     str.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
   );
 
+  // Trims story body copy to a word budget, cutting at a sentence boundary
+  // where possible so the excerpt reads as finished prose rather than a
+  // mid-clause snap. Paragraph breaks collapse to single spaces.
+  // Tokens that end in a period without ending a sentence
+  const ABBREV = new Set([
+    "st", "ave", "blvd", "rd", "dr", "ln", "ct", "pl", "sq", "hwy",
+    "mr", "mrs", "ms", "jr", "sr", "prof", "gov", "sen", "rep", "supt",
+    "inc", "co", "corp", "ltd", "no", "vs", "approx", "est", "dept",
+    "jan", "feb", "mar", "apr", "jun", "jul", "aug", "sep", "sept", "oct", "nov", "dec",
+    "a.m", "p.m", "u.s",
+  ]);
+
+  eleventyConfig.addFilter("excerpt", (str, maxWords = 60) => {
+    if (!str) return "";
+    const text  = String(str).replace(/\s+/g, " ").trim();
+    const words = text.split(" ");
+    if (words.length <= maxWords) return text;
+
+    const clipped = words.slice(0, maxWords).join(" ");
+
+    // Walk back for a true sentence end: terminal punctuation followed by a
+    // space and a capital letter, where the preceding token isn't an
+    // abbreviation ("350 Bay St. inside" must not read as a sentence break).
+    const re = /([.!?])\s+(?=[A-Z"“'])/g;
+    let cut = -1, m;
+    while ((m = re.exec(clipped)) !== null) {
+      const head = clipped.slice(0, m.index);
+      const prev = (head.split(/[\s(]/).pop() || "").toLowerCase();
+      if (ABBREV.has(prev) || /^[a-z]$/.test(prev)) continue; // initials too
+      cut = m.index;
+    }
+
+    // Only honour it if we keep most of the budget; otherwise clip and ellipse
+    if (cut > clipped.length * 0.55) return clipped.slice(0, cut + 1);
+    return clipped.replace(/[,;:\s]+$/, "") + "…";
+  });
+
   // Maps a directory entry's "notable" label to a CSS modifier class
   eleventyConfig.addFilter("badgeClass", (notable) => {
     if (!notable) return "";
