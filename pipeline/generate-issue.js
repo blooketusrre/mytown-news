@@ -351,33 +351,65 @@ async function generateCluster(clusterConfig) {
 
 // ─── Email HTML builder ──────────────────────────────────────────────────────
 
+/** Trim to a word budget, preferring a sentence boundary. Mirrors the
+ *  `excerpt` filter in .eleventy.js so email and web read consistently. */
+function emailExcerpt(str, maxWords = 90) {
+  if (!str) return "";
+  const text  = String(str).replace(/\s+/g, " ").trim();
+  const words = text.split(" ");
+  if (words.length <= maxWords) return text;
+  const clipped = words.slice(0, maxWords).join(" ");
+  const re = /([.!?])\s+(?=[A-Z"“'])/g;
+  let cut = -1, m;
+  while ((m = re.exec(clipped)) !== null) cut = m.index;
+  if (cut > clipped.length * 0.55) return clipped.slice(0, cut + 1);
+  return clipped.replace(/[,;:\s]+$/, "") + "…";
+}
+
+/** Escape user-facing strings so a stray < or & can't break the email HTML. */
+function esc(str) {
+  return String(str == null ? "" : str)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
 function buildEmailHtml(issue, cluster) {
   const issueUrl = `${SITE_URL}/${cluster.slug}/`;
   const accent   = cluster.accentColor || "#c8943a";
 
-  const storiesHtml = (issue.topStories || []).map(s => `
+  // Tolerates both the old schema (tag/byline/date) and the current one
+  // (tags[]/dek); anything absent is omitted rather than left as an
+  // orphaned separator.
+  const storiesHtml = (issue.topStories || []).map(s => {
+    const kicker = (s.tags && s.tags.length ? s.tags[0] : s.tag) || "";
+    const meta   = [s.byline, s.date].filter(Boolean).join(" · ");
+    return `
     <tr><td style="padding:0 0 28px 0;border-bottom:1px solid #e8e3da;">
-      <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:${accent};">${s.tag || ""}</p>
-      <h2 style="margin:0 0 8px 0;font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:900;line-height:1.2;color:#1a2744;">${s.headline}</h2>
-      <p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">${s.byline || ""} · ${s.date || ""}</p>
-      <p style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:15px;line-height:1.68;color:#1c1c1e;">${(s.body || "").split("\n\n")[0]}</p>
-      <a href="${s.sourceUrl || "#"}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">Source: ${s.sourceName || ""} →</a>
+      ${kicker ? `<p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:${accent};">${esc(kicker)}</p>` : ""}
+      <h2 style="margin:0 0 8px 0;font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:900;line-height:1.2;color:#1a2744;">${esc(s.headline)}</h2>
+      ${s.dek ? `<p style="margin:0 0 10px 0;font-family:Georgia,serif;font-size:15px;font-style:italic;line-height:1.5;color:#6b6560;">${esc(s.dek)}</p>` : ""}
+      ${meta ? `<p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">${esc(meta)}</p>` : ""}
+      <p style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:15px;line-height:1.68;color:#1c1c1e;">${esc(emailExcerpt(s.body, 90))}</p>
+      <a href="${s.sourceUrl || "#"}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">Read the full story: ${esc(s.sourceName || "source")} →</a>
     </td></tr>
     <tr><td style="height:24px;"></td></tr>
-  `).join("");
+  `;
+  }).join("");
 
+  // Emoji rather than the SVG icons used on the web — inline SVG support is
+  // unreliable across email clients, and emoji degrade gracefully everywhere.
   const eventsHtml = (issue.events || []).slice(0, 5).map(ev => `
     <tr><td style="padding:12px 0;border-bottom:1px solid #d8d2c8;">
-      <p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${accent};">${ev.date || ""}</p>
-      <p style="margin:0 0 3px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${ev.title || ""}</p>
-      <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6b6560;">📍 ${ev.location || ""}${ev.time ? " · " + ev.time : ""}</p>
+      ${ev.date ? `<p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${accent};">${esc(ev.date)}</p>` : ""}
+      <p style="margin:0 0 3px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${esc(ev.title)}</p>
+      <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6b6560;">📍 ${esc(ev.location)}${ev.time ? " · " + esc(ev.time) : ""}</p>
     </td></tr>
   `).join("");
 
   const moreHtml = (issue.moreNews || []).map(s => `
     <tr><td style="padding:10px 0;border-bottom:1px solid #e8e3da;">
-      <p style="margin:0 0 4px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${s.headline}</p>
-      <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;line-height:1.55;color:#6b6560;">${(s.body || "").split("\n\n")[0].slice(0, 160)}…</p>
+      <p style="margin:0 0 4px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${esc(s.headline)}</p>
+      <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;line-height:1.55;color:#6b6560;">${esc(s.dek || emailExcerpt(s.body, 32))}</p>
+      ${s.sourceUrl ? `<a href="${s.sourceUrl}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">${esc(s.sourceName || "Read more")} →</a>` : ""}
     </td></tr>
   `).join("");
 
@@ -437,8 +469,8 @@ function buildEmailHtml(issue, cluster) {
 
   <!-- CTA -->
   <tr><td style="background:#1a2744;padding:28px 40px;text-align:center;">
-    <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:13px;color:rgba(255,255,255,0.55);">Read the full issue — including the complete neighborhood directory — online:</p>
-    <a href="${issueUrl}" style="display:inline-block;background:${accent};color:#ffffff;font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:13px 28px;border-radius:2px;">Read Full Issue →</a>
+    <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:13px;color:rgba(255,255,255,0.55);">Every event, the full neighborhood directory, and all our sources.</p>
+    <a href="${issueUrl}" style="display:inline-block;background:${accent};color:#ffffff;font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:13px 28px;border-radius:2px;">Open the full edition →</a>
   </td></tr>
 
   <!-- Footer -->
