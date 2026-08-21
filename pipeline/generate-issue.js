@@ -95,14 +95,38 @@ async function callClaude(systemPrompt, messages, tools = []) {
 
 // ─── Research prompt ────────────────────────────────────────────────────────
 
-function buildSystemPrompt(cluster) {
+function buildSystemPrompt(cluster, prevIssue) {
   const today = new Date().toISOString().slice(0, 10);
+
+  // Show the model what ran last week so it can avoid repeating the lead.
+  // The deterministic rotation after generation is the real guarantee; this
+  // just improves the odds we never need it.
+  let lastWeekBlock = "";
+  const prevStories = (prevIssue && prevIssue.topStories) || [];
+  if (prevStories.length) {
+    const lines = prevStories.map((s, i) =>
+      `  ${i === 0 ? "LEAD" : "    "} — ${s.headline}${s.sourceUrl ? ` (${s.sourceUrl})` : ""}`
+    ).join("\n");
+    lastWeekBlock = `
+
+LAST WEEK'S ISSUE (week of ${prevIssue.weekOf || "previous"}):
+${lines}
+
+CONTINUITY RULE — IMPORTANT:
+Do not lead this week's issue with a story that led last week. Readers who
+opened both issues should see something new in the widest column. If a story
+above is still developing and still within the ten-day window, you may carry
+it — place it lower in topStories, or in moreNews, and write it forward:
+report what has changed since last week rather than restating the original
+news. If genuinely nothing has changed, omit it.`;
+  }
+
   return `You are the research editor for My Town News, a hyperlocal weekly newspaper covering San Francisco neighborhoods.
 
 Today is ${today}. You are preparing the issue for the week of ${thisWeekDate()}.
 
 Your cluster: ${cluster.name}
-Neighborhoods: ${cluster.neighborhoods.join(", ")}
+Neighborhoods: ${cluster.neighborhoods.join(", ")}${lastWeekBlock}
 
 DIRECTORY VERIFICATION RULE — NON-NEGOTIABLE:
 Before including any venue in the directory, confirm it is currently open by finding one of: (a) an active website updated within the last 2 years, (b) a Google Maps or Yelp listing with reviews from 2024 or later showing it is open, or (c) a social media presence active within the last year. Record the best current URL in the "website" field. If you cannot find current evidence of operation, OMIT the venue entirely. Do not include businesses that have closed, even if they were historically prominent.
@@ -289,6 +313,59 @@ function validateIssue(issue) {
 
 // ─── Main per-cluster generator ──────────────────────────────────────────────
 
+/** Normalised identity for a story, used to spot the same item recurring
+ *  week to week. Source URL is the strong signal; the headline is a fallback
+ *  for when an outlet changes its URL or we picked up the story elsewhere. */
+function storyKeys(story) {
+  const keys = [];
+  if (story.sourceUrl) {
+    keys.push(String(story.sourceUrl).trim().toLowerCase().replace(/[?#].*$/, "").replace(/\/$/, ""));
+  }
+  if (story.headline) {
+    keys.push("h:" + String(story.headline).toLowerCase().replace(/[^a-z0-9 ]+/g, "").replace(/\s+/g, " ").trim());
+  }
+  return keys;
+}
+
+/** Load the most recent previous issue for a cluster, excluding this week's. */
+function loadPreviousIssue(clusterSlug, currentWeek) {
+  const dir = path.join(CONTENT_DIR, clusterSlug);
+  if (!fs.existsSync(dir)) return null;
+  const files = fs.readdirSync(dir)
+    .filter(f => f.endsWith(".json") && f !== `${currentWeek}.json`)
+    .sort();
+  if (!files.length) return null;
+  try {
+    return JSON.parse(fs.readFileSync(path.join(dir, files[files.length - 1]), "utf8"));
+  } catch (e) {
+    return null;
+  }
+}
+
+/** If this week leads with a story that led last week, promote the first
+ *  genuinely new story above it. The repeat is kept — it may still be inside
+ *  the ten-day window and worth carrying — just not in the widest column two
+ *  weeks running, which reads as though nothing happened. */
+function rotateRepeatedLead(issue, prevIssue) {
+  const stories = issue.topStories || [];
+  if (!prevIssue || stories.length < 2) return null;
+
+  const prevLead = (prevIssue.topStories || [])[0];
+  if (!prevLead) return null;
+
+  const prevKeys = new Set(storyKeys(prevLead));
+  const isRepeat = s => storyKeys(s).some(k => prevKeys.has(k));
+
+  if (!isRepeat(stories[0])) return null;
+
+  const freshIdx = stories.findIndex((s, i) => i > 0 && !isRepeat(s));
+  if (freshIdx === -1) return null; // everything is a repeat — leave it alone
+
+  const [fresh] = stories.splice(freshIdx, 1);
+  stories.unshift(fresh);
+  return { demoted: prevLead.headline, promoted: fresh.headline };
+}
+
 async function generateCluster(clusterConfig) {
   console.log(`\n📰 Generating: ${clusterConfig.name}`);
   const weekDate = thisWeekDate();
@@ -301,6 +378,8 @@ async function generateCluster(clusterConfig) {
     return;
   }
 
+  const prevIssue = loadPreviousIssue(clusterConfig.slug, weekDate);
+
   // ── 1. Research with Claude (web search enabled) ────────────────────────
   console.log("  🔍 Researching current news…");
   const webSearchTool = {
@@ -308,7 +387,7 @@ async function generateCluster(clusterConfig) {
     name: "web_search",
   };
 
-  const systemPrompt = buildSystemPrompt(clusterConfig);
+  const systemPrompt = buildSystemPrompt(clusterConfig, prevIssue);
   const userMessage  = `Please research and write this week's My Town News issue for ${clusterConfig.name} (${clusterConfig.neighborhoods.join(", ")}). Search for real, current news stories and upcoming events in these neighborhoods. Return only valid JSON matching the schema in your instructions.`;
 
   // The server-side web_search tool runs the research loop inside the API, but
@@ -382,7 +461,17 @@ async function generateCluster(clusterConfig) {
     }
   }
 
-  // ── 2. Validate ─────────────────────────────────────────────────────────
+  // ── 2. Continuity: never lead twice with the same story ─────────────────
+  // The prompt asks for this, but a prompt is a request, not a guarantee.
+  // This check is deterministic, so the same headline cannot occupy the lead
+  // column two weeks running regardless of what came back.
+  const rotated = rotateRepeatedLead(issue, prevIssue);
+  if (rotated) {
+    console.log(`  ↻ Repeated lead demoted: "${rotated.demoted.slice(0, 60)}…"`);
+    console.log(`    Promoted instead:      "${rotated.promoted.slice(0, 60)}…"`);
+  }
+
+  // ── 3. Validate ─────────────────────────────────────────────────────────
   const errors = validateIssue(issue);
   if (errors.length > 0) {
     console.warn("  ⚠ Validation warnings:");
