@@ -155,14 +155,17 @@
       "South of Market",
       "Mission Bay",
       "Dogpatch",
-      "Potrero Hill"
+      "Potrero Hill",
+      "Treasure Island",
+      "Yerba Buena Island"
     ],
     "accent": "#c05928",
     "live": true,
     "zipCodes": [
       "94103",
       "94107",
-      "94158"
+      "94158",
+      "94130"
     ],
     "description": "Tech campuses, Oracle Park, converted warehouses, and the city's fastest-changing waterfront.",
     "mapLabel": {
@@ -239,18 +242,24 @@
     "neighborhoods": [
       "Inner Sunset",
       "Outer Sunset",
+      "Parkside",
       "West Portal",
       "Forest Hill",
       "St. Francis Wood",
-      "Miraloma Park"
+      "Miraloma Park",
+      "Stonestown",
+      "Lakeshore",
+      "Parkmerced"
     ],
     "accent": "#3d6b8f",
     "live": true,
     "zipCodes": [
       "94116",
-      "94122"
+      "94122",
+      "94127",
+      "94132"
     ],
-    "description": "Fog, surf, N Judah streetcars, and Irving Street restaurants stretching all the way to the ocean.",
+    "description": "Fog, surf, N Judah streetcars, and Irving Street restaurants stretching from Golden Gate Park to Lake Merced.",
     "mapLabel": {
       "x": 120,
       "y": 360

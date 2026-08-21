@@ -3,9 +3,31 @@
   "name": "SoMa & Mission Bay",
   "city": "San Francisco",
   "live": true,
-  "neighborhoods": ["South of Market", "Mission Bay", "Dogpatch", "Potrero Hill"],
+  "neighborhoods": [
+    "South of Market",
+    "Mission Bay",
+    "Dogpatch",
+    "Potrero Hill",
+    "Treasure Island",
+    "Yerba Buena Island"
+  ],
   "accentColor": "#c05928",
   "description": "Tech campuses, Oracle Park, converted warehouses, and the city's fastest-changing waterfront.",
-  "primarySearchTerms": ["SoMa San Francisco", "Mission Bay San Francisco", "Dogpatch San Francisco", "Potrero Hill San Francisco", "Oracle Park San Francisco"],
-  "sourceHints": ["https://www.sfstandard.com","https://sfist.com","https://hoodline.com/neighborhoods/soma","https://hoodline.com/neighborhoods/mission-bay","https://www.mlb.com/giants","https://sfpl.org"]
+  "primarySearchTerms": [
+    "SoMa San Francisco",
+    "Mission Bay San Francisco",
+    "Dogpatch San Francisco",
+    "Potrero Hill San Francisco",
+    "Oracle Park San Francisco",
+    "Treasure Island San Francisco",
+    "Treasure Island redevelopment San Francisco"
+  ],
+  "sourceHints": [
+    "https://www.sfstandard.com",
+    "https://sfist.com",
+    "https://hoodline.com/neighborhoods/soma",
+    "https://hoodline.com/neighborhoods/mission-bay",
+    "https://www.mlb.com/giants",
+    "https://sfpl.org"
+  ]
 }
