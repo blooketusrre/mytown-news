@@ -95,8 +95,11 @@
 [data-cluster="downtown-embarcadero"] {
   --accent: #1e4a8a; --accent-on-dark: #6898de; --accent-btn: #1e4a8a; --accent-ink: #ffffff;
 }
-[data-cluster="civic-center-hayes-valley"] {
+[data-cluster="civic-center-tenderloin"] {
   --accent: #6b3fa0; --accent-on-dark: #a989d0; --accent-btn: #6b3fa0; --accent-ink: #ffffff;
+}
+[data-cluster="hayes-valley-alamo-square"] {
+  --accent: #9c3f7a; --accent-on-dark: #cc80b0; --accent-btn: #9c3f7a; --accent-ink: #ffffff;
 }
 [data-cluster="soma-mission-bay"] {
   --accent: #c05928; --accent-on-dark: #db8054; --accent-btn: #bc5727; --accent-ink: #ffffff;

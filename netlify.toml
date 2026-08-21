@@ -12,6 +12,14 @@
   status = 301
   conditions = {Path = ["*[^/]", "!*.*"]}
 
+# Civic Center & Hayes Valley was split into two editions on 2026-08-21.
+# Civic Center & Tenderloin inherits the archive and the bulk of the audience.
+[[redirects]]
+  from   = "/civic-center-hayes-valley/*"
+  to     = "/civic-center-tenderloin/:splat"
+  status = 301
+  force  = true
+
 # 404
 [[redirects]]
   from   = "/*"

@@ -1,0 +1,23 @@
+{
+  "slug": "hayes-valley-alamo-square",
+  "name": "Hayes Valley & Alamo Square",
+  "city": "San Francisco",
+  "live": true,
+  "neighborhoods": ["Hayes Valley", "Alamo Square", "NoPa"],
+  "accentColor": "#9c3f7a",
+  "description": "Painted ladies, boutique storefronts, and one of the city's densest restaurant corridors.",
+  "primarySearchTerms": [
+    "Hayes Valley San Francisco",
+    "Alamo Square San Francisco",
+    "NoPa San Francisco",
+    "Divisadero Street San Francisco"
+  ],
+  "sourceHints": [
+    "https://www.sfstandard.com",
+    "https://sfist.com",
+    "https://hoodline.com/neighborhoods/hayes-valley",
+    "https://www.eater.com/sf",
+    "https://sfpl.org",
+    "https://sfrecpark.org"
+  ]
+}
