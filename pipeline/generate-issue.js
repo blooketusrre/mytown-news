@@ -46,13 +46,16 @@ function thisWeekDate() {
   return friday.toISOString().slice(0, 10);
 }
 
-/** Anthropic Messages API call (single turn) */
-async function callClaude(systemPrompt, userMessage, tools = []) {
+/** Anthropic Messages API call. Takes a full messages array so the caller can
+ *  continue a paused turn (see generateCluster). */
+async function callClaude(systemPrompt, messages, tools = []) {
   const body = JSON.stringify({
     model: MODEL,
     max_tokens: 24000,
     system: systemPrompt,
-    messages: [{ role: "user", content: userMessage }],
+    messages: Array.isArray(messages)
+      ? messages
+      : [{ role: "user", content: messages }],
     ...(tools.length ? { tools } : {}),
   });
 
@@ -308,26 +311,46 @@ async function generateCluster(clusterConfig) {
   const systemPrompt = buildSystemPrompt(clusterConfig);
   const userMessage  = `Please research and write this week's My Town News issue for ${clusterConfig.name} (${clusterConfig.neighborhoods.join(", ")}). Search for real, current news stories and upcoming events in these neighborhoods. Return only valid JSON matching the schema in your instructions.`;
 
+  // The server-side web_search tool runs the research loop inside the API, but
+  // a long research turn can come back with stop_reason "pause_turn" — the
+  // model has more to do and expects us to hand its own output back so it can
+  // continue. Treating that single response as final is why three clusters
+  // failed on 2026-08-21 with "No JSON found": the turn had paused mid-search
+  // and the final JSON had not been written yet.
+  const MAX_TURNS = 6;
+  let messages = [{ role: "user", content: userMessage }];
   let response;
-  try {
-    response = await callClaude(systemPrompt, userMessage, [webSearchTool]);
-  } catch (err) {
-    console.error(`  ✗ Claude API error: ${err.message}`);
-    throw err;
-  }
 
-  // Handle agentic loop — Claude may do multiple web_search tool calls before
-  // returning final text. We do a simplified single-turn extraction here since
-  // the Anthropic API's web_search tool resolves results server-side.
-  if (response.stop_reason === "max_tokens") {
-    console.error("  ✗ Response cut off — hit max_tokens limit. Increase max_tokens.");
+  for (let turn = 1; turn <= MAX_TURNS; turn++) {
+    try {
+      response = await callClaude(systemPrompt, messages, [webSearchTool]);
+    } catch (err) {
+      console.error(`  ✗ Claude API error: ${err.message}`);
+      throw err;
+    }
+
+    if (response.stop_reason === "max_tokens") {
+      console.error("  ✗ Response cut off — hit max_tokens limit. Increase max_tokens.");
+      break;
+    }
+
+    if (response.stop_reason !== "pause_turn") break;
+
+    console.log(`  ⏸ Turn paused mid-research — continuing (${turn}/${MAX_TURNS})…`);
+    messages = messages.concat([{ role: "assistant", content: response.content }]);
+
+    if (turn === MAX_TURNS) {
+      console.error(`  ✗ Still paused after ${MAX_TURNS} turns — giving up.`);
+    }
   }
 
   let issue;
   try {
     issue = extractJson(response);
   } catch (err) {
-    console.error("  ✗ JSON parse error. Raw response excerpt:");
+    // stop_reason is the single most useful clue here — log it explicitly
+    // rather than leaving it buried in the raw excerpt.
+    console.error(`  ✗ JSON parse error (stop_reason: ${response.stop_reason || "unknown"}). Raw response excerpt:`);
     const excerpt = JSON.stringify(response.content || response).slice(0, 500);
     console.error("  ", excerpt);
     throw err;
@@ -544,6 +567,12 @@ async function sendClusterEmail(cluster, issue, tagId) {
         headers: {
           "Authorization": `Token ${BUTTONDOWN_KEY}`,
           "Content-Type": "application/json",
+          // Buttondown refuses to create an email with status "about_to_send"
+          // unless this header is present — a deliberate guard against an
+          // integration blasting a live send by accident. Without it the API
+          // returns 'sending_requires_confirmation' and nothing is delivered,
+          // which is exactly what happened to all nine editions on 2026-08-21.
+          "X-Buttondown-Live-Dangerously": "true",
           "Content-Length": Buffer.byteLength(payload),
         },
       },
@@ -595,6 +624,8 @@ async function main() {
   console.log(`Clusters to generate: ${targets.map((c) => c.slug).join(", ")}`);
 
   let failed = 0;
+  let emailsSent = 0;
+  let emailsFailed = 0;
   const generated = [];
 
   for (const cluster of targets) {
@@ -635,15 +666,31 @@ async function main() {
         const result    = await sendClusterEmail(cluster, issue, tagId);
         if (result.id) {
           console.log(`  ✅ Queued: "${cluster.name}" → tag: ${tagId || "ALL"} (email id: ${result.id})`);
+          emailsSent++;
         } else {
-          console.log(`  ⚠ Unexpected response for ${cluster.slug}:`, JSON.stringify(result).slice(0, 200));
+          console.error(`  ✗ Send rejected for ${cluster.slug}:`, JSON.stringify(result).slice(0, 300));
+          emailsFailed++;
         }
       } catch (err) {
         console.error(`  ✗ Email failed for ${cluster.slug}: ${err.message}`);
+        emailsFailed++;
       }
     }
+    console.log(`\n📧 ${emailsSent} sent, ${emailsFailed} failed.`);
   } else {
     console.log("\n⚠ BUTTONDOWN_API_KEY not set — skipping email send.");
+    emailsFailed = generated.length;
+  }
+
+  // Fail the workflow if anything went wrong. Previously a run could generate
+  // no content and deliver no email while still reporting success — the whole
+  // point of a scheduled job is that silence means it worked.
+  if (failed > 0 || emailsFailed > 0) {
+    console.error(
+      `\n❌ Run incomplete: ${failed} edition(s) failed to generate, ` +
+      `${emailsFailed} email(s) failed to send.`
+    );
+    process.exitCode = 1;
   }
 }
 
