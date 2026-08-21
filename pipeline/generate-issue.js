@@ -614,7 +614,7 @@ function buildEmailHtml(issue, cluster) {
   <!-- Footer -->
   <tr><td style="padding:20px 40px;text-align:center;">
     <p style="margin:0 0 4px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">My Town News · mytown.news · ${cluster.city || "San Francisco"}</p>
-    <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;color:#a09890;">Free &amp; Independent. No ads. No spam.</p>
+    <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;color:#a09890;">Free &amp; Independent. No spam.</p>
   </td></tr>
 
 </table>
