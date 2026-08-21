@@ -1,0 +1,24 @@
+{
+  "slug": "civic-center-tenderloin",
+  "name": "Civic Center & Tenderloin",
+  "city": "San Francisco",
+  "live": true,
+  "neighborhoods": ["Civic Center", "Tenderloin", "Mid-Market"],
+  "accentColor": "#6b3fa0",
+  "description": "City Hall, the symphony and opera, Mid-Market's long reinvention, and the densest residential blocks in the city.",
+  "primarySearchTerms": [
+    "Civic Center San Francisco",
+    "Tenderloin San Francisco",
+    "Mid-Market San Francisco",
+    "San Francisco City Hall"
+  ],
+  "sourceHints": [
+    "https://www.sfstandard.com",
+    "https://sfist.com",
+    "https://hoodline.com",
+    "https://www.sfsymphony.org",
+    "https://www.sfopera.com",
+    "https://sfpl.org",
+    "https://sf.gov"
+  ]
+}
