@@ -34,16 +34,26 @@ cairosvg.svg2png(url='og-image.svg',   write_to='og-image.png',         output_w
 PY
 ```
 
-## Known limitation: the share card font
+## The share card font
 
-`og-image.svg` sets the wordmark in `Liberation Serif`, not **Playfair
-Display**, which is what the site masthead uses. Playfair could not be
-downloaded in the environment where this was generated.
+`og-image.svg` sets the wordmark in **Playfair 144pt Bold**, rendered from a
+locally installed copy of the font.
 
-To fix: install Playfair Display locally, change the two `font-family`
-attributes in `og-image.svg` to `Playfair Display, serif`, and re-run the
-snippet above. Nothing else needs to change — the meta tags already point
-at `og-image.png`.
+Note this is Playfair *144pt*, not Playfair *Display*. They are sibling
+families from the same designer: Playfair (2023) ships optical sizes, while
+Playfair Display is the older release the site CSS loads from Google Fonts.
+They are visually very close, and the 144pt optical size is designed for
+large display settings — arguably a better fit for a 92px wordmark than
+Display would be. If exact parity with the masthead ever matters, substitute
+`Playfair Display` and re-render.
+
+To regenerate you need the font available to fontconfig:
+
+```bash
+cp Playfair_144pt-Bold.ttf ~/.fonts/ && fc-cache -f
+```
+
+Then run the snippet above.
 
 ## After changing the share card
 
