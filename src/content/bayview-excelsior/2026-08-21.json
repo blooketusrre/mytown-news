@@ -1,0 +1,648 @@
+{
+  "clusterSlug": "bayview-excelsior",
+  "clusterName": "Bayview & Excelsior",
+  "weekOf": "2026-08-21",
+  "topStories": [
+    {
+      "headline": "Excelsior Landmark Pharmacy Building Sold — Future Unclear as New Owners Eye Office Use",
+      "dek": "The 117-year-old Central Drug Store building on Mission Street has been sold to a San Bruno plumbing company, leaving the neighborhood wondering what comes next.",
+      "body": "The longtime home of Central Drug Store — a 117-year-old independent pharmacy at 4494 Mission St. at Santa Rosa Avenue that permanently closed last July — has been sold to new owners Markopulos Fotiu and Silvi Palloj, who have operated Marco Polo Plumbing out of San Bruno for 15 years. The sale was completed in June 2026, according to city records.\n\nA building permit approved on July 1 references the construction of new office space under the Marco Polo Plumbing name, and the address has been administratively changed to 10 Santa Rosa Ave. The city's Office of Small Business confirmed through program and communications manager Michelle Lynch Reynolds that there is no rule requiring the space to remain a pharmacy.\n\nWhen asked about plans for the building, owner Fotiu declined to share details, telling Mission Local, \"We haven't made a decision what it is gonna be.\" He did note a personal connection to the area: \"We know the area. Grew up in the area.\"\n\nThe closure of Central Drug Store — which served Excelsior residents for generations — was lamented as a blow to the neighborhood's working-class, immigrant character. For now, the future of one of the Excelsior's most recognizable storefronts remains unresolved.",
+      "sourceUrl": "https://missionlocal.org/2026/08/central-drug-store-building-purchase/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "Excelsior",
+        "small business",
+        "real estate",
+        "development"
+      ]
+    },
+    {
+      "headline": "Community Groups Raise Alarm Over Two Planned Data Centers Near Bayview–Hunters Point",
+      "dek": "Residents and Supervisor Shamann Walton are pushing back against data centers proposed for one of San Francisco's most environmentally overburdened neighborhoods.",
+      "body": "Reporter JR Valrey of the San Francisco Bay View has raised the alarm about two planned data centers near Bayview–Hunters Point and Visitacion Valley, with concerns centering on additional pollution, water use, and the lack of community input on projects that moved forward without public notice. Supervisor Shamann Walton has said the projects advanced without community engagement and that legislative action may be warranted.\n\nOne of the centers, a 182,000-square-foot facility developed by Novva, was slated to become active in Bayview before the end of summer 2026, according to reporting from Opgov News. A separate large data center, operated by Digital Reality, is located at 200 Paul Avenue in the Bayview. Novva has described its center as the \"greenest data center ever created in the area,\" citing the use of hydrotreated vegetable oil as biofuel and a waterless cooling system.\n\nEnvironmental justice advocates argue the clustering of data centers disproportionately affects the Black, Latine, and Asian American Pacific Islander residents who make up the majority of BVHP's population. The neighborhood already carries one of the heaviest pollution burdens in California, shaped by the legacy of the Hunters Point Naval Shipyard Superfund site and decades of industrial zoning.\n\nCommunity members and organizers are calling for formal environmental review and mandatory community benefit agreements before any additional industrial data infrastructure is permitted in the neighborhood.",
+      "sourceUrl": "https://sfbayview.com/",
+      "sourceName": "San Francisco Bay View",
+      "tags": [
+        "Bayview–Hunters Point",
+        "environment",
+        "data centers",
+        "environmental justice",
+        "Supervisor Walton"
+      ]
+    },
+    {
+      "headline": "Bayview Oyster Bar Set to Open on Third Street, Anchoring Neighborhood's Restaurant Revival",
+      "dek": "Bayview native April Spears is preparing to open her fourth restaurant on Third Street, adding a raw bar and Louisiana-style seafood to a corridor that has seen a wave of new eateries in 2025–26.",
+      "body": "Bayview native and veteran restaurateur April Spears is preparing to open Bayview Oyster Bar at 5114 3rd St., with a debut expected in September 2026, according to the San Francisco Chronicle. The restaurant will feature a raw bar at the front, a seafood counter, about 25 dining seats, and an eventual backyard patio, and will be decorated with historic photographs of Bayview from the 1950s and '60s.\n\nThe menu will combine Northern California seafood — including Dungeness crab, king salmon, and oysters — with Spears' Louisiana roots, with some dishes prepared over open flames in a New Orleans-inspired style. The restaurant is one of nine businesses receiving support through the city's Storefront Opportunity Grant program, which offers $100,000 to qualifying full-service restaurants and bars.\n\nSpears previously ran Auntie April's Chicken, Waffles & Soul Food for 15 years and the cocktail lounge Cafe Envy, both of which closed during the pandemic. Bayview Oyster Bar will be her fourth restaurant in her native neighborhood. The Bayview has struggled economically in recent years — from 2019 to 2025, the corridor saw a 31 percent decline in sales tax revenue — but a wave of city-supported openings, including Smoke Soul Kitchen, Frank Grizzly's, and Sco's in 2025, signals renewed momentum on Third Street.",
+      "sourceUrl": "https://www.sfchronicle.com/food/restaurants/article/bayview-oyster-bar-sf-opening-22362147.php",
+      "sourceName": "San Francisco Chronicle",
+      "tags": [
+        "Bayview–Hunters Point",
+        "restaurants",
+        "small business",
+        "economic development"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Sunday Streets Bayview 2026",
+      "date": "Sunday, August 23",
+      "time": "12:00 PM–5:00 PM",
+      "location": "Lane Street between Thomas and Underwood Avenues, Bayview",
+      "description": "San Francisco's free open-streets festival returns to the Bayview for a day of car-free fun on Lane Street, featuring a Kids Zone hosted by the Bayview YMCA, live music, active play, health resources, and community vendors. SFMTA's Bayview Community Pathway team will also be on hand to gather public input on the neighborhood's new active-transportation corridor.",
+      "sourceUrl": "https://sundaystreetssf.com/sunday-streets-bayview-2026/",
+      "sourceName": "Sunday Streets SF"
+    },
+    {
+      "title": "Visitacion Valley Night Market & Block Party",
+      "date": "Friday, August 28",
+      "time": "4:00 PM–8:30 PM",
+      "location": "Leland Ave between Bayshore Blvd and Peabody St, Visitacion Valley",
+      "description": "The inaugural Visitacion Valley Night Market takes over Leland Avenue with food vendors, local shopping, live music by DJ Cilla and Native Elements, street dancing, family-friendly activities, and community resources — all free. The event repeats on September 25.",
+      "sourceUrl": "https://sf.funcheap.com/event-series/sfs-visitacion-valley-night-market-block-party-2026/",
+      "sourceName": "Funcheap SF"
+    },
+    {
+      "title": "Hunters Point Shipyard Open Studios — Fall 2026",
+      "date": "Through October 19",
+      "time": "11:00 AM–6:00 PM",
+      "location": "Hunters Point Shipyard, 451 Galvez Ave, Bayview",
+      "description": "Over 100 artists open their working studios at one of the nation's largest artist communities, featuring paintings, sculpture, ceramics, jewelry, photography, and more, plus live music, food, and a beer and wine garden. Free admission and parking with RSVP; fall dates are October 18–19.",
+      "sourceUrl": "https://www.shipyardartists.com/shipyard-open-studios/",
+      "sourceName": "Hunters Point Shipyard Artists / Shipyard Trust for the Arts"
+    },
+    {
+      "title": "Sunday Streets Excelsior 2026",
+      "date": "Sunday, October 18",
+      "time": "Various times",
+      "location": "Excelsior neighborhood",
+      "description": "Sunday Streets returns to the Excelsior for the final event of the 2026 season, transforming neighborhood streets into car-free community space with free activities, live music, health resources, and local vendors for all ages.",
+      "sourceUrl": "https://sundaystreetssf.com/",
+      "sourceName": "Sunday Streets SF"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "SFMTA's Bayview Community Pathway Heads to Sunday Streets for Public Input",
+      "body": "The SFMTA's Bayview Community Pathway project — a planned north-south active transportation corridor parallel to Third Street, featuring protected bikeways, raised crosswalks, bulb-outs, and traffic calming — will host a community engagement pop-up at Sunday Streets Bayview on August 23 from 12–5 p.m. Residents can weigh in on decorative crosswalk designs and view a pedestrian plaza demonstration. The project was officially approved in December 2025 and encompasses segments of Mendell Street, Newcomb Avenue, Lane Street, Underwood Avenue, and Keith Street.",
+      "sourceUrl": "https://www.sfmta.com/project-updates/help-shape-future-bayview-community-pathway-upcoming-events",
+      "sourceName": "SFMTA",
+      "tags": [
+        "Bayview–Hunters Point",
+        "transportation",
+        "SFMTA",
+        "bike infrastructure"
+      ]
+    },
+    {
+      "headline": "India Basin Waterfront Park Presses Toward 2028 Completion as Final Shoreline Phase Continues",
+      "body": "India Basin Waterfront Park at 900 Innes Ave in Bayview–Hunters Point continues to open to the public even as crews work on the final phase of construction, which the San Francisco Recreation and Parks Department says is expected to run through early 2028. The 900 Innes parcel already features two new public piers, a floating dock, ADA-compliant Bay Trail access, a food pavilion, and a makers' shop for boat-building and community programs. Partners have raised more than $186 million toward an approximately $200 million goal. The full 10-acre park will close a critical gap in the San Francisco Bay Trail and will include restoration of the historic 1875 Shipwright's Cottage as a community space and mini museum.",
+      "sourceUrl": "https://hoodline.com/2026/03/bayview-finally-gets-its-bay-back-with-india-basin-waterfront-park/",
+      "sourceName": "Hoodline",
+      "tags": [
+        "Bayview–Hunters Point",
+        "parks",
+        "India Basin",
+        "waterfront"
+      ]
+    },
+    {
+      "headline": "U3Fit Gym Expands to Major New Bayview Location Ahead of 2027 Opening",
+      "body": "Lawanda Dickerson, owner of the popular U3Fit gym at 4646 Third St. in Bayview, has leased a new, approximately 20,000-square-foot facility at 1610 Armstrong Ave., which she says will be the largest health and fitness center in Bayview outside of the neighborhood YMCA. Dickerson expects to open the expanded location in 2027. The news, reported in Mission Local's April 2026 Bayview Buzz column, signals continued investment in wellness infrastructure on the Third Street corridor.",
+      "sourceUrl": "https://missionlocal.org/2026/04/bayview-buzz-new-gym/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "Bayview–Hunters Point",
+        "fitness",
+        "small business"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Old Skool Cafe",
+        "cuisineGroup": "Seafood & American",
+        "type": "Jazz supper club & soul food restaurant",
+        "description": "A 1920s-themed speakeasy jazz supper club staffed by at-risk and formerly incarcerated youth ages 16–22, serving Southern and global soul food with live music nightly.",
+        "address": "1429 Mendell St, San Francisco, CA 94124",
+        "phone": "(415) 822-8531",
+        "website": "https://www.oldskoolcafe.org",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Gumbo Social",
+        "cuisineGroup": "Seafood & American",
+        "type": "Soul food & Cajun restaurant",
+        "description": "A beloved farmers-market-pop-up-turned-brick-and-mortar on Third Street serving deeply flavored gumbos, po'boys, and sides with a build-your-own hot-sauce wall.",
+        "address": "5176 3rd St, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://www.gumbosocial.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Smoke Soul Kitchen",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Soul food brunch counter",
+        "description": "A minority- and woman-owned counter-service soul food spot in the former Auntie April's space, celebrated for fried chicken and waffles, biscuit sandwiches, and shrimp and grits.",
+        "address": "4618 3rd St, San Francisco, CA 94124",
+        "phone": "(415) 900-6093",
+        "website": "https://www.smokesoulkitchen.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "New"
+      },
+      {
+        "name": "Gratta Wines",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Urban winery, wine bar & Italian specialty market",
+        "description": "A neighborhood institution since 2006, Gratta produces small-batch wines from Dry Creek grapes in a Bayview garage winery and serves them alongside Italian comfort food and specialty market items.",
+        "address": "5273 3rd St, San Francisco, CA 94124",
+        "phone": "(415) 872-9791",
+        "website": "https://www.grattawines.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Excelsior Coffee",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Neighborhood coffee shop & bakery café",
+        "description": "A community-minded coffee shop on Mission Street serving espresso drinks, ube pastries, and rotating food items, owned and operated by Excelsior residents.",
+        "address": "4495 Mission St, San Francisco, CA 94112",
+        "phone": "(415) 347-7333",
+        "website": "https://www.yelp.com/biz/excelsior-coffee-san-francisco",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Tala Wine",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Natural wine bar & tea lounge",
+        "description": "A boutique natural wine bar on Mission Street with a carefully curated list of low-intervention imports, snack plates, artisan teas, and regular winemaker tasting events.",
+        "address": "4625 Mission St, San Francisco, CA 94112",
+        "phone": "(415) 740-8494",
+        "website": "https://tala.wine",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Taqueria Guadalajara",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican taqueria",
+        "description": "A no-frills Excelsior taqueria with fast service, excellent made-to-order burritos in multiple styles, and an array of proteins including lengua, cabeza, and carne asada.",
+        "address": "4798 Mission St, San Francisco, CA 94112",
+        "phone": "(415) 469-5480",
+        "website": "https://www.yelp.com/biz/taqueria-guadalajara-san-francisco",
+        "neighborhood": "Excelsior",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ty Sandwich",
+        "cuisineGroup": "Asian",
+        "type": "Vietnamese bánh mì & boba shop",
+        "description": "A takeout-only Excelsior gem serving forearm-sized bánh mì stuffed with marinated meats, fresh herbs, and crunchy vegetables, plus a lengthy boba tea menu.",
+        "address": "4829 Mission St, San Francisco, CA 94112",
+        "phone": "(415) 333-7242",
+        "website": "https://www.yelp.com/biz/ty-sandwich-san-francisco",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Beijing Restaurant",
+        "cuisineGroup": "Asian",
+        "type": "Chinese quick-service restaurant",
+        "description": "A quick-service Excelsior spot specializing in Beijing-focused dishes with an extensive menu of northern Chinese comfort food at accessible prices.",
+        "address": "4237 Mission St, San Francisco, CA 94112",
+        "phone": "",
+        "website": "https://www.theinfatuation.com/san-francisco/neighborhoods/excelsior",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Soo Fong Restaurant",
+        "cuisineGroup": "Asian",
+        "type": "Chinese restaurant",
+        "description": "A longtime Bayview Chinese restaurant near Third Street favored by locals for consistent, affordable Cantonese-style dishes.",
+        "address": "4917 3rd St, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://www.yelp.com/search?cflt=restaurants&find_loc=Bayview-Hunters+Point,+San+Francisco,+CA",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Burma Bear",
+        "cuisineGroup": "Asian",
+        "type": "Burmese restaurant",
+        "description": "A Yelp-rated favorite in Bayview–Hunters Point offering Burmese comfort dishes in a welcoming neighborhood setting.",
+        "address": "4416 3rd St, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://www.yelp.com/search?cflt=restaurants&find_loc=Bayview-Hunters+Point,+San+Francisco,+CA",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Mission Rock Resort",
+        "cuisineGroup": "Seafood & American",
+        "type": "Waterfront bar & restaurant",
+        "description": "A sprawling waterfront bar and restaurant at the Third Street bridge offering bay views, an expansive deck, seafood, and American staples popular with the after-work crowd.",
+        "address": "817 China Basin St, San Francisco, CA 94107",
+        "phone": "(415) 701-7625",
+        "website": "https://www.missionrockresort.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "All Good Pizza",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Neighborhood pizzeria",
+        "description": "A community-focused pizzeria at Jerrold and Third Street in Bayview known for good-value pies and proximity to the Saturday farmers market.",
+        "address": "1605 Jerrold Ave, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://www.yelp.com/search?cflt=restaurants&find_loc=Bayview-Hunters+Point,+San+Francisco,+CA",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Let's Eat BBQ & More",
+        "cuisineGroup": "Seafood & American",
+        "type": "BBQ restaurant",
+        "description": "A locally owned Bayview barbecue spot praised by neighborhood regulars for personable service and satisfying smoked meats.",
+        "address": "4901 3rd St, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://www.yelp.com/search?cflt=restaurants&find_loc=Bayview-Hunters+Point,+San+Francisco,+CA",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Constanso's",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Deli & sandwich shop",
+        "description": "A Bayview deli open into the evening and popular with locals for its affordable, hearty sandwiches and quick service on Third Street.",
+        "address": "5200 3rd St, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://www.yelp.com/search?cflt=restaurants&find_loc=Bayview-Hunters+Point,+San+Francisco,+CA",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      }
+    ],
+    "hotels": [],
+    "shops": [
+      {
+        "name": "Flora Grubb Gardens",
+        "shopGroup": "Home & Gifts",
+        "type": "Garden nursery & plant shop",
+        "description": "An acclaimed 8,000-square-foot open-air garden center and design shop in Bayview specializing in drought-tolerant plants, succulents, and outdoor accessories, with an on-site coffee counter.",
+        "address": "1634 Jerrold Ave, San Francisco, CA 94124",
+        "phone": "(415) 626-7256",
+        "website": "https://www.floragrubb.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Gratta Wines Market",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Italian specialty market & wine shop",
+        "description": "Attached to the Gratta Wines tasting room, this specialty market stocks Italian pantry items, cured meats, artisan cheeses, and Gratta's own estate-produced wines for retail purchase.",
+        "address": "5273 3rd St, San Francisco, CA 94124",
+        "phone": "(415) 872-9791",
+        "website": "https://www.grattawines.com/market",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Excelsior Coffee (retail)",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Specialty coffee shop & retail",
+        "description": "In addition to its café service, Excelsior Coffee sells bags of beans to go and retail pastries, anchoring the Mission Street commercial strip as a community gathering point.",
+        "address": "4495 Mission St, San Francisco, CA 94112",
+        "phone": "(415) 347-7333",
+        "website": "https://www.yelp.com/biz/excelsior-coffee-san-francisco",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Tala Wine (retail)",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Natural wine shop",
+        "description": "Beyond its bar service, Tala Wine Co. stocks a carefully curated retail selection of natural, low-intervention wines available by the bottle for takeaway.",
+        "address": "4625 Mission St, San Francisco, CA 94112",
+        "phone": "(415) 740-8494",
+        "website": "https://tala.wine",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Bayview Opera House Ruth Williams Memorial Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Historic community theater & cultural center",
+        "description": "San Francisco's oldest theater, founded in 1888 and listed on the National Register of Historic Places, operated as a community cultural center offering arts classes, youth programs, music, dance, and cultural events on Third Street.",
+        "address": "4705 3rd St, San Francisco, CA 94124",
+        "phone": "(415) 824-0386",
+        "website": "https://www.bvoh.org",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hunters Point Shipyard Artists Studios (HPSA)",
+        "venueGroup": "Art Galleries",
+        "type": "Artist collective & open studios complex",
+        "description": "The nation's largest artist collective, with more than 250 artists working in studios at the historic Hunters Point Shipyard; open to the public twice yearly for free Spring and Fall Open Studios weekends.",
+        "address": "451 Galvez Ave, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://www.shipyardartists.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Shipyard Gallery (Building 101)",
+        "venueGroup": "Art Galleries",
+        "type": "Community art gallery",
+        "description": "The main gallery space within the Hunters Point Shipyard Artists complex, hosting rotating exhibitions of work by the 250+ resident artists during open studios and special events.",
+        "address": "451 Galvez Ave, Bldg 101, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://shipyardtrust.org",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Jerry Garcia Amphitheater",
+        "venueGroup": "Music Venues",
+        "type": "Outdoor amphitheater",
+        "description": "A Greek-style outdoor amphitheater in John McLaren Park with a capacity of 1,200, named for the Grateful Dead guitarist who grew up in the Excelsior, hosting free concerts and community performances after a $1.5 million renovation.",
+        "address": "John McLaren Park, San Francisco, CA 94134",
+        "phone": "(415) 831-2700",
+        "website": "https://sfrecpark.org/destination/john-mclaren-park/",
+        "neighborhood": "Excelsior / Visitacion Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "India Basin Waterfront Park",
+        "venueGroup": "Museums & Cultural",
+        "type": "Waterfront park & community programming space",
+        "description": "Bayview's new marquee 10-acre waterfront park at 900 Innes Ave featuring piers, a floating dock, a food pavilion, and rotating arts and cultural programming under an Equitable Development Plan designed by and for the Bayview community.",
+        "address": "900 Innes Ave, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://ibwaterfrontpark.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "New"
+      },
+      {
+        "name": "Quesada Gardens",
+        "venueGroup": "Museums & Cultural",
+        "type": "Community garden & public mural space",
+        "description": "A vibrant community-transformed public garden at Quesada and Newhall featuring colorful murals, tiled stairs, and lush green space that has served as a Bayview gathering place since 2006.",
+        "address": "Quesada Ave at Newhall St, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Bayview Hunters Point YMCA",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service community YMCA",
+        "description": "A full-service YMCA on Lane Street in the heart of Bayview offering fitness facilities, indoor and outdoor pools, sports courts, youth programs, and after-school education in partnership with SFUSD.",
+        "address": "1601 Lane St, San Francisco, CA 94124",
+        "phone": "(415) 822-7728",
+        "website": "https://www.ymcasf.org/location/bayview-hunters-point-ymca/",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "U3Fit",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Community fitness gym",
+        "description": "A popular small gym on the Third Street corridor owned by life and fitness coach Lawanda Dickerson, serving Bayview residents with personalized training and community-focused fitness programming.",
+        "address": "4646 3rd St, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://missionlocal.org/2026/04/bayview-buzz-new-gym/",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Excelsior Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Classical Hatha yoga studio",
+        "description": "A Mission Street yoga studio on the third floor of the US Bank Building offering 90-minute classical Hatha yoga classes at three levels, plus restorative bodywork including Seifukujutsu massage and Reiki.",
+        "address": "4610 Mission St, Fl 3, San Francisco, CA 94112",
+        "phone": "(415) 251-2873",
+        "website": "https://www.yelp.com/biz/excelsior-yoga-san-francisco",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Love and Light Yoga and Wellness",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Boutique yoga & wellness studio",
+        "description": "A Latina-owned boutique studio on Mission Street in the Excelsior offering all-level Vinyasa, Power Flow, Slow Flow, Yin Yoga, Barre, Mat Pilates, and Zumba, plus sound baths and a 200-hour teacher training program.",
+        "address": "4877 Mission St, San Francisco, CA 94112",
+        "phone": "",
+        "website": "https://www.loveandlightsfyoga.com",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "John McLaren Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Municipal park — 313 acres",
+        "description": "San Francisco's second-largest park, straddling the Excelsior, Crocker Amazon, and Visitacion Valley neighborhoods, with more than 7 miles of trails, a golf course, Coffman Pool, the Jerry Garcia Amphitheater, six playgrounds, tennis courts, basketball courts, baseball diamonds, and McNab Lake.",
+        "address": "John F. Shelley Dr, San Francisco, CA 94134",
+        "phone": "(415) 831-2700",
+        "website": "https://sfrecpark.org/716/McLaren-Park",
+        "neighborhood": "Excelsior / Crocker Amazon / Visitacion Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "India Basin Waterfront Park (Recreation)",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Waterfront park with Bay Trail access",
+        "description": "A new 10-acre waterfront park in Bayview offering ADA-accessible Bay Trail connections, public piers, a floating dock, a great lawn, native landscaping, youth swim programs, and free boat-building community programs.",
+        "address": "900 Innes Ave, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://ibwaterfrontpark.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "New"
+      },
+      {
+        "name": "Crocker Amazon Playground",
+        "venueGroup": "Sports & Courts",
+        "type": "Multi-sport recreation complex",
+        "description": "A major sports complex in the Crocker Amazon neighborhood anchoring the southern end of McLaren Park, with soccer, baseball and softball fields, tennis and pickleball courts, basketball and bocce courts, and a clubhouse.",
+        "address": "Geneva Ave & Moscow St, San Francisco, CA 94112",
+        "phone": "(415) 831-2700",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Crocker Amazon",
+        "notable": ""
+      },
+      {
+        "name": "Bayview Park (Bayview Hill)",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Natural area park",
+        "description": "A 46-acre natural area park atop Bayview Hill offering sweeping views of the bay and the city, with hiking trails through native habitat; open daily 5 a.m. to midnight.",
+        "address": "Bayview Hill, San Francisco, CA 94124",
+        "phone": "(415) 831-2700",
+        "website": "https://sfrecpark.org/destination/bay-view-park/",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Excelsior's iconic Central Drug Store building sells",
+      "url": "https://missionlocal.org/2026/08/central-drug-store-building-purchase/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "San Francisco Bay View — Data centers near Bayview Hunters Point and Vis Valley",
+      "url": "https://sfbayview.com/",
+      "publication": "San Francisco Bay View"
+    },
+    {
+      "title": "Data Center Boom Risks Health of Already Vulnerable Communities",
+      "url": "https://www.techpolicy.press/data-center-boom-risks-health-of-already-vulnerable-communities/",
+      "publication": "Tech Policy Press"
+    },
+    {
+      "title": "The Danger with Data Centres — Novva Data Centre in Bayview",
+      "url": "https://opgov.news/articles/the-danger-with-data-centres",
+      "publication": "Opgov News"
+    },
+    {
+      "title": "Bayview Oyster Bar in wave of restaurants opening in SF's Bayview",
+      "url": "https://www.sfchronicle.com/food/restaurants/article/bayview-oyster-bar-sf-opening-22362147.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Bayview Oyster Bar To Open On Third Street In San Francisco",
+      "url": "https://whatnow.com/san-francisco/restaurants/bayview-oyster-bar-to-open-on-third-street-in-san-francisco/",
+      "publication": "What Now SF"
+    },
+    {
+      "title": "Sunday Streets Bayview 2026",
+      "url": "https://sundaystreetssf.com/sunday-streets-bayview-2026/",
+      "publication": "Sunday Streets SF"
+    },
+    {
+      "title": "Help shape the future of the Bayview Community Pathway at upcoming events",
+      "url": "https://www.sfmta.com/project-updates/help-shape-future-bayview-community-pathway-upcoming-events",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "SF's First Visitacion Valley Night Market + Block Party (2026)",
+      "url": "https://sf.funcheap.com/event-series/sfs-visitacion-valley-night-market-block-party-2026/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Shipyard Open Studios 2026",
+      "url": "https://www.shipyardartists.com/shipyard-open-studios/",
+      "publication": "Hunters Point Shipyard Artists"
+    },
+    {
+      "title": "Bayview Finally Gets Its Bay Back With India Basin Waterfront Park",
+      "url": "https://hoodline.com/2026/03/bayview-finally-gets-its-bay-back-with-india-basin-waterfront-park/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "India Basin Waterfront Park — SF Recreation and Parks",
+      "url": "https://ibwaterfrontpark.com",
+      "publication": "India Basin Waterfront Park (official)"
+    },
+    {
+      "title": "Bayview Buzz: How to drink wine and meet D10's would-be supervisors",
+      "url": "https://missionlocal.org/2026/04/bayview-buzz-new-gym/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Bayview Buzz: SFMTA fixes T-line, oyster bar to replace long-shuttered cafe",
+      "url": "https://missionlocal.org/2026/07/bayview-buzz-sfmta-third-street-corridor/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "The Excelsior: Resisting change, or ready for a new business model?",
+      "url": "https://missionlocal.org/2025/09/sf-excelsior-business-change/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Old Skool Cafe — About",
+      "url": "https://www.oldskoolcafe.org/about",
+      "publication": "Old Skool Cafe (official)"
+    },
+    {
+      "title": "Smoke Soul Kitchen — This Bayview mom craved a cozy, neighborhood restaurant",
+      "url": "https://sfstandard.com/2025/04/09/smoke-soul-kitchen-best-fried-chicken/",
+      "publication": "San Francisco Standard"
+    },
+    {
+      "title": "Gratta Wines Yelp listing (Updated June 2026)",
+      "url": "https://www.yelp.com/biz/gratta-wines-san-francisco",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Gumbo Social — Yelp listing (Updated June 2026)",
+      "url": "https://www.yelp.com/biz/gumbo-social-san-francisco",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Tala Wine — Yelp listing (Updated August 2026)",
+      "url": "https://www.yelp.com/biz/tala-wine-san-francisco",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Excelsior Coffee — Yelp listing (Updated August 2026)",
+      "url": "https://www.yelp.com/biz/excelsior-coffee-san-francisco",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Taqueria Guadalajara — Yelp listing (Updated August 2026)",
+      "url": "https://www.yelp.com/biz/taqueria-guadalajara-san-francisco",
+      "publication": "Yelp"
+    },
+    {
+      "title": "TY Sandwich — Yelp listing (Updated August 2026)",
+      "url": "https://www.yelp.com/biz/ty-sandwich-san-francisco",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Flora Grubb Gardens — Yelp listing (Updated July 2026)",
+      "url": "https://www.yelp.com/biz/flora-grubb-gardens-san-francisco-2",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Excelsior Yoga — Yelp listing (Updated June 2026)",
+      "url": "https://www.yelp.com/biz/excelsior-yoga-san-francisco",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Love and Light Yoga — ClassPass listing",
+      "url": "https://classpass.com/studios/love-and-light-yoga-san-francisco",
+      "publication": "ClassPass"
+    },
+    {
+      "title": "Bayview Hunters Point YMCA — YMCA of Greater SF",
+      "url": "https://www.ymcasf.org/location/bayview-hunters-point-ymca/",
+      "publication": "YMCA of Greater San Francisco"
+    },
+    {
+      "title": "McLaren Park — SF Recreation and Parks",
+      "url": "https://sfrecpark.org/716/McLaren-Park",
+      "publication": "SF Recreation and Parks"
+    },
+    {
+      "title": "Bayview Opera House — Yelp listing (Updated August 2026)",
+      "url": "https://www.yelp.com/biz/bayview-opera-house-san-francisco-2",
+      "publication": "Yelp"
+    },
+    {
+      "title": "SFMTA Bayview Community Pathway — CEQA Notice of Exemption",
+      "url": "https://ceqanet.lci.ca.gov/2026030511",
+      "publication": "California CEQA Net / SFMTA"
+    }
+  ]
+}

@@ -1,0 +1,889 @@
+{
+  "clusterSlug": "presidio-richmond",
+  "clusterName": "Presidio & Richmond",
+  "weekOf": "2026-08-21",
+  "topStories": [
+    {
+      "headline": "The Mess Hall Opens at Presidio Tunnel Tops, Completing the Park's Vision",
+      "dek": "The long-awaited food hall debuted August 15 inside a restored 1898 building, bringing three restaurants, a cocktail bar, a café, and a specialty market to the Presidio.",
+      "body": "Four years after Presidio Tunnel Tops opened to the public, its final piece fell into place on August 15 when The Mess Hall at the Presidio swung open its doors at 201 Halleck Street. The 6,200-square-foot indoor-outdoor space occupies a historic building that once served as an animal feed store, butcher shop, and mailroom during the Presidio's military era — and the restoration preserved original wood throughout, with design details drawn from the 1930s and 1940s.\n\nThe food hall is led by restaurateur Nate Leonard, entrepreneur Rob Gaon, and James Beard Award–winning chef Peter Serpico, who developed the culinary concepts. Three fast-casual restaurant concepts anchor the hall: Boda (Korean and Asian-inspired dishes), Dayboat Seafood (raw oysters, shrimp cocktail, crudo, and build-your-own handrolls), and Breadwinner (sandwiches, burgers, and salads). A daytime café features pastries from Breadbelly — ranked seventh in the SF Chronicle's 2026 Top 100 — and coffee from Wrecking Ball Coffee Roasters, opening daily at 7 a.m.\n\nAs of this week, Breadwinner, the bar, café, and market are fully operational; Boda and Dayboat Seafood are expected to begin full service shortly, according to 7x7's August 20 report. The hall boasts wraparound views of San Francisco Bay, the Palace of Fine Arts, and Alcatraz. Leonard has described his goal as being part of residents' and visitors' daily routines at the Tunnel Tops park, which draws millions of visitors each year.\n\nThe Mess Hall marks the latest in a series of culinary additions to the Presidio, joining Dalida, Il Parco, and the recently opened Maria Isabel. A Fieldwork Brewing Company taproom is also expected to open nearby in the coming months.",
+      "sourceUrl": "https://www.sfchronicle.com/food/restaurants/article/mess-hall-presidio-sf-opens-22362602.php",
+      "sourceName": "San Francisco Chronicle",
+      "tags": [
+        "food",
+        "Presidio",
+        "dining",
+        "new opening"
+      ]
+    },
+    {
+      "headline": "Richmond District Named San Francisco's Most Desirable Neighborhood in Chronicle Reader Poll",
+      "dek": "A San Francisco Chronicle poll published August 6 found that Richmond District residents beat out sunnier neighborhoods to earn the top spot for where Chronicle readers most want to live.",
+      "body": "The Richmond District — famously foggy, famously walkable — has been crowned the neighborhood San Francisco Chronicle readers most want to call home, according to a reader poll published on August 6. Nineteen of 130 respondents chose the Richmond District, outpacing 29 other neighborhoods in the informal survey. The runners-up included Bernal Heights (13 votes), North Beach (10), and a three-way tie among Glen Park, the Sunset, and Noe Valley.\n\nChronicle culture critic Peter Hartlaub noted the result caught editors off guard: sunnier, warmer neighborhoods were expected to dominate. Instead, readers praised the Richmond for its movie theaters, great parks in every direction, relatively affordable homes (by San Francisco standards), and a food scene that has gained significant momentum in 2026 with major openings on Clement Street.\n\nThe result reflects a broader trend of renewed interest in the neighborhood's western corridors. The Inner Richmond, long called the city's 'New Chinatown' for its dense concentration of Chinese restaurants and markets, has attracted high-profile restaurant openings this year, including Rose Pizzeria at 1 Clement Street and a buzz around the Clement Street Farmers Market as a Sunday morning destination.",
+      "sourceUrl": "https://www.sfchronicle.com/totalsf/article/people-want-live-s-f-richmond-district-leads-22374390.php",
+      "sourceName": "San Francisco Chronicle",
+      "tags": [
+        "Richmond District",
+        "neighborhood",
+        "community",
+        "dining"
+      ]
+    },
+    {
+      "headline": "Cottage Bakery Cuprum Rises from Inner Richmond Home Kitchen",
+      "dek": "Valeriya Romashchenko's home-based Cuprum Bakery, launched in 2024, is gaining a growing following in the Richmond District for its science-driven sourdough and baked goods.",
+      "body": "Walk up to the right address in the Inner Richmond and you may find fresh sourdough stacked on a rack on a front stoop — that's Cuprum Bakery, the cottage operation run by Valeriya Romashchenko out of her home kitchen. The Richmond Review profiled Romashchenko in its August 15 edition, chronicling how a bioengineering graduate of Moscow State University and the San Francisco Baking Institute turned pandemic-era flexibility into a growing small business.\n\nRomashchenko, who moved to San Francisco in 2016, first started baking at age 12 in Russia and says her scientific background is central to her process: she approaches each batch the way a lab researcher would, tracking starter behavior across seasons and adjusting variables systematically. The bakery's name — Cuprum — comes from the Latin word for copper, her favorite element on the periodic table.\n\nCuprum operates as a California Cottage Food Operation, with orders placed via Hotplate and pick-up from her home in the Inner Richmond. The bakery's growing profile is part of a broader wave of small food entrepreneurs finding audiences in the Richmond District, where a strong base of food-literate residents has historically supported independent producers.",
+      "sourceUrl": "https://richmondsunsetnews.com/2026/08/15/richmond-baker-combines-science-and-passion-in-cottage-bakery/",
+      "sourceName": "Richmond Review/Sunset Beacon",
+      "tags": [
+        "food",
+        "Inner Richmond",
+        "small business",
+        "bakery"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "EXCLUSION: The Presidio's Role in WWII Japanese American Incarceration",
+      "date": "Through August 31",
+      "time": "10:00 AM–4:00 PM",
+      "location": "Presidio Officers' Club, 50 Moraga Avenue, Presidio",
+      "description": "The award-winning free exhibition examines how the Presidio served as the Army's Western Defense Command and its role in the unjust incarceration of 120,000 Japanese Americans during World War II. Open Fridays through Sundays through August 31.",
+      "sourceUrl": "https://presidio.gov/about/press/presidio-unveils-vibrant-2026-summer-event-lineup",
+      "sourceName": "Presidio Trust"
+    },
+    {
+      "title": "Fort Point History Talks",
+      "date": "Ongoing",
+      "time": "11:30 AM–11:45 AM",
+      "location": "Fort Point, Marine Drive, Presidio",
+      "description": "Free 15-minute ranger-led history talks at Fort Point are offered Fridays, Saturdays, and Sundays throughout the summer season.",
+      "sourceUrl": "https://www.parksconservancy.org/parks/presidio-san-francisco",
+      "sourceName": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "Presidio Campfire Program",
+      "date": "Ongoing",
+      "time": "3:00 PM–3:30 PM",
+      "location": "Presidio Tunnel Tops, Presidio",
+      "description": "Free campfire programs hosted by the National Park Service take place Fridays, Saturdays, and Sundays at Presidio Tunnel Tops throughout summer.",
+      "sourceUrl": "https://www.parksconservancy.org/parks/presidio-san-francisco",
+      "sourceName": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "Clement Street Farmers Market",
+      "date": "Ongoing",
+      "time": "9:00 AM–2:00 PM",
+      "location": "244 Clement St, Inner Richmond",
+      "description": "The Inner Richmond's beloved year-round Sunday farmers market runs along three city blocks, featuring local produce, artisan baked goods, flowers, dairy, and specialty foods from Bay Area vendors.",
+      "sourceUrl": "https://www.agriculturalinstitute.org/clement-st",
+      "sourceName": "Agricultural Institute of Marin"
+    },
+    {
+      "title": "Presidio Forest Stewards Volunteer Day",
+      "date": "Friday, August 22",
+      "time": "9:00 AM–12:00 PM",
+      "location": "Presidio Native Plant Nursery, Presidio",
+      "description": "Join the Golden Gate National Parks Conservancy to help restore the Presidio forest through hands-on stewardship. No experience required; tools and training provided.",
+      "sourceUrl": "https://www.parksconservancy.org/parks/presidio-san-francisco",
+      "sourceName": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "Presidio Habitat Stewards Volunteer Day",
+      "date": "Saturday, August 22",
+      "time": "9:00 AM–12:00 PM",
+      "location": "Presidio Native Plant Nursery, Presidio",
+      "description": "Volunteer to restore native habitat in the Presidio alongside the Golden Gate National Parks Conservancy team, with tasks suited to all skill levels.",
+      "sourceUrl": "https://www.parksconservancy.org/parks/presidio-san-francisco",
+      "sourceName": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "Los Californianos: Anza 250 / America 250 Living History Celebration",
+      "date": "Wednesday, September 17",
+      "time": "Various times",
+      "location": "Presidio Officers' Club, 50 Moraga Avenue, Presidio",
+      "description": "A living history program marking the Presidio's 250th anniversary, with a procession, flag ceremonies, historical reenactors in period dress, music by Los Arribeños de San Francisco and the Young American Patriots Fife & Drum Corps, and free guided tours of the Heritage Gallery.",
+      "sourceUrl": "https://presidio.gov/explore/events/los-californianos-anza-250-america-250-west-east-coasts-in-1776",
+      "sourceName": "Presidio Trust"
+    },
+    {
+      "title": "Presidio Tunnel Tops Stewards Volunteer Day",
+      "date": "Tuesday, August 26",
+      "time": "9:00 AM–11:00 AM",
+      "location": "Presidio Tunnel Tops, Presidio",
+      "description": "Help care for the Tunnel Tops park landscape alongside Golden Gate National Parks Conservancy stewardship staff in this free recurring volunteer session.",
+      "sourceUrl": "https://www.parksconservancy.org/parks/presidio-san-francisco",
+      "sourceName": "Golden Gate National Parks Conservancy"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Rose Pizzeria's Inner Richmond Location Booked Solid Through Summer",
+      "body": "Rose Pizzeria — the Berkeley sensation that the New York Times named one of America's 22 best pizzerias in 2024 — opened its first San Francisco outpost at 1 Clement Street earlier this year, and demand has not let up. Husband-and-wife owners Gerad Gobel and Alexis Rorabaugh transformed the former Village Pizzeria space, restoring original green-and-white checkered floors and outfitting the 44-seat dining room with marble-topped tables. The SF location offers a slightly expanded menu compared to the Berkeley original, including customizable pies and signature options like the She Wolf (burrata, slow-roasted tomato, garlic confit, olives, capers) and the Beach Club (pistachio mortadella, pickled jalapeño, and pineapple). The restaurant is open daily 11:30 a.m. to 9 p.m. and accepts walk-ins at the counter, bar, and sidewalk tables.",
+      "sourceUrl": "https://sfist.com/2026/04/27/rose-pizzeria-born-in-berkeley-opens-its-san-francisco-location-in-the-richmond/",
+      "sourceName": "SFist",
+      "tags": [
+        "dining",
+        "Inner Richmond",
+        "pizza",
+        "new opening"
+      ]
+    },
+    {
+      "headline": "Trump's New Presidio Trust Board Settles In as Busy Summer Season Continues",
+      "body": "After President Trump fired all six Biden-appointed members of the Presidio Trust Board of Directors in April, the White House appointed six new members in May. The new board includes philanthropist Lynne Benioff (a former board chair), diplomat and tech entrepreneur Trevor Traina, Stanford educator Laura Arrillaga-Andreessen, xAI general counsel James Burnham, Local Capital Group managing partner John Bickford, and Redpanda CFO Kyle Corcoran. Presidio Trust spokesperson Lisa Petrie said park operations have continued without interruption through the transition, and the new board is being oriented to the park as the Presidio's biggest summer programming season — including the opening of The Mess Hall and the ongoing 250th anniversary commemorations — gets underway.",
+      "sourceUrl": "https://presidio.gov/about/press/white-house-appoints-six-new-members",
+      "sourceName": "Presidio Trust",
+      "tags": [
+        "Presidio",
+        "politics",
+        "governance",
+        "federal"
+      ]
+    },
+    {
+      "headline": "Richmond District Home Prices Post Strongest Year-Over-Year Gains of 2026",
+      "body": "San Francisco single-family home prices posted their strongest year-over-year gain of 2026, surging more than 26%, according to Mosaik Real Estate's August market report. The Richmond District, known for its classic architecture and access to Golden Gate Park and the Presidio, continues to attract buyers drawn to its neighborhood feel and culinary reputation. The trend aligns with the Chronicle reader poll published August 6 that named the Richmond the neighborhood San Francisco readers most want to live in.",
+      "sourceUrl": "https://mosaikrealestate.com/blog/living-in-the-richmond-district-what-buyers-should-know-before-moving",
+      "sourceName": "Mosaik Real Estate",
+      "tags": [
+        "real estate",
+        "Richmond District",
+        "housing"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Burma Superstar",
+        "cuisineGroup": "Asian",
+        "type": "Burmese restaurant",
+        "description": "Iconic Inner Richmond Burmese restaurant famous for its tea leaf salad, samosas, and pumpkin pork stew — no reservations, expect a line.",
+        "address": "309 Clement St",
+        "phone": "415-387-2147",
+        "website": "https://www.burmasuperstar.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "B Star Bar",
+        "cuisineGroup": "Asian",
+        "type": "Burmese-fusion restaurant",
+        "description": "Sister restaurant to Burma Superstar serving Burmese, Thai, Chinese, and California fusion dishes with shorter wait times.",
+        "address": "127 Clement St",
+        "phone": "415-933-9900",
+        "website": "https://www.burmasuperstar.com/locations/b-star/",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Wako Japanese Restaurant",
+        "cuisineGroup": "Asian",
+        "type": "Omakase sushi restaurant",
+        "description": "Michelin-starred intimate sushi restaurant led by Chef Tomoyuki Hayashi, offering a highly regarded omakase experience in the heart of the Inner Richmond.",
+        "address": "211 Clement St",
+        "phone": "415-682-4875",
+        "website": "https://www.sushiwakosf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chapeau!",
+        "cuisineGroup": "Other",
+        "type": "French bistro",
+        "description": "Beloved classic French bistro with consistent prix fixe and à la carte menus, celebrated for hospitality and timeless cuisine since 1996.",
+        "address": "126 Clement St",
+        "phone": "415-750-9787",
+        "website": "https://www.chapeausf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Rose Pizzeria",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Neapolitan-style pizzeria",
+        "description": "The Berkeley sensation — named one of America's 22 best pizzerias by the New York Times — opened its first San Francisco location at the corner of Clement and Arguello in 2026.",
+        "address": "1 Clement St",
+        "phone": "",
+        "website": "https://www.rosepizzeria.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "New"
+      },
+      {
+        "name": "Arsicault Bakery",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "French bakery",
+        "description": "Widely considered the best croissant in San Francisco, this bakery draws long lines for its caramelized, buttery pastries and kouign amann.",
+        "address": "397 Arguello Blvd",
+        "phone": "415-750-9460",
+        "website": "https://www.arsicault-bakery.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Breadbelly",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Asian-inspired bakery",
+        "description": "Inner Richmond bakery known for Asian-American pastries including gyeranbbang (Korean cheesy egg cornbread), Malaysian kaya toast, and exceptional croissants.",
+        "address": "1408 Clement St",
+        "phone": "415-742-5569",
+        "website": "https://www.breadbellysf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Kitchen Istanbul",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Turkish restaurant",
+        "description": "Acclaimed Turkish restaurant on Clement Street offering mezes, kebabs, and a natural wine list favored by local sommeliers.",
+        "address": "349 Clement St",
+        "phone": "415-742-5060",
+        "website": "https://www.kitchenistanbul.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Mandalay",
+        "cuisineGroup": "Asian",
+        "type": "Burmese restaurant",
+        "description": "San Francisco's first Burmese restaurant, open since 1984, serving beloved classics including coconut chicken noodle soup and an intensely nutty tea leaf salad.",
+        "address": "4348 California St",
+        "phone": "415-386-3895",
+        "website": "https://www.mandalaysf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Fiorella",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian neighborhood restaurant",
+        "description": "Neighborhood Italian spot on Clement Street with wood-fired pizza, house-made pastas, and a welcoming, convivial atmosphere.",
+        "address": "2339 Clement St",
+        "phone": "415-340-3049",
+        "website": "https://www.fiorellasf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Dalida",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Mediterranean restaurant",
+        "description": "Upscale Mediterranean restaurant in the Presidio earning critical acclaim for its California-inflected dishes and acclaimed cocktail program.",
+        "address": "1 Letterman Dr, Ste A",
+        "phone": "415-340-6575",
+        "website": "https://www.dalidasf.com",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Maria Isabel",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican coastal restaurant",
+        "description": "New Mexican restaurant from the team behind Dalida, rooted in the coastal flavors of Guerrero and Acapulco, with heirloom corn, California seafood, and a 2026 Michelin Exceptional Cocktails Award.",
+        "address": "500 Presidio Ave",
+        "phone": "",
+        "website": "https://www.mariaisabelsf.com",
+        "neighborhood": "Presidio",
+        "notable": "New"
+      },
+      {
+        "name": "The Mess Hall at the Presidio",
+        "cuisineGroup": "Other",
+        "type": "Food hall",
+        "description": "The Presidio's new all-day food hall in a restored 1898 building at Tunnel Tops, featuring Breadwinner sandwiches, Dayboat Seafood, Boda Korean cuisine, a cocktail bar, Breadbelly café, and a specialty market.",
+        "address": "201 Halleck St",
+        "phone": "",
+        "website": "https://www.messhallpresidio.com",
+        "neighborhood": "Presidio",
+        "notable": "New"
+      },
+      {
+        "name": "Good Luck Dim Sum",
+        "cuisineGroup": "Asian",
+        "type": "Dim sum restaurant",
+        "description": "No-frills Inner Richmond dim sum shop beloved for an astounding variety of dumplings at very affordable prices, cash-friendly.",
+        "address": "736 Clement St",
+        "phone": "415-386-3388",
+        "website": "https://www.yelp.com/biz/good-luck-dim-sum-san-francisco",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Pearl 6101",
+        "cuisineGroup": "Seafood & American",
+        "type": "American bistro",
+        "description": "Warm, consistently praised bistro in the Outer Richmond known for its inviting atmosphere and crowd-pleasing seasonal American dishes.",
+        "address": "6101 California St",
+        "phone": "415-592-9777",
+        "website": "https://www.pearl6101.com",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Eats",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Brunch café",
+        "description": "Cozy brunch café from the owners of Burma Superstar, serving elevated breakfast dishes including eggs benedict, huevos rancheros, and breakfast cocktails.",
+        "address": "50 Clement St",
+        "phone": "415-751-8000",
+        "website": "https://www.eatsclementsf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Cinderella Russian Bakery & Café",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Russian bakery and café",
+        "description": "A Richmond District institution since 1953 serving traditional Russian baked goods, piroshki, blini, and borscht in a warm neighborhood setting.",
+        "address": "436 Balboa St",
+        "phone": "415-751-9690",
+        "website": "https://www.cinderellabakery.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Plough & Stars",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Irish pub",
+        "description": "Traditional Irish pub on Clement Street with live folk and trad music most nights, a strong whiskey selection, and a loyal neighborhood following.",
+        "address": "116 Clement St",
+        "phone": "415-751-1122",
+        "website": "https://www.theploughandstars.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "540 Club",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood bar",
+        "description": "Casual dive bar and live-music venue on Geary offering an eclectic lineup of local bands and DJs in a no-frills Inner Richmond setting.",
+        "address": "540 Clement St",
+        "phone": "415-752-7276",
+        "website": "https://www.540club.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Inn at the Presidio",
+        "type": "Historic boutique inn",
+        "description": "A 22-room Georgian Revival inn inside the Presidio national park, housed in the former Pershing Hall bachelor officers' quarters, with complimentary breakfast and evening wine-and-cheese receptions.",
+        "address": "42 Moraga Ave, Presidio",
+        "phone": "415-800-7356",
+        "website": "https://www.presidiolodging.com/inn-at-the-presidio/",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lodge at the Presidio",
+        "type": "Historic boutique hotel",
+        "description": "A boutique hotel set in the 1895–1897 Montgomery Street Barracks on the Presidio's Main Post, steps from Tunnel Tops and with sweeping views of the Golden Gate Bridge.",
+        "address": "105 Montgomery St, Presidio",
+        "phone": "415-561-1234",
+        "website": "https://www.presidiolodging.com/lodge-at-the-presidio/",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Stanyan Park Hotel",
+        "type": "Victorian boutique hotel",
+        "description": "A restored Victorian hotel at the edge of Golden Gate Park, offering an intimate, quiet stay close to the Richmond District and park amenities.",
+        "address": "750 Stanyan St",
+        "phone": "415-751-1000",
+        "website": "https://www.stanyanpark.com",
+        "neighborhood": "Lone Mountain",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Travelodge by Wyndham Presidio San Francisco",
+        "type": "Motel",
+        "description": "Budget-friendly motel near the Presidio and Lombard Street corridor, convenient for visitors exploring the park and adjacent neighborhoods.",
+        "address": "1450 Lombard St",
+        "phone": "415-673-0691",
+        "website": "https://www.wyndhamhotels.com/travelodge/san-francisco-california/travelodge-san-francisco-presidio/overview",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Laurel Inn",
+        "type": "Mid-century boutique hotel",
+        "description": "Stylish mid-century modern hotel on Presidio Avenue offering spacious rooms, pet-friendly policies, and easy access to both the Presidio and the Richmond District.",
+        "address": "444 Presidio Ave",
+        "phone": "415-567-8467",
+        "website": "https://www.jdvhotels.com/hotels/california/san-francisco/laurel-inn",
+        "neighborhood": "Lone Mountain",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Green Apple Books & Music",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "A beloved two-story Richmond District bookstore founded in 1967, packed with over 250,000 new, used, and rare titles across eclectic themed rooms — a certified San Francisco Legacy Business.",
+        "address": "506 Clement St",
+        "phone": "415-387-2272",
+        "website": "https://www.greenapplebooks.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Park Life",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Gallery and design shop",
+        "description": "Hybrid art gallery and retail shop on Clement Street selling limited-edition art books, design objects, prints, clothing, jewelry, and original art from Bay Area and international artists.",
+        "address": "220 Clement St",
+        "phone": "415-386-7275",
+        "website": "https://www.parklifestore.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Healthy Spirits",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Craft beer and spirits shop",
+        "description": "Inner Richmond bottle shop specializing in craft beer, bourbon, hard-to-find spirits, and a curated selection of natural wines.",
+        "address": "570 Haight St",
+        "phone": "415-255-0610",
+        "website": "https://www.healthyspirits.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Kamei Restaurant Supply",
+        "shopGroup": "Home & Gifts",
+        "type": "Japanese kitchenware shop",
+        "description": "Compact but well-stocked shop carrying Japanese and Asian kitchen supplies, ceramics, teapots, chopsticks, and cooking tools at accessible prices.",
+        "address": "547 Clement St",
+        "phone": "415-666-3699",
+        "website": "https://www.yelp.com/biz/kamei-restaurant-supply-san-francisco",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "NOISE",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Independent record store, gallery, and live music space",
+        "description": "Family-operated Richmond District shop combining a curated vinyl record store, art gallery, and intimate live music performance space.",
+        "address": "1920 Clement St",
+        "phone": "415-742-5039",
+        "website": "https://www.noisesf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Aroma Tea Shop",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Tea shop",
+        "description": "Specialty tea shop on Clement Street offering a wide selection of premium Chinese teas, teaware, and knowledgeable staff to guide customers through selections.",
+        "address": "1045 Clement St",
+        "phone": "415-750-9290",
+        "website": "https://www.aromateashop.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Public Land",
+        "shopGroup": "Home & Gifts",
+        "type": "Plants, goods, and art gallery",
+        "description": "Clement Street shop selling plants, home goods, and showcasing works by local Bay Area artists in a welcoming neighborhood space.",
+        "address": "3466 Sacramento St",
+        "phone": "",
+        "website": "https://www.publiclandsf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Toy Boat Dessert Café",
+        "shopGroup": "Other",
+        "type": "Vintage toy shop and ice cream café",
+        "description": "Quirky Inner Richmond institution combining a full retro toy collection with scoops of ice cream, espresso drinks, and a beloved neighborhood vibe since 1981.",
+        "address": "401 Clement St",
+        "phone": "415-751-7505",
+        "website": "https://www.toyboatdessertsf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Richmond Republic Homebrew Supply",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Homebrew supply store",
+        "description": "Outer Richmond shop supplying home brewers and winemakers with ingredients, equipment, and expert advice on craft brewing and fermentation.",
+        "address": "1921 Clement St",
+        "phone": "415-742-5905",
+        "website": "https://www.richmondrephomebrew.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Daiso Japan",
+        "shopGroup": "Home & Gifts",
+        "type": "Japanese variety store",
+        "description": "Popular Japanese budget retailer offering a vast array of household goods, stationery, kitchen tools, snacks, and beauty products on Clement Street.",
+        "address": "2141 Clement St",
+        "phone": "415-831-2150",
+        "website": "https://www.daisojapan.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Walt Disney Family Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Non-profit museum",
+        "description": "A 40,000-square-foot museum inside a beautifully restored 1897 Presidio barracks, chronicling Walt Disney's life through ten interactive galleries, original artifacts, and over 200 video screens — open Thursday through Monday during summer.",
+        "address": "104 Montgomery St, Presidio",
+        "phone": "415-345-6800",
+        "website": "https://www.waltdisney.org",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Presidio Officers' Club",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic museum and cultural venue",
+        "description": "The Presidio's oldest standing structure, housing free exhibitions including EXCLUSION: The Presidio's Role in WWII Japanese American Incarceration, plus heritage gallery tours and special programs.",
+        "address": "50 Moraga Ave, Presidio",
+        "phone": "415-561-4323",
+        "website": "https://presidio.gov/explore/attractions/presidio-officers-club",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Balboa Theater",
+        "venueGroup": "Cinema",
+        "type": "Independent movie theater",
+        "description": "A cherished two-screen independent cinema in the Outer Richmond, open since 1926, screening first-run and double-feature films, cult classics, and hosting live comedy shows in a classically restored setting.",
+        "address": "3630 Balboa St",
+        "phone": "415-221-8184",
+        "website": "https://www.balboamovies.com",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "4 Star Theater",
+        "venueGroup": "Cinema",
+        "type": "Independent movie theater",
+        "description": "Beloved independent cinema on Clement Street at 23rd Avenue, known for diverse programming spanning mainstream releases, foreign films, and special screenings.",
+        "address": "2200 Clement St",
+        "phone": "415-666-3488",
+        "website": "https://www.cinemasf.com/4star",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Park Life Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery and design shop",
+        "description": "Inner Richmond gallery space within the Park Life shop, curating rotating exhibitions of contemporary art, design objects, and limited-edition prints by Bay Area and international artists.",
+        "address": "220 Clement St",
+        "phone": "415-386-7275",
+        "website": "https://www.parklifestore.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Plough & Stars (Live Music)",
+        "venueGroup": "Music Venues",
+        "type": "Irish pub and live music venue",
+        "description": "Traditional Irish pub hosting live folk, traditional Irish, and acoustic music most nights of the week in an intimate Richmond District setting.",
+        "address": "116 Clement St",
+        "phone": "415-751-1122",
+        "website": "https://www.theploughandstars.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "NOISE SF (Live Music & Gallery)",
+        "venueGroup": "Music Venues",
+        "type": "Record store, gallery, and live music space",
+        "description": "Family-operated Inner Richmond space hosting intimate live music performances alongside its vinyl record collection and rotating art gallery.",
+        "address": "1920 Clement St",
+        "phone": "415-742-5039",
+        "website": "https://www.noisesf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Presidio Visitor Center",
+        "venueGroup": "Museums & Cultural",
+        "type": "National park visitor center and exhibition space",
+        "description": "The Presidio's main visitor hub offering free interpretive exhibits on the park's history spanning Ohlone, Spanish, Mexican, and American eras, plus ranger programs and trip planning resources.",
+        "address": "210 Lincoln Blvd, Presidio",
+        "phone": "415-561-4323",
+        "website": "https://www.nps.gov/prsf/planyourvisit/visitor-center.htm",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Fort Point National Historic Site",
+        "venueGroup": "Museums & Cultural",
+        "type": "Civil War-era fort and museum",
+        "description": "A massive brick Civil War-era fort beneath the Golden Gate Bridge offering free ranger-led history talks and stunning views of the bay's entrance.",
+        "address": "Marine Dr at Long Ave, Presidio",
+        "phone": "415-504-2334",
+        "website": "https://www.nps.gov/fopo",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Live Fit Gym – Inner Richmond",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "Three-story Inner Richmond gym with modernized cardio and weight equipment, group yoga and HIIT classes, personal training, massage therapy, and chiropractic care.",
+        "address": "403 Arguello Blvd",
+        "phone": "415-666-2582",
+        "website": "https://livefitgym.com/locations/inner-richmond/",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Purusha Yoga + Pilates Studio",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga and Pilates studio",
+        "description": "Outer Richmond studio with 25 years of experience offering Hatha, Vinyasa, Yin, Restorative yoga and Pilates mat classes in a welcoming, community-oriented setting.",
+        "address": "300 Balboa St",
+        "phone": "415-221-3141",
+        "website": "https://purushayoga.org",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Hot Yoga Plus Seacliff",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Hot yoga studio",
+        "description": "Heated yoga studio near Sea Cliff offering a variety of hot yoga classes in a clean studio environment with hardwood floors.",
+        "address": "3927 Geary Blvd",
+        "phone": "415-876-9860",
+        "website": "https://www.hotyogaplus.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Koret Health and Recreation Center",
+        "venueGroup": "Pools & Aquatics",
+        "type": "University recreation center",
+        "description": "University of San Francisco's recreation center on the edge of Lone Mountain, offering a pool, gym, courts, and fitness classes to members and the public.",
+        "address": "2130 Fulton St",
+        "phone": "415-422-6811",
+        "website": "https://www.usfca.edu/koret",
+        "neighborhood": "Lone Mountain",
+        "notable": ""
+      },
+      {
+        "name": "Presidio Golf Course",
+        "venueGroup": "Sports & Courts",
+        "type": "18-hole public golf course",
+        "description": "Historic 18-hole public golf course within the Presidio, operating since 1895, set among Monterey cypress and eucalyptus forests with views of the Golden Gate.",
+        "address": "300 Finley Rd, Presidio",
+        "phone": "415-561-4653",
+        "website": "https://www.presidiogolf.com",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Presidio Tunnel Tops",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public park and outdoor recreation space",
+        "description": "The 14-acre park atop the Presidio's Doyle Drive tunnel features meadows, trails, a native plant garden, Outpost nature playground, and Golden Gate Bridge views — free and open daily.",
+        "address": "210 Lincoln Blvd, Presidio",
+        "phone": "415-561-4323",
+        "website": "https://presidio.gov/explore/attractions/tunnel-tops",
+        "neighborhood": "Presidio",
+        "notable": "New"
+      },
+      {
+        "name": "Mountain Lake Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public park with lake and trails",
+        "description": "A serene park at the edge of the Presidio featuring a restored freshwater lake, restored native habitat, playground, and easy access to Presidio trail networks.",
+        "address": "Lake St & 8th Ave",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/mountain-lake-park/",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Lands End Trail",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Coastal hiking trail",
+        "description": "Dramatic coastal trail along the northern edge of the Richmond District offering clifftop views of the Golden Gate, shipwreck ruins at low tide, and access to the Sutro Baths ruins.",
+        "address": "Merrie Way, Outer Richmond",
+        "phone": "",
+        "website": "https://www.nps.gov/goga/planyourvisit/lands-end.htm",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Arise Yoga San Francisco",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Inner Richmond yoga studio offering Vinyasa, Hatha, and restorative classes for all levels in a friendly, community-focused environment.",
+        "address": "512 Arguello Blvd",
+        "phone": "415-742-5035",
+        "website": "https://www.ariseyogasf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Ocean Beach",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public beach and recreational shoreline",
+        "description": "San Francisco's largest beach stretches three miles along the western edge of the Outer Richmond and Sunset, popular for walking, running, surfing, and bonfires at designated fire rings.",
+        "address": "Great Highway at Balboa St, Outer Richmond",
+        "phone": "",
+        "website": "https://www.nps.gov/goga/planyourvisit/ocean-beach.htm",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Presidio Unveils Vibrant 2026 Summer Event Lineup",
+      "url": "https://presidio.gov/about/press/presidio-unveils-vibrant-2026-summer-event-lineup",
+      "publication": "Presidio Trust"
+    },
+    {
+      "title": "What's New at the Presidio of San Francisco in 2026",
+      "url": "https://presidio.gov/about/press/whats-new-at-the-presidio-of-san-francisco-in-2026",
+      "publication": "Presidio Trust"
+    },
+    {
+      "title": "The Mess Hall, a new food hall, opens at SF's Presidio",
+      "url": "https://www.sfchronicle.com/food/restaurants/article/mess-hall-presidio-sf-opens-22362602.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "The Mess Hall at The Presidio, a new food hall, opens in San Francisco",
+      "url": "https://www.ktvu.com/news/highly-anticipated-new-food-hall-san-francisco-is-finally-opening",
+      "publication": "KTVU FOX 2"
+    },
+    {
+      "title": "The Mess Hall, an ambitious new Presidio food hall, opens Aug. 15",
+      "url": "https://sfstandard.com/2026/08/10/mess-hall-presidio-food-open/",
+      "publication": "San Francisco Standard"
+    },
+    {
+      "title": "The Presidio debuts its new all-day dining playground, The Mess Hall",
+      "url": "https://www.7x7.com/the-mess-hall-presidio-2677740389.html",
+      "publication": "7x7 Bay Area"
+    },
+    {
+      "title": "The Mess Hall, With Three Restaurants, a Bar and Market, Opens In the Presidio Tunnel Tops Park",
+      "url": "https://sfist.com/2026/08/14/the-mess-hall-with-three-restaurants-bar-opens-in-presidio/",
+      "publication": "SFist"
+    },
+    {
+      "title": "San Francisco's long-awaited The Mess Hall opens at Presidio Tunnel Tops",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-the-mess-hall-opens-presidio-tunnel-tops/",
+      "publication": "CBS San Francisco"
+    },
+    {
+      "title": "Where do people want to live in S.F.? Richmond District leads polling",
+      "url": "https://www.sfchronicle.com/totalsf/article/people-want-live-s-f-richmond-district-leads-22374390.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Richmond Baker Combines Science and Passion in Cottage Bakery",
+      "url": "https://richmondsunsetnews.com/2026/08/15/richmond-baker-combines-science-and-passion-in-cottage-bakery/",
+      "publication": "Richmond Review/Sunset Beacon"
+    },
+    {
+      "title": "Announcements: August 2026",
+      "url": "https://richmondsunsetnews.com/2026/08/07/announcements-august-2026/",
+      "publication": "Richmond Review/Sunset Beacon"
+    },
+    {
+      "title": "Berkeley's Rose Pizzeria opens anticipated San Francisco outpost",
+      "url": "https://www.sfchronicle.com/food/restaurants/article/rose-pizzeria-inner-richmond-22204482.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Rose Pizzeria, Born In Berkeley, Opens Its San Francisco Location In the Richmond",
+      "url": "https://sfist.com/2026/04/27/rose-pizzeria-born-in-berkeley-opens-its-san-francisco-location-in-the-richmond/",
+      "publication": "SFist"
+    },
+    {
+      "title": "White House Appoints New Board of Directors",
+      "url": "https://presidio.gov/about/press/white-house-appoints-six-new-members",
+      "publication": "Presidio Trust"
+    },
+    {
+      "title": "Trump fills Presidio Trust board with MAGA allies, ultra-wealthy tech figures",
+      "url": "https://sfstandard.com/2026/05/14/trump-appoints-presidio-trust-board/",
+      "publication": "San Francisco Standard"
+    },
+    {
+      "title": "Trump fires entire San Francisco Presidio Trust board, all Biden appointees",
+      "url": "https://www.sfchronicle.com/sf/article/presidio-board-fired-trump-22198432.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Fort Point History Talks and Campfire Programs",
+      "url": "https://www.parksconservancy.org/parks/presidio-san-francisco",
+      "publication": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "Los Californianos: Anza 250/America 250",
+      "url": "https://presidio.gov/explore/events/los-californianos-anza-250-america-250-west-east-coasts-in-1776",
+      "publication": "Presidio Trust"
+    },
+    {
+      "title": "Clement Street Farmers Market",
+      "url": "https://www.agriculturalinstitute.org/clement-st",
+      "publication": "Agricultural Institute of Marin"
+    },
+    {
+      "title": "Modern Guide to Inner Richmond",
+      "url": "https://www.7x7.com/inner-richmond-san-francisco-guide-1787127895.html",
+      "publication": "7x7 Bay Area"
+    },
+    {
+      "title": "Inn at the Presidio",
+      "url": "https://presidiolodging.com/inn-at-the-presidio/",
+      "publication": "Presidio Lodging"
+    },
+    {
+      "title": "Lodge at the Presidio",
+      "url": "https://presidiolodging.com/lodge-at-the-presidio/",
+      "publication": "Presidio Lodging"
+    },
+    {
+      "title": "San Francisco's Literary Lifeline Lives on the West Side at Green Apple",
+      "url": "https://richmondsunsetnews.com/2026/05/10/san-franciscos-literary-lifeline-lives-on-the-west-side-at-green-apple/",
+      "publication": "Richmond Review/Sunset Beacon"
+    },
+    {
+      "title": "Balboa Theater – San Francisco",
+      "url": "https://www.balboamovies.com",
+      "publication": "Balboa Theater / CinemaSF"
+    },
+    {
+      "title": "Purusha Yoga + Pilates Studio SF",
+      "url": "https://purushayoga.org",
+      "publication": "Purusha Yoga"
+    },
+    {
+      "title": "Live Fit Gym Inner Richmond",
+      "url": "https://livefitgym.com/locations/inner-richmond/",
+      "publication": "Live Fit Gym"
+    },
+    {
+      "title": "Walt Disney Family Museum – General Admission",
+      "url": "https://www.waltdisney.org/visit/admission",
+      "publication": "Walt Disney Family Museum"
+    },
+    {
+      "title": "What's New in San Francisco: Summer 2026 Openings & August Weekends",
+      "url": "https://cjsalazar.com/blog/the-center-of-gravity-has-shifted-west-a-san-francisco-locals-guide-to-summer-2026-openings-and-august-weekends",
+      "publication": "CJ Salazar"
+    }
+  ]
+}

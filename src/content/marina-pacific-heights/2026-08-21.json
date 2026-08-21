@@ -1,0 +1,800 @@
+{
+  "clusterSlug": "marina-pacific-heights",
+  "clusterName": "Marina & Pacific Heights",
+  "weekOf": "2026-08-21",
+  "topStories": [
+    {
+      "headline": "Planners Clear Path for Marina Safeway Tower, Opponents Threaten Lawsuit",
+      "dek": "San Francisco's Planning Department has ruled the 848-unit Align Real Estate project eligible for state-mandated streamlined approval under AB 2011, marking a major turning point in the neighborhood battle over the 15 Marina Blvd. site.",
+      "body": "San Francisco planners determined this week that the controversial housing tower proposed on the site of the Marina District Safeway meets the eligibility requirements of AB 2011, the 2022 California law that allows qualifying housing projects on commercially zoned sites to bypass much of the local discretionary review process. The decision, which came just before the statutory deadline last Thursday, puts the project on a state-mandated path toward accelerated approval and effectively closes off a central line of attack from neighbors who argued the site did not qualify.\n\nDeveloper Align Real Estate is proposing to raze the nearly seven-decade-old grocery store at 15 Marina Blvd. and replace it with a new Safeway at street level beneath 848 apartments — including 86 affordable units — in a building rising up to 22 stories. The Planning Department now has 90 days to formally approve or deny the project on a ministerial basis, with far less discretionary review than a conventional development would face.\n\nOpponents, including several neighborhood groups represented by attorney Stuart Gross, have warned of a lawsuit if the city allows the project to proceed without first resolving what they describe as an unresolved environmental testing gap. In an August 11 letter to the directors of the city's Planning and Public Health departments, Gross warned that the groups would sue, citing contamination concerns. Environmental assessments have found petroleum hydrocarbons and other contaminants in soil and groundwater above applicable screening thresholds — a legacy of the site's use by PG&E as a steam power plant before Safeway purchased the property in 1959. State regulators have said the findings do not pose an immediate exposure risk but have called for additional testing before residential redevelopment proceeds.\n\nThe project has drawn opposition from across the political spectrum, including Mayor Daniel Lurie and District Supervisor Stephen Sherrill, who represent the area. Opponents have argued the tower is out of character for the low-slung waterfront neighborhood, while supporters contend San Francisco must embrace state housing law to meet its regional housing mandate.",
+      "sourceUrl": "https://www.sfchronicle.com/sf/article/marina-safeway-tower-approved-22387853.php",
+      "sourceName": "San Francisco Chronicle",
+      "tags": [
+        "housing",
+        "development",
+        "Marina District",
+        "planning"
+      ]
+    },
+    {
+      "headline": "Marina West Harbor Dredging Complete, But Second Round Planned for Fall",
+      "dek": "After months of blocked access that stranded boaters and raised emergency-response concerns, the SF Recreation and Parks Department reports the spring dredging episode at the Marina's West Harbor entrance was completed on June 28, with a follow-up episode now planned for October.",
+      "body": "The San Francisco Marina's West Harbor entrance, which had been severely obstructed for months by a sandbar that restricted access for boaters, businesses, nonprofits, and emergency responders, was cleared following a spring dredging campaign. According to the SF Marina Harbor Association, citing SF Recreation and Parks, the spring 2026 dredging episode at the entrance to West Harbor was completed on June 28, 2026, and will be followed by another episode in October.\n\nThe months-long obstruction drew sharp criticism from harbor users, who argued the city moved too slowly to address the sand buildup. City officials said the sand had accumulated \"more quickly than expected.\" Harbormaster Scott Grindy has since discussed upcoming dredging in August and September as well as other infrastructure concerns, including damage to the seawall between the St. Francis and Golden Gate Yacht Clubs from winter storms.\n\nAccording to the SF Recreation and Park Department's harbor webpage, dredging to date has removed 38,710 cubic yards of sediment from the waterway entrance, increasing depth and improving navigation safety. Marina staff continues to publish weekly channel sounding reports on Thursdays, and officials caution boaters to take extra precautions when water levels are low, as sand conditions near the north entrance side continue to shift with tidal movement. Officials are also planning to install a breakwater at the end of the jetty as a longer-term solution to reduce future sand accumulation.",
+      "sourceUrl": "http://sfmarinaharbor.org/",
+      "sourceName": "SF Marina Harbor Association",
+      "tags": [
+        "Marina District",
+        "harbor",
+        "infrastructure",
+        "recreation"
+      ]
+    },
+    {
+      "headline": "SF History Association Returns to Pacific Heights for August Talk",
+      "dek": "The San Francisco History Association holds its monthly lecture series at Congregation Sherith Israel in Pacific Heights on Tuesday, August 25, open to the public for $10.",
+      "body": "The San Francisco History Association will hold its monthly SF History Night lecture at Newman Hall inside Congregation Sherith Israel, 2266 California Street at Webster in Pacific Heights, on Tuesday, August 25, 2026. Doors open at 7:00 p.m. and the program begins at approximately 7:45 p.m.\n\nThe monthly series features local history experts presenting themed talks, usually accompanied by a slide show and light refreshments. Past presentations have covered a wide range of San Francisco history topics, from the Fire Department to Victorian architecture to vintage stories from Playland-at-the-Beach. Admission is $10 for the general public and free for San Francisco History Association members.\n\nCongregation Sherith Israel, which dates to 1851 and is listed on the National Register of Historic Places, is a storied venue in its own right. Its current building, completed in 1905 and designed by architect Albert Pissis in Beaux-Arts, Byzantine Revival, and Romanesque Revival styles, features a 120-foot dome, hand-carved Honduran mahogany, and hundreds of stained-glass panels. The building served as a courthouse following the 1906 earthquake and fire.",
+      "sourceUrl": "https://sf.funcheap.com/sf-history-night-pacific-heights-91/",
+      "sourceName": "Funcheap SF",
+      "tags": [
+        "Pacific Heights",
+        "history",
+        "lecture",
+        "community"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Fort Mason Night Market",
+      "date": "Friday, August 21",
+      "time": "5:00 PM–10:00 PM",
+      "location": "Fort Mason Center for Arts & Culture, 2 Marina Blvd, Marina District",
+      "description": "The free monthly waterfront night market returns with 25+ food trucks, 80+ artisan craft vendors curated by West Coast Craft, live music on the Secret Spot Lounge Stage, and hands-on workshops from the SF Children's Art Center. Greens Restaurant, The Interval, and Radhaus stay open late alongside the market.",
+      "sourceUrl": "https://fortmason.org/series/fort-mason-night-market-2026/",
+      "sourceName": "Fort Mason Center for Arts & Culture"
+    },
+    {
+      "title": "BATS Improv: Cave Match — Battle for the Main Stage",
+      "date": "Saturday, August 22",
+      "time": "8:00 PM",
+      "location": "BATS Bayfront Theatre, Building B, Fort Mason Center, 2 Marina Blvd, Marina District",
+      "description": "BATS Improv's popular competitive improv format Cave Match returns for another weekly battle, with seasoned improvisers going head-to-head in unscripted comedy at Fort Mason's Bayfront Theatre. The Short Show warm-up runs 6:45–7:30 PM the same evening.",
+      "sourceUrl": "https://fortmason.org/event/bats-improv-shows-2026/2026-08-01/",
+      "sourceName": "Fort Mason Center for Arts & Culture"
+    },
+    {
+      "title": "SF History Night — Pacific Heights",
+      "date": "Tuesday, August 25",
+      "time": "7:00 PM",
+      "location": "Newman Hall, Congregation Sherith Israel, 2266 California St at Webster, Pacific Heights",
+      "description": "The San Francisco History Association hosts its monthly talk featuring a local history expert, slide show, and light refreshments. Admission is $10 for the public; free for SFHA members.",
+      "sourceUrl": "https://sf.funcheap.com/sf-history-night-pacific-heights-91/",
+      "sourceName": "Funcheap SF"
+    },
+    {
+      "title": "BATS Improv: Cave Match Maestro — The Improv Championship",
+      "date": "Saturday, August 29",
+      "time": "8:00 PM",
+      "location": "BATS Bayfront Theatre, Building B, Fort Mason Center, 2 Marina Blvd, Marina District",
+      "description": "The season finale of BATS Improv's summer Cave Match series crowns the ultimate improv champion in this climactic championship show at Fort Mason's Bayfront Theatre.",
+      "sourceUrl": "https://fortmason.org/event/bats-improv-shows-2026/2026-08-01/",
+      "sourceName": "Fort Mason Center for Arts & Culture"
+    },
+    {
+      "title": "Walt Disney Family Museum — Open Thursdays Through Mondays",
+      "date": "Ongoing",
+      "time": "10:00 AM–5:30 PM",
+      "location": "Walt Disney Family Museum, 104 Montgomery St, Presidio",
+      "description": "The Presidio museum celebrating Walt Disney's life and legacy is open Thursday through Monday through Labor Day, September 7, featuring ten interactive galleries and the current special exhibition on the history of Disneyland. Tickets required; last entry at 4:30 PM.",
+      "sourceUrl": "https://www.waltdisney.org/visit/admission",
+      "sourceName": "Walt Disney Family Museum"
+    },
+    {
+      "title": "Museo Italo Americano — Regular Gallery Hours",
+      "date": "Ongoing",
+      "time": "Various times",
+      "location": "Museo Italo Americano, Building C, Fort Mason Center, 2 Marina Blvd, Marina District",
+      "description": "The first museum in the U.S. devoted exclusively to Italian and Italian-American art and culture is open Tuesday–Saturday noon–4 PM and Sunday 10 AM–2 PM; general admission $10, free on Thursdays and the first Sunday of each month.",
+      "sourceUrl": "https://sfmuseo.org/exhibitions-collections/",
+      "sourceName": "Museo Italo Americano"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Toxic Contamination Claims Add New Front to Marina Safeway Battle",
+      "body": "Even as planners cleared the Align Real Estate project for streamlined review, a parallel fight over environmental safety has escalated. In an August 11 letter to city officials, attorney Stuart Gross warned that 2023 testing found petroleum contamination in soil at concentrations up to 2,500 milligrams per kilogram — described by the state Department of Toxic Substances Control as \"about twice the commercial screening level, and ten times the residential screening level.\" Environmental assessments have also identified petroleum hydrocarbons, polycyclic aromatic hydrocarbons, PCE, and chloroform in soil vapor. Opponents argue an Environmental Impact Report is required before construction can proceed; the city and developer contend that environmental review occurs later, during permitting and construction under the oversight of the health department and the water board.",
+      "sourceUrl": "https://www.sfchronicle.com/realestate/article/sf-marina-safeway-environmental-concerns-22385747.php",
+      "sourceName": "San Francisco Chronicle",
+      "tags": [
+        "Marina District",
+        "environment",
+        "housing",
+        "development"
+      ]
+    },
+    {
+      "headline": "Marina Harbor Faces Another Round of Dredging Infrastructure Questions",
+      "body": "Following the spring 2026 dredging of the West Harbor entrance, harbor officials are planning a second dredging episode for October and have flagged additional infrastructure concerns. Harbormaster Scott Grindy noted extensive damage to the seawall between the St. Francis and Golden Gate Yacht Clubs from winter storms, noting the seawall lacks proper riprap protection. Officials are also addressing sinking pilings in East Harbor with temporary sleeve patches while a longer-term harbor renovation plan — which would include reorienting slips and installing a sheet-pile breakwater — advances through environmental review. The harbor is currently at 88% occupancy.",
+      "sourceUrl": "http://sfmarinaharbor.org/",
+      "sourceName": "SF Marina Harbor Association",
+      "tags": [
+        "Marina District",
+        "harbor",
+        "infrastructure"
+      ]
+    },
+    {
+      "headline": "Pacific Heights Condo Market Posts Strong July With Supply at Ten-Year Low",
+      "body": "A new market report shows Pacific Heights condos had a notably active July 2026, with 16 closed sales and three-quarters of them closing above asking price. Months of supply fell to the lowest level in ten years of tracked data, even as the median price dipped — a dynamic the report attributes to a shift in the mix of units sold rather than softening demand. The three-month sales average is up roughly 28% compared to the same period last year, according to data from the San Francisco MLS as of August 14, 2026.",
+      "sourceUrl": "https://daniellelazier.com/blog/pacific-heights-market-report-august-2026/",
+      "sourceName": "Danielle Lazier / Vivre Real Estate",
+      "tags": [
+        "Pacific Heights",
+        "real estate",
+        "market report"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Greens Restaurant",
+        "cuisineGroup": "Vegetarian & Vegan",
+        "type": "Fine vegetarian restaurant",
+        "description": "San Francisco's landmark fully vegetarian restaurant, open since 1979 in a converted Fort Mason warehouse with sweeping views of the Golden Gate Bridge and Bay.",
+        "address": "2 Marina Blvd, Building A, Fort Mason Center",
+        "phone": "415-771-6222",
+        "website": "https://www.greensrestaurant.com",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Radhaus",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Bavarian beer hall and restaurant",
+        "description": "Modern Alpine beer hall in a former U.S. Army machine shop at Fort Mason, serving Bavarian-inspired cuisine alongside top-tier German beers with panoramic Bay and Golden Gate Bridge views.",
+        "address": "2 Marina Blvd, Building A, Fort Mason Center",
+        "phone": "415-598-2231",
+        "website": "https://radhaussf.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Balboa Cafe",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Historic American bar and restaurant",
+        "description": "A Cow Hollow institution since 1913, the PlumpJack-owned Balboa Cafe draws a wide-ranging crowd for its classic burgers, Caesar salad, and the beloved on-tap Espressotini.",
+        "address": "3199 Fillmore St",
+        "phone": "415-921-3944",
+        "website": "https://www.balboacafesf.com",
+        "neighborhood": "Cow Hollow",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Spruce",
+        "cuisineGroup": "Other",
+        "type": "Michelin-starred contemporary American restaurant",
+        "description": "A Presidio Heights institution since 2007, Spruce is known for refined California-inspired cuisine, a Wine Spectator Grand Award wine program, and elegant private dining rooms.",
+        "address": "3640 Sacramento St",
+        "phone": "415-931-5100",
+        "website": "https://www.sprucesf.com",
+        "neighborhood": "Presidio Heights",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Pizzeria Delfina",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Neapolitan-inspired pizzeria",
+        "description": "The Pacific Heights outpost of the James Beard Award–winning Delfina family, serving wood-fired Neapolitan-style pizzas, seasonal antipasti, and fresh pastas on California Street.",
+        "address": "2406 California St",
+        "phone": "415-440-1189",
+        "website": "https://www.pizzeriadelfina.com/location/pacific-heights/",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "Delarosa",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Roman-style pizza and small plates",
+        "description": "A neighborhood go-to on Chestnut Street since 2010, Delarosa serves Roman-style pizza, craft beer, California wines, and small plates from a communal dining space with a heated outdoor parklet.",
+        "address": "2175 Chestnut St",
+        "phone": "415-441-7672",
+        "website": "https://www.delarosasf.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Morella",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Argentinian-Italian restaurant",
+        "description": "A lively Chestnut Street restaurant blending Italian and Argentine flavors with wood-smoked meats, handmade pastas, and vibrant cocktails in a bright, eclectic space.",
+        "address": "2001 Chestnut St",
+        "phone": "415-874-9921",
+        "website": "https://www.morellasf.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Causwells",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "American bistro",
+        "description": "A Marina neighborhood staple known for its exceptional brunch burger, relaxed sidewalk seating, and approachable all-day dining on Lombard Street.",
+        "address": "2346 Chestnut St",
+        "phone": "415-447-6081",
+        "website": "https://www.causwellssf.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Norcina",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant and pizzeria",
+        "description": "Standout Cal-Italian on Chestnut Street offering handmade pastas and pillowy Neapolitan pies alongside seasonally changing salads, snacks, and hearty large plates.",
+        "address": "2108 Chestnut St",
+        "phone": "415-923-9523",
+        "website": "https://www.norcinasf.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "The Brixton",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "American bistro and bar",
+        "description": "A bustling Chestnut Street bistro open all day with expansive sidewalk seating, a celebrated all-day happy hour, and a house Moscow mule that locals love.",
+        "address": "2140 Union St",
+        "phone": "415-409-1114",
+        "website": "https://thebrixtonbar.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Perry's",
+        "cuisineGroup": "Seafood & American",
+        "type": "Classic American neighborhood restaurant",
+        "description": "A longtime Union Street landmark serving classic American breakfast, lunch, and dinner daily, with a beloved backyard atrium for al fresco dining.",
+        "address": "1944 Union St",
+        "phone": "415-922-9022",
+        "website": "https://www.perryssf.com",
+        "neighborhood": "Cow Hollow",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Palm House",
+        "cuisineGroup": "Other",
+        "type": "Caribbean and South Pacific restaurant",
+        "description": "A tropical escape housed in a historic farm building beneath one of the city's oldest palm trees, serving Caribbean-meets-South Pacific dishes and giant rum punch bowls.",
+        "address": "2032 Union St",
+        "phone": "415-929-5765",
+        "website": "https://www.palmhousesf.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Dragon Well",
+        "cuisineGroup": "Asian",
+        "type": "Chinese restaurant",
+        "description": "A beloved Chestnut Street fixture since 1998, Dragon Well serves Chinese-American cuisine and remains a neighborhood institution beloved by longtime Marina regulars.",
+        "address": "2142 Chestnut St",
+        "phone": "415-474-6888",
+        "website": "https://www.dragonwellrestaurant.com",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Little Original Joe's",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian-American neighborhood restaurant",
+        "description": "A convivial Marina spot serving classic Italian-American comfort food — pizza, pasta, and parmigiana — in a lively Chestnut Street setting with a see-and-be-seen vibe.",
+        "address": "2031 Chestnut St",
+        "phone": "415-674-0793",
+        "website": "https://www.originaljoessf.com/marina",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "The Interval at Long Now",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Cocktail bar and café",
+        "description": "A thoughtfully designed bar and café inside Fort Mason's Long Now Foundation space, featuring an eclectic cocktail menu, coffee, and bookshelves lining the walls, with Bay views.",
+        "address": "2 Marina Blvd, Building A, Fort Mason Center",
+        "phone": "415-704-1010",
+        "website": "https://theinterval.org",
+        "neighborhood": "Marina District",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Cow Hollow Inn & Suites",
+        "type": "Boutique hotel and suites",
+        "description": "A 129-room boutique-style hotel on Lombard Street offering fully renovated rooms and suites, complimentary covered parking, and a quiet location steps from Chestnut Street dining and shopping.",
+        "address": "2190 Lombard St",
+        "phone": "415-921-5800",
+        "website": "https://cowhollowinnandsuites.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Infinity Hotel San Francisco, Tapestry Collection by Hilton",
+        "type": "Boutique hotel",
+        "description": "A stylish Hilton Tapestry property on Lombard Street in the heart of the Marina, featuring a rooftop terrace, cozy firepit, on-site café, and a short stroll to the Palace of Fine Arts.",
+        "address": "2322 Lombard St",
+        "phone": "415-913-7311",
+        "website": "https://www.hilton.com/en/hotels/sfomrti-infinity-hotel-san-francisco/",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Marina Inn",
+        "type": "Budget inn",
+        "description": "A budget-friendly bed and breakfast near Fisherman's Wharf on Lombard Street, convenient to the Marina District and Union Street shopping.",
+        "address": "3110 Octavia St at Lombard",
+        "phone": "415-928-1000",
+        "website": "https://www.marinainn.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Travelodge by Wyndham San Francisco Bay",
+        "type": "Motel",
+        "description": "A well-located Lombard Street motel offering comfortable rooms with free Wi-Fi and easy access to the Marina District, Presidio, and Golden Gate Bridge.",
+        "address": "1450 Lombard St",
+        "phone": "415-673-0691",
+        "website": "https://www.wyndhamhotels.com/travelodge/san-francisco-california/travelodge-san-francisco-bay/overview",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Coventry Motor Inn",
+        "type": "Motel",
+        "description": "A secure, well-maintained motel on Lombard Street in the Marina District with controlled-access parking and proximity to Union Street and Chestnut Street.",
+        "address": "1901 Lombard St",
+        "phone": "415-567-1200",
+        "website": "https://www.coventrymotorinn.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Buena Vista Motor Inn",
+        "type": "Motel",
+        "description": "A clean, friendly motel near the intersection of Lombard Street and Van Ness Avenue, offering easy access to the Marina, Fisherman's Wharf, and public transit.",
+        "address": "1599 Lombard St",
+        "phone": "415-923-9600",
+        "website": "https://www.buenavistamotelinn.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Francisco Bay Inn",
+        "type": "Motel",
+        "description": "A recently renovated motel on Lombard Street offering good value with easy parking, close to Fisherman's Wharf and the Marina Green.",
+        "address": "1501 Lombard St",
+        "phone": "415-474-3030",
+        "website": "https://www.franciscobayinn.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Books Inc. in the Marina",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "The Marina outpost of California's oldest independent bookseller, with floor-to-ceiling shelves, knowledgeable staff, a strong children's section, and a regular program of author events.",
+        "address": "2251 Chestnut St",
+        "phone": "415-931-3633",
+        "website": "https://www.booksinc.net",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Epicurean Trader",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Specialty grocery and wine shop",
+        "description": "A beloved Marina specialty grocer offering an exceptional selection of artisan cheeses, gourmet foods, and an impressive whiskey collection.",
+        "address": "401 Cortland Ave",
+        "phone": "415-285-2257",
+        "website": "https://www.theepicureantrader.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Goodbyes",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Upscale consignment shop",
+        "description": "One of San Francisco's most respected consignment shops on Sacramento Street, with a carefully curated collection of second-hand clothing and accessories from upscale brands.",
+        "address": "3464 Sacramento St",
+        "phone": "415-674-0151",
+        "website": "https://www.goodbyessf.com",
+        "neighborhood": "Presidio Heights",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Foggy Notion",
+        "shopGroup": "Home & Gifts",
+        "type": "Gift and home goods boutique",
+        "description": "A charming neighborhood gift shop in Presidio Heights carrying unique cards, stationery, and home décor items that appeal to locals and visitors alike.",
+        "address": "3435 Sacramento St",
+        "phone": "415-345-9555",
+        "website": "https://www.foggynotion.com",
+        "neighborhood": "Presidio Heights",
+        "notable": ""
+      },
+      {
+        "name": "Sacramento Street Shopping District",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Boutique shopping corridor",
+        "description": "A seven-block stretch of tree-lined Sacramento Street in Presidio Heights home to some of San Francisco's most established independent fashion boutiques, design shops, and specialty stores.",
+        "address": "Sacramento St between Presidio Ave and Spruce St",
+        "phone": "",
+        "website": "https://onetripwonder.com/sacramento-street-san-francisco/",
+        "neighborhood": "Presidio Heights",
+        "notable": ""
+      },
+      {
+        "name": "Song Tea & Ceramics",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Specialty tea and ceramics shop",
+        "description": "A serene Pacific Heights shop devoted to premium Chinese teas and artisan ceramics, offering tasting sessions and a carefully sourced selection of teaware.",
+        "address": "2120 Sutter St",
+        "phone": "415-885-2118",
+        "website": "https://www.songteaandceramics.com",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "Isalis",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's clothing boutique",
+        "description": "A Pacific Heights boutique on Fillmore Street curating directional European and independent designer women's apparel and accessories.",
+        "address": "2220 Fillmore St",
+        "phone": "415-674-9833",
+        "website": "https://www.isalis.com",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "Cuyana",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's essentials boutique",
+        "description": "Fillmore Street flagship of the SF-founded minimalist women's brand known for high-quality leather goods, cashmere, and classic wardrobe essentials.",
+        "address": "2136 Fillmore St",
+        "phone": "415-800-7555",
+        "website": "https://www.cuyana.com",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "Reformation",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Sustainable women's clothing boutique",
+        "description": "The Pacific Heights outpost of the popular sustainable fashion label, featuring its signature feminine dresses, tops, and denim in a clean, minimalist space on Fillmore.",
+        "address": "2130 Fillmore St",
+        "phone": "415-891-1460",
+        "website": "https://www.thereformation.com",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "Post.Script.",
+        "shopGroup": "Home & Gifts",
+        "type": "Stationery and gift shop",
+        "description": "A curated Pacific Heights stationery and gift boutique carrying unique paper goods, cards, and thoughtful gifts for every occasion.",
+        "address": "2166 Union St",
+        "phone": "415-359-1818",
+        "website": "https://www.postscriptsf.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Palace of Fine Arts Theatre",
+        "venueGroup": "Music Venues",
+        "type": "Concert hall and performing arts venue",
+        "description": "The iconic Marina landmark originally built for the 1915 Panama-Pacific International Exposition now houses a performing arts theater hosting concerts, comedy, and dance events year-round.",
+        "address": "3301 Lyon St",
+        "phone": "415-563-6504",
+        "website": "https://www.palaceoffinearts.org",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "BATS Improv at Fort Mason",
+        "venueGroup": "Theater & Comedy",
+        "type": "Improv comedy theater",
+        "description": "San Francisco's home for unscripted comedy since 1986, BATS Improv presents Saturday-night shows and select Sunday performances at the Bayfront Theatre inside Fort Mason Center.",
+        "address": "2 Marina Blvd, Building B, Bayfront Theatre, Fort Mason Center",
+        "phone": "415-474-6776",
+        "website": "https://www.improv.org",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Fort Mason Center for Arts & Culture",
+        "venueGroup": "Museums & Cultural",
+        "type": "Multi-venue arts and culture campus",
+        "description": "A historic waterfront complex of renovated military buildings at the edge of the national park, housing theaters, galleries, resident arts organizations, restaurants, and year-round public programming.",
+        "address": "2 Marina Blvd",
+        "phone": "415-345-7500",
+        "website": "https://fortmason.org",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Museo Italo Americano",
+        "venueGroup": "Museums & Cultural",
+        "type": "Italian-American art and culture museum",
+        "description": "The first museum in the United States devoted exclusively to Italian and Italian-American art and culture, located in Building C of Fort Mason Center, open Tuesday through Sunday.",
+        "address": "2 Marina Blvd, Building C, Fort Mason Center",
+        "phone": "415-673-2200",
+        "website": "https://sfmuseo.org",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Walt Disney Family Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Museum dedicated to Walt Disney's life and legacy",
+        "description": "A 40,000-square-foot museum in the Presidio's historic 1897 military barracks telling the story of Walt Disney through ten interactive galleries, early animations, personal artifacts, and a spectacular Disneyland model.",
+        "address": "104 Montgomery St, Presidio",
+        "phone": "415-345-6800",
+        "website": "https://www.waltdisney.org",
+        "neighborhood": "Presidio Heights",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Gallery 308 at Fort Mason",
+        "venueGroup": "Art Galleries",
+        "type": "Public gallery space",
+        "description": "A free, all-ages gallery inside Fort Mason Center Building A, hosting rotating exhibitions and community art workshops, including the SF Children's Art Center programs on Night Market evenings.",
+        "address": "2 Marina Blvd, Building A, Fort Mason Center",
+        "phone": "415-345-7500",
+        "website": "https://fortmason.org",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Congregation Sherith Israel",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic synagogue and community venue",
+        "description": "A National Register–listed 1905 Beaux-Arts synagogue in Pacific Heights with a soaring 120-foot dome and a rich program of public lectures, concerts, and cultural events open to the community.",
+        "address": "2266 California St",
+        "phone": "415-346-1720",
+        "website": "https://www.sherithisrael.org",
+        "neighborhood": "Pacific Heights",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Haas-Lilienthal House",
+        "venueGroup": "Museums & Cultural",
+        "type": "Victorian house museum",
+        "description": "San Francisco Heritage's flagship Victorian house museum in Pacific Heights, one of the few Queen Anne–style homes open for public tours, offering guided visits and architectural programming.",
+        "address": "2007 Franklin St",
+        "phone": "415-441-3004",
+        "website": "https://www.sfheritage.org/haas-lilienthal-house/",
+        "neighborhood": "Pacific Heights",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Crissy Field",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "National park waterfront area",
+        "description": "A beloved restored tidal marsh and beach promenade along the Marina waterfront within the Golden Gate National Recreation Area, offering sweeping Golden Gate Bridge views, walking paths, and kite-flying.",
+        "address": "Crissy Field Ave, Presidio",
+        "phone": "415-561-4323",
+        "website": "https://www.nps.gov/goga/planyourvisit/crissyfield.htm",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Marina Green",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Waterfront park and recreation area",
+        "description": "A mile-long greenbelt along the bay waterfront popular with joggers, cyclists, kite flyers, and sunset seekers, with views of the Golden Gate Bridge and Marin Headlands.",
+        "address": "Marina Blvd, Marina District",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Presidio Tunnel Tops",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "National park meadow and event space",
+        "description": "A vibrant new park atop the Presidio's Doyle Drive tunnels featuring sweeping Bay views, a Outpost play area, food programming, and free ranger-led activities in the East Meadow.",
+        "address": "210 Lincoln Blvd, Presidio",
+        "phone": "415-561-5300",
+        "website": "https://www.presidio.gov/places/tunnel-tops",
+        "neighborhood": "Presidio Heights",
+        "notable": "New"
+      },
+      {
+        "name": "Alta Plaza Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Hilltop neighborhood park",
+        "description": "A terraced hilltop park in Pacific Heights with panoramic views of the Bay and city skyline, popular for dog walking, tennis, and weekend recreation.",
+        "address": "Steiner St between Clay and Jackson, Pacific Heights",
+        "phone": "415-831-2700",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "Julius Kahn Playground",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood playground and park",
+        "description": "A beloved family park on the edge of the Presidio in Pacific Heights featuring a playground, tennis courts, and shaded picnic areas surrounded by redwoods.",
+        "address": "West Pacific Ave at Spruce St, Pacific Heights",
+        "phone": "415-831-2700",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "Bay Club San Francisco",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service athletic club",
+        "description": "A premium full-service athletic club on Lombard Street in the Marina District offering fitness equipment, group classes, pools, racquet sports, and spa services.",
+        "address": "2150 Lombard St",
+        "phone": "415-929-0177",
+        "website": "https://www.bayclubs.com/sf/",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Equinox Fillmore",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Premium fitness club",
+        "description": "The Fillmore Street location of the premium fitness brand, offering state-of-the-art equipment, group fitness classes, and spa amenities serving Pacific Heights and Cow Hollow.",
+        "address": "1455 Fillmore St",
+        "phone": "415-359-3520",
+        "website": "https://www.equinox.com/clubs/san-francisco/fillmore",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "Yoga Tree Divisadero",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "A community-centered yoga studio on Divisadero serving the Cow Hollow and Pacific Heights area with a full schedule of yoga classes across multiple styles and levels.",
+        "address": "519 Divisadero St",
+        "phone": "415-626-9707",
+        "website": "https://yogatreesf.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "SF Marina Small Craft Harbor",
+        "venueGroup": "Sports & Courts",
+        "type": "Public boat harbor and sailing center",
+        "description": "A city-operated small craft harbor on the Bay waterfront offering berth rentals, a launch ramp, and access to sailing clubs including the Golden Gate Yacht Club and St. Francis Yacht Club.",
+        "address": "Yacht Rd off Marina Blvd, Marina District",
+        "phone": "415-292-2006",
+        "website": "https://sfrecpark.org/1228/Marina-Yacht-Harbor",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Presidio Golf Course",
+        "venueGroup": "Sports & Courts",
+        "type": "Public golf course",
+        "description": "A scenic 18-hole public golf course inside the Presidio National Park, one of the oldest courses in California, offering stunning views and a full-service pro shop.",
+        "address": "300 Finley Rd, Presidio",
+        "phone": "415-561-4661",
+        "website": "https://www.presidiogolf.com",
+        "neighborhood": "Presidio Heights",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "The Marina Safeway project has a serious toxics and sewage problem",
+      "url": "https://48hills.org/2026/08/the-marina-safeway-project-has-a-serious-toxics-and-sewage-problem/",
+      "publication": "48 Hills"
+    },
+    {
+      "title": "Exclusive: S.F. Marina Safeway housing battle escalates as opponents raise contamination concerns",
+      "url": "https://www.sfchronicle.com/realestate/article/sf-marina-safeway-environmental-concerns-22385747.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Exclusive: S.F.'s Marina Safeway project clears key hurdle, moves closer to approval",
+      "url": "https://www.sfchronicle.com/sf/article/marina-safeway-tower-approved-22387853.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "SF planners clear way for Align's controversial Marina Safeway project",
+      "url": "https://therealdeal.com/san-francisco/2026/08/18/planners-clear-hurdle-for-aligns-marina-safeway/",
+      "publication": "The Real Deal San Francisco"
+    },
+    {
+      "title": "SF Marina Harbor Association — Harbor Updates",
+      "url": "http://sfmarinaharbor.org/",
+      "publication": "SF Marina Harbor Association"
+    },
+    {
+      "title": "Marina Yacht Harbor — SF Recreation and Parks",
+      "url": "https://sfrecpark.org/1228/Marina-Yacht-Harbor",
+      "publication": "SF Recreation and Parks Department"
+    },
+    {
+      "title": "SF History Night | Pacific Heights",
+      "url": "https://sf.funcheap.com/sf-history-night-pacific-heights-91/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Fort Mason Night Market 2026",
+      "url": "https://fortmason.org/series/fort-mason-night-market-2026/",
+      "publication": "Fort Mason Center for Arts & Culture"
+    },
+    {
+      "title": "BATS Improv Shows 2026",
+      "url": "https://fortmason.org/event/bats-improv-shows-2026/2026-08-01/",
+      "publication": "Fort Mason Center for Arts & Culture"
+    },
+    {
+      "title": "Pacific Heights Market Report: August 2026",
+      "url": "https://daniellelazier.com/blog/pacific-heights-market-report-august-2026/",
+      "publication": "Danielle Lazier / Vivre Real Estate"
+    },
+    {
+      "title": "Walt Disney Family Museum — General Admission",
+      "url": "https://www.waltdisney.org/visit/admission",
+      "publication": "Walt Disney Family Museum"
+    },
+    {
+      "title": "Museo Italo Americano — Exhibits & Collections",
+      "url": "https://sfmuseo.org/exhibitions-collections/",
+      "publication": "Museo Italo Americano"
+    },
+    {
+      "title": "Greens Restaurant — Yelp listing (Updated August 2026)",
+      "url": "https://www.yelp.com/biz/greens-restaurant-san-francisco-5",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Radhaus — Official Site",
+      "url": "https://radhaussf.com/",
+      "publication": "Radhaus"
+    },
+    {
+      "title": "Balboa Cafe — Official Site",
+      "url": "https://www.balboacafesf.com/",
+      "publication": "Balboa Cafe"
+    },
+    {
+      "title": "Spruce — OpenTable listing (August 2026)",
+      "url": "https://www.opentable.com/r/spruce-san-francisco",
+      "publication": "OpenTable"
+    },
+    {
+      "title": "Pizzeria Delfina Pacific Heights — Official Site",
+      "url": "https://www.pizzeriadelfina.com/location/pacific-heights/",
+      "publication": "Pizzeria Delfina"
+    },
+    {
+      "title": "Books Inc. in the Marina — Yelp listing (Updated June 2026)",
+      "url": "https://www.yelp.com/biz/books-inc-san-francisco-16",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Infinity Hotel San Francisco, Tapestry Collection by Hilton — Yelp listing (Updated June 2026)",
+      "url": "https://www.yelp.com/biz/infinity-hotel-san-francisco-tapestry-collection-by-hilton-san-francisco-2",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Cow Hollow Inn & Suites — Yelp listing (Updated July 2026)",
+      "url": "https://www.yelp.com/biz/cow-hollow-inn-and-suites-san-francisco",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Marina & Cow Hollow Summer 2026: A Waterfront Weekend Guide",
+      "url": "https://adelaidamejiasf.com/blog/the-marina-weekend-has-quietly-moved-to-the-waterfront",
+      "publication": "Adelaida Mejia SF Real Estate"
+    }
+  ]
+}
