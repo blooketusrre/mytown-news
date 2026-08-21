@@ -348,12 +348,38 @@ async function generateCluster(clusterConfig) {
   try {
     issue = extractJson(response);
   } catch (err) {
-    // stop_reason is the single most useful clue here — log it explicitly
-    // rather than leaving it buried in the raw excerpt.
-    console.error(`  ✗ JSON parse error (stop_reason: ${response.stop_reason || "unknown"}). Raw response excerpt:`);
-    const excerpt = JSON.stringify(response.content || response).slice(0, 500);
-    console.error("  ", excerpt);
-    throw err;
+    // The research happened but the JSON never got written — the turn ended
+    // (stop_reason "end_turn") after the search phase consumed the budget.
+    // Civic Center & Hayes Valley hits this repeatedly: at six neighbourhoods
+    // it has the widest scope of any edition and does the most searching.
+    //
+    // The findings are already in the conversation, so ask for the JSON on its
+    // own turn — with no tools attached, so it cannot start searching again and
+    // must serialise what it already has.
+    console.warn(`  ⚠ No JSON in first response (stop_reason: ${response.stop_reason || "unknown"}) — asking for it directly…`);
+
+    const salvageMessages = messages.concat([
+      { role: "assistant", content: response.content },
+      {
+        role: "user",
+        content:
+          "Return the issue as a single JSON object matching the schema in your " +
+          "instructions. Output only the JSON — no preamble, no explanation, no " +
+          "markdown fences. Do not search again; use only what you have already found. " +
+          "If a section has no verifiable content, return an empty array for it.",
+      },
+    ]);
+
+    try {
+      const salvage = await callClaude(systemPrompt, salvageMessages); // no tools
+      issue = extractJson(salvage);
+      console.log("  ✅ Recovered JSON on follow-up turn.");
+    } catch (err2) {
+      console.error(`  ✗ JSON parse error (stop_reason: ${response.stop_reason || "unknown"}). Raw response excerpt:`);
+      const excerpt = JSON.stringify(response.content || response).slice(0, 500);
+      console.error("  ", excerpt);
+      throw err;
+    }
   }
 
   // ── 2. Validate ─────────────────────────────────────────────────────────
