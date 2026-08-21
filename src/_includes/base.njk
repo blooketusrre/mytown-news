@@ -5,13 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ pageTitle or title or site.name }}</title>
   <meta name="description" content="{{ pageDesc or site.description }}">
+  {# ── Social sharing ─────────────────────────────────────────────────────
+     og:image was missing entirely, so every link shared in Slack, iMessage,
+     WhatsApp or on social came through as a bare text link. Absolute URLs
+     are required here — scrapers do not resolve relative paths. #}
+  <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:title" content="{{ pageTitle or site.name }}">
   <meta property="og:description" content="{{ pageDesc or site.description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="My Town News — your neighborhood, in depth.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ pageTitle or site.name }}">
+  <meta name="twitter:description" content="{{ pageDesc or site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/img/og-image.png">
+
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+
+  {# ── Icons ──────────────────────────────────────────────────────────────
+     Two raster sizes rather than one: the full mark loses its columns and
+     clock face below about 24px, so 16px uses a simplified variant with
+     fewer strokes. The SVG is offered to browsers that prefer it. #}
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/mark.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#1a2744">
 
   {# ── Analytics ──────────────────────────────────────────────────────────
      Plausible: cookieless and storing no personal data, so no consent

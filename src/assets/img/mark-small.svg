@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#102A43"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <!-- tower reduced to a mass; clock face dropped entirely -->
+    <path d="M128 30v34" stroke-width="18"/>
+    <!-- pediment -->
+    <path d="M44 116 128 74l84 42z"/>
+    <path d="M44 116h168"/>
+    <!-- three columns instead of four, wider gaps -->
+    <path d="M72 116v66m56-66v66m56-66v66" stroke-width="18"/>
+    <!-- base -->
+    <path d="M52 182h152"/>
+    <path d="M38 210h180"/>
+  </g>
+</svg>
