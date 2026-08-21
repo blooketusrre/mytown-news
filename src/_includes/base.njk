@@ -12,6 +12,25 @@
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+
+  {# ── Analytics ──────────────────────────────────────────────────────────
+     Plausible: cookieless and storing no personal data, so no consent
+     banner is required and nothing here conflicts with the privacy posture
+     the rest of the site takes.
+
+     The outbound-links variant matters for this publication specifically.
+     Every story ends in a link to its source, so outbound clicks are the
+     closest thing we have to a read-through metric — and they show which
+     local outlets readers actually trust.
+
+     Plausible ignores localhost automatically, so dev traffic stays out
+     without extra configuration. Set analytics.enabled to false in
+     site.json to remove the script entirely. #}
+  {% if site.analytics and site.analytics.enabled and site.analytics.domain %}
+  <script defer
+          data-domain="{{ site.analytics.domain }}"
+          src="https://plausible.io/js/script.outbound-links.js"></script>
+  {% endif %}
 </head>
 <body{% if clusterSlug %} data-cluster="{{ clusterSlug }}"{% endif %}>
 

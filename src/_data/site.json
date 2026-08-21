@@ -6,5 +6,10 @@
   "city": "San Francisco, CA",
   "description": "Hyperlocal weekly news for every San Francisco neighborhood. Free, independent, community-focused.",
   "currentYear": 2026,
-  "buttondownUser": "backus"
+  "buttondownUser": "backus",
+  "analytics": {
+    "provider": "plausible",
+    "domain": "mytown.news",
+    "enabled": true
+  }
 }
