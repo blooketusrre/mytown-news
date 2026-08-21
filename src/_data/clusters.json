@@ -100,8 +100,7 @@
     "zipCodes": [
       "94105",
       "94111",
-      "94104",
-      "94130"
+      "94104"
     ],
     "description": "The Ferry Building, the Salesforce tower, and the city's commercial and civic heartbeat.",
     "mapLabel": {
@@ -156,14 +155,17 @@
       "South of Market",
       "Mission Bay",
       "Dogpatch",
-      "Potrero Hill"
+      "Potrero Hill",
+      "Treasure Island",
+      "Yerba Buena Island"
     ],
     "accent": "#c05928",
     "live": true,
     "zipCodes": [
       "94103",
       "94107",
-      "94158"
+      "94158",
+      "94130"
     ],
     "description": "Tech campuses, Oracle Park, converted warehouses, and the city's fastest-changing waterfront.",
     "mapLabel": {
