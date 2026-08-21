@@ -100,7 +100,8 @@
     "zipCodes": [
       "94105",
       "94111",
-      "94104"
+      "94104",
+      "94130"
     ],
     "description": "The Ferry Building, the Salesforce tower, and the city's commercial and civic heartbeat.",
     "mapLabel": {
@@ -239,18 +240,24 @@
     "neighborhoods": [
       "Inner Sunset",
       "Outer Sunset",
+      "Parkside",
       "West Portal",
       "Forest Hill",
       "St. Francis Wood",
-      "Miraloma Park"
+      "Miraloma Park",
+      "Stonestown",
+      "Lakeshore",
+      "Parkmerced"
     ],
     "accent": "#3d6b8f",
     "live": true,
     "zipCodes": [
       "94116",
-      "94122"
+      "94122",
+      "94127",
+      "94132"
     ],
-    "description": "Fog, surf, N Judah streetcars, and Irving Street restaurants stretching all the way to the ocean.",
+    "description": "Fog, surf, N Judah streetcars, and Irving Street restaurants stretching from Golden Gate Park to Lake Merced.",
     "mapLabel": {
       "x": 120,
       "y": 360
