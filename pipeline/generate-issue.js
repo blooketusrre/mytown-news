@@ -651,6 +651,7 @@ async function main() {
 
   let failed = 0;
   let emailsSent = 0;
+  let emailsSkipped = 0;
   let emailsFailed = 0;
   const generated = [];
 
@@ -693,6 +694,13 @@ async function main() {
         if (result.id) {
           console.log(`  ✅ Queued: "${cluster.name}" → tag: ${tagId || "ALL"} (email id: ${result.id})`);
           emailsSent++;
+        } else if (result.code === "email_duplicate") {
+          // Buttondown refuses to send the same issue twice. That is a feature,
+          // not a fault: it is what makes re-running a partially failed job safe
+          // for subscribers. Treat it the same way we treat "✓ Already exists"
+          // on the content side — a skip, not a failure.
+          console.log(`  ↷ Already sent this week — skipping ${cluster.slug}`);
+          emailsSkipped++;
         } else {
           console.error(`  ✗ Send rejected for ${cluster.slug}:`, JSON.stringify(result).slice(0, 300));
           emailsFailed++;
@@ -702,7 +710,8 @@ async function main() {
         emailsFailed++;
       }
     }
-    console.log(`\n📧 ${emailsSent} sent, ${emailsFailed} failed.`);
+    const skipNote = emailsSkipped ? `, ${emailsSkipped} already sent` : "";
+    console.log(`\n📧 ${emailsSent} sent${skipNote}, ${emailsFailed} failed.`);
   } else {
     console.log("\n⚠ BUTTONDOWN_API_KEY not set — skipping email send.");
     emailsFailed = generated.length;
