@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Birch & Rye",
+    "cluster": "castro-noe-valley",
+    "closed": "2024-03-30",
+    "source": "https://www.sfchronicle.com/food/restaurants/article/birch-rye-closing-19324160.php",
+    "note": "birchandrye.com 301-redirects to anyaelwattar.com, the former chef's personal site. The redirect resolves with a healthy 200, so an 'is the website live?' check reads a dead restaurant as an open one. This is the case that prompted the closure-search rule."
+  }
+]

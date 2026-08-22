@@ -95,7 +95,7 @@ async function callClaude(systemPrompt, messages, tools = []) {
 
 // ─── Research prompt ────────────────────────────────────────────────────────
 
-function buildSystemPrompt(cluster, prevIssue) {
+function buildSystemPrompt(cluster, prevIssue, closedVenues) {
   const today = new Date().toISOString().slice(0, 10);
 
   // Show the model what ran last week so it can avoid repeating the lead.
@@ -121,15 +121,57 @@ report what has changed since last week rather than restating the original
 news. If genuinely nothing has changed, omit it.`;
   }
 
+  // Naming the known-closed venues explicitly is cheaper and far more reliable
+  // than hoping a fresh search rediscovers a closure that happened years ago.
+  let closedBlock = "";
+  if (closedVenues && closedVenues.length) {
+    closedBlock = `
+
+PERMANENTLY CLOSED — DO NOT LIST THESE, EVER:
+${closedVenues.map(v => `  - ${v.name}${v.closed ? ` (closed ${v.closed})` : ""}`).join("\n")}
+
+These have been verified closed. Their websites may still resolve or redirect
+somewhere that looks active. Do not include them in the directory, and do not
+present them as operating in a story or event.`;
+  }
+
   return `You are the research editor for My Town News, a hyperlocal weekly newspaper covering San Francisco neighborhoods.
 
 Today is ${today}. You are preparing the issue for the week of ${thisWeekDate()}.
 
 Your cluster: ${cluster.name}
-Neighborhoods: ${cluster.neighborhoods.join(", ")}${lastWeekBlock}
+Neighborhoods: ${cluster.neighborhoods.join(", ")}${lastWeekBlock}${closedBlock}
 
 DIRECTORY VERIFICATION RULE — NON-NEGOTIABLE:
-Before including any venue in the directory, confirm it is currently open by finding one of: (a) an active website updated within the last 2 years, (b) a Google Maps or Yelp listing with reviews from 2024 or later showing it is open, or (c) a social media presence active within the last year. Record the best current URL in the "website" field. If you cannot find current evidence of operation, OMIT the venue entirely. Do not include businesses that have closed, even if they were historically prominent.
+
+Do not only look for evidence a venue is open. A closed restaurant often keeps
+a live website, a domain that redirects elsewhere, and years of old reviews —
+all of which look like evidence of life. You must actively look for evidence it
+has CLOSED, and treat that evidence as decisive.
+
+For every venue you intend to list:
+
+1. SEARCH FOR CLOSURE FIRST. Run a search along the lines of
+   "<venue name> <city> closed" or "<venue name> permanently closed".
+   Local outlets report closures reliably. If any credible outlet reports the
+   venue closed, OMIT IT — regardless of what its website shows.
+
+2. TREAT THESE AS EVIDENCE OF CLOSURE, not of operation:
+   - the website redirects to a different domain, especially a personal name,
+     a restaurant group, or an unrelated business
+   - the domain is parked, for sale, or shows a hosting placeholder
+   - the most recent social media post is more than 12 months old
+   - a listing is labelled "Permanently closed" or "Temporarily closed"
+   - recent reviews describe it as closed, even if the listing is still up
+
+3. ONLY THEN confirm operation, with a DATED signal from the last 12 months:
+   a recent review, a recent social post, current hours, or press coverage
+   that refers to it as currently operating. "The website loads" is not a
+   dated signal and is not sufficient on its own.
+
+4. WHEN IN DOUBT, LEAVE IT OUT. A shorter directory that is entirely accurate
+   is worth far more than a longer one containing a restaurant that closed two
+   years ago. Readers who act on a wrong listing stop trusting every listing.
 
 EDITORIAL RULES — NON-NEGOTIABLE:
 1. Every factual claim must be traceable to a real, verifiable public source (city agency, established news outlet, neighborhood association, business website, library/cultural calendar, official press release).
@@ -313,6 +355,53 @@ function validateIssue(issue) {
 
 // ─── Main per-cluster generator ──────────────────────────────────────────────
 
+/** Venues confirmed closed. The model re-proposes them week after week --
+ *  Birch & Rye appeared in two consecutive issues -- so a prompt instruction
+ *  alone is not enough. This list is injected into the prompt AND enforced
+ *  after generation. */
+const CLOSED_VENUES = (() => {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(__dirname, "closed-venues.json"), "utf8"));
+  } catch (e) {
+    console.warn("  ⚠ Could not read closed-venues.json:", e.message);
+    return [];
+  }
+})();
+
+/** Loose name key: case, punctuation, ampersands and a leading "the" all vary
+ *  between sources, and none of them change which restaurant is meant. */
+function venueKey(name) {
+  return String(name || "")
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9 ]+/g, "")
+    .replace(/^the /, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function closedVenuesFor(clusterSlug) {
+  return CLOSED_VENUES.filter(v => !v.cluster || v.cluster === clusterSlug);
+}
+
+/** Remove any directory entry naming a known-closed venue. Returns what it
+ *  removed so the run can say so out loud rather than silently correcting. */
+function stripClosedVenues(issue, clusterSlug) {
+  const closed = closedVenuesFor(clusterSlug);
+  if (!closed.length || !issue.directory) return [];
+  const keys = new Map(closed.map(v => [venueKey(v.name), v]));
+  const removed = [];
+  for (const [category, entries] of Object.entries(issue.directory)) {
+    if (!Array.isArray(entries)) continue;
+    issue.directory[category] = entries.filter(e => {
+      const hit = keys.get(venueKey(e && e.name));
+      if (hit) removed.push({ name: e.name, category, closed: hit.closed });
+      return !hit;
+    });
+  }
+  return removed;
+}
+
 /** Normalised identity for a story, used to spot the same item recurring
  *  week to week. Source URL is the strong signal; the headline is a fallback
  *  for when an outlet changes its URL or we picked up the story elsewhere. */
@@ -387,7 +476,8 @@ async function generateCluster(clusterConfig) {
     name: "web_search",
   };
 
-  const systemPrompt = buildSystemPrompt(clusterConfig, prevIssue);
+  const closedVenues = closedVenuesFor(clusterConfig.slug);
+  const systemPrompt = buildSystemPrompt(clusterConfig, prevIssue, closedVenues);
   const userMessage  = `Please research and write this week's My Town News issue for ${clusterConfig.name} (${clusterConfig.neighborhoods.join(", ")}). Search for real, current news stories and upcoming events in these neighborhoods. Return only valid JSON matching the schema in your instructions.`;
 
   // The server-side web_search tool runs the research loop inside the API, but
@@ -461,7 +551,15 @@ async function generateCluster(clusterConfig) {
     }
   }
 
-  // ── 2. Continuity: never lead twice with the same story ─────────────────
+  // ── 2. Strip anything on the closed list ────────────────────────────────
+  // The prompt asks for this too, but Birch & Rye survived into two
+  // consecutive issues, so the deterministic pass is the one that holds.
+  const removedClosed = stripClosedVenues(issue, clusterConfig.slug);
+  removedClosed.forEach(r => {
+    console.log(`  ⊘ Removed closed venue: "${r.name}" from ${r.category}${r.closed ? ` (closed ${r.closed})` : ""}`);
+  });
+
+  // ── 3. Continuity: never lead twice with the same story ─────────────────
   // The prompt asks for this, but a prompt is a request, not a guarantee.
   // This check is deterministic, so the same headline cannot occupy the lead
   // column two weeks running regardless of what came back.
@@ -471,7 +569,7 @@ async function generateCluster(clusterConfig) {
     console.log(`    Promoted instead:      "${rotated.promoted.slice(0, 60)}…"`);
   }
 
-  // ── 3. Validate ─────────────────────────────────────────────────────────
+  // ── 4. Validate ─────────────────────────────────────────────────────────
   const errors = validateIssue(issue);
   if (errors.length > 0) {
     console.warn("  ⚠ Validation warnings:");
@@ -480,7 +578,7 @@ async function generateCluster(clusterConfig) {
     // have been caught above.
   }
 
-  // ── 3. Write output ──────────────────────────────────────────────────────
+  // ── 5. Write output ──────────────────────────────────────────────────────
   fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(outFile, JSON.stringify(issue, null, 2), "utf8");
   console.log(`  ✅ Written: ${outFile}`);
