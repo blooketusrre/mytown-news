@@ -17,9 +17,9 @@
     <path d="M47 209h162"/>
   </g>
 
-  <text x="440" y="286" font-family="Playfair 144pt, Playfair Display, Georgia, serif" font-size="92"
+  <text x="440" y="286" font-family="Playfair Display, Georgia, serif" font-size="92"
         font-weight="700" fill="#ffffff">My Town <tspan fill="#c8943a">News</tspan></text>
-  <text x="444" y="345" font-family="Playfair 144pt, Playfair Display, Georgia, serif" font-size="34"
+  <text x="444" y="345" font-family="Playfair Display, Georgia, serif" font-size="34"
         fill="rgba(255,255,255,0.62)">Your neighborhood. In depth.</text>
   <text x="444" y="412" font-family="DejaVu Sans, sans-serif" font-size="21"
         letter-spacing="3" fill="#c8943a">SAN FRANCISCO · FREE &amp; INDEPENDENT · EVERY FRIDAY</text>

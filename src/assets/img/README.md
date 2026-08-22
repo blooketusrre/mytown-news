@@ -36,24 +36,19 @@ PY
 
 ## The share card font
 
-`og-image.svg` sets the wordmark in **Playfair 144pt Bold**, rendered from a
-locally installed copy of the font.
+`og-image.svg` sets the wordmark in **Playfair Display Bold** — the same
+family the site masthead loads from Google Fonts, so the share card and the
+site are typographically identical.
 
-Note this is Playfair *144pt*, not Playfair *Display*. They are sibling
-families from the same designer: Playfair (2023) ships optical sizes, while
-Playfair Display is the older release the site CSS loads from Google Fonts.
-They are visually very close, and the 144pt optical size is designed for
-large display settings — arguably a better fit for a 92px wordmark than
-Display would be. If exact parity with the masthead ever matters, substitute
-`Playfair Display` and re-render.
-
-To regenerate you need the font available to fontconfig:
+To regenerate, the font must be visible to fontconfig first:
 
 ```bash
-cp Playfair_144pt-Bold.ttf ~/.fonts/ && fc-cache -f
+cp PlayfairDisplay-Bold.ttf ~/.fonts/ && fc-cache -f
 ```
 
-Then run the snippet above.
+Then run the snippet above. If Playfair Display is missing, cairosvg falls
+back silently to Georgia or a default serif rather than erroring — so check
+the output rather than assuming it worked.
 
 ## After changing the share card
 
