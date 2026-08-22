@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#1a2744"/>
+  <rect x="0" y="614" width="1200" height="16" fill="#c8943a"/>
+
+  <!-- icon, transparent background, inherits white -->
+  <g transform="translate(120,175) scale(1.05)" fill="none" stroke="#ffffff"
+     stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 90V48l28-24 28 24v42" stroke-width="8"/>
+    <circle cx="128" cy="60" r="13" stroke-width="5"/>
+    <path d="M128 60v-8m0 8 7 4" stroke-width="5"/>
+    <path d="M52 119 128 82l76 37z"/>
+    <path d="M52 119h152"/>
+    <path d="M70 119v68m22-68v68m72-68v68m22-68v68" stroke-width="8"/>
+    <path d="M110 187v-39h36v39" stroke-width="8"/>
+    <path d="M128 149v38" stroke-width="5"/>
+    <path d="M58 187h140"/>
+    <path d="M47 209h162"/>
+  </g>
+
+  <text x="440" y="286" font-family="Playfair Display, Georgia, serif" font-size="92"
+        font-weight="700" fill="#ffffff">My Town <tspan fill="#c8943a">News</tspan></text>
+  <text x="444" y="345" font-family="Playfair Display, Georgia, serif" font-size="34"
+        fill="rgba(255,255,255,0.62)">Your neighborhood. In depth.</text>
+  <text x="444" y="412" font-family="DejaVu Sans, sans-serif" font-size="21"
+        letter-spacing="3" fill="#c8943a">SAN FRANCISCO · FREE &amp; INDEPENDENT · EVERY FRIDAY</text>
+</svg>

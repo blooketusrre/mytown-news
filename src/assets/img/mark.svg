@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Classical city hall icon on dark blue</title>
+  <desc id="desc">A white simplified city hall with a clock tower, triangular pediment, and double doors on a dark blue square.</desc>
+  <rect width="256" height="256" fill="#102A43"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Clock tower -->
+    <path d="M100 90V48l28-24 28 24v42" stroke-width="8"/>
+    <circle cx="128" cy="60" r="13" stroke-width="5"/>
+    <path d="M128 60v-8m0 8 7 4" stroke-width="5"/>
+
+    <!-- Triangular civic pediment -->
+    <path d="M52 119 128 82l76 37z"/>
+    <path d="M52 119h152"/>
+
+    <!-- Four columns -->
+    <path d="M70 119v68m22-68v68m72-68v68m22-68v68" stroke-width="8"/>
+    <!-- Double front door, with a fine center seam echoing the clock hands. -->
+    <path d="M110 187v-39h36v39" stroke-width="8"/>
+    <path d="M128 149v38" stroke-width="5"/>
+    <path d="M58 187h140"/>
+    <path d="M47 209h162"/>
+  </g>
+</svg>

@@ -1,0 +1,4 @@
+# Documentation living beside the assets it describes should not become a page.
+# src/assets is a passthrough copy, but Eleventy still picks up .md files inside
+# it as templates — which published /assets/img/README/ as a real URL.
+src/assets/**/*.md
