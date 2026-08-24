@@ -1,3 +1,4 @@
+const fs   = require("fs");
 const path = require("path");
 const { globSync } = require("glob");
 
@@ -5,6 +6,22 @@ module.exports = function (eleventyConfig) {
 
   // ── Passthrough copies ──────────────────────────────────────────────
   eleventyConfig.addPassthroughCopy("src/assets");
+
+  // ── Shortcodes ──────────────────────────────────────────────────────
+  // Inline the brand mark straight from the asset file rather than pasting a
+  // second copy of the paths into a template. Duplicated artwork is how the
+  // share card ended up still showing the old logo after the mark changed —
+  // there is exactly one source of this shape and this reads from it.
+  eleventyConfig.addShortcode("inlineMark", () => {
+    const svg = fs.readFileSync(
+      path.join(__dirname, "src/assets/img/mark-mono.svg"), "utf8");
+    return svg
+      .replace(/<title[\s\S]*?<\/title>\s*/g, "")   // the link carries the label
+      .replace(/<desc[\s\S]*?<\/desc>\s*/g, "")
+      .replace(/\s*role="img"\s*/, " ")
+      .replace(/\s*aria-labelledby="[^"]*"/, "")
+      .replace("<svg ", '<svg aria-hidden="true" focusable="false" ');
+  });
 
   // ── Filters ─────────────────────────────────────────────────────────
   eleventyConfig.addFilter("date_short", (str) => {

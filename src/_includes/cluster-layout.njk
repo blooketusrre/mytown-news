@@ -77,6 +77,8 @@ layout: base.njk
 {# ── Sticky nav ───────────────────────────────────────────────────────── #}
 <nav class="site-nav" aria-label="Cluster sections">
   <div class="site-nav__inner container">
+    <a class="site-nav__logo" href="/" aria-label="My Town News — all San Francisco neighborhoods"
+       title="All San Francisco neighborhoods">{% inlineMark %}</a>
     <span class="site-nav__label">{{ issue.clusterName if issue else clusterName }}</span>
     <ul class="site-nav__links" role="list">
       <li><a href="#top-stories">Top Stories</a></li>
@@ -86,8 +88,6 @@ layout: base.njk
       <li><a href="#sources">Sources</a></li>
     </ul>
     <div class="site-nav__right">
-      <a class="site-nav__home" href="/"
-         aria-label="All San Francisco neighborhoods">&larr; All neighborhoods</a>
       <a class="site-nav__subscribe-btn" href="/subscribe/">Subscribe</a>
       <span class="site-nav__meta">{% if issue %}{{ issue.weekOf | date_short }}{% endif %}</span>
     </div>

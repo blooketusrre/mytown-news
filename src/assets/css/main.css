@@ -425,8 +425,35 @@ ul, ol { list-style: none; }
   margin-left: auto;
 }
 
-/* De-emphasised link back to the homepage */
-.site-nav__home {
+/* Brand mark, top left, linking home — the conventional position, and the
+   only place in the nav where the logo does work rather than decorate. It
+   replaces the "All neighborhoods" text link that used to sit on the right,
+   which frees roughly 75px on the element most prone to crowding. */
+.site-nav__logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding-right: var(--sp-3);
+  color: var(--navy);
+  transition: color var(--ease);
+}
+
+.site-nav__logo svg {
+  width: 27px;
+  height: 27px;
+  display: block;
+}
+
+.site-nav__logo:hover { color: var(--accent); }
+
+.site-nav__logo:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* Secondary text link in the right-hand group (About on the homepage) */
+.site-nav__aux {
   font-family: var(--font-ui);
   font-size: 0.625rem;
   font-weight: 600;
@@ -438,7 +465,7 @@ ul, ol { list-style: none; }
   white-space: nowrap;
 }
 
-.site-nav__home:hover {
+.site-nav__aux:hover {
   color: var(--navy);
   border-bottom-color: var(--rule);
 }
@@ -1882,6 +1909,7 @@ hr.divider {
     border-top: 1px solid var(--rule);
   }
   .site-nav__links a { padding-left: 0; padding-right: var(--sp-4); }
+  .site-nav__logo svg { width: 24px; height: 24px; }
 }
 
 @media (max-width: 768px) {
@@ -1905,7 +1933,7 @@ hr.divider {
 @media (max-width: 620px) {
   .site-nav__label { font-size: 0.875rem; }
   .site-nav__links a { padding-top: var(--sp-2); padding-bottom: var(--sp-2); }
-  .site-nav__home { font-size: 0.5625rem; }
+  .site-nav__aux { font-size: 0.5625rem; }
 }
 
 @media (max-width: 540px) {
