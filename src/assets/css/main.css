@@ -1374,11 +1374,15 @@ ul, ol { list-style: none; }
 .home-hero__desc {
   font-size: var(--text-lg);
   color: rgba(255,255,255,0.6);
-  max-width: 520px;
+  max-width: 560px;
   margin-inline: auto;
   margin-bottom: var(--sp-8);
   line-height: 1.6;
   font-family: var(--font-body);
+  /* Distribute the lines evenly rather than filling greedily, so the last
+     line can't end up holding a single orphaned word. Ignored by browsers
+     that don't support it, which simply fall back to normal wrapping. */
+  text-wrap: balance;
 }
 
 /* ── Cluster Map Section ───────────────────────────────────────────── */
