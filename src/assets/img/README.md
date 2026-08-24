@@ -12,13 +12,28 @@
 
 ## Why two icon files
 
-The full mark carries a clock face, four columns and a door seam. Below
-roughly 24px those merge into an unreadable block, so `mark-small.svg`
-drops the clock, uses three columns instead of four, and thickens every
-stroke. Above 24px the detailed version is used.
+The mark is three house roofs with the centre one taller. At the detailed
+proportions that is six vertical wall strokes, which merge into a block
+below roughly 24px — so `mark-small.svg` is separate geometry: wider gaps,
+taller walls, thicker strokes. Above 24px the detailed version is used.
 
 If the mark is ever redrawn, both files need redrawing — the simplified
 one is not generated from the other.
+
+## Geometry
+
+Both marks are generated from five parameters (half-widths, overlap, wall
+heights) and mirrored about x=128 arithmetically, so symmetry cannot drift
+if someone edits them by hand. Every roof is exactly 45 degrees — rise
+equals run — so all three pitches match by construction. If you change the
+artwork, re-check that the right house still mirrors the left and that the
+centre apex sits at x=128.
+
+The overlap is deliberate: the outer houses tuck 26 units behind the centre
+house, which is what puts visible background between the outer wall and the
+centre wall. At an earlier 13-unit overlap those two strokes read as a
+single thick doubled line. Past about 38 units the roofs cross and the mark
+stops reading as houses.
 
 ## Regenerating the PNGs
 

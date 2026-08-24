@@ -1,15 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-  <rect width="256" height="256" fill="#102A43"/>
-  <g fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
-    <!-- tower reduced to a mass; clock face dropped entirely -->
-    <path d="M128 30v34" stroke-width="18"/>
-    <!-- pediment -->
-    <path d="M44 116 128 74l84 42z"/>
-    <path d="M44 116h168"/>
-    <!-- three columns instead of four, wider gaps -->
-    <path d="M72 116v66m56-66v66m56-66v66" stroke-width="18"/>
-    <!-- base -->
-    <path d="M52 182h152"/>
-    <path d="M38 210h180"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="t d">
+  <title id="t">My Town News</title>
+  <desc id="d">Three house roofs, the centre one taller, forming a neighborhood.</desc>
+  <rect width="256" height="256" fill="#1A2744"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30.5 180.6V126.0L55.9 100.7L81.2 126.0V180.6"/>
+    <path d="M96.8 180.6V106.5L128.0 75.3L159.2 106.5V180.6"/>
+    <path d="M174.8 180.6V126.0L200.1 100.7L225.5 126.0V180.6"/>
   </g>
 </svg>
