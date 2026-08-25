@@ -139,6 +139,25 @@ async function callClaude(systemPrompt, messages, tools = []) {
 
 // ─── Research prompt ────────────────────────────────────────────────────────
 
+/* wording-check: off
+   This block has to quote the banned phrasing in order to ban it, so the
+   wording guard in scripts/verify-build.js skips everything between these
+   two sentinels. Keep the exemption this small. */
+const VOCABULARY_RULE = `
+VOCABULARY:
+
+Never use the word "cluster" to describe this edition or its coverage area.
+It is our internal term for a group of neighborhoods and means nothing to a
+reader. Phrases like "the Marina cluster", "this cluster", and "the Bayview
+and Excelsior cluster" have all appeared in published issues, and all read as
+jargon. Write "the Marina and Pacific Heights area", "these neighborhoods",
+or simply name the neighborhood instead.
+
+("Cluster" in its ordinary English sense is fine — "a cluster of galleries",
+"the clustering of data centers". The ban is on using it as a label for one
+of our own coverage areas.)`;
+/* wording-check: on */
+
 function buildSystemPrompt(cluster, prevIssue, closedVenues) {
   const today = new Date().toISOString().slice(0, 10);
 
@@ -183,8 +202,9 @@ present them as operating in a story or event.`;
 
 Today is ${today}. You are preparing the issue for the week of ${thisWeekDate()}.
 
-Your cluster: ${cluster.name}
+Your edition: ${cluster.name}
 Neighborhoods: ${cluster.neighborhoods.join(", ")}${lastWeekBlock}${closedBlock}
+${VOCABULARY_RULE}
 
 DIRECTORY VERIFICATION RULE — NON-NEGOTIABLE:
 
@@ -343,8 +363,8 @@ QUANTITY TARGETS:
 - topStories: 3 (minimum 1 if it's a slow news week — never fabricate to fill)
 - events: 4–8 (upcoming or ongoing within ~3 weeks)
 - moreNews: 2–4 briefs
-- restaurants: 15–30 (comprehensive coverage — every notable café, restaurant, bar, and bakery in the cluster)
-- hotels: 5–15 (all hotels and inns in the cluster)
+- restaurants: 15–30 (comprehensive coverage — every notable café, restaurant, bar, and bakery in these neighborhoods)
+- hotels: 5–15 (all hotels and inns in these neighborhoods)
 - shops: 10–20 (notable independent shops, bookstores, specialty stores, services)
 - artEntertainment: 8–15 (galleries, theaters, music venues, cinemas, museums)
 - gymsRecreation: 8–15 (gyms, yoga studios, sports courts, pools, notable parks)

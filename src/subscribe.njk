@@ -11,7 +11,7 @@ pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivere
     <p class="home-hero__eyebrow">San Francisco · Free &amp; Independent · Every Friday</p>
     <h1 class="home-hero__title" style="font-size:clamp(2rem,5vw,3.25rem)">Choose Your<br><em>Neighborhoods</em></h1>
     <p class="home-hero__desc" style="max-width:540px">
-      Pick as many clusters as you like. You'll get one email per neighborhood, every Friday — real local news, no fluff.
+      Each edition covers a few neighborhoods that share a corner of the city. Pick as many as you like — one email each, every Friday. Real local news, no fluff.
     </p>
   </div>
   <div class="gold-rule"></div>
@@ -48,7 +48,7 @@ pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivere
         </div>
       </div>
 
-      <div class="sub-grid" role="group" aria-label="Neighborhood clusters">
+      <div class="sub-grid" role="group" aria-label="Neighborhood editions">
         {% for c in clusters %}{% if c.live %}
         <label class="sub-card" data-slug="{{ c.slug }}">
           <input class="sub-card__check" type="checkbox"
