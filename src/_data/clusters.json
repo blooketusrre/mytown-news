@@ -2,48 +2,93 @@
   {
     "slug": "north-waterfront",
     "name": "North Waterfront",
+    "city": "San Francisco",
+    "live": true,
     "neighborhoods": [
       "North Beach",
       "Telegraph Hill",
       "Levi Plaza",
       "Fisherman's Wharf"
     ],
-    "accent": "#c8943a",
-    "live": true,
+    "description": "The storied northeast waterfront: Italian espresso bars, Beat-era bookshops, wild parrots, and the ever-busy Pier 39.",
     "zipCodes": [
       "94133",
       "94111"
     ],
-    "description": "The storied northeast waterfront: Italian espresso bars, Beat-era bookshops, wild parrots, and the ever-busy Pier 39.",
-    "mapLabel": {
-      "x": 330,
-      "y": 100
-    }
+    "accent": "#c8943a",
+    "accentOnDark": "#c8943a",
+    "accentBtn": "#c8943a",
+    "accentInk": "#1a2744",
+    "map": {
+      "lat": 37.806,
+      "lng": -122.413,
+      "short": "North Beach · Telegraph Hill · Fisherman\\"
+    },
+    "primarySearchTerms": [
+      "North Beach San Francisco",
+      "Fisherman's Wharf San Francisco",
+      "Telegraph Hill San Francisco",
+      "Levi Plaza San Francisco"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/north-beach",
+      "https://hoodline.com/neighborhoods/fishermans-wharf",
+      "https://www.sfrecpark.org",
+      "https://sfpl.org",
+      "https://www.pier39.com/news",
+      "https://portofsan francisco.com/news",
+      "https://offthegrid.com/events",
+      "https://www.abc7news.com/tag/san-francisco"
+    ]
   },
   {
     "slug": "marina-pacific-heights",
     "name": "Marina & Pacific Heights",
+    "city": "San Francisco",
+    "live": true,
     "neighborhoods": [
       "Marina District",
       "Cow Hollow",
       "Pacific Heights",
       "Presidio Heights"
     ],
-    "accent": "#2a9d8f",
-    "live": true,
+    "description": "Victorian mansions, boutique dining strips, and a front-row seat to the Bay.",
     "zipCodes": [
       "94123",
       "94115"
     ],
-    "description": "Victorian mansions, boutique dining strips, and a front-row seat to the Bay.",
-    "mapLabel": {
-      "x": 200,
-      "y": 90
-    }
+    "accent": "#2a9d8f",
+    "accentOnDark": "#2da99a",
+    "accentBtn": "#228175",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 37.799,
+      "lng": -122.436,
+      "short": "Marina · Cow Hollow · Pacific Heights · Presidio Heights"
+    },
+    "primarySearchTerms": [
+      "Marina District San Francisco",
+      "Cow Hollow San Francisco",
+      "Pacific Heights San Francisco",
+      "Presidio Heights San Francisco"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/marina",
+      "https://hoodline.com/neighborhoods/pacific-heights",
+      "https://www.sfrecpark.org",
+      "https://sfpl.org",
+      "https://www.abc7news.com/tag/san-francisco"
+    ]
   },
   {
     "slug": "presidio-richmond",
     "name": "Presidio & Richmond",
+    "city": "San Francisco",
+    "live": true,
     "neighborhoods": [
       "Presidio",
       "Sea Cliff",
@@ -51,43 +96,82 @@
       "Outer Richmond",
       "Lone Mountain"
     ],
-    "accent": "#2d6a4f",
-    "live": true,
+    "description": "Ancient forests, Clement Street dim sum, and the quieter side of the peninsula.",
     "zipCodes": [
       "94129",
       "94121",
       "94118"
     ],
-    "description": "Ancient forests, Clement Street dim sum, and the quieter side of the peninsula.",
-    "mapLabel": {
-      "x": 105,
-      "y": 175
-    }
+    "accent": "#2d6a4f",
+    "accentOnDark": "#48aa7f",
+    "accentBtn": "#2d6a4f",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 37.778,
+      "lng": -122.468,
+      "short": "Presidio · Sea Cliff · Inner & Outer Richmond"
+    },
+    "primarySearchTerms": [
+      "Presidio San Francisco",
+      "Richmond District San Francisco",
+      "Clement Street San Francisco",
+      "Sea Cliff San Francisco"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/richmond",
+      "https://www.nps.gov/prsf/index.htm",
+      "https://www.sfrecpark.org",
+      "https://sfpl.org"
+    ]
   },
   {
     "slug": "russian-hill-nob-hill",
     "name": "Russian Hill & Nob Hill",
+    "city": "San Francisco",
+    "live": true,
     "neighborhoods": [
       "Russian Hill",
       "Nob Hill",
       "Polk Gulch",
       "Chinatown"
     ],
-    "accent": "#8b2635",
-    "live": true,
+    "description": "Cable cars, crooked streets, Chinatown dim sum, and the city's steepest views.",
     "zipCodes": [
       "94109",
       "94108"
     ],
-    "description": "Cable cars, crooked streets, Chinatown dim sum, and the city's steepest views.",
-    "mapLabel": {
-      "x": 285,
-      "y": 160
-    }
+    "accent": "#8b2635",
+    "accentOnDark": "#db7a88",
+    "accentBtn": "#8b2635",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 37.793,
+      "lng": -122.415,
+      "short": "Russian Hill · Nob Hill · Polk Gulch · Chinatown"
+    },
+    "primarySearchTerms": [
+      "Russian Hill San Francisco",
+      "Nob Hill San Francisco",
+      "Polk Gulch San Francisco",
+      "Chinatown San Francisco"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/russian-hill",
+      "https://hoodline.com/neighborhoods/nob-hill",
+      "https://hoodline.com/neighborhoods/chinatown",
+      "https://www.sfrecpark.org",
+      "https://sfpl.org"
+    ]
   },
   {
     "slug": "downtown-embarcadero",
     "name": "Downtown & Embarcadero",
+    "city": "San Francisco",
+    "live": true,
     "neighborhoods": [
       "Financial District",
       "Jackson Square",
@@ -95,62 +179,120 @@
       "Embarcadero",
       "Rincon Hill"
     ],
-    "accent": "#1e4a8a",
-    "live": true,
+    "description": "The Ferry Building, the Salesforce tower, and the city's commercial and civic heartbeat.",
     "zipCodes": [
       "94105",
       "94111",
       "94104"
     ],
-    "description": "The Ferry Building, the Salesforce tower, and the city's commercial and civic heartbeat.",
-    "mapLabel": {
-      "x": 380,
-      "y": 195
-    }
+    "accent": "#1e4a8a",
+    "accentOnDark": "#6898de",
+    "accentBtn": "#1e4a8a",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 37.787,
+      "lng": -122.397,
+      "short": "Financial District · Union Square · Embarcadero"
+    },
+    "primarySearchTerms": [
+      "Financial District San Francisco",
+      "Embarcadero San Francisco",
+      "Union Square San Francisco",
+      "Ferry Building San Francisco"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/financial-district",
+      "https://www.ferrybuildingmarketplace.com",
+      "https://www.sfrecpark.org",
+      "https://sfpl.org"
+    ]
   },
   {
     "slug": "civic-center-tenderloin",
     "name": "Civic Center & Tenderloin",
+    "city": "San Francisco",
+    "live": true,
     "neighborhoods": [
       "Civic Center",
       "Tenderloin",
       "Mid-Market"
     ],
-    "accent": "#6b3fa0",
-    "live": true,
+    "description": "City Hall, the symphony and opera, Mid-Market's long reinvention, and the densest residential blocks in the city.",
     "zipCodes": [
       "94102",
       "94103"
     ],
-    "description": "City Hall, the symphony and opera, Mid-Market's long reinvention, and the densest residential blocks in the city.",
-    "mapLabel": {
-      "x": 268,
-      "y": 258
-    }
+    "accent": "#6b3fa0",
+    "accentOnDark": "#a989d0",
+    "accentBtn": "#6b3fa0",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 37.78,
+      "lng": -122.415,
+      "short": "Civic Center · Tenderloin · Mid-Market"
+    },
+    "primarySearchTerms": [
+      "Civic Center San Francisco",
+      "Tenderloin San Francisco",
+      "Mid-Market San Francisco",
+      "San Francisco City Hall"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com",
+      "https://www.sfsymphony.org",
+      "https://www.sfopera.com",
+      "https://sfpl.org",
+      "https://sf.gov"
+    ]
   },
   {
     "slug": "hayes-valley-alamo-square",
     "name": "Hayes Valley & Alamo Square",
+    "city": "San Francisco",
+    "live": true,
     "neighborhoods": [
       "Hayes Valley",
       "Alamo Square",
       "NoPa"
     ],
-    "accent": "#9c3f7a",
-    "live": true,
+    "description": "Painted ladies, boutique storefronts, and one of the city's densest restaurant corridors.",
     "zipCodes": [
       "94102",
       "94117"
     ],
-    "description": "Painted ladies, boutique storefronts, and one of the city's densest restaurant corridors.",
-    "mapLabel": {
-      "x": 228,
-      "y": 248
-    }
+    "accent": "#9c3f7a",
+    "accentOnDark": "#cc80b0",
+    "accentBtn": "#9c3f7a",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 37.7755,
+      "lng": -122.43,
+      "short": "Hayes Valley · Alamo Square · NoPa"
+    },
+    "primarySearchTerms": [
+      "Hayes Valley San Francisco",
+      "Alamo Square San Francisco",
+      "NoPa San Francisco",
+      "Divisadero Street San Francisco"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/hayes-valley",
+      "https://www.eater.com/sf",
+      "https://sfpl.org",
+      "https://sfrecpark.org"
+    ]
   },
   {
     "slug": "soma-mission-bay",
     "name": "SoMa & Mission Bay",
+    "city": "San Francisco",
+    "live": true,
     "neighborhoods": [
       "South of Market",
       "Mission Bay",
@@ -159,43 +301,83 @@
       "Treasure Island",
       "Yerba Buena Island"
     ],
-    "accent": "#c05928",
-    "live": true,
+    "description": "Tech campuses, Oracle Park, converted warehouses, and the city's fastest-changing waterfront.",
     "zipCodes": [
       "94103",
       "94107",
       "94158",
       "94130"
     ],
-    "description": "Tech campuses, Oracle Park, converted warehouses, and the city's fastest-changing waterfront.",
-    "mapLabel": {
-      "x": 370,
-      "y": 295
-    }
+    "accent": "#c05928",
+    "accentOnDark": "#db8054",
+    "accentBtn": "#bc5727",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 37.772,
+      "lng": -122.394,
+      "short": "SoMa · Mission Bay · Dogpatch · Potrero Hill · Treasure Island"
+    },
+    "primarySearchTerms": [
+      "SoMa San Francisco",
+      "Mission Bay San Francisco",
+      "Dogpatch San Francisco",
+      "Potrero Hill San Francisco",
+      "Oracle Park San Francisco",
+      "Treasure Island San Francisco",
+      "Treasure Island redevelopment San Francisco"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/soma",
+      "https://hoodline.com/neighborhoods/mission-bay",
+      "https://www.mlb.com/giants",
+      "https://sfpl.org"
+    ]
   },
   {
     "slug": "haight-cole-valley",
     "name": "Haight & Cole Valley",
+    "city": "San Francisco",
+    "live": true,
     "neighborhoods": [
       "Haight-Ashbury",
       "Lower Haight",
       "Cole Valley",
       "Panhandle"
     ],
-    "accent": "#b8860b",
-    "live": true,
+    "description": "The original Summer of Love neighborhood: record shops, vintage stores, and Golden Gate Park at the doorstep.",
     "zipCodes": [
       "94117"
     ],
-    "description": "The original Summer of Love neighborhood: record shops, vintage stores, and Golden Gate Park at the doorstep.",
-    "mapLabel": {
-      "x": 165,
-      "y": 270
-    }
+    "accent": "#b8860b",
+    "accentOnDark": "#c28d0c",
+    "accentBtn": "#b8860b",
+    "accentInk": "#1a2744",
+    "map": {
+      "lat": 37.769,
+      "lng": -122.449,
+      "short": "Haight-Ashbury · Lower Haight · Cole Valley"
+    },
+    "primarySearchTerms": [
+      "Haight-Ashbury San Francisco",
+      "Cole Valley San Francisco",
+      "Lower Haight San Francisco",
+      "Golden Gate Park San Francisco"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/haight-ashbury",
+      "https://sfrecpark.org",
+      "https://sfpl.org"
+    ]
   },
   {
     "slug": "castro-noe-valley",
     "name": "Castro & Noe Valley",
+    "city": "San Francisco",
+    "live": true,
     "neighborhoods": [
       "Castro",
       "Duboce Triangle",
@@ -204,41 +386,79 @@
       "Glen Park",
       "Diamond Heights"
     ],
-    "accent": "#b5334a",
-    "live": true,
+    "description": "One of the world's most celebrated LGBTQ+ communities, plus sunny Noe Valley's stroller-friendly 24th Street.",
     "zipCodes": [
       "94114",
       "94131"
     ],
-    "description": "One of the world's most celebrated LGBTQ+ communities, plus sunny Noe Valley's stroller-friendly 24th Street.",
-    "mapLabel": {
-      "x": 265,
-      "y": 340
-    }
+    "accent": "#b5334a",
+    "accentOnDark": "#d97a8b",
+    "accentBtn": "#b5334a",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 37.757,
+      "lng": -122.432,
+      "short": "Castro · Noe Valley · Glen Park · Duboce Triangle"
+    },
+    "primarySearchTerms": [
+      "Castro San Francisco",
+      "Noe Valley San Francisco",
+      "Glen Park San Francisco",
+      "Duboce Triangle San Francisco"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/castro",
+      "https://hoodline.com/neighborhoods/noe-valley",
+      "https://www.castrosf.com",
+      "https://sfpl.org"
+    ]
   },
   {
     "slug": "mission-bernal-heights",
     "name": "Mission & Bernal Heights",
+    "city": "San Francisco",
+    "live": true,
     "neighborhoods": [
       "Mission District",
       "Bernal Heights",
       "Outer Mission"
     ],
-    "accent": "#c4442a",
-    "live": true,
+    "description": "Murals, taquerias, tech workers, and longtime Latino families — the Mission's contradictions are its vitality.",
     "zipCodes": [
       "94110",
       "94112"
     ],
-    "description": "Murals, taquerias, tech workers, and longtime Latino families — the Mission's contradictions are its vitality.",
-    "mapLabel": {
-      "x": 310,
-      "y": 400
-    }
+    "accent": "#c4442a",
+    "accentOnDark": "#de7b66",
+    "accentBtn": "#c4442a",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 37.748,
+      "lng": -122.418,
+      "short": "Mission District · Bernal Heights · Outer Mission"
+    },
+    "primarySearchTerms": [
+      "Mission District San Francisco",
+      "Bernal Heights San Francisco",
+      "Valencia Street San Francisco",
+      "24th Street Mission San Francisco"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/mission",
+      "https://hoodline.com/neighborhoods/bernal-heights",
+      "https://missionlocal.org",
+      "https://sfpl.org"
+    ]
   },
   {
     "slug": "the-sunset",
     "name": "The Sunset",
+    "city": "San Francisco",
+    "live": true,
     "neighborhoods": [
       "Inner Sunset",
       "Outer Sunset",
@@ -251,23 +471,46 @@
       "Lakeshore",
       "Parkmerced"
     ],
-    "accent": "#3d6b8f",
-    "live": true,
+    "description": "Fog, surf, N Judah streetcars, and Irving Street restaurants stretching from Golden Gate Park to Lake Merced.",
     "zipCodes": [
       "94116",
       "94122",
       "94127",
       "94132"
     ],
-    "description": "Fog, surf, N Judah streetcars, and Irving Street restaurants stretching from Golden Gate Park to Lake Merced.",
-    "mapLabel": {
-      "x": 120,
-      "y": 360
-    }
+    "accent": "#3d6b8f",
+    "accentOnDark": "#6c9cc0",
+    "accentBtn": "#3d6b8f",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 37.743,
+      "lng": -122.482,
+      "short": "Inner &amp; Outer Sunset · Parkside · West Portal · Stonestown · Parkmerced"
+    },
+    "primarySearchTerms": [
+      "Inner Sunset San Francisco",
+      "Outer Sunset San Francisco",
+      "Irving Street San Francisco",
+      "West Portal San Francisco",
+      "Ocean Beach San Francisco",
+      "Parkmerced San Francisco",
+      "Stonestown Galleria",
+      "San Francisco State University news"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/sunset",
+      "https://www.sfrecpark.org",
+      "https://sfpl.org",
+      "https://outtersunset.com"
+    ]
   },
   {
     "slug": "bayview-excelsior",
     "name": "Bayview & Excelsior",
+    "city": "San Francisco",
+    "live": true,
     "neighborhoods": [
       "Bayview–Hunters Point",
       "Visitacion Valley",
@@ -275,17 +518,33 @@
       "Crocker Amazon",
       "Ingleside"
     ],
-    "accent": "#6b8c3a",
-    "live": true,
+    "description": "The city's largest and most diverse cluster — working-class communities, new development, and deep roots.",
     "zipCodes": [
       "94124",
       "94134",
       "94112"
     ],
-    "description": "The city's largest and most diverse cluster — working-class communities, new development, and deep roots.",
-    "mapLabel": {
-      "x": 290,
-      "y": 460
-    }
+    "accent": "#6b8c3a",
+    "accentOnDark": "#7ea544",
+    "accentBtn": "#607e34",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 37.726,
+      "lng": -122.397,
+      "short": "Bayview · Hunters Point · Excelsior · Visitacion Valley"
+    },
+    "primarySearchTerms": [
+      "Bayview San Francisco",
+      "Hunters Point San Francisco",
+      "Excelsior San Francisco",
+      "Visitacion Valley San Francisco"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/bayview",
+      "https://www.sfrecpark.org",
+      "https://sfpl.org"
+    ]
   }
 ]

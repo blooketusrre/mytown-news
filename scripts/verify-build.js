@@ -41,6 +41,26 @@ const ASSETS = [
 /* A rendered page shorter than this is almost certainly a broken shell. */
 const MIN_BYTES = 500;
 
+
+/* ── Contrast (WCAG relative luminance) ────────────────────────────────── */
+function srgb(c) {
+  c /= 255;
+  return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+}
+function luminance(hex) {
+  const h = String(hex || "").replace("#", "");
+  if (h.length !== 6) return null;
+  const [r, g, b] = [0, 2, 4].map((i) => srgb(parseInt(h.slice(i, i + 2), 16)));
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+function contrast(a, b) {
+  const la = luminance(a), lb = luminance(b);
+  if (la === null || lb === null) return null;
+  return (Math.max(la, lb) + 0.05) / (Math.min(la, lb) + 0.05);
+}
+const NAVY = "#1a2744";
+const AA = 4.5;
+
 const errors   = [];
 const warnings = [];
 
@@ -94,6 +114,55 @@ if (fs.existsSync(homepage)) {
 
 const expected = STATIC_PAGES.length + liveCount;
 const actual   = expected - errors.filter((e) => e.startsWith("MISSING")).length;
+
+
+/* ── Single source of truth for edition data ───────────────────────────── */
+// pipeline/clusters/*.json used to define editions a second time, with
+// different key names. The two drifted, and a colour changed in one place
+// silently disagreed with the other for a week. Fail loudly if it returns.
+if (fs.existsSync(path.join(ROOT, "pipeline", "clusters"))) {
+  errors.push(
+    "pipeline/clusters/ exists again — edition data must live only in " +
+    "src/_data/clusters.json. Two definition files drift silently."
+  );
+}
+
+const cssPath = path.join(OUT, "assets", "css", "main.css");
+if (fs.existsSync(cssPath) && /\[data-cluster="[\w-]+"\]\s*\{[^}]*--accent:/.test(fs.readFileSync(cssPath, "utf8"))) {
+  errors.push(
+    "main.css hardcodes [data-cluster] accent tokens — they are generated " +
+    "into base.njk from clusters.json. Two sources of colour will drift."
+  );
+}
+
+/* ── Accent contrast, per edition ──────────────────────────────────────── */
+// A single hue cannot stay legible on both a white card and the navy band.
+// Ten of the original twelve editions failed AA here before anyone looked.
+try {
+  const editions = JSON.parse(fs.readFileSync(CLUSTERS, "utf8"));
+  editions.filter((c) => c.live).forEach((c) => {
+    const need = ["accent", "accentOnDark", "accentBtn", "accentInk"];
+    const gaps = need.filter((k) => !/^#[0-9a-fA-F]{6}$/.test(c[k] || ""));
+    if (gaps.length) {
+      errors.push(`${c.slug}: missing or malformed ${gaps.join(", ")}`);
+      return;
+    }
+    const onDark = contrast(c.accentOnDark, NAVY);
+    const onBtn  = contrast(c.accentInk, c.accentBtn);
+    if (onDark < AA) {
+      errors.push(`${c.slug}: accentOnDark ${c.accentOnDark} is ${onDark.toFixed(2)}:1 on navy — needs ${AA}:1`);
+    }
+    if (onBtn < AA) {
+      errors.push(`${c.slug}: accentInk on accentBtn is ${onBtn.toFixed(2)}:1 — needs ${AA}:1`);
+    }
+    if (!c.map || typeof c.map.lat !== "number" || typeof c.map.lng !== "number") {
+      errors.push(`${c.slug}: missing map coordinates — the homepage map is built from these`);
+    }
+  });
+  console.log(`  Contrast: ${editions.filter((c) => c.live).length} live editions checked against WCAG AA`);
+} catch (e) {
+  errors.push(`Could not check edition data: ${e.message}`);
+}
 
 /* ── Report ───────────────────────────────────────────────────────────── */
 

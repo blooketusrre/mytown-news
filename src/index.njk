@@ -68,20 +68,20 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
               maxZoom: 16
             }).addTo(map);
 
+            // Built from src/_data/clusters.json — the same file the pipeline
+            // and the edition pages read. Previously this array hardcoded every
+            // edition's coordinates, colour and neighbourhood list, so adding a
+            // city meant remembering to edit it by hand.
             var clusters = [
-              { slug:'north-waterfront', name:'North Waterfront', lat:37.806, lng:-122.413, color:'#c8943a', live:true,  url:'/north-waterfront/', hoods:'North Beach · Telegraph Hill · Fisherman\'s Wharf' },
-              { slug:'marina-pacific-heights', name:'Marina & Pacific Heights', lat:37.799, lng:-122.436, color:'#2a9d8f', live:true, url:'/marina-pacific-heights/', hoods:'Marina · Cow Hollow · Pacific Heights · Presidio Heights' },
-              { slug:'presidio-richmond',       name:'Presidio & Richmond',      lat:37.778, lng:-122.468, color:'#2d6a4f', live:true,  url:'/presidio-richmond/',       hoods:'Presidio · Sea Cliff · Inner & Outer Richmond' },
-              { slug:'russian-hill-nob-hill',   name:'Russian Hill & Nob Hill',  lat:37.793, lng:-122.415, color:'#8b2635', live:true,  url:'/russian-hill-nob-hill/',   hoods:'Russian Hill · Nob Hill · Polk Gulch · Chinatown' },
-              { slug:'downtown-embarcadero',    name:'Downtown & Embarcadero',   lat:37.787, lng:-122.397, color:'#1e4a8a', live:true,  url:'/downtown-embarcadero/',    hoods:'Financial District · Union Square · Embarcadero' },
-              { slug:'civic-center-tenderloin',   name:'Civic Center & Tenderloin',   lat:37.7800, lng:-122.415, color:'#6b3fa0', live:true, url:'/civic-center-tenderloin/',    hoods:'Civic Center · Tenderloin · Mid-Market' },
-              { slug:'hayes-valley-alamo-square', name:'Hayes Valley & Alamo Square', lat:37.7755, lng:-122.430, color:'#9c3f7a', live:true, url:'/hayes-valley-alamo-square/', hoods:'Hayes Valley · Alamo Square · NoPa' },
-              { slug:'soma-mission-bay',        name:'SoMa & Mission Bay',       lat:37.772, lng:-122.394, color:'#c05928', live:true,  url:'/soma-mission-bay/',        hoods:'SoMa · Mission Bay · Dogpatch · Potrero Hill · Treasure Island' },
-              { slug:'haight-cole-valley',      name:'Haight & Cole Valley',     lat:37.769, lng:-122.449, color:'#b8860b', live:true,  url:'/haight-cole-valley/',      hoods:'Haight-Ashbury · Lower Haight · Cole Valley' },
-              { slug:'castro-noe-valley',       name:'Castro & Noe Valley',      lat:37.757, lng:-122.432, color:'#b5334a', live:true,  url:'/castro-noe-valley/',       hoods:'Castro · Noe Valley · Glen Park · Duboce Triangle' },
-              { slug:'mission-bernal-heights',  name:'Mission & Bernal Heights', lat:37.748, lng:-122.418, color:'#c4442a', live:true,  url:'/mission-bernal-heights/',  hoods:'Mission District · Bernal Heights · Outer Mission' },
-              { slug:'the-sunset',              name:'The Sunset',               lat:37.743, lng:-122.482, color:'#3d6b8f', live:true,  url:'/the-sunset/',              hoods:'Inner &amp; Outer Sunset · Parkside · West Portal · Stonestown · Parkmerced' },
-              { slug:'bayview-excelsior',       name:'Bayview & Excelsior',      lat:37.726, lng:-122.397, color:'#6b8c3a', live:true,  url:'/bayview-excelsior/',       hoods:'Bayview · Hunters Point · Excelsior · Visitacion Valley' }
+              {%- for c in clusters %}
+              { slug: {{ c.slug | dump | safe }},
+                name: {{ c.name | dump | safe }},
+                lat: {{ c.map.lat }}, lng: {{ c.map.lng }},
+                color: {{ c.accent | dump | safe }},
+                live: {{ "true" if c.live else "false" }},
+                url: "/{{ c.slug }}/",
+                hoods: {{ c.map.short | dump | safe }} }{% if not loop.last %},{% endif %}
+              {%- endfor %}
             ];
 
             clusters.forEach(function(c) {
