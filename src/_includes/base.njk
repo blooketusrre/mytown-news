@@ -26,6 +26,19 @@
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="stylesheet" href="/assets/css/main.css">
 
+  {# ── Per-edition accent tokens, generated from src/_data/clusters.json ──
+     Four tokens per edition, because one hue cannot stay legible on both a
+     white card and the navy events band. Generated rather than hand-written
+     so the stylesheet stops being a second source of edition data. Every
+     pair is contrast-checked by scripts/verify-build.js, which fails the
+     build below 4.5:1 — ten of the original twelve editions failed that
+     threshold when the values were chosen by eye. #}
+  <style>
+  {%- for c in clusters %}
+  [data-cluster="{{ c.slug }}"]{--accent:{{ c.accent }};--accent-on-dark:{{ c.accentOnDark }};--accent-btn:{{ c.accentBtn }};--accent-ink:{{ c.accentInk }}}
+  {%- endfor %}
+  </style>
+
   {# ── Icons ──────────────────────────────────────────────────────────────
      Two raster sizes rather than one: the full mark loses its columns and
      clock face below about 24px, so 16px uses a simplified variant with

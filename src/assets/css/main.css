@@ -68,57 +68,14 @@
 }
 
 /* ── Cluster accent overrides ────────────────────────────────────────
-   Each cluster carries three accent tokens, not one, because a single hue
-   cannot stay legible on both a white card and the navy events band:
+   NOT DEFINED HERE. The four accent tokens for every edition are generated
+   into an inline <style> block in base.njk, straight from
+   src/_data/clusters.json. They used to be hand-written here, which made
+   the stylesheet a second source of edition data — and the pairs must be
+   contrast-checked rather than eyeballed, since ten of the original twelve
+   failed WCAG AA on the navy band before anyone noticed.
 
-     --accent          the brand hue. Use on white/cream backgrounds only.
-     --accent-on-dark  lightened until it clears 4.5:1 against --navy.
-                       Use for any text or icon sitting on a dark panel.
-     --accent-btn      background for solid buttons, darkened where needed.
-     --accent-ink      the one text colour that is legible on --accent-btn.
-
-   Ratios were computed against #1a2744 (navy) and #ffffff; all pass WCAG AA.
-   If you add a cluster, run the contrast check before shipping — 10 of the
-   original 12 failed on the events band. */
-[data-cluster="north-waterfront"] {
-  --accent: #c8943a; --accent-on-dark: #c8943a; --accent-btn: #c8943a; --accent-ink: #1a2744;
-}
-[data-cluster="marina-pacific-heights"] {
-  --accent: #2a9d8f; --accent-on-dark: #2da99a; --accent-btn: #228175; --accent-ink: #ffffff;
-}
-[data-cluster="presidio-richmond"] {
-  --accent: #2d6a4f; --accent-on-dark: #48aa7f; --accent-btn: #2d6a4f; --accent-ink: #ffffff;
-}
-[data-cluster="russian-hill-nob-hill"] {
-  --accent: #8b2635; --accent-on-dark: #db7a88; --accent-btn: #8b2635; --accent-ink: #ffffff;
-}
-[data-cluster="downtown-embarcadero"] {
-  --accent: #1e4a8a; --accent-on-dark: #6898de; --accent-btn: #1e4a8a; --accent-ink: #ffffff;
-}
-[data-cluster="civic-center-tenderloin"] {
-  --accent: #6b3fa0; --accent-on-dark: #a989d0; --accent-btn: #6b3fa0; --accent-ink: #ffffff;
-}
-[data-cluster="hayes-valley-alamo-square"] {
-  --accent: #9c3f7a; --accent-on-dark: #cc80b0; --accent-btn: #9c3f7a; --accent-ink: #ffffff;
-}
-[data-cluster="soma-mission-bay"] {
-  --accent: #c05928; --accent-on-dark: #db8054; --accent-btn: #bc5727; --accent-ink: #ffffff;
-}
-[data-cluster="haight-cole-valley"] {
-  --accent: #b8860b; --accent-on-dark: #c28d0c; --accent-btn: #b8860b; --accent-ink: #1a2744;
-}
-[data-cluster="castro-noe-valley"] {
-  --accent: #b5334a; --accent-on-dark: #d97a8b; --accent-btn: #b5334a; --accent-ink: #ffffff;
-}
-[data-cluster="mission-bernal-heights"] {
-  --accent: #c4442a; --accent-on-dark: #de7b66; --accent-btn: #c4442a; --accent-ink: #ffffff;
-}
-[data-cluster="the-sunset"] {
-  --accent: #3d6b8f; --accent-on-dark: #6c9cc0; --accent-btn: #3d6b8f; --accent-ink: #ffffff;
-}
-[data-cluster="bayview-excelsior"] {
-  --accent: #6b8c3a; --accent-on-dark: #7ea544; --accent-btn: #607e34; --accent-ink: #ffffff;
-}
+   Defaults live in :root above; per-edition values arrive from data.       */
 
 /* ── Reset & Base ──────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

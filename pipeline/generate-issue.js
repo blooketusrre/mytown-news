@@ -25,7 +25,10 @@ const clusterArg = (() => {
 
 // ─── Config ────────────────────────────────────────────────────────────────
 const ROOT            = path.resolve(__dirname, "..");
-const CLUSTERS_DIR    = path.join(__dirname, "clusters");
+// Single source of truth for edition definitions. The site reads this file
+// too — it used to be duplicated in pipeline/clusters/*.json with different
+// key names, which is how the newsletter and the web page could disagree.
+const CLUSTERS_FILE   = path.join(ROOT, "src", "_data", "clusters.json");
 const CONTENT_DIR     = path.join(ROOT, "src", "content");
 const ANTHROPIC_KEY   = process.env.ANTHROPIC_API_KEY;
 const BUTTONDOWN_KEY  = process.env.BUTTONDOWN_API_KEY;
@@ -610,7 +613,7 @@ function esc(str) {
 
 function buildEmailHtml(issue, cluster) {
   const issueUrl = `${SITE_URL}/${cluster.slug}/`;
-  const accent   = cluster.accentColor || "#c8943a";
+  const accent   = cluster.accent || "#c8943a";
 
   // Tolerates both the old schema (tag/byline/date) and the current one
   // (tags[]/dek); anything absent is omitted rather than left as an
@@ -807,16 +810,17 @@ async function sendClusterEmail(cluster, issue, tagId) {
 
 async function main() {
   // Load cluster configs from pipeline/clusters/*.json
-  const clusterFiles = fs.readdirSync(CLUSTERS_DIR)
-    .filter((f) => f.endsWith(".json"))
-    .map((f) => path.join(CLUSTERS_DIR, f));
-
-  if (clusterFiles.length === 0) {
-    console.error("No cluster config files found in pipeline/clusters/");
+  let clusters;
+  try {
+    clusters = JSON.parse(fs.readFileSync(CLUSTERS_FILE, "utf8"));
+  } catch (err) {
+    console.error(`Could not read ${CLUSTERS_FILE}: ${err.message}`);
     process.exit(1);
   }
-
-  const clusters = clusterFiles.map((f) => JSON.parse(fs.readFileSync(f, "utf8")));
+  if (!Array.isArray(clusters) || clusters.length === 0) {
+    console.error("No editions defined in src/_data/clusters.json");
+    process.exit(1);
+  }
 
   // Filter to requested cluster or all live clusters
   const targets = clusters.filter((c) => {
