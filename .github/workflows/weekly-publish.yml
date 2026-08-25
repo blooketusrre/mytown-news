@@ -1,6 +1,11 @@
 # My Town News — Weekly Content Pipeline
 # Runs every Thursday at 8 PM PT (Friday 3 AM UTC)
 # Generates a fresh issue for every live cluster, commits, and Netlify auto-deploys.
+#
+# To rehearse without publishing: Actions → Weekly Publish → Run workflow →
+# tick "Dry run". Content is generated and the newsletters are rendered, but
+# nothing is mailed and nothing is committed. The rendered emails are attached
+# to the run as the "dry-run-previews" artifact.
 
 name: Weekly Publish
 
@@ -14,7 +19,7 @@ on:
         required: false
         default: ''
       dry_run:
-        description: 'Dry run — generate content but do not commit'
+        description: 'Dry run — rehearse fully, mail nobody, commit nothing'
         type: boolean
         default: false
 
@@ -35,14 +40,29 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # DRY_RUN must reach the script itself. Until 2026-08-24 this input only
+      # gated the commit step below, so a "dry run" generated every edition and
+      # mailed every subscriber — it just declined to save the evidence. The
+      # script now diverts its output and skips the send; scripts/verify-build.js
+      # asserts this env line still exists so the gap cannot quietly reopen.
       - name: Generate this week's issues
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
           TARGET_CLUSTER: ${{ github.event.inputs.cluster }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
         run: |
           node pipeline/generate-issue.js \
             ${TARGET_CLUSTER:+--cluster $TARGET_CLUSTER}
+
+      - name: Upload dry-run previews
+        if: always() && github.event.inputs.dry_run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: dry-run-previews
+          path: pipeline/dry-run/
+          if-no-files-found: warn
+          retention-days: 14
 
       - name: Build site
         if: always()

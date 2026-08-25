@@ -4,6 +4,13 @@ node_modules/
 # Build output
 _site/
 
+# Pipeline rehearsals (node pipeline/generate-issue.js --dry-run).
+# Real issues live in src/content/ and are committed; these are throwaway
+# copies that exist only so a dry run can be inspected. Committing them
+# would put unpublished drafts in the repo and confuse which file the
+# newsletter actually came from.
+pipeline/dry-run/
+
 # Local env / secrets — never commit tokens or API keys
 .env
 .env.*
