@@ -164,6 +164,85 @@ try {
   errors.push(`Could not check edition data: ${e.message}`);
 }
 
+/* ── "Cluster" is an internal word ────────────────────────────────────────
+ * We group neighborhoods into editions and call them clusters in the code.
+ * Readers have never heard the term. It leaked into the subscribe page, the
+ * about page, the homepage, the empty-edition state, and nine published
+ * story bodies before anyone noticed — the last of those because the word
+ * sat in the pipeline's system prompt, so Claude reasonably wrote it into
+ * prose ("the Marina cluster", "two of the cluster's biggest venues").
+ *
+ * The ordinary English sense is fine — "a cluster of galleries" is good
+ * writing. What we ban is using it as a label for one of our own coverage
+ * areas, which in practice always looks like "the/this <something> cluster".
+ * Matching that shape keeps the innocent usage legal.
+ *
+ * Templates are an error: we write them once and control every word.
+ * Generated content is a warning: a Friday deploy should not fail because a
+ * story legitimately described a cluster of restaurants, and the real
+ * defence there is the prompt rule, not this check.
+ */
+{
+  /* Our jargon has a specific grammatical shape: "cluster" is the head noun,
+   * introduced by a determiner and modified by at most a few words naming the
+   * place — "the Marina cluster", "this cluster", "the Bayview and Excelsior
+   * cluster", "the city's neighborhood clusters".
+   *
+   * The innocent sense looks different: "a cluster of galleries" takes the
+   * article "a" and is followed by "of". Excluding those two, and refusing to
+   * cross punctuation, separates the cases. An earlier, looser version
+   * flagged "walked through the North Waterfront, past a cluster of
+   * galleries", which is perfectly good writing.
+   */
+  const JARGON = /\b(?:this|that|these|those|the|our|each|every)\s+(?:(?!an?\b)[\w'’&.-]+\s+){0,3}clusters?\b(?!\s+of\b)/i;
+
+  const templates = [];
+  (function walk(dir) {
+    for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+      const p = path.join(dir, e.name);
+      if (e.isDirectory()) { if (e.name !== "content") walk(p); }
+      else if (e.name.endsWith(".njk")) templates.push(p);
+    }
+  })(path.join(ROOT, "src"));
+  templates.push(path.join(ROOT, "pipeline", "generate-issue.js"));
+
+  // Blank out a region while preserving newlines, so reported line numbers
+  // still point at the right place in the real file.
+  const blank = (src, re) => src.replace(re, (m) => m.replace(/[^\n]/g, " "));
+
+  templates.forEach((f) => {
+    let src = fs.readFileSync(f, "utf8");
+    // Comments and developer-facing notes may say "cluster" freely — the
+    // concept still exists in the code, it just never reaches a reader.
+    src = blank(src, /wording-check:\s*off[\s\S]*?wording-check:\s*on/g);
+    src = blank(src, /\{#[\s\S]*?#\}/g);      // Nunjucks comments
+    src = blank(src, /\/\*[\s\S]*?\*\//g);    // JS block comments
+    src = blank(src, /^\s*\/\/.*$/gm);        // JS line comments
+
+    src.split("\n").forEach((line, i) => {
+      if (line.includes("${")) return;        // template interpolation is code
+      const m = line.match(JARGON);
+      if (m) {
+        errors.push(`${path.relative(ROOT, f)}:${i + 1} says "${m[0].trim()}" — "cluster" is internal jargon, say "edition" or name the neighborhoods`);
+      }
+    });
+  });
+
+  const contentDir = path.join(ROOT, "src", "content");
+  if (fs.existsSync(contentDir)) {
+    let hits = 0;
+    fs.readdirSync(contentDir).forEach((slug) => {
+      const d = path.join(contentDir, slug);
+      if (!fs.statSync(d).isDirectory()) return;
+      fs.readdirSync(d).filter((f) => f.endsWith(".json")).forEach((f) => {
+        const m = fs.readFileSync(path.join(d, f), "utf8").match(JARGON);
+        if (m) { hits++; warnings.push(`${slug}/${f} says "${m[0].trim()}" — reader-facing jargon`); }
+      });
+    });
+    if (!hits) console.log("  Wording: no reader-facing use of \"cluster\"");
+  }
+}
+
 /* ── The dry-run switch must stay connected ───────────────────────────────
  * The workflow has offered a "Dry run" checkbox since launch, but until
  * 2026-08-24 it only skipped the git commit: the generator still ran and

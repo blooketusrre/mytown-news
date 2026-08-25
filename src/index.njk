@@ -228,7 +228,7 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
         <p class="newsletter__eyebrow">Free. Independent. Weekly.</p>
         <h2 class="newsletter__headline" id="newsletter-heading">Get My Town News<br>every Friday morning</h2>
         <p class="newsletter__sub">
-          Neighborhood news, events, and your local directory — for every SF cluster, every week.
+          Neighborhood news, events, and your local directory — every edition, every week.
         </p>
         <form class="newsletter__form" aria-label="Newsletter signup">
           <input class="newsletter__input" type="email" placeholder="your@email.com" required aria-label="Email address">
@@ -289,8 +289,8 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
       return;
     }
 
-    /* ZIP spans two clusters — let the reader choose */
-    result.innerHTML = 'ZIP ' + zip + ' spans two neighborhoods: ' +
+    /* ZIP spans two editions — let the reader choose */
+    result.innerHTML = 'ZIP ' + zip + ' is covered by two editions: ' +
       matches.map(function (m) {
         return '<a href="' + m.url + '">' + m.name + '</a>';
       }).join(' &nbsp;&middot;&nbsp; ');
