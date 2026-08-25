@@ -5,9 +5,32 @@
  * Usage:
  *   node pipeline/generate-issue.js                  # all live clusters
  *   node pipeline/generate-issue.js --cluster north-waterfront
+ *   node pipeline/generate-issue.js --dry-run        # rehearse, send nothing
  *
  * Required env vars:
  *   ANTHROPIC_API_KEY
+ *
+ * Optional env vars:
+ *   BUTTONDOWN_API_KEY   — omit to generate content without sending
+ *   DRY_RUN=true         — same as --dry-run
+ *
+ * ── About dry runs ────────────────────────────────────────────────────────
+ * A dry run is a full rehearsal: it researches, generates, validates and
+ * renders the newsletter HTML exactly as a live run would, then stops short
+ * of the one irreversible step — the POST to Buttondown that puts mail in
+ * subscribers' inboxes.
+ *
+ * Two things make it safe to run at any time:
+ *
+ *   1. Output is diverted to pipeline/dry-run/ instead of src/content/, so a
+ *      rehearsal cannot be mistaken for the real issue by Thursday's job, by
+ *      the site build, or by git.
+ *   2. Every Buttondown call it makes is read-only. The tag lookup still
+ *      runs, because a missing tag is a real failure worth rehearsing. The
+ *      send does not.
+ *
+ * It still spends Anthropic credits and still performs live web searches —
+ * "dry" refers to delivery, not to effort.
  */
 
 "use strict";
@@ -23,6 +46,16 @@ const clusterArg = (() => {
   return idx !== -1 ? args[idx + 1] : null;
 })();
 
+// Accepts the flag or the env var, because the flag is what a human types and
+// the env var is what GitHub Actions can pass from a workflow_dispatch input.
+// Only explicit affirmatives count: an unset input arrives as "" on scheduled
+// runs, and the default for anything unrecognised must be "this is live".
+const DRY_RUN = (() => {
+  if (args.includes("--dry-run")) return true;
+  const v = String(process.env.DRY_RUN || "").trim().toLowerCase();
+  return v === "true" || v === "1" || v === "yes";
+})();
+
 // ─── Config ────────────────────────────────────────────────────────────────
 const ROOT            = path.resolve(__dirname, "..");
 // Single source of truth for edition definitions. The site reads this file
@@ -30,6 +63,14 @@ const ROOT            = path.resolve(__dirname, "..");
 // key names, which is how the newsletter and the web page could disagree.
 const CLUSTERS_FILE   = path.join(ROOT, "src", "_data", "clusters.json");
 const CONTENT_DIR     = path.join(ROOT, "src", "content");
+// Rehearsal output lives outside src/ so Eleventy never sees it, git ignores
+// it, and a dry run can never satisfy the "already generated this week" check
+// that would cause Thursday's real run to skip an edition.
+const DRY_RUN_DIR     = path.join(ROOT, "pipeline", "dry-run");
+/** Where this run writes an edition's JSON. */
+function outDirFor(slug) {
+  return path.join(DRY_RUN ? DRY_RUN_DIR : CONTENT_DIR, slug);
+}
 const ANTHROPIC_KEY   = process.env.ANTHROPIC_API_KEY;
 const BUTTONDOWN_KEY  = process.env.BUTTONDOWN_API_KEY;
 const SITE_URL        = "https://mytown.news";
@@ -461,13 +502,18 @@ function rotateRepeatedLead(issue, prevIssue) {
 async function generateCluster(clusterConfig) {
   console.log(`\n📰 Generating: ${clusterConfig.name}`);
   const weekDate = thisWeekDate();
-  const outDir   = path.join(CONTENT_DIR, clusterConfig.slug);
+  const outDir   = outDirFor(clusterConfig.slug);
   const outFile  = path.join(outDir, `${weekDate}.json`);
 
-  // Skip if already generated today
+  // Skip if already generated today. In a dry run this checks the rehearsal
+  // path, not src/content — otherwise a rehearsal held after the real run
+  // would silently do nothing and look like a pass.
   if (fs.existsSync(outFile)) {
     console.log(`  ✓ Already exists: ${outFile}`);
     return;
+  }
+  if (DRY_RUN && fs.existsSync(path.join(CONTENT_DIR, clusterConfig.slug, `${weekDate}.json`))) {
+    console.log(`  ℹ A real issue for ${weekDate} already exists — rehearsing alongside it, not touching it.`);
   }
 
   const prevIssue = loadPreviousIssue(clusterConfig.slug, weekDate);
@@ -584,7 +630,7 @@ async function generateCluster(clusterConfig) {
   // ── 5. Write output ──────────────────────────────────────────────────────
   fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(outFile, JSON.stringify(issue, null, 2), "utf8");
-  console.log(`  ✅ Written: ${outFile}`);
+  console.log(`  ✅ Written: ${path.relative(ROOT, outFile)}${DRY_RUN ? "  (rehearsal)" : ""}`);
   console.log(`     ${issue.topStories.length} top stories, ${(issue.events||[]).length} events, ${(issue.moreNews||[]).length} briefs`);
 }
 
@@ -761,16 +807,33 @@ async function fetchButtondownTagIds() {
   });
 }
 
-async function sendClusterEmail(cluster, issue, tagId) {
-  const subject = `My Town News — ${cluster.name} ${cluster.city || ""}`.trim();
-  const body    = buildEmailHtml(issue, cluster);
+/** Subject line. Extracted so the dry-run preview cannot drift from the
+ *  real send — a rehearsal that renders a different subject is worthless. */
+function emailSubject(cluster) {
+  return `My Town News — ${cluster.name} ${cluster.city || ""}`.trim();
+}
 
-  // Build audience filter: send only to subscribers tagged with this cluster.
-  // Buttondown replaced included_tags with a structured filters object (2024-08-15).
-  // Filter value must be the tag's ID (UUID/TypeID), not its name.
-  const filters = tagId
+/** Audience filter: send only to subscribers tagged with this cluster.
+ *  Buttondown replaced included_tags with a structured filters object
+ *  (2024-08-15). The filter value must be the tag's ID, not its name.
+ *  An empty filter list means EVERY subscriber, which is why a missing tag
+ *  is treated as loudly as it is below. */
+function buildFilters(tagId) {
+  return tagId
     ? { filters: [{ field: "subscriber.tags", operator: "contains", value: tagId }], groups: [], predicate: "and" }
     : { filters: [], groups: [], predicate: "and" };
+}
+
+async function sendClusterEmail(cluster, issue, tagId) {
+  if (DRY_RUN) {
+    // Belt and braces. main() already routes dry runs to the preview path, so
+    // reaching here means a future edit wired a send into a rehearsal — fail
+    // loudly rather than mail 13 neighborhoods by accident.
+    throw new Error("sendClusterEmail called during a dry run — refusing to send.");
+  }
+  const subject = emailSubject(cluster);
+  const body    = buildEmailHtml(issue, cluster);
+  const filters = buildFilters(tagId);
 
   const payload = JSON.stringify({ subject, body, status: "about_to_send", filters });
 
@@ -806,6 +869,30 @@ async function sendClusterEmail(cluster, issue, tagId) {
   });
 }
 
+/** Render what a live run would have sent, and write it next to the issue
+ *  JSON as an .html file you can open in a browser. Returns a summary line.
+ *
+ *  This is the whole point of the rehearsal: not "did the script survive",
+ *  but "is the thing it was about to mail out actually correct". */
+function previewClusterEmail(cluster, issue, tagId) {
+  const subject = emailSubject(cluster);
+  const body    = buildEmailHtml(issue, cluster);
+  const filters = buildFilters(tagId);
+
+  const weekDate = thisWeekDate();
+  const outDir   = outDirFor(cluster.slug);
+  const outFile  = path.join(outDir, `${weekDate}.email.html`);
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(outFile, body, "utf8");
+
+  return {
+    subject,
+    filters,
+    file: path.relative(ROOT, outFile),
+    bytes: Buffer.byteLength(body),
+  };
+}
+
 // ─── Entry point ─────────────────────────────────────────────────────────────
 
 async function main() {
@@ -837,6 +924,12 @@ async function main() {
   }
 
   console.log(`My Town News — Weekly Issue Generator`);
+  if (DRY_RUN) {
+    console.log(`Mode: 🧪 DRY RUN — nothing will be mailed to subscribers`);
+    console.log(`      Output goes to ${path.relative(ROOT, DRY_RUN_DIR)}/, not src/content/`);
+  } else {
+    console.log(`Mode: 🚀 LIVE — newsletters will be delivered`);
+  }
   console.log(`Week of: ${thisWeekDate()}`);
   console.log(`Clusters to generate: ${targets.map((c) => c.slug).join(", ")}`);
 
@@ -844,6 +937,7 @@ async function main() {
   let emailsSent = 0;
   let emailsSkipped = 0;
   let emailsFailed = 0;
+  let emailsPreviewed = 0;
   const generated = [];
 
   for (const cluster of targets) {
@@ -865,9 +959,14 @@ async function main() {
 
   // ── Send newsletters via Buttondown ──────────────────────────────────────
   if (BUTTONDOWN_KEY) {
-    console.log("\n📧 Sending newsletters via Buttondown…");
+    console.log(DRY_RUN
+      ? "\n📧 Rendering newsletters (dry run — no send)…"
+      : "\n📧 Sending newsletters via Buttondown…");
 
-    // Fetch tag name → ID map once (Buttondown filters require IDs, not names)
+    // Fetch tag name → ID map once (Buttondown filters require IDs, not names).
+    // This GET runs in a dry run too: an edition whose tag has gone missing
+    // would otherwise mail every subscriber in the account, and that is
+    // precisely the class of mistake a rehearsal exists to catch.
     const tagMap = await fetchButtondownTagIds();
     const tagCount = Object.keys(tagMap).length;
     console.log(`  ℹ Fetched ${tagCount} Buttondown tag(s):`, Object.keys(tagMap).join(", ") || "(none)");
@@ -875,12 +974,23 @@ async function main() {
     for (const cluster of generated) {
       try {
         const weekDate  = thisWeekDate();
-        const issueFile = path.join(CONTENT_DIR, cluster.slug, `${weekDate}.json`);
+        const issueFile = path.join(outDirFor(cluster.slug), `${weekDate}.json`);
         const issue     = JSON.parse(fs.readFileSync(issueFile, "utf8"));
         const tagId     = tagMap[cluster.slug];
         if (!tagId) {
-          console.warn(`  ⚠ No Buttondown tag found for slug "${cluster.slug}" — email will send to ALL subscribers`);
+          console.warn(`  ⚠ No Buttondown tag found for slug "${cluster.slug}" — email would send to ALL subscribers`);
         }
+
+        if (DRY_RUN) {
+          const p = previewClusterEmail(cluster, issue, tagId);
+          console.log(`  🧪 Would send: "${p.subject}"`);
+          console.log(`       audience: ${tagId ? `tag ${tagId}` : "⚠ ALL SUBSCRIBERS (no tag)"}`);
+          console.log(`       preview:  ${p.file} (${(p.bytes / 1024).toFixed(1)} KB)`);
+          if (!tagId) emailsFailed++;   // a rehearsal that would misfire is a failed rehearsal
+          else emailsPreviewed++;
+          continue;
+        }
+
         const result    = await sendClusterEmail(cluster, issue, tagId);
         if (result.id) {
           console.log(`  ✅ Queued: "${cluster.name}" → tag: ${tagId || "ALL"} (email id: ${result.id})`);
@@ -901,8 +1011,20 @@ async function main() {
         emailsFailed++;
       }
     }
-    const skipNote = emailsSkipped ? `, ${emailsSkipped} already sent` : "";
-    console.log(`\n📧 ${emailsSent} sent${skipNote}, ${emailsFailed} failed.`);
+    if (DRY_RUN) {
+      console.log(`\n🧪 ${emailsPreviewed} newsletter(s) rendered and verified, ${emailsFailed} would have misfired.`);
+      console.log(`   Nothing was sent. Open the .email.html files to read what would have gone out.`);
+    } else {
+      const skipNote = emailsSkipped ? `, ${emailsSkipped} already sent` : "";
+      console.log(`\n📧 ${emailsSent} sent${skipNote}, ${emailsFailed} failed.`);
+    }
+  } else if (DRY_RUN) {
+    // Without a key the tag lookup cannot run, so the audience half of the
+    // rehearsal is untested. Say so plainly rather than reporting a clean run.
+    console.warn("\n⚠ BUTTONDOWN_API_KEY not set — content was generated, but");
+    console.warn("  the audience tags could not be checked. This rehearsal only");
+    console.warn("  proves the generator works, not that the right people would");
+    console.warn("  receive it. Re-run with the key for a full rehearsal.");
   } else {
     console.log("\n⚠ BUTTONDOWN_API_KEY not set — skipping email send.");
     emailsFailed = generated.length;
@@ -914,9 +1036,11 @@ async function main() {
   if (failed > 0 || emailsFailed > 0) {
     console.error(
       `\n❌ Run incomplete: ${failed} edition(s) failed to generate, ` +
-      `${emailsFailed} email(s) failed to send.`
+      `${emailsFailed} email(s) ${DRY_RUN ? "would have failed to send" : "failed to send"}.`
     );
     process.exitCode = 1;
+  } else if (DRY_RUN) {
+    console.log(`\n✅ Rehearsal clean. src/content/ was not touched — a live run is what publishes.`);
   }
 }
 

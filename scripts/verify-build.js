@@ -164,6 +164,53 @@ try {
   errors.push(`Could not check edition data: ${e.message}`);
 }
 
+/* ── The dry-run switch must stay connected ───────────────────────────────
+ * The workflow has offered a "Dry run" checkbox since launch, but until
+ * 2026-08-24 it only skipped the git commit: the generator still ran and
+ * still mailed every subscriber. Anyone testing a change with it would have
+ * published a newsletter believing they had not.
+ *
+ * Four links in that chain, each easy to sever by accident, none of which
+ * any existing test would notice:
+ *   1. the workflow passes DRY_RUN to the generate step
+ *   2. the generator reads it
+ *   3. the generator refuses to send while it is set
+ *   4. rehearsal output stays out of git and out of src/content/
+ * Assert all four here, where a break fails a deploy instead of a Thursday.
+ */
+try {
+  const wf  = fs.readFileSync(
+    path.join(ROOT, ".github", "workflows", "weekly-publish.yml"), "utf8");
+  const gen = fs.readFileSync(
+    path.join(ROOT, "pipeline", "generate-issue.js"), "utf8");
+  const ign = fs.readFileSync(path.join(ROOT, ".gitignore"), "utf8");
+
+  if (!/^\s*DRY_RUN:\s*\$\{\{\s*github\.event\.inputs\.dry_run\s*\}\}\s*$/m.test(wf)) {
+    errors.push(
+      "weekly-publish.yml no longer passes DRY_RUN to the generate step — " +
+      "the dry-run checkbox would send real newsletters"
+    );
+  }
+  if (!/process\.env\.DRY_RUN/.test(gen)) {
+    errors.push("generate-issue.js no longer reads process.env.DRY_RUN");
+  }
+  if (!/refusing to send/.test(gen)) {
+    errors.push(
+      "generate-issue.js lost the DRY_RUN guard inside sendClusterEmail — " +
+      "a rehearsal could reach the Buttondown send"
+    );
+  }
+  if (!/^pipeline\/dry-run\/$/m.test(ign)) {
+    errors.push("pipeline/dry-run/ is no longer gitignored — rehearsals would be committed");
+  }
+  if (fs.existsSync(path.join(ROOT, "src", "content", "dry-run"))) {
+    errors.push("a dry run wrote into src/content/ — rehearsal output must stay out of the site");
+  }
+  console.log("  Dry run: switch verified end to end (workflow → script → send guard)");
+} catch (e) {
+  errors.push(`Could not verify the dry-run switch: ${e.message}`);
+}
+
 /* ── Report ───────────────────────────────────────────────────────────── */
 
 console.log("");
