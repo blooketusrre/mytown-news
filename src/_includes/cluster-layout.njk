@@ -59,9 +59,23 @@ layout: base.njk
       <span class="masthead__ornament-diamond"></span>
       <span class="masthead__ornament-rule"></span>
     </div>
+    {# Which neighborhoods this edition covers. A reader who lands here from
+       search knows their own neighborhood, not our name for the group it
+       sits in — someone in Telegraph Hill has no reason to guess that it
+       lives inside "North Waterfront".
+
+       Read from clusters.json, not from the generated issue. This line used
+       to render issue.neighborhoods, which the pipeline schema never asked
+       Claude to produce, so it was empty on every edition page from launch
+       until 2026-08-27 and nothing complained. The edition definition always
+       has the list, and it shows on the "coming Friday" pages too. #}
+    {% set edition = clusters | bySlug(clusterSlug) %}
+    {% if edition and edition.neighborhoods.length %}
     <p class="masthead__subtitle">
-      {% if issue %}{% for n in issue.neighborhoods %}{{ n }}{% if not loop.last %} &nbsp;·&nbsp; {% endif %}{% endfor %}{% endif %}
+      <span class="masthead__subtitle-label">Covering</span>
+      {{ edition.neighborhoods | join(' · ') }}
     </p>
+    {% endif %}
   </div>
   <div class="masthead__bar">
     <div class="masthead__bar-inner container">

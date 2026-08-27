@@ -112,6 +112,49 @@ if (fs.existsSync(homepage)) {
   }
 }
 
+/* ── Every edition page must name the neighborhoods it covers ─────────────
+ * A reader arriving from search knows their own neighborhood, not our name
+ * for the group it belongs to. Someone in Telegraph Hill has no way to guess
+ * they want "North Waterfront".
+ *
+ * The masthead had a line for this from the start, but it rendered
+ * issue.neighborhoods — a field the pipeline's JSON schema never asked for.
+ * It was empty on all thirteen editions for months. An empty <p> looks
+ * exactly like a design choice, so nothing surfaced it.
+ *
+ * Checking the rendered page for the actual neighborhood names is the only
+ * version of this check that would have caught that: the element existed,
+ * the template was "correct", and only the output was wrong.
+ */
+try {
+  const editions = JSON.parse(fs.readFileSync(CLUSTERS, "utf8")).filter((c) => c.live);
+  let checked = 0;
+  editions.forEach((c) => {
+    const f = path.join(OUT, c.slug, "index.html");
+    if (!fs.existsSync(f)) return;              // already reported as MISSING
+    // Compare on decoded text: Nunjucks escapes the apostrophe in
+    // "Fisherman's Wharf" to &#39;, and curly vs straight quotes differ
+    // between the data file and the rendered page.
+    const norm = (s) => s
+      .replace(/&amp;/g, "&")
+      .replace(/&#0*39;|&#x0*27;|&apos;|[’‘]/gi, "'")
+      .replace(/&quot;|[“”]/g, '"');
+    const html = norm(fs.readFileSync(f, "utf8"));
+    const missing = (c.neighborhoods || []).filter((n) => !html.includes(norm(n)));
+    if (missing.length) {
+      errors.push(
+        `${c.slug}/index.html never names ${missing.join(", ")} — ` +
+        `a reader who lives there cannot tell this is their edition`
+      );
+    } else {
+      checked++;
+    }
+  });
+  if (checked) console.log(`  Coverage: ${checked} edition pages name their neighborhoods`);
+} catch (e) {
+  errors.push(`Could not check edition coverage lines: ${e.message}`);
+}
+
 const expected = STATIC_PAGES.length + liveCount;
 const actual   = expected - errors.filter((e) => e.startsWith("MISSING")).length;
 

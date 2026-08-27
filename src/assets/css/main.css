@@ -239,6 +239,11 @@ ul, ol { list-style: none; }
   transform: rotate(45deg);
 }
 
+/* The list of neighborhoods this edition covers. Deliberately quiet — it is
+   reassurance for someone checking they are in the right place, not a
+   headline. One line on desktop; it wraps rather than truncating on narrow
+   screens, because a reader whose neighborhood fell off the end would be
+   left with exactly the doubt this line exists to remove. */
 .masthead__subtitle {
   font-family: var(--font-ui);
   font-size: 0.625rem;
@@ -246,6 +251,15 @@ ul, ol { list-style: none; }
   letter-spacing: 0.13em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.5);
+  margin: 10px auto 0;
+  max-width: 46rem;
+  line-height: 1.6;
+  text-wrap: balance;
+}
+
+.masthead__subtitle-label {
+  color: rgba(255,255,255,0.32);
+  letter-spacing: 0.16em;
 }
 
 .masthead__bar {

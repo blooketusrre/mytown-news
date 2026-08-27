@@ -79,6 +79,14 @@ module.exports = function (eleventyConfig) {
     return "landmark";
   });
 
+  // Looks up one edition in clusters.json by slug. Nunjucks cannot assign a
+  // variable from inside a {% for %} in a way that survives the loop, so a
+  // filter is the practical way to reach the edition record from a template.
+  eleventyConfig.addFilter("bySlug", (list, slug) => {
+    if (!Array.isArray(list) || !slug) return null;
+    return list.find((c) => c && c.slug === slug) || null;
+  });
+
   // Groups an array of objects by a named key → { groupName: [items, …] }
   eleventyConfig.addFilter("groupBy", (arr, key) => {
     if (!Array.isArray(arr)) return {};

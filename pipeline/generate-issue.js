@@ -680,6 +680,11 @@ function esc(str) {
 function buildEmailHtml(issue, cluster) {
   const issueUrl = `${SITE_URL}/${cluster.slug}/`;
   const accent   = cluster.accent || "#c8943a";
+  // Named neighborhoods under the edition title, for the same reason the web
+  // masthead carries them: a forwarded issue lands in front of someone who
+  // knows their own neighborhood but not which edition covers it. Taken from
+  // the edition definition, never from the generated issue.
+  const hoods    = (cluster.neighborhoods || []).join(" · ");
 
   // Tolerates both the old schema (tag/byline/date) and the current one
   // (tags[]/dek); anything absent is omitted rather than left as an
@@ -734,8 +739,9 @@ function buildEmailHtml(issue, cluster) {
   <tr><td style="background:#1a2744;padding:32px 40px 24px;text-align:center;">
     <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:${accent};">${cluster.city || "San Francisco"} · Free &amp; Independent · Every Friday</p>
     <h1 style="margin:0 0 6px 0;font-family:Georgia,'Times New Roman',serif;font-size:36px;font-weight:900;color:#ffffff;letter-spacing:-1px;">My Town <span style="color:${accent};">News</span></h1>
-    <p style="margin:6px 0 0 0;font-family:Arial,sans-serif;font-size:14px;color:rgba(255,255,255,0.65);">${issue.clusterName}</p>
-    <p style="margin:4px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.3);">Week of ${issue.weekOf || ""}</p>
+    <p style="margin:6px 0 0 0;font-family:Arial,sans-serif;font-size:14px;color:rgba(255,255,255,0.65);">${esc(issue.clusterName || cluster.name)}</p>
+    ${hoods ? `<p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.38);">${esc(hoods)}</p>` : ""}
+    <p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.3);">Week of ${esc(issue.weekOf || "")}</p>
   </td></tr>
   <tr><td style="height:3px;background:${accent};"></td></tr>
 
