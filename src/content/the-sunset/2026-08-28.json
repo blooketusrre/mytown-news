@@ -1,0 +1,700 @@
+{
+  "clusterSlug": "the-sunset",
+  "clusterName": "The Sunset",
+  "weekOf": "2026-08-28",
+  "topStories": [
+    {
+      "headline": "Original Joe's Family to Bring Fast-Casual Burger Spot to West Portal",
+      "dek": "The Duggans, who already operate Little Original Joe's and Elena's on West Portal Avenue, have announced a third concept for the neighborhood: Original Joe's Cable Car.",
+      "body": "The family behind one of San Francisco's most storied Italian-American restaurant names is deepening its roots in West Portal. Elena and John Duggan, third-generation operators of the Original Joe's empire, announced this week that they will open Original Joe's Cable Car at 385 West Portal Ave. — the former Clay Oven space next door to their Little Original Joe's market.\n\nThe new concept will be a fast-casual grill focused on burgers, chicken tenders, milkshakes, fries, and hot dogs. According to the San Francisco Chronicle, the menu will be anchored by the simple smash burger that has become a fan favorite at the Marina location of Little Original Joe's. The Duggans described the planned restaurant as 'convenient, casual and fun,' aimed squarely at the neighborhood's many families.\n\nThe opening is not imminent — the restaurant is targeting a late-2027 debut, making it a roughly 15-month buildout. But the announcement adds to a wave of business investment on West Portal Avenue that has transformed the once-quiet commercial strip since the pandemic. The Duggans opened Little Original Joe's there in December 2020 and followed it with Elena's, a Mexican restaurant, in 2024.\n\nOriginal Joe's Cable Car will be the Duggan family's seventh restaurant concept overall, extending a dynasty that their grandfather founded in the Tenderloin in 1937. The siblings, who both live in West Portal and raised children there, told the Chronicle they envision the new spot as somewhere 'parents can take their kids to, and kids can drag their parents to.'",
+      "sourceUrl": "https://www.sfchronicle.com/food/restaurants/article/original-joes-burger-chicken-tenders-22385500.php",
+      "sourceName": "San Francisco Chronicle",
+      "tags": [
+        "West Portal",
+        "restaurants",
+        "business",
+        "food"
+      ]
+    },
+    {
+      "headline": "Yellowstone Takes Over Parkmerced Redevelopment Parcels in Foreclosure — What Happens Next?",
+      "dek": "A New York real estate firm seized four development parcels at Parkmerced through foreclosure last month; residents and city officials are now watching to see whether the new owner will finally break ground on nearly 1,700 entitled housing units.",
+      "body": "The already-complicated ownership picture at Parkmerced — San Francisco's largest apartment complex, with more than 3,200 homes near San Francisco State University — grew more complicated last month when New York-based Yellowstone Real Estate Investments announced it had completed the takeover of four parcels at the 152-acre community through foreclosure.\n\nYellowstone had originated a $101 million construction loan for developer Maximus Real Estate Partners in 2022. By the time of the foreclosure sale, that debt had ballooned to more than $199 million in accrued interest and fees, according to a trustee's sale notice. Maximus defaulted on the loan in March. The four parcels, covering the first four subphases of a long-delayed redevelopment plan, are entitled for nearly 1,700 housing units.\n\nYellowstone CEO Issac Hera announced the takeover on LinkedIn, pledging to 'realize the long-term vision for this exceptional site.' It remains unclear whether the firm intends to begin construction immediately. City officials approved a massive expansion of Parkmerced in 2011 that would have added 5,679 new apartments, but the project never broke ground — delayed by COVID, a sharp drop in occupancy, and Maximus's deepening financial distress.\n\nThe broader Parkmerced property, tied to a $1.5 billion senior mortgage and a separate defaulted $275 million loan, remains in the hands of a court-appointed receiver. Residents have complained for years about poor maintenance, mold, and security issues. Whether Yellowstone's arrival signals a turning point or yet another chapter of uncertainty at the long-troubled megaproject is a question residents — and city planners counting on the site for housing production — are anxiously watching.",
+      "sourceUrl": "https://sfstandard.com/2026/07/22/yellowstone-parkmerced-foreclosure-redevelopment/",
+      "sourceName": "San Francisco Standard",
+      "tags": [
+        "Parkmerced",
+        "housing",
+        "development",
+        "real estate"
+      ]
+    },
+    {
+      "headline": "West Portal Street Redesign Shows Results: Collisions Down 60 Percent Since Safety Overhaul",
+      "dek": "A new SFMTA evaluation report finds that the traffic-safety project installed after a driver killed a family of four at the West Portal Muni stop has cut collision rates dramatically and boosted sales tax revenue in the commercial corridor.",
+      "body": "Nearly two years after a fatal wrong-way crash at the West Portal branch library killed a family of four waiting for a Muni bus, the city's sweeping redesign of the surrounding streets is showing measurable results. A new evaluation report from the San Francisco Municipal Transportation Agency found that traffic collision rates in the half-square-mile area around the crash site fell 60 percent from October 2024 to March 2026, compared with the same window before the project was implemented.\n\nThe SFMTA completed quick-build safety improvements — including red transit-only lanes, traffic-calming treatments on Ulloa, Vicente and Wawona streets, and new turn restrictions — in September 2025. Since then, the agency says speeding is down, injuries are down, and more people report feeling safe at the key intersection. A survey found that over 70 percent of respondents said they feel 'very or somewhat safe' at the area, up from about 50 percent before the project.\n\nThe safety gains have come alongside commercial ones: the SFMTA reports that sales tax revenue in the West Portal corridor has grown at a rate that exceeds the citywide average since the project was completed, undercutting earlier warnings from some merchants that the traffic changes would hurt business.\n\nThe evaluation, completed in June 2026, also noted two unpriced costs flagged by the controller's office that the city has yet to fully account for. The SFMTA said it will continue to monitor results and consider whether additional permanent improvements using more durable materials are warranted.",
+      "sourceUrl": "https://missionlocal.org/2026/07/san-francisco-sfmta-west-portal-safety-project/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "West Portal",
+        "transportation",
+        "safety",
+        "SFMTA"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Outer Sunset Farmers Market & Mercantile",
+      "date": "Ongoing",
+      "time": "9:00 AM–2:00 PM",
+      "location": "37th Avenue at Ortega, Outer Sunset",
+      "description": "Year-round Sunday farmers market featuring local farmers, food artisans, food trucks, makers, live music, and family-friendly activities. EBT and WIC accepted.",
+      "sourceUrl": "https://sunsetmercantilesf.com/osfmm/",
+      "sourceName": "Sunset Mercantile"
+    },
+    {
+      "title": "Honky-Tonk Throwback: California Turnaround Live at The Riptide",
+      "date": "Saturday, August 29",
+      "time": "7:30 PM",
+      "location": "The Riptide, 3639 Taraval St, Outer Sunset",
+      "description": "Free live show by California Turnaround, a country trucker band serving up tunes from the 1960s–70s. No cover charge.",
+      "sourceUrl": "https://sf.funcheap.com/region/sunset-district/",
+      "sourceName": "Funcheap SF"
+    },
+    {
+      "title": "Inner Sunset Flea Market — 'A Taste of Comedy Day'",
+      "date": "Sunday, September 13",
+      "time": "10:00 AM–4:00 PM",
+      "location": "Irving Street between 9th & 11th Avenues, Inner Sunset",
+      "description": "The monthly flea market's September edition features vintage and secondhand vendors, artisan makers, live music, and community organizations along two blocks of Irving Street. Free admission.",
+      "sourceUrl": "https://sunsetmercantilesf.com/innersunsetflea/",
+      "sourceName": "Sunset Mercantile"
+    },
+    {
+      "title": "Sunset Night Market: Mid-Autumn Moon Festival",
+      "date": "Friday, September 25",
+      "time": "5:00 PM–10:00 PM",
+      "location": "Irving Street, 20th to 25th Avenues, Inner Sunset",
+      "description": "The return of the Sunset Night Market celebrates the Mid-Autumn Moon Festival with food, live music, culture, and community. Free admission; bike valet available on site.",
+      "sourceUrl": "https://sunsetmercantilesf.com/sunsetnightmarket2026/",
+      "sourceName": "Sunset Mercantile"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Inner Sunset Vibrancy Fund: Priority Deadline Arrives Today, Applications Still Rolling",
+      "body": "Today, August 28, marks the priority deadline for the Inner Sunset Neighborhood Vibrancy Fund — but businesses that miss it are not out of luck. The fund, administered by the nonprofit SF New Deal and backed by anonymous private donors from the neighborhood, continues to accept applications on a rolling basis. Grants are available in three tracks: up to $10,000 for storefront beautification, up to $5,000 for technical assistance, and up to $20,000 for businesses taking over a vacant storefront. Eligible businesses must be located between Fifth and 19th Avenues, bounded by Lincoln Way and Kirkham Street. SF New Deal expects to begin distributing grants in late summer. Applications and details are available at sfnewdeal.org/inner-sunset.",
+      "sourceUrl": "https://richmondsunsetnews.com/2026/08/10/new-fund-aims-to-strengthen-inner-sunset-businesses-and-expand-throughout-the-city/",
+      "sourceName": "Richmond Review/Sunset Beacon",
+      "tags": [
+        "Inner Sunset",
+        "small business",
+        "grants"
+      ]
+    },
+    {
+      "headline": "Prop G, the Great Highway Ballot Measure, Gets Its First Official Cost Estimate Ahead of November",
+      "body": "With November's ballot taking shape, voters in the Sunset and across San Francisco now have the city's first official price tag for Proposition G, the initiative that would reopen the Upper Great Highway to weekday car traffic. The SF Controller's Office pegged the one-time capital cost at $9.8 million — about $4 million less than earlier estimates from the SFMTA and Recreation and Parks Department — plus ongoing annual costs of $500,000 to $1.9 million. The bulk of the upfront cost, $8.8 million, would go toward installing new traffic signals at eight intersections. Prop G would amend the Park Code to allow cars on the road between Lincoln Way and Sloat Boulevard on weekdays, while keeping it closed to traffic from Friday evening through Monday morning and on holidays — essentially rolling back 2024's Proposition K, which permanently closed the corridor and led to the creation of Sunset Dunes park.",
+      "sourceUrl": "https://missionlocal.org/2026/08/sf-prop-g-great-highway-sunset-dunes-costs/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "Great Highway",
+        "Prop G",
+        "Sunset Dunes",
+        "election"
+      ]
+    },
+    {
+      "headline": "New Galleries and Art Spaces Are Quietly Putting the Sunset on the Arts Map",
+      "body": "A February 2026 report from Mission Local documented a growing wave of small art galleries and community spaces taking root across the Sunset, drawn by more affordable commercial rents following the pandemic. Among them: Problem Library, an art and education space at 1288 15th Ave. in the Inner Sunset; Marrow Gallery, a contemporary art space at 548 Irving St. that rotates exhibitions monthly; and Birdhouse Gallery on Judah Street at 31st Avenue, run by local architect Ben Frombgen. Great Highway Gallery on Lawton Street has anchored the Outer Sunset arts scene since 2013. The spaces are intentionally neighborhood-scaled — many run by locals who live nearby — and organizers say they aim to be part of community life rather than standalone destinations.",
+      "sourceUrl": "https://missionlocal.org/2026/02/sf-sunset-art-gallery-community-space/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "arts",
+        "galleries",
+        "Inner Sunset",
+        "Outer Sunset",
+        "community"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Outerlands",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Organic farm-to-table café and dinner restaurant",
+        "description": "Beloved Outer Sunset gathering place serving locally sourced, organic fare — famous for house-baked sourdough, Dutch baby pancakes, and seasonal dinner dishes in a warm, handcrafted space.",
+        "address": "4001 Judah St (at 45th Ave)",
+        "phone": "415-661-6140",
+        "website": "https://www.outerlandssf.com",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Tung",
+        "cuisineGroup": "Asian",
+        "type": "Chinese restaurant",
+        "description": "Inner Sunset institution since 1986, legendary for its dry-fried chicken wings and handmade dumplings, drawing long lines at both lunch and dinner.",
+        "address": "1031 Irving St",
+        "phone": "415-242-0828",
+        "website": "https://www.santungsf.com",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hook Fish",
+        "cuisineGroup": "Seafood & American",
+        "type": "Sustainable seafood counter",
+        "description": "Hook-and-line-sourced seafood restaurant and market near Ocean Beach, known for fresh fish tacos, poke, and ceviche with an emphasis on transparent, local sourcing.",
+        "address": "4542 Irving St (at 47th Ave)",
+        "phone": "949-463-2903",
+        "website": "https://www.hookfishco.com",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Fifty Vara",
+        "cuisineGroup": "Seafood & American",
+        "type": "Bar and restaurant",
+        "description": "Neighborhood kitchen and bar on Noriega Street with a menu rooted in the Outer Sunset — brunch, lunch, and dinner with a kids menu and a quintessentially local feel.",
+        "address": "3801 Noriega St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Maillards Smash Burgers",
+        "cuisineGroup": "Seafood & American",
+        "type": "Smashburger counter",
+        "description": "Farmers-market favorite turned permanent restaurant, sharing space with Two Pitchers Brewing on Noriega — serving smashburgers, fries, sandwiches, and soft serve.",
+        "address": "3821 Noriega St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Two Pitchers Brewing",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft brewery and taproom",
+        "description": "Outer Sunset brewpub sharing its Noriega Street space with Maillards, pouring house lagers, radlers, and a rotating tap list Wednesday through Sunday.",
+        "address": "3821 Noriega St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Elena's",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican restaurant",
+        "description": "Buzzy West Portal Mexican restaurant from the Duggan family (Original Joe's), featuring copper booths, Mexican-made tableware, and a full bar.",
+        "address": "389 West Portal Ave",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Little Original Joe's",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian-American market and to-go restaurant",
+        "description": "West Portal specialty market and takeout spot from the Original Joe's family — rotisserie chicken, specialty pizza, pasta, and the smash burger that inspired their next concept.",
+        "address": "393 West Portal Ave",
+        "phone": "415-759-1155",
+        "website": "https://www.littleoriginaljoes.com",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Andytown Coffee Roasters",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Artisan coffee roaster and café",
+        "description": "Irish-influenced Outer Sunset original since 2014, roasting its own beans and baking all pastries in-house; famous for the Snowy Plover (espresso, sparkling water, whipped cream) and a perpetual line out the door.",
+        "address": "3655 Lawton St (at 43rd Ave)",
+        "phone": "415-753-9775",
+        "website": "https://andytownsf.com",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Snowbird Coffee",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Specialty coffee shop",
+        "description": "Inner Sunset's beloved pour-over café tucked near 9th and Irving, roasting its own single-origin beans and offering a quiet, knowledgeable coffee experience.",
+        "address": "1352A 9th Ave",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Arizmendi Bakery",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Worker-owned cooperative bakery",
+        "description": "Beloved worker-owned co-op on 9th Avenue renowned for freshly baked sourdough, daily pizza slices, scones, and pecan rolls — almost always with a line.",
+        "address": "1331 9th Ave",
+        "phone": "",
+        "website": "https://arizmendibakery.org",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Riptide",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood bar with live music",
+        "description": "Laid-back Outer Sunset bar on Taraval Street with a fireplace, pool table, and a packed calendar of free live music acts ranging from country to rock.",
+        "address": "3639 Taraval St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sunset Cantina",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican cantina",
+        "description": "Outer Sunset neighborhood Mexican bar and restaurant on Judah Street near the beach, known for generous tacos, margaritas, and a welcoming local crowd.",
+        "address": "4025 Judah St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Tadaima",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Japanese matcha café",
+        "description": "Matcha-focused café from the Japantown brand, opened at 1248 9th Avenue in early 2026 and quickly embraced by Inner Sunset regulars.",
+        "address": "1248 9th Ave",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "The Beanery",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Neighborhood coffee shop",
+        "description": "Classic Inner Sunset coffeehouse serving hot and cold drinks brewed with 100% Arabica beans, with locations on Irving Street and 9th Avenue.",
+        "address": "602 Irving St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Ocean Park Motel",
+        "type": "Art Deco motel",
+        "description": "Family-run 1937 Art Deco 'Streamlined Moderne' motel one block from Ocean Beach and the San Francisco Zoo, featuring porthole windows, an outdoor hot tub, garden play area, and kitchenette rooms.",
+        "address": "2690 46th Ave",
+        "phone": "415-566-7020",
+        "website": "https://www.oceanparkmotel.com",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The SeaScape Inn",
+        "type": "Budget motel",
+        "description": "Simple, affordable motel within five minutes' walk of Ocean Beach and Golden Gate Park, offering ocean views, free parking, and basic amenities.",
+        "address": "2000 Judah St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Ocean Inn",
+        "type": "Budget motel",
+        "description": "Classic 1950s surf-vibes motel in the Outer Sunset with a microwave and fridge in every room, one block from Golden Gate Park and five minutes' walk from Ocean Beach; the on-site Pittsburg Pub is a neighborhood hangout.",
+        "address": "2424 Judah St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Green Apple Books on the Park",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Inner Sunset branch of San Francisco's legendary Green Apple Books, situated just outside Golden Gate Park with an extensive selection of new titles, handwritten staff picks, and author events; the upstairs mezzanine is now home to the Backstory Above literary co-working space.",
+        "address": "1231 9th Ave (@ Lincoln Way)",
+        "phone": "415-742-5833",
+        "website": "https://greenapplebooks.com",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Amazing Fantasy Comics",
+        "shopGroup": "Books & Literature",
+        "type": "Comic book shop",
+        "description": "Irving Street institution under current owner Frank McGinn since August 2000, carrying new comics, back issues, graphic novels, and collectibles for fans of all ages.",
+        "address": "848 Irving St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Stonestown Galleria",
+        "shopGroup": "Other",
+        "type": "Shopping mall",
+        "description": "Western San Francisco's major indoor shopping center anchoring the Stonestown neighborhood, with major retailers, dining options, and a Trader Joe's; redevelopment plans call for thousands of new housing units on surrounding parking lots.",
+        "address": "3251 20th Ave",
+        "phone": "415-759-2626",
+        "website": "https://www.stonestowngalleria.com",
+        "neighborhood": "Stonestown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Therapy Stores",
+        "shopGroup": "Home & Gifts",
+        "type": "Gift and lifestyle shop",
+        "description": "Local San Francisco gift shop chain, with a 9th and Irving location opened in early 2026 marking the brand's first push onto the west side.",
+        "address": "800 Irving St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Other Avenues Food Co-op",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Natural food cooperative",
+        "description": "Community-owned natural food cooperative in the Outer Sunset carrying organic produce, bulk foods, supplements, and local products since 1974.",
+        "address": "3930 Judah St",
+        "phone": "415-661-7475",
+        "website": "https://www.otheravenues.coop",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sunset Gym",
+        "shopGroup": "Other",
+        "type": "Neighborhood gym",
+        "description": "Well-equipped, no-frills neighborhood fitness center on 9th Avenue open daily with cardio, free weights, and a friendly community atmosphere.",
+        "address": "1247 9th Ave",
+        "phone": "415-564-1212",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "San Franpsycho",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Local streetwear and lifestyle brand",
+        "description": "Homegrown San Francisco streetwear brand with an Inner Sunset flagship celebrating west-side culture through apparel, art prints, and accessories.",
+        "address": "764 Irving St",
+        "phone": "",
+        "website": "https://sanfranpsycho.com",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Marrow Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery",
+        "description": "Inner Sunset community-focused gallery at 7th and Irving showing local, national, and international artists with monthly rotating exhibitions; open Wednesday through Sunday.",
+        "address": "548 Irving St",
+        "phone": "415-463-2055",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Problem Library",
+        "venueGroup": "Art Galleries",
+        "type": "Art and education space",
+        "description": "Experimental Inner Sunset art and education space at 1288 15th Ave. that also hosts a residency program connecting artists with vacant commercial storefronts across the city.",
+        "address": "1288 15th Ave",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Great Highway Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Art gallery",
+        "description": "Outer Sunset gallery on Lawton Street anchoring the neighborhood's arts community since 2013, championing local artists near Ocean Beach.",
+        "address": "3616 Lawton St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Birdhouse Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Community art gallery",
+        "description": "Small Outer Sunset gallery at Judah and 31st Avenue run by local architect Ben Frombgen, presenting work in an intimate neighborhood setting.",
+        "address": "3108 Judah St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Dunes Park",
+        "venueGroup": "Museums & Cultural",
+        "type": "Oceanfront linear park and public space",
+        "description": "San Francisco's newest and largest park — a two-mile promenade along the former Upper Great Highway between Lincoln Way and Sloat Boulevard — hosting free fitness classes, community events, and public art year-round.",
+        "address": "Great Highway between Lincoln Way and Sloat Blvd",
+        "phone": "",
+        "website": "https://sunsetdunes.org",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Golden Gate Park",
+        "venueGroup": "Museums & Cultural",
+        "type": "Urban park and cultural campus",
+        "description": "San Francisco's iconic 1,017-acre park bordering the Inner Sunset, encompassing the de Young Museum, California Academy of Sciences, Japanese Tea Garden, Botanical Garden, free summer concerts, and miles of trails.",
+        "address": "501 Stanyan St (main entrance)",
+        "phone": "415-831-2700",
+        "website": "https://sfrecpark.org/parks-open-spaces/golden-gate-park-guide/",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Riptide",
+        "venueGroup": "Music Venues",
+        "type": "Neighborhood bar with live music",
+        "description": "Outer Sunset live-music institution on Taraval offering free shows nearly every night in a cozy, fireplace-warmed setting.",
+        "address": "3639 Taraval St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sunset Recreation Center",
+        "venueGroup": "Museums & Cultural",
+        "type": "Community recreation center",
+        "description": "Bustling SF Rec & Parks community center in the Outer Sunset with basketball, tennis, baseball, after-school programs, dance classes, and one of the city's most popular table tennis rooms.",
+        "address": "2201 Lawton St",
+        "phone": "415-753-7067",
+        "website": "https://sfrecpark.org/706/Sunset-Recreation-Center",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Sunset Gym",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Neighborhood gym",
+        "description": "Affordable, well-appointed neighborhood gym on 9th Avenue with cardio equipment, free weights, and a welcoming community feel; open daily from 6 AM.",
+        "address": "1247 9th Ave",
+        "phone": "415-564-1212",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Recreation Center Gymnasium",
+        "venueGroup": "Sports & Courts",
+        "type": "Community gymnasium and recreation center",
+        "description": "SF Rec & Parks facility offering drop-in basketball, table tennis, zumba, hatha yoga, and after-school programming in the Outer Sunset.",
+        "address": "2201 Lawton St",
+        "phone": "415-753-7067",
+        "website": "https://sfrecpark.org/706/Sunset-Recreation-Center",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Dunes Park (Free Fitness Programs)",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Oceanfront park with free fitness programming",
+        "description": "The two-mile Sunset Dunes promenade hosts free recurring fitness classes including Zumba, chair yoga, and Cantonese-language dance for seniors, plus regular community cleanups and events.",
+        "address": "Great Highway between Lincoln Way and Sloat Blvd",
+        "phone": "",
+        "website": "https://sunsetdunes.org/events",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Golden Gate Park — Polo Field Cycling Track",
+        "venueGroup": "Cycling & Rowing",
+        "type": "Cycling and running track",
+        "description": "Free-access oval cycling and running track inside Golden Gate Park, regularly used by cyclists, joggers, and inline skaters of all levels.",
+        "address": "Golden Gate Park, near Fulton St & 38th Ave",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Lake Merced Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Freshwater lake park with trails",
+        "description": "614-acre park adjacent to Parkmerced offering miles of recreational trails around a freshwater lake used for fishing, rowing, and bird-watching.",
+        "address": "Lake Merced Blvd at Sunset Blvd",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Lakeshore",
+        "notable": ""
+      },
+      {
+        "name": "TPC Harding Park",
+        "venueGroup": "Sports & Courts",
+        "type": "Municipal golf course",
+        "description": "Championship-caliber municipal golf course adjacent to Lake Merced, hosting PGA Tour events and open to the public with accessible tee times.",
+        "address": "99 Harding Rd",
+        "phone": "415-664-4690",
+        "website": "https://www.tpchardingpark.com",
+        "neighborhood": "Lakeshore",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Stern Grove",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Park and outdoor concert venue",
+        "description": "Beloved eucalyptus grove hosting the city's longest-running free outdoor concert series each summer, surrounded by walking paths and picnic areas.",
+        "address": "19th Ave & Sloat Blvd",
+        "phone": "",
+        "website": "https://www.sterngrove.org",
+        "neighborhood": "Miraloma Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Francisco Zoo",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Zoo and family attraction",
+        "description": "Oceanside zoo at the western edge of the Sunset, home to more than 2,000 animals with regular family programming and special exhibits year-round.",
+        "address": "Sloat Blvd at Great Highway",
+        "phone": "415-753-7080",
+        "website": "https://www.sfzoo.org",
+        "neighborhood": "Lakeshore",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ocean Beach",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public beach and surfing area",
+        "description": "San Francisco's widest public beach, stretching four miles along the western edge of the Sunset; popular with surfers, joggers, kite flyers, and bonfire-permit holders at designated spots.",
+        "address": "Great Highway at Balboa St",
+        "phone": "",
+        "website": "https://www.parksconservancy.org/park/ocean-beach",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Original Joe's is opening its first fast-casual restaurant in SF",
+      "url": "https://www.sfchronicle.com/food/restaurants/article/original-joes-burger-chicken-tenders-22385500.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Original Joe's Cable Car To Open In West Portal",
+      "url": "https://whatnow.com/san-francisco/restaurants/original-joes-cable-car-to-open-in-west-portal/",
+      "publication": "What Now"
+    },
+    {
+      "title": "Original Joe's Team to Open Burger Spot In West Portal",
+      "url": "https://sfist.com/2026/08/18/original-joes-team-to-open-burger-spot-in-west-portal/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Yellowstone takes over Parkmerced development site in foreclosure",
+      "url": "https://sfstandard.com/2026/07/22/yellowstone-parkmerced-foreclosure-redevelopment/",
+      "publication": "San Francisco Standard"
+    },
+    {
+      "title": "Yellowstone seizes Parkmerced redevelopment sites through foreclosure",
+      "url": "https://therealdeal.com/san-francisco/2026/07/22/parkmerced-redevelopment-sites-seized-in-foreclosure/",
+      "publication": "The Real Deal"
+    },
+    {
+      "title": "After a family was killed at a West Portal bus stop, the street was redesigned. Did it work?",
+      "url": "https://missionlocal.org/2026/07/san-francisco-sfmta-west-portal-safety-project/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Numbers Are In: West Portal Changes Bring Calmer Streets, Improved Station Area",
+      "url": "https://www.sfmta.com/blog/numbers-are-west-portal-changes-bring-calmer-streets-improved-station-area",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "Reopening Great Highway would cost $10M — and up to $2M more annually, city says",
+      "url": "https://missionlocal.org/2026/08/sf-prop-g-great-highway-sunset-dunes-costs/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Reopening San Francisco's Great Highway for cars would cost $10M to start, controller says",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-prop-g-great-highway-vehicles-reopening-10m-controller-estimate/",
+      "publication": "CBS San Francisco"
+    },
+    {
+      "title": "New Fund Aims to Strengthen Inner Sunset Businesses and Expand Throughout the City",
+      "url": "https://richmondsunsetnews.com/2026/08/10/new-fund-aims-to-strengthen-inner-sunset-businesses-and-expand-throughout-the-city/",
+      "publication": "Richmond Review / Sunset Beacon"
+    },
+    {
+      "title": "Sunset Buzz: A nonprofit launches pilot grant program for Inner Sunset small businesses",
+      "url": "https://missionlocal.org/2026/07/san-francisco-inner-sunset-small-businesses/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "People go to the Sunset for the food. Now, they come for the arts, too.",
+      "url": "https://missionlocal.org/2026/02/sf-sunset-art-gallery-community-space/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Inner Sunset Flea Market 2026 Season Schedule",
+      "url": "https://sunsetmercantilesf.com/innersunsetflea/",
+      "publication": "Sunset Mercantile"
+    },
+    {
+      "title": "Sunset Night Market: Mid-Autumn Moon Festival",
+      "url": "https://sunsetmercantilesf.com/sunsetnightmarket2026/",
+      "publication": "Sunset Mercantile"
+    },
+    {
+      "title": "Honky-Tonk Throwback: Live 60s-70s Country Trucker Tunes (SF)",
+      "url": "https://sf.funcheap.com/region/sunset-district/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Outer Sunset Farmers Market & Mercantile",
+      "url": "https://sunsetmercantilesf.com/osfmm/",
+      "publication": "Sunset Mercantile"
+    },
+    {
+      "title": "Summer in the Outer Sunset: New Openings, Sunday Rituals, and a July on the Dunes",
+      "url": "https://lancerinrealtors.com/blog/summer-in-the-outer-sunset-new-openings-sunday-rituals-and-a-july-on-the-dunes",
+      "publication": "Lancer Realtors"
+    },
+    {
+      "title": "Sunset Dunes One Year Out: They Built it and People Came",
+      "url": "https://sf.streetsblog.org/2026/04/09/sunset-dunes-one-year-out-they-built-it-and-people-came",
+      "publication": "Streetsblog San Francisco"
+    },
+    {
+      "title": "Green Apple Books' Sunset Location Finally Gets a New Tenant In Upstairs Mezzanine",
+      "url": "https://sfist.com/2026/01/19/green-apple-books-sunset-location-finally-gets-a-new-tenant-for-upstairs-mezzanine-a-literary-co-working-space/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Inner Sunset SF: What's Actually Changing on 9th Avenue",
+      "url": "https://claudiasiegel.com/blog/the-inner-sunset-is-quietly-funding-its-own-comeback",
+      "publication": "Claudia Siegel"
+    },
+    {
+      "title": "SFMTA West Portal Station Safety and Community Space Improvements",
+      "url": "https://www.sfmta.com/projects/west-portal-station-safety-and-community-space-improvements",
+      "publication": "SFMTA"
+    }
+  ]
+}

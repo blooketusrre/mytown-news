@@ -1,0 +1,900 @@
+{
+  "clusterSlug": "castro-noe-valley",
+  "clusterName": "Castro & Noe Valley",
+  "weekOf": "2026-08-28",
+  "topStories": [
+    {
+      "headline": "SF Democrats Endorse Manny Yekutiel for District 8 Supervisor After Contentious Vote",
+      "dek": "The San Francisco Democratic Party voted Wednesday to back the Manny's café owner in the November race to represent the Castro, Noe Valley, Glen Park, and surrounding neighborhoods.",
+      "body": "The San Francisco Democratic Party voted on Wednesday, August 26 to endorse Manny Yekutiel as its sole candidate in the District 8 supervisor race, capping a tumultuous meeting in Visitacion Valley that featured impassioned public comment, angry interruptions, and a five-minute recess. The endorsement came only after three rounds of voting, with Supervisor Matt Dorsey — who initially backed rival Gary McCoy — casting the deciding vote that gave Yekutiel a majority.\n\nThe race has grown more charged since June, when political organizer Brad Chapin publicly accused Yekutiel of groping him at a 2020 house party. Yekutiel has denied the claim and has pointed to a police investigation that resulted in no charges. The Democratic Party proceeded with its endorsement following an independent review of the allegation.\n\nYekutiel, owner of Manny's café and co-founder of the Civic Joy Fund, entered the final stretch of the campaign with more than $769,000 raised — far ahead of his three opponents: Nancy Pelosi aide Gary McCoy, marketing strategist Darshini Patel, and patent attorney Michael Nguyen. His campaign has received the maximum $255,000 in public financing.\n\nDistrict 8 covers the Castro, Noe Valley, Glen Park, parts of the Haight-Ashbury, Cole Valley, and Corona/Ashbury Heights. The seat is open because incumbent Supervisor Rafael Mandelman is termed out. Voters will decide the race on November 3, 2026. The outcome could shift the balance of power on the Board of Supervisors, where moderates aligned with Mayor Daniel Lurie currently hold the majority.",
+      "sourceUrl": "https://sfstandard.com/2026/08/26/manny-yekutiel-accused-sexual-assault-sf-democratic-party-just-endorsed/",
+      "sourceName": "The San Francisco Standard",
+      "tags": [
+        "politics",
+        "District 8",
+        "election 2026",
+        "Castro",
+        "Noe Valley"
+      ]
+    },
+    {
+      "headline": "Castro Carnival Block Party Returns This Saturday With Free Music, Drag, and LGBTQ+ Art",
+      "dek": "The 2nd annual Castro Carnival takes over Noe and Market streets on August 29 from noon to 5 p.m., hosted by the Castro Merchants Association.",
+      "body": "The Castro Merchants Association is hosting the second annual Castro Carnival block party this Saturday, August 29, from noon to 5 p.m. on Noe Street between Market and Beaver streets. Admission is free and the event is open to all ages.\n\nThe afternoon will feature LGBTQ+ artists, live music, drag performances, and community activities in the heart of the neighborhood. The Carnival takes place within the Castro Upper Market Entertainment Zone, which allows visitors to purchase alcoholic beverages for open-air consumption during approved events — a benefit stemming from legislation Mayor Daniel Lurie signed establishing five new entertainment zones across San Francisco, with the Castro-Upper Market zone being the newest and largest.\n\nLast year's inaugural Carnival drew strong crowds to the block, and organizers hope this year's edition builds on that momentum as the neighborhood continues its post-pandemic revitalization. The reopening of the Castro Theatre earlier this year and the return of the monthly Castro Night Market for a second season have been credited with drawing more foot traffic and energy back to the corridor.\n\nAttendees are encouraged to arrive via public transit. The Castro Muni Metro station at Market and Castro streets is one block away. For updates follow the Castro Merchants Association at castromerchants.com.",
+      "sourceUrl": "https://sf.funcheap.com/free-castro-carnival-block-party-lgbtq-art-drag-shows-sf/",
+      "sourceName": "Funcheap SF",
+      "tags": [
+        "events",
+        "Castro",
+        "block party",
+        "LGBTQ+",
+        "free"
+      ]
+    },
+    {
+      "headline": "Diamond Heights Bank Robbery Investigation Continues; No Arrest Reported",
+      "dek": "The August 10 robbery of the Bank of America branch in Diamond Heights remains under investigation by the SFPD Bank Robbery Unit, with no suspect apprehended as of press time.",
+      "body": "The investigation into the August 10 robbery of the Bank of America branch in Diamond Heights is ongoing, with the case now in the hands of the SFPD Bank Robbery Unit, according to the Glen Park Association. The robbery occurred on a Monday afternoon around 2:30 p.m. A single suspect entered the branch, left with an undisclosed amount of money, and fled. No one was injured during the incident.\n\nSFPD said it has a good description of the suspect, and the case has been formally transferred to the specialized Bank Robbery Unit, which handles financial crimes across the city. No arrest had been publicly announced as of the publication of this issue.\n\nThe Diamond Heights branch sits in a small commercial shopping center that anchors the neighborhood — a residential enclave of mid-century modern architecture perched above Glen Canyon Park. The robbery has drawn concern from neighbors in a neighborhood generally known for being quiet and removed from the city's higher-crime corridors.\n\nAnyone with information is encouraged to contact SFPD through its tip line. The Glen Park Association, which covers Diamond Heights, is posting updates at glenparkassociation.org.",
+      "sourceUrl": "https://www.glenparkassociation.org/crime-update-in-diamond-heights-and-glen-park/",
+      "sourceName": "Glen Park Association",
+      "tags": [
+        "crime",
+        "Diamond Heights",
+        "SFPD",
+        "bank robbery"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Glen Park Night Market — Final Date of 2026 Season",
+      "date": "Saturday, September 19",
+      "time": "3:00 PM–8:00 PM",
+      "location": "Kern Street at Diamond Street, Glen Park",
+      "description": "The final installment of Glen Park's 2026 summer night market series features local artists and makers, live music and DJ sets, kids' activities, and pop-up food and drink vendors on Kern Street, just one block from Glen Park BART. Presented by the Glen Park Association, Glen Park Merchants Association, and ArtWalk SF; funded by the Civic Joy Fund.",
+      "sourceUrl": "https://www.glenparkassociation.org/glen-park-night-markets/",
+      "sourceName": "Glen Park Association"
+    },
+    {
+      "title": "Castro Night Market",
+      "date": "Friday, September 18",
+      "time": "5:00 PM–10:00 PM",
+      "location": "18th Street between Hartford & Collingwood, Castro",
+      "description": "The monthly Castro Night Market returns for its final 2026 date, filling two blocks of 18th Street with local food vendors, merchants, live entertainment, and drag performances. Free to attend; presented by CG Events, the Castro Merchants Association, and the Civic Joy Fund.",
+      "sourceUrl": "https://castronightmarket.com/",
+      "sourceName": "Castro Night Market"
+    },
+    {
+      "title": "Castro Carnival Block Party",
+      "date": "Saturday, August 29",
+      "time": "12:00 PM–5:00 PM",
+      "location": "Noe Street between Market & Beaver, Castro",
+      "description": "The 2nd annual free block party hosted by the Castro Merchants Association features LGBTQ+ artists, live music, and drag performances in a family-friendly, open-air setting in the heart of the Castro.",
+      "sourceUrl": "https://sf.funcheap.com/free-castro-carnival-block-party-lgbtq-art-drag-shows-sf/",
+      "sourceName": "Funcheap SF"
+    },
+    {
+      "title": "LP — All Is Not Lost Tour at the Castro Theatre",
+      "date": "Wednesday, September 2",
+      "time": "8:00 PM",
+      "location": "Castro Theatre, 429 Castro St, Castro",
+      "description": "Multi-platinum singer-songwriter LP brings her All Is Not Lost Tour to the Castro Theatre. Doors open at 7 p.m.; all ages welcome.",
+      "sourceUrl": "https://thecastro.com/events/lp-260902",
+      "sourceName": "The Castro Theatre"
+    },
+    {
+      "title": "Naomi Sharon — No Sleep In Paradise Tour at the Castro Theatre",
+      "date": "Thursday, September 10",
+      "time": "8:00 PM",
+      "location": "Castro Theatre, 429 Castro St, Castro",
+      "description": "R&B artist Naomi Sharon performs her No Sleep In Paradise Tour at the newly renovated Castro Theatre. Doors open at 7 p.m.",
+      "sourceUrl": "https://www.ticketmaster.com/the-castro-theatre-tickets-san-francisco/venue/229558",
+      "sourceName": "Ticketmaster / The Castro Theatre"
+    },
+    {
+      "title": "Lane 8 at the Castro Theatre",
+      "date": "Sunday, September 20",
+      "time": "6:00 PM",
+      "location": "Castro Theatre, 429 Castro St, Castro",
+      "description": "Electronic DJ and producer Lane 8 performs an all-ages show at the Castro Theatre. Doors open at 5 p.m.; tickets on general sale from August 28.",
+      "sourceUrl": "https://thecastro.com/events/lane-8-260920",
+      "sourceName": "The Castro Theatre"
+    },
+    {
+      "title": "Noe Valley Town Square Free Community Events",
+      "date": "Sunday, September 20",
+      "time": "10:00 AM–12:00 PM",
+      "location": "Noe Valley Town Square, 3862 24th St, Noe Valley",
+      "description": "The Community for the Noe Valley Town Square hosts free community programming at the neighborhood's central public gathering spot, made possible by the OEWD, the Noe Valley Association, and SF Recreation and Parks.",
+      "sourceUrl": "https://noevalleytownsquare.com/events",
+      "sourceName": "Noe Valley Town Square"
+    },
+    {
+      "title": "Castro Art Walk — First Friday",
+      "date": "Friday, September 4",
+      "time": "Various times",
+      "location": "Castro Street businesses, Castro",
+      "description": "The monthly self-guided art walk returns on the first Friday of the month, with local businesses along Castro Street hosting special events to share art with the neighborhood. Free and open to all.",
+      "sourceUrl": "https://castromerchants.com/events",
+      "sourceName": "Castro Merchants Association"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "New Tunisian-Swiss Sandwich Shop Gada Is Finding Its Footing in the Castro",
+      "body": "Gada, the tiny sandwich counter that opened in January 2026 at 2375 Market Street in the former Chadwick's space, has become one of the Castro's most-talked-about new eateries. Owner Moe Abibi builds each sandwich on house-made Tunisian malawi flatbread layered with hot, freshly melted Swiss raclette cheese and harissa. The Infatuation called the result something no other SF shop is doing. The counter also serves crêpes, waffles, and savory bites. Abibi told the Bay Area Reporter that he plans to eventually expand his Tunisian concept to a North Beach wine bar.",
+      "sourceUrl": "https://sfstandard.com/2026/02/24/gada-raclette-sandwiches-san-francisco/",
+      "sourceName": "San Francisco Standard",
+      "tags": [
+        "restaurants",
+        "Castro",
+        "new business"
+      ]
+    },
+    {
+      "headline": "Bus Line Changes Continue to Affect Glen Park and Diamond Heights Commuters",
+      "body": "Service disruptions on Muni lines 35 and 36 — which connect Glen Park and Diamond Heights to the broader city — have been ongoing since June, with SFMTA substituting 40-foot buses on portions of the routes. The Glen Park Association has been tracking updates from SFMTA and posting route information at glenparkassociation.org. Riders are advised to check the SFMTA travel updates page for the latest stop changes, as modifications to the 36 line in particular have affected stops near the Diamond Heights Shopping Center.",
+      "sourceUrl": "https://www.glenparkassociation.org/",
+      "sourceName": "Glen Park Association / SFMTA",
+      "tags": [
+        "transit",
+        "Glen Park",
+        "Diamond Heights",
+        "Muni"
+      ]
+    },
+    {
+      "headline": "Castro Theatre Packs Its Fall Calendar After Landmark Renovation",
+      "body": "Following its February 2026 reopening after a two-year, $41 million renovation led by Another Planet Entertainment, the Castro Theatre has filled its fall calendar with a dense slate of concerts, comedy, and film. Upcoming headliners include LP (September 2), Naomi Sharon (September 10), Sebastian Tellier (September 23), and Twin Temple (September 30). The renovation added a 7.1 surround sound system with Meyer Sound cinema loudspeakers, the world's largest digital symphonic organ, and a state-of-the-art concert P.A. system, while restoring the ceiling artwork and chandelier of the 1922 Spanish Baroque Revival landmark.",
+      "sourceUrl": "https://thecastro.com/calendar/",
+      "sourceName": "The Castro Theatre",
+      "tags": [
+        "arts",
+        "Castro Theatre",
+        "music",
+        "renovation"
+      ]
+    },
+    {
+      "headline": "Grand Lake Kitchen Settling into Noe Valley After Opening",
+      "body": "Grand Lake Kitchen, the beloved East Bay breakfast-and-lunch institution, has been gaining a loyal following since opening its Noe Valley location earlier this year. The restaurant's spacious dining room, full bar, two dog-friendly outdoor patios, and a menu spanning chilaquiles verdes and pastrami benedict at brunch to steak frites and eggplant parmesan at dinner has resonated with the neighborhood. The GLK Noe Valley location also offers private dining, takeout, and delivery, rounding out the East Bay transplant's footprint in one of San Francisco's most family-oriented neighborhoods.",
+      "sourceUrl": "https://missionlocal.org/2026/07/grand-lake-kitchen-noe-valley-east-bay-gem-comes-to-the-city/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "restaurants",
+        "Noe Valley",
+        "new business"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Frances",
+        "cuisineGroup": "Other",
+        "type": "California bistro",
+        "description": "Chef Melissa Perello's celebrated neighborhood restaurant serves a daily-changing menu of refined California cuisine with local, seasonal ingredients in a minimalist, welcoming dining room.",
+        "address": "3870 17th St, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://www.frances-sf.com/",
+        "neighborhood": "Castro",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Starbelly",
+        "cuisineGroup": "Seafood & American",
+        "type": "California comfort food restaurant",
+        "description": "A casual Castro neighborhood favorite with a garden patio, serving forward-thinking California comfort food alongside craft cocktails, seasonal beer, and wine.",
+        "address": "3583 16th St, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://www.starbellysf.com/",
+        "neighborhood": "Castro",
+        "notable": ""
+      },
+      {
+        "name": "Anchor Oyster Bar",
+        "cuisineGroup": "Seafood & American",
+        "type": "Seafood restaurant and fish market",
+        "description": "A Castro landmark since 1977, this intimate legacy seafood counter is renowned for its Michelin Bib Gourmand cioppino, fresh oysters, and sustainably sourced fish.",
+        "address": "579 Castro St, San Francisco, CA 94114",
+        "phone": "415-431-3990",
+        "website": "https://www.anchoroysterbar.com/",
+        "neighborhood": "Castro",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Canela Bistro & Wine Bar",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Spanish tapas restaurant",
+        "description": "A warm, LGBTQ+-owned bistro in the Castro serving Spanish tapas, shared plates, paella, and an inviting wine list in a candlelit space.",
+        "address": "458 Castro St, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://canelabistroanwine.com/",
+        "neighborhood": "Castro",
+        "notable": ""
+      },
+      {
+        "name": "Gada",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Tunisian sandwich counter",
+        "description": "Opened in January 2026, this tiny Castro takeout spot builds all its sandwiches on house-made Tunisian malawi flatbread layered with freshly melted Swiss raclette cheese, harissa, and North African-inspired fillings.",
+        "address": "2375 Market St, San Francisco, CA 94114",
+        "phone": "305-778-4645",
+        "website": "https://www.yelp.com/biz/gada-san-francisco",
+        "neighborhood": "Castro",
+        "notable": "New"
+      },
+      {
+        "name": "La Méditerranée",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Mediterranean café",
+        "description": "A Castro neighborhood staple for decades, serving affordable mezze, Middle Eastern–inspired plates, and vegetarian-friendly Mediterranean comfort food.",
+        "address": "288 Noe St, San Francisco, CA 94114",
+        "phone": "415-431-7210",
+        "website": "https://www.cafelamed.com/",
+        "neighborhood": "Castro",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Wooden Spoon",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Neighborhood brunch café",
+        "description": "A cozy Duboce Triangle brunch spot serving American morning classics with occasional Scandinavian-inspired twists in a homey, welcoming space.",
+        "address": "2172 Market St, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://www.woodenspoonsf.com/",
+        "neighborhood": "Duboce Triangle",
+        "notable": ""
+      },
+      {
+        "name": "Le Marais Bakery",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "French bakery and café",
+        "description": "A Castro-area French bakery serving pastries, tartines, and weekend brunch in an airy space that transports diners to a Parisian neighborhood café.",
+        "address": "498 Sanchez St, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://www.lemaraisbakery.com/",
+        "neighborhood": "Castro",
+        "notable": ""
+      },
+      {
+        "name": "Willkommen",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "German-style beer hall",
+        "description": "An airy indoor beer garden on Upper Market pouring German-style beers from sister brewery Black Hammer, paired with bratwurst and hearty snacks.",
+        "address": "2198 Market St, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://www.willkommensf.com/",
+        "neighborhood": "Castro",
+        "notable": ""
+      },
+      {
+        "name": "La Ciccia",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Sardinian restaurant",
+        "description": "A beloved Noe Valley institution serving authentic Sardinian cuisine — handmade pasta, fresh seafood, and a deep all-Italian wine list — in an intimate, always-packed dining room.",
+        "address": "291 30th St, San Francisco, CA 94131",
+        "phone": "415-550-8114",
+        "website": "https://laciccia.com/",
+        "neighborhood": "Noe Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Firefly Restaurant",
+        "cuisineGroup": "Seafood & American",
+        "type": "American neighborhood restaurant",
+        "description": "A Noe Valley fixture for more than three decades, Firefly serves eclectic, globally inspired New American fare in a warm, art-filled dining room.",
+        "address": "4288 24th St, San Francisco, CA 94114",
+        "phone": "415-821-7652",
+        "website": "https://www.fireflyrestaurant.com/",
+        "neighborhood": "Noe Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Grand Lake Kitchen",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "All-day American café",
+        "description": "The East Bay fan favorite's new Noe Valley outpost offers all-day dining with two dog-friendly patios, a full bar, and a menu spanning brunch classics to dinner entrées.",
+        "address": "1320 Castro St, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://grandlakekitchen.com/",
+        "neighborhood": "Noe Valley",
+        "notable": "New"
+      },
+      {
+        "name": "Gialina",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Artisan pizzeria",
+        "description": "Widely regarded as one of San Francisco's best pizzerias, Gialina serves thin-crust pies with creative seasonal toppings in a lively Glen Park dining room.",
+        "address": "2842 Diamond St, San Francisco, CA 94131",
+        "phone": "415-239-8500",
+        "website": "https://gialina.com/",
+        "neighborhood": "Glen Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Canyon Market",
+        "cuisineGroup": "Other",
+        "type": "Neighborhood grocery and deli",
+        "description": "Glen Park's beloved family-owned full-service grocer stocks organic produce, in-house baked bread, prepared foods, a deli counter, and beer and wine — one block from Glen Park BART.",
+        "address": "2815 Diamond St, San Francisco, CA 94131",
+        "phone": "",
+        "website": "https://canyonmarket.com/",
+        "neighborhood": "Glen Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Glen Park Station (The Station)",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood bar",
+        "description": "Glen Park's go-to bar since 1926, serving adult beverages alongside live music and sports viewing in an atmosphere that epitomizes old San Francisco.",
+        "address": "2816 Diamond St, San Francisco, CA 94131",
+        "phone": "",
+        "website": "https://www.glenparktavern.com/",
+        "neighborhood": "Glen Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Orphan Andy's",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Classic American diner",
+        "description": "A Castro institution open nearly around the clock, Orphan Andy's serves no-frills diner staples — burgers, eggs, and milkshakes — to the neighborhood at all hours.",
+        "address": "3991 17th St, San Francisco, CA 94114",
+        "phone": "415-864-9795",
+        "website": "https://www.orphanandys.com/",
+        "neighborhood": "Castro",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Pasta Panino",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian pasta and sandwich café",
+        "description": "A neighborhood counter in the Castro dishing up fresh pasta, Italian sandwiches, and daily specials at accessible prices.",
+        "address": "3853 17th St, San Francisco, CA 94114",
+        "phone": "415-626-1669",
+        "website": "",
+        "neighborhood": "Castro",
+        "notable": ""
+      },
+      {
+        "name": "Fiorella Noe Valley",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Wood-fired pizza and pasta restaurant",
+        "description": "Fiorella's Noe Valley location serves Neapolitan-style wood-fired pizzas, fresh handmade pastas, and a dozen spritz cocktails in a lively neighborhood setting.",
+        "address": "3974 24th St, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://fiorellasf.com/",
+        "neighborhood": "Noe Valley",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Beck's Motor Lodge",
+        "type": "Motel",
+        "description": "A mid-century Castro motor lodge offering straightforward, affordable rooms in a prime location steps from the heart of the neighborhood.",
+        "address": "2222 Market St, San Francisco, CA 94114",
+        "phone": "415-621-8212",
+        "website": "https://www.becksmotorlodge.com/",
+        "neighborhood": "Castro",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Parker Guest House",
+        "type": "Boutique inn",
+        "description": "An elegantly restored Edwardian inn with 21 rooms, a garden and sundeck, set on a quiet street just steps from the Castro's main commercial corridor.",
+        "address": "520 Church St, San Francisco, CA 94114",
+        "phone": "415-621-3222",
+        "website": "https://www.parkerguesthouse.com/",
+        "neighborhood": "Castro",
+        "notable": ""
+      },
+      {
+        "name": "Inn on Castro",
+        "type": "Bed and breakfast",
+        "description": "A cozy, LGBTQ+-welcoming B&B in an Edwardian townhouse featuring individually decorated rooms, a communal breakfast, and a warm, personal atmosphere.",
+        "address": "321 Castro St, San Francisco, CA 94114",
+        "phone": "415-861-0321",
+        "website": "https://www.innoncastro.com/",
+        "neighborhood": "Castro",
+        "notable": ""
+      },
+      {
+        "name": "Willows Inn",
+        "type": "Bed and breakfast",
+        "description": "A small, LGBTQ+-friendly inn offering European-style accommodations with shared baths and a welcoming atmosphere near Duboce Park.",
+        "address": "710 14th St, San Francisco, CA 94114",
+        "phone": "415-431-4770",
+        "website": "https://www.willowssf.com/",
+        "neighborhood": "Castro",
+        "notable": ""
+      },
+      {
+        "name": "Noe's Nest",
+        "type": "Boutique bed and breakfast",
+        "description": "A Victorian-era boutique B&B in Noe Valley praised by travelers as one of San Francisco's coziest and most characterful stays.",
+        "address": "3973 23rd St, San Francisco, CA 94114",
+        "phone": "415-821-0751",
+        "website": "https://www.noesnest.com/",
+        "neighborhood": "Noe Valley",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Fabulosa Books",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "A friendly Castro bookstore with a massive LGBTQ+ section, curated staff picks across literary fiction, history, and memoir, and a free book basket outside — winner of the Bay Area Reporter's Favorite Bookstore award three years running.",
+        "address": "489 Castro St, San Francisco, CA 94114",
+        "phone": "415-658-7015",
+        "website": "https://www.fabulosabooks.com/",
+        "neighborhood": "Castro",
+        "notable": ""
+      },
+      {
+        "name": "Omnivore Books on Food",
+        "shopGroup": "Books & Literature",
+        "type": "Culinary bookstore",
+        "description": "The Bay Area's only dedicated culinary bookshop, stocking thousands of new and rare cookbooks and hosting author events with food luminaries from around the world.",
+        "address": "3885A Cesar Chavez St, San Francisco, CA 94131",
+        "phone": "",
+        "website": "https://www.omnivorebooks.com/",
+        "neighborhood": "Noe Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Noe Valley Books",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Noe Valley's own independent bookstore, dedicated to providing books and services that spark humanity, joy, knowledge, and curiosity in the community and beyond.",
+        "address": "3957 24th St, San Francisco, CA 94114",
+        "phone": "415-590-2961",
+        "website": "https://noevalleybooks.com/",
+        "neighborhood": "Noe Valley",
+        "notable": ""
+      },
+      {
+        "name": "Bird & Beckett Books & Records",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore and record shop",
+        "description": "Glen Park's beloved neighborhood bookstore and record shop on Chenery Street, known for its carefully curated selection and jazz-themed atmosphere.",
+        "address": "653 Chenery St, San Francisco, CA 94131",
+        "phone": "415-586-3733",
+        "website": "https://www.birdbeckett.com/",
+        "neighborhood": "Glen Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Perch",
+        "shopGroup": "Home & Gifts",
+        "type": "Home goods and gift shop",
+        "description": "A Glen Park shop easy to get lost in, stocking an eclectic mix of home goods, gifts, and accessories that reflect the neighborhood's creative spirit.",
+        "address": "2418 Diamond St, San Francisco, CA 94131",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Glen Park",
+        "notable": ""
+      },
+      {
+        "name": "Noe Valley Bakery",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Neighborhood bakery",
+        "description": "A long-running Noe Valley bakery beloved for its blueberry pecan scones, artisan breads, and pastries that have earned it write-ups in the SF Bay Times.",
+        "address": "4073 24th St, San Francisco, CA 94114",
+        "phone": "415-550-1405",
+        "website": "https://www.noevalleybakery.com/",
+        "neighborhood": "Noe Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Cliff's Variety",
+        "shopGroup": "Hardware & Services",
+        "type": "Hardware and variety store",
+        "description": "A Castro institution since 1936, Cliff's Variety is a beloved neighborhood hardware store stocking a vast and eclectic inventory of tools, supplies, costumes, and curiosities.",
+        "address": "479 Castro St, San Francisco, CA 94114",
+        "phone": "415-431-5365",
+        "website": "https://cliffsvariety.com/",
+        "neighborhood": "Castro",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ambiance",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's clothing boutique",
+        "description": "A locally owned women's boutique with multiple SF locations, offering an accessible mix of contemporary clothing, accessories, and shoes.",
+        "address": "3979 24th St, San Francisco, CA 94114",
+        "phone": "415-647-7144",
+        "website": "https://ambiancesf.com/",
+        "neighborhood": "Noe Valley",
+        "notable": ""
+      },
+      {
+        "name": "Does Your Mother Know",
+        "shopGroup": "Home & Gifts",
+        "type": "LGBTQ+ gifts and novelties shop",
+        "description": "The Castro's cheeky, long-running gift shop carrying cards, novelties, art prints, and pride merchandise for every occasion.",
+        "address": "4141 18th St, San Francisco, CA 94114",
+        "phone": "415-864-3160",
+        "website": "https://www.doesyourmotherknow.com/",
+        "neighborhood": "Castro",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Harvest Urban Market",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Neighborhood grocery and wine shop",
+        "description": "A well-stocked Noe Valley neighborhood market carrying local and organic groceries, a curated wine selection, and ready-made foods.",
+        "address": "3839 24th St, San Francisco, CA 94114",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Noe Valley",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "The Castro Theatre",
+        "venueGroup": "Cinema",
+        "type": "Historic cinema and live entertainment venue",
+        "description": "San Francisco's most celebrated movie palace, a 1922 Spanish Baroque Revival landmark that reopened in February 2026 after a $41 million renovation to host live concerts, comedy, film screenings, and community events.",
+        "address": "429 Castro St, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://thecastro.com/",
+        "neighborhood": "Castro",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Harvey Milk Plaza",
+        "venueGroup": "Museums & Cultural",
+        "type": "Public landmark and gathering space",
+        "description": "The iconic public plaza at Market and Castro streets, anchored by a soaring rainbow flag and serving as a gathering place for marches, celebrations, and community events honoring LGBTQ+ history.",
+        "address": "Market St at Castro St, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://www.friendsofharveymilkplaza.org/",
+        "neighborhood": "Castro",
+        "notable": "Landmark"
+      },
+      {
+        "name": "GLBT Historical Society Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "LGBTQ+ history museum",
+        "description": "The nation's only stand-alone museum dedicated to LGBTQ+ history, featuring rotating exhibitions on queer culture, activism, and community life in San Francisco and beyond.",
+        "address": "4127 18th St, San Francisco, CA 94114",
+        "phone": "415-621-1107",
+        "website": "https://www.glbthistory.org/museum",
+        "neighborhood": "Castro",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Fabulosa Books (Events)",
+        "venueGroup": "Theater & Comedy",
+        "type": "Independent bookstore hosting literary events",
+        "description": "Beyond bookselling, Fabulosa Books hosts regular author readings, LGBTQ+ literary book clubs, and community conversations that have made it a cultural anchor of the Castro.",
+        "address": "489 Castro St, San Francisco, CA 94114",
+        "phone": "415-658-7015",
+        "website": "https://www.fabulosabooks.com/",
+        "neighborhood": "Castro",
+        "notable": ""
+      },
+      {
+        "name": "Noe Valley Ministry",
+        "venueGroup": "Music Venues",
+        "type": "Community concert and event venue",
+        "description": "A historic church building in Noe Valley that doubles as an intimate performance and community events space, hosting music concerts, film screenings, and neighborhood gatherings.",
+        "address": "1021 Sanchez St, San Francisco, CA 94114",
+        "phone": "415-282-2317",
+        "website": "https://www.noevalleyministry.com/",
+        "neighborhood": "Noe Valley",
+        "notable": ""
+      },
+      {
+        "name": "Omnivore Books on Food (Events)",
+        "venueGroup": "Museums & Cultural",
+        "type": "Culinary bookshop hosting author events",
+        "description": "Beyond its extraordinary cookbook collection, Omnivore regularly hosts author readings and book signings by the world's top food writers, chefs, and culinary historians.",
+        "address": "3885A Cesar Chavez St, San Francisco, CA 94131",
+        "phone": "",
+        "website": "https://www.omnivorebooks.com/",
+        "neighborhood": "Noe Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bird & Beckett Books & Records (Live Jazz)",
+        "venueGroup": "Music Venues",
+        "type": "Bookshop and live jazz venue",
+        "description": "Glen Park's cultural gem hosts regular live jazz performances in its intimate shop space, blending a love of books with the neighborhood's thriving music culture.",
+        "address": "653 Chenery St, San Francisco, CA 94131",
+        "phone": "415-586-3733",
+        "website": "https://www.birdbeckett.com/",
+        "neighborhood": "Glen Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Qulture Collective",
+        "venueGroup": "Art Galleries",
+        "type": "Queer arts gallery and community space",
+        "description": "A Castro-area gallery and community arts space supporting LGBTQ+ visual artists through exhibitions, events, and programming rooted in queer culture.",
+        "address": "575 Castro St, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://www.qulturecollective.com/",
+        "neighborhood": "Castro",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Glen Canyon Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban canyon park with trails and recreation center",
+        "description": "One of San Francisco's best-kept natural secrets, Glen Canyon Park encompasses 70 acres of forested canyon with hiking trails, a recreation center offering baseball, tennis, basketball, pickleball, and the city's first public climbing wall.",
+        "address": "Bosworth St, San Francisco, CA 94131",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/glen-canyon-park/",
+        "neighborhood": "Glen Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Yoga Flow SF — Noe Valley",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Heated vinyasa yoga studio",
+        "description": "An all-levels heated vinyasa studio offering vigorous, athletic flow classes in a non-judgmental environment welcoming to beginners and advanced practitioners alike.",
+        "address": "Noe Valley, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://yogaflowsf.com/",
+        "neighborhood": "Noe Valley",
+        "notable": ""
+      },
+      {
+        "name": "Beach Glass Hot Yoga & Pilates",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Hot yoga and pilates studio",
+        "description": "A Noe Valley studio offering heated yoga and Pilates classes designed to build strength, flexibility, and endurance in a challenging, mindful environment.",
+        "address": "Noe Valley, San Francisco, CA 94114",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Noe Valley",
+        "notable": ""
+      },
+      {
+        "name": "Pure Barre Noe Valley",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Barre fitness studio",
+        "description": "A Noe Valley outpost of the national barre brand, offering low-impact barre-inspired classes that blend strength training, flexibility, and Pilates-style movement.",
+        "address": "Noe Valley, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://www.purebarre.com/",
+        "neighborhood": "Noe Valley",
+        "notable": ""
+      },
+      {
+        "name": "Noe Valley Courts",
+        "venueGroup": "Sports & Courts",
+        "type": "Public tennis and multi-sport courts",
+        "description": "A public recreation facility in Noe Valley featuring tennis courts and open space that has served as a community gathering and athletic hub for over 15 years.",
+        "address": "Noe Valley, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://sfrecpark.org/",
+        "neighborhood": "Noe Valley",
+        "notable": ""
+      },
+      {
+        "name": "Glen Park Recreation Center",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public recreation center",
+        "description": "A full-service SF Recreation and Parks facility at the foot of Glen Canyon offering baseball, tennis, basketball, pickleball, and the city's first public climbing wall, plus a year-round programming schedule.",
+        "address": "70 Elk St, San Francisco, CA 94131",
+        "phone": "415-337-4705",
+        "website": "https://sfrecpark.org/destination/glen-canyon-park/glen-park-recreation-center/",
+        "neighborhood": "Glen Park",
+        "notable": ""
+      },
+      {
+        "name": "Rikki Streicher Field (Upper Noe Recreation Center)",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public athletic field and recreation center",
+        "description": "A beloved neighborhood athletic field and recreation center in Noe Valley serving as a hub for softball, community sports, and informal outdoor recreation.",
+        "address": "295 Day St, San Francisco, CA 94131",
+        "phone": "",
+        "website": "https://sfrecpark.org/",
+        "neighborhood": "Noe Valley",
+        "notable": ""
+      },
+      {
+        "name": "Buena Vista Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban hilltop park with trails",
+        "description": "A densely forested hilltop park on the northern edge of Duboce Triangle, offering winding trails, panoramic city views, and off-leash dog areas.",
+        "address": "Buena Vista Ave W, San Francisco, CA 94117",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/buena-vista-park/",
+        "neighborhood": "Duboce Triangle",
+        "notable": ""
+      },
+      {
+        "name": "Duboce Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood park and off-leash dog area",
+        "description": "A popular Duboce Triangle green space and one of SF's most beloved off-leash dog parks, surrounded by Victorian homes and served by Muni light rail.",
+        "address": "Duboce Ave at Scott St, San Francisco, CA 94117",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/duboce-park/",
+        "neighborhood": "Duboce Triangle",
+        "notable": ""
+      },
+      {
+        "name": "CORE40 Pilates",
+        "venueGroup": "Yoga & Pilates",
+        "type": "High-intensity reformer Pilates studio",
+        "description": "A Noe Valley–area studio delivering high-intensity reformer-inspired Pilates classes focused on strength, endurance, and full-body conditioning in a fast-paced environment.",
+        "address": "Noe Valley, San Francisco, CA 94114",
+        "phone": "",
+        "website": "https://www.core40.com/",
+        "neighborhood": "Noe Valley",
+        "notable": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "At District 8 supervisor debate, candidate Manny Yekutiel takes the heat",
+      "url": "https://missionlocal.org/2026/08/sf-district-8-debate-supervisor-manny-yekutiel-sexual-assault/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Manny Yekutiel was accused of sexual assault. The SF Democratic Party just endorsed him.",
+      "url": "https://sfstandard.com/2026/08/26/manny-yekutiel-accused-sexual-assault-sf-democratic-party-just-endorsed/",
+      "publication": "San Francisco Standard"
+    },
+    {
+      "title": "Following Contentious Public Meeting, SF Dems Endorse Manny Yekutiel for District 8",
+      "url": "https://sfist.com/2026/08/27/following-contentious-public-meeting-sf-dems-endorse-manny-yekutiel-for-district-8/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Manny Yekutiel Raises $769,000 in District 8 Race",
+      "url": "https://growsf.org/news/2026-08-01-manny-yekutiel-fundraising-lead-district-8/",
+      "publication": "GrowSF"
+    },
+    {
+      "title": "Free 'Castro Carnival' Block Party: LGBTQ+ Art & Drag Shows (SF)",
+      "url": "https://sf.funcheap.com/free-castro-carnival-block-party-lgbtq-art-drag-shows-sf/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "2026 Castro Carnival — Eventeny",
+      "url": "https://www.eventeny.com/events/2026-castro-carnival-32189/",
+      "publication": "Eventeny / Castro Merchants Association"
+    },
+    {
+      "title": "Crime Update in Diamond Heights and Glen Park",
+      "url": "https://www.glenparkassociation.org/crime-update-in-diamond-heights-and-glen-park/",
+      "publication": "Glen Park Association"
+    },
+    {
+      "title": "Castro Night Market — Sept. 18th",
+      "url": "https://www.eventbrite.com/e/castro-night-market-sept-18th-tickets-1982205625385",
+      "publication": "Eventbrite / Castro Night Market"
+    },
+    {
+      "title": "Castro Night Market official site",
+      "url": "https://castronightmarket.com/",
+      "publication": "Castro Night Market"
+    },
+    {
+      "title": "Glen Park Night Markets",
+      "url": "https://www.glenparkassociation.org/glen-park-night-markets/",
+      "publication": "Glen Park Association"
+    },
+    {
+      "title": "SF's 2026 Glen Park Night Market (June–Sept.)",
+      "url": "https://sf.funcheap.com/sfs-2026-glen-park-night-market-june-sept-3/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "LP — All Is Not Lost Tour at The Castro Theatre",
+      "url": "https://thecastro.com/events/lp-260902",
+      "publication": "The Castro Theatre"
+    },
+    {
+      "title": "Lane 8 at The Castro Theatre",
+      "url": "https://thecastro.com/events/lane-8-260920",
+      "publication": "The Castro Theatre"
+    },
+    {
+      "title": "The Castro Theatre Calendar",
+      "url": "https://thecastro.com/calendar/",
+      "publication": "The Castro Theatre"
+    },
+    {
+      "title": "The Castro Theatre 2026 — Meyer Sound",
+      "url": "https://meyersound.com/news/the-castro-theatre-2026/",
+      "publication": "Meyer Sound"
+    },
+    {
+      "title": "A guide to the reopened Castro Theatre in San Francisco",
+      "url": "https://www.sfchronicle.com/entertainment/article/castro-theatre-san-francisco-guide-21343893.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Rivers of melted raclette flood the menu at this SF sandwich shop",
+      "url": "https://sfstandard.com/2026/02/24/gada-raclette-sandwiches-san-francisco/",
+      "publication": "San Francisco Standard"
+    },
+    {
+      "title": "Castro welcomes new businesses in 2026",
+      "url": "https://www.ebar.com/story/163092/News/Business/Castro%20welcomes%20new%20businesses%20in%202026",
+      "publication": "Bay Area Reporter"
+    },
+    {
+      "title": "Castro Business Briefs: Gada Fine Cafe Opens",
+      "url": "https://hoodline.com/2026/02/cheese-chaos-in-the-castro-as-gada-s-raclette-rivers-take-over/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "Glen Park Association — Night Markets start June 20",
+      "url": "https://www.glenparkassociation.org/night-markets-start-june-20/",
+      "publication": "Glen Park Association"
+    },
+    {
+      "title": "Grand Lake Kitchen Noe Valley",
+      "url": "https://missionlocal.org/2026/07/grand-lake-kitchen-noe-valley-east-bay-gem-comes-to-the-city/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Mayor Lurie Signs Legislation Creating Five New Entertainment Zones",
+      "url": "https://www.sf.gov/news-mayor-lurie-signs-legislation-creating-five-new-entertainment-zones-across-san-francisco-launches-castro-entertainment-zone",
+      "publication": "SF.gov"
+    },
+    {
+      "title": "Naomi Sharon at The Castro Theatre — Ticketmaster",
+      "url": "https://www.ticketmaster.com/the-castro-theatre-tickets-san-francisco/venue/229558",
+      "publication": "Ticketmaster"
+    },
+    {
+      "title": "Noe Valley Town Square events",
+      "url": "https://noevalleytownsquare.com/events",
+      "publication": "Noe Valley Town Square"
+    },
+    {
+      "title": "Noe Valley Books — About Us",
+      "url": "https://noevalleybooks.com/about-us",
+      "publication": "Noe Valley Books"
+    },
+    {
+      "title": "Fabulosa Books: The Castro's Living Room",
+      "url": "https://regalhousepublishing.com/2026/05/12/fabulosa-books-the-castros-living-room/",
+      "publication": "Regal House Publishing"
+    },
+    {
+      "title": "Fabulosa Books — Yelp listing (August 2026)",
+      "url": "https://www.yelp.com/biz/fabulosa-books-san-francisco",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Anchor Oyster Bar — Michelin Guide 2026",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/anchor-oyster-bar",
+      "publication": "MICHELIN Guide"
+    },
+    {
+      "title": "La Ciccia — Yelp listing (August 2026)",
+      "url": "https://www.yelp.com/biz/la-ciccia-san-francisco",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Noe Valley Yoga and Pilates Studios to Try in 2026",
+      "url": "https://daniellelazier.com/blog/noe-valley-yoga-and-pilates-studios-to-try-in-2026/",
+      "publication": "Danielle Lazier Real Estate"
+    },
+    {
+      "title": "Perfect Day in Glen Park",
+      "url": "https://www.sf.gov/perfect-day-glen-park",
+      "publication": "SF.gov"
+    },
+    {
+      "title": "Race for District 8 Supervisor Kicks Into High Gear",
+      "url": "https://sfbaytimes.com/race-for-district-8-supervisor-kicks-into-high-gear/",
+      "publication": "San Francisco Bay Times"
+    }
+  ]
+}

@@ -1,0 +1,535 @@
+{
+  "clusterSlug": "bayview-excelsior",
+  "clusterName": "Bayview & Excelsior",
+  "weekOf": "2026-08-28",
+  "topStories": [
+    {
+      "headline": "Tetra Tech Pays $97 Million to Close Federal Hunters Point Case — But Neighborhood Residents See Almost Nothing",
+      "dek": "A federal judge approved the long-contested settlement this month, closing the government's case against the contractor that falsified radioactive soil samples — even as more than 300 neighborhood homeowners were separately denied any compensation.",
+      "body": "More than a decade after a contractor hired to clean up the former Hunters Point Naval Shipyard was caught faking radiological testing results, the federal government's case formally closed this week. Tetra Tech EC Inc. will pay a total of $97 million — $57 million to resolve False Claims Act allegations brought by the U.S. Department of Justice, and another $40 million tied to ongoing Superfund cleanup costs — to settle claims that its workers substituted clean soil for contaminated samples and falsified data between 2003 and 2014.\n\nU.S. District Judge James Donato had initially rejected the settlement, saying prosecutors had not adequately explained why the payout was proportionate to the scale of the fraud. After further briefings, Donato on August 13 deemed the agreement 'fair, adequate, and reasonable.' Tetra Tech is not admitting wrongdoing. Whistleblowers — former Tetra Tech employees and contractors who first exposed the scheme — will share approximately $11.97 million of the total recovery.\n\nAlmost none of the $97 million flows directly to Bayview–Hunters Point residents. More than 300 homeowners on Parcel A — the only completed residential section of the shipyard development — had argued separately that the fraud tanked their property values. On August 4, Judge Donato dismissed that lawsuit, ruling that the federal Price-Anderson Act, a 1957 law designed to shield the nuclear industry from certain liability, bars claims based purely on financial loss. A separate group of roughly 6,000 Bayview residents who sued Tetra Tech received a February settlement worth $1.5 million in total — roughly $230 per plaintiff.\n\nEnvironmental justice advocates say the legal closure does not mean the contamination threat is resolved. The Navy continues testing and remediation at the 443-acre Superfund site, and as of recent Navy progress reports, crews are still verifying earlier radiological work, addressing mercury in groundwater, and investigating radioactive objects found in areas not previously flagged for cleanup. Greenaction for Health and Environmental Justice has called for independent verification of the site before any further development proceeds.",
+      "sourceUrl": "https://sfstandard.com/2026/08/24/hunters-point-tetra-tech-settlement-97-million/",
+      "sourceName": "SF Standard",
+      "tags": [
+        "Hunters Point",
+        "environment",
+        "public health",
+        "legal"
+      ]
+    },
+    {
+      "headline": "Visitacion Valley Launches Its First-Ever Night Market Tonight on Leland Avenue",
+      "dek": "The inaugural Visitacion Valley Night Market fills Leland Avenue with food vendors, live music, and dancing this evening — the first in a two-month series backed by the Civic Joy Fund.",
+      "body": "Visitacion Valley hosts its first-ever night market tonight, Friday August 28, along Leland Avenue between Bayshore Boulevard and Peabody Street, from 4 to 8:30 p.m. The free, all-ages event features food vendors, local shopping, live music, street dancing, family activities, and community organization booths, organized with support from the Civic Joy Fund and the Southside Community Development Corporation.\n\nThe market is the first of two planned for 2026. The series continues on Friday, September 25, also from 4 to 8:30 p.m. on the same stretch of Leland Avenue. Organizers are billing the event as a celebration of the neighborhood's culture, diversity, and community spirit.\n\nMuni riders should note service disruptions. The SFMTA has imposed a street closure on Leland Avenue between Peabody Street and Bayshore Boulevard from noon to 10 p.m. today, and the 56 Rutland bus line will reroute around the market area for the duration of the event.\n\nLeland Avenue is the commercial spine of Visitacion Valley, lined with small businesses and eateries. Organizers are hoping the market format — loose, walkable, and free — gives those businesses a chance to connect with neighbors and draw visitors who might not otherwise make it to this corner of the city.",
+      "sourceUrl": "https://www.sfmta.com/travel-updates/visitacion-valley-night-market-friday-august-28-2026",
+      "sourceName": "SFMTA",
+      "tags": [
+        "Visitacion Valley",
+        "community",
+        "night market",
+        "events"
+      ]
+    },
+    {
+      "headline": "SCRAP Reopens in Bayview With a Permanent Home Five Times Its Former Size",
+      "dek": "The beloved 50-year-old creative reuse nonprofit opened its doors at 141 Industrial Street this month, landing in a building it now owns outright after losing its longtime school-district warehouse lease.",
+      "body": "SCRAP — the Scroungers' Center for Reusable Art Parts — celebrated its grand reopening on August 15 at 141 Industrial Street in the Bayview, completing a move that for years felt uncertain. The nonprofit, which collects donated materials that might otherwise be discarded and sells them at low cost to artists, teachers, and makers, had operated out of a San Francisco Unified School District warehouse at 2150 Newcomb Avenue for 25 years. SFUSD is converting that site into a central kitchen funded by a $790 million bond passed by voters in November 2024.\n\nThe new space is roughly five times the footprint of the old warehouse, and — for the first time in SCRAP's 50-year history — the organization owns the building outright. The nonprofit purchased the building from the Calvary Hill Community Church after the church went into foreclosure; the church continues to rent the second floor as SCRAP's tenant, while SCRAP occupies the ground floor, which adds nearly 19,000 square feet for bookbinding and basket-making workshops and its ever-changing inventory.\n\nSCRAP was co-founded by artist Ruth Asawa and Anne Marie Theilen. It also hosts creative workshops, partners with local schools, and provides art materials to teachers for little or no cost. Staff say the expanded space will allow the center to accept an estimated 100 additional tons of donated materials each year and grow its after-school and corporate programming. The nonprofit recently launched a $7.5 million capital campaign to support the move and upgrades. The August 15 grand reopening featured a ribbon-cutting, tree planting, free hands-on workshop activities, and ice cream.",
+      "sourceUrl": "https://sfstandard.com/2026/08/14/scrap-sf-new-location-opens/",
+      "sourceName": "SF Standard",
+      "tags": [
+        "Bayview",
+        "arts",
+        "nonprofits",
+        "community"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Visitacion Valley Night Market",
+      "date": "Friday, August 28",
+      "time": "4:00 PM–8:30 PM",
+      "location": "Leland Avenue between Bayshore Blvd & Peabody St, Visitacion Valley",
+      "description": "The inaugural Visitacion Valley Night Market brings food vendors, local shopping, live music, street dancing, and community organizations to Leland Avenue. Free and all ages; Leland Ave closed to traffic noon–10 p.m.",
+      "sourceUrl": "https://www.sfmta.com/travel-updates/visitacion-valley-night-market-friday-august-28-2026",
+      "sourceName": "SFMTA"
+    },
+    {
+      "title": "Stoop Sessions: Live at the Ruth Williams Opera House",
+      "date": "Sunday, August 30",
+      "time": "2:00 PM–6:00 PM",
+      "location": "Ruth Williams Opera House, 4705 Third St, Bayview–Hunters Point",
+      "description": "A free outdoor live performance series where local artists perform a live arrangement of their songs with the Top Chefs band on the historic opera house steps. All ages welcome; bring a folding chair.",
+      "sourceUrl": "https://www.eventbrite.com/e/stoop-sessions-tickets-1995591889060",
+      "sourceName": "Eventbrite / Ruth Williams Opera House"
+    },
+    {
+      "title": "Visitacion Valley Night Market — September Edition",
+      "date": "Friday, September 25",
+      "time": "4:00 PM–8:30 PM",
+      "location": "Leland Avenue between Bayshore Blvd & Peabody St, Visitacion Valley",
+      "description": "The second and final installment of the 2026 Visitacion Valley Night Market series returns with food vendors, local makers, live music with DJ Cilla and Native Elements, and community programming. Free admission, all ages.",
+      "sourceUrl": "https://sf.funcheap.com/sfs-visitacion-valley-night-market-block-party-2026/",
+      "sourceName": "Funcheap SF"
+    },
+    {
+      "title": "5th Annual Afro Latinx Concert",
+      "date": "Saturday, October 3",
+      "time": "7:00 PM–10:00 PM",
+      "location": "Ruth Williams Opera House, 4705 Third St, Bayview–Hunters Point",
+      "description": "A vibrant evening of Afro Latinx music, food, and art at the historic Ruth Williams Opera House, hosted by Gina Madrid. Tickets available via Eventbrite.",
+      "sourceUrl": "https://www.eventbrite.com/e/5th-annual-afro-latinx-concert-tickets-1992904703616",
+      "sourceName": "Eventbrite / Ruth Williams Opera House"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Bayview Oyster Bar on Track to Open on Third Street in September",
+      "body": "Bayview Oyster Bar, the modern seafood restaurant from chef and Bayview native April Spears, is on track to open at 5114 Third Street in September. The spot will feature a raw bar at the front, a seafood counter, roughly 25 dining seats, and — eventually — a backyard patio decorated with historic black-and-white photographs of the neighborhood. The menu will focus on Dungeness crab, king salmon, and oysters, with some dishes prepared over open flame in a style inspired by Spears' Louisiana roots. The restaurant is one of nine businesses receiving support through the city's Storefront Opportunity Grant program, which has been credited with spurring a broader restaurant revival along the Third Street corridor. Spears previously ran Auntie April's and Cafe Envy in the Bayview before both closed during the pandemic.",
+      "sourceUrl": "https://www.sfchronicle.com/food/restaurants/article/bayview-oyster-bar-sf-opening-22362147.php",
+      "sourceName": "San Francisco Chronicle",
+      "tags": [
+        "Bayview",
+        "restaurants",
+        "food"
+      ]
+    },
+    {
+      "headline": "Gumbo Social Reopens After Six-Week Retooling",
+      "body": "Gumbo Social, the popular soul food restaurant at 5176 Third Street in the Bayview, reopened August 17 after a planned six-week closure for equipment upgrades and operational improvements. Owner Dontaye Ball described the closure as a deliberate investment in the restaurant's long-term sustainability, writing that the alternative was risking closure within six months. Ball is also working toward adding a walk-up takeout window that would extend service hours into the evening, with a goal of launching the window by September. The restaurant, now in its third year as a brick-and-mortar, has become one of the most visible Black-owned businesses on the Third Street corridor.",
+      "sourceUrl": "https://missionlocal.org/2026/08/bayview-buzz-scrap-reopening-gumbo-social/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "Bayview",
+        "restaurants",
+        "small business"
+      ]
+    },
+    {
+      "headline": "Crocker Amazon Park Renovation Moves Through Design Phase as Community Debate Continues",
+      "body": "The proposed $50 million renovation of Crocker Amazon Park's baseball and softball fields — backed by a $28 million grant from the San Francisco Giants and a $5 million gift from Willie Mays' Say Hey Foundation — continued through its design and environmental review phase this month, with the Recreation and Park Department posting an update on August 13. The Rec and Park Commission approved renaming the complex the Willie Mays Fields of Champions in April and recommended the Board of Supervisors accept the Giants' grant, but community opposition from the group Keep Crocker Real remains active. Opponents object to plans to remove more than 100 mature trees and replace natural grass with artificial turf across the park's western half. The project still requires Board of Supervisors approval and environmental review; construction is targeted to begin no earlier than 2027.",
+      "sourceUrl": "https://sfrecpark.org/1820/Crocker-Amazon-Baseball-and-Softball-Fie",
+      "sourceName": "SF Recreation and Parks Department",
+      "tags": [
+        "Crocker Amazon",
+        "parks",
+        "sports"
+      ]
+    },
+    {
+      "headline": "Hunters Point Homeowners Denied Damages as Federal Shipyard Settlement Closes",
+      "body": "As the federal government's fraud case against Tetra Tech EC closed this month with a $97 million settlement, more than 300 homeowners on Parcel A of the Hunters Point Shipyard development received no share of those funds. On August 4, U.S. District Judge James Donato ruled that the federal Price-Anderson Act — a 1957 nuclear liability law — shields Tetra Tech from homeowner claims for economic damages such as diminished property values. A separate group of roughly 6,000 Bayview residents who sued Tetra Tech received a February 2026 settlement totaling $1.5 million — approximately $230 per plaintiff. Environmental advocates, including Greenaction for Health and Environmental Justice, say the cleanup of the 443-acre Superfund site remains incomplete and are pressing Mayor Daniel Lurie and other officials to support independent testing and greater community oversight as the Navy continues work at the site.",
+      "sourceUrl": "https://davisvanguard.org/2026/08/hunters-point-homeowners-lose-case/",
+      "sourceName": "Davis Vanguard",
+      "tags": [
+        "Hunters Point",
+        "environment",
+        "housing",
+        "legal"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Old Skool Cafe",
+        "cuisineGroup": "Other",
+        "type": "Jazz supper club, soul food",
+        "description": "A 1920s speakeasy-themed supper club run by at-risk and formerly incarcerated youth, serving global soul food and live jazz every night it's open.",
+        "address": "1429 Mendell St",
+        "phone": "415-822-8531",
+        "website": "https://www.oldskoolcafe.org",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Gumbo Social",
+        "cuisineGroup": "Other",
+        "type": "Southern / Cajun counter service",
+        "description": "Chef Dontaye Ball's Bayview brick-and-mortar serves acclaimed build-your-own gumbo, po'boys, and smoked meats; recently reopened after a six-week retooling.",
+        "address": "5176 3rd St",
+        "phone": "415-655-9195",
+        "website": "https://www.gumbosocial.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "All Good Pizza",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Neapolitan pizza garden",
+        "description": "A beloved outdoor pizza spot in a sun-drenched garden, serving thin-crust Neapolitan pies made with organic, locally sourced ingredients; open Tuesday–Saturday.",
+        "address": "1605 Jerrold Ave",
+        "phone": "415-933-9384",
+        "website": "https://www.allgoodpizza.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Gratta Wines",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Urban winery, wine bar & Italian market",
+        "description": "San Francisco's last mainland urban winery, founded in 2006 by Barbara Gratta, offering Dry Creek Valley wines, Italian small bites, and a specialty market on Third Street.",
+        "address": "5273 3rd St",
+        "phone": "415-872-9791",
+        "website": "https://www.grattawines.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Cafe Alma",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Neighborhood café",
+        "description": "A welcoming community café on Third Street in the Bayview, serving coffee, food, and hosting local events and creative workshops.",
+        "address": "5171 3rd St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Beep's Burgers",
+        "cuisineGroup": "Seafood & American",
+        "type": "Drive-in burger stand",
+        "description": "An Ocean Avenue institution since 1962, serving juicy burgers, curly fries, legendary garlic fries, and milkshakes at a retro drive-in counter open daily until 2 a.m.",
+        "address": "1051 Ocean Ave",
+        "phone": "",
+        "website": "https://www.beepsburgers.com",
+        "neighborhood": "Ingleside",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ocean Ale House",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood brewpub with live music",
+        "description": "Ingleside's social anchor at 1314 Ocean Avenue, with rotating craft beers on tap, pub food, a small live-music stage, open mic nights, and a welcoming all-ages atmosphere.",
+        "address": "1314 Ocean Ave",
+        "phone": "",
+        "website": "https://www.oceanalehouse.com",
+        "neighborhood": "Ingleside",
+        "notable": ""
+      },
+      {
+        "name": "Megan's Table",
+        "cuisineGroup": "Asian",
+        "type": "Thai and Cambodian café-restaurant",
+        "description": "A family-run café on Ocean Avenue serving Thai and Cambodian dishes including cha kroeung, papaya salad, pad see ew, and Tom Kha soup in a warm, plant-filled setting.",
+        "address": "1339 Ocean Ave",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Ingleside",
+        "notable": ""
+      },
+      {
+        "name": "Pho Golden",
+        "cuisineGroup": "Asian",
+        "type": "Vietnamese pho restaurant",
+        "description": "A casual Excelsior Vietnamese restaurant well-regarded for its pho and dishes featuring grilled pork.",
+        "address": "Mission St, Excelsior",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Calabria Brothers",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian deli counter",
+        "description": "An Excelsior Italian deli counter known for oversized, generously filled sandwiches made to order.",
+        "address": "4546 Mission St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Restaurante Familiar",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Salvadoran and Mexican restaurant",
+        "description": "An Excelsior neighborhood staple serving Salvadoran and Mexican fare with praised entrees at family-friendly prices.",
+        "address": "Mission St, Excelsior",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Los Planes de Renderos",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Salvadoran pupusería",
+        "description": "A popular Excelsior Salvadoran spot focused on pupusas and traditional Central American comfort food.",
+        "address": "Mission St, Excelsior",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Don Chuy's",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican corner store and taquería",
+        "description": "A beloved Excelsior corner store recognized for its outstanding carnitas burrito.",
+        "address": "Mission St, Excelsior",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "7 Mile House",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Historic neighborhood bar",
+        "description": "A Visitacion Valley landmark at Bayshore Boulevard and Geneva Avenue, one of San Francisco's oldest continuously operating bars, still serving drinks on the same corner for generations.",
+        "address": "2800 Bayshore Blvd",
+        "phone": "",
+        "website": "https://www.7milehouse.com",
+        "neighborhood": "Visitacion Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Pakwan",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Pakistani and Indian restaurant",
+        "description": "A reliable Ocean Avenue spot for tandoori chicken, chicken achar, and hearty Pakistani and Indian dishes served in generous portions.",
+        "address": "Ocean Ave, Ingleside",
+        "phone": "",
+        "website": "https://www.pakwansf.com",
+        "neighborhood": "Ingleside",
+        "notable": ""
+      }
+    ],
+    "hotels": [],
+    "shops": [
+      {
+        "name": "SCRAP (Scroungers' Center for Reusable Art Parts)",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Creative reuse art supply store",
+        "description": "San Francisco's beloved 50-year-old nonprofit creative reuse depot, now in a permanent new home at 141 Industrial Street — five times the size of its former warehouse — selling donated materials at low cost to artists, teachers, and makers.",
+        "address": "141 Industrial St",
+        "phone": "",
+        "website": "https://www.scrap-sf.org",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "New"
+      },
+      {
+        "name": "Flora Grubb Gardens",
+        "shopGroup": "Home & Gifts",
+        "type": "Garden center and plant shop",
+        "description": "A beloved open-air destination garden center at 1634 Jerrold Avenue in the Bayview, widely regarded as one of the finest plant shops in the Bay Area.",
+        "address": "1634 Jerrold Ave",
+        "phone": "415-626-7256",
+        "website": "https://www.floragrubb.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Meizzei Hardware",
+        "shopGroup": "Hardware & Services",
+        "type": "Neighborhood hardware store",
+        "description": "A legacy hardware store on the Third Street corridor that has served the Bayview community for decades.",
+        "address": "Third St, Bayview",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ocean Subs",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Sandwich shop",
+        "description": "An Excelsior lunch staple praised for its Original Sub on toasted Dutch crunch, stacked with Italian meats and a tangy herb vinaigrette.",
+        "address": "Mission St, Excelsior",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Ruth Williams Opera House (Bayview Opera House)",
+        "venueGroup": "Theater & Comedy",
+        "type": "Historic performing arts and cultural center",
+        "description": "San Francisco's oldest extant theater and Landmark #8, the Ruth Williams Opera House is the cultural anchor of Bayview–Hunters Point, hosting concerts, theater, Stoop Sessions, community events, and youth arts programs.",
+        "address": "4705 3rd St",
+        "phone": "415-824-0386",
+        "website": "https://rwoh.org",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Jerry Garcia Amphitheater",
+        "venueGroup": "Music Venues",
+        "type": "Free outdoor amphitheater",
+        "description": "A free outdoor amphitheater named for the late Grateful Dead frontman, set within McLaren Park and hosting summer concerts and community performances.",
+        "address": "100 John F. Shelley Dr, McLaren Park",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Visitacion Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Quesada Gardens",
+        "venueGroup": "Museums & Cultural",
+        "type": "Community mural garden",
+        "description": "A vibrant community-built gathering space at Quesada Avenue and Newhall Street, transformed since 2006 with greenery, colorful murals, and tiled stairs.",
+        "address": "Quesada Ave at Newhall St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Excelsior Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Hatha yoga studio",
+        "description": "A boutique Excelsior studio on the third floor of the US Bank Building on Mission Street, offering classical 90-minute Hatha yoga classes blended with science, pranayama, and meditation.",
+        "address": "4610 Mission St, 3rd Floor",
+        "phone": "415-251-2873",
+        "website": "https://www.excelsioryogasf.com",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "John McLaren Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "City park",
+        "description": "San Francisco's second-largest park, spanning Visitacion Valley and the Excelsior with over seven miles of trails, a swimming pool, tennis and basketball courts, a golf course, soccer fields, playgrounds, and the Jerry Garcia Amphitheater.",
+        "address": "100 John F. Shelley Dr",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Visitacion Valley / Excelsior",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Crocker Amazon Playground",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "City park and recreation center",
+        "description": "A large southern San Francisco park featuring a skate park, lighted soccer fields, basketball and tennis courts, children's play areas, and baseball and softball fields currently in a renovation planning process.",
+        "address": "Moscow Ave & Geneva Ave",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Crocker Amazon",
+        "notable": ""
+      },
+      {
+        "name": "India Basin Shoreline Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Waterfront park",
+        "description": "A newly developed waterfront park on the Bayview shore offering San Francisco Bay views, restored native habitat, and public shoreline access.",
+        "address": "900 Innes Ave",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "New"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "The Hunters Point fraud case is closed. The safety questions aren't.",
+      "url": "https://sfstandard.com/2026/08/24/hunters-point-tetra-tech-settlement-97-million/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "Tetra Tech to pay $57M for falsifying Hunters Point Shipyard soil samples",
+      "url": "https://missionlocal.org/2026/08/tetra-tech-hunters-point-shipyard-settlement-57-million/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Former Navy Contractor to Pay $97 Million Settlement Over Hunters Point Shipyard Cleanup",
+      "url": "https://sfist.com/2026/08/26/former-navy-contractor-to-pay-97-million-in-botched-hunters-point-shipyard-cleanup/",
+      "publication": "SFist"
+    },
+    {
+      "title": "San Francisco's Hunters Point cleanup scandal leads to major settlement",
+      "url": "https://www.sfchronicle.com/sf/article/hunters-point-cleanup-settlement-22404765.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Justice Buried Beneath the Radiation: How a 1957 Nuclear Shield Law Just Told Black San Francisco That Fraud Doesn't Count",
+      "url": "https://davisvanguard.org/2026/08/hunters-point-homeowners-lose-case/",
+      "publication": "Davis Vanguard"
+    },
+    {
+      "title": "Read Bay City News/SF Gate story about Hunters Point Shipyard Superfund Site fraud settlement",
+      "url": "https://greenaction.org/2026/08/26/august-25-2026-read-bay-city-news-sf-gate-story-about-hunters-point-shipyard-superfund-site-fraud-settlement-and-greenactions-comments-on-the-settlement-and-campaign-for-justice/",
+      "publication": "Greenaction for Health and Environmental Justice"
+    },
+    {
+      "title": "Visitacion Valley Night Market: Friday, August 28, 2026",
+      "url": "https://www.sfmta.com/travel-updates/visitacion-valley-night-market-friday-august-28-2026",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "SF's First 'Visitacion Valley' Night Market + Block Party (2026)",
+      "url": "https://sf.funcheap.com/sfs-visitacion-valley-night-market-block-party-2026/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "SCRAP is BACK",
+      "url": "https://sfstandard.com/2026/08/14/scrap-sf-new-location-opens/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "SCRAP Reopens in Bayview With Space Five Times Its Old Depot's Size",
+      "url": "https://hoodline.com/2026/08/scrap-reopens-in-bayview-with-space-five-times-its-old-depot-s-size/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "SCRAP, San Francisco's Most Affordable Art Supply Store, Is Moving",
+      "url": "https://www.kqed.org/arts/13990563/scrap-bayview-art-supply-store-creative-reuse-new-building",
+      "publication": "KQED"
+    },
+    {
+      "title": "Bayview Buzz: SCRAP's grand-opening is this weekend",
+      "url": "https://missionlocal.org/2026/08/bayview-buzz-scrap-reopening-gumbo-social/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Bayview Oyster Bar in wave of restaurants opening in SF's Bayview",
+      "url": "https://www.sfchronicle.com/food/restaurants/article/bayview-oyster-bar-sf-opening-22362147.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Bayview Buzz: The 'grandfather of block parties' is back",
+      "url": "https://missionlocal.org/2026/08/bayview-buzz-sunday-streets-stoop-sessions/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Stoop Sessions — Eventbrite",
+      "url": "https://www.eventbrite.com/e/stoop-sessions-tickets-1995591889060",
+      "publication": "Eventbrite / Ruth Williams Opera House"
+    },
+    {
+      "title": "5th Annual Afro Latinx Concert — Eventbrite",
+      "url": "https://www.eventbrite.com/e/5th-annual-afro-latinx-concert-tickets-1992904703616",
+      "publication": "Eventbrite / Ruth Williams Opera House"
+    },
+    {
+      "title": "Crocker Amazon Baseball and Softball Fields Renovation",
+      "url": "https://sfrecpark.org/1820/Crocker-Amazon-Baseball-and-Softball-Fie",
+      "publication": "SF Recreation and Parks Department"
+    },
+    {
+      "title": "Crocker Amazon turf war heads to San Francisco supervisors",
+      "url": "https://missionlocal.org/2026/04/sf-crocker-amazon-giants-28-million-grant/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Gumbo Social Temporary Closure Is an Investment in Long-Term Business",
+      "url": "https://www.gumbosocial.com/post/gumbo-social-temporary-closure",
+      "publication": "Gumbo Social"
+    },
+    {
+      "title": "The Best Restaurants In Ingleside — The Infatuation",
+      "url": "https://www.theinfatuation.com/san-francisco/guides/best-restaurants-ingleside",
+      "publication": "The Infatuation"
+    },
+    {
+      "title": "The 19 Best Restaurants In The Excelsior — The Infatuation",
+      "url": "https://www.theinfatuation.com/san-francisco/guides/best-excelsior-restaurants",
+      "publication": "The Infatuation"
+    }
+  ]
+}
