@@ -1,0 +1,907 @@
+{
+  "clusterSlug": "soma-mission-bay",
+  "clusterName": "SoMa & Mission Bay",
+  "weekOf": "2026-08-28",
+  "topStories": [
+    {
+      "headline": "Waymo Wins Statewide Expansion Approval — and Market Street Rideshare Pilot Goes Live",
+      "dek": "Two milestones in the same week cement San Francisco's role as the proving ground for autonomous vehicles, with new pick-up zones on Market Street and a sweeping CPUC green light for Bay Area-wide service.",
+      "body": "The California Public Utilities Commission granted Waymo approval on August 14 to expand its fully driverless ride-hailing service across 18 counties, clearing the company to operate throughout the entire San Francisco Bay Area and to launch new markets in Sacramento and San Diego. The approval covers territory from Sonoma County south to the Mexican border, making it the largest regulatory step in the company's history. Waymo said expansion would be gradual and guided by its safety framework, with an immediate focus on launching rider-only service in San Diego later this summer.\n\nThe CPUC milestone landed just as a separate local pilot kicked into gear. Beginning August 26, the San Francisco Municipal Transportation Agency launched an evaluation allowing Waymo — along with a limited number of Uber Black and Lyft Black vehicles — to pick up and drop off passengers at up to seven designated bays along a two-mile stretch of Market Street during set hours. Market Street has been closed to private cars since 2020. Mayor Daniel Lurie framed the pilot as a tool for revitalizing the downtown corridor.\n\nFor SoMa residents and commuters, the combined news means more autonomous vehicle activity along the neighborhood's northern and western edges. Critics from transit and pedestrian advocacy groups have warned that introducing any vehicle traffic to the car-free stretch risks undermining Muni performance and pedestrian safety gains built over two decades. The SFMTA said it will monitor traffic conditions, safety incidents, and rideshare performance through shared data and street-level observation throughout the evaluation period.\n\nWaymo's fleet has now logged more than 20 million trips across its U.S. markets and is targeting one million rides per week by year's end. The CPUC approval follows the California DMV's authorization of the same expanded service area last year.",
+      "sourceUrl": "https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/",
+      "sourceName": "Electrek",
+      "tags": [
+        "transportation",
+        "autonomous vehicles",
+        "SoMa",
+        "Market Street"
+      ]
+    },
+    {
+      "headline": "Treasure Island Redevelopment Makes National Headlines as First Residents Move In",
+      "dek": "A Washington Post feature this week spotlighted new apartments and condominiums now open on the 576-acre former Navy base, marking a turning point for one of the city's longest-running housing projects.",
+      "body": "Treasure Island's long-promised transformation is no longer a plan on paper. The Washington Post published a major feature on August 21 documenting the arrival of the first wave of residents in new apartments and condominiums on the 576-acre island that the U.S. Navy abandoned nearly 30 years ago. The piece landed as the island's redevelopment reaches a visible milestone: completed buildings, open parks, and an operating ferry terminal.\n\nPhase one of the redevelopment was formally completed in July with the opening of 490 Avenue of the Palms, a six-story, 148-unit condominium complex co-developed by Lennar Corporation, Stockbridge Capital Group, and Wilson Meany. It is the first condominium building constructed on Treasure Island. Separately, Star View Court — a seven-story, 138-unit building of permanently affordable apartments — is also open, providing homes for people exiting homelessness and qualifying local residents. The island's affordable housing portfolio is designed to eventually deliver more than 2,000 below-market homes.\n\nAt full build-out, the Treasure Island and Yerba Buena Island development program envisions 8,000 to 10,800 housing units, with 27 percent affordable, along with approximately 300 acres of parks and open space. A revised proposal from earlier this year proposed increasing density by up to 35 percent and shifting more units from for-sale condominiums to rental apartments, which can be built faster. The island already has a ferry terminal offering a roughly 10-minute ride to the Ferry Building, and new roads, utilities, and waterfront parks have been built as part of more than $800 million in infrastructure investment.\n\nSheela Jivan, appointed in May as the new executive director of the Treasure Island Development Authority, is overseeing the next phases. Mayor Lurie has called the project critical to San Francisco meeting its state-mandated housing production targets.",
+      "sourceUrl": "https://www.washingtonpost.com/business/2026/08/21/treasure-island-abandoned-island-san-francisco-is-finally-being-redeveloped/",
+      "sourceName": "The Washington Post",
+      "tags": [
+        "housing",
+        "development",
+        "Treasure Island",
+        "Yerba Buena Island"
+      ]
+    },
+    {
+      "headline": "SF's First Artist Housing Tower Breaks Ground on Mid-Market — City Now Must Define Who Qualifies",
+      "dek": "The Artists Hub on Market project at 1687 Market Street officially broke ground in late July, but the city is still building the certification process that will decide which San Franciscans can call themselves artists.",
+      "body": "San Francisco broke ground on July 28 on the Artists Hub on Market, a 15-story, $140 million mixed-use tower at 1687 Market Street, making it the city's first affordable housing development reserved specifically for artists and arts workers. The project, co-developed by nonprofit Mercy Housing California and Artists Hub on Market — a nonprofit co-founded by SFJazz founder Randall Kline — will deliver 94 permanently affordable apartments alongside rehearsal studios, a black-box theater, office and program space for arts organizations, and a ground-floor café open to the community. The building is expected to open in 2028.\n\nThe tower sits at the corner of Market and Gough streets, on a site that formerly housed a McRoskey Mattress showroom. It is centrally positioned at the intersection of Hayes Valley, Civic Center, the Mission, and the Castro — and within SoMa's broader orbit — giving it access to a dense network of arts organizations and transit lines. Income caps vary by unit and household size, with set-asides for households earning 30, 60, and 80 percent of area median income.\n\nA complication has emerged: San Francisco is still constructing the formal Artist Housing Certification Program that will determine who qualifies as an artist for the purposes of applying. The SF Chronicle reported this week that the city is working to create a first-of-its-kind credentialing process, and artists can submit interest forms now even as the full application process remains under development. City Arts and Culture Executive Director Matthew Goudeau has described the project as a way to ensure the people who shape San Francisco's cultural life can afford to remain in the city.",
+      "sourceUrl": "https://www.sfchronicle.com/entertainment/article/artists-hub-market-san-francisco-22393709.php",
+      "sourceName": "San Francisco Chronicle",
+      "tags": [
+        "housing",
+        "arts",
+        "SoMa",
+        "Mid-Market",
+        "affordable housing"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "SFMOMA: Matisse's Femme au chapeau — A Modern Scandal",
+      "date": "Through September 13",
+      "time": "Various times",
+      "location": "SFMOMA, 151 Third St., SoMa",
+      "description": "The San Francisco Museum of Modern Art presents a major exhibition tracing the history and enduring influence of Matisse's 1905 portrait of his wife Amélie, positioning it in dialogue with his peers and with artists working today including Bay Area Figurative masters Joan Brown and Richard Diebenkorn. The museum's Thursday Night programming on September 3 includes an opening celebration for a new show, 'In Between,' from 6–8 p.m.",
+      "sourceUrl": "https://www.sfmoma.org/exhibition/matisse-femme-au-chapeau/",
+      "sourceName": "SFMOMA"
+    },
+    {
+      "title": "65th Annual Potrero Hill Artists' Exhibition",
+      "date": "Through August 29",
+      "time": "Various times",
+      "location": "Potrero Hill Branch Library, Potrero Hill",
+      "description": "The Potrero Hill Branch Library hosts its 65th annual exhibition of artwork by library patrons who live, learn, work, or worship on Potrero Hill and Dogpatch. The show closes Saturday, August 29.",
+      "sourceUrl": "https://www.potreroview.net/",
+      "sourceName": "Potrero View"
+    },
+    {
+      "title": "Yerba Buena Gardens Festival — Ongoing Free Performances",
+      "date": "Ongoing",
+      "time": "Various times",
+      "location": "Yerba Buena Gardens, Mission St. between 3rd & 4th Sts., SoMa",
+      "description": "Now in its 26th season, the Yerba Buena Gardens Festival continues through November with over 100 free outdoor performances including world music, dance, theater, and children's programming. Upcoming highlights include Los Calderones (September 3, 6–7:30 p.m.) and a free outdoor movie night (September 5, 7–9:30 p.m.).",
+      "sourceUrl": "https://ybgfestival.org/",
+      "sourceName": "Yerba Buena Gardens Festival"
+    },
+    {
+      "title": "Hayden James Sunset Party at Aracely Garden",
+      "date": "Friday, August 28",
+      "time": "4:00 PM",
+      "location": "Aracely Garden, Treasure Island",
+      "description": "Australian producer and DJ Hayden James headlines a sunset dance party at the Aracely Garden on Treasure Island, an open-air garden venue with sweeping views of the San Francisco skyline.",
+      "sourceUrl": "https://www.tisf.com/events",
+      "sourceName": "Treasure Island SF"
+    },
+    {
+      "title": "Treasure Island Yacht Club Chili Cook-Off",
+      "date": "Saturday, August 29",
+      "time": "4:00 PM",
+      "location": "Treasure Island Yacht Club, Treasure Island",
+      "description": "Bring your best recipe and compete for the top prize ($10 to enter), or pay $20 to sample all entries and help crown the winner at this lively community cook-off on Treasure Island.",
+      "sourceUrl": "https://www.tisf.com/events",
+      "sourceName": "Treasure Island SF"
+    },
+    {
+      "title": "SOMA Nights Block Party & Night Market",
+      "date": "Thursday, September 24",
+      "time": "5:00 PM",
+      "location": "Folsom St. between 6th & 12th Sts., SoMa",
+      "description": "The final installment of the 2026 SOMA Nights series brings a free monthly street party back to the Folsom Corridor, with local food vendors, pop-up shops, art, DJs, and activations from more than 20 neighborhood businesses. (The August 27 edition concluded the previous week; September 24 is the next and final date.)",
+      "sourceUrl": "https://sf.funcheap.com/event-series/soma-nights-sf/",
+      "sourceName": "SF Funcheap"
+    },
+    {
+      "title": "Potrero Hill R&B Festival — 51st Year",
+      "date": "Saturday, October 17",
+      "time": "10:00 AM",
+      "location": "20th Street between Wisconsin & Missouri Sts., Potrero Hill",
+      "description": "The 51st annual Potrero Hill R&B Festival returns with live music on two stages, local food and craft vendors, and family activities across four blocks of 20th Street; the free festival benefits Daniel Webster and Starr King Elementary Schools and the Potrero Hill Neighborhood House.",
+      "sourceUrl": "https://potrerofestival.com/",
+      "sourceName": "Potrero Hill Festival"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Potrero Annex Demolition Continues as HOPE SF Rebuild Advances",
+      "body": "Demolition of the Potrero Annex public housing complex — a World War II-era development at 700 Missouri Street in Potrero Hill — has been underway since spring 2026, marking a long-delayed milestone in the HOPE SF program. The roughly 619 units across 23 buildings in the Annex are being cleared to make way for a mixed-income project of up to 1,700 new units. The Mayor's Office of Housing and Community Development said next-phase demolition work would focus on buildings on Turner Terrace, Watchman Way, and Missouri Street. The full rebuild is expected to take 10 to 12 years.",
+      "sourceUrl": "https://missionlocal.org/2026/07/photo-essay-potrero-hill-terrace-and-annex-demolished-after-years-long-wait/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "housing",
+        "Potrero Hill",
+        "HOPE SF",
+        "development"
+      ]
+    },
+    {
+      "headline": "Ruth Asawa Gallery Opens Permanent Home at Minnesota Street Project",
+      "body": "Ruth Asawa Lanier, Inc. opened a permanent dedicated gallery for the beloved San Francisco artist at Minnesota Street Project in Dogpatch in May, occupying the 1,714-square-foot downstairs space previously held by Anglim/Trimble. The gallery is billed as the first permanent public venue dedicated to Asawa's wire sculptures, drawings, and community-oriented practice — a stable street-level home in a city dotted with the artist's public fountains and commissions. The opening came as the Dogpatch arts campus navigated a period of gallery turnover, with new tenants including Art of Contemporary Africa also taking up residence alongside the project's resident galleries.",
+      "sourceUrl": "https://hoodline.com/2026/03/dogpatch-snags-permanent-ruth-asawa-gallery-as-minnesota-street-project-reinvents-itself/",
+      "sourceName": "Hoodline",
+      "tags": [
+        "arts",
+        "galleries",
+        "Dogpatch",
+        "Minnesota Street Project"
+      ]
+    },
+    {
+      "headline": "Treasure Island Ferry Service, Events Scene Grow Alongside New Residents",
+      "body": "As more residents move into newly completed buildings on Treasure Island, the island's amenity and events calendar is keeping pace. The Treasure Island SF events site lists ongoing weekend music at Mersea Restaurant (free, Fridays through Sundays), live jazz and cocktails at the Gold Bar Whiskey Distillery — set inside a 1930s Art Deco building — and a growing schedule of community gatherings. The ferry terminal, which opened in 2022, connects the island to the Ferry Building in roughly 10 minutes, making the new neighborhood viable for daily commuters.",
+      "sourceUrl": "https://www.tisf.com/events",
+      "sourceName": "Treasure Island SF",
+      "tags": [
+        "Treasure Island",
+        "events",
+        "housing",
+        "ferry"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Piccino",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian-California restaurant",
+        "description": "A Dogpatch institution since 2006 serving thin-crust pizzas, house-made pastas, and locally sourced seasonal dishes in the sunny Yellow Building on Minnesota Street.",
+        "address": "1001 Minnesota St, San Francisco, CA 94107",
+        "phone": "(415) 824-4224",
+        "website": "https://piccino.com",
+        "neighborhood": "Dogpatch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bar Piccino",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft cocktail bar",
+        "description": "The annexed cocktail bar next door to Piccino, specializing in classic craft cocktails and small bites in a laidback setting.",
+        "address": "1003 Minnesota St, San Francisco, CA 94107",
+        "phone": "(415) 824-4224",
+        "website": "https://piccino.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Sightglass Coffee (SoMa Flagship)",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Specialty coffee roastery and café",
+        "description": "Sightglass's bi-level SoMa flagship houses the company's roastery, open coffee bar, headquarters, and a Friday public cupping lab where guests can taste freshly roasted single-origin coffees.",
+        "address": "270 7th St, San Francisco, CA 94103",
+        "phone": "(415) 463-1673",
+        "website": "https://sightglasscoffee.com",
+        "neighborhood": "SoMa",
+        "notable": "Landmark"
+      },
+      {
+        "name": "SPARK Social SF",
+        "cuisineGroup": "Other",
+        "type": "Outdoor food truck park and beer garden",
+        "description": "Mission Bay's open-air food truck park features a rotating lineup of over a dozen trucks daily, a beer and sangria garden, fire pits, and an 18-hole mini golf course, drawing a crowd of UCSF staff, tech workers, and families.",
+        "address": "601 Mission Bay Blvd N, San Francisco, CA 94158",
+        "phone": "(415) 926-8075",
+        "website": "https://visitsparksocial.com/san-francisco/",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "Mersea Restaurant",
+        "cuisineGroup": "Seafood & American",
+        "type": "Waterfront restaurant and bar",
+        "description": "Situated on Treasure Island with panoramic Bay views, Mersea serves American coastal cuisine and craft cocktails, and hosts free live music on Fridays, Saturdays, and Sundays.",
+        "address": "1 Avenue of the Palms, Treasure Island, San Francisco, CA 94130",
+        "phone": "",
+        "website": "https://www.tisf.com",
+        "neighborhood": "Treasure Island",
+        "notable": ""
+      },
+      {
+        "name": "Gold Bar Whiskey Distillery",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft spirits distillery and tasting room",
+        "description": "Set inside a 1930s Art Deco building on Treasure Island, Gold Bar offers whiskey flights, signature cocktails, and sweeping views of the San Francisco skyline, with live jazz on weekend evenings.",
+        "address": "Avenue of the Palms, Treasure Island, San Francisco, CA 94130",
+        "phone": "",
+        "website": "https://www.tisf.com",
+        "neighborhood": "Treasure Island",
+        "notable": ""
+      },
+      {
+        "name": "Besharam",
+        "cuisineGroup": "Asian",
+        "type": "Modern Indian restaurant",
+        "description": "Chef Heena Patel's bold, vegetable-forward Indian restaurant at the Minnesota Street Project celebrates the bold flavors of Gujarat and is a community fixture at the Dogpatch arts campus.",
+        "address": "1275 Minnesota St, San Francisco, CA 94107",
+        "phone": "(415) 295-9075",
+        "website": "https://www.besharamsf.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Cafe Alma",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Neighborhood café and brunch spot",
+        "description": "A beloved Potrero Hill corner café serving breakfast, brunch, and coffee with a warm neighborhood-gathering-place feel.",
+        "address": "1801 McAllister St, San Francisco, CA 94117",
+        "phone": "",
+        "website": "https://www.cafealmasf.com",
+        "neighborhood": "Potrero Hill",
+        "notable": ""
+      },
+      {
+        "name": "Anchor Public Taps",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Brewery taproom",
+        "description": "The taproom for San Francisco's legendary Anchor Brewing Company, pouring a full range of Anchor beers alongside brewery tours in a spacious SoMa setting.",
+        "address": "495 De Haro St, San Francisco, CA 94107",
+        "phone": "(415) 863-8350",
+        "website": "https://www.anchorbrewing.com",
+        "neighborhood": "Potrero Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Plow",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Breakfast and brunch restaurant",
+        "description": "A long-running Potrero Hill favorite known for its ricotta pancakes, farm egg scrambles, and weekend lines — one of the city's definitive brunch destinations.",
+        "address": "1299 18th St, San Francisco, CA 94107",
+        "phone": "(415) 821-7569",
+        "website": "https://www.eatatplow.com",
+        "neighborhood": "Potrero Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chez Maman",
+        "cuisineGroup": "Other",
+        "type": "French bistro",
+        "description": "A charming, unpretentious French bistro on Potrero Hill serving crêpes, moules frites, and classic Gallic comfort food in a cozy setting.",
+        "address": "1453 18th St, San Francisco, CA 94107",
+        "phone": "(415) 824-7166",
+        "website": "https://chezmamansf.com",
+        "neighborhood": "Potrero Hill",
+        "notable": ""
+      },
+      {
+        "name": "Dogpatch Saloon",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood bar",
+        "description": "A casual, unpretentious dive bar and neighborhood anchor in Dogpatch with cold beer, sports on TV, and a loyal local following.",
+        "address": "2496 3rd St, San Francisco, CA 94107",
+        "phone": "(415) 643-8592",
+        "website": "https://www.dogpatchsaloon.com",
+        "neighborhood": "Dogpatch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Smokestack at Magnolia Brewing",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Brewpub and smokehouse",
+        "description": "Magnolia Brewing's Dogpatch location combines a working brewery and taproom with a full barbecue menu of smoked meats and classic sides in a large industrial space.",
+        "address": "2505 3rd St, San Francisco, CA 94107",
+        "phone": "(415) 864-7468",
+        "website": "https://magnoliapub.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Bloodhound",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Cocktail bar",
+        "description": "A well-regarded SoMa cocktail bar with an extensive whiskey list, craft cocktails, and a hunter's-lodge aesthetic that draws a stylish after-work crowd.",
+        "address": "1145 Folsom St, San Francisco, CA 94103",
+        "phone": "(415) 863-2840",
+        "website": "https://www.bloodhoundsf.com",
+        "neighborhood": "SoMa",
+        "notable": ""
+      },
+      {
+        "name": "El Río",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Bar and live music venue",
+        "description": "A beloved, longstanding SoMa bar with a shaded backyard patio, Latin-tinged programming, and a proud LGBTQ+ welcoming tradition since 1978.",
+        "address": "3158 Mission St, San Francisco, CA 94110",
+        "phone": "(415) 282-3325",
+        "website": "https://www.elriosf.com",
+        "neighborhood": "SoMa",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Bird SF",
+        "cuisineGroup": "Other",
+        "type": "Fast-casual chicken sandwich shop",
+        "description": "A popular quick-service spot in SoMa known for its fried chicken sandwiches on housemade biscuits and chipotle-ranch sauce, serving a brisk lunch crowd near Moscone Center.",
+        "address": "115 New Montgomery St, San Francisco, CA 94105",
+        "phone": "",
+        "website": "https://www.thebirdsf.com",
+        "neighborhood": "SoMa",
+        "notable": ""
+      },
+      {
+        "name": "Luce at InterContinental San Francisco",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Michelin-starred hotel restaurant",
+        "description": "The upscale restaurant inside the InterContinental San Francisco holds a Michelin star and serves Californian cuisine with Mediterranean influences in an elegant SoMa setting.",
+        "address": "888 Howard St, San Francisco, CA 94103",
+        "phone": "(415) 616-6500",
+        "website": "https://www.intercontinentalsanfrancisco.com",
+        "neighborhood": "SoMa",
+        "notable": ""
+      },
+      {
+        "name": "Brenda's Meat & Three",
+        "cuisineGroup": "Seafood & American",
+        "type": "Southern comfort food restaurant",
+        "description": "Chef Brenda Buenviaje's SoMa outpost offers classic Southern plates — fried chicken, catfish, and rotating vegetable sides — in a casual, counter-service format.",
+        "address": "919 Divisadero St, San Francisco, CA 94115",
+        "phone": "(415) 926-8657",
+        "website": "https://www.brendasmeatandthree.com",
+        "neighborhood": "SoMa",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "InterContinental San Francisco by IHG",
+        "type": "Full-service luxury hotel",
+        "description": "A 32-story glass tower directly adjacent to Moscone Center offering 554 rooms, a Michelin-starred restaurant, an indoor pool, and panoramic Bay Area views — the 2026 Best of the Bay winner for Best Hotel for Business.",
+        "address": "888 Howard St, San Francisco, CA 94103",
+        "phone": "(415) 616-6500",
+        "website": "https://www.intercontinentalsanfrancisco.com",
+        "neighborhood": "SoMa",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hotel VIA",
+        "type": "Boutique upscale hotel",
+        "description": "A stylish boutique hotel steps from Oracle Park and Chase Center in Mission Bay, featuring a rooftop bar with sweeping Bay views, a well-equipped gym, and a guest rating of 9.2 out of 10.",
+        "address": "138 King St, San Francisco, CA 94107",
+        "phone": "(415) 200-4977",
+        "website": "https://www.hotelviasf.com",
+        "neighborhood": "Mission Bay / South Beach",
+        "notable": ""
+      },
+      {
+        "name": "LUMA Hotel San Francisco",
+        "type": "Modern hotel",
+        "description": "A contemporary hotel in Mission Bay near UCSF offering modern rooms, flexible meeting spaces, and easy access to Chase Center and the waterfront.",
+        "address": "55 Cyril Magnin St, San Francisco, CA 94102",
+        "phone": "",
+        "website": "https://lumahotels.com/san-francisco",
+        "neighborhood": "SoMa / Civic Center",
+        "notable": "New"
+      },
+      {
+        "name": "Hyatt Place San Francisco Downtown",
+        "type": "Full-service hotel",
+        "description": "A 230-room hotel in SoMa offering oversized rooms, a rooftop bar with city views, and a central location within walking distance of Moscone Center, SFMOMA, and the Caltrain station.",
+        "address": "701 3rd St, San Francisco, CA 94107",
+        "phone": "(415) 348-1234",
+        "website": "https://www.hyatt.com",
+        "neighborhood": "SoMa / Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "Canopy by Hilton San Francisco SoMa",
+        "type": "Lifestyle hotel",
+        "description": "A design-forward Hilton lifestyle brand property in SoMa, praised for its welcoming atmosphere and proximity to Yerba Buena Gardens and public transit.",
+        "address": "250 4th St, San Francisco, CA 94103",
+        "phone": "(415) 348-9000",
+        "website": "https://www.hilton.com",
+        "neighborhood": "SoMa",
+        "notable": ""
+      },
+      {
+        "name": "W San Francisco",
+        "type": "Luxury lifestyle hotel",
+        "description": "The W brand's San Francisco flagship brings bold design and a lively bar scene to SoMa, located within walking distance of SFMOMA and Yerba Buena Gardens.",
+        "address": "181 3rd St, San Francisco, CA 94103",
+        "phone": "(415) 777-5300",
+        "website": "https://www.marriott.com/whotels",
+        "neighborhood": "SoMa",
+        "notable": ""
+      },
+      {
+        "name": "San Francisco Proper Hotel",
+        "type": "Boutique design hotel",
+        "description": "A Kelly Wearstler–designed boutique property at the edge of the Tenderloin and SoMa, featuring a rooftop bar, a Michelin-recognized restaurant, and richly layered interiors.",
+        "address": "1100 Market St, San Francisco, CA 94102",
+        "phone": "(415) 735-7777",
+        "website": "https://www.properhotel.com/san-francisco",
+        "neighborhood": "SoMa / Mid-Market",
+        "notable": ""
+      },
+      {
+        "name": "YOTEL San Francisco",
+        "type": "Tech-forward compact hotel",
+        "description": "A smartly designed tech-forward hotel with compact, efficiently laid-out cabins, a rooftop bar, and a playful aesthetic aimed at modern travelers near Moscone Center.",
+        "address": "1095 Market St, San Francisco, CA 94103",
+        "phone": "(415) 986-9700",
+        "website": "https://www.yotel.com/san-francisco",
+        "neighborhood": "SoMa",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Minnesota Street Project Shop",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Art books and editions shop",
+        "description": "The retail arm of the Dogpatch arts campus sells limited-edition prints, artist books, and art objects from galleries and artists in residence at Minnesota Street Project.",
+        "address": "1275 Minnesota St, San Francisco, CA 94107",
+        "phone": "",
+        "website": "https://minnesotastreetproject.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "DIG Wine",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Natural and boutique wine shop",
+        "description": "A curated natural and boutique wine shop inside Dogpatch's Yellow Building, known for its knowledgeable staff and selections that pair well with a visit to neighboring Piccino.",
+        "address": "1199 Minnesota St, San Francisco, CA 94107",
+        "phone": "",
+        "website": "https://digwinesf.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Rickshaw Bagworks",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Messenger bag and accessories maker",
+        "description": "A San Francisco–made bag manufacturer and retail shop on 22nd Street in Dogpatch, offering messenger bags, laptop sleeves, and custom bags produced in the neighborhood.",
+        "address": "246 Potrero Ave, San Francisco, CA 94103",
+        "phone": "(415) 252-0888",
+        "website": "https://www.rickshawbags.com",
+        "neighborhood": "Dogpatch / SoMa",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Paxton Gate",
+        "shopGroup": "Home & Gifts",
+        "type": "Natural curiosities and garden shop",
+        "description": "An only-in-San-Francisco shop selling taxidermy, fossils, exotic plants, terrariums, and scientific oddities that has been a SoMa landmark for decades.",
+        "address": "824 Valencia St, San Francisco, CA 94110",
+        "phone": "(415) 824-1872",
+        "website": "https://paxtongate.com",
+        "neighborhood": "SoMa",
+        "notable": "Landmark"
+      },
+      {
+        "name": "826 Valencia (Pirate Supply Store)",
+        "shopGroup": "Books & Literature",
+        "type": "Nonprofit writing center with pirate supply storefront",
+        "description": "Dave Eggers's beloved nonprofit tutoring center for young writers disguises its entrance as a legitimate purveyor of pirate supplies, with the profits supporting free youth writing programs.",
+        "address": "826 Valencia St, San Francisco, CA 94110",
+        "phone": "(415) 642-5905",
+        "website": "https://826valencia.org",
+        "neighborhood": "SoMa / Mission",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Heath Ceramics",
+        "shopGroup": "Home & Gifts",
+        "type": "Ceramic tableware studio and shop",
+        "description": "The flagship studio and retail shop of Heath Ceramics on Utah Street in Potrero Hill offers the full range of the California-made ceramic tableware brand, with a manufacturing facility visible from the showroom.",
+        "address": "2900 18th St, San Francisco, CA 94110",
+        "phone": "(415) 361-5552",
+        "website": "https://www.heathceramics.com",
+        "neighborhood": "Potrero Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Dandelion Chocolate",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Bean-to-bar chocolate factory and café",
+        "description": "A bean-to-bar chocolate maker with a factory, café, and education center in the Mission / SoMa border, where visitors can see chocolate being made and sample single-origin bars.",
+        "address": "740 Valencia St, San Francisco, CA 94110",
+        "phone": "(415) 349-0942",
+        "website": "https://www.dandelionchocolate.com",
+        "neighborhood": "SoMa / Mission",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Creativity Explored",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Art nonprofit gallery and gift shop",
+        "description": "A nonprofit studio and gallery supporting artists with developmental disabilities, selling original artwork, prints, and gifts created by the resident artists in its SoMa program.",
+        "address": "3245 16th St, San Francisco, CA 94103",
+        "phone": "(415) 863-2108",
+        "website": "https://www.creativityexplored.org",
+        "neighborhood": "SoMa / Mission",
+        "notable": "Landmark"
+      },
+      {
+        "name": "SOMArts Cultural Center Shop",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Community arts center with artist merchandise",
+        "description": "SOMArts hosts rotating exhibitions and events, with artist merchandise and publications available to support the cross-cultural community arts organization's programming.",
+        "address": "934 Brannan St, San Francisco, CA 94103",
+        "phone": "(415) 863-1414",
+        "website": "https://somarts.org",
+        "neighborhood": "SoMa",
+        "notable": ""
+      },
+      {
+        "name": "MAC (Modern Appealing Clothing)",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Independent clothing boutique",
+        "description": "A respected independent fashion boutique in the Yellow Building in Dogpatch carrying an eclectic mix of avant-garde and accessible designer brands for men and women.",
+        "address": "1199 Minnesota St, San Francisco, CA 94107",
+        "phone": "(415) 863-3011",
+        "website": "https://www.modernappealingclothing.com",
+        "neighborhood": "Dogpatch",
+        "notable": "Landmark"
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "SFMOMA",
+        "venueGroup": "Museums & Cultural",
+        "type": "Modern and contemporary art museum",
+        "description": "The San Francisco Museum of Modern Art anchors the SoMa arts district with world-class holdings including the Doris and Donald Fisher Collection, and presents major rotating exhibitions year-round; the Matisse show runs through September 13, and the headline RM x SFMOMA exhibition opens October 3.",
+        "address": "151 3rd St, San Francisco, CA 94103",
+        "phone": "(415) 357-4000",
+        "website": "https://www.sfmoma.org",
+        "neighborhood": "SoMa",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Minnesota Street Project",
+        "venueGroup": "Art Galleries",
+        "type": "Multi-gallery contemporary arts campus",
+        "description": "Three converted warehouses in Dogpatch provide affordable, long-term gallery space for independent contemporary art galleries and artists, now including a new permanent Ruth Asawa gallery and Art of Contemporary Africa.",
+        "address": "1275 Minnesota St, San Francisco, CA 94107",
+        "phone": "",
+        "website": "https://minnesotastreetproject.com",
+        "neighborhood": "Dogpatch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Yerba Buena Center for the Arts (YBCA)",
+        "venueGroup": "Museums & Cultural",
+        "type": "Multidisciplinary arts center",
+        "description": "A cornerstone of the Yerba Buena arts district, YBCA presents contemporary visual art, performance, film, and community programs in galleries and a theater complex adjacent to Yerba Buena Gardens.",
+        "address": "701 Mission St, San Francisco, CA 94103",
+        "phone": "(415) 978-2700",
+        "website": "https://ybca.org",
+        "neighborhood": "SoMa / Yerba Buena",
+        "notable": "Landmark"
+      },
+      {
+        "name": "SOMArts Cultural Center",
+        "venueGroup": "Museums & Cultural",
+        "type": "Community arts center and gallery",
+        "description": "SOMArts is a cross-cultural, community-rooted arts organization presenting rotating exhibitions and public events from emerging Bay Area artists, including the 2026 Murphy and Cadogan Contemporary Art Awards Exhibition opening in October.",
+        "address": "934 Brannan St, San Francisco, CA 94103",
+        "phone": "(415) 863-1414",
+        "website": "https://somarts.org",
+        "neighborhood": "SoMa",
+        "notable": ""
+      },
+      {
+        "name": "The Midway",
+        "venueGroup": "Music Venues",
+        "type": "Live music and arts venue",
+        "description": "A large-format live music, art, and events venue in Dogpatch with multiple indoor and outdoor spaces hosting concerts, gallery shows, and private events.",
+        "address": "900 Marin St, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://www.themidwaysf.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Oracle Park",
+        "venueGroup": "Music Venues",
+        "type": "Major league baseball park and event venue",
+        "description": "Home of the San Francisco Giants, Oracle Park sits at the edge of SoMa and Mission Bay and hosts concerts and events in addition to baseball, with iconic views of McCovey Cove.",
+        "address": "24 Willie Mays Plaza, San Francisco, CA 94107",
+        "phone": "(415) 972-2000",
+        "website": "https://www.mlb.com/giants",
+        "neighborhood": "SoMa / Mission Bay",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chase Center",
+        "venueGroup": "Music Venues",
+        "type": "NBA arena and concert venue",
+        "description": "The 18,000-seat home of the Golden State Warriors in Mission Bay doubles as one of the Bay Area's premier concert and entertainment venues.",
+        "address": "1 Warriors Way, San Francisco, CA 94158",
+        "phone": "(888) 479-4667",
+        "website": "https://www.chasecenter.com",
+        "neighborhood": "Mission Bay",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Yerba Buena Gardens Festival (Outdoor Stage)",
+        "venueGroup": "Music Venues",
+        "type": "Free outdoor performing arts festival",
+        "description": "Running May through November in the open-air lawns of Yerba Buena Gardens, this nonprofit festival presents over 100 free performances of world music, dance, theater, and children's programming.",
+        "address": "Yerba Buena Gardens, Mission St. between 3rd & 4th Sts., San Francisco, CA 94103",
+        "phone": "",
+        "website": "https://ybgfestival.org",
+        "neighborhood": "SoMa / Yerba Buena",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Treasure Island Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "History museum and cultural center",
+        "description": "The Treasure Island Museum chronicles the island's history as the site of the 1939 Golden Gate International Exposition and its decades as a Navy base, with archives tours and an annual Swing Dance Benefit fundraiser.",
+        "address": "410 Palm Ave, San Francisco, CA 94130",
+        "phone": "",
+        "website": "https://www.treasureislandmuseum.org",
+        "neighborhood": "Treasure Island",
+        "notable": ""
+      },
+      {
+        "name": "Little Raven Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery",
+        "description": "An intimate SoMa gallery at 1015 Howard Street presenting contemporary works with regular exhibition openings.",
+        "address": "1015 Howard St, San Francisco, CA 94103",
+        "phone": "",
+        "website": "",
+        "neighborhood": "SoMa",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Dogpatch Boulders",
+        "venueGroup": "Martial Arts",
+        "type": "Indoor bouldering and climbing gym",
+        "description": "A well-regarded bouldering gym in Dogpatch offering routes for all skill levels from beginner to advanced, with group fitness classes and youth programming.",
+        "address": "2573 3rd St, San Francisco, CA 94107",
+        "phone": "",
+        "website": "https://www.dogpatchboulders.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "YMCA of Greater San Francisco — Dogpatch at Crane Cove",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Community recreation center",
+        "description": "A state-of-the-art YMCA facility in a renovated historic building on the Crane Cove waterfront, offering fitness, wellness, and community programs for Dogpatch, Potrero Hill, and Mission Bay residents.",
+        "address": "2550 Irwin St, San Francisco, CA 94107",
+        "phone": "",
+        "website": "https://ymcasf.org/location/dogpatch/",
+        "neighborhood": "Dogpatch",
+        "notable": "New"
+      },
+      {
+        "name": "3rd Street Boxing Gym",
+        "venueGroup": "Martial Arts",
+        "type": "Boxing and kickboxing gym",
+        "description": "A fixture of the Dogpatch neighborhood since 2003, offering boxing, kickboxing, and body conditioning classes for all levels near the T-Third Muni stop.",
+        "address": "2340 3rd St, San Francisco, CA 94107",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Fitness SF — SoMa",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service fitness club",
+        "description": "A large, airy full-service gym in SoMa with extensive cardio and weight equipment, group fitness classes, and a friendly, knowledgeable staff.",
+        "address": "1001 Brannan St, San Francisco, CA 94103",
+        "phone": "(415) 553-8000",
+        "website": "https://www.fitnesssf.com",
+        "neighborhood": "SoMa",
+        "notable": ""
+      },
+      {
+        "name": "CorePower Yoga — Mission Bay",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio chain",
+        "description": "A Mission Bay location of the popular CorePower Yoga chain, offering a full schedule of heated yoga and sculpt classes near UCSF.",
+        "address": "1200 4th St, San Francisco, CA 94158",
+        "phone": "",
+        "website": "https://www.corepoweryoga.com",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "Bay Padel Dogpatch",
+        "venueGroup": "Sports & Courts",
+        "type": "Padel tennis facility",
+        "description": "San Francisco's dedicated padel courts in Dogpatch, where the fast-growing racket sport is gaining a devoted following; also hosts special events including a Glow in the Dark party on August 29.",
+        "address": "Treasure Island, San Francisco, CA 94130",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Dogpatch / Treasure Island",
+        "notable": "New"
+      },
+      {
+        "name": "24 Hour Fitness — Potrero Hill",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "24-hour fitness club",
+        "description": "A full-service 24-hour gym in Potrero Hill with cardio equipment, free weights, and group fitness classes accessible around the clock.",
+        "address": "1455 17th St, San Francisco, CA 94107",
+        "phone": "",
+        "website": "https://www.24hourfitness.com",
+        "neighborhood": "Potrero Hill",
+        "notable": ""
+      },
+      {
+        "name": "Crane Cove Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Waterfront park with swimming beach",
+        "description": "A new waterfront park on the Dogpatch shoreline featuring a public swimming beach, restored historic crane structures, open lawn, and bay views — one of San Francisco's most significant recent park openings.",
+        "address": "2 Cesar Chavez St, San Francisco, CA 94107",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Dogpatch",
+        "notable": "New"
+      },
+      {
+        "name": "Bakar Fitness & Recreation Center (UCSF)",
+        "venueGroup": "Pools & Aquatics",
+        "type": "University recreation center",
+        "description": "UCSF's state-of-the-art fitness facility at the Mission Bay campus is open to the university community and offers an aquatic center, extensive gym equipment, and group fitness programming.",
+        "address": "1675 Owens St, San Francisco, CA 94158",
+        "phone": "(415) 476-1119",
+        "website": "https://campuslifeservices.ucsf.edu/fitnessrecreation",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "Potrero Hill Recreation Center",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood recreation center and park",
+        "description": "The hub of outdoor recreation on Potrero Hill, featuring athletic courts, children's play areas, and event lawns at 801 Arkansas Street — host of the annual Day on the Green community celebration.",
+        "address": "801 Arkansas St, San Francisco, CA 94107",
+        "phone": "(415) 695-5009",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Potrero Hill",
+        "notable": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Waymo wins California approval to expand robotaxis across 18 counties",
+      "url": "https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/",
+      "publication": "Electrek"
+    },
+    {
+      "title": "Mayor Lurie Announces Next Phase of Waymo Operations on Market Street",
+      "url": "https://www.sf.gov/news-mayor-lurie-announces-next-phase-of-waymo-operations-on-market-street-to-drive-downtowns-comeback-with-new-transportation-options-coming-to-market-street-august-26",
+      "publication": "SF.gov"
+    },
+    {
+      "title": "Waymo, Uber, Lyft to Expand on SF's Market Street",
+      "url": "https://www.kqed.org/news/12065918/waymo-uber-lyft-to-expand-on-sfs-market-street-despite-pushback-from-transit-groups",
+      "publication": "KQED"
+    },
+    {
+      "title": "Treasure Island, abandoned island of San Francisco, is finally being redeveloped",
+      "url": "https://www.washingtonpost.com/business/2026/08/21/treasure-island-abandoned-island-san-francisco-is-finally-being-redeveloped/",
+      "publication": "The Washington Post"
+    },
+    {
+      "title": "Phase One of Treasure Island Redevelopment Opens",
+      "url": "https://sfyimby.com/2026/07/phase-one-of-treasure-island-redevelopment-opens-san-francisco.html",
+      "publication": "SF YIMBY"
+    },
+    {
+      "title": "SF names housing executive to lead Treasure Island Development Authority",
+      "url": "https://localnewsmatters.org/2026/05/08/sf-names-housing-executive-to-lead-treasure-island-development-authority/",
+      "publication": "Local News Matters"
+    },
+    {
+      "title": "Treasure Island & Yerba Buena Island Project",
+      "url": "https://www.sfmta.com/projects/treasure-island-yerba-buena-island-project",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "S.F. is building housing for artists. Now it has to decide who gets it.",
+      "url": "https://www.sfchronicle.com/entertainment/article/artists-hub-market-san-francisco-22393709.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "New home for artists takes shape on Market Street",
+      "url": "https://www.mercyhousing.org/2026/07/new-home-for-artists-on-market/",
+      "publication": "Mercy Housing"
+    },
+    {
+      "title": "Official Groundbreaking For Artists Hub on Market, San Francisco",
+      "url": "https://sfyimby.com/2026/08/official-groundbreaking-for-artists-hub-on-market-san-francisco.html",
+      "publication": "SF YIMBY"
+    },
+    {
+      "title": "Photos: Potrero Hill Terrace and Annex demolished after years-long wait",
+      "url": "https://missionlocal.org/2026/07/photo-essay-potrero-hill-terrace-and-annex-demolished-after-years-long-wait/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Annex Demolished",
+      "url": "https://www.potreroview.net/annex-demolished/",
+      "publication": "Potrero View"
+    },
+    {
+      "title": "Dogpatch Snags Permanent Ruth Asawa Gallery As Minnesota Street Project Reinvents Itself",
+      "url": "https://hoodline.com/2026/03/dogpatch-snags-permanent-ruth-asawa-gallery-as-minnesota-street-project-reinvents-itself/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "Matisse's Femme au chapeau: A Modern Scandal — SFMOMA",
+      "url": "https://www.sfmoma.org/exhibition/matisse-femme-au-chapeau/",
+      "publication": "SFMOMA"
+    },
+    {
+      "title": "SFMOMA Announces 2026 Exhibitions",
+      "url": "https://www.sfmoma.org/press-release/sfmoma-announces-2026-exhibitions-including-transformed-fisher-collection-galleries-matisses-femme-au-chapeau-and-rm-x-sfmoma/",
+      "publication": "SFMOMA"
+    },
+    {
+      "title": "SOMA Nights 2026: Neighborhood Block Party + Night Market",
+      "url": "https://sf.funcheap.com/event-series/soma-nights-sf/",
+      "publication": "SF Funcheap"
+    },
+    {
+      "title": "Yerba Buena Gardens Festival 2026",
+      "url": "https://ybgfestival.org/",
+      "publication": "Yerba Buena Gardens Festival"
+    },
+    {
+      "title": "Los Calderones at Yerba Buena Gardens Festival 2026",
+      "url": "https://sf.funcheap.com/los-calderones-at-yerba-buena-gardens-festival-2026/",
+      "publication": "SF Funcheap"
+    },
+    {
+      "title": "Potrero Hill R&B Festival — 51st Year",
+      "url": "https://potrerofestival.com/",
+      "publication": "Potrero Hill Festival"
+    },
+    {
+      "title": "Treasure Island SF Events",
+      "url": "https://www.tisf.com/events",
+      "publication": "Treasure Island SF"
+    },
+    {
+      "title": "65th Annual Potrero Hill Artists' Exhibition",
+      "url": "https://www.potreroview.net/",
+      "publication": "Potrero View"
+    },
+    {
+      "title": "SPARK Social SF — Mission Bay Food Truck Park",
+      "url": "https://visitsparksocial.com/san-francisco/",
+      "publication": "SPARK Social SF"
+    },
+    {
+      "title": "JPMorgan pours $200M into Power Station, seeds new SF housing fund",
+      "url": "https://sfstandard.com/2026/08/03/jpm-sf-housing-potrero-power-station/",
+      "publication": "The San Francisco Standard"
+    },
+    {
+      "title": "Minnesota Street Project — About",
+      "url": "https://minnesotastreetproject.com/about",
+      "publication": "Minnesota Street Project"
+    },
+    {
+      "title": "InterContinental San Francisco by IHG",
+      "url": "https://www.intercontinentalsanfrancisco.com",
+      "publication": "InterContinental San Francisco"
+    },
+    {
+      "title": "Hotel VIA",
+      "url": "https://www.hotelviasf.com",
+      "publication": "Hotel VIA"
+    },
+    {
+      "title": "YMCA of Greater San Francisco — Dogpatch at Crane Cove",
+      "url": "https://ymcasf.org/location/dogpatch/",
+      "publication": "YMCA of Greater San Francisco"
+    }
+  ]
+}
