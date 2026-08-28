@@ -1,0 +1,53 @@
+{# ── City hub ──────────────────────────────────────────────────────────────
+   Generated only for cities with more than one live edition. San Francisco is
+   the only one today; every town added so far has a single edition and serves
+   it directly at /<town>/ instead.
+   Configuration lives in city-hub.11tydata.js. #}
+
+<header class="masthead home-hero" role="banner" style="padding-bottom:var(--sp-8)">
+  <div class="container">
+    <p class="home-hero__eyebrow">{{ city.name }} · Free &amp; Independent · Every Friday</p>
+    <h1 class="home-hero__title">My Town <em>News</em><br>{{ city.name }}</h1>
+    <div class="masthead__ornament" aria-hidden="true">
+      <span class="masthead__ornament-rule"></span>
+      <span class="masthead__ornament-diamond"></span>
+      <span class="masthead__ornament-rule"></span>
+    </div>
+    <p class="home-hero__desc" style="max-width:560px">{{ city.tagline }}</p>
+  </div>
+  <div class="gold-rule"></div>
+</header>
+
+<main class="page-main" id="main">
+  <div class="container">
+
+    <section id="editions" aria-labelledby="editions-heading">
+      <h2 class="section-head" id="editions-heading">
+        <span class="section-head__text">Choose your edition</span>
+      </h2>
+
+      <nav class="cluster-list" aria-label="{{ city.name }} editions">
+        {% for c in cityEditions %}
+        <a class="cluster-list__item" href="{{ c | editionPath(clusters) }}"
+           data-cluster="{{ c.slug }}"
+           aria-label="{{ c.name }}: {{ c.neighborhoods | join(', ') }}">
+          <span class="cluster-list__dot" style="background:{{ c.accent }}"></span>
+          <div>
+            <div class="cluster-list__name">{{ c.name }}</div>
+            <div class="cluster-list__hoods">{{ c.neighborhoods | join(' · ') }}</div>
+          </div>
+          <span class="cluster-list__badge" style="background:{{ c.accent }}">Live</span>
+        </a>
+        {% endfor %}
+      </nav>
+
+      <p style="margin-top:var(--sp-6);font-family:var(--font-ui);font-size:var(--text-sm);color:var(--muted)">
+        Not sure which is yours? <a href="/#neighborhoods" style="color:var(--navy);font-weight:700">Find it by ZIP code</a>
+        or <a href="/subscribe/" style="color:var(--navy);font-weight:700">subscribe to several</a>.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+{% include "partials/footer.njk" %}

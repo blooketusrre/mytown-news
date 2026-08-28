@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "san-francisco",
+    "name": "San Francisco",
+    "state": "CA",
+    "stateName": "California",
+    "live": true,
+    "launched": "2026-06-12",
+    "tagline": "Thirteen neighborhood editions, every Friday.",
+    "description": "Weekly hyperlocal news, events and local business directories for San Francisco neighborhoods.",
+    "map": { "lat": 37.7749, "lng": -122.4194 },
+    "buttondownTagPrefix": "",
+    "newsDesert": {
+      "note": "Not a news desert — SF retains several outlets. The pilot city, chosen for proximity rather than need.",
+      "paperLost": null
+    }
+  }
+]

@@ -38,6 +38,7 @@
 const fs   = require("fs");
 const path = require("path");
 const https = require("https");
+const { editionPath } = require("../lib/edition-path");
 
 // ─── CLI args ──────────────────────────────────────────────────────────────
 const args = process.argv.slice(2);
@@ -692,7 +693,11 @@ function esc(str) {
 }
 
 function buildEmailHtml(issue, cluster) {
-  const issueUrl = `${SITE_URL}/${cluster.slug}/`;
+  // Through lib/edition-path.js, the same function the site uses to build its
+  // permalinks. Hardcoding `/${cluster.slug}/` here would have kept mailing
+  // pre-Phase-2 URLs after every page moved under its city.
+  const allEditions = JSON.parse(fs.readFileSync(CLUSTERS_FILE, "utf8"));
+  const issueUrl = `${SITE_URL}${editionPath(cluster, allEditions)}`;
   const accent   = cluster.accent || "#c8943a";
   // Named neighborhoods under the edition title, for the same reason the web
   // masthead carries them: a forwarded issue lands in front of someone who

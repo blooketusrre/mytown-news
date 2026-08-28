@@ -19,6 +19,7 @@ const fs   = require("fs");
 const path = require("path");
 
 const ROOT     = path.resolve(__dirname, "..");
+const { editionPath } = require("../lib/edition-path");
 const OUT      = path.resolve(ROOT, process.argv[2] || "_site");
 const CLUSTERS = path.join(ROOT, "src", "_data", "clusters.json");
 
@@ -92,7 +93,7 @@ try {
   clusters.forEach((c) => {
     if (!c.live) return;
     liveCount++;
-    check(path.join(c.slug, "index.html"), c.name);
+    check(path.join(editionPath(c, clusters), "index.html"), c.name);
   });
 } catch (e) {
   errors.push(`Could not read or parse ${path.relative(ROOT, CLUSTERS)}: ${e.message}`);
@@ -127,10 +128,11 @@ if (fs.existsSync(homepage)) {
  * the template was "correct", and only the output was wrong.
  */
 try {
-  const editions = JSON.parse(fs.readFileSync(CLUSTERS, "utf8")).filter((c) => c.live);
+  const all      = JSON.parse(fs.readFileSync(CLUSTERS, "utf8"));
+  const editions = all.filter((c) => c.live);
   let checked = 0;
   editions.forEach((c) => {
-    const f = path.join(OUT, c.slug, "index.html");
+    const f = path.join(OUT, editionPath(c, all), "index.html");
     if (!fs.existsSync(f)) return;              // already reported as MISSING
     // Compare on decoded text: Nunjucks escapes the apostrophe in
     // "Fisherman's Wharf" to &#39;, and curly vs straight quotes differ
@@ -155,7 +157,18 @@ try {
   errors.push(`Could not check edition coverage lines: ${e.message}`);
 }
 
-const expected = STATIC_PAGES.length + liveCount;
+// Hub pages count too: a multi-edition city adds one page that is not an
+// edition and not a static page.
+const hubCount = (() => {
+  try {
+    const { citiesNeedingHub } = require("../lib/edition-path");
+    return citiesNeedingHub(
+      JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8")),
+      JSON.parse(fs.readFileSync(CLUSTERS, "utf8"))
+    ).length;
+  } catch { return 0; }
+})();
+const expected = STATIC_PAGES.length + liveCount + hubCount;
 const actual   = expected - errors.filter((e) => e.startsWith("MISSING")).length;
 
 
@@ -284,6 +297,97 @@ try {
     });
     if (!hits) console.log("  Wording: no reader-facing use of \"cluster\"");
   }
+}
+
+/* ── Phase 2: city paths, the collapse rule, and legacy redirects ─────────
+ * Editions live under their city. A city with several editions gets a hub;
+ * a city with one serves that edition directly at /<city>/, because a hub
+ * page listing a single link is a dead click and most towns will have one
+ * edition.
+ *
+ * The redirect check is the one that protects readers rather than tidiness:
+ * every issue already mailed links to a pre-migration URL, so a missing rule
+ * 404s a newsletter that is already in somebody's inbox and cannot be edited.
+ */
+try {
+  const editions = JSON.parse(fs.readFileSync(CLUSTERS, "utf8"));
+  const cities   = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
+  const toml     = fs.readFileSync(path.join(ROOT, "netlify.toml"), "utf8");
+  const { editionPath, isSingleEditionCity, citiesNeedingHub } = require("../lib/edition-path");
+
+  const live = editions.filter((e) => e.live);
+
+  live.forEach((e) => {
+    if (!e.citySlug) {
+      errors.push(`${e.slug}: no citySlug — every edition must belong to a city`);
+      return;
+    }
+    if (!cities.some((c) => c.slug === e.citySlug)) {
+      errors.push(`${e.slug}: citySlug "${e.citySlug}" is not in cities.json`);
+      return;
+    }
+
+    const rel = editionPath(e, editions);
+    if (!fs.existsSync(path.join(OUT, rel, "index.html"))) {
+      errors.push(`MISSING ${rel} — ${e.slug} has no page at its city path`);
+    }
+
+    // The pre-Phase-2 URL must still resolve, forever — but only for the
+    // editions that ever had one. A town launched after the migration never
+    // lived at /<slug>/, so demanding a redirect for it would be noise, and
+    // noise is how a real missing redirect gets waved through.
+    if (!e.legacyTopLevelUrl) return;
+    const legacy = new RegExp(`from\\s*=\\s*"/${e.slug}/\\*"`);
+    if (!legacy.test(toml)) {
+      errors.push(
+        `netlify.toml has no redirect for the old /${e.slug}/ URL — ` +
+        `every issue already mailed links there`
+      );
+    }
+  });
+
+  // Single-edition cities must not emit a redundant second level.
+  cities.filter((c) => c.live).forEach((c) => {
+    if (isSingleEditionCity(editions, c.slug)) {
+      const only = live.find((e) => e.citySlug === c.slug);
+      const redundant = path.join(OUT, c.slug, only.slug, "index.html");
+      if (fs.existsSync(redundant)) {
+        errors.push(
+          `/${c.slug}/${only.slug}/ exists but ${c.slug} has one edition — ` +
+          `it should collapse to /${c.slug}/`
+        );
+      }
+    }
+  });
+
+  // Multi-edition cities must have a hub, and it must list every edition.
+  citiesNeedingHub(cities, editions).forEach((c) => {
+    const hub = path.join(OUT, c.slug, "index.html");
+    if (!fs.existsSync(hub)) {
+      errors.push(`MISSING /${c.slug}/ — a city with several editions needs a hub page`);
+      return;
+    }
+    const html = fs.readFileSync(hub, "utf8");
+    live.filter((e) => e.citySlug === c.slug).forEach((e) => {
+      if (!html.includes(editionPath(e, editions))) {
+        errors.push(`/${c.slug}/ hub does not link to ${e.slug}`);
+      }
+    });
+  });
+
+  // Buttondown tags collide within a newsletter, not across the whole product.
+  const byCity = {};
+  live.forEach((e) => {
+    (byCity[e.citySlug] = byCity[e.citySlug] || []).push(e.slug);
+  });
+  Object.entries(byCity).forEach(([city, slugs]) => {
+    const dupes = slugs.filter((s, i) => slugs.indexOf(s) !== i);
+    if (dupes.length) errors.push(`${city}: duplicate edition slugs ${[...new Set(dupes)].join(", ")}`);
+  });
+
+  console.log(`  Cities:   ${cities.filter((c) => c.live).length} live, ${citiesNeedingHub(cities, editions).length} with hubs, ${live.length} editions placed`);
+} catch (e) {
+  errors.push(`Could not verify city structure: ${e.message}`);
 }
 
 /* ── The publish pipeline must stay survivable ────────────────────────────

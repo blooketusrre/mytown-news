@@ -44,7 +44,7 @@ eleventyExcludeFromCollections: true
 
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--sp-4);margin-bottom:var(--sp-10)">
         {% for c in clusters %}{% if c.live %}
-        <a href="/{{ c.slug }}/"
+        <a href="{{ c | editionPath(clusters) }}"
            style="display:block;background:var(--white);border:1px solid var(--rule);border-radius:var(--radius);padding:var(--sp-5);border-top:3px solid {{ c.accent }};text-decoration:none;color:inherit">
           <h3 style="font-family:var(--font-head);font-size:1rem;font-weight:700;margin-bottom:4px;color:var(--navy)">{{ c.name }}</h3>
           <p style="font-family:var(--font-ui);font-size:var(--text-xs);color:var(--muted);line-height:1.5">{{ c.neighborhoods | join(' · ') }}</p>

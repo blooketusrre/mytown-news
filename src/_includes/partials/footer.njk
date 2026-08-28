@@ -22,7 +22,7 @@
           <p class="site-footer__cluster-links-head">All Neighborhoods</p>
           {% for c in clusters %}
             {% if c.live %}
-              <a href="/{{ c.slug }}/">{{ c.name }}</a>
+              <a href="{{ c | editionPath(clusters) }}">{{ c.name }}</a>
             {% else %}
               <span style="color:rgba(255,255,255,0.2);font-size:0.625rem;">{{ c.name }} — coming soon</span>
             {% endif %}

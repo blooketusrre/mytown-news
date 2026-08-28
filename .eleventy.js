@@ -79,6 +79,13 @@ module.exports = function (eleventyConfig) {
     return "landmark";
   });
 
+  // Edition and city URLs come from lib/edition-path.js, which the pipeline
+  // also imports. One implementation means a newsletter link cannot point at a
+  // URL the site does not serve.
+  const { editionPath, cityPath } = require("./lib/edition-path");
+  eleventyConfig.addFilter("editionPath", (edition, editions) => editionPath(edition, editions));
+  eleventyConfig.addFilter("cityPath", (slug) => cityPath(slug));
+
   // Looks up one edition in clusters.json by slug. Nunjucks cannot assign a
   // variable from inside a {% for %} in a way that survives the loop, so a
   // filter is the practical way to reach the edition record from a template.
@@ -98,28 +105,19 @@ module.exports = function (eleventyConfig) {
     }, {});
   });
 
-  // ── Global data: load latest issue for each cluster ──────────────────
-  // The pipeline writes dated JSON files to src/content/<cluster>/.
-  // This picks up the newest file each build so archives accumulate naturally.
-  function latestIssue(clusterSlug) {
-    const pattern = path.join(__dirname, `src/content/${clusterSlug}/*.json`);
-    const files = globSync(pattern).sort().reverse();
-    if (!files.length) return null;
-    return require(files[0]);
-  }
-
-  eleventyConfig.addGlobalData("northWaterfront",         () => latestIssue("north-waterfront"));
-  eleventyConfig.addGlobalData("marinaPacificHeights",    () => latestIssue("marina-pacific-heights"));
-  eleventyConfig.addGlobalData("russianHillNobHill",      () => latestIssue("russian-hill-nob-hill"));
-  eleventyConfig.addGlobalData("presidioRichmond",        () => latestIssue("presidio-richmond"));
-  eleventyConfig.addGlobalData("downtownEmbarcadero",     () => latestIssue("downtown-embarcadero"));
-  eleventyConfig.addGlobalData("civicCenterHayesValley",  () => latestIssue("civic-center-hayes-valley"));
-  eleventyConfig.addGlobalData("somaMissionBay",          () => latestIssue("soma-mission-bay"));
-  eleventyConfig.addGlobalData("haightColeValley",        () => latestIssue("haight-cole-valley"));
-  eleventyConfig.addGlobalData("castroNoeValley",         () => latestIssue("castro-noe-valley"));
-  eleventyConfig.addGlobalData("missionBernalHeights",    () => latestIssue("mission-bernal-heights"));
-  eleventyConfig.addGlobalData("theSunset",               () => latestIssue("the-sunset"));
-  eleventyConfig.addGlobalData("bayviewExcelsior",        () => latestIssue("bayview-excelsior"));
+  // ── Global data ─────────────────────────────────────────────────────
+  // Twelve hardcoded per-edition globals used to live here, one line each,
+  // of which exactly one was ever read by a template — and one of those
+  // twelve pointed at "civic-center-hayes-valley", an edition that was split
+  // in two on 2026-08-21 and has not existed since. Dead code that looks like
+  // configuration is how a reader ends up on a page nobody meant to ship.
+  //
+  // src/_data/issues.js now loads every edition's latest issue in one pass,
+  // keyed by slug. The homepage's featured story reads from it by name.
+  eleventyConfig.addGlobalData("featuredIssue", () => {
+    const issues = require("./src/_data/issues.js")();
+    return issues["north-waterfront"] || null;
+  });
 
   // ── Collection: all cluster issues for archive ───────────────────────
   eleventyConfig.addCollection("allIssues", () => {

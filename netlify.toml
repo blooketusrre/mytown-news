@@ -20,6 +20,95 @@
   status = 301
   force  = true
 
+
+# ── Phase 2: editions moved under their city (2026-08-28) ──────────────────
+# Every edition used to live at /<slug>/. They now live at /<city>/<slug>/ so
+# that a second city cannot collide with the first, and so search authority
+# accumulates on one domain instead of thirteen unrelated top-level paths.
+#
+# These are permanent: shared links, the Buttondown archive and every issue
+# already mailed point at the old URLs. Removing a rule here silently 404s a
+# newsletter someone received. scripts/verify-build.js asserts one exists for
+# every live edition.
+
+[[redirects]]
+  from   = "/north-waterfront/*"
+  to     = "/san-francisco/north-waterfront/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/marina-pacific-heights/*"
+  to     = "/san-francisco/marina-pacific-heights/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/presidio-richmond/*"
+  to     = "/san-francisco/presidio-richmond/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/russian-hill-nob-hill/*"
+  to     = "/san-francisco/russian-hill-nob-hill/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/downtown-embarcadero/*"
+  to     = "/san-francisco/downtown-embarcadero/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/civic-center-tenderloin/*"
+  to     = "/san-francisco/civic-center-tenderloin/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/hayes-valley-alamo-square/*"
+  to     = "/san-francisco/hayes-valley-alamo-square/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/soma-mission-bay/*"
+  to     = "/san-francisco/soma-mission-bay/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/haight-cole-valley/*"
+  to     = "/san-francisco/haight-cole-valley/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/castro-noe-valley/*"
+  to     = "/san-francisco/castro-noe-valley/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/mission-bernal-heights/*"
+  to     = "/san-francisco/mission-bernal-heights/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/the-sunset/*"
+  to     = "/san-francisco/the-sunset/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/bayview-excelsior/*"
+  to     = "/san-francisco/bayview-excelsior/:splat"
+  status = 301
+  force  = true
+
 # 404
 [[redirects]]
   from   = "/*"
