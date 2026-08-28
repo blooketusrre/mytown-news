@@ -286,6 +286,56 @@ try {
   }
 }
 
+/* ── The publish pipeline must stay survivable ────────────────────────────
+ * On 2026-08-28 the weekly job was cancelled at GitHub's 60-minute ceiling
+ * partway through the tenth of thirteen editions. Nine finished issues were
+ * on disk; zero newsletters were sent, because delivery ran in a second pass
+ * that the job never reached.
+ *
+ * Three properties now stand between that and a repeat, and every one of
+ * them is a single line that a future edit could remove without any test
+ * noticing:
+ *
+ *   1. delivery happens per edition, not in a later phase
+ *   2. fail-fast is off, so one edition cannot cancel the others
+ *   3. the per-job timeout stays well under the 60-minute hard ceiling
+ *   4. the script measures itself against a time budget
+ */
+try {
+  const wf  = fs.readFileSync(
+    path.join(ROOT, ".github", "workflows", "weekly-publish.yml"), "utf8");
+  const gen = fs.readFileSync(
+    path.join(ROOT, "pipeline", "generate-issue.js"), "utf8");
+
+  if (!/await\s+deliverCluster\(/.test(gen)) {
+    errors.push(
+      "generate-issue.js no longer delivers inside the generation loop — " +
+      "a run that dies early would send nothing at all"
+    );
+  }
+  if (!/timeWarnings|TOTAL_BUDGET_MIN/.test(gen)) {
+    errors.push("generate-issue.js lost its time budget — the next approach to the 60-minute ceiling would be silent");
+  }
+  if (!/fail-fast:\s*false/.test(wf)) {
+    errors.push(
+      "weekly-publish.yml no longer sets fail-fast: false — one failing " +
+      "edition would cancel every other edition mid-run"
+    );
+  }
+  const timeouts = [...wf.matchAll(/timeout-minutes:\s*(\d+)/g)].map((m) => Number(m[1]));
+  if (!timeouts.length) {
+    errors.push("weekly-publish.yml has no timeout-minutes — jobs would inherit the 60-minute ceiling that caused the 2026-08-28 outage");
+  } else if (Math.max(...timeouts) > 45) {
+    errors.push(`weekly-publish.yml has a ${Math.max(...timeouts)}-minute timeout — keep jobs well under GitHub's 60-minute hard cancel`);
+  }
+  if (!/matrix:\s*\n\s*edition:/.test(wf)) {
+    errors.push("weekly-publish.yml is no longer split by edition — thirteen serial editions is what hit the timeout");
+  }
+  console.log("  Pipeline: per-edition delivery, fail-fast off, timeouts under the ceiling");
+} catch (e) {
+  errors.push(`Could not verify the publish pipeline: ${e.message}`);
+}
+
 /* ── The dry-run switch must stay connected ───────────────────────────────
  * The workflow has offered a "Dry run" checkbox since launch, but until
  * 2026-08-24 it only skipped the git commit: the generator still ran and

@@ -71,6 +71,20 @@ const DRY_RUN_DIR     = path.join(ROOT, "pipeline", "dry-run");
 function outDirFor(slug) {
   return path.join(DRY_RUN ? DRY_RUN_DIR : CONTENT_DIR, slug);
 }
+
+// ── Time budgets ───────────────────────────────────────────────────────────
+// GitHub cancels a job at 60 minutes with no warning and no notification —
+// which is exactly what happened on 2026-08-28. These budgets sit below that
+// ceiling so an approaching timeout announces itself as a red run while there
+// is still headroom, rather than as a week with no newsletter.
+//
+// Per edition rather than only overall, because with the matrix split each
+// job runs a single edition and the total is no longer the meaningful number.
+const STARTED_AT         = Date.now();
+const EDITION_BUDGET_MIN = Number(process.env.EDITION_TIME_BUDGET_MIN || 12);
+const TOTAL_BUDGET_MIN   = Number(process.env.TOTAL_TIME_BUDGET_MIN || 40);
+const timeWarnings       = [];
+
 const ANTHROPIC_KEY   = process.env.ANTHROPIC_API_KEY;
 const BUTTONDOWN_KEY  = process.env.BUTTONDOWN_API_KEY;
 const SITE_URL        = "https://mytown.news";
@@ -919,6 +933,61 @@ function previewClusterEmail(cluster, issue, tagId) {
   };
 }
 
+/** Deliver one edition — send it, or render a preview in a dry run.
+ *
+ *  Called immediately after the edition is generated, not in a later pass.
+ *  Every failure here is contained to this edition: a rejected send, a
+ *  missing tag or a malformed issue file must never stop the next
+ *  neighborhood from getting its newsletter. */
+async function deliverCluster(cluster, tagMap, counters) {
+  if (!BUTTONDOWN_KEY) {
+    if (!DRY_RUN) counters.failedEmail++;   // a live run that mails nobody has failed
+    return;
+  }
+  if (!tagMap) {
+    console.error(`  ✗ No tag map available — cannot deliver ${cluster.slug}`);
+    counters.failedEmail++;
+    return;
+  }
+
+  try {
+    const weekDate  = thisWeekDate();
+    const issueFile = path.join(outDirFor(cluster.slug), `${weekDate}.json`);
+    const issue     = JSON.parse(fs.readFileSync(issueFile, "utf8"));
+    const tagId     = tagMap[cluster.slug];
+    if (!tagId) {
+      console.warn(`  ⚠ No Buttondown tag for "${cluster.slug}" — this would mail EVERY subscriber`);
+    }
+
+    if (DRY_RUN) {
+      const p = previewClusterEmail(cluster, issue, tagId);
+      console.log(`  🧪 Would send: "${p.subject}"`);
+      console.log(`       audience: ${tagId ? `tag ${tagId}` : "⚠ ALL SUBSCRIBERS (no tag)"}`);
+      console.log(`       preview:  ${p.file} (${(p.bytes / 1024).toFixed(1)} KB)`);
+      if (tagId) counters.previewed++; else counters.failedEmail++;
+      return;
+    }
+
+    const result = await sendClusterEmail(cluster, issue, tagId);
+    if (result.id) {
+      console.log(`  ✅ Queued: "${cluster.name}" → tag: ${tagId || "ALL"} (email id: ${result.id})`);
+      counters.sent++;
+    } else if (result.code === "email_duplicate") {
+      // Buttondown refuses to send the same issue twice. That is a feature,
+      // not a fault: it is what makes re-running a partially failed job safe
+      // for subscribers. Treat it as a skip, not a failure.
+      console.log(`  ↷ Already sent this week — skipping ${cluster.slug}`);
+      counters.skipped++;
+    } else {
+      console.error(`  ✗ Send rejected for ${cluster.slug}:`, JSON.stringify(result).slice(0, 300));
+      counters.failedEmail++;
+    }
+  } catch (err) {
+    console.error(`  ✗ Delivery failed for ${cluster.slug}: ${err.message}`);
+    counters.failedEmail++;
+  }
+}
+
 // ─── Entry point ─────────────────────────────────────────────────────────────
 
 async function main() {
@@ -959,113 +1028,103 @@ async function main() {
   console.log(`Week of: ${thisWeekDate()}`);
   console.log(`Clusters to generate: ${targets.map((c) => c.slug).join(", ")}`);
 
+  const counters = { sent: 0, skipped: 0, failedEmail: 0, previewed: 0 };
   let failed = 0;
-  let emailsSent = 0;
-  let emailsSkipped = 0;
-  let emailsFailed = 0;
-  let emailsPreviewed = 0;
   const generated = [];
 
+  // ── Buttondown tag map, fetched once ─────────────────────────────────────
+  // Deliberately outside the loop (one request, not thirteen) but wrapped,
+  // because it used to be awaited bare. When this request failed it rejected
+  // out of main() and killed the whole run before a single email was sent —
+  // a network blip on one GET could silence every edition.
+  let tagMap = null;
+  if (BUTTONDOWN_KEY) {
+    try {
+      tagMap = await fetchButtondownTagIds();
+      const names = Object.keys(tagMap);
+      console.log(`\nℹ Fetched ${names.length} Buttondown tag(s): ${names.join(", ") || "(none)"}`);
+    } catch (err) {
+      console.error(`\n✗ Could not fetch Buttondown tags: ${err.message}`);
+      console.error("  Editions will still generate, but nothing can be mailed without them.");
+      tagMap = null;
+    }
+  } else {
+    console.log(DRY_RUN
+      ? "\n⚠ BUTTONDOWN_API_KEY not set — audience tags cannot be checked in this rehearsal."
+      : "\n⚠ BUTTONDOWN_API_KEY not set — no email will be sent.");
+  }
+
+  // ── Generate and deliver, one edition at a time ──────────────────────────
+  // Delivery used to happen in a second loop after every edition had been
+  // generated. On 2026-08-28 the job hit the runner's 60-minute ceiling
+  // partway through edition ten: nine finished issues sat on disk and not one
+  // of them was mailed, because the send phase had not been reached yet.
+  //
+  // Shipping each edition as soon as it exists means a run that dies early
+  // costs the editions that did not finish, not the ones that did.
   for (const cluster of targets) {
+    const t0 = Date.now();
     try {
       await generateCluster(cluster);
       generated.push(cluster);
     } catch (err) {
       console.error(`\n✗ Failed for ${cluster.slug}: ${err.message}`);
       failed++;
+      continue;                       // nothing to deliver
+    }
+
+    await deliverCluster(cluster, tagMap, counters);
+
+    const mins = (Date.now() - t0) / 60000;
+    console.log(`  ⏱ ${cluster.slug}: ${mins.toFixed(1)} min`);
+    if (mins > EDITION_BUDGET_MIN) {
+      timeWarnings.push(
+        `${cluster.slug} took ${mins.toFixed(1)} min (budget ${EDITION_BUDGET_MIN})`
+      );
     }
   }
 
   if (failed > 0) {
-    console.warn(`\n⚠ ${failed} cluster(s) had errors — see above. Continuing to commit what was generated.`);
+    console.warn(`\n⚠ ${failed} edition(s) had errors — see above. Continuing with what was generated.`);
+  }
+  console.log(`\n✅ ${generated.length} edition(s) generated successfully.`);
+
+  if (DRY_RUN) {
+    console.log(`\n🧪 ${counters.previewed} newsletter(s) rendered and verified, ${counters.failedEmail} would have misfired.`);
+    console.log(`   Nothing was sent. Open the .email.html files to read what would have gone out.`);
+  } else if (BUTTONDOWN_KEY) {
+    const skipNote = counters.skipped ? `, ${counters.skipped} already sent` : "";
+    console.log(`\n📧 ${counters.sent} sent${skipNote}, ${counters.failedEmail} failed.`);
   }
 
-  const successCount = generated.length;
-  console.log(`\n✅ ${successCount} cluster(s) generated successfully.`);
-
-  // ── Send newsletters via Buttondown ──────────────────────────────────────
-  if (BUTTONDOWN_KEY) {
-    console.log(DRY_RUN
-      ? "\n📧 Rendering newsletters (dry run — no send)…"
-      : "\n📧 Sending newsletters via Buttondown…");
-
-    // Fetch tag name → ID map once (Buttondown filters require IDs, not names).
-    // This GET runs in a dry run too: an edition whose tag has gone missing
-    // would otherwise mail every subscriber in the account, and that is
-    // precisely the class of mistake a rehearsal exists to catch.
-    const tagMap = await fetchButtondownTagIds();
-    const tagCount = Object.keys(tagMap).length;
-    console.log(`  ℹ Fetched ${tagCount} Buttondown tag(s):`, Object.keys(tagMap).join(", ") || "(none)");
-
-    for (const cluster of generated) {
-      try {
-        const weekDate  = thisWeekDate();
-        const issueFile = path.join(outDirFor(cluster.slug), `${weekDate}.json`);
-        const issue     = JSON.parse(fs.readFileSync(issueFile, "utf8"));
-        const tagId     = tagMap[cluster.slug];
-        if (!tagId) {
-          console.warn(`  ⚠ No Buttondown tag found for slug "${cluster.slug}" — email would send to ALL subscribers`);
-        }
-
-        if (DRY_RUN) {
-          const p = previewClusterEmail(cluster, issue, tagId);
-          console.log(`  🧪 Would send: "${p.subject}"`);
-          console.log(`       audience: ${tagId ? `tag ${tagId}` : "⚠ ALL SUBSCRIBERS (no tag)"}`);
-          console.log(`       preview:  ${p.file} (${(p.bytes / 1024).toFixed(1)} KB)`);
-          if (!tagId) emailsFailed++;   // a rehearsal that would misfire is a failed rehearsal
-          else emailsPreviewed++;
-          continue;
-        }
-
-        const result    = await sendClusterEmail(cluster, issue, tagId);
-        if (result.id) {
-          console.log(`  ✅ Queued: "${cluster.name}" → tag: ${tagId || "ALL"} (email id: ${result.id})`);
-          emailsSent++;
-        } else if (result.code === "email_duplicate") {
-          // Buttondown refuses to send the same issue twice. That is a feature,
-          // not a fault: it is what makes re-running a partially failed job safe
-          // for subscribers. Treat it the same way we treat "✓ Already exists"
-          // on the content side — a skip, not a failure.
-          console.log(`  ↷ Already sent this week — skipping ${cluster.slug}`);
-          emailsSkipped++;
-        } else {
-          console.error(`  ✗ Send rejected for ${cluster.slug}:`, JSON.stringify(result).slice(0, 300));
-          emailsFailed++;
-        }
-      } catch (err) {
-        console.error(`  ✗ Email failed for ${cluster.slug}: ${err.message}`);
-        emailsFailed++;
-      }
-    }
-    if (DRY_RUN) {
-      console.log(`\n🧪 ${emailsPreviewed} newsletter(s) rendered and verified, ${emailsFailed} would have misfired.`);
-      console.log(`   Nothing was sent. Open the .email.html files to read what would have gone out.`);
-    } else {
-      const skipNote = emailsSkipped ? `, ${emailsSkipped} already sent` : "";
-      console.log(`\n📧 ${emailsSent} sent${skipNote}, ${emailsFailed} failed.`);
-    }
-  } else if (DRY_RUN) {
-    // Without a key the tag lookup cannot run, so the audience half of the
-    // rehearsal is untested. Say so plainly rather than reporting a clean run.
-    console.warn("\n⚠ BUTTONDOWN_API_KEY not set — content was generated, but");
-    console.warn("  the audience tags could not be checked. This rehearsal only");
-    console.warn("  proves the generator works, not that the right people would");
-    console.warn("  receive it. Re-run with the key for a full rehearsal.");
-  } else {
-    console.log("\n⚠ BUTTONDOWN_API_KEY not set — skipping email send.");
-    emailsFailed = generated.length;
+  // ── Time budget ──────────────────────────────────────────────────────────
+  // The 60-minute cancellation was preceded by weeks of visible warning that
+  // nobody was reading: 36 min, then 49, 51, 52, then over the cliff. A run
+  // that quietly grows toward its own ceiling should say so while there is
+  // still room to act, so exceeding the budget fails the run outright —
+  // after delivery, so the failure costs a red badge and not a newsletter.
+  const totalMin = (Date.now() - STARTED_AT) / 60000;
+  console.log(`\n⏱ Total: ${totalMin.toFixed(1)} min (budget ${TOTAL_BUDGET_MIN} min)`);
+  if (totalMin > TOTAL_BUDGET_MIN) {
+    timeWarnings.push(`whole run took ${totalMin.toFixed(1)} min (budget ${TOTAL_BUDGET_MIN})`);
   }
 
-  // Fail the workflow if anything went wrong. Previously a run could generate
-  // no content and deliver no email while still reporting success — the whole
-  // point of a scheduled job is that silence means it worked.
-  if (failed > 0 || emailsFailed > 0) {
+  if (timeWarnings.length) {
+    console.error("\n⏰ TIME BUDGET EXCEEDED");
+    timeWarnings.forEach((w) => console.error(`   • ${w}`));
+    console.error("   This run finished, but it is approaching the runner's hard");
+    console.error("   timeout. Raise the budget deliberately or make generation");
+    console.error("   faster — do not let the next run discover the ceiling.");
+    process.exitCode = 1;
+  }
+
+  if (failed > 0 || counters.failedEmail > 0) {
     console.error(
       `\n❌ Run incomplete: ${failed} edition(s) failed to generate, ` +
-      `${emailsFailed} email(s) ${DRY_RUN ? "would have failed to send" : "failed to send"}.`
+      `${counters.failedEmail} email(s) ${DRY_RUN ? "would have failed to send" : "failed to send"}.`
     );
     process.exitCode = 1;
-  } else if (DRY_RUN) {
+  } else if (DRY_RUN && !timeWarnings.length) {
     console.log(`\n✅ Rehearsal clean. src/content/ was not touched — a live run is what publishes.`);
   }
 }
