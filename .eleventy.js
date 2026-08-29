@@ -86,6 +86,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("editionPath", (edition, editions) => editionPath(edition, editions));
   eleventyConfig.addFilter("cityPath", (slug) => cityPath(slug));
 
+  // Events come back from research in the order sources were read, which on
+  // the page looked arbitrary. Sorted here rather than only in the pipeline so
+  // that issues published before the fix also read correctly.
+  const { sortEvents } = require("./lib/event-order");
+  eleventyConfig.addFilter("sortEvents", (events, weekOf) => sortEvents(events, weekOf));
+
   // Looks up one edition in clusters.json by slug. Nunjucks cannot assign a
   // variable from inside a {% for %} in a way that survives the loop, so a
   // filter is the practical way to reach the edition record from a template.

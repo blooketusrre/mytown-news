@@ -299,6 +299,45 @@ try {
   }
 }
 
+/* ── Events must be ordered, and the nav must track the right section ─────
+ * Both were reader-visible bugs found by looking at the page rather than by
+ * any test: events appeared in the order research happened to produce them,
+ * and clicking a nav item highlighted the previous section because the
+ * scrollspy band began above where anchor jumps actually land.
+ *
+ * Neither has a natural output assertion — sorted output is tautological
+ * once the sort is applied, and scroll position does not exist at build
+ * time — so what is checked is that the fixes are still wired in.
+ */
+try {
+  const layout = fs.readFileSync(
+    path.join(ROOT, "src", "_includes", "cluster-layout.njk"), "utf8");
+  const base = fs.readFileSync(
+    path.join(ROOT, "src", "_includes", "base.njk"), "utf8");
+  const gen = fs.readFileSync(
+    path.join(ROOT, "pipeline", "generate-issue.js"), "utf8");
+
+  if (!/issue\.events\s*\|\s*sortEvents/.test(layout)) {
+    errors.push("cluster-layout.njk renders events unsorted — they arrive in research order, not date order");
+  }
+  if (!/sortEvents\(issue\.events/.test(gen)) {
+    errors.push("the newsletter renders events unsorted — it would disagree with the web page");
+  }
+  if (/new IntersectionObserver/.test(base)) {
+    errors.push(
+      "base.njk is back on IntersectionObserver for scrollspy — the band " +
+      "started above where anchor jumps land, so every click highlighted " +
+      "the previous section"
+    );
+  }
+  if (!/navH \+ 28/.test(base)) {
+    errors.push("scrollspy reading line no longer matches scroll-padding-top (--nav-h + 28px)");
+  }
+  console.log("  Reading:  events sorted in both renderers, scrollspy measures position");
+} catch (e) {
+  errors.push(`Could not verify reading-experience fixes: ${e.message}`);
+}
+
 /* ── Phase 2: city paths, the collapse rule, and legacy redirects ─────────
  * Editions live under their city. A city with several editions gets a hub;
  * a city with one serves that edition directly at /<city>/, because a hub

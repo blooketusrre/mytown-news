@@ -39,6 +39,7 @@ const fs   = require("fs");
 const path = require("path");
 const https = require("https");
 const { editionPath } = require("../lib/edition-path");
+const { sortEvents } = require("../lib/event-order");
 
 // ─── CLI args ──────────────────────────────────────────────────────────────
 const args = process.argv.slice(2);
@@ -312,6 +313,7 @@ CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
   "events": [
     {
       "title": "...",
+      "startDate": "YYYY-MM-DD",  // omit only for genuinely ongoing events
       "date": "Day, Month D" or "Ongoing" or "Through Month D",
       "time": "H:MM AM/PM" or "Various times" or "",
       "location": "Venue name, address or neighborhood",
@@ -759,7 +761,7 @@ function buildEmailHtml(issue, cluster) {
 
   // Emoji rather than the SVG icons used on the web — inline SVG support is
   // unreliable across email clients, and emoji degrade gracefully everywhere.
-  const eventsHtml = (issue.events || []).slice(0, 5).map(ev => `
+  const eventsHtml = sortEvents(issue.events, issue.weekOf).slice(0, 5).map(ev => `
     <tr><td style="padding:12px 0;border-bottom:1px solid #d8d2c8;">
       ${ev.date ? `<p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${accent};">${esc(ev.date)}</p>` : ""}
       <p style="margin:0 0 3px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${esc(ev.title)}</p>

@@ -127,42 +127,57 @@
       var navH = syncNavHeight();
       window.addEventListener('resize', function () { navH = syncNavHeight(); }, { passive: true });
 
-      if (!('IntersectionObserver' in window)) return;
+      var lastId = sections[sections.length - 1].id;
 
-      var onView    = {};
-      var lastId    = sections[sections.length - 1].id;
-      var atBottom  = false;
+      /* Which section is currently under the reading line?
+       *
+       * This used to ask an IntersectionObserver for the topmost section
+       * crossing a band, and it highlighted the *previous* item on every
+       * click: anchor jumps land a section 28px below the top of the viewport
+       * (scroll-padding-top is --nav-h + 28px) while the band began at
+       * --nav-h + 4px, so the outgoing section still had 24px inside the band
+       * and, being earlier in document order, won.
+       *
+       * Measuring position directly removes the class of bug rather than
+       * retuning the margin. The active section is simply the last one whose
+       * top has passed the reading line — no bands, no ordering subtleties,
+       * and it agrees with where the browser actually scrolled to.
+       */
+      function currentId() {
+        // Nothing highlighted at the very top of the page.
+        if (window.scrollY < 8) return null;
 
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) { onView[e.target.id] = e.isIntersecting; });
-        if (atBottom) return;
-        // Highlight the topmost section currently crossing the band
-        for (var i = 0; i < sections.length; i++) {
-          if (onView[sections[i].id]) { setActive(sections[i].id); return; }
-        }
-      }, {
-        // Band starts just below the sticky nav, ends 55% up from the bottom
-        rootMargin: '-' + (navH + 4) + 'px 0px -55% 0px',
-        threshold: 0,
-      });
-
-      sections.forEach(function (s) { observer.observe(s); });
-
-      window.addEventListener('scroll', function () {
-        // Nothing selected at the very top of the page
-        if (window.scrollY < 8) { atBottom = false; setActive(null); return; }
-
-        // The final section is often too short to reach the detection band —
+        // The last section is often too short to reach the reading line, so
         // once the page bottoms out, keep it lit rather than falling back.
         var remaining = document.documentElement.scrollHeight
                       - window.scrollY - window.innerHeight;
-        if (remaining < 120) {
-          atBottom = true;
-          setActive(lastId);
-        } else if (atBottom) {
-          atBottom = false;
+        if (remaining < 120) return lastId;
+
+        // Matches scroll-padding-top, so the section you jumped to is the one
+        // that lights up. +2px of slack absorbs sub-pixel rounding.
+        var line = navH + 28 + 2;
+
+        var id = null;
+        for (var i = 0; i < sections.length; i++) {
+          if (sections[i].getBoundingClientRect().top <= line) id = sections[i].id;
+          else break;                       // sections are in document order
         }
-      }, { passive: true });
+        return id;
+      }
+
+      var ticking = false;
+      function onScroll() {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(function () {
+          setActive(currentId());
+          ticking = false;
+        });
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll, { passive: true });
+      onScroll();                            // reflect the position on load
     })();
   </script>
 

@@ -162,7 +162,7 @@ layout: base.njk
         </div>
 
         <div class="events-grid">
-          {% for ev in issue.events %}
+          {% for ev in issue.events | sortEvents(issue.weekOf) %}
           <div class="event-card">
             {% if ev.ongoing or ev.date == "Ongoing" %}
               <span class="event-card__badge">Ongoing</span>
