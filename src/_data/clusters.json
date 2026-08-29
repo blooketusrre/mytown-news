@@ -572,5 +572,54 @@
       "https://www.sfrecpark.org",
       "https://sfpl.org"
     ]
+  },
+  {
+    "slug": "heber-city",
+    "name": "Heber City",
+    "city": "Heber City",
+    "citySlug": "heber-city",
+    "live": true,
+    "neighborhoods": [
+      "Heber City",
+      "Midway",
+      "Charleston",
+      "Daniel",
+      "Wallsburg"
+    ],
+    "description": "The Heber Valley: a ranching town turned mountain gateway, between Deer Creek Reservoir and the Wasatch Back.",
+    "zipCodes": [
+      "84032",
+      "84049",
+      "84082"
+    ],
+    "accent": "#2f6b4f",
+    "accentOnDark": "#7fc9a3",
+    "accentBtn": "#2f6b4f",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 40.5069,
+      "lng": -111.4133,
+      "short": "Heber City \u00b7 Midway \u00b7 Charleston"
+    },
+    "primarySearchTerms": [
+      "Heber City Utah",
+      "Wasatch County Utah",
+      "Midway Utah",
+      "Heber Valley"
+    ],
+    "sourceHints": [
+      "https://www.parkrecord.com/category/news/heber-city/",
+      "https://www.parkrecord.com/category/news/wasatch-county/",
+      "https://www.kpcw.org",
+      "https://www.heberut.gov/agendacenter",
+      "https://www.heberut.gov/151/Police",
+      "https://hebercityut.portal.civicclerk.com/",
+      "https://www.wasatch.utah.gov",
+      "https://wasatch.edu",
+      "https://wasatch.edu/schools/",
+      "https://www.gohebervalley.com",
+      "https://www.hebervalleyentertainment.com/movie-showtimes",
+      "https://www.utah.gov/pmn/index.html"
+    ]
   }
 ]

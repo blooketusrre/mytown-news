@@ -213,12 +213,45 @@ somewhere that looks active. Do not include them in the directory, and do not
 present them as operating in a story or event.`;
   }
 
+  // Where to look. These have sat unused in clusters.json since launch — the
+  // prompt never read them, so every edition was researched from a blank
+  // slate. Harmless in San Francisco, where a general search finds the SF
+  // Standard and SFist unprompted. Not harmless in a town whose newspaper
+  // closed: there, naming the council agenda portal, the school district and
+  // the theater listings is the difference between an issue and an empty page.
+  let sourceBlock = "";
+  const hints = cluster.sourceHints || [];
+  const terms = cluster.primarySearchTerms || [];
+  if (hints.length || terms.length) {
+    sourceBlock = `
+
+WHERE TO LOOK:
+${terms.length ? `
+Search terms that identify this area:
+${terms.map((t) => `  - ${t}`).join("\n")}` : ""}
+${hints.length ? `
+Sources worth checking directly. Not an exhaustive list and not a
+restriction — search freely — but these are the primary records for this
+area and are often the only place a story exists at all:
+${hints.map((h) => `  - ${h}`).join("\n")}` : ""}
+
+In a town that has lost its newspaper there may be no article to summarise.
+The story is then in the primary record itself: what the council actually
+voted on, what the police blotter shows, what the school board approved,
+what is opening or closing on Main Street. Report from the document. Say
+plainly where it came from and when the meeting or filing happened.
+
+Never pad. Three real stories are a good week; one real story and two
+inventions is a dead publication. If a week is genuinely quiet, say so in
+fewer stories rather than manufacturing volume.`;
+  }
+
   return `You are the research editor for My Town News, a hyperlocal weekly newspaper covering San Francisco neighborhoods.
 
 Today is ${today}. You are preparing the issue for the week of ${thisWeekDate()}.
 
 Your edition: ${cluster.name}
-Neighborhoods: ${cluster.neighborhoods.join(", ")}${lastWeekBlock}${closedBlock}
+Neighborhoods: ${cluster.neighborhoods.join(", ")}${sourceBlock}${lastWeekBlock}${closedBlock}
 ${VOCABULARY_RULE}
 
 DIRECTORY VERIFICATION RULE — NON-NEGOTIABLE:
