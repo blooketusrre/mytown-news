@@ -320,6 +320,19 @@ try {
   if (!/issue\.events\s*\|\s*sortEvents/.test(layout)) {
     errors.push("cluster-layout.njk renders events unsorted — they arrive in research order, not date order");
   }
+  // The salvage retry must declare the web_search tool. The conversation it
+  // continues contains server_tool_use blocks, and the API rejects a request
+  // whose history references a tool the request does not define — so calling
+  // it without tools made every salvage fail on a malformed request.
+  if (!/callClaude\(systemPrompt, salvageMessages, \[webSearchTool\]\)/.test(gen)) {
+    errors.push(
+      "the JSON salvage retry no longer declares webSearchTool — the API " +
+      "rejects a continuation whose history references an undeclared tool"
+    );
+  }
+  if (/throw err;\s*\n\s*\}\s*\n\s*\}/.test(gen) && !/Salvage attempt also failed/.test(gen)) {
+    errors.push("the salvage failure is swallowed again — err2 must be reported or the real cause stays hidden");
+  }
   if (!/sortEvents\(issue\.events/.test(gen)) {
     errors.push("the newsletter renders events unsorted — it would disagree with the web page");
   }

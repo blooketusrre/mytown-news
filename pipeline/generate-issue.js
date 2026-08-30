@@ -659,13 +659,31 @@ async function generateCluster(clusterConfig) {
     ]);
 
     try {
-      const salvage = await callClaude(systemPrompt, salvageMessages); // no tools
+      // The tool must still be declared. This conversation contains
+      // server_tool_use and web_search_tool_result blocks, and the API
+      // rejects a request whose history references a tool the request does
+      // not define. Calling this with no tools — as it did until 2026-08-29 —
+      // made every salvage attempt fail on a malformed request rather than on
+      // anything to do with the content. The instruction not to search again
+      // is in the message; declaring the tool does not oblige it to be used.
+      const salvage = await callClaude(systemPrompt, salvageMessages, [webSearchTool]);
       issue = extractJson(salvage);
       console.log("  ✅ Recovered JSON on follow-up turn.");
     } catch (err2) {
-      console.error(`  ✗ JSON parse error (stop_reason: ${response.stop_reason || "unknown"}). Raw response excerpt:`);
-      const excerpt = JSON.stringify(response.content || response).slice(0, 500);
-      console.error("  ", excerpt);
+      // Report why the salvage failed, not only why the first attempt did.
+      // This used to `throw err` and never print err2, so a broken salvage
+      // was indistinguishable from a model that simply would not answer —
+      // which is precisely the confusion that hid the missing-tool bug.
+      console.error(`  ✗ First attempt: no JSON (stop_reason: ${response.stop_reason || "unknown"})`);
+      console.error(`  ✗ Salvage attempt also failed: ${err2.message}`);
+      const blocks = (response.content || []).map((b) => b.type);
+      console.error(`     first-attempt block types: ${blocks.join(", ") || "(none)"}`);
+      const texts = (response.content || []).filter((b) => b.type === "text");
+      if (texts.length) {
+        console.error(`     last text block began: ${String(texts[texts.length - 1].text).slice(0, 300)}`);
+      } else {
+        console.error("     the model returned no text block at all — it ended its turn after searching");
+      }
       throw err;
     }
   }
