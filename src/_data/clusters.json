@@ -486,7 +486,47 @@
     "neighborhoods": [
       "Inner Sunset",
       "Outer Sunset",
-      "Parkside",
+      "Parkside"
+    ],
+    "description": "Fog, surf, N Judah streetcars and Irving Street restaurants, from Golden Gate Park down to Sloat.",
+    "zipCodes": [
+      "94122",
+      "94116"
+    ],
+    "accent": "#3d6b8f",
+    "accentOnDark": "#6c9cc0",
+    "accentBtn": "#3d6b8f",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 37.754,
+      "lng": -122.494,
+      "short": "Inner Sunset \u00b7 Outer Sunset \u00b7 Parkside"
+    },
+    "primarySearchTerms": [
+      "Inner Sunset San Francisco",
+      "Outer Sunset San Francisco",
+      "Irving Street San Francisco",
+      "Ocean Beach San Francisco",
+      "Taraval Street San Francisco",
+      "Parkside San Francisco"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/sunset",
+      "https://www.sfrecpark.org",
+      "https://sfpl.org",
+      "https://www.innersunsetsf.org",
+      "https://sf-pops.com"
+    ]
+  },
+  {
+    "slug": "west-portal-lakeside",
+    "name": "West Portal & Lakeside",
+    "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "live": true,
+    "neighborhoods": [
       "West Portal",
       "Forest Hill",
       "St. Francis Wood",
@@ -495,39 +535,39 @@
       "Lakeshore",
       "Parkmerced"
     ],
-    "description": "Fog, surf, N Judah streetcars, and Irving Street restaurants stretching from Golden Gate Park to Lake Merced.",
+    "description": "Village shopfronts on West Portal Avenue, the wooded streets above them, and the campus-and-lake edge of the city at Lake Merced.",
     "zipCodes": [
-      "94116",
-      "94122",
       "94127",
       "94132"
     ],
-    "accent": "#3d6b8f",
-    "accentOnDark": "#6c9cc0",
-    "accentBtn": "#3d6b8f",
+    "accent": "#7a5c3e",
+    "accentOnDark": "#c2a37e",
+    "accentBtn": "#7a5c3e",
     "accentInk": "#ffffff",
     "map": {
-      "lat": 37.743,
-      "lng": -122.482,
-      "short": "Inner &amp; Outer Sunset \u00b7 Parkside \u00b7 West Portal \u00b7 Stonestown \u00b7 Parkmerced"
+      "lat": 37.729,
+      "lng": -122.47,
+      "short": "West Portal \u00b7 Forest Hill \u00b7 Stonestown \u00b7 Parkmerced"
     },
     "primarySearchTerms": [
-      "Inner Sunset San Francisco",
-      "Outer Sunset San Francisco",
-      "Irving Street San Francisco",
       "West Portal San Francisco",
-      "Ocean Beach San Francisco",
-      "Parkmerced San Francisco",
+      "Forest Hill San Francisco",
+      "St. Francis Wood San Francisco",
+      "Miraloma Park San Francisco",
       "Stonestown Galleria",
-      "San Francisco State University news"
+      "Parkmerced San Francisco",
+      "San Francisco State University news",
+      "Lake Merced San Francisco"
     ],
     "sourceHints": [
       "https://www.sfstandard.com",
       "https://sfist.com",
-      "https://hoodline.com/neighborhoods/sunset",
       "https://www.sfrecpark.org",
       "https://sfpl.org",
-      "https://outtersunset.com"
+      "https://www.westportalmerchants.com",
+      "https://goldengatexpress.org",
+      "https://www.sfsu.edu/news",
+      "https://sfplanning.org/public-hearings"
     ]
   },
   {
