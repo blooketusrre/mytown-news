@@ -346,7 +346,33 @@ try {
   if (!/navH \+ 28/.test(base)) {
     errors.push("scrollspy reading line no longer matches scroll-padding-top (--nav-h + 28px)");
   }
-  console.log("  Reading:  events sorted in both renderers, scrollspy measures position");
+  // "the Neighborhood" hardcoded into a heading is the same failure as
+  // "cluster": copy written for San Francisco, shipped to a five-town valley.
+  if (/More from the Neighborhood|Ongoing in the Neighborhood/.test(layout)) {
+    errors.push('cluster-layout.njk hardcodes "the Neighborhood" in a heading — it must come from the city\'s areaNoun');
+  }
+  if (/More from the Neighborhood/.test(gen)) {
+    errors.push('the newsletter hardcodes "More from the Neighborhood" — it must match the city\'s areaNoun');
+  }
+  try {
+    const cities = JSON.parse(fs.readFileSync(
+      path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
+    const gaps = cities.filter((c) => c.live && !(c.areaNoun && c.areaNounPlural));
+    if (gaps.length) {
+      errors.push(`cities missing areaNoun/areaNounPlural: ${gaps.map((c) => c.slug).join(", ")}`);
+    }
+  } catch (e) {
+    errors.push(`Could not check city vocabulary: ${e.message}`);
+  }
+  // The subject line duplicated the city for every town whose edition is the
+  // city — "My Town News — Heber City Heber City".
+  if (/My Town News — \$\{cluster\.name\} \$\{cluster\.city/.test(gen)) {
+    errors.push("emailSubject concatenates name and city unconditionally — single-edition towns get their name twice");
+  }
+  if (!/function tidyBriefs\(/.test(gen)) {
+    errors.push("tidyBriefs is gone — briefs could repeat a top story or arrive undated with nothing to catch it");
+  }
+  console.log("  Reading:  events sorted, scrollspy measured, headings city-aware, briefs tidied");
 } catch (e) {
   errors.push(`Could not verify reading-experience fixes: ${e.message}`);
 }

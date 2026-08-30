@@ -82,9 +82,10 @@ module.exports = function (eleventyConfig) {
   // Edition and city URLs come from lib/edition-path.js, which the pipeline
   // also imports. One implementation means a newsletter link cannot point at a
   // URL the site does not serve.
-  const { editionPath, cityPath } = require("./lib/edition-path");
+  const { editionPath, cityPath, editionsInCity } = require("./lib/edition-path");
   eleventyConfig.addFilter("editionPath", (edition, editions) => editionPath(edition, editions));
   eleventyConfig.addFilter("cityPath", (slug) => cityPath(slug));
+  eleventyConfig.addFilter("editionsInCity", (editions, citySlug) => editionsInCity(editions, citySlug));
 
   // Events come back from research in the order sources were read, which on
   // the page looked arbitrary. Sorted here rather than only in the pipeline so

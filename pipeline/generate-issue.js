@@ -409,10 +409,32 @@ DIRECTORY GROUPING GUIDANCE:
 - venueGroup (gyms): "Yoga & Pilates", "Gyms & CrossFit", "Sports & Courts", "Cycling & Rowing", "Martial Arts", "Pools & Aquatics", "Parks & Outdoor Recreation"
 - notable field: "Landmark" for long-established institutions, "New" for opened in the last year, or "" for standard listings
 
+BRIEFS (the moreNews section):
+
+This section carries the smaller items: a business opening or closing, a
+council designation, a project reaching completion, a grant awarded, a road
+closure. In a place that has lost its newspaper these will often come from
+primary sources rather than news outlets — a city or county website, a
+meeting agenda, a school district notice, a chamber newsletter. That is
+legitimate and expected. Reporting from the record is the job here.
+
+Two requirements, both about honesty rather than recency:
+
+1. STATE WHEN. Every brief must say plainly when the thing happened or will
+   happen — "opened in May", "approved at the 12 August council meeting",
+   "scheduled for completion this month". A reader must never have to guess
+   whether an item is from this week or last spring. An older item is
+   welcome; an undated one is not.
+
+2. DO NOT INVENT AND DO NOT REPEAT. A brief must not restate a story
+   already in topStories, and must not be padding assembled to reach a
+   count. Returning one brief, or none, is a correct answer in a quiet week.
+   An empty section is honest; a manufactured one is not.
+
 QUANTITY TARGETS:
 - topStories: 3 (minimum 1 if it's a slow news week — never fabricate to fill)
 - events: 4–8 (upcoming or ongoing within ~3 weeks)
-- moreNews: 2–4 briefs
+- moreNews: 0–4 briefs (see BRIEFS below — fewer is fine, invented is not)
 - restaurants: 15–30 (comprehensive coverage — every notable café, restaurant, bar, and bakery in these neighborhoods)
 - hotels: 5–15 (all hotels and inns in these neighborhoods)
 - shops: 10–20 (notable independent shops, bookstores, specialty stores, services)
@@ -528,6 +550,50 @@ function storyKeys(story) {
     keys.push("h:" + String(story.headline).toLowerCase().replace(/[^a-z0-9 ]+/g, "").replace(/\s+/g, " ").trim());
   }
   return keys;
+}
+
+/**
+ * Drop briefs that repeat a top story, and flag briefs that never say when.
+ *
+ * The prompt asks for both, and the prompt is a request. This is the pass
+ * that holds — the same shape as the closed-venue strip and the lead
+ * rotation, for the same reason: the 4 September Heber rehearsal produced
+ * four solid stories and then three briefs assembled to fill the section.
+ *
+ * Undated items are reported, not removed. An older item is welcome — in a
+ * town with no paper, a restaurant that opened in May may genuinely be news
+ * to a reader — but it has to say so. Removing it would throw away exactly
+ * the primary-source reporting this publication exists to do.
+ */
+function tidyBriefs(issue) {
+  const briefs = issue.moreNews;
+  if (!Array.isArray(briefs) || !briefs.length) return { dropped: [], undated: [] };
+
+  const topKeys = new Set();
+  (issue.topStories || []).forEach((st) => storyKeys(st).forEach((k) => topKeys.add(k)));
+
+  const dropped = [];
+  const undated = [];
+  const kept = [];
+
+  // Any of: a month name, an ISO date, "this week/month", "last spring", a
+  // year, or an ordinal date. Deliberately generous — the check is for
+  // "does this locate itself in time at all", not for a date format.
+  const DATED = /\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b|\b20\d{2}\b|\b\d{1,2}\/\d{1,2}\b|\b(this|last|next)\s+(week|month|year|spring|summer|fall|autumn|winter)\b|\b(today|yesterday|tomorrow|monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b/i;
+
+  briefs.forEach((b) => {
+    const keys = storyKeys(b);
+    if (keys.some((k) => topKeys.has(k))) {
+      dropped.push(b.headline || "(untitled)");
+      return;
+    }
+    kept.push(b);
+    const text = `${b.headline || ""} ${b.dek || ""} ${b.body || ""}`;
+    if (!DATED.test(text)) undated.push(b.headline || "(untitled)");
+  });
+
+  issue.moreNews = kept;
+  return { dropped, undated };
 }
 
 /** Load the most recent previous issue for a cluster, excluding this week's. */
@@ -706,6 +772,13 @@ async function generateCluster(clusterConfig) {
     console.log(`    Promoted instead:      "${rotated.promoted.slice(0, 60)}…"`);
   }
 
+  // ── 3b. Briefs: no duplicates of the lead, and nothing undated ──────────
+  const briefCheck = tidyBriefs(issue);
+  briefCheck.dropped.forEach((h) =>
+    console.log(`  ⊘ Brief repeated a top story — dropped: "${String(h).slice(0, 60)}"`));
+  briefCheck.undated.forEach((h) =>
+    console.warn(`  ⚠ Brief never says when it happened: "${String(h).slice(0, 60)}"`));
+
   // ── 4. Validate ─────────────────────────────────────────────────────────
   const errors = validateIssue(issue);
   if (errors.length > 0) {
@@ -757,6 +830,17 @@ function buildEmailHtml(issue, cluster) {
   // knows their own neighborhood but not which edition covers it. Taken from
   // the edition definition, never from the generated issue.
   const hoods    = (cluster.neighborhoods || []).join(" · ");
+  // "the Neighborhood" is right in San Francisco and wrong in a five-town
+  // valley. cities.json carries the word each city uses for its areas.
+  const cityRec  = (() => {
+    try {
+      const cities = JSON.parse(fs.readFileSync(
+        path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
+      return cities.find((c) => c.slug === cluster.citySlug) || null;
+    } catch { return null; }
+  })();
+  const areaNoun = (cityRec && cityRec.areaNoun) || "neighborhood";
+  const areaTitle = areaNoun.charAt(0).toUpperCase() + areaNoun.slice(1);
 
   // Tolerates both the old schema (tag/byline/date) and the current one
   // (tags[]/dek); anything absent is omitted rather than left as an
@@ -844,7 +928,7 @@ function buildEmailHtml(issue, cluster) {
   <tr><td style="background:#ffffff;padding:24px 40px 8px;">
     <table width="100%" cellpadding="0" cellspacing="0">
       <tr><td style="padding:0 0 4px 0;border-bottom:2px solid #1a2744;">
-        <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a2744;">More from the Neighborhood</p>
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a2744;">More from the ${areaTitle}</p>
       </td></tr>
       ${moreHtml}
     </table>
@@ -908,7 +992,15 @@ async function fetchButtondownTagIds() {
 /** Subject line. Extracted so the dry-run preview cannot drift from the
  *  real send — a rehearsal that renders a different subject is worthless. */
 function emailSubject(cluster) {
-  return `My Town News — ${cluster.name} ${cluster.city || ""}`.trim();
+  // Name the city only when it adds something. Built as name + city, this
+  // rendered "My Town News — Heber City Heber City" for every town whose
+  // single edition *is* the city — which, on this market read, is most of
+  // them. San Francisco editions still get their city, because "North
+  // Waterfront" alone does not place itself in an inbox.
+  const city = (cluster.city || "").trim();
+  const name = (cluster.name || "").trim();
+  const suffix = city && city.toLowerCase() !== name.toLowerCase() ? `, ${city}` : "";
+  return `My Town News — ${name}${suffix}`;
 }
 
 /** Audience filter: send only to subscribers tagged with this cluster.
