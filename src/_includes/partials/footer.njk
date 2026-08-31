@@ -18,16 +18,21 @@
       </div>
 
       <div>
+        {# Grouped by city, and live editions only.
+
+           This footer appears on every page, and it used to loop every edition
+           in clusters.json regardless of city or status — so the moment a Utah
+           town was added, "Heber City — coming soon" appeared at the bottom of
+           every San Francisco page. An unlaunched town has nothing to offer a
+           reader and announcing it costs the surprise of launching it. #}
+        {% for city in cities %}{% if city.live %}
         <div class="site-footer__cluster-links">
-          <p class="site-footer__cluster-links-head">All Neighborhoods</p>
-          {% for c in clusters %}
-            {% if c.live %}
-              <a href="/{{ c.slug }}/">{{ c.name }}</a>
-            {% else %}
-              <span style="color:rgba(255,255,255,0.2);font-size:0.625rem;">{{ c.name }} — coming soon</span>
-            {% endif %}
+          <p class="site-footer__cluster-links-head">{{ city.name }}</p>
+          {% for c in clusters | editionsInCity(city.slug) %}
+            <a href="{{ c | editionPath(clusters) }}">{{ c.name }}</a>
           {% endfor %}
         </div>
+        {% endif %}{% endfor %}
       </div>
     </div>
     <hr class="footer-divider">

@@ -19,6 +19,7 @@ const fs   = require("fs");
 const path = require("path");
 
 const ROOT     = path.resolve(__dirname, "..");
+const { editionPath } = require("../lib/edition-path");
 const OUT      = path.resolve(ROOT, process.argv[2] || "_site");
 const CLUSTERS = path.join(ROOT, "src", "_data", "clusters.json");
 
@@ -92,7 +93,7 @@ try {
   clusters.forEach((c) => {
     if (!c.live) return;
     liveCount++;
-    check(path.join(c.slug, "index.html"), c.name);
+    check(path.join(editionPath(c, clusters), "index.html"), c.name);
   });
 } catch (e) {
   errors.push(`Could not read or parse ${path.relative(ROOT, CLUSTERS)}: ${e.message}`);
@@ -127,10 +128,11 @@ if (fs.existsSync(homepage)) {
  * the template was "correct", and only the output was wrong.
  */
 try {
-  const editions = JSON.parse(fs.readFileSync(CLUSTERS, "utf8")).filter((c) => c.live);
+  const all      = JSON.parse(fs.readFileSync(CLUSTERS, "utf8"));
+  const editions = all.filter((c) => c.live);
   let checked = 0;
   editions.forEach((c) => {
-    const f = path.join(OUT, c.slug, "index.html");
+    const f = path.join(OUT, editionPath(c, all), "index.html");
     if (!fs.existsSync(f)) return;              // already reported as MISSING
     // Compare on decoded text: Nunjucks escapes the apostrophe in
     // "Fisherman's Wharf" to &#39;, and curly vs straight quotes differ
@@ -155,7 +157,18 @@ try {
   errors.push(`Could not check edition coverage lines: ${e.message}`);
 }
 
-const expected = STATIC_PAGES.length + liveCount;
+// Hub pages count too: a multi-edition city adds one page that is not an
+// edition and not a static page.
+const hubCount = (() => {
+  try {
+    const { citiesNeedingHub } = require("../lib/edition-path");
+    return citiesNeedingHub(
+      JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8")),
+      JSON.parse(fs.readFileSync(CLUSTERS, "utf8"))
+    ).length;
+  } catch { return 0; }
+})();
+const expected = STATIC_PAGES.length + liveCount + hubCount;
 const actual   = expected - errors.filter((e) => e.startsWith("MISSING")).length;
 
 
@@ -284,6 +297,246 @@ try {
     });
     if (!hits) console.log("  Wording: no reader-facing use of \"cluster\"");
   }
+}
+
+/* ── Events must be ordered, and the nav must track the right section ─────
+ * Both were reader-visible bugs found by looking at the page rather than by
+ * any test: events appeared in the order research happened to produce them,
+ * and clicking a nav item highlighted the previous section because the
+ * scrollspy band began above where anchor jumps actually land.
+ *
+ * Neither has a natural output assertion — sorted output is tautological
+ * once the sort is applied, and scroll position does not exist at build
+ * time — so what is checked is that the fixes are still wired in.
+ */
+try {
+  const layout = fs.readFileSync(
+    path.join(ROOT, "src", "_includes", "cluster-layout.njk"), "utf8");
+  const base = fs.readFileSync(
+    path.join(ROOT, "src", "_includes", "base.njk"), "utf8");
+  const gen = fs.readFileSync(
+    path.join(ROOT, "pipeline", "generate-issue.js"), "utf8");
+
+  if (!/issue\.events\s*\|\s*sortEvents/.test(layout)) {
+    errors.push("cluster-layout.njk renders events unsorted — they arrive in research order, not date order");
+  }
+  // The salvage retry must declare the web_search tool. The conversation it
+  // continues contains server_tool_use blocks, and the API rejects a request
+  // whose history references a tool the request does not define — so calling
+  // it without tools made every salvage fail on a malformed request.
+  if (!/callClaude\(systemPrompt, salvageMessages, \[webSearchTool\]\)/.test(gen)) {
+    errors.push(
+      "the JSON salvage retry no longer declares webSearchTool — the API " +
+      "rejects a continuation whose history references an undeclared tool"
+    );
+  }
+  if (/throw err;\s*\n\s*\}\s*\n\s*\}/.test(gen) && !/Salvage attempt also failed/.test(gen)) {
+    errors.push("the salvage failure is swallowed again — err2 must be reported or the real cause stays hidden");
+  }
+  if (!/sortEvents\(issue\.events/.test(gen)) {
+    errors.push("the newsletter renders events unsorted — it would disagree with the web page");
+  }
+  if (/new IntersectionObserver/.test(base)) {
+    errors.push(
+      "base.njk is back on IntersectionObserver for scrollspy — the band " +
+      "started above where anchor jumps land, so every click highlighted " +
+      "the previous section"
+    );
+  }
+  if (!/navH \+ 28/.test(base)) {
+    errors.push("scrollspy reading line no longer matches scroll-padding-top (--nav-h + 28px)");
+  }
+  // "the Neighborhood" hardcoded into a heading is the same failure as
+  // "cluster": copy written for San Francisco, shipped to a five-town valley.
+  if (/More from the Neighborhood|Ongoing in the Neighborhood/.test(layout)) {
+    errors.push('cluster-layout.njk hardcodes "the Neighborhood" in a heading — it must come from the city\'s areaNoun');
+  }
+  if (/More from the Neighborhood/.test(gen)) {
+    errors.push('the newsletter hardcodes "More from the Neighborhood" — it must match the city\'s areaNoun');
+  }
+  try {
+    const cities = JSON.parse(fs.readFileSync(
+      path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
+    const gaps = cities.filter((c) => c.live && !(c.areaNoun && c.areaNounPlural));
+    if (gaps.length) {
+      errors.push(`cities missing areaNoun/areaNounPlural: ${gaps.map((c) => c.slug).join(", ")}`);
+    }
+  } catch (e) {
+    errors.push(`Could not check city vocabulary: ${e.message}`);
+  }
+  // The subject line duplicated the city for every town whose edition is the
+  // city — "My Town News — Heber City Heber City".
+  if (/My Town News — \$\{cluster\.name\} \$\{cluster\.city/.test(gen)) {
+    errors.push("emailSubject concatenates name and city unconditionally — single-edition towns get their name twice");
+  }
+  if (!/function tidyBriefs\(/.test(gen)) {
+    errors.push("tidyBriefs is gone — briefs could repeat a top story or arrive undated with nothing to catch it");
+  }
+  console.log("  Reading:  events sorted, scrollspy measured, headings city-aware, briefs tidied");
+} catch (e) {
+  errors.push(`Could not verify reading-experience fixes: ${e.message}`);
+}
+
+/* ── Phase 2: city paths, the collapse rule, and legacy redirects ─────────
+ * Editions live under their city. A city with several editions gets a hub;
+ * a city with one serves that edition directly at /<city>/, because a hub
+ * page listing a single link is a dead click and most towns will have one
+ * edition.
+ *
+ * The redirect check is the one that protects readers rather than tidiness:
+ * every issue already mailed links to a pre-migration URL, so a missing rule
+ * 404s a newsletter that is already in somebody's inbox and cannot be edited.
+ */
+try {
+  const editions = JSON.parse(fs.readFileSync(CLUSTERS, "utf8"));
+  const cities   = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
+  const toml     = fs.readFileSync(path.join(ROOT, "netlify.toml"), "utf8");
+  const { editionPath, isSingleEditionCity, citiesNeedingHub } = require("../lib/edition-path");
+
+  const live = editions.filter((e) => e.live);
+
+  live.forEach((e) => {
+    if (!e.citySlug) {
+      errors.push(`${e.slug}: no citySlug — every edition must belong to a city`);
+      return;
+    }
+    if (!cities.some((c) => c.slug === e.citySlug)) {
+      errors.push(`${e.slug}: citySlug "${e.citySlug}" is not in cities.json`);
+      return;
+    }
+
+    const rel = editionPath(e, editions);
+    if (!fs.existsSync(path.join(OUT, rel, "index.html"))) {
+      errors.push(`MISSING ${rel} — ${e.slug} has no page at its city path`);
+    }
+
+    // The pre-Phase-2 URL must still resolve, forever — but only for the
+    // editions that ever had one. A town launched after the migration never
+    // lived at /<slug>/, so demanding a redirect for it would be noise, and
+    // noise is how a real missing redirect gets waved through.
+    if (!e.legacyTopLevelUrl) return;
+    const legacy = new RegExp(`from\\s*=\\s*"/${e.slug}/\\*"`);
+    if (!legacy.test(toml)) {
+      errors.push(
+        `netlify.toml has no redirect for the old /${e.slug}/ URL — ` +
+        `every issue already mailed links there`
+      );
+    }
+  });
+
+  // Single-edition cities must not emit a redundant second level.
+  cities.filter((c) => c.live).forEach((c) => {
+    if (isSingleEditionCity(editions, c.slug)) {
+      const only = live.find((e) => e.citySlug === c.slug);
+      const redundant = path.join(OUT, c.slug, only.slug, "index.html");
+      if (fs.existsSync(redundant)) {
+        errors.push(
+          `/${c.slug}/${only.slug}/ exists but ${c.slug} has one edition — ` +
+          `it should collapse to /${c.slug}/`
+        );
+      }
+    }
+  });
+
+  // Multi-edition cities must have a hub, and it must list every edition.
+  citiesNeedingHub(cities, editions).forEach((c) => {
+    const hub = path.join(OUT, c.slug, "index.html");
+    if (!fs.existsSync(hub)) {
+      errors.push(`MISSING /${c.slug}/ — a city with several editions needs a hub page`);
+      return;
+    }
+    const html = fs.readFileSync(hub, "utf8");
+    live.filter((e) => e.citySlug === c.slug).forEach((e) => {
+      if (!html.includes(editionPath(e, editions))) {
+        errors.push(`/${c.slug}/ hub does not link to ${e.slug}`);
+      }
+    });
+  });
+
+  // Buttondown tags collide within a newsletter, not across the whole product.
+  const byCity = {};
+  live.forEach((e) => {
+    (byCity[e.citySlug] = byCity[e.citySlug] || []).push(e.slug);
+  });
+  Object.entries(byCity).forEach(([city, slugs]) => {
+    const dupes = slugs.filter((s, i) => slugs.indexOf(s) !== i);
+    if (dupes.length) errors.push(`${city}: duplicate edition slugs ${[...new Set(dupes)].join(", ")}`);
+  });
+
+  // Nothing outside a city may appear on that city's pages. The homepage and
+  // the footer both looped every edition in clusters.json regardless of city,
+  // so adding one Utah town put "Heber City — coming soon" on the bottom of
+  // every San Francisco page and a marker on the San Francisco map.
+  const homeHtml = fs.existsSync(path.join(OUT, "index.html"))
+    ? fs.readFileSync(path.join(OUT, "index.html"), "utf8") : "";
+  if (homeHtml) {
+    const foreign = live.filter((e) => e.citySlug !== "san-francisco" && homeHtml.includes(e.name));
+    if (foreign.length) {
+      errors.push(
+        `the San Francisco homepage names ${foreign.map((e) => e.name).join(", ")} — ` +
+        `editions from other cities must not appear on it`
+      );
+    }
+    // Unlaunched editions must not be advertised anywhere.
+    const dark = editions.filter((e) => !e.live && homeHtml.includes(`${e.name} — coming soon`));
+    if (dark.length) {
+      errors.push(`unlaunched editions announced in the footer: ${dark.map((e) => e.name).join(", ")}`);
+    }
+  }
+
+  console.log(`  Cities:   ${cities.filter((c) => c.live).length} live, ${citiesNeedingHub(cities, editions).length} with hubs, ${live.length} editions placed`);
+} catch (e) {
+  errors.push(`Could not verify city structure: ${e.message}`);
+}
+
+/* ── The publish pipeline must stay survivable ────────────────────────────
+ * On 2026-08-28 the weekly job was cancelled at GitHub's 60-minute ceiling
+ * partway through the tenth of thirteen editions. Nine finished issues were
+ * on disk; zero newsletters were sent, because delivery ran in a second pass
+ * that the job never reached.
+ *
+ * Three properties now stand between that and a repeat, and every one of
+ * them is a single line that a future edit could remove without any test
+ * noticing:
+ *
+ *   1. delivery happens per edition, not in a later phase
+ *   2. fail-fast is off, so one edition cannot cancel the others
+ *   3. the per-job timeout stays well under the 60-minute hard ceiling
+ *   4. the script measures itself against a time budget
+ */
+try {
+  const wf  = fs.readFileSync(
+    path.join(ROOT, ".github", "workflows", "weekly-publish.yml"), "utf8");
+  const gen = fs.readFileSync(
+    path.join(ROOT, "pipeline", "generate-issue.js"), "utf8");
+
+  if (!/await\s+deliverCluster\(/.test(gen)) {
+    errors.push(
+      "generate-issue.js no longer delivers inside the generation loop — " +
+      "a run that dies early would send nothing at all"
+    );
+  }
+  if (!/timeWarnings|TOTAL_BUDGET_MIN/.test(gen)) {
+    errors.push("generate-issue.js lost its time budget — the next approach to the 60-minute ceiling would be silent");
+  }
+  if (!/fail-fast:\s*false/.test(wf)) {
+    errors.push(
+      "weekly-publish.yml no longer sets fail-fast: false — one failing " +
+      "edition would cancel every other edition mid-run"
+    );
+  }
+  const timeouts = [...wf.matchAll(/timeout-minutes:\s*(\d+)/g)].map((m) => Number(m[1]));
+  if (!timeouts.length) {
+    errors.push("weekly-publish.yml has no timeout-minutes — jobs would inherit the 60-minute ceiling that caused the 2026-08-28 outage");
+  } else if (Math.max(...timeouts) > 45) {
+    errors.push(`weekly-publish.yml has a ${Math.max(...timeouts)}-minute timeout — keep jobs well under GitHub's 60-minute hard cancel`);
+  }
+  if (!/matrix:\s*\n\s*edition:/.test(wf)) {
+    errors.push("weekly-publish.yml is no longer split by edition — thirteen serial editions is what hit the timeout");
+  }
+  console.log("  Pipeline: per-edition delivery, fail-fast off, timeouts under the ceiling");
+} catch (e) {
+  errors.push(`Could not verify the publish pipeline: ${e.message}`);
 }
 
 /* ── The dry-run switch must stay connected ───────────────────────────────

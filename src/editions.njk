@@ -1,0 +1,14 @@
+{#
+  One template for every edition, replacing thirteen hand-written
+  src/<slug>/index.njk files and thirteen .11tydata.js loaders.
+
+  Those files differed only in four strings each, all of which already lived in
+  clusters.json — so adding an edition meant copying two files and editing the
+  same facts in a second place. That is the shape of duplication that produced
+  the accent drift and the empty neighborhood line. Adding an edition is now
+  one row of JSON.
+
+  Everything is configured in editions.11tydata.js beside this file, because
+  pagination callbacks and computed data need real functions rather than
+  YAML strings. The body is empty: cluster-layout.njk renders the page.
+#}

@@ -1,11 +1,22 @@
 # My Town News — Weekly Content Pipeline
 # Runs every Thursday at 8 PM PT (Friday 3 AM UTC)
-# Generates a fresh issue for every live cluster, commits, and Netlify auto-deploys.
+#
+# Structure: one job per edition, in parallel.
+#
+# This used to be a single job generating all thirteen editions in sequence.
+# On 2026-08-28 that job hit the runner's 60-minute ceiling partway through
+# edition ten and was cancelled — nine issues had been written and not one
+# newsletter was sent. The duration had been climbing for weeks (36 → 49 →
+# 51 → 52 minutes) and nothing flagged it.
+#
+# Splitting by edition fixes the class of problem rather than the instance:
+# each job now handles one edition in about five minutes, so the timeout is
+# no longer reachable, and a wedged edition cannot take its neighbors down.
 #
 # To rehearse without publishing: Actions → Weekly Publish → Run workflow →
 # tick "Dry run". Content is generated and the newsletters are rendered, but
 # nothing is mailed and nothing is committed. The rendered emails are attached
-# to the run as the "dry-run-previews" artifact.
+# to the run as artifacts.
 
 name: Weekly Publish
 
@@ -15,7 +26,7 @@ on:
   workflow_dispatch:       # Allow manual trigger from GitHub Actions UI
     inputs:
       cluster:
-        description: 'Run for a single cluster slug (leave blank for all)'
+        description: 'Run for a single edition slug (leave blank for all)'
         required: false
         default: ''
       dry_run:
@@ -23,17 +34,50 @@ on:
         type: boolean
         default: false
 
+permissions:
+  contents: write
+
 jobs:
-  generate-and-publish:
+  # ── Which editions are we publishing? ───────────────────────────────────
+  # A matrix must be known before any job starts, and GitHub cannot read
+  # clusters.json on its own, so this reads it and hands over the list.
+  plan:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 5
+    outputs:
+      editions: ${{ steps.pick.outputs.editions }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Choose editions
+        id: pick
+        run: |
+          EDITIONS=$(node scripts/list-editions.js "${{ github.event.inputs.cluster }}")
+          echo "editions=$EDITIONS" >> "$GITHUB_OUTPUT"
+          echo "Publishing: $EDITIONS"
+
+  # ── One edition per job ─────────────────────────────────────────────────
+  publish:
+    needs: plan
+    runs-on: ubuntu-latest
+    # Generous relative to the ~5 minutes an edition takes, but far below the
+    # 60-minute ceiling, so a hung edition fails fast and alone.
+    timeout-minutes: 25
+    strategy:
+      # Non-negotiable. With fail-fast on, one edition erroring would cancel
+      # every other edition mid-flight — the exact failure this split exists
+      # to prevent, reintroduced by a default.
+      fail-fast: false
+      # Below GitHub Free's 20-concurrent-job cap, and gentle on the Anthropic
+      # API. Raise deliberately, watching for rate-limit errors.
+      max-parallel: 6
+      matrix:
+        edition: ${{ fromJSON(needs.plan.outputs.editions) }}
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: '24'
 
@@ -41,35 +85,75 @@ jobs:
         run: npm install
 
       # DRY_RUN must reach the script itself. Until 2026-08-24 this input only
-      # gated the commit step below, so a "dry run" generated every edition and
-      # mailed every subscriber — it just declined to save the evidence. The
-      # script now diverts its output and skips the send; scripts/verify-build.js
-      # asserts this env line still exists so the gap cannot quietly reopen.
-      - name: Generate this week's issues
+      # gated the commit step, so a "dry run" generated every edition and
+      # mailed every subscriber. scripts/verify-build.js asserts this env line
+      # still exists so the gap cannot quietly reopen.
+      - name: Generate and send ${{ matrix.edition }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
-          TARGET_CLUSTER: ${{ github.event.inputs.cluster }}
           DRY_RUN: ${{ github.event.inputs.dry_run }}
-        run: |
-          node pipeline/generate-issue.js \
-            ${TARGET_CLUSTER:+--cluster $TARGET_CLUSTER}
+        run: node pipeline/generate-issue.js --cluster ${{ matrix.edition }}
 
-      - name: Upload dry-run previews
-        if: always() && github.event.inputs.dry_run == 'true'
+      # Stage into a mirror of the repo layout so the collect job can restore
+      # every edition's file to the right place in one merged download.
+      - name: Stage output
+        if: always()
+        run: |
+          mkdir -p out/src/content/${{ matrix.edition }}
+          cp src/content/${{ matrix.edition }}/*.json \
+             out/src/content/${{ matrix.edition }}/ 2>/dev/null || true
+          if [ -d pipeline/dry-run ]; then
+            mkdir -p out/pipeline
+            cp -r pipeline/dry-run out/pipeline/
+          fi
+
+      - name: Upload ${{ matrix.edition }}
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: dry-run-previews
-          path: pipeline/dry-run/
+          name: issue-${{ matrix.edition }}
+          path: out/
           if-no-files-found: warn
           retention-days: 14
 
+  # ── Commit everything that succeeded, once ──────────────────────────────
+  # Thirteen jobs cannot each push to main without racing, so the writes are
+  # collected here. `if: always()` because partial success is the normal case
+  # worth publishing — editions that made it should still reach the site.
+  collect:
+    needs: publish
+    if: always() && github.event.inputs.dry_run != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Download every edition
+        uses: actions/download-artifact@v5
+        with:
+          pattern: issue-*
+          merge-multiple: true
+          path: staging
+
+      - name: Restore issues into the repo
+        run: |
+          if [ -d staging/src/content ]; then
+            cp -r staging/src/content/. src/content/
+          fi
+          git status --short src/content/ || true
+
       - name: Build site
-        if: always()
         run: npm run build:prod
 
       - name: Commit new issue files
-        if: always() && github.event.inputs.dry_run != 'true'
         run: |
           git config user.name  "mytown-news-bot"
           git config user.email "bot@mytown.news"

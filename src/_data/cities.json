@@ -1,0 +1,46 @@
+[
+  {
+    "slug": "san-francisco",
+    "name": "San Francisco",
+    "state": "CA",
+    "stateName": "California",
+    "areaNoun": "neighborhood",
+    "areaNounPlural": "neighborhoods",
+    "live": true,
+    "launched": "2026-06-12",
+    "tagline": "Fourteen neighborhood editions, every Friday.",
+    "description": "Weekly hyperlocal news, events and local business directories for San Francisco neighborhoods.",
+    "map": {
+      "lat": 37.7749,
+      "lng": -122.4194
+    },
+    "buttondownTagPrefix": "",
+    "newsDesert": {
+      "note": "Not a news desert \u2014 SF retains several outlets. The pilot city, chosen for proximity rather than need.",
+      "paperLost": null
+    }
+  },
+  {
+    "slug": "heber-city",
+    "name": "Heber City",
+    "state": "UT",
+    "stateName": "Utah",
+    "areaNoun": "valley",
+    "areaNounPlural": "towns",
+    "live": false,
+    "launched": "2026-09-04",
+    "tagline": "Local news for the Heber Valley, every Friday.",
+    "description": "Weekly local news, events and a business directory for Heber City, Midway and the Heber Valley, Utah.",
+    "map": {
+      "lat": 40.5069,
+      "lng": -111.4133
+    },
+    "buttondownTagPrefix": "heber-",
+    "newsDesert": {
+      "note": "The Wasatch Wave published its final edition on 9 July 2025 after 136 years. Sister company Wave Printing closed 23 January 2026. Heber City has no paper of its own; Park Record (Park City) and KPCW (public radio) cover the valley from outside it.",
+      "paperLost": "2025-07-09",
+      "paperName": "The Wasatch Wave",
+      "paperFounded": "1889"
+    }
+  }
+]

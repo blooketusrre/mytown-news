@@ -38,6 +38,8 @@
 const fs   = require("fs");
 const path = require("path");
 const https = require("https");
+const { editionPath } = require("../lib/edition-path");
+const { sortEvents } = require("../lib/event-order");
 
 // ─── CLI args ──────────────────────────────────────────────────────────────
 const args = process.argv.slice(2);
@@ -71,6 +73,20 @@ const DRY_RUN_DIR     = path.join(ROOT, "pipeline", "dry-run");
 function outDirFor(slug) {
   return path.join(DRY_RUN ? DRY_RUN_DIR : CONTENT_DIR, slug);
 }
+
+// ── Time budgets ───────────────────────────────────────────────────────────
+// GitHub cancels a job at 60 minutes with no warning and no notification —
+// which is exactly what happened on 2026-08-28. These budgets sit below that
+// ceiling so an approaching timeout announces itself as a red run while there
+// is still headroom, rather than as a week with no newsletter.
+//
+// Per edition rather than only overall, because with the matrix split each
+// job runs a single edition and the total is no longer the meaningful number.
+const STARTED_AT         = Date.now();
+const EDITION_BUDGET_MIN = Number(process.env.EDITION_TIME_BUDGET_MIN || 12);
+const TOTAL_BUDGET_MIN   = Number(process.env.TOTAL_TIME_BUDGET_MIN || 40);
+const timeWarnings       = [];
+
 const ANTHROPIC_KEY   = process.env.ANTHROPIC_API_KEY;
 const BUTTONDOWN_KEY  = process.env.BUTTONDOWN_API_KEY;
 const SITE_URL        = "https://mytown.news";
@@ -198,12 +214,45 @@ somewhere that looks active. Do not include them in the directory, and do not
 present them as operating in a story or event.`;
   }
 
+  // Where to look. These have sat unused in clusters.json since launch — the
+  // prompt never read them, so every edition was researched from a blank
+  // slate. Harmless in San Francisco, where a general search finds the SF
+  // Standard and SFist unprompted. Not harmless in a town whose newspaper
+  // closed: there, naming the council agenda portal, the school district and
+  // the theater listings is the difference between an issue and an empty page.
+  let sourceBlock = "";
+  const hints = cluster.sourceHints || [];
+  const terms = cluster.primarySearchTerms || [];
+  if (hints.length || terms.length) {
+    sourceBlock = `
+
+WHERE TO LOOK:
+${terms.length ? `
+Search terms that identify this area:
+${terms.map((t) => `  - ${t}`).join("\n")}` : ""}
+${hints.length ? `
+Sources worth checking directly. Not an exhaustive list and not a
+restriction — search freely — but these are the primary records for this
+area and are often the only place a story exists at all:
+${hints.map((h) => `  - ${h}`).join("\n")}` : ""}
+
+In a town that has lost its newspaper there may be no article to summarise.
+The story is then in the primary record itself: what the council actually
+voted on, what the police blotter shows, what the school board approved,
+what is opening or closing on Main Street. Report from the document. Say
+plainly where it came from and when the meeting or filing happened.
+
+Never pad. Three real stories are a good week; one real story and two
+inventions is a dead publication. If a week is genuinely quiet, say so in
+fewer stories rather than manufacturing volume.`;
+  }
+
   return `You are the research editor for My Town News, a hyperlocal weekly newspaper covering San Francisco neighborhoods.
 
 Today is ${today}. You are preparing the issue for the week of ${thisWeekDate()}.
 
 Your edition: ${cluster.name}
-Neighborhoods: ${cluster.neighborhoods.join(", ")}${lastWeekBlock}${closedBlock}
+Neighborhoods: ${cluster.neighborhoods.join(", ")}${sourceBlock}${lastWeekBlock}${closedBlock}
 ${VOCABULARY_RULE}
 
 DIRECTORY VERIFICATION RULE — NON-NEGOTIABLE:
@@ -264,6 +313,7 @@ CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
   "events": [
     {
       "title": "...",
+      "startDate": "YYYY-MM-DD",  // omit only for genuinely ongoing events
       "date": "Day, Month D" or "Ongoing" or "Through Month D",
       "time": "H:MM AM/PM" or "Various times" or "",
       "location": "Venue name, address or neighborhood",
@@ -359,10 +409,32 @@ DIRECTORY GROUPING GUIDANCE:
 - venueGroup (gyms): "Yoga & Pilates", "Gyms & CrossFit", "Sports & Courts", "Cycling & Rowing", "Martial Arts", "Pools & Aquatics", "Parks & Outdoor Recreation"
 - notable field: "Landmark" for long-established institutions, "New" for opened in the last year, or "" for standard listings
 
+BRIEFS (the moreNews section):
+
+This section carries the smaller items: a business opening or closing, a
+council designation, a project reaching completion, a grant awarded, a road
+closure. In a place that has lost its newspaper these will often come from
+primary sources rather than news outlets — a city or county website, a
+meeting agenda, a school district notice, a chamber newsletter. That is
+legitimate and expected. Reporting from the record is the job here.
+
+Two requirements, both about honesty rather than recency:
+
+1. STATE WHEN. Every brief must say plainly when the thing happened or will
+   happen — "opened in May", "approved at the 12 August council meeting",
+   "scheduled for completion this month". A reader must never have to guess
+   whether an item is from this week or last spring. An older item is
+   welcome; an undated one is not.
+
+2. DO NOT INVENT AND DO NOT REPEAT. A brief must not restate a story
+   already in topStories, and must not be padding assembled to reach a
+   count. Returning one brief, or none, is a correct answer in a quiet week.
+   An empty section is honest; a manufactured one is not.
+
 QUANTITY TARGETS:
 - topStories: 3 (minimum 1 if it's a slow news week — never fabricate to fill)
 - events: 4–8 (upcoming or ongoing within ~3 weeks)
-- moreNews: 2–4 briefs
+- moreNews: 0–4 briefs (see BRIEFS below — fewer is fine, invented is not)
 - restaurants: 15–30 (comprehensive coverage — every notable café, restaurant, bar, and bakery in these neighborhoods)
 - hotels: 5–15 (all hotels and inns in these neighborhoods)
 - shops: 10–20 (notable independent shops, bookstores, specialty stores, services)
@@ -478,6 +550,50 @@ function storyKeys(story) {
     keys.push("h:" + String(story.headline).toLowerCase().replace(/[^a-z0-9 ]+/g, "").replace(/\s+/g, " ").trim());
   }
   return keys;
+}
+
+/**
+ * Drop briefs that repeat a top story, and flag briefs that never say when.
+ *
+ * The prompt asks for both, and the prompt is a request. This is the pass
+ * that holds — the same shape as the closed-venue strip and the lead
+ * rotation, for the same reason: the 4 September Heber rehearsal produced
+ * four solid stories and then three briefs assembled to fill the section.
+ *
+ * Undated items are reported, not removed. An older item is welcome — in a
+ * town with no paper, a restaurant that opened in May may genuinely be news
+ * to a reader — but it has to say so. Removing it would throw away exactly
+ * the primary-source reporting this publication exists to do.
+ */
+function tidyBriefs(issue) {
+  const briefs = issue.moreNews;
+  if (!Array.isArray(briefs) || !briefs.length) return { dropped: [], undated: [] };
+
+  const topKeys = new Set();
+  (issue.topStories || []).forEach((st) => storyKeys(st).forEach((k) => topKeys.add(k)));
+
+  const dropped = [];
+  const undated = [];
+  const kept = [];
+
+  // Any of: a month name, an ISO date, "this week/month", "last spring", a
+  // year, or an ordinal date. Deliberately generous — the check is for
+  // "does this locate itself in time at all", not for a date format.
+  const DATED = /\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\b|\b20\d{2}\b|\b\d{1,2}\/\d{1,2}\b|\b(this|last|next)\s+(week|month|year|spring|summer|fall|autumn|winter)\b|\b(today|yesterday|tomorrow|monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b/i;
+
+  briefs.forEach((b) => {
+    const keys = storyKeys(b);
+    if (keys.some((k) => topKeys.has(k))) {
+      dropped.push(b.headline || "(untitled)");
+      return;
+    }
+    kept.push(b);
+    const text = `${b.headline || ""} ${b.dek || ""} ${b.body || ""}`;
+    if (!DATED.test(text)) undated.push(b.headline || "(untitled)");
+  });
+
+  issue.moreNews = kept;
+  return { dropped, undated };
 }
 
 /** Load the most recent previous issue for a cluster, excluding this week's. */
@@ -609,13 +725,31 @@ async function generateCluster(clusterConfig) {
     ]);
 
     try {
-      const salvage = await callClaude(systemPrompt, salvageMessages); // no tools
+      // The tool must still be declared. This conversation contains
+      // server_tool_use and web_search_tool_result blocks, and the API
+      // rejects a request whose history references a tool the request does
+      // not define. Calling this with no tools — as it did until 2026-08-29 —
+      // made every salvage attempt fail on a malformed request rather than on
+      // anything to do with the content. The instruction not to search again
+      // is in the message; declaring the tool does not oblige it to be used.
+      const salvage = await callClaude(systemPrompt, salvageMessages, [webSearchTool]);
       issue = extractJson(salvage);
       console.log("  ✅ Recovered JSON on follow-up turn.");
     } catch (err2) {
-      console.error(`  ✗ JSON parse error (stop_reason: ${response.stop_reason || "unknown"}). Raw response excerpt:`);
-      const excerpt = JSON.stringify(response.content || response).slice(0, 500);
-      console.error("  ", excerpt);
+      // Report why the salvage failed, not only why the first attempt did.
+      // This used to `throw err` and never print err2, so a broken salvage
+      // was indistinguishable from a model that simply would not answer —
+      // which is precisely the confusion that hid the missing-tool bug.
+      console.error(`  ✗ First attempt: no JSON (stop_reason: ${response.stop_reason || "unknown"})`);
+      console.error(`  ✗ Salvage attempt also failed: ${err2.message}`);
+      const blocks = (response.content || []).map((b) => b.type);
+      console.error(`     first-attempt block types: ${blocks.join(", ") || "(none)"}`);
+      const texts = (response.content || []).filter((b) => b.type === "text");
+      if (texts.length) {
+        console.error(`     last text block began: ${String(texts[texts.length - 1].text).slice(0, 300)}`);
+      } else {
+        console.error("     the model returned no text block at all — it ended its turn after searching");
+      }
       throw err;
     }
   }
@@ -637,6 +771,13 @@ async function generateCluster(clusterConfig) {
     console.log(`  ↻ Repeated lead demoted: "${rotated.demoted.slice(0, 60)}…"`);
     console.log(`    Promoted instead:      "${rotated.promoted.slice(0, 60)}…"`);
   }
+
+  // ── 3b. Briefs: no duplicates of the lead, and nothing undated ──────────
+  const briefCheck = tidyBriefs(issue);
+  briefCheck.dropped.forEach((h) =>
+    console.log(`  ⊘ Brief repeated a top story — dropped: "${String(h).slice(0, 60)}"`));
+  briefCheck.undated.forEach((h) =>
+    console.warn(`  ⚠ Brief never says when it happened: "${String(h).slice(0, 60)}"`));
 
   // ── 4. Validate ─────────────────────────────────────────────────────────
   const errors = validateIssue(issue);
@@ -678,13 +819,28 @@ function esc(str) {
 }
 
 function buildEmailHtml(issue, cluster) {
-  const issueUrl = `${SITE_URL}/${cluster.slug}/`;
+  // Through lib/edition-path.js, the same function the site uses to build its
+  // permalinks. Hardcoding `/${cluster.slug}/` here would have kept mailing
+  // pre-Phase-2 URLs after every page moved under its city.
+  const allEditions = JSON.parse(fs.readFileSync(CLUSTERS_FILE, "utf8"));
+  const issueUrl = `${SITE_URL}${editionPath(cluster, allEditions)}`;
   const accent   = cluster.accent || "#c8943a";
   // Named neighborhoods under the edition title, for the same reason the web
   // masthead carries them: a forwarded issue lands in front of someone who
   // knows their own neighborhood but not which edition covers it. Taken from
   // the edition definition, never from the generated issue.
   const hoods    = (cluster.neighborhoods || []).join(" · ");
+  // "the Neighborhood" is right in San Francisco and wrong in a five-town
+  // valley. cities.json carries the word each city uses for its areas.
+  const cityRec  = (() => {
+    try {
+      const cities = JSON.parse(fs.readFileSync(
+        path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
+      return cities.find((c) => c.slug === cluster.citySlug) || null;
+    } catch { return null; }
+  })();
+  const areaNoun = (cityRec && cityRec.areaNoun) || "neighborhood";
+  const areaTitle = areaNoun.charAt(0).toUpperCase() + areaNoun.slice(1);
 
   // Tolerates both the old schema (tag/byline/date) and the current one
   // (tags[]/dek); anything absent is omitted rather than left as an
@@ -707,7 +863,7 @@ function buildEmailHtml(issue, cluster) {
 
   // Emoji rather than the SVG icons used on the web — inline SVG support is
   // unreliable across email clients, and emoji degrade gracefully everywhere.
-  const eventsHtml = (issue.events || []).slice(0, 5).map(ev => `
+  const eventsHtml = sortEvents(issue.events, issue.weekOf).slice(0, 5).map(ev => `
     <tr><td style="padding:12px 0;border-bottom:1px solid #d8d2c8;">
       ${ev.date ? `<p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${accent};">${esc(ev.date)}</p>` : ""}
       <p style="margin:0 0 3px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${esc(ev.title)}</p>
@@ -772,7 +928,7 @@ function buildEmailHtml(issue, cluster) {
   <tr><td style="background:#ffffff;padding:24px 40px 8px;">
     <table width="100%" cellpadding="0" cellspacing="0">
       <tr><td style="padding:0 0 4px 0;border-bottom:2px solid #1a2744;">
-        <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a2744;">More from the Neighborhood</p>
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a2744;">More from the ${areaTitle}</p>
       </td></tr>
       ${moreHtml}
     </table>
@@ -836,7 +992,15 @@ async function fetchButtondownTagIds() {
 /** Subject line. Extracted so the dry-run preview cannot drift from the
  *  real send — a rehearsal that renders a different subject is worthless. */
 function emailSubject(cluster) {
-  return `My Town News — ${cluster.name} ${cluster.city || ""}`.trim();
+  // Name the city only when it adds something. Built as name + city, this
+  // rendered "My Town News — Heber City Heber City" for every town whose
+  // single edition *is* the city — which, on this market read, is most of
+  // them. San Francisco editions still get their city, because "North
+  // Waterfront" alone does not place itself in an inbox.
+  const city = (cluster.city || "").trim();
+  const name = (cluster.name || "").trim();
+  const suffix = city && city.toLowerCase() !== name.toLowerCase() ? `, ${city}` : "";
+  return `My Town News — ${name}${suffix}`;
 }
 
 /** Audience filter: send only to subscribers tagged with this cluster.
@@ -919,6 +1083,61 @@ function previewClusterEmail(cluster, issue, tagId) {
   };
 }
 
+/** Deliver one edition — send it, or render a preview in a dry run.
+ *
+ *  Called immediately after the edition is generated, not in a later pass.
+ *  Every failure here is contained to this edition: a rejected send, a
+ *  missing tag or a malformed issue file must never stop the next
+ *  neighborhood from getting its newsletter. */
+async function deliverCluster(cluster, tagMap, counters) {
+  if (!BUTTONDOWN_KEY) {
+    if (!DRY_RUN) counters.failedEmail++;   // a live run that mails nobody has failed
+    return;
+  }
+  if (!tagMap) {
+    console.error(`  ✗ No tag map available — cannot deliver ${cluster.slug}`);
+    counters.failedEmail++;
+    return;
+  }
+
+  try {
+    const weekDate  = thisWeekDate();
+    const issueFile = path.join(outDirFor(cluster.slug), `${weekDate}.json`);
+    const issue     = JSON.parse(fs.readFileSync(issueFile, "utf8"));
+    const tagId     = tagMap[cluster.slug];
+    if (!tagId) {
+      console.warn(`  ⚠ No Buttondown tag for "${cluster.slug}" — this would mail EVERY subscriber`);
+    }
+
+    if (DRY_RUN) {
+      const p = previewClusterEmail(cluster, issue, tagId);
+      console.log(`  🧪 Would send: "${p.subject}"`);
+      console.log(`       audience: ${tagId ? `tag ${tagId}` : "⚠ ALL SUBSCRIBERS (no tag)"}`);
+      console.log(`       preview:  ${p.file} (${(p.bytes / 1024).toFixed(1)} KB)`);
+      if (tagId) counters.previewed++; else counters.failedEmail++;
+      return;
+    }
+
+    const result = await sendClusterEmail(cluster, issue, tagId);
+    if (result.id) {
+      console.log(`  ✅ Queued: "${cluster.name}" → tag: ${tagId || "ALL"} (email id: ${result.id})`);
+      counters.sent++;
+    } else if (result.code === "email_duplicate") {
+      // Buttondown refuses to send the same issue twice. That is a feature,
+      // not a fault: it is what makes re-running a partially failed job safe
+      // for subscribers. Treat it as a skip, not a failure.
+      console.log(`  ↷ Already sent this week — skipping ${cluster.slug}`);
+      counters.skipped++;
+    } else {
+      console.error(`  ✗ Send rejected for ${cluster.slug}:`, JSON.stringify(result).slice(0, 300));
+      counters.failedEmail++;
+    }
+  } catch (err) {
+    console.error(`  ✗ Delivery failed for ${cluster.slug}: ${err.message}`);
+    counters.failedEmail++;
+  }
+}
+
 // ─── Entry point ─────────────────────────────────────────────────────────────
 
 async function main() {
@@ -959,113 +1178,103 @@ async function main() {
   console.log(`Week of: ${thisWeekDate()}`);
   console.log(`Clusters to generate: ${targets.map((c) => c.slug).join(", ")}`);
 
+  const counters = { sent: 0, skipped: 0, failedEmail: 0, previewed: 0 };
   let failed = 0;
-  let emailsSent = 0;
-  let emailsSkipped = 0;
-  let emailsFailed = 0;
-  let emailsPreviewed = 0;
   const generated = [];
 
+  // ── Buttondown tag map, fetched once ─────────────────────────────────────
+  // Deliberately outside the loop (one request, not thirteen) but wrapped,
+  // because it used to be awaited bare. When this request failed it rejected
+  // out of main() and killed the whole run before a single email was sent —
+  // a network blip on one GET could silence every edition.
+  let tagMap = null;
+  if (BUTTONDOWN_KEY) {
+    try {
+      tagMap = await fetchButtondownTagIds();
+      const names = Object.keys(tagMap);
+      console.log(`\nℹ Fetched ${names.length} Buttondown tag(s): ${names.join(", ") || "(none)"}`);
+    } catch (err) {
+      console.error(`\n✗ Could not fetch Buttondown tags: ${err.message}`);
+      console.error("  Editions will still generate, but nothing can be mailed without them.");
+      tagMap = null;
+    }
+  } else {
+    console.log(DRY_RUN
+      ? "\n⚠ BUTTONDOWN_API_KEY not set — audience tags cannot be checked in this rehearsal."
+      : "\n⚠ BUTTONDOWN_API_KEY not set — no email will be sent.");
+  }
+
+  // ── Generate and deliver, one edition at a time ──────────────────────────
+  // Delivery used to happen in a second loop after every edition had been
+  // generated. On 2026-08-28 the job hit the runner's 60-minute ceiling
+  // partway through edition ten: nine finished issues sat on disk and not one
+  // of them was mailed, because the send phase had not been reached yet.
+  //
+  // Shipping each edition as soon as it exists means a run that dies early
+  // costs the editions that did not finish, not the ones that did.
   for (const cluster of targets) {
+    const t0 = Date.now();
     try {
       await generateCluster(cluster);
       generated.push(cluster);
     } catch (err) {
       console.error(`\n✗ Failed for ${cluster.slug}: ${err.message}`);
       failed++;
+      continue;                       // nothing to deliver
+    }
+
+    await deliverCluster(cluster, tagMap, counters);
+
+    const mins = (Date.now() - t0) / 60000;
+    console.log(`  ⏱ ${cluster.slug}: ${mins.toFixed(1)} min`);
+    if (mins > EDITION_BUDGET_MIN) {
+      timeWarnings.push(
+        `${cluster.slug} took ${mins.toFixed(1)} min (budget ${EDITION_BUDGET_MIN})`
+      );
     }
   }
 
   if (failed > 0) {
-    console.warn(`\n⚠ ${failed} cluster(s) had errors — see above. Continuing to commit what was generated.`);
+    console.warn(`\n⚠ ${failed} edition(s) had errors — see above. Continuing with what was generated.`);
+  }
+  console.log(`\n✅ ${generated.length} edition(s) generated successfully.`);
+
+  if (DRY_RUN) {
+    console.log(`\n🧪 ${counters.previewed} newsletter(s) rendered and verified, ${counters.failedEmail} would have misfired.`);
+    console.log(`   Nothing was sent. Open the .email.html files to read what would have gone out.`);
+  } else if (BUTTONDOWN_KEY) {
+    const skipNote = counters.skipped ? `, ${counters.skipped} already sent` : "";
+    console.log(`\n📧 ${counters.sent} sent${skipNote}, ${counters.failedEmail} failed.`);
   }
 
-  const successCount = generated.length;
-  console.log(`\n✅ ${successCount} cluster(s) generated successfully.`);
-
-  // ── Send newsletters via Buttondown ──────────────────────────────────────
-  if (BUTTONDOWN_KEY) {
-    console.log(DRY_RUN
-      ? "\n📧 Rendering newsletters (dry run — no send)…"
-      : "\n📧 Sending newsletters via Buttondown…");
-
-    // Fetch tag name → ID map once (Buttondown filters require IDs, not names).
-    // This GET runs in a dry run too: an edition whose tag has gone missing
-    // would otherwise mail every subscriber in the account, and that is
-    // precisely the class of mistake a rehearsal exists to catch.
-    const tagMap = await fetchButtondownTagIds();
-    const tagCount = Object.keys(tagMap).length;
-    console.log(`  ℹ Fetched ${tagCount} Buttondown tag(s):`, Object.keys(tagMap).join(", ") || "(none)");
-
-    for (const cluster of generated) {
-      try {
-        const weekDate  = thisWeekDate();
-        const issueFile = path.join(outDirFor(cluster.slug), `${weekDate}.json`);
-        const issue     = JSON.parse(fs.readFileSync(issueFile, "utf8"));
-        const tagId     = tagMap[cluster.slug];
-        if (!tagId) {
-          console.warn(`  ⚠ No Buttondown tag found for slug "${cluster.slug}" — email would send to ALL subscribers`);
-        }
-
-        if (DRY_RUN) {
-          const p = previewClusterEmail(cluster, issue, tagId);
-          console.log(`  🧪 Would send: "${p.subject}"`);
-          console.log(`       audience: ${tagId ? `tag ${tagId}` : "⚠ ALL SUBSCRIBERS (no tag)"}`);
-          console.log(`       preview:  ${p.file} (${(p.bytes / 1024).toFixed(1)} KB)`);
-          if (!tagId) emailsFailed++;   // a rehearsal that would misfire is a failed rehearsal
-          else emailsPreviewed++;
-          continue;
-        }
-
-        const result    = await sendClusterEmail(cluster, issue, tagId);
-        if (result.id) {
-          console.log(`  ✅ Queued: "${cluster.name}" → tag: ${tagId || "ALL"} (email id: ${result.id})`);
-          emailsSent++;
-        } else if (result.code === "email_duplicate") {
-          // Buttondown refuses to send the same issue twice. That is a feature,
-          // not a fault: it is what makes re-running a partially failed job safe
-          // for subscribers. Treat it the same way we treat "✓ Already exists"
-          // on the content side — a skip, not a failure.
-          console.log(`  ↷ Already sent this week — skipping ${cluster.slug}`);
-          emailsSkipped++;
-        } else {
-          console.error(`  ✗ Send rejected for ${cluster.slug}:`, JSON.stringify(result).slice(0, 300));
-          emailsFailed++;
-        }
-      } catch (err) {
-        console.error(`  ✗ Email failed for ${cluster.slug}: ${err.message}`);
-        emailsFailed++;
-      }
-    }
-    if (DRY_RUN) {
-      console.log(`\n🧪 ${emailsPreviewed} newsletter(s) rendered and verified, ${emailsFailed} would have misfired.`);
-      console.log(`   Nothing was sent. Open the .email.html files to read what would have gone out.`);
-    } else {
-      const skipNote = emailsSkipped ? `, ${emailsSkipped} already sent` : "";
-      console.log(`\n📧 ${emailsSent} sent${skipNote}, ${emailsFailed} failed.`);
-    }
-  } else if (DRY_RUN) {
-    // Without a key the tag lookup cannot run, so the audience half of the
-    // rehearsal is untested. Say so plainly rather than reporting a clean run.
-    console.warn("\n⚠ BUTTONDOWN_API_KEY not set — content was generated, but");
-    console.warn("  the audience tags could not be checked. This rehearsal only");
-    console.warn("  proves the generator works, not that the right people would");
-    console.warn("  receive it. Re-run with the key for a full rehearsal.");
-  } else {
-    console.log("\n⚠ BUTTONDOWN_API_KEY not set — skipping email send.");
-    emailsFailed = generated.length;
+  // ── Time budget ──────────────────────────────────────────────────────────
+  // The 60-minute cancellation was preceded by weeks of visible warning that
+  // nobody was reading: 36 min, then 49, 51, 52, then over the cliff. A run
+  // that quietly grows toward its own ceiling should say so while there is
+  // still room to act, so exceeding the budget fails the run outright —
+  // after delivery, so the failure costs a red badge and not a newsletter.
+  const totalMin = (Date.now() - STARTED_AT) / 60000;
+  console.log(`\n⏱ Total: ${totalMin.toFixed(1)} min (budget ${TOTAL_BUDGET_MIN} min)`);
+  if (totalMin > TOTAL_BUDGET_MIN) {
+    timeWarnings.push(`whole run took ${totalMin.toFixed(1)} min (budget ${TOTAL_BUDGET_MIN})`);
   }
 
-  // Fail the workflow if anything went wrong. Previously a run could generate
-  // no content and deliver no email while still reporting success — the whole
-  // point of a scheduled job is that silence means it worked.
-  if (failed > 0 || emailsFailed > 0) {
+  if (timeWarnings.length) {
+    console.error("\n⏰ TIME BUDGET EXCEEDED");
+    timeWarnings.forEach((w) => console.error(`   • ${w}`));
+    console.error("   This run finished, but it is approaching the runner's hard");
+    console.error("   timeout. Raise the budget deliberately or make generation");
+    console.error("   faster — do not let the next run discover the ceiling.");
+    process.exitCode = 1;
+  }
+
+  if (failed > 0 || counters.failedEmail > 0) {
     console.error(
       `\n❌ Run incomplete: ${failed} edition(s) failed to generate, ` +
-      `${emailsFailed} email(s) ${DRY_RUN ? "would have failed to send" : "failed to send"}.`
+      `${counters.failedEmail} email(s) ${DRY_RUN ? "would have failed to send" : "failed to send"}.`
     );
     process.exitCode = 1;
-  } else if (DRY_RUN) {
+  } else if (DRY_RUN && !timeWarnings.length) {
     console.log(`\n✅ Rehearsal clean. src/content/ was not touched — a live run is what publishes.`);
   }
 }

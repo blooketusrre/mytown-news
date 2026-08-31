@@ -3,6 +3,8 @@
     "slug": "north-waterfront",
     "name": "North Waterfront",
     "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "legacyTopLevelUrl": true,
     "live": true,
     "neighborhoods": [
       "North Beach",
@@ -22,7 +24,7 @@
     "map": {
       "lat": 37.806,
       "lng": -122.413,
-      "short": "North Beach · Telegraph Hill · Fisherman\\"
+      "short": "North Beach \u00b7 Telegraph Hill \u00b7 Fisherman\\"
     },
     "primarySearchTerms": [
       "North Beach San Francisco",
@@ -47,6 +49,8 @@
     "slug": "marina-pacific-heights",
     "name": "Marina & Pacific Heights",
     "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "legacyTopLevelUrl": true,
     "live": true,
     "neighborhoods": [
       "Marina District",
@@ -66,7 +70,7 @@
     "map": {
       "lat": 37.799,
       "lng": -122.436,
-      "short": "Marina · Cow Hollow · Pacific Heights · Presidio Heights"
+      "short": "Marina \u00b7 Cow Hollow \u00b7 Pacific Heights \u00b7 Presidio Heights"
     },
     "primarySearchTerms": [
       "Marina District San Francisco",
@@ -88,6 +92,8 @@
     "slug": "presidio-richmond",
     "name": "Presidio & Richmond",
     "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "legacyTopLevelUrl": true,
     "live": true,
     "neighborhoods": [
       "Presidio",
@@ -109,7 +115,7 @@
     "map": {
       "lat": 37.778,
       "lng": -122.468,
-      "short": "Presidio · Sea Cliff · Inner & Outer Richmond"
+      "short": "Presidio \u00b7 Sea Cliff \u00b7 Inner & Outer Richmond"
     },
     "primarySearchTerms": [
       "Presidio San Francisco",
@@ -130,6 +136,8 @@
     "slug": "russian-hill-nob-hill",
     "name": "Russian Hill & Nob Hill",
     "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "legacyTopLevelUrl": true,
     "live": true,
     "neighborhoods": [
       "Russian Hill",
@@ -149,7 +157,7 @@
     "map": {
       "lat": 37.793,
       "lng": -122.415,
-      "short": "Russian Hill · Nob Hill · Polk Gulch · Chinatown"
+      "short": "Russian Hill \u00b7 Nob Hill \u00b7 Polk Gulch \u00b7 Chinatown"
     },
     "primarySearchTerms": [
       "Russian Hill San Francisco",
@@ -171,6 +179,8 @@
     "slug": "downtown-embarcadero",
     "name": "Downtown & Embarcadero",
     "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "legacyTopLevelUrl": true,
     "live": true,
     "neighborhoods": [
       "Financial District",
@@ -192,7 +202,7 @@
     "map": {
       "lat": 37.787,
       "lng": -122.397,
-      "short": "Financial District · Union Square · Embarcadero"
+      "short": "Financial District \u00b7 Union Square \u00b7 Embarcadero"
     },
     "primarySearchTerms": [
       "Financial District San Francisco",
@@ -213,6 +223,8 @@
     "slug": "civic-center-tenderloin",
     "name": "Civic Center & Tenderloin",
     "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "legacyTopLevelUrl": true,
     "live": true,
     "neighborhoods": [
       "Civic Center",
@@ -231,7 +243,7 @@
     "map": {
       "lat": 37.78,
       "lng": -122.415,
-      "short": "Civic Center · Tenderloin · Mid-Market"
+      "short": "Civic Center \u00b7 Tenderloin \u00b7 Mid-Market"
     },
     "primarySearchTerms": [
       "Civic Center San Francisco",
@@ -253,6 +265,8 @@
     "slug": "hayes-valley-alamo-square",
     "name": "Hayes Valley & Alamo Square",
     "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "legacyTopLevelUrl": true,
     "live": true,
     "neighborhoods": [
       "Hayes Valley",
@@ -271,7 +285,7 @@
     "map": {
       "lat": 37.7755,
       "lng": -122.43,
-      "short": "Hayes Valley · Alamo Square · NoPa"
+      "short": "Hayes Valley \u00b7 Alamo Square \u00b7 NoPa"
     },
     "primarySearchTerms": [
       "Hayes Valley San Francisco",
@@ -292,6 +306,8 @@
     "slug": "soma-mission-bay",
     "name": "SoMa & Mission Bay",
     "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "legacyTopLevelUrl": true,
     "live": true,
     "neighborhoods": [
       "South of Market",
@@ -315,7 +331,7 @@
     "map": {
       "lat": 37.772,
       "lng": -122.394,
-      "short": "SoMa · Mission Bay · Dogpatch · Potrero Hill · Treasure Island"
+      "short": "SoMa \u00b7 Mission Bay \u00b7 Dogpatch \u00b7 Potrero Hill \u00b7 Treasure Island"
     },
     "primarySearchTerms": [
       "SoMa San Francisco",
@@ -339,6 +355,8 @@
     "slug": "haight-cole-valley",
     "name": "Haight & Cole Valley",
     "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "legacyTopLevelUrl": true,
     "live": true,
     "neighborhoods": [
       "Haight-Ashbury",
@@ -357,7 +375,7 @@
     "map": {
       "lat": 37.769,
       "lng": -122.449,
-      "short": "Haight-Ashbury · Lower Haight · Cole Valley"
+      "short": "Haight-Ashbury \u00b7 Lower Haight \u00b7 Cole Valley"
     },
     "primarySearchTerms": [
       "Haight-Ashbury San Francisco",
@@ -377,6 +395,8 @@
     "slug": "castro-noe-valley",
     "name": "Castro & Noe Valley",
     "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "legacyTopLevelUrl": true,
     "live": true,
     "neighborhoods": [
       "Castro",
@@ -398,7 +418,7 @@
     "map": {
       "lat": 37.757,
       "lng": -122.432,
-      "short": "Castro · Noe Valley · Glen Park · Duboce Triangle"
+      "short": "Castro \u00b7 Noe Valley \u00b7 Glen Park \u00b7 Duboce Triangle"
     },
     "primarySearchTerms": [
       "Castro San Francisco",
@@ -419,13 +439,15 @@
     "slug": "mission-bernal-heights",
     "name": "Mission & Bernal Heights",
     "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "legacyTopLevelUrl": true,
     "live": true,
     "neighborhoods": [
       "Mission District",
       "Bernal Heights",
       "Outer Mission"
     ],
-    "description": "Murals, taquerias, tech workers, and longtime Latino families — the Mission's contradictions are its vitality.",
+    "description": "Murals, taquerias, tech workers, and longtime Latino families \u2014 the Mission's contradictions are its vitality.",
     "zipCodes": [
       "94110",
       "94112"
@@ -437,7 +459,7 @@
     "map": {
       "lat": 37.748,
       "lng": -122.418,
-      "short": "Mission District · Bernal Heights · Outer Mission"
+      "short": "Mission District \u00b7 Bernal Heights \u00b7 Outer Mission"
     },
     "primarySearchTerms": [
       "Mission District San Francisco",
@@ -458,11 +480,53 @@
     "slug": "the-sunset",
     "name": "The Sunset",
     "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "legacyTopLevelUrl": true,
     "live": true,
     "neighborhoods": [
       "Inner Sunset",
       "Outer Sunset",
-      "Parkside",
+      "Parkside"
+    ],
+    "description": "Fog, surf, N Judah streetcars and Irving Street restaurants, from Golden Gate Park down to Sloat.",
+    "zipCodes": [
+      "94122",
+      "94116"
+    ],
+    "accent": "#3d6b8f",
+    "accentOnDark": "#6c9cc0",
+    "accentBtn": "#3d6b8f",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 37.754,
+      "lng": -122.494,
+      "short": "Inner Sunset \u00b7 Outer Sunset \u00b7 Parkside"
+    },
+    "primarySearchTerms": [
+      "Inner Sunset San Francisco",
+      "Outer Sunset San Francisco",
+      "Irving Street San Francisco",
+      "Ocean Beach San Francisco",
+      "Taraval Street San Francisco",
+      "Parkside San Francisco"
+    ],
+    "sourceHints": [
+      "https://www.sfstandard.com",
+      "https://sfist.com",
+      "https://hoodline.com/neighborhoods/sunset",
+      "https://www.sfrecpark.org",
+      "https://sfpl.org",
+      "https://www.innersunsetsf.org",
+      "https://sf-pops.com"
+    ]
+  },
+  {
+    "slug": "west-portal-lakeside",
+    "name": "West Portal & Lakeside",
+    "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "live": true,
+    "neighborhoods": [
       "West Portal",
       "Forest Hill",
       "St. Francis Wood",
@@ -471,54 +535,56 @@
       "Lakeshore",
       "Parkmerced"
     ],
-    "description": "Fog, surf, N Judah streetcars, and Irving Street restaurants stretching from Golden Gate Park to Lake Merced.",
+    "description": "Village shopfronts on West Portal Avenue, the wooded streets above them, and the campus-and-lake edge of the city at Lake Merced.",
     "zipCodes": [
-      "94116",
-      "94122",
       "94127",
       "94132"
     ],
-    "accent": "#3d6b8f",
-    "accentOnDark": "#6c9cc0",
-    "accentBtn": "#3d6b8f",
+    "accent": "#7a5c3e",
+    "accentOnDark": "#c2a37e",
+    "accentBtn": "#7a5c3e",
     "accentInk": "#ffffff",
     "map": {
-      "lat": 37.743,
-      "lng": -122.482,
-      "short": "Inner &amp; Outer Sunset · Parkside · West Portal · Stonestown · Parkmerced"
+      "lat": 37.729,
+      "lng": -122.47,
+      "short": "West Portal \u00b7 Forest Hill \u00b7 Stonestown \u00b7 Parkmerced"
     },
     "primarySearchTerms": [
-      "Inner Sunset San Francisco",
-      "Outer Sunset San Francisco",
-      "Irving Street San Francisco",
       "West Portal San Francisco",
-      "Ocean Beach San Francisco",
-      "Parkmerced San Francisco",
+      "Forest Hill San Francisco",
+      "St. Francis Wood San Francisco",
+      "Miraloma Park San Francisco",
       "Stonestown Galleria",
-      "San Francisco State University news"
+      "Parkmerced San Francisco",
+      "San Francisco State University news",
+      "Lake Merced San Francisco"
     ],
     "sourceHints": [
       "https://www.sfstandard.com",
       "https://sfist.com",
-      "https://hoodline.com/neighborhoods/sunset",
       "https://www.sfrecpark.org",
       "https://sfpl.org",
-      "https://outtersunset.com"
+      "https://www.westportalmerchants.com",
+      "https://goldengatexpress.org",
+      "https://www.sfsu.edu/news",
+      "https://sfplanning.org/public-hearings"
     ]
   },
   {
     "slug": "bayview-excelsior",
     "name": "Bayview & Excelsior",
     "city": "San Francisco",
+    "citySlug": "san-francisco",
+    "legacyTopLevelUrl": true,
     "live": true,
     "neighborhoods": [
-      "Bayview–Hunters Point",
+      "Bayview\u2013Hunters Point",
       "Visitacion Valley",
       "Excelsior",
       "Crocker Amazon",
       "Ingleside"
     ],
-    "description": "The city's largest and most diverse cluster — working-class communities, new development, and deep roots.",
+    "description": "The city's largest and most diverse cluster \u2014 working-class communities, new development, and deep roots.",
     "zipCodes": [
       "94124",
       "94134",
@@ -531,7 +597,7 @@
     "map": {
       "lat": 37.726,
       "lng": -122.397,
-      "short": "Bayview · Hunters Point · Excelsior · Visitacion Valley"
+      "short": "Bayview \u00b7 Hunters Point \u00b7 Excelsior \u00b7 Visitacion Valley"
     },
     "primarySearchTerms": [
       "Bayview San Francisco",
@@ -545,6 +611,55 @@
       "https://hoodline.com/neighborhoods/bayview",
       "https://www.sfrecpark.org",
       "https://sfpl.org"
+    ]
+  },
+  {
+    "slug": "heber-city",
+    "name": "Heber City",
+    "city": "Heber City",
+    "citySlug": "heber-city",
+    "live": false,
+    "neighborhoods": [
+      "Heber City",
+      "Midway",
+      "Charleston",
+      "Daniel",
+      "Wallsburg"
+    ],
+    "description": "The Heber Valley: a ranching town turned mountain gateway, between Deer Creek Reservoir and the Wasatch Back.",
+    "zipCodes": [
+      "84032",
+      "84049",
+      "84082"
+    ],
+    "accent": "#2f6b4f",
+    "accentOnDark": "#7fc9a3",
+    "accentBtn": "#2f6b4f",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 40.5069,
+      "lng": -111.4133,
+      "short": "Heber City \u00b7 Midway \u00b7 Charleston"
+    },
+    "primarySearchTerms": [
+      "Heber City Utah",
+      "Wasatch County Utah",
+      "Midway Utah",
+      "Heber Valley"
+    ],
+    "sourceHints": [
+      "https://www.parkrecord.com/category/news/heber-city/",
+      "https://www.parkrecord.com/category/news/wasatch-county/",
+      "https://www.kpcw.org",
+      "https://www.heberut.gov/agendacenter",
+      "https://www.heberut.gov/151/Police",
+      "https://hebercityut.portal.civicclerk.com/",
+      "https://www.wasatch.utah.gov",
+      "https://wasatch.edu",
+      "https://wasatch.edu/schools/",
+      "https://www.gohebervalley.com",
+      "https://www.hebervalleyentertainment.com/movie-showtimes",
+      "https://www.utah.gov/pmn/index.html"
     ]
   }
 ]
