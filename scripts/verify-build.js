@@ -299,6 +299,46 @@ try {
   }
 }
 
+/* ── The map must not depend on a tile server that can turn itself off ────
+ * On 2026-08-29 CARTO began requiring an API key for raster basemaps and
+ * watermarked unauthenticated tiles with "API KEY REQUIRED". The homepage map
+ * broke across every device with no change on our side and no warning — a
+ * third party's pricing decision defacing the front page.
+ *
+ * This checks the built output rather than the template, because the failure
+ * was in what shipped, and lists providers deliberately rather than by
+ * pattern: adding one should be a decision, not a typo.
+ */
+try {
+  const home = fs.existsSync(path.join(OUT, "index.html"))
+    ? fs.readFileSync(path.join(OUT, "index.html"), "utf8") : "";
+  if (home) {
+    const BANNED = [
+      ["cartocdn.com", "CARTO now watermarks keyless raster tiles and is retiring them"],
+      ["api.mapbox.com", "Mapbox requires a token and bills per load"],
+      ["tiles.stadiamaps.com", "Stadia requires a registered domain"],
+      ["maps.googleapis.com", "Google Maps requires a billed API key"],
+    ];
+    BANNED.forEach(([host, why]) => {
+      if (home.includes(host)) {
+        errors.push(`homepage map loads tiles from ${host} — ${why}`);
+      }
+    });
+    const tile = home.match(/L\.tileLayer\('([^']+)'/);
+    if (!tile) {
+      errors.push("homepage has no tileLayer — the neighborhood map would render blank");
+    } else if (!/tile\.openstreetmap\.org/.test(tile[1])) {
+      warnings.push(`homepage map uses an unreviewed tile source: ${tile[1]}`);
+    }
+    if (!/openstreetmap\.org\/copyright/.test(home)) {
+      errors.push("homepage map is missing OpenStreetMap attribution, which their licence requires");
+    }
+  }
+  console.log("  Map:      keyless tiles, attribution present");
+} catch (e) {
+  errors.push(`Could not verify the map tiles: ${e.message}`);
+}
+
 /* ── Events must be ordered, and the nav must track the right section ─────
  * Both were reader-visible bugs found by looking at the page rather than by
  * any test: events appeared in the order research happened to produce them,
