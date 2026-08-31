@@ -85,6 +85,10 @@ module.exports = function (eleventyConfig) {
   const { editionPath, cityPath, editionsInCity } = require("./lib/edition-path");
   eleventyConfig.addFilter("editionPath", (edition, editions) => editionPath(edition, editions));
   eleventyConfig.addFilter("cityPath", (slug) => cityPath(slug));
+  // Every edition in a city, live or not — the homepage shows unlaunched ones
+  // as "Soon", so it cannot use the live-only editionsInCity.
+  eleventyConfig.addFilter("inCity", (editions, citySlug) =>
+    (editions || []).filter((e) => e && e.citySlug === citySlug));
   eleventyConfig.addFilter("editionsInCity", (editions, citySlug) => editionsInCity(editions, citySlug));
 
   // Events come back from research in the order sources were read, which on

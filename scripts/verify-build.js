@@ -463,6 +463,27 @@ try {
     if (dupes.length) errors.push(`${city}: duplicate edition slugs ${[...new Set(dupes)].join(", ")}`);
   });
 
+  // Nothing outside a city may appear on that city's pages. The homepage and
+  // the footer both looped every edition in clusters.json regardless of city,
+  // so adding one Utah town put "Heber City — coming soon" on the bottom of
+  // every San Francisco page and a marker on the San Francisco map.
+  const homeHtml = fs.existsSync(path.join(OUT, "index.html"))
+    ? fs.readFileSync(path.join(OUT, "index.html"), "utf8") : "";
+  if (homeHtml) {
+    const foreign = live.filter((e) => e.citySlug !== "san-francisco" && homeHtml.includes(e.name));
+    if (foreign.length) {
+      errors.push(
+        `the San Francisco homepage names ${foreign.map((e) => e.name).join(", ")} — ` +
+        `editions from other cities must not appear on it`
+      );
+    }
+    // Unlaunched editions must not be advertised anywhere.
+    const dark = editions.filter((e) => !e.live && homeHtml.includes(`${e.name} — coming soon`));
+    if (dark.length) {
+      errors.push(`unlaunched editions announced in the footer: ${dark.map((e) => e.name).join(", ")}`);
+    }
+  }
+
   console.log(`  Cities:   ${cities.filter((c) => c.live).length} live, ${citiesNeedingHub(cities, editions).length} with hubs, ${live.length} editions placed`);
 } catch (e) {
   errors.push(`Could not verify city structure: ${e.message}`);
