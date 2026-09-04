@@ -330,11 +330,40 @@ try {
     } else if (!/tile\.openstreetmap\.org/.test(tile[1])) {
       warnings.push(`homepage map uses an unreviewed tile source: ${tile[1]}`);
     }
+    // Leaflet must be served by us. On a third-party CDN, a content blocker
+    // or an outage that drops only leaflet.css leaves the map "working" while
+    // every tile becomes a static block image: the container's scrollHeight
+    // goes from 670px to 2,173px and the map appears to run southward off the
+    // city into open ocean. A friend of Brian's hit exactly this on a phone on
+    // 3 September 2026.
+    if (/unpkg\.com|cdnjs\.cloudflare\.com\/ajax\/libs\/leaflet|cdn\.jsdelivr\.net.*leaflet/.test(home)) {
+      errors.push("homepage loads Leaflet from a CDN — serve it from /assets/vendor/leaflet/ so a blocked stylesheet cannot break the map");
+    }
+    ["assets/vendor/leaflet/leaflet.js", "assets/vendor/leaflet/leaflet.css"].forEach((f) => {
+      if (!fs.existsSync(path.join(OUT, f))) errors.push(`MISSING  ${f} — the homepage map has no script or stylesheet to load`);
+    });
+    // A broken map must remove itself rather than sit between the reader and
+    // the neighborhood list, which is the actual navigation.
+    if (!/typeof L === 'undefined'/.test(home)) {
+      errors.push("homepage does not check that Leaflet loaded — a failed script would leave an empty bordered box");
+    }
+    if (!/scrollHeight > el\.clientHeight/.test(home)) {
+      errors.push("homepage does not detect an unstyled map — stacked tiles would render as a map running off southward");
+    }
     if (!/openstreetmap\.org\/copyright/.test(home)) {
       errors.push("homepage map is missing OpenStreetMap attribution, which their licence requires");
     }
   }
-  console.log("  Map:      keyless tiles, attribution present");
+  // The list is the navigation; the map is the illustration. On one column the
+  // list must come first, or a phone reader scrolls a screen and a half of
+  // picture before reaching anything tappable.
+  const css = fs.existsSync(path.join(OUT, "assets", "css", "main.css"))
+    ? fs.readFileSync(path.join(OUT, "assets", "css", "main.css"), "utf8") : "";
+  if (css && !/\.cluster-map-wrap__list\s*\{\s*order:\s*1/.test(css)) {
+    errors.push("the neighborhood list is not ordered above the map on narrow screens");
+  }
+
+  console.log("  Map:      self-hosted, keyless tiles, list first on mobile");
 } catch (e) {
   errors.push(`Could not verify the map tiles: ${e.message}`);
 }

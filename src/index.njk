@@ -58,12 +58,31 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
       <div class="cluster-map-wrap">
 
         {# ── Real Leaflet Map (OpenStreetMap) ────────────────────────── #}
-        <div>
-          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        <div class="cluster-map-wrap__map">
+          {# Self-hosted rather than unpkg. A content blocker, a corporate
+             resolver or a CDN wobble that drops leaflet.css does not remove
+             the map — it removes the *positioning* from the map, so every
+             tile becomes a static block image and they stack vertically. The
+             container's scrollHeight goes from 670px to 2,173px and a reader
+             sees San Francisco at the top with progressively more open ocean
+             below: a map that appears to run off southward into nothing.
+             That is what a friend of Brian's saw on 3 September 2026.
+             Serving it ourselves removes the failure mode rather than
+             handling it. #}
+          <link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">
           <div id="sf-map" style="height:480px;border-radius:6px;border:1px solid var(--rule);overflow:hidden;" aria-label="San Francisco neighborhood map"></div>
-          <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+          <script src="/assets/vendor/leaflet/leaflet.js"></script>
           <script>
           (function() {
+            var el = document.getElementById('sf-map');
+
+            // If Leaflet did not load at all, or the stylesheet did not apply,
+            // take the map out of the page. A missing map costs a nicety; a
+            // broken one sits between the reader and the neighborhood list,
+            // which is the actual navigation.
+            if (!el) return;
+            if (typeof L === 'undefined') { el.remove(); return; }
+
             var map = L.map('sf-map', {
               center: [37.766, -122.435],
               zoom: 12,
@@ -127,12 +146,29 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
                 });
               }
             });
+
+            // Leaflet measures its container on creation. On a slow phone that
+            // can happen before layout has settled, leaving the map centred on
+            // the wrong place — which looks like the map drifting off the city.
+            // Re-measuring once things settle costs nothing and fixes it.
+            window.addEventListener('load', function () { map.invalidateSize(); });
+            setTimeout(function () { map.invalidateSize(); }, 400);
+
+            // The stylesheet is the part whose absence is worst, because the
+            // map still "works" and simply renders as a column of tiles. If the
+            // container is taller than we told it to be, the CSS did not apply.
+            setTimeout(function () {
+              if (el.scrollHeight > el.clientHeight * 1.5) {
+                console.warn('Leaflet stylesheet did not apply — removing the map.');
+                el.remove();
+              }
+            }, 1200);
           })();
           </script>
         </div>
 
         {# ── Cluster list + ZIP lookup ──────────────────────────────── #}
-        <div>
+        <div class="cluster-map-wrap__list">
           <nav class="cluster-list" aria-label="Neighborhood clusters">
             {% for c in sfEditions %}
             {% if c.live %}
