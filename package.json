@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "glob": "^10.3.0"
+    "glob": "^10.3.0",
+    "leaflet": "^1.9.4"
   },
   "devDependencies": {
     "dotenv": "^16.0.0"

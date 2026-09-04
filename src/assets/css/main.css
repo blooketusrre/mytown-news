@@ -1856,6 +1856,22 @@ hr.divider {
 @media (max-width: 1024px) {
   .events-grid { grid-template-columns: repeat(2, 1fr); }
   .cluster-map-wrap { grid-template-columns: 1fr; }
+
+  /* On one column the list comes first and the map second.
+     The list is the navigation — fourteen tappable editions with the
+     neighborhoods spelled out — and the map is the illustration. Putting a
+     480px picture above it costs a phone reader a full screen of scrolling
+     before reaching anything they can act on, and if the map ever renders
+     badly it hides the thing it was decorating. */
+  .cluster-map-wrap__list { order: 1; }
+  .cluster-map-wrap__map  { order: 2; }
+}
+
+/* A phone screen is 812px tall; a 480px map is more than half of it for a
+   picture nobody can usefully pan on a touch screen we have disabled
+   scroll-zoom on. */
+@media (max-width: 620px) {
+  #sf-map { height: 300px !important; }
 }
 
 /* Nav crowding — shed the least useful items first, before anything overlaps.
