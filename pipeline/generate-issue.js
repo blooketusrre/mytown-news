@@ -600,6 +600,83 @@ function stripClosedVenues(issue, clusterSlug) {
 /** Normalised identity for a story, used to spot the same item recurring
  *  week to week. Source URL is the strong signal; the headline is a fallback
  *  for when an outlet changes its URL or we picked up the story elsewhere. */
+// ─── Manual directory additions ──────────────────────────────────────────────
+
+const ADDED_VENUES = (() => {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(__dirname, "added-venues.json"), "utf8"));
+  } catch (e) {
+    console.warn("  ⚠ Could not read added-venues.json:", e.message);
+    return {};
+  }
+})();
+
+/**
+ * Merge hand-listed venues into a directory.
+ *
+ * The mirror of stripClosedVenues. That removes places the research wrongly
+ * lists; this adds places it cannot find — usually because they have not
+ * opened, so nothing exists written in the present tense and a search returns
+ * a plan rather than a restaurant.
+ *
+ * Deterministic and free: no API call, no directory regeneration. It runs on
+ * every weekly issue, so an addition appears the next Friday rather than
+ * waiting up to a month for the refresh.
+ *
+ * `openingFrom` carries the interesting behaviour. Before that date the venue
+ * is listed as Coming Soon; on or after it, as New. An opening can therefore
+ * be queued weeks ahead and flips itself on the day, with no second edit and
+ * no window in which something is described as open before it is.
+ */
+function addPendingVenues(issue, clusterSlug, today = new Date()) {
+  const entries = ADDED_VENUES[clusterSlug];
+  if (!Array.isArray(entries) || !entries.length) return { added: [], skipped: [], stale: [] };
+
+  issue.directory = issue.directory || {};
+  const added = [], skipped = [], stale = [];
+
+  entries.forEach((entry) => {
+    const section = entry.section;
+    if (!section) return;
+    const list = (issue.directory[section] = issue.directory[section] || []);
+
+    // Once the monthly refresh finds it, the hand-written copy is redundant —
+    // and two entries for one restaurant is worse than none.
+    if (list.some((v) => venueKey(v.name) === venueKey(entry.name))) {
+      skipped.push(entry.name);
+      return;
+    }
+
+    // With a date, the entry flips itself on the day. Without one, an explicit
+    // "Coming Soon" stays Coming Soon until someone edits it — a venue whose
+    // opening date is genuinely unknown must not be described as open because
+    // no date was supplied.
+    const opens  = entry.openingFrom ? new Date(`${entry.openingFrom}T00:00:00Z`) : null;
+    const isOpen = opens ? today >= opens : entry.notable !== "Coming Soon";
+
+    const venue = { ...entry };
+    delete venue.section;
+    delete venue.openingFrom;
+    Object.keys(venue).forEach((k) => { if (k.startsWith("_")) delete venue[k]; });
+    // Once open, "Coming Soon" must not survive as the entry's own notable —
+    // that is the pre-opening state, not a preference to preserve. Any other
+    // label the entry carries (typically "Landmark") is kept.
+    venue.notable = !isOpen ? "Coming Soon"
+                  : (entry.notable && entry.notable !== "Coming Soon") ? entry.notable
+                  : "New";
+
+    list.push(venue);
+    added.push(`${entry.name}${isOpen ? "" : " (Coming Soon)"}`);
+
+    // If we are still hand-listing a place six months after it opened, the
+    // research is failing to find something that plainly exists, and that is
+    // worth knowing rather than papering over indefinitely.
+    if (opens && today - opens > 180 * 864e5) stale.push(entry.name);
+  });
+
+  return { added, skipped, stale };
+}
+
 function storyKeys(story) {
   const keys = [];
   if (story.sourceUrl) {
@@ -843,6 +920,13 @@ async function generateCluster(clusterConfig) {
   if (!issue.directory || !Object.keys(issue.directory).length) {
     console.warn("  ⚠ This issue has no directory — the Directory section will be empty.");
   }
+
+  // Hand-listed venues go in before the closure strip, so an entry here can
+  // still be removed by closed-venues.json if the two ever disagree.
+  const pending = addPendingVenues(issue, clusterConfig.slug);
+  pending.added.forEach((n)   => console.log(`  ＋ Added from added-venues.json: ${n}`));
+  pending.skipped.forEach((n) => console.log(`  ✓ ${n} is now in the directory on its own — remove it from added-venues.json`));
+  pending.stale.forEach((n)   => console.warn(`  ⚠ ${n} opened over six months ago and is still hand-listed — the refresh is not finding it`));
 
   const removedClosed = stripClosedVenues(issue, clusterConfig.slug);
   removedClosed.forEach(r => {
@@ -1377,6 +1461,8 @@ module.exports = {
   thisWeekDate,
   closedVenuesFor,
   stripClosedVenues,
+  addPendingVenues,
+  venueKey,
   outDirFor,
   DRY_RUN,
 };

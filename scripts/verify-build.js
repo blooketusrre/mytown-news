@@ -611,7 +611,42 @@ try {
   }
 
   console.log("  Pipeline: per-edition delivery, fail-fast off, timeouts under the ceiling");
-  console.log("  Directory: carried weekly, refreshed monthly");
+  // A directory refreshed monthly needs a way to add a venue in between, or a
+  // restaurant that opens on the 8th is missing until the following month.
+  if (!/addPendingVenues\(issue, clusterConfig\.slug\)/.test(gen)) {
+    errors.push("generate-issue.js no longer merges added-venues.json — a new venue would wait up to a month");
+  }
+  const dirScript = fs.existsSync(path.join(ROOT, "pipeline", "generate-directory.js"))
+    ? fs.readFileSync(path.join(ROOT, "pipeline", "generate-directory.js"), "utf8") : "";
+  if (dirScript && !/addPendingVenues\(staged, cluster\.slug\)/.test(dirScript)) {
+    errors.push("the monthly refresh does not re-apply added-venues.json — it would delete every pending entry");
+  }
+  try {
+    const added = JSON.parse(fs.readFileSync(path.join(ROOT, "pipeline", "added-venues.json"), "utf8"));
+    const SECTIONS = ["restaurants", "hotels", "shops", "artEntertainment", "gymsRecreation"];
+    Object.entries(added).forEach(([slug, list]) => {
+      if (slug.startsWith("_")) return;
+      if (!Array.isArray(list)) { errors.push(`added-venues.json: ${slug} is not a list`); return; }
+      list.forEach((v) => {
+        if (!v.name) errors.push(`added-venues.json: an entry under ${slug} has no name`);
+        if (!SECTIONS.includes(v.section)) {
+          errors.push(`added-venues.json: "${v.name}" has section "${v.section}" — must be one of ${SECTIONS.join(", ")}`);
+        }
+        if (v.openingFrom && !/^\d{4}-\d{2}-\d{2}$/.test(v.openingFrom)) {
+          errors.push(`added-venues.json: "${v.name}" has a malformed openingFrom`);
+        }
+        // A venue with neither a date nor an explicit Coming Soon would be
+        // published as open on the strength of nothing.
+        if (!v.openingFrom && !v.notable) {
+          errors.push(`added-venues.json: "${v.name}" has no openingFrom and no notable — it would publish as open`);
+        }
+      });
+    });
+  } catch (e) {
+    errors.push(`Could not check added-venues.json: ${e.message}`);
+  }
+
+  console.log("  Directory: carried weekly, refreshed monthly, additions merged");
 } catch (e) {
   errors.push(`Could not verify the publish pipeline: ${e.message}`);
 }

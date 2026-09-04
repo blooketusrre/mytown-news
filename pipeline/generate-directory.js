@@ -39,6 +39,7 @@ const {
   extractJson,
   closedVenuesFor,
   stripClosedVenues,
+  addPendingVenues,
 } = require("./generate-issue.js");
 
 const ROOT          = path.resolve(__dirname, "..");
@@ -178,6 +179,14 @@ async function refreshDirectory(cluster) {
 
   // Run the closure strip over the new directory, exactly as the weekly does.
   const staged = { ...issue, directory: next };
+
+  // Hand-listed venues survive a refresh. A place that has not opened is still
+  // invisible to research after the refresh, so without this the monthly run
+  // would quietly delete every pending entry the weekly run had added.
+  const pending = addPendingVenues(staged, cluster.slug);
+  pending.added.forEach((n)   => console.log(`  ＋ Kept from added-venues.json: ${n}`));
+  pending.skipped.forEach((n) => console.log(`  ✓ ${n} is now found on its own — remove it from added-venues.json`));
+
   const removed = stripClosedVenues(staged, cluster.slug);
   removed.forEach((r) =>
     console.log(`  ⊘ Removed closed venue: "${r.name}" from ${r.category}`));
