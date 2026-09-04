@@ -52,7 +52,7 @@ const clusterArg = (() => {
 // the env var is what GitHub Actions can pass from a workflow_dispatch input.
 // Only explicit affirmatives count: an unset input arrives as "" on scheduled
 // runs, and the default for anything unrecognised must be "this is live".
-// The directory is regenerated monthly, not weekly (see generate-directory.js).
+// The directory is regenerated quarterly, not weekly (see generate-directory.js).
 // Default behaviour is decided by the data rather than by a flag: if the
 // previous issue has a directory, carry it forward; if it does not — a town
 // launching, or a first issue — generate one so the edition is never published
@@ -263,7 +263,7 @@ fewer stories rather than manufacturing volume.`;
   // Five directory sections at 15–30 entries each dominate both the research
   // and the output of a run, and a restaurant's address is the same in
   // October as it was in September. Weekly runs now carry last week's
-  // directory forward and ask only for news; a separate monthly job asks
+  // directory forward and ask only for news; a separate quarterly job asks
   // only for the directory. Composing the prompt from named blocks is what
   // lets one function serve both without a second copy drifting from this one.
   const blocks = [];
@@ -322,7 +322,7 @@ ${VOCABULARY_RULE}
 }
 
 // ── Prompt blocks, composed above ────────────────────────────────────────
-// Named rather than inline so the weekly (news) and monthly (directory) runs
+// Named rather than inline so the weekly (news) and quarterly (directory) runs
 // draw from exactly the same text. Two copies would drift, and the copy that
 // drifts is the one nobody reads.
 
@@ -621,7 +621,7 @@ const ADDED_VENUES = (() => {
  *
  * Deterministic and free: no API call, no directory regeneration. It runs on
  * every weekly issue, so an addition appears the next Friday rather than
- * waiting up to a month for the refresh.
+ * waiting up to a quarter for the refresh.
  *
  * `openingFrom` carries the interesting behaviour. Before that date the venue
  * is listed as Coming Soon; on or after it, as New. An opening can therefore
@@ -640,7 +640,7 @@ function addPendingVenues(issue, clusterSlug, today = new Date()) {
     if (!section) return;
     const list = (issue.directory[section] = issue.directory[section] || []);
 
-    // Once the monthly refresh finds it, the hand-written copy is redundant —
+    // Once the quarterly refresh finds it, the hand-written copy is redundant —
     // and two entries for one restaurant is worse than none.
     if (list.some((v) => venueKey(v.name) === venueKey(entry.name))) {
       skipped.push(entry.name);
@@ -799,8 +799,9 @@ async function generateCluster(clusterConfig) {
 
   // ── Directory: carry forward, or generate if there is nothing to carry ──
   // Five sections of 15–30 venues each dominated every weekly run's research
-  // and output, to re-derive addresses that had not changed. The monthly job
-  // refreshes them; the weekly one copies last month's answer.
+  // and output, to re-derive addresses that had not changed. A quarterly job
+  // refreshes them; the weekly one copies the last answer and merges any
+  // hand-listed additions.
   const carried = (prevIssue && prevIssue.directory
                    && Object.keys(prevIssue.directory).length) ? prevIssue.directory : null;
   const includeDirectory = FORCE_DIRECTORY ? true
@@ -913,7 +914,7 @@ async function generateCluster(clusterConfig) {
   // Restore the carried directory before the closure strip, so a venue added
   // to closed-venues.json this week is removed even from a directory we did
   // not regenerate. Otherwise a closure would sit on the page for up to a
-  // month, which is exactly the failure the strip exists to prevent.
+  // quarter, which is exactly the failure the strip exists to prevent.
   if (!includeDirectory && carried) {
     issue.directory = JSON.parse(JSON.stringify(carried));
   }

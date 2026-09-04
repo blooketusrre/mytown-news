@@ -1,20 +1,27 @@
-# My Town News — Monthly Directory Refresh
+# My Town News — Quarterly Directory Refresh
 #
 # Regenerates the business directory for every live edition and splices it into
 # that edition's most recent issue file. The weekly job carries the directory
 # forward untouched; this is what keeps the thing it carries current.
 #
-# Runs on the first Friday of the month, a few hours after the weekly publish
-# (Friday 03:00 UTC) so it edits that morning's fresh issue rather than racing
-# it. GitHub cron cannot express "first Friday" — day-of-month and day-of-week
-# are OR'd, not AND'd — so this fires every Friday and the plan job filters to
-# the first seven days of the month.
+# Runs on the first Friday of each quarter — January, April, July and October —
+# a few hours after the weekly publish (Friday 03:00 UTC) so it edits that
+# morning's fresh issue rather than racing it.
+#
+# A restaurant's address changes on a scale of years, not weeks, and anything
+# that opens between refreshes goes into pipeline/added-venues.json, which the
+# weekly run merges for free. Four refreshes a year is the point at which the
+# research is correcting drift rather than re-deriving facts that never moved.
+#
+# GitHub cron cannot express "first Friday of a quarter" — day-of-month and
+# day-of-week are OR'd, not AND'd — so this fires every Friday and the plan job
+# filters on both month and day.
 
-name: Monthly Directory
+name: Quarterly Directory
 
 on:
   schedule:
-    - cron: '0 8 * * 5'   # Every Friday 08:00 UTC; filtered to the first of the month below
+    - cron: '0 8 * * 5'   # Every Friday 08:00 UTC; filtered to the first Friday of a quarter below
   workflow_dispatch:
     inputs:
       cluster:
@@ -43,18 +50,22 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      # A scheduled run on the 8th to the 31st is one of the three or four
-      # Fridays we do not want. Manual runs skip the check.
-      - name: First Friday of the month?
+      # Roughly fifty of the fifty-two Fridays this cron fires are ones we do
+      # not want. Manual runs skip the check entirely.
+      - name: First Friday of a quarter?
         id: when
         run: |
           DOM=$(date -u +%-d)
-          if [ "${{ github.event_name }}" != "schedule" ] || [ "$DOM" -le 7 ]; then
+          MON=$(date -u +%-m)
+          if [ "${{ github.event_name }}" != "schedule" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-            echo "Proceeding (day of month: $DOM)"
+            echo "Manual run — skipping the calendar check."
+          elif [ "$DOM" -le 7 ] && { [ "$MON" = 1 ] || [ "$MON" = 4 ] || [ "$MON" = 7 ] || [ "$MON" = 10 ]; }; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Proceeding — first Friday of month $MON."
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
-            echo "Skipping — day of month is $DOM, so this is not the first Friday."
+            echo "Skipping — month $MON day $DOM is not the first Friday of a quarter."
           fi
 
       - name: Choose editions
@@ -153,8 +164,8 @@ jobs:
           git config user.name  "mytown-news-bot"
           git config user.email "bot@mytown.news"
           git add src/content/
-          MONTH=$(date +%Y-%m)
+          QUARTER="$(date +%Y)-Q$(( ($(date +%-m) + 2) / 3 ))"
           git diff --cached --quiet || \
-            git commit -m "chore: refresh directories for ${MONTH}"
+            git commit -m "chore: refresh directories for ${QUARTER}"
           git pull --rebase origin main
           git push

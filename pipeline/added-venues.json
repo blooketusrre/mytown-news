@@ -1,6 +1,6 @@
 {
   "_README": [
-    "Venues to add to a directory without waiting for the monthly refresh.",
+    "Venues to add to a directory without waiting for the quarterly refresh.",
     "",
     "The mirror of closed-venues.json. That file removes places the research",
     "would wrongly list; this one adds places it cannot find \u2014 usually because",
@@ -9,7 +9,7 @@
     "",
     "Costs nothing: a data file merged deterministically on every weekly run. No",
     "extra API call, no directory regeneration. An addition appears the next",
-    "Friday rather than waiting up to a month.",
+    "Friday rather than waiting up to a quarter.",
     "",
     "Fields: 'section' is one of restaurants, hotels, shops, artEntertainment,",
     "gymsRecreation. Everything else matches the normal directory schema.",
@@ -23,7 +23,7 @@
     "Soon until edited \u2014 the right state when an opening is expected but the date",
     "is genuinely unknown.",
     "",
-    "An entry is skipped automatically once the monthly refresh finds the venue",
+    "An entry is skipped automatically once the quarterly refresh finds the venue",
     "on its own, and the run says so, which is the signal to delete it here."
   ],
   "north-waterfront": [
@@ -38,7 +38,7 @@
       "website": "",
       "neighborhood": "Telegraph Hill",
       "notable": "Coming Soon",
-      "_note": "Not open as of 30 August 2026. Owner Paul Scott told reporters in July that it would reopen in September serving dinner; Brian expects October or November. No openingFrom is set precisely because the date is unknown \u2014 it stays Coming Soon until someone adds a date or changes notable to New. Delete this entry once the monthly refresh lists it on its own."
+      "_note": "Not open as of 30 August 2026. Owner Paul Scott told reporters in July that it would reopen in September serving dinner; Brian expects October or November. No openingFrom is set precisely because the date is unknown \u2014 it stays Coming Soon until someone adds a date or changes notable to New. Delete this entry once the quarterly refresh lists it on its own."
     }
   ]
 }
