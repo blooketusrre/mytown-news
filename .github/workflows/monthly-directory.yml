@@ -1,0 +1,160 @@
+# My Town News — Monthly Directory Refresh
+#
+# Regenerates the business directory for every live edition and splices it into
+# that edition's most recent issue file. The weekly job carries the directory
+# forward untouched; this is what keeps the thing it carries current.
+#
+# Runs on the first Friday of the month, a few hours after the weekly publish
+# (Friday 03:00 UTC) so it edits that morning's fresh issue rather than racing
+# it. GitHub cron cannot express "first Friday" — day-of-month and day-of-week
+# are OR'd, not AND'd — so this fires every Friday and the plan job filters to
+# the first seven days of the month.
+
+name: Monthly Directory
+
+on:
+  schedule:
+    - cron: '0 8 * * 5'   # Every Friday 08:00 UTC; filtered to the first of the month below
+  workflow_dispatch:
+    inputs:
+      cluster:
+        description: 'Refresh a single edition slug (leave blank for all)'
+        required: false
+        default: ''
+      dry_run:
+        description: 'Dry run — research and render, write nothing to src/content'
+        type: boolean
+        default: false
+      force:
+        description: 'Ignore the first-Friday check (manual runs only)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      editions: ${{ steps.pick.outputs.editions }}
+      run: ${{ steps.when.outputs.run }}
+    steps:
+      - uses: actions/checkout@v5
+
+      # A scheduled run on the 8th to the 31st is one of the three or four
+      # Fridays we do not want. Manual runs skip the check.
+      - name: First Friday of the month?
+        id: when
+        run: |
+          DOM=$(date -u +%-d)
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$DOM" -le 7 ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Proceeding (day of month: $DOM)"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping — day of month is $DOM, so this is not the first Friday."
+          fi
+
+      - name: Choose editions
+        id: pick
+        if: steps.when.outputs.run == 'true'
+        run: |
+          EDITIONS=$(node scripts/list-editions.js "${{ github.event.inputs.cluster }}")
+          echo "editions=$EDITIONS" >> "$GITHUB_OUTPUT"
+          echo "Refreshing: $EDITIONS"
+
+  refresh:
+    needs: plan
+    if: needs.plan.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    # A directory run verifies more venues than a news run and is the slower of
+    # the two, but still nowhere near GitHub's 60-minute hard cancel.
+    timeout-minutes: 30
+    strategy:
+      # One edition erroring must not cancel the others — the same reason the
+      # weekly matrix sets this, and the same default that would undo it.
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        edition: ${{ fromJSON(needs.plan.outputs.editions) }}
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Refresh ${{ matrix.edition }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: node pipeline/generate-directory.js --cluster ${{ matrix.edition }}
+
+      - name: Stage output
+        if: always()
+        run: |
+          mkdir -p out/src/content/${{ matrix.edition }}
+          cp src/content/${{ matrix.edition }}/*.json \
+             out/src/content/${{ matrix.edition }}/ 2>/dev/null || true
+          if [ -d pipeline/dry-run ]; then
+            mkdir -p out/pipeline
+            cp -r pipeline/dry-run out/pipeline/
+          fi
+
+      - name: Upload ${{ matrix.edition }}
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: directory-${{ matrix.edition }}
+          path: out/
+          if-no-files-found: warn
+          retention-days: 14
+
+  collect:
+    needs: refresh
+    if: always() && needs.plan.outputs.run == 'true' && github.event.inputs.dry_run != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Download every edition
+        uses: actions/download-artifact@v5
+        with:
+          pattern: directory-*
+          merge-multiple: true
+          path: staging
+
+      - name: Restore refreshed issues
+        run: |
+          if [ -d staging/src/content ]; then
+            cp -r staging/src/content/. src/content/
+          fi
+          git status --short src/content/ || true
+
+      - name: Build site
+        run: npm run build:prod
+
+      - name: Commit refreshed directories
+        run: |
+          git config user.name  "mytown-news-bot"
+          git config user.email "bot@mytown.news"
+          git add src/content/
+          MONTH=$(date +%Y-%m)
+          git diff --cached --quiet || \
+            git commit -m "chore: refresh directories for ${MONTH}"
+          git pull --rebase origin main
+          git push
