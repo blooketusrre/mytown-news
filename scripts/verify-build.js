@@ -574,7 +574,44 @@ try {
   if (!/matrix:\s*\n\s*edition:/.test(wf)) {
     errors.push("weekly-publish.yml is no longer split by edition — thirteen serial editions is what hit the timeout");
   }
+  // ── The weekly run must not regenerate the directory ────────────────────
+  // Five directory sections dominated every weekly run's research and output
+  // to re-derive addresses that had not changed. The weekly job now carries
+  // last month's directory forward; a separate monthly job refreshes it.
+  //
+  // Two ways that silently reverts: the carry-forward disappears and every
+  // week pays for the directory again, or the carry-forward stays but the
+  // directory is dropped rather than copied — which would publish issues with
+  // an empty Directory section and look like a design change.
+  if (!/Carrying forward the directory/.test(gen)) {
+    errors.push("generate-issue.js no longer carries the directory forward — every weekly run would regenerate it");
+  }
+  if (!/issue\.directory = JSON\.parse\(JSON\.stringify\(carried\)\)/.test(gen)) {
+    errors.push("generate-issue.js does not splice the carried directory back in — issues would publish with an empty Directory");
+  }
+
+  const monthlyPath = path.join(ROOT, ".github", "workflows", "monthly-directory.yml");
+  if (!fs.existsSync(monthlyPath)) {
+    errors.push("monthly-directory.yml is gone — nothing would ever refresh the carried-forward directory");
+  } else {
+    const monthly = fs.readFileSync(monthlyPath, "utf8");
+    if (!/fail-fast:\s*false/.test(monthly)) {
+      errors.push("monthly-directory.yml no longer sets fail-fast: false");
+    }
+    const t = [...monthly.matchAll(/timeout-minutes:\s*(\d+)/g)].map((m) => Number(m[1]));
+    if (!t.length || Math.max(...t) > 45) {
+      errors.push("monthly-directory.yml timeouts are missing or too close to GitHub's 60-minute cancel");
+    }
+    if (!/date -u \+%-d/.test(monthly)) {
+      errors.push("monthly-directory.yml lost its first-Friday check — cron ORs day-of-month with day-of-week, so it would run every Friday");
+    }
+  }
+  if (!fs.existsSync(path.join(ROOT, "pipeline", "generate-directory.js"))) {
+    errors.push("pipeline/generate-directory.js is gone — the carried directory would never be refreshed");
+  }
+
   console.log("  Pipeline: per-edition delivery, fail-fast off, timeouts under the ceiling");
+  console.log("  Directory: carried weekly, refreshed monthly");
 } catch (e) {
   errors.push(`Could not verify the publish pipeline: ${e.message}`);
 }

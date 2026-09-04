@@ -52,6 +52,15 @@ const clusterArg = (() => {
 // the env var is what GitHub Actions can pass from a workflow_dispatch input.
 // Only explicit affirmatives count: an unset input arrives as "" on scheduled
 // runs, and the default for anything unrecognised must be "this is live".
+// The directory is regenerated monthly, not weekly (see generate-directory.js).
+// Default behaviour is decided by the data rather than by a flag: if the
+// previous issue has a directory, carry it forward; if it does not — a town
+// launching, or a first issue — generate one so the edition is never published
+// with an empty Directory section. A flag the weekly workflow could forget to
+// pass would fail in exactly that case.
+const FORCE_DIRECTORY = args.includes("--force-directory");
+const NO_DIRECTORY    = args.includes("--no-directory");
+
 const DRY_RUN = (() => {
   if (args.includes("--dry-run")) return true;
   const v = String(process.env.DRY_RUN || "").trim().toLowerCase();
@@ -174,7 +183,7 @@ or simply name the neighborhood instead.
 of our own coverage areas.)`;
 /* wording-check: on */
 
-function buildSystemPrompt(cluster, prevIssue, closedVenues) {
+function buildSystemPrompt(cluster, prevIssue, closedVenues, opts = {}) {
   const today = new Date().toISOString().slice(0, 10);
 
   // Show the model what ran last week so it can avoid repeating the lead.
@@ -247,15 +256,77 @@ inventions is a dead publication. If a week is genuinely quiet, say so in
 fewer stories rather than manufacturing volume.`;
   }
 
-  return `You are the research editor for My Town News, a hyperlocal weekly newspaper covering San Francisco neighborhoods.
+  const wantNews = opts.includeNews !== false;
+  const wantDir  = opts.includeDirectory !== false;
 
-Today is ${today}. You are preparing the issue for the week of ${thisWeekDate()}.
+  // ── The directory is expensive and barely changes ──────────────────────
+  // Five directory sections at 15–30 entries each dominate both the research
+  // and the output of a run, and a restaurant's address is the same in
+  // October as it was in September. Weekly runs now carry last week's
+  // directory forward and ask only for news; a separate monthly job asks
+  // only for the directory. Composing the prompt from named blocks is what
+  // lets one function serve both without a second copy drifting from this one.
+  const blocks = [];
+
+  blocks.push(`You are the research editor for My Town News, a hyperlocal weekly newspaper covering San Francisco neighborhoods.
+
+Today is ${today}. You are preparing the ${wantNews && wantDir ? "issue" : wantNews ? "issue" : "business directory"} for the week of ${thisWeekDate()}.
 
 Your edition: ${cluster.name}
-Neighborhoods: ${cluster.neighborhoods.join(", ")}${sourceBlock}${lastWeekBlock}${closedBlock}
+Neighborhoods: ${cluster.neighborhoods.join(", ")}${sourceBlock}${wantNews ? lastWeekBlock : ""}${closedBlock}
 ${VOCABULARY_RULE}
+`);
 
-DIRECTORY VERIFICATION RULE — NON-NEGOTIABLE:
+  // Only the directory needs the closure-verification discipline, and it is
+  // the single longest block in the prompt.
+  if (wantDir) blocks.push(DIRECTORY_VERIFICATION_RULE);
+
+  blocks.push(EDITORIAL_RULES);
+
+  blocks.push(`CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
+{
+  "clusterSlug": "${cluster.slug}",
+  "clusterName": "${cluster.name}",
+  "weekOf": "${thisWeekDate()}",
+`);
+
+  if (wantNews) blocks.push(NEWS_SCHEMA);
+  if (wantDir)  blocks.push(DIRECTORY_SCHEMA);
+
+  blocks.push(`  "sources": [
+    { "title": "...", "url": "...", "publication": "..." }
+  ]
+}
+`);
+
+  if (wantDir)  blocks.push(DIRECTORY_GUIDANCE);
+  if (wantNews) blocks.push(BRIEFS_RULE);
+
+  const targets = ["QUANTITY TARGETS:"];
+  if (wantNews) targets.push(
+    "- topStories: 3 (minimum 1 if it's a slow news week — never fabricate to fill)",
+    "- events: 4–8 (upcoming or ongoing within ~3 weeks)",
+    "- moreNews: 0–4 briefs (see BRIEFS below — fewer is fine, invented is not)");
+  if (wantDir) targets.push(
+    "- restaurants: 15–30 (comprehensive coverage — every notable café, restaurant, bar, and bakery in these neighborhoods)",
+    "- hotels: 5–15 (all hotels and inns in these neighborhoods)",
+    "- shops: 10–20 (notable independent shops, bookstores, specialty stores, services)",
+    "- artEntertainment: 8–15 (galleries, theaters, music venues, cinemas, museums)",
+    "- gymsRecreation: 8–15 (gyms, yoga studios, sports courts, pools, notable parks)");
+  targets.push("- sources: deduplicated list of every source referenced above");
+  blocks.push(targets.join("\n") + "\n");
+
+  blocks.push(`CRITICAL: Your response must be ONLY the raw JSON object — nothing else. Do not write any introduction, explanation, or commentary. Do not say "I'll research" or "Here is the issue." Begin your response with { and end with }. No markdown fences.`);
+
+  return blocks.join("\n");
+}
+
+// ── Prompt blocks, composed above ────────────────────────────────────────
+// Named rather than inline so the weekly (news) and monthly (directory) runs
+// draw from exactly the same text. Two copies would drift, and the copy that
+// drifts is the one nobody reads.
+
+const DIRECTORY_VERIFICATION_RULE = `DIRECTORY VERIFICATION RULE — NON-NEGOTIABLE:
 
 Do not only look for evidence a venue is open. A closed restaurant often keeps
 a live website, a domain that redirects elsewhere, and years of old reviews —
@@ -286,21 +357,20 @@ For every venue you intend to list:
    is worth far more than a longer one containing a restaurant that closed two
    years ago. Readers who act on a wrong listing stop trusting every listing.
 
-EDITORIAL RULES — NON-NEGOTIABLE:
+`;
+
+const EDITORIAL_RULES = `EDITORIAL RULES — NON-NEGOTIABLE:
 1. Every factual claim must be traceable to a real, verifiable public source (city agency, established news outlet, neighborhood association, business website, library/cultural calendar, official press release).
 2. Do NOT invent quotes. If a quote appears, it must come from a verifiable published statement — include the exact source URL.
 3. Named individuals appear only in their publicly documented roles (officials, business owners, published authors). No private individuals unless they have given a public statement.
 4. Do NOT fabricate events, dates, business names, or addresses.
 5. If a story cannot be verified, omit it entirely. A shorter issue with real news beats a longer issue with invented content.
 6. Search the web for current news. Only include stories published within the last 10 days. Do not include events or news that occurred more than 10 days ago (e.g., no July 4th stories if today is July 14 or later).
-7. Sort events in this exact order: first, multi-day/through-date events (e.g., "Through August 15"); second, events labeled "Ongoing" with no fixed end; third, single-date upcoming events in chronological order by date.
+7. Order events soonest first, then ongoing or through-date events. lib/event-order.js re-sorts deterministically after generation, so this is a preference rather than a guarantee — but returning them in order makes the result easier to check by eye.
 
-CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
-{
-  "clusterSlug": "${cluster.slug}",
-  "clusterName": "${cluster.name}",
-  "weekOf": "${thisWeekDate()}",
-  "topStories": [
+`;
+
+const NEWS_SCHEMA = `  "topStories": [
     {
       "headline": "...",
       "dek": "One-sentence summary.",
@@ -331,7 +401,9 @@ CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
       "tags": ["tag1"]
     }
   ],
-  "directory": {
+`;
+
+const DIRECTORY_SCHEMA = `  "directory": {
     "restaurants": [
       {
         "name": "...",
@@ -397,19 +469,18 @@ CONTENT STRUCTURE (return as JSON only — no markdown wrapper):
       }
     ]
   },
-  "sources": [
-    { "title": "...", "url": "...", "publication": "..." }
-  ]
-}
+`;
 
-DIRECTORY GROUPING GUIDANCE:
+const DIRECTORY_GUIDANCE = `DIRECTORY GROUPING GUIDANCE:
 - cuisineGroup options: "Coffee & Cafés", "Italian & Deli", "Seafood & American", "Asian", "Mexican & Latin American", "Mediterranean & Middle Eastern", "Brunch & Breakfast", "Pizza & Sandwiches", "Bars & Wine Bars", "Bakeries & Desserts", "Vegetarian & Vegan", "Other"
 - shopGroup options: "Books & Literature", "Fashion & Clothing", "Home & Gifts", "Specialty Food & Wine", "Beauty & Wellness", "Art Supplies & Hobby", "Hardware & Services", "Other"
 - venueGroup (art): "Art Galleries", "Theater & Comedy", "Music Venues", "Cinema", "Museums & Cultural"
 - venueGroup (gyms): "Yoga & Pilates", "Gyms & CrossFit", "Sports & Courts", "Cycling & Rowing", "Martial Arts", "Pools & Aquatics", "Parks & Outdoor Recreation"
 - notable field: "Landmark" for long-established institutions, "New" for opened in the last year, or "" for standard listings
 
-BRIEFS (the moreNews section):
+`;
+
+const BRIEFS_RULE = `BRIEFS (the moreNews section):
 
 This section carries the smaller items: a business opening or closing, a
 council designation, a project reaching completion, a grant awarded, a road
@@ -431,19 +502,7 @@ Two requirements, both about honesty rather than recency:
    count. Returning one brief, or none, is a correct answer in a quiet week.
    An empty section is honest; a manufactured one is not.
 
-QUANTITY TARGETS:
-- topStories: 3 (minimum 1 if it's a slow news week — never fabricate to fill)
-- events: 4–8 (upcoming or ongoing within ~3 weeks)
-- moreNews: 0–4 briefs (see BRIEFS below — fewer is fine, invented is not)
-- restaurants: 15–30 (comprehensive coverage — every notable café, restaurant, bar, and bakery in these neighborhoods)
-- hotels: 5–15 (all hotels and inns in these neighborhoods)
-- shops: 10–20 (notable independent shops, bookstores, specialty stores, services)
-- artEntertainment: 8–15 (galleries, theaters, music venues, cinemas, museums)
-- gymsRecreation: 8–15 (gyms, yoga studios, sports courts, pools, notable parks)
-- sources: deduplicated list of every source referenced above
-
-CRITICAL: Your response must be ONLY the raw JSON object — nothing else. Do not write any introduction, explanation, or commentary. Do not say "I'll research" or "Here is the issue." Begin your response with { and end with }. No markdown fences.`;
-}
+`;
 
 /** Extract JSON from Claude response (handles tool-use turns and plain text) */
 function extractJson(response) {
@@ -661,8 +720,25 @@ async function generateCluster(clusterConfig) {
     name: "web_search",
   };
 
+  // ── Directory: carry forward, or generate if there is nothing to carry ──
+  // Five sections of 15–30 venues each dominated every weekly run's research
+  // and output, to re-derive addresses that had not changed. The monthly job
+  // refreshes them; the weekly one copies last month's answer.
+  const carried = (prevIssue && prevIssue.directory
+                   && Object.keys(prevIssue.directory).length) ? prevIssue.directory : null;
+  const includeDirectory = FORCE_DIRECTORY ? true
+                         : NO_DIRECTORY    ? false
+                         : !carried;
+  if (includeDirectory && !FORCE_DIRECTORY) {
+    console.log("  ℹ No directory to carry forward — generating one this run.");
+  } else if (!includeDirectory) {
+    const n = Object.values(carried).reduce((t, v) => t + (Array.isArray(v) ? v.length : 0), 0);
+    console.log(`  ↻ Carrying forward the directory from ${prevIssue.weekOf} (${n} venues) — not regenerating.`);
+  }
+
   const closedVenues = closedVenuesFor(clusterConfig.slug);
-  const systemPrompt = buildSystemPrompt(clusterConfig, prevIssue, closedVenues);
+  const systemPrompt = buildSystemPrompt(clusterConfig, prevIssue, closedVenues,
+                                         { includeDirectory });
   const userMessage  = `Please research and write this week's My Town News issue for ${clusterConfig.name} (${clusterConfig.neighborhoods.join(", ")}). Search for real, current news stories and upcoming events in these neighborhoods. Return only valid JSON matching the schema in your instructions.`;
 
   // The server-side web_search tool runs the research loop inside the API, but
@@ -757,6 +833,17 @@ async function generateCluster(clusterConfig) {
   // ── 2. Strip anything on the closed list ────────────────────────────────
   // The prompt asks for this too, but Birch & Rye survived into two
   // consecutive issues, so the deterministic pass is the one that holds.
+  // Restore the carried directory before the closure strip, so a venue added
+  // to closed-venues.json this week is removed even from a directory we did
+  // not regenerate. Otherwise a closure would sit on the page for up to a
+  // month, which is exactly the failure the strip exists to prevent.
+  if (!includeDirectory && carried) {
+    issue.directory = JSON.parse(JSON.stringify(carried));
+  }
+  if (!issue.directory || !Object.keys(issue.directory).length) {
+    console.warn("  ⚠ This issue has no directory — the Directory section will be empty.");
+  }
+
   const removedClosed = stripClosedVenues(issue, clusterConfig.slug);
   removedClosed.forEach(r => {
     console.log(`  ⊘ Removed closed venue: "${r.name}" from ${r.category}${r.closed ? ` (closed ${r.closed})` : ""}`);
@@ -1278,6 +1365,25 @@ async function main() {
     console.log(`\n✅ Rehearsal clean. src/content/ was not touched — a live run is what publishes.`);
   }
 }
+
+// Exported so pipeline/generate-directory.js can reuse the prompt blocks, the
+// API client and the closed-venue strip rather than keeping a second copy of
+// each. Two copies of a prompt drift, and the one that drifts is the one
+// nobody is reading.
+module.exports = {
+  buildSystemPrompt,
+  callClaude,
+  extractJson,
+  thisWeekDate,
+  closedVenuesFor,
+  stripClosedVenues,
+  outDirFor,
+  DRY_RUN,
+};
+
+// Only run the weekly pipeline when invoked directly. Required as a module —
+// which is how the directory script reuses the above — main() must not fire.
+if (require.main !== module) return;
 
 main().catch((err) => {
   console.error("Fatal:", err);
