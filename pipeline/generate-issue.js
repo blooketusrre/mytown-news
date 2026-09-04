@@ -771,54 +771,12 @@ function rotateRepeatedLead(issue, prevIssue) {
   return { demoted: prevLead.headline, promoted: fresh.headline };
 }
 
-async function generateCluster(clusterConfig) {
-  console.log(`\n📰 Generating: ${clusterConfig.name}`);
-  const weekDate = thisWeekDate();
-  const outDir   = outDirFor(clusterConfig.slug);
-  const outFile  = path.join(outDir, `${weekDate}.json`);
-
-  // Skip if already generated today. In a dry run this checks the rehearsal
-  // path, not src/content — otherwise a rehearsal held after the real run
-  // would silently do nothing and look like a pass.
-  if (fs.existsSync(outFile)) {
-    console.log(`  ✓ Already exists: ${outFile}`);
-    return;
-  }
-  if (DRY_RUN && fs.existsSync(path.join(CONTENT_DIR, clusterConfig.slug, `${weekDate}.json`))) {
-    console.log(`  ℹ A real issue for ${weekDate} already exists — rehearsing alongside it, not touching it.`);
-  }
-
-  const prevIssue = loadPreviousIssue(clusterConfig.slug, weekDate);
-
-  // ── 1. Research with Claude (web search enabled) ────────────────────────
-  console.log("  🔍 Researching current news…");
-  const webSearchTool = {
-    type: "web_search_20250305",
-    name: "web_search",
-  };
-
-  // ── Directory: carry forward, or generate if there is nothing to carry ──
-  // Five sections of 15–30 venues each dominated every weekly run's research
-  // and output, to re-derive addresses that had not changed. A quarterly job
-  // refreshes them; the weekly one copies the last answer and merges any
-  // hand-listed additions.
-  const carried = (prevIssue && prevIssue.directory
-                   && Object.keys(prevIssue.directory).length) ? prevIssue.directory : null;
-  const includeDirectory = FORCE_DIRECTORY ? true
-                         : NO_DIRECTORY    ? false
-                         : !carried;
-  if (includeDirectory && !FORCE_DIRECTORY) {
-    console.log("  ℹ No directory to carry forward — generating one this run.");
-  } else if (!includeDirectory) {
-    const n = Object.values(carried).reduce((t, v) => t + (Array.isArray(v) ? v.length : 0), 0);
-    console.log(`  ↻ Carrying forward the directory from ${prevIssue.weekOf} (${n} venues) — not regenerating.`);
-  }
-
-  const closedVenues = closedVenuesFor(clusterConfig.slug);
-  const systemPrompt = buildSystemPrompt(clusterConfig, prevIssue, closedVenues,
-                                         { includeDirectory });
-  const userMessage  = `Please research and write this week's My Town News issue for ${clusterConfig.name} (${clusterConfig.neighborhoods.join(", ")}). Search for real, current news stories and upcoming events in these neighborhoods. Return only valid JSON matching the schema in your instructions.`;
-
+/**
+ * One full research attempt: the paused-turn loop, then JSON extraction with
+ * the salvage retry. Throws if it cannot produce an issue, so the caller can
+ * start over from a clean conversation.
+ */
+async function researchIssue(systemPrompt, userMessage, webSearchTool) {
   // The server-side web_search tool runs the research loop inside the API, but
   // a long research turn can come back with stop_reason "pause_turn" — the
   // model has more to do and expects us to hand its own output back so it can
@@ -905,6 +863,91 @@ async function generateCluster(clusterConfig) {
         console.error("     the model returned no text block at all — it ended its turn after searching");
       }
       throw err;
+    }
+  }
+  return issue;
+}
+
+async function generateCluster(clusterConfig) {
+  console.log(`\n📰 Generating: ${clusterConfig.name}`);
+  const weekDate = thisWeekDate();
+  const outDir   = outDirFor(clusterConfig.slug);
+  const outFile  = path.join(outDir, `${weekDate}.json`);
+
+  // Skip if already generated today. In a dry run this checks the rehearsal
+  // path, not src/content — otherwise a rehearsal held after the real run
+  // would silently do nothing and look like a pass.
+  if (fs.existsSync(outFile)) {
+    console.log(`  ✓ Already exists: ${outFile}`);
+    return;
+  }
+  if (DRY_RUN && fs.existsSync(path.join(CONTENT_DIR, clusterConfig.slug, `${weekDate}.json`))) {
+    console.log(`  ℹ A real issue for ${weekDate} already exists — rehearsing alongside it, not touching it.`);
+  }
+
+  const prevIssue = loadPreviousIssue(clusterConfig.slug, weekDate);
+
+  // ── 1. Research with Claude (web search enabled) ────────────────────────
+  console.log("  🔍 Researching current news…");
+  const webSearchTool = {
+    type: "web_search_20250305",
+    name: "web_search",
+  };
+
+  // ── Directory: carry forward, or generate if there is nothing to carry ──
+  // Five sections of 15–30 venues each dominated every weekly run's research
+  // and output, to re-derive addresses that had not changed. A quarterly job
+  // refreshes them; the weekly one copies the last answer and merges any
+  // hand-listed additions.
+  const carried = (prevIssue && prevIssue.directory
+                   && Object.keys(prevIssue.directory).length) ? prevIssue.directory : null;
+  const includeDirectory = FORCE_DIRECTORY ? true
+                         : NO_DIRECTORY    ? false
+                         : !carried;
+  if (includeDirectory && !FORCE_DIRECTORY) {
+    console.log("  ℹ No directory to carry forward — generating one this run.");
+  } else if (!includeDirectory) {
+    const n = Object.values(carried).reduce((t, v) => t + (Array.isArray(v) ? v.length : 0), 0);
+    console.log(`  ↻ Carrying forward the directory from ${prevIssue.weekOf} (${n} venues) — not regenerating.`);
+  }
+
+  const closedVenues = closedVenuesFor(clusterConfig.slug);
+  const systemPrompt = buildSystemPrompt(clusterConfig, prevIssue, closedVenues,
+                                         { includeDirectory });
+  const userMessage  = `Please research and write this week's My Town News issue for ${clusterConfig.name} (${clusterConfig.neighborhoods.join(", ")}). Search for real, current news stories and upcoming events in these neighborhoods. Return only valid JSON matching the schema in your instructions.`;
+
+  // ── Research, with retries ──────────────────────────────────────────────
+  // Roughly one edition in five comes back without JSON: the model finishes
+  // its searches and ends the turn before serialising. Which editions fail
+  // moves week to week — Russian Hill, the Sunset and Bayview on 29 August;
+  // Russian Hill, Downtown and the Marina on 4 September — and the failures
+  // do not correlate with prompt size, neighbourhood count or source count.
+  // The two largest editions both succeeded on the run that lost three.
+  //
+  // That is an intermittent response, not a broken edition, and the answer to
+  // an intermittent response is to ask again. Each attempt starts a fresh
+  // conversation rather than continuing the failed one: the failure is a turn
+  // that ended in the wrong place, and there is nothing in it worth keeping.
+  //
+  // Cost is paid only on failure — a clean run never reaches the retry. At a
+  // 20% failure rate, three attempts take the miss rate under 1%.
+  const RESEARCH_ATTEMPTS = Number(process.env.RESEARCH_ATTEMPTS || 3);
+  let issue;
+
+  for (let attempt = 1; attempt <= RESEARCH_ATTEMPTS; attempt++) {
+    if (attempt > 1) {
+      console.warn(`  ↻ Attempt ${attempt} of ${RESEARCH_ATTEMPTS} — fresh conversation.`);
+    }
+    try {
+      issue = await researchIssue(systemPrompt, userMessage, webSearchTool);
+      if (attempt > 1) console.log(`  ✅ Recovered on attempt ${attempt}.`);
+      break;
+    } catch (err) {
+      if (attempt === RESEARCH_ATTEMPTS) {
+        console.error(`  ✗ All ${RESEARCH_ATTEMPTS} attempts failed for ${clusterConfig.slug}.`);
+        throw err;
+      }
+      console.warn(`  ⚠ Attempt ${attempt} failed: ${err.message}`);
     }
   }
 

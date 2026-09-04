@@ -5,8 +5,8 @@
 # forward untouched; this is what keeps the thing it carries current.
 #
 # Runs on the first Friday of each quarter — January, April, July and October —
-# a few hours after the weekly publish (Friday 03:00 UTC) so it edits that
-# morning's fresh issue rather than racing it.
+# after the weekly publish (Friday 16:15 UTC) so it edits that morning's fresh
+# issue rather than racing it.
 #
 # A restaurant's address changes on a scale of years, not weeks, and anything
 # that opens between refreshes goes into pipeline/added-venues.json, which the
@@ -21,7 +21,7 @@ name: Quarterly Directory
 
 on:
   schedule:
-    - cron: '0 8 * * 5'   # Every Friday 08:00 UTC; filtered to the first Friday of a quarter below
+    - cron: '0 19 * * 5'   # Every Friday 19:00 UTC, ~2.5h after the weekly run; filtered to the first Friday of a quarter below
   workflow_dispatch:
     inputs:
       cluster:

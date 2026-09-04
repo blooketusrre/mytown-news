@@ -603,6 +603,32 @@ try {
   if (!/matrix:\s*\n\s*edition:/.test(wf)) {
     errors.push("weekly-publish.yml is no longer split by edition — thirteen serial editions is what hit the timeout");
   }
+
+  // The send time is a product decision, not an implementation detail. Issues
+  // used to go out at 03:00 UTC — the small hours Pacific — so by the time a
+  // reader opened their inbox on Friday the newsletter was already buried
+  // under a morning's mail. Keep it in a Pacific-morning window so a
+  // well-meaning edit cannot quietly move publication back overnight.
+  const cron = wf.match(/- cron: '(\d+) (\d+) \* \* 5'/);
+  if (!cron) {
+    errors.push("weekly-publish.yml has no Friday cron — the newsletter would never send on a schedule");
+  } else {
+    const hourUTC = Number(cron[2]);
+    if (hourUTC < 15 || hourUTC > 18) {
+      const pacific = (hourUTC + 24 - 7) % 24;
+      errors.push(
+        `weekly-publish.yml sends at ${String(hourUTC).padStart(2, "0")}:${cron[1]} UTC, ` +
+        `which is ${pacific}:${cron[1]} Pacific. Keep it between 15:00 and 18:00 UTC so ` +
+        `issues arrive on a Friday morning rather than overnight.`
+      );
+    }
+  }
+
+  // The retry is what turns a ~20% per-edition failure rate into under 1%.
+  if (!/RESEARCH_ATTEMPTS/.test(gen) || !/researchIssue\(/.test(gen)) {
+    errors.push("generate-issue.js lost its research retry — one bad response would lose an edition for the week");
+  }
+
   // ── The weekly run must not regenerate the directory ────────────────────
   // Five directory sections dominated every weekly run's research and output
   // to re-derive addresses that had not changed. The weekly job now carries
