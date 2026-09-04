@@ -1,0 +1,44 @@
+{
+  "_README": [
+    "Venues to add to a directory without waiting for the quarterly refresh.",
+    "",
+    "The mirror of closed-venues.json. That file removes places the research",
+    "would wrongly list; this one adds places it cannot find \u2014 usually because",
+    "they have not opened, so nothing is written about them in the present tense",
+    "and a search returns a plan rather than a restaurant.",
+    "",
+    "Costs nothing: a data file merged deterministically on every weekly run. No",
+    "extra API call, no directory regeneration. An addition appears the next",
+    "Friday rather than waiting up to a quarter.",
+    "",
+    "Fields: 'section' is one of restaurants, hotels, shops, artEntertainment,",
+    "gymsRecreation. Everything else matches the normal directory schema.",
+    "",
+    "'openingFrom' (ISO date, optional): before that date the venue lists as",
+    "Coming Soon, on or after it as New. So an opening can be queued weeks ahead",
+    "and flips itself on the day, with no second edit and no window in which",
+    "something is described as open before it is.",
+    "",
+    "With no 'openingFrom', an explicit notable of 'Coming Soon' stays Coming",
+    "Soon until edited \u2014 the right state when an opening is expected but the date",
+    "is genuinely unknown.",
+    "",
+    "An entry is skipped automatically once the quarterly refresh finds the venue",
+    "on its own, and the run says so, which is the signal to delete it here."
+  ],
+  "north-waterfront": [
+    {
+      "section": "restaurants",
+      "name": "Julius' Castle",
+      "cuisineGroup": "Seafood & American",
+      "type": "Historic cliffside restaurant",
+      "description": "The 1924 Telegraph Hill landmark below Coit Tower, reopening after nearly two decades closed following a restoration of its fire-damaged turret and original wood panelling.",
+      "address": "1541 Montgomery St",
+      "phone": "",
+      "website": "",
+      "neighborhood": "Telegraph Hill",
+      "notable": "Coming Soon",
+      "_note": "Not open as of 30 August 2026. Owner Paul Scott told reporters in July that it would reopen in September serving dinner; Brian expects October or November. No openingFrom is set precisely because the date is unknown \u2014 it stays Coming Soon until someone adds a date or changes notable to New. Delete this entry once the quarterly refresh lists it on its own."
+    }
+  ]
+}

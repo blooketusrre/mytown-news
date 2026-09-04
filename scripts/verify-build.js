@@ -577,7 +577,7 @@ try {
   // ── The weekly run must not regenerate the directory ────────────────────
   // Five directory sections dominated every weekly run's research and output
   // to re-derive addresses that had not changed. The weekly job now carries
-  // last month's directory forward; a separate monthly job refreshes it.
+  // the last directory forward; a separate quarterly job refreshes it.
   //
   // Two ways that silently reverts: the carry-forward disappears and every
   // week pays for the directory again, or the carry-forward stays but the
@@ -590,20 +590,20 @@ try {
     errors.push("generate-issue.js does not splice the carried directory back in — issues would publish with an empty Directory");
   }
 
-  const monthlyPath = path.join(ROOT, ".github", "workflows", "monthly-directory.yml");
-  if (!fs.existsSync(monthlyPath)) {
-    errors.push("monthly-directory.yml is gone — nothing would ever refresh the carried-forward directory");
+  const quarterlyPath = path.join(ROOT, ".github", "workflows", "quarterly-directory.yml");
+  if (!fs.existsSync(quarterlyPath)) {
+    errors.push("quarterly-directory.yml is gone — nothing would ever refresh the carried-forward directory");
   } else {
-    const monthly = fs.readFileSync(monthlyPath, "utf8");
-    if (!/fail-fast:\s*false/.test(monthly)) {
-      errors.push("monthly-directory.yml no longer sets fail-fast: false");
+    const quarterly = fs.readFileSync(quarterlyPath, "utf8");
+    if (!/fail-fast:\s*false/.test(quarterly)) {
+      errors.push("quarterly-directory.yml no longer sets fail-fast: false");
     }
-    const t = [...monthly.matchAll(/timeout-minutes:\s*(\d+)/g)].map((m) => Number(m[1]));
+    const t = [...quarterly.matchAll(/timeout-minutes:\s*(\d+)/g)].map((m) => Number(m[1]));
     if (!t.length || Math.max(...t) > 45) {
-      errors.push("monthly-directory.yml timeouts are missing or too close to GitHub's 60-minute cancel");
+      errors.push("quarterly-directory.yml timeouts are missing or too close to GitHub's 60-minute cancel");
     }
-    if (!/date -u \+%-d/.test(monthly)) {
-      errors.push("monthly-directory.yml lost its first-Friday check — cron ORs day-of-month with day-of-week, so it would run every Friday");
+    if (!/date -u \+%-d/.test(quarterly) || !/date -u \+%-m/.test(quarterly)) {
+      errors.push("quarterly-directory.yml lost its calendar check — cron ORs day-of-month with day-of-week, so it would run every Friday");
     }
   }
   if (!fs.existsSync(path.join(ROOT, "pipeline", "generate-directory.js"))) {
@@ -611,7 +611,42 @@ try {
   }
 
   console.log("  Pipeline: per-edition delivery, fail-fast off, timeouts under the ceiling");
-  console.log("  Directory: carried weekly, refreshed monthly");
+  // A directory refreshed quarterly needs a way to add a venue in between, or
+  // a restaurant that opens in November waits until January.
+  if (!/addPendingVenues\(issue, clusterConfig\.slug\)/.test(gen)) {
+    errors.push("generate-issue.js no longer merges added-venues.json — a new venue would wait up to a quarter");
+  }
+  const dirScript = fs.existsSync(path.join(ROOT, "pipeline", "generate-directory.js"))
+    ? fs.readFileSync(path.join(ROOT, "pipeline", "generate-directory.js"), "utf8") : "";
+  if (dirScript && !/addPendingVenues\(staged, cluster\.slug\)/.test(dirScript)) {
+    errors.push("the quarterly refresh does not re-apply added-venues.json — it would delete every pending entry");
+  }
+  try {
+    const added = JSON.parse(fs.readFileSync(path.join(ROOT, "pipeline", "added-venues.json"), "utf8"));
+    const SECTIONS = ["restaurants", "hotels", "shops", "artEntertainment", "gymsRecreation"];
+    Object.entries(added).forEach(([slug, list]) => {
+      if (slug.startsWith("_")) return;
+      if (!Array.isArray(list)) { errors.push(`added-venues.json: ${slug} is not a list`); return; }
+      list.forEach((v) => {
+        if (!v.name) errors.push(`added-venues.json: an entry under ${slug} has no name`);
+        if (!SECTIONS.includes(v.section)) {
+          errors.push(`added-venues.json: "${v.name}" has section "${v.section}" — must be one of ${SECTIONS.join(", ")}`);
+        }
+        if (v.openingFrom && !/^\d{4}-\d{2}-\d{2}$/.test(v.openingFrom)) {
+          errors.push(`added-venues.json: "${v.name}" has a malformed openingFrom`);
+        }
+        // A venue with neither a date nor an explicit Coming Soon would be
+        // published as open on the strength of nothing.
+        if (!v.openingFrom && !v.notable) {
+          errors.push(`added-venues.json: "${v.name}" has no openingFrom and no notable — it would publish as open`);
+        }
+      });
+    });
+  } catch (e) {
+    errors.push(`Could not check added-venues.json: ${e.message}`);
+  }
+
+  console.log("  Directory: carried weekly, refreshed quarterly, additions merged");
 } catch (e) {
   errors.push(`Could not verify the publish pipeline: ${e.message}`);
 }

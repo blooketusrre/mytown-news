@@ -1,10 +1,14 @@
 #!/usr/bin/env node
 /**
- * My Town News — Monthly Directory Refresh
+ * My Town News — Quarterly Directory Refresh
  *
  * Regenerates only the business directory for one edition and splices it into
  * that edition's most recent issue file. The weekly run carries the directory
  * forward untouched; this is what makes the thing it carries current.
+ *
+ * Runs quarterly. Anything that opens in between goes into added-venues.json,
+ * which the weekly run merges for free — so the refresh is correcting drift
+ * rather than being the only route onto the page.
  *
  * Usage:
  *   node pipeline/generate-directory.js --cluster north-waterfront
@@ -39,6 +43,7 @@ const {
   extractJson,
   closedVenuesFor,
   stripClosedVenues,
+  addPendingVenues,
 } = require("./generate-issue.js");
 
 const ROOT          = path.resolve(__dirname, "..");
@@ -178,6 +183,14 @@ async function refreshDirectory(cluster) {
 
   // Run the closure strip over the new directory, exactly as the weekly does.
   const staged = { ...issue, directory: next };
+
+  // Hand-listed venues survive a refresh. A place that has not opened is still
+  // invisible to research after the refresh, so without this the quarterly run
+  // would quietly delete every pending entry the weekly run had added.
+  const pending = addPendingVenues(staged, cluster.slug);
+  pending.added.forEach((n)   => console.log(`  ＋ Kept from added-venues.json: ${n}`));
+  pending.skipped.forEach((n) => console.log(`  ✓ ${n} is now found on its own — remove it from added-venues.json`));
+
   const removed = stripClosedVenues(staged, cluster.slug);
   removed.forEach((r) =>
     console.log(`  ⊘ Removed closed venue: "${r.name}" from ${r.category}`));
@@ -216,7 +229,7 @@ async function main() {
     process.exit(1);
   }
 
-  console.log("My Town News — Monthly Directory Refresh");
+  console.log("My Town News — Quarterly Directory Refresh");
   console.log(DRY_RUN
     ? "Mode: 🧪 DRY RUN — issue files will not be modified"
     : "Mode: 🚀 LIVE — the latest issue file will be rewritten in place");
