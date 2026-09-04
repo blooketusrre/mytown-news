@@ -604,23 +604,37 @@ try {
     errors.push("weekly-publish.yml is no longer split by edition — thirteen serial editions is what hit the timeout");
   }
 
-  // The send time is a product decision, not an implementation detail. Issues
-  // used to go out at 03:00 UTC — the small hours Pacific — so by the time a
-  // reader opened their inbox on Friday the newsletter was already buried
-  // under a morning's mail. Keep it in a Pacific-morning window so a
-  // well-meaning edit cannot quietly move publication back overnight.
-  const cron = wf.match(/- cron: '(\d+) (\d+) \* \* 5'/);
+  // ── Delivery time ────────────────────────────────────────────────────────
+  // The target is when the newsletter *lands*, not when the job runs. Emails
+  // are created with status "scheduled" and a publish_date of SEND_AT_UTC, so
+  // every edition arrives together regardless of when its job finished.
+  //
+  // Two ways that quietly breaks: the scheduling disappears and delivery goes
+  // back to whenever generation happened, or the cron creeps forward until the
+  // run starts after the send time and every email falls back to sending late.
+  if (!/status: "scheduled", publish_date/.test(gen)) {
+    errors.push("generate-issue.js no longer schedules the send — delivery would drift with however long research took");
+  }
+
+  const sendAt = gen.match(/SEND_AT_UTC = \(process\.env\.SEND_AT_UTC \|\| "(\d{2}):(\d{2})"\)/);
+  const cron   = wf.match(/- cron: '(\d+) (\d+) \* \* 5'/);
   if (!cron) {
-    errors.push("weekly-publish.yml has no Friday cron — the newsletter would never send on a schedule");
+    errors.push("weekly-publish.yml has no Friday cron — the newsletter would never be generated on a schedule");
+  } else if (!sendAt) {
+    errors.push("generate-issue.js has no SEND_AT_UTC default — the delivery time is unknowable from the code");
   } else {
-    const hourUTC = Number(cron[2]);
-    if (hourUTC < 15 || hourUTC > 18) {
-      const pacific = (hourUTC + 24 - 7) % 24;
+    const runMin  = Number(cron[2]) * 60 + Number(cron[1]);
+    const sendMin = Number(sendAt[1]) * 60 + Number(sendAt[2]);
+    const lead    = sendMin - runMin;
+    if (lead < 30) {
       errors.push(
-        `weekly-publish.yml sends at ${String(hourUTC).padStart(2, "0")}:${cron[1]} UTC, ` +
-        `which is ${pacific}:${cron[1]} Pacific. Keep it between 15:00 and 18:00 UTC so ` +
-        `issues arrive on a Friday morning rather than overnight.`
+        `the weekly run starts ${lead} minutes before the ${sendAt[1]}:${sendAt[2]} UTC send — ` +
+        `too little slack for a queued run or a retried edition, and any overrun ` +
+        `makes every email fall back to sending late`
       );
+    }
+    if (lead > 240) {
+      warnings.push(`the weekly run starts ${lead} minutes before the send — more slack than needed`);
     }
   }
 

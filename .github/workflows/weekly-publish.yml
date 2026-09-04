@@ -22,20 +22,18 @@ name: Weekly Publish
 
 on:
   schedule:
-    # 16:15 UTC = 9:15 a.m. PDT. Editions send as each one finishes, so they
-    # land between about 9:20 and 9:40 — early enough to be near the top of a
-    # Friday inbox, late enough that people are awake and reading.
+    # This is when the work STARTS, not when the newsletter lands.
     #
-    # GitHub cron is UTC and does not follow daylight saving, so this becomes
-    # 8:15 a.m. PST from early November until March. That is an acceptable
-    # drift; the alternative is two schedules and a month check, which is more
-    # machinery than an hour is worth. Change to '0 17 * * 5' if the winter
-    # hour matters more than the summer one.
+    # Delivery is handled by Buttondown: each email is created with
+    # status "scheduled" and a publish_date of 16:30 UTC (SEND_AT_UTC in
+    # pipeline/generate-issue.js), so every edition arrives at the same
+    # instant no matter when its job finished.
     #
-    # Scheduled runs are queued, not guaranteed — GitHub can delay them under
-    # load, sometimes by a long while. This is a "morning" target, not an
-    # appointment.
-    - cron: '15 16 * * 5'   # Friday 16:15 UTC = 9:15 a.m. PDT / 8:15 a.m. PST
+    # Running 90 minutes early is therefore pure slack, and it absorbs the
+    # three things that used to move delivery: GitHub queueing a scheduled run
+    # under load, an edition needing two or three research attempts, and the
+    # spread between the first job finishing and the last.
+    - cron: '0 15 * * 5'   # Friday 15:00 UTC — 90 minutes before the 16:30 UTC send
   workflow_dispatch:       # Allow manual trigger from GitHub Actions UI
     inputs:
       cluster:

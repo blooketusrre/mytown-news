@@ -99,6 +99,23 @@ const timeWarnings       = [];
 const ANTHROPIC_KEY   = process.env.ANTHROPIC_API_KEY;
 const BUTTONDOWN_KEY  = process.env.BUTTONDOWN_API_KEY;
 const SITE_URL        = "https://mytown.news";
+
+// ── When the newsletter lands ──────────────────────────────────────────────
+// The target is the arrival time, not the run time. Issues used to be created
+// with status "about_to_send", so delivery happened whenever generation
+// finished — which meant it moved with GitHub's queue, with how long research
+// took, and with retries, and the fourteen editions arrived spread across
+// twenty minutes.
+//
+// Buttondown schedules: create the email with status "scheduled" and a
+// publish_date and it sends at that instant regardless of when we handed it
+// over. So the workflow now runs an hour and a half early, which is pure
+// slack for delays and retries, and every edition lands together at 16:30 UTC.
+//
+// Deliberately UTC and deliberately not daylight-saving aware: 16:30 UTC is
+// 9:30 a.m. Pacific in summer and 8:30 a.m. in winter, which Brian decided on
+// 4 September 2026 is a fair trade for a schedule anyone can reason about.
+const SEND_AT_UTC = (process.env.SEND_AT_UTC || "16:30").trim();
 const MODEL           = "claude-sonnet-4-6";
 
 if (!ANTHROPIC_KEY) { console.error("Missing ANTHROPIC_API_KEY"); process.exit(1); }
@@ -113,6 +130,20 @@ function thisWeekDate() {
   const friday = new Date(now);
   friday.setUTCDate(now.getUTCDate() + (daysUntilFriday === 7 ? 0 : daysUntilFriday));
   return friday.toISOString().slice(0, 10);
+}
+
+/**
+ * The instant this week's issues should land, as an ISO string.
+ *
+ * Always the issue's own Friday at SEND_AT_UTC, so a run that is delayed or
+ * retried still targets the same moment rather than drifting later.
+ */
+function scheduledSendAt() {
+  const [h, m] = SEND_AT_UTC.split(":").map(Number);
+  if (!Number.isFinite(h) || !Number.isFinite(m)) {
+    throw new Error(`SEND_AT_UTC is not HH:MM: "${SEND_AT_UTC}"`);
+  }
+  return new Date(`${thisWeekDate()}T${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:00Z`);
 }
 
 /** Anthropic Messages API call. Takes a full messages array so the caller can
@@ -1240,7 +1271,24 @@ async function sendClusterEmail(cluster, issue, tagId) {
   const body    = buildEmailHtml(issue, cluster);
   const filters = buildFilters(tagId);
 
-  const payload = JSON.stringify({ subject, body, status: "about_to_send", filters });
+  // Schedule when there is still time; send immediately when there is not.
+  // A publish_date in the past is not a schedule, and an issue that arrives
+  // late is far better than one Buttondown rejects.
+  const sendAt  = scheduledSendAt();
+  const leadMs  = sendAt.getTime() - Date.now();
+  const MIN_LEAD_MS = 2 * 60 * 1000;
+
+  const scheduling = leadMs > MIN_LEAD_MS
+    ? { status: "scheduled", publish_date: sendAt.toISOString() }
+    : { status: "about_to_send" };
+
+  if (scheduling.status === "scheduled") {
+    console.log(`     scheduled for ${sendAt.toISOString().replace(".000Z", "Z")} (in ${Math.round(leadMs / 60000)} min)`);
+  } else {
+    console.warn(`  ⚠ ${sendAt.toISOString().replace(".000Z", "Z")} has passed — sending ${cluster.slug} immediately instead.`);
+  }
+
+  const payload = JSON.stringify({ subject, body, filters, ...scheduling });
 
   return new Promise((resolve, reject) => {
     const req = https.request(
@@ -1508,6 +1556,8 @@ module.exports = {
   addPendingVenues,
   venueKey,
   outDirFor,
+  scheduledSendAt,
+  SEND_AT_UTC,
   DRY_RUN,
 };
 
