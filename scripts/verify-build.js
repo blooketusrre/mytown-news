@@ -603,6 +603,46 @@ try {
   if (!/matrix:\s*\n\s*edition:/.test(wf)) {
     errors.push("weekly-publish.yml is no longer split by edition — thirteen serial editions is what hit the timeout");
   }
+
+  // ── Delivery time ────────────────────────────────────────────────────────
+  // The target is when the newsletter *lands*, not when the job runs. Emails
+  // are created with status "scheduled" and a publish_date of SEND_AT_UTC, so
+  // every edition arrives together regardless of when its job finished.
+  //
+  // Two ways that quietly breaks: the scheduling disappears and delivery goes
+  // back to whenever generation happened, or the cron creeps forward until the
+  // run starts after the send time and every email falls back to sending late.
+  if (!/status: "scheduled", publish_date/.test(gen)) {
+    errors.push("generate-issue.js no longer schedules the send — delivery would drift with however long research took");
+  }
+
+  const sendAt = gen.match(/SEND_AT_UTC = \(process\.env\.SEND_AT_UTC \|\| "(\d{2}):(\d{2})"\)/);
+  const cron   = wf.match(/- cron: '(\d+) (\d+) \* \* 5'/);
+  if (!cron) {
+    errors.push("weekly-publish.yml has no Friday cron — the newsletter would never be generated on a schedule");
+  } else if (!sendAt) {
+    errors.push("generate-issue.js has no SEND_AT_UTC default — the delivery time is unknowable from the code");
+  } else {
+    const runMin  = Number(cron[2]) * 60 + Number(cron[1]);
+    const sendMin = Number(sendAt[1]) * 60 + Number(sendAt[2]);
+    const lead    = sendMin - runMin;
+    if (lead < 30) {
+      errors.push(
+        `the weekly run starts ${lead} minutes before the ${sendAt[1]}:${sendAt[2]} UTC send — ` +
+        `too little slack for a queued run or a retried edition, and any overrun ` +
+        `makes every email fall back to sending late`
+      );
+    }
+    if (lead > 240) {
+      warnings.push(`the weekly run starts ${lead} minutes before the send — more slack than needed`);
+    }
+  }
+
+  // The retry is what turns a ~20% per-edition failure rate into under 1%.
+  if (!/RESEARCH_ATTEMPTS/.test(gen) || !/researchIssue\(/.test(gen)) {
+    errors.push("generate-issue.js lost its research retry — one bad response would lose an edition for the week");
+  }
+
   // ── The weekly run must not regenerate the directory ────────────────────
   // Five directory sections dominated every weekly run's research and output
   // to re-derive addresses that had not changed. The weekly job now carries

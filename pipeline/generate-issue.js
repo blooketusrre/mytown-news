@@ -99,6 +99,23 @@ const timeWarnings       = [];
 const ANTHROPIC_KEY   = process.env.ANTHROPIC_API_KEY;
 const BUTTONDOWN_KEY  = process.env.BUTTONDOWN_API_KEY;
 const SITE_URL        = "https://mytown.news";
+
+// ── When the newsletter lands ──────────────────────────────────────────────
+// The target is the arrival time, not the run time. Issues used to be created
+// with status "about_to_send", so delivery happened whenever generation
+// finished — which meant it moved with GitHub's queue, with how long research
+// took, and with retries, and the fourteen editions arrived spread across
+// twenty minutes.
+//
+// Buttondown schedules: create the email with status "scheduled" and a
+// publish_date and it sends at that instant regardless of when we handed it
+// over. So the workflow now runs an hour and a half early, which is pure
+// slack for delays and retries, and every edition lands together at 16:30 UTC.
+//
+// Deliberately UTC and deliberately not daylight-saving aware: 16:30 UTC is
+// 9:30 a.m. Pacific in summer and 8:30 a.m. in winter, which Brian decided on
+// 4 September 2026 is a fair trade for a schedule anyone can reason about.
+const SEND_AT_UTC = (process.env.SEND_AT_UTC || "16:30").trim();
 const MODEL           = "claude-sonnet-4-6";
 
 if (!ANTHROPIC_KEY) { console.error("Missing ANTHROPIC_API_KEY"); process.exit(1); }
@@ -113,6 +130,20 @@ function thisWeekDate() {
   const friday = new Date(now);
   friday.setUTCDate(now.getUTCDate() + (daysUntilFriday === 7 ? 0 : daysUntilFriday));
   return friday.toISOString().slice(0, 10);
+}
+
+/**
+ * The instant this week's issues should land, as an ISO string.
+ *
+ * Always the issue's own Friday at SEND_AT_UTC, so a run that is delayed or
+ * retried still targets the same moment rather than drifting later.
+ */
+function scheduledSendAt() {
+  const [h, m] = SEND_AT_UTC.split(":").map(Number);
+  if (!Number.isFinite(h) || !Number.isFinite(m)) {
+    throw new Error(`SEND_AT_UTC is not HH:MM: "${SEND_AT_UTC}"`);
+  }
+  return new Date(`${thisWeekDate()}T${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:00Z`);
 }
 
 /** Anthropic Messages API call. Takes a full messages array so the caller can
@@ -771,54 +802,12 @@ function rotateRepeatedLead(issue, prevIssue) {
   return { demoted: prevLead.headline, promoted: fresh.headline };
 }
 
-async function generateCluster(clusterConfig) {
-  console.log(`\n📰 Generating: ${clusterConfig.name}`);
-  const weekDate = thisWeekDate();
-  const outDir   = outDirFor(clusterConfig.slug);
-  const outFile  = path.join(outDir, `${weekDate}.json`);
-
-  // Skip if already generated today. In a dry run this checks the rehearsal
-  // path, not src/content — otherwise a rehearsal held after the real run
-  // would silently do nothing and look like a pass.
-  if (fs.existsSync(outFile)) {
-    console.log(`  ✓ Already exists: ${outFile}`);
-    return;
-  }
-  if (DRY_RUN && fs.existsSync(path.join(CONTENT_DIR, clusterConfig.slug, `${weekDate}.json`))) {
-    console.log(`  ℹ A real issue for ${weekDate} already exists — rehearsing alongside it, not touching it.`);
-  }
-
-  const prevIssue = loadPreviousIssue(clusterConfig.slug, weekDate);
-
-  // ── 1. Research with Claude (web search enabled) ────────────────────────
-  console.log("  🔍 Researching current news…");
-  const webSearchTool = {
-    type: "web_search_20250305",
-    name: "web_search",
-  };
-
-  // ── Directory: carry forward, or generate if there is nothing to carry ──
-  // Five sections of 15–30 venues each dominated every weekly run's research
-  // and output, to re-derive addresses that had not changed. A quarterly job
-  // refreshes them; the weekly one copies the last answer and merges any
-  // hand-listed additions.
-  const carried = (prevIssue && prevIssue.directory
-                   && Object.keys(prevIssue.directory).length) ? prevIssue.directory : null;
-  const includeDirectory = FORCE_DIRECTORY ? true
-                         : NO_DIRECTORY    ? false
-                         : !carried;
-  if (includeDirectory && !FORCE_DIRECTORY) {
-    console.log("  ℹ No directory to carry forward — generating one this run.");
-  } else if (!includeDirectory) {
-    const n = Object.values(carried).reduce((t, v) => t + (Array.isArray(v) ? v.length : 0), 0);
-    console.log(`  ↻ Carrying forward the directory from ${prevIssue.weekOf} (${n} venues) — not regenerating.`);
-  }
-
-  const closedVenues = closedVenuesFor(clusterConfig.slug);
-  const systemPrompt = buildSystemPrompt(clusterConfig, prevIssue, closedVenues,
-                                         { includeDirectory });
-  const userMessage  = `Please research and write this week's My Town News issue for ${clusterConfig.name} (${clusterConfig.neighborhoods.join(", ")}). Search for real, current news stories and upcoming events in these neighborhoods. Return only valid JSON matching the schema in your instructions.`;
-
+/**
+ * One full research attempt: the paused-turn loop, then JSON extraction with
+ * the salvage retry. Throws if it cannot produce an issue, so the caller can
+ * start over from a clean conversation.
+ */
+async function researchIssue(systemPrompt, userMessage, webSearchTool) {
   // The server-side web_search tool runs the research loop inside the API, but
   // a long research turn can come back with stop_reason "pause_turn" — the
   // model has more to do and expects us to hand its own output back so it can
@@ -905,6 +894,91 @@ async function generateCluster(clusterConfig) {
         console.error("     the model returned no text block at all — it ended its turn after searching");
       }
       throw err;
+    }
+  }
+  return issue;
+}
+
+async function generateCluster(clusterConfig) {
+  console.log(`\n📰 Generating: ${clusterConfig.name}`);
+  const weekDate = thisWeekDate();
+  const outDir   = outDirFor(clusterConfig.slug);
+  const outFile  = path.join(outDir, `${weekDate}.json`);
+
+  // Skip if already generated today. In a dry run this checks the rehearsal
+  // path, not src/content — otherwise a rehearsal held after the real run
+  // would silently do nothing and look like a pass.
+  if (fs.existsSync(outFile)) {
+    console.log(`  ✓ Already exists: ${outFile}`);
+    return;
+  }
+  if (DRY_RUN && fs.existsSync(path.join(CONTENT_DIR, clusterConfig.slug, `${weekDate}.json`))) {
+    console.log(`  ℹ A real issue for ${weekDate} already exists — rehearsing alongside it, not touching it.`);
+  }
+
+  const prevIssue = loadPreviousIssue(clusterConfig.slug, weekDate);
+
+  // ── 1. Research with Claude (web search enabled) ────────────────────────
+  console.log("  🔍 Researching current news…");
+  const webSearchTool = {
+    type: "web_search_20250305",
+    name: "web_search",
+  };
+
+  // ── Directory: carry forward, or generate if there is nothing to carry ──
+  // Five sections of 15–30 venues each dominated every weekly run's research
+  // and output, to re-derive addresses that had not changed. A quarterly job
+  // refreshes them; the weekly one copies the last answer and merges any
+  // hand-listed additions.
+  const carried = (prevIssue && prevIssue.directory
+                   && Object.keys(prevIssue.directory).length) ? prevIssue.directory : null;
+  const includeDirectory = FORCE_DIRECTORY ? true
+                         : NO_DIRECTORY    ? false
+                         : !carried;
+  if (includeDirectory && !FORCE_DIRECTORY) {
+    console.log("  ℹ No directory to carry forward — generating one this run.");
+  } else if (!includeDirectory) {
+    const n = Object.values(carried).reduce((t, v) => t + (Array.isArray(v) ? v.length : 0), 0);
+    console.log(`  ↻ Carrying forward the directory from ${prevIssue.weekOf} (${n} venues) — not regenerating.`);
+  }
+
+  const closedVenues = closedVenuesFor(clusterConfig.slug);
+  const systemPrompt = buildSystemPrompt(clusterConfig, prevIssue, closedVenues,
+                                         { includeDirectory });
+  const userMessage  = `Please research and write this week's My Town News issue for ${clusterConfig.name} (${clusterConfig.neighborhoods.join(", ")}). Search for real, current news stories and upcoming events in these neighborhoods. Return only valid JSON matching the schema in your instructions.`;
+
+  // ── Research, with retries ──────────────────────────────────────────────
+  // Roughly one edition in five comes back without JSON: the model finishes
+  // its searches and ends the turn before serialising. Which editions fail
+  // moves week to week — Russian Hill, the Sunset and Bayview on 29 August;
+  // Russian Hill, Downtown and the Marina on 4 September — and the failures
+  // do not correlate with prompt size, neighbourhood count or source count.
+  // The two largest editions both succeeded on the run that lost three.
+  //
+  // That is an intermittent response, not a broken edition, and the answer to
+  // an intermittent response is to ask again. Each attempt starts a fresh
+  // conversation rather than continuing the failed one: the failure is a turn
+  // that ended in the wrong place, and there is nothing in it worth keeping.
+  //
+  // Cost is paid only on failure — a clean run never reaches the retry. At a
+  // 20% failure rate, three attempts take the miss rate under 1%.
+  const RESEARCH_ATTEMPTS = Number(process.env.RESEARCH_ATTEMPTS || 3);
+  let issue;
+
+  for (let attempt = 1; attempt <= RESEARCH_ATTEMPTS; attempt++) {
+    if (attempt > 1) {
+      console.warn(`  ↻ Attempt ${attempt} of ${RESEARCH_ATTEMPTS} — fresh conversation.`);
+    }
+    try {
+      issue = await researchIssue(systemPrompt, userMessage, webSearchTool);
+      if (attempt > 1) console.log(`  ✅ Recovered on attempt ${attempt}.`);
+      break;
+    } catch (err) {
+      if (attempt === RESEARCH_ATTEMPTS) {
+        console.error(`  ✗ All ${RESEARCH_ATTEMPTS} attempts failed for ${clusterConfig.slug}.`);
+        throw err;
+      }
+      console.warn(`  ⚠ Attempt ${attempt} failed: ${err.message}`);
     }
   }
 
@@ -1197,7 +1271,24 @@ async function sendClusterEmail(cluster, issue, tagId) {
   const body    = buildEmailHtml(issue, cluster);
   const filters = buildFilters(tagId);
 
-  const payload = JSON.stringify({ subject, body, status: "about_to_send", filters });
+  // Schedule when there is still time; send immediately when there is not.
+  // A publish_date in the past is not a schedule, and an issue that arrives
+  // late is far better than one Buttondown rejects.
+  const sendAt  = scheduledSendAt();
+  const leadMs  = sendAt.getTime() - Date.now();
+  const MIN_LEAD_MS = 2 * 60 * 1000;
+
+  const scheduling = leadMs > MIN_LEAD_MS
+    ? { status: "scheduled", publish_date: sendAt.toISOString() }
+    : { status: "about_to_send" };
+
+  if (scheduling.status === "scheduled") {
+    console.log(`     scheduled for ${sendAt.toISOString().replace(".000Z", "Z")} (in ${Math.round(leadMs / 60000)} min)`);
+  } else {
+    console.warn(`  ⚠ ${sendAt.toISOString().replace(".000Z", "Z")} has passed — sending ${cluster.slug} immediately instead.`);
+  }
+
+  const payload = JSON.stringify({ subject, body, filters, ...scheduling });
 
   return new Promise((resolve, reject) => {
     const req = https.request(
@@ -1465,6 +1556,8 @@ module.exports = {
   addPendingVenues,
   venueKey,
   outDirFor,
+  scheduledSendAt,
+  SEND_AT_UTC,
   DRY_RUN,
 };
 

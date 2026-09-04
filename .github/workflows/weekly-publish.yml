@@ -1,5 +1,5 @@
 # My Town News — Weekly Content Pipeline
-# Runs every Thursday at 8 PM PT (Friday 3 AM UTC)
+# Runs Friday morning Pacific, so issues land at the top of the day.
 #
 # Structure: one job per edition, in parallel.
 #
@@ -22,7 +22,18 @@ name: Weekly Publish
 
 on:
   schedule:
-    - cron: '0 3 * * 5'   # Every Friday 3:00 AM UTC = Thursday 8 PM PDT / 7 PM PST
+    # This is when the work STARTS, not when the newsletter lands.
+    #
+    # Delivery is handled by Buttondown: each email is created with
+    # status "scheduled" and a publish_date of 16:30 UTC (SEND_AT_UTC in
+    # pipeline/generate-issue.js), so every edition arrives at the same
+    # instant no matter when its job finished.
+    #
+    # Running 90 minutes early is therefore pure slack, and it absorbs the
+    # three things that used to move delivery: GitHub queueing a scheduled run
+    # under load, an edition needing two or three research attempts, and the
+    # spread between the first job finishing and the last.
+    - cron: '0 15 * * 5'   # Friday 15:00 UTC — 90 minutes before the 16:30 UTC send
   workflow_dispatch:       # Allow manual trigger from GitHub Actions UI
     inputs:
       cluster:
