@@ -23,11 +23,52 @@ module.exports = function (eleventyConfig) {
       .replace("<svg ", '<svg aria-hidden="true" focusable="false" ');
   });
 
+  // Weather icons as inline SVG rather than emoji: emoji render differently on
+  // every platform and at sizes we cannot control, and a forecast row wants
+  // one consistent visual weight.
+  const WEATHER_ICONS = {
+    sunny:   '<circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/>',
+    partly:  '<circle cx="8.6" cy="8.6" r="3.1"/><path d="M8.6 2.4v1.6M2.4 8.6h1.6M4.2 4.2l1.1 1.1M13 4.2l-1.1 1.1"/><path d="M17.4 19.6H8.9a3.5 3.5 0 0 1 0-7 4.6 4.6 0 0 1 8.7 1 3 3 0 0 1-.2 6Z"/>',
+    cloudy:  '<path d="M17.4 18.6H7.9a4 4 0 0 1 0-8 5.2 5.2 0 0 1 9.9 1.1 3.4 3.4 0 0 1-.4 6.9Z"/>',
+    fog:     '<path d="M17 12.4H7.5a3.6 3.6 0 0 1 0-7.2 4.7 4.7 0 0 1 8.9 1 3.1 3.1 0 0 1 .6 6.2Z"/><path d="M4 16.2h16M6.4 19.6h11.2"/>',
+    rain:    '<path d="M17 12.4H7.5a3.6 3.6 0 0 1 0-7.2 4.7 4.7 0 0 1 8.9 1 3.1 3.1 0 0 1 .6 6.2Z"/><path d="M8.8 15.6l-1 3M12.4 15.6l-1 3M16 15.6l-1 3"/>',
+    storm:   '<path d="M17 11.4H7.5a3.6 3.6 0 0 1 0-7.2 4.7 4.7 0 0 1 8.9 1 3.1 3.1 0 0 1 .6 6.2Z"/><path d="M12.8 13.4l-2.6 4.2h3l-2 3.6"/>',
+  };
+  eleventyConfig.addShortcode("weatherIcon", (cond) => {
+    const paths = WEATHER_ICONS[cond] || WEATHER_ICONS.cloudy;
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" ` +
+           `stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${paths}</svg>`;
+  });
+
   // ── Filters ─────────────────────────────────────────────────────────
+  eleventyConfig.addFilter("weekday_short", (iso) => {
+    if (!iso) return "";
+    // Parse as UTC noon so a date-only string cannot slip a day either way
+    // depending on where the build runs.
+    const d = new Date(`${String(iso).slice(0, 10)}T12:00:00Z`);
+    return Number.isNaN(d.getTime()) ? "" : d.toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" });
+  });
+
+  // Date-only strings ("2026-09-11") parse as UTC midnight, which then renders
+  // as the *previous* day anywhere west of Greenwich. Every issue date on the
+  // site is date-only, so a build on a Pacific machine printed "Week of
+  // September 10" for an issue dated the 11th — the masthead, the nav, and now
+  // the weather and police lines all read one day early. Netlify builds in UTC
+  // so production was right by luck, not by design.
+  //
+  // Anchoring at UTC noon and formatting in UTC makes it correct wherever the
+  // build runs.
   eleventyConfig.addFilter("date_short", (str) => {
     if (!str) return "";
-    const d = new Date(str);
-    return d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+    const raw = String(str);
+    const d = /^\d{4}-\d{2}-\d{2}$/.test(raw)
+      ? new Date(`${raw}T12:00:00Z`)
+      : new Date(raw);
+    if (Number.isNaN(d.getTime())) return "";
+    return d.toLocaleDateString("en-US", {
+      month: "long", day: "numeric", year: "numeric",
+      ...(/^\d{4}-\d{2}-\d{2}$/.test(raw) ? { timeZone: "UTC" } : {}),
+    });
   });
 
   eleventyConfig.addFilter("slugify_simple", (str) =>

@@ -41,6 +41,7 @@ const https = require("https");
 const { editionPath } = require("../lib/edition-path");
 const { sortEvents } = require("../lib/event-order");
 const { fetchBlotter } = require("./blotter.js");
+const { fetchForecast } = require("./weather.js");
 
 // ─── CLI args ──────────────────────────────────────────────────────────────
 const args = process.argv.slice(2);
@@ -995,6 +996,21 @@ async function generateCluster(clusterConfig) {
   }
   if (!issue.directory || !Object.keys(issue.directory).length) {
     console.warn("  ⚠ This issue has no directory — the Directory section will be empty.");
+  }
+
+  // ── Weather ─────────────────────────────────────────────────────────────
+  // Per edition, not citywide: the Mission and the Outer Sunset differ by
+  // 10-20°F on the same afternoon, so one number would be wrong for half the
+  // editions — in the section whose whole claim is knowing your neighborhood.
+  // Non-fatal, like the police summary: a forecast is a nicety.
+  try {
+    const forecast = await fetchForecast(clusterConfig.map.lat, clusterConfig.map.lng);
+    if (forecast && forecast.length) {
+      issue.weather = { issuedOn: weekDate, source: "National Weather Service", days: forecast };
+      console.log(`  🌤 Forecast: ${forecast.length} days, ${forecast[0].high}°/${forecast[0].low}° ${forecast[0].condition}`);
+    }
+  } catch (err) {
+    console.warn(`  ⚠ Forecast unavailable: ${err.message}`);
   }
 
   // ── Police reports ──────────────────────────────────────────────────────

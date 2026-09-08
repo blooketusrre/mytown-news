@@ -1930,6 +1930,99 @@ hr.divider {
   line-height: 1.7;
 }
 
+/* ── Weather band ──────────────────────────────────────────────────────
+   A narrow strip between the news and what is on this week. Deliberately
+   quiet: it is a glanceable utility, not a headline, and it sits between two
+   sections that should keep the reader's attention. */
+.weather-band {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: var(--sp-4) 0 var(--sp-5);
+  margin-bottom: var(--sp-10);
+}
+
+.weather-band__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--sp-4);
+}
+
+.weather-band__title {
+  font-family: var(--font-ui);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+/* Dated on purpose. The page persists all week while the forecast does not,
+   so saying when it was issued is what separates an old forecast from a
+   wrong one. */
+.weather-band__meta {
+  font-family: var(--font-ui);
+  font-size: 0.625rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.weather-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--sp-2);
+}
+
+.weather-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: var(--sp-2) 4px;
+  border-radius: var(--radius);
+  font-family: var(--font-ui);
+}
+
+.weather-day__name {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.weather-day__icon svg { width: 24px; height: 24px; color: var(--navy); }
+
+/* Rain and storms are the two a reader is actually deciding on, so they get
+   the accent. Everything else stays in the neutral palette. */
+.weather-day[data-condition="rain"]  .weather-day__icon svg,
+.weather-day[data-condition="storm"] .weather-day__icon svg { color: var(--accent); }
+.weather-day[data-condition="fog"]   .weather-day__icon svg { color: var(--muted); }
+
+.weather-day__temps {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.weather-day__temps strong {
+  font-family: var(--font-head);
+  font-size: 1.0625rem;
+  font-weight: 900;
+  color: var(--text);
+}
+
+.weather-day__low { font-size: var(--text-xs); color: var(--muted); }
+
+/* Seven columns is too many on a phone. Four wraps to two tidy rows and keeps
+   every day legible rather than shrinking them all to fit. */
+@media (max-width: 620px) {
+  .weather-days { grid-template-columns: repeat(4, 1fr); gap: var(--sp-3); }
+}
+
 /* ── Responsive ────────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .events-grid { grid-template-columns: repeat(2, 1fr); }

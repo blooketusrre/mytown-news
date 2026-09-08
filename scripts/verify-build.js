@@ -765,7 +765,24 @@ try {
   });
 
   console.log("  Directory: carried weekly, refreshed quarterly, additions merged");
+  // ── Weather ─────────────────────────────────────────────────────────────
+  // Per edition, not citywide: the Mission and the Outer Sunset differ by
+  // 10-20°F on the same afternoon. And dated, because the page persists all
+  // week while the forecast does not — an undated stale forecast is wrong
+  // information rather than old information.
+  if (!/fetchForecast\(clusterConfig\.map\.lat, clusterConfig\.map\.lng\)/.test(gen)) {
+    warnings.push("generate-issue.js no longer fetches a per-edition forecast — a citywide one would be wrong for half the editions");
+  }
+  editionPages.forEach((f) => {
+    const html = fs.readFileSync(f, "utf8");
+    if (!html.includes("weather-band")) return;
+    if (!/forecast issued/.test(html)) {
+      errors.push(`${path.relative(OUT, f)} shows a forecast with no issue date — by Wednesday it is wrong, not old`);
+    }
+  });
+
   console.log("  Blotter:   counts only, mapped to SFPD neighborhoods, caveat present");
+  console.log("  Weather:   per edition, dated");
 } catch (e) {
   errors.push(`Could not verify the publish pipeline: ${e.message}`);
 }
