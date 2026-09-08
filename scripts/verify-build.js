@@ -438,6 +438,14 @@ try {
   if (/My Town News — \$\{cluster\.name\} \$\{cluster\.city/.test(gen)) {
     errors.push("emailSubject concatenates name and city unconditionally — single-edition towns get their name twice");
   }
+  // Two failures the first live dry run exposed, both of which looked fine.
+  if (!/2 \* Math\.sqrt\(priorAvg\)/.test(
+        fs.readFileSync(path.join(ROOT, "pipeline", "blotter.js"), "utf8"))) {
+    errors.push("the police trend is back on a percentage threshold — at these volumes that reports noise as a fall in crime");
+  }
+  if (!/list\[existing\]\._added/.test(gen)) {
+    errors.push("addPendingVenues can no longer tell its own carried-forward entries from research finds — a queued opening would freeze at Coming Soon");
+  }
   if (!/function tidyBriefs\(/.test(gen)) {
     errors.push("tidyBriefs is gone — briefs could repeat a top story or arrive undated with nothing to catch it");
   }
@@ -765,7 +773,24 @@ try {
   });
 
   console.log("  Directory: carried weekly, refreshed quarterly, additions merged");
+  // ── Weather ─────────────────────────────────────────────────────────────
+  // Per edition, not citywide: the Mission and the Outer Sunset differ by
+  // 10-20°F on the same afternoon. And dated, because the page persists all
+  // week while the forecast does not — an undated stale forecast is wrong
+  // information rather than old information.
+  if (!/fetchForecast\(clusterConfig\.map\.lat, clusterConfig\.map\.lng\)/.test(gen)) {
+    warnings.push("generate-issue.js no longer fetches a per-edition forecast — a citywide one would be wrong for half the editions");
+  }
+  editionPages.forEach((f) => {
+    const html = fs.readFileSync(f, "utf8");
+    if (!html.includes("weather-band")) return;
+    if (!/forecast issued/.test(html)) {
+      errors.push(`${path.relative(OUT, f)} shows a forecast with no issue date — by Wednesday it is wrong, not old`);
+    }
+  });
+
   console.log("  Blotter:   counts only, mapped to SFPD neighborhoods, caveat present");
+  console.log("  Weather:   per edition, dated");
 } catch (e) {
   errors.push(`Could not verify the publish pipeline: ${e.message}`);
 }

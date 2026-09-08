@@ -102,6 +102,7 @@ layout: base.njk
     <span class="site-nav__label">{{ issue.clusterName if issue else clusterName }}</span>
     <ul class="site-nav__links" role="list">
       <li><a href="#top-stories">Top Stories</a></li>
+      {% if issue and issue.weather %}<li><a href="#weather">Weather</a></li>{% endif %}
       <li><a href="#events">Events</a></li>
       <li><a href="#more-news">More News</a></li>
       <li><a href="#directory">Directory</a></li>
@@ -158,6 +159,40 @@ layout: base.njk
 
       </div>
     </section>
+
+    {# Weather — a narrow band between the news and what's on this week.
+       Per edition, not citywide: the Mission and the Outer Sunset differ by
+       10-20°F on the same afternoon, so one forecast would be wrong for half
+       of them.
+
+       Dated on purpose. The issue is generated Friday morning and the page
+       persists all week, so by Wednesday the first days have passed. Saying
+       when it was issued is the difference between an old forecast and a
+       wrong one. #}
+    {% if issue.weather and issue.weather.days.length %}
+    <section id="weather" class="weather-band" aria-labelledby="weather-heading">
+      <div class="weather-band__head">
+        <h2 class="weather-band__title" id="weather-heading">The week ahead</h2>
+        <p class="weather-band__meta">
+          {{ edition.name if edition else clusterName }} ·
+          forecast issued {{ issue.weather.issuedOn | date_short }} ·
+          {{ issue.weather.source }}
+        </p>
+      </div>
+      <ol class="weather-days" role="list">
+        {% for d in issue.weather.days %}
+        <li class="weather-day" data-condition="{{ d.condition }}">
+          <span class="weather-day__name">{{ d.date | weekday_short }}</span>
+          <span class="weather-day__icon" aria-hidden="true">{% weatherIcon d.condition %}</span>
+          <span class="weather-day__temps">
+            <strong>{{ d.high }}°</strong><span class="weather-day__low">{{ d.low }}°</span>
+          </span>
+          <span class="u-visually-hidden">{{ d.summary }}</span>
+        </li>
+        {% endfor %}
+      </ol>
+    </section>
+    {% endif %}
 
     {# Events #}
     <section id="events" aria-labelledby="events-heading">
