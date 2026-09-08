@@ -40,6 +40,7 @@ const path = require("path");
 const https = require("https");
 const { editionPath } = require("../lib/edition-path");
 const { sortEvents } = require("../lib/event-order");
+const { fetchBlotter } = require("./blotter.js");
 
 // ─── CLI args ──────────────────────────────────────────────────────────────
 const args = process.argv.slice(2);
@@ -996,6 +997,27 @@ async function generateCluster(clusterConfig) {
     console.warn("  ⚠ This issue has no directory — the Directory section will be empty.");
   }
 
+  // ── Police reports ──────────────────────────────────────────────────────
+  // Deterministic: read straight from DataSF and counted here, never written
+  // by the model. Crime figures are the last thing that should pass through
+  // something capable of paraphrasing a number.
+  //
+  // Failure is non-fatal by design. A summary is worth having and is not worth
+  // losing a newsletter over, so an outage at data.sfgov.org drops the section
+  // rather than the issue.
+  try {
+    const blotter = await fetchBlotter(clusterConfig);
+    if (blotter) {
+      issue.blotter = blotter;
+      console.log(`  🚔 Police reports: ${blotter.total} in the week to ${blotter.to}` +
+                  (blotter.priorAvg ? ` (4-week average ${blotter.priorAvg}, ${blotter.trend})` : ""));
+    } else {
+      console.log("  ℹ No police reports to summarise this week.");
+    }
+  } catch (err) {
+    console.warn(`  ⚠ Police report summary unavailable: ${err.message}`);
+  }
+
   // Hand-listed venues go in before the closure strip, so an entry here can
   // still be removed by closed-venues.json if the two ever disagree.
   const pending = addPendingVenues(issue, clusterConfig.slug);
@@ -1117,6 +1139,22 @@ function buildEmailHtml(issue, cluster) {
     </td></tr>
   `).join("");
 
+  // Police reports: the same counts as the web card, never individual
+  // incidents. Deliberately placed after the briefs and before the CTA, and
+  // deliberately carrying the same caveat — a number without it is a claim.
+  const b = issue.blotter;
+  const blotterHtml = !b ? "" : `
+  <tr><td style="padding:0 40px 28px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #d4cfc6;border-radius:2px;">
+      <tr><td style="padding:16px 18px;">
+        <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#1a2744;">Police reports</p>
+        <p style="margin:0 0 10px 0;font-family:Georgia,serif;font-size:15px;line-height:1.5;color:#1c1c1e;"><strong>${b.total}</strong> reported in the week to ${esc(b.to)}${b.priorAvg ? `, against a four-week average of ${b.priorAvg}` : ""}.${b.top && b.top.length ? ` Most often ${b.top.slice(0, 3).map(r => `${esc(r.category.toLowerCase())} (${r.count})`).join(", ")}.` : ""}</p>
+        <p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:10px;line-height:1.5;color:#6b6560;">Initial reports to SFPD, excluding administrative records. Reports are unverified and are not convictions.</p>
+        <a href="${b.sourceUrl}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:#1a2744;text-decoration:none;">See every report →</a>
+      </td></tr>
+    </table>
+  </td></tr>`;
+
   const moreHtml = (issue.moreNews || []).map(s => `
     <tr><td style="padding:10px 0;border-bottom:1px solid #e8e3da;">
       <p style="margin:0 0 4px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${esc(s.headline)}</p>
@@ -1179,6 +1217,7 @@ function buildEmailHtml(issue, cluster) {
       ${moreHtml}
     </table>
   </td></tr>` : ""}
+  ${blotterHtml}
 
   <!-- CTA -->
   <tr><td style="background:#1a2744;padding:28px 40px;text-align:center;">

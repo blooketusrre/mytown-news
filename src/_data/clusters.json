@@ -17,6 +17,9 @@
       "94133",
       "94111"
     ],
+    "analysisNeighborhoods": [
+      "North Beach"
+    ],
     "accent": "#c8943a",
     "accentOnDark": "#c8943a",
     "accentBtn": "#c8943a",
@@ -63,6 +66,11 @@
       "94123",
       "94115"
     ],
+    "analysisNeighborhoods": [
+      "Marina",
+      "Pacific Heights",
+      "Presidio Heights"
+    ],
     "accent": "#2a9d8f",
     "accentOnDark": "#2da99a",
     "accentBtn": "#228175",
@@ -108,6 +116,13 @@
       "94121",
       "94118"
     ],
+    "analysisNeighborhoods": [
+      "Presidio",
+      "Seacliff",
+      "Inner Richmond",
+      "Outer Richmond",
+      "Lone Mountain/USF"
+    ],
     "accent": "#2d6a4f",
     "accentOnDark": "#48aa7f",
     "accentBtn": "#2d6a4f",
@@ -149,6 +164,11 @@
     "zipCodes": [
       "94109",
       "94108"
+    ],
+    "analysisNeighborhoods": [
+      "Russian Hill",
+      "Nob Hill",
+      "Chinatown"
     ],
     "accent": "#8b2635",
     "accentOnDark": "#db7a88",
@@ -195,6 +215,9 @@
       "94111",
       "94104"
     ],
+    "analysisNeighborhoods": [
+      "Financial District/South Beach"
+    ],
     "accent": "#1e4a8a",
     "accentOnDark": "#6898de",
     "accentBtn": "#1e4a8a",
@@ -235,6 +258,9 @@
     "zipCodes": [
       "94102",
       "94103"
+    ],
+    "analysisNeighborhoods": [
+      "Tenderloin"
     ],
     "accent": "#6b3fa0",
     "accentOnDark": "#a989d0",
@@ -277,6 +303,11 @@
     "zipCodes": [
       "94102",
       "94117"
+    ],
+    "analysisNeighborhoods": [
+      "Hayes Valley",
+      "Western Addition",
+      "Japantown"
     ],
     "accent": "#9c3f7a",
     "accentOnDark": "#cc80b0",
@@ -324,6 +355,12 @@
       "94158",
       "94130"
     ],
+    "analysisNeighborhoods": [
+      "South of Market",
+      "Mission Bay",
+      "Potrero Hill",
+      "Treasure Island"
+    ],
     "accent": "#c05928",
     "accentOnDark": "#db8054",
     "accentBtn": "#bc5727",
@@ -368,6 +405,9 @@
     "zipCodes": [
       "94117"
     ],
+    "analysisNeighborhoods": [
+      "Haight Ashbury"
+    ],
     "accent": "#b8860b",
     "accentOnDark": "#c28d0c",
     "accentBtn": "#b8860b",
@@ -411,6 +451,12 @@
       "94114",
       "94131"
     ],
+    "analysisNeighborhoods": [
+      "Castro/Upper Market",
+      "Noe Valley",
+      "Glen Park",
+      "Twin Peaks"
+    ],
     "accent": "#b5334a",
     "accentOnDark": "#d97a8b",
     "accentBtn": "#b5334a",
@@ -452,6 +498,11 @@
       "94110",
       "94112"
     ],
+    "analysisNeighborhoods": [
+      "Mission",
+      "Bernal Heights",
+      "Outer Mission"
+    ],
     "accent": "#c4442a",
     "accentOnDark": "#de7b66",
     "accentBtn": "#c4442a",
@@ -492,6 +543,10 @@
     "zipCodes": [
       "94122",
       "94116"
+    ],
+    "analysisNeighborhoods": [
+      "Inner Sunset",
+      "Sunset/Parkside"
     ],
     "accent": "#3d6b8f",
     "accentOnDark": "#6c9cc0",
@@ -539,6 +594,10 @@
     "zipCodes": [
       "94127",
       "94132"
+    ],
+    "analysisNeighborhoods": [
+      "West of Twin Peaks",
+      "Lakeshore"
     ],
     "accent": "#7a5c3e",
     "accentOnDark": "#c2a37e",
@@ -589,6 +648,14 @@
       "94124",
       "94134",
       "94112"
+    ],
+    "analysisNeighborhoods": [
+      "Bayview Hunters Point",
+      "Visitacion Valley",
+      "Excelsior",
+      "Portola",
+      "Oceanview/Merced/Ingleside",
+      "McLaren Park"
     ],
     "accent": "#6b8c3a",
     "accentOnDark": "#7ea544",
