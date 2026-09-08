@@ -845,6 +845,84 @@ ul, ol { list-style: none; }
   margin-bottom: var(--sp-10);
 }
 
+/* The police card takes the last column. Widths follow the brief count so the
+   row always fills and the card never wraps onto a line of its own:
+     1 brief  → brief spans two columns, card takes the third
+     2 briefs → three equal columns
+     3 briefs → four narrower columns
+   Ten of fourteen editions run one or two briefs, so without this the row is
+   a third to two-thirds empty most weeks. */
+.more-news-grid[data-has-blotter][data-briefs="0"] { grid-template-columns: 1fr; }
+.more-news-grid[data-has-blotter][data-briefs="1"] .news-card { grid-column: span 2; }
+.more-news-grid[data-has-blotter][data-briefs="3"] { grid-template-columns: repeat(4, 1fr); }
+
+.blotter-card {
+  border-top: 3px solid var(--navy);
+  padding-top: var(--sp-5);
+  font-family: var(--font-ui);
+}
+
+.blotter-card__kicker {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: var(--sp-3);
+}
+
+.blotter-card__lede {
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: var(--text);
+  margin-bottom: var(--sp-3);
+}
+
+.blotter-card__lede strong {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--navy);
+}
+
+.blotter-card__list {
+  border-top: 1px solid var(--rule);
+  margin-bottom: var(--sp-3);
+}
+
+.blotter-card__list li {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  padding: 5px 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: var(--text-xs);
+  color: var(--muted);
+}
+
+.blotter-card__list li span:last-child {
+  font-weight: 700;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Deliberately quiet and deliberately present: the caveat is the difference
+   between a number and a claim. */
+.blotter-card__note {
+  font-size: 0.625rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-bottom: var(--sp-3);
+}
+
+.blotter-card__link {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  border-bottom: 1px solid var(--navy);
+}
+
 .news-card {
   border-top: 3px solid var(--accent);
   padding-top: var(--sp-5);
@@ -1910,7 +1988,9 @@ hr.divider {
   .story-main { border-right: none; border-bottom: 1px solid var(--rule); }
   .story-side { border-right: none; border-bottom: 1px solid var(--rule); }
   .story-side:last-child { border-bottom: none; }
-  .more-news-grid { grid-template-columns: 1fr; gap: var(--sp-6); }
+  .more-news-grid,
+  .more-news-grid[data-has-blotter][data-briefs="3"] { grid-template-columns: 1fr; gap: var(--sp-6); }
+  .more-news-grid[data-has-blotter][data-briefs="1"] .news-card { grid-column: auto; }
   .dir-cols { grid-template-columns: 1fr; }
   .dir-group__entries { grid-template-columns: 1fr 1fr; }
   .sources-grid { grid-template-columns: 1fr; }

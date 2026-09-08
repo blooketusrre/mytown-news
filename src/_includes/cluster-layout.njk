@@ -224,13 +224,48 @@ layout: base.njk
         <span class="section-head__line" aria-hidden="true"></span>
       </div>
 
-      <div class="more-news-grid">
+      {# The grid widens with the number of briefs so the police card always
+         has a column and never lands alone on a second row. Ten of fourteen
+         editions run one or two briefs, which used to leave a third of the row
+         empty; three briefs now narrow slightly to make room rather than
+         pushing the card down. #}
+      {% set briefCount = issue.moreNews | length %}
+      <div class="more-news-grid" data-briefs="{{ briefCount }}"
+           {% if issue.blotter %}data-has-blotter="true"{% endif %}>
         {% for s in issue.moreNews %}
         <article class="news-card">
           {{ storyHead(s) }}
           {{ storyBody(s, 50) }}
         </article>
         {% endfor %}
+
+        {% if issue.blotter %}
+        {# Counts and a trend, never individual incidents. These are initial
+           reports — allegations, not convictions — and at street level a
+           single unverified one sits next to somebody's address. The link is
+           the point: a reader can run the same query. #}
+        <aside class="blotter-card" aria-labelledby="blotter-heading">
+          <p class="blotter-card__kicker" id="blotter-heading">Police reports</p>
+          <p class="blotter-card__lede">
+            <strong>{{ issue.blotter.total }}</strong> reported in the week to
+            {{ issue.blotter.to | date_short }}{% if issue.blotter.priorAvg %},
+            against a four-week average of {{ issue.blotter.priorAvg }}{% endif %}.
+          </p>
+          {% if issue.blotter.top.length %}
+          <ul class="blotter-card__list" role="list">
+            {% for row in issue.blotter.top %}
+            <li><span>{{ row.category }}</span><span>{{ row.count }}</span></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          <p class="blotter-card__note">
+            Initial reports to SFPD, excluding administrative records. Reports
+            are unverified and are not convictions.
+          </p>
+          <a class="blotter-card__link" href="{{ issue.blotter.sourceUrl }}"
+             target="_blank" rel="noopener noreferrer">See every report →</a>
+        </aside>
+        {% endif %}
       </div>
     </section>
 

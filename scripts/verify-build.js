@@ -715,7 +715,57 @@ try {
     errors.push(`Could not check added-venues.json: ${e.message}`);
   }
 
+  // ── Police reports ──────────────────────────────────────────────────────
+  // Counts and a trend only. Individual incidents are initial reports —
+  // allegations, not convictions — and at street level a single unverified one
+  // sits next to somebody's address. The caveat is the difference between a
+  // number and a claim, so a page that shows figures without it fails.
+  if (!/fetchBlotter\(clusterConfig\)/.test(gen)) {
+    warnings.push("generate-issue.js no longer fetches the police summary — the section will disappear from new issues");
+  }
+  try {
+    const all = JSON.parse(fs.readFileSync(CLUSTERS, "utf8"));
+    const missing = all.filter((c) => c.live && !(c.analysisNeighborhoods || []).length);
+    if (missing.length) {
+      errors.push(
+        `no SFPD neighborhood mapping for ${missing.map((c) => c.slug).join(", ")} — ` +
+        `their police summary would be silently empty`
+      );
+    }
+    // Every mapped name must be a real DataSF analysis neighborhood, or the
+    // query returns nothing and the section vanishes without an error.
+    const VALID = new Set(["Bayview Hunters Point","Bernal Heights","Castro/Upper Market","Chinatown","Excelsior","Financial District/South Beach","Glen Park","Golden Gate Park","Haight Ashbury","Hayes Valley","Inner Richmond","Inner Sunset","Japantown","Lakeshore","Lincoln Park","Lone Mountain/USF","Marina","McLaren Park","Mission","Mission Bay","Nob Hill","Noe Valley","North Beach","Oceanview/Merced/Ingleside","Outer Mission","Outer Richmond","Pacific Heights","Portola","Potrero Hill","Presidio","Presidio Heights","Russian Hill","Seacliff","South of Market","Sunset/Parkside","Tenderloin","Treasure Island","Twin Peaks","Visitacion Valley","West of Twin Peaks","Western Addition"]);
+    const seen = new Map();
+    all.filter((c) => c.live).forEach((c) => {
+      (c.analysisNeighborhoods || []).forEach((n) => {
+        if (!VALID.has(n)) errors.push(`${c.slug}: "${n}" is not an SFPD analysis neighborhood`);
+        if (seen.has(n)) errors.push(`"${n}" is mapped to both ${seen.get(n)} and ${c.slug} — its incidents would be counted twice`);
+        seen.set(n, c.slug);
+      });
+    });
+  } catch (e) {
+    errors.push(`Could not check the police-report mapping: ${e.message}`);
+  }
+
+  // Any page showing figures must carry the caveat, and must not be listing
+  // incidents at street level.
+  const editionPages = JSON.parse(fs.readFileSync(CLUSTERS, "utf8"))
+    .filter((c) => c.live)
+    .map((c) => path.join(OUT, editionPath(c, JSON.parse(fs.readFileSync(CLUSTERS, "utf8"))), "index.html"))
+    .filter((f) => fs.existsSync(f));
+  editionPages.forEach((f) => {
+    const html = fs.readFileSync(f, "utf8");
+    if (!html.includes("blotter-card")) return;
+    if (!/are unverified and are not convictions/.test(html)) {
+      errors.push(`${path.relative(OUT, f)} shows police figures without the "unverified, not convictions" caveat`);
+    }
+    if (!/data\.sfgov\.org/.test(html)) {
+      errors.push(`${path.relative(OUT, f)} shows police figures with no link to the source data`);
+    }
+  });
+
   console.log("  Directory: carried weekly, refreshed quarterly, additions merged");
+  console.log("  Blotter:   counts only, mapped to SFPD neighborhoods, caveat present");
 } catch (e) {
   errors.push(`Could not verify the publish pipeline: ${e.message}`);
 }
