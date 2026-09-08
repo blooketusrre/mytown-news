@@ -673,11 +673,28 @@ function addPendingVenues(issue, clusterSlug, today = new Date()) {
     if (!section) return;
     const list = (issue.directory[section] = issue.directory[section] || []);
 
-    // Once the quarterly refresh finds it, the hand-written copy is redundant —
-    // and two entries for one restaurant is worse than none.
-    if (list.some((v) => venueKey(v.name) === venueKey(entry.name))) {
-      skipped.push(entry.name);
-      return;
+    // An existing entry is one of two very different things.
+    //
+    // If the research found the venue, the hand-written copy is redundant and
+    // should go — two entries for one restaurant is worse than none.
+    //
+    // But if *we* put it there last week, it is our own injection carried
+    // forward inside the directory, and skipping it freezes it. Julius' Castle
+    // hit exactly this on 2026-09-11: added as "Coming Soon" the week before,
+    // carried into this week's directory, then skipped — so when it finally
+    // opens, openingFrom would never flip it to "New" and it would sit there
+    // marked Coming Soon until the quarterly refresh. The run also announced
+    // it had been "found on its own", which was not true.
+    //
+    // Marking what we add lets the two cases be told apart: replace ours,
+    // defer to theirs.
+    const existing = list.findIndex((v) => venueKey(v.name) === venueKey(entry.name));
+    if (existing !== -1) {
+      if (!list[existing]._added) {
+        skipped.push(entry.name);       // research found it — ours is redundant
+        return;
+      }
+      list.splice(existing, 1);         // ours, carried forward — replace it
     }
 
     // With a date, the entry flips itself on the day. Without one, an explicit
@@ -694,6 +711,7 @@ function addPendingVenues(issue, clusterSlug, today = new Date()) {
     // Once open, "Coming Soon" must not survive as the entry's own notable —
     // that is the pre-opening state, not a preference to preserve. Any other
     // label the entry carries (typically "Landmark") is kept.
+    venue._added  = true;               // so a later run can tell this is ours
     venue.notable = !isOpen ? "Coming Soon"
                   : (entry.notable && entry.notable !== "Coming Soon") ? entry.notable
                   : "New";

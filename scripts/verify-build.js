@@ -438,6 +438,14 @@ try {
   if (/My Town News — \$\{cluster\.name\} \$\{cluster\.city/.test(gen)) {
     errors.push("emailSubject concatenates name and city unconditionally — single-edition towns get their name twice");
   }
+  // Two failures the first live dry run exposed, both of which looked fine.
+  if (!/2 \* Math\.sqrt\(priorAvg\)/.test(
+        fs.readFileSync(path.join(ROOT, "pipeline", "blotter.js"), "utf8"))) {
+    errors.push("the police trend is back on a percentage threshold — at these volumes that reports noise as a fall in crime");
+  }
+  if (!/list\[existing\]\._added/.test(gen)) {
+    errors.push("addPendingVenues can no longer tell its own carried-forward entries from research finds — a queued opening would freeze at Coming Soon");
+  }
   if (!/function tidyBriefs\(/.test(gen)) {
     errors.push("tidyBriefs is gone — briefs could repeat a top story or arrive undated with nothing to catch it");
   }

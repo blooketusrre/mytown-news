@@ -127,13 +127,22 @@ async function fetchBlotter(cluster, asOf = new Date()) {
   return {
     total,
     priorAvg,
-    // Direction only when the change is big enough to mean something. Week to
-    // week these counts move by a handful on their own; calling a 5% wobble a
-    // rise would be inventing a trend.
+    // Two standard deviations, not a percentage.
+    //
+    // Incident counts are roughly Poisson, so week-to-week noise is about
+    // √average. At North Waterfront's 15 a week that is ±3.9 — while a 15%
+    // threshold is ±2.3, which fires on ordinary randomness. The first live
+    // run duly reported "8, down from 15" when 7 below is well inside normal
+    // variation for that volume.
+    //
+    // A percentage threshold only becomes meaningful above about 50 a week,
+    // which is three of fourteen editions. Reporting a fall in crime that did
+    // not happen is exactly the kind of small, confident wrongness that costs
+    // a local paper its credibility.
     trend: !priorAvg ? null
-         : total > priorAvg * 1.15 ? "up"
-         : total < priorAvg * 0.85 ? "down"
-         : "steady",
+         : Math.abs(total - priorAvg) > 2 * Math.sqrt(priorAvg)
+           ? (total > priorAvg ? "up" : "down")
+           : "steady",
     top: week.slice(0, 4).map((r) => ({ category: r.incident_category, count: Number(r.n) })),
     from: start.toISOString().slice(0, 10),
     to:   end.toISOString().slice(0, 10),
