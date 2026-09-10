@@ -552,19 +552,33 @@ try {
   // every San Francisco page and a marker on the San Francisco map.
   const homeHtml = fs.existsSync(path.join(OUT, "index.html"))
     ? fs.readFileSync(path.join(OUT, "index.html"), "utf8") : "";
-  // The footer is deliberately national — it groups every live city under its
-  // own heading, which is how a reader in one town finds out the others exist.
-  // So this check reads the body above the footer, not the whole document.
-  // Checking the whole file made a correct footer look like the Heber bug.
-  const homeBody = homeHtml.split(/<footer\b/i)[0];
-  if (homeHtml) {
-    const foreign = live.filter((e) => e.citySlug !== "san-francisco" && homeBody.includes(e.name));
+  // Scoped to the "Find Your Neighborhood" section, not the whole page.
+  //
+  // What this guard exists to protect is San Francisco's own map and edition
+  // list: a Utah town appearing there sends a reader in the Sunset to a page
+  // about Midway. Two parts of the page are deliberately national and both
+  // tripped it when checked document-wide — the footer, which groups every
+  // live city under its own heading, and the "Where We Publish" map, whose
+  // entire purpose is to name other cities. Widening the slice each time a
+  // legitimate section was added would have kept re-breaking it, so it now
+  // reads only the section it is about.
+  const hoodStart = homeHtml.indexOf('id="neighborhoods"');
+  const thisWeek  = homeHtml.indexOf('id="this-week"');
+  const hoodSection = hoodStart === -1 ? "" :
+    homeHtml.slice(hoodStart, thisWeek === -1 ? undefined : thisWeek);
+  if (homeHtml && !hoodSection) {
+    errors.push('could not find the "#neighborhoods" section on the homepage to check it for foreign editions');
+  }
+  if (hoodSection) {
+    const foreign = live.filter((e) => e.citySlug !== "san-francisco" && hoodSection.includes(e.name));
     if (foreign.length) {
       errors.push(
-        `the San Francisco homepage names ${foreign.map((e) => e.name).join(", ")} — ` +
-        `editions from other cities must not appear on it`
+        `"Find Your Neighborhood" on the San Francisco homepage names ` +
+        `${foreign.map((e) => e.name).join(", ")} — editions from other cities must not appear there`
       );
     }
+  }
+  if (homeHtml) {
     // Unlaunched editions must not be advertised anywhere.
     const dark = editions.filter((e) => !e.live && homeHtml.includes(`${e.name} — coming soon`));
     if (dark.length) {
@@ -811,6 +825,119 @@ try {
   console.log("  Weather:   per edition, dated");
 } catch (e) {
   errors.push(`Could not verify the publish pipeline: ${e.message}`);
+}
+
+/* ── The national map ─────────────────────────────────────────────────────
+ * Three things have to agree or every dot lands beside its city: the
+ * projection in lib/us-projection.js, the viewBox of the outline SVG that
+ * scripts/build-us-outline.js generated from it, and the aspect ratio of the
+ * .us-map box in main.css.
+ *
+ * They can drift silently. Nothing throws if the outline is regenerated at a
+ * new scale and the CSS is not updated — the page renders, the map looks
+ * roughly like the United States, and San Francisco sits in Nevada. A reader
+ * would notice before we did.
+ */
+try {
+  const proj = require("../lib/us-projection");
+  const svgPath = path.join(OUT, "assets", "img", "us-outline.svg");
+
+  if (!fs.existsSync(svgPath)) {
+    errors.push("assets/img/us-outline.svg is missing — the national map has no outline to draw");
+  } else {
+    const svg = fs.readFileSync(svgPath, "utf8");
+
+    const vb = (svg.match(/viewBox="([^"]+)"/) || [])[1];
+    if (vb !== proj.VIEWBOX) {
+      errors.push(
+        `us-outline.svg declares viewBox "${vb}" but lib/us-projection.js expects ` +
+        `"${proj.VIEWBOX}" — re-run scripts/build-us-outline.js, or every city dot ` +
+        `is offset from its city`
+      );
+    }
+
+    // The generator stamps the projection it used into the file. This catches
+    // the other half of the same mistake: changing SCALE and not regenerating.
+    const stamp = (svg.match(/data-projection="([^"]+)"/) || [])[1] || "";
+    const expected = `albersUsa ${proj.WIDTH}x${proj.HEIGHT}@${proj.SCALE} view ${proj.VIEWBOX}`;
+    if (stamp !== expected) {
+      errors.push(
+        `us-outline.svg was generated with "${stamp}" but lib/us-projection.js now ` +
+        `says "${expected}" — re-run scripts/build-us-outline.js`
+      );
+    }
+  }
+
+  // The CSS box must hold the outline's aspect ratio. Percentages are taken
+  // against the viewBox, so a box of a different shape stretches the outline
+  // away from the dots.
+  const css = fs.existsSync(cssPath) ? fs.readFileSync(cssPath, "utf8") : "";
+  const ratio = (css.match(/\.us-map\s*\{[^}]*aspect-ratio:\s*([\d.]+)\s*\/\s*([\d.]+)/) || []).slice(1);
+  if (ratio.length !== 2) {
+    errors.push(".us-map has no aspect-ratio in main.css — the outline and the dots will not line up");
+  } else if (Number(ratio[0]) !== proj.VIEW_W || Number(ratio[1]) !== proj.VIEW_H) {
+    errors.push(
+      `.us-map aspect-ratio is ${ratio[0]}/${ratio[1]} but the map's viewBox is ` +
+      `${proj.VIEW_W}×${proj.VIEW_H} — the outline is stretched relative to the dots`
+    );
+  }
+
+  // Golden values. Not a restatement of the arithmetic — these are the
+  // published positions of two real cities a long way apart, so any change to
+  // the projection or the viewBox moves at least one of them.
+  const golden = [
+    ["San Francisco", -122.4194, 37.7749, 9.51, 41.98],
+    ["Staunton",       -79.0717, 38.1496, 83.67, 46.87],
+  ];
+  golden.forEach(([name, lng, lat, left, top]) => {
+    const p = proj.projectPercent(lng, lat);
+    if (!p) {
+      errors.push(`the national map projects ${name} to nowhere — it should be on the map`);
+      return;
+    }
+    if (Math.abs(p.left - left) > 0.05 || Math.abs(p.top - top) > 0.05) {
+      errors.push(
+        `the national map moved ${name} to ${p.left.toFixed(2)}%, ${p.top.toFixed(2)}% ` +
+        `(was ${left}%, ${top}%) — if the projection changed on purpose, update these ` +
+        `values and re-run scripts/build-us-outline.js`
+      );
+    }
+  });
+
+  // Live cities only. A dot is a promise, and the footer already forbids
+  // advertising an edition that has not launched.
+  const cities = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
+  const liveCities = cities.filter((c) => c.live);
+  const homeHtml2 = fs.existsSync(path.join(OUT, "index.html"))
+    ? fs.readFileSync(path.join(OUT, "index.html"), "utf8") : "";
+  const pins = (homeHtml2.match(/class="us-map__pin"/g) || []).length;
+
+  if (liveCities.length > 1) {
+    if (pins !== liveCities.length) {
+      errors.push(
+        `the national map draws ${pins} pins but ${liveCities.length} cities are live`
+      );
+    }
+    const leaked = cities.filter((c) => !c.live && homeHtml2.includes(`class="us-map__pin"`) &&
+      new RegExp(`us-map__pin[^>]*>[\\s\\S]{0,200}?${c.name}<`).test(homeHtml2));
+    if (leaked.length) {
+      errors.push(
+        `unlaunched cities pinned on the national map: ${leaked.map((c) => c.name).join(", ")}`
+      );
+    }
+  } else if (pins) {
+    errors.push(
+      "the national map is drawn with fewer than two live cities — a map of the " +
+      "United States with one dot argues against the point it is making"
+    );
+  }
+
+  console.log(
+    `  National: ${liveCities.length > 1 ? `${pins} cities pinned` : "hidden until a second city launches"}` +
+    `, outline and dots share one projection`
+  );
+} catch (e) {
+  errors.push(`Could not verify the national map: ${e.message}`);
 }
 
 /* ── The dry-run switch must stay connected ───────────────────────────────

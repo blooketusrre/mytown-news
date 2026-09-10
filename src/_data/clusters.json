@@ -869,5 +869,113 @@
       "https://www.elliscountytx.gov",
       "https://www.elliscountytx.gov/Directory.aspx?did=31"
     ]
+  },
+  {
+    "slug": "staunton",
+    "name": "Staunton",
+    "city": "Staunton",
+    "citySlug": "staunton",
+    "live": false,
+    "neighborhoods": [
+      "Downtown Staunton",
+      "Gospel Hill",
+      "Newtown",
+      "The Wharf",
+      "Stuart Addition"
+    ],
+    "description": "An independent city in the Shenandoah Valley: five historic districts, a year-round Shakespeare company, and a downtown the railroad built and nobody knocked down.",
+    "zipCodes": [
+      "24401",
+      "24402"
+    ],
+    "accent": "#7a3f6d",
+    "accentOnDark": "#d9a4cd",
+    "accentBtn": "#7a3f6d",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 38.1496,
+      "lng": -79.0717,
+      "short": "Downtown · Gospel Hill · Newtown"
+    },
+    "primarySearchTerms": [
+      "Staunton Virginia",
+      "Staunton City Council",
+      "Staunton City Schools",
+      "Augusta County Virginia"
+    ],
+    "sourceHints": [
+      "https://www.ci.staunton.va.us",
+      "https://www.ci.staunton.va.us/agendas-minutes",
+      "https://www.ci.staunton.va.us/government/public-meetings",
+      "https://www.ci.staunton.va.us/departments/police",
+      "https://www.ci.staunton.va.us/departments/police/news-reports",
+      "https://www.staunton.k12.va.us",
+      "https://staunton.k12.va.us/en-US/schools",
+      "https://augustafreepress.com/local-afp/local-news/",
+      "https://cardinalnews.org",
+      "https://www.co.augusta.va.us/residents/county-news/all-county-news",
+      "https://www.stauntondowntown.org/events-calendar",
+      "https://www.stauntondowntown.org/annual-events",
+      "https://visitstaunton.com",
+      "https://americanshakespearecenter.com/calendar/",
+      "https://www.woodrowwilson.org",
+      "https://www.virginia.gov/agencies/frontier-culture-museum-of-virginia/"
+    ]
+  },
+  {
+    "slug": "marion",
+    "name": "Marion",
+    "city": "Marion",
+    "citySlug": "marion",
+    "live": false,
+    "neighborhoods": [
+      "Marion",
+      "Prospect",
+      "Caledonia",
+      "Waldo",
+      "LaRue",
+      "Green Camp"
+    ],
+    "description": "Warren Harding's hometown on the central Ohio plain: a 1928 movie palace, a popcorn festival, and the villages that ring the county seat.",
+    "zipCodes": [
+      "43302",
+      "43342",
+      "43314",
+      "43356",
+      "43332",
+      "43322"
+    ],
+    "accent": "#3f6b45",
+    "accentOnDark": "#93c99a",
+    "accentBtn": "#3f6b45",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 40.5867,
+      "lng": -83.1285,
+      "short": "Marion · Prospect · Caledonia"
+    },
+    "primarySearchTerms": [
+      "Marion Ohio",
+      "Marion County Ohio",
+      "Marion City Council Ohio",
+      "Marion City Schools Ohio"
+    ],
+    "sourceHints": [
+      "https://www.marionohio.us",
+      "https://www.marionohio.us/AgendaCenter/City-Council-7",
+      "https://www.marionohio.us/264/Police",
+      "https://marionohiopolice.com/",
+      "https://marioncountyohio.gov",
+      "https://marioncountyohio.gov/elected_offices/commissioners_agenda.php",
+      "https://marioncountyohio.gov/public_notices.php",
+      "https://www.marioncityschools.org/",
+      "https://www.mariononline.com/news/",
+      "https://www.marionpalace.org/palace-events",
+      "https://www.visitmarionohio.com/things-to-do/",
+      "https://business.marionareachamber.org/events",
+      "https://hardingpresidentialsites.org/",
+      "https://www.marion.lib.oh.us/",
+      "https://marionpublichealth.org/"
+    ]
   }
 ]

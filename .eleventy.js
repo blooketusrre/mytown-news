@@ -132,6 +132,22 @@ module.exports = function (eleventyConfig) {
     (editions || []).filter((e) => e && e.citySlug === citySlug));
   eleventyConfig.addFilter("editionsInCity", (editions, citySlug) => editionsInCity(editions, citySlug));
 
+  // Places a city on the national map, as percentages of the outline's own
+  // viewBox. Percentages rather than pixels because the map is a
+  // fixed-aspect-ratio box: the dots then stay put at every width with no
+  // JavaScript measuring anything — which is the failure mode the Leaflet
+  // neighborhood map below it has already hit twice.
+  //
+  // Returns null for a city outside the United States, which the template
+  // treats as "do not draw" rather than writing NaN% into a style attribute.
+  const { projectPercent } = require("./lib/us-projection");
+  eleventyConfig.addFilter("usPoint", (city) => {
+    if (!city || !city.map) return null;
+    const { lat, lng } = city.map;
+    if (typeof lat !== "number" || typeof lng !== "number") return null;
+    return projectPercent(lng, lat);
+  });
+
   // Events come back from research in the order sources were read, which on
   // the page looked arbitrary. Sorted here rather than only in the pipeline so
   // that issues published before the fix also read correctly.

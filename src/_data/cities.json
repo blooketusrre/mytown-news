@@ -65,5 +65,51 @@
       "paperName": "Waxahachie Daily Light",
       "paperFounded": "1867"
     }
+  },
+  {
+    "slug": "staunton",
+    "name": "Staunton",
+    "state": "VA",
+    "stateName": "Virginia",
+    "areaNoun": "city",
+    "areaNounPlural": "neighborhoods",
+    "live": false,
+    "launched": "2026-09-11",
+    "tagline": "Local news for Staunton, every Friday.",
+    "description": "Weekly local news, events and a business directory for Staunton, Virginia — the Queen City of the Shenandoah Valley.",
+    "map": {
+      "lat": 38.1496,
+      "lng": -79.0717
+    },
+    "buttondownTagPrefix": "",
+    "newsDesert": {
+      "note": "Staunton, Waynesboro and Augusta County are classified as news deserts by the 2026 Local Journalist Index (Muck Rack and Rebuild Local News), a measure that counts television, radio, digital-only outlets, podcasters and Substackers alike. The News Leader has published since 1904 and is owned by Gannett; the Augusta Free Press reported in 2024 that it “is not paying anybody to write there today,” and a story credited to it appeared simultaneously in nine other Gannett papers. Augusta Free Press and Cardinal News cover the area from Waynesboro and Roanoke.",
+      "paperLost": null,
+      "paperName": "The News Leader",
+      "paperFounded": "1904"
+    }
+  },
+  {
+    "slug": "marion",
+    "name": "Marion",
+    "state": "OH",
+    "stateName": "Ohio",
+    "areaNoun": "county",
+    "areaNounPlural": "communities",
+    "live": false,
+    "launched": "2026-09-11",
+    "tagline": "Local news for Marion County, every Friday.",
+    "description": "Weekly local news, events and a business directory for Marion, Ohio and the villages of Marion County.",
+    "map": {
+      "lat": 40.5867,
+      "lng": -83.1285
+    },
+    "buttondownTagPrefix": "",
+    "newsDesert": {
+      "note": "The Marion Star has published since 1877 — Warren G. Harding owned and edited it before the presidency — and is now owned by Gannett. It is down to two reporters, one covering news and one covering sports, from 66 employees in 2007. Marion Online (mariononline.com) is an active free local site carrying obituaries, events and press releases; it is a real reading habit here, though not an accountability newsroom.",
+      "paperLost": null,
+      "paperName": "The Marion Star",
+      "paperFounded": "1877"
+    }
   }
 ]
