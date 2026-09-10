@@ -88,11 +88,13 @@ STATIC_PAGES.forEach((p) => check(p));
 ASSETS.forEach((p) => check(p));
 
 let liveCount = 0;
+let liveSfCount = 0;
 try {
   const clusters = JSON.parse(fs.readFileSync(CLUSTERS, "utf8"));
   clusters.forEach((c) => {
     if (!c.live) return;
     liveCount++;
+    if (c.citySlug === "san-francisco") liveSfCount++;
     check(path.join(editionPath(c, clusters), "index.html"), c.name);
   });
 } catch (e) {
@@ -107,9 +109,13 @@ if (fs.existsSync(homepage)) {
   if (!/id="neighborhoods"/.test(html)) {
     errors.push('index.html is missing the "#neighborhoods" section');
   }
+  // Against San Francisco's live editions, not every live edition anywhere.
+  // The homepage is San Francisco's page — the national footer is what carries
+  // the other cities. Comparing to liveCount made the first out-of-state
+  // launch look like fourteen missing cards.
   const cardCount = (html.match(/class="cluster-list__item"/g) || []).length;
-  if (liveCount && cardCount < liveCount) {
-    warnings.push(`index.html lists ${cardCount} neighborhood cards but ${liveCount} clusters are live`);
+  if (liveSfCount && cardCount < liveSfCount) {
+    warnings.push(`index.html lists ${cardCount} neighborhood cards but ${liveSfCount} San Francisco editions are live`);
   }
 }
 
@@ -546,8 +552,13 @@ try {
   // every San Francisco page and a marker on the San Francisco map.
   const homeHtml = fs.existsSync(path.join(OUT, "index.html"))
     ? fs.readFileSync(path.join(OUT, "index.html"), "utf8") : "";
+  // The footer is deliberately national — it groups every live city under its
+  // own heading, which is how a reader in one town finds out the others exist.
+  // So this check reads the body above the footer, not the whole document.
+  // Checking the whole file made a correct footer look like the Heber bug.
+  const homeBody = homeHtml.split(/<footer\b/i)[0];
   if (homeHtml) {
-    const foreign = live.filter((e) => e.citySlug !== "san-francisco" && homeHtml.includes(e.name));
+    const foreign = live.filter((e) => e.citySlug !== "san-francisco" && homeBody.includes(e.name));
     if (foreign.length) {
       errors.push(
         `the San Francisco homepage names ${foreign.map((e) => e.name).join(", ")} — ` +
@@ -733,7 +744,14 @@ try {
   }
   try {
     const all = JSON.parse(fs.readFileSync(CLUSTERS, "utf8"));
-    const missing = all.filter((c) => c.live && !(c.analysisNeighborhoods || []).length);
+    // San Francisco editions only. The police summary is built from DataSF's
+    // SFPD incident dataset, which has no equivalent outside the city, so an
+    // edition in Ellis County or the Heber Valley legitimately has no mapping
+    // and fetchBlotter returns null for it — the card simply does not render.
+    // Requiring the mapping everywhere would block every launch outside SF.
+    const missing = all.filter(
+      (c) => c.live && c.citySlug === "san-francisco" && !(c.analysisNeighborhoods || []).length
+    );
     if (missing.length) {
       errors.push(
         `no SFPD neighborhood mapping for ${missing.map((c) => c.slug).join(", ")} — ` +

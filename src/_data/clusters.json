@@ -728,5 +728,146 @@
       "https://www.hebervalleyentertainment.com/movie-showtimes",
       "https://www.utah.gov/pmn/index.html"
     ]
+  },
+  {
+    "slug": "midlothian-red-oak",
+    "name": "Midlothian & Red Oak",
+    "city": "Ellis County",
+    "citySlug": "ellis-county",
+    "live": false,
+    "neighborhoods": [
+      "Midlothian",
+      "Red Oak",
+      "Ovilla",
+      "Oak Leaf",
+      "Pecan Hill"
+    ],
+    "description": "North Ellis County: cement kilns and cotton prairie turned Dallas commuter country, and the fastest-growing corner of the county.",
+    "zipCodes": [
+      "76065",
+      "75154"
+    ],
+    "accent": "#2b6a7a",
+    "accentOnDark": "#7fc4d4",
+    "accentBtn": "#2b6a7a",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 32.5,
+      "lng": -96.9,
+      "short": "Midlothian · Red Oak · Ovilla"
+    },
+    "primarySearchTerms": [
+      "Midlothian Texas",
+      "Red Oak Texas",
+      "Ovilla Texas",
+      "Ellis County Texas"
+    ],
+    "sourceHints": [
+      "https://www.midlothian.tx.us",
+      "https://www.midlothian.tx.us/60/Agendas-Packets-Minutes-Videos",
+      "https://www.midlothian.tx.us/Calendar.aspx",
+      "https://www.midlothian.tx.us/35/Business",
+      "https://www.midlothiancenter.com",
+      "http://www.misd.gs/",
+      "https://www.redoaktx.org",
+      "https://www.redoakisd.org",
+      "https://business.redoakareachamber.org",
+      "https://www.elliscountytx.gov",
+      "https://www.elliscountytx.gov/Directory.aspx?did=31",
+      "https://www.waxahachiesun.com/news/local/",
+      "https://www.intheknowellis.com"
+    ]
+  },
+  {
+    "slug": "waxahachie",
+    "name": "Waxahachie",
+    "city": "Ellis County",
+    "citySlug": "ellis-county",
+    "live": false,
+    "neighborhoods": [
+      "Waxahachie",
+      "Garrett",
+      "Maypearl",
+      "Bardwell"
+    ],
+    "description": "The county seat: a red-sandstone courthouse, a downtown of Victorian storefronts, and the largest master-planned build-out in the southern Metroplex on its edge.",
+    "zipCodes": [
+      "75165",
+      "75167",
+      "75168"
+    ],
+    "accent": "#a63c28",
+    "accentOnDark": "#e8907a",
+    "accentBtn": "#a63c28",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 32.3865,
+      "lng": -96.8483,
+      "short": "Waxahachie · Garrett · Maypearl"
+    },
+    "primarySearchTerms": [
+      "Waxahachie Texas",
+      "Ellis County Texas",
+      "Waxahachie ISD",
+      "Waxahachie city council"
+    ],
+    "sourceHints": [
+      "https://www.waxahachietx.gov",
+      "https://www.wisd.org",
+      "https://waxahachiechamber.com",
+      "https://www.waxahachiesun.com/news/local/",
+      "https://www.waxahachietx.com",
+      "https://www.elliscountytx.gov",
+      "https://www.elliscountytx.gov/Directory.aspx?did=31",
+      "https://www.intheknowellis.com"
+    ]
+  },
+  {
+    "slug": "ennis",
+    "name": "Ennis",
+    "city": "Ellis County",
+    "citySlug": "ellis-county",
+    "live": false,
+    "neighborhoods": [
+      "Ennis",
+      "Palmer",
+      "Ferris",
+      "Italy",
+      "Alma"
+    ],
+    "description": "Southeast Ellis County: a Czech railroad town on the Bluebonnet Trail, with the state's official bluebonnet trail and a National Polka Festival to prove it.",
+    "zipCodes": [
+      "75119",
+      "75152",
+      "75125",
+      "76651"
+    ],
+    "accent": "#3b4fa0",
+    "accentOnDark": "#9aabe8",
+    "accentBtn": "#3b4fa0",
+    "accentInk": "#ffffff",
+    "map": {
+      "lat": 32.3293,
+      "lng": -96.625,
+      "short": "Ennis · Palmer · Ferris"
+    },
+    "primarySearchTerms": [
+      "Ennis Texas",
+      "Ferris Texas",
+      "Palmer Texas",
+      "Ellis County Texas"
+    ],
+    "sourceHints": [
+      "https://www.ennistx.gov",
+      "https://www.ennistx.gov/meetingdashboard",
+      "https://www.ennis.k12.tx.us",
+      "https://www.ennis.k12.tx.us/page/district-calendar",
+      "https://ennis-chamber.com",
+      "https://www.visitennistexas.com",
+      "https://www.ennisdailynews.com",
+      "https://www.ennisdailynews.com/around-town",
+      "https://www.elliscountytx.gov",
+      "https://www.elliscountytx.gov/Directory.aspx?did=31"
+    ]
   }
 ]
