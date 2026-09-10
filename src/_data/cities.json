@@ -42,5 +42,28 @@
       "paperName": "The Wasatch Wave",
       "paperFounded": "1889"
     }
+  },
+  {
+    "slug": "ellis-county",
+    "name": "Ellis County",
+    "state": "TX",
+    "stateName": "Texas",
+    "areaNoun": "town",
+    "areaNounPlural": "towns",
+    "live": false,
+    "launched": "2026-09-11",
+    "tagline": "Three editions for Ellis County, every Friday.",
+    "description": "Weekly local news, events and a business directory for Waxahachie, Midlothian, Red Oak, Ennis and the towns of Ellis County, Texas.",
+    "map": {
+      "lat": 32.3865,
+      "lng": -96.8483
+    },
+    "buttondownTagPrefix": "",
+    "newsDesert": {
+      "note": "Partial, and not uniform across the county. The Waxahachie Daily Light has published since 1867 and still exists as a weekly under CherryRoad Media, but its website carried nothing newer than 22 February 2026 when checked on 10 September 2026, and its circulation is roughly 1,100 in a county of 240,000. The Ennis News is a living weekly and covers Ennis, Ferris, Palmer, Italy and Rice properly. The real gap is north county: Midlothian and Red Oak have grown past 50,000 people between them with no paper of their own.",
+      "paperLost": null,
+      "paperName": "Waxahachie Daily Light",
+      "paperFounded": "1867"
+    }
   }
 ]
