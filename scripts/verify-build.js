@@ -932,9 +932,75 @@ try {
     );
   }
 
+  /* ── The ZIP lookup ──────────────────────────────────────────────────────
+   * It was San Francisco's, sitting under San Francisco's edition list. It is
+   * now the first control on a national page, which changes what "correct"
+   * means for it in three ways.
+   */
+
+  // 1. It must index every live city. An SF-only index at the top of a
+  //    national page tells a reader in Staunton they are outside the coverage
+  //    area of a paper that covers them — a wrong answer delivered
+  //    confidently, which is worse than no lookup at all.
+  const indexedZips = new Set(
+    [...homeHtml2.matchAll(/\bzip:\s*"(\d{5})"/g)].map((m) => m[1])
+  );
+  const liveEditions = JSON.parse(fs.readFileSync(CLUSTERS, "utf8")).filter((c) => c.live);
+  const unindexed = liveEditions.filter(
+    (c) => (c.zipCodes || []).length && !(c.zipCodes || []).some((z) => indexedZips.has(z))
+  );
+  if (unindexed.length) {
+    errors.push(
+      `the ZIP lookup does not index ${unindexed.map((c) => c.slug).join(", ")} — ` +
+      `readers in those editions would be told we do not publish where we do`
+    );
+  }
+
+  // 2. One box, one id. The old lookup lived inside the San Francisco
+  //    section; leaving both in place would have given the page two elements
+  //    with id="zip-input", and getElementById returns the first — so the
+  //    visible box at the top would have worked and the other would have been
+  //    inert, or vice versa, depending on source order.
+  const zipInputs = (homeHtml2.match(/id="zip-input"/g) || []).length;
+  if (zipInputs !== 1) {
+    errors.push(`the homepage has ${zipInputs} elements with id="zip-input" — there must be exactly one`);
+  }
+
+  // 3. Above the map, which is the whole point of moving it.
+  const zipAt = homeHtml2.indexOf('id="zip-input"');
+  const mapAt = homeHtml2.indexOf('class="us-map"');
+  if (zipAt !== -1 && mapAt !== -1 && zipAt > mapAt) {
+    errors.push("the ZIP lookup renders below the national map — it belongs above it");
+  }
+
+  // The waitlist capture posts natively to Buttondown, like every other form
+  // on the site. If an API key ever appears in this page, it is a key that can
+  // mail the entire list from anyone's browser.
+  if (/BUTTONDOWN[_-]?(API[_-]?)?KEY|Authorization:\s*Token/i.test(homeHtml2)) {
+    errors.push("a Buttondown credential appears in the homepage source — it must never reach the browser");
+  }
+  if (homeHtml2.includes('id="zip-waitlist"')) {
+    if (!/name="tag"\s+value="waitlist"/.test(homeHtml2)) {
+      errors.push('the ZIP waitlist form does not carry tag="waitlist" — signups would land untagged');
+    }
+    if (!homeHtml2.includes('name="metadata__requested_zip"')) {
+      errors.push("the ZIP waitlist form does not record the ZIP that was asked for — the signup loses the one useful fact");
+    }
+    // Hyphens in a metadata key cannot be read back in a Buttondown template.
+    if (/name="metadata__[a-z0-9_]*-/.test(homeHtml2)) {
+      errors.push("a Buttondown metadata key on the homepage contains a hyphen — use underscores or it cannot be read in a template");
+    }
+  } else {
+    errors.push("the ZIP waitlist form is missing — an uncovered ZIP would be a dead end");
+  }
+
   console.log(
     `  National: ${liveCities.length > 1 ? `${pins} cities pinned` : "hidden until a second city launches"}` +
     `, outline and dots share one projection`
+  );
+  console.log(
+    `  ZIP:      ${indexedZips.size} codes indexed across ${liveCities.length} ` +
+    `${liveCities.length === 1 ? "city" : "cities"}, above the map, waitlist tagged`
   );
 } catch (e) {
   errors.push(`Could not verify the national map: ${e.message}`);

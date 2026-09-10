@@ -1560,6 +1560,43 @@ ul, ol { list-style: none; }
    control, and the lesson from the neighborhood map is that a decorative map
    sitting above the real list is how a reader concludes there is nothing
    below it. */
+/* The ZIP lookup, promoted out of the San Francisco section to the top of the
+   page. Centred and narrow: it is one field, and a full-width input reads as
+   a form rather than as a shortcut. */
+.zip-lookup--national {
+  max-width: 420px;
+  margin: 0 auto var(--sp-10);
+  text-align: center;
+}
+
+.zip-lookup--national .zip-lookup__row {
+  justify-content: center;
+}
+
+.zip-lookup__city {
+  color: var(--muted);
+  font-weight: 400;
+}
+.zip-lookup__city::before { content: "("; }
+.zip-lookup__city::after  { content: ")"; }
+
+/* Revealed only when a ZIP is not covered. */
+.zip-waitlist {
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-4);
+  border-top: 1px solid var(--rule);
+}
+
+.zip-waitlist[hidden] { display: none; }
+
+.zip-waitlist__label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--muted);
+  margin-bottom: var(--sp-2);
+}
+
 .us-map-list {
   list-style: none;
   margin: var(--sp-8) 0 0;

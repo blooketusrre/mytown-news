@@ -67,16 +67,68 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
      September, a map with no third-party runtime dependency at all is worth
      more than an interactive one. #}
   {% set liveCities = cities | selectattr("live") | list %}
-  {% if liveCities | length > 1 %}
   <section class="us-map-section" aria-labelledby="us-map-heading">
     <div class="container">
       <div class="us-map-section__intro">
-        <h2 class="us-map-section__title" id="us-map-heading">Where We Publish</h2>
+        <h2 class="us-map-section__title" id="us-map-heading">Find Your Edition</h2>
         <p class="us-map-section__sub">
+          {% if liveCities | length > 1 %}
           {{ liveCities | length }} towns and cities. A new local paper where the old one stopped.
+          {% else %}
+          Enter your ZIP code and we'll take you to your edition.
+          {% endif %}
         </p>
       </div>
 
+      {# ── ZIP lookup, above the map ──────────────────────────────────────
+         Ahead of the map because typing five digits beats scanning a map of
+         the United States for your own town, and because it is the control
+         that answers the question a first-time visitor actually has: is
+         there one for me?
+
+         It indexes every live edition in every city, not San Francisco's.
+         Moving an SF-only lookup to the top of a national page would be
+         worse than leaving it where it was — a reader in Staunton would be
+         told they are outside the coverage area of a paper that covers
+         them. #}
+      <div class="zip-lookup zip-lookup--national">
+        <label class="zip-lookup__label" for="zip-input">Find your edition by ZIP code</label>
+        <div class="zip-lookup__row">
+          <input class="zip-lookup__input" id="zip-input" type="text"
+                 inputmode="numeric" pattern="[0-9]{5}"
+                 maxlength="5" placeholder="e.g. 94133" aria-label="Enter your ZIP code">
+          <button class="zip-lookup__btn" id="zip-btn" type="button">Go</button>
+        </div>
+        <div class="zip-lookup__result" id="zip-result" role="status" aria-live="polite"></div>
+
+        {# Revealed by the lookup when a ZIP is not covered. Hidden rather than
+           built in JavaScript so that the form is real markup a browser can
+           post without us assembling it by hand, and so the metadata field
+           below is visible in the page source rather than buried in a string.
+
+           A native POST to Buttondown's embed endpoint, exactly as the
+           subscribe page and every edition page already do it. No API key
+           reaches the browser — that key can mail the entire list. #}
+        <form class="zip-waitlist embeddable-buttondown-form" id="zip-waitlist" hidden
+              action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondownUser }}"
+              method="post">
+          <input type="hidden" name="embed" value="1">
+          <input type="hidden" name="tag" value="waitlist">
+          {# Underscores, not hyphens: Buttondown's template language cannot
+             read {{ subscriber.metadata.requested-zip }}. #}
+          <input type="hidden" name="metadata__requested_zip" id="zip-waitlist-zip" value="">
+          <label class="zip-waitlist__label" for="zip-waitlist-email">
+            Leave your address and we'll tell you if we get there.
+          </label>
+          <div class="zip-lookup__row">
+            <input class="zip-lookup__input" id="zip-waitlist-email" name="email" type="email"
+                   placeholder="you@example.com" required autocomplete="email">
+            <button class="zip-lookup__btn" type="submit">Notify me</button>
+          </div>
+        </form>
+      </div>
+
+      {% if liveCities | length > 1 %}
       {# Decorative on its own: the list below is the navigation, and it is the
          only version that exists on a phone. A US map at 340px with five dots
          on it is a picture, not a control. #}
@@ -104,9 +156,9 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
         </li>
         {% endfor %}
       </ul>
+      {% endif %}
     </div>
   </section>
-  {% endif %}
 
   {# ── Cluster Map Section ─────────────────────────────────────────────── #}
   <section id="neighborhoods" class="cluster-map-section" aria-labelledby="map-heading">
@@ -257,17 +309,10 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
             {% endfor %}
           </nav>
 
-          {# ZIP lookup #}
-          <div class="zip-lookup">
-            <label class="zip-lookup__label" for="zip-input">Find by ZIP code</label>
-            <div class="zip-lookup__row">
-              <input class="zip-lookup__input" id="zip-input" type="text"
-                     inputmode="numeric" pattern="[0-9]{5}"
-                     maxlength="5" placeholder="e.g. 94133" aria-label="Enter SF ZIP code">
-              <button class="zip-lookup__btn" id="zip-btn" type="button">Go</button>
-            </div>
-            <div class="zip-lookup__result" id="zip-result" role="status" aria-live="polite"></div>
-          </div>
+          {# The ZIP lookup used to sit here, San Francisco-only. It now lives
+             at the top of the page and indexes every city. Two ZIP boxes on
+             one page would have shared an element id, so the second would
+             have been dead on arrival — the first getElementById wins. #}
         </div>
 
       </div>
@@ -361,23 +406,41 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
 
 <script>
 (function () {
-  /* ZIP → cluster index (auto-generated from clusters.json via Nunjucks).
-     ZIPs that span two clusters produce an array with both entries,
-     so the user is offered a choice rather than silently picking one. */
+  /* ZIP → edition index, built at build time from clusters.json.
+     Every live edition in every city, not just San Francisco's: the lookup
+     now sits at the top of a national page, and a Staunton reader being told
+     they are outside the coverage area would be a bug with a straight face.
+
+     A ZIP spanning two editions produces an array with both, so the reader is
+     offered a choice rather than silently sent to one of them. That happens
+     within a city (94111 is Downtown and North Waterfront) and could one day
+     happen across cities, which is why the city name is carried through. */
   var zipIndex = {};
   [
-    {% for c in sfEditions %}{% if c.live %}{% for z in c.zipCodes %}
-    { zip: "{{ z }}", slug: "{{ c.slug }}", name: {{ c.name | dump | safe }}, url: {{ (c | editionPath(clusters)) | dump | safe }} },
+    {% for c in clusters %}{% if c.live %}{% for z in c.zipCodes %}
+    { zip: "{{ z }}", name: {{ c.name | dump | safe }}, city: {{ c.city | dump | safe }}, url: {{ (c | editionPath(clusters)) | dump | safe }} },
     {% endfor %}{% endif %}{% endfor %}
   ].forEach(function (e) {
     if (!zipIndex[e.zip]) zipIndex[e.zip] = [];
-    zipIndex[e.zip].push({ slug: e.slug, name: e.name, url: e.url });
+    zipIndex[e.zip].push({ name: e.name, city: e.city, url: e.url });
   });
 
-  var input  = document.getElementById('zip-input');
-  var btn    = document.getElementById('zip-btn');
-  var result = document.getElementById('zip-result');
+  var input    = document.getElementById('zip-input');
+  var btn      = document.getElementById('zip-btn');
+  var result   = document.getElementById('zip-result');
+  var waitlist = document.getElementById('zip-waitlist');
+  var wlZip    = document.getElementById('zip-waitlist-zip');
   if (!input || !btn || !result) return;
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function (ch) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch];
+    });
+  }
+
+  function hideWaitlist() {
+    if (waitlist) waitlist.hidden = true;
+  }
 
   function lookup() {
     var zip = (input.value || '').trim();
@@ -385,6 +448,7 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
     /* Reset */
     result.innerHTML = '';
     result.className = 'zip-lookup__result';
+    hideWaitlist();
 
     if (!/^\d{5}$/.test(zip)) {
       result.textContent = 'Please enter a 5-digit ZIP code.';
@@ -395,8 +459,19 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
     var matches = zipIndex[zip];
 
     if (!matches || matches.length === 0) {
-      result.textContent = 'ZIP ' + zip + ' isn’t in our coverage area yet. Browse the map above to find your neighborhood.';
+      /* Most visitors will land here for a long time, so this message is the
+         one that matters most on the page. It says what is true, asks for the
+         thing that actually helps — someone telling us where to go next — and
+         offers to remember them. It does not imply a town is coming. */
+      result.innerHTML =
+        'We don’t publish in ' + escapeHtml(zip) + ' yet. ' +
+        'If you’d like your community added, email us at ' +
+        '<a href="mailto:info@mytown.news?subject=' + encodeURIComponent('Please cover ' + zip) + '">info@mytown.news</a>.';
       result.className += ' zip-lookup__result--warn';
+      if (waitlist && wlZip) {
+        wlZip.value = zip;
+        waitlist.hidden = false;
+      }
       return;
     }
 
@@ -405,10 +480,14 @@ pageDesc: "Free, independent hyperlocal news for every San Francisco neighborhoo
       return;
     }
 
-    /* ZIP spans two editions — let the reader choose */
-    result.innerHTML = 'ZIP ' + zip + ' is covered by two editions: ' +
+    /* ZIP spans more than one edition — let the reader choose. Labelled with
+       the city, because "Waxahachie" and "North Waterfront" side by side
+       without one is a guess. */
+    result.innerHTML = 'ZIP ' + escapeHtml(zip) + ' is covered by ' + matches.length + ' editions: ' +
       matches.map(function (m) {
-        return '<a href="' + m.url + '">' + m.name + '</a>';
+        return '<a href="' + m.url + '">' + escapeHtml(m.name) +
+               (m.city && m.city !== m.name ? ' <span class="zip-lookup__city">' + escapeHtml(m.city) + '</span>' : '') +
+               '</a>';
       }).join(' &nbsp;&middot;&nbsp; ');
     result.className += ' zip-lookup__result--multi';
   }
