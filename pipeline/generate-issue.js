@@ -124,15 +124,14 @@ if (!ANTHROPIC_KEY) { console.error("Missing ANTHROPIC_API_KEY"); process.exit(1
 
 // ─── Helpers ───────────────────────────────────────────────────────────────
 
-/** ISO date string for this Friday (or today if Friday) — used as filename */
-function thisWeekDate() {
-  const now = new Date();
-  const day = now.getUTCDay(); // 0 = Sun, 5 = Fri
-  const daysUntilFriday = (5 - day + 7) % 7 || 7;
-  const friday = new Date(now);
-  friday.setUTCDate(now.getUTCDate() + (daysUntilFriday === 7 ? 0 : daysUntilFriday));
-  return friday.toISOString().slice(0, 10);
-}
+/** ISO date string for this Friday (or today if Friday) — used as filename.
+ *
+ *  Lives in lib/week.js because the planning step and the watchdog need the
+ *  same answer and cannot import this file: it exits on load without an
+ *  ANTHROPIC_API_KEY. Two copies disagreeing by a day would mean the planner
+ *  looking for a file the generator never writes, so every backstop run would
+ *  republish everything. */
+const { thisWeekDate } = require("../lib/week");
 
 /**
  * The instant this week's issues should land, as an ISO string.
