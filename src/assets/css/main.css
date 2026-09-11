@@ -1560,6 +1560,51 @@ ul, ol { list-style: none; }
    control, and the lesson from the neighborhood map is that a decorative map
    sitting above the real list is how a reader concludes there is nothing
    below it. */
+/* ── Subscribe page: one group per city ────────────────────────────────── */
+.sub-city {
+  margin-bottom: var(--sp-10);
+}
+
+.sub-city__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+  padding-bottom: var(--sp-2);
+  margin-bottom: var(--sp-4);
+  border-bottom: 1px solid var(--rule);
+}
+
+.sub-city__name {
+  font-family: var(--font-head);
+  font-size: var(--text-lg);
+  margin: 0;
+  color: var(--navy);
+}
+
+.sub-city__state {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.sub-city__state::before { content: " — "; }
+
+.sub-city__count {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--muted);
+}
+
+/* Arrived via ?city=<slug>. A brief mark so the reader can see which group
+   was chosen for them, rather than wondering why some boxes are already
+   ticked. */
+.sub-city.is-targeted .sub-city__head {
+  border-bottom-color: var(--gold);
+}
+
 /* The ZIP lookup, promoted out of the San Francisco section to the top of the
    page. Centred and narrow: it is one field, and a full-width input reads as
    a form rather than as a shortcut. */

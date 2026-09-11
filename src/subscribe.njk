@@ -2,16 +2,24 @@
 layout: base.njk
 permalink: /subscribe/
 pageTitle: "Subscribe — My Town News"
-pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivered every Friday. Free, unsubscribe anytime."
+pageDesc: "Choose your editions and get My Town News delivered every Friday. Free, unsubscribe anytime."
 ---
+
+{# Everything on this page was written when San Francisco was the only city.
+   The eyebrow, the headline, the description and the picker all said
+   "neighborhoods", and the picker was a single flat grid of every live
+   edition. That reads correctly at fourteen editions in one city and not at
+   all at twenty across five states, where San Francisco and Ohio would sit in
+   the same wall of cards with nothing to tell them apart. #}
+{% set liveCities = cities | selectattr("live") | list %}
 
 {# ── Masthead ──────────────────────────────────────────────────────────────── #}
 <header class="masthead home-hero" role="banner" style="padding-bottom:var(--sp-8)">
   <div class="container">
-    <p class="home-hero__eyebrow">San Francisco · Free &amp; Independent · Every Friday</p>
-    <h1 class="home-hero__title" style="font-size:clamp(2rem,5vw,3.25rem)">Choose Your<br><em>Neighborhoods</em></h1>
+    <p class="home-hero__eyebrow">Free &amp; Independent · Every Friday</p>
+    <h1 class="home-hero__title" style="font-size:clamp(2rem,5vw,3.25rem)">Choose Your<br><em>Editions</em></h1>
     <p class="home-hero__desc" style="max-width:540px">
-      Each edition covers a few neighborhoods that share a corner of the city. Pick as many as you like — one email each, every Friday. Real local news, no fluff.
+      Each edition covers a handful of {% if liveCities | length > 1 %}places{% else %}neighborhoods{% endif %} that belong together. Pick as many as you like — one email each, every Friday. Real local news, no fluff.
     </p>
   </div>
   <div class="gold-rule"></div>
@@ -38,9 +46,19 @@ pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivere
                aria-required="true" autocomplete="email">
       </div>
 
-      {# ── Cluster picker ───────────────────────────────────────────────── #}
+      {# ── Edition picker, grouped by city ──────────────────────────────────
+         Grouped even while there is one city. Two code paths — a flat grid
+         below some threshold and a grouped one above it — would mean the
+         shape of this page changes on the day a second city launches, and the
+         path that had been tested for months would be the one nobody sees
+         again.
+
+         Still one form and one native POST carrying repeated `tag` inputs,
+         which is the only part of this page that must not change: an earlier
+         version fired a no-cors fetch per edition, which Buttondown does not
+         support and which failed silently. #}
       <div class="sub-section-head">
-        <h2 class="sub-section-title">Select neighborhoods</h2>
+        <h2 class="sub-section-title">Select your editions</h2>
         <div class="sub-controls">
           <button class="sub-ctrl-btn" id="select-all" type="button">Select all</button>
           <span class="sub-ctrl-sep">·</span>
@@ -48,32 +66,56 @@ pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivere
         </div>
       </div>
 
-      <div class="sub-grid" role="group" aria-label="Neighborhood editions">
-        {% for c in clusters %}{% if c.live %}
-        <label class="sub-card" data-slug="{{ c.slug }}">
-          <input class="sub-card__check" type="checkbox"
-                 name="tag" value="{{ c.slug }}"
-                 aria-label="{{ c.name }}">
-          <span class="sub-card__dot" style="background:{{ c.accent }}"></span>
-          <span class="sub-card__body">
-            <span class="sub-card__name">{{ c.name }}</span>
-            <span class="sub-card__hoods">{{ c.neighborhoods | join(' · ') }}</span>
-          </span>
-          <span class="sub-card__check-icon" aria-hidden="true">
-            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="8" cy="8" r="7.5" stroke="currentColor"/>
-              <path d="M4.5 8l2.5 2.5 5-5" stroke="currentColor" stroke-width="1.6"
-                    stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </label>
-        {% endif %}{% endfor %}
-      </div>
+      {% for city in liveCities %}
+      {% set cityEditions = clusters | editionsInCity(city.slug) %}
+      {% if cityEditions | length %}
+      <section class="sub-city" id="city-{{ city.slug }}" data-city="{{ city.slug }}">
+        <div class="sub-city__head">
+          <h3 class="sub-city__name">
+            {{ city.name }}<span class="sub-city__state">{{ city.stateName }}</span>
+          </h3>
+          <div class="sub-controls">
+            <span class="sub-city__count" data-city-count>{{ cityEditions | length }}
+              {{ "edition" if cityEditions | length == 1 else "editions" }}</span>
+            {% if cityEditions | length > 1 %}
+            <span class="sub-ctrl-sep">·</span>
+            <button class="sub-ctrl-btn" type="button" data-select-city>Select all</button>
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="sub-grid" role="group" aria-label="{{ city.name }} editions">
+          {% for c in cityEditions %}
+          <label class="sub-card" data-slug="{{ c.slug }}">
+            <input class="sub-card__check" type="checkbox"
+                   name="tag" value="{{ c.slug }}"
+                   aria-label="{{ c.name }}, {{ city.name }}">
+            <span class="sub-card__dot" style="background:{{ c.accent }}"></span>
+            <span class="sub-card__body">
+              <span class="sub-card__name">{{ c.name }}</span>
+              <span class="sub-card__hoods">{{ c.neighborhoods | join(' · ') }}</span>
+            </span>
+            <span class="sub-card__check-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="7.5" stroke="currentColor"/>
+                <path d="M4.5 8l2.5 2.5 5-5" stroke="currentColor" stroke-width="1.6"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </label>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+      {% endfor %}
 
       {# ── Submit ───────────────────────────────────────────────────────── #}
       <div class="sub-footer">
+        {# The label counts. At twenty editions across five states, "Subscribe
+           to selected neighborhoods" does not tell you whether you are about
+           to sign up for one email a week or twenty. #}
         <button class="sub-submit" id="sub-submit" type="submit" disabled>
-          <span class="sub-submit__label">Subscribe to selected neighborhoods</span>
+          <span class="sub-submit__label" id="sub-submit-label">Select at least one edition</span>
           <span class="sub-submit__spinner" aria-hidden="true"></span>
         </button>
         <p class="sub-note">No spam. Unsubscribe from any edition anytime.</p>
@@ -98,8 +140,33 @@ pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivere
   var submitBtn   = document.getElementById("sub-submit");
   var selectAll   = document.getElementById("select-all");
   var clearAll    = document.getElementById("clear-all");
+  var submitLabel = document.getElementById("sub-submit-label");
   var checkboxes  = document.querySelectorAll(".sub-card__check");
   if (!form) return;
+
+  function setChecked(cb, on) {
+    cb.checked = on;
+    cb.closest(".sub-card").classList.toggle("is-selected", on);
+  }
+
+  /* ── Per-city "Select all" ────────────────────────────────────────────
+     The global one subscribes you to every edition in the country, which at
+     twenty editions across five states is almost never what anyone means.
+     It stays, because it is exactly right for a reader in a single city and
+     was the only control here for months — but the per-city button is the
+     one that matches what people actually want. */
+  document.querySelectorAll("[data-select-city]").forEach(function (btn) {
+    var group = btn.closest(".sub-city");
+    var boxes = group.querySelectorAll(".sub-card__check");
+    btn.addEventListener("click", function () {
+      /* Toggle: a second click clears the city again, so the button is not a
+         one-way door that forces you to uncheck six cards by hand. */
+      var allOn = Array.prototype.every.call(boxes, function (cb) { return cb.checked; });
+      boxes.forEach(function (cb) { setChecked(cb, !allOn); });
+      btn.textContent = allOn ? "Select all" : "Clear";
+      updateSubmit();
+    });
+  });
 
   /* ── Checkbox / card interaction ──────────────────────────────────── */
   /* The <label> cards handle checkbox toggling natively — just sync the
@@ -107,34 +174,76 @@ pageDesc: "Choose your San Francisco neighborhoods and get My Town News delivere
   checkboxes.forEach(function (cb) {
     cb.addEventListener("change", function () {
       cb.closest(".sub-card").classList.toggle("is-selected", cb.checked);
+      syncCityButtons();
       updateSubmit();
     });
   });
 
-  selectAll.addEventListener("click", function () {
-    checkboxes.forEach(function (cb) {
-      cb.checked = true;
-      cb.closest(".sub-card").classList.add("is-selected");
+  /* The per-city buttons carry their own label state, so the global controls
+     have to put them back — otherwise "Clear" at the top leaves five city
+     buttons still reading "Clear" over empty groups. */
+  function syncCityButtons() {
+    document.querySelectorAll("[data-select-city]").forEach(function (btn) {
+      var boxes = btn.closest(".sub-city").querySelectorAll(".sub-card__check");
+      var allOn = boxes.length && Array.prototype.every.call(boxes, function (cb) { return cb.checked; });
+      btn.textContent = allOn ? "Clear" : "Select all";
     });
+  }
+
+  selectAll.addEventListener("click", function () {
+    checkboxes.forEach(function (cb) { setChecked(cb, true); });
+    syncCityButtons();
     updateSubmit();
   });
 
   clearAll.addEventListener("click", function () {
-    checkboxes.forEach(function (cb) {
-      cb.checked = false;
-      cb.closest(".sub-card").classList.remove("is-selected");
-    });
+    checkboxes.forEach(function (cb) { setChecked(cb, false); });
+    syncCityButtons();
     updateSubmit();
   });
 
   emailInput.addEventListener("input", updateSubmit);
 
   function updateSubmit() {
-    var email       = emailInput.value.trim();
-    var anySelected = Array.prototype.some.call(checkboxes, function (cb) { return cb.checked; });
-    var validEmail  = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    submitBtn.disabled = !(validEmail && anySelected);
+    var email      = emailInput.value.trim();
+    var selected   = Array.prototype.filter.call(checkboxes, function (cb) { return cb.checked; }).length;
+    var validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    submitBtn.disabled = !(validEmail && selected);
+
+    if (submitLabel) {
+      submitLabel.textContent = selected === 0
+        ? "Select at least one edition"
+        : "Subscribe to " + selected + (selected === 1 ? " edition" : " editions");
+    }
   }
+
+  /* ── ?city=<slug> ─────────────────────────────────────────────────────
+     So a link handed out in one town lands on that town's editions already
+     ticked, rather than on a page of twenty where the reader has to find
+     their own. This is what the partner links in the marketing plan need:
+     mytown.news/subscribe?city=marion.
+
+     Only pre-ticks; the reader can untick, and nothing is submitted without
+     them pressing the button. An unknown slug is ignored rather than
+     guessed at. */
+  (function preselectCity() {
+    var slug = new URLSearchParams(window.location.search).get("city");
+    if (!slug) return;
+    var group = document.querySelector('.sub-city[data-city="' + CSS.escape(slug) + '"]');
+    if (!group) return;
+    group.querySelectorAll(".sub-card__check").forEach(function (cb) { setChecked(cb, true); });
+    var btn = group.querySelector("[data-select-city]");
+    if (btn) btn.textContent = "Clear";
+    group.classList.add("is-targeted");
+    updateSubmit();
+    /* Scrolled, not jumped, and only after the check state is set, so the
+       reader sees the ticks happen rather than arriving at a fait accompli. */
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      group.scrollIntoView({ behavior: "smooth", block: "center" });
+    } else {
+      group.scrollIntoView();
+    }
+  })();
 
   /* ── Submit ────────────────────────────────────────────────────────
      No interception: the browser posts the form to Buttondown natively so

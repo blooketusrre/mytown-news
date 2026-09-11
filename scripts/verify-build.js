@@ -1006,6 +1006,90 @@ try {
   errors.push(`Could not verify the national map: ${e.message}`);
 }
 
+/* ── The subscribe page ───────────────────────────────────────────────────
+ * This page is the only place a reader can pick more than one edition, and a
+ * mistake here is invisible from the outside: an edition missing from the
+ * picker simply cannot be subscribed to, and nothing anywhere else breaks.
+ * It also carries the tag values that decide who receives what, so a wrong
+ * value mails the wrong people.
+ */
+try {
+  const subPath = path.join(OUT, "subscribe", "index.html");
+  const sub = fs.existsSync(subPath) ? fs.readFileSync(subPath, "utf8") : "";
+  if (!sub) {
+    errors.push("subscribe/index.html is missing — nobody can subscribe to more than one edition");
+  } else {
+    const cities = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
+    const liveCities = cities.filter((c) => c.live);
+    const liveEds = JSON.parse(fs.readFileSync(CLUSTERS, "utf8")).filter((c) => c.live);
+
+    // Every live edition, exactly once. Twice would give one tag two
+    // checkboxes; zero times would hide an edition we are publishing.
+    const tagValues = [...sub.matchAll(/name="tag"\s+value="([a-z0-9-]+)"/g)].map((m) => m[1]);
+    const counts = tagValues.reduce((a, t) => (a[t] = (a[t] || 0) + 1, a), {});
+    const missing = liveEds.filter((c) => !counts[c.slug]);
+    const doubled = Object.entries(counts).filter(([, n]) => n > 1).map(([t]) => t);
+    const unknown = Object.keys(counts).filter((t) => !liveEds.some((c) => c.slug === t));
+
+    if (missing.length) {
+      errors.push(
+        `the subscribe page offers no checkbox for ${missing.map((c) => c.slug).join(", ")} — ` +
+        `those editions publish but cannot be subscribed to`
+      );
+    }
+    if (doubled.length) {
+      errors.push(`the subscribe page lists ${doubled.join(", ")} more than once`);
+    }
+    if (unknown.length) {
+      errors.push(
+        `the subscribe page offers ${unknown.join(", ")}, which is not a live edition — ` +
+        `the tag would match nothing and the subscriber would get no mail`
+      );
+    }
+
+    // One group per live city, grouped even at one city so that the page does
+    // not change shape on the day a second city launches.
+    const groups = [...sub.matchAll(/class="sub-city"[^>]*data-city="([a-z0-9-]+)"/g)].map((m) => m[1]);
+    const ungrouped = liveCities.filter(
+      (c) => liveEds.some((e) => e.citySlug === c.slug) && !groups.includes(c.slug)
+    );
+    if (ungrouped.length) {
+      errors.push(
+        `the subscribe page has no group for ${ungrouped.map((c) => c.slug).join(", ")} — ` +
+        `their editions would sit under another city's heading`
+      );
+    }
+
+    // Still one native form post. The version before this fired a no-cors
+    // fetch per edition, which Buttondown does not support and which failed
+    // without saying so.
+    const forms = (sub.match(/<form\b/g) || []).length;
+    if (forms !== 1) {
+      errors.push(`the subscribe page has ${forms} forms — it must post once, carrying every selected tag`);
+    }
+    if (!/action="https:\/\/buttondown\.com\/api\/emails\/embed-subscribe\//.test(sub)) {
+      errors.push("the subscribe form no longer posts to Buttondown's embed endpoint");
+    }
+    if (/BUTTONDOWN[_-]?(API[_-]?)?KEY|Authorization:\s*Token/i.test(sub)) {
+      errors.push("a Buttondown credential appears in the subscribe page source — it must never reach the browser");
+    }
+
+    // Language. The homepage and the masthead stopped being San Francisco's
+    // when the second city landed; this page said "neighborhoods" in four
+    // places and "San Francisco" in the eyebrow.
+    if (liveCities.length > 1 && /San Francisco · Free/.test(sub)) {
+      errors.push('the subscribe masthead still says "San Francisco" although more than one city is live');
+    }
+
+    console.log(
+      `  Subscribe: ${tagValues.length} editions in ${groups.length} ` +
+      `${groups.length === 1 ? "group" : "groups"}, one form, one post`
+    );
+  }
+} catch (e) {
+  errors.push(`Could not verify the subscribe page: ${e.message}`);
+}
+
 /* ── The dry-run switch must stay connected ───────────────────────────────
  * The workflow has offered a "Dry run" checkbox since launch, but until
  * 2026-08-24 it only skipped the git commit: the generator still ran and
