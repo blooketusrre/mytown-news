@@ -1044,8 +1044,16 @@ async function generateCluster(clusterConfig) {
       issue.blotter = blotter;
       console.log(`  🚔 Police reports: ${blotter.total} in the week to ${blotter.to}` +
                   (blotter.priorAvg ? ` (4-week average ${blotter.priorAvg}, ${blotter.trend})` : ""));
+    } else if (!(clusterConfig.analysisNeighborhoods || []).length) {
+      // fetchBlotter returns null for two entirely different reasons, and the
+      // old single message covered both — so "no police reports to summarise"
+      // read as "a quiet week in Midlothian" when it meant "Texas is not in
+      // DataSF". On a Friday with fourteen logs to scan, the difference
+      // between a city that has no dataset and a dataset that returned
+      // nothing is the difference between ignoring a line and chasing it.
+      console.log("  ℹ No police dataset for this city — the section is omitted.");
     } else {
-      console.log("  ℹ No police reports to summarise this week.");
+      console.log("  ℹ Police dataset returned no qualifying incidents this week — the section is omitted.");
     }
   } catch (err) {
     console.warn(`  ⚠ Police report summary unavailable: ${err.message}`);
@@ -1119,6 +1127,29 @@ function esc(str) {
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
+/**
+ * A URL fit to put in an href, or null.
+ *
+ * Every URL in an issue came out of a language model reading the open web, so
+ * it is untrusted input that we paste into markup and mail to subscribers.
+ * esc() is not enough on its own: it leaves `javascript:` and `data:` intact,
+ * and those are exactly what an href must not carry.
+ *
+ * Returns null rather than a placeholder so callers drop the link entirely —
+ * a link to "#" in an email is a dead click, and the reader cannot tell it
+ * from a broken one.
+ */
+function safeUrl(raw) {
+  const s = String(raw == null ? "" : raw).trim();
+  if (!s) return null;
+  try {
+    const u = new URL(s);
+    return (u.protocol === "https:" || u.protocol === "http:") ? u.href : null;
+  } catch {
+    return null;   // not a URL at all
+  }
+}
+
 function buildEmailHtml(issue, cluster) {
   // Through lib/edition-path.js, the same function the site uses to build its
   // permalinks. Hardcoding `/${cluster.slug}/` here would have kept mailing
@@ -1146,6 +1177,12 @@ function buildEmailHtml(issue, cluster) {
   const storiesHtml = (issue.topStories || []).map(s => {
     const kicker = (s.tags && s.tags.length ? s.tags[0] : s.tag) || "";
     const meta   = [s.byline, s.date].filter(Boolean).join(" · ");
+    // Was `${s.sourceUrl || "#"}`: a model-supplied string dropped straight
+    // into an href, unescaped and unchecked. The schema validator already
+    // rejects a story whose sourceUrl does not start with http, so this is
+    // belt and braces — but it is the one place in the email where untrusted
+    // text became a destination rather than a caption.
+    const storyHref = safeUrl(s.sourceUrl);
     return `
     <tr><td style="padding:0 0 28px 0;border-bottom:1px solid #e8e3da;">
       ${kicker ? `<p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:${accent};">${esc(kicker)}</p>` : ""}
@@ -1153,7 +1190,7 @@ function buildEmailHtml(issue, cluster) {
       ${s.dek ? `<p style="margin:0 0 10px 0;font-family:Georgia,serif;font-size:15px;font-style:italic;line-height:1.5;color:#6b6560;">${esc(s.dek)}</p>` : ""}
       ${meta ? `<p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">${esc(meta)}</p>` : ""}
       <p style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:15px;line-height:1.68;color:#1c1c1e;">${esc(emailExcerpt(s.body, 90))}</p>
-      <a href="${s.sourceUrl || "#"}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">Read the full story: ${esc(s.sourceName || "source")} →</a>
+      ${storyHref ? `<a href="${esc(storyHref)}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">Read the full story: ${esc(s.sourceName || "source")} →</a>` : ""}
     </td></tr>
     <tr><td style="height:24px;"></td></tr>
   `;
@@ -1161,13 +1198,79 @@ function buildEmailHtml(issue, cluster) {
 
   // Emoji rather than the SVG icons used on the web — inline SVG support is
   // unreliable across email clients, and emoji degrade gracefully everywhere.
-  const eventsHtml = sortEvents(issue.events, issue.weekOf).slice(0, 5).map(ev => `
+  const eventsHtml = sortEvents(issue.events, issue.weekOf).slice(0, 5).map(ev => {
+    // "Verify" rather than the source's name, and deliberately understated.
+    //
+    // Every event already carries sourceUrl and sourceName — research has
+    // recorded them since the schema was written — and until now the email
+    // threw both away. An event listing that cannot be checked is the format
+    // most likely to waste a reader's evening: a date we got slightly wrong
+    // sends somebody to a shut door, and there was no way for them to catch
+    // it before leaving the house.
+    //
+    // The link goes to the source, not to our own page, because our page is
+    // the thing being checked.
+    const href = safeUrl(ev.sourceUrl);
+    const verify = !href ? "" :
+      ` · <a href="${esc(href)}" style="color:#6b6560;text-decoration:underline;">Verify${ev.sourceName ? " · " + esc(ev.sourceName) : ""}</a>`;
+    return `
     <tr><td style="padding:12px 0;border-bottom:1px solid #d8d2c8;">
       ${ev.date ? `<p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${accent};">${esc(ev.date)}</p>` : ""}
       <p style="margin:0 0 3px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${esc(ev.title)}</p>
-      <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6b6560;">📍 ${esc(ev.location)}${ev.time ? " · " + esc(ev.time) : ""}</p>
+      <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6b6560;">📍 ${esc(ev.location)}${ev.time ? " · " + esc(ev.time) : ""}${verify}</p>
     </td></tr>
-  `).join("");
+  `;
+  }).join("");
+
+  /* ── The directory, advertised ─────────────────────────────────────────
+   * The newsletter carried no sign that a directory existed at all — the
+   * only hint was one line of grey text above the button. The listings are
+   * the whole basis of the marketing plan: a venue that finds itself in the
+   * directory is the reason a chamber of commerce agrees to hand out flyers.
+   * A reader who never learns the directory is there cannot mention it to
+   * anyone.
+   *
+   * Category order is fixed rather than taken from Object.keys, so it matches
+   * the page and does not reshuffle when research returns the object in a
+   * different order. Empty categories are dropped: a link to a heading with
+   * nothing under it is worse than no link.
+   */
+  const DIR_SECTIONS = [
+    ["restaurants",     "dir-restaurants", "🍽", "Restaurants &amp; Cafés"],
+    ["hotels",          "dir-hotels",      "🏨", "Hotels &amp; Lodging"],
+    ["shops",           "dir-shops",       "🛍", "Shops, Books &amp; Services"],
+    ["artEntertainment","dir-art",         "🎭", "Art &amp; Entertainment"],
+    ["gymsRecreation",  "dir-gyms",        "🏃", "Gyms &amp; Recreation"],
+  ];
+  const dirRows = DIR_SECTIONS
+    .map(([key, anchor, emoji, label]) => {
+      const n = Array.isArray(issue.directory && issue.directory[key])
+        ? issue.directory[key].length : 0;
+      if (!n) return "";
+      // The count is the inducement. "Restaurants & Cafés" is a heading;
+      // "Restaurants & Cafés (18)" is a reason to click.
+      return `
+      <tr><td style="padding:5px 0;">
+        <a href="${issueUrl}#${anchor}" style="font-family:Arial,sans-serif;font-size:13px;color:#1a2744;text-decoration:none;">
+          ${emoji} <span style="text-decoration:underline;">${label}</span>
+          <span style="color:#6b6560;text-decoration:none;">(${n})</span>
+        </a>
+      </td></tr>`;
+    })
+    .join("");
+
+  const directoryHtml = !dirRows ? "" : `
+  <tr><td style="background:#ffffff;padding:24px 40px 8px;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr><td style="padding:0 0 4px 0;border-bottom:2px solid #1a2744;">
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a2744;">Community Directory</p>
+      </td></tr>
+      <tr><td style="padding:10px 0 2px 0;">
+        <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:12px;color:#6b6560;">Every listing, kept current, in the full edition.</p>
+        <table width="100%" cellpadding="0" cellspacing="0">${dirRows}</table>
+      </td></tr>
+    </table>
+  </td></tr>`;
 
   // Police reports: the same counts as the web card, never individual
   // incidents. Deliberately placed after the briefs and before the CTA, and
@@ -1185,13 +1288,19 @@ function buildEmailHtml(issue, cluster) {
     </table>
   </td></tr>`;
 
-  const moreHtml = (issue.moreNews || []).map(s => `
+  const moreHtml = (issue.moreNews || []).map(s => {
+    // The third place a model-supplied URL reached an href raw, and the one I
+    // missed. Found by the build guard written for the other two, which is
+    // the only reason it is fixed here rather than shipping another week.
+    const href = safeUrl(s.sourceUrl);
+    return `
     <tr><td style="padding:10px 0;border-bottom:1px solid #e8e3da;">
       <p style="margin:0 0 4px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${esc(s.headline)}</p>
       <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;line-height:1.55;color:#6b6560;">${esc(s.dek || emailExcerpt(s.body, 32))}</p>
-      ${s.sourceUrl ? `<a href="${s.sourceUrl}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">${esc(s.sourceName || "Read more")} →</a>` : ""}
+      ${href ? `<a href="${esc(href)}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">${esc(s.sourceName || "Read more")} →</a>` : ""}
     </td></tr>
-  `).join("");
+  `;
+  }).join("");
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -1248,10 +1357,11 @@ function buildEmailHtml(issue, cluster) {
     </table>
   </td></tr>` : ""}
   ${blotterHtml}
+  ${directoryHtml}
 
   <!-- CTA -->
   <tr><td style="background:#1a2744;padding:28px 40px;text-align:center;">
-    <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:13px;color:rgba(255,255,255,0.55);">Every event, the full neighborhood directory, and all our sources.</p>
+    <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:13px;color:rgba(255,255,255,0.55);">Every event, the full community directory, and all our sources.</p>
     <a href="${issueUrl}" style="display:inline-block;background:${accent};color:#ffffff;font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:13px 28px;border-radius:2px;">Open the full edition →</a>
   </td></tr>
 

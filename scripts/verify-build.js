@@ -503,6 +503,63 @@ try {
     }
   }
 
+  /* ── The newsletter's links out ─────────────────────────────────────────
+   * The email and the page are built by different code, and every link
+   * between them is a hardcoded string on both sides. None of these failures
+   * would break a build, a test or a send: the newsletter would simply carry
+   * a link that lands nowhere, and only a reader would find out.
+   */
+
+  // Each directory anchor in the email must be a real section id on the page.
+  {
+    const anchors = [...gen.matchAll(/"(dir-[a-z]+)"/g)].map((m) => m[1]);
+    const ids = new Set([...layout.matchAll(/dir-section--collapsible"\s+id="(dir-[a-z]+)"/g)].map((m) => m[1]));
+    if (!anchors.length) {
+      errors.push(
+        "the newsletter no longer links to the community directory — the listings " +
+        "are the basis of the marketing plan and a reader who never sees them " +
+        "cannot mention them to anyone"
+      );
+    }
+    const dangling = [...new Set(anchors)].filter((a) => !ids.has(a));
+    if (dangling.length) {
+      errors.push(
+        `the newsletter links to ${dangling.join(", ")}, which ${dangling.length === 1 ? "is not a section" : "are not sections"} ` +
+        `on the edition page — the link would land at the top and look broken`
+      );
+    }
+  }
+
+  // Directory sections start collapsed, so a link to one has to open it.
+  if (!/openFromHash/.test(layout)) {
+    errors.push(
+      "the edition page no longer opens a directory section from the URL hash — " +
+      "every link in the newsletter would land on a closed accordion"
+    );
+  }
+
+  // Events carry sourceUrl and sourceName; the email threw both away until
+  // 2026-09-12. A listing nobody can check is the one most likely to send a
+  // reader to a shut door.
+  if (!/>Verify/.test(gen)) {
+    errors.push("the newsletter no longer offers a way to verify an event against its source");
+  }
+
+  // Every URL in an issue came from a language model reading the open web.
+  if (!/function safeUrl/.test(gen)) {
+    errors.push("safeUrl is gone — model-supplied URLs would reach an href unchecked");
+  }
+  if (/href="\$\{(?:s|ev)\.sourceUrl/.test(gen)) {
+    errors.push(
+      "a raw sourceUrl is interpolated into an href — it must go through safeUrl, " +
+      "which is what keeps javascript: and data: out of a mailed link"
+    );
+  }
+
+  if (/Neighborhood Directory/.test(layout) || /Neighborhood Directory/.test(gen)) {
+    errors.push('"Neighborhood Directory" is back — it is the Community Directory everywhere');
+  }
+
   // The subject line duplicated the city for every town whose edition is the
   // city — "My Town News — Heber City Heber City".
   if (/My Town News — \$\{cluster\.name\} \$\{cluster\.city/.test(gen)) {
