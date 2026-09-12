@@ -1132,17 +1132,14 @@ function buildEmailHtml(issue, cluster) {
   // knows their own neighborhood but not which edition covers it. Taken from
   // the edition definition, never from the generated issue.
   const hoods    = (cluster.neighborhoods || []).join(" · ");
-  // "the Neighborhood" is right in San Francisco and wrong in a five-town
-  // valley. cities.json carries the word each city uses for its areas.
-  const cityRec  = (() => {
-    try {
-      const cities = JSON.parse(fs.readFileSync(
-        path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
-      return cities.find((c) => c.slug === cluster.citySlug) || null;
-    } catch { return null; }
-  })();
-  const areaNoun = (cityRec && cityRec.areaNoun) || "neighborhood";
-  const areaTitle = areaNoun.charAt(0).toUpperCase() + areaNoun.slice(1);
+  // Fixed, and matching cluster-layout.njk exactly. The email and the web
+  // page are rendered by two different pieces of code from the same issue, so
+  // a heading that differs between them is a real possibility and reads as
+  // sloppiness in the only place a subscriber actually looks.
+  //
+  // Was the city's areaNoun until 2026-09-12; see cluster-layout.njk for why
+  // no per-city value could be right.
+  const areaTitle = "Community";
 
   // Tolerates both the old schema (tag/byline/date) and the current one
   // (tags[]/dek); anything absent is omitted rather than left as an

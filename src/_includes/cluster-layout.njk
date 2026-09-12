@@ -95,7 +95,12 @@ layout: base.njk
     {# A town with one edition has nothing to be "all" of — the logo just goes
        home. Only a city with several editions offers a real choice. #}
     {% set cityEditionCount = (clusters | editionsInCity(edition.citySlug) | length) if edition else 0 %}
-    {% set allLabel = ("All " + thisCity.name + " " + thisCity.areaNounPlural) if (thisCity and cityEditionCount > 1) else ("My Town News home") %}
+    {# "editions", not the city's areaNounPlural. Keeping one per-city noun
+       alive for one string would preserve the whole mechanism — and the whole
+       chance of getting it wrong — for no benefit. "Edition" is also the word
+       the rest of the site already uses: "Find Your Edition" on the homepage,
+       "Choose Your Editions" on the subscribe page. #}
+    {% set allLabel = ("All " + thisCity.name + " editions") if (thisCity and cityEditionCount > 1) else ("My Town News home") %}
     <a class="site-nav__logo" href="{{ ('/' + edition.citySlug + '/') if (edition and edition.citySlug and cityEditionCount > 1) else '/' }}"
        aria-label="My Town News — {{ allLabel | lower }}"
        title="{{ allLabel }}">{% inlineMark %}</a>
@@ -198,7 +203,20 @@ layout: base.njk
     <section id="events" aria-labelledby="events-heading">
       <div class="events-band">
         <div class="section-head section-head--light">
-          <h2 class="section-head__label" id="events-heading">Upcoming &amp; Ongoing in the {{ (thisCity.areaNoun if thisCity else "Neighborhood") | title }}</h2>
+          {# "Community", fixed, everywhere.
+
+             This read the city's areaNoun until 2026-09-12 — "Neighborhood"
+             in San Francisco, "Valley" in Heber, "Town" in Ellis County,
+             "County" in Marion. The mechanism existed to make each place
+             sound like itself and it could not, because the unit that needs
+             the word is the *edition*, not the city: "in the Town" is wrong
+             for an edition covering both Midlothian and Red Oak, and no
+             per-city value fixes that.
+
+             A fixed word is true of a neighborhood, a valley, a town, a city
+             and a county alike, and a new town needs no decision at all —
+             which at fifty towns is the difference that matters. #}
+          <h2 class="section-head__label" id="events-heading">Upcoming &amp; Ongoing in the Community</h2>
           <span class="section-head__line" aria-hidden="true"></span>
         </div>
 
@@ -255,7 +273,7 @@ layout: base.njk
     {# More News #}
     <section id="more-news" aria-labelledby="more-news-heading">
       <div class="section-head">
-        <h2 class="section-head__label" id="more-news-heading">More from the {{ (thisCity.areaNoun if thisCity else "Neighborhood") | title }}</h2>
+        <h2 class="section-head__label" id="more-news-heading">More from the Community</h2>
         <span class="section-head__line" aria-hidden="true"></span>
       </div>
 
