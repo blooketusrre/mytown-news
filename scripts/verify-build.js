@@ -106,8 +106,11 @@ try {
 const homepage = path.join(OUT, "index.html");
 if (fs.existsSync(homepage)) {
   const html = fs.readFileSync(homepage, "utf8");
-  if (!/id="neighborhoods"/.test(html)) {
-    errors.push('index.html is missing the "#neighborhoods" section');
+  // Was '#neighborhoods', San Francisco's map section, until the homepage
+  // became national. '#editions' is the section the nav points at and the one
+  // that answers "is there one for me?".
+  if (!/id="editions"/.test(html)) {
+    errors.push('index.html is missing the "#editions" section');
   }
   // Against San Francisco's live editions, not every live edition anywhere.
   // The homepage is San Francisco's page — the national footer is what carries
@@ -218,7 +221,7 @@ try {
       errors.push(`${c.slug}: accentInk on accentBtn is ${onBtn.toFixed(2)}:1 — needs ${AA}:1`);
     }
     if (!c.map || typeof c.map.lat !== "number" || typeof c.map.lng !== "number") {
-      errors.push(`${c.slug}: missing map coordinates — the homepage map is built from these`);
+      errors.push(`${c.slug}: missing map coordinates — the maps are built from these`);
     }
   });
   console.log(`  Contrast: ${editions.filter((c) => c.live).length} live editions checked against WCAG AA`);
@@ -316,8 +319,21 @@ try {
  * pattern: adding one should be a decision, not a typo.
  */
 try {
-  const home = fs.existsSync(path.join(OUT, "index.html"))
-    ? fs.readFileSync(path.join(OUT, "index.html"), "utf8") : "";
+  // The Leaflet map lives on the city hub, not the homepage. It moved there on
+  // 2026-09-12 when the homepage became national: a city's own map belongs on
+  // the city's own page, and the homepage now carries the keyless US outline
+  // instead. These guards followed it rather than being deleted — every one of
+  // them describes a failure that actually happened.
+  const hubPath = (() => {
+    try {
+      const { citiesNeedingHub } = require("../lib/edition-path");
+      const hubs = citiesNeedingHub(
+        JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8")),
+        JSON.parse(fs.readFileSync(CLUSTERS, "utf8")));
+      return hubs.length ? path.join(OUT, hubs[0].slug, "index.html") : null;
+    } catch { return null; }
+  })();
+  const home = hubPath && fs.existsSync(hubPath) ? fs.readFileSync(hubPath, "utf8") : "";
   if (home) {
     const BANNED = [
       ["cartocdn.com", "CARTO now watermarks keyless raster tiles and is retiring them"],
@@ -327,14 +343,14 @@ try {
     ];
     BANNED.forEach(([host, why]) => {
       if (home.includes(host)) {
-        errors.push(`homepage map loads tiles from ${host} — ${why}`);
+        errors.push(`city hub map loads tiles from ${host} — ${why}`);
       }
     });
     const tile = home.match(/L\.tileLayer\('([^']+)'/);
     if (!tile) {
-      errors.push("homepage has no tileLayer — the neighborhood map would render blank");
+      errors.push("the city hub has no tileLayer — the neighborhood map would render blank");
     } else if (!/tile\.openstreetmap\.org/.test(tile[1])) {
-      warnings.push(`homepage map uses an unreviewed tile source: ${tile[1]}`);
+      warnings.push(`city hub map uses an unreviewed tile source: ${tile[1]}`);
     }
     // Leaflet must be served by us. On a third-party CDN, a content blocker
     // or an outage that drops only leaflet.css leaves the map "working" while
@@ -343,21 +359,21 @@ try {
     // city into open ocean. A friend of Brian's hit exactly this on a phone on
     // 3 September 2026.
     if (/unpkg\.com|cdnjs\.cloudflare\.com\/ajax\/libs\/leaflet|cdn\.jsdelivr\.net.*leaflet/.test(home)) {
-      errors.push("homepage loads Leaflet from a CDN — serve it from /assets/vendor/leaflet/ so a blocked stylesheet cannot break the map");
+      errors.push("the city hub loads Leaflet from a CDN — serve it from /assets/vendor/leaflet/ so a blocked stylesheet cannot break the map");
     }
     ["assets/vendor/leaflet/leaflet.js", "assets/vendor/leaflet/leaflet.css"].forEach((f) => {
-      if (!fs.existsSync(path.join(OUT, f))) errors.push(`MISSING  ${f} — the homepage map has no script or stylesheet to load`);
+      if (!fs.existsSync(path.join(OUT, f))) errors.push(`MISSING  ${f} — the city hub map has no script or stylesheet to load`);
     });
     // A broken map must remove itself rather than sit between the reader and
     // the neighborhood list, which is the actual navigation.
     if (!/typeof L === 'undefined'/.test(home)) {
-      errors.push("homepage does not check that Leaflet loaded — a failed script would leave an empty bordered box");
+      errors.push("the city hub does not check that Leaflet loaded — a failed script would leave an empty bordered box");
     }
     if (!/scrollHeight > el\.clientHeight/.test(home)) {
-      errors.push("homepage does not detect an unstyled map — stacked tiles would render as a map running off southward");
+      errors.push("the city hub does not detect an unstyled map — stacked tiles would render as a map running off southward");
     }
     if (!/openstreetmap\.org\/copyright/.test(home)) {
-      errors.push("homepage map is missing OpenStreetMap attribution, which their licence requires");
+      errors.push("the city hub map is missing OpenStreetMap attribution, which their licence requires");
     }
   }
   // The list is the navigation; the map is the illustration. On one column the
@@ -726,6 +742,15 @@ try {
     });
   });
 
+  const citiesNeedingHubList = (() => {
+    try {
+      const { citiesNeedingHub } = require("../lib/edition-path");
+      return citiesNeedingHub(
+        JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8")),
+        JSON.parse(fs.readFileSync(CLUSTERS, "utf8")));
+    } catch { return []; }
+  })();
+
   // Buttondown tags collide within a newsletter, not across the whole product.
   const byCity = {};
   live.forEach((e) => {
@@ -742,32 +767,32 @@ try {
   // every San Francisco page and a marker on the San Francisco map.
   const homeHtml = fs.existsSync(path.join(OUT, "index.html"))
     ? fs.readFileSync(path.join(OUT, "index.html"), "utf8") : "";
-  // Scoped to the "Find Your Neighborhood" section, not the whole page.
+  // Now checked on each city hub rather than on the homepage.
   //
-  // What this guard exists to protect is San Francisco's own map and edition
-  // list: a Utah town appearing there sends a reader in the Sunset to a page
-  // about Midway. Two parts of the page are deliberately national and both
-  // tripped it when checked document-wide — the footer, which groups every
-  // live city under its own heading, and the "Where We Publish" map, whose
-  // entire purpose is to name other cities. Widening the slice each time a
-  // legitimate section was added would have kept re-breaking it, so it now
-  // reads only the section it is about.
-  const hoodStart = homeHtml.indexOf('id="neighborhoods"');
-  const thisWeek  = homeHtml.indexOf('id="this-week"');
-  const hoodSection = hoodStart === -1 ? "" :
-    homeHtml.slice(hoodStart, thisWeek === -1 ? undefined : thisWeek);
-  if (homeHtml && !hoodSection) {
-    errors.push('could not find the "#neighborhoods" section on the homepage to check it for foreign editions');
-  }
-  if (hoodSection) {
-    const foreign = live.filter((e) => e.citySlug !== "san-francisco" && hoodSection.includes(e.name));
+  // What this guard protects is a city's own map and edition list: a Utah town
+  // appearing in San Francisco's sends a reader in the Sunset to a page about
+  // Midway. That content lived on the homepage until 2026-09-12 and now lives
+  // at /<city>/, so the check moved with it — and improved in the move, because
+  // it covers every city instead of San Francisco only.
+  //
+  // The homepage is deliberately national now and every city belongs on it, so
+  // there is nothing left there to scope. This guard was narrowed twice while
+  // it lived there — first to exclude the footer, then to exclude the national
+  // map — which was the signal that it was attached to the wrong page.
+  citiesNeedingHubList.forEach((city) => {
+    const f = path.join(OUT, city.slug, "index.html");
+    if (!fs.existsSync(f)) return;                 // already reported as MISSING
+    const html = fs.readFileSync(f, "utf8");
+    const body = html.split(/<footer\b/i)[0];      // the footer is national by design
+    const foreign = live.filter((e) => e.citySlug !== city.slug && body.includes(e.name));
     if (foreign.length) {
       errors.push(
-        `"Find Your Neighborhood" on the San Francisco homepage names ` +
-        `${foreign.map((e) => e.name).join(", ")} — editions from other cities must not appear there`
+        `the ${city.name} hub names ${foreign.map((e) => e.name).join(", ")} — ` +
+        `editions from other cities must not appear on a city's own page`
       );
     }
-  }
+  });
+
   if (homeHtml) {
     // Unlaunched editions must not be advertised anywhere.
     const dark = editions.filter((e) => !e.live && homeHtml.includes(`${e.name} — coming soon`));

@@ -1560,6 +1560,121 @@ ul, ol { list-style: none; }
    control, and the lesson from the neighborhood map is that a decorative map
    sitting above the real list is how a reader concludes there is nothing
    below it. */
+/* ── Homepage: one story card per live city ─────────────────────────────
+   Replaces a single hardcoded North Waterfront feature. auto-fit rather than
+   a fixed column count, so one city reads as a full-width lead and five read
+   as a grid without the template knowing how many cities there are. */
+.city-picks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--sp-8);
+}
+
+.city-pick {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: var(--sp-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.city-pick__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--sp-2);
+}
+
+.city-pick__city {
+  font-family: var(--font-head);
+  font-size: var(--text-lg);
+  margin: 0;
+}
+.city-pick__city a { color: var(--navy); text-decoration: none; }
+.city-pick__city a:hover { text-decoration: underline; }
+
+.city-pick__state {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--muted);
+}
+.city-pick__state::before { content: ", "; }
+
+.city-pick__week {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.city-pick__headline {
+  font-family: var(--font-head);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: var(--sp-2) 0 0;
+  color: var(--navy);
+}
+
+.city-pick__dek {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-style: italic;
+  color: var(--muted);
+  margin: 0;
+}
+
+.city-pick__body {
+  font-size: var(--text-sm);
+  line-height: 1.65;
+  color: var(--text);
+  margin: 0;
+}
+
+.city-pick__link {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: var(--sp-3);
+}
+
+/* A city in its first week: live, announced, no issue yet. */
+.city-pick__soon {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: var(--sp-2) 0 0;
+}
+
+/* The homepage signup was a form with no action attribute. It is a link now. */
+.newsletter__cta {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: var(--gold);
+  color: var(--navy);
+  padding: var(--sp-4) var(--sp-8);
+  border-radius: var(--radius);
+}
+.newsletter__cta:hover { filter: brightness(1.06); }
+
 /* ── Subscribe page: one group per city ────────────────────────────────── */
 .sub-city {
   margin-bottom: var(--sp-10);

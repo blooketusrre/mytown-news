@@ -132,6 +132,30 @@ module.exports = function (eleventyConfig) {
     (editions || []).filter((e) => e && e.citySlug === citySlug));
   eleventyConfig.addFilter("editionsInCity", (editions, citySlug) => editionsInCity(editions, citySlug));
 
+  // The story to show for a city on the national homepage: the lead story
+  // from whichever of its editions published most recently.
+  //
+  // Returns null rather than throwing when a city has no issue yet — a town
+  // in its first week has live editions and no content, and the homepage
+  // should show the town without a story rather than fail to build. That is
+  // not hypothetical: it is the state every new city is in on launch day.
+  eleventyConfig.addFilter("cityLead", (citySlug, editions) => {
+    const issues = require("./src/_data/issues.js")();
+    const mine = (editions || []).filter((e) => e && e.live && e.citySlug === citySlug);
+
+    let best = null;
+    for (const edition of mine) {
+      const issue = issues[edition.slug];
+      const story = issue && issue.topStories && issue.topStories[0];
+      if (!story || !story.headline) continue;
+      // String compare is correct here: weekOf is always YYYY-MM-DD.
+      if (!best || String(issue.weekOf || "") > String(best.issue.weekOf || "")) {
+        best = { edition, issue, story };
+      }
+    }
+    return best;
+  });
+
   // Places a city on the national map, as percentages of the outline's own
   // viewBox. Percentages rather than pixels because the map is a
   // fixed-aspect-ratio box: the dots then stay put at every width with no
