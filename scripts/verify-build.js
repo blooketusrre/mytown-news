@@ -421,20 +421,50 @@ try {
   if (!/navH \+ 28/.test(base)) {
     errors.push("scrollspy reading line no longer matches scroll-padding-top (--nav-h + 28px)");
   }
-  // "the Neighborhood" hardcoded into a heading is the same failure as
-  // "cluster": copy written for San Francisco, shipped to a five-town valley.
-  if (/More from the Neighborhood|Ongoing in the Neighborhood/.test(layout)) {
-    errors.push('cluster-layout.njk hardcodes "the Neighborhood" in a heading — it must come from the city\'s areaNoun');
+  /* ── One word for the place, everywhere ────────────────────────────────
+   * These checks used to require the opposite: that the headings came from
+   * each city's areaNoun, and that every live city defined one. That was the
+   * right instinct aimed at the wrong noun — the unit that needs a word is
+   * the edition, not the city, so "in the Town" was wrong for an edition
+   * covering Midlothian and Red Oak and no per-city value could fix it.
+   *
+   * Since 2026-09-12 both headings are the fixed word "Community". What now
+   * needs guarding is that they stay fixed, that the email and the web page
+   * say the same thing, and that the abandoned mechanism does not come back
+   * as data nobody reads.
+   */
+  ["More from the Community", "Ongoing in the Community"].forEach((phrase) => {
+    if (!layout.includes(phrase)) {
+      errors.push(`cluster-layout.njk no longer says "${phrase}" — the section headings are fixed copy`);
+    }
+  });
+  if (!/const areaTitle = "Community"/.test(gen)) {
+    errors.push(
+      'the newsletter no longer fixes its heading to "Community" — the email and ' +
+      'the web page are rendered by different code and would drift apart'
+    );
   }
-  if (/More from the Neighborhood/.test(gen)) {
-    errors.push('the newsletter hardcodes "More from the Neighborhood" — it must match the city\'s areaNoun');
+  // Property access, not the bare word: the comments in both files explain
+  // why this mechanism was removed, and a guard that forbids naming the thing
+  // it is about would force those comments to be vague.
+  if (/\.areaNoun\b/.test(layout) || /\.areaNoun\b/.test(gen)) {
+    errors.push(
+      "a per-city areaNoun is being read again — it was removed because no " +
+      "single value is right for an edition spanning two towns"
+    );
   }
   try {
     const cities = JSON.parse(fs.readFileSync(
       path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
-    const gaps = cities.filter((c) => c.live && !(c.areaNoun && c.areaNounPlural));
-    if (gaps.length) {
-      errors.push(`cities missing areaNoun/areaNounPlural: ${gaps.map((c) => c.slug).join(", ")}`);
+    // Dead configuration is worse than none: it looks like a setting that
+    // does something, so the next town copies it and nobody notices it is
+    // read by nothing.
+    const stale = cities.filter((c) => c.areaNoun || c.areaNounPlural);
+    if (stale.length) {
+      errors.push(
+        `cities.json still defines areaNoun/areaNounPlural for ${stale.map((c) => c.slug).join(", ")} — ` +
+        `nothing reads them, and config that looks live but is not gets copied into the next town`
+      );
     }
   } catch (e) {
     errors.push(`Could not check city vocabulary: ${e.message}`);
