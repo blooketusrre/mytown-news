@@ -611,7 +611,7 @@ try {
           "formatWeek, which both formats it and fixes the timezone off-by-one"
         );
       }
-      if (!/function formatWeek/.test(gen)) {
+      if (!/formatWeek/.test(gen) || !/function formatWeek/.test(fs.readFileSync(path.join(ROOT, "lib", "week.js"), "utf8"))) {
         errors.push("formatWeek is gone — the newsletter would print an unformatted date");
       }
     }
