@@ -1488,7 +1488,7 @@ async function main() {
   }
 
   // Filter to requested cluster or all live clusters
-  const targets = clusters.filter((c) => {
+  let targets = clusters.filter((c) => {
     if (clusterArg) return c.slug === clusterArg;
     return c.live === true;
   });
@@ -1535,6 +1535,44 @@ async function main() {
     console.log(DRY_RUN
       ? "\n⚠ BUTTONDOWN_API_KEY not set — audience tags cannot be checked in this rehearsal."
       : "\n⚠ BUTTONDOWN_API_KEY not set — no email will be sent.");
+  }
+
+  // ── Check the audience before spending anything on content ───────────────
+  // The tag map is already in hand at this point, and nothing between here
+  // and delivery uses it — so a missing tag is knowable in the first second
+  // of a run and was not reported until the seventh minute.
+  //
+  // On 2026-09-12 the midlothian-red-oak rehearsal researched a full issue,
+  // wrote it, rendered the newsletter, and only then said the tag did not
+  // exist. Seven minutes and a full edition's API spend to learn something
+  // true before the run started. In a live fourteen-edition run the same
+  // mistake would cost a week's research across every affected edition.
+  //
+  // Untagged editions are dropped rather than the whole run aborted. An
+  // edition with no tag cannot be delivered to the right people, but the
+  // thirteen that can should still go out — the same reasoning as fail-fast
+  // being off on the matrix. The run still exits non-zero, so it is reported.
+  if (BUTTONDOWN_KEY && tagMap) {
+    const untagged = targets.filter((c) => !tagMap[c.slug]);
+    if (untagged.length) {
+      console.error(
+        `\n✗ No Buttondown tag for: ${untagged.map((c) => c.slug).join(", ")}`
+      );
+      console.error(
+        "  An edition with no tag would mail every subscriber in the account, so\n" +
+        "  it is skipped rather than generated. Create a tag whose name matches\n" +
+        "  the edition slug exactly, then run again."
+      );
+      counters.failedEmail += untagged.length;
+      targets = targets.filter((c) => tagMap[c.slug]);
+
+      if (!targets.length) {
+        console.error("\n  Nothing left to generate. No API credits were spent.");
+        process.exitCode = 1;
+        return;
+      }
+      console.error(`  Continuing with ${targets.length} edition(s) that have one.\n`);
+    }
   }
 
   // ── Generate and deliver, one edition at a time ──────────────────────────

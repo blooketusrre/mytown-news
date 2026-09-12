@@ -469,6 +469,40 @@ try {
   } catch (e) {
     errors.push(`Could not check city vocabulary: ${e.message}`);
   }
+  /* ── The audience is checked before the content is paid for ─────────────
+   * The tag map is fetched before the generation loop and nothing between
+   * there and delivery uses it, so a missing tag is knowable in the first
+   * second. It was not reported until delivery — seven minutes and a full
+   * edition's API spend later, on 2026-09-12.
+   *
+   * This asserts the check is still upstream of generateCluster. A guard on
+   * the text alone would pass if someone moved it back below the loop, which
+   * is the only way it can break.
+   */
+  {
+    const checkAt = gen.indexOf("No Buttondown tag for:");
+    const genAt   = gen.indexOf("await generateCluster(cluster)");
+    if (checkAt === -1) {
+      errors.push(
+        "generate-issue.js no longer verifies Buttondown tags before generating — " +
+        "a missing tag would cost a full edition of API spend to discover"
+      );
+    } else if (genAt !== -1 && checkAt > genAt) {
+      errors.push(
+        "the Buttondown tag check runs after generateCluster — it must run before, " +
+        "or an untagged edition is researched in full before anyone is told"
+      );
+    }
+    // Dropping the untagged editions rather than aborting: thirteen editions
+    // that can be delivered should not be held back by one that cannot.
+    if (checkAt !== -1 && !/targets = targets\.filter\(\(c\) => tagMap\[c\.slug\]\)/.test(gen)) {
+      errors.push(
+        "an untagged edition no longer drops out of the run — either it aborts " +
+        "every edition, or it proceeds and mails the whole list"
+      );
+    }
+  }
+
   // The subject line duplicated the city for every town whose edition is the
   // city — "My Town News — Heber City Heber City".
   if (/My Town News — \$\{cluster\.name\} \$\{cluster\.city/.test(gen)) {
