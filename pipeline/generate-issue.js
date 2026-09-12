@@ -1315,12 +1315,41 @@ function buildEmailHtml(issue, cluster) {
 <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
 
   <!-- Masthead -->
-  <tr><td style="background:#1a2744;padding:32px 40px 24px;text-align:center;">
+  <!--
+    Three ways to reach the full edition, all above the fold. The only link
+    used to be the button at the very bottom, which assumes the reader
+    scrolls the whole newsletter before deciding to — and many treat the
+    email as a reminder to go and read, not as the reading itself.
+
+    The mark is a hosted PNG, not inline SVG: no email client can be relied
+    on to render inline SVG, and a data: URI is stripped by Gmail. Images
+    are blocked by default in most clients, so it carries alt text and sits
+    above a wordmark that is live text — with images off the header still
+    says "My Town News" in Georgia and still links through. The image is
+    branding, never the only thing carrying the meaning.
+
+    Centred rather than in the corner because the masthead is centred; a
+    left-aligned mark needs a two-column table to avoid looking dropped in,
+    and every nested table in an email is another thing Outlook can break.
+  -->
+  <tr><td style="background:#1a2744;padding:28px 40px 24px;text-align:center;">
+    <a href="${issueUrl}" style="text-decoration:none;display:inline-block;">
+      <img src="${SITE_URL}/assets/img/mark-email.png" width="44" height="44" alt="My Town News"
+           style="display:block;margin:0 auto 10px auto;border:0;outline:none;width:44px;height:44px;">
+    </a>
     <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:${accent};">${cluster.city || "San Francisco"} · Free &amp; Independent · Every Friday</p>
-    <h1 style="margin:0 0 6px 0;font-family:Georgia,'Times New Roman',serif;font-size:36px;font-weight:900;color:#ffffff;letter-spacing:-1px;">My Town <span style="color:${accent};">News</span></h1>
+    <h1 style="margin:0 0 6px 0;font-family:Georgia,'Times New Roman',serif;font-size:36px;font-weight:900;letter-spacing:-1px;">
+      <a href="${issueUrl}" style="color:#ffffff;text-decoration:none;">My Town <span style="color:${accent};">News</span></a>
+    </h1>
     <p style="margin:6px 0 0 0;font-family:Arial,sans-serif;font-size:14px;color:rgba(255,255,255,0.65);">${esc(issue.clusterName || cluster.name)}</p>
     ${hoods ? `<p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.38);">${esc(hoods)}</p>` : ""}
     <p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.3);">Week of ${esc(issue.weekOf || "")}</p>
+    <!-- The explicit one. A linked logo and a linked wordmark are both
+         invisible affordances — nobody hovers a masthead to find out. This
+         is the link that actually gets clicked. -->
+    <p style="margin:14px 0 0 0;">
+      <a href="${issueUrl}" style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:${accent};text-decoration:none;border-bottom:1px solid ${accent};padding-bottom:2px;">See the full edition →</a>
+    </p>
   </td></tr>
   <tr><td style="height:3px;background:${accent};"></td></tr>
 
@@ -1367,7 +1396,10 @@ function buildEmailHtml(issue, cluster) {
 
   <!-- Footer -->
   <tr><td style="padding:20px 40px;text-align:center;">
-    <p style="margin:0 0 4px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">My Town News · mytown.news · ${cluster.city || "San Francisco"}</p>
+    <!-- mytown.news goes to the top-level home page, not this edition: from
+         the footer the reader is more likely to be looking for the paper
+         than for the issue they just read. -->
+    <p style="margin:0 0 4px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">My Town News · <a href="${SITE_URL}/" style="color:#6b6560;text-decoration:underline;">mytown.news</a> · ${cluster.city || "San Francisco"}</p>
     <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;color:#a09890;">Free &amp; Independent. No spam.</p>
   </td></tr>
 

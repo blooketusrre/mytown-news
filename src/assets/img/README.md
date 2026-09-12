@@ -9,6 +9,30 @@
 | `apple-touch-icon.png` | iOS home screen, 180px | rendered from `mark.svg` |
 | `og-image.png` | social share card, 1200×630 | rendered from `og-image.svg` |
 | `og-image.svg` | source for the share card | hand-authored |
+| `mark-email.png` | newsletter masthead, 96px shown at 44px | rendered from `mark-mono.svg` |
+
+## Why the newsletter needs its own file
+
+No email client renders inline SVG reliably and Gmail strips `data:` URIs, so
+the mark has to be a hosted raster referenced by absolute URL. It is white on
+transparent because it sits on the navy masthead, and rendered at 96px for a
+44px slot so it stays sharp on a phone.
+
+Rendered from `mark-mono.svg`, not `mark.svg` — the latter carries a navy
+background, which on a navy masthead is invisible right up until the day that
+colour changes. To regenerate:
+
+```python
+import cairosvg
+src = open('src/assets/img/mark-mono.svg').read().replace('currentColor', '#ffffff')
+cairosvg.svg2png(bytestring=src.encode(), write_to='src/assets/img/mark-email.png',
+                 output_width=96, output_height=96, background_color=None)
+```
+
+Most clients block images by default, so the mark is never the only thing
+carrying the name: it has alt text and sits above a wordmark that is live
+text. `scripts/verify-build.js` asserts both, and asserts that the file the
+email points at is actually in the build.
 
 ## Why two icon files
 

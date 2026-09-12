@@ -560,6 +560,61 @@ try {
     errors.push('"Neighborhood Directory" is back — it is the Community Directory everywhere');
   }
 
+  /* ── Reaching the edition from the top of the email ─────────────────────
+   * The only link to the full edition used to be the button at the very
+   * bottom, which assumes a reader scrolls the whole newsletter before
+   * deciding to. Many treat the email as a reminder to go and read.
+   */
+  {
+    const masthead = gen.slice(gen.indexOf("<!-- Masthead -->"), gen.indexOf("<!-- Top Stories -->"));
+    if (!masthead) {
+      errors.push("could not find the email masthead to check its links");
+    } else {
+      const links = (masthead.match(/href="\$\{issueUrl\}"/g) || []).length;
+      if (links < 2) {
+        errors.push(
+          `the email masthead has ${links} link(s) to the full edition — the logo, ` +
+          `the wordmark and an explicit link should all reach it above the fold`
+        );
+      }
+      if (!/See the full edition/.test(masthead)) {
+        errors.push(
+          "the email masthead has no explicit 'See the full edition' link — a linked " +
+          "logo and wordmark are invisible affordances, nobody hovers a masthead"
+        );
+      }
+      if (!/mark-email\.png/.test(masthead)) {
+        errors.push("the email masthead no longer carries the brand mark");
+      }
+      // Images are blocked by default in most clients. The mark must never be
+      // the only thing carrying the name.
+      if (!/alt="My Town News"/.test(masthead)) {
+        errors.push("the email's brand mark has no alt text — with images blocked it would be a silent gap");
+      }
+      if (!/My Town <span/.test(masthead)) {
+        errors.push(
+          "the email wordmark is no longer live text — if it became part of the image, " +
+          "a client with images off would show a masthead with no name on it"
+        );
+      }
+      if (/<svg/.test(masthead)) {
+        errors.push("inline SVG in the email masthead — no email client renders it reliably; use the hosted PNG");
+      }
+    }
+
+    // The mark is referenced by absolute URL, so the file has to be served.
+    if (/mark-email\.png/.test(gen) && !fs.existsSync(path.join(OUT, "assets", "img", "mark-email.png"))) {
+      errors.push(
+        "the newsletter links to assets/img/mark-email.png but the build does not " +
+        "produce it — every subscriber would see a broken image"
+      );
+    }
+
+    if (!/>mytown\.news<\/a>/.test(gen)) {
+      errors.push("mytown.news in the email footer is no longer a link");
+    }
+  }
+
   // The subject line duplicated the city for every town whose edition is the
   // city — "My Town News — Heber City Heber City".
   if (/My Town News — \$\{cluster\.name\} \$\{cluster\.city/.test(gen)) {
