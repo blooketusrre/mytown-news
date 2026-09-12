@@ -1128,6 +1128,39 @@ function esc(str) {
 }
 
 /**
+ * A week date as "Sep 18, 2026", for the newsletter masthead.
+ *
+ * Anchored at UTC noon and formatted in UTC, for the same reason .eleventy.js
+ * does it for the site: "2026-09-18" parses as UTC midnight, so formatting it
+ * in local time anywhere west of Greenwich renders the 17th. The pipeline runs
+ * on a GitHub runner set to UTC, so the naive version is correct by luck
+ * rather than by design — and would start printing the wrong date the first
+ * time anyone generated an issue from a laptop in California.
+ *
+ * Short month rather than the site's long one: this is small grey supporting
+ * text under the edition name, and "September" crowds it.
+ *
+ * Returns "" for anything unparseable, so a malformed date shows nothing
+ * rather than "Week of Invalid Date".
+ *
+ * TODO when fix/schedule-backstop-and-watchdog merges: that branch adds
+ * lib/week.js, which owns thisWeekDate() for the planner and the watchdog.
+ * This belongs beside it — week-date semantics in one file — but putting it
+ * there now would guarantee a conflict between two unmerged branches.
+ */
+function formatWeek(iso) {
+  const raw = String(iso == null ? "" : iso).trim();
+  if (!raw) return "";
+  const d = /^\d{4}-\d{2}-\d{2}$/.test(raw)
+    ? new Date(`${raw}T12:00:00Z`)
+    : new Date(raw);
+  if (Number.isNaN(d.getTime())) return "";
+  return d.toLocaleDateString("en-US", {
+    month: "short", day: "numeric", year: "numeric", timeZone: "UTC",
+  });
+}
+
+/**
  * A URL fit to put in an href, or null.
  *
  * Every URL in an issue came out of a language model reading the open web, so
@@ -1343,7 +1376,7 @@ function buildEmailHtml(issue, cluster) {
     </h1>
     <p style="margin:6px 0 0 0;font-family:Arial,sans-serif;font-size:14px;color:rgba(255,255,255,0.65);">${esc(issue.clusterName || cluster.name)}</p>
     ${hoods ? `<p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.38);">${esc(hoods)}</p>` : ""}
-    <p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.3);">Week of ${esc(issue.weekOf || "")}</p>
+    ${formatWeek(issue.weekOf) ? `<p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.3);">Week of ${esc(formatWeek(issue.weekOf))}</p>` : ""}
     <!-- The explicit one. A linked logo and a linked wordmark are both
          invisible affordances — nobody hovers a masthead to find out. This
          is the link that actually gets clicked. -->

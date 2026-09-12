@@ -600,6 +600,20 @@ try {
       if (/<svg/.test(masthead)) {
         errors.push("inline SVG in the email masthead — no email client renders it reliably; use the hosted PNG");
       }
+      // The masthead printed the raw ISO string: "Week of 2026-09-18".
+      // formatWeek also anchors the date at UTC noon, which is what stops a
+      // date-only string rendering as the previous day when generated
+      // anywhere west of Greenwich — correct on a UTC runner by luck, wrong
+      // the first time anyone runs the pipeline from a laptop.
+      if (/Week of \$\{esc\(issue\.weekOf/.test(masthead)) {
+        errors.push(
+          "the email masthead prints the raw ISO week date — it must go through " +
+          "formatWeek, which both formats it and fixes the timezone off-by-one"
+        );
+      }
+      if (!/function formatWeek/.test(gen)) {
+        errors.push("formatWeek is gone — the newsletter would print an unformatted date");
+      }
     }
 
     // The mark is referenced by absolute URL, so the file has to be served.
