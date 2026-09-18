@@ -1,0 +1,53 @@
+# My Town News — did the newsletter actually go out?
+#
+# This workflow exists because of 11 September 2026, when the weekly publish
+# did not run. Not failed — *did not run*. There was no entry in the Actions
+# list for that Friday, no red X, no notification, and nothing to click on.
+# The first anyone knew was that no newsletter arrived, several hours late,
+# and only because somebody thought to check.
+#
+# GitHub tells you when a run fails. Nothing tells you when a run never
+# existed, and that is the failure mode we actually hit. Every other guard in
+# this repository turns a silent failure into a loud one; this is the same
+# idea applied to the schedule itself.
+#
+# It asserts one thing: that every live edition has an issue file committed
+# for this Friday. If any are missing it exits non-zero, which is a failed
+# workflow, which is an email.
+#
+# Deliberately *not* checking Buttondown. A send that failed while the file
+# was committed is a different fault with a different fix, and this check has
+# to keep working when the Buttondown key is rotated or the account is down.
+# What it protects is the thing that silently produced nothing at all.
+
+name: Publish Watchdog
+
+on:
+  schedule:
+    # 17:41 UTC on Friday — 71 minutes after the 16:30 send, and well after
+    # the 15:23 backstop has had time to finish a full 14-edition run. Off the
+    # hour, and off the quarter hours, for the same reason the publish crons
+    # are: those are the busiest slots and the most likely to be dropped.
+    #
+    # This workflow being dropped is a tolerable failure. Its absence costs a
+    # missed warning, not a missed newsletter — whereas a false alarm every
+    # time it ran early would teach us to ignore it, which would cost both.
+    - cron: '41 17 * * 5'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: Every live edition must have this week's issue
+        run: node scripts/check-published.js

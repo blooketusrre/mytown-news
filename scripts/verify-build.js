@@ -842,6 +842,123 @@ try {
   errors.push(`Could not verify the dry-run switch: ${e.message}`);
 }
 
+/* ── The schedule, and the thing that watches it ──────────────────────────
+ * On 11 September 2026 the weekly publish did not run. Not failed — absent.
+ * No entry in the Actions list, no notification, no newsletter, and no way to
+ * find out except by noticing an empty inbox.
+ *
+ * The fix has three parts and every one of them is quiet when it rots: a cron
+ * off the top of the hour, a second cron as a backstop, and a watchdog that
+ * turns an absent run into a failed workflow. Nothing about the site breaks if
+ * any of them is deleted, so nothing would say so.
+ */
+try {
+  const wfDir  = path.join(ROOT, ".github", "workflows");
+  const pubPath = path.join(wfDir, "weekly-publish.yml");
+  const dogPath = path.join(wfDir, "publish-watchdog.yml");
+  const pub = fs.existsSync(pubPath) ? fs.readFileSync(pubPath, "utf8") : "";
+  const dog = fs.existsSync(dogPath) ? fs.readFileSync(dogPath, "utf8") : "";
+
+  if (!pub) {
+    errors.push("weekly-publish.yml is missing");
+  } else {
+    const crons = [...pub.matchAll(/^\s*-\s*cron:\s*'([^']+)'/gm)].map((m) => m[1]);
+
+    if (crons.length < 2) {
+      errors.push(
+        `weekly-publish.yml has ${crons.length} cron(s) — it needs a backstop. ` +
+        `A single scheduled trigger is what failed on 2026-09-11`
+      );
+    }
+
+    // Minute 0 is the most contended slot on the platform and the likeliest
+    // to be dropped. This is the specific thing that went wrong.
+    const onTheHour = crons.filter((c) => /^0\s/.test(c));
+    if (onTheHour.length) {
+      errors.push(
+        `weekly-publish.yml schedules at the top of the hour (${onTheHour.join(", ")}) — ` +
+        `GitHub drops those first under load`
+      );
+    }
+
+    // Both crons must leave room before the 16:30 UTC send, or the run
+    // finishes after its own target and every edition falls back to sending
+    // immediately — which works, but silently abandons the whole point of
+    // scheduling delivery.
+    const sendMin = 16 * 60 + 30;
+    crons.forEach((c) => {
+      const [mm, hh] = c.split(/\s+/);
+      const at = Number(hh) * 60 + Number(mm);
+      if (Number.isFinite(at) && at >= sendMin) {
+        errors.push(
+          `weekly-publish.yml cron '${c}' starts at or after the 16:30 UTC send — ` +
+          `every edition would fall back to sending on creation`
+        );
+      }
+    });
+
+    // The backstop is only affordable because it skips what is already out.
+    if (!pub.includes("--skip-published")) {
+      errors.push(
+        "weekly-publish.yml no longer passes --skip-published — the backstop cron " +
+        "would regenerate every edition, doubling the weekly API bill"
+      );
+    }
+    // GitHub errors on a matrix built from [], it does not skip.
+    if (!/if:\s*needs\.plan\.outputs\.editions\s*!=\s*'\[\]'/.test(pub)) {
+      errors.push(
+        "the publish job has no guard against an empty edition list — a backstop " +
+        "run with nothing to do would fail instead of stopping quietly"
+      );
+    }
+  }
+
+  if (!dog) {
+    errors.push(
+      "publish-watchdog.yml is missing — nothing would report a Friday where the " +
+      "publish never ran, which is the failure that actually happened"
+    );
+  } else {
+    if (!/schedule:/.test(dog) || !/cron:/.test(dog)) {
+      errors.push("publish-watchdog.yml has no schedule — a watchdog nobody runs is a comment");
+    }
+    if (!dog.includes("scripts/check-published.js")) {
+      errors.push("publish-watchdog.yml no longer runs scripts/check-published.js");
+    }
+    const dogCron = (dog.match(/cron:\s*'([^']+)'/) || [])[1] || "";
+    const [dm, dh] = dogCron.split(/\s+/);
+    const dogAt = Number(dh) * 60 + Number(dm);
+    if (Number.isFinite(dogAt) && dogAt <= 16 * 60 + 30) {
+      errors.push(
+        `the watchdog runs at ${dogCron}, before the 16:30 UTC send — it would ` +
+        `cry wolf every week, and an alarm nobody believes is worse than none`
+      );
+    }
+  }
+
+  if (!fs.existsSync(path.join(ROOT, "scripts", "check-published.js"))) {
+    errors.push("scripts/check-published.js is missing — the watchdog has nothing to run");
+  }
+
+  // Both the planner and the watchdog must mean the same Friday, or the skip
+  // check never matches and the backstop republishes everything every week.
+  const weekLib = path.join(ROOT, "lib", "week.js");
+  if (!fs.existsSync(weekLib)) {
+    errors.push("lib/week.js is missing — the planner and the watchdog would each date the week themselves");
+  } else {
+    ["scripts/list-editions.js", "scripts/check-published.js", "pipeline/generate-issue.js"].forEach((f) => {
+      const src = fs.existsSync(path.join(ROOT, f)) ? fs.readFileSync(path.join(ROOT, f), "utf8") : "";
+      if (src && !/require\(["'][^"']*lib\/week["']\)/.test(src)) {
+        errors.push(`${f} does not use lib/week.js — a second copy of "which Friday is it" will drift`);
+      }
+    });
+  }
+
+  console.log("  Schedule: two crons off the hour, backstop skips what is out, watchdog armed");
+} catch (e) {
+  errors.push(`Could not verify the publish schedule: ${e.message}`);
+}
+
 /* ── Report ───────────────────────────────────────────────────────────── */
 
 console.log("");
