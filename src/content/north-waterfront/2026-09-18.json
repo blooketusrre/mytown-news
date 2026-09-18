@@ -1,0 +1,886 @@
+{
+  "clusterSlug": "north-waterfront",
+  "clusterName": "North Waterfront",
+  "weekOf": "2026-09-18",
+  "topStories": [
+    {
+      "headline": "Alioto's Plaza Opens at Fisherman's Wharf, Giving the Waterfront a New Public Heart",
+      "dek": "The Port of San Francisco officially unveiled the new outdoor plaza on September 2, replacing the long-shuttered Alioto's Restaurant with open seating, lagoon views, and a pop-up beer concession.",
+      "body": "San Francisco marked a turning point for Fisherman's Wharf on September 2 when Mayor Daniel Lurie and members of the Alioto family joined the Port of San Francisco for a ribbon-cutting at Alioto's Plaza, a new public space on Taylor Street built where the iconic Alioto's Restaurant once stood. The restaurant had opened in 1924 and closed permanently in 2022 after the pandemic; its three-story building was demolished in January 2026.\n\nThe finished plaza features picnic-table seating, benches oriented toward San Francisco Bay, landscaping, and wave-shaped sculptural seating. A pop-up space currently occupied by Woods Beer & Wine Co. serves outdoor beverages, and the company has plans to open a permanent taproom in the nearby former Fishermen's Grotto No. 9 building. The Plaza is also bookable for pop-up retail and community events.\n\nThe opening completes the near-term phase of the Port's Fisherman's Wharf Forward program. A companion lagoon overlook along Al Scoma Way, which has hosted a weekly fish market since it opened in May, is also part of the project. More than 15 restaurants and businesses have opened in the neighborhood since 2025, according to the Mayor's Office.\n\nLonger-term work under Fisherman's Wharf Forward — including rebuilding the Taylor Street shoreline, replacing the seawall, and making wharves resilient to flooding — remains in the planning phase. The Port is conducting public outreach through the end of 2026, with a conceptual plan for that infrastructure work targeted for early 2027.",
+      "sourceUrl": "https://sfist.com/2026/09/02/aliotos-plaza-unveiled-at-fishermans-wharf-with-new-seating-beer-concession/",
+      "sourceName": "SFist",
+      "tags": [
+        "Fisherman's Wharf",
+        "development",
+        "Port of San Francisco",
+        "waterfront"
+      ]
+    },
+    {
+      "headline": "Fleet Week Returns to the Northern Waterfront, October 4–12, with Blue Angels Back in the Sky",
+      "dek": "San Francisco Fleet Week 2026 brings a full schedule of free ship tours, military band concerts at Pier 39 and Ghirardelli Square, and a three-day Blue Angels air show over the Bay.",
+      "body": "After the 2025 air show was grounded by a federal government shutdown, the U.S. Navy Blue Angels are confirmed to return to San Francisco Fleet Week 2026, running October 4 through 12. The full festival puts the northern waterfront — Fisherman's Wharf, Pier 39, and Aquatic Park — at the center of one of the city's biggest fall events.\n\nThe marquee air show runs Friday through Sunday, October 9–11, from noon to 4 p.m. over the Bay between the Golden Gate Bridge and Alcatraz. The Blue Angels headline a lineup that also includes the United Airlines 777, the U.S. Air Force F-22 Raptor Demo Team, the U.S.M.C. F-35B Demo Team, and others. The Parade of Ships, the largest procession of naval vessels on the West Coast, is scheduled for 11 a.m. on Friday, October 9, with SFFD fireboats leading the fleet under the Golden Gate Bridge.\n\nFree ship tours run at Piers 27 and 35 beginning October 7 and continuing through the weekend, with the public invited aboard visiting Colombian and Canadian naval vessels. Military band concerts are woven through neighborhood stops: the Navy Band Southwest Destroyers perform at Pier 39 on the evening of October 9; the USAF Band of the Golden West plays Ghirardelli Square on October 7 afternoon and again October 10; the 1st Marine Division Band appears at the Chinatown Night Market on October 9 evening.\n\nCity officials are under pressure to manage crowds after transit failures at the Fourth of July. Mayor Lurie has called those delays 'unacceptable' and pledged changes ahead of Fleet Week. Visitors are advised to check fleetweeksf.org for the full schedule and ticketing for the Marina Green air-show viewing area.",
+      "sourceUrl": "https://www.sfchronicle.com/entertainment/article/fleet-week-2026-schedule-blue-angels-22416899.php",
+      "sourceName": "San Francisco Chronicle",
+      "tags": [
+        "Fleet Week",
+        "Fisherman's Wharf",
+        "Pier 39",
+        "Blue Angels",
+        "waterfront"
+      ]
+    },
+    {
+      "headline": "158th Italian Heritage Parade to March Through North Beach on October 11",
+      "dek": "Actor Joe Mantegna returns as grand marshal for the nation's longest continuously running Italian-American parade, stepping off from Fisherman's Wharf and ending at Washington Square.",
+      "body": "San Francisco's Italian Heritage Parade marks its 158th year on Sunday, October 11, with a 12:30 p.m. procession through North Beach. The free event is the oldest continuously running Italian-American parade in the United States, tracing its roots to 1868.\n\nEmmy-winning and Tony-nominated actor Joe Mantegna returns for a consecutive year as Grand Marshal, joined by Civic Grand Marshal Bernard 'Bernie' Orsi, a Bay Area philanthropist and founder of Orsi Family Vineyards in Sonoma County's Dry Creek Valley, according to Hoodline. The parade departs from Jefferson and Powell Streets at Fisherman's Wharf, moves south through North Beach along Columbus Avenue, and concludes in Washington Square in front of Saints Peter and Paul Church.\n\nThe parish bazaar at Saints Peter and Paul — now in its 109th year — runs the preceding weekend, October 10 and 11, from 10 a.m. to 6 p.m. The parade also coincides with the final day of Fleet Week, and the 1st Marine Division Band is listed on the Fleet Week schedule as performing in the procession. Viewing is free along the entire 1.3-mile route.",
+      "sourceUrl": "https://hoodline.com/2026/09/north-beach-gears-up-as-joe-mantegna-returns-to-lead-158th-italian-heritage-parade/",
+      "sourceName": "Hoodline",
+      "tags": [
+        "North Beach",
+        "Italian Heritage Parade",
+        "Washington Square",
+        "Fisherman's Wharf"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Fleet Week Ship Tours at Piers 27 & 35",
+      "startDate": "2026-10-07",
+      "date": "Wednesday, October 7 – Monday, October 12",
+      "time": "10:00 AM – 4:00 PM (varies by day)",
+      "location": "Piers 27 & 35, San Francisco Waterfront",
+      "description": "Tour visiting U.S., Colombian, and Canadian naval vessels docked at the Port of San Francisco. Free and open to the public; no ship tours on Friday, October 9.",
+      "sourceUrl": "https://fleetweeksf.org/events/ship-tours/",
+      "sourceName": "San Francisco Fleet Week"
+    },
+    {
+      "title": "Fleet Week Blue Angels Air Show",
+      "startDate": "2026-10-09",
+      "date": "Friday–Sunday, October 9–11",
+      "time": "12:00 PM – 4:00 PM",
+      "location": "San Francisco Bay (between Golden Gate Bridge and Alcatraz); viewable from Fisherman's Wharf waterfront",
+      "description": "The U.S. Navy Blue Angels headline three consecutive days of aerial performances over the Bay, alongside the F-22 Raptor Demo Team, F-35B Demo Team, and a United Airlines 777. Ticketed viewing at Marina Green; free viewing from the waterfront.",
+      "sourceUrl": "https://sf.funcheap.com/event-series/fleet-week/",
+      "sourceName": "SF Funcheap / San Francisco Fleet Week"
+    },
+    {
+      "title": "Fleet Week Parade of Ships",
+      "startDate": "2026-10-09",
+      "date": "Friday, October 9",
+      "time": "11:00 AM – 12:00 PM",
+      "location": "San Francisco Waterfront (Golden Gate Bridge to the Bay)",
+      "description": "The largest Parade of Ships on the West Coast sails under the Golden Gate Bridge, escorted by SFFD fireboats; viewable for free from along the northern waterfront including Fisherman's Wharf and Pier 39.",
+      "sourceUrl": "https://www.kron4.com/features/fleet-week/fleet-week-sf-2026-schedule-air-show-parade-of-ships-and-more/",
+      "sourceName": "KRON4"
+    },
+    {
+      "title": "Fleet Week Military Band Concerts at Pier 39 & Ghirardelli Square",
+      "startDate": "2026-10-07",
+      "date": "Wednesday, October 7 through Sunday, October 11",
+      "time": "Various times",
+      "location": "Pier 39 and Ghirardelli Square, Fisherman's Wharf area",
+      "description": "Free military band performances are scheduled at Pier 39 (Oct. 7 at 5 p.m., Oct. 9 at 5 p.m., Oct. 10) and Ghirardelli Square (Oct. 7 at 2 p.m., Oct. 10 at noon) as part of Fleet Week's neighborhood concert series.",
+      "sourceUrl": "https://sf.funcheap.com/event-series/fleet-week/",
+      "sourceName": "SF Funcheap / San Francisco Fleet Week"
+    },
+    {
+      "title": "158th San Francisco Italian Heritage Parade",
+      "startDate": "2026-10-11",
+      "date": "Sunday, October 11",
+      "time": "12:30 PM",
+      "location": "Jefferson & Powell Streets to Washington Square, North Beach",
+      "description": "The nation's oldest continuously running Italian-American parade steps off from Fisherman's Wharf and winds through North Beach to Washington Square; free to watch along the entire 1.3-mile route.",
+      "sourceUrl": "https://sfitalianheritage.org/parade/",
+      "sourceName": "San Francisco Italian Heritage Festival & Parade"
+    },
+    {
+      "title": "Saints Peter and Paul Church Annual Bazaar",
+      "startDate": "2026-10-10",
+      "date": "Saturday–Sunday, October 10–11",
+      "time": "10:00 AM – 6:00 PM",
+      "location": "Saints Peter and Paul Church, 666 Filbert Street, Washington Square, North Beach",
+      "description": "The 109th Annual Saint Peter and Paul Bazaar runs the weekend of the Italian Heritage Parade, with community festivities at the historic church on Washington Square.",
+      "sourceUrl": "https://sfitalianheritage.org/events/",
+      "sourceName": "San Francisco Italian Heritage Festival & Parade"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Verdi Building Site Now on Market as Buyers Weigh What Comes Next",
+      "body": "The partially demolished Verdi Building at 659 Union Street — the burned-out shell long known to neighbors as the Coit Liquors building — and the adjacent parking garage at 1636 Powell Street are now listed for sale as an un-entitled 18,000-square-foot development site, according to SocketSite (June 24, 2026). The listing followed the San Francisco Board of Appeals' unanimous rejection on May 20 of an appeal that had halted the emergency partial demolition, clearing developer Red Bridge Partners to proceed with work on the structurally dangerous rear wall. Previous plans for the site have ranged from a 23-unit apartment building to a denser, eight-story proposal with 89 apartments and a rooftop restaurant, but no entitlements are in place. The property has sat vacant since fires gutted it in 2013 and 2018.",
+      "sourceUrl": "https://socketsite.com/archives/2023/12/prominent-north-beach-corner-hits-the-market.html",
+      "sourceName": "SocketSite",
+      "tags": [
+        "North Beach",
+        "development",
+        "Verdi Building",
+        "Washington Square"
+      ]
+    },
+    {
+      "headline": "Fisherman's Wharf Community Benefit District Reports Strongest Visitor Numbers Since Pre-Pandemic",
+      "body": "Fisherman's Wharf crossed 1 million visitors in a single month for the first time since the start of the COVID-19 pandemic, according to data released by the Fisherman's Wharf Community Benefit District earlier this year (reported April 2026). Foot traffic in the first quarter of 2026 was up 11.4 percent over the same period in 2025 and nearly 24 percent above the first quarter of 2024. District stakeholders credited infrastructure improvements, the wave of new business openings, and renewed public interest in the waterfront ahead of the Alioto's Plaza debut.",
+      "sourceUrl": "https://www.sfexaminer.com/news/community/sf-tourist-destination-is-getting-its-pre-pandemic-buzz-back/article_7e7543d9-5f97-4b3e-84a7-4c1676ff8fc4.html",
+      "sourceName": "San Francisco Examiner",
+      "tags": [
+        "Fisherman's Wharf",
+        "tourism",
+        "business"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Alioto's Plaza Unveiled at Fisherman's Wharf, With New Seating, Beer Concession",
+      "url": "https://sfist.com/2026/09/02/aliotos-plaza-unveiled-at-fishermans-wharf-with-new-seating-beer-concession/",
+      "publication": "SFist"
+    },
+    {
+      "title": "San Francisco Unveils Alioto's Plaza at Fisherman's Wharf",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-unveils-aliotos-plaza-at-fishermans-wharf-where-iconic-restaurant-once-stood/",
+      "publication": "CBS San Francisco"
+    },
+    {
+      "title": "New at Fisherman's Wharf: Alioto's Plaza Opens on the San Francisco Waterfront",
+      "url": "https://onetripwonder.com/aliotos-plaza-fishermans-wharf/",
+      "publication": "OneTripWonder"
+    },
+    {
+      "title": "Blue Angels Set to Return as San Francisco Fleet Week Releases 2026 Schedule",
+      "url": "https://www.sfchronicle.com/entertainment/article/fleet-week-2026-schedule-blue-angels-22416899.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "San Francisco Fleet Week 2026: Air Show + Schedule of Events",
+      "url": "https://sf.funcheap.com/event-series/fleet-week/",
+      "publication": "SF Funcheap"
+    },
+    {
+      "title": "Fleet Week SF 2026: Schedule, Air Show, Parade of Ships and More",
+      "url": "https://www.kron4.com/features/fleet-week/fleet-week-sf-2026-schedule-air-show-parade-of-ships-and-more/",
+      "publication": "KRON4"
+    },
+    {
+      "title": "Fleet Week 2026 Ship Tours",
+      "url": "https://fleetweeksf.org/events/ship-tours/",
+      "publication": "San Francisco Fleet Week"
+    },
+    {
+      "title": "158th SF Italian Heritage Parade Returns to North Beach",
+      "url": "https://hoodline.com/2026/09/north-beach-gears-up-as-joe-mantegna-returns-to-lead-158th-italian-heritage-parade/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "Parade – The San Francisco Italian Heritage Festival & Parade",
+      "url": "https://sfitalianheritage.org/parade/",
+      "publication": "San Francisco Italian Heritage Festival & Parade"
+    },
+    {
+      "title": "Events – The San Francisco Italian Heritage Festival & Parade",
+      "url": "https://sfitalianheritage.org/events/",
+      "publication": "San Francisco Italian Heritage Festival & Parade"
+    },
+    {
+      "title": "Prominent North Beach Corner Hits the Market",
+      "url": "https://socketsite.com/archives/2023/12/prominent-north-beach-corner-hits-the-market.html",
+      "publication": "SocketSite"
+    },
+    {
+      "title": "Prominent North Beach Eyesore, the Verdi Building, Cleared for Partial Demolition",
+      "url": "https://sfist.com/2026/06/04/prominent-north-beach-eyesore-the-verdi-building-cleared-for-partial-demolition/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Why Fisherman's Wharf Is the Busiest It Has Been in Years",
+      "url": "https://www.sfexaminer.com/news/community/sf-tourist-destination-is-getting-its-pre-pandemic-buzz-back/article_7e7543d9-5f97-4b3e-84a7-4c1676ff8fc4.html",
+      "publication": "San Francisco Examiner"
+    },
+    {
+      "title": "Fisherman's Wharf Forward",
+      "url": "https://www.sfport.com/fwforward",
+      "publication": "Port of San Francisco"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Original Joe's",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Classic Italian-American restaurant",
+        "description": "An SF institution for over 80 years, celebrated for its signature red leather booths, veal Marsala, house-made ravioli, and classic cocktails.",
+        "address": "601 Union St",
+        "phone": "415-981-9222",
+        "website": "https://www.originaljoes.com/",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "North Beach Restaurant",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Modern Tuscan trattoria",
+        "description": "A North Beach anchor for over five decades, serving handmade pasta, home-cured prosciutto, Chicken Mattone, and an extensive Italian wine list.",
+        "address": "1512 Stockton St",
+        "phone": "415-392-1700",
+        "website": "https://www.northbeachrestaurant.com/",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Tosca Cafe",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Historic Italian bar and restaurant",
+        "description": "Open since 1919, this legendary Columbus Avenue bar is famous for its house cappuccino cocktail (armagnac, bourbon, and steamed milk), meatballs, and dimly lit late-night vibe.",
+        "address": "242 Columbus Ave",
+        "phone": "415-986-9651",
+        "website": "https://www.toscacafe-sf.com/",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Vesuvio Cafe",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Historic Beat Generation bar",
+        "description": "Founded in 1948 and frequented by Jack Kerouac, Allen Ginsberg, and the Beat Generation, this iconic saloon across from City Lights remains a North Beach anchor for poets, artists, and bon vivants.",
+        "address": "255 Columbus Ave",
+        "phone": "415-362-3370",
+        "website": "https://vesuvio.com/",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Caffe Trieste",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Historic Italian espresso bar",
+        "description": "San Francisco's oldest espresso bar, open since 1956 and beloved for its dark roast coffee, opera on the jukebox, and storied Beat Generation atmosphere.",
+        "address": "601 Vallejo St",
+        "phone": "415-392-6739",
+        "website": "https://www.caffetrieste.com/",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Butter & Crumble",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Artisan laminated pastry bakery",
+        "description": "North Beach's most-queued-for bakery, known for inventive laminated pastries including a pistachio-cardamom croissant and a mortadella-Gruyère 'morty p,' selling out daily by mid-morning.",
+        "address": "271 Francisco St",
+        "phone": "",
+        "website": "https://www.butterandcrumble.com/",
+        "neighborhood": "North Beach",
+        "notable": "New"
+      },
+      {
+        "name": "Liguria Bakery",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Historic focaccia bakery",
+        "description": "A North Beach institution since 1911, Liguria sells only focaccia — baked fresh each morning in a handful of classic flavors — and closes when it sells out.",
+        "address": "1700 Stockton St",
+        "phone": "415-421-3786",
+        "website": "",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bodega SF",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Natural wine bar and small plates",
+        "description": "A lively Columbus Avenue natural wine bar with a pink-neon glow and a hi-fi sound system, pouring Argentine, Spanish, Portuguese, and Turkish bottles alongside globally inflected small plates.",
+        "address": "700 Columbus Ave",
+        "phone": "415-634-7002",
+        "website": "https://www.bodegasf.com/",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Fanoos Grills",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Halal fast-casual Mediterranean counter",
+        "description": "Fast-casual counter serving halal shawarma, falafel, and kebabs as bowls or wraps; the second SF location of this popular concept, opened in 2026 with city grant support.",
+        "address": "411 Columbus Ave",
+        "phone": "",
+        "website": "https://fanoosgrills.com/",
+        "neighborhood": "North Beach",
+        "notable": "New"
+      },
+      {
+        "name": "Equal Parts SF",
+        "cuisineGroup": "Seafood & American",
+        "type": "California cuisine and cocktail bar",
+        "description": "A lively California-cuisine destination at the historic Old Spaghetti Factory space, featuring shareable seafood, braised meats, roasted whole fish, and creative cocktails in a plant-filled interior.",
+        "address": "478 Green St",
+        "phone": "415-875-9600",
+        "website": "https://www.equalpartssf.com/",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Caffe Sport",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Sicilian seafood restaurant",
+        "description": "A flamboyantly decorated North Beach institution serving robust Sicilian-inflected seafood pastas, garlic prawns, and a boisterous atmosphere that has drawn loyal regulars for decades.",
+        "address": "574 Green St",
+        "phone": "415-981-1251",
+        "website": "",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Delancey Street Restaurant",
+        "cuisineGroup": "Seafood & American",
+        "type": "Community-run American restaurant",
+        "description": "Part of the Delancey Street Foundation, this waterfront restaurant at the Embarcadero serves hearty American fare and is staffed entirely by residents of the nonprofit's rehabilitation program.",
+        "address": "600 Embarcadero",
+        "phone": "415-512-5179",
+        "website": "https://www.delanceystreetfoundation.org/restaurants.php",
+        "neighborhood": "Levi Plaza",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Fog Harbor Fish House",
+        "cuisineGroup": "Seafood & American",
+        "type": "Waterfront seafood restaurant",
+        "description": "A pier-side Fisherman's Wharf classic serving sustainably sourced Dungeness crab, cioppino, sourdough clam chowder, and bay views from Pier 39.",
+        "address": "Pier 39",
+        "phone": "415-421-2442",
+        "website": "https://www.fogharbor.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Boudin Bakery & Café",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Historic sourdough bakery and café",
+        "description": "Home of San Francisco's original sourdough since 1849, with a flagship Fisherman's Wharf location featuring a museum, bakery theater, and café serving classic clam chowder bread bowls.",
+        "address": "160 Jefferson St",
+        "phone": "415-928-1849",
+        "website": "https://www.boudinsf.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "In-N-Out Burger",
+        "cuisineGroup": "Other",
+        "type": "Classic American burger counter",
+        "description": "The only In-N-Out location in San Francisco, perched at the edge of Fisherman's Wharf with outdoor bay views and perpetual lines for its Double-Double.",
+        "address": "333 Jefferson St",
+        "phone": "",
+        "website": "https://www.in-n-out.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Scoma's Restaurant",
+        "cuisineGroup": "Seafood & American",
+        "type": "Waterfront seafood institution",
+        "description": "A Fisherman's Wharf landmark since 1965, Scoma's is celebrated for fresh Dungeness crab, sand dabs, and cioppino served steps from the working fishing fleet on Pier 47.",
+        "address": "1 Al Scoma Way",
+        "phone": "415-771-4383",
+        "website": "https://www.scomas.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Café Greco",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Italian café and espresso bar",
+        "description": "A beloved Columbus Avenue neighborhood café known for its superb espresso, welcoming sidewalk seating, and old-world Italian café atmosphere at the heart of North Beach.",
+        "address": "423 Columbus Ave",
+        "phone": "415-397-6261",
+        "website": "",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Sotto Mare",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian seafood trattoria",
+        "description": "A packed, beloved North Beach trattoria legendary for its cioppino — a heaping pot of fresh local seafood — along with whole Dungeness crab and homemade pasta.",
+        "address": "552 Green St",
+        "phone": "415-398-3181",
+        "website": "https://www.sottomaresf.com/",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Julius' Castle",
+        "cuisineGroup": "Seafood & American",
+        "type": "Historic cliffside restaurant",
+        "description": "The 1924 Telegraph Hill landmark below Coit Tower, reopening after nearly two decades closed following a restoration of its fire-damaged turret and original wood panelling.",
+        "address": "1541 Montgomery St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Telegraph Hill",
+        "notable": "Coming Soon"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Argonaut Hotel",
+        "type": "AAA Four Diamond boutique hotel",
+        "description": "A nautically themed luxury boutique hotel housed in the historic 1907 Haslett Warehouse at Fisherman's Wharf, with exposed brick, Douglas Fir beams, and views of the Bay, Alcatraz, and the Golden Gate Bridge.",
+        "address": "495 Jefferson St",
+        "phone": "415-563-0800",
+        "website": "https://www.argonauthotel.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hyatt Centric Fisherman's Wharf",
+        "type": "Full-service Hyatt hotel",
+        "description": "A well-located full-service hotel steps from Pier 39, offering a sun deck, 24-hour fitness center, and convenient access to the Wharf's restaurants and attractions.",
+        "address": "555 North Point St",
+        "phone": "415-563-1234",
+        "website": "https://www.hyatt.com/hyatt-centric/en-US/sfofw-hyatt-centric-fishermans-wharf/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "San Francisco Marriott Fisherman's Wharf",
+        "type": "Full-service Marriott hotel",
+        "description": "A large Marriott property steps from the Wharf offering the Red Fin Restaurant & Lounge, flexible meeting space, and easy walking access to Pier 39, Ghirardelli Square, and Aquatic Park.",
+        "address": "1250 Columbus Ave",
+        "phone": "415-775-7555",
+        "website": "https://www.marriott.com/en-us/hotels/sfofw-san-francisco-marriott-fishermans-wharf/overview/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Courtyard by Marriott San Francisco Fisherman's Wharf",
+        "type": "Marriott select-service hotel",
+        "description": "A modern hotel steps from Pier 39 and the North Beach neighborhood, featuring Table580 restaurant, comfortable guest rooms, and valet parking.",
+        "address": "580 Beach St",
+        "phone": "415-775-3800",
+        "website": "https://www.marriott.com/en-us/hotels/sfocf-courtyard-san-francisco-fishermans-wharf/overview/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Hotel Zoe Fisherman's Wharf",
+        "type": "Boutique hotel",
+        "description": "A contemporary boutique hotel in the heart of Fisherman's Wharf offering stylishly appointed rooms, in-room spa services, and walkable access to the bay waterfront.",
+        "address": "425 North Point St",
+        "phone": "415-561-1100",
+        "website": "https://www.hotelzoe.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Hotel Riu Plaza Fisherman's Wharf",
+        "type": "Full-service hotel",
+        "description": "A 4-star hotel at the edge of Fisherman's Wharf offering modern rooms, rooftop views, and a central position between North Beach and the waterfront.",
+        "address": "2600 Mason St",
+        "phone": "415-292-6400",
+        "website": "https://www.riu.com/en/hotel/usa/san-francisco/hotel-riu-plaza-fishermans-wharf/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "San Remo Hotel",
+        "type": "Historic budget hotel",
+        "description": "A charming Italianate Victorian hotel dating from 1906, offering budget-friendly shared-bath rooms in a beautifully preserved building near the boundary of North Beach and Fisherman's Wharf.",
+        "address": "2237 Mason St",
+        "phone": "415-776-8688",
+        "website": "https://www.sanremohotel.com/",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hotel Caza Fisherman's Wharf",
+        "type": "Boutique hotel",
+        "description": "A boutique hotel near the waterfront offering comfortable, design-forward rooms with proximity to Pier 39, Ghirardelli Square, and the North Beach dining scene.",
+        "address": "2800 Jones St",
+        "phone": "415-441-2700",
+        "website": "https://www.hotelcaza.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Fairmont Heritage Place, Ghirardelli Square",
+        "type": "Luxury residence-style hotel",
+        "description": "Upscale residence-style suites set within the landmarked Ghirardelli Square complex, offering full kitchens, multiple rooms, and sweeping views of the Bay and Golden Gate Bridge.",
+        "address": "900 North Point St",
+        "phone": "415-268-9900",
+        "website": "https://www.fairmont.com/san-francisco-ghirardelli-square/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hotel Zephyr San Francisco",
+        "type": "Lifestyle hotel",
+        "description": "A playful nautical-themed lifestyle hotel at Fisherman's Wharf featuring an outdoor game courtyard, fire pits, and a lobby bar with a community-focused atmosphere.",
+        "address": "250 Beach St",
+        "phone": "415-617-6555",
+        "website": "https://www.hotelzephyrsf.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "City Lights Booksellers & Publishers",
+        "shopGroup": "Books & Literature",
+        "type": "Independent literary bookstore and publisher",
+        "description": "The legendary North Beach bookstore and publisher founded by Lawrence Ferlinghetti in 1953 — the nation's first all-paperback bookstore — remains a global landmark for poetry, politics, and literary fiction, open daily 10 AM–10 PM.",
+        "address": "261 Columbus Ave",
+        "phone": "415-362-8193",
+        "website": "https://www.citylights.com/",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Grocery Outlet",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Discount grocery store",
+        "description": "The neighborhood's long-awaited full-service grocery store, opened August 13 at the former Safeway site, independently operated by Jacqueline and Joel Lanoie with deeply discounted branded groceries.",
+        "address": "350 Bay St",
+        "phone": "",
+        "website": "https://www.groceryoutlet.com/",
+        "neighborhood": "North Beach / Fisherman's Wharf",
+        "notable": "New"
+      },
+      {
+        "name": "Ghirardelli Square",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Landmark shopping and chocolate complex",
+        "description": "The iconic landmarked chocolate factory converted into a retail and dining complex, anchored by the original Ghirardelli Chocolate Manufactory and sundae shop, with bay views and boutique shops.",
+        "address": "900 North Point St",
+        "phone": "415-775-5500",
+        "website": "https://www.ghirardellisq.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Winery SF",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Urban winery and tasting room",
+        "description": "An urban winery in the Fisherman's Wharf area offering tastings of house-made California wines produced on-site, available for walk-in and by appointment.",
+        "address": "The Cannery, 2801 Leavenworth St",
+        "phone": "415-489-2885",
+        "website": "https://www.thewinerysfca.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "North Face Store",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Outdoor apparel flagship",
+        "description": "The North Face's original flagship store — the brand was founded in San Francisco — carrying the full line of outdoor apparel, footwear, and gear at the edge of North Beach.",
+        "address": "180 Post St (flagship) / also at Pier 39",
+        "phone": "",
+        "website": "https://www.thenorthface.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Pier 39 Shops",
+        "shopGroup": "Other",
+        "type": "Waterfront shopping complex",
+        "description": "Over 90 shops and boutiques on the two-level pier attraction, ranging from locally themed gifts and jewelry to apparel and toys, with bay views and the famous sea lion colony at K-Dock.",
+        "address": "Pier 39, Beach St & The Embarcadero",
+        "phone": "415-705-5500",
+        "website": "https://www.pier39.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Levi's Plaza Farmers Market",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Outdoor farmers market",
+        "description": "A weekly farmers market at Levi Strauss's waterfront corporate plaza, offering fresh produce, prepared foods, and artisan goods from local Bay Area vendors.",
+        "address": "1155 Battery St, Levi Plaza",
+        "phone": "",
+        "website": "https://www.pcfma.org/",
+        "neighborhood": "Levi Plaza",
+        "notable": ""
+      },
+      {
+        "name": "AB Fits",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Independent denim and contemporary clothing boutique",
+        "description": "A well-curated North Beach boutique specializing in premium denim and contemporary clothing for men and women, with knowledgeable staff and a loyal neighborhood following.",
+        "address": "1519 Grant Ave",
+        "phone": "415-982-5726",
+        "website": "https://www.abfits.com/",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Aria",
+        "shopGroup": "Home & Gifts",
+        "type": "Vintage and antique home goods shop",
+        "description": "A treasured North Beach shop dealing in European vintage jewelry, antique textiles, and decorative objects, beloved by designers and collectors for its carefully selected inventory.",
+        "address": "1522 Grant Ave",
+        "phone": "415-433-0219",
+        "website": "",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Schein & Schein",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Antique maps and prints shop",
+        "description": "A North Beach institution dealing in rare antique maps, charts, and prints — a singular resource for collectors and history enthusiasts on Grant Avenue.",
+        "address": "1435 Grant Ave",
+        "phone": "415-399-8882",
+        "website": "",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Club Fugazi",
+        "venueGroup": "Theater & Comedy",
+        "type": "Historic theater and performance venue",
+        "description": "A North Beach landmark since 1913, now home to the long-running immersive circus show 'Dear San Francisco' and upcoming Fugazi Funny Festival comedy series; seats approximately 300.",
+        "address": "678 Green St",
+        "phone": "415-273-0600",
+        "website": "https://clubfugazisf.com/",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Coit Tower",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic landmark and mural gallery",
+        "description": "The 1933 art deco column atop Telegraph Hill features Depression-era WPA murals inside and a 360-degree observation deck with sweeping views of the Bay, Golden Gate Bridge, and Alcatraz; open 10 AM–6 PM daily through October.",
+        "address": "1 Telegraph Hill Blvd",
+        "phone": "415-249-0995",
+        "website": "https://sfrecpark.org/destination/telegraph-hill-pioneer-park/coit-tower/",
+        "neighborhood": "Telegraph Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "USS Pampanito",
+        "venueGroup": "Museums & Cultural",
+        "type": "WWII submarine museum",
+        "description": "A meticulously restored World War II fleet submarine and National Historic Landmark at Pier 45, open daily 10 AM–6 PM for self-guided audio tours and group programs.",
+        "address": "Pier 45, Fisherman's Wharf",
+        "phone": "415-775-1943",
+        "website": "https://maritime.org/visit-us/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Francisco Maritime National Historical Park Visitor Center",
+        "venueGroup": "Museums & Cultural",
+        "type": "National Park visitor center and museum",
+        "description": "Free admission visitor center at the west end of Fisherman's Wharf with exhibits on Pacific Coast maritime history; note that Hyde Street Pier and its historic ships are currently closed for the Hyde Street Rebuild Project.",
+        "address": "499 Jefferson St",
+        "phone": "415-561-7000",
+        "website": "https://www.nps.gov/safr/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Francisco Maritime Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Art deco maritime museum",
+        "description": "A striking 1939 Streamline Moderne building at Aquatic Park (900 Beach St) housing ship models, WPA-era murals of sealife, and exhibits on maritime history; free admission, open Wednesday–Sunday.",
+        "address": "900 Beach St",
+        "phone": "415-561-7100",
+        "website": "https://www.nps.gov/safr/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Pier 39 Sea Lion Viewing Area",
+        "venueGroup": "Museums & Cultural",
+        "type": "Free wildlife viewing attraction",
+        "description": "The famous K-Dock colony of California sea lions — which took up residence in 1990 — can be viewed year-round for free from the west marina of Pier 39, with interpretive signage provided by the Marine Mammal Center.",
+        "address": "Pier 39, K-Dock",
+        "phone": "",
+        "website": "https://www.pier39.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Cobb's Comedy Club",
+        "venueGroup": "Theater & Comedy",
+        "type": "Full-service comedy club",
+        "description": "San Francisco's largest comedy club in the heart of North Beach, hosting nationally touring headliners and local showcases with a two-drink minimum; shows are 18+ with valid ID.",
+        "address": "915 Columbus Ave",
+        "phone": "415-928-4320",
+        "website": "https://www.cobbscomedy.com/",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "SkyStar Observation Wheel",
+        "venueGroup": "Museums & Cultural",
+        "type": "Seasonal observation Ferris wheel",
+        "description": "A 150-foot observation wheel at Fisherman's Wharf offering gondola rides with panoramic views of the Bay, Golden Gate Bridge, and Alcatraz from the waterfront.",
+        "address": "Pier 39, Fisherman's Wharf",
+        "phone": "",
+        "website": "https://www.skystarsf.com/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Yoga 906",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio in a historic church",
+        "description": "A striking yoga studio housed in a 117-year-old deconsecrated church at 906 Broadway, offering classes for all levels in a soaring, architecturally stunning space on the North Beach/Russian Hill border.",
+        "address": "906 Broadway",
+        "phone": "",
+        "website": "https://yoga906.com/",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Orangetheory Fitness North Beach",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Heart rate zone interval training studio",
+        "description": "A high-energy group fitness studio on Columbus Avenue offering 60-minute heart-rate-monitored workouts combining treadmill cardio and strength training with triple-certified coaches.",
+        "address": "1255 Columbus Ave, Ste B",
+        "phone": "415-604-0211",
+        "website": "https://www.orangetheory.com/en-us/locations/san-francisco-california-1152",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "F45 Training North Beach",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Functional HIIT group training studio",
+        "description": "A high-intensity 45-minute circuit training studio at 350 Bay Street, offering daily varied workouts in strength, cardio, and hybrid formats with a strong community atmosphere.",
+        "address": "350 Bay St",
+        "phone": "415-996-0855",
+        "website": "https://f45training.com/studio/northbeach/",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Bay Club San Francisco",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service sports club",
+        "description": "A premium full-service sports club serving the North Beach and Telegraph Hill area, offering a gym floor, group fitness classes, basketball, tennis, squash courts, and a pool.",
+        "address": "150 Greenwich St",
+        "phone": "415-834-4100",
+        "website": "https://www.bayclubs.com/san-francisco/",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Aquatic Park / San Francisco Bay Swimming",
+        "venueGroup": "Pools & Aquatics",
+        "type": "Open-water swimming and recreation area",
+        "description": "The protected cove at the foot of Fisherman's Wharf, beloved by open-water swimmers and the South End Rowing Club, with a sandy beach and views of the Golden Gate Bridge; free and open year-round.",
+        "address": "900 Beach St, Aquatic Park",
+        "phone": "",
+        "website": "https://www.nps.gov/safr/",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Washington Square Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Historic neighborhood park",
+        "description": "North Beach's beloved green heart — a tree-lined square where early-morning tai chi practitioners, dog walkers, and picnickers share space under the shadow of Saints Peter and Paul Church.",
+        "address": "Filbert St & Stockton St",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/washington-square/",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Levi's Plaza Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Corporate plaza park",
+        "description": "A handsome landscaped park at the foot of Telegraph Hill designed by Lawrence Halprin, with granite fountains, lawns, and a stream channel — a quiet midday retreat popular with workers and walkers.",
+        "address": "1155 Battery St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Levi Plaza",
+        "notable": ""
+      },
+      {
+        "name": "Filbert Steps and Telegraph Hill Trails",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban hiking trail and stairway",
+        "description": "The famous wooden staircases and garden paths ascending the east face of Telegraph Hill, home to the wild cherry-headed conures (parrots), lush cottage gardens, and breathtaking Bay views.",
+        "address": "Filbert St at Sansome St",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/telegraph-hill-pioneer-park/",
+        "neighborhood": "Telegraph Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chinatown YMCA",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service YMCA",
+        "description": "A full-service community YMCA serving the neighborhoods bordering North Beach and Chinatown, offering gym equipment, fitness classes, and a pool.",
+        "address": "855 Sacramento St",
+        "phone": "415-576-9622",
+        "website": "https://www.ymcasf.org/",
+        "neighborhood": "North Beach",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-09-18",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-09-18",
+        "high": 68,
+        "low": 58,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-19",
+        "high": 70,
+        "low": 58,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-20",
+        "high": 65,
+        "low": 58,
+        "summary": "Mostly Cloudy",
+        "condition": "cloudy",
+        "precip": 2
+      },
+      {
+        "date": "2026-09-21",
+        "high": 66,
+        "low": 58,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-22",
+        "high": 70,
+        "low": 58,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-23",
+        "high": 74,
+        "low": 59,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-24",
+        "high": 74,
+        "low": 60,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      }
+    ]
+  }
+}

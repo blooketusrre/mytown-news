@@ -1,0 +1,706 @@
+{
+  "clusterSlug": "the-sunset",
+  "clusterName": "The Sunset",
+  "weekOf": "2026-09-18",
+  "topStories": [
+    {
+      "headline": "Mountain Lion Roams Outer Sunset Residential Streets, City Issues Safety Alert",
+      "dek": "Animal Care and Control responded Friday morning after the big cat was spotted in front yards near 44th Avenue and Ulloa Street.",
+      "body": "A mountain lion was spotted Friday morning wandering through the front yards of residential homes in the Outer Sunset, prompting an emergency alert from the San Francisco Department of Emergency Management. The animal was seen near 44th Avenue and Ulloa Street, just north of the San Francisco Zoo, and video footage obtained by the SF Standard shows it moving across Vicente Street. Animal Care and Control units arrived at the scene shortly after 9 a.m. with a tranquilizer gun, leading to a standoff with the lion beneath a home on 44th and Vicente.\n\nThe sighting is part of a recent pattern of mountain lion activity on the western edge of the city. The animal was first spotted in the Panhandle at Fell and Baker streets less than two weeks ago. A subsequent unconfirmed sighting the following day placed the animal near 44th Avenue and Fulton Street, on the northern edge of Golden Gate Park — consistent with city wildlife experts' assessment that the animal was moving westward toward the coast. Social media posts have mentioned additional unconfirmed sightings since then.\n\nCity officials urged Outer Sunset residents to take precautions. The Department of Emergency Management advised that anyone who spots the lion should slowly back away and not run, pick up small children, and keep dogs on leash. If approached, residents are told to make themselves appear large by waving their arms and shouting. Anyone who sees the animal is asked to call Animal Care and Control at (415) 554-9400 or 911 in a life-safety emergency.",
+      "sourceUrl": "https://sfstandard.com/2026/09/18/mountain-lion-spotted-outer-sunset/",
+      "sourceName": "SF Standard",
+      "tags": [
+        "wildlife",
+        "public-safety",
+        "Outer Sunset"
+      ]
+    },
+    {
+      "headline": "Inner Sunset Transportation Study Holds Community Meeting; Follow-Up Survey Now Open",
+      "dek": "Residents who missed Wednesday's public session on street-safety concepts for the commercial core can still submit feedback online.",
+      "body": "The San Francisco County Transportation Authority held a public meeting Wednesday evening, September 17, presenting draft concepts developed as part of the Inner Sunset Transportation Study — an effort to improve safety and multimodal access in the neighborhood's commercial core along Irving Street and 9th Avenue. Inner Sunset Park Neighbors (ISPN), which co-promoted the meeting, has posted a follow-up notice on its website thanking attendees and directing residents who missed it to an online follow-up survey.\n\nThe study, which received a Transportation Authority Board presentation in June 2026, focuses on a stretch of the Inner Sunset that carries heavy traffic. SFCTA data shows 9th Avenue alone handles between 6,000 and 8,000 vehicles on an average day, while Lincoln Way sees approximately 30,000. The authority identified traffic congestion, double-parking, and bus-zone violations as recurring problems, and has developed concepts to improve conditions for people driving, walking, biking, and riding transit.\n\nThe Transportation Authority has been explicit that no decisions have been made: the draft concepts are proposals for community reaction, not final plans. ISPN is encouraging neighbors who want to weigh in on potential street-design changes to visit sfcta.org and submit feedback while the online survey remains open.",
+      "sourceUrl": "https://www.inner-sunset.org/inner-sunset-transportation-meeting-follow-up-survey/",
+      "sourceName": "Inner Sunset Park Neighbors",
+      "tags": [
+        "transportation",
+        "streets",
+        "Inner Sunset",
+        "community-input"
+      ]
+    },
+    {
+      "headline": "Prop G's Price Tag: Controller Puts $9.8M One-Time Cost on Great Highway Reopening Plan",
+      "dek": "With Election Day seven weeks away, both sides of the Sunset Dunes debate are sharpening arguments around an official cost estimate released last month.",
+      "body": "San Francisco voters will decide November 3 whether to reverse the 2024 closure of the Upper Great Highway to cars — a question that cuts directly through the Outer Sunset and Parkside. Proposition G, which qualified for the ballot in July after supporters submitted more than 15,924 signatures certified by the Department of Elections, would reopen a two-mile stretch of the road to vehicles on weekdays while keeping it closed on weekends and holidays, effectively ending weekday use of Sunset Dunes Park.\n\nThe San Francisco City Controller's Office estimated that if approved, Proposition G would cost approximately $9.8 million in one-time capital expenses. The largest share — about $8.8 million — would go toward reinstalling traffic signals at eight intersections removed since Sunset Dunes opened in March 2025. Additional costs include roughly $750,000 to remove existing park elements such as picnic areas and the skate park, and $250,000 for restriping and signage. Annual ongoing costs are projected at $500,000 to $1.9 million.\n\nOpponents of the measure, including Friends of Sunset Dunes and a majority of the Board of Supervisors, argue the park features built since 2025 would be destroyed and that 60 percent of park visits occur on weekdays. Supporters, including District 4 Supervisor Alan Wong — who replaced recalled Supervisor Joel Engardio — contend the weekday closure harms residents and commuters who relied on the route as a north-south arterial. November 3 will be the third time in four years that San Francisco voters have weighed in on the highway's future.",
+      "sourceUrl": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-prop-g-great-highway-vehicles-reopening-10m-controller-estimate/",
+      "sourceName": "CBS News Bay Area",
+      "tags": [
+        "Proposition G",
+        "Great Highway",
+        "Sunset Dunes",
+        "November election",
+        "Outer Sunset",
+        "Parkside"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Sunset Night Market: Autumn Moon Festival",
+      "startDate": "2026-09-25",
+      "date": "Friday, September 25",
+      "time": "5:00 PM–10:00 PM",
+      "location": "Irving Street between 20th and 25th Avenues, Inner Sunset",
+      "description": "The Sunset Night Market® returns for its Autumn Moon Festival edition, with mooncakes, lanterns, live music, cultural performances, food vendors, artisan makers, and family-friendly activities along Irving Street. Presented by Sunset Mercantile, Wah Mei, Into The Streets, and ASIAN Inc. Free admission.",
+      "sourceUrl": "https://sfsccd.org/en/sunset-events/sunset-night-market-mid-autumn-moon-festival",
+      "sourceName": "Sunset Chinese Cultural District"
+    },
+    {
+      "title": "Bodhi Mid-Autumn Festival Community Fair",
+      "startDate": "2026-09-27",
+      "date": "Sunday, September 27",
+      "time": "10:00 AM–5:00 PM",
+      "location": "San Francisco County Fair Building, 1199 9th Ave, Golden Gate Park",
+      "description": "Bodhi Meditation San Francisco hosts a free community fair featuring lantern displays, Hanfu experiences and photo opportunities, multicultural live performances, mooncake crafts, games, and interactive cultural stations for all ages. Free admission.",
+      "sourceUrl": "https://www.eventbrite.com/e/bodhi-mid-autumn-festival-community-fair-lanterns-culture-family-fun-tickets-1993718155673",
+      "sourceName": "Eventbrite / Bodhi Meditation San Francisco"
+    },
+    {
+      "title": "Outer Sunset Farmers Market & Mercantile",
+      "date": "Ongoing — every Sunday",
+      "time": "9:00 AM–2:00 PM",
+      "location": "37th Avenue between Ortega and Quintara Streets, Outer Sunset",
+      "description": "The weekly outdoor market features local farmers, food artisans, chefs, food trucks, makers, merchants, and live music on every block, with EBT and WIC accepted. Free and open to all, rain or shine year-round.",
+      "sourceUrl": "https://sunsetmercantilesf.com/osfmm/",
+      "sourceName": "Sunset Mercantile"
+    },
+    {
+      "title": "Inner Sunset Flea Market: 'Tricks, Treats & Treasures'",
+      "startDate": "2026-10-11",
+      "date": "Sunday, October 11",
+      "time": "10:00 AM–4:00 PM",
+      "location": "Irving Street between 9th and 11th Avenues, Inner Sunset",
+      "description": "The Inner Sunset Flea Market's October edition — themed 'Tricks, Treats & Treasures' — brings vintage and secondhand vendors, local makers, live music, and family-friendly activities to two blocks of Irving Street. Presented by Sunset Mercantile and Inner Sunset Park Neighbors. Free admission.",
+      "sourceUrl": "https://sunsetmercantilesf.com/innersunsetflea/",
+      "sourceName": "Sunset Mercantile / Inner Sunset Park Neighbors"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Parkside Square Playground Closed Through Late November for Safety Resurfacing",
+      "body": "The playground at Parkside Square is closed from July 27 through late November 2026 while crews replace the existing safety surfaces, according to San Francisco Recreation and Parks. The Parkside Square playground, at 28th Avenue and Vicente Street, is noted by Rec and Park as the city's first completely ADA-accessible playground. The wider park — including the baseball diamond, dog-walking field, and tennis courts — remains open during the work. Families can check sfrecpark.org for updates on the expected reopening.",
+      "sourceUrl": "https://sfrecpark.org/Facilities/Facility/Details/Parkside-Square-196",
+      "sourceName": "SF Recreation and Parks",
+      "tags": [
+        "parks",
+        "Parkside",
+        "playground"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Video: Mountain lion spotted in Outer Sunset",
+      "url": "https://sfstandard.com/2026/09/18/mountain-lion-spotted-outer-sunset/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "Authorities issue warning after mountain lion spotted in San Francisco",
+      "url": "https://www.nbcbayarea.com/news/local/san-francisco-mountain-lion-sighting-warning/4145009/",
+      "publication": "NBC Bay Area"
+    },
+    {
+      "title": "Mountain Lion Roaming San Francisco Neighborhood Prompts Alert",
+      "url": "https://patch.com/california/san-francisco/mountain-lion-san-francisco-neighborhood-prompts-alert-officials",
+      "publication": "Patch"
+    },
+    {
+      "title": "San Francisco's mountain lion reportedly seen again on north edge of Golden Gate Park",
+      "url": "https://www.sfchronicle.com/sf/article/mountain-lion-panhandle-22419680.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Inner Sunset Transportation Meeting – Follow Up Survey",
+      "url": "https://www.inner-sunset.org/inner-sunset-transportation-meeting-follow-up-survey/",
+      "publication": "Inner Sunset Park Neighbors"
+    },
+    {
+      "title": "Inner Sunset Transportation Study",
+      "url": "https://www.sfcta.org/projects/inner-sunset-transportation-study",
+      "publication": "SF County Transportation Authority"
+    },
+    {
+      "title": "Reopening San Francisco's Great Highway for cars would cost $10M to start, controller says",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-prop-g-great-highway-vehicles-reopening-10m-controller-estimate/",
+      "publication": "CBS News Bay Area"
+    },
+    {
+      "title": "San Francisco Proposition G — Allowing Private Vehicles on the Great Highway in Sunset Dunes Park",
+      "url": "https://growsf.org/voter-guide/san-francisco-voter-guide-november-2026-election/measures/prop-g/",
+      "publication": "GrowSF"
+    },
+    {
+      "title": "San Francisco voters to again decide on Great Highway in November 2026 election",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-great-highway-sunset-dunes-november-2026-election/",
+      "publication": "CBS News Bay Area"
+    },
+    {
+      "title": "Sunset Night Market: Autumn Moon Festival",
+      "url": "https://sfsccd.org/en/sunset-events/sunset-night-market-mid-autumn-moon-festival",
+      "publication": "Sunset Chinese Cultural District"
+    },
+    {
+      "title": "Bodhi Mid-Autumn Festival Community Fair",
+      "url": "https://www.eventbrite.com/e/bodhi-mid-autumn-festival-community-fair-lanterns-culture-family-fun-tickets-1993718155673",
+      "publication": "Eventbrite"
+    },
+    {
+      "title": "Outer Sunset Farmers Market & Mercantile",
+      "url": "https://sunsetmercantilesf.com/osfmm/",
+      "publication": "Sunset Mercantile"
+    },
+    {
+      "title": "Inner Sunset Flea Market 2026 Season Schedule",
+      "url": "https://sunsetmercantilesf.com/innersunsetflea/",
+      "publication": "Sunset Mercantile / Inner Sunset Park Neighbors"
+    },
+    {
+      "title": "Parkside Square — Park Facility Detail",
+      "url": "https://sfrecpark.org/Facilities/Facility/Details/Parkside-Square-196",
+      "publication": "SF Recreation and Parks"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Outerlands",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Organic farm-to-table café and dinner restaurant",
+        "description": "Beloved Outer Sunset gathering place serving locally sourced, organic fare — famous for house-baked sourdough, Dutch baby pancakes, and seasonal dinner dishes in a warm, handcrafted space.",
+        "address": "4001 Judah St (at 45th Ave)",
+        "phone": "415-661-6140",
+        "website": "https://www.outerlandssf.com",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Tung",
+        "cuisineGroup": "Asian",
+        "type": "Chinese restaurant",
+        "description": "Inner Sunset institution since 1986, legendary for its dry-fried chicken wings and handmade dumplings, drawing long lines at both lunch and dinner.",
+        "address": "1031 Irving St",
+        "phone": "415-242-0828",
+        "website": "https://www.santungsf.com",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hook Fish",
+        "cuisineGroup": "Seafood & American",
+        "type": "Sustainable seafood counter",
+        "description": "Hook-and-line-sourced seafood restaurant and market near Ocean Beach, known for fresh fish tacos, poke, and ceviche with an emphasis on transparent, local sourcing.",
+        "address": "4542 Irving St (at 47th Ave)",
+        "phone": "949-463-2903",
+        "website": "https://www.hookfishco.com",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Fifty Vara",
+        "cuisineGroup": "Seafood & American",
+        "type": "Bar and restaurant",
+        "description": "Neighborhood kitchen and bar on Noriega Street with a menu rooted in the Outer Sunset — brunch, lunch, and dinner with a kids menu and a quintessentially local feel.",
+        "address": "3801 Noriega St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Maillards Smash Burgers",
+        "cuisineGroup": "Seafood & American",
+        "type": "Smashburger counter",
+        "description": "Farmers-market favorite turned permanent restaurant, sharing space with Two Pitchers Brewing on Noriega — serving smashburgers, fries, sandwiches, and soft serve.",
+        "address": "3821 Noriega St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Two Pitchers Brewing",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft brewery and taproom",
+        "description": "Outer Sunset brewpub sharing its Noriega Street space with Maillards, pouring house lagers, radlers, and a rotating tap list Wednesday through Sunday.",
+        "address": "3821 Noriega St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Elena's",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican restaurant",
+        "description": "Buzzy West Portal Mexican restaurant from the Duggan family (Original Joe's), featuring copper booths, Mexican-made tableware, and a full bar.",
+        "address": "389 West Portal Ave",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Little Original Joe's",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian-American market and to-go restaurant",
+        "description": "West Portal specialty market and takeout spot from the Original Joe's family — rotisserie chicken, specialty pizza, pasta, and the smash burger that inspired their next concept.",
+        "address": "393 West Portal Ave",
+        "phone": "415-759-1155",
+        "website": "https://www.littleoriginaljoes.com",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Andytown Coffee Roasters",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Artisan coffee roaster and café",
+        "description": "Irish-influenced Outer Sunset original since 2014, roasting its own beans and baking all pastries in-house; famous for the Snowy Plover (espresso, sparkling water, whipped cream) and a perpetual line out the door.",
+        "address": "3655 Lawton St (at 43rd Ave)",
+        "phone": "415-753-9775",
+        "website": "https://andytownsf.com",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Snowbird Coffee",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Specialty coffee shop",
+        "description": "Inner Sunset's beloved pour-over café tucked near 9th and Irving, roasting its own single-origin beans and offering a quiet, knowledgeable coffee experience.",
+        "address": "1352A 9th Ave",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Arizmendi Bakery",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Worker-owned cooperative bakery",
+        "description": "Beloved worker-owned co-op on 9th Avenue renowned for freshly baked sourdough, daily pizza slices, scones, and pecan rolls — almost always with a line.",
+        "address": "1331 9th Ave",
+        "phone": "",
+        "website": "https://arizmendibakery.org",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Riptide",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood bar with live music",
+        "description": "Laid-back Outer Sunset bar on Taraval Street with a fireplace, pool table, and a packed calendar of free live music acts ranging from country to rock.",
+        "address": "3639 Taraval St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sunset Cantina",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican cantina",
+        "description": "Outer Sunset neighborhood Mexican bar and restaurant on Judah Street near the beach, known for generous tacos, margaritas, and a welcoming local crowd.",
+        "address": "4025 Judah St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Tadaima",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Japanese matcha café",
+        "description": "Matcha-focused café from the Japantown brand, opened at 1248 9th Avenue in early 2026 and quickly embraced by Inner Sunset regulars.",
+        "address": "1248 9th Ave",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "The Beanery",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Neighborhood coffee shop",
+        "description": "Classic Inner Sunset coffeehouse serving hot and cold drinks brewed with 100% Arabica beans, with locations on Irving Street and 9th Avenue.",
+        "address": "602 Irving St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Ocean Park Motel",
+        "type": "Art Deco motel",
+        "description": "Family-run 1937 Art Deco 'Streamlined Moderne' motel one block from Ocean Beach and the San Francisco Zoo, featuring porthole windows, an outdoor hot tub, garden play area, and kitchenette rooms.",
+        "address": "2690 46th Ave",
+        "phone": "415-566-7020",
+        "website": "https://www.oceanparkmotel.com",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The SeaScape Inn",
+        "type": "Budget motel",
+        "description": "Simple, affordable motel within five minutes' walk of Ocean Beach and Golden Gate Park, offering ocean views, free parking, and basic amenities.",
+        "address": "2000 Judah St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Ocean Inn",
+        "type": "Budget motel",
+        "description": "Classic 1950s surf-vibes motel in the Outer Sunset with a microwave and fridge in every room, one block from Golden Gate Park and five minutes' walk from Ocean Beach; the on-site Pittsburg Pub is a neighborhood hangout.",
+        "address": "2424 Judah St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Green Apple Books on the Park",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Inner Sunset branch of San Francisco's legendary Green Apple Books, situated just outside Golden Gate Park with an extensive selection of new titles, handwritten staff picks, and author events; the upstairs mezzanine is now home to the Backstory Above literary co-working space.",
+        "address": "1231 9th Ave (@ Lincoln Way)",
+        "phone": "415-742-5833",
+        "website": "https://greenapplebooks.com",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Amazing Fantasy Comics",
+        "shopGroup": "Books & Literature",
+        "type": "Comic book shop",
+        "description": "Irving Street institution under current owner Frank McGinn since August 2000, carrying new comics, back issues, graphic novels, and collectibles for fans of all ages.",
+        "address": "848 Irving St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Stonestown Galleria",
+        "shopGroup": "Other",
+        "type": "Shopping mall",
+        "description": "Western San Francisco's major indoor shopping center anchoring the Stonestown neighborhood, with major retailers, dining options, and a Trader Joe's; redevelopment plans call for thousands of new housing units on surrounding parking lots.",
+        "address": "3251 20th Ave",
+        "phone": "415-759-2626",
+        "website": "https://www.stonestowngalleria.com",
+        "neighborhood": "Stonestown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Therapy Stores",
+        "shopGroup": "Home & Gifts",
+        "type": "Gift and lifestyle shop",
+        "description": "Local San Francisco gift shop chain, with a 9th and Irving location opened in early 2026 marking the brand's first push onto the west side.",
+        "address": "800 Irving St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Other Avenues Food Co-op",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Natural food cooperative",
+        "description": "Community-owned natural food cooperative in the Outer Sunset carrying organic produce, bulk foods, supplements, and local products since 1974.",
+        "address": "3930 Judah St",
+        "phone": "415-661-7475",
+        "website": "https://www.otheravenues.coop",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sunset Gym",
+        "shopGroup": "Other",
+        "type": "Neighborhood gym",
+        "description": "Well-equipped, no-frills neighborhood fitness center on 9th Avenue open daily with cardio, free weights, and a friendly community atmosphere.",
+        "address": "1247 9th Ave",
+        "phone": "415-564-1212",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "San Franpsycho",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Local streetwear and lifestyle brand",
+        "description": "Homegrown San Francisco streetwear brand with an Inner Sunset flagship celebrating west-side culture through apparel, art prints, and accessories.",
+        "address": "764 Irving St",
+        "phone": "",
+        "website": "https://sanfranpsycho.com",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Marrow Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery",
+        "description": "Inner Sunset community-focused gallery at 7th and Irving showing local, national, and international artists with monthly rotating exhibitions; open Wednesday through Sunday.",
+        "address": "548 Irving St",
+        "phone": "415-463-2055",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Problem Library",
+        "venueGroup": "Art Galleries",
+        "type": "Art and education space",
+        "description": "Experimental Inner Sunset art and education space at 1288 15th Ave. that also hosts a residency program connecting artists with vacant commercial storefronts across the city.",
+        "address": "1288 15th Ave",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Great Highway Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Art gallery",
+        "description": "Outer Sunset gallery on Lawton Street anchoring the neighborhood's arts community since 2013, championing local artists near Ocean Beach.",
+        "address": "3616 Lawton St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Birdhouse Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Community art gallery",
+        "description": "Small Outer Sunset gallery at Judah and 31st Avenue run by local architect Ben Frombgen, presenting work in an intimate neighborhood setting.",
+        "address": "3108 Judah St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Dunes Park",
+        "venueGroup": "Museums & Cultural",
+        "type": "Oceanfront linear park and public space",
+        "description": "San Francisco's newest and largest park — a two-mile promenade along the former Upper Great Highway between Lincoln Way and Sloat Boulevard — hosting free fitness classes, community events, and public art year-round.",
+        "address": "Great Highway between Lincoln Way and Sloat Blvd",
+        "phone": "",
+        "website": "https://sunsetdunes.org",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Golden Gate Park",
+        "venueGroup": "Museums & Cultural",
+        "type": "Urban park and cultural campus",
+        "description": "San Francisco's iconic 1,017-acre park bordering the Inner Sunset, encompassing the de Young Museum, California Academy of Sciences, Japanese Tea Garden, Botanical Garden, free summer concerts, and miles of trails.",
+        "address": "501 Stanyan St (main entrance)",
+        "phone": "415-831-2700",
+        "website": "https://sfrecpark.org/parks-open-spaces/golden-gate-park-guide/",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Riptide",
+        "venueGroup": "Music Venues",
+        "type": "Neighborhood bar with live music",
+        "description": "Outer Sunset live-music institution on Taraval offering free shows nearly every night in a cozy, fireplace-warmed setting.",
+        "address": "3639 Taraval St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sunset Recreation Center",
+        "venueGroup": "Museums & Cultural",
+        "type": "Community recreation center",
+        "description": "Bustling SF Rec & Parks community center in the Outer Sunset with basketball, tennis, baseball, after-school programs, dance classes, and one of the city's most popular table tennis rooms.",
+        "address": "2201 Lawton St",
+        "phone": "415-753-7067",
+        "website": "https://sfrecpark.org/706/Sunset-Recreation-Center",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Sunset Gym",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Neighborhood gym",
+        "description": "Affordable, well-appointed neighborhood gym on 9th Avenue with cardio equipment, free weights, and a welcoming community feel; open daily from 6 AM.",
+        "address": "1247 9th Ave",
+        "phone": "415-564-1212",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Recreation Center Gymnasium",
+        "venueGroup": "Sports & Courts",
+        "type": "Community gymnasium and recreation center",
+        "description": "SF Rec & Parks facility offering drop-in basketball, table tennis, zumba, hatha yoga, and after-school programming in the Outer Sunset.",
+        "address": "2201 Lawton St",
+        "phone": "415-753-7067",
+        "website": "https://sfrecpark.org/706/Sunset-Recreation-Center",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Dunes Park (Free Fitness Programs)",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Oceanfront park with free fitness programming",
+        "description": "The two-mile Sunset Dunes promenade hosts free recurring fitness classes including Zumba, chair yoga, and Cantonese-language dance for seniors, plus regular community cleanups and events.",
+        "address": "Great Highway between Lincoln Way and Sloat Blvd",
+        "phone": "",
+        "website": "https://sunsetdunes.org/events",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Golden Gate Park — Polo Field Cycling Track",
+        "venueGroup": "Cycling & Rowing",
+        "type": "Cycling and running track",
+        "description": "Free-access oval cycling and running track inside Golden Gate Park, regularly used by cyclists, joggers, and inline skaters of all levels.",
+        "address": "Golden Gate Park, near Fulton St & 38th Ave",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Lake Merced Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Freshwater lake park with trails",
+        "description": "614-acre park adjacent to Parkmerced offering miles of recreational trails around a freshwater lake used for fishing, rowing, and bird-watching.",
+        "address": "Lake Merced Blvd at Sunset Blvd",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Lakeshore",
+        "notable": ""
+      },
+      {
+        "name": "TPC Harding Park",
+        "venueGroup": "Sports & Courts",
+        "type": "Municipal golf course",
+        "description": "Championship-caliber municipal golf course adjacent to Lake Merced, hosting PGA Tour events and open to the public with accessible tee times.",
+        "address": "99 Harding Rd",
+        "phone": "415-664-4690",
+        "website": "https://www.tpchardingpark.com",
+        "neighborhood": "Lakeshore",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Stern Grove",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Park and outdoor concert venue",
+        "description": "Beloved eucalyptus grove hosting the city's longest-running free outdoor concert series each summer, surrounded by walking paths and picnic areas.",
+        "address": "19th Ave & Sloat Blvd",
+        "phone": "",
+        "website": "https://www.sterngrove.org",
+        "neighborhood": "Miraloma Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Francisco Zoo",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Zoo and family attraction",
+        "description": "Oceanside zoo at the western edge of the Sunset, home to more than 2,000 animals with regular family programming and special exhibits year-round.",
+        "address": "Sloat Blvd at Great Highway",
+        "phone": "415-753-7080",
+        "website": "https://www.sfzoo.org",
+        "neighborhood": "Lakeshore",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ocean Beach",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public beach and surfing area",
+        "description": "San Francisco's widest public beach, stretching four miles along the western edge of the Sunset; popular with surfers, joggers, kite flyers, and bonfire-permit holders at designated spots.",
+        "address": "Great Highway at Balboa St",
+        "phone": "",
+        "website": "https://www.parksconservancy.org/park/ocean-beach",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-09-18",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-09-18",
+        "high": 65,
+        "low": 58,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-19",
+        "high": 66,
+        "low": 58,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-20",
+        "high": 62,
+        "low": 58,
+        "summary": "Mostly Cloudy",
+        "condition": "cloudy",
+        "precip": 2
+      },
+      {
+        "date": "2026-09-21",
+        "high": 63,
+        "low": 58,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-22",
+        "high": 67,
+        "low": 58,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-23",
+        "high": 71,
+        "low": 59,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-24",
+        "high": 71,
+        "low": 60,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 1
+      }
+    ]
+  }
+}
