@@ -114,7 +114,7 @@ layout: base.njk
       <li><a href="#sources">Sources</a></li>
     </ul>
     <div class="site-nav__right">
-      <a class="site-nav__subscribe-btn" href="/subscribe/">Subscribe</a>
+      <a class="site-nav__subscribe-btn" href="/subscribe/?edition={{ clusterSlug }}">Subscribe</a>
       <span class="site-nav__meta">{% if issue %}{{ issue.weekOf | date_short }}{% endif %}</span>
     </div>
   </div>
@@ -338,9 +338,15 @@ layout: base.njk
         {% else %}
           {% set restList = [] %}
         {% endif %}
+        {# Restaurants opens on arrival. Every section used to start collapsed,
+           so the Community Directory rendered as five grey bars and nothing
+           else — it read as an empty section rather than a closed one, and
+           the caret at the far right was not a strong enough hint that
+           anything was behind it. Opening the first section shows what the
+           directory *is*; the rest stay closed so the page is not enormous. #}
         <div class="dir-section dir-section--collapsible" id="dir-restaurants">
           <button class="dir-section__toggle"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-controls="dir-restaurants-body"
                   type="button">
             <span class="dir-section__emoji">🍽</span>
@@ -348,7 +354,7 @@ layout: base.njk
             {% if restList.length %}<span class="dir-section__count">{{ restList.length }}</span>{% endif %}
             <svg class="dir-section__chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
           </button>
-          <div class="dir-section__body is-collapsed" id="dir-restaurants-body">
+          <div class="dir-section__body" id="dir-restaurants-body">
             {% if restList.length %}
               {% set restGroups = restList | groupBy("cuisineGroup") %}
               {% for groupName, entries in restGroups %}
@@ -655,7 +661,7 @@ layout: base.njk
                required autocomplete="email">
         <button class="newsletter__btn" type="submit">Subscribe</button>
       </form>
-      <p class="newsletter__note" id="cluster-nl-note">No spam. Unsubscribe anytime. &nbsp;·&nbsp; <a href="/subscribe/" style="color:var(--accent);font-weight:700">Subscribe to more neighborhoods →</a></p>
+      <p class="newsletter__note" id="cluster-nl-note">No spam. Unsubscribe anytime. &nbsp;·&nbsp; <a href="/subscribe/?edition={{ clusterSlug }}" style="color:var(--accent);font-weight:700">Subscribe to more editions →</a></p>
     </div>
   </div>
 

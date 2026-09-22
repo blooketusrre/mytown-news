@@ -1156,7 +1156,16 @@ function buildEmailHtml(issue, cluster) {
   // pre-Phase-2 URLs after every page moved under its city.
   const allEditions = JSON.parse(fs.readFileSync(CLUSTERS_FILE, "utf8"));
   const issueUrl = `${SITE_URL}${editionPath(cluster, allEditions)}`;
-  const accent   = cluster.accent || "#c8943a";
+  // Two accents, because the email has two backgrounds.
+  //
+  // Everything on navy used `accent`, which is the colour tuned for a white
+  // card. Measured against #1a2744, eighteen of twenty editions failed WCAG
+  // AA in the masthead — Russian Hill at 1.71:1 and Staunton at 1.95:1 are
+  // effectively unreadable. clusters.json has carried accentOnDark for
+  // exactly this since the contrast pass in August; the newsletter simply
+  // never used it. Every edition clears 5:1 with it.
+  const accent   = cluster.accent || "#c8943a";              // on white
+  const onDark   = cluster.accentOnDark || accent;           // on navy
   // Named neighborhoods under the edition title, for the same reason the web
   // masthead carries them: a forwarded issue lands in front of someone who
   // knows their own neighborhood but not which edition covers it. Taken from
@@ -1337,21 +1346,27 @@ function buildEmailHtml(issue, cluster) {
       <img src="${SITE_URL}/assets/img/mark-email.png" width="44" height="44" alt="My Town News"
            style="display:block;margin:0 auto 10px auto;border:0;outline:none;width:44px;height:44px;">
     </a>
-    <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:${accent};">${cluster.city || "San Francisco"} · Free &amp; Independent · Every Friday</p>
+    <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:${onDark};">${cluster.city || "San Francisco"} · Free &amp; Independent · Every Friday</p>
     <h1 style="margin:0 0 6px 0;font-family:Georgia,'Times New Roman',serif;font-size:36px;font-weight:900;letter-spacing:-1px;">
-      <a href="${issueUrl}" style="color:#ffffff;text-decoration:none;">My Town <span style="color:${accent};">News</span></a>
+      <a href="${issueUrl}" style="color:#ffffff;text-decoration:none;">My Town <span style="color:${onDark};">News</span></a>
     </h1>
-    <p style="margin:6px 0 0 0;font-family:Arial,sans-serif;font-size:14px;color:rgba(255,255,255,0.65);">${esc(issue.clusterName || cluster.name)}</p>
-    ${hoods ? `<p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.38);">${esc(hoods)}</p>` : ""}
-    ${formatWeek(issue.weekOf) ? `<p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.3);">Week of ${esc(formatWeek(issue.weekOf))}</p>` : ""}
+    <!-- The town's own name, which is the thing a reader recognises, was 14px
+         Arial at 65% white — smaller than the "My Town News" above it and in a
+         different family from the whole rest of the brand. It is now 26px in
+         the same serif as the wordmark and the site's headings, at full white.
+         Georgia rather than Playfair Display because email clients cannot be
+         given a webfont; Georgia is what the site itself falls back to. -->
+    <p style="margin:10px 0 0 0;font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:700;line-height:1.15;color:#ffffff;">${esc(issue.clusterName || cluster.name)}</p>
+    ${hoods ? `<p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.78);">${esc(hoods)}</p>` : ""}
+    ${formatWeek(issue.weekOf) ? `<p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.72);">Week of ${esc(formatWeek(issue.weekOf))}</p>` : ""}
     <!-- The explicit one. A linked logo and a linked wordmark are both
          invisible affordances — nobody hovers a masthead to find out. This
          is the link that actually gets clicked. -->
     <p style="margin:14px 0 0 0;">
-      <a href="${issueUrl}" style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:${accent};text-decoration:none;border-bottom:1px solid ${accent};padding-bottom:2px;">See the full edition →</a>
+      <a href="${issueUrl}" style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:${onDark};text-decoration:none;border-bottom:1px solid ${onDark};padding-bottom:2px;">See the full edition →</a>
     </p>
   </td></tr>
-  <tr><td style="height:3px;background:${accent};"></td></tr>
+  <tr><td style="height:3px;background:${onDark};"></td></tr>
 
   <!-- Top Stories -->
   <tr><td style="background:#ffffff;padding:32px 40px 8px;">
@@ -1390,8 +1405,8 @@ function buildEmailHtml(issue, cluster) {
 
   <!-- CTA -->
   <tr><td style="background:#1a2744;padding:28px 40px;text-align:center;">
-    <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:13px;color:rgba(255,255,255,0.55);">Every event, the full community directory, and all our sources.</p>
-    <a href="${issueUrl}" style="display:inline-block;background:${accent};color:#ffffff;font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:13px 28px;border-radius:2px;">Open the full edition →</a>
+    <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:13px;color:rgba(255,255,255,0.82);">Every event, the full community directory, and all our sources.</p>
+    <a href="${issueUrl}" style="display:inline-block;background:${onDark};color:#1a2744;font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:13px 28px;border-radius:2px;">Open the full edition →</a>
   </td></tr>
 
   <!-- Footer -->

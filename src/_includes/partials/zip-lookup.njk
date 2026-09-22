@@ -1,0 +1,153 @@
+{# ── ZIP lookup ────────────────────────────────────────────────────────────
+   Included by the homepage and by every city hub.
+
+   It was written for the homepage and lived there alone. Putting a second
+   copy on the hubs would have meant two zipIndex builds and two copies of the
+   miss-and-waitlist logic, drifting apart the first time one was edited — the
+   same failure the edition-path and week-date modules exist to prevent.
+
+   Self-contained on purpose: it reads the `clusters` global, which every page
+   has, so it needs nothing passed in. #}
+
+    {# ── ZIP lookup, above the map ──────────────────────────────────────
+       Ahead of the map because typing five digits beats scanning a map of
+       the United States for your own town, and because it is the control
+       that answers the question a first-time visitor actually has: is
+       there one for me?
+
+       It indexes every live edition in every city, not San Francisco's.
+       Moving an SF-only lookup to the top of a national page would be
+       worse than leaving it where it was — a reader in Staunton would be
+       told they are outside the coverage area of a paper that covers
+       them. #}
+    <div class="zip-lookup zip-lookup--national">
+      <label class="zip-lookup__label" for="zip-input">Find your edition by ZIP code</label>
+      <div class="zip-lookup__row">
+        <input class="zip-lookup__input" id="zip-input" type="text"
+               inputmode="numeric" pattern="[0-9]{5}"
+               maxlength="5" placeholder="e.g. 94133" aria-label="Enter your ZIP code">
+        <button class="zip-lookup__btn" id="zip-btn" type="button">Go</button>
+      </div>
+      <div class="zip-lookup__result" id="zip-result" role="status" aria-live="polite"></div>
+
+      {# Revealed by the lookup when a ZIP is not covered. Hidden rather than
+         built in JavaScript so that the form is real markup a browser can
+         post without us assembling it by hand, and so the metadata field
+         below is visible in the page source rather than buried in a string.
+
+         A native POST to Buttondown's embed endpoint, exactly as the
+         subscribe page and every edition page already do it. No API key
+         reaches the browser — that key can mail the entire list. #}
+      <form class="zip-waitlist embeddable-buttondown-form" id="zip-waitlist" hidden
+            action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondownUser }}"
+            method="post">
+        <input type="hidden" name="embed" value="1">
+        <input type="hidden" name="tag" value="waitlist">
+        {# Underscores, not hyphens: Buttondown's template language cannot
+           read {{ subscriber.metadata.requested-zip }}. #}
+        <input type="hidden" name="metadata__requested_zip" id="zip-waitlist-zip" value="">
+        <label class="zip-waitlist__label" for="zip-waitlist-email">
+          Leave your address and we'll tell you if we get there.
+        </label>
+        <div class="zip-lookup__row">
+          <input class="zip-lookup__input" id="zip-waitlist-email" name="email" type="email"
+                 placeholder="you@example.com" required autocomplete="email">
+          <button class="zip-lookup__btn" type="submit">Notify me</button>
+        </div>
+      </form>
+    </div>
+
+<script>
+(function () {
+  /* ZIP → edition index, built at build time from clusters.json.
+     Every live edition in every city, not just San Francisco's: the lookup
+     now sits at the top of a national page, and a Staunton reader being told
+     they are outside the coverage area would be a bug with a straight face.
+
+     A ZIP spanning two editions produces an array with both, so the reader is
+     offered a choice rather than silently sent to one of them. That happens
+     within a city (94111 is Downtown and North Waterfront) and could one day
+     happen across cities, which is why the city name is carried through. */
+  var zipIndex = {};
+  [
+    {% for c in clusters %}{% if c.live %}{% for z in c.zipCodes %}
+    { zip: "{{ z }}", name: {{ c.name | dump | safe }}, city: {{ c.city | dump | safe }}, url: {{ (c | editionPath(clusters)) | dump | safe }} },
+    {% endfor %}{% endif %}{% endfor %}
+  ].forEach(function (e) {
+    if (!zipIndex[e.zip]) zipIndex[e.zip] = [];
+    zipIndex[e.zip].push({ name: e.name, city: e.city, url: e.url });
+  });
+
+  var input    = document.getElementById('zip-input');
+  var btn      = document.getElementById('zip-btn');
+  var result   = document.getElementById('zip-result');
+  var waitlist = document.getElementById('zip-waitlist');
+  var wlZip    = document.getElementById('zip-waitlist-zip');
+  if (!input || !btn || !result) return;
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function (ch) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch];
+    });
+  }
+
+  function hideWaitlist() {
+    if (waitlist) waitlist.hidden = true;
+  }
+
+  function lookup() {
+    var zip = (input.value || '').trim();
+
+    /* Reset */
+    result.innerHTML = '';
+    result.className = 'zip-lookup__result';
+    hideWaitlist();
+
+    if (!/^\d{5}$/.test(zip)) {
+      result.textContent = 'Please enter a 5-digit ZIP code.';
+      result.className += ' zip-lookup__result--warn';
+      return;
+    }
+
+    var matches = zipIndex[zip];
+
+    if (!matches || matches.length === 0) {
+      /* Most visitors will land here for a long time, so this message is the
+         one that matters most on the page. It says what is true, asks for the
+         thing that actually helps — someone telling us where to go next — and
+         offers to remember them. It does not imply a town is coming. */
+      result.innerHTML =
+        'We don’t publish in ' + escapeHtml(zip) + ' yet. ' +
+        'If you’d like your community added, email us at ' +
+        '<a href="mailto:info@mytown.news?subject=' + encodeURIComponent('Please cover ' + zip) + '">info@mytown.news</a>.';
+      result.className += ' zip-lookup__result--warn';
+      if (waitlist && wlZip) {
+        wlZip.value = zip;
+        waitlist.hidden = false;
+      }
+      return;
+    }
+
+    if (matches.length === 1) {
+      window.location.href = matches[0].url;
+      return;
+    }
+
+    /* ZIP spans more than one edition — let the reader choose. Labelled with
+       the city, because "Waxahachie" and "North Waterfront" side by side
+       without one is a guess. */
+    result.innerHTML = 'ZIP ' + escapeHtml(zip) + ' is covered by ' + matches.length + ' editions: ' +
+      matches.map(function (m) {
+        return '<a href="' + m.url + '">' + escapeHtml(m.name) +
+               (m.city && m.city !== m.name ? ' <span class="zip-lookup__city">' + escapeHtml(m.city) + '</span>' : '') +
+               '</a>';
+      }).join(' &nbsp;&middot;&nbsp; ');
+    result.className += ' zip-lookup__result--multi';
+  }
+
+  btn.addEventListener('click', lookup);
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') lookup();
+  });
+})();
+</script>

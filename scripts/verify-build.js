@@ -572,6 +572,86 @@ try {
     );
   }
 
+  /* ── Things a reader has to be able to find ─────────────────────────────
+   * Each of these was reported by Brian after looking at the live site, and
+   * none of them would fail a build on its own: the page renders, the guard
+   * passes, and the reader simply cannot see the thing.
+   */
+
+  // The directory opened as five grey bars with nothing under them, which
+  // reads as an empty section rather than a closed one.
+  if (!/aria-expanded="true"\s*\n?\s*aria-controls="dir-restaurants-body"/.test(layout)) {
+    errors.push(
+      "the first directory section no longer opens by default — the Community " +
+      "Directory renders as five collapsed bars and looks empty"
+    );
+  }
+  // flex:1 on the title is what pushed the count and caret to the far margin.
+  const mainCss = fs.existsSync(cssPath) ? fs.readFileSync(cssPath, "utf8") : "";
+  if (/\.dir-section__title\s*\{[^}]*flex:\s*1\s*;/.test(mainCss)) {
+    errors.push(
+      ".dir-section__title is flex:1 again — that pushes the listing count and " +
+      "the caret to the right margin, away from the words they belong to"
+    );
+  }
+
+  // The submit used to sit below twenty edition cards.
+  {
+    const sub = fs.existsSync(path.join(OUT, "subscribe", "index.html"))
+      ? fs.readFileSync(path.join(OUT, "subscribe", "index.html"), "utf8") : "";
+    if (sub) {
+      const emailAt  = sub.indexOf('id="sub-email"');
+      const submitAt = sub.indexOf('id="sub-submit"');
+      const firstCard = sub.indexOf('class="sub-card"');
+      if (emailAt === -1 || submitAt === -1) {
+        errors.push("the subscribe page is missing its email input or its submit button");
+      } else if (firstCard !== -1 && submitAt > firstCard) {
+        errors.push(
+          "the subscribe button renders below the edition cards — at twenty " +
+          "editions it is two screens down on a phone and effectively hidden"
+        );
+      }
+    }
+  }
+
+  // "Buttondown" means nothing to a reader; the address they will see does.
+  {
+    const done = fs.existsSync(path.join(OUT, "subscribed", "index.html"))
+      ? fs.readFileSync(path.join(OUT, "subscribed", "index.html"), "utf8") : "";
+    const doneBody = done.replace(/<script\b[\s\S]*?<\/script>/gi, "");
+    if (doneBody && /Buttondown/.test(doneBody)) {
+      errors.push('the subscribed page names "Buttondown" — readers have never heard of it; name the from address instead');
+    }
+    if (done && !/sub-onward/.test(done)) {
+      errors.push("the subscribed page has no way onward — the browser back button is not navigation");
+    }
+  }
+
+  // Every city hub needs the lookup, the mark and a way back to the country.
+  const hubs = (() => {
+    try {
+      const { citiesNeedingHub } = require("../lib/edition-path");
+      return citiesNeedingHub(
+        JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8")),
+        JSON.parse(fs.readFileSync(CLUSTERS, "utf8")));
+    } catch { return []; }
+  })();
+  hubs.forEach((city) => {
+    const f = path.join(OUT, city.slug, "index.html");
+    if (!fs.existsSync(f)) return;
+    const html = fs.readFileSync(f, "utf8");
+    const zipAt = html.indexOf('id="zip-input"');
+    const mapAt = html.indexOf('cluster-map-wrap');
+    if (zipAt === -1) {
+      errors.push(`the ${city.name} hub has no ZIP lookup — it is the fastest route to an edition`);
+    } else if (mapAt !== -1 && zipAt > mapAt) {
+      errors.push(`the ${city.name} hub renders the ZIP lookup below the map — it belongs above`);
+    }
+    if (!/site-nav__logo/.test(html)) {
+      errors.push(`the ${city.name} hub has no brand mark or link home — nothing says it belongs to this publication`);
+    }
+  });
+
   if (/Neighborhood Directory/.test(layout) || /Neighborhood Directory/.test(gen)) {
     errors.push('"Neighborhood Directory" is back — it is the Community Directory everywhere');
   }
@@ -783,7 +863,19 @@ try {
     const f = path.join(OUT, city.slug, "index.html");
     if (!fs.existsSync(f)) return;                 // already reported as MISSING
     const html = fs.readFileSync(f, "utf8");
-    const body = html.split(/<footer\b/i)[0];      // the footer is national by design
+    // What this protects is what a reader sees: the map markers and the
+    // edition list. Two things on the page are national on purpose and must
+    // be excluded, or the guard fires on correct behaviour — the footer,
+    // which groups every live city, and any <script>, because the ZIP lookup
+    // builds an index of every edition in the country. That index is the
+    // whole point of a national lookup.
+    //
+    // This is the third time this check has been narrowed. The first two were
+    // a symptom of it being attached to the homepage; this one is the right
+    // distinction and should be the last: rendered content, not payload.
+    const body = html
+      .split(/<footer\b/i)[0]
+      .replace(/<script\b[\s\S]*?<\/script>/gi, "");
     const foreign = live.filter((e) => e.citySlug !== city.slug && body.includes(e.name));
     if (foreign.length) {
       errors.push(

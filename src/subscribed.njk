@@ -12,11 +12,12 @@ eleventyExcludeFromCollections: true
 
 <header class="masthead home-hero" role="banner" style="padding-bottom:var(--sp-8)">
   <div class="container">
-    <p class="home-hero__eyebrow">San Francisco · Free &amp; Independent · Every Friday</p>
+    <p class="home-hero__eyebrow">Free &amp; Independent · Every Friday</p>
     <h1 class="home-hero__title" style="font-size:clamp(2rem,5vw,3.25rem)">You're<br><em>Subscribed</em></h1>
     <p class="home-hero__desc" style="max-width:540px">
-      One more step — check your inbox for a confirmation email from Buttondown
-      and click the link inside. Your first issue lands the following Friday morning.
+      One more step — check your inbox for a confirmation email from
+      <strong>{{ site.email }}</strong> and click the link inside. Your first
+      issue lands the following Friday morning.
     </p>
   </div>
   <div class="gold-rule"></div>
@@ -38,8 +39,8 @@ eleventyExcludeFromCollections: true
       </div>
 
       <p style="font-size:var(--text-md);line-height:1.7;color:var(--muted);margin-bottom:var(--sp-6)">
-        Every neighbourhood edition is free to read on the site — no subscription
-        needed. Here's this week's coverage.
+        Every edition is free to read on the site — no subscription needed.
+        Here's this week's coverage.
       </p>
 
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--sp-4);margin-bottom:var(--sp-10)">
@@ -52,10 +53,49 @@ eleventyExcludeFromCollections: true
         {% endif %}{% endfor %}
       </div>
 
+      {# The page used to end here, with the browser's back button as the only
+         way out. A reader who arrived from one edition wants that edition;
+         everyone else wants the front page. Both, named, before the fold of
+         small print. The `from` parameter is set by the subscribe page. #}
+      <div class="sub-onward" id="sub-onward">
+        <a class="sub-onward__primary" id="sub-onward-edition" href="/" hidden></a>
+        <a class="sub-onward__secondary" href="/">Go to the front page &rarr;</a>
+      </div>
+
       <p class="sub-note">
-        Changed your mind about which neighbourhoods?
-        <a href="/subscribe/" style="color:var(--accent);font-weight:700">Update your selection →</a>
+        Changed your mind about which editions?
+        <a href="/subscribe/" style="color:var(--accent);font-weight:700">Update your selection &rarr;</a>
       </p>
+
+<script>
+(function () {
+  /* Where the reader came from, remembered by the subscribe page just before
+     it submitted.
+
+     Not a query parameter: the form POSTs to buttondown.com and Buttondown
+     then redirects to a fixed URL from its own settings, so anything in our
+     query string is dropped on the way. sessionStorage survives that round
+     trip because the tab never changes and the origin coming back is ours.
+
+     Wrapped because Safari in private mode and some managed browsers throw on
+     access rather than returning null. An unknown or missing slug just leaves
+     the link hidden — never guess a destination. */
+  var slug = null;
+  try { slug = sessionStorage.getItem("mtn:from"); sessionStorage.removeItem("mtn:from"); } catch (e) {}
+  if (!slug) return;
+  var editions = {
+    {%- for c in clusters %}{% if c.live %}
+    {{ c.slug | dump | safe }}: { name: {{ c.name | dump | safe }}, url: {{ (c | editionPath(clusters)) | dump | safe }} },
+    {%- endif %}{% endfor %}
+  };
+  var e = editions[slug];
+  if (!e) return;
+  var a = document.getElementById("sub-onward-edition");
+  a.href = e.url;
+  a.textContent = "Back to " + e.name + " \u2192";
+  a.hidden = false;
+})();
+</script>
 
     </div>
   </div>
