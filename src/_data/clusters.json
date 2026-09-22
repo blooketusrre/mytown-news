@@ -685,7 +685,7 @@
     "name": "Heber City",
     "city": "Heber City",
     "citySlug": "heber-city",
-    "live": false,
+    "live": true,
     "neighborhoods": [
       "Heber City",
       "Midway",
@@ -734,7 +734,7 @@
     "name": "Midlothian & Red Oak",
     "city": "Ellis County",
     "citySlug": "ellis-county",
-    "live": false,
+    "live": true,
     "neighborhoods": [
       "Midlothian",
       "Red Oak",
@@ -783,7 +783,7 @@
     "name": "Waxahachie",
     "city": "Ellis County",
     "citySlug": "ellis-county",
-    "live": false,
+    "live": true,
     "neighborhoods": [
       "Waxahachie",
       "Garrett",
@@ -827,7 +827,7 @@
     "name": "Ennis",
     "city": "Ellis County",
     "citySlug": "ellis-county",
-    "live": false,
+    "live": true,
     "neighborhoods": [
       "Ennis",
       "Palmer",
@@ -875,7 +875,7 @@
     "name": "Staunton",
     "city": "Staunton",
     "citySlug": "staunton",
-    "live": false,
+    "live": true,
     "neighborhoods": [
       "Downtown Staunton",
       "Gospel Hill",
@@ -927,7 +927,7 @@
     "name": "Marion",
     "city": "Marion",
     "citySlug": "marion",
-    "live": false,
+    "live": true,
     "neighborhoods": [
       "Marion",
       "Prospect",
