@@ -88,18 +88,23 @@ STATIC_PAGES.forEach((p) => check(p));
 ASSETS.forEach((p) => check(p));
 
 let liveCount = 0;
-let liveSfCount = 0;
 try {
   const clusters = JSON.parse(fs.readFileSync(CLUSTERS, "utf8"));
   clusters.forEach((c) => {
     if (!c.live) return;
     liveCount++;
-    if (c.citySlug === "san-francisco") liveSfCount++;
     check(path.join(editionPath(c, clusters), "index.html"), c.name);
   });
 } catch (e) {
   errors.push(`Could not read or parse ${path.relative(ROOT, CLUSTERS)}: ${e.message}`);
 }
+
+const liveCityCount = (() => {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8"))
+      .filter((c) => c.live).length;
+  } catch { return 0; }
+})();
 
 /* The homepage is the page that broke before — sanity-check its guts, not
    just its size, so an empty-but-large shell still trips the guard. */
@@ -112,13 +117,15 @@ if (fs.existsSync(homepage)) {
   if (!/id="editions"/.test(html)) {
     errors.push('index.html is missing the "#editions" section');
   }
-  // Against San Francisco's live editions, not every live edition anywhere.
-  // The homepage is San Francisco's page — the national footer is what carries
-  // the other cities. Comparing to liveCount made the first out-of-state
-  // launch look like fourteen missing cards.
-  const cardCount = (html.match(/class="cluster-list__item"/g) || []).length;
-  if (liveSfCount && cardCount < liveSfCount) {
-    warnings.push(`index.html lists ${cardCount} neighborhood cards but ${liveSfCount} San Francisco editions are live`);
+  // One card per live city, which is what the homepage lists now. It used to
+  // count San Francisco's edition cards, and kept doing so after that list
+  // moved to /san-francisco/ — so it reported "0 of 14" on every single build.
+  //
+  // A warning that is permanently wrong is worse than no warning: it is the
+  // thing that teaches you to skim past the warnings that are not.
+  const cityCards = (html.match(/class="city-pick"/g) || []).length;
+  if (liveCityCount && cityCards < liveCityCount) {
+    warnings.push(`index.html shows ${cityCards} city cards but ${liveCityCount} cities are live`);
   }
 }
 
