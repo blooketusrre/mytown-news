@@ -26,6 +26,121 @@
         <span class="section-head__text">Choose your edition</span>
       </h2>
 
+      <div class="cluster-map-wrap">
+        {# ── Real Leaflet Map (OpenStreetMap) ────────────────────────── #}
+        <div class="cluster-map-wrap__map">
+          {# Self-hosted rather than unpkg. A content blocker, a corporate
+             resolver or a CDN wobble that drops leaflet.css does not remove
+             the map — it removes the *positioning* from the map, so every
+             tile becomes a static block image and they stack vertically. The
+             container's scrollHeight goes from 670px to 2,173px and a reader
+             sees San Francisco at the top with progressively more open ocean
+             below: a map that appears to run off southward into nothing.
+             That is what a friend of Brian's saw on 3 September 2026.
+
+             Moved here from the homepage on 2026-09-12, when that page became
+             national. A city's own map belongs on the city's own page.
+             Serving it ourselves removes the failure mode rather than
+             handling it. #}
+          <link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">
+          <div id="city-map" style="height:480px;border-radius:6px;border:1px solid var(--rule);overflow:hidden;" aria-label="{{ city.name }} map"></div>
+          <script src="/assets/vendor/leaflet/leaflet.js"></script>
+          <script>
+          (function() {
+            var el = document.getElementById('city-map');
+
+            // If Leaflet did not load at all, or the stylesheet did not apply,
+            // take the map out of the page. A missing map costs a nicety; a
+            // broken one sits between the reader and the neighborhood list,
+            // which is the actual navigation.
+            if (!el) return;
+            if (typeof L === 'undefined') { el.remove(); return; }
+
+            var map = L.map('city-map', {
+              center: [{{ city.map.lat }}, {{ city.map.lng }}],
+              zoom: 12,
+              scrollWheelZoom: false,
+              zoomControl: true
+            });
+
+            // CARTO began requiring an API key for raster basemaps in late
+            // August 2026 and started watermarking unauthenticated tiles with
+            // "API KEY REQUIRED" — which appeared across this map without any
+            // change on our side. CARTO is also retiring raster basemaps, so
+            // taking one of their free keys would buy time on a product with a
+            // published end date.
+            //
+            // OpenStreetMap's own tiles need no key. Note their usage policy
+            // does not permit heavy use, so this is a stopgap, not a
+            // destination: the durable answer is to stop depending on anyone
+            // else's tile server.
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+              maxZoom: 16
+            }).addTo(map);
+
+            // Built from src/_data/clusters.json — the same file the pipeline
+            // and the edition pages read. Previously this array hardcoded every
+            // edition's coordinates, colour and neighbourhood list, so adding a
+            // city meant remembering to edit it by hand.
+            var clusters = [
+              {%- for c in cityEditions %}
+              { slug: {{ c.slug | dump | safe }},
+                name: {{ c.name | dump | safe }},
+                lat: {{ c.map.lat }}, lng: {{ c.map.lng }},
+                color: {{ c.accent | dump | safe }},
+                live: {{ "true" if c.live else "false" }},
+                url: {{ (c | editionPath(clusters)) | dump | safe }},
+                hoods: {{ c.map.short | dump | safe }} }{% if not loop.last %},{% endif %}
+              {%- endfor %}
+            ];
+
+            clusters.forEach(function(c) {
+              var radius = c.live ? 16 : 11;
+              var marker = L.circleMarker([c.lat, c.lng], {
+                radius: radius,
+                fillColor: c.live ? c.color : '#b0aaa4',
+                color: '#fff',
+                weight: 2,
+                opacity: 1,
+                fillOpacity: c.live ? 0.92 : 0.55
+              }).addTo(map);
+
+              var label = '<strong>' + c.name + '</strong><br><span style="font-size:0.8em;color:#666">' + c.hoods + '</span>';
+              if (!c.live) label += '<br><em style="font-size:0.75em;color:#999">Coming soon</em>';
+              marker.bindTooltip(label, { sticky: true, direction: 'top', offset: [0, -8] });
+
+              if (c.live) {
+                marker.getElement() && (marker.getElement().style.cursor = 'pointer');
+                marker.on('click', function() { window.location.href = c.url; });
+                marker.on('add', function() {
+                  var el = marker.getElement();
+                  if (el) el.style.cursor = 'pointer';
+                });
+              }
+            });
+
+            // Leaflet measures its container on creation. On a slow phone that
+            // can happen before layout has settled, leaving the map centred on
+            // the wrong place — which looks like the map drifting off the city.
+            // Re-measuring once things settle costs nothing and fixes it.
+            window.addEventListener('load', function () { map.invalidateSize(); });
+            setTimeout(function () { map.invalidateSize(); }, 400);
+
+            // The stylesheet is the part whose absence is worst, because the
+            // map still "works" and simply renders as a column of tiles. If the
+            // container is taller than we told it to be, the CSS did not apply.
+            setTimeout(function () {
+              if (el.scrollHeight > el.clientHeight * 1.5) {
+                console.warn('Leaflet stylesheet did not apply — removing the map.');
+                el.remove();
+              }
+            }, 1200);
+          })();
+          </script>
+        </div>
+
+        <div class="cluster-map-wrap__list">
       <nav class="cluster-list" aria-label="{{ city.name }} editions">
         {% for c in cityEditions %}
         <a class="cluster-list__item" href="{{ c | editionPath(clusters) }}"
@@ -40,9 +155,11 @@
         </a>
         {% endfor %}
       </nav>
+        </div>
+      </div>
 
       <p style="margin-top:var(--sp-6);font-family:var(--font-ui);font-size:var(--text-sm);color:var(--muted)">
-        Not sure which is yours? <a href="/#neighborhoods" style="color:var(--navy);font-weight:700">Find it by ZIP code</a>
+        Not sure which is yours? <a href="/#editions" style="color:var(--navy);font-weight:700">Find it by ZIP code</a>
         or <a href="/subscribe/" style="color:var(--navy);font-weight:700">subscribe to several</a>.
       </p>
     </section>

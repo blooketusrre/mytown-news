@@ -4,8 +4,6 @@
     "name": "San Francisco",
     "state": "CA",
     "stateName": "California",
-    "areaNoun": "neighborhood",
-    "areaNounPlural": "neighborhoods",
     "live": true,
     "launched": "2026-06-12",
     "tagline": "Fourteen neighborhood editions, every Friday.",
@@ -25,9 +23,7 @@
     "name": "Heber City",
     "state": "UT",
     "stateName": "Utah",
-    "areaNoun": "valley",
-    "areaNounPlural": "towns",
-    "live": false,
+    "live": true,
     "launched": "2026-09-04",
     "tagline": "Local news for the Heber Valley, every Friday.",
     "description": "Weekly local news, events and a business directory for Heber City, Midway and the Heber Valley, Utah.",
@@ -41,6 +37,69 @@
       "paperLost": "2025-07-09",
       "paperName": "The Wasatch Wave",
       "paperFounded": "1889"
+    }
+  },
+  {
+    "slug": "ellis-county",
+    "name": "Ellis County",
+    "state": "TX",
+    "stateName": "Texas",
+    "live": true,
+    "launched": "2026-09-11",
+    "tagline": "Three editions for Ellis County, every Friday.",
+    "description": "Weekly local news, events and a business directory for Waxahachie, Midlothian, Red Oak, Ennis and the towns of Ellis County, Texas.",
+    "map": {
+      "lat": 32.3865,
+      "lng": -96.8483
+    },
+    "buttondownTagPrefix": "",
+    "newsDesert": {
+      "note": "Partial, and not uniform across the county. The Waxahachie Daily Light has published since 1867 and still exists as a weekly under CherryRoad Media, but its website carried nothing newer than 22 February 2026 when checked on 10 September 2026, and its circulation is roughly 1,100 in a county of 240,000. The Ennis News is a living weekly and covers Ennis, Ferris, Palmer, Italy and Rice properly. The real gap is north county: Midlothian and Red Oak have grown past 50,000 people between them with no paper of their own.",
+      "paperLost": null,
+      "paperName": "Waxahachie Daily Light",
+      "paperFounded": "1867"
+    }
+  },
+  {
+    "slug": "staunton",
+    "name": "Staunton",
+    "state": "VA",
+    "stateName": "Virginia",
+    "live": true,
+    "launched": "2026-09-11",
+    "tagline": "Local news for Staunton, every Friday.",
+    "description": "Weekly local news, events and a business directory for Staunton, Virginia — the Queen City of the Shenandoah Valley.",
+    "map": {
+      "lat": 38.1496,
+      "lng": -79.0717
+    },
+    "buttondownTagPrefix": "",
+    "newsDesert": {
+      "note": "Staunton, Waynesboro and Augusta County are classified as news deserts by the 2026 Local Journalist Index (Muck Rack and Rebuild Local News), a measure that counts television, radio, digital-only outlets, podcasters and Substackers alike. The News Leader has published since 1904 and is owned by Gannett; the Augusta Free Press reported in 2024 that it “is not paying anybody to write there today,” and a story credited to it appeared simultaneously in nine other Gannett papers. Augusta Free Press and Cardinal News cover the area from Waynesboro and Roanoke.",
+      "paperLost": null,
+      "paperName": "The News Leader",
+      "paperFounded": "1904"
+    }
+  },
+  {
+    "slug": "marion",
+    "name": "Marion",
+    "state": "OH",
+    "stateName": "Ohio",
+    "live": true,
+    "launched": "2026-09-11",
+    "tagline": "Local news for Marion County, every Friday.",
+    "description": "Weekly local news, events and a business directory for Marion, Ohio and the villages of Marion County.",
+    "map": {
+      "lat": 40.5867,
+      "lng": -83.1285
+    },
+    "buttondownTagPrefix": "",
+    "newsDesert": {
+      "note": "The Marion Star has published since 1877 — Warren G. Harding owned and edited it before the presidency — and is now owned by Gannett. It is down to two reporters, one covering news and one covering sports, from 66 employees in 2007. Marion Online (mariononline.com) is an active free local site carrying obituaries, events and press releases; it is a real reading habit here, though not an accountability newsroom.",
+      "paperLost": null,
+      "paperName": "The Marion Star",
+      "paperFounded": "1877"
     }
   }
 ]

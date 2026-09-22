@@ -131,7 +131,7 @@ if (!ANTHROPIC_KEY) { console.error("Missing ANTHROPIC_API_KEY"); process.exit(1
  *  ANTHROPIC_API_KEY. Two copies disagreeing by a day would mean the planner
  *  looking for a file the generator never writes, so every backstop run would
  *  republish everything. */
-const { thisWeekDate } = require("../lib/week");
+const { thisWeekDate, formatWeek } = require("../lib/week");
 
 /**
  * The instant this week's issues should land, as an ISO string.
@@ -1044,8 +1044,16 @@ async function generateCluster(clusterConfig) {
       issue.blotter = blotter;
       console.log(`  🚔 Police reports: ${blotter.total} in the week to ${blotter.to}` +
                   (blotter.priorAvg ? ` (4-week average ${blotter.priorAvg}, ${blotter.trend})` : ""));
+    } else if (!(clusterConfig.analysisNeighborhoods || []).length) {
+      // fetchBlotter returns null for two entirely different reasons, and the
+      // old single message covered both — so "no police reports to summarise"
+      // read as "a quiet week in Midlothian" when it meant "Texas is not in
+      // DataSF". On a Friday with fourteen logs to scan, the difference
+      // between a city that has no dataset and a dataset that returned
+      // nothing is the difference between ignoring a line and chasing it.
+      console.log("  ℹ No police dataset for this city — the section is omitted.");
     } else {
-      console.log("  ℹ No police reports to summarise this week.");
+      console.log("  ℹ Police dataset returned no qualifying incidents this week — the section is omitted.");
     }
   } catch (err) {
     console.warn(`  ⚠ Police report summary unavailable: ${err.message}`);
@@ -1119,6 +1127,29 @@ function esc(str) {
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
+/**
+ * A URL fit to put in an href, or null.
+ *
+ * Every URL in an issue came out of a language model reading the open web, so
+ * it is untrusted input that we paste into markup and mail to subscribers.
+ * esc() is not enough on its own: it leaves `javascript:` and `data:` intact,
+ * and those are exactly what an href must not carry.
+ *
+ * Returns null rather than a placeholder so callers drop the link entirely —
+ * a link to "#" in an email is a dead click, and the reader cannot tell it
+ * from a broken one.
+ */
+function safeUrl(raw) {
+  const s = String(raw == null ? "" : raw).trim();
+  if (!s) return null;
+  try {
+    const u = new URL(s);
+    return (u.protocol === "https:" || u.protocol === "http:") ? u.href : null;
+  } catch {
+    return null;   // not a URL at all
+  }
+}
+
 function buildEmailHtml(issue, cluster) {
   // Through lib/edition-path.js, the same function the site uses to build its
   // permalinks. Hardcoding `/${cluster.slug}/` here would have kept mailing
@@ -1131,17 +1162,14 @@ function buildEmailHtml(issue, cluster) {
   // knows their own neighborhood but not which edition covers it. Taken from
   // the edition definition, never from the generated issue.
   const hoods    = (cluster.neighborhoods || []).join(" · ");
-  // "the Neighborhood" is right in San Francisco and wrong in a five-town
-  // valley. cities.json carries the word each city uses for its areas.
-  const cityRec  = (() => {
-    try {
-      const cities = JSON.parse(fs.readFileSync(
-        path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
-      return cities.find((c) => c.slug === cluster.citySlug) || null;
-    } catch { return null; }
-  })();
-  const areaNoun = (cityRec && cityRec.areaNoun) || "neighborhood";
-  const areaTitle = areaNoun.charAt(0).toUpperCase() + areaNoun.slice(1);
+  // Fixed, and matching cluster-layout.njk exactly. The email and the web
+  // page are rendered by two different pieces of code from the same issue, so
+  // a heading that differs between them is a real possibility and reads as
+  // sloppiness in the only place a subscriber actually looks.
+  //
+  // Was the city's areaNoun until 2026-09-12; see cluster-layout.njk for why
+  // no per-city value could be right.
+  const areaTitle = "Community";
 
   // Tolerates both the old schema (tag/byline/date) and the current one
   // (tags[]/dek); anything absent is omitted rather than left as an
@@ -1149,6 +1177,12 @@ function buildEmailHtml(issue, cluster) {
   const storiesHtml = (issue.topStories || []).map(s => {
     const kicker = (s.tags && s.tags.length ? s.tags[0] : s.tag) || "";
     const meta   = [s.byline, s.date].filter(Boolean).join(" · ");
+    // Was `${s.sourceUrl || "#"}`: a model-supplied string dropped straight
+    // into an href, unescaped and unchecked. The schema validator already
+    // rejects a story whose sourceUrl does not start with http, so this is
+    // belt and braces — but it is the one place in the email where untrusted
+    // text became a destination rather than a caption.
+    const storyHref = safeUrl(s.sourceUrl);
     return `
     <tr><td style="padding:0 0 28px 0;border-bottom:1px solid #e8e3da;">
       ${kicker ? `<p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:${accent};">${esc(kicker)}</p>` : ""}
@@ -1156,7 +1190,7 @@ function buildEmailHtml(issue, cluster) {
       ${s.dek ? `<p style="margin:0 0 10px 0;font-family:Georgia,serif;font-size:15px;font-style:italic;line-height:1.5;color:#6b6560;">${esc(s.dek)}</p>` : ""}
       ${meta ? `<p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">${esc(meta)}</p>` : ""}
       <p style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:15px;line-height:1.68;color:#1c1c1e;">${esc(emailExcerpt(s.body, 90))}</p>
-      <a href="${s.sourceUrl || "#"}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">Read the full story: ${esc(s.sourceName || "source")} →</a>
+      ${storyHref ? `<a href="${esc(storyHref)}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">Read the full story: ${esc(s.sourceName || "source")} →</a>` : ""}
     </td></tr>
     <tr><td style="height:24px;"></td></tr>
   `;
@@ -1164,13 +1198,79 @@ function buildEmailHtml(issue, cluster) {
 
   // Emoji rather than the SVG icons used on the web — inline SVG support is
   // unreliable across email clients, and emoji degrade gracefully everywhere.
-  const eventsHtml = sortEvents(issue.events, issue.weekOf).slice(0, 5).map(ev => `
+  const eventsHtml = sortEvents(issue.events, issue.weekOf).slice(0, 5).map(ev => {
+    // "Verify" rather than the source's name, and deliberately understated.
+    //
+    // Every event already carries sourceUrl and sourceName — research has
+    // recorded them since the schema was written — and until now the email
+    // threw both away. An event listing that cannot be checked is the format
+    // most likely to waste a reader's evening: a date we got slightly wrong
+    // sends somebody to a shut door, and there was no way for them to catch
+    // it before leaving the house.
+    //
+    // The link goes to the source, not to our own page, because our page is
+    // the thing being checked.
+    const href = safeUrl(ev.sourceUrl);
+    const verify = !href ? "" :
+      ` · <a href="${esc(href)}" style="color:#6b6560;text-decoration:underline;">Verify${ev.sourceName ? " · " + esc(ev.sourceName) : ""}</a>`;
+    return `
     <tr><td style="padding:12px 0;border-bottom:1px solid #d8d2c8;">
       ${ev.date ? `<p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${accent};">${esc(ev.date)}</p>` : ""}
       <p style="margin:0 0 3px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${esc(ev.title)}</p>
-      <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6b6560;">📍 ${esc(ev.location)}${ev.time ? " · " + esc(ev.time) : ""}</p>
+      <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;color:#6b6560;">📍 ${esc(ev.location)}${ev.time ? " · " + esc(ev.time) : ""}${verify}</p>
     </td></tr>
-  `).join("");
+  `;
+  }).join("");
+
+  /* ── The directory, advertised ─────────────────────────────────────────
+   * The newsletter carried no sign that a directory existed at all — the
+   * only hint was one line of grey text above the button. The listings are
+   * the whole basis of the marketing plan: a venue that finds itself in the
+   * directory is the reason a chamber of commerce agrees to hand out flyers.
+   * A reader who never learns the directory is there cannot mention it to
+   * anyone.
+   *
+   * Category order is fixed rather than taken from Object.keys, so it matches
+   * the page and does not reshuffle when research returns the object in a
+   * different order. Empty categories are dropped: a link to a heading with
+   * nothing under it is worse than no link.
+   */
+  const DIR_SECTIONS = [
+    ["restaurants",     "dir-restaurants", "🍽", "Restaurants &amp; Cafés"],
+    ["hotels",          "dir-hotels",      "🏨", "Hotels &amp; Lodging"],
+    ["shops",           "dir-shops",       "🛍", "Shops, Books &amp; Services"],
+    ["artEntertainment","dir-art",         "🎭", "Art &amp; Entertainment"],
+    ["gymsRecreation",  "dir-gyms",        "🏃", "Gyms &amp; Recreation"],
+  ];
+  const dirRows = DIR_SECTIONS
+    .map(([key, anchor, emoji, label]) => {
+      const n = Array.isArray(issue.directory && issue.directory[key])
+        ? issue.directory[key].length : 0;
+      if (!n) return "";
+      // The count is the inducement. "Restaurants & Cafés" is a heading;
+      // "Restaurants & Cafés (18)" is a reason to click.
+      return `
+      <tr><td style="padding:5px 0;">
+        <a href="${issueUrl}#${anchor}" style="font-family:Arial,sans-serif;font-size:13px;color:#1a2744;text-decoration:none;">
+          ${emoji} <span style="text-decoration:underline;">${label}</span>
+          <span style="color:#6b6560;text-decoration:none;">(${n})</span>
+        </a>
+      </td></tr>`;
+    })
+    .join("");
+
+  const directoryHtml = !dirRows ? "" : `
+  <tr><td style="background:#ffffff;padding:24px 40px 8px;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr><td style="padding:0 0 4px 0;border-bottom:2px solid #1a2744;">
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a2744;">Community Directory</p>
+      </td></tr>
+      <tr><td style="padding:10px 0 2px 0;">
+        <p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:12px;color:#6b6560;">Every listing, kept current, in the full edition.</p>
+        <table width="100%" cellpadding="0" cellspacing="0">${dirRows}</table>
+      </td></tr>
+    </table>
+  </td></tr>`;
 
   // Police reports: the same counts as the web card, never individual
   // incidents. Deliberately placed after the briefs and before the CTA, and
@@ -1188,13 +1288,19 @@ function buildEmailHtml(issue, cluster) {
     </table>
   </td></tr>`;
 
-  const moreHtml = (issue.moreNews || []).map(s => `
+  const moreHtml = (issue.moreNews || []).map(s => {
+    // The third place a model-supplied URL reached an href raw, and the one I
+    // missed. Found by the build guard written for the other two, which is
+    // the only reason it is fixed here rather than shipping another week.
+    const href = safeUrl(s.sourceUrl);
+    return `
     <tr><td style="padding:10px 0;border-bottom:1px solid #e8e3da;">
       <p style="margin:0 0 4px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${esc(s.headline)}</p>
       <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;line-height:1.55;color:#6b6560;">${esc(s.dek || emailExcerpt(s.body, 32))}</p>
-      ${s.sourceUrl ? `<a href="${s.sourceUrl}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">${esc(s.sourceName || "Read more")} →</a>` : ""}
+      ${href ? `<a href="${esc(href)}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">${esc(s.sourceName || "Read more")} →</a>` : ""}
     </td></tr>
-  `).join("");
+  `;
+  }).join("");
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -1209,12 +1315,41 @@ function buildEmailHtml(issue, cluster) {
 <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
 
   <!-- Masthead -->
-  <tr><td style="background:#1a2744;padding:32px 40px 24px;text-align:center;">
+  <!--
+    Three ways to reach the full edition, all above the fold. The only link
+    used to be the button at the very bottom, which assumes the reader
+    scrolls the whole newsletter before deciding to — and many treat the
+    email as a reminder to go and read, not as the reading itself.
+
+    The mark is a hosted PNG, not inline SVG: no email client can be relied
+    on to render inline SVG, and a data: URI is stripped by Gmail. Images
+    are blocked by default in most clients, so it carries alt text and sits
+    above a wordmark that is live text — with images off the header still
+    says "My Town News" in Georgia and still links through. The image is
+    branding, never the only thing carrying the meaning.
+
+    Centred rather than in the corner because the masthead is centred; a
+    left-aligned mark needs a two-column table to avoid looking dropped in,
+    and every nested table in an email is another thing Outlook can break.
+  -->
+  <tr><td style="background:#1a2744;padding:28px 40px 24px;text-align:center;">
+    <a href="${issueUrl}" style="text-decoration:none;display:inline-block;">
+      <img src="${SITE_URL}/assets/img/mark-email.png" width="44" height="44" alt="My Town News"
+           style="display:block;margin:0 auto 10px auto;border:0;outline:none;width:44px;height:44px;">
+    </a>
     <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:${accent};">${cluster.city || "San Francisco"} · Free &amp; Independent · Every Friday</p>
-    <h1 style="margin:0 0 6px 0;font-family:Georgia,'Times New Roman',serif;font-size:36px;font-weight:900;color:#ffffff;letter-spacing:-1px;">My Town <span style="color:${accent};">News</span></h1>
+    <h1 style="margin:0 0 6px 0;font-family:Georgia,'Times New Roman',serif;font-size:36px;font-weight:900;letter-spacing:-1px;">
+      <a href="${issueUrl}" style="color:#ffffff;text-decoration:none;">My Town <span style="color:${accent};">News</span></a>
+    </h1>
     <p style="margin:6px 0 0 0;font-family:Arial,sans-serif;font-size:14px;color:rgba(255,255,255,0.65);">${esc(issue.clusterName || cluster.name)}</p>
     ${hoods ? `<p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.38);">${esc(hoods)}</p>` : ""}
-    <p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.3);">Week of ${esc(issue.weekOf || "")}</p>
+    ${formatWeek(issue.weekOf) ? `<p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.3);">Week of ${esc(formatWeek(issue.weekOf))}</p>` : ""}
+    <!-- The explicit one. A linked logo and a linked wordmark are both
+         invisible affordances — nobody hovers a masthead to find out. This
+         is the link that actually gets clicked. -->
+    <p style="margin:14px 0 0 0;">
+      <a href="${issueUrl}" style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:${accent};text-decoration:none;border-bottom:1px solid ${accent};padding-bottom:2px;">See the full edition →</a>
+    </p>
   </td></tr>
   <tr><td style="height:3px;background:${accent};"></td></tr>
 
@@ -1251,16 +1386,20 @@ function buildEmailHtml(issue, cluster) {
     </table>
   </td></tr>` : ""}
   ${blotterHtml}
+  ${directoryHtml}
 
   <!-- CTA -->
   <tr><td style="background:#1a2744;padding:28px 40px;text-align:center;">
-    <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:13px;color:rgba(255,255,255,0.55);">Every event, the full neighborhood directory, and all our sources.</p>
+    <p style="margin:0 0 16px 0;font-family:Arial,sans-serif;font-size:13px;color:rgba(255,255,255,0.55);">Every event, the full community directory, and all our sources.</p>
     <a href="${issueUrl}" style="display:inline-block;background:${accent};color:#ffffff;font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:13px 28px;border-radius:2px;">Open the full edition →</a>
   </td></tr>
 
   <!-- Footer -->
   <tr><td style="padding:20px 40px;text-align:center;">
-    <p style="margin:0 0 4px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">My Town News · mytown.news · ${cluster.city || "San Francisco"}</p>
+    <!-- mytown.news goes to the top-level home page, not this edition: from
+         the footer the reader is more likely to be looking for the paper
+         than for the issue they just read. -->
+    <p style="margin:0 0 4px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">My Town News · <a href="${SITE_URL}/" style="color:#6b6560;text-decoration:underline;">mytown.news</a> · ${cluster.city || "San Francisco"}</p>
     <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;color:#a09890;">Free &amp; Independent. No spam.</p>
   </td></tr>
 
@@ -1490,7 +1629,7 @@ async function main() {
   }
 
   // Filter to requested cluster or all live clusters
-  const targets = clusters.filter((c) => {
+  let targets = clusters.filter((c) => {
     if (clusterArg) return c.slug === clusterArg;
     return c.live === true;
   });
@@ -1537,6 +1676,44 @@ async function main() {
     console.log(DRY_RUN
       ? "\n⚠ BUTTONDOWN_API_KEY not set — audience tags cannot be checked in this rehearsal."
       : "\n⚠ BUTTONDOWN_API_KEY not set — no email will be sent.");
+  }
+
+  // ── Check the audience before spending anything on content ───────────────
+  // The tag map is already in hand at this point, and nothing between here
+  // and delivery uses it — so a missing tag is knowable in the first second
+  // of a run and was not reported until the seventh minute.
+  //
+  // On 2026-09-12 the midlothian-red-oak rehearsal researched a full issue,
+  // wrote it, rendered the newsletter, and only then said the tag did not
+  // exist. Seven minutes and a full edition's API spend to learn something
+  // true before the run started. In a live fourteen-edition run the same
+  // mistake would cost a week's research across every affected edition.
+  //
+  // Untagged editions are dropped rather than the whole run aborted. An
+  // edition with no tag cannot be delivered to the right people, but the
+  // thirteen that can should still go out — the same reasoning as fail-fast
+  // being off on the matrix. The run still exits non-zero, so it is reported.
+  if (BUTTONDOWN_KEY && tagMap) {
+    const untagged = targets.filter((c) => !tagMap[c.slug]);
+    if (untagged.length) {
+      console.error(
+        `\n✗ No Buttondown tag for: ${untagged.map((c) => c.slug).join(", ")}`
+      );
+      console.error(
+        "  An edition with no tag would mail every subscriber in the account, so\n" +
+        "  it is skipped rather than generated. Create a tag whose name matches\n" +
+        "  the edition slug exactly, then run again."
+      );
+      counters.failedEmail += untagged.length;
+      targets = targets.filter((c) => tagMap[c.slug]);
+
+      if (!targets.length) {
+        console.error("\n  Nothing left to generate. No API credits were spent.");
+        process.exitCode = 1;
+        return;
+      }
+      console.error(`  Continuing with ${targets.length} edition(s) that have one.\n`);
+    }
   }
 
   // ── Generate and deliver, one edition at a time ──────────────────────────

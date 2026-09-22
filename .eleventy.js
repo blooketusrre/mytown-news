@@ -132,6 +132,46 @@ module.exports = function (eleventyConfig) {
     (editions || []).filter((e) => e && e.citySlug === citySlug));
   eleventyConfig.addFilter("editionsInCity", (editions, citySlug) => editionsInCity(editions, citySlug));
 
+  // The story to show for a city on the national homepage: the lead story
+  // from whichever of its editions published most recently.
+  //
+  // Returns null rather than throwing when a city has no issue yet — a town
+  // in its first week has live editions and no content, and the homepage
+  // should show the town without a story rather than fail to build. That is
+  // not hypothetical: it is the state every new city is in on launch day.
+  eleventyConfig.addFilter("cityLead", (citySlug, editions) => {
+    const issues = require("./src/_data/issues.js")();
+    const mine = (editions || []).filter((e) => e && e.live && e.citySlug === citySlug);
+
+    let best = null;
+    for (const edition of mine) {
+      const issue = issues[edition.slug];
+      const story = issue && issue.topStories && issue.topStories[0];
+      if (!story || !story.headline) continue;
+      // String compare is correct here: weekOf is always YYYY-MM-DD.
+      if (!best || String(issue.weekOf || "") > String(best.issue.weekOf || "")) {
+        best = { edition, issue, story };
+      }
+    }
+    return best;
+  });
+
+  // Places a city on the national map, as percentages of the outline's own
+  // viewBox. Percentages rather than pixels because the map is a
+  // fixed-aspect-ratio box: the dots then stay put at every width with no
+  // JavaScript measuring anything — which is the failure mode the Leaflet
+  // neighborhood map below it has already hit twice.
+  //
+  // Returns null for a city outside the United States, which the template
+  // treats as "do not draw" rather than writing NaN% into a style attribute.
+  const { projectPercent } = require("./lib/us-projection");
+  eleventyConfig.addFilter("usPoint", (city) => {
+    if (!city || !city.map) return null;
+    const { lat, lng } = city.map;
+    if (typeof lat !== "number" || typeof lng !== "number") return null;
+    return projectPercent(lng, lat);
+  });
+
   // Events come back from research in the order sources were read, which on
   // the page looked arbitrary. Sorted here rather than only in the pipeline so
   // that issues published before the fix also read correctly.

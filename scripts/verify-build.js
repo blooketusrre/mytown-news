@@ -88,11 +88,13 @@ STATIC_PAGES.forEach((p) => check(p));
 ASSETS.forEach((p) => check(p));
 
 let liveCount = 0;
+let liveSfCount = 0;
 try {
   const clusters = JSON.parse(fs.readFileSync(CLUSTERS, "utf8"));
   clusters.forEach((c) => {
     if (!c.live) return;
     liveCount++;
+    if (c.citySlug === "san-francisco") liveSfCount++;
     check(path.join(editionPath(c, clusters), "index.html"), c.name);
   });
 } catch (e) {
@@ -104,12 +106,19 @@ try {
 const homepage = path.join(OUT, "index.html");
 if (fs.existsSync(homepage)) {
   const html = fs.readFileSync(homepage, "utf8");
-  if (!/id="neighborhoods"/.test(html)) {
-    errors.push('index.html is missing the "#neighborhoods" section');
+  // Was '#neighborhoods', San Francisco's map section, until the homepage
+  // became national. '#editions' is the section the nav points at and the one
+  // that answers "is there one for me?".
+  if (!/id="editions"/.test(html)) {
+    errors.push('index.html is missing the "#editions" section');
   }
+  // Against San Francisco's live editions, not every live edition anywhere.
+  // The homepage is San Francisco's page — the national footer is what carries
+  // the other cities. Comparing to liveCount made the first out-of-state
+  // launch look like fourteen missing cards.
   const cardCount = (html.match(/class="cluster-list__item"/g) || []).length;
-  if (liveCount && cardCount < liveCount) {
-    warnings.push(`index.html lists ${cardCount} neighborhood cards but ${liveCount} clusters are live`);
+  if (liveSfCount && cardCount < liveSfCount) {
+    warnings.push(`index.html lists ${cardCount} neighborhood cards but ${liveSfCount} San Francisco editions are live`);
   }
 }
 
@@ -212,7 +221,7 @@ try {
       errors.push(`${c.slug}: accentInk on accentBtn is ${onBtn.toFixed(2)}:1 — needs ${AA}:1`);
     }
     if (!c.map || typeof c.map.lat !== "number" || typeof c.map.lng !== "number") {
-      errors.push(`${c.slug}: missing map coordinates — the homepage map is built from these`);
+      errors.push(`${c.slug}: missing map coordinates — the maps are built from these`);
     }
   });
   console.log(`  Contrast: ${editions.filter((c) => c.live).length} live editions checked against WCAG AA`);
@@ -310,8 +319,21 @@ try {
  * pattern: adding one should be a decision, not a typo.
  */
 try {
-  const home = fs.existsSync(path.join(OUT, "index.html"))
-    ? fs.readFileSync(path.join(OUT, "index.html"), "utf8") : "";
+  // The Leaflet map lives on the city hub, not the homepage. It moved there on
+  // 2026-09-12 when the homepage became national: a city's own map belongs on
+  // the city's own page, and the homepage now carries the keyless US outline
+  // instead. These guards followed it rather than being deleted — every one of
+  // them describes a failure that actually happened.
+  const hubPath = (() => {
+    try {
+      const { citiesNeedingHub } = require("../lib/edition-path");
+      const hubs = citiesNeedingHub(
+        JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8")),
+        JSON.parse(fs.readFileSync(CLUSTERS, "utf8")));
+      return hubs.length ? path.join(OUT, hubs[0].slug, "index.html") : null;
+    } catch { return null; }
+  })();
+  const home = hubPath && fs.existsSync(hubPath) ? fs.readFileSync(hubPath, "utf8") : "";
   if (home) {
     const BANNED = [
       ["cartocdn.com", "CARTO now watermarks keyless raster tiles and is retiring them"],
@@ -321,14 +343,14 @@ try {
     ];
     BANNED.forEach(([host, why]) => {
       if (home.includes(host)) {
-        errors.push(`homepage map loads tiles from ${host} — ${why}`);
+        errors.push(`city hub map loads tiles from ${host} — ${why}`);
       }
     });
     const tile = home.match(/L\.tileLayer\('([^']+)'/);
     if (!tile) {
-      errors.push("homepage has no tileLayer — the neighborhood map would render blank");
+      errors.push("the city hub has no tileLayer — the neighborhood map would render blank");
     } else if (!/tile\.openstreetmap\.org/.test(tile[1])) {
-      warnings.push(`homepage map uses an unreviewed tile source: ${tile[1]}`);
+      warnings.push(`city hub map uses an unreviewed tile source: ${tile[1]}`);
     }
     // Leaflet must be served by us. On a third-party CDN, a content blocker
     // or an outage that drops only leaflet.css leaves the map "working" while
@@ -337,21 +359,21 @@ try {
     // city into open ocean. A friend of Brian's hit exactly this on a phone on
     // 3 September 2026.
     if (/unpkg\.com|cdnjs\.cloudflare\.com\/ajax\/libs\/leaflet|cdn\.jsdelivr\.net.*leaflet/.test(home)) {
-      errors.push("homepage loads Leaflet from a CDN — serve it from /assets/vendor/leaflet/ so a blocked stylesheet cannot break the map");
+      errors.push("the city hub loads Leaflet from a CDN — serve it from /assets/vendor/leaflet/ so a blocked stylesheet cannot break the map");
     }
     ["assets/vendor/leaflet/leaflet.js", "assets/vendor/leaflet/leaflet.css"].forEach((f) => {
-      if (!fs.existsSync(path.join(OUT, f))) errors.push(`MISSING  ${f} — the homepage map has no script or stylesheet to load`);
+      if (!fs.existsSync(path.join(OUT, f))) errors.push(`MISSING  ${f} — the city hub map has no script or stylesheet to load`);
     });
     // A broken map must remove itself rather than sit between the reader and
     // the neighborhood list, which is the actual navigation.
     if (!/typeof L === 'undefined'/.test(home)) {
-      errors.push("homepage does not check that Leaflet loaded — a failed script would leave an empty bordered box");
+      errors.push("the city hub does not check that Leaflet loaded — a failed script would leave an empty bordered box");
     }
     if (!/scrollHeight > el\.clientHeight/.test(home)) {
-      errors.push("homepage does not detect an unstyled map — stacked tiles would render as a map running off southward");
+      errors.push("the city hub does not detect an unstyled map — stacked tiles would render as a map running off southward");
     }
     if (!/openstreetmap\.org\/copyright/.test(home)) {
-      errors.push("homepage map is missing OpenStreetMap attribution, which their licence requires");
+      errors.push("the city hub map is missing OpenStreetMap attribution, which their licence requires");
     }
   }
   // The list is the navigation; the map is the illustration. On one column the
@@ -415,24 +437,214 @@ try {
   if (!/navH \+ 28/.test(base)) {
     errors.push("scrollspy reading line no longer matches scroll-padding-top (--nav-h + 28px)");
   }
-  // "the Neighborhood" hardcoded into a heading is the same failure as
-  // "cluster": copy written for San Francisco, shipped to a five-town valley.
-  if (/More from the Neighborhood|Ongoing in the Neighborhood/.test(layout)) {
-    errors.push('cluster-layout.njk hardcodes "the Neighborhood" in a heading — it must come from the city\'s areaNoun');
+  /* ── One word for the place, everywhere ────────────────────────────────
+   * These checks used to require the opposite: that the headings came from
+   * each city's areaNoun, and that every live city defined one. That was the
+   * right instinct aimed at the wrong noun — the unit that needs a word is
+   * the edition, not the city, so "in the Town" was wrong for an edition
+   * covering Midlothian and Red Oak and no per-city value could fix it.
+   *
+   * Since 2026-09-12 both headings are the fixed word "Community". What now
+   * needs guarding is that they stay fixed, that the email and the web page
+   * say the same thing, and that the abandoned mechanism does not come back
+   * as data nobody reads.
+   */
+  ["More from the Community", "Ongoing in the Community"].forEach((phrase) => {
+    if (!layout.includes(phrase)) {
+      errors.push(`cluster-layout.njk no longer says "${phrase}" — the section headings are fixed copy`);
+    }
+  });
+  if (!/const areaTitle = "Community"/.test(gen)) {
+    errors.push(
+      'the newsletter no longer fixes its heading to "Community" — the email and ' +
+      'the web page are rendered by different code and would drift apart'
+    );
   }
-  if (/More from the Neighborhood/.test(gen)) {
-    errors.push('the newsletter hardcodes "More from the Neighborhood" — it must match the city\'s areaNoun');
+  // Property access, not the bare word: the comments in both files explain
+  // why this mechanism was removed, and a guard that forbids naming the thing
+  // it is about would force those comments to be vague.
+  if (/\.areaNoun\b/.test(layout) || /\.areaNoun\b/.test(gen)) {
+    errors.push(
+      "a per-city areaNoun is being read again — it was removed because no " +
+      "single value is right for an edition spanning two towns"
+    );
   }
   try {
     const cities = JSON.parse(fs.readFileSync(
       path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
-    const gaps = cities.filter((c) => c.live && !(c.areaNoun && c.areaNounPlural));
-    if (gaps.length) {
-      errors.push(`cities missing areaNoun/areaNounPlural: ${gaps.map((c) => c.slug).join(", ")}`);
+    // Dead configuration is worse than none: it looks like a setting that
+    // does something, so the next town copies it and nobody notices it is
+    // read by nothing.
+    const stale = cities.filter((c) => c.areaNoun || c.areaNounPlural);
+    if (stale.length) {
+      errors.push(
+        `cities.json still defines areaNoun/areaNounPlural for ${stale.map((c) => c.slug).join(", ")} — ` +
+        `nothing reads them, and config that looks live but is not gets copied into the next town`
+      );
     }
   } catch (e) {
     errors.push(`Could not check city vocabulary: ${e.message}`);
   }
+  /* ── The audience is checked before the content is paid for ─────────────
+   * The tag map is fetched before the generation loop and nothing between
+   * there and delivery uses it, so a missing tag is knowable in the first
+   * second. It was not reported until delivery — seven minutes and a full
+   * edition's API spend later, on 2026-09-12.
+   *
+   * This asserts the check is still upstream of generateCluster. A guard on
+   * the text alone would pass if someone moved it back below the loop, which
+   * is the only way it can break.
+   */
+  {
+    const checkAt = gen.indexOf("No Buttondown tag for:");
+    const genAt   = gen.indexOf("await generateCluster(cluster)");
+    if (checkAt === -1) {
+      errors.push(
+        "generate-issue.js no longer verifies Buttondown tags before generating — " +
+        "a missing tag would cost a full edition of API spend to discover"
+      );
+    } else if (genAt !== -1 && checkAt > genAt) {
+      errors.push(
+        "the Buttondown tag check runs after generateCluster — it must run before, " +
+        "or an untagged edition is researched in full before anyone is told"
+      );
+    }
+    // Dropping the untagged editions rather than aborting: thirteen editions
+    // that can be delivered should not be held back by one that cannot.
+    if (checkAt !== -1 && !/targets = targets\.filter\(\(c\) => tagMap\[c\.slug\]\)/.test(gen)) {
+      errors.push(
+        "an untagged edition no longer drops out of the run — either it aborts " +
+        "every edition, or it proceeds and mails the whole list"
+      );
+    }
+  }
+
+  /* ── The newsletter's links out ─────────────────────────────────────────
+   * The email and the page are built by different code, and every link
+   * between them is a hardcoded string on both sides. None of these failures
+   * would break a build, a test or a send: the newsletter would simply carry
+   * a link that lands nowhere, and only a reader would find out.
+   */
+
+  // Each directory anchor in the email must be a real section id on the page.
+  {
+    const anchors = [...gen.matchAll(/"(dir-[a-z]+)"/g)].map((m) => m[1]);
+    const ids = new Set([...layout.matchAll(/dir-section--collapsible"\s+id="(dir-[a-z]+)"/g)].map((m) => m[1]));
+    if (!anchors.length) {
+      errors.push(
+        "the newsletter no longer links to the community directory — the listings " +
+        "are the basis of the marketing plan and a reader who never sees them " +
+        "cannot mention them to anyone"
+      );
+    }
+    const dangling = [...new Set(anchors)].filter((a) => !ids.has(a));
+    if (dangling.length) {
+      errors.push(
+        `the newsletter links to ${dangling.join(", ")}, which ${dangling.length === 1 ? "is not a section" : "are not sections"} ` +
+        `on the edition page — the link would land at the top and look broken`
+      );
+    }
+  }
+
+  // Directory sections start collapsed, so a link to one has to open it.
+  if (!/openFromHash/.test(layout)) {
+    errors.push(
+      "the edition page no longer opens a directory section from the URL hash — " +
+      "every link in the newsletter would land on a closed accordion"
+    );
+  }
+
+  // Events carry sourceUrl and sourceName; the email threw both away until
+  // 2026-09-12. A listing nobody can check is the one most likely to send a
+  // reader to a shut door.
+  if (!/>Verify/.test(gen)) {
+    errors.push("the newsletter no longer offers a way to verify an event against its source");
+  }
+
+  // Every URL in an issue came from a language model reading the open web.
+  if (!/function safeUrl/.test(gen)) {
+    errors.push("safeUrl is gone — model-supplied URLs would reach an href unchecked");
+  }
+  if (/href="\$\{(?:s|ev)\.sourceUrl/.test(gen)) {
+    errors.push(
+      "a raw sourceUrl is interpolated into an href — it must go through safeUrl, " +
+      "which is what keeps javascript: and data: out of a mailed link"
+    );
+  }
+
+  if (/Neighborhood Directory/.test(layout) || /Neighborhood Directory/.test(gen)) {
+    errors.push('"Neighborhood Directory" is back — it is the Community Directory everywhere');
+  }
+
+  /* ── Reaching the edition from the top of the email ─────────────────────
+   * The only link to the full edition used to be the button at the very
+   * bottom, which assumes a reader scrolls the whole newsletter before
+   * deciding to. Many treat the email as a reminder to go and read.
+   */
+  {
+    const masthead = gen.slice(gen.indexOf("<!-- Masthead -->"), gen.indexOf("<!-- Top Stories -->"));
+    if (!masthead) {
+      errors.push("could not find the email masthead to check its links");
+    } else {
+      const links = (masthead.match(/href="\$\{issueUrl\}"/g) || []).length;
+      if (links < 2) {
+        errors.push(
+          `the email masthead has ${links} link(s) to the full edition — the logo, ` +
+          `the wordmark and an explicit link should all reach it above the fold`
+        );
+      }
+      if (!/See the full edition/.test(masthead)) {
+        errors.push(
+          "the email masthead has no explicit 'See the full edition' link — a linked " +
+          "logo and wordmark are invisible affordances, nobody hovers a masthead"
+        );
+      }
+      if (!/mark-email\.png/.test(masthead)) {
+        errors.push("the email masthead no longer carries the brand mark");
+      }
+      // Images are blocked by default in most clients. The mark must never be
+      // the only thing carrying the name.
+      if (!/alt="My Town News"/.test(masthead)) {
+        errors.push("the email's brand mark has no alt text — with images blocked it would be a silent gap");
+      }
+      if (!/My Town <span/.test(masthead)) {
+        errors.push(
+          "the email wordmark is no longer live text — if it became part of the image, " +
+          "a client with images off would show a masthead with no name on it"
+        );
+      }
+      if (/<svg/.test(masthead)) {
+        errors.push("inline SVG in the email masthead — no email client renders it reliably; use the hosted PNG");
+      }
+      // The masthead printed the raw ISO string: "Week of 2026-09-18".
+      // formatWeek also anchors the date at UTC noon, which is what stops a
+      // date-only string rendering as the previous day when generated
+      // anywhere west of Greenwich — correct on a UTC runner by luck, wrong
+      // the first time anyone runs the pipeline from a laptop.
+      if (/Week of \$\{esc\(issue\.weekOf/.test(masthead)) {
+        errors.push(
+          "the email masthead prints the raw ISO week date — it must go through " +
+          "formatWeek, which both formats it and fixes the timezone off-by-one"
+        );
+      }
+      if (!/formatWeek/.test(gen) || !/function formatWeek/.test(fs.readFileSync(path.join(ROOT, "lib", "week.js"), "utf8"))) {
+        errors.push("formatWeek is gone — the newsletter would print an unformatted date");
+      }
+    }
+
+    // The mark is referenced by absolute URL, so the file has to be served.
+    if (/mark-email\.png/.test(gen) && !fs.existsSync(path.join(OUT, "assets", "img", "mark-email.png"))) {
+      errors.push(
+        "the newsletter links to assets/img/mark-email.png but the build does not " +
+        "produce it — every subscriber would see a broken image"
+      );
+    }
+
+    if (!/>mytown\.news<\/a>/.test(gen)) {
+      errors.push("mytown.news in the email footer is no longer a link");
+    }
+  }
+
   // The subject line duplicated the city for every town whose edition is the
   // city — "My Town News — Heber City Heber City".
   if (/My Town News — \$\{cluster\.name\} \$\{cluster\.city/.test(gen)) {
@@ -530,6 +742,15 @@ try {
     });
   });
 
+  const citiesNeedingHubList = (() => {
+    try {
+      const { citiesNeedingHub } = require("../lib/edition-path");
+      return citiesNeedingHub(
+        JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8")),
+        JSON.parse(fs.readFileSync(CLUSTERS, "utf8")));
+    } catch { return []; }
+  })();
+
   // Buttondown tags collide within a newsletter, not across the whole product.
   const byCity = {};
   live.forEach((e) => {
@@ -546,14 +767,33 @@ try {
   // every San Francisco page and a marker on the San Francisco map.
   const homeHtml = fs.existsSync(path.join(OUT, "index.html"))
     ? fs.readFileSync(path.join(OUT, "index.html"), "utf8") : "";
-  if (homeHtml) {
-    const foreign = live.filter((e) => e.citySlug !== "san-francisco" && homeHtml.includes(e.name));
+  // Now checked on each city hub rather than on the homepage.
+  //
+  // What this guard protects is a city's own map and edition list: a Utah town
+  // appearing in San Francisco's sends a reader in the Sunset to a page about
+  // Midway. That content lived on the homepage until 2026-09-12 and now lives
+  // at /<city>/, so the check moved with it — and improved in the move, because
+  // it covers every city instead of San Francisco only.
+  //
+  // The homepage is deliberately national now and every city belongs on it, so
+  // there is nothing left there to scope. This guard was narrowed twice while
+  // it lived there — first to exclude the footer, then to exclude the national
+  // map — which was the signal that it was attached to the wrong page.
+  citiesNeedingHubList.forEach((city) => {
+    const f = path.join(OUT, city.slug, "index.html");
+    if (!fs.existsSync(f)) return;                 // already reported as MISSING
+    const html = fs.readFileSync(f, "utf8");
+    const body = html.split(/<footer\b/i)[0];      // the footer is national by design
+    const foreign = live.filter((e) => e.citySlug !== city.slug && body.includes(e.name));
     if (foreign.length) {
       errors.push(
-        `the San Francisco homepage names ${foreign.map((e) => e.name).join(", ")} — ` +
-        `editions from other cities must not appear on it`
+        `the ${city.name} hub names ${foreign.map((e) => e.name).join(", ")} — ` +
+        `editions from other cities must not appear on a city's own page`
       );
     }
+  });
+
+  if (homeHtml) {
     // Unlaunched editions must not be advertised anywhere.
     const dark = editions.filter((e) => !e.live && homeHtml.includes(`${e.name} — coming soon`));
     if (dark.length) {
@@ -733,7 +973,14 @@ try {
   }
   try {
     const all = JSON.parse(fs.readFileSync(CLUSTERS, "utf8"));
-    const missing = all.filter((c) => c.live && !(c.analysisNeighborhoods || []).length);
+    // San Francisco editions only. The police summary is built from DataSF's
+    // SFPD incident dataset, which has no equivalent outside the city, so an
+    // edition in Ellis County or the Heber Valley legitimately has no mapping
+    // and fetchBlotter returns null for it — the card simply does not render.
+    // Requiring the mapping everywhere would block every launch outside SF.
+    const missing = all.filter(
+      (c) => c.live && c.citySlug === "san-francisco" && !(c.analysisNeighborhoods || []).length
+    );
     if (missing.length) {
       errors.push(
         `no SFPD neighborhood mapping for ${missing.map((c) => c.slug).join(", ")} — ` +
@@ -793,6 +1040,269 @@ try {
   console.log("  Weather:   per edition, dated");
 } catch (e) {
   errors.push(`Could not verify the publish pipeline: ${e.message}`);
+}
+
+/* ── The national map ─────────────────────────────────────────────────────
+ * Three things have to agree or every dot lands beside its city: the
+ * projection in lib/us-projection.js, the viewBox of the outline SVG that
+ * scripts/build-us-outline.js generated from it, and the aspect ratio of the
+ * .us-map box in main.css.
+ *
+ * They can drift silently. Nothing throws if the outline is regenerated at a
+ * new scale and the CSS is not updated — the page renders, the map looks
+ * roughly like the United States, and San Francisco sits in Nevada. A reader
+ * would notice before we did.
+ */
+try {
+  const proj = require("../lib/us-projection");
+  const svgPath = path.join(OUT, "assets", "img", "us-outline.svg");
+
+  if (!fs.existsSync(svgPath)) {
+    errors.push("assets/img/us-outline.svg is missing — the national map has no outline to draw");
+  } else {
+    const svg = fs.readFileSync(svgPath, "utf8");
+
+    const vb = (svg.match(/viewBox="([^"]+)"/) || [])[1];
+    if (vb !== proj.VIEWBOX) {
+      errors.push(
+        `us-outline.svg declares viewBox "${vb}" but lib/us-projection.js expects ` +
+        `"${proj.VIEWBOX}" — re-run scripts/build-us-outline.js, or every city dot ` +
+        `is offset from its city`
+      );
+    }
+
+    // The generator stamps the projection it used into the file. This catches
+    // the other half of the same mistake: changing SCALE and not regenerating.
+    const stamp = (svg.match(/data-projection="([^"]+)"/) || [])[1] || "";
+    const expected = `albersUsa ${proj.WIDTH}x${proj.HEIGHT}@${proj.SCALE} view ${proj.VIEWBOX}`;
+    if (stamp !== expected) {
+      errors.push(
+        `us-outline.svg was generated with "${stamp}" but lib/us-projection.js now ` +
+        `says "${expected}" — re-run scripts/build-us-outline.js`
+      );
+    }
+  }
+
+  // The CSS box must hold the outline's aspect ratio. Percentages are taken
+  // against the viewBox, so a box of a different shape stretches the outline
+  // away from the dots.
+  const css = fs.existsSync(cssPath) ? fs.readFileSync(cssPath, "utf8") : "";
+  const ratio = (css.match(/\.us-map\s*\{[^}]*aspect-ratio:\s*([\d.]+)\s*\/\s*([\d.]+)/) || []).slice(1);
+  if (ratio.length !== 2) {
+    errors.push(".us-map has no aspect-ratio in main.css — the outline and the dots will not line up");
+  } else if (Number(ratio[0]) !== proj.VIEW_W || Number(ratio[1]) !== proj.VIEW_H) {
+    errors.push(
+      `.us-map aspect-ratio is ${ratio[0]}/${ratio[1]} but the map's viewBox is ` +
+      `${proj.VIEW_W}×${proj.VIEW_H} — the outline is stretched relative to the dots`
+    );
+  }
+
+  // Golden values. Not a restatement of the arithmetic — these are the
+  // published positions of two real cities a long way apart, so any change to
+  // the projection or the viewBox moves at least one of them.
+  const golden = [
+    ["San Francisco", -122.4194, 37.7749, 9.51, 41.98],
+    ["Staunton",       -79.0717, 38.1496, 83.67, 46.87],
+  ];
+  golden.forEach(([name, lng, lat, left, top]) => {
+    const p = proj.projectPercent(lng, lat);
+    if (!p) {
+      errors.push(`the national map projects ${name} to nowhere — it should be on the map`);
+      return;
+    }
+    if (Math.abs(p.left - left) > 0.05 || Math.abs(p.top - top) > 0.05) {
+      errors.push(
+        `the national map moved ${name} to ${p.left.toFixed(2)}%, ${p.top.toFixed(2)}% ` +
+        `(was ${left}%, ${top}%) — if the projection changed on purpose, update these ` +
+        `values and re-run scripts/build-us-outline.js`
+      );
+    }
+  });
+
+  // Live cities only. A dot is a promise, and the footer already forbids
+  // advertising an edition that has not launched.
+  const cities = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
+  const liveCities = cities.filter((c) => c.live);
+  const homeHtml2 = fs.existsSync(path.join(OUT, "index.html"))
+    ? fs.readFileSync(path.join(OUT, "index.html"), "utf8") : "";
+  const pins = (homeHtml2.match(/class="us-map__pin"/g) || []).length;
+
+  if (liveCities.length > 1) {
+    if (pins !== liveCities.length) {
+      errors.push(
+        `the national map draws ${pins} pins but ${liveCities.length} cities are live`
+      );
+    }
+    const leaked = cities.filter((c) => !c.live && homeHtml2.includes(`class="us-map__pin"`) &&
+      new RegExp(`us-map__pin[^>]*>[\\s\\S]{0,200}?${c.name}<`).test(homeHtml2));
+    if (leaked.length) {
+      errors.push(
+        `unlaunched cities pinned on the national map: ${leaked.map((c) => c.name).join(", ")}`
+      );
+    }
+  } else if (pins) {
+    errors.push(
+      "the national map is drawn with fewer than two live cities — a map of the " +
+      "United States with one dot argues against the point it is making"
+    );
+  }
+
+  /* ── The ZIP lookup ──────────────────────────────────────────────────────
+   * It was San Francisco's, sitting under San Francisco's edition list. It is
+   * now the first control on a national page, which changes what "correct"
+   * means for it in three ways.
+   */
+
+  // 1. It must index every live city. An SF-only index at the top of a
+  //    national page tells a reader in Staunton they are outside the coverage
+  //    area of a paper that covers them — a wrong answer delivered
+  //    confidently, which is worse than no lookup at all.
+  const indexedZips = new Set(
+    [...homeHtml2.matchAll(/\bzip:\s*"(\d{5})"/g)].map((m) => m[1])
+  );
+  const liveEditions = JSON.parse(fs.readFileSync(CLUSTERS, "utf8")).filter((c) => c.live);
+  const unindexed = liveEditions.filter(
+    (c) => (c.zipCodes || []).length && !(c.zipCodes || []).some((z) => indexedZips.has(z))
+  );
+  if (unindexed.length) {
+    errors.push(
+      `the ZIP lookup does not index ${unindexed.map((c) => c.slug).join(", ")} — ` +
+      `readers in those editions would be told we do not publish where we do`
+    );
+  }
+
+  // 2. One box, one id. The old lookup lived inside the San Francisco
+  //    section; leaving both in place would have given the page two elements
+  //    with id="zip-input", and getElementById returns the first — so the
+  //    visible box at the top would have worked and the other would have been
+  //    inert, or vice versa, depending on source order.
+  const zipInputs = (homeHtml2.match(/id="zip-input"/g) || []).length;
+  if (zipInputs !== 1) {
+    errors.push(`the homepage has ${zipInputs} elements with id="zip-input" — there must be exactly one`);
+  }
+
+  // 3. Above the map, which is the whole point of moving it.
+  const zipAt = homeHtml2.indexOf('id="zip-input"');
+  const mapAt = homeHtml2.indexOf('class="us-map"');
+  if (zipAt !== -1 && mapAt !== -1 && zipAt > mapAt) {
+    errors.push("the ZIP lookup renders below the national map — it belongs above it");
+  }
+
+  // The waitlist capture posts natively to Buttondown, like every other form
+  // on the site. If an API key ever appears in this page, it is a key that can
+  // mail the entire list from anyone's browser.
+  if (/BUTTONDOWN[_-]?(API[_-]?)?KEY|Authorization:\s*Token/i.test(homeHtml2)) {
+    errors.push("a Buttondown credential appears in the homepage source — it must never reach the browser");
+  }
+  if (homeHtml2.includes('id="zip-waitlist"')) {
+    if (!/name="tag"\s+value="waitlist"/.test(homeHtml2)) {
+      errors.push('the ZIP waitlist form does not carry tag="waitlist" — signups would land untagged');
+    }
+    if (!homeHtml2.includes('name="metadata__requested_zip"')) {
+      errors.push("the ZIP waitlist form does not record the ZIP that was asked for — the signup loses the one useful fact");
+    }
+    // Hyphens in a metadata key cannot be read back in a Buttondown template.
+    if (/name="metadata__[a-z0-9_]*-/.test(homeHtml2)) {
+      errors.push("a Buttondown metadata key on the homepage contains a hyphen — use underscores or it cannot be read in a template");
+    }
+  } else {
+    errors.push("the ZIP waitlist form is missing — an uncovered ZIP would be a dead end");
+  }
+
+  console.log(
+    `  National: ${liveCities.length > 1 ? `${pins} cities pinned` : "hidden until a second city launches"}` +
+    `, outline and dots share one projection`
+  );
+  console.log(
+    `  ZIP:      ${indexedZips.size} codes indexed across ${liveCities.length} ` +
+    `${liveCities.length === 1 ? "city" : "cities"}, above the map, waitlist tagged`
+  );
+} catch (e) {
+  errors.push(`Could not verify the national map: ${e.message}`);
+}
+
+/* ── The subscribe page ───────────────────────────────────────────────────
+ * This page is the only place a reader can pick more than one edition, and a
+ * mistake here is invisible from the outside: an edition missing from the
+ * picker simply cannot be subscribed to, and nothing anywhere else breaks.
+ * It also carries the tag values that decide who receives what, so a wrong
+ * value mails the wrong people.
+ */
+try {
+  const subPath = path.join(OUT, "subscribe", "index.html");
+  const sub = fs.existsSync(subPath) ? fs.readFileSync(subPath, "utf8") : "";
+  if (!sub) {
+    errors.push("subscribe/index.html is missing — nobody can subscribe to more than one edition");
+  } else {
+    const cities = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
+    const liveCities = cities.filter((c) => c.live);
+    const liveEds = JSON.parse(fs.readFileSync(CLUSTERS, "utf8")).filter((c) => c.live);
+
+    // Every live edition, exactly once. Twice would give one tag two
+    // checkboxes; zero times would hide an edition we are publishing.
+    const tagValues = [...sub.matchAll(/name="tag"\s+value="([a-z0-9-]+)"/g)].map((m) => m[1]);
+    const counts = tagValues.reduce((a, t) => (a[t] = (a[t] || 0) + 1, a), {});
+    const missing = liveEds.filter((c) => !counts[c.slug]);
+    const doubled = Object.entries(counts).filter(([, n]) => n > 1).map(([t]) => t);
+    const unknown = Object.keys(counts).filter((t) => !liveEds.some((c) => c.slug === t));
+
+    if (missing.length) {
+      errors.push(
+        `the subscribe page offers no checkbox for ${missing.map((c) => c.slug).join(", ")} — ` +
+        `those editions publish but cannot be subscribed to`
+      );
+    }
+    if (doubled.length) {
+      errors.push(`the subscribe page lists ${doubled.join(", ")} more than once`);
+    }
+    if (unknown.length) {
+      errors.push(
+        `the subscribe page offers ${unknown.join(", ")}, which is not a live edition — ` +
+        `the tag would match nothing and the subscriber would get no mail`
+      );
+    }
+
+    // One group per live city, grouped even at one city so that the page does
+    // not change shape on the day a second city launches.
+    const groups = [...sub.matchAll(/class="sub-city"[^>]*data-city="([a-z0-9-]+)"/g)].map((m) => m[1]);
+    const ungrouped = liveCities.filter(
+      (c) => liveEds.some((e) => e.citySlug === c.slug) && !groups.includes(c.slug)
+    );
+    if (ungrouped.length) {
+      errors.push(
+        `the subscribe page has no group for ${ungrouped.map((c) => c.slug).join(", ")} — ` +
+        `their editions would sit under another city's heading`
+      );
+    }
+
+    // Still one native form post. The version before this fired a no-cors
+    // fetch per edition, which Buttondown does not support and which failed
+    // without saying so.
+    const forms = (sub.match(/<form\b/g) || []).length;
+    if (forms !== 1) {
+      errors.push(`the subscribe page has ${forms} forms — it must post once, carrying every selected tag`);
+    }
+    if (!/action="https:\/\/buttondown\.com\/api\/emails\/embed-subscribe\//.test(sub)) {
+      errors.push("the subscribe form no longer posts to Buttondown's embed endpoint");
+    }
+    if (/BUTTONDOWN[_-]?(API[_-]?)?KEY|Authorization:\s*Token/i.test(sub)) {
+      errors.push("a Buttondown credential appears in the subscribe page source — it must never reach the browser");
+    }
+
+    // Language. The homepage and the masthead stopped being San Francisco's
+    // when the second city landed; this page said "neighborhoods" in four
+    // places and "San Francisco" in the eyebrow.
+    if (liveCities.length > 1 && /San Francisco · Free/.test(sub)) {
+      errors.push('the subscribe masthead still says "San Francisco" although more than one city is live');
+    }
+
+    console.log(
+      `  Subscribe: ${tagValues.length} editions in ${groups.length} ` +
+      `${groups.length === 1 ? "group" : "groups"}, one form, one post`
+    );
+  }
+} catch (e) {
+  errors.push(`Could not verify the subscribe page: ${e.message}`);
 }
 
 /* ── The dry-run switch must stay connected ───────────────────────────────
