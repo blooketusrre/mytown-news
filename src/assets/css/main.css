@@ -1050,7 +1050,12 @@ ul, ol { list-style: none; }
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--navy);
-  flex: 1;
+  /* Was flex: 1, which pushed the count and the chevron to the far right
+     margin. On a wide browser that put the only two cues that a section
+     opens — the number of listings and the caret — several hundred pixels
+     away from the words they belong to, where the eye never goes. They now
+     sit directly beside the category name and the empty space is trailing. */
+  flex: 0 1 auto;
 }
 
 .dir-section__count {
@@ -1070,6 +1075,7 @@ ul, ol { list-style: none; }
   color: var(--muted);
   transition: transform 0.2s ease;
   flex-shrink: 0;
+  margin-right: auto;   /* take up the slack here, not before the count */
 }
 
 .dir-section__toggle[aria-expanded="true"] .dir-section__chevron {
@@ -2497,4 +2503,61 @@ hr.divider {
 
   h2, h3 { page-break-after: avoid; }
   article, .event-card, .news-card { page-break-inside: avoid; }
+}
+
+/* ── Subscribe: email and button pinned together ────────────────────────
+   The submit used to sit below every edition card — two screens down on a
+   phone at twenty editions. Keeping the pair at the top and sticky means the
+   running count is visible while you tick, and the button is never far. */
+.sub-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--cream);
+  padding: var(--sp-5) 0 var(--sp-4);
+  margin-bottom: var(--sp-6);
+  border-bottom: 1px solid var(--rule);
+}
+
+.sub-topbar .sub-footer {
+  margin-top: var(--sp-4);
+  text-align: left;
+}
+
+.sub-topbar .sub-note { margin-top: var(--sp-2); }
+
+/* Where the reader goes after subscribing. The page used to end with the
+   browser back button as its only exit. */
+.sub-onward {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+  margin: var(--sp-8) 0 var(--sp-6);
+}
+
+.sub-onward__primary,
+.sub-onward__secondary {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  padding: var(--sp-3) var(--sp-6);
+  border-radius: var(--radius);
+}
+
+.sub-onward__primary {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.sub-onward__secondary {
+  border: 1px solid var(--rule);
+  color: var(--navy);
+}
+
+.sub-onward__primary[hidden] { display: none; }
+
+@media (max-width: 640px) {
+  .sub-onward a { width: 100%; text-align: center; }
 }

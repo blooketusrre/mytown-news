@@ -38,12 +38,33 @@ pageDesc: "Choose your editions and get My Town News delivered every Friday. Fre
 
       <input type="hidden" name="embed" value="1">
 
-      {# ── Email input ──────────────────────────────────────────────────── #}
-      <div class="sub-email-wrap">
-        <label class="sub-label" for="sub-email">Your email address</label>
-        <input class="sub-email" id="sub-email" name="email" type="email"
-               placeholder="you@example.com" required
-               aria-required="true" autocomplete="email">
+      {# ── Email and the button, together and sticky ─────────────────────
+         The submit used to sit at the very bottom, below every edition card.
+         At fourteen editions in one city that was a scroll; at twenty across
+         five it is a hunt, and on a phone the button is roughly two screens
+         below the thing that enables it.
+
+         Keeping the pair pinned to the top means the count is always visible
+         while you tick — "Subscribe to 3 editions" changes under your thumb —
+         and the button is never more than a glance away. #}
+      <div class="sub-topbar">
+        <div class="sub-email-wrap">
+          <label class="sub-label" for="sub-email">Your email address</label>
+          <input class="sub-email" id="sub-email" name="email" type="email"
+                 placeholder="you@example.com" required
+                 aria-required="true" autocomplete="email">
+        </div>
+
+        <div class="sub-footer">
+          {# The label counts. At twenty editions across five states,
+             "Subscribe to selected neighborhoods" does not tell you whether
+             you are about to sign up for one email a week or twenty. #}
+          <button class="sub-submit" id="sub-submit" type="submit" disabled>
+            <span class="sub-submit__label" id="sub-submit-label">Select at least one edition</span>
+            <span class="sub-submit__spinner" aria-hidden="true"></span>
+          </button>
+          <p class="sub-note">No spam. Unsubscribe from any edition anytime.</p>
+        </div>
       </div>
 
       {# ── Edition picker, grouped by city ──────────────────────────────────
@@ -108,18 +129,6 @@ pageDesc: "Choose your editions and get My Town News delivered every Friday. Fre
       </section>
       {% endif %}
       {% endfor %}
-
-      {# ── Submit ───────────────────────────────────────────────────────── #}
-      <div class="sub-footer">
-        {# The label counts. At twenty editions across five states, "Subscribe
-           to selected neighborhoods" does not tell you whether you are about
-           to sign up for one email a week or twenty. #}
-        <button class="sub-submit" id="sub-submit" type="submit" disabled>
-          <span class="sub-submit__label" id="sub-submit-label">Select at least one edition</span>
-          <span class="sub-submit__spinner" aria-hidden="true"></span>
-        </button>
-        <p class="sub-note">No spam. Unsubscribe from any edition anytime.</p>
-      </div>
 
       {# Shown only if JS is off, where the button cannot be enabled #}
       <noscript>
@@ -226,6 +235,28 @@ pageDesc: "Choose your editions and get My Town News delivered every Friday. Fre
      Only pre-ticks; the reader can untick, and nothing is submitted without
      them pressing the button. An unknown slug is ignored rather than
      guessed at. */
+  /* ── ?edition=<slug> ──────────────────────────────────────────────────
+     A reader who clicked Subscribe on the North Waterfront page has already
+     told us what they want. Landing them on a list of twenty unticked boxes
+     makes them say it again, and the one they came for is somewhere in the
+     middle of it.
+
+     So that edition arrives ticked, the count reads "Subscribe to 1 edition",
+     and the button directly under the email input is live the moment they
+     type an address. Adding more is optional rather than required. */
+  (function preselectEdition() {
+    var slug = new URLSearchParams(window.location.search).get("edition");
+    if (!slug) return;
+    var cb = document.querySelector('.sub-card__check[value="' + CSS.escape(slug) + '"]');
+    if (!cb) return;                      // unknown slug: ignore, never guess
+    setChecked(cb, true);
+    syncCityButtons();
+    updateSubmit();
+    var card = cb.closest(".sub-card");
+    if (card) card.scrollIntoView({ block: "center",
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  })();
+
   (function preselectCity() {
     var slug = new URLSearchParams(window.location.search).get("city");
     if (!slug) return;
@@ -251,6 +282,20 @@ pageDesc: "Choose your editions and get My Town News delivered every Friday. Fre
   form.addEventListener("submit", function () {
     submitBtn.classList.add("is-loading");
     submitBtn.disabled = true;
+
+    /* Remember where this reader came from so /subscribed/ can offer a way
+       back to it. Buttondown redirects to a fixed URL of its own, so a query
+       parameter would not survive; sessionStorage does, because the tab and
+       the origin coming back are the same.
+
+       Records the edition only when there is exactly one — with three ticked
+       there is no single "back to". */
+    try {
+      var picked = Array.prototype.filter.call(checkboxes, function (cb) { return cb.checked; });
+      var from = new URLSearchParams(window.location.search).get("edition");
+      if (picked.length === 1) from = picked[0].value;
+      if (from) sessionStorage.setItem("mtn:from", from);
+    } catch (e) {}
   });
 })();
 </script>
