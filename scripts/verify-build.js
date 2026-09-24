@@ -629,6 +629,34 @@ try {
     if (doneBody && /Buttondown/.test(doneBody)) {
       errors.push('the subscribed page names "Buttondown" — readers have never heard of it; name the from address instead');
     }
+    /* Two addresses, and the subscribed page needs the one a reader will see
+     * in their From line — not the one they write to us at.
+     *
+     * Buttondown requires the sender to match the verified sending domain,
+     * which is mail.mytown.news, so the From line can never equal the contact
+     * address. This page told readers to watch for hello@mytown.news while
+     * the email arrived from hello@mail.mytown.news: a reader searching their
+     * inbox for the wrong string concludes it never came.
+     */
+    if (done) {
+      const site = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "site.json"), "utf8"));
+      if (!site.senderEmail) {
+        errors.push("site.json has no senderEmail — the subscribed page cannot name the address mail actually arrives from");
+      } else {
+        if (!doneBody.includes(site.senderEmail)) {
+          errors.push(
+            `the subscribed page does not name ${site.senderEmail}, the address the ` +
+            `confirmation email actually comes from — a reader would search for the wrong sender`
+          );
+        }
+        if (site.email !== site.senderEmail && doneBody.includes(site.email)) {
+          errors.push(
+            `the subscribed page names the contact address ${site.email} where it means ` +
+            `the sender address ${site.senderEmail}`
+          );
+        }
+      }
+    }
     if (done && !/sub-onward/.test(done)) {
       errors.push("the subscribed page has no way onward — the browser back button is not navigation");
     }
