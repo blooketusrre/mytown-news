@@ -16,7 +16,7 @@ eleventyExcludeFromCollections: true
     <h1 class="home-hero__title" style="font-size:clamp(2rem,5vw,3.25rem)">You're<br><em>Subscribed</em></h1>
     <p class="home-hero__desc" style="max-width:540px">
       One more step — check your inbox for a confirmation email from
-      <strong>{{ site.email }}</strong> and click the link inside. Your first
+      <strong>{{ site.senderEmail }}</strong> and click the link inside. Your first
       issue lands the following Friday morning.
     </p>
   </div>
@@ -30,8 +30,8 @@ eleventyExcludeFromCollections: true
       <div class="sub-result sub-result--success" role="status" style="display:block">
         <strong>Almost there.</strong> Confirmation emails usually arrive within a
         minute. If nothing shows up, check your spam or promotions folder — and
-        add <a href="mailto:{{ site.email }}">{{ site.email }}</a> to your contacts
-        so future issues land in your inbox.
+        add <a href="mailto:{{ site.senderEmail }}">{{ site.senderEmail }}</a> to your
+        contacts so future issues land in your inbox.
       </div>
 
       <div class="sub-section-head" style="margin-top:var(--sp-10)">
