@@ -81,6 +81,8 @@
             if (typeof L === 'undefined') { el.remove(); return; }
 
             var map = L.map('city-map', {
+              // Starting view only. The real view is computed from the markers
+              // once they exist — see fitToEditions() below.
               center: [{{ city.map.lat }}, {{ city.map.lng }}],
               zoom: 12,
               scrollWheelZoom: false,
@@ -144,12 +146,41 @@
               }
             });
 
+            /* ── Fit the view to the editions, rather than guessing ────────
+               The map used to open at a hardcoded zoom 12 centred on the
+               city's own coordinates. Both parts were wrong for anything that
+               is not San Francisco.
+
+               Ellis County's three editions span 25.7 km; zoom 12 shows about
+               22.5 km, so Midlothian & Red Oak and Ennis fell outside the
+               frame entirely. And the centre was Waxahachie — the county seat
+               in cities.json — not the middle of the three markers at
+               32.4147, -96.7625, which is why the one visible dot sat dead
+               centre while the others hid off the edges.
+
+               Fitting to the markers fixes both at once and needs no
+               per-city tuning: a compact city zooms in, a spread-out county
+               zooms out, and a town added next year is right on the first
+               build. The padding is the margin around the outermost dots, so
+               nothing sits against the frame; maxZoom stops two adjacent
+               editions filling the screen at street level. */
+            function fitToEditions() {
+              var pts = clusters.map(function (c) { return [c.lat, c.lng]; });
+              if (!pts.length) return;
+              map.fitBounds(L.latLngBounds(pts), { padding: [48, 48], maxZoom: 13 });
+            }
+            fitToEditions();
+
             // Leaflet measures its container on creation. On a slow phone that
             // can happen before layout has settled, leaving the map centred on
             // the wrong place — which looks like the map drifting off the city.
             // Re-measuring once things settle costs nothing and fixes it.
-            window.addEventListener('load', function () { map.invalidateSize(); });
-            setTimeout(function () { map.invalidateSize(); }, 400);
+            //
+            // The fit has to be redone after each re-measure: a bounds
+            // calculated against the wrong container size gives the wrong
+            // zoom, which is the same bug wearing a different hat.
+            window.addEventListener('load', function () { map.invalidateSize(); fitToEditions(); });
+            setTimeout(function () { map.invalidateSize(); fitToEditions(); }, 400);
 
             // The stylesheet is the part whose absence is worst, because the
             // map still "works" and simply renders as a column of tiles. If the

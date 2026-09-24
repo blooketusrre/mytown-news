@@ -376,7 +376,34 @@ try {
     if (!/typeof L === 'undefined'/.test(home)) {
       errors.push("the city hub does not check that Leaflet loaded — a failed script would leave an empty bordered box");
     }
-    if (!/scrollHeight > el\.clientHeight/.test(home)) {
+    /* The view must be computed from the markers, not hardcoded.
+   *
+   * It opened at a fixed zoom 12 on the city's own coordinates. For San
+   * Francisco that happened to work; for Ellis County, whose three editions
+   * span 25.7 km against the ~22.5 km that zoom shows, two of the three dots
+   * fell outside the frame — and the centre was the county seat rather than
+   * the middle of the markers, so the one dot that was visible sat dead
+   * centre while the others hid off the edges.
+   *
+   * A fixed zoom is wrong for every city that is not the one it was tuned
+   * for, and silently: the map renders, the guard passes, and a reader
+   * concludes there is one edition. */
+  if (!/fitBounds/.test(home)) {
+    errors.push(
+      "the city hub map no longer fits its view to the editions — a fixed zoom " +
+      "leaves markers outside the frame on any city wider than the one it was tuned for"
+    );
+  }
+  // A bounds computed against the wrong container size yields the wrong zoom,
+  // so the fit has to follow every re-measure.
+  if (/invalidateSize/.test(home) && !/invalidateSize\(\);\s*fitToEditions\(\)/.test(home)) {
+    errors.push(
+      "the city hub re-measures the map without re-fitting it — the zoom would " +
+      "be computed against a stale container size"
+    );
+  }
+
+  if (!/scrollHeight > el\.clientHeight/.test(home)) {
       errors.push("the city hub does not detect an unstyled map — stacked tiles would render as a map running off southward");
     }
     if (!/openstreetmap\.org\/copyright/.test(home)) {
