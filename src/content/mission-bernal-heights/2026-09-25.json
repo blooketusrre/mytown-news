@@ -1,0 +1,800 @@
+{
+  "clusterSlug": "mission-bernal-heights",
+  "clusterName": "Mission & Bernal Heights",
+  "weekOf": "2026-09-25",
+  "topStories": [
+    {
+      "headline": "Four Clarion Alley Murals Painted Over; Artists Race to Restore Them Before Memory Fades",
+      "dek": "A property management company whitewashed four murals on August 24, and the Clarion Alley Mural Project is now fundraising $35,000 to rebuild the lost work.",
+      "body": "Four murals in Clarion Alley — the Mission District's one-block open-air gallery connecting Mission and Valencia streets between 17th and 18th — were painted white on August 24 when a crew sent by Makras Real Estate Group covered them while responding to what the company said was a graffiti complaint. Three murals were completely obliterated; a fourth was partially obscured before an artist who witnessed the whitewashing persuaded the worker to stop. The Clarion Alley Mural Project (CAMP), the volunteer nonprofit that has managed the alley's more than 50 works since 1992, said it received no warning before the incident.\n\nAmong the destroyed works was a memorial to San Francisco activist Kirsten Brydum. Nyia Luna, an artist with Graffiti Camp for Girls whose mural was painted over in 2026, said she had spent hours designing the piece. CAMP co-director Veronica Torres met with the office of District 9 Supervisor Jackie Fielder, whose staff has offered to assist with restoration efforts and longer-term care of the space.\n\nThe destruction exposed a structural tension in how the city handles graffiti abatement: San Francisco Public Works spends more than $20 million annually on graffiti removal and can fine property owners $362 plus cleanup costs if they fail to act within 30 days — yet the city's own abatement guidelines do not protect or restore tagged murals. CAMP launched a $35,000 fundraiser to cover restoration costs and sustain operations for the coming year. As of the most recent reports, restoration painting was expected to begin imminently, and only one wall had been reclaimed so far.",
+      "sourceUrl": "https://sfist.com/2026/09/08/murals-in-the-missions-clarion-alley-destroyed-landlord-claims-it-was-removing-graffiti/",
+      "sourceName": "SFist",
+      "tags": [
+        "murals",
+        "Clarion Alley",
+        "Mission District",
+        "public art",
+        "housing"
+      ]
+    },
+    {
+      "headline": "Hit-and-Run Driver Strikes Pedestrian at Mission and Park Streets in Bernal Heights, Flees Scene",
+      "dek": "A pedestrian is in critical condition after being struck Saturday night near the Mission-Bernal corridor; SFPD is asking the public for tips.",
+      "body": "A pedestrian was left with life-threatening injuries Saturday evening, September 20, after being struck by a vehicle at the intersection of Mission and Park streets in Bernal Heights. The driver fled the scene and had not been located as of the most recent police update. San Francisco police said officers responded at approximately 8:18 p.m. to a vehicle collision involving a pedestrian, and the case remains an open and active investigation.\n\nThe crash adds to a troubling trend documented by the city's own transportation agency. A July report from the San Francisco Municipal Transportation Agency found that severe-injury collisions in the first half of 2026 had increased by roughly 8 percent compared to the same period in 2025, with more than 300 traffic crashes resulting in pedestrian injuries so far this year.\n\nAnyone with information about the Bernal Heights hit-and-run is asked to contact SFPD at 415-575-4444 or text a tip to TIP411, beginning the message with the letters SFPD.",
+      "sourceUrl": "https://missionlocal.org/2026/09/hit-and-run-bernal-heights/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "Bernal Heights",
+        "traffic safety",
+        "hit-and-run",
+        "SFPD"
+      ]
+    },
+    {
+      "headline": "Applications Now Open for 35 Affordable Units at 3300 Mission Street — Deadline Is October 6",
+      "dek": "The nearly complete six-story building on the Mission-Bernal corridor will house low-income residents, but an unexpected PG&E infrastructure upgrade has complicated the timeline.",
+      "body": "Applications are open through October 6, 2026, for 3300 Mission Street, a 35-unit, 100 percent affordable housing development on the Mission-Bernal corridor — the first such project in the neighborhood in nearly 20 years. The six-story building, developed by a partnership of three Black-led organizations (Bernal Heights Housing Corporation, Tabernacle Community Development Corporation, and Mitchelville Real Estate Group), will serve individuals and small households earning between 30 and 80 percent of the area median income. Approximately 40 percent of the apartments are set aside for households who live in District 9, within a half-mile of the property, or have been displaced from housing in San Francisco.\n\nThe project replaced the site of the former 3300 Club and the Graywood Hotel, which were destroyed in a 2016 fire. Construction broke ground in November 2024. The building was originally expected to be complete in summer 2026, but an unexpected expansion of the project's PG&E electrical infrastructure work — required to serve a broader portion of Bernal Heights — has quadrupled the electrical budget and may extend the delivery timeline, according to a May 2026 update from Bernal Heights Neighborhood Center. The ground floor will include retail space; BHNC is also seeking a commercial tenant for a prime corner location at Mission and 29th Street.\n\nInterested applicants can reach the leasing team through the Bernal Heights Neighborhood Center at 3300mission@bhnc.org.",
+      "sourceUrl": "https://bhnc.org/events/",
+      "sourceName": "Bernal Heights Neighborhood Center",
+      "tags": [
+        "affordable housing",
+        "Bernal Heights",
+        "Mission District",
+        "development",
+        "District 9"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "COCOON: An Orchestra Sleepover Concert",
+      "startDate": "2026-09-26",
+      "date": "Friday–Saturday, September 26–27",
+      "time": "9:30 PM (doors); concert through sunrise",
+      "location": "Gray Area / Grand Theater, 2665 Mission St, Mission District",
+      "description": "Magik*Magik Orchestra presents San Francisco's first-ever orchestra sleepover concert, with attendees sleeping on camping cots surrounded by live strings, winds, horns, and voice. A final 26-minute composition is timed to end at the moment of sunrise — 7:01 AM on September 27.",
+      "sourceUrl": "https://missionlocal.org/2026/09/magikmagik-orchestra-invites-you-to-a-sleep-over-in-the-mission/",
+      "sourceName": "Mission Local / Luma"
+    },
+    {
+      "title": "3300 Mission Street Affordable Housing — Application Deadline",
+      "startDate": "2026-10-06",
+      "date": "Tuesday, October 6",
+      "time": "",
+      "location": "Apply via bhnc.org or email 3300mission@bhnc.org",
+      "description": "Last day to apply for one of 35 studio apartments at the new 100% affordable development on the Mission-Bernal corridor, serving households earning 30–80% of area median income. About 40% of units are reserved for District 9 residents or San Francisco displacement cases.",
+      "sourceUrl": "https://bhnc.org/events/",
+      "sourceName": "Bernal Heights Neighborhood Center"
+    },
+    {
+      "title": "Valencia LIVE! — October Street Party",
+      "startDate": "2026-10-08",
+      "date": "Thursday, October 8",
+      "time": "5:00 PM–10:00 PM",
+      "location": "Valencia Street between 18th and 21st Streets, Mission District",
+      "description": "The final Valencia LIVE! of the 2026 season closes out the monthly free street celebration with live music curated by Carnaval SF, cocktails to go from participating businesses, art, and shopping in the newly designated Valencia Street Entertainment Zone.",
+      "sourceUrl": "https://sf.funcheap.com/event-series/valencia-live-night-market-2nd-thu/",
+      "sourceName": "Funcheap SF / Valencia Corridors Merchants Association"
+    },
+    {
+      "title": "Balmy Alley Mural Restoration — Work Underway",
+      "startDate": "2026-09-25",
+      "date": "Ongoing",
+      "time": "",
+      "location": "Balmy Alley (between 24th and 25th streets), Mission District",
+      "description": "A team of original muralists, funded by a $129,294 Community Challenge Grant from the city, is restoring six historic murals in Balmy Alley after Arts Commission design approvals; work was expected to begin in September. A separate Avenue Greenlight grant is also funding a partial restoration of the Women's Building's iconic 'Maestrapeace' mural on 18th Street.",
+      "sourceUrl": "https://eltecolote.org/content/en/mission-muralists-push-to-make-restoration-a-priority/",
+      "sourceName": "El Tecolote"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Valencia Street Is Now a Full-Time Entertainment Zone — Open-Container Rules Apply Every Day",
+      "body": "As of May 2026, when Mayor Lurie signed legislation creating five new entertainment zones and the city published its Valencia Street management plan, the stretch of Valencia between 16th and 21st Streets became an active entertainment zone seven days a week from noon to midnight. Bars and restaurants may sell alcoholic beverages to go for outdoor consumption during those hours on any day of the year, subject to standard ABC permit conditions. The designation followed months of advocacy from the Valencia Corridors Merchants Association and was co-sponsored in the Board of Supervisors by District 9 Supervisor Jackie Fielder.",
+      "sourceUrl": "https://www.sf.gov/valencia-street-entertainment-zone",
+      "sourceName": "SF.gov",
+      "tags": [
+        "Valencia Street",
+        "entertainment zone",
+        "small business",
+        "Mission District"
+      ]
+    },
+    {
+      "headline": "SFUSD School Board Race Heats Up Ahead of November 3 General Election",
+      "body": "Three seats on the San Francisco Unified School District board are on the November 3, 2026, general election ballot, with the race drawing sharp lines between progressive and moderate slates. Mission Local has been tracking the field weekly; the race features GrowSF, the teachers union, and the Parent Coalition as major organized forces. Non-citizen parents of SFUSD students are eligible to vote in the school board contest. Voter registration information is available at sf.gov.",
+      "sourceUrl": "https://missionlocal.org/2026/04/sf-school-board-meet-the-candidates/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "SFUSD",
+        "school board",
+        "election",
+        "November 2026"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Murals in the Mission's Clarion Alley Destroyed, Landlord Claims It Was Removing Graffiti",
+      "url": "https://sfist.com/2026/09/08/murals-in-the-missions-clarion-alley-destroyed-landlord-claims-it-was-removing-graffiti/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Clarion Alley Murals Painted Over, SF Artists Seek Answers",
+      "url": "https://hoodline.com/2026/09/clarion-alley-murals-erased-in-paint-over-artists-demand-answers-and-repair-funds/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "San Francisco murals in Mission District's Clarion Alley painted over after owner calls it 'graffiti'",
+      "url": "https://abc7news.com/post/san-francisco-murals-mission-districts-clarion-alley-painted-over-after-owner-calls-it-graffiti/19804279/",
+      "publication": "ABC7 San Francisco"
+    },
+    {
+      "title": "Four murals in Clarion Alley were painted over last week",
+      "url": "https://missionlocal.org/2026/09/four-murals-in-clarion-alley-were-painted-over-last-week/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Bernal heights hit-and-run leaves pedestrian in serious condition",
+      "url": "https://missionlocal.org/2026/09/hit-and-run-bernal-heights/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "3300 Mission Street — Events & Applications",
+      "url": "https://bhnc.org/events/",
+      "publication": "Bernal Heights Neighborhood Center"
+    },
+    {
+      "title": "3300 Mission Street Project Update",
+      "url": "https://bhnc.org/housing/3300-mission-street/",
+      "publication": "Bernal Heights Neighborhood Center"
+    },
+    {
+      "title": "Magik*Magik Orchestra invites you to a sleep over in the Mission",
+      "url": "https://missionlocal.org/2026/09/magikmagik-orchestra-invites-you-to-a-sleep-over-in-the-mission/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "COCOON — An Orchestra Sleepover Concert",
+      "url": "https://luma.com/magik18",
+      "publication": "Luma"
+    },
+    {
+      "title": "Valencia LIVE! 2026",
+      "url": "https://sf.funcheap.com/event-series/valencia-live-night-market-2nd-thu/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Valencia Street Entertainment Zone",
+      "url": "https://www.sf.gov/valencia-street-entertainment-zone",
+      "publication": "SF.gov"
+    },
+    {
+      "title": "Mission muralists push to make restoration a priority",
+      "url": "https://eltecolote.org/content/en/mission-muralists-push-to-make-restoration-a-priority/",
+      "publication": "El Tecolote"
+    },
+    {
+      "title": "Original muralists come home to Balmy Alley with a grant to save their work",
+      "url": "https://missionlocal.org/2026/07/muralists-grant-balmy-alley-restoration-art/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Meet the S.F. school board candidates",
+      "url": "https://missionlocal.org/2026/04/sf-school-board-meet-the-candidates/",
+      "publication": "Mission Local"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "El Farolito",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Taqueria",
+        "description": "A Mission District institution celebrated citywide for its massive super burritos, al pastor, carne asada, and very late-night hours — cash only.",
+        "address": "2779 Mission St",
+        "phone": "415-824-7877",
+        "website": "https://elfarolitosf.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Flour + Water",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian pasta restaurant",
+        "description": "An acclaimed Mission District restaurant renowned for its nightly-changing handmade pasta tasting menu and California-Italian seasonal cuisine, open since 2009.",
+        "address": "2401 Harrison St",
+        "phone": "415-826-7000",
+        "website": "https://www.flourandwater.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Foreign Cinema",
+        "cuisineGroup": "Other",
+        "type": "California-Mediterranean restaurant with film screenings",
+        "description": "A landmark Mission restaurant since 1999, pairing eclectic California-Mediterranean cuisine with nightly foreign and independent film screenings in a heated outdoor courtyard.",
+        "address": "2534 Mission St",
+        "phone": "415-648-7600",
+        "website": "https://foreigncinema.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Loló",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Modern Mexican restaurant",
+        "description": "A neighborhood favorite serving creative Mexican small plates, mezcal cocktails, and seasonal dishes in a lively, colorful setting on 22nd Street.",
+        "address": "3230 22nd St",
+        "phone": "415-643-5656",
+        "website": "https://lolosf.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Lolinda",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Argentine steakhouse",
+        "description": "A sophisticated Argentine-inspired steakhouse on Mission Street known for asado-grilled meats, inventive cocktails, and a rooftop bar with neighborhood views.",
+        "address": "2518 Mission St",
+        "phone": "415-550-6970",
+        "website": "https://lolinda.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Farmhouse Kitchen Thai Cuisine",
+        "cuisineGroup": "Asian",
+        "type": "Thai restaurant",
+        "description": "A highly rated Thai restaurant on Florida Street serving refined, authentic Thai dishes in an elegantly decorated dining room inspired by traditional Thai farm houses.",
+        "address": "710 Florida St",
+        "phone": "415-814-2920",
+        "website": "https://farmhousesf.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Penny Roma",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian-American trattoria",
+        "description": "A warmly lit 22nd Street trattoria from the Flour + Water Hospitality Group, offering Italian-American classics including pasta, pizza, and Roman-style dishes.",
+        "address": "3309 22nd St",
+        "phone": "415-872-9815",
+        "website": "https://pennyromasf.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Trick Dog",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Award-winning cocktail bar",
+        "description": "An award-winning craft cocktail bar on 20th Street with a rotating, thematic menu of inventive drinks and a convivial neighborhood atmosphere.",
+        "address": "3010 20th St",
+        "phone": "415-471-2999",
+        "website": "https://trickdogbar.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "El Rio",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood bar and music venue",
+        "description": "A legendary Mission bar since 1977 known for its large outdoor patio, live music, and inclusive, community-spirited atmosphere on Mission Street.",
+        "address": "3158 Mission St",
+        "phone": "415-282-3325",
+        "website": "https://elriosf.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Al Carajo",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican breakfast and taqueria",
+        "description": "A neighborhood gem on 22nd Street celebrated by many as the home of the best breakfast burrito in San Francisco, made with fresh, quality ingredients.",
+        "address": "3339 22nd St",
+        "phone": "415-829-2623",
+        "website": "",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Bon, Nene",
+        "cuisineGroup": "Asian",
+        "type": "Japanese bistro",
+        "description": "A compact, warmly reviewed Japanese bistro in the Mission serving gyudon, Japanese curry, and comfort-focused dishes at fair prices.",
+        "address": "3369 Mission St",
+        "phone": "415-829-2880",
+        "website": "",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Sangria & Salt",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Latin restaurant and sangria bar",
+        "description": "A vibrant Mission District spot known for housemade sangria, fresh ceviche, jerk chicken tacos, and warm, owner-led hospitality.",
+        "address": "3228 Mission St",
+        "phone": "415-374-7702",
+        "website": "",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Emmy's Spaghetti Shack",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian-American comfort restaurant",
+        "description": "A beloved neighborhood fixture on Mission Street serving generous portions of spaghetti, meatballs, and Italian-American comfort classics in a casual, no-frills setting.",
+        "address": "3230 Mission St",
+        "phone": "415-206-2086",
+        "website": "https://emmysspaghettishack.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Front Porch",
+        "cuisineGroup": "Seafood & American",
+        "type": "Southern comfort food restaurant",
+        "description": "A cozy neighborhood spot serving Southern-inspired comfort food including fried chicken, mac and cheese, and craft cocktails in a relaxed Bernal Heights setting.",
+        "address": "65A 29th St",
+        "phone": "415-695-7800",
+        "website": "https://thefrontporchsf.com",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "Royal Cuckoo Organ Bar",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Vintage organ bar",
+        "description": "A Mission Street institution featuring nightly live vintage organ music, craft cocktails, and a warm, eccentric atmosphere that draws devoted regulars from across the city.",
+        "address": "3202 Mission St",
+        "phone": "415-550-8667",
+        "website": "https://royalcuckoo.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Flour & Water Pasta Shop",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Casual pasta counter",
+        "description": "The walk-in, counter-service sibling of Flour + Water on 18th Street, offering fresh handmade pasta dishes and pastries for a quick, high-quality meal.",
+        "address": "3418 18th St",
+        "phone": "415-341-0890",
+        "website": "https://flourandwaterpastashop.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Ritual Coffee Roasters (Valencia)",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Specialty coffee roaster and café",
+        "description": "One of the original Bay Area third-wave coffee roasters, Ritual's Valencia Street location is a neighborhood hub for carefully sourced and roasted single-origin coffees.",
+        "address": "1026 Valencia St",
+        "phone": "415-641-1011",
+        "website": "https://ritualroasters.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "El Farolito (Outer Mission)",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Taqueria",
+        "description": "The Outer Mission location of the beloved El Farolito taqueria chain, serving legendary super burritos and tacos at the southern end of Mission Street.",
+        "address": "4817 Mission St",
+        "phone": "415-337-5500",
+        "website": "https://elfarolitosf.com",
+        "neighborhood": "Outer Mission",
+        "notable": ""
+      },
+      {
+        "name": "Dandelion Chocolate Café",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Bean-to-bar chocolate factory and café",
+        "description": "A craft chocolate maker on Valencia Street sourcing cacao directly from farms and making each bar in small batches on-site, with a factory store and tasting café open to visitors.",
+        "address": "740 Valencia St",
+        "phone": "415-349-0942",
+        "website": "https://dandelionchocolate.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Inn San Francisco",
+        "type": "Victorian bed and breakfast",
+        "description": "A beautifully restored 1872 Italianate Victorian mansion on South Van Ness Avenue operating as a distinguished B&B, with a garden, hot tub, and individually decorated rooms.",
+        "address": "943 S Van Ness Ave",
+        "phone": "415-641-0188",
+        "website": "https://www.innsf.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      }
+    ],
+    "shops": [
+      {
+        "name": "Paxton Gate",
+        "shopGroup": "Home & Gifts",
+        "type": "Natural curiosities and oddities shop",
+        "description": "A Mission District landmark since 1992, Paxton Gate stocks taxidermy, fossils, carnivorous plants, skulls, crystals, and natural science ephemera at 824 Valencia St.",
+        "address": "824 Valencia St",
+        "phone": "415-824-1872",
+        "website": "https://paxtongate.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "826 Valencia (Pirate Supply Store)",
+        "shopGroup": "Books & Literature",
+        "type": "Youth writing nonprofit and pirate supply store",
+        "description": "The whimsical Pirate Supply Store front funds 826 Valencia's free youth writing and tutoring programs, making it one of the most community-rooted and quirky shops in the city.",
+        "address": "826 Valencia St",
+        "phone": "415-642-5905",
+        "website": "https://826valencia.org",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Dog Eared Books",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "A beloved Valencia Street independent bookstore offering a thoughtfully curated selection of new, used, and hard-to-find titles with a strong local and community focus.",
+        "address": "900 Valencia St",
+        "phone": "415-282-1901",
+        "website": "https://dogearedbooks.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "City Art Gallery & Co-op",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Artist cooperative and gallery",
+        "description": "A worker-owned cooperative gallery on Valencia Street showcasing and selling affordable original artwork by a rotating roster of Bay Area artists.",
+        "address": "828 Valencia St",
+        "phone": "415-970-9900",
+        "website": "https://cityartgallery.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Bi-Rite Market",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Neighborhood grocery and specialty food market",
+        "description": "A Mission District institution on 18th Street offering high-quality local and artisan groceries, prepared foods, and a celebrated cheese counter for over two decades.",
+        "address": "3639 18th St",
+        "phone": "415-241-9760",
+        "website": "https://biritemarket.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bi-Rite Creamery",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Artisan ice cream shop",
+        "description": "The wildly popular sister creamery to Bi-Rite Market, churning small-batch organic ice creams in flavors like salted caramel and ricanelas, with lines perpetually stretching down 18th Street.",
+        "address": "3692 18th St",
+        "phone": "415-626-5600",
+        "website": "https://biritemarket.com/creamery",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Dandelion Chocolate",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Bean-to-bar chocolate factory store",
+        "description": "A craft chocolate maker on Valencia Street that sources cacao directly from farms and makes each bar in small batches on-site, with a factory store open to visitors.",
+        "address": "740 Valencia St",
+        "phone": "415-349-0942",
+        "website": "https://dandelionchocolate.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Precita Eyes Mural Arts Visitor Center",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Mural arts center and gift shop",
+        "description": "The Mission's foremost community mural organization sells prints, cards, and art supplies from its 24th Street visitor center, and leads guided walking tours of the neighborhood's legendary murals.",
+        "address": "2981 24th St",
+        "phone": "415-285-2287",
+        "website": "https://precitaeyes.org",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Alamo Drafthouse New Mission",
+        "shopGroup": "Other",
+        "type": "Dine-in cinema",
+        "description": "The restored 1916 New Mission Theatre, now a dine-in cinema screening first-run and repertory films with a full food and cocktail menu served in-seat.",
+        "address": "2550 Mission St",
+        "phone": "415-549-5959",
+        "website": "https://drafthouse.com/sf/theater/new-mission",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Dance Mission Theater",
+        "venueGroup": "Theater & Comedy",
+        "type": "Nonprofit dance theater and studio",
+        "description": "A women-led, multicultural nonprofit performance venue and dance school on 24th Street, home to Dance Brigade and hosting roughly 1,500 students weekly across 50-plus classes.",
+        "address": "3316 24th St",
+        "phone": "415-826-4441",
+        "website": "https://dancemissiontheater.org",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "SF Community Music Center (CMC)",
+        "venueGroup": "Music Venues",
+        "type": "Community music school and concert hall",
+        "description": "A Mission District nonprofit music school founded in 1921, offering affordable instruction and hosting concerts and community events in a beautifully restored Victorian carriage house concert hall.",
+        "address": "544 Capp St",
+        "phone": "415-647-6015",
+        "website": "https://sfcmc.org",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Alamo Drafthouse New Mission",
+        "venueGroup": "Cinema",
+        "type": "Dine-in cinema",
+        "description": "The lovingly restored 1916 New Mission Theatre, now a dine-in cinema screening first-run and repertory films with a full menu and cocktails served in-seat.",
+        "address": "2550 Mission St",
+        "phone": "415-549-5959",
+        "website": "https://drafthouse.com/sf/theater/new-mission",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Portal Cinema (Opening Fall 2026)",
+        "venueGroup": "Cinema",
+        "type": "Nonprofit arthouse cinema",
+        "description": "A forthcoming 49-seat nonprofit arthouse cinema at 3293 Mission St. in Bernal Heights, targeting a late-October or November 2026 opening with indie, global, and repertory programming in digital, 35mm, and 16mm formats.",
+        "address": "3293 Mission St",
+        "phone": "",
+        "website": "https://theportalcinema.com",
+        "neighborhood": "Bernal Heights",
+        "notable": "New"
+      },
+      {
+        "name": "Bernal Heights Outdoor Cinema",
+        "venueGroup": "Cinema",
+        "type": "Free outdoor community film festival",
+        "description": "A volunteer-driven annual festival since 2004 presenting free screenings of local filmmakers' short films in Bernal Heights parks and community spaces each September.",
+        "address": "Various parks, Bernal Heights",
+        "phone": "",
+        "website": "https://bhoutdoorcine.org",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "Foreign Cinema (Courtyard Screenings)",
+        "venueGroup": "Cinema",
+        "type": "Restaurant with nightly film screenings",
+        "description": "Foreign Cinema has projected foreign and independent films nightly against the wall of its heated outdoor courtyard since 1999, pairing California-Mediterranean cuisine with cinema.",
+        "address": "2534 Mission St",
+        "phone": "415-648-7600",
+        "website": "https://foreigncinema.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "500 Capp Street Foundation",
+        "venueGroup": "Museums & Cultural",
+        "type": "Artist home museum",
+        "description": "The preserved home and studio of pioneering conceptual artist David Ireland, open to the public as a museum celebrating his legacy and the Mission's art history.",
+        "address": "500 Capp St",
+        "phone": "415-872-9822",
+        "website": "https://500cappstreet.org",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Galería de la Raza",
+        "venueGroup": "Art Galleries",
+        "type": "Community art gallery",
+        "description": "Founded in 1970, Galería de la Raza is a pioneering nonprofit gallery on 24th Street dedicated to exhibiting and promoting Chicanx and Latinx art and culture in the heart of the Mission.",
+        "address": "2857 24th St",
+        "phone": "415-826-8009",
+        "website": "https://galeriadelaraza.org",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Mission Cultural Center for Latino Arts",
+        "venueGroup": "Museums & Cultural",
+        "type": "Latinx arts and cultural center",
+        "description": "A city-funded cultural center on Mission Street presenting visual art exhibitions, performing arts, and arts education programs for the Latino community since 1977.",
+        "address": "2868 Mission St",
+        "phone": "415-821-1155",
+        "website": "https://missionculturalcenter.org",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Precita Eyes Muralists",
+        "venueGroup": "Museums & Cultural",
+        "type": "Mural arts center",
+        "description": "The Mission's foremost community mural organization offers guided walking tours of the neighborhood's legendary murals, a gallery of mural art, and ongoing arts education programs from its 24th Street visitor center.",
+        "address": "2981 24th St",
+        "phone": "415-285-2287",
+        "website": "https://precitaeyes.org",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Mission Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Hot yoga and wellness studio",
+        "description": "Serving the Mission District since 2001, Mission Yoga offers hot yoga, Hot Pilates, Buti Yoga, Yin Yoga, sound baths, and breathwork at its 2415 Mission St. location.",
+        "address": "2415 Mission St",
+        "phone": "415-401-9642",
+        "website": "https://missionyogasf.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "HAUM SF – Mission Studio",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "A spacious and light-filled Mission District yoga collective offering Hatha, Vinyasa, Restorative, and Slow Flow classes in a welcoming, inclusive atmosphere.",
+        "address": "Mission District",
+        "phone": "",
+        "website": "https://haumstudios.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "AstaYoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Ashtanga and Rocket yoga studio",
+        "description": "A Mission District yoga studio offering instruction in Rocket and Ashtanga Vinyasa yoga, praised for knowledgeable instructors and a community-centered atmosphere.",
+        "address": "Mission District",
+        "phone": "",
+        "website": "https://astayoga.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "24th Street Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Community yoga studio",
+        "description": "A neighborhood yoga studio on 24th Street in the heart of the Mission offering a full schedule of classes for all skill levels in a community-oriented setting.",
+        "address": "3150 24th St",
+        "phone": "415-821-9642",
+        "website": "https://24thstreetyoga.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "MX3 Fitness (Mission)",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "LGBTQ+-owned community gym",
+        "description": "An LGBTQ+-owned and operated fitness studio in the Mission offering personal training and group fitness classes, proudly serving San Francisco since 2016.",
+        "address": "Mission District",
+        "phone": "",
+        "website": "https://mx3fitness.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Mission Dolores Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban park",
+        "description": "San Francisco's beloved Dolores Park offers tennis courts, a playground, two soccer fields, a basketball court, and iconic hilltop views — the neighborhood's de facto outdoor living room.",
+        "address": "19th St & Dolores St",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/mission-dolores-park/",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bernal Heights Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Hilltop open space with off-leash dog area",
+        "description": "The iconic open-space hilltop park atop Bernal Heights offers panoramic 360-degree views of San Francisco, a beloved off-leash dog area, and trails winding around the rocky summit.",
+        "address": "Bernal Heights Blvd",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/bernal-heights-park/",
+        "neighborhood": "Bernal Heights",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bernal Heights Playground",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Renovated neighborhood playground",
+        "description": "Newly renovated and reopened in 2026 by SF Recreation and Parks, this fully accessible and modernized playground features new ADA-compliant equipment built with community input.",
+        "address": "Bernal Heights Blvd & Moultrie St",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Bernal Heights",
+        "notable": "New"
+      },
+      {
+        "name": "Precita Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood park",
+        "description": "A beloved community green space at the foot of Bernal Heights with lawns, a playground, and a community garden, frequently used as a venue for outdoor cinema and neighborhood gatherings.",
+        "address": "Precita Ave & Folsom St",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "Cayuga Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Sculptural neighborhood park",
+        "description": "A singular park beneath the BART tracks in the Outer Mission featuring dense vegetation, over 100 whimsical wood sculptures carved by the park's creator, a small baseball field, and tennis courts.",
+        "address": "Cayuga Ave",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Outer Mission",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-09-25",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-09-25",
+        "high": 69,
+        "low": 55,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 1
+      },
+      {
+        "date": "2026-09-26",
+        "high": 66,
+        "low": 55,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-27",
+        "high": 61,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 4
+      },
+      {
+        "date": "2026-09-28",
+        "high": 68,
+        "low": 56,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-29",
+        "high": 74,
+        "low": 57,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-30",
+        "high": 74,
+        "low": 57,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-01",
+        "high": 71,
+        "low": 56,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      }
+    ]
+  }
+}

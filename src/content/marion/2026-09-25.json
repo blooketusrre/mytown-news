@@ -1,0 +1,771 @@
+{
+  "clusterSlug": "marion",
+  "clusterName": "Marion",
+  "weekOf": "2026-09-25",
+  "topStories": [
+    {
+      "headline": "OSU Marion Opens Downtown Engagement Hub on North Main Street",
+      "dek": "Ohio State University at Marion has cut the ribbon on a new community space at 146 N. Main Street, giving faculty, students, and residents a shared downtown home for collaboration.",
+      "body": "The Ohio State University at Marion opened its Downtown Engagement Hub on Wednesday, September 16, 2026, with a ribbon-cutting ceremony held from 4 to 6 p.m. at 146 N. Main Street — a building that has, over the years, been a restaurant, a pawn shop, and various other businesses. The university says the Hub is not intended to function as a classroom or satellite office but rather as a place where people who live and work in Marion and those who teach and study at Ohio State can sit down together and build something.\n\nDean and Director Jennifer Schlueter spoke with WOSU Public Media ahead of the opening, describing the Hub's aim to bring people together to collaborate and work on solutions for the community. The space is designed to host design-thinking sessions, civic roundtables, public exhibits, student showcases, leadership workshops, and cultural programming — with an explicit goal of connecting the campus more directly to downtown Marion's ongoing revival.\n\nThe Hub also provides a physical home for the recently launched Marion Futures Lab, a one-year community project supported by a $49,480 Community Engagement seed grant from Ohio State. Led by Professor of Psychology Dr. Nikole Patson, the Futures Lab brings together faculty, students, artists, and community members to explore how shared memories and cultural traditions shape Marion's future, with plans for public events, performances, exhibitions, and a digital Marion Memories Atlas.\n\nFaculty wishing to hold community office hours downtown, run class sessions, or place community-engaged research projects are encouraged to reach out to Leslie Beyer-Hermsen at the Hub. Members of the public can walk in off the street.",
+      "sourceUrl": "https://www.wosu.org/higher-education-and-k-12-education/2026-09-15/ohio-state-marion-opens-new-downtown-hub-for-community-problem-solving",
+      "sourceName": "WOSU Public Media",
+      "tags": [
+        "education",
+        "downtown",
+        "community"
+      ]
+    },
+    {
+      "headline": "Marion City Schools Holds 3-Star State Report Card Rating for Second Year Running",
+      "dek": "The district's 2025–26 Ohio State Report Card shows continued momentum in graduation rates and career readiness, with Harding High School and Garfield Elementary leading gains.",
+      "body": "Marion City Schools sustained its overall 3-Star rating on the Ohio Department of Education and Workforce's 2025–26 State Report Card for the second consecutive year, with notable gains in two specific categories. Both Graduation Rate and College, Career, Workforce and Military Readiness climbed from 2 Stars to 3 Stars, according to reporting by Marion County Now. Harding High School and Garfield Elementary led the district's strongest improvements.\n\nThe results build on momentum the district highlighted at the start of the school year. Superintendent Brian Murphy's annual State of Our Schools address had pointed to $1.9 million dedicated to strengthening K–12 literacy instruction and new curriculum maps as drivers of the progress. The district's stated theme for the 2025–26 year is 'Achieve. Believe. Connect.'\n\nMarion City Schools serves students across the city, with Marion Harding High School as the district's sole high school.",
+      "sourceUrl": "https://www.newsbreak.com/news/4892238060028-marion-city-schools-improves-graduation-and-career-readiness-ratings",
+      "sourceName": "Marion County Now / NewsBreak",
+      "tags": [
+        "education",
+        "schools",
+        "Marion City Schools"
+      ]
+    },
+    {
+      "headline": "Judge Disqualifies Prosecutor from Marion Police Officer's Rape Case",
+      "dek": "Marion County Common Pleas Court Judge Matthew Frericks has ruled that Prosecutor Ray Grogan cannot prosecute the case against officer Brendon Damron, citing conflict-of-interest concerns.",
+      "body": "Marion County Common Pleas Court Judge Matthew Frericks issued a decision this week disqualifying Marion County Prosecutor Ray Grogan from prosecuting the criminal case involving Marion Police Officer Brendon Damron, according to Marion County Now. The ruling is the latest development in a high-profile case that has wound through multiple conflict-of-interest challenges since Damron's arrest in February.\n\nDamron, 24, is facing two counts of rape and one count of abduction stemming from an alleged off-duty incident reported to have occurred at a private residence on February 11. He was taken into custody on February 13 and has been on leave from the Marion Police Department. Earlier in the case, the Ohio Supreme Court separately disqualified Marion County Common Pleas Judge Todd Anderson from presiding over the trial, with Chief Justice Sharon L. Kennedy ruling that the disqualification was necessary to preserve the fairness and integrity of the judicial process.\n\nDefense attorney Joel Spitzer had argued that intertwined professional ties between the Marion Police Department, the Sheriff's Office, and the Prosecutor's Office created conflicts of interest. With Judge Frericks's latest ruling removing Grogan from the prosecution, the case will require a different office to take over. Marion County Now has indicated it will continue to cover the developing story.",
+      "sourceUrl": "https://marioncountynow.com/",
+      "sourceName": "Marion County Now",
+      "tags": [
+        "crime",
+        "courts",
+        "police"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Walk to End Alzheimer's — Marion, OH",
+      "startDate": "2026-09-26",
+      "date": "Saturday, September 26",
+      "time": "Various times",
+      "location": "The Marion Campus, 1465 Mount Vernon Ave., Marion",
+      "description": "The Alzheimer's Association's annual community walk raises awareness and funds for Alzheimer's care, support, and research. Registration and team information available at alz.org.",
+      "sourceUrl": "https://act.alz.org/site/TR/Walk2026/OH-CentralOhio?pg=entry&fr_id=19828",
+      "sourceName": "Alzheimer's Association"
+    },
+    {
+      "title": "OSU Marion Engineering Open House",
+      "startDate": "2026-09-29",
+      "date": "Tuesday, September 29",
+      "time": "5:30 PM",
+      "location": "Library Classroom Building, Ohio State University at Marion campus",
+      "description": "Ohio State Marion hosts an Engineering Open House sponsored by Cenovus Energy, offering prospective students, families, employers, and community members an inside look at the campus's growing engineering technology program.",
+      "sourceUrl": "https://osumarion.osu.edu/",
+      "sourceName": "Ohio State University at Marion"
+    },
+    {
+      "title": "Marion Public Library Annual Book Sale",
+      "startDate": "2026-10-03",
+      "date": "Saturday, October 3",
+      "time": "Various times",
+      "location": "Marion Public Library, 445 E. Church St., Marion",
+      "description": "The library's annual book sale returns October 3, with donations collected beginning August 22. Browsers can expect tables of gently used books at low prices.",
+      "sourceUrl": "https://marionlib.org/",
+      "sourceName": "Marion Public Library"
+    },
+    {
+      "title": "OSU Marion Five Nights on Campus — 2026-27 Season",
+      "startDate": "2026-10-01",
+      "date": "Through Spring 2027",
+      "time": "Various times",
+      "location": "Morrill Hall Auditorium, Ohio State University at Marion campus",
+      "description": "Ohio State Marion has announced its 2026–27 Five Nights on Campus performing arts series, featuring tribute acts, jazz, illusion, and pop/swing performances designed to bring exceptional cultural programming to the Marion community.",
+      "sourceUrl": "https://osumarion.osu.edu/",
+      "sourceName": "Ohio State University at Marion"
+    },
+    {
+      "title": "Harding Presidential Sites — Press House Exhibition Open",
+      "startDate": "2026-09-25",
+      "date": "Ongoing through November (Wed–Sun)",
+      "time": "9:00 AM–5:00 PM (Wed–Sat); 12:00–5:00 PM (Sun)",
+      "location": "Harding Presidential Sites, 380 Mt. Vernon Ave., Marion",
+      "description": "Phase 1 of the permanent Press House exhibition, \"Spreading the Word: The Press & Warren Harding's Front Porch Campaign,\" is now open. Timed tours of the Harding Home are available on the hour beginning at 10 a.m. Wednesday–Saturday and 1 p.m. Sundays.",
+      "sourceUrl": "https://hardingpresidentialsites.org/",
+      "sourceName": "Harding Presidential Sites"
+    },
+    {
+      "title": "Third Thursdays in Downtown Marion — Final 2026 Event",
+      "startDate": "2026-10-15",
+      "date": "Thursday, October 15",
+      "time": "6:00–9:00 PM",
+      "location": "Downtown Marion",
+      "description": "Hosted by Downtown Marion Inc., Third Thursdays run May through October and feature live music, food trucks, artisan vendors, and family-friendly activities throughout the downtown district.",
+      "sourceUrl": "https://www.visitmarionohio.com/attractions/third-thursdays-in-downtown-marion",
+      "sourceName": "Marion Area Convention and Visitors Bureau"
+    },
+    {
+      "title": "Marion Tallgrass Trail Seasonal Nature Hikes",
+      "startDate": "2026-09-25",
+      "date": "Ongoing",
+      "time": "Various times",
+      "location": "Marion Tallgrass Trail, 2093 Holland Rd. W., Marion",
+      "description": "The Marion Tallgrass Trail remains open for walkers and cyclists through the fall season; naturalist-led hikes have been offered through September in partnership with the Marion Area Convention and Visitors Bureau.",
+      "sourceUrl": "https://www.visitmarionohio.com/calendar/",
+      "sourceName": "Marion Area Convention and Visitors Bureau"
+    },
+    {
+      "title": "5th 2026 Love Your Neighborhood Clean-Up",
+      "startDate": "2026-10-01",
+      "date": "Coming soon (date TBA)",
+      "time": "9:00 AM–2:30 PM",
+      "location": "Marion (neighborhood TBA — check marionohio.us)",
+      "description": "The City of Marion has announced its fifth and final Love Your Neighborhood clean-up event of 2026. Residents in the designated area may place unwanted items at the curbside or request volunteer assistance; check the city's website or Facebook page for the specific neighborhood and dates.",
+      "sourceUrl": "https://www.marionohio.us/",
+      "sourceName": "City of Marion, OH"
+    }
+  ],
+  "moreNews": [],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Bucci's Italian Scratch Kitchen",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Scratch-made Italian restaurant",
+        "description": "Housed in the historic 1928 CD&M Interurban Station, Bucci's serves fresh pastas, signature pizzas, and chef-driven specials, and hosts the popular 'Brunch, Please!' mimosa singalong brunch.",
+        "address": "320 W. Center St., Marion, OH 43302",
+        "phone": "740-661-0042",
+        "website": "https://www.buccisitalian.com/",
+        "neighborhood": "Downtown Marion",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Attaboys Comfort Cuisine",
+        "cuisineGroup": "Other",
+        "type": "Soul food and comfort cuisine restaurant",
+        "description": "Chef-owned 1920s-themed comfort food eatery directly across from the Marion Palace Theatre, known for catfish, po'boys, and a full-service bar.",
+        "address": "289 W. Center St., Marion, OH 43302",
+        "phone": "740-914-4914",
+        "website": "https://www.facebook.com/p/Attaboys-Comfort-Cuisine-100063469092764/",
+        "neighborhood": "Downtown Marion",
+        "notable": ""
+      },
+      {
+        "name": "Lazeez Grill",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Fast-casual Mediterranean restaurant",
+        "description": "Downtown Marion's Mediterranean counter-service spot serving build-your-own bowls, pita wraps, falafel, gyros, hummus, and loaded fries seven days a week.",
+        "address": "121 E. Church St., Marion, OH 43302",
+        "phone": "614-943-1383",
+        "website": "https://www.lazeezgrillohio.com/",
+        "neighborhood": "Downtown Marion",
+        "notable": "New"
+      },
+      {
+        "name": "Shovel City Drinkery",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Upscale cocktail and bourbon bar",
+        "description": "Prohibition-era-inspired craft cocktail and bourbon bar in the historic Hughs & Cleary building on North Main Street, featuring over 350 whiskies, rotating food trucks, and live jazz and blues.",
+        "address": "181 N. Main St., Marion, OH 43302",
+        "phone": "",
+        "website": "https://shovelcitydrinkery.com/",
+        "neighborhood": "Downtown Marion",
+        "notable": ""
+      },
+      {
+        "name": "Carlyle's Restaurant",
+        "cuisineGroup": "Seafood & American",
+        "type": "Full-service American restaurant",
+        "description": "A long-established Marion dining destination serving American fare for lunch and dinner.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Iron Chef Steakhouse",
+        "cuisineGroup": "Seafood & American",
+        "type": "Steakhouse and hibachi restaurant",
+        "description": "Marion's hibachi and steakhouse option, popular for dinner and special occasions.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Tackett's Southern Bar-B-Que",
+        "cuisineGroup": "Other",
+        "type": "Southern barbecue restaurant",
+        "description": "Local barbecue spot serving Southern-style smoked meats and sides.",
+        "address": "633 Bellefontaine Ave., Marion, OH 43302",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Eat Greek — Marion",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Greek restaurant",
+        "description": "Greek cuisine restaurant serving authentic dishes in Marion.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Sansotta's Fresh Italian",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "Fresh Italian cooking with housemade dishes in a casual setting.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Taco Central Bar",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Taco bar and restaurant",
+        "description": "Casual taco bar in downtown Marion listed as a neighbor of the new OSU Marion Downtown Engagement Hub on North Main Street.",
+        "address": "N. Main St., Marion, OH",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Marion",
+        "notable": ""
+      },
+      {
+        "name": "Van Java Hibachi",
+        "cuisineGroup": "Asian",
+        "type": "Hibachi and Asian fusion restaurant",
+        "description": "Marion's Asian fusion and hibachi dining option, noted for large portions and noodle dishes.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Baires Deli",
+        "cuisineGroup": "Other",
+        "type": "Deli and casual dining",
+        "description": "Casual deli restaurant among Marion's top-rated local dining options.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "OK Café",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Bar and café",
+        "description": "Neighborhood café and bar on East Center Street hosting regular evening events including Sunday night music sessions.",
+        "address": "734 E. Center St., Marion, OH",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Blend of Seven Winery",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Winery and tasting room",
+        "description": "Marion's local winery offering tastings and wine-focused events.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "The Old Stone Haus Tavern",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Tavern and bar",
+        "description": "Local tavern serving drinks and casual fare in Marion.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Wingate by Wyndham Marion",
+        "type": "Chain hotel",
+        "description": "Mid-range hotel with an indoor pool and 24-hour gym near downtown Marion, convenient for business and leisure travelers.",
+        "address": "227 James Way, Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.wyndhamhotels.com/wingate",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Country Inn & Suites by Radisson, Marion, OH",
+        "type": "Chain hotel with suites",
+        "description": "Comfortable 3-star hotel just off US-23 featuring an indoor pool, fitness center, business center, and complimentary continental breakfast.",
+        "address": "2091 Marion Mt. Gilead Rd., Marion, OH 43302",
+        "phone": "740-386-5451",
+        "website": "https://www.choicehotels.com/ohio/marion/country-inn-suites-hotels/oh878",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Holiday Inn Express & Suites Marion by IHG",
+        "type": "Chain hotel with suites",
+        "description": "Well-located chain hotel a short drive from the Harding Home and Museum with standard IHG amenities including free breakfast and Wi-Fi.",
+        "address": "1842 Marion Mount Gilead Rd., Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.ihg.com/",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Baymont by Wyndham Marion, OH",
+        "type": "Chain hotel",
+        "description": "Budget-friendly Wyndham-brand hotel offering free breakfast, free parking, and easy access to Marion's attractions.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "https://www.wyndhamhotels.com/baymont",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Comfort Inn Marion",
+        "type": "Chain hotel",
+        "description": "Straightforward chain hotel with complimentary breakfast and free Wi-Fi in Marion.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "https://www.choicehotels.com/",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "My Place Hotel — Marion, OH",
+        "type": "Extended-stay hotel",
+        "description": "Extended-stay hotel with in-room kitchenettes and pet-friendly accommodations, suited for longer visits to Marion.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "https://www.myplacehotels.com/",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "The Haven on Vine Bed & Breakfast and Retreat Center",
+        "type": "Bed and breakfast",
+        "description": "Locally owned bed and breakfast offering a more intimate lodging experience in Marion.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Marion Public Library — BookMarket",
+        "shopGroup": "Books & Literature",
+        "type": "Library used-book shop",
+        "description": "The Marion Public Library's in-house used-book shop sells gently used titles at low prices year-round, with the annual Friends group book sale held each fall.",
+        "address": "445 E. Church St., Marion, OH 43302",
+        "phone": "",
+        "website": "https://marionlibrary.org/",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Marion Area Chamber of Commerce",
+        "shopGroup": "Other",
+        "type": "Business association and resource hub",
+        "description": "The Marion Area Chamber of Commerce supports local businesses and hosts regular networking events and resources for the business community.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "https://business.marionareachamber.org/",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Wyandot Popcorn Museum",
+        "shopGroup": "Home & Gifts",
+        "type": "Museum and gift shop",
+        "description": "Located in Heritage Hall, the Wyandot Popcorn Museum is home to the world's largest collection of popcorn poppers and peanut roasters, with a gift shop attached.",
+        "address": "169 E. Church St., Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.wyandotpopcornmuseum.com/",
+        "neighborhood": "Downtown Marion",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Harding Presidential Sites Gift Shop",
+        "shopGroup": "Home & Gifts",
+        "type": "Presidential history gift shop",
+        "description": "Gift shop at the Warren G. Harding Presidential Library & Museum offering books, memorabilia, and presidential history items.",
+        "address": "380 Mt. Vernon Ave., Marion, OH 43302",
+        "phone": "800-600-6894",
+        "website": "https://hardingpresidentialsites.org/",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Downtown Marion Inc.",
+        "shopGroup": "Other",
+        "type": "Downtown development and retail hub",
+        "description": "Downtown Marion Inc. coordinates events, supports local retail, and promotes shopping and dining in the core downtown district.",
+        "address": "Downtown Marion, OH",
+        "phone": "",
+        "website": "https://www.downtownmarion.com/",
+        "neighborhood": "Downtown Marion",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Marion Palace Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Historic atmospheric theater",
+        "description": "A lovingly restored 1928 Spanish Revival atmospheric theater at 276 W. Center Street, offering live music, concerts, comedy, community productions, and curated film screenings under a starry night ceiling designed by architect John Eberson.",
+        "address": "276 W. Center St., Marion, OH 43302",
+        "phone": "740-383-2101",
+        "website": "https://www.marionpalace.org/",
+        "neighborhood": "Downtown Marion",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Warren G. Harding Presidential Library & Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Presidential museum and historic home",
+        "description": "The presidential library and museum of the 29th President of the United States, featuring flowing exhibits, artifacts, and the restored Harding Home with timed guided tours; the Press House exhibition is now open.",
+        "address": "380 Mt. Vernon Ave., Marion, OH 43302",
+        "phone": "800-600-6894",
+        "website": "https://hardingpresidentialsites.org/",
+        "neighborhood": "Marion",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Wyandot Popcorn Museum at Heritage Hall",
+        "venueGroup": "Museums & Cultural",
+        "type": "Specialty museum",
+        "description": "Home to the world's largest collection of antique popcorn poppers and peanut roasters, housed in the historic Heritage Hall on East Church Street.",
+        "address": "169 E. Church St., Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.wyandotpopcornmuseum.com/",
+        "neighborhood": "Downtown Marion",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ohio State Marion Downtown Engagement Hub",
+        "venueGroup": "Museums & Cultural",
+        "type": "Community engagement space",
+        "description": "Newly opened space at 146 N. Main Street where OSU Marion faculty, students, and community members gather for civic roundtables, public exhibits, performances, and design-thinking sessions.",
+        "address": "146 N. Main St., Marion, OH 43302",
+        "phone": "",
+        "website": "https://osumarion.osu.edu/outreach/downtown",
+        "neighborhood": "Downtown Marion",
+        "notable": "New"
+      },
+      {
+        "name": "OSU Marion — Five Nights on Campus Performing Arts Series",
+        "venueGroup": "Theater & Comedy",
+        "type": "Performing arts series",
+        "description": "An annual community-focused performing arts series at Ohio State Marion's Morrill Hall Auditorium, bringing diverse cultural performances — from jazz and barbershop to tribute acts — to the Marion region at accessible ticket prices.",
+        "address": "Morrill Hall Auditorium, Ohio State University at Marion, 1465 Mt. Vernon Ave., Marion, OH 43302",
+        "phone": "740-725-6156",
+        "website": "https://osumarion.osu.edu/outreach/cultural-arts/five-nights",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Harding Memorial",
+        "venueGroup": "Museums & Cultural",
+        "type": "Presidential memorial and landmark",
+        "description": "The open-air Georgian white marble memorial featuring 46 Doric columns marks the final resting place of President Warren G. Harding and First Lady Florence Harding; open year-round.",
+        "address": "625 Delaware Ave., Marion, OH 43302",
+        "phone": "",
+        "website": "https://hardingpresidentialsites.org/",
+        "neighborhood": "Marion",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Marion Tallgrass Trail",
+        "venueGroup": "Museums & Cultural",
+        "type": "Nature trail and outdoor attraction",
+        "description": "A scenic natural area trail in Marion featuring tallgrass prairie habitat, open to walkers, hikers, and cyclists, with naturalist-led public programs offered seasonally.",
+        "address": "2093 Holland Rd. W., Marion, OH",
+        "phone": "",
+        "website": "https://www.visitmarionohio.com/",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Edward Huber Machinery Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Industrial history museum",
+        "description": "Celebrates Marion's industrial heritage as the 'Steam Shovel Capital of the World,' housing historic machinery that helped build America.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "https://www.visitmarionohio.com/",
+        "neighborhood": "Marion",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Marion Tallgrass Trail",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Multi-use natural trail",
+        "description": "A free, publicly accessible trail through tallgrass prairie habitat in Marion, suitable for walking, jogging, cycling, and nature observation year-round.",
+        "address": "2093 Holland Rd. W., Marion, OH",
+        "phone": "",
+        "website": "https://www.visitmarionohio.com/",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Marion Veterans Memorial Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "City park and memorial",
+        "description": "A peaceful park in Marion honoring veterans, offering quiet green space for walking and reflection.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "https://www.marionohio.us/",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Lincoln Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "City park",
+        "description": "Marion city park that serves as the site for public events including the annual Free Tire Drop Off and community gatherings.",
+        "address": "Lincoln Park, Marion, OH",
+        "phone": "",
+        "website": "https://www.marionohio.us/",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "McKinley Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "City park with playground",
+        "description": "Marion city park featuring a playground and open green space for families and community recreation.",
+        "address": "McKinley Park, Marion, OH",
+        "phone": "",
+        "website": "https://www.marionohio.us/",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Marion County Fairgrounds",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Fairgrounds and recreation complex",
+        "description": "The Marion County Fairgrounds at 220 E. Fairground Street hosts the annual county fair and serves as a venue for various community events and activities throughout the year.",
+        "address": "220 E. Fairground St., Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.visitmarionohio.com/",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Marion Municipal Airport — Central Ohio Soaring Association",
+        "venueGroup": "Sports & Courts",
+        "type": "Glider training and soaring club",
+        "description": "The Central Ohio Soaring Association has been based at Marion Municipal Airport since 1959, offering glider training, gatherings, and activities for pilots and enthusiasts.",
+        "address": "Marion Municipal Airport, Marion, OH",
+        "phone": "",
+        "website": "https://www.visitmarionohio.com/",
+        "neighborhood": "Marion",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Ohio State Marion opens new downtown hub for community problem-solving",
+      "url": "https://www.wosu.org/higher-education-and-k-12-education/2026-09-15/ohio-state-marion-opens-new-downtown-hub-for-community-problem-solving",
+      "publication": "WOSU Public Media"
+    },
+    {
+      "title": "OSU Marion Downtown Engagement Hub",
+      "url": "https://osumarion.osu.edu/outreach/downtown",
+      "publication": "Ohio State University at Marion"
+    },
+    {
+      "title": "Marion Futures Lab launches with $49,480 seed grant",
+      "url": "https://osumarion.osu.edu/story/futures-lab",
+      "publication": "Ohio State University at Marion"
+    },
+    {
+      "title": "Marion City Schools improves graduation and career readiness ratings",
+      "url": "https://www.newsbreak.com/news/4892238060028-marion-city-schools-improves-graduation-and-career-readiness-ratings",
+      "publication": "Marion County Now / NewsBreak"
+    },
+    {
+      "title": "Marion County Now — Homepage",
+      "url": "https://marioncountynow.com/",
+      "publication": "Marion County Now"
+    },
+    {
+      "title": "Marion County Prosecutor disqualified from prosecuting case against Marion Police Officer",
+      "url": "https://www.newsbreak.com/news/4894402536098-marion-county-prosecutor-disqualified-from-prosecuting-case-against-marion-police-officer",
+      "publication": "Marion County Now / NewsBreak"
+    },
+    {
+      "title": "Marion officer remains jailed on rape charges as attorney seeks to recuse prosecutor",
+      "url": "https://abc6onyourside.com/news/local/marion-officer-remains-jailed-on-rape-charges-as-attorney-seeks-to-recuse-prosecutor",
+      "publication": "ABC 6 WSYX"
+    },
+    {
+      "title": "Ohio Supreme Court disqualifies Judge Todd Anderson from Damron case",
+      "url": "https://marioncountynow.com/news/277772-ohio-supreme-court-disqualifies-judge-todd-anderson-from-damron-case/",
+      "publication": "Marion County Now"
+    },
+    {
+      "title": "2026 Walk to End Alzheimer's — Marion, OH",
+      "url": "https://act.alz.org/site/TR/Walk2026/OH-CentralOhio?pg=entry&fr_id=19828",
+      "publication": "Alzheimer's Association"
+    },
+    {
+      "title": "OSU Marion Engineering Open House",
+      "url": "https://osumarion.osu.edu/",
+      "publication": "Ohio State University at Marion"
+    },
+    {
+      "title": "Marion Public Library — Annual Book Sale",
+      "url": "https://marionlib.org/",
+      "publication": "Marion Public Library"
+    },
+    {
+      "title": "Five Nights on Campus 2026-27 Season",
+      "url": "https://osumarion.osu.edu/outreach/cultural-arts/five-nights",
+      "publication": "Ohio State University at Marion"
+    },
+    {
+      "title": "Harding Presidential Sites — Hours and Admissions",
+      "url": "https://hardingpresidentialsites.org/hours-and-admissions/",
+      "publication": "Harding Presidential Sites"
+    },
+    {
+      "title": "Third Thursdays in Downtown Marion",
+      "url": "https://www.visitmarionohio.com/attractions/third-thursdays-in-downtown-marion",
+      "publication": "Marion Area Convention and Visitors Bureau"
+    },
+    {
+      "title": "City of Marion — Love Your Neighborhood (5th 2026 event announced)",
+      "url": "https://www.marionohio.us/",
+      "publication": "City of Marion, OH"
+    },
+    {
+      "title": "Marion Victim Assistance Program — Victim Services",
+      "url": "https://www.co.marion.oh.us/elected_offices/sheriff/victims_resources/victims_assistance_program.php",
+      "publication": "Marion County, OH"
+    },
+    {
+      "title": "Bucci's Italian Scratch Kitchen",
+      "url": "https://www.buccisitalian.com/",
+      "publication": "Bucci's Italian Scratch Kitchen"
+    },
+    {
+      "title": "Attaboys Comfort Cuisine — Visit Marion Ohio",
+      "url": "https://www.visitmarionohio.com/attractions/attaboys-comfort-cuisine/",
+      "publication": "Marion Area Convention and Visitors Bureau"
+    },
+    {
+      "title": "Lazeez Grill — Visit Marion Ohio",
+      "url": "https://www.visitmarionohio.com/attractions/lazeez-grill/",
+      "publication": "Marion Area Convention and Visitors Bureau"
+    },
+    {
+      "title": "Shovel City Drinkery — Visit Marion Ohio",
+      "url": "https://www.visitmarionohio.com/attractions/shovel-city-drinkery/",
+      "publication": "Marion Area Convention and Visitors Bureau"
+    },
+    {
+      "title": "Marion Palace Theatre",
+      "url": "https://www.marionpalace.org/",
+      "publication": "Marion Palace Theatre"
+    },
+    {
+      "title": "Marion Area Convention and Visitors Bureau — Calendar",
+      "url": "https://www.visitmarionohio.com/calendar/",
+      "publication": "Marion Area Convention and Visitors Bureau"
+    },
+    {
+      "title": "Harding Presidential Sites",
+      "url": "https://hardingpresidentialsites.org/",
+      "publication": "Harding Presidential Sites"
+    },
+    {
+      "title": "Marion Public Library — Visit Marion Ohio",
+      "url": "https://www.visitmarionohio.com/attractions/marion-public-library-2/",
+      "publication": "Marion Area Convention and Visitors Bureau"
+    },
+    {
+      "title": "City of Marion — Love Your Neighborhood August 2026",
+      "url": "https://www.marionohio.us/m/newsflash/Home/Detail/72",
+      "publication": "City of Marion, OH"
+    }
+  ],
+  "weather": {
+    "issuedOn": "2026-09-25",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-09-25",
+        "high": 65,
+        "low": 46,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-26",
+        "high": 68,
+        "low": 47,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-27",
+        "high": 68,
+        "low": 49,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-28",
+        "high": 68,
+        "low": 50,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-29",
+        "high": 70,
+        "low": 55,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-30",
+        "high": 72,
+        "low": 60,
+        "summary": "Chance Rain Showers",
+        "condition": "rain",
+        "precip": 41
+      },
+      {
+        "date": "2026-10-01",
+        "high": 76,
+        "low": 61,
+        "summary": "Chance Rain Showers",
+        "condition": "rain",
+        "precip": 34
+      }
+    ]
+  }
+}

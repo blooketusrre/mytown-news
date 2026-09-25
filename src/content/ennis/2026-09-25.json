@@ -1,0 +1,508 @@
+{
+  "clusterSlug": "ennis",
+  "clusterName": "Ennis",
+  "weekOf": "2026-09-25",
+  "topStories": [
+    {
+      "headline": "Alma Fire Burns 653 Acres Southeast of Ennis, Fully Contained After FM 85 Evacuations",
+      "dek": "A fast-moving grass fire ignited September 4 near the community of Alma, forcing residents along FM 85 to evacuate before crews brought it fully under control the following day.",
+      "body": "A brush fire that ignited during the afternoon of Friday, September 4, 2026, southeast of Ennis quickly grew to 653 acres before emergency crews gained control. The blaze, officially named the Alma Fire by the Texas A&M Forest Service, forced evacuations for residents from Zmolek Road to Bruce Road along FM 85 as it moved north from FM 1182 east of Alma. Emergency road closures were placed on FM 1182, FM 85, Walker Creek Road, Mach Road, and Zmolek Road.\n\nThe City of Ennis assisted Ellis County with evacuations, and an evacuation center was established at Cowboy Church of Ennis, 7450 S. Interstate 45 Service Road. By approximately 8:40 p.m. on September 4, with the fire at 600 acres and 20 percent contained, the evacuation notice was lifted and residents were told they could safely return home. Ellis County Precinct 2 officials deployed water trucks and heavy equipment alongside local fire departments and Texas A&M Forest Service crews.\n\nBy the morning of September 5, fire tracking data listed the Alma Fire at 653 acres and 100 percent contained. The fire burned entirely on private land in Ellis County. It ignited under the active county-wide burn ban that the Ellis County Commissioners' Court had enacted on July 21, 2026, prohibiting all open outdoor burning in unincorporated parts of the county. The cause of the fire remained under investigation as of the last official update on September 5.",
+      "sourceUrl": "https://www.cbsnews.com/texas/news/alma-fire-ennis-texas-brush-fire-600-acres-september-2026/",
+      "sourceName": "CBS Texas",
+      "tags": [
+        "fire",
+        "emergency",
+        "Alma",
+        "Ennis",
+        "Ellis County"
+      ]
+    },
+    {
+      "headline": "Yellowstone Spinoff 'The Dutton Ranch' Has Been Filming in Ferris Since Mid-August",
+      "dek": "Paramount selected Ferris as a primary shooting location for a new Yellowstone spinoff featuring Beth Dutton and Rip Wheeler, bringing national attention and local casting calls to the small North Texas city.",
+      "body": "The city of Ferris announced in August 2025 that Paramount Pictures had selected it as a primary filming location for a new Yellowstone spinoff series, initially known by the working title 'Rio Palo' and later confirmed as 'The Dutton Ranch.' The show stars Kelly Reilly and Cole Hauser, who reprise their Yellowstone roles as Beth Dutton and Rip Wheeler respectively, and is expected to be a multi-season Paramount+ production. Finn Little, who played their adopted son Carter on the original series, also joins the cast.\n\nFilming has taken place at various locations around Ferris and across the wider North Texas region, including Cleburne, Weatherford, Rio Vista, Fort Worth, and Mineral Wells, according to casting notices from Texas-based Legacy Casting. The production continued casting local extras for roles including concession stand workers, rodeo attendees, and restaurant patrons. City Manager Brooks Williams stated that the decision affirms Ferris as a community with roots that can still move forward, and that city officials are proud to show what Ferris has to offer.\n\nFerris, a city of roughly 4,000 people located about 20 miles south of downtown Dallas along I-45 in Dallas and Ellis counties, is historically known for the Ferris Brick Company, whose bricks appear in streets, schools, and courthouses across the country. City officials said a specific Ferris site will serve as the central home of the show's lead characters, though the exact location has not been publicly identified. No premiere date for the series has been announced by Paramount.",
+      "sourceUrl": "https://www.wfaa.com/article/entertainment/yellowstone-spinoff-series-filming-ferris-texas-rip-beth-taylor-sheridan-rio-palo/287-2c97576d-2f81-4dee-b0dc-32dfdf0f560b",
+      "sourceName": "WFAA",
+      "tags": [
+        "Ferris",
+        "film production",
+        "Yellowstone",
+        "Paramount",
+        "entertainment"
+      ]
+    },
+    {
+      "headline": "Ennis City Commission Posts Special Meeting for September 29",
+      "dek": "The Ennis City Commission has scheduled a special session for Monday, September 29, capping a month that also included a special meeting on September 8 and an Economic Development Corporation board meeting on September 24.",
+      "body": "The Ennis City Commission has scheduled a Special Meeting for Monday, September 29, 2026. The agenda — a 212-kilobyte PDF — has been posted to the city's official website at ennistx.gov for public review in advance of the session. The meeting follows a busy September that included a City Commission Special Meeting on September 8 and an Economic Development Corporation Board meeting on September 24.\n\nRegular City Commission sessions are held the first and third Tuesday of each month at 6:00 p.m. in the Commission Chambers at Ennis City Hall, 107 N. Sherman St. The Commission-Manager form of government, which Ennis has operated under since 1957, gives the Commission responsibility for adopting the city budget, passing ordinances, appointing committees, and hiring the City Manager, City Secretary, City Attorney, and Municipal Judge. Residents who wish to address commissioners on matters not listed on the September 29 agenda may submit a Public Comment Period card to the City Secretary before the meeting begins.",
+      "sourceUrl": "https://www.ennistx.gov/events/101730/",
+      "sourceName": "City of Ennis",
+      "tags": [
+        "Ennis",
+        "city commission",
+        "government",
+        "meeting"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Ennis City Commission Special Meeting",
+      "startDate": "2026-09-29",
+      "date": "Monday, September 29",
+      "time": "See posted agenda",
+      "location": "Ennis City Hall, 107 N. Sherman St., Ennis",
+      "description": "A special session of the Ennis City Commission with agenda posted at ennistx.gov. Residents may address the Commission on non-agenda items by submitting a comment card to the City Secretary before the meeting.",
+      "sourceUrl": "https://www.ennistx.gov/events/101730/",
+      "sourceName": "City of Ennis"
+    },
+    {
+      "title": "Ennis Main Street Board Meeting",
+      "startDate": "2026-10-07",
+      "date": "Wednesday, October 7",
+      "time": "See posted agenda",
+      "location": "Ennis City Hall, 107 N. Sherman St., Ennis",
+      "description": "Monthly meeting of the Ennis Main Street Board, open to the public, with agenda available at ennistx.gov.",
+      "sourceUrl": "https://www.ennistx.gov/events/101723/",
+      "sourceName": "City of Ennis"
+    },
+    {
+      "title": "Stars of Texas Music Festival",
+      "startDate": "2026-10-09",
+      "date": "Friday–Sunday, October 9–11",
+      "time": "3:00 PM Friday; 12:00 PM Saturday and Sunday",
+      "location": "Texas Motorplex, 7500 US-287, Ennis",
+      "description": "Three nights of Texas country music — Aaron Watson (Friday), Brad Paisley (Saturday), Travis Tritt (Sunday) — paired with drag racing, bull riding, BBQ, a kids zone, and lantern releases each evening at the Motorplex.",
+      "sourceUrl": "https://www.starsoftexas.com/",
+      "sourceName": "Stars of Texas"
+    },
+    {
+      "title": "Texas NHRA FallNationals",
+      "startDate": "2026-10-14",
+      "date": "Wednesday–Sunday, October 14–18",
+      "time": "Various times",
+      "location": "Texas Motorplex, 7500 US-287, Ennis",
+      "description": "The annual NHRA Mission Foods Drag Racing Series stop at the Texas Motorplex, where professional and amateur drag racers compete for over $2 million in prize money. Broadcast on FS1.",
+      "sourceUrl": "https://www.nhra.com/schedule/2026/nhra-mission-foods-drag-racing-series/texas-nhra-fallnationals",
+      "sourceName": "NHRA"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Ellis County Burn Ban Remains in Effect",
+      "body": "The Ellis County Commissioners' Court voted to place a county-wide burn ban effective immediately at their meeting on Tuesday, July 21, 2026. The ban covers all unincorporated areas of Ellis County and was listed as active on the county's official website as of this week. The Alma Fire, which burned 653 acres near Ennis on September 4–5, ignited while the ban was already in force. Residents should check elliscountytx.gov for the current status before any outdoor burning.",
+      "sourceUrl": "https://www.elliscountytx.gov/573/Burn-Ban",
+      "sourceName": "Ellis County, TX",
+      "tags": [
+        "Ellis County",
+        "burn ban",
+        "fire safety"
+      ]
+    },
+    {
+      "headline": "Palmer ISD Board Adopts $1.0063 Tax Rate for 2026–27",
+      "body": "The Palmer Independent School District Board of Trustees voted unanimously 7–0 at its August 19, 2026 regular meeting to adopt a property tax rate of $1.0063 per $100 valuation for the 2026–27 school year, split into $0.71130 per $100 for maintenance and operations and $0.29500 per $100 for interest and sinking. The district's website notes the adopted rate will raise more taxes for maintenance and operations than last year's rate of $1.05020, in part because rising property valuations increase revenue. The board also unanimously approved the final amended 2025–26 budget and the new 2026–27 budget at the same meeting.",
+      "sourceUrl": "https://citizenportal.ai/articles/9472821/texas/school-districts/palmer-isd/palmer-isd-board-adopts-proposed-10063-tax-rate-after-public-hearing",
+      "sourceName": "Citizen Portal",
+      "tags": [
+        "Palmer",
+        "Palmer ISD",
+        "schools",
+        "tax rate",
+        "budget"
+      ]
+    },
+    {
+      "headline": "City of Ennis Purchasing Division Wins National Procurement Award",
+      "body": "The City of Ennis announced that its Purchasing Division has been awarded the 2026 Achievement of Excellence in Procurement (AEP), a national honor from the National Procurement Institute recognizing outstanding performance in professional, ethical, and transparent procurement practices. The award program, established in 1995, evaluated 269 applications from 28 states and Canada this year; 251 organizations earned the designation. The Ennis division is led by Katrinia Roberson. City Manager Andrea Weckmueller-Behringer credited the division's dedication and professionalism, noting the award reflects the city's commitment to responsible stewardship of public funds.",
+      "sourceUrl": "https://www.ennistx.gov/news/post/23108/",
+      "sourceName": "City of Ennis",
+      "tags": [
+        "Ennis",
+        "city government",
+        "award",
+        "procurement"
+      ]
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Fern In The Wild",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Modern farm-to-table restaurant, espresso bar and boutique",
+        "description": "Seasonal American dishes, weekend brunch, craft cocktails, and a full espresso bar inside a downtown Ennis space that doubles as a curated retail boutique.",
+        "address": "211 W Knox St, Ennis, TX 75119",
+        "phone": "(972) 878-6868",
+        "website": "https://www.ferninthewild.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Ruston Cattle Company",
+        "cuisineGroup": "Seafood & American",
+        "type": "Steakhouse and BBQ",
+        "description": "Family-owned steakhouse and BBQ serving local Texas wagyu hand-cut and seared to order alongside house-smoked specialties and bold sides in a casual picnic-table setting.",
+        "address": "3701 N I-45 Frontage Rd, Ennis, TX 75119",
+        "phone": "(469) 218-6280",
+        "website": "https://www.rustoncattlecompany.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Ashleigh's Downtown Kitchen + Bar",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "American kitchen and bar",
+        "description": "Handcrafted pizzas, shareable small plates, and a curated wine and craft cocktail list in a relaxed setting in the heart of historic downtown Ennis.",
+        "address": "119 S Dallas St, Ennis, TX 75119",
+        "phone": "(469) 881-1040",
+        "website": "https://ashleighsdowntown.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Bailey's Cafe",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "American diner",
+        "description": "A long-running Ennis diner known for home-cooked comfort food, burgers, chicken fried steak, and a popular Friday-night catfish special.",
+        "address": "508 S Kaufman St, Ennis, TX 75119",
+        "phone": "(972) 875-1556",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "The Green Room",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Upscale speakeasy bar",
+        "description": "An intimate second-floor speakeasy above Fern In The Wild offering craft cocktails, a deep bourbon and whiskey selection, Tiki drinks, wine, and beer; after 8 p.m., look for the lanterns in the alley for entry.",
+        "address": "211 W Knox St, 2nd Floor, Ennis, TX 75119",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Sugar Ridge Winery",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Family-owned Texas winery and tasting room",
+        "description": "A rural winery near Bristol producing 20-plus handcrafted sweet and fruit-forward wines on-site, with patio seating and occasional live acoustic music; open weekends, call ahead to confirm hours.",
+        "address": "353 Sugar Ridge Rd, Ennis, TX 75119",
+        "phone": "(469) 716-8961",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hampton Inn & Suites Ennis",
+        "type": "Chain hotel",
+        "description": "Full-service Hilton-brand hotel offering complimentary hot breakfast, an indoor pool, and easy access to the Texas Motorplex and downtown Ennis.",
+        "address": "2601 TX-34 S, Ennis, TX 75119",
+        "phone": "(972) 875-5090",
+        "website": "https://www.hilton.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Motel 6 Ennis",
+        "type": "Budget motel",
+        "description": "Affordable roadside motel convenient to I-45, well-placed for travelers heading to the Texas Motorplex or exploring the Ennis area.",
+        "address": "109 W Ennis Ave, Ennis, TX 75119",
+        "phone": "(972) 875-8641",
+        "website": "https://www.motel6.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Fern In The Wild Boutique",
+        "shopGroup": "Home & Gifts",
+        "type": "Curated retail boutique",
+        "description": "Gift shop inside the Fern In The Wild restaurant carrying locally inspired gifts, art pieces, and specialty items for weekend browsing.",
+        "address": "211 W Knox St, Ennis, TX 75119",
+        "phone": "(972) 878-6868",
+        "website": "https://www.ferninthewild.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Ennis Farmers Market",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Weekly outdoor market",
+        "description": "Saturday morning market running 8 a.m. to noon on Dallas Street, featuring local produce, crafts, live music, and kids' activities.",
+        "address": "100 N Dallas St, Ennis, TX 75119",
+        "phone": "(972) 878-4748",
+        "website": "https://www.ennistx.gov",
+        "neighborhood": "Ennis",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Galaxy Drive-In Theatre",
+        "venueGroup": "Cinema",
+        "type": "Multi-screen drive-in theater",
+        "description": "A nine-screen drive-in movie theater open seven nights a week on the north side of Ennis, with digital projection, FM radio sound, and a full concession stand; box office opens at 6:00 p.m.",
+        "address": "5301 N Interstate Hwy 45, Ennis, TX 75119",
+        "phone": "(972) 875-5505",
+        "website": "https://www.galaxydriveintheatre.com",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Texas Motorplex",
+        "venueGroup": "Music Venues",
+        "type": "Drag racing facility and entertainment venue",
+        "description": "The first NHRA super track, a 50,000-capacity facility hosting the annual Texas NHRA FallNationals each October and the Stars of Texas Music Festival, among other events year-round.",
+        "address": "7500 US-287, Ennis, TX 75119",
+        "phone": "",
+        "website": "https://www.texasmotorplex.com",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ennis Railroad and Cultural Heritage Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Local history museum",
+        "description": "Traces Ennis's origins as a railroad town with depot replicas, railroad memorabilia, vintage Czech dolls, china from historic rail lines, and a video history of the city's founding in 1872.",
+        "address": "105 NE Main St, Ennis, TX 75119",
+        "phone": "(972) 875-1901",
+        "website": "https://www.ennistx.gov/museum",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ennis Public Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Community theater",
+        "description": "A local performing-arts group producing live stage shows roughly every other month in a renovated historic venue in downtown Ennis.",
+        "address": "113 N Dallas St, Ennis, TX 75119",
+        "phone": "(972) 878-7529",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Lake Bardwell",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "U.S. Army Corps of Engineers reservoir",
+        "description": "A 3,500-acre lake and the largest recreational attraction in Ellis County, offering boating, fishing, water skiing, swimming, and picnicking at High View Park, with annual attendance exceeding 150,000.",
+        "address": "4000 Crow Rd, Ennis, TX 75119",
+        "phone": "",
+        "website": "https://www.swf-wc.usace.army.mil/bardwell",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lion Tennis Center",
+        "venueGroup": "Sports & Courts",
+        "type": "Public tennis facility",
+        "description": "One of the finest publicly accessible tennis complexes in Texas, operated by Ennis ISD, featuring nine championship courts including four indoor courts.",
+        "address": "Ennis, TX",
+        "phone": "",
+        "website": "https://www.ennistx.gov",
+        "neighborhood": "Ennis",
+        "notable": ""
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Alma Fire near Ennis up to 600 acres, 20% contained as evacuations lifted",
+      "url": "https://www.cbsnews.com/texas/news/alma-fire-ennis-texas-brush-fire-600-acres-september-2026/",
+      "publication": "CBS Texas"
+    },
+    {
+      "title": "Ellis County Grass Fire Forces Evacuations Near Ennis Along Highway 85",
+      "url": "https://hoodline.com/2026/09/ellis-county-grass-fire-forces-evacuations-near-ennis-along-highway-85/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "Tracking the Alma Fire in Texas",
+      "url": "https://wfca.com/fire-map/texas/alma",
+      "publication": "WFCA Fire Map"
+    },
+    {
+      "title": "Alma Fire, Texas (2026) — Map and Containment",
+      "url": "https://currentwildfires.com/en/fire/alma-fire-tx-2026/",
+      "publication": "Current Wildfires"
+    },
+    {
+      "title": "Evacuation order lifted as Alma Fire grows to 600 acres near Ennis, now 20% contained",
+      "url": "https://www.yahoo.com/news/weather-news/articles/grass-fire-prompts-evacuations-hwy-223036349.html",
+      "publication": "Yahoo News"
+    },
+    {
+      "title": "New Yellowstone spinoff show featuring Beth and Rip filming in small Texas town",
+      "url": "https://www.wfaa.com/article/entertainment/yellowstone-spinoff-series-filming-ferris-texas-rip-beth-taylor-sheridan-rio-palo/287-2c97576d-2f81-4dee-b0dc-32dfdf0f560b",
+      "publication": "WFAA"
+    },
+    {
+      "title": "Yellowstone Spinoff Filming in Ferris, Texas",
+      "url": "https://fwtx.com/culture/yellowstone-spinoff-finds-its-home-in-ferris/",
+      "publication": "Fort Worth Magazine"
+    },
+    {
+      "title": "Beth and Rip Yellowstone spinoff casting extras again for North Texas filming",
+      "url": "https://www.yahoo.com/entertainment/tv/articles/beth-rip-yellowstone-spinoff-casting-182058317.html",
+      "publication": "Yahoo Entertainment"
+    },
+    {
+      "title": "City Commission Special Meeting – September 29, 2026",
+      "url": "https://www.ennistx.gov/events/101730/",
+      "publication": "City of Ennis"
+    },
+    {
+      "title": "Ennis Main Street Board Meeting – October 7, 2026",
+      "url": "https://www.ennistx.gov/events/101723/",
+      "publication": "City of Ennis"
+    },
+    {
+      "title": "Burn Ban — Ellis County, TX",
+      "url": "https://www.elliscountytx.gov/573/Burn-Ban",
+      "publication": "Ellis County, TX"
+    },
+    {
+      "title": "Palmer ISD board adopts proposed $1.0063 tax rate after public hearing",
+      "url": "https://citizenportal.ai/articles/9472821/texas/school-districts/palmer-isd/palmer-isd-board-adopts-proposed-10063-tax-rate-after-public-hearing",
+      "publication": "Citizen Portal"
+    },
+    {
+      "title": "Votes at a glance: Palmer ISD trustees approve budgets, tax rate and multiple administrative resolutions",
+      "url": "https://citizenportal.ai/articles/9472818/texas/school-districts/palmer-isd/votes-at-a-glance-palmer-isd-trustees-approve-budgets-tax-rate-and-multiple-administrative-resolutions",
+      "publication": "Citizen Portal"
+    },
+    {
+      "title": "City of Ennis Recognized for Excellence in Procurement",
+      "url": "https://www.ennistx.gov/news/post/23108/",
+      "publication": "City of Ennis"
+    },
+    {
+      "title": "Stars of Texas Music Festival",
+      "url": "https://www.starsoftexas.com/",
+      "publication": "Stars of Texas"
+    },
+    {
+      "title": "Texas NHRA FallNationals 2026",
+      "url": "https://www.nhra.com/schedule/2026/nhra-mission-foods-drag-racing-series/texas-nhra-fallnationals",
+      "publication": "NHRA"
+    },
+    {
+      "title": "Fern In The Wild — Yelp listing updated June 2026",
+      "url": "https://www.yelp.com/biz/fern-in-the-wild-ennis",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Ruston Cattle Company — Yelp listing updated July 2026",
+      "url": "https://www.yelp.com/biz/ruston-cattle-company-ennis",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Ashleigh's Downtown Kitchen and Bar — Yelp listing updated August 2026",
+      "url": "https://www.yelp.com/reservations/ashleighs-downtown-kitchen-and-bar-ennis",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Bailey's Cafe — Yelp listing updated June 2026",
+      "url": "https://www.yelp.com/biz/baileys-cafe-ennis-2",
+      "publication": "Yelp"
+    },
+    {
+      "title": "The Green Room — Yelp listing updated April 2026",
+      "url": "https://www.yelp.com/biz/the-green-room-ennis",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Sugar Ridge Winery — Yelp listing updated January 2026",
+      "url": "https://www.yelp.com/biz/sugar-ridge-winery-ennis-4",
+      "publication": "Yelp"
+    },
+    {
+      "title": "Galaxy Drive-In Theatre — Yelp listing updated July 2026",
+      "url": "https://www.yelp.com/biz/galaxy-drive-in-theatre-ennis",
+      "publication": "Yelp"
+    },
+    {
+      "title": "City of Ennis Attractions",
+      "url": "https://www.ennistx.gov/Attractions",
+      "publication": "City of Ennis"
+    },
+    {
+      "title": "Texas Motorplex",
+      "url": "https://en.wikipedia.org/wiki/Texas_Motorplex",
+      "publication": "Wikipedia"
+    },
+    {
+      "title": "Ennis Railroad and Cultural Heritage Museum",
+      "url": "https://www.ennistx.gov/museum",
+      "publication": "City of Ennis"
+    }
+  ],
+  "weather": {
+    "issuedOn": "2026-09-25",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-09-25",
+        "high": 93,
+        "low": 69,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-09-26",
+        "high": 94,
+        "low": 72,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 2
+      },
+      {
+        "date": "2026-09-27",
+        "high": 97,
+        "low": 74,
+        "summary": "Slight Chance Showers And Thunderstorms",
+        "condition": "storm",
+        "precip": 15
+      },
+      {
+        "date": "2026-09-28",
+        "high": 97,
+        "low": 75,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 7
+      },
+      {
+        "date": "2026-09-29",
+        "high": 94,
+        "low": 73,
+        "summary": "Partly Sunny then Chance Rain Showers",
+        "condition": "rain",
+        "precip": 16
+      },
+      {
+        "date": "2026-09-30",
+        "high": 89,
+        "low": 69,
+        "summary": "Chance Rain Showers",
+        "condition": "rain",
+        "precip": 49
+      },
+      {
+        "date": "2026-10-01",
+        "high": 87,
+        "low": 67,
+        "summary": "Chance Rain Showers",
+        "condition": "rain",
+        "precip": 39
+      }
+    ]
+  }
+}
