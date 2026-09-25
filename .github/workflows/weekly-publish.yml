@@ -70,6 +70,26 @@ on:
 permissions:
   contents: write
 
+# ── One live run at a time ──────────────────────────────────────────────────
+# The publish is now started by a Netlify scheduled function at 14:07, with
+# GitHub's own crons still behind it as a backstop. Those crons have been
+# arriving two to three hours late — so on most Fridays a second run will
+# start after the first, and on some it could start *during* it.
+#
+# Without a lock, two overlapping live runs would each plan the full list of
+# editions (neither has committed yet, so --skip-published skips nothing) and
+# research every one of them twice. Buttondown's email_duplicate guard stops
+# the second send, but nothing stops the second API bill.
+#
+# With the lock, a second live run waits for the first to finish, then plans,
+# finds everything published, and stops after one job.
+#
+# Dry runs get a group of their own per run, so a rehearsal on a feature
+# branch is never held behind a live Friday publish, and vice versa.
+concurrency:
+  group: ${{ github.event.inputs.dry_run == 'true' && format('rehearsal-{0}', github.run_id) || 'weekly-publish-live' }}
+  cancel-in-progress: false
+
 jobs:
   # ── Which editions are we publishing? ───────────────────────────────────
   # A matrix must be known before any job starts, and GitHub cannot read

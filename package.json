@@ -1,14 +1,15 @@
 {
   "name": "mytown-news",
   "version": "1.0.0",
-  "description": "mytown.news — SF hyperlocal neighborhood news site",
+  "description": "mytown.news \u2014 SF hyperlocal neighborhood news site",
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
-    "build:prod": "NODE_ENV=production eleventy && npm run verify",
+    "build:prod": "NODE_ENV=production eleventy && npm run verify && npm run test:dispatch",
     "verify": "node scripts/verify-build.js",
     "generate": "node pipeline/generate-issue.js",
-    "generate:cluster": "node pipeline/generate-issue.js --cluster"
+    "generate:cluster": "node pipeline/generate-issue.js --cluster",
+    "test:dispatch": "node scripts/test-dispatch.mjs"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",

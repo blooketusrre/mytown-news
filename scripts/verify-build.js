@@ -1618,7 +1618,95 @@ try {
     });
   }
 
+  /* ── The Netlify triggers ────────────────────────────────────────────
+   * GitHub's scheduler ran this repo's crons two to three hours late through
+   * September and dropped the publish outright on two Fridays. The publish
+   * and the watchdog are now started by Netlify scheduled functions calling
+   * workflow_dispatch; the GitHub crons remain behind them as a backstop.
+   *
+   * Each piece below is one edit away from quietly not existing, and none of
+   * those edits would break a page.
+   */
+  const fnDir = path.join(ROOT, "netlify", "functions");
+  const readFn = (f) => fs.existsSync(path.join(fnDir, f)) ? fs.readFileSync(path.join(fnDir, f), "utf8") : "";
+  const scheduleOf = (src) => (src.match(/schedule:\s*"([^"]+)"/) || [])[1] || "";
+
+  const pubFn = readFn("trigger-weekly-publish.mjs");
+  const dogFn = readFn("trigger-watchdog.mjs");
+  if (!pubFn) {
+    errors.push("netlify/functions/trigger-weekly-publish.mjs is missing — the publish is back to depending on GitHub's scheduler alone");
+  }
+  if (!dogFn) {
+    errors.push("netlify/functions/trigger-watchdog.mjs is missing — the watchdog is back on the scheduler it exists to watch");
+  }
+
+  // The Netlify schedule and the GitHub cron describe the same moment. If
+  // they drift, one of them is wrong and nothing says which.
+  if (pubFn && pub) {
+    const primary = [...pub.matchAll(/^\s*-\s*cron:\s*'([^']+)'/gm)].map((m) => m[1])[0];
+    if (scheduleOf(pubFn) !== primary) {
+      errors.push(
+        `the Netlify publish trigger is scheduled "${scheduleOf(pubFn)}" but the primary cron in ` +
+        `weekly-publish.yml is "${primary}" — they must describe the same moment`
+      );
+    }
+    if (!/skip_published:\s*"true"/.test(pubFn) || !/dry_run:\s*"false"/.test(pubFn)) {
+      errors.push(
+        "the Netlify publish trigger no longer passes dry_run \"false\" and skip_published \"true\" " +
+        "explicitly — a scheduled Friday would depend on whatever the workflow defaults happen to be"
+      );
+    }
+  }
+  if (dogFn && dog) {
+    const dogCron = (dog.match(/cron:\s*'([^']+)'/) || [])[1];
+    if (scheduleOf(dogFn) !== dogCron) {
+      errors.push(
+        `the Netlify watchdog trigger is scheduled "${scheduleOf(dogFn)}" but publish-watchdog.yml ` +
+        `says "${dogCron}" — they must describe the same moment`
+      );
+    }
+    if (!/workflow_dispatch/.test(dog)) {
+      errors.push("publish-watchdog.yml cannot be dispatched — the Netlify trigger would get a 422 every Friday");
+    }
+  }
+
+  // The two locks that stop a real publish from a preview or on the wrong
+  // day. scripts/test-dispatch.mjs exercises them; this checks they exist.
+  const lib = fs.existsSync(path.join(ROOT, "netlify", "lib", "dispatch.mjs"))
+    ? fs.readFileSync(path.join(ROOT, "netlify", "lib", "dispatch.mjs"), "utf8") : "";
+  if (!/deploy\.published\s*!==\s*true/.test(lib)) {
+    errors.push(
+      "netlify/lib/dispatch.mjs no longer refuses to dispatch from an unpublished deploy — " +
+      "Netlify's Run now button on a deploy preview would start a real publish"
+    );
+  }
+  if (!/getUTCDay\(\)\s*!==\s*5/.test(lib)) {
+    errors.push(
+      "netlify/lib/dispatch.mjs no longer checks for Friday — a Run now on any other day " +
+      "would build and mail next week's issues early"
+    );
+  }
+
+  // One live publish at a time, or a late GitHub cron overlapping the
+  // Netlify-started run researches every edition twice.
+  if (!/concurrency:[\s\S]*?weekly-publish-live[\s\S]*?cancel-in-progress:\s*false/.test(pub)) {
+    errors.push(
+      "weekly-publish.yml has no live concurrency lock — an overlapping run would research " +
+      "every edition a second time"
+    );
+  }
+
+  const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, "package.json"), "utf8"));
+  if (!/test:dispatch/.test(pkg.scripts["build:prod"] || "")) {
+    errors.push("build:prod no longer runs the dispatch tests — the trigger guards could be removed without failing a deploy");
+  }
+  const toml = fs.readFileSync(path.join(ROOT, "netlify.toml"), "utf8");
+  if (!/\[functions\][\s\S]*?directory\s*=\s*"netlify\/functions"/.test(toml)) {
+    errors.push("netlify.toml no longer declares the functions directory");
+  }
+
   console.log("  Schedule: two crons off the hour, backstop skips what is out, watchdog armed");
+  console.log("  Triggers: publish and watchdog started from Netlify, schedules match, live runs locked");
 } catch (e) {
   errors.push(`Could not verify the publish schedule: ${e.message}`);
 }
