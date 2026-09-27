@@ -86,6 +86,15 @@
               center: [{{ city.map.lat }}, {{ city.map.lng }}],
               zoom: 12,
               scrollWheelZoom: false,
+              // No one-finger panning on a touch screen. A map embedded in a
+              // scrolling page traps the finger: a reader swiping to get past
+              // it pans the map instead, and the page appears stuck. With
+              // dragging off, a swipe scrolls the page straight through.
+              //
+              // Nothing is lost. fitToEditions() already frames every
+              // edition, so there is nothing off-screen to pan to; tapping a
+              // dot still opens its edition; and pinch-zoom still works.
+              dragging: !L.Browser.mobile,
               zoomControl: true
             });
 
@@ -183,10 +192,24 @@
             setTimeout(function () { map.invalidateSize(); fitToEditions(); }, 400);
 
             // The stylesheet is the part whose absence is worst, because the
-            // map still "works" and simply renders as a column of tiles. If the
-            // container is taller than we told it to be, the CSS did not apply.
+            // map still "works" and simply renders as a column of tiles.
+            //
+            // Tested directly: leaflet.css makes every pane position:absolute,
+            // and without it they are static. This used to be inferred from
+            // geometry instead — "if the container is more than 1.5× as tall
+            // as we set it, the CSS must be missing" — and that inference was
+            // wrong. Leaflet loads whole 256px tiles, so the bottom row can
+            // hang up to 255px below the frame, and translated tiles count
+            // toward scrollHeight even inside overflow:hidden. On a 300px
+            // phone-height map that tripped the ×1.5 line on about 41% of tile
+            // alignments, and the check deleted a perfectly good map about a
+            // second after it appeared. At 480px it did the same on about 6%.
+            //
+            // A check that removes the map must only fire for the failure it
+            // names. Asking the pane its position is that failure, exactly.
             setTimeout(function () {
-              if (el.scrollHeight > el.clientHeight * 1.5) {
+              var pane = el.querySelector('.leaflet-pane');
+              if (pane && getComputedStyle(pane).position !== 'absolute') {
                 console.warn('Leaflet stylesheet did not apply — removing the map.');
                 el.remove();
               }

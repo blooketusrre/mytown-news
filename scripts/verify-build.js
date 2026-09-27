@@ -403,9 +403,19 @@ try {
     );
   }
 
-  if (!/scrollHeight > el\.clientHeight/.test(home)) {
-      errors.push("the city hub does not detect an unstyled map — stacked tiles would render as a map running off southward");
-    }
+  // A check that deletes the map must test the failure it names. It used to
+  // infer a missing stylesheet from the container being >1.5× its height,
+  // which whole-tile overhang trips on ~41% of loads at phone height — the
+  // map flashed up and was removed on 26 September.
+  if (!/getComputedStyle\(pane\)\.position\s*!==\s*'absolute'/.test(home)) {
+    errors.push("the city hub does not detect an unstyled map — stacked tiles would render as a map running off southward");
+  }
+  if (/scrollHeight\s*>\s*el\.clientHeight/.test(home)) {
+    errors.push(
+      "the city hub infers a missing stylesheet from the map's height again — whole-tile " +
+      "overhang trips that on a healthy map and the check deletes it"
+    );
+  }
     if (!/openstreetmap\.org\/copyright/.test(home)) {
       errors.push("the city hub map is missing OpenStreetMap attribution, which their licence requires");
     }
@@ -415,11 +425,40 @@ try {
   // picture before reaching anything tappable.
   const css = fs.existsSync(path.join(OUT, "assets", "css", "main.css"))
     ? fs.readFileSync(path.join(OUT, "assets", "css", "main.css"), "utf8") : "";
-  if (css && !/\.cluster-map-wrap__list\s*\{\s*order:\s*1/.test(css)) {
-    errors.push("the neighborhood list is not ordered above the map on narrow screens");
+  /* ── Maps on a phone ───────────────────────────────────────────────────
+   * Until 2026-09-26 the rule here was the opposite: list above map on one
+   * column. It was reversed on purpose, because the ZIP lookup now sits above
+   * both, and the old order put San Francisco's map below fourteen cards
+   * where no phone reader ever saw it. What must hold now is the order the
+   * reader meets them in — ZIP, then map, then list — and that the map is
+   * sized and behaves like something on a phone.
+   */
+  if (css && !/\.cluster-map-wrap__map\s*\{\s*order:\s*1/.test(css)) {
+    errors.push("on one column the city map is no longer ordered above the edition list — on San Francisco's hub it sinks below fourteen cards");
+  }
+  // The phone height rule once pointed at #sf-map for two weeks after that id
+  // stopped existing, and nothing noticed: it matched nothing and the map
+  // stayed 480px. Check the selector names an id the hub actually renders.
+  {
+    const phoneRule = (css || "").match(/@media\s*\(max-width:\s*620px\)\s*\{\s*#([a-z-]+)\s*\{\s*height/);
+    if (!phoneRule) {
+      errors.push("there is no phone height rule for the city map — it renders at its full 480px on a phone");
+    } else if (home && !home.includes(`id="${phoneRule[1]}"`)) {
+      errors.push(`the phone map height rule targets #${phoneRule[1]}, which the city hub does not render — the rule matches nothing`);
+    }
+  }
+  if (home && !/dragging:\s*!L\.Browser\.mobile/.test(home)) {
+    errors.push("the city map pans on one finger on touch screens — a reader swiping past it gets stuck on the map");
+  }
+  // The national map on a phone: shown, with labels cut to the state.
+  if (css && /@media\s*\(max-width:\s*700px\)\s*\{[^}]*\.us-map\s*\{\s*display:\s*none/.test(css)) {
+    errors.push("the national map is hidden on phones again");
+  }
+  if (css && !/\.us-map__name\s*\{\s*display:\s*none/.test(css)) {
+    errors.push("the national map keeps full city names on a phone — measured at 343px they collide and San Francisco's runs off the edge");
   }
 
-  console.log("  Map:      self-hosted, keyless tiles, list first on mobile");
+  console.log("  Map:      self-hosted, keyless tiles; on a phone ZIP, then map, then list");
 } catch (e) {
   errors.push(`Could not verify the map tiles: ${e.message}`);
 }

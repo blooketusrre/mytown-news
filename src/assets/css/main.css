@@ -1808,8 +1808,26 @@ ul, ol { list-style: none; }
   color: var(--muted);
 }
 
+/* On a phone the national map stays, with its labels cut to the state.
+   It used to be hidden below 700px, on the argument that a map of the
+   country at phone width is a picture rather than a control. That is true,
+   and it turned out to be the wrong trade: the list below it does the
+   navigating, and the map is what makes the page look like it covers a
+   country rather than a spreadsheet.
+
+   The labels cannot stay full-length. They are fixed-size text on a map that
+   shrinks to 40% of its desktop width, and measured at 343px wide, "San
+   Francisco, CA" and "Heber City, UT" overlap, as do Staunton and Marion,
+   and San Francisco's label runs 26px off the left edge. Two-letter state
+   labels at 10px collide with nothing at 343px or 390px, and the list
+   directly below spells every city out in full. */
 @media (max-width: 700px) {
-  .us-map { display: none; }
+  .us-map { margin-bottom: var(--sp-4); }
+  .us-map__name { display: none; }
+  .us-map__state::before { content: none; }
+  .us-map__state { color: var(--navy); font-weight: 700; }
+  .us-map__label { font-size: 10px; padding: 0 4px; }
+  .us-map__dot { width: 11px; height: 11px; }
   .us-map-list { margin-top: 0; }
   .us-map-list a { width: 100%; }
 }
@@ -2381,21 +2399,31 @@ hr.divider {
   .events-grid { grid-template-columns: repeat(2, 1fr); }
   .cluster-map-wrap { grid-template-columns: 1fr; }
 
-  /* On one column the list comes first and the map second.
-     The list is the navigation — fourteen tappable editions with the
-     neighborhoods spelled out — and the map is the illustration. Putting a
-     480px picture above it costs a phone reader a full screen of scrolling
-     before reaching anything they can act on, and if the map ever renders
-     badly it hides the thing it was decorating. */
-  .cluster-map-wrap__list { order: 1; }
-  .cluster-map-wrap__map  { order: 2; }
+  /* On one column the map comes first and the list second — reversing a
+     September decision, deliberately.
+
+     The list went first then for two reasons: a 480px picture above it cost
+     a phone reader a full screen of scrolling before anything they could act
+     on, and if the map rendered badly it hid the list. Both have since been
+     answered. The ZIP lookup now sits above the map, so the first thing on
+     the page is the fastest way to an edition; the map is 300px on a phone
+     rather than 480; and a map whose stylesheet fails to load is removed from
+     the page by the scrollHeight check rather than left in the way.
+
+     What remained was the cost of the old order: on San Francisco's hub the
+     map sat below fourteen cards, which on a phone meant nobody saw it. */
+  .cluster-map-wrap__map  { order: 1; }
+  .cluster-map-wrap__list { order: 2; }
 }
 
 /* A phone screen is 812px tall; a 480px map is more than half of it for a
    picture nobody can usefully pan on a touch screen we have disabled
    scroll-zoom on. */
+/* Was #sf-map, which stopped existing when the map moved to the city hubs
+   and became #city-map on 2026-09-12. The rule kept matching nothing, so on
+   a phone the map stayed its full desktop 480px. */
 @media (max-width: 620px) {
-  #sf-map { height: 300px !important; }
+  #city-map { height: 300px !important; }
 }
 
 /* Nav crowding — shed the least useful items first, before anything overlaps.
