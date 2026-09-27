@@ -403,9 +403,19 @@ try {
     );
   }
 
-  if (!/scrollHeight > el\.clientHeight/.test(home)) {
-      errors.push("the city hub does not detect an unstyled map — stacked tiles would render as a map running off southward");
-    }
+  // A check that deletes the map must test the failure it names. It used to
+  // infer a missing stylesheet from the container being >1.5× its height,
+  // which whole-tile overhang trips on ~41% of loads at phone height — the
+  // map flashed up and was removed on 26 September.
+  if (!/getComputedStyle\(pane\)\.position\s*!==\s*'absolute'/.test(home)) {
+    errors.push("the city hub does not detect an unstyled map — stacked tiles would render as a map running off southward");
+  }
+  if (/scrollHeight\s*>\s*el\.clientHeight/.test(home)) {
+    errors.push(
+      "the city hub infers a missing stylesheet from the map's height again — whole-tile " +
+      "overhang trips that on a healthy map and the check deletes it"
+    );
+  }
     if (!/openstreetmap\.org\/copyright/.test(home)) {
       errors.push("the city hub map is missing OpenStreetMap attribution, which their licence requires");
     }
