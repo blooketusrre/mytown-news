@@ -86,6 +86,15 @@
               center: [{{ city.map.lat }}, {{ city.map.lng }}],
               zoom: 12,
               scrollWheelZoom: false,
+              // No one-finger panning on a touch screen. A map embedded in a
+              // scrolling page traps the finger: a reader swiping to get past
+              // it pans the map instead, and the page appears stuck. With
+              // dragging off, a swipe scrolls the page straight through.
+              //
+              // Nothing is lost. fitToEditions() already frames every
+              // edition, so there is nothing off-screen to pan to; tapping a
+              // dot still opens its edition; and pinch-zoom still works.
+              dragging: !L.Browser.mobile,
               zoomControl: true
             });
 

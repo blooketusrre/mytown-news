@@ -95,7 +95,7 @@ pageDesc: "Community news and events for towns and neighborhoods across the coun
         <a class="us-map__pin" href="{{ city.slug | cityPath }}" tabindex="-1"
            style="left:{{ pt.left | round(2) }}%;top:{{ pt.top | round(2) }}%">
           <span class="us-map__dot"></span>
-          <span class="us-map__label">{{ city.name }}<span class="us-map__state">{{ city.state }}</span></span>
+          <span class="us-map__label"><span class="us-map__name">{{ city.name }}</span><span class="us-map__state">{{ city.state }}</span></span>
         </a>
         {% endif %}
         {% endfor %}
