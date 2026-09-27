@@ -20,12 +20,17 @@
        worse than leaving it where it was — a reader in Staunton would be
        told they are outside the coverage area of a paper that covers
        them. #}
-    <div class="zip-lookup zip-lookup--national">
+    {# The placeholder is an example ZIP from the page it sits on. Shared between
+   the homepage and every city hub, it said "e.g. 94133" — a San Francisco
+   ZIP — on the Ellis County page. On a hub, use that city's first edition's
+   first ZIP; on the national page, San Francisco's stays as a neutral example. #}
+{% set zipExample = cityEditions[0].zipCodes[0] if (cityEditions and cityEditions.length and cityEditions[0].zipCodes and cityEditions[0].zipCodes.length) else "94133" %}
+<div class="zip-lookup zip-lookup--national">
       <label class="zip-lookup__label" for="zip-input">Find your edition by ZIP code</label>
       <div class="zip-lookup__row">
         <input class="zip-lookup__input" id="zip-input" type="text"
                inputmode="numeric" pattern="[0-9]{5}"
-               maxlength="5" placeholder="e.g. 94133" aria-label="Enter your ZIP code">
+               maxlength="5" placeholder="e.g. {{ zipExample }}" aria-label="Enter your ZIP code">
         <button class="zip-lookup__btn" id="zip-btn" type="button">Go</button>
       </div>
       <div class="zip-lookup__result" id="zip-result" role="status" aria-live="polite"></div>
