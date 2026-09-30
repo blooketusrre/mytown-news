@@ -5,6 +5,14 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Scheduled functions that start the weekly publish and the watchdog on time.
+# GitHub's own cron scheduler has been running this repo's schedules two to
+# three hours late, and sometimes not at all; see netlify/lib/dispatch.mjs.
+# Stated explicitly even though it is Netlify's default, so the location is
+# something verify-build can check rather than something assumed.
+[functions]
+  directory = "netlify/functions"
+
 # Clean URLs — /north-waterfront/ instead of /north-waterfront/index.html
 [[redirects]]
   from   = "/:path"
