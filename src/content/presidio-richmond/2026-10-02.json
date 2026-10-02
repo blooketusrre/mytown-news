@@ -1,0 +1,765 @@
+{
+  "clusterSlug": "presidio-richmond",
+  "clusterName": "Presidio & Richmond",
+  "weekOf": "2026-10-02",
+  "topStories": [
+    {
+      "headline": "80-Year-Old Killed by Tow Truck on Arguello Boulevard — While City's Funded Safety Project Sits Stalled",
+      "dek": "Yuan Jun Zhu was struck in a crosswalk near Rossi Playground on Monday afternoon; advocates warn that more than $1.3 million in committed safety funding may be lost if SFMTA continues to delay.",
+      "body": "An 80-year-old man identified by Streetsblog San Francisco as Yuan Jun Zhu died Monday afternoon, September 28, after a tow-truck driver struck him in a crosswalk at the intersection of Arguello Boulevard and Anza Street in the Inner Richmond. The collision occurred steps from Rossi Pool and Playground, and the victim was transported to a hospital where he later died. According to SFPD public information officer Jennifer Gamble, the driver remained at the scene and is cooperating with investigators; no arrests had been made as of this writing.\n\nWalkSF spokesperson Marta Lindsey said police told her the truck driver struck the pedestrian in a crosswalk while turning from Arguello onto Anza. The death was the city's 13th pedestrian fatality of 2026, according to the city's traffic-fatality tracker. Mayor Daniel Lurie issued a statement saying he was \"deeply saddened\" and that \"street safety is public safety.\"\n\nThe crash has reignited pressure on city officials over a long-stalled safety project for Arguello Boulevard. SFMTA lists the Arguello Safety Project's status as \"Planning\" — more than three years after it was first promised. The stretch of Arguello north of Geary Boulevard remains on the city's High Injury Network. Despite Supervisor Connie Chan and former Supervisor Catherine Stefani directing $50,000 each in community funds toward the project, and former Assemblymember Phil Ting securing $1.25 million in state construction funds, no protected bike lanes or intersection redesigns have been built.\n\n\"We've been calling for improvements on Arguello for years, and the clock is running out to take action — funding for the project will be lost if it's not used soon,\" said Christopher White, executive director of the San Francisco Bicycle Coalition, in a statement reported by Streetsblog. SFMTA told Streetsblog this week that it is \"currently developing designs for protected bicycle corners at multiple intersections along Arguello\" and expects to vet them through interagency review in the next two months before a public hearing. Advocates noted that the agency has made similar promises before without follow-through.",
+      "sourceUrl": "https://sf.streetsblog.org/2026/09/30/driver-kills-pedestrian-at-arguello-and-anza-as-city-continues-to-drag-feet-on-funded-safety-project",
+      "sourceName": "Streetsblog San Francisco",
+      "tags": [
+        "traffic safety",
+        "pedestrian death",
+        "Arguello Boulevard",
+        "Inner Richmond",
+        "SFMTA"
+      ]
+    },
+    {
+      "headline": "Kitchen Commons Set to Open This Fall in the Former Spanish Table Space on Clement Street",
+      "dek": "Two Inner Richmond residents — one a co-owner of Liholiho Yacht Club — are turning a much-mourned retail vacancy into a neighborhood cookware shop with a café and cooking classes.",
+      "body": "Jeff Hanak, a partner at Liholiho Yacht Club, Good Good Culture Club, and Nopalito, and Connor Bruce, a former Nopalito chef, plan to open Kitchen Commons this fall at 130 Clement St., in the space vacated by the Spanish Table, which closed late last year amid eviction proceedings. The store will be stocked with new and vintage cookware — cast iron pans, local ceramics, knives, specialty pantry items, and cookbooks — and will include a small café serving coffee and prepared foods.\n\nThe owners also plan to host cooking classes, talks, and events such as cookbook exchanges. Both Hanak and Bruce are Richmond District residents who frequented the Spanish Table and did not want to see the Clement Street space go dark. \"Given the mix of businesses on Clement Street, I thought this was a good opportunity to explore a business based on hospitality and craft,\" Hanak told the SF Standard when the project was announced in May.\n\nKitchen Commons is the latest in a wave of new openings on the corridor. According to a tally by blogger Kevin Wong, eight new food-and-drink concepts have opened or are slated to open on Clement Street within a twelve-month span, including Rose Pizzeria at 1 Clement St., which has drawn lines since its April opening, and Kissaten Hi-Fi, a Japanese matcha and Filipino-inspired coffee bar that opened in March at 189 Sixth Ave. Not everyone is enthusiastic: Mission Local has noted that some of the churn has displaced smaller independent businesses, including K-Elements BBQ, which closed after a landlord-driven rent increase.",
+      "sourceUrl": "https://sfstandard.com/2026/05/07/kitchen-commons-store-inner-richmond/",
+      "sourceName": "The San Francisco Standard",
+      "tags": [
+        "Clement Street",
+        "Inner Richmond",
+        "retail",
+        "business opening",
+        "food"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Pchum Ben Festival at Crissy Field Center",
+      "startDate": "2026-10-02",
+      "date": "Friday, October 2",
+      "time": "10:00 AM–4:00 PM",
+      "location": "Crissy Field Center, 300 Crissy Field Ave, Presidio",
+      "description": "A free community celebration of the Cambodian Pchum Ben festival at the Presidio's Crissy Field Center, open to the public with up to 300 guests expected. No road closures are planned.",
+      "sourceUrl": "https://wp.presidio.gov/wp-content/uploads/2026/03/2026-Presidio-Special-Events-Schedule_Final_Accessible.pdf",
+      "sourceName": "Presidio Trust"
+    },
+    {
+      "title": "Roll Fog Documentary: Preview Screening & Fundraiser with Q&A",
+      "startDate": "2026-10-03",
+      "date": "Saturday, October 3 (and Sunday, October 11)",
+      "time": "3:00 PM on Oct. 3; 12:30 PM on Oct. 11",
+      "location": "4 Star Theater, 2200 Clement St, Inner Richmond",
+      "description": "The 4 Star Theater hosts two preview screenings and fundraisers for Roll Fog, a documentary about San Francisco City FC, described as the oldest community-owned fútbol club in the U.S. Director Daniel Díaz and SF City FC players will join a live Q&A after the October 11 screening.",
+      "sourceUrl": "https://four-star-theater.squarespace.com/calendar-of-events",
+      "sourceName": "4 Star Theater / Cinema SF"
+    },
+    {
+      "title": "Oktoberfest in the Presidio — Thursdays in October",
+      "startDate": "2026-10-09",
+      "date": "Thursdays, October 9, 16, 23, and 30",
+      "time": "4:00 PM–7:00 PM",
+      "location": "Picnic Pavilion at Presidio Tunnel Tops, 215 Lincoln Blvd, Presidio",
+      "description": "Il Parco and Fort Point team up for a month of Oktoberfest festivities at the Tunnel Tops Picnic Pavilion: German food specials, Fort Point draft beer, and live music every Thursday evening in October. Food and beverages for purchase; lederhosen encouraged.",
+      "sourceUrl": "https://presidio.gov/about/press/whats-new-this-fall-at-the-presidio",
+      "sourceName": "Presidio Trust"
+    },
+    {
+      "title": "Fleet Week: 191st Army Reserve Rock Band Concert at Tunnel Tops",
+      "startDate": "2026-10-10",
+      "date": "Friday, October 10",
+      "time": "12:00 PM and 2:00 PM",
+      "location": "Presidio Tunnel Tops, 210 Lincoln Blvd, Presidio",
+      "description": "Kick off Fleet Week at the Presidio with two free sets by the 191st Army Reserve Rock Band. Pack a picnic and enjoy live rock and pop hits with the Golden Gate Bridge as a backdrop. Fleet Week air shows run October 9–11, bringing heavy traffic to the northern waterfront and all Presidio parking areas.",
+      "sourceUrl": "https://presidio.gov/about/press/whats-new-this-fall-at-the-presidio",
+      "sourceName": "Presidio Trust"
+    },
+    {
+      "title": "Steinfest — 15th Annual at Steins Bar",
+      "startDate": "2026-10-17",
+      "date": "Friday, October 17",
+      "time": "Various times",
+      "location": "Steins, 731 Clement St, Inner Richmond",
+      "description": "The family-owned German restaurant and sports bar on Clement Street hosts its 15th annual Steinfest. The $40 admission includes a beer, all-you-can-eat German sausage, and a champagne toast.",
+      "sourceUrl": "https://missionlocal.org/2026/10/richmond-buzz-october-steinfest-globus/",
+      "sourceName": "Mission Local"
+    },
+    {
+      "title": "District 1 Richmond Family Summit",
+      "startDate": "2026-10-22",
+      "date": "Thursday, October 22",
+      "time": "5:00 PM–7:30 PM",
+      "location": "Richmond Recreation Center, 251 18th Ave, Inner Richmond",
+      "description": "The District 1 Family Summit invites families, caregivers, young people, and community members from the Richmond and surrounding neighborhoods to share their stories and help shape city priorities. Free to attend.",
+      "sourceUrl": "https://patch.com/california/san-francisco/calendar/event/20261022/93abae70-a372-41d9-a383-07b52b6fec89/district-1-richmond-family-summit",
+      "sourceName": "Patch / District 1 Supervisor's Office"
+    },
+    {
+      "title": "Día de los Muertos and Diwali Community Celebration at Tunnel Tops",
+      "startDate": "2026-10-31",
+      "date": "Saturday, October 31",
+      "time": "Various times",
+      "location": "Presidio Tunnel Tops East Meadow and Crissy Field Center, Presidio",
+      "description": "A free community public event combining Día de los Muertos and Diwali traditions at Presidio Tunnel Tops, open to all ages. No road closures are planned.",
+      "sourceUrl": "https://wp.presidio.gov/wp-content/uploads/2026/03/2026-Presidio-Special-Events-Schedule_Final_Accessible.pdf",
+      "sourceName": "Presidio Trust"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Sea Cliff Deed-Fraud Case: Permanent Injunction Hearing Set for October 23",
+      "body": "The Sea Cliff deed-fraud case covered in last week's issue moves to its next stage later this month. A temporary restraining order issued September 17 by San Francisco Superior Court Judge Charles F. Haines bars Brandon Aadee and Diana Peng from selling, encumbering, transferring, or otherwise affecting title to the property at 250 32nd Ave. while the city attorney's lawsuit proceeds. The city is seeking to void all eight disputed deeds and collect civil penalties of up to $2,500 per violation. A hearing on a permanent injunction is scheduled for October 23. Neither Aadee nor Peng appeared at the September 17 hearing; a San Mateo County arrest warrant is outstanding for Aadee.",
+      "sourceUrl": "https://sfstandard.com/2026/09/17/accused-sea-cliff-squatters-skip-court-as-judge-issues-restraining-order/",
+      "sourceName": "The San Francisco Standard",
+      "tags": [
+        "Sea Cliff",
+        "property fraud",
+        "city attorney"
+      ]
+    },
+    {
+      "headline": "New Outpost Meadow Picnic Pods at Presidio Now Reservable",
+      "body": "Starting October 1, the Presidio Trust opened reservations for picnic pods at the new Outpost Meadow, available at recreation.gov on a two-month rolling basis. Two pods — each with five to seven picnic tables, including accessible options — can be booked to guarantee space for large gatherings. One pod includes two double BBQ grills and shaded umbrellas. The meadow sits beside the Outpost playground near Presidio Tunnel Tops.",
+      "sourceUrl": "https://presidio.gov/about/press/whats-new-this-fall-at-the-presidio",
+      "sourceName": "Presidio Trust",
+      "tags": [
+        "Presidio",
+        "parks",
+        "recreation"
+      ]
+    },
+    {
+      "headline": "Two Storefronts at Sixth Avenue and Clement Street Appear to Be Closing",
+      "body": "Mission Local's Richmond Buzz column, published October 1, noted that two storefronts behind scaffolding at the southeast corner of Sixth Avenue and Clement Street appear to be closing. No replacement tenants have been publicly announced. Aroma Tea Shop at 302 Sixth Ave., between the two vacant spaces, appears to be remaining open.",
+      "sourceUrl": "https://missionlocal.org/2026/10/richmond-buzz-october-steinfest-globus/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "Clement Street",
+        "Inner Richmond",
+        "retail"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Driver Kills Pedestrian at Arguello and Anza as City Continues to Drag Feet on Funded Safety Project",
+      "url": "https://sf.streetsblog.org/2026/09/30/driver-kills-pedestrian-at-arguello-and-anza-as-city-continues-to-drag-feet-on-funded-safety-project",
+      "publication": "Streetsblog San Francisco"
+    },
+    {
+      "title": "Pedestrian killed steps away from Inner Richmond playground",
+      "url": "https://missionlocal.org/2026/09/pedestrian-killed-steps-away-from-inner-richmond-playground/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Pedestrian dies after Richmond District crash near San Francisco playground",
+      "url": "https://www.sfchronicle.com/sf/article/richmond-district-pedestrian-death-vehicle-22454953.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Pedestrian struck and killed in San Francisco's Richmond District",
+      "url": "https://www.kron4.com/news/bay-area/pedestrian-struck-and-killed-in-san-franciscos-richmond-district-police-investigating/",
+      "publication": "KRON4"
+    },
+    {
+      "title": "Arguello Safety Project",
+      "url": "https://www.sfmta.com/projects/arguello-safety-project",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "Clement Street's next food destination isn't a restaurant",
+      "url": "https://sfstandard.com/2026/05/07/kitchen-commons-store-inner-richmond/",
+      "publication": "The San Francisco Standard"
+    },
+    {
+      "title": "Kitchen Commons, a new cookware store, will open in SF",
+      "url": "https://www.sfchronicle.com/food/restaurants/article/kitchen-commons-sf-opening-22247394.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Accused Sea Cliff squatters skip court as judge issues restraining order",
+      "url": "https://sfstandard.com/2026/09/17/accused-sea-cliff-squatters-skip-court-as-judge-issues-restraining-order/",
+      "publication": "The San Francisco Standard"
+    },
+    {
+      "title": "Richmond Buzz: October means all the sausages you can eat",
+      "url": "https://missionlocal.org/2026/10/richmond-buzz-october-steinfest-globus/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "What's New This Fall at the Presidio",
+      "url": "https://presidio.gov/about/press/whats-new-this-fall-at-the-presidio",
+      "publication": "Presidio Trust"
+    },
+    {
+      "title": "2026 Presidio Special Events Schedule",
+      "url": "https://wp.presidio.gov/wp-content/uploads/2026/03/2026-Presidio-Special-Events-Schedule_Final_Accessible.pdf",
+      "publication": "Presidio Trust"
+    },
+    {
+      "title": "Roll Fog Preview Screening Fundraiser — Calendar of Events",
+      "url": "https://four-star-theater.squarespace.com/calendar-of-events",
+      "publication": "4 Star Theater / Cinema SF"
+    },
+    {
+      "title": "District 1 Richmond Family Summit",
+      "url": "https://patch.com/california/san-francisco/calendar/event/20261022/93abae70-a372-41d9-a383-07b52b6fec89/district-1-richmond-family-summit",
+      "publication": "Patch / District 1 Supervisor's Office"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Rose Pizzeria",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Neapolitan-style pizzeria",
+        "description": "Berkeley's nationally acclaimed thin-crust pizzeria, named one of America's best by the New York Times, opened its first San Francisco location on the prominent Clement and Arguello corner in 2026.",
+        "address": "1 Clement St",
+        "phone": "",
+        "website": "https://www.rosepizzeria.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": "New"
+      },
+      {
+        "name": "Chapeau!",
+        "cuisineGroup": "Other",
+        "type": "French bistro",
+        "description": "Beloved family-run French bistro from chef-owner Philippe Gardelle serving classic escargots, coq au vin, and prix-fixe menus in a cozy Clement Street setting since 1996.",
+        "address": "126 Clement St",
+        "phone": "415-750-9787",
+        "website": "https://www.chapeausf.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Burma Superstar",
+        "cuisineGroup": "Asian",
+        "type": "Burmese restaurant",
+        "description": "Iconic Burmese restaurant famous for its tea leaf salad and rainbow salad, drawing lines down Clement Street for decades.",
+        "address": "309 Clement St",
+        "phone": "415-387-2147",
+        "website": "https://burmasuperstar.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "B Star",
+        "cuisineGroup": "Asian",
+        "type": "Burmese-fusion bar and restaurant",
+        "description": "Sister restaurant to Burma Superstar offering a more casual, bar-forward experience with many of the same beloved Burmese flavors plus cocktails.",
+        "address": "127 Clement St",
+        "phone": "415-933-9900",
+        "website": "https://burmasuperstar.com/b-star/",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Arsicault Bakery",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "French bakery",
+        "description": "Bon Appétit's best new bakery in America when it opened in 2015, Arsicault draws weekend lines stretching down Arguello for its supremely flaky croissants, kouign amann, and morning buns.",
+        "address": "397 Arguello Blvd",
+        "phone": "",
+        "website": "https://arsicaultbakery.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Dalida",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Eastern Mediterranean restaurant",
+        "description": "Acclaimed restaurant from chef couple Laura and Sayat Ozyilmaz set on the Presidio's Main Parade Lawn, celebrated for its pillowy pita, tahdig, and Cypriot lamb chops with sweeping Alcatraz views.",
+        "address": "101 Montgomery St, Suite 100, Presidio",
+        "phone": "415-237-1999",
+        "website": "https://www.dalidasf.com/",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Maria Isabel",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Contemporary Mexican restaurant",
+        "description": "Upscale Mexican restaurant from the Dalida team, drawing on chef Laura Ozyilmaz's Guerrero coastal upbringing with dishes like ceviche acapulqueño, sourdough tortillas, and seasonal California-sourced ingredients.",
+        "address": "500 Presidio Ave",
+        "phone": "415-275-0075",
+        "website": "https://www.mariaisabelsf.com/",
+        "neighborhood": "Presidio Heights",
+        "notable": "New"
+      },
+      {
+        "name": "Cinderella Russian Bakery",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Russian bakery and café",
+        "description": "A Richmond institution since 1953 serving piroshki, borscht, pelmeni, and Eastern European pastries to generations of neighborhood regulars.",
+        "address": "436 Balboa St",
+        "phone": "415-751-9690",
+        "website": "https://www.cinderellarussianbakery.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Mandalay Restaurant",
+        "cuisineGroup": "Asian",
+        "type": "Burmese restaurant",
+        "description": "Long-standing Burmese restaurant on California Street celebrated for its ginger salad, mohinga fish noodle soup, and warm family-run hospitality.",
+        "address": "4348 California St",
+        "phone": "415-386-3895",
+        "website": "https://www.mandalaysf.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Kitchen Istanbul",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Turkish-Mediterranean restaurant",
+        "description": "Intimate Clement Street restaurant offering Turkish and Eastern Mediterranean dishes including mezze, kebabs, and housemade baklava in a warmly decorated space.",
+        "address": "345 Clement St",
+        "phone": "415-831-5855",
+        "website": "https://www.kitchenistanbul.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Pizzetta 211",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Artisan pizza restaurant",
+        "description": "Tiny, reservation-free Outer Richmond spot turning out small-batch, seasonal thin-crust pizzas with a rotating menu of just a few options, beloved for its simplicity and quality.",
+        "address": "211 23rd Ave",
+        "phone": "415-379-9880",
+        "website": "https://pizzetta211.com/",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Mess Hall at Presidio Tunnel Tops",
+        "cuisineGroup": "Other",
+        "type": "All-day food hall and café",
+        "description": "The Presidio's newest dining destination, an all-day food hall adjacent to Tunnel Tops featuring a café serving Wrecking Ball Coffee, a full cocktail bar, three food concepts, and a retail market in a historic building with San Francisco Bay views.",
+        "address": "Presidio Tunnel Tops, Presidio",
+        "phone": "",
+        "website": "https://messhallpresidio.com/",
+        "neighborhood": "Presidio",
+        "notable": "New"
+      },
+      {
+        "name": "Pacific Café",
+        "cuisineGroup": "Seafood & American",
+        "type": "Classic seafood restaurant",
+        "description": "A 51-year-old Richmond institution at the corner of Geary and 34th Avenue, serving fresh seafood plates with Boudin sourdough and offering every waiting guest a complimentary glass of wine — a tradition since 1974.",
+        "address": "7000 Geary Blvd",
+        "phone": "415-387-7091",
+        "website": "https://www.pacificcafesf.com/",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Plough and Stars",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Irish pub and music venue",
+        "description": "Beloved Irish pub on Clement Street with live traditional music sessions most nights of the week and a warm neighborhood atmosphere.",
+        "address": "116 Clement St",
+        "phone": "415-751-1122",
+        "website": "https://www.theploughandstars.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Richmond Republic Draught House",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood bar",
+        "description": "Lively Clement Street craft beer bar with a rotating lineup of local and regional taps, a relaxed vibe, and a neighborhood gathering-spot feel.",
+        "address": "642 Clement St",
+        "phone": "415-742-5534",
+        "website": "https://www.richmondrepublic.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Toy Boat Dessert Café",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Ice cream and dessert café",
+        "description": "Charming dessert café filled with vintage tin toys, serving scoops of Clover ice cream, sodas, and espresso drinks to families and neighbors since 1979.",
+        "address": "401 Clement St",
+        "phone": "415-751-7505",
+        "website": "https://www.toysandicecream.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Trad'r Sam",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Tiki bar",
+        "description": "Old-school Outer Richmond tiki bar open since 1937, serving strong, colorful cocktails in a kitschy, low-lit room beloved for its no-frills, time-warp atmosphere.",
+        "address": "6150 Geary Blvd",
+        "phone": "415-221-0773",
+        "website": "",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Inn at the Presidio",
+        "type": "Boutique national park hotel",
+        "description": "A 22-room historic boutique hotel inside the Presidio, set in a restored Georgian Revival officers' building with complimentary continental breakfast, afternoon wine and cheese receptions, and fire-pit porches with Golden Gate views.",
+        "address": "42 Moraga Ave, Presidio",
+        "phone": "415-800-7356",
+        "website": "https://presidiolodging.com/inn-at-the-presidio/",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Lodge at the Presidio",
+        "type": "Boutique national park hotel",
+        "description": "A second Presidio Trust boutique hotel in a historic building on the Main Post, offering European-style breakfast buffets, afternoon wine and cheese, and a serene national park setting steps from Crissy Field.",
+        "address": "105 Montgomery St, Presidio",
+        "phone": "415-561-1234",
+        "website": "https://presidiolodging.com/lodge-at-the-presidio/",
+        "neighborhood": "Presidio",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Green Apple Books & Music",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Beloved Richmond independent bookstore since 1967, with two Clement Street locations packed floor-to-ceiling with new and used books, music, and film; in 2026, the Sunset location opened its upstairs as a literary co-working space.",
+        "address": "506 Clement St",
+        "phone": "415-387-2272",
+        "website": "https://www.greenapplebooks.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Clement Street Farmers Market",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Certified farmers market",
+        "description": "Year-round Sunday farmers market across three blocks of Clement Street in the Inner Richmond, featuring organic produce, baked goods, flowers, and specialty vendors from across the Bay Area.",
+        "address": "Clement St between 2nd and 4th Avenues",
+        "phone": "",
+        "website": "https://www.agriculturalinstitute.org/clement-st/",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Sports Basement Presidio",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Outdoor and sporting goods store",
+        "description": "Large, well-priced outdoor and sporting goods retailer in the Presidio's historic Thoreau Center, carrying gear for hiking, cycling, camping, and watersports alongside apparel and rentals.",
+        "address": "610 Old Mason St, Presidio",
+        "phone": "415-437-0100",
+        "website": "https://www.sportsbasement.com/",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Aroma Tea Shop",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Tea shop",
+        "description": "Specialty tea shop on Clement Street with a vast selection of loose-leaf teas from China and Taiwan, teaware, and knowledgeable staff who guide customers through brewing techniques.",
+        "address": "416 Clement St",
+        "phone": "415-750-9955",
+        "website": "https://www.aromateashop.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Dragon's Gate Art",
+        "shopGroup": "Home & Gifts",
+        "type": "Asian art and gift shop",
+        "description": "Clement Street gallery and gift shop specializing in Asian art, ceramics, silk, and unique home goods sourced from across East and Southeast Asia.",
+        "address": "306 Clement St",
+        "phone": "415-668-3688",
+        "website": "",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Lakeshore Natural Foods",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Natural and organic grocery",
+        "description": "Community-focused natural foods market on California Street carrying organic produce, bulk goods, supplements, and specialty items for health-conscious Richmond shoppers.",
+        "address": "3288 California St",
+        "phone": "415-387-6262",
+        "website": "",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Park Life",
+        "shopGroup": "Home & Gifts",
+        "type": "Art bookstore and design shop",
+        "description": "Celebrated Inner Richmond shop and small-press gallery combining design books, zines, art prints, and curated objects by local and international artists.",
+        "address": "220 Clement St",
+        "phone": "415-386-7275",
+        "website": "https://www.parklifestore.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Sloat Garden Center",
+        "shopGroup": "Other",
+        "type": "Garden center and nursery",
+        "description": "Full-service garden center on Geary Boulevard carrying a wide range of plants, soils, tools, and gardening supplies for Richmond residents and Golden Gate Park-adjacent gardeners.",
+        "address": "2700 Sloat Blvd",
+        "phone": "415-566-4415",
+        "website": "https://www.sloatgardens.com/",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Walt Disney Family Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Cultural museum",
+        "description": "Forty-thousand-square-foot non-profit museum in the Presidio dedicated to the life and legacy of Walt Disney, with ten interactive galleries, over 200 video screens, early animations, personal artifacts, and a spectacular scale model of Disneyland.",
+        "address": "104 Montgomery St, Presidio",
+        "phone": "415-345-6800",
+        "website": "https://www.waltdisney.org/",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Legion of Honor",
+        "venueGroup": "Museums & Cultural",
+        "type": "Fine arts museum",
+        "description": "Landmark fine arts museum in Lincoln Park at the edge of the Richmond, housing a permanent collection spanning 4,000 years of art alongside world-class traveling exhibitions including the current Etruscans show through September 20.",
+        "address": "100 34th Ave, Lincoln Park",
+        "phone": "415-750-3600",
+        "website": "https://www.famsf.org/legion-of-honor",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Presidio Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Historic community theater",
+        "description": "Restored 600-seat theater on the Presidio's Main Post hosting film screenings, live performances, community events, and — on September 17 — the world premiere of the Anza 250 documentary marking the park's 250th birthday.",
+        "address": "99 Moraga Ave, Presidio",
+        "phone": "415-513-2980",
+        "website": "https://www.presidiotheatre.org/",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Presidio Officers' Club",
+        "venueGroup": "Museums & Cultural",
+        "type": "Cultural heritage center and museum",
+        "description": "Historic adobe building on the Presidio's Main Post housing free exhibitions including the ongoing EXCLUSION show on the WWII Japanese American incarceration, plus the Heritage Gallery tracing the park's 250-year history.",
+        "address": "50 Moraga Ave, Presidio",
+        "phone": "415-561-4323",
+        "website": "https://presidio.gov/explore/attractions/officers-club",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "ArtSeed at Tides Converge",
+        "venueGroup": "Art Galleries",
+        "type": "Arts education nonprofit and gallery",
+        "description": "Presidio-based arts education nonprofit hosting free exhibitions in the China Brotsky and Seed Galleries, including the current 20th Annual Open Call Exhibition, 'So What Now?', running through September 18.",
+        "address": "1012 Torney Ave, Presidio",
+        "phone": "415-656-9849",
+        "website": "https://www.artseed.org/",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Plough and Stars",
+        "venueGroup": "Music Venues",
+        "type": "Irish pub with live music",
+        "description": "Clement Street Irish pub and live music institution hosting traditional music sessions most nights, making it one of the best spots in San Francisco for authentic acoustic Irish folk and trad.",
+        "address": "116 Clement St",
+        "phone": "415-751-1122",
+        "website": "https://www.theploughandstars.com/",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "4 Star Theater",
+        "venueGroup": "Cinema",
+        "type": "Neighborhood movie theater",
+        "description": "Independent cinema on Clement Street showing a mix of current releases, art house films, and free family-friendly weekend morning screenings in 2026.",
+        "address": "2200 Clement St",
+        "phone": "415-666-3488",
+        "website": "https://www.4startheater.com/",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Presidio Visitor Center",
+        "venueGroup": "Museums & Cultural",
+        "type": "National park visitor center and gallery",
+        "description": "The Presidio Trust's main visitor center offers free self-guided and ranger-led programming, rotating interpretive exhibitions, and serves as the starting point for exploring the park's 250 years of layered history.",
+        "address": "210 Lincoln Blvd, Presidio",
+        "phone": "415-561-4323",
+        "website": "https://presidio.gov/explore/attractions/visitor-center",
+        "neighborhood": "Presidio",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Presidio Golf Course",
+        "venueGroup": "Sports & Courts",
+        "type": "Public 18-hole golf course",
+        "description": "Historic public golf course in the Presidio, one of the most scenic on the West Coast, with fairways winding through cypress and eucalyptus groves with views of the Golden Gate Bridge.",
+        "address": "300 Finley Rd, Presidio",
+        "phone": "415-561-4653",
+        "website": "https://www.presidiogolf.com/",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Presidio Bowling Center",
+        "venueGroup": "Sports & Courts",
+        "type": "Bowling alley and grill",
+        "description": "Twelve-lane bowling alley in the Presidio with a full grill menu, a selection of 45 beers and ciders, and open lanes for drop-in bowling, private events, and league play.",
+        "address": "93 Moraga Ave, Presidio",
+        "phone": "415-561-2695",
+        "website": "https://www.presidiobowling.com/",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Rob Hill Campground",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban campground",
+        "description": "One of only two campgrounds in San Francisco, Rob Hill Campground in the Presidio is open April through October and bookable through recreation.gov, offering a true urban camping experience minutes from the city.",
+        "address": "Washington Blvd at Immigrant Point Trail, Presidio",
+        "phone": "",
+        "website": "https://www.recreation.gov/",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Presidio Tunnel Tops",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public park and event meadow",
+        "description": "Expansive park above the Presidio Parkway tunnels with sweeping Golden Gate Bridge views, a campfire circle, playground, and event meadows hosting free community programs throughout summer.",
+        "address": "Presidio Tunnel Tops, Presidio",
+        "phone": "",
+        "website": "https://presidio.gov/explore/attractions/presidio-tunnel-tops",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Crissy Field",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Restored tidal marsh and beachfront park",
+        "description": "Iconic restored wetlands and beach along the Presidio waterfront offering walking and cycling on the Golden Gate Promenade, kite flying, windsurfing, and Golden Gate Bridge views.",
+        "address": "Crissy Field Ave, Presidio",
+        "phone": "",
+        "website": "https://presidio.gov/explore/attractions/crissy-field",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sports Basement Presidio — Rentals & Fitness",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Outdoor gear rental and fitness events",
+        "description": "The Presidio Sports Basement location hosts regular demo runs, fitness events, and rents bikes, camping, and outdoor gear, making it a hub for active Presidio visitors.",
+        "address": "610 Old Mason St, Presidio",
+        "phone": "415-437-0100",
+        "website": "https://www.sportsbasement.com/",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Mountain Lake Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban park and natural lake",
+        "description": "Peaceful park in the Inner Richmond/Lake Street neighborhood surrounding one of San Francisco's only remaining natural lakes, with a playground, walking paths, and restored wetland habitat.",
+        "address": "Lake St & 12th Ave, Inner Richmond",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/mountain-lake-park/",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Lincoln Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Coastal park and trail network",
+        "description": "Rugged headlands park in the Outer Richmond home to the Legion of Honor museum, the Land's End coastal trail with dramatic ocean and Golden Gate views, and the historic Sutro Baths ruins.",
+        "address": "34th Ave & Clement St, Outer Richmond",
+        "phone": "",
+        "website": "https://sfrecpark.org/destination/lincoln-park/",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ocean Beach",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Pacific Ocean beach",
+        "description": "Three-mile stretch of Pacific Ocean beach bordering the Outer Richmond, popular for surfing, walking, bonfires in designated fire rings, and dramatic sunsets over the water.",
+        "address": "Great Hwy, Outer Richmond",
+        "phone": "",
+        "website": "https://www.nps.gov/goga/planyourvisit/oceanbeach.htm",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-10-02",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-10-02",
+        "high": 71,
+        "low": 58,
+        "summary": "Mostly Cloudy",
+        "condition": "cloudy",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-03",
+        "high": 79,
+        "low": 61,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-04",
+        "high": 76,
+        "low": 61,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-05",
+        "high": 73,
+        "low": 61,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-06",
+        "high": 73,
+        "low": 61,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-07",
+        "high": 73,
+        "low": 61,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-08",
+        "high": 72,
+        "low": 60,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 1
+      }
+    ]
+  }
+}

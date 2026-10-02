@@ -1,0 +1,722 @@
+{
+  "clusterSlug": "west-portal-lakeside",
+  "clusterName": "West Portal & Lakeside",
+  "weekOf": "2026-10-02",
+  "topStories": [
+    {
+      "headline": "West Portal Elementary Turns 100 — and Two New Buildings to Prove It",
+      "dek": "Phase 1 of the bond-funded modernization project opened for students at the start of the 2026–27 school year, replacing eight aging bungalows; a centennial street celebration follows this Saturday.",
+      "body": "West Portal Elementary School opened its doors in 1926, and a century later the campus looks measurably different. Phase 1 of the SFUSD modernization project — a $21 million effort funded in part by state bond reimbursements — removed eight dilapidated portable bungalows and replaced them with two new permanent buildings. According to SFUSD's project page, the new structures welcomed students at the start of the 2026–27 school year, with a Phase 1 ribbon-cutting marking the milestone. A second package of work, focused on modernizing the main building, began during the summer of 2026.\n\nThe school was initially constructed between 1926 and 1927, making this academic year its centennial. Construction had been delayed for years due to insufficient funds before SFUSD received state bond reimbursements and restarted work in early 2024. The project was designed by WRNS Studio, managed by Kitchell, and built by Bana Builders.\n\nThe Greater West Portal Neighborhood Association is marking the occasion with a public celebration on West Portal Avenue this Saturday, October 3, from 11 a.m. to 3 p.m., starting at the West Portal Library courtyard. The West Portal Parents Club describes the centennial as \"a celebration of the families, educators, and community members who have shaped the school for the last 100 years — and those who will carry it forward into the next century.\"",
+      "sourceUrl": "https://www.sfusd.edu/bond/modernization/west-portal-elementary-school",
+      "sourceName": "San Francisco Unified School District",
+      "tags": [
+        "education",
+        "West Portal",
+        "SFUSD",
+        "construction"
+      ]
+    },
+    {
+      "headline": "SFSU's First Woman President to Step Down Next Summer",
+      "dek": "Lynn Mahoney announced September 8 that she will retire after eight years leading San Francisco State University, as new student enrollment hits a record high under her tenure.",
+      "body": "San Francisco State University President Lynn Mahoney announced on September 8, 2026, that she will retire next summer after eight years as president and nearly two decades of service to the California State University system. Mahoney, who in 2019 became the first woman to serve as SFSU's president in a permanent capacity, will remain in her role while the CSU Board of Trustees conducts a national search for her successor.\n\nMahoney's tenure was marked by steep enrollment losses, budget cuts, and a challenging pandemic period — but also signs of a rebound. This fall, new student enrollment at SFSU increased by more than 10 percent, a first under her leadership. During her time at the helm, the university opened the Science and Engineering Innovation Center, Marcus Hall, and two new residence halls, including West Grove Commons. The university also raised $175.8 million in philanthropic support and earned the Seal of Excelencia for its work serving Latinx students.\n\nCampus reaction was mixed. The student newspaper Golden Gate Xpress reported that while some praised Mahoney's legacy — particularly the university's divestment from weapons manufacturers — others raised unresolved concerns about staff and faculty conditions. CSU Chancellor Mildred García praised Mahoney's \"candid, respectful, and authentic two-way engagement\" with the campus community in a public statement.",
+      "sourceUrl": "https://news.sfsu.edu/news/sfsu-president-lynn-mahoney-announces-retirement",
+      "sourceName": "SFSU News",
+      "tags": [
+        "SFSU",
+        "education",
+        "Lakeshore",
+        "leadership"
+      ]
+    },
+    {
+      "headline": "West Portal Safety Overhaul Is Working, SFMTA Data Shows",
+      "dek": "An SFMTA evaluation published in mid-2026 found that injury crashes in the West Portal station area dropped 60 percent since traffic changes were implemented following the 2024 fatal crash.",
+      "body": "Two years after a car plowed into a bus shelter at West Portal Station and killed a family of four, city data shows the neighborhood's safety overhaul is producing results. The San Francisco Municipal Transportation Agency completed an evaluation of the West Portal Station Safety and Community Space Improvements project and published results in its June 2026 report, with findings highlighted by the Metropolitan Transportation Commission in August.\n\nAccording to SFMTA, traffic collision rates in the area dropped 60 percent between October 2024 and March 2026 compared to the same window before the project. The number of injury crashes fell from an average of 6.7 per year to 2.7 per year. Crashes involving Muni vehicles also declined sharply — as of fall 2025, no Muni vehicle had been involved in a collision with another vehicle in the project area. More than 70 percent of people surveyed reported feeling very or somewhat safe at the intersection, up from about 50 percent before the project.\n\nThe improvements — approved by the SFMTA board in mid-2024 and implemented in phases through 2025 — included turn restrictions on Ulloa Street, a redesigned station entrance, station murals, decorative crosswalks, a bikeshare station, and flashing pedestrian beacons. SFMTA also noted that sales tax growth along the West Portal Avenue commercial corridor has exceeded the citywide average since the changes were made. The agency says it will consider additional permanent improvements based on the evaluation findings.",
+      "sourceUrl": "https://www.sfmta.com/blog/numbers-are-west-portal-changes-bring-calmer-streets-improved-station-area",
+      "sourceName": "SFMTA",
+      "tags": [
+        "transportation",
+        "safety",
+        "West Portal",
+        "SFMTA"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "West Portal Library Book Club: For Boys",
+      "startDate": "2026-10-01",
+      "date": "Thursday, October 1",
+      "time": "6:45 PM",
+      "location": "West Portal Branch Library, 190 Lenox Way",
+      "description": "The West Portal Library's monthly book club for boys ages 9–12 with a favorite adult meets the first Thursday of each month. The group reads mostly fiction but also nonfiction.",
+      "sourceUrl": "https://sfpl.org/locations/west-portal",
+      "sourceName": "San Francisco Public Library"
+    },
+    {
+      "title": "West Portal Elementary Centennial Celebration",
+      "startDate": "2026-10-03",
+      "date": "Saturday, October 3",
+      "time": "11:00 AM–3:00 PM",
+      "location": "West Portal Avenue (starting at West Portal Library courtyard)",
+      "description": "A free community celebration marking 100 years of West Portal Elementary School, organized by the Greater West Portal Neighborhood Association. Activities run along West Portal Avenue.",
+      "sourceUrl": "https://www.gwpna.org/west-portal-elementary-centennial-celebration-october-3-2026/",
+      "sourceName": "Greater West Portal Neighborhood Association"
+    },
+    {
+      "title": "Triangle Parks Party",
+      "startDate": "2026-10-04",
+      "date": "Sunday, October 4",
+      "time": "11:30 AM–3:00 PM",
+      "location": "Balceta Triangle Park and Merced Triangle Park, West Portal",
+      "description": "The annual Triangle Parks Party is a collaboration between the Balceta Triangle Park and the Merced Triangle Park, two small neighborhood green spaces in the West Portal area.",
+      "sourceUrl": "https://www.gwpna.org/triangle-parks-party-sunday-october-4-2026/",
+      "sourceName": "Greater West Portal Neighborhood Association"
+    },
+    {
+      "title": "SFSU Wellness Game Night",
+      "startDate": "2026-10-02",
+      "date": "Friday, October 2",
+      "time": "6:00–8:00 PM",
+      "location": "The Swamp (Bricks), San Francisco State University, 1600 Holloway Ave",
+      "description": "A free campus wellness event open to SFSU students featuring games and socializing. Hosted by SFSU's Center for Global Engagement.",
+      "sourceUrl": "https://www.cel.sfsu.edu/global/newsletter/october2026",
+      "sourceName": "SFSU Center for Global Engagement"
+    },
+    {
+      "title": "MPIC Monthly Meeting",
+      "startDate": "2026-10-01",
+      "date": "Thursday, October 1",
+      "time": "7:00 PM",
+      "location": "MPIC Clubhouse, 350 O'Shaughnessy Blvd, Miraloma Park",
+      "description": "The Miraloma Park Improvement Club holds open monthly meetings on the first Thursday of each month (except July). Residents are welcome; guest speakers are followed by regular club business.",
+      "sourceUrl": "https://miralomapark.org/news-events/",
+      "sourceName": "Miraloma Park Improvement Club"
+    },
+    {
+      "title": "Día de los Muertos Frame Painting and Candle Making — SFSU",
+      "startDate": "2026-10-29",
+      "date": "Thursday, October 29",
+      "time": "4:00–6:00 PM",
+      "location": "Mashouf Wellness Center, Room 105, 755 Font Blvd., San Francisco State University",
+      "description": "A free Día de los Muertos arts event open to SFSU students, featuring frame painting and candle making. Hosted by the Center for Global Engagement.",
+      "sourceUrl": "https://www.cel.sfsu.edu/global/newsletter/october2026",
+      "sourceName": "SFSU Center for Global Engagement"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Miraloma Park Improvement Club Posts Notice of Election",
+      "body": "The Miraloma Park Improvement Club has posted a notice of election for officer and board member positions on its website, listed among current announcements alongside the September 2026 issue of its Miraloma Life newsletter. The club, which has governed neighborhood advocacy since 1930 and holds monthly meetings at its clubhouse on O'Shaughnessy Boulevard, has not yet published dates or candidate details on its public site. Members should check miralomapark.org for voting instructions and deadlines.",
+      "sourceUrl": "https://miralomapark.org/",
+      "sourceName": "Miraloma Park Improvement Club",
+      "tags": [
+        "Miraloma Park",
+        "civic",
+        "neighborhood association"
+      ]
+    },
+    {
+      "headline": "Parkmerced Development Parcels Pass to New York Firm After Foreclosure",
+      "body": "In late July 2026, New York-based Yellowstone Real Estate Investments took control of four land parcels at Parkmerced through foreclosure after originating a $101 million construction loan to developer Maximus Real Estate in 2022. The parcels cover the first four subphases of a long-delayed redevelopment plan and are entitled for nearly 1,700 new apartments. The broader Parkmerced complex — 3,221 existing units adjacent to San Francisco State University — remains under the management of court-appointed receiver Douglas Wilson Cos. and property manager Ballast. The redevelopment plan was approved by the city in 2011 and was originally slated to triple Parkmerced's housing stock to more than 5,600 units with new Muni M-line stops, but never broke ground. Whether and when Yellowstone will begin construction has not been announced.",
+      "sourceUrl": "https://sfstandard.com/2026/07/22/yellowstone-parkmerced-foreclosure-redevelopment/",
+      "sourceName": "San Francisco Standard",
+      "tags": [
+        "Parkmerced",
+        "housing",
+        "development",
+        "real estate"
+      ]
+    },
+    {
+      "headline": "SFSU Student Paper Reports Persistent Accessibility Gaps for Disabled Students",
+      "body": "A September 25 investigation by the Golden Gate Xpress, SFSU's student newspaper, found that the university's accessibility features for disabled students have shown \"patterns of inconsistency despite promises of dedication.\" The story documented shuttle service failures, accommodation desks being used as ordinary tables, and communication breakdowns between students and the Disability Programs and Resource Center. The report comes as campus attention to disability issues has grown; the DPRC this fall shifted from drop-in hours to scheduled twice-weekly office hours with designated disability specialists, a change that took effect in January 2026.",
+      "sourceUrl": "https://goldengatexpress.org/115901/news/campus/sfsus-inconsistencies-in-addressing-accessibility-leave-disabled-community-frustrated/",
+      "sourceName": "Golden Gate Xpress",
+      "tags": [
+        "SFSU",
+        "disability",
+        "accessibility",
+        "campus"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "West Portal ES Package 1 — Project Page",
+      "url": "https://www.sfusd.edu/bond/modernization/west-portal-elementary-school",
+      "publication": "San Francisco Unified School District"
+    },
+    {
+      "title": "West Portal Elementary School - Phase 1 Ribbon Cutting",
+      "url": "https://www.youtube.com/watch?v=_BMjM7j1VyY",
+      "publication": "YouTube / SFUSD"
+    },
+    {
+      "title": "West Portal Elementary Centennial Celebration October 3, 2026",
+      "url": "https://www.gwpna.org/west-portal-elementary-centennial-celebration-october-3-2026/",
+      "publication": "Greater West Portal Neighborhood Association"
+    },
+    {
+      "title": "West Portal Parents Club — A Century of Community",
+      "url": "https://www.westportalschool.com/wppc",
+      "publication": "West Portal Parents Club"
+    },
+    {
+      "title": "SFSU President Lynn Mahoney announces retirement",
+      "url": "https://news.sfsu.edu/news/sfsu-president-lynn-mahoney-announces-retirement",
+      "publication": "SFSU News"
+    },
+    {
+      "title": "SFSU reacts to President Lynn Mahoney's retirement announcement",
+      "url": "https://goldengatexpress.org/115773/news/sfsu-community-reacts-to-president-lynn-mahoneys-retirement-announcement/",
+      "publication": "Golden Gate Xpress"
+    },
+    {
+      "title": "S.F. State president plans exit after 'profound but not easy' tenure",
+      "url": "https://www.sfchronicle.com/sf/article/sf-state-president-mahoney-plans-exit-22422355.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Numbers Are In: West Portal Changes Bring Calmer Streets, Improved Station Area",
+      "url": "https://www.sfmta.com/blog/numbers-are-west-portal-changes-bring-calmer-streets-improved-station-area",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "Road safety: SFMTA reports improved conditions at West Portal in San Francisco",
+      "url": "https://blog.bayareametro.gov/posts/road-safety-sfmta-reports-improved-conditions-west-portal-san-francisco",
+      "publication": "Metropolitan Transportation Commission"
+    },
+    {
+      "title": "After a family was killed at a West Portal bus stop, the street was redesigned. Did it work?",
+      "url": "https://missionlocal.org/2026/07/san-francisco-sfmta-west-portal-safety-project/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Triangle Parks Party — Sunday, October 4, 2026",
+      "url": "https://www.gwpna.org/triangle-parks-party-sunday-october-4-2026/",
+      "publication": "Greater West Portal Neighborhood Association"
+    },
+    {
+      "title": "Center for Global Engagement Newsletter — Oct. 2026",
+      "url": "https://www.cel.sfsu.edu/global/newsletter/october2026",
+      "publication": "SFSU Center for Global Engagement"
+    },
+    {
+      "title": "West Portal Branch — Upcoming Events",
+      "url": "https://sfpl.org/locations/west-portal",
+      "publication": "San Francisco Public Library"
+    },
+    {
+      "title": "Miraloma Park Improvement Club — News & Events",
+      "url": "https://miralomapark.org/",
+      "publication": "Miraloma Park Improvement Club"
+    },
+    {
+      "title": "Yellowstone takes over Parkmerced development site in foreclosure",
+      "url": "https://sfstandard.com/2026/07/22/yellowstone-parkmerced-foreclosure-redevelopment/",
+      "publication": "San Francisco Standard"
+    },
+    {
+      "title": "Key piece of S.F.'s largest apartment complex is sold after financial distress",
+      "url": "https://www.sfchronicle.com/realestate/article/parkmerced-sale-22356421.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "SFSU's inconsistencies in addressing accessibility leave disabled community frustrated",
+      "url": "https://goldengatexpress.org/115901/news/campus/sfsus-inconsistencies-in-addressing-accessibility-leave-disabled-community-frustrated/",
+      "publication": "Golden Gate Xpress"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Elena's Mexican Restaurant",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Upscale Mexican restaurant",
+        "description": "From the family behind Original Joe's, Elena's brings wood-fired Mexican cooking with California-inspired dishes, lively margaritas, and a festive atmosphere to the heart of West Portal.",
+        "address": "255 West Portal Ave, San Francisco, CA 94127",
+        "phone": "415-622-4440",
+        "website": "https://www.elenasmexican.com",
+        "neighborhood": "West Portal",
+        "notable": "New"
+      },
+      {
+        "name": "Khao Tiew",
+        "cuisineGroup": "Asian",
+        "type": "Thai restaurant",
+        "description": "A buzzy, dinner-only Thai restaurant in West Portal serving bold takes on Thai classics — from duck breast panang curry to deep-fried papaya salad — in a room decked with vintage Thai movie posters.",
+        "address": "272 Claremont Blvd, San Francisco, CA 94127",
+        "phone": "415-996-1919",
+        "website": "https://khaotiew.xyz",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Tur",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Thai-fusion brunch restaurant",
+        "description": "From the owners of Khao Tiew, Tur opened in May 2026 and serves Thai-inspired breakfast and brunch — including Thai-style jook, soft-shell crab eggs benedict, and honey walnut shrimp with waffles — in the former Squat & Gobble corner space.",
+        "address": "1 West Portal Ave, San Francisco, CA 94127",
+        "phone": "415-569-1919",
+        "website": "https://www.yelp.com/biz/tur-san-francisco",
+        "neighborhood": "West Portal",
+        "notable": "New"
+      },
+      {
+        "name": "Hardware Coffee Co.",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "All-day café and florist",
+        "description": "Opened May 2026 in the former Papenhausen Hardware store, this all-day café offers specialty coffee, beer and wine, a full-service florist, and light retail in a neighborhood landmark space.",
+        "address": "32 West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "https://hardwarecoffee.co/pages/west-portal",
+        "neighborhood": "West Portal",
+        "notable": "New"
+      },
+      {
+        "name": "Little Original Joe's",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian-American takeout market",
+        "description": "Takeout-only West Portal outpost of the SF Italian-American institution, offering pizzas, rotisserie chicken, spicy vodka rigatoni, and a specialty retail market alongside the menu.",
+        "address": "393 West Portal Ave, San Francisco, CA 94127",
+        "phone": "415-759-1155",
+        "website": "https://www.littleoriginaljoes.com/loj-westportal",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Trattoria da Vittorio",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian trattoria",
+        "description": "A well-regarded neighborhood Italian restaurant on West Portal Avenue known for casual comfort food including pasta and seafood in a welcoming dining room.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Fresca",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Peruvian restaurant",
+        "description": "A West Portal neighborhood staple serving Peruvian cuisine including ceviches, lomo saltado, and other coastal classics.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lucho's",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Latin American restaurant",
+        "description": "A local West Portal favorite offering Latin American cooking popular with neighborhood regulars.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Snow Bliss",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Bingsu dessert shop",
+        "description": "A bingsu shop specializing in Korean shaved ice desserts, opened as part of West Portal's recent food boom.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Lion West Portal",
+        "cuisineGroup": "Asian",
+        "type": "Sushi restaurant",
+        "description": "A neighborhood sushi restaurant on West Portal Avenue offering traditional and contemporary Japanese dishes.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Que Syrah",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Wine bar",
+        "description": "A friendly neighborhood wine bar on West Portal Avenue popular for after-dinner drinks and casual gatherings.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bursa",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Mediterranean restaurant",
+        "description": "A West Portal restaurant bringing Mediterranean and Middle Eastern flavors to the neighborhood commercial strip.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Bay Pocha",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Korean-style pojangmacha bar",
+        "description": "A Korean-inspired pocha (street food tent) bar concept on West Portal serving drinks and snacks in a casual, social setting.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "The Dubliner",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Irish pub",
+        "description": "A long-standing neighborhood Irish pub on West Portal Avenue serving pints and classic pub fare to regulars.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Philosopher's Club",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood bar",
+        "description": "A well-known West Portal neighborhood tavern and community gathering spot open for decades.",
+        "address": "824 Ulloa St, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "George's Donuts & Merriment",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Café and donut shop",
+        "description": "A marble-clad West Portal café serving artisan donuts and coffee, part of the neighborhood's recent wave of new openings.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "New"
+      },
+      {
+        "name": "Shaws Candy",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Ice cream and candy shop",
+        "description": "A 93-year-old West Portal institution serving ice cream and candy, a neighborhood landmark beloved by generations of families.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hampton Inn San Francisco–Daly City",
+        "type": "National chain hotel",
+        "description": "The closest full-service hotel to the West Portal and Lakeshore neighborhoods, located just over the city line in Daly City with easy Muni access.",
+        "address": "2000 Junipero Serra Blvd, Daly City, CA 94014",
+        "phone": "650-992-0800",
+        "website": "https://www.hilton.com/en/hotels/sfodchx-hampton-san-francisco-daly-city/",
+        "neighborhood": "Near West Portal / Daly City border",
+        "notable": ""
+      },
+      {
+        "name": "Ocean Park Motel",
+        "type": "Motel",
+        "description": "A modest, independently operated motel on the western edge of San Francisco near the zoo and ocean, within a few miles of West Portal and Lake Merced.",
+        "address": "2690 46th Ave, San Francisco, CA 94116",
+        "phone": "415-566-7020",
+        "website": "",
+        "neighborhood": "Outer Sunset / near Lakeshore",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Bookshop West Portal",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "A beloved community independent bookstore in the heart of West Portal, hosting regular author events and book clubs, and known for knowledgeable staff picks and curated selections.",
+        "address": "80 West Portal Ave, San Francisco, CA 94127",
+        "phone": "415-564-8080",
+        "website": "https://bookshopwestportal.com",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Armstrong Carpet & Linoleum",
+        "shopGroup": "Home & Gifts",
+        "type": "Flooring specialty store",
+        "description": "A West Portal institution and community anchor for decades, offering carpet and flooring, and serving as the traditional check-in hub for the neighborhood's annual Wine Walk.",
+        "address": "369 West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Stonestown Galleria",
+        "shopGroup": "Other",
+        "type": "Regional shopping mall",
+        "description": "San Francisco's western-side regional mall with more than 100 stores including Whole Foods, Regal Cinema, Target, and dozens of national and local retailers, currently in the early stages of a massive mixed-use redevelopment.",
+        "address": "3251 20th Ave, San Francisco, CA 94132",
+        "phone": "415-759-2623",
+        "website": "https://www.stonestowngalleria.com",
+        "neighborhood": "Stonestown / Lakeshore",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Papenhausen Hardware",
+        "shopGroup": "Hardware & Services",
+        "type": "Hardware store",
+        "description": "A beloved independent hardware store that has served the West Portal neighborhood for decades — the community institution that gave its site to Hardware Coffee Co. in 2026 after relocating.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "West Portal Pharmacy",
+        "shopGroup": "Beauty & Wellness",
+        "type": "Independent pharmacy",
+        "description": "A long-standing independent neighborhood pharmacy serving West Portal residents with prescription services and health products.",
+        "address": "West Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Regal Stonestown Galleria",
+        "venueGroup": "Cinema",
+        "type": "Multiplex cinema",
+        "description": "A 12-screen multiplex inside Stonestown Galleria on the west side, one of the few remaining movie theaters in San Francisco and a popular destination for neighborhood families.",
+        "address": "3251 20th Ave, San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://www.regmovies.com",
+        "neighborhood": "Stonestown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "SFSU Fine Arts Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "University art gallery",
+        "description": "The Fine Arts Gallery at San Francisco State University presents rotating exhibitions of student and professional artists, and is free and open to the public during the academic year.",
+        "address": "1600 Holloway Ave, San Francisco, CA 94132",
+        "phone": "415-338-6535",
+        "website": "https://art.sfsu.edu",
+        "neighborhood": "Lakeshore / SFSU",
+        "notable": ""
+      },
+      {
+        "name": "SFSU McKenna Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "University performing arts theater",
+        "description": "San Francisco State University's main performing arts venue, hosting student and professional theater, dance, and music productions throughout the academic year.",
+        "address": "1600 Holloway Ave, San Francisco, CA 94132",
+        "phone": "415-338-2467",
+        "website": "https://www.sfsu.edu",
+        "neighborhood": "Lakeshore / SFSU",
+        "notable": ""
+      },
+      {
+        "name": "SFSU Mashouf Wellness Center",
+        "venueGroup": "Music Venues",
+        "type": "Multi-use campus recreation and events center",
+        "description": "A major recreation and events center on the SFSU campus hosting fitness facilities, concerts, and large student events including GatorFest programming.",
+        "address": "1600 Holloway Ave, San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://campusrec.sfsu.edu",
+        "neighborhood": "Lakeshore / SFSU",
+        "notable": ""
+      },
+      {
+        "name": "Mt. Davidson Park",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic hilltop park and landmark",
+        "description": "San Francisco's highest peak at 928 feet, topped by the historic 103-foot concrete cross erected in 1934, offering panoramic city views and forested hiking trails from Miraloma Park.",
+        "address": "Myra Way & Dalewood Way, San Francisco, CA 94127",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Miraloma Park",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Stonestown Family YMCA",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service YMCA",
+        "description": "A full-service family YMCA near Stonestown Galleria offering gym facilities, group fitness classes, a pool, and youth and senior programs.",
+        "address": "333 Eucalyptus Dr, San Francisco, CA 94132",
+        "phone": "415-242-7788",
+        "website": "https://www.ymcasf.org",
+        "neighborhood": "Stonestown / Lakeshore",
+        "notable": "Landmark"
+      },
+      {
+        "name": "24 Hour Fitness — Daly City",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "24-hour gym chain",
+        "description": "The nearest 24 Hour Fitness location to West Portal, convenient for neighborhood residents commuting by car along 19th Avenue or Ocean Drive.",
+        "address": "Near West Portal / Daly City",
+        "phone": "",
+        "website": "https://www.24hourfitness.com",
+        "neighborhood": "Near West Portal",
+        "notable": ""
+      },
+      {
+        "name": "SFSU Mashouf Recreation Center",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "University recreation center",
+        "description": "The campus recreation center at SF State with a full gym, group fitness studios, and aquatic facilities open to students and community members.",
+        "address": "1650 Holloway Ave, San Francisco, CA 94132",
+        "phone": "415-338-2208",
+        "website": "https://campusrec.sfsu.edu",
+        "neighborhood": "Lakeshore / SFSU",
+        "notable": ""
+      },
+      {
+        "name": "Lake Merced Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Freshwater lake and park",
+        "description": "A 614-acre park surrounding San Francisco's largest freshwater lake, with a 4.5-mile paved loop trail popular with runners, cyclists, and birdwatchers, plus boating access and three nearby golf courses.",
+        "address": "Lake Merced Blvd & Sunset Blvd, San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Lakeshore / Parkmerced",
+        "notable": "Landmark"
+      },
+      {
+        "name": "TPC Harding Park",
+        "venueGroup": "Sports & Courts",
+        "type": "Municipal golf course",
+        "description": "A PGA Tour-caliber municipal golf course at Lake Merced, hosting major professional tournaments and open to public play — one of the finest public golf courses in California.",
+        "address": "99 Harding Rd, San Francisco, CA 94132",
+        "phone": "415-664-4690",
+        "website": "https://www.tpchardingpark.com",
+        "neighborhood": "Lakeshore / Lake Merced",
+        "notable": "Landmark"
+      },
+      {
+        "name": "West Portal Playground",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood park and playground",
+        "description": "A neighborhood park with a play area located a block from West Portal Muni station, well-used by families from nearby West Portal Elementary and surrounding streets.",
+        "address": "Ulloa St & Lenox Way, San Francisco, CA 94127",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Mt. Davidson Park Trails",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Forested hilltop park with hiking trails",
+        "description": "San Francisco's highest point at 928 feet, with forested trails winding through eucalyptus and native plantings, accessible from Miraloma Park and other neighboring streets.",
+        "address": "Myra Way & Juanita Way, San Francisco, CA 94127",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Miraloma Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "City Sports Club — West Portal",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Fitness club",
+        "description": "A neighborhood fitness club near West Portal offering gym equipment, group fitness classes, and personal training services.",
+        "address": "West Portal area, San Francisco, CA 94127",
+        "phone": "",
+        "website": "https://www.citysportsclubs.com",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "SFSU Boathouse at Lake Merced",
+        "venueGroup": "Cycling & Rowing",
+        "type": "Rowing and paddling center",
+        "description": "San Francisco State University's boathouse on Lake Merced offering paddling, rowing, and themed paddle clinics open to students and the broader community.",
+        "address": "Lake Merced Blvd, San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://campusrec.sfsu.edu/Boathouse",
+        "neighborhood": "Lakeshore / SFSU",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-10-02",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-10-02",
+        "high": 73,
+        "low": 58,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-03",
+        "high": 81,
+        "low": 61,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-04",
+        "high": 78,
+        "low": 60,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-05",
+        "high": 76,
+        "low": 59,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-06",
+        "high": 76,
+        "low": 60,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-07",
+        "high": 77,
+        "low": 60,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-08",
+        "high": 75,
+        "low": 59,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 1
+      }
+    ]
+  }
+}

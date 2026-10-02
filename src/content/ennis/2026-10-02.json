@@ -1,0 +1,486 @@
+{
+  "clusterSlug": "ennis",
+  "clusterName": "Ennis",
+  "weekOf": "2026-10-02",
+  "topStories": [
+    {
+      "headline": "Italy City Council Upholds Officer Kevin 'Blue' Oginski's Firing in Tense 3-2 Vote",
+      "dek": "The Italy City Council voted 3-2 last week to uphold the termination of a veteran officer, drawing sharp public division and backlash.",
+      "body": "The Italy City Council voted 3-2 to uphold the firing of veteran officer Kevin \"Blue\" Oginski in a decision the Ellis County Press, which reported the vote on September 30, 2026, described as one that \"sparked deep division and public backlash.\" The meeting took place the prior week, placing it in the latter half of September.\n\nItaly is a small city of roughly 2,166 residents in southern Ellis County. Its city government includes Mayor Clinton Sulak-Tovar and a five-member city council, according to the Texas Municipal League directory. The 3-2 margin indicates at least two council members voted against upholding the termination.\n\nThe specific grounds for Oginski's original dismissal and the arguments presented at the council hearing were not detailed in the summary available at press time. The Ellis County Press article was behind a subscription paywall; readers seeking the full account can contact Italy City Hall or access the Press directly. No public statement from Oginski or city officials was found in open sources as of this writing.",
+      "sourceUrl": "https://www.elliscountypress.com/",
+      "sourceName": "Ellis County Press",
+      "tags": [
+        "Italy",
+        "public safety",
+        "city council",
+        "Ellis County"
+      ]
+    },
+    {
+      "headline": "Texas AG Sides with Ennis Police Department in Open-Records Ruling",
+      "dek": "The Attorney General's Office published a ruling last week finding that the Ennis Police Department may withhold records sought in a request filed by Matt Zajic.",
+      "body": "The Texas Attorney General's Office published a ruling siding with the Ennis Police Department in an open-records dispute, according to a report in the Ellis County Press dated September 30, 2026. The Press noted the AG's decision appeared the prior week, placing the ruling in the week of September 22.\n\nThe request was filed by Matt Zajic. Under Texas Government Code Chapter 552, when a governmental body seeks to withhold public information it must request an AG opinion; a ruling \"with\" the governmental body means the AG agreed that some or all of the requested records may be lawfully withheld. The specific categories of records at issue were not detailed in the published summary.\n\nThe full AG letter ruling is publicly searchable through the Office of the Attorney General's Open Records portal at texasattorneygeneral.gov. The Ennis Police Department is based at Ennis City Hall, 107 N. Sherman St.",
+      "sourceUrl": "https://www.elliscountypress.com/",
+      "sourceName": "Ellis County Press",
+      "tags": [
+        "Ennis",
+        "public records",
+        "Ennis Police Department",
+        "Texas AG",
+        "open government"
+      ]
+    },
+    {
+      "headline": "Stars of Texas Opens This Weekend at the Motorplex with Aaron Watson, Brad Paisley and Travis Tritt",
+      "dek": "The sixth annual Stars of Texas Music Festival runs October 9–11 at the Texas Motorplex, kicking off the ten-day Stampede of Speed.",
+      "body": "The Stars of Texas Music Festival returns to the Texas Motorplex in Ennis this Friday for its sixth and self-described biggest year yet, running October 9–11, 2026. The festival opens the Stampede of Speed, a ten-day stretch of events at the Motorplex that culminates with the NHRA Texas Fall Nationals.\n\nThe country music lineup puts Aaron Watson onstage Friday evening, Brad Paisley on Saturday, and Travis Tritt on Sunday. Alongside the music, the weekend includes drag racing, bull riding, BBQ, a kids zone, fireworks, and the festival's signature sky-lantern release after dark on Saturday and Sunday nights, according to the Texas Motorplex's own announcements.\n\nThe Texas Motorplex is located at 7500 US-287 in Ennis, roughly 40 minutes south of Dallas. Friday gates open at 3:00 PM; Saturday and Sunday programming begins at noon. Single-day general admission for Saturday starts at $69 in advance; Sunday general admission is available for $44 online starting October 3. Three-day passes are also on sale. Full schedule and ticket details are at starsoftexas.com.\n\nThe Motorplex's Stampede of Speed continues the following week, with NHRA qualifying on October 14–15 and elimination rounds October 16–18.",
+      "sourceUrl": "https://www.texasmotorplex.com/blog/stars-of-texas-music-festival-announces-2026-headliners",
+      "sourceName": "Texas Motorplex",
+      "tags": [
+        "Ennis",
+        "Stars of Texas",
+        "Texas Motorplex",
+        "music festival",
+        "entertainment"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Ennis Main Street Board Meeting",
+      "startDate": "2026-10-07",
+      "date": "Wednesday, October 7",
+      "time": "5:30 PM",
+      "location": "Ennis City Hall, 107 N. Sherman St., Ennis",
+      "description": "The Ennis Main Street Board holds its regular monthly meeting. The agenda is posted on the City of Ennis website prior to the meeting.",
+      "sourceUrl": "https://www.ennistx.gov/events/101723/",
+      "sourceName": "City of Ennis"
+    },
+    {
+      "title": "Ennis ISD First Grading Period Ends; No School Friday–Monday",
+      "startDate": "2026-10-08",
+      "date": "Thursday, October 8 through Monday, October 12",
+      "time": "",
+      "location": "Ennis Independent School District",
+      "description": "The first grading period ends Thursday, October 8. October 9 is a staff development day with no school for students, and October 12 is the district's Columbus Day holiday. The second grading period begins Tuesday, October 13.",
+      "sourceUrl": "https://www.ennis.k12.tx.us/",
+      "sourceName": "Ennis ISD"
+    },
+    {
+      "title": "Stars of Texas Music Festival",
+      "startDate": "2026-10-09",
+      "date": "Friday–Sunday, October 9–11",
+      "time": "3:00 PM Friday; 12:00 PM Saturday & Sunday",
+      "location": "Texas Motorplex, 7500 US-287, Ennis",
+      "description": "Three-night country festival headlined by Aaron Watson (Friday), Brad Paisley (Saturday), and Travis Tritt (Sunday), with drag racing, bull riding, BBQ, a kids zone, and lantern releases each night. Tickets at starsoftexas.com.",
+      "sourceUrl": "https://www.texasmotorplex.com/blog/stars-of-texas-music-festival-announces-2026-headliners",
+      "sourceName": "Texas Motorplex"
+    },
+    {
+      "title": "Ellis County Commissioners Court Regular Meeting",
+      "startDate": "2026-10-13",
+      "date": "Tuesday, October 13",
+      "time": "2:00 PM",
+      "location": "Ellis County Courthouse, Waxahachie",
+      "description": "The Ellis County Commissioners Court holds its regular meeting. Agendas are posted 72 hours in advance at elliscountytx.gov.",
+      "sourceUrl": "https://www.elliscountytx.gov/713/Commissioners-Court",
+      "sourceName": "Ellis County, TX"
+    },
+    {
+      "title": "NHRA Texas Fall Nationals — Qualifying and Eliminations",
+      "startDate": "2026-10-14",
+      "date": "Wednesday–Sunday, October 14–18",
+      "time": "Various times",
+      "location": "Texas Motorplex, 7500 US-287, Ennis",
+      "description": "The NHRA Texas Fall Nationals features Top Fuel, Funny Car, Pro Stock, and Pro Stock Motorcycle racing as part of the Countdown to the Championship in NHRA's 75th season. Qualifying October 14–15; eliminations October 16–18. Tickets from $41.",
+      "sourceUrl": "https://www.nhra.com/schedule/2026/nhra-mission-foods-drag-racing-series/texas-nhra-fallnationals",
+      "sourceName": "NHRA"
+    },
+    {
+      "title": "Ennis ISD Board of Trustees Regular Meeting",
+      "startDate": "2026-10-14",
+      "date": "Tuesday, October 14",
+      "time": "6:00 PM",
+      "location": "Ennis ISD Administration Building, 303 W. Knox St., Ennis",
+      "description": "The Ennis Independent School District Board of Trustees holds its regular monthly meeting, open to the public.",
+      "sourceUrl": "https://www.ennis.k12.tx.us/calendar90-clone",
+      "sourceName": "Ennis ISD"
+    },
+    {
+      "title": "Ennis High School Homecoming Dance 2026",
+      "startDate": "2026-10-17",
+      "date": "Saturday, October 17",
+      "time": "6:30 PM",
+      "location": "Ennis High School, 1405 Lk Bardwell Dr., Ennis",
+      "description": "Ennis High School hosts its 2026 Homecoming Dance. Tickets available through GoFan.",
+      "sourceUrl": "https://gofan.co/app/school/TX16066",
+      "sourceName": "Ennis ISD / GoFan"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Voter Registration Deadline for November Election Is Monday, October 5",
+      "body": "Texas Secretary of State Robert S. Howden reminded Texans on September 28 that the deadline to register to vote — or update an existing registration — for the November 3, 2026 General Election is Monday, October 5, 2026. Ellis County residents can check or update their registration at VoteTexas.gov. Early voting in Ellis County runs October 19–30, with vote-center locations available countywide. Election Day is November 3.",
+      "sourceUrl": "https://www.sos.state.tx.us/about/newsreleases/2026/092826.shtml",
+      "sourceName": "Texas Secretary of State",
+      "tags": [
+        "elections",
+        "Ellis County",
+        "voter registration"
+      ]
+    },
+    {
+      "headline": "Ellis County Burn Ban Remains in Effect Since July 21",
+      "body": "The countywide burn ban put in place by the Ellis County Commissioners' Court on July 21, 2026 remains active as of this week, according to the Ellis County website. The ban covers all unincorporated areas of the county — including areas around Ennis, Ferris, Palmer, Italy, and Alma — and prohibits brush piles, trash fires, campfires, and any other open outdoor burning. Residents should check elliscountytx.gov for updates on when the ban is lifted.",
+      "sourceUrl": "https://www.elliscountytx.gov/573/Burn-Ban",
+      "sourceName": "Ellis County, TX",
+      "tags": [
+        "burn ban",
+        "Ellis County",
+        "fire safety"
+      ]
+    },
+    {
+      "headline": "Ennis Main Street and EDC Launch Downtown Small Business Toolkit",
+      "body": "The Ennis Main Street Board and the Ennis Economic Development Corporation announced the launch of a Downtown Small Business Toolkit on September 9, 2026. The free resource is intended to help entrepreneurs navigate the process of opening or expanding a business in the downtown district. It accompanies a Small Business Training and Development Series that has brought guest speakers and workshops to local business owners throughout 2026. Details are available at ennistx.gov.",
+      "sourceUrl": "https://www.ennistx.gov/home-page-news",
+      "sourceName": "City of Ennis",
+      "tags": [
+        "Ennis",
+        "small business",
+        "economic development",
+        "downtown"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Italy City Council upholds firing of veteran officer Kevin 'Blue' Oginski in tense 3-2 vote",
+      "url": "https://www.elliscountypress.com/",
+      "publication": "Ellis County Press"
+    },
+    {
+      "title": "AG rules with Ennis PD on Zajic request",
+      "url": "https://www.elliscountypress.com/",
+      "publication": "Ellis County Press"
+    },
+    {
+      "title": "Stars of Texas Music Festival Announces 2026 Headliners: Aaron Watson, Brad Paisley & Travis Tritt",
+      "url": "https://www.texasmotorplex.com/blog/stars-of-texas-music-festival-announces-2026-headliners",
+      "publication": "Texas Motorplex"
+    },
+    {
+      "title": "Stars of Texas — Saturday Tickets & Info",
+      "url": "https://www.starsoftexas.com/tickets/saturday",
+      "publication": "Stars of Texas"
+    },
+    {
+      "title": "Ennis Main Street Board Meeting — October 7, 2026",
+      "url": "https://www.ennistx.gov/events/101723/",
+      "publication": "City of Ennis"
+    },
+    {
+      "title": "City Commission Special Meeting — October 1, 2026",
+      "url": "https://www.ennistx.gov/events/101749/",
+      "publication": "City of Ennis"
+    },
+    {
+      "title": "Home Page News — Ennis Main Street Small Business Toolkit",
+      "url": "https://www.ennistx.gov/home-page-news",
+      "publication": "City of Ennis"
+    },
+    {
+      "title": "Ennis ISD Event Calendar",
+      "url": "https://www.ennis.k12.tx.us/calendar90-clone",
+      "publication": "Ennis ISD"
+    },
+    {
+      "title": "Ennis ISD 2026-2027 District Calendar",
+      "url": "https://texasschools.us/districts/ennis-isd/calendar/",
+      "publication": "TexasSchools.us / Ennis ISD"
+    },
+    {
+      "title": "Ennis ISD Events — GoFan",
+      "url": "https://gofan.co/app/school/TX16066",
+      "publication": "GoFan / Ennis ISD"
+    },
+    {
+      "title": "General and Special Elections — November 3, 2026",
+      "url": "http://www.elliscountytx.gov/m/newsflash/Home/Detail/1241",
+      "publication": "Ellis County, TX"
+    },
+    {
+      "title": "Burn Ban — Ellis County, TX",
+      "url": "https://www.elliscountytx.gov/573/Burn-Ban",
+      "publication": "Ellis County, TX"
+    },
+    {
+      "title": "Texas Secretary of State: October 5 Voter Registration Deadline",
+      "url": "https://www.sos.state.tx.us/about/newsreleases/2026/092826.shtml",
+      "publication": "Texas Secretary of State"
+    },
+    {
+      "title": "Texas NHRA FallNationals 2026",
+      "url": "https://www.nhra.com/schedule/2026/nhra-mission-foods-drag-racing-series/texas-nhra-fallnationals",
+      "publication": "NHRA"
+    },
+    {
+      "title": "Stampede of Speed: NHRA Texas Fall Nationals",
+      "url": "https://www.waxahachiecvb.com/events/2026/stampede-of-speed-nhra-texas-fall-nationals",
+      "publication": "Waxahachie CVB"
+    },
+    {
+      "title": "Ellis County Commissioners Court",
+      "url": "https://www.elliscountytx.gov/713/Commissioners-Court",
+      "publication": "Ellis County, TX"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Fern In The Wild",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Modern farm-to-table restaurant, espresso bar and boutique",
+        "description": "Seasonal American dishes, weekend brunch, craft cocktails, and a full espresso bar inside a downtown Ennis space that doubles as a curated retail boutique.",
+        "address": "211 W Knox St, Ennis, TX 75119",
+        "phone": "(972) 878-6868",
+        "website": "https://www.ferninthewild.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Ruston Cattle Company",
+        "cuisineGroup": "Seafood & American",
+        "type": "Steakhouse and BBQ",
+        "description": "Family-owned steakhouse and BBQ serving local Texas wagyu hand-cut and seared to order alongside house-smoked specialties and bold sides in a casual picnic-table setting.",
+        "address": "3701 N I-45 Frontage Rd, Ennis, TX 75119",
+        "phone": "(469) 218-6280",
+        "website": "https://www.rustoncattlecompany.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Ashleigh's Downtown Kitchen + Bar",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "American kitchen and bar",
+        "description": "Handcrafted pizzas, shareable small plates, and a curated wine and craft cocktail list in a relaxed setting in the heart of historic downtown Ennis.",
+        "address": "119 S Dallas St, Ennis, TX 75119",
+        "phone": "(469) 881-1040",
+        "website": "https://ashleighsdowntown.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Bailey's Cafe",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "American diner",
+        "description": "A long-running Ennis diner known for home-cooked comfort food, burgers, chicken fried steak, and a popular Friday-night catfish special.",
+        "address": "508 S Kaufman St, Ennis, TX 75119",
+        "phone": "(972) 875-1556",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "The Green Room",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Upscale speakeasy bar",
+        "description": "An intimate second-floor speakeasy above Fern In The Wild offering craft cocktails, a deep bourbon and whiskey selection, Tiki drinks, wine, and beer; after 8 p.m., look for the lanterns in the alley for entry.",
+        "address": "211 W Knox St, 2nd Floor, Ennis, TX 75119",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Sugar Ridge Winery",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Family-owned Texas winery and tasting room",
+        "description": "A rural winery near Bristol producing 20-plus handcrafted sweet and fruit-forward wines on-site, with patio seating and occasional live acoustic music; open weekends, call ahead to confirm hours.",
+        "address": "353 Sugar Ridge Rd, Ennis, TX 75119",
+        "phone": "(469) 716-8961",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hampton Inn & Suites Ennis",
+        "type": "Chain hotel",
+        "description": "Full-service Hilton-brand hotel offering complimentary hot breakfast, an indoor pool, and easy access to the Texas Motorplex and downtown Ennis.",
+        "address": "2601 TX-34 S, Ennis, TX 75119",
+        "phone": "(972) 875-5090",
+        "website": "https://www.hilton.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Motel 6 Ennis",
+        "type": "Budget motel",
+        "description": "Affordable roadside motel convenient to I-45, well-placed for travelers heading to the Texas Motorplex or exploring the Ennis area.",
+        "address": "109 W Ennis Ave, Ennis, TX 75119",
+        "phone": "(972) 875-8641",
+        "website": "https://www.motel6.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Fern In The Wild Boutique",
+        "shopGroup": "Home & Gifts",
+        "type": "Curated retail boutique",
+        "description": "Gift shop inside the Fern In The Wild restaurant carrying locally inspired gifts, art pieces, and specialty items for weekend browsing.",
+        "address": "211 W Knox St, Ennis, TX 75119",
+        "phone": "(972) 878-6868",
+        "website": "https://www.ferninthewild.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Ennis Farmers Market",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Weekly outdoor market",
+        "description": "Saturday morning market running 8 a.m. to noon on Dallas Street, featuring local produce, crafts, live music, and kids' activities.",
+        "address": "100 N Dallas St, Ennis, TX 75119",
+        "phone": "(972) 878-4748",
+        "website": "https://www.ennistx.gov",
+        "neighborhood": "Ennis",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Galaxy Drive-In Theatre",
+        "venueGroup": "Cinema",
+        "type": "Multi-screen drive-in theater",
+        "description": "A nine-screen drive-in movie theater open seven nights a week on the north side of Ennis, with digital projection, FM radio sound, and a full concession stand; box office opens at 6:00 p.m.",
+        "address": "5301 N Interstate Hwy 45, Ennis, TX 75119",
+        "phone": "(972) 875-5505",
+        "website": "https://www.galaxydriveintheatre.com",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Texas Motorplex",
+        "venueGroup": "Music Venues",
+        "type": "Drag racing facility and entertainment venue",
+        "description": "The first NHRA super track, a 50,000-capacity facility hosting the annual Texas NHRA FallNationals each October and the Stars of Texas Music Festival, among other events year-round.",
+        "address": "7500 US-287, Ennis, TX 75119",
+        "phone": "",
+        "website": "https://www.texasmotorplex.com",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ennis Railroad and Cultural Heritage Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Local history museum",
+        "description": "Traces Ennis's origins as a railroad town with depot replicas, railroad memorabilia, vintage Czech dolls, china from historic rail lines, and a video history of the city's founding in 1872.",
+        "address": "105 NE Main St, Ennis, TX 75119",
+        "phone": "(972) 875-1901",
+        "website": "https://www.ennistx.gov/museum",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ennis Public Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Community theater",
+        "description": "A local performing-arts group producing live stage shows roughly every other month in a renovated historic venue in downtown Ennis.",
+        "address": "113 N Dallas St, Ennis, TX 75119",
+        "phone": "(972) 878-7529",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Lake Bardwell",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "U.S. Army Corps of Engineers reservoir",
+        "description": "A 3,500-acre lake and the largest recreational attraction in Ellis County, offering boating, fishing, water skiing, swimming, and picnicking at High View Park, with annual attendance exceeding 150,000.",
+        "address": "4000 Crow Rd, Ennis, TX 75119",
+        "phone": "",
+        "website": "https://www.swf-wc.usace.army.mil/bardwell",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lion Tennis Center",
+        "venueGroup": "Sports & Courts",
+        "type": "Public tennis facility",
+        "description": "One of the finest publicly accessible tennis complexes in Texas, operated by Ennis ISD, featuring nine championship courts including four indoor courts.",
+        "address": "Ennis, TX",
+        "phone": "",
+        "website": "https://www.ennistx.gov",
+        "neighborhood": "Ennis",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-10-02",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-10-02",
+        "high": 79,
+        "low": 68,
+        "summary": "Chance Showers And Thunderstorms",
+        "condition": "storm",
+        "precip": 52
+      },
+      {
+        "date": "2026-10-03",
+        "high": 79,
+        "low": 67,
+        "summary": "Showers And Thunderstorms Likely",
+        "condition": "storm",
+        "precip": 58
+      },
+      {
+        "date": "2026-10-04",
+        "high": 83,
+        "low": 65,
+        "summary": "Chance Rain Showers",
+        "condition": "rain",
+        "precip": 31
+      },
+      {
+        "date": "2026-10-05",
+        "high": 83,
+        "low": 59,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 1
+      },
+      {
+        "date": "2026-10-06",
+        "high": 83,
+        "low": 57,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-07",
+        "high": 85,
+        "low": 59,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-08",
+        "high": 85,
+        "low": 61,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      }
+    ]
+  }
+}

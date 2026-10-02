@@ -1,0 +1,896 @@
+{
+  "clusterSlug": "staunton",
+  "clusterName": "Staunton",
+  "weekOf": "2026-10-02",
+  "topStories": [
+    {
+      "headline": "Staunton Stabbing Suspect Held Without Bond as ICE Detainer Puts Virginia's Sanctuary Policies in the Spotlight",
+      "dek": "A fatal August stabbing on Orchard Avenue has escalated into a statewide fight over whether Virginia jails must honor federal immigration detainers.",
+      "body": "A 21-year-old woman is dead and another is recovering after a stabbing in the early hours of August 30 inside a home on the 300 block of Orchard Avenue in Staunton. Freddi Chigo Mil, 32, was arrested at the scene after Staunton Police responded to an open-line 911 call around 4 a.m. He faces charges of second-degree murder and aggravated malicious wounding and remains jailed without bond at Middle River Regional Jail.\n\nFederal authorities identified Mil as a Mexican national who entered the country illegally. Immigration and Customs Enforcement lodged a detainer with the jail on the day of his arrest, asking Virginia officials to ensure he remains in custody so he can be transferred to federal immigration authorities if released from state custody. The Department of Homeland Security publicized the detainer in a September 15 statement, and the case drew renewed national attention as of October 1, 2026.\n\nThe case has reignited a dispute over Virginia's cooperation with ICE. Gov. Abigail Spanberger's administration has said the state continues to cooperate with federal law enforcement under specified legal circumstances and that her policies are intended to improve officer safety and public trust. The criminal case against Mil remains pending; he has not been convicted of the charges against him. ICE's detainer seeks to ensure federal immigration authorities can assume custody if he later becomes eligible for release.",
+      "sourceUrl": "https://hoodline.com/2026/10/staunton-stabbing-suspect-s-ice-detainer-reignites-virginia-sanctuary-fight/",
+      "sourceName": "Hoodline",
+      "tags": [
+        "public safety",
+        "immigration",
+        "crime"
+      ]
+    },
+    {
+      "headline": "Police Chief Breaks Silence on Walmart Shooting; Staunton NAACP Demands More Answers",
+      "dek": "Chief James Williams confirmed body-camera footage has been handed to state investigators but will not be released, while the local NAACP branch called the pace of public disclosure insufficient.",
+      "body": "Staunton Police Chief James Williams issued an updated public statement on September 29 regarding the fatal officer-involved shooting that occurred September 22 in the parking lot of the Walmart on Richmond Avenue — the first substantive statement from department leadership since the incident. An officer had responded to a 911 call from a citizen and made contact with Montique Treymayne Gaston, 39, of Portsmouth. An altercation followed during which the officer fired their weapon. Gaston was pronounced dead at the scene; the officer was not injured and has been placed on administrative leave.\n\nChief Williams confirmed the involved officer was wearing a body-worn camera that recorded the entire incident, and that footage has been turned over to the Virginia State Police, which is conducting an independent investigation at SPD's request. The footage will not be released while the probe is open. Williams said the department does not have all the facts and that it would be inappropriate to reach conclusions before all evidence is examined. He acknowledged the shooting's impact on Gaston's family and on the African American community specifically.\n\nThe Staunton Branch NAACP called for more transparency, stating that significant questions about what precipitated the encounter and the sequence of events leading to deadly force remain publicly unanswered. Branch President Nadia Ware said, as quoted by WAVY News: \"Transparency is not the enemy of a fair investigation; it is essential to public confidence in one.\" The branch called for preservation of all potentially relevant evidence, including body-camera footage, 911 recordings, dispatch audio, and surveillance video from Walmart and nearby businesses. Future updates on the investigation are to come from Virginia State Police.",
+      "sourceUrl": "https://www.29news.com/2026/09/29/staunton-police-share-update-about-fatal-officer-involved-shooting/",
+      "sourceName": "WHSV (29News)",
+      "tags": [
+        "public safety",
+        "police",
+        "Staunton Police Department"
+      ]
+    },
+    {
+      "headline": "Friends of the Library to Cut the Ribbon on Long-Awaited Outdoor Terrace October 9",
+      "dek": "A years-in-the-making terrace renovation behind the Staunton Public Library — funded entirely by a private estate gift — reaches its final phase with a public grand-opening celebration Friday morning.",
+      "body": "The Friends of the Staunton Library will host a grand opening and ribbon-cutting ceremony for the Library Terrace Project on Friday, October 9, beginning at 10 a.m. at the Staunton Public Library, 1 Churchville Avenue. The event marks the completion of a multi-phase renovation of the library's backyard first presented to City Council in Winter 2024, when it received unanimous support.\n\nThe finished terrace includes tiered hardscape seating built into the existing hillside, a patio event space suited for library programs and small performances, a shade sail, improved lighting, and a new accessible pathway connecting the library building to the raised terrace area. Construction of the patio and walkway ran from May through July 2026, with the shade structure installed in late July and landscaping continuing through this fall.\n\nThe project was made possible entirely by an estate gift from Julia Kiessling, a former member of the Friends of the Staunton Library board. The Friends pledged to plant a replacement tree for every one removed during site preparation. The completed terrace is designed to function as an accessible community gathering space open for public enjoyment as well as library-hosted events.",
+      "sourceUrl": "https://www.ci.staunton.va.us/departments/library/terrace-project",
+      "sourceName": "City of Staunton",
+      "tags": [
+        "library",
+        "community",
+        "Downtown Staunton"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Staunton Police Foundation 8th Annual Law Enforcement Gala",
+      "startDate": "2026-10-03",
+      "date": "Saturday, October 3",
+      "time": "5:30 PM",
+      "location": "316 Academy St, Staunton",
+      "description": "The Staunton Police Foundation's annual fundraising gala supports SPD officers and the community they serve. The foundation is a charitable organization dedicated to backing the Staunton Police Department.",
+      "sourceUrl": "https://www.eventbrite.com/d/va--staunton/events/",
+      "sourceName": "Eventbrite / Staunton Police Foundation"
+    },
+    {
+      "title": "CoArt Gallery: October Featured Artist Reception — John Frantz",
+      "startDate": "2026-10-04",
+      "date": "Sunday, October 4",
+      "time": "4:00 PM – 6:00 PM",
+      "location": "CoArt Gallery, Downtown Staunton",
+      "description": "The CoArt working-artist cooperative opens its October exhibition with a reception for featured artist John Frantz. As a co-op, CoArt gives visitors the chance to connect directly with the artists.",
+      "sourceUrl": "https://www.stauntondowntown.org/events-calendar",
+      "sourceName": "Staunton Downtown Development Association"
+    },
+    {
+      "title": "Library Terrace Project Grand Opening & Ribbon Cutting",
+      "startDate": "2026-10-09",
+      "date": "Friday, October 9",
+      "time": "10:00 AM",
+      "location": "Staunton Public Library, 1 Churchville Ave, Downtown Staunton",
+      "description": "The Friends of the Staunton Library celebrate the completion of their outdoor terrace renovation with a public grand-opening ceremony. The accessible terrace features tiered seating, a patio, shade sail, and improved lighting.",
+      "sourceUrl": "https://www.ci.staunton.va.us/",
+      "sourceName": "City of Staunton"
+    },
+    {
+      "title": "The Reimagined Runway: Upcycled Fashion Show & Marketplace",
+      "startDate": "2026-10-10",
+      "date": "Saturday, October 10",
+      "time": "4:30 PM",
+      "location": "19 S Market St (former Grace Christian High School), Downtown Staunton",
+      "description": "More than 40 designers transform discarded and secondhand materials into everyday clothing, theatrical pieces, and wearable art in a runway show and marketplace. Proceeds benefit the American Shakespeare Center and Shenandoah Green.",
+      "sourceUrl": "https://wnrn.org/hear-together-the-reimagined-runway/",
+      "sourceName": "WNRN"
+    },
+    {
+      "title": "Queen City Word Fest 2026",
+      "startDate": "2026-10-17",
+      "date": "Saturday, October 17",
+      "time": "10:00 AM – 4:00 PM",
+      "location": "Multiple venues, Downtown Staunton (Meet the Authors at 110 W. Beverley St.)",
+      "description": "The second annual Queen City Word Fest brings together authors, readers, and aspiring writers for a day of panels, workshops, and a free Meet the Authors event featuring more than 30 writers of various genres. Hosted by The Book Dragon Shop.",
+      "sourceUrl": "https://rocktownnow.com/news/218812-queen-city-word-fest-returns-to-staunton-in-october/",
+      "sourceName": "Rocktown Now"
+    },
+    {
+      "title": "ASC Fall Repertory: Frankenstein, The Tempest & Witch",
+      "startDate": "2026-10-02",
+      "date": "Through October",
+      "time": "Various times",
+      "location": "Blackfriars Playhouse, 10 S Market St, Downtown Staunton",
+      "description": "The American Shakespeare Center is performing three productions in rotating repertory this fall: Mary Shelley's Frankenstein, The Tempest, and Witch. Check the ASC calendar for specific dates and showtimes.",
+      "sourceUrl": "https://americanshakespearecenter.com/calendar/",
+      "sourceName": "American Shakespeare Center"
+    },
+    {
+      "title": "Free Guided Walking Tours of Historic Downtown Staunton",
+      "startDate": "2026-10-03",
+      "date": "Every Saturday in October",
+      "time": "10:00 AM – 12:00 PM",
+      "location": "Downtown Staunton (Historic Staunton Foundation)",
+      "description": "The Historic Staunton Foundation offers free two-hour guided walking tours of the city's landmark architecture and neighborhoods every Saturday morning through October.",
+      "sourceUrl": "https://visitstaunton.com/events/",
+      "sourceName": "Visit Staunton"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "State Resists Closure of Staunton Children's Psychiatric Hospital Despite Repeated Legislative Calls",
+      "body": "Virginia's nonpartisan research arm, the Joint Legislative Audit and Review Commission (JLARC), renewed its call in early September 2026 to close the Commonwealth Center for Children and Adolescents (CCCA) in Staunton — the state's only psychiatric hospital for minors. JLARC Director Hal Greer told the commission the body has no reason to believe conditions have improved significantly since the original 2023 report, and that staff continue to raise concerns about patient and employee safety. Despite those findings, the Spanberger administration is not moving toward closure: a spokesperson for the Virginia Department of Behavioral Health and Developmental Services told media outlets that the agency is \"not currently pursuing closure.\" The Augusta Free Press reported on the continuing standoff on September 28, 2026.",
+      "sourceUrl": "https://augustafreepress.com/news/state-wont-close-ccca-but-neither-does-it-seem-interested-in-fixing-the-problems-there/",
+      "sourceName": "Augusta Free Press",
+      "tags": [
+        "mental health",
+        "state government",
+        "CCCA"
+      ]
+    },
+    {
+      "headline": "No School for Staunton City Students October 12–13 as First Quarter Ends",
+      "body": "The first nine weeks of the 2026–27 Staunton City Schools academic year concludes on Friday, October 9. Students will have no school on Monday, October 12 (teacher workday) and Tuesday, October 13 (parent conference day). The second quarter begins Wednesday, October 14, per the district's published academic calendar.",
+      "sourceUrl": "https://virginiaschools.us/districts/staunton-city-public-schools/calendar/",
+      "sourceName": "Staunton City Public Schools Calendar",
+      "tags": [
+        "schools",
+        "Staunton City Schools"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Staunton Stabbing Suspect's ICE Detainer Reignites Virginia Sanctuary Fight",
+      "url": "https://hoodline.com/2026/10/staunton-stabbing-suspect-s-ice-detainer-reignites-virginia-sanctuary-fight/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "ICE Lodges Detainer Asking Governor Spanberger Not to Release Illegal Alien Charged After Stabbing",
+      "url": "https://www.dhs.gov/news/2026/09/15/ice-lodges-detainer-asking-governor-abigail-spanberger-not-release-illegal-alien",
+      "publication": "U.S. Department of Homeland Security"
+    },
+    {
+      "title": "Virginia stabbing case reignites fight over ICE cooperation as suspect faces murder charge",
+      "url": "https://news4sanantonio.com/news/nation-world/virginia-stabbing-case-reignites-fight-over-ice-cooperation-as-suspect-faces-murder-charge-abigail-spanberger-markwayne-mullin-immigration-illegal-immigrant-randy-sutton-mexican-national-trump-administration",
+      "publication": "News4 San Antonio"
+    },
+    {
+      "title": "Staunton police share update about fatal officer-involved shooting",
+      "url": "https://www.29news.com/2026/09/29/staunton-police-share-update-about-fatal-officer-involved-shooting/",
+      "publication": "WHSV (29News)"
+    },
+    {
+      "title": "Officer killed Portsmouth man during Staunton Walmart altercation, police say",
+      "url": "https://www.wavy.com/news/local-news/portsmouth/portsmouth-man-dies-at-staunton-walmart-after-officer-fires-weapon/",
+      "publication": "WAVY News"
+    },
+    {
+      "title": "Staunton Branch of NAACP calls for transparency following fatal officer-involved shooting",
+      "url": "https://rocktownnow.com/news/218812-staunton-branch-of-naacp-calls-for-transparency-following-fatal-officer-involved-shooting/",
+      "publication": "Rocktown Now"
+    },
+    {
+      "title": "Friends of the Staunton Library Terrace Project",
+      "url": "https://www.ci.staunton.va.us/departments/library/terrace-project",
+      "publication": "City of Staunton"
+    },
+    {
+      "title": "City of Staunton Newsroom",
+      "url": "https://www.ci.staunton.va.us/",
+      "publication": "City of Staunton"
+    },
+    {
+      "title": "State won't close CCCA, but neither does it seem interested in fixing the problems there",
+      "url": "https://augustafreepress.com/news/state-wont-close-ccca-but-neither-does-it-seem-interested-in-fixing-the-problems-there/",
+      "publication": "Augusta Free Press"
+    },
+    {
+      "title": "JLARC renews call to close Virginia's youth psychiatric hospital",
+      "url": "https://www.vpm.org/news/2026-09-09/jlarc-dbhds-psychiatric-deeds-virginia/",
+      "publication": "VPM"
+    },
+    {
+      "title": "Queen City Word Fest returns to Staunton in October",
+      "url": "https://rocktownnow.com/news/218812-queen-city-word-fest-returns-to-staunton-in-october/",
+      "publication": "Rocktown Now"
+    },
+    {
+      "title": "Word Fest — The Book Dragon Shop",
+      "url": "https://www.thebookdragonshop.com/queen-city-word-fest",
+      "publication": "The Book Dragon Shop"
+    },
+    {
+      "title": "Hear Together: The Reimagined Runway",
+      "url": "https://wnrn.org/hear-together-the-reimagined-runway/",
+      "publication": "WNRN"
+    },
+    {
+      "title": "Staunton Police Foundation 8th Annual Law Enforcement Gala",
+      "url": "https://www.eventbrite.com/d/va--staunton/events/",
+      "publication": "Eventbrite"
+    },
+    {
+      "title": "American Shakespeare Center Event Calendar",
+      "url": "https://americanshakespearecenter.com/calendar/",
+      "publication": "American Shakespeare Center"
+    },
+    {
+      "title": "Events in Staunton",
+      "url": "https://visitstaunton.com/events/",
+      "publication": "Visit Staunton"
+    },
+    {
+      "title": "Staunton Downtown Development Association Events Calendar",
+      "url": "https://www.stauntondowntown.org/events-calendar",
+      "publication": "Staunton Downtown Development Association"
+    },
+    {
+      "title": "Staunton City Public Schools Calendar 2026–2027",
+      "url": "https://virginiaschools.us/districts/staunton-city-public-schools/calendar/",
+      "publication": "Staunton City Public Schools"
+    },
+    {
+      "title": "City of Staunton Public Meetings",
+      "url": "https://www.ci.staunton.va.us/government/public-meetings",
+      "publication": "City of Staunton"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Maude & the Bear",
+        "cuisineGroup": "Seafood & American",
+        "type": "Fine dining American",
+        "description": "Named to the New York Times' 50 best US restaurants for 2025 and Esquire's best new restaurants list, this nationally acclaimed restaurant from chef Ian Boden is housed in a 1926 Montgomery Ward kit house and features an adjoining inn.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "https://maudeandthebear.com",
+        "neighborhood": "Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Shack",
+        "cuisineGroup": "Italian & Deli",
+        "type": "New American small plates",
+        "description": "Award-winning 26-seat neighborhood gem featuring handmade pastas, wood-fired pizzas, and a weekly changing menu led by Chef Michael Skipper, open Thursday through Sunday evenings.",
+        "address": "105 S. Coalter St., Staunton, VA 24401",
+        "phone": "540-490-1961",
+        "website": "https://theshackva.com",
+        "neighborhood": "Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Zynodoa",
+        "cuisineGroup": "Seafood & American",
+        "type": "Southern fine dining",
+        "description": "Farm-to-table Southern cuisine in a historic downtown building steps from the Blackfriars Playhouse, sourcing produce and meats from Shenandoah Valley farms and seafood from the Chesapeake Bay.",
+        "address": "115 E. Beverley St., Staunton, VA 24401",
+        "phone": "",
+        "website": "https://www.zynodoa.com",
+        "neighborhood": "Downtown Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Depot Grille",
+        "cuisineGroup": "Seafood & American",
+        "type": "American casual dining",
+        "description": "Casual American restaurant established in 1990 inside Staunton's historic train depot, offering hand-cut steaks, ribs, seafood, and burgers with a 40-foot Victorian bar and enclosed downtown views.",
+        "address": "42 Middlebrook Ave., Staunton, VA 24401",
+        "phone": "540-885-7332",
+        "website": "https://depotgrille.com/staunton/",
+        "neighborhood": "The Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Mill Street Grill",
+        "cuisineGroup": "Seafood & American",
+        "type": "American grill",
+        "description": "Downtown Staunton staple known for ribs, fresh seafood, and complimentary peppermint ice cream, consistently ranked among the city's most popular restaurants.",
+        "address": "1 Mill St., Staunton, VA 24401",
+        "phone": "",
+        "website": "https://millstreetgrill.com",
+        "neighborhood": "Downtown Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Byers Street Bistro",
+        "cuisineGroup": "Seafood & American",
+        "type": "American bistro",
+        "description": "Popular lunch and dinner spot in downtown Staunton known for its fried chicken sandwich and casual, welcoming atmosphere.",
+        "address": "18 Byers St., Staunton, VA 24401",
+        "phone": "",
+        "website": "https://byersstreetbistro.com",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Second Draft Bistro at The Blackburn Inn",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Bistro and bar",
+        "description": "Locally sourced bistro and bar inside the historic Blackburn Inn, showcasing Virginia wines, beers, and ciders in a stately 19th-century setting.",
+        "address": "301 Greenville Ave., Staunton, VA 24401",
+        "phone": "540-712-0601",
+        "website": "https://www.blackburn-inn.com",
+        "neighborhood": "Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Chop House Tavern",
+        "cuisineGroup": "Seafood & American",
+        "type": "Steakhouse tavern",
+        "description": "Downtown Staunton steakhouse offering refined takes on proteins, comfort food classics, and a full bar in the heart of the historic district.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "https://chophousetavern.com",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Blu Point Seafood Co.",
+        "cuisineGroup": "Seafood & American",
+        "type": "Seafood restaurant",
+        "description": "Popular downtown seafood restaurant praised for fresh, hot seafood and a lively atmosphere.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "https://blupointseafood.com",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Helios Mediterranean",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Mediterranean restaurant",
+        "description": "Mediterranean cuisine bringing flavors of the region to downtown Staunton, consistently recommended by locals and visitors.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Baja Bean Co.",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican-American bar and restaurant",
+        "description": "Lively downtown spot on Beverley Street with a large beer selection, Mexican-inspired menu, and an energetic atmosphere popular with locals.",
+        "address": "9 W. Beverley St., Staunton, VA 24401",
+        "phone": "540-885-9988",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Chicano Boy Taco",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Taqueria",
+        "description": "Casual taqueria bringing authentic Mexican street taco flavors to the Staunton dining scene.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Edelweiss German Restaurant",
+        "cuisineGroup": "Other",
+        "type": "German restaurant",
+        "description": "Staunton's German restaurant serving schnitzel, paprika chicken, goulash, and a strong beer selection with regular live music; reviewed positively as recently as August 2026.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Crucible Coffee Roasters",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Coffee roaster and café",
+        "description": "Specialty coffee roaster and café offering expertly crafted espresso drinks and single-origin pour-overs in downtown Staunton.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "https://cruciblecoffeeroasters.com",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Giancarlo Fine European Pastries",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "European pastry shop",
+        "description": "Artisan pastry shop offering European-style baked goods and fine pastries in the Staunton area.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Kline's Dairy Bar",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Ice cream and dairy bar",
+        "description": "Beloved Valley institution serving hand-dipped ice cream and dairy specialties, a Staunton tradition for generations.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Stella Mia Pizzeria",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Pizzeria",
+        "description": "Italian-style pizzeria serving classic and creative pies in the Staunton area.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Valley Smokehouse",
+        "cuisineGroup": "Seafood & American",
+        "type": "Barbecue restaurant",
+        "description": "Shenandoah Valley barbecue spot featuring smoked meats and classic Southern sides.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Taste of India",
+        "cuisineGroup": "Asian",
+        "type": "Indian restaurant",
+        "description": "Indian restaurant bringing the flavors of the subcontinent to downtown Staunton, popular with locals seeking diverse cuisine.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Gloria's Pupuseria",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Salvadoran restaurant",
+        "description": "Authentic Salvadoran pupuseria and Latin American eatery serving handmade pupusas and traditional comfort dishes.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Staunton",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hotel 24 South",
+        "type": "Historic boutique hotel",
+        "description": "Originally opened in 1924, this nationally registered historic building in the heart of downtown Staunton blends historic charm with modern comfort and earns consistently high guest ratings.",
+        "address": "24 S. Market St., Staunton, VA 24401",
+        "phone": "",
+        "website": "https://hotel24south.com",
+        "neighborhood": "Downtown Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Blackburn Inn and Conference Center",
+        "type": "Historic boutique hotel",
+        "description": "A 49-room boutique hotel set in an 1828 Jeffersonian-style building on 80 acres, formerly part of Western State Hospital, featuring original heart pine floors, a rooftop atrium, and the Second Draft bistro and bar.",
+        "address": "301 Greenville Ave., Staunton, VA 24401",
+        "phone": "540-712-0601",
+        "website": "https://www.blackburn-inn.com",
+        "neighborhood": "Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Frederick House Hotel",
+        "type": "Historic inn",
+        "description": "A 20-room inn comprising five historic houses in the heart of downtown Staunton, offering uniquely appointed rooms from cozy singles to spacious suites.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "https://frederickhouse.com",
+        "neighborhood": "Downtown Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Maude & the Bear Inn",
+        "type": "Boutique inn",
+        "description": "Intimate boutique inn adjoining the nationally acclaimed Maude & the Bear restaurant, set in a restored 1926 kit house.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "https://maudeandthebear.com",
+        "neighborhood": "Staunton",
+        "notable": "New"
+      },
+      {
+        "name": "Historic Inn at Oakdene",
+        "type": "Victorian bed and breakfast",
+        "description": "A century-old Victorian inn on East Beverley Street offering self-check-in accommodations in a landmark mansion-lined setting.",
+        "address": "East Beverley St., Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Gospel Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hampton Inn Staunton",
+        "type": "Chain hotel",
+        "description": "Full-service Hampton Inn located off I-81 and I-64, two miles from historic downtown, offering complimentary hot breakfast and fitness facilities.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "https://www.hilton.com",
+        "neighborhood": "Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Holiday Inn Express & Suites Staunton",
+        "type": "Chain hotel",
+        "description": "Modern hotel conveniently located off Interstate 81, three miles from downtown Staunton and minutes from the Frontier Culture Museum.",
+        "address": "47 Rolling Thunder Ln., Staunton, VA 24401",
+        "phone": "",
+        "website": "https://www.ihg.com",
+        "neighborhood": "Staunton",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "The Sparrow's Nest",
+        "shopGroup": "Home & Gifts",
+        "type": "Home décor and lifestyle boutique",
+        "description": "Cozy downtown boutique filled with seasonal gifts, kitchenware, candles, and locally inspired pieces that reflect the charm of Staunton.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Barrister Books",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Independent used and rare bookstore established in 2008 in a pre-Civil War building at Lawyers Row, with open, high-ceilinged spaces and a well-curated collection.",
+        "address": "1 Lawyers Row, Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Book Dragon",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Downtown Staunton bookstore offering new and used books alongside a variety of non-book merchandise, conveniently located on West Beverley Street.",
+        "address": "102 W. Beverley St., Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Sunspots Studios",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Glassblowing studio and gallery",
+        "description": "Working glassblowing studio in downtown Staunton where visitors can watch skilled artists shape molten glass into ornaments, sculptures, and one-of-a-kind pieces.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "https://sunspotsstudios.com",
+        "neighborhood": "Downtown Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Latitudes Fair Trade Store",
+        "shopGroup": "Home & Gifts",
+        "type": "Fair trade gift shop",
+        "description": "Fair trade retailer offering handcrafted goods, clothing, and gifts from artisans around the world in downtown Staunton.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Redwood & Co.",
+        "shopGroup": "Home & Gifts",
+        "type": "Home and lifestyle boutique",
+        "description": "Popular downtown boutique with a great mix of home goods, gifts, and lifestyle products, praised for friendly service and quality selection.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Bonfire Begonia",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Vintage and retro clothing shop",
+        "description": "Curated collection of vintage fashion, accessories, and retro finds for lovers of timeless style.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Wilderness Adventure",
+        "shopGroup": "Other",
+        "type": "Outdoor and footwear retailer",
+        "description": "Outdoor gear and footwear shop downtown known for its knowledgeable staff and attentive fitting experience.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "17 E. Beverley Antiques",
+        "shopGroup": "Home & Gifts",
+        "type": "Antique shop",
+        "description": "Downtown antique shop with a broad and eclectic inventory spread across multiple floors.",
+        "address": "17 E. Beverley St., Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Artful Gifts",
+        "shopGroup": "Home & Gifts",
+        "type": "Artisan gift shop and felting studio",
+        "description": "One-of-a-kind artisan shop specializing in sustainable felted wool fashion and gifts, with classes offered in the art of felting.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Factory Antique Mall",
+        "shopGroup": "Home & Gifts",
+        "type": "Antique mall",
+        "description": "Large multi-dealer antique mall near downtown Staunton offering a wide range of vintage furniture, collectibles, and curiosities.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Staunton",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "American Shakespeare Center — Blackfriars Playhouse",
+        "venueGroup": "Theater & Comedy",
+        "type": "Professional repertory theater",
+        "description": "The world's first re-creation of Shakespeare's original indoor Blackfriars Theatre, celebrating its 25th anniversary in 2026 with a fall repertory season featuring The Tempest, Mary Shelley's Frankenstein, and Witch.",
+        "address": "10 S. Market St., Staunton, VA 24401",
+        "phone": "",
+        "website": "https://americanshakespearecenter.com",
+        "neighborhood": "Downtown Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Woodrow Wilson Presidential Library & Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Presidential library and museum",
+        "description": "National Historic Landmark on Gospel Hill tracing the life and presidency of Staunton native Woodrow Wilson through seven galleries, a WWI trench exhibit, and Wilson's restored 1919 Pierce-Arrow limousine.",
+        "address": "20 N. Coalter St., Staunton, VA 24401",
+        "phone": "",
+        "website": "https://www.woodrowwilson.org",
+        "neighborhood": "Gospel Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Frontier Culture Museum of Virginia",
+        "venueGroup": "Museums & Cultural",
+        "type": "Open-air living history museum",
+        "description": "State-operated outdoor museum telling the story of early immigrants to colonial America through reconstructed English, German, Irish, West African, and American farmsteads with costumed interpreters.",
+        "address": "1290 Richmond Road, Staunton, VA 24401",
+        "phone": "",
+        "website": "https://www.frontiermuseum.org",
+        "neighborhood": "Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Camera Heritage Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Photography and camera museum",
+        "description": "The largest camera museum open to the public in the United States, housing over 7,000 cameras and historical photographs of the Shenandoah Valley, with curator-guided tours available.",
+        "address": "1 W. Beverley St., Staunton, VA 24401",
+        "phone": "540-886-8535",
+        "website": "https://www.cameraheritagemuseum.org",
+        "neighborhood": "Downtown Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "CoArt Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Working artist cooperative gallery",
+        "description": "Working artist cooperative allowing visitors to connect directly with local and regional artists in a rotating gallery setting open Wednesday through Sunday.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Michael Tusing Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Private art gallery",
+        "description": "Staunton's oldest private gallery featuring ongoing exhibits from more than 50 local and regional artists in a historic setting, open Tuesday through Sunday.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Downtown Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ox-Eye Vineyards",
+        "venueGroup": "Music Venues",
+        "type": "Urban winery and tasting room",
+        "description": "Downtown Staunton winery and gathering space featuring local wine, gallery exhibitions, and live events including a regularly rotating upstairs gallery.",
+        "address": "Downtown Staunton, VA 24401",
+        "phone": "",
+        "website": "https://ox-eye.com",
+        "neighborhood": "Downtown Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Staunton Augusta Art Center (SAAC)",
+        "venueGroup": "Art Galleries",
+        "type": "Community arts center and gallery",
+        "description": "Non-profit community arts center offering rotating gallery exhibitions, art classes, and programs for all ages in the Staunton area.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "https://saac-arts.org",
+        "neighborhood": "Staunton",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Staunton-Augusta Family YMCA",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service YMCA",
+        "description": "Comprehensive family fitness facility offering year-round swimming, youth programs, adult sports leagues, racquetball, weight training, and special education programs.",
+        "address": "708 N. Coalter St., Staunton, VA 24401",
+        "phone": "",
+        "website": "https://www.saymca.org",
+        "neighborhood": "Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Gypsy Hill Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "City park",
+        "description": "Sprawling 214-acre multi-use park in the heart of Staunton featuring a 1.3-mile walking and cycling loop, golf course, duck pond, basketball court, playground, gym, and picnic pavilions.",
+        "address": "600 Churchville Ave., Staunton, VA 24401",
+        "phone": "",
+        "website": "https://www.ci.staunton.va.us/departments/parks-recreation-/parks/gypsy-hill-park",
+        "neighborhood": "Staunton",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Phoenix Fitness and Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga and fitness studio",
+        "description": "Staunton yoga and fitness studio offering multiple yoga styles, Barre, PiYO, and nutritional services in a nurturing and motivating environment.",
+        "address": "58 Myers Corner Dr., Staunton, VA 24401",
+        "phone": "540-649-1671",
+        "website": "https://phoenixfitnessandyoga.com",
+        "neighborhood": "Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Shenandoah Powerhouse Gym and Fitness Center",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "Local fitness center in Staunton offering strength training, group fitness, and a range of equipment for serious lifters and general fitness enthusiasts.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Planet Fitness Staunton",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Budget gym",
+        "description": "Clean, well-equipped Planet Fitness location in Staunton offering affordable memberships and standard amenities.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "https://www.planetfitness.com",
+        "neighborhood": "Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Queen City Strength",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Strength and conditioning gym",
+        "description": "Local strength and conditioning gym in Staunton focused on functional strength training with small class sizes and personalized coaching.",
+        "address": "Staunton, VA 24401",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Augusta Health Fitness Center",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Hospital-affiliated fitness center",
+        "description": "Medically affiliated fitness center associated with Augusta Health offering supervised exercise programs, group fitness classes, and aquatics.",
+        "address": "Staunton/Fishersville, VA area",
+        "phone": "",
+        "website": "https://www.augustahealth.com",
+        "neighborhood": "Staunton",
+        "notable": ""
+      },
+      {
+        "name": "Montgomery Hall Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "City park with pool",
+        "description": "City park offering seasonal outdoor pool, athletic fields, picnic areas, and trail access, complementing Gypsy Hill Park as a Staunton recreation destination.",
+        "address": "1000 Montgomery Ave., Staunton, VA 24401",
+        "phone": "",
+        "website": "https://www.ci.staunton.va.us/departments/parks-recreation",
+        "neighborhood": "Staunton",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-10-02",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-10-02",
+        "high": 86,
+        "low": 57,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 6
+      },
+      {
+        "date": "2026-10-03",
+        "high": 61,
+        "low": 55,
+        "summary": "Chance Rain Showers",
+        "condition": "rain",
+        "precip": 52
+      },
+      {
+        "date": "2026-10-04",
+        "high": 64,
+        "low": 56,
+        "summary": "Rain Showers",
+        "condition": "rain",
+        "precip": 75
+      },
+      {
+        "date": "2026-10-05",
+        "high": 72,
+        "low": 43,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 1
+      },
+      {
+        "date": "2026-10-06",
+        "high": 62,
+        "low": 42,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-07",
+        "high": 67,
+        "low": 45,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-08",
+        "high": 72,
+        "low": 48,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      }
+    ]
+  }
+}

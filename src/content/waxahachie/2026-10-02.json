@@ -1,0 +1,861 @@
+{
+  "clusterSlug": "waxahachie",
+  "clusterName": "Waxahachie",
+  "weekOf": "2026-10-02",
+  "topStories": [
+    {
+      "headline": "Waxahachie Mother Charged With Capital Murder in Shooting Deaths of Two Sons",
+      "dek": "The Ellis County Sheriff's Office arrested a 42-year-old Waxahachie woman Thursday after deputies found her two sons fatally shot inside the family home.",
+      "body": "A Waxahachie mother is facing two counts of capital murder after authorities say she shot and killed her two sons in the early morning hours of Thursday, October 1, according to the Ellis County Sheriff's Office. Deputies were dispatched to a home in the 900 block of Big Sky Drive shortly after 4 a.m. following a 911 call.\n\nInside the residence, deputies found two males with gunshot wounds. Christopher Scott Pitre, 21, died at the scene. A 15-year-old boy — whose identity authorities have not released — was taken to a hospital in critical condition and later died there.\n\nColleen Nichole Lemmon, 42, was arrested October 1 in connection with the killings. Sheriff Brad Norman said evidence gathered at the scene led investigators to identify Lemmon as the suspected shooter. Lemmon was also found at the home with injuries described as non-life-threatening. She was booked into the Wayne McCollum Detention Center following hospital treatment, with bond pending arraignment.\n\nThe investigation is being conducted by the Ellis County Sheriff's Office. No additional suspects have been named publicly.",
+      "sourceUrl": "https://www.cbsnews.com/texas/news/waxahachie-mother-capital-murder-two-sons-shot-killed-october-2026/",
+      "sourceName": "CBS Texas",
+      "tags": [
+        "public safety",
+        "Ellis County Sheriff",
+        "crime"
+      ]
+    },
+    {
+      "headline": "Stampede of Speed Returns Oct. 9–18: Free Downtown Events Kick Off the Fastest 10 Days in Texas",
+      "dek": "The NHRA Texas Fall Nationals at Texas Motorplex bring a cattle drive through downtown Waxahachie and a driver Fan Fest at Railyard Park — both free — before championship racing begins.",
+      "body": "The Stampede of Speed, billed as the fastest ten days in Texas, runs October 9–18, 2026, at the historic Texas Motorplex in Ennis, capping NHRA's 75th anniversary season with the fourth of six playoff races in the Countdown to the Championship.\n\nTwo free family events take place in downtown Waxahachie. On Friday, October 9 at high noon, a cattle drive winds through downtown to officially launch the festival. On Thursday, October 15, a Fan Fest at Railyard Park gives attendees a chance to meet NHRA and JEGS All-Star drivers, enjoy live music, and collect free autographs — no ticket required for either event.\n\nThe Stars of Texas Music Festival, running October 9–11 inside the Motorplex grounds, features three nights of country music, bull riding, drag racing, BBQ, and lantern releases. Ticketed racing events — including JEGS All-Stars qualifying and the NHRA Texas Fall Nationals — run October 14–18, with Race Day and Finals on Sunday, October 18.\n\nTicket packages range from single-day admissions to full 10-day passes. Information is available at stampedeofspeed.com and the Waxahachie Convention and Visitors Bureau site.",
+      "sourceUrl": "https://www.stampedeofspeed.com/schedule/free-family-events",
+      "sourceName": "Stampede of Speed",
+      "tags": [
+        "events",
+        "NHRA",
+        "Texas Motorplex",
+        "Stampede of Speed"
+      ]
+    },
+    {
+      "headline": "Farm Heritage Day Returns to Ellis County Rural Heritage Farm This Sunday",
+      "dek": "The 145-acre working farm west of Waxahachie opens its gates Sunday, Oct. 4, for a free afternoon of hayrides, live music, hands-on pioneer skills, and farm animals.",
+      "body": "The Ellis County Rural Heritage Farm will hold its annual Farm Heritage Day on Sunday, October 4, from 2 to 5 p.m. at 130 Cunningham Meadows Road in Waxahachie. Admission, activities, demonstrations, and snacks are all free.\n\nThis year's program features outdoor games, hayrides, farm animals — including alpacas, cows, chickens, goats, and horses — and living-history demonstrations such as butter churning, treadle sewing, hand laundry, and corn shelling. Live music will be provided by the Lone Star State Dulcimer Society. A special exhibit this year focuses on Rural Free Delivery, exploring how early mail service connected rural communities much as online delivery does today.\n\nHands-on activities for children and families are hosted by the 4-H and Girl Scouts, and educational displays will be presented by the Ellis County Historical Commission, the Indian Trail Chapter of Master Naturalists, the American Red Cross, and several other community partners. The restored 1913 McKinney-Aday Farmhouse will be open for tours.\n\nThe farm is located approximately two miles west of Waxahachie on FM 66. Turn south at the flashing yellow light onto Cunningham Meadows Road. Free water is provided by AgTexas; snacks are provided by H-E-B while supplies last. Vendors will also be on site selling items for purchase.",
+      "sourceUrl": "https://ruralheritagefarm.org/farm-heritage-day/",
+      "sourceName": "Ellis County Rural Heritage Farm",
+      "tags": [
+        "events",
+        "family",
+        "heritage",
+        "Ellis County"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Farm Heritage Day",
+      "startDate": "2026-10-04",
+      "date": "Sunday, October 4",
+      "time": "2:00 PM–5:00 PM",
+      "location": "Ellis County Rural Heritage Farm, 130 Cunningham Meadows Road, Waxahachie",
+      "description": "Free annual event featuring hayrides, farm animals, living-history demonstrations, live dulcimer music, and hands-on activities for all ages. No ticket required.",
+      "sourceUrl": "https://ruralheritagefarm.org/farm-heritage-day/",
+      "sourceName": "Ellis County Rural Heritage Farm"
+    },
+    {
+      "title": "Waxahachie City Council Regular Meeting",
+      "startDate": "2026-10-05",
+      "date": "Monday, October 5",
+      "time": "7:00 PM",
+      "location": "Waxahachie Civic Center, 2000 Civic Center Lane, Waxahachie",
+      "description": "Regular bimonthly meeting of the Waxahachie City Council. Meetings are streamed live on the city website.",
+      "sourceUrl": "https://www.waxahachietx.gov/239/City-Council",
+      "sourceName": "City of Waxahachie"
+    },
+    {
+      "title": "WISD Board of Trustees Meeting",
+      "startDate": "2026-10-05",
+      "date": "Monday, October 5",
+      "time": "5:00 PM–9:00 PM",
+      "location": "WISD Administration Building, 411 Gibson, Waxahachie",
+      "description": "Regular monthly meeting of the Waxahachie ISD Board of Trustees.",
+      "sourceUrl": "https://www.wisd.org/",
+      "sourceName": "Waxahachie ISD"
+    },
+    {
+      "title": "WISD FAFSA Assistance Workshops",
+      "startDate": "2026-10-05",
+      "date": "October 5, 6, and 8",
+      "time": "Various times",
+      "location": "WHS Computer Lab, Waxahachie High School",
+      "description": "Waxahachie ISD offers three sessions to help families complete federal financial aid applications: Oct. 5 from 5–7 p.m., Oct. 6 from noon–2 p.m., and Oct. 8 from 9–11 a.m.",
+      "sourceUrl": "https://www.wisd.org/",
+      "sourceName": "Waxahachie ISD"
+    },
+    {
+      "title": "Stampede of Speed Cattle Drive — Free Downtown Event",
+      "startDate": "2026-10-09",
+      "date": "Friday, October 9",
+      "time": "12:00 PM (High Noon)",
+      "location": "Downtown Waxahachie",
+      "description": "A free high-noon cattle drive through downtown Waxahachie officially kicks off the Stampede of Speed — the Fastest Ten Days in Texas. No ticket needed.",
+      "sourceUrl": "https://www.stampedeofspeed.com/schedule/free-family-events",
+      "sourceName": "Stampede of Speed"
+    },
+    {
+      "title": "Stampede of Speed Fan Fest at Railyard Park — Free",
+      "startDate": "2026-10-15",
+      "date": "Thursday, October 15",
+      "time": "Evening",
+      "location": "Railyard Park, Downtown Waxahachie",
+      "description": "Meet NHRA and JEGS All-Star drivers, enjoy live music, and collect free autographs at this pre-race Fan Fest in downtown Waxahachie. No ticket required.",
+      "sourceUrl": "https://www.stampedeofspeed.com/schedule/free-family-events",
+      "sourceName": "Stampede of Speed"
+    },
+    {
+      "title": "Trunk-o-Palooza",
+      "startDate": "2026-10-17",
+      "date": "Saturday, October 17",
+      "time": "3:00 PM–6:00 PM",
+      "location": "Getzendaner Park, Waxahachie",
+      "description": "The city of Waxahachie hosts what it bills as the largest trunk-or-treat event in Texas, with decorated car trunks, candy, and family fun.",
+      "sourceUrl": "https://www.waxahachietx.com/2026/09/h1-b-area-briefs-b-br-city-to-host-trick-or-treat-events-throughout-october-h1/",
+      "sourceName": "Waxahachie Daily Light"
+    },
+    {
+      "title": "Crossroads of Texas Country Festival",
+      "startDate": "2026-10-24",
+      "date": "Saturday, October 24",
+      "time": "Various times",
+      "location": "Waxahachie",
+      "description": "The GO TEXAN Country Festival celebrates Texas-grown products, music, food, and heritage in a one-day event in Waxahachie.",
+      "sourceUrl": "https://www.waxahachietx.gov/",
+      "sourceName": "City of Waxahachie"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Voter Registration Deadline for November Election Is Monday, Oct. 5",
+      "body": "Monday, October 5, 2026, is the last day for Ellis County residents to register to vote — or update their voter record — for the November 3, 2026, General and Special Elections. The deadline applies to both mail and in-person registration. Early voting runs October 19–30 at county vote centers. Sample ballots and polling location listings are available at elliscountytx.gov.",
+      "sourceUrl": "https://www.elliscountytx.gov/629/Upcoming-Elections",
+      "sourceName": "Ellis County Elections Department",
+      "tags": [
+        "elections",
+        "voter registration",
+        "Ellis County"
+      ]
+    },
+    {
+      "headline": "Global High School Awarded $100,000 DART Foundation Grant",
+      "body": "Waxahachie Global High School received a $100,000 grant from the DART Foundation as part of the foundation's Closing the Gap project, according to an announcement posted September 18, 2026, on the school's website. Global High, located at 600 W. 2nd St., is a T-STEM Early College High School within Waxahachie ISD serving students in grades 9–12.",
+      "sourceUrl": "https://global.wisd.org/",
+      "sourceName": "Waxahachie Global High School",
+      "tags": [
+        "education",
+        "WISD",
+        "grants"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Waxahachie mother charged with capital murder in deaths of her two sons, sheriff says",
+      "url": "https://www.cbsnews.com/texas/news/waxahachie-mother-capital-murder-two-sons-shot-killed-october-2026/",
+      "publication": "CBS Texas"
+    },
+    {
+      "title": "Waxahachie mother charged with two counts of capital murder in shooting deaths of two sons",
+      "url": "https://www.kwtx.com/2026/10/01/waxahachie-mother-charged-with-two-counts-capital-murder-shooting-deaths-two-sons/",
+      "publication": "KWTX"
+    },
+    {
+      "title": "Waxahachie Mother Charged With Capital Murder After Both Sons Shot Dead",
+      "url": "https://hoodline.com/2026/10/waxahachie-mother-charged-with-capital-murder-after-both-sons-shot-dead/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "Stampede of Speed — Free Family Events",
+      "url": "https://www.stampedeofspeed.com/schedule/free-family-events",
+      "publication": "Stampede of Speed"
+    },
+    {
+      "title": "Stampede of Speed: NHRA Texas Fall Nationals",
+      "url": "https://www.waxahachiecvb.com/events/2026/stampede-of-speed-nhra-texas-fall-nationals",
+      "publication": "Waxahachie CVB"
+    },
+    {
+      "title": "Farm Heritage Day — Oct. 4, 2026",
+      "url": "https://ruralheritagefarm.org/farm-heritage-day/",
+      "publication": "Ellis County Rural Heritage Farm"
+    },
+    {
+      "title": "Rural Farm Heritage Day Oct. 4",
+      "url": "https://www.waxahachiesun.com/education/rural-farm-heritage-day-oct-4/article_0efba6b0-68cc-4232-84e6-3393bc8368b3.html",
+      "publication": "Waxahachie Sun"
+    },
+    {
+      "title": "Farm Heritage Day set for Oct. 4",
+      "url": "https://www.waxahachietx.com/2026/09/farm-heritage-day-set-for-oct-4/",
+      "publication": "Waxahachie Daily Light"
+    },
+    {
+      "title": "Area briefs: Trunk-O-Palooza, Great Pumpkin Dash and more",
+      "url": "https://www.waxahachietx.com/2026/09/h1-b-area-briefs-b-br-city-to-host-trick-or-treat-events-throughout-october-h1/",
+      "publication": "Waxahachie Daily Light"
+    },
+    {
+      "title": "City Council — Meeting Details",
+      "url": "https://www.waxahachietx.gov/239/City-Council",
+      "publication": "City of Waxahachie"
+    },
+    {
+      "title": "WISD Home — Upcoming Events & FAFSA Workshops",
+      "url": "https://www.wisd.org/",
+      "publication": "Waxahachie ISD"
+    },
+    {
+      "title": "General and Special Elections — November 3, 2026",
+      "url": "https://www.elliscountytx.gov/629/Upcoming-Elections",
+      "publication": "Ellis County Elections Department"
+    },
+    {
+      "title": "Global High Awarded $100,000 Grant — DART Foundation Closing the Gap Project",
+      "url": "https://global.wisd.org/",
+      "publication": "Waxahachie Global High School"
+    },
+    {
+      "title": "Crossroads of Texas Country Festival — City of Waxahachie October Calendar",
+      "url": "https://www.waxahachietx.gov/",
+      "publication": "City of Waxahachie"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "The Dove's Nest",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Southern café and gift shop",
+        "description": "Waxahachie landmark since 1992, set in a restored 1913 hardware storefront on the historic square, serving handmade soups, salads, and sandwiches at lunch alongside a curated boutique.",
+        "address": "105 W. Jefferson St., Waxahachie, TX 75165",
+        "phone": "(972) 938-3683",
+        "website": "https://dovesnest.us",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Emory Bar & Kitchen",
+        "cuisineGroup": "Seafood & American",
+        "type": "Contemporary American restaurant and bar",
+        "description": "Refined neighborhood gem in downtown Waxahachie specializing in American cuisine with signature dishes including Hand-Cut Black Angus Tenderloin and Blackened Shrimp & Grits, plus handcrafted cocktails.",
+        "address": "Downtown Waxahachie",
+        "phone": "",
+        "website": "https://www.opentable.com/r/the-emory-bar-and-kitchen-waxahachie",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Southern Roots Brewing Company",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft brewpub and pizza restaurant",
+        "description": "Family-owned craft brewery and pizza restaurant in a historic early-1900s freight depot near downtown Waxahachie, with a rotating tap list and pet-friendly patio.",
+        "address": "421 S. College St., Waxahachie, TX 75165",
+        "phone": "(214) 980-1056",
+        "website": "https://southernrootsbrewingco.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Prime 115",
+        "cuisineGroup": "Seafood & American",
+        "type": "Steakhouse and bar",
+        "description": "Upscale steakhouse in Waxahachie consistently cited by local reviewers for fine dining without the drive to Dallas.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Atkins Seafood",
+        "cuisineGroup": "Seafood & American",
+        "type": "Seafood restaurant",
+        "description": "Long-running Waxahachie seafood spot popular with locals for fried seafood platters and Gulf-style dishes.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Big Al's Down the Hatch",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Bar and grill",
+        "description": "Casual neighborhood bar and grill in Waxahachie known for a lively atmosphere and pub-style food.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Ohana",
+        "cuisineGroup": "Asian",
+        "type": "Hawaiian-fusion restaurant",
+        "description": "Hawaiian-themed spot in Waxahachie offering poke bowls, rice plates, and island-inspired dishes in a casual setting.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "The Burger Spot",
+        "cuisineGroup": "Seafood & American",
+        "type": "Burger restaurant",
+        "description": "Popular Waxahachie burger joint drawing regulars for fresh-ground patties and creative toppings.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Cajun Bros",
+        "cuisineGroup": "Seafood & American",
+        "type": "Cajun seafood restaurant",
+        "description": "Cajun-style boil restaurant in Waxahachie serving seasoned shellfish, crawfish, and classic Louisiana sides.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Dos Juanitos Mexican Food",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican restaurant",
+        "description": "Locally loved Mexican restaurant in Waxahachie serving traditional Tex-Mex plates and daily specials.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Mariscos Muelle 77",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican seafood restaurant",
+        "description": "Mexican-style seafood restaurant in Waxahachie known for shrimp cocktails, ceviche, and coastal-style plates at affordable prices.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Panzas Tapping Italy",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant and taproom",
+        "description": "Italian restaurant and taproom in Waxahachie blending pasta dishes with a craft beer selection in a casual downtown setting.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Butter and Grace",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Bakery and café",
+        "description": "Waxahachie bakery and café beloved for scratch-made pastries, breakfast bites, and specialty coffees.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Celebrity Bakery & Cafe",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Bakery and café",
+        "description": "Downtown Waxahachie bakery café offering baked goods, sandwiches, and coffee in a charming setting near the courthouse square.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Country Cafe",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Home-style diner",
+        "description": "Classic Waxahachie diner serving Southern breakfast and lunch plates in a no-frills, community-first atmosphere.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "College Street Pub",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Bar and pub",
+        "description": "Neighborhood pub in Waxahachie with draft beers, bar food, and a laid-back vibe convenient to downtown.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "True Texas BBQ – Waxahachie",
+        "cuisineGroup": "Seafood & American",
+        "type": "BBQ restaurant",
+        "description": "H-E-B's slow-smoked barbecue concept, open in Waxahachie since August 21, 2026, with brisket, ribs, and classic sides smoked over natural hardwood for 14 hours.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "https://www.truetexasbbq.com",
+        "neighborhood": "Waxahachie",
+        "notable": "New"
+      },
+      {
+        "name": "Farm Luck",
+        "cuisineGroup": "Seafood & American",
+        "type": "Farm-to-table restaurant",
+        "description": "Waxahachie restaurant emphasizing locally sourced ingredients and seasonal American dishes with a relaxed, approachable menu.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hampton Inn & Suites Waxahachie",
+        "type": "Full-service hotel",
+        "description": "Modern Hampton Inn property in Waxahachie offering complimentary hot breakfast, pool, and easy access to I-35E.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "https://www.hilton.com/en/hotels/daldmhx-hampton-suites-waxahachie/",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Best Western Plus Waxahachie Inn & Suites",
+        "type": "Hotel with pool",
+        "description": "Highly rated hotel in Waxahachie with complimentary breakfast, outdoor pool, and comfortable suites convenient to the historic district.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "https://www.bestwestern.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Fairfield Inn & Suites Dallas Waxahachie",
+        "type": "Extended-stay hotel",
+        "description": "Marriott property adjacent to Baylor Scott & White Medical Center and the Waxahachie Civic Center, offering free hot breakfast and family-friendly amenities.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "https://www.marriott.com/en-us/hotels/dalwx-fairfield-inn-and-suites-dallas-waxahachie/overview/",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "La Quinta Inn & Suites by Wyndham Waxahachie",
+        "type": "Hotel with pool",
+        "description": "Business-friendly hotel at 311 Stadium Dr. in Waxahachie featuring free breakfast, free parking, and a pool.",
+        "address": "311 Stadium Dr., Waxahachie, TX",
+        "phone": "",
+        "website": "https://www.wyndhamhotels.com/laquinta",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Holiday Inn Express & Suites Waxahachie",
+        "type": "Extended-stay hotel",
+        "description": "IHG-branded hotel in Waxahachie offering complimentary breakfast, modern rooms, and convenient interstate access.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "https://www.ihg.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Super 8 by Wyndham Waxahachie",
+        "type": "Budget motel",
+        "description": "Budget-friendly motel in Waxahachie offering straightforward accommodations close to I-35E.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "https://www.wyndhamhotels.com/super-8",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Motel 6 Waxahachie",
+        "type": "Budget motel",
+        "description": "Pet-friendly budget motel at 200 North I-35E offering free WiFi and a 24-hour front desk.",
+        "address": "200 North I-35E, Waxahachie, TX",
+        "phone": "",
+        "website": "https://www.motel6.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "The English Merchant's Inn",
+        "type": "Bed and breakfast",
+        "description": "Charming historic bed and breakfast in Waxahachie, consistently praised for its character and full breakfast, set within the city's Victorian-era neighborhood.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      }
+    ],
+    "shops": [
+      {
+        "name": "Gingerbread Antiques",
+        "shopGroup": "Home & Gifts",
+        "type": "Antique shop",
+        "description": "Large and treasure-filled antique store in downtown Waxahachie where shoppers consistently find more than they expected across every nook and cranny.",
+        "address": "Downtown Waxahachie",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Atelier Antiques",
+        "shopGroup": "Home & Gifts",
+        "type": "Antique gallery",
+        "description": "Curated antique gallery in Waxahachie offering fine furniture, art, and decorative objects in an elegant setting.",
+        "address": "Downtown Waxahachie",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "The Velvet Angel Boutique",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's clothing boutique",
+        "description": "Women's fashion boutique in downtown Waxahachie stocked with stylish and unique clothing at accessible prices.",
+        "address": "Downtown Waxahachie",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Paper Leaves",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore and plant shop",
+        "description": "Part indie bookstore, part plant shop — a downtown Waxahachie destination where customers routinely spend hours browsing without noticing the time.",
+        "address": "Downtown Waxahachie",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Cheyenne Ranch Boutique",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Western-style boutique",
+        "description": "Western-flair women's boutique on the historic courthouse square combining cowboy-inspired style with modern fashion.",
+        "address": "Downtown Waxahachie",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Waxahachie Architectural Salvage",
+        "shopGroup": "Home & Gifts",
+        "type": "Architectural salvage dealer",
+        "description": "Unique salvage shop near downtown Waxahachie selling reclaimed building materials, vintage hardware, and one-of-a-kind architectural pieces.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Dove's Nest Gift Shop",
+        "shopGroup": "Home & Gifts",
+        "type": "Gift and home boutique",
+        "description": "Gift boutique inside The Dove's Nest restaurant offering curated antiques, signature candles, a cookbook, and home décor.",
+        "address": "105 W. Jefferson St., Waxahachie, TX 75165",
+        "phone": "(972) 938-3683",
+        "website": "https://dovesnest.us",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Webb Gallery",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Contemporary art gallery and shop",
+        "description": "Waxahachie art gallery with an eclectic collection of contemporary works and a reputation as one of the more distinctive small-town galleries in North Texas.",
+        "address": "Downtown Waxahachie",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Crafty Scrapper",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Craft and scrapbooking store",
+        "description": "Specialty craft supply store in Waxahachie serving scrapbookers, paper crafters, and creative hobbyists.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Ellis County Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Local history museum",
+        "description": "Historic museum in downtown Waxahachie preserving Ellis County's heritage through rotating exhibits and, increasingly, popular evening paranormal tours.",
+        "address": "Downtown Waxahachie",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Art on the Square (Ellis County Art Association)",
+        "venueGroup": "Art Galleries",
+        "type": "Community art gallery",
+        "description": "Gallery space run by the Ellis County Art Association at 113 W. Franklin St., showcasing member work and hosting the annual Paint Historic Waxahachie Plein Air show.",
+        "address": "113 W. Franklin St., Waxahachie, TX 75165",
+        "phone": "(972) 937-3414",
+        "website": "https://www.elliscountyart.net",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Texas Theatre",
+        "venueGroup": "Cinema",
+        "type": "Historic movie theater",
+        "description": "Restored historic cinema in downtown Waxahachie screening films and hosting special events for the community.",
+        "address": "Downtown Waxahachie",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Webb Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery",
+        "description": "One of North Texas's more distinctive independent galleries, presenting eclectic contemporary works in a welcoming, off-the-beaten-path space in Waxahachie.",
+        "address": "Downtown Waxahachie",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Scarborough Village / Scarborough Renaissance Festival Grounds",
+        "venueGroup": "Theater & Comedy",
+        "type": "Outdoor festival and event venue",
+        "description": "Home of the annual Scarborough Renaissance Festival each spring and the fall Scarborough's Hollow fantasy experience; also hosted the 2026 Texas Mead & Music Festival.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "https://www.srenfest.com",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Getzendaner Memorial Park & Chautauqua Auditorium",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic park and outdoor auditorium",
+        "description": "400 S. Grand Ave. park and its landmark Chautauqua Auditorium form Waxahachie's main green gathering space, hosting the Walk to End Alzheimer's and community events throughout the year.",
+        "address": "400 S. Grand Ave., Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Railyard Park",
+        "venueGroup": "Music Venues",
+        "type": "Community park and outdoor event space",
+        "description": "Central community gathering spot in Waxahachie that hosts free fitness events, concerts, and seasonal celebrations throughout the year.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Ellis County Courthouse",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic landmark",
+        "description": "Iconic 1895 Romanesque Revival courthouse — one of Texas's most photographed — anchors the downtown square and serves as the backdrop for the Crossroads of Texas Country Festival each fall.",
+        "address": "101 W. Main St., Waxahachie, TX 75165",
+        "phone": "",
+        "website": "https://www.elliscountytx.gov",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Urban Air Trampoline and Adventure Park",
+        "venueGroup": "Sports & Courts",
+        "type": "Indoor adventure park",
+        "description": "Large indoor trampoline and adventure park in Waxahachie with climbing walls, zip lines, and jump zones for kids and families.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "https://www.urbanair.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Lord's Gym Waxahachie",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "No-frills 24-hour gym in Waxahachie with free weights, machines, cardio equipment, and a punching bag — no contracts required.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Shelby Symmetry",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Functional fitness and wellness studio",
+        "description": "Boutique studio in Waxahachie owned by Kevin and Hannah Shelby, offering personal training, nutrition coaching, and classes focused on mind-body balance.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Waxahachie YMCA",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Community recreation center",
+        "description": "Full-service YMCA in Waxahachie offering gym floor, group fitness classes, childcare, and pool access for members of all ages.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "https://www.ymca.org",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Getzendaner Memorial Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "City park",
+        "description": "Waxahachie's largest public park at 400 S. Grand Ave., featuring open green space, the historic Chautauqua Auditorium, walking paths, and the terminus of the planned regional trail from Midlothian.",
+        "address": "400 S. Grand Ave., Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Railyard Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban community park",
+        "description": "Downtown Waxahachie's central outdoor gathering place, hosting free community fitness events and serving as a year-round hub for outdoor activities.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Wags-A-Hachie Dog Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Off-leash dog park",
+        "description": "Fenced off-leash dog park in Waxahachie where residents and their dogs can exercise and socialize in a safe outdoor setting.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Hachie Hearts Trail",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Walking and running trail",
+        "description": "Community walking and running trail in Waxahachie connecting neighborhoods and parks, popular for daily exercise and leisure.",
+        "address": "Waxahachie, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Lake Waxahachie Parks (Boat Dock & Spring Parks)",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Lakeside recreation parks",
+        "description": "Twin lakeside parks at 91 Lakeshore Dr. (Boat Dock Park) and 501 Lakeshore Dr. (Spring Park) offering open water access, fishing, and outdoor recreation at Lake Waxahachie.",
+        "address": "Lakeshore Dr., Waxahachie, TX",
+        "phone": "",
+        "website": "https://www.waxahachietx.gov",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-10-02",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-10-02",
+        "high": 78,
+        "low": 67,
+        "summary": "Showers And Thunderstorms Likely",
+        "condition": "storm",
+        "precip": 58
+      },
+      {
+        "date": "2026-10-03",
+        "high": 78,
+        "low": 66,
+        "summary": "Showers And Thunderstorms Likely",
+        "condition": "storm",
+        "precip": 60
+      },
+      {
+        "date": "2026-10-04",
+        "high": 82,
+        "low": 64,
+        "summary": "Chance Rain Showers",
+        "condition": "rain",
+        "precip": 28
+      },
+      {
+        "date": "2026-10-05",
+        "high": 82,
+        "low": 59,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 1
+      },
+      {
+        "date": "2026-10-06",
+        "high": 82,
+        "low": 57,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-07",
+        "high": 84,
+        "low": 59,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-08",
+        "high": 84,
+        "low": 61,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      }
+    ]
+  }
+}
