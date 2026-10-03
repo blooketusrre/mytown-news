@@ -43,11 +43,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      # Full history: the watchdog reads when each edition's file was first
+      # committed, to tell an on-time Friday from a late one. A shallow
+      # checkout has only the latest commit and cannot answer that.
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v5
         with:
           node-version: '24'
 
-      - name: Every live edition must have this week's issue
+      - name: Every live edition must have this week's issue, before the send
         run: node scripts/check-published.js

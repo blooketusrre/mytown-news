@@ -29,7 +29,53 @@
 
 const fs   = require("fs");
 const path = require("path");
+const { execFileSync } = require("child_process");
 const { thisWeekDate } = require("../lib/week");
+
+/* ── On time, not just present ────────────────────────────────────────────
+ * On 2 October every edition published — at 19:20 UTC, 2h 50m after the
+ * 16:30 send, because the on-time Netlify trigger did not fire and GitHub's
+ * own cron arrived five hours late. This watchdog ran at 21:26, found all
+ * twenty files, and passed. Readers got their newsletter at lunchtime and
+ * nothing said so.
+ *
+ * A watchdog that checks *whether* and not *when* is blind to the failure
+ * that actually happens here. So it now also reads, from git, when each
+ * edition's file for this week was first committed, and fails if any landed
+ * after the send time. It does not matter which scheduler runs the watchdog,
+ * or how late: the commit time is permanent.
+ *
+ * Kept in step with SEND_AT_UTC in pipeline/generate-issue.js; both read the
+ * same environment variable with the same default.
+ */
+const SEND_AT_UTC = (process.env.SEND_AT_UTC || "16:30").trim();
+
+/** Editions whose file was first committed after the send time. Pure. */
+function lateEditions(addedAt, week, sendAt = SEND_AT_UTC) {
+  const deadline = new Date(`${week}T${sendAt}:00Z`).getTime();
+  return Object.entries(addedAt)
+    .filter(([, iso]) => iso && new Date(iso).getTime() > deadline)
+    .map(([slug, iso]) => ({ slug, at: iso }));
+}
+
+/** When each file was first added, from git. null where history is missing. */
+function addedTimes(slugs, week, root) {
+  const out = {};
+  for (const slug of slugs) {
+    try {
+      const iso = execFileSync("git",
+        ["log", "--diff-filter=A", "--format=%cI", "--", `src/content/${slug}/${week}.json`],
+        { cwd: root, encoding: "utf8" }).trim().split("\n").pop();
+      out[slug] = iso || null;
+    } catch {
+      out[slug] = null;
+    }
+  }
+  return out;
+}
+
+module.exports = { lateEditions, addedTimes, SEND_AT_UTC };
+if (require.main !== module) return;
 
 const ROOT     = path.resolve(__dirname, "..");
 const CLUSTERS = path.join(ROOT, "src", "_data", "clusters.json");
@@ -84,6 +130,35 @@ if (thin.length) {
   console.error(`\n✗ Issue file present but carries no stories: ${thin.join(", ")}`);
 }
 
-if (missing.length || thin.length) process.exit(1);
+// Lateness, for the editions that did publish.
+const present = editions.map((c) => c.slug).filter((s) => !missing.includes(s));
+const added = addedTimes(present, week, ROOT);
+const unknown = present.filter((s) => !added[s]);
+const late = lateEditions(added, week);
 
-console.log("✓ Every live edition published this week.");
+if (unknown.length === present.length && present.length) {
+  // No history at all means a shallow checkout, not a late publish. Say so
+  // rather than pass or fail on a guess.
+  console.warn(
+    `\n⚠ Cannot tell when this week's issues were committed — the checkout has no ` +
+    `history. publish-watchdog.yml must check out with fetch-depth: 0.`
+  );
+}
+
+if (late.length) {
+  const last = late.map((l) => l.at).sort().pop();
+  const hhmm = last.slice(11, 16);
+  console.error(
+    `\n✗ Published late: ${late.length} edition(s) committed after the ${SEND_AT_UTC} UTC send, ` +
+    `the last at ${hhmm} UTC.\n` +
+    `  ${late.map((l) => l.slug).join(", ")}\n\n` +
+    `  Every subscriber of those editions received this week's issue late. The usual\n` +
+    `  cause is that the 14:07 Netlify trigger did not start the run and GitHub's own\n` +
+    `  cron did, hours behind. Check Netlify → Functions → trigger-weekly-publish\n` +
+    `  today: its log is kept for 24 hours and will say whether it ran and why not.`
+  );
+}
+
+if (missing.length || thin.length || late.length) process.exit(1);
+
+console.log(`✓ Every live edition published this week, all before the ${SEND_AT_UTC} UTC send.`);

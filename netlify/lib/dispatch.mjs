@@ -38,6 +38,7 @@
 const REPO = "blooketusrre/mytown-news";
 const API = "https://api.github.com";
 
+/** The one normal refusal: it is not Friday. Everything else is an error. */
 export class DispatchRefused extends Error {}
 
 /**
@@ -63,10 +64,30 @@ export async function dispatchWorkflow({
 }) {
   const deploy = (context && context.deploy) || {};
 
-  if (deploy.published !== true) {
-    throw new DispatchRefused(
-      `Not dispatching ${workflow}: this function belongs to a ${deploy.context || "unknown"} ` +
-      `deploy that is not the published site. Only the live deploy may start a real publish.`
+  // Every invocation states what it saw, first. On 2 October neither trigger
+  // started its workflow, and by the time anyone looked, Netlify's 24-hour
+  // log retention had deleted the only evidence of why. This line is so the
+  // next such Friday explains itself to whoever reads the log that day.
+  console.log(
+    `→ ${workflow}: invoked ${now.toISOString()} | deploy.context=${deploy.context} ` +
+    `deploy.published=${deploy.published} deploy.id=${deploy.id} | token ${token ? "present" : "ABSENT"}`
+  );
+
+  // Live production only. Accepts either signal: the published flag, or a
+  // production deploy context. Which of them Netlify populates for a
+  // *scheduled* invocation, as opposed to a Run now click, is not something
+  // its docs state — and if a scheduled run lacked the flag, requiring it
+  // alone would refuse every Friday. Previews and branch deploys carry
+  // neither, so they are still refused; the token is also scoped to the
+  // Production context in Netlify, which is the second lock.
+  //
+  // And it refuses loudly. A quiet refusal reports the invocation as a
+  // success, which is the one outcome that must never look like one.
+  if (deploy.published !== true && deploy.context !== "production") {
+    throw new Error(
+      `Refusing to dispatch ${workflow}: this function belongs to a ` +
+      `${deploy.context || "unknown"} deploy, not the live production site. ` +
+      `Only the live site may start a real publish.`
     );
   }
 

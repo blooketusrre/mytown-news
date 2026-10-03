@@ -50,17 +50,20 @@ await t("live deploy, Friday, 204 → dispatches once", async () => {
   if (c.init.headers.Authorization !== "Bearer tok") throw new Error("auth header wrong");
 });
 
-await t("deploy preview → refused, GitHub never called", async () => {
+await t("deploy preview on a Friday → loud refusal, GitHub never called", async () => {
   const f = fakeFetch([204]);
   try { await dispatchWorkflow({ ...base, context: PREVIEW, now: FRIDAY, fetchImpl: f }); throw new Error("did not refuse"); }
-  catch (e) { if (!(e instanceof DispatchRefused)) throw e; }
+  catch (e) {
+    if (e instanceof DispatchRefused) throw new Error("a preview refusal was reported politely, as though nothing were wrong");
+    if (!/Refusing to dispatch/.test(e.message)) throw e;
+  }
   if (f.calls.length) throw new Error("GitHub was called from a preview");
 });
 
-await t("missing context entirely → refused", async () => {
+await t("missing context entirely → loud refusal", async () => {
   const f = fakeFetch([204]);
   try { await dispatchWorkflow({ ...base, context: undefined, now: FRIDAY, fetchImpl: f }); throw new Error("did not refuse"); }
-  catch (e) { if (!(e instanceof DispatchRefused)) throw e; }
+  catch (e) { if (e instanceof DispatchRefused || !/Refusing to dispatch/.test(e.message)) throw e; }
   if (f.calls.length) throw new Error("GitHub was called");
 });
 
@@ -92,10 +95,10 @@ await t("Tuesday, token read-only (403) → hard error naming the permission", a
   catch (e) { if (e instanceof DispatchRefused || !/Actions: Read and write/.test(e.message)) throw new Error("wrong: " + e.message); }
 });
 
-await t("Tuesday on a preview → refused before the token is touched", async () => {
+await t("Tuesday on a preview → refused before the token is used", async () => {
   const f = fakeFetch([204]);
   try { await dispatchWorkflow({ ...base, context: PREVIEW, now: TUESDAY, fetchImpl: f }); throw new Error("did not refuse"); }
-  catch (e) { if (!(e instanceof DispatchRefused)) throw e; }
+  catch (e) { if (e instanceof DispatchRefused || !/Refusing to dispatch/.test(e.message)) throw e; }
   if (f.calls.length) throw new Error("GitHub was called from a preview");
 });
 
@@ -103,6 +106,21 @@ await t("no token → hard error on any day, not a quiet refusal", async () => {
   const f = fakeFetch([204]);
   try { await dispatchWorkflow({ ...base, token: "", context: LIVE, now: TUESDAY, fetchImpl: f }); throw new Error("did not throw"); }
   catch (e) { if (e instanceof DispatchRefused || !/GITHUB_DISPATCH_TOKEN/.test(e.message)) throw new Error("wrong error: " + e.message); }
+});
+
+await t("scheduled invocation with no published flag but production context → dispatches", async () => {
+  const f = fakeFetch([204]);
+  const ctx = { deploy: { context: "production" } };     // published undefined
+  const r = await dispatchWorkflow({ ...base, context: ctx, now: FRIDAY, fetchImpl: f });
+  if (!r.ok || !f.calls[0].url.endsWith("/dispatches")) throw new Error("did not dispatch");
+});
+
+await t("branch deploy on a Friday → loud refusal, GitHub never called", async () => {
+  const f = fakeFetch([204]);
+  const ctx = { deploy: { context: "branch-deploy", published: false } };
+  try { await dispatchWorkflow({ ...base, context: ctx, now: FRIDAY, fetchImpl: f }); throw new Error("did not refuse"); }
+  catch (e) { if (e instanceof DispatchRefused || !/Refusing to dispatch/.test(e.message)) throw e; }
+  if (f.calls.length) throw new Error("GitHub was called from a branch deploy");
 });
 
 await t("500, 502, then 204 → succeeds on the third attempt", async () => {

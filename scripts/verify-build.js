@@ -1745,7 +1745,38 @@ try {
     );
   }
 
+  // The watchdog must judge *when*, not only *whether*. On 2 October every
+  // edition published 2h 50m late and the watchdog passed.
+  const checker = fs.existsSync(path.join(ROOT, "scripts", "check-published.js"))
+    ? fs.readFileSync(path.join(ROOT, "scripts", "check-published.js"), "utf8") : "";
+  if (!/const late\s*=\s*lateEditions\(/.test(checker) || !/late\.length\)\s*process\.exit\(1\)|\|\|\s*late\.length\)\s*process\.exit\(1\)/.test(checker)) {
+    errors.push(
+      "the watchdog no longer fails on a late publish — on 2 October all twenty editions " +
+      "went out 2h 50m late and a presence-only watchdog passed"
+    );
+  }
+  if (dog && !/fetch-depth:\s*0/.test(dog)) {
+    errors.push(
+      "publish-watchdog.yml checks out shallow — it cannot read when this week's issues " +
+      "were committed, so it cannot tell a late Friday from an on-time one"
+    );
+  }
+  // A refusal that reports success is how a Friday can fail silently. Only
+  // "not a Friday" may be polite.
+  if (/throw new DispatchRefused\([\s\S]{0,120}not the (published|live)/.test(lib)) {
+    errors.push("the trigger refuses a non-live deploy politely again — a misfiring check would look like success");
+  }
+  if (!/→ \$\{workflow\}: invoked/.test(lib)) {
+    errors.push(
+      "the trigger no longer logs what it saw on invocation — with 24-hour log retention, " +
+      "a failed Friday would leave no explanation"
+    );
+  }
+
   const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, "package.json"), "utf8"));
+  if (!/test:watchdog/.test(pkg.scripts["build:prod"] || "")) {
+    errors.push("build:prod no longer runs the watchdog lateness tests");
+  }
   if (!/test:dispatch/.test(pkg.scripts["build:prod"] || "")) {
     errors.push("build:prod no longer runs the dispatch tests — the trigger guards could be removed without failing a deploy");
   }
