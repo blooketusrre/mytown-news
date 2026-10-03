@@ -2554,6 +2554,34 @@ hr.divider {
 
 .sub-topbar .sub-note { margin-top: var(--sp-2); }
 
+/* The confirmation steps on /subscribed/. Prominent on purpose: a signup
+   that is never confirmed receives nothing, and the reader cannot tell. */
+.sub-confirm {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: var(--sp-6) var(--sp-6) var(--sp-5);
+}
+.sub-confirm__steps {
+  margin: 0 0 var(--sp-5);
+  padding-left: 1.4em;
+  font-family: var(--font-ui);
+  font-size: var(--text-md);
+  line-height: 1.6;
+}
+.sub-confirm__steps li { margin-bottom: var(--sp-3); }
+.sub-confirm__steps li::marker { font-weight: 700; color: var(--navy); }
+.sub-confirm__steps strong { color: var(--navy); }
+.sub-confirm__tip {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
+.sub-confirm__tip a { color: var(--navy); font-weight: 700; }
+
 /* Where the reader goes after subscribing. The page used to end with the
    browser back button as its only exit. */
 .sub-onward {

@@ -1,8 +1,8 @@
 ---
 layout: base.njk
 permalink: /subscribed/
-pageTitle: "You're subscribed — My Town News"
-pageDesc: "Thanks for subscribing to My Town News. Check your inbox to confirm, and your first issue arrives Friday."
+pageTitle: "Confirm your email — My Town News"
+pageDesc: "One more step: confirm your email address to start receiving My Town News."
 eleventyExcludeFromCollections: true
 ---
 
@@ -10,14 +10,20 @@ eleventyExcludeFromCollections: true
    the signup, then sends the reader back here so the journey ends on our own
    site rather than on buttondown.com. #}
 
+{# Buttondown treats a signup as unconfirmed until the reader clicks the
+   link in its confirmation email, and sends unconfirmed addresses nothing.
+   This page used to be headed "You're Subscribed", which told readers they
+   were done. In October a reader who never confirmed waited for a Friday
+   issue that was never going to come. So the headline is the step they still
+   have to take, and the spam folder is a numbered step, not small print. #}
+
 <header class="masthead home-hero" role="banner" style="padding-bottom:var(--sp-8)">
   <div class="container">
-    <p class="home-hero__eyebrow">Free &amp; Independent · Every Friday</p>
-    <h1 class="home-hero__title" style="font-size:clamp(2rem,5vw,3.25rem)">You're<br><em>Subscribed</em></h1>
-    <p class="home-hero__desc" style="max-width:540px">
-      One more step — check your inbox for a confirmation email from
-      <strong>{{ site.senderEmail }}</strong> and click the link inside. Your first
-      issue lands the following Friday morning.
+    <p class="home-hero__eyebrow">One more step</p>
+    <h1 class="home-hero__title" style="font-size:clamp(2rem,5vw,3.25rem)">Confirm your<br><em>email</em></h1>
+    <p class="home-hero__desc" style="max-width:560px">
+      You&rsquo;re not subscribed yet. We&rsquo;ve sent you a confirmation email &mdash;
+      <strong>nothing arrives until you click the link inside it.</strong>
     </p>
   </div>
   <div class="gold-rule"></div>
@@ -27,11 +33,29 @@ eleventyExcludeFromCollections: true
   <div class="container">
     <div class="sub-page">
 
-      <div class="sub-result sub-result--success" role="status" style="display:block">
-        <strong>Almost there.</strong> Confirmation emails usually arrive within a
-        minute. If nothing shows up, check your spam or promotions folder — and
-        add <a href="mailto:{{ site.senderEmail }}">{{ site.senderEmail }}</a> to your
-        contacts so future issues land in your inbox.
+      <div class="sub-confirm" role="status">
+        <ol class="sub-confirm__steps">
+          <li>
+            <strong>Open the email from {{ site.senderEmail }}.</strong>
+            It usually arrives within a minute or two.
+          </li>
+          <li>
+            <strong>Not there? Check your spam, junk or promotions folder.</strong>
+            First emails from a new sender often land there. If you find it,
+            mark it &ldquo;not spam&rdquo;.
+          </li>
+          <li>
+            <strong>Click the confirmation link.</strong>
+            That&rsquo;s what turns on your subscription. Your first issue
+            arrives the following Friday morning.
+          </li>
+        </ol>
+        <p class="sub-confirm__tip">
+          Add <a href="mailto:{{ site.senderEmail }}">{{ site.senderEmail }}</a> to your
+          contacts so future issues land in your inbox. Still nothing after ten
+          minutes? Sign up again &mdash; a typo in the address is the usual cause.
+          <a href="/subscribe/">Back to the sign-up page &rarr;</a>
+        </p>
       </div>
 
       <div class="sub-section-head" style="margin-top:var(--sp-10)">

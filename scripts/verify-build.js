@@ -723,6 +723,23 @@ try {
         }
       }
     }
+    /* A signup is not a subscription until the reader clicks the link in the
+     * confirmation email; unconfirmed addresses are sent nothing. This page
+     * once said "You're Subscribed", and a reader who believed it never
+     * confirmed and never got an issue. It must say the step is still to do,
+     * and name the spam folder, where that email most often goes. */
+    if (doneBody) {
+      const text = doneBody.replace(/<[^>]+>/g, " ").replace(/&rsquo;|&#39;/g, "'");
+      if (/you'?re\s+subscribed/i.test(text) && !/not subscribed yet/i.test(text)) {
+        errors.push(`the subscribed page tells readers "You're subscribed" — they are not until they click the confirmation link`);
+      }
+      if (!/confirm/i.test(text)) {
+        errors.push("the subscribed page does not tell readers to confirm their email — unconfirmed signups receive nothing");
+      }
+      if (!/spam/i.test(text)) {
+        errors.push("the subscribed page does not mention the spam folder — where most unconfirmed readers' confirmation email is sitting");
+      }
+    }
     if (done && !/sub-onward/.test(done)) {
       errors.push("the subscribed page has no way onward — the browser back button is not navigation");
     }
