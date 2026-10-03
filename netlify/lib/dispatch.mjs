@@ -70,18 +70,25 @@ export async function dispatchWorkflow({
     );
   }
 
-  if (fridayOnly && now.getUTCDay() !== 5) {
-    throw new DispatchRefused(
-      `Not dispatching ${workflow}: it is ${now.toISOString().slice(0, 10)}, not a Friday in UTC. ` +
-      `On any other day the pipeline would build next Friday's issues early and mail them.`
-    );
-  }
-
+  // Before the Friday check, so a Run now on any weekday reports a missing
+  // token rather than hiding it behind "not a Friday".
   if (!token) {
     throw new Error(
       `GITHUB_DISPATCH_TOKEN is not set for this deploy. Add it in Netlify under ` +
-      `Site configuration → Environment variables, scoped to Functions and to the ` +
-      `Production context, then redeploy.`
+      `Site configuration → Environment variables, with a value for the ` +
+      `Production context only, then redeploy.`
+    );
+  }
+
+  if (fridayOnly && now.getUTCDay() !== 5) {
+    // Not a Friday: never dispatch. But check that Friday's dispatch *would*
+    // work, and say so in the function log — otherwise an expired token or a
+    // missing permission is first discovered on the Friday it costs a send.
+    const check = await preflight({ workflow, token, fetchImpl });
+    throw new DispatchRefused(
+      `Not dispatching ${workflow}: it is ${now.toISOString().slice(0, 10)}, not a Friday in UTC ` +
+      `(on any other day the pipeline would build next Friday's issues early and mail them). ` +
+      `Pre-flight: ${check}`
     );
   }
 
@@ -130,4 +137,42 @@ export async function dispatchWorkflow({
   }
 
   throw new Error(`Could not dispatch ${workflow} after ${attempts} attempts: ${last}`);
+}
+
+/**
+ * Prove the token could dispatch this workflow, without dispatching it.
+ *
+ * A read check is not enough: a token with Actions *read* can see the
+ * workflow and still be refused when Friday's run is started. So this makes
+ * the one harmless *write* the Actions API offers — "enable workflow" on a
+ * workflow that is already enabled. It requires exactly the permission a
+ * dispatch requires, returns 204, and changes nothing.
+ *
+ * If the workflow had somehow been disabled in the GitHub UI, this switches
+ * it back on. That is deliberate: a disabled workflow is one that silently
+ * never runs, which is the failure this whole file exists to prevent.
+ *
+ * Throws a plain Error on any failure, so a bad token shows as a failed
+ * invocation in Netlify's function log rather than as a polite refusal.
+ */
+async function preflight({ workflow, token, fetchImpl }) {
+  const res = await fetchImpl(`${API}/repos/${REPO}/actions/workflows/${workflow}/enable`, {
+    method: "PUT",
+    headers: {
+      Accept: "application/vnd.github+json",
+      Authorization: `Bearer ${token}`,
+      "X-GitHub-Api-Version": "2022-11-28",
+      "User-Agent": "mytown-news-netlify-trigger",
+    },
+  });
+  if (res.status === 204 || res.status === 200) {
+    return `the token is valid and has permission to start ${workflow} — Friday's run will be able to fire.`;
+  }
+  const text = await res.text().catch(() => "");
+  const why =
+    res.status === 401 ? `The token has expired or been revoked — generate a new one and replace it in Netlify.`
+    : res.status === 403 ? `The token can reach ${REPO} but lacks "Actions: Read and write". Fix its permissions.`
+    : res.status === 404 ? `The token cannot see ${REPO}, or ${workflow} does not exist. Check "Only select repositories".`
+    : `GitHub returned an unexpected response; try Run now again in a minute.`;
+  throw new Error(`Pre-flight FAILED for ${workflow} (${res.status} ${text.slice(0, 200)}). ${why} Friday's run would not fire.`);
 }

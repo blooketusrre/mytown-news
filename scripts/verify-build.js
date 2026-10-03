@@ -1726,6 +1726,16 @@ try {
     );
   }
 
+  // A weekday Run now checks the token without publishing. Without this the
+  // first sign of an expired token or a missing permission is a Friday with
+  // no newsletter. The tests prove it never dispatches; this checks it exists.
+  if (!/\/enable`/.test(lib) || !/async function preflight/.test(lib)) {
+    errors.push(
+      "netlify/lib/dispatch.mjs has no weekday pre-flight — a bad token would only be " +
+      "discovered on the Friday it fails to start the publish"
+    );
+  }
+
   // One live publish at a time, or a late GitHub cron overlapping the
   // Netlify-started run researches every edition twice.
   if (!/concurrency:[\s\S]*?weekly-publish-live[\s\S]*?cancel-in-progress:\s*false/.test(pub)) {
