@@ -1,0 +1,72 @@
+---
+layout: base.njk
+permalink: /confirmed/
+pageTitle: "Subscription confirmed — My Town News"
+pageDesc: "You're subscribed to My Town News. Your first issue arrives Friday morning."
+eleventyExcludeFromCollections: true
+---
+
+{# Landing page for Buttondown's confirmation redirect: where a reader goes
+   after clicking "Confirm your subscription" on Buttondown's page.
+
+   That intermediate button is Buttondown's, and it is there on purpose:
+   corporate mail scanners open every link in an incoming message, and a
+   one-click confirmation link would confirm addresses nobody asked to
+   subscribe. Without a redirect set, the button simply greyed out and the
+   reader was left on a Buttondown page wondering whether anything happened.
+
+   Reached from an email client, usually in a fresh tab or browser, so the
+   sessionStorage "from" hint the subscribe page leaves is not available
+   here. Offer every edition instead. #}
+
+<header class="masthead home-hero" role="banner" style="padding-bottom:var(--sp-8)">
+  <div class="container">
+    <p class="home-hero__eyebrow">Free &amp; Independent · Every Friday</p>
+    <h1 class="home-hero__title" style="font-size:clamp(2rem,5vw,3.25rem)">Subscription<br><em>confirmed!</em></h1>
+    <p class="home-hero__desc" style="max-width:560px">
+      You&rsquo;re all set. Your first issue arrives Friday morning from
+      <strong>{{ site.senderEmail }}</strong>.
+    </p>
+  </div>
+  <div class="gold-rule"></div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <div class="sub-page">
+
+      <div class="sub-confirm" role="status">
+        <p class="sub-confirm__tip" style="font-size:var(--text-md);color:inherit">
+          <strong style="color:var(--navy)">One tip:</strong> add
+          <a href="mailto:{{ site.senderEmail }}">{{ site.senderEmail }}</a> to your
+          contacts so each Friday&rsquo;s issue lands in your inbox, not your
+          spam or promotions folder.
+        </p>
+      </div>
+
+      <div class="sub-section-head" style="margin-top:var(--sp-10)">
+        <h2 class="sub-section-title">Read this week&rsquo;s editions now</h2>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--sp-4);margin-bottom:var(--sp-10)">
+        {% for c in clusters %}{% if c.live %}
+        <a href="{{ c | editionPath(clusters) }}"
+           style="display:block;background:var(--white);border:1px solid var(--rule);border-radius:var(--radius);padding:var(--sp-5);border-top:3px solid {{ c.accent }};text-decoration:none;color:inherit">
+          <h3 style="font-family:var(--font-head);font-size:1rem;font-weight:700;margin-bottom:4px;color:var(--navy)">{{ c.name }}</h3>
+          <p style="font-family:var(--font-ui);font-size:var(--text-xs);color:var(--muted);line-height:1.5">{{ c.neighborhoods | join(' · ') }}</p>
+        </a>
+        {% endif %}{% endfor %}
+      </div>
+
+      <div class="sub-onward">
+        <a class="sub-onward__primary" href="/">Go to the front page &rarr;</a>
+      </div>
+
+      <p class="sub-note">
+        Want more editions, or fewer?
+        <a href="/subscribe/" style="color:var(--accent);font-weight:700">Update your selection &rarr;</a>
+      </p>
+
+    </div>
+  </div>
+</main>
