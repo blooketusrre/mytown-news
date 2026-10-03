@@ -32,6 +32,7 @@ const STATIC_PAGES = [
   "submit-tip/index.html",
   "subscribe/index.html",
   "subscribed/index.html",
+  "confirmed/index.html",   // Buttondown's confirmation redirect points here
 ];
 
 /* Assets that must have been copied through. */
