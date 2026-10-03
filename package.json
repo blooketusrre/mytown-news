@@ -5,11 +5,12 @@
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
-    "build:prod": "NODE_ENV=production eleventy && npm run verify && npm run test:dispatch",
+    "build:prod": "NODE_ENV=production eleventy && npm run verify && npm run test:dispatch && npm run test:watchdog",
     "verify": "node scripts/verify-build.js",
     "generate": "node pipeline/generate-issue.js",
     "generate:cluster": "node pipeline/generate-issue.js --cluster",
-    "test:dispatch": "node scripts/test-dispatch.mjs"
+    "test:dispatch": "node scripts/test-dispatch.mjs",
+    "test:watchdog": "node scripts/test-watchdog.js"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
