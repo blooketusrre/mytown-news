@@ -29,6 +29,19 @@ eleventyExcludeFromCollections: true
   <div class="gold-rule"></div>
 </header>
 
+{# The site's top bar, as on every other page: the logo links home. Readers
+   arrive here from an email, often in a fresh tab, with no other sign of
+   which site they are on. #}
+<nav class="site-nav" aria-label="Site navigation">
+  <div class="site-nav__inner container">
+    <a class="site-nav__logo" href="/" aria-label="My Town News home">{% inlineMark %}</a>
+    <span class="site-nav__label">My Town News</span>
+    <div class="site-nav__right">
+      <a class="site-nav__aux" href="/">Go to MyTown.news &rarr;</a>
+    </div>
+  </div>
+</nav>
+
 <main id="main">
   <div class="container">
     <div class="sub-page">
@@ -83,7 +96,7 @@ eleventyExcludeFromCollections: true
          small print. The `from` parameter is set by the subscribe page. #}
       <div class="sub-onward" id="sub-onward">
         <a class="sub-onward__primary" id="sub-onward-edition" href="/" hidden></a>
-        <a class="sub-onward__secondary" href="/">Go to the front page &rarr;</a>
+        <a class="sub-onward__secondary" href="/">Go to MyTown.news &rarr;</a>
       </div>
 
       <p class="sub-note">

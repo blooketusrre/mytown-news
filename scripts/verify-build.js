@@ -741,6 +741,16 @@ try {
         errors.push("the subscribed page does not mention the spam folder — where most unconfirmed readers' confirmation email is sitting");
       }
     }
+    /* Both signup landing pages are reached from Buttondown, often from an
+     * email in a fresh tab. Without the logo linking home there is no sign
+     * which site this is, or how to reach the other editions. */
+    for (const page of ["subscribed", "confirmed"]) {
+      const f = path.join(OUT, page, "index.html");
+      const html = fs.existsSync(f) ? fs.readFileSync(f, "utf8") : "";
+      if (html && !/<a class="site-nav__logo" href="\/"/.test(html)) {
+        errors.push(`/${page}/ has no logo linking home — a reader arriving from an email cannot tell which site this is`);
+      }
+    }
     if (done && !/sub-onward/.test(done)) {
       errors.push("the subscribed page has no way onward — the browser back button is not navigation");
     }
