@@ -1,0 +1,824 @@
+{
+  "clusterSlug": "heber-city",
+  "clusterName": "Heber City",
+  "weekOf": "2026-10-16",
+  "topStories": [
+    {
+      "headline": "Cyberattack Breaches Heber City's Municipal Network; FBI Assisting Investigation",
+      "dek": "An October 10 intrusion into city IT systems was contained within days, with no essential services interrupted, but a forensic investigation is ongoing.",
+      "body": "A cyberattack breached the Heber City Municipal Corporation's local IT network on Saturday, October 10, the city disclosed on October 15. City IT staff were alerted to the intrusion and, according to a city spokesperson, \"took steps to stop and contain it expeditiously.\" Systems were reported fully back online and secure by Thursday, October 15, five days after the breach.\n\nNo essential city services were suspended during the incident. The city's public-facing website, heberut.gov, operates on a separate cloud-based platform and was unaffected throughout. The spokesperson confirmed that residents can use online bill pay and other services at heberut.gov \"with full confidence.\"\n\nThe FBI is assisting in a forensic investigation to determine the scope and origin of the attack. The city has not publicly identified the affected internal systems or applications, disclosed whether municipal data was accessed or removed, or named a responsible group or method. Whether the attack involved ransomware has not been confirmed.\n\nThe breach comes at a busy moment for Heber City's local government, with a November 3 general election approaching and multiple county-level races on the ballot. City officials have not announced a timeline for the FBI investigation's completion or indicated when more information will be made public.",
+      "sourceUrl": "https://kutv.com/news/local/cyberattack-targets-breaches-heber-citys-system",
+      "sourceName": "KUTV CBS 2",
+      "tags": [
+        "cybersecurity",
+        "Heber City",
+        "public safety"
+      ]
+    },
+    {
+      "headline": "Heber Valley Temple Walls Rising — but Utah Supreme Court's Final Word Still Months Away",
+      "dek": "Construction is visibly advancing on the Church of Jesus Christ of Latter-day Saints' temple on East Center Street, even as attorneys wait for the high court to settle the underlying appeal.",
+      "body": "Basement walls are rising from an excavated pit on 18 acres along East Center Street in Heber City, making the Heber Valley Utah Temple one of the more visible construction projects in the valley — even as the Utah Supreme Court has yet to issue a final ruling on the legal challenge that has shadowed it for years.\n\nThe Utah Supreme Court heard oral arguments in the case on September 4. Attorney Robert Mansfield, who represents the group of Red Ledges residents who have opposed the temple from the start, said this week he would be surprised if an opinion is issued before the end of October and that a final decision could be another month or two away. The church and Wasatch County are proceeding with construction at their own risk: if the Supreme Court ultimately sides with the plaintiffs, the church would bear the cost of demolishing what has been built and restoring the site to its original condition.\n\nDeputy County Attorney Jon Woodard, who has represented Wasatch County since the case began in Fourth District Court, said it would not be impossible to restore the site if the court rules against the project, describing such work as standard in the construction industry. The plaintiffs contend the county used an improper legislative development agreement to approve the 210-foot-tall, 88,000-square-foot structure. Church attorneys argue all proper processes were followed.\n\nThe Supreme Court ruled in February 2026 that construction could resume while the appeal is considered, lifting an injunction that had previously halted the project for roughly five months. The court specified at that time that the church was proceeding at its own financial risk.",
+      "sourceUrl": "https://www.parkrecord.com/2026/10/13/heber-valley-temple-construction-continues-pending-utah-supreme-court-ruling/",
+      "sourceName": "Park Record",
+      "tags": [
+        "Heber Valley Temple",
+        "Utah Supreme Court",
+        "land use",
+        "development"
+      ]
+    },
+    {
+      "headline": "State Funding Threat Against Wasatch County Fades — but Fight Over Developer-Town Law Heats Up at Legislature",
+      "dek": "After the governor's housing adviser threatened to pull $2.1 million in annual road funds over a rejected housing project, state and county officials have patched things up — even as the Utah House speaker signals he's open to repealing the underlying development law Wasatch County opposes.",
+      "body": "A weeks-long standoff between Wasatch County and the state over housing policy and development authority reached a quieter phase this week, even as the underlying dispute moved closer to the Legislature. County Manager Dustin Grabau said the county's state funding — including roughly $2.1 million per year in B and C road money — is now secure, after state and county officials met in late August and state officials acknowledged their initial approach was not constructive.\n\nThe conflict began in mid-August, when the Wasatch County Council voted down a legislative development agreement for a 144-home project on Utah Trust Lands east of Heber City. Within days, Gov. Spencer Cox's senior housing adviser Steve Waldrip delivered a message to the Heber City Council warning that the county's state funding was \"now at risk.\" The confrontation drew sharp reaction from residents who saw the threat as overreach.\n\nSeparately, a fight continues over Senate Bill 258, a 2024 law that allows up to three landowners in mostly undeveloped, unincorporated areas to petition to create a \"preliminary municipality\" — a mechanism that Wasatch County leaders say lets developers bypass local land-use authority. The Wasatch County Council approved a resolution in September calling on the Legislature to repeal the law. Developer Philo Development has applied to create a proposed community called Wasatch Highlands under SB258 on roughly 3,500 acres of privately owned land near the rejected trust-land project.\n\nAs reported on October 12 by Utah News Dispatch, Utah House Speaker Mike Schultz said he fully expects repeal or substantial changes to SB258 to be discussed when the Legislature convenes in January 2027. Gov. Cox has also left the door open to changes. Wasatch County says it remains open to housing solutions better suited to local conditions, including a potential land swap for the trust-land parcel.",
+      "sourceUrl": "https://www.sltrib.com/news/2026/10/14/utah-threatened-wasatch-countys/",
+      "sourceName": "The Salt Lake Tribune",
+      "tags": [
+        "housing",
+        "development",
+        "SB258",
+        "Wasatch County",
+        "state government"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Homestead Midway Fall Fest — Final Weekend",
+      "startDate": "2026-10-16",
+      "date": "Friday, October 16 – Sunday, October 18",
+      "time": "Various times",
+      "location": "Homestead Midway Utah, 700 N. Homestead Drive, Midway",
+      "description": "The annual Fall Fest wraps up this weekend with a pumpkin patch, apple cider and donuts, seasonal pies, and fall photo opportunities. Horse-drawn carriage rides are offered October 16 and 17 ($10 adults, $5 for children 12 and under); on October 17, a Pumpkin Plunge swim day for $10 benefits Shop with a Cop.",
+      "sourceUrl": "https://townlift.com/2026/10/fall-fest-brings-pumpkins-carriage-rides-and-cider-to-midway/",
+      "sourceName": "TownLift"
+    },
+    {
+      "title": "Fall Festival at Kohler Creamery",
+      "startDate": "2026-10-16",
+      "date": "Through October 31 (closed Sundays)",
+      "time": "10:00 AM",
+      "location": "Kohler Creamery at Heber Valley Artisan Milk & Cheese, Heber Valley",
+      "description": "The family favorite fall festival at the Kohler Creamery dairy farm continues daily through October (except Sundays), featuring a hay maze, slides, bounce houses, a jump pad, corn pits, yard games, and pumpkins.",
+      "sourceUrl": "https://www.gohebervalley.com/kohler-creamery-fall-festival/",
+      "sourceName": "Go Heber Valley"
+    },
+    {
+      "title": "Halloween Express Train — Heber Valley Railroad",
+      "startDate": "2026-10-16",
+      "date": "Through October 30 (Mon, Thu & Fri evenings)",
+      "time": "7:00 PM",
+      "location": "Heber Valley Railroad Depot, 450 South 600 West, Heber City",
+      "description": "The 90-minute family-friendly Halloween Express departs at 7 p.m. sharp on Monday, Thursday, and Friday evenings through October 30, traveling to the haunted Grim Hollow station with onboard hosts and costumed characters. General admission starts at $35; the railroad warns all trains will sell out.",
+      "sourceUrl": "https://hebervalleyrr.antix.io/event/halloweenexpress",
+      "sourceName": "Heber Valley Railroad"
+    },
+    {
+      "title": "Pumpkin Train — Heber Valley Railroad",
+      "startDate": "2026-10-17",
+      "date": "Saturday, October 17 and Saturday, October 24",
+      "time": "Various times (10 AM, Noon, 2 PM, 4 PM departures)",
+      "location": "Heber Valley Railroad Depot, 450 South 600 West, Heber City",
+      "description": "The 40-minute daytime Pumpkin Train runs on the final two Saturdays of October, with each rider receiving a pumpkin chocolate-chip cookie and a pumpkin to take home from the patch.",
+      "sourceUrl": "https://www.spotatrain.com/events/heber-valley-pumpkin-train/",
+      "sourceName": "Spot a Train"
+    },
+    {
+      "title": "Midway City Council Regular Meeting",
+      "startDate": "2026-10-20",
+      "date": "Tuesday, October 20",
+      "time": "6:00 PM",
+      "location": "Midway Community Center, Midway",
+      "description": "Regular monthly meeting of the Midway City Council, open to the public.",
+      "sourceUrl": "https://www.midwaycityut.gov/the-latest/calendar/meetings/",
+      "sourceName": "City of Midway"
+    },
+    {
+      "title": "Freaky 5K — Midway",
+      "startDate": "2026-10-24",
+      "date": "Saturday, October 24",
+      "time": "7:00 PM",
+      "location": "2002 Olympic Drive, Midway",
+      "description": "A zombie-themed 5K run at Soldier Hollow featuring participants chased through an obstacle course with atmospheric fog, lighting, and sound effects. Open to ages 12 and up; $2 from each ticket benefits Primary Children's Hospital.",
+      "sourceUrl": "https://runsignup.com/Race/Events/UT/Midway/thefreaky5k",
+      "sourceName": "RunSignUp"
+    },
+    {
+      "title": "Heber Halloween Fest",
+      "startDate": "2026-10-30",
+      "date": "Friday, October 30",
+      "time": "5:00 PM",
+      "location": "Heber City Main Street Park, 250 South Main Street, Heber City",
+      "description": "The Heber Valley Chamber of Commerce hosts the annual community Halloween send-off with free trick-or-treating, a spook alley, food trucks, and live entertainment including dance performances. Carnival tickets are $10 per person or $40 per family.",
+      "sourceUrl": "https://www.gohebervalley.com/Heber-Halloween-Fest/",
+      "sourceName": "Go Heber Valley"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Sheriff Says He Won't Resign; County Council Weighs Options After Closed-Door Session",
+      "body": "Wasatch County Sheriff Jared Rigby stated publicly this week that he has no plans to resign following his felony indictment on obstruction of justice charges connected to the Kouri Richins murder case. The county council met in a closed session on October 13 to discuss what officials described only as the \"character, professional competence, or physical or mental health of an individual,\" without naming Rigby. After the session, council members told KUTV they are open to the sheriff voluntarily taking administrative leave, but County Manager Dustin Grabau acknowledged there are \"very few remedies in state code\" to compel action against an elected official. The Bureau of Criminal Investigation has directed the county to revoke Rigby's access to certain privileged law enforcement information. His term expires December 31, 2026.",
+      "sourceUrl": "https://www.parkrecord.com/2026/10/14/wasatch-county-sheriff-jared-rigby-says-he-will-not-resign-after-being-charged-with-obstruction-of-justice/",
+      "sourceName": "Park Record",
+      "tags": [
+        "Wasatch County Sheriff",
+        "Jared Rigby",
+        "elections"
+      ]
+    },
+    {
+      "headline": "Mail-In Ballots Arrive; Early In-Person Voting Begins October 27",
+      "body": "Mail-in ballots for the November 3 general election were mailed to Wasatch County voters on October 13. The ballot includes races for Utah House District 59, Wasatch County Council Seats A, C, and F, Wasatch County Sheriff, county attorney, clerk-auditor, and school board seats. Voters not yet registered to vote by mail have until October 27 to request a ballot. Early in-person voting is available October 27 through 30, from 9 a.m. to 4 p.m. at the Wasatch County Administration building.",
+      "sourceUrl": "https://www.kpcw.org/summit-county/2026-10-12/mail-in-ballots-go-out-to-wasatch-back-voters-oct-13",
+      "sourceName": "KPCW",
+      "tags": [
+        "election",
+        "Wasatch County",
+        "voting"
+      ]
+    },
+    {
+      "headline": "Homestead Midway Utah Opens The Barn, a New 17,636-Square-Foot Event Venue",
+      "body": "Homestead Midway Utah debuted The Barn at Homestead this week, a new 17,636-square-foot event venue on the resort's nearly 190-acre property in Midway. The venue, designed for weddings, retreats, and milestone celebrations, is part of the resort's multi-phase transformation. It includes a Carriage House with private green rooms and a newly constructed Mountain View Deck with panoramic valley views. The resort is located at 700 North Homestead Drive in Midway.",
+      "sourceUrl": "https://lodgingmagazine.com/homestead-midway-utah-debuts-new-event-venue/",
+      "sourceName": "Lodging Magazine",
+      "tags": [
+        "Midway",
+        "business",
+        "Homestead"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cyberattack targets, breaches Heber City's system",
+      "url": "https://kutv.com/news/local/cyberattack-targets-breaches-heber-citys-system",
+      "publication": "KUTV CBS 2"
+    },
+    {
+      "title": "Cyberattack breaches Heber City government network in Utah",
+      "url": "https://dysruptionhub.com/heber-city-utah-cyberattack/",
+      "publication": "DysruptionHub"
+    },
+    {
+      "title": "Heber Valley temple construction continues pending Utah Supreme Court ruling",
+      "url": "https://www.parkrecord.com/2026/10/13/heber-valley-temple-construction-continues-pending-utah-supreme-court-ruling/",
+      "publication": "Park Record"
+    },
+    {
+      "title": "Here's what happened after Utah's housing czar threatened Wasatch County's state funding",
+      "url": "https://www.sltrib.com/news/2026/10/14/utah-threatened-wasatch-countys/",
+      "publication": "The Salt Lake Tribune"
+    },
+    {
+      "title": "Wasatch County Stared Down a State Funding Threat Over a Rejected Housing Deal",
+      "url": "https://hoodline.com/2026/10/wasatch-county-stared-down-a-state-funding-threat-over-a-rejected-housing-deal/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "Utah House speaker says he's open to repealing controversial development law",
+      "url": "https://utahnewsdispatch.com/2026/10/12/utah-house-speaker-open-to-repealing-controversial-development-law/",
+      "publication": "Utah News Dispatch"
+    },
+    {
+      "title": "Wasatch County Sheriff Jared Rigby says he will not resign after being charged with obstruction of justice",
+      "url": "https://www.parkrecord.com/2026/10/14/wasatch-county-sheriff-jared-rigby-says-he-will-not-resign-after-being-charged-with-obstruction-of-justice/",
+      "publication": "Park Record"
+    },
+    {
+      "title": "Wasatch County Council 'open to' Sheriff Rigby taking administrative leave, resigning",
+      "url": "https://kutv.com/news/local/wasatch-county-council-open-to-sheriff-rigby-taking-administrative-leave-resigning",
+      "publication": "KUTV CBS 2"
+    },
+    {
+      "title": "Mail-in ballots go out to Wasatch Back voters Oct. 13",
+      "url": "https://www.kpcw.org/summit-county/2026-10-12/mail-in-ballots-go-out-to-wasatch-back-voters-oct-13",
+      "publication": "KPCW"
+    },
+    {
+      "title": "Homestead Midway Utah Debuts New Event Venue",
+      "url": "https://lodgingmagazine.com/homestead-midway-utah-debuts-new-event-venue/",
+      "publication": "Lodging Magazine"
+    },
+    {
+      "title": "Fall Fest brings pumpkins, carriage rides and cider to Midway",
+      "url": "https://townlift.com/2026/10/fall-fest-brings-pumpkins-carriage-rides-and-cider-to-midway/",
+      "publication": "TownLift"
+    },
+    {
+      "title": "Fall Festival at Kohler Creamery",
+      "url": "https://www.gohebervalley.com/kohler-creamery-fall-festival/",
+      "publication": "Go Heber Valley"
+    },
+    {
+      "title": "The Halloween Express 2026",
+      "url": "https://hebervalleyrr.antix.io/event/halloweenexpress",
+      "publication": "Heber Valley Railroad"
+    },
+    {
+      "title": "Pumpkin Train — Heber Valley Railroad 2026",
+      "url": "https://www.spotatrain.com/events/heber-valley-pumpkin-train/",
+      "publication": "Spot a Train"
+    },
+    {
+      "title": "Midway City Council meetings calendar",
+      "url": "https://www.midwaycityut.gov/the-latest/calendar/meetings/",
+      "publication": "City of Midway"
+    },
+    {
+      "title": "The Freaky 5K",
+      "url": "https://runsignup.com/Race/Events/UT/Midway/thefreaky5k",
+      "publication": "RunSignUp"
+    },
+    {
+      "title": "Heber Halloween Fest",
+      "url": "https://www.gohebervalley.com/Heber-Halloween-Fest/",
+      "publication": "Go Heber Valley"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Back 40 Ranch House Grill",
+        "cuisineGroup": "Seafood & American",
+        "type": "Farm-to-table American grill",
+        "description": "Local farm-to-table landmark serving fresh, locally sourced meats and produce with sweeping mountain and valley views from its patio.",
+        "address": "1223 N Highway 40, Heber City, UT 84032",
+        "phone": "(435) 654-3070",
+        "website": "https://www.back40utah.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Galeano's Ristorante Italiano",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "Upscale Italian ristorante on Main Street offering handmade pasta, traditional antipasti, and an open kitchen bar counter for a lively dining experience.",
+        "address": "494 S Main St #110, Heber City, UT 84032",
+        "phone": "(435) 328-3276",
+        "website": "https://www.galeanosheber.com",
+        "neighborhood": "Heber City",
+        "notable": "New"
+      },
+      {
+        "name": "Taqueria Los Cuñados",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican cantina",
+        "description": "Family-owned cantina on Main Street serving chef-driven, authentic Mexican tacos, burritos, and seasonal specialties with house-made chips and salsa for dine-in.",
+        "address": "110 S Main St, Heber City, UT 84032",
+        "phone": "(650) 771-7399",
+        "website": "https://www.gohebervalley.com/taqueria-los-cunados",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Dairy Keen – Home of the Train",
+        "cuisineGroup": "Seafood & American",
+        "type": "Classic American burger joint",
+        "description": "A Heber institution since 1946, this family-owned train-themed diner serves award-winning shakes, quarter-pound burgers, and house-made soups — four generations strong.",
+        "address": "199 S Main St, Heber City, UT 84032",
+        "phone": "(435) 654-5336",
+        "website": "https://www.dairykeen.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Melvin's Public House",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Sports bar and restaurant",
+        "description": "Lively sports bar and full-service restaurant on Main Street offering diverse burgers, bar food, and an extensive beer menu, with live entertainment on select nights.",
+        "address": "75 S Main St, Heber City, UT 84032",
+        "phone": "(435) 657-0888",
+        "website": "https://www.gohebervalley.com/melvins-public-house",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Day N Nite",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "All-day brunch café",
+        "description": "Highly-rated all-day café known for creative brunch dishes including a standout Crispy Polenta Skillet, open daily through the evening.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/day-n-nite-heber-city",
+        "neighborhood": "Heber City",
+        "notable": "New"
+      },
+      {
+        "name": "Preemo's Restaurant and Bar",
+        "cuisineGroup": "Seafood & American",
+        "type": "American bar and restaurant",
+        "description": "Newly opened Heber City spot with a varied menu spanning bowls to pasta to burgers and pizza, plus a covered outdoor dining area.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/preemos-restaurant-and-bar-heber-city",
+        "neighborhood": "Heber City",
+        "notable": "New"
+      },
+      {
+        "name": "Tacos El Guero #1 – Heber City",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican taqueria",
+        "description": "Popular taqueria open on Sundays when many Heber options are closed, serving traditional Mexican street-style tacos and plates.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/tacos-el-guero-1-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Quesabirrias",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Birria taqueria",
+        "description": "Beloved birria taqueria serving quesabirria tacos, mexi-birria fries, and consommé, open on Sundays and drawing strong local and visitor crowds.",
+        "address": "550 W 100 S, Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/quesabirrias-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Cucina Rustico",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Wood-fired Italian food truck",
+        "description": "Heber Valley wood-fired food truck owned by Frank and Jamie Fortino, dishing out handmade pizzas, fresh pastas, breads, and desserts using locally sourced ingredients, parked Wednesday–Saturday.",
+        "address": "75 N Main St, Heber City, UT 84032",
+        "phone": "(801) 635-9977",
+        "website": "https://cucinarustico.com",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Meg's Timberline Cafe",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Breakfast and lunch café",
+        "description": "Small, high-quality café celebrated for its fresh breakfast burritos, generously sized menu, and excellent ingredients, open daily from early morning.",
+        "address": "737 S Main St Suite B, Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/megs-timberline-cafe-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Blue Boar Inn & Restaurant",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Fine dining inn restaurant",
+        "description": "Old World European hunting-lodge inn in the Midway foothills offering American contemporary fine dining with Mediterranean influence, including a seasonal five-course Sunday brunch and weekly chef's tasting menu.",
+        "address": "1235 N Warm Springs Rd, Midway, UT 84049",
+        "phone": "(435) 654-1400",
+        "website": "https://www.theblueboarinn.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Midway Mercantile",
+        "cuisineGroup": "Seafood & American",
+        "type": "New American hearth-to-table restaurant",
+        "description": "Chef-owned New American restaurant set in a beautifully restored 1874 brick building, featuring seasonal, locally sourced cuisine anchored by a wood-burning hearth, artisan pizzas, and an extensive wine list.",
+        "address": "99 E Main St, Midway, UT 84049",
+        "phone": "(435) 222-8003",
+        "website": "https://www.midwaymercantile.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lola's Street Kitchen",
+        "cuisineGroup": "Seafood & American",
+        "type": "Artisan street food restaurant",
+        "description": "Midway's artisan street food favorite crafting gourmet sandwiches, burgers, fish tacos, organic salads, and world-famous handmade churros from scratch with locally sourced ingredients.",
+        "address": "24 E Main St, Midway, UT 84049",
+        "phone": "(435) 671-3970",
+        "website": "https://lolasstreetkitchen.store",
+        "neighborhood": "Midway",
+        "notable": ""
+      },
+      {
+        "name": "Harvest",
+        "cuisineGroup": "Seafood & American",
+        "type": "Casual American dining",
+        "description": "Midway dining spot with a farm-fresh focus, offering a welcoming atmosphere and a menu that shifts with the seasons.",
+        "address": "Midway, UT 84049",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/harvest-midway",
+        "neighborhood": "Midway",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Best Western Plus Heber Valley Hotel",
+        "type": "Upper-midscale hotel",
+        "description": "Modern 82-room hotel in the heart of Heber City offering a Grand Pool Complex with indoor pool and hot tub, free full breakfast daily, and easy access to valley attractions.",
+        "address": "1227 S US Highway 40, Heber City, UT 84032",
+        "phone": "(435) 657-6500",
+        "website": "https://www.bestwestern.com",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Holiday Inn Express Heber City by IHG",
+        "type": "Mid-scale hotel",
+        "description": "IHG-branded 75-room hotel with indoor pool, hot tub, complimentary Express Start Breakfast Bar, and convenient Main Street location close to restaurants and shops.",
+        "address": "1268 S Main St, Heber City, UT 84032",
+        "phone": "(435) 654-9990",
+        "website": "https://www.ihg.com/holidayinnexpress/hotels/us/en/heber-city/hbcut/hoteldetail",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Swiss Alps Inn",
+        "type": "Swiss-themed motel",
+        "description": "Family-owned Swiss-themed motel on Main Street, operating since 1946, with mountain views, an outdoor swimming pool, and pet-friendly rooms in a central Heber City location.",
+        "address": "167 S Main St, Heber City, UT 84032",
+        "phone": "(435) 654-0722",
+        "website": "https://www.swissalpsinn.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Homestead Midway Utah",
+        "type": "Resort",
+        "description": "Historic 123-room resort on 190 acres currently undergoing a multi-year transformation under Davidson Resorts management, with its iconic geothermal Crater, six outdoor pools, and the Milk House dairy dining concept all open to guests.",
+        "address": "700 N Homestead Dr, Midway, UT 84049",
+        "phone": "(435) 654-1102",
+        "website": "https://homesteadmidwayutah.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Zermatt Utah Resort & Spa, Trademark Collection by Wyndham",
+        "type": "Swiss-themed resort and spa",
+        "description": "Swiss Alpine-inspired 300-room luxury resort spanning 18 acres in Midway, featuring a full-service spa, multiple restaurants, pools, and event spaces in an authentic alpine village setting.",
+        "address": "784 W Resort Dr, Midway, UT 84049",
+        "phone": "(435) 657-0180",
+        "website": "https://zermattresort.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Blue Boar Inn",
+        "type": "Boutique inn",
+        "description": "European-style boutique inn and fine dining destination nestled in the Midway foothills, offering intimate accommodations with an old-world hunting-lodge aesthetic and acclaimed on-site restaurant.",
+        "address": "1235 N Warm Springs Rd, Midway, UT 84049",
+        "phone": "(435) 654-1400",
+        "website": "https://www.theblueboarinn.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Daniels Summit Lodge",
+        "type": "Mountain lodge",
+        "description": "Rustic log-cabin-style lodge perched at 8,000 feet at Daniels Summit Pass in the Uinta-Wasatch-Cache National Forest, offering on-site dining, snowmobile rentals, and year-round mountain adventure access.",
+        "address": "17000 US-40, Heber City, UT 84032",
+        "phone": "(435) 548-2300",
+        "website": "https://www.danielssummit.com",
+        "neighborhood": "Daniel",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Ballerina Farm Store",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Farm store and bakery",
+        "description": "Social-media-famous Neeleman family farm store tucked behind Café Galleria on Midway's Main Street, stocking Ballerina Farm products alongside curated local and international specialty foods, fresh-baked goods, and soft-serve ice cream.",
+        "address": "101 W Main St, Ste 102, Midway, UT 84049",
+        "phone": "",
+        "website": "https://ballerinafarm.com",
+        "neighborhood": "Midway",
+        "notable": "New"
+      },
+      {
+        "name": "Water From the Moon",
+        "shopGroup": "Home & Gifts",
+        "type": "Gift and children's boutique",
+        "description": "Charming Heber City boutique stocking unique gifts, home décor, and delightful children's books and stuffed animals.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/water-from-the-moon-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Fernweh Lifestyle",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Lifestyle and jewelry boutique",
+        "description": "Midway boutique offering a unique curated selection of jewelry, lifestyle goods, and accessories for women.",
+        "address": "Midway, UT 84049",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/fernweh-lifestyle-midway",
+        "neighborhood": "Midway",
+        "notable": ""
+      },
+      {
+        "name": "The Dainty Pear",
+        "shopGroup": "Home & Gifts",
+        "type": "Curated lifestyle boutique",
+        "description": "Beautifully curated Midway boutique carrying an upscale collection of home goods and gifts that feel like they belong in a big-city shop.",
+        "address": "Midway, UT 84049",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/the-dainty-pear-midway",
+        "neighborhood": "Midway",
+        "notable": ""
+      },
+      {
+        "name": "Aspen Grove Rustics",
+        "shopGroup": "Home & Gifts",
+        "type": "Rustic home décor and gift shop",
+        "description": "Heber City shop packed with rustic treasures, vintage finds, and charming home décor pieces.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/aspen-grove-rustics-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Sportsman's Warehouse",
+        "shopGroup": "Hardware & Services",
+        "type": "Outdoor sporting goods retailer",
+        "description": "Full-service outdoor sporting goods store open since 2015, ideally located near the Uintah Mountains, Strawberry Reservoir, and Deer Creek Reservoir for all fishing, hunting, and camping needs.",
+        "address": "1276 S US-189, Heber City, UT 84032",
+        "phone": "(435) 654-5600",
+        "website": "https://stores.sportsmans.com/sportsmans-warehouse/us/ut/heber-city/1276-s-us-189",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Tractor Supply Co.",
+        "shopGroup": "Hardware & Services",
+        "type": "Farm and ranch supply store",
+        "description": "The valley's primary source for farm, ranch, pet, and home goods, serving Heber City's agricultural community and rural residents.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.tractorsupply.com",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Heber Valley Thrift",
+        "shopGroup": "Other",
+        "type": "Thrift and resale shop",
+        "description": "Community thrift store offering a rotating selection of clothing, household items, and furniture at budget-friendly prices.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/heber-valley-thrift-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "St. Lawrence Thrift Store",
+        "shopGroup": "Other",
+        "type": "Thrift shop",
+        "description": "Clean, well-organized Heber City thrift store stocking a fun and frequently changing assortment of clothing, books, and household goods.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/st-lawrence-thrift-store-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Heber Valley Railroad",
+        "venueGroup": "Museums & Cultural",
+        "type": "Heritage scenic railroad",
+        "description": "Utah's flagship heritage tourist railroad operating since 1899, running 90-minute excursions from Heber City through the valley and along Deer Creek Reservoir, with themed events including the Pumpkin Train, Halloween Express, and North Pole Express filling the fall and winter calendar.",
+        "address": "450 S 600 W, Heber City, UT 84032",
+        "phone": "(435) 654-5601",
+        "website": "https://www.hebertrain.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Timpanogos Valley Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Community theater",
+        "description": "Downtown Heber City's premier community theater company since 2004, housed in the 1908 Heber Amusement Hall, currently presenting the Heber City Historic Ghost Tours through October 22 and taking auditions for a War of the Worlds radio drama.",
+        "address": "90 N 100 W, Heber City, UT 84032",
+        "phone": "",
+        "website": "https://timpvalleytheatre.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Avon Theatre",
+        "venueGroup": "Cinema",
+        "type": "Historic movie theater",
+        "description": "Beloved single-screen 400-seat movie house on Main Street undergoing a retro-style makeover under the Heber Valley Entertainment umbrella, screening first-run films alongside live concerts and tribute shows.",
+        "address": "94 S Main St, Heber City, UT 84032",
+        "phone": "(435) 776-5177",
+        "website": "https://www.hebervalleyentertainment.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ideal Playhouse",
+        "venueGroup": "Theater & Comedy",
+        "type": "Historic performing arts theater",
+        "description": "Utah's oldest working theater on Heber's Main Street, renovated and reopened in 2024, now hosting touring concerts, semi-professional musical theater, and film screenings under the Heber Valley Entertainment banner.",
+        "address": "113 N Main St, Heber City, UT 84032",
+        "phone": "(435) 776-5177",
+        "website": "https://www.hebervalleyentertainment.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Soldier Hollow Nordic Center",
+        "venueGroup": "Music Venues",
+        "type": "Olympic heritage outdoor recreation venue",
+        "description": "The 2002 Winter Olympics biathlon and cross-country skiing venue in Wasatch Mountain State Park offers year-round recreation including mountain biking and biathlon this fall, with winter tubing and cross-country skiing tickets going on sale in early October for the 2026–27 season.",
+        "address": "2002 Soldier Hollow Ln, Midway, UT 84049",
+        "phone": "(435) 654-2002",
+        "website": "https://utaholympiclegacy.org/location/soldier-hollow",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "High Valley Arts",
+        "venueGroup": "Theater & Comedy",
+        "type": "Professional theater company",
+        "description": "Professional theater company that has entertained over 106,000 patrons in the Heber Valley since 2009, currently seeking a permanent home with a proposed 600-seat performing arts center in Heber City.",
+        "address": "Midway, UT 84049",
+        "phone": "",
+        "website": "https://www.gohebervalley.com/arts-culture-music",
+        "neighborhood": "Midway",
+        "notable": ""
+      },
+      {
+        "name": "Wasatch County Arts Council",
+        "venueGroup": "Museums & Cultural",
+        "type": "Regional arts council",
+        "description": "The county's central arts organization advancing visual arts, performance, and community programming throughout the Heber Valley, and leading fundraising for the planned Heber Valley Arts Center campus.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.gohebervalley.com/arts-culture-music",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "The Crater at Homestead",
+        "venueGroup": "Museums & Cultural",
+        "type": "Geothermal natural landmark and recreational site",
+        "description": "A 400-foot-wide, 55-foot-tall ancient geothermal crater on the Homestead Midway Utah resort property, open year-round for soaking and scuba diving in its 90°F mineral waters.",
+        "address": "700 N Homestead Dr, Midway, UT 84049",
+        "phone": "",
+        "website": "https://www.utahcrater.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Fit Stop Health Club & Physical Therapy",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service health club",
+        "description": "Heber City's most comprehensive fitness facility, offering 60+ weekly group classes including yoga, pilates, cycling, Tai Chi, and water aerobics, plus an indoor climbing wall, physical therapy, and Silver Sneakers programming for seniors.",
+        "address": "345 W 600 S, Ste 200, Heber City, UT 84032",
+        "phone": "(435) 654-2131",
+        "website": "https://fitstophealthclub.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Anytime Fitness",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "24-hour gym",
+        "description": "Locally owned and operated 24/7 gym on Main Street with functional training equipment, a large turf area, and personalized coaching — open to members around the clock with access to 6,000+ locations worldwide.",
+        "address": "1099 S Main St, Ste 160, Heber City, UT 84032",
+        "phone": "(435) 222-5151",
+        "website": "https://www.anytimefitness.com/locations/heber-city-utah-5611",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "The Studio: Spinning · Hot Yoga · Barre",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Boutique fitness studio",
+        "description": "Heber City boutique studio offering indoor cycling, hot yoga, barre, HIIT, restorative yoga, and teen classes, open six days a week starting at 5:30 AM.",
+        "address": "55 E Center St #140, Heber City, UT 84032",
+        "phone": "(435) 657-9652",
+        "website": "https://www.gohebervalley.com/the-studio",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Utah Yoga and Wellness",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Highly-rated Midway yoga studio offering a varied schedule of classes in a beautiful, well-maintained facility, with easy online registration.",
+        "address": "Midway, UT 84049",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/utah-yoga-and-wellness-midway",
+        "neighborhood": "Midway",
+        "notable": ""
+      },
+      {
+        "name": "The Mountain Gym",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Functional fitness gym",
+        "description": "Premier functional fitness and CrossFit-style training facility in downtown Heber City, offering daily coached classes for all fitness levels with teen programming and affordable drop-in rates.",
+        "address": "151 N Main St, Heber City, UT 84032",
+        "phone": "(435) 671-5185",
+        "website": "https://mtngymheber.com",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Wasatch Mountain State Park Golf",
+        "venueGroup": "Sports & Courts",
+        "type": "Public golf complex",
+        "description": "Utah's most popular public golf destination, featuring 36 holes across the scenic Mountain and Lake courses set against the backdrop of the Wasatch Range, open daily from dawn.",
+        "address": "975 W Golf Course Dr, Midway, UT 84049",
+        "phone": "(435) 654-0532",
+        "website": "https://wasatchgolfcourse.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Wasatch Aquatic Center",
+        "venueGroup": "Pools & Aquatics",
+        "type": "Public indoor aquatic center",
+        "description": "State-of-the-art community aquatic facility featuring a 10-lane competition pool, a family activity pool with inflatables and a splash pad, a therapy pool, and water fitness classes — open Monday through Saturday year-round.",
+        "address": "744 S 200 E, Heber City, UT 84032",
+        "phone": "(435) 654-3450",
+        "website": "https://www.gohebervalley.com/wasatch-aquatic-center",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Wasatch Mountain State Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "State park",
+        "description": "Utah's most developed state park, spanning 21,592 acres adjacent to Midway and offering year-round golf, hiking, mountain biking, camping, horseback riding, cross-country skiing, and snowshoeing.",
+        "address": "1281 Warm Springs Rd, Midway, UT 84049",
+        "phone": "(435) 654-1791",
+        "website": "https://stateparks.utah.gov/parks/wasatch-mountain",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-10-16",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-10-16",
+        "high": 68,
+        "low": 32,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-17",
+        "high": 70,
+        "low": 33,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-18",
+        "high": 67,
+        "low": 34,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-19",
+        "high": 67,
+        "low": 37,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 3
+      },
+      {
+        "date": "2026-10-20",
+        "high": 61,
+        "low": 36,
+        "summary": "Chance Light Rain then Showers And Thunderstorms Likely",
+        "condition": "storm",
+        "precip": 63
+      },
+      {
+        "date": "2026-10-21",
+        "high": 62,
+        "low": 36,
+        "summary": "Chance Light Rain then Chance Showers And Thunderstorms",
+        "condition": "storm",
+        "precip": 49
+      },
+      {
+        "date": "2026-10-22",
+        "high": 58,
+        "low": 34,
+        "summary": "Light Rain Likely then Showers And Thunderstorms Likely",
+        "condition": "storm",
+        "precip": 71
+      }
+    ]
+  }
+}
