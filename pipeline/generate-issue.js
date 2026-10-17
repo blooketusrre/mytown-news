@@ -132,6 +132,7 @@ if (!ANTHROPIC_KEY) { console.error("Missing ANTHROPIC_API_KEY"); process.exit(1
  *  looking for a file the generator never writes, so every backstop run would
  *  republish everything. */
 const { thisWeekDate, formatWeek } = require("../lib/week");
+const { stripCitations } = require("../lib/strip-citations");
 
 /**
  * The instant this week's issues should land, as an ISO string.
@@ -399,6 +400,7 @@ const EDITORIAL_RULES = `EDITORIAL RULES — NON-NEGOTIABLE:
 5. If a story cannot be verified, omit it entirely. A shorter issue with real news beats a longer issue with invented content.
 6. Search the web for current news. Only include stories published within the last 10 days. Do not include events or news that occurred more than 10 days ago (e.g., no July 4th stories if today is July 14 or later).
 7. Order events soonest first, then ongoing or through-date events. lib/event-order.js re-sorts deterministically after generation, so this is a preference rather than a guarantee — but returning them in order makes the result easier to check by eye.
+8. Write every story, dek and description in your own words, in plain JSON strings. Do not copy sentences from the sources, and do not add citation markup of any kind (no <cite> tags, no index numbers, no footnote marks): sourceUrl and sourceName are the citation.
 
 `;
 
@@ -550,7 +552,9 @@ function extractJson(response) {
     const match = cleaned.match(/\{[\s\S]*\}/);
     if (match) {
       try {
-        return JSON.parse(match[0]);
+        // Search-result citation markup out, before anything else sees it.
+        // See lib/strip-citations.js.
+        return stripCitations(JSON.parse(match[0]));
       } catch (e) {
         // not valid JSON, try the next block
       }
