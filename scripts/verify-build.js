@@ -688,6 +688,32 @@ try {
     }
   }
 
+  /* No search-citation markup in any published issue. Between August and
+   * October 2026 the model's (cite index="…"> tags reached readers 381 times,
+   * as literal text on the site and in the email. The pipeline now strips
+   * them (lib/strip-citations.js); this catches anything that gets past it,
+   * including an issue file edited or committed by hand. */
+  {
+    const contentDir = path.join(ROOT, "src", "content");
+    const tagged = [];
+    if (fs.existsSync(contentDir)) {
+      for (const slug of fs.readdirSync(contentDir)) {
+        const dir = path.join(contentDir, slug);
+        if (!fs.statSync(dir).isDirectory()) continue;
+        for (const f of fs.readdirSync(dir).filter((n) => n.endsWith(".json"))) {
+          if (/<\/?cite\b/i.test(fs.readFileSync(path.join(dir, f), "utf8"))) tagged.push(`${slug}/${f}`);
+        }
+      }
+    }
+    if (tagged.length) {
+      errors.push(
+        `citation markup (<cite …>) in ${tagged.length} issue file(s): ${tagged.slice(0, 5).join(", ")}` +
+        `${tagged.length > 5 ? "…" : ""} — readers would see the tags as text. ` +
+        `Clean with lib/strip-citations.js`
+      );
+    }
+  }
+
   // "Buttondown" means nothing to a reader; the address they will see does.
   {
     const done = fs.existsSync(path.join(OUT, "subscribed", "index.html"))
