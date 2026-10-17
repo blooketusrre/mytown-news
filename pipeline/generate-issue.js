@@ -133,6 +133,7 @@ if (!ANTHROPIC_KEY) { console.error("Missing ANTHROPIC_API_KEY"); process.exit(1
  *  republish everything. */
 const { thisWeekDate, formatWeek } = require("../lib/week");
 const { stripCitations } = require("../lib/strip-citations");
+const { pinLinkColors } = require("../lib/pin-link-colors");
 
 /**
  * The instant this week's issues should land, as an ISO string.
@@ -1315,7 +1316,8 @@ function buildEmailHtml(issue, cluster) {
   `;
   }).join("");
 
-  return `<!DOCTYPE html>
+  // Every link's color survives Buttondown's template: lib/pin-link-colors.js.
+  return pinLinkColors(`<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -1426,7 +1428,7 @@ function buildEmailHtml(issue, cluster) {
 </td></tr>
 </table>
 </body>
-</html>`;
+</html>`);
 }
 
 // ─── Buttondown sender ───────────────────────────────────────────────────────
@@ -1818,6 +1820,7 @@ module.exports = {
   buildSystemPrompt,
   callClaude,
   extractJson,
+  buildEmailHtml,
   thisWeekDate,
   closedVenuesFor,
   stripClosedVenues,
