@@ -112,6 +112,9 @@ for (const c of clusters.filter((x) => x.live)) {
   // The wordmark specifically: "My Town" white, "News" the edition color.
   const html = buildEmailHtml(issue, c);
   assert.ok(/<span style="color:#ffffff;">My Town <span style="color:/i.test(html), `${c.slug}: wordmark not pinned white`);
+  // The ™ sits inside "News", so it is always that word's color, not white.
+  assert.ok(/My Town <span style="color:[^"]+">News<sup[^>]*>&trade;<\/sup><\/span>/.test(html),
+    `${c.slug}: the ™ is not inside "News" — it would take the white of "My Town"`);
 }
 assert.ok(checked > 100, `only ${checked} links checked — the test is not seeing the emails`);
 console.log(`  ✓ ${checked} links across every live edition keep their colors under Buttondown's stylesheet`);

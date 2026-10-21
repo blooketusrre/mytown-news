@@ -1354,7 +1354,7 @@ function buildEmailHtml(issue, cluster) {
     </a>
     <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:${onDark};">${cluster.city || "San Francisco"} · Free &amp; Independent · Every Friday</p>
     <h1 style="margin:0 0 6px 0;font-family:Georgia,'Times New Roman',serif;font-size:36px;font-weight:900;letter-spacing:-1px;">
-      <a href="${issueUrl}" style="color:#ffffff;text-decoration:none;">My Town <span style="color:${onDark};">News</span><sup style="font-size:14px;line-height:0;vertical-align:super;font-weight:400;letter-spacing:0;">&trade;</sup></a>
+      <a href="${issueUrl}" style="color:#ffffff;text-decoration:none;">My Town <span style="color:${onDark};">News<sup style="font-size:14px;line-height:0;vertical-align:super;font-weight:400;letter-spacing:0;">&trade;</sup></span></a>
     </h1>
     <!-- The town's own name, which is the thing a reader recognises, was 14px
          Arial at 65% white — smaller than the "My Town News" above it and in a
