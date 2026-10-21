@@ -1354,7 +1354,7 @@ function buildEmailHtml(issue, cluster) {
     </a>
     <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:${onDark};">${cluster.city || "San Francisco"} · Free &amp; Independent · Every Friday</p>
     <h1 style="margin:0 0 6px 0;font-family:Georgia,'Times New Roman',serif;font-size:36px;font-weight:900;letter-spacing:-1px;">
-      <a href="${issueUrl}" style="color:#ffffff;text-decoration:none;">My Town <span style="color:${onDark};">News</span></a>
+      <a href="${issueUrl}" style="color:#ffffff;text-decoration:none;">My Town <span style="color:${onDark};">News</span><sup style="font-size:14px;line-height:0;vertical-align:super;font-weight:400;letter-spacing:0;">&trade;</sup></a>
     </h1>
     <!-- The town's own name, which is the thing a reader recognises, was 14px
          Arial at 65% white — smaller than the "My Town News" above it and in a
@@ -1420,7 +1420,7 @@ function buildEmailHtml(issue, cluster) {
     <!-- mytown.news goes to the top-level home page, not this edition: from
          the footer the reader is more likely to be looking for the paper
          than for the issue they just read. -->
-    <p style="margin:0 0 4px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">My Town News · <a href="${SITE_URL}/" style="color:#6b6560;text-decoration:underline;">mytown.news</a> · ${cluster.city || "San Francisco"}</p>
+    <p style="margin:0 0 4px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">My Town News<sup style="font-size:8px;line-height:0;vertical-align:super;">&trade;</sup> · <a href="${SITE_URL}/" style="color:#6b6560;text-decoration:underline;">mytown.news</a> · ${cluster.city || "San Francisco"}</p>
     <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;color:#a09890;">Free &amp; Independent. No spam.</p>
   </td></tr>
 

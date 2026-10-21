@@ -2617,3 +2617,16 @@ hr.divider {
 @media (max-width: 640px) {
   .sub-onward a { width: 100%; text-align: center; }
 }
+
+/* Trademark mark after the "My Town News" wordmark. Small, raised, and kept
+   out of the line-height so the large headers do not grow taller. Takes the
+   heading's own colour, so it reads white on navy, navy on white. */
+.tm {
+  font-size: 0.32em;
+  line-height: 0;
+  vertical-align: super;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  margin-left: 0.06em;
+}
