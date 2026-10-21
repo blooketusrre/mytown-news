@@ -2619,8 +2619,9 @@ hr.divider {
 }
 
 /* Trademark mark after the "My Town News" wordmark. Small, raised, and kept
-   out of the line-height so the large headers do not grow taller. Takes the
-   heading's own colour, so it reads white on navy, navy on white. */
+   out of the line-height so the large headers do not grow taller. Sits inside
+   the <em> around "News", so it always takes that word's colour (gold on the
+   navy headers) and can never drift from it. Upright, not italic. */
 .tm {
   font-size: 0.32em;
   line-height: 0;
