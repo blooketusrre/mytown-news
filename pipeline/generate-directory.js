@@ -120,7 +120,10 @@ async function refreshDirectory(cluster) {
   console.log(`  Target: ${path.relative(ROOT, issueFile)} (week of ${issue.weekOf})`);
   console.log(`  Current directory: ${countVenues(issue.directory)} venues`);
 
-  const webSearchTool = { type: "web_search_20250305", name: "web_search" };
+  // Capped like the weekly run (see MAX_SEARCHES in generate-issue.js). A
+  // directory covers five categories of venues, so it gets more room.
+  const maxSearches = Math.max(1, parseInt(process.env.MAX_DIRECTORY_SEARCHES || "20", 10) || 20);
+  const webSearchTool = { type: "web_search_20250305", name: "web_search", max_uses: maxSearches };
   const closedVenues  = closedVenuesFor(cluster.slug);
   const systemPrompt  = buildSystemPrompt(cluster, null, closedVenues, {
     includeNews: false,
