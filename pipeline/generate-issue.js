@@ -120,6 +120,19 @@ const SITE_URL        = "https://mytown.news";
 const SEND_AT_UTC = (process.env.SEND_AT_UTC || "16:30").trim();
 const MODEL           = "claude-sonnet-4-6";
 
+// ── A ceiling on web searches per edition ──────────────────────────────────
+// Nothing limited them until 23 October 2026, when the account's $150 monthly
+// spend cap ran out at 14:14 UTC and five editions failed mid-run. Searches
+// drive the cost: each one is billed, and its results are read back as input
+// tokens on every turn that follows. October needed ~$40 per weekly run, so
+// a four- or five-Friday month could not fit under the cap.
+//
+// 10 covers a normal week: news, events, a council agenda, police data and a
+// couple of follow-ups. When the ceiling is reached the API stops further
+// searches and the model writes from what it has. Override per run with the
+// MAX_SEARCHES environment variable.
+const MAX_SEARCHES = Math.max(1, parseInt(process.env.MAX_SEARCHES || "10", 10) || 10);
+
 if (!ANTHROPIC_KEY) { console.error("Missing ANTHROPIC_API_KEY"); process.exit(1); }
 
 // ─── Helpers ───────────────────────────────────────────────────────────────
@@ -147,6 +160,20 @@ function scheduledSendAt() {
     throw new Error(`SEND_AT_UTC is not HH:MM: "${SEND_AT_UTC}"`);
   }
   return new Date(`${thisWeekDate()}T${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:00Z`);
+}
+
+/** One line per API call: searches, tokens, and an approximate cost, so each
+ *  edition's log shows what it spent. Prices are Sonnet list prices per
+ *  million tokens and per search; an estimate for comparing runs, not a bill. */
+const PRICE = { inputPerM: 3, outputPerM: 15, perSearch: 0.01 };
+function logUsage(u) {
+  if (!u) return;
+  const searches = (u.server_tool_use && u.server_tool_use.web_search_requests) || 0;
+  const input = (u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) + (u.cache_read_input_tokens || 0);
+  const output = u.output_tokens || 0;
+  const cost = input / 1e6 * PRICE.inputPerM + output / 1e6 * PRICE.outputPerM + searches * PRICE.perSearch;
+  console.log(`     usage: ${searches} search(es) of ${MAX_SEARCHES} max · ` +
+    `${Math.round(input / 1000)}K in / ${Math.round(output / 1000)}K out · ≈ $${cost.toFixed(2)}`);
 }
 
 /** Anthropic Messages API call. Takes a full messages array so the caller can
@@ -183,6 +210,7 @@ async function callClaude(systemPrompt, messages, tools = []) {
           try {
             const parsed = JSON.parse(data);
             if (parsed.error) return reject(new Error(parsed.error.message));
+            logUsage(parsed.usage);
             resolve(parsed);
           } catch (e) {
             reject(e);
@@ -947,6 +975,7 @@ async function generateCluster(clusterConfig) {
   const webSearchTool = {
     type: "web_search_20250305",
     name: "web_search",
+    max_uses: MAX_SEARCHES,
   };
 
   // ── Directory: carry forward, or generate if there is nothing to carry ──
@@ -969,7 +998,7 @@ async function generateCluster(clusterConfig) {
   const closedVenues = closedVenuesFor(clusterConfig.slug);
   const systemPrompt = buildSystemPrompt(clusterConfig, prevIssue, closedVenues,
                                          { includeDirectory });
-  const userMessage  = `Please research and write this week's My Town News issue for ${clusterConfig.name} (${clusterConfig.neighborhoods.join(", ")}). Search for real, current news stories and upcoming events in these neighborhoods. Return only valid JSON matching the schema in your instructions.`;
+  const userMessage  = `Please research and write this week's My Town News issue for ${clusterConfig.name} (${clusterConfig.neighborhoods.join(", ")}). Search for real, current news stories and upcoming events in these neighborhoods. You have at most ${MAX_SEARCHES} web searches for this edition, so plan them: favour searches that cover several sections at once, and do not repeat a search that has already answered. Return only valid JSON matching the schema in your instructions.`;
 
   // ── Research, with retries ──────────────────────────────────────────────
   // Roughly one edition in five comes back without JSON: the model finishes
@@ -1829,6 +1858,7 @@ module.exports = {
   outDirFor,
   scheduledSendAt,
   SEND_AT_UTC,
+  MAX_SEARCHES,
   DRY_RUN,
 };
 
