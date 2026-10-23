@@ -1,0 +1,874 @@
+{
+  "clusterSlug": "russian-hill-nob-hill",
+  "clusterName": "Russian Hill & Nob Hill",
+  "weekOf": "2026-10-23",
+  "topStories": [
+    {
+      "headline": "Bruma Is Open: The Ritz-Carlton's Fog-Inspired Cocktail Lounge Arrives on Nob Hill",
+      "dek": "The 80-seat lounge opened October 12 inside the hotel's landmark 1909 Neoclassical building, bringing live jazz, afternoon tea, and a liquid-nitrogen martini to 600 Stockton Street.",
+      "body": "A new gathering spot has quietly taken shape atop Nob Hill. Bruma, the signature cocktail lounge and all-day salon at The Ritz-Carlton, San Francisco, opened on October 12 inside the hotel's landmarked 1909 Neoclassical building at 600 Stockton Street. The name is the Spanish word for mist — a direct nod to San Francisco's coastal fog — and the room's design draws from the parlors of Nob Hill's grand historic mansions.\n\nThe 80-seat space was designed by Fettle studio and features a hand-etched mirror behind the bar, a custom mural wrapping the perimeter, and the hotel's original fireplace as a centerpiece. The beverage and culinary program was developed in partnership with Lowder-Tascarella Hospitality and runs from lunch through late night, with a showpiece tableside liquid-nitrogen martini service.\n\nThe lounge is designed to build a local following beyond hotel guests, with a weekly schedule built around recurring neighborhood programming: Golden Hour Aperitivo on Wednesdays and Thursdays from 4 to 6 p.m., live jazz on Friday evenings, and a Latin fusion band on Saturdays. A Fall Harvest Afternoon Tea, priced at $135 per guest before tax and gratuity, runs weekends through November 22. Hours are Sunday through Thursday 11:30 a.m. to 11 p.m. and Friday and Saturday until midnight.",
+      "sourceUrl": "https://www.rhfnews.com/article/ritz-carlton-sf-opens-bruma-cocktail-lounge-oct-12",
+      "sourceName": "RHF News / Ritz-Carlton Press Release",
+      "tags": [
+        "nob-hill",
+        "dining",
+        "hospitality",
+        "opening"
+      ]
+    },
+    {
+      "headline": "A Chronicle Series Asks Who Still Lives in Chinatown — and Where Everyone Else Went",
+      "dek": "A two-part San Francisco Chronicle investigation published this week finds that Chinatown's Chinese population has fallen by roughly 26 percent since the late 2000s, as families and working-class residents follow affordable housing to the city's southeast.",
+      "body": "San Francisco's Chinatown has long defined itself as a landing place for Chinese immigrants and their descendants. A new investigative series by the San Francisco Chronicle, with parts published October 13 and October 19, finds that identity increasingly describes where families came from rather than where they live now.\n\nComparing census estimates from 2006–2010 with 2020–2024 data, the Chronicle found that Chinatown's Chinese population dropped from roughly 12,000 in the late 2000s to around 9,000 in the early 2020s — a decline of about 26 percent — even as the city's overall Chinese share held steady at just above 20 percent. The Richmond and Sunset districts each lost close to 4,000 Chinese residents over the same period. Meanwhile, Bayview-Hunters Point and Portola each gained thousands: Bayview is now about 27 percent Chinese, and Portola is nearly 46 percent.\n\nDemographers and community leaders told the Chronicle the shift is driven by two overlapping forces: working- and middle-class families seeking homes they can afford, and slowing immigration from China — with newer arrivals increasingly Mandarin-speaking rather than Cantonese, and therefore less likely to settle in historically Cantonese Chinatowns.\n\nThe series does not frame Chinatown's future as bleak. Major public investments are underway — the $73 million Portsmouth Square renovation broke ground in June and is expected to be complete by mid-2028, and the Chinatown branch library is also in the early stages of a $47.8 million renovation. But the data make clear that the neighborhood's role as the primary port of entry for the city's Chinese community has shifted in ways that three decades of policy and philanthropy have not reversed.",
+      "sourceUrl": "https://www.sfchronicle.com/sf/article/chinese-americans-san-francisco-neighborhoods-22458761.php",
+      "sourceName": "San Francisco Chronicle",
+      "tags": [
+        "chinatown",
+        "demographics",
+        "housing",
+        "community"
+      ]
+    },
+    {
+      "headline": "Jupiter Room Has Missed Summer and Fall Keeps Slipping — Polk Street's Most-Watched Opening Still Has No Date",
+      "dek": "Chef Peter Hemsley and bar director Trevin Hutchins have been building out the former Lord Stanley space at 2065 Polk since early 2026; the bar's own website still says 'late 2026,' with windows still papered over.",
+      "body": "For months, Jupiter Room has been the Polk Street opening that feels perpetually imminent. The martini-focused cocktail bar from Michelin-starred chef Peter Hemsley and bar director Trevin Hutchins has been under construction in the former Lord Stanley space at 2065 Polk Street — the corner of Polk and Broadway in Russian Hill — for most of the year. The project was announced for summer 2026, then penciled in for fall. As of early October, the windows were still covered in paper and no confirmed opening date had been set.\n\nThe concept is well-defined: gin- and vodka-forward martinis, elevated bar snacks including fries and sliders, late-night hours, and a menu with historical nods to 19th-century San Francisco mixologist Jerry Thomas. The bar's own website now reads simply 'late 2026.' A takeout window facing Broadway has also been reported in planning documents.\n\nJupiter Room is one of five food-and-drink projects announced along the upper Polk and Russian Hill corridor this fall. Of those, Handroll Hawker opened at 2360 Polk on September 29, and Saru Handroll Bar has been operating nearby for some time. Bageletto, planned for a former Peet's between Broadway and Vallejo, and Lorella bakery at 2139 Polk are also still in buildout with no firm dates. The lounge at the former Lord Stanley — a space that once supported destination-level dining — remains the most anticipated of the group.",
+      "sourceUrl": "https://lanzaluxury.com/blog/on-polk-street-even-the-neighbors-cant-agree-on-whats-open",
+      "sourceName": "Lanza Luxury / jupiter-room.com",
+      "tags": [
+        "russian-hill",
+        "polk-gulch",
+        "dining",
+        "openings"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Yoga in the Park — Francisco Park",
+      "startDate": "2026-10-25",
+      "date": "Sunday, October 25",
+      "time": "10:00 AM",
+      "location": "Francisco Park, 2445 Hyde Street, Russian Hill",
+      "description": "A free community yoga session hosted by the Francisco Park Conservancy with instructor Lucy Marr of Nob Hill Yoga. All levels welcome; bring a mat or towel. Suggested donation $10, no one turned away.",
+      "sourceUrl": "https://franciscopark.org/events/",
+      "sourceName": "Francisco Park Conservancy"
+    },
+    {
+      "title": "Chinatown Cleanup — Volunteer Community Service",
+      "startDate": "2026-10-24",
+      "date": "Saturday, October 24",
+      "time": "3:00 PM–4:30 PM",
+      "location": "Meet at 660 Kearny St (corner of Kearny and Clay), Chinatown",
+      "description": "Refuse Refuse San Francisco hosts its regular Saturday afternoon neighborhood cleanup in Chinatown, meeting at the corner of Kearny and Clay streets to collect supplies before fanning out through the neighborhood. Free and open to all.",
+      "sourceUrl": "https://www.sfstation.com/calendar/san-francisco/chinatown",
+      "sourceName": "SF Station / Refuse Refuse San Francisco"
+    },
+    {
+      "title": "Bruma Fall Harvest Afternoon Tea — Ritz-Carlton Nob Hill",
+      "startDate": "2026-10-25",
+      "date": "Through November 22, weekends",
+      "time": "Various times",
+      "location": "Bruma at The Ritz-Carlton, 600 Stockton Street, Nob Hill",
+      "description": "The newly opened Bruma lounge is offering a Fall Harvest Afternoon Tea on Saturdays and Sundays through November 22, priced at $135 per guest before tax and gratuity. Reservations recommended.",
+      "sourceUrl": "https://www.rhfnews.com/article/ritz-carlton-sf-opens-bruma-cocktail-lounge-oct-12",
+      "sourceName": "RHF News / Ritz-Carlton Press Release"
+    },
+    {
+      "title": "Spooky Storytime in the Park — Francisco Park",
+      "startDate": "2026-10-30",
+      "date": "Friday, October 30",
+      "time": "10:30 AM–11:15 AM",
+      "location": "Francisco Park Children's Playground, 2445 Hyde Street, Russian Hill",
+      "description": "Francisco Park hosts a Halloween-themed Storytime on the children's playground, recommended for kids five and under. Costumes are encouraged; bring a blanket and a snack.",
+      "sourceUrl": "https://franciscopark.org/events/",
+      "sourceName": "Francisco Park Conservancy"
+    },
+    {
+      "title": "12th Annual Chinatown Halloween Festival",
+      "startDate": "2026-10-31",
+      "date": "Saturday, October 31",
+      "time": "11:00 AM–3:00 PM",
+      "location": "Waverly Place (between Sacramento and Washington streets), Chinatown",
+      "description": "The Community Youth Center of San Francisco brings its annual Halloween block party back to Waverly Place, with a pumpkin patch, arts and crafts, a costume contest, games, and family-friendly activities. Free and all ages welcome.",
+      "sourceUrl": "https://sf.funcheap.com/12th-annual-chinatown-halloween-festival-block-party-sf/",
+      "sourceName": "Funcheap SF / Community Youth Center of SF"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Broadway Tunnel Still Running One Lane Each Way as Chinatown Health Center Work Continues",
+      "body": "Drivers using the Broadway Tunnel should expect ongoing delays through at least fall 2027. The partial closure — one lane available in each direction during construction — began August 17, 2026, and is tied to seismic retrofitting and other upgrades at the Chinatown Public Health Center, which sits above the tunnel. The closure is one of three simultaneous major construction projects in Chinatown, alongside the $73 million Portsmouth Square renovation (groundbreaking June 9) and the 30-month, $47.8 million Chinatown branch library renovation. SF Public Works is directing motorists to variable message signs at key intersections for alternate routes.",
+      "sourceUrl": "https://www.sfchronicle.com/sf/article/chinatown-street-closure-san-francisco-22361878.php",
+      "sourceName": "San Francisco Chronicle / SF Public Works"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ritz-Carlton SF Opens Bruma Cocktail Lounge Oct. 12",
+      "url": "https://www.rhfnews.com/article/ritz-carlton-sf-opens-bruma-cocktail-lounge-oct-12",
+      "publication": "RHF News"
+    },
+    {
+      "title": "The Ritz-Carlton San Francisco opens Bruma, a Nob Hill cocktail lounge with a liquid-nitrogen martini",
+      "url": "https://larevuedeshotels.com/en/ritz-carlton-san-francisco-opens-bruma-nob-hill-cocktail-lounge",
+      "publication": "La Revue des Hôtels"
+    },
+    {
+      "title": "Chinese Americans once flocked to S.F.'s Chinatown. Now they're moving elsewhere",
+      "url": "https://www.sfchronicle.com/sf/article/chinese-americans-san-francisco-neighborhoods-22458761.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "A new Chinatown has risen in a historically Black corner of S.F.",
+      "url": "https://www.sfchronicle.com/sf/article/chinatown-bayview-portola-22458776.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "On Polk Street, Even the Neighbors Can't Agree on What's Open",
+      "url": "https://lanzaluxury.com/blog/on-polk-street-even-the-neighbors-cant-agree-on-whats-open",
+      "publication": "Lanza Luxury"
+    },
+    {
+      "title": "Jupiter Room — jupiter-room.com",
+      "url": "https://www.jupiter-room.com/",
+      "publication": "Jupiter Room (official site)"
+    },
+    {
+      "title": "Yoga in the Park — October 25",
+      "url": "https://franciscopark.org/events/",
+      "publication": "Francisco Park Conservancy"
+    },
+    {
+      "title": "Fall into Our Francisco Park Events",
+      "url": "https://franciscopark.org/fall-into-our-francisco-park-events/",
+      "publication": "Francisco Park Conservancy"
+    },
+    {
+      "title": "Chinatown Events — SF Station Calendar",
+      "url": "https://www.sfstation.com/calendar/san-francisco/chinatown",
+      "publication": "SF Station"
+    },
+    {
+      "title": "12th Annual Chinatown Halloween Festival + Block Party (SF)",
+      "url": "https://sf.funcheap.com/12th-annual-chinatown-halloween-festival-block-party-sf/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Major San Francisco Chinatown street closures start this week",
+      "url": "https://www.sfchronicle.com/sf/article/chinatown-street-closure-san-francisco-22361878.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Major Upgrades to Chinatown's Health Center, Library and Portsmouth Square Move Forward",
+      "url": "https://sfpublicworks.org/pressreleases/chinatownimprovements-7-20-2026",
+      "publication": "SF Public Works"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Nisei",
+        "cuisineGroup": "Asian",
+        "type": "Japanese-American tasting menu",
+        "description": "Michelin-starred restaurant from chef David Yoshimura serving refined Japanese-American seasonal tasting menus on Polk Street.",
+        "address": "2316 Polk St",
+        "phone": "415-827-6898",
+        "website": "https://www.restaurantnisei.com",
+        "neighborhood": "Russian Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Seven Hills",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian bistro",
+        "description": "Beloved neighborhood bistro on Hyde Street serving house-made pasta and farm-to-table Roman fare in an intimate setting.",
+        "address": "1896 Hyde St",
+        "phone": "415-775-1550",
+        "website": "https://www.sevenhillssf.com",
+        "neighborhood": "Russian Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Frascati",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian-Mediterranean bistro",
+        "description": "Cozy Hyde Street stalwart offering unpretentious Italian and New American cooking beside the Powell-Hyde cable car line.",
+        "address": "1901 Hyde St",
+        "phone": "415-928-1406",
+        "website": "https://www.frascatisf.com",
+        "neighborhood": "Russian Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Trattoria Contadina",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Old-school Italian trattoria",
+        "description": "Three-generation family-run Italian landmark on Mason Street with generous pasta portions and classic red-sauce cooking since 1984.",
+        "address": "1800 Mason St",
+        "phone": "415-982-5728",
+        "website": "https://www.trattoriacontadina.com",
+        "neighborhood": "Russian Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Piccolo Forno",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Italian pizzeria and trattoria",
+        "description": "Family-run Columbus Avenue spot turning out excellent Roman-style pizza by the slice, house-made pasta, and espresso.",
+        "address": "725 Columbus Ave",
+        "phone": "415-757-0087",
+        "website": "https://www.piccolo-forno.com",
+        "neighborhood": "Russian Hill",
+        "notable": ""
+      },
+      {
+        "name": "Macondray",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Cocktail bar with food",
+        "description": "Plant-filled mezcal and cocktail bar on Polk Street serving lobster rolls, deviled eggs, and burgers with strong happy-hour oyster deals.",
+        "address": "1771 Polk St",
+        "phone": "415-359-1800",
+        "website": "https://www.macondraysf.com",
+        "neighborhood": "Russian Hill",
+        "notable": ""
+      },
+      {
+        "name": "Abrazo",
+        "cuisineGroup": "Other",
+        "type": "Contemporary American dinner restaurant",
+        "description": "Warm, intimate Russian Hill dinner spot with a seasonally focused menu and cozy ambiance suited to date nights.",
+        "address": "1640 Hyde St",
+        "phone": "415-800-7103",
+        "website": "https://www.abrazosf.com",
+        "neighborhood": "Russian Hill",
+        "notable": ""
+      },
+      {
+        "name": "Grubstake Diner",
+        "cuisineGroup": "Seafood & American",
+        "type": "Late-night American diner",
+        "description": "Iconic railroad-car diner on Pine Street serving burgers, breakfast plates, and shakes until 4 a.m., a beloved Polk Gulch institution since the 1960s.",
+        "address": "1525 Pine St",
+        "phone": "415-228-8420",
+        "website": "https://www.grubstakediner.com",
+        "neighborhood": "Polk Gulch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sorella",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "Nob Hill Italian with solid house-made pastas, a cozy room, and a loyal neighborhood following.",
+        "address": "1791 Polk St",
+        "phone": "415-440-5415",
+        "website": "https://www.sorellasf.com",
+        "neighborhood": "Polk Gulch",
+        "notable": ""
+      },
+      {
+        "name": "Dunya Bistro",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Mediterranean bistro and wine bar",
+        "description": "Cozy Polk Street neighborhood gem serving Mediterranean fare alongside a well-chosen wine list.",
+        "address": "1030 Polk St",
+        "phone": "415-885-2510",
+        "website": "https://www.dunyabistro.com",
+        "neighborhood": "Polk Gulch",
+        "notable": ""
+      },
+      {
+        "name": "Amélie",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "French wine bar",
+        "description": "Warm Polk Street wine bar with a Franco-inspired atmosphere, happy-hour deals, and a vegetarian-friendly menu.",
+        "address": "1754 Polk St",
+        "phone": "415-292-6916",
+        "website": "https://www.ameliesf.com",
+        "neighborhood": "Polk Gulch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "RobberBaron",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood wine bar",
+        "description": "Unpretentious Polk Street wine bar with an excellent selection and a true neighborhood-gem atmosphere.",
+        "address": "1754 Polk St",
+        "phone": "415-655-9700",
+        "website": "https://www.robberbaronsf.com",
+        "neighborhood": "Polk Gulch",
+        "notable": ""
+      },
+      {
+        "name": "Nob Hill Cafe",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Neighborhood Italian restaurant",
+        "description": "Casual California Street Italian with house-made tiramisu and a loyal neighborhood clientele; walk-ins welcome.",
+        "address": "1152 Taylor St",
+        "phone": "415-776-6500",
+        "website": "https://www.nobhillcafe.com",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      },
+      {
+        "name": "The Big Four",
+        "cuisineGroup": "Seafood & American",
+        "type": "Classic American steakhouse",
+        "description": "Storied wood-paneled restaurant inside the newly reopened Huntington Hotel, serving beloved classics including its famous chicken pot pie since March 2026.",
+        "address": "1075 California St",
+        "phone": "415-771-1140",
+        "website": "https://www.thehuntington.com/dining",
+        "neighborhood": "Nob Hill",
+        "notable": "New"
+      },
+      {
+        "name": "Tonga Room & Hurricane Bar",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Tiki bar and Polynesian restaurant",
+        "description": "San Francisco institution since 1945 inside the Fairmont Hotel, featuring an indoor lagoon, choreographed rainstorms, and classic tiki cocktails.",
+        "address": "950 Mason St",
+        "phone": "415-772-5278",
+        "website": "https://www.tongaroom.com",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Tahona Mercado",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican market and taqueria",
+        "description": "Nob Hill bottle shop and market with exceptional tacos and a well-curated mezcal and spirits selection.",
+        "address": "1561 Polk St",
+        "phone": "415-702-6080",
+        "website": "https://www.tahonamercado.com",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      },
+      {
+        "name": "Cordon Bleu",
+        "cuisineGroup": "Asian",
+        "type": "Vietnamese restaurant",
+        "description": "Tiny, no-frills Nob Hill Vietnamese spot known for fast, filling, and affordable lunches and dinners.",
+        "address": "1574 California St",
+        "phone": "415-673-5637",
+        "website": "https://www.cordonbleusf.com",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ben Thai Cafe",
+        "cuisineGroup": "Asian",
+        "type": "Thai restaurant",
+        "description": "Popular Lower Nob Hill Thai with strong happy-hour specials, standout murder wings, and a casual dining atmosphere.",
+        "address": "1167 Post St",
+        "phone": "415-440-7180",
+        "website": "https://www.benthaisf.com",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      },
+      {
+        "name": "Mister Jiu's",
+        "cuisineGroup": "Asian",
+        "type": "Contemporary Cantonese restaurant",
+        "description": "Michelin-starred restaurant by chef Brandon Jew serving modern Cantonese cuisine with California twists from a historic Waverly Place address.",
+        "address": "28 Waverly Pl",
+        "phone": "415-857-9688",
+        "website": "https://www.misterjius.com",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Four Kings",
+        "cuisineGroup": "Asian",
+        "type": "Cantonese restaurant",
+        "description": "Buzzy Chinatown counter-service spot from Mister Jiu's alums serving wok-fired Cantonese classics to nightly lines since opening in 2024.",
+        "address": "710 Commercial St",
+        "phone": "415-800-8988",
+        "website": "https://www.itsfourkings.com",
+        "neighborhood": "Chinatown",
+        "notable": "New"
+      },
+      {
+        "name": "Z&Y Restaurant",
+        "cuisineGroup": "Asian",
+        "type": "Sichuan restaurant",
+        "description": "Chinatown Michelin-recommended Sichuan institution famous for fiery dishes and one of the longest lines on Jackson Street.",
+        "address": "655 Jackson St",
+        "phone": "415-981-8988",
+        "website": "https://www.zandyrestaurant.com",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Z&Y Peking Duck",
+        "cuisineGroup": "Asian",
+        "type": "Peking duck restaurant",
+        "description": "Sibling to Z&Y Restaurant, dedicated to expertly roasted Peking duck served whole or by course with traditional accompaniments.",
+        "address": "606 Jackson St",
+        "phone": "415-986-0200",
+        "website": "https://www.zandypeking.com",
+        "neighborhood": "Chinatown",
+        "notable": ""
+      },
+      {
+        "name": "Hon's Wun-Tun House",
+        "cuisineGroup": "Asian",
+        "type": "Cantonese noodle house",
+        "description": "Chinatown staple open from 9 a.m. for delicious wonton noodle soup and classic Cantonese rice plates at value prices.",
+        "address": "648 Kearny St",
+        "phone": "415-433-3966",
+        "website": "https://www.honswuntunhouse.com",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "R&G Lounge",
+        "cuisineGroup": "Asian",
+        "type": "Cantonese seafood restaurant",
+        "description": "Multi-level Chinatown institution celebrated for Cantonese seafood, garlic noodles, and lobster with sticky fried rice.",
+        "address": "631 Kearny St",
+        "phone": "415-982-7877",
+        "website": "https://www.rnglounge.com",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Fairmont San Francisco",
+        "type": "Historic luxury hotel",
+        "description": "San Francisco's grandest landmark hotel atop Nob Hill, open since 1907, offering 591 rooms, panoramic bay views, and home to the Tonga Room & Hurricane Bar.",
+        "address": "950 Mason St",
+        "phone": "415-772-5000",
+        "website": "https://www.fairmont.com/san-francisco",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "InterContinental Mark Hopkins San Francisco",
+        "type": "Historic luxury hotel",
+        "description": "Landmark Nob Hill hotel celebrating its centennial in 2026, featuring 380 rooms, the Top of the Mark rooftop bar, and sweeping city views from one Nob Hill.",
+        "address": "999 California St",
+        "phone": "415-392-3434",
+        "website": "https://www.intercontinentalmarkhopkins.com",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Ritz-Carlton, San Francisco",
+        "type": "Luxury hotel",
+        "description": "AAA Five Diamond hotel in a landmark 1909 Neoclassical building on Nob Hill, home to the newly debuting Bruma cocktail lounge opening October 12, 2026.",
+        "address": "600 Stockton St",
+        "phone": "415-296-7465",
+        "website": "https://www.ritzcarlton.com/sanfrancisco",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Huntington Hotel",
+        "type": "Boutique luxury hotel",
+        "description": "Iconic 100-year-old Nob Hill landmark reopened in March 2026 after a major Ken Fulk–led renovation, with 143 rooms, the revived Big Four restaurant, Arabella's bar, and a three-level Nob Hill Spa.",
+        "address": "1075 California St",
+        "phone": "415-474-5400",
+        "website": "https://www.thehuntington.com",
+        "neighborhood": "Nob Hill",
+        "notable": "New"
+      },
+      {
+        "name": "Stanford Court San Francisco",
+        "type": "Full-service hotel",
+        "description": "Well-appointed four-star hotel at the crest of Nob Hill on California Street, steps from the cable car and Grace Cathedral.",
+        "address": "905 California St",
+        "phone": "415-989-3500",
+        "website": "https://www.stanfordcourt.com",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      },
+      {
+        "name": "Nob Hill Hotel",
+        "type": "Boutique hotel",
+        "description": "Intimate 52-room Victorian-style boutique hotel on Hyde Street with ornate décor in the heart of the Nob Hill neighborhood.",
+        "address": "835 Hyde St",
+        "phone": "415-885-2987",
+        "website": "https://www.nobhillhotel.com",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Russian Hill Bookstore",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Indie bookstore on Polk Street since 1974 stocking new, used, and rare books alongside stationery, greeting cards, and gifts from local artists.",
+        "address": "2162 Polk St",
+        "phone": "415-929-0997",
+        "website": "https://www.russianhillbookstore.com",
+        "neighborhood": "Polk Gulch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "On Waverly",
+        "shopGroup": "Books & Literature",
+        "type": "Asian and Asian-American bookstore",
+        "description": "Chinatown bookshop specializing in Asian and Asian-American literature, art books, gifts, and ceramics.",
+        "address": "826 Washington St",
+        "phone": "415-982-6500",
+        "website": "https://www.onwaverlybooks.com",
+        "neighborhood": "Chinatown",
+        "notable": ""
+      },
+      {
+        "name": "Lola",
+        "shopGroup": "Home & Gifts",
+        "type": "Gift and novelty shop",
+        "description": "Cheerful Polk Street shop stocking funny greeting cards, quirky socks, small gifts, and locally made accessories.",
+        "address": "2162 Polk St",
+        "phone": "415-474-5652",
+        "website": "https://www.shoplolasf.com",
+        "neighborhood": "Polk Gulch",
+        "notable": ""
+      },
+      {
+        "name": "Cheese Plus",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Specialty cheese and provisions shop",
+        "description": "Russian Hill cheese store and sandwich window with a curated selection of artisan cheeses, charcuterie, pantry items, and made-to-order sandwiches.",
+        "address": "2001 Polk St",
+        "phone": "415-921-2001",
+        "website": "https://www.cheeseplus.com",
+        "neighborhood": "Russian Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Picnic SF",
+        "shopGroup": "Home & Gifts",
+        "type": "Local gift and lifestyle boutique",
+        "description": "Polk Street boutique curating a wide selection of locally made gifts, homeware, clothing, and apparel from Bay Area artists.",
+        "address": "1808 Polk St",
+        "phone": "415-800-7768",
+        "website": "https://www.picnicsf.com",
+        "neighborhood": "Russian Hill",
+        "notable": ""
+      },
+      {
+        "name": "Upcider",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Craft cider bar and bottle shop",
+        "description": "Polk Gulch spot with a second-floor bar area overlooking the street, dedicated to craft cider on tap and an extensive bottle selection.",
+        "address": "1160 Polk St",
+        "phone": "415-896-6300",
+        "website": "https://www.upcidersf.com",
+        "neighborhood": "Polk Gulch",
+        "notable": ""
+      },
+      {
+        "name": "Sino-American Books & Arts",
+        "shopGroup": "Books & Literature",
+        "type": "Chinese-language bookstore",
+        "description": "Long-established Chinatown shop carrying Chinese-language books, art supplies, calligraphy materials, and cultural gifts.",
+        "address": "751 Jackson St",
+        "phone": "415-982-8815",
+        "website": "",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Wok Shop",
+        "shopGroup": "Home & Gifts",
+        "type": "Asian cookware and kitchen supply store",
+        "description": "Chinatown institution stocking a vast selection of woks, clay pots, bamboo steamers, and Chinese kitchen equipment since 1969.",
+        "address": "718 Grant Ave",
+        "phone": "415-989-3797",
+        "website": "https://www.wokshop.com",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ten Ren Tea",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Specialty tea shop",
+        "description": "Chinatown outpost of the renowned Taiwanese tea brand, offering a wide range of loose-leaf oolong, green, and specialty teas.",
+        "address": "949 Grant Ave",
+        "phone": "415-362-0656",
+        "website": "https://www.tenren.com",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Harper & Rye",
+        "shopGroup": "Bars & Wine Bars",
+        "type": "Cocktail bar",
+        "description": "Spacious Polk Gulch cocktail bar with an old-fashioned woody feel and a well-stocked back bar ideal for first dates or group gatherings.",
+        "address": "1695 Polk St",
+        "phone": "415-562-7493",
+        "website": "https://www.harperandrye.com",
+        "neighborhood": "Polk Gulch",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Grace Cathedral",
+        "venueGroup": "Museums & Cultural",
+        "type": "Gothic Episcopal cathedral",
+        "description": "Nob Hill's landmark French Gothic cathedral famed for its stained glass, two indoor and outdoor labyrinths, and year-round arts and cultural programming.",
+        "address": "1100 California St",
+        "phone": "415-749-6300",
+        "website": "https://www.gracecathedral.org",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Masonic (SF Masonic Auditorium)",
+        "venueGroup": "Music Venues",
+        "type": "Concert and event venue",
+        "description": "3,481-seat Nob Hill auditorium operated by Live Nation, hosting major touring acts including Danny Elfman, The Chicks, and Rise Against in October 2026.",
+        "address": "1111 California St",
+        "phone": "415-776-4702",
+        "website": "https://www.sfmasonic.com",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Cable Car Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Transportation museum",
+        "description": "Free Nob Hill museum housed in the working cable car powerhouse at Mason and Washington, with antique cars, underground cable viewing, and exhibits on the world's last manually operated cable car system.",
+        "address": "1201 Mason St",
+        "phone": "415-474-1887",
+        "website": "https://www.cablecarmuseum.org",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chinese Historical Society of America",
+        "venueGroup": "Museums & Cultural",
+        "type": "History museum",
+        "description": "The oldest institution in the country dedicated to Chinese American history, housed in the landmark Julia Morgan–designed Chinatown YWCA building at 965 Clay Street; currently featuring a Bruce Lee exhibit.",
+        "address": "965 Clay St",
+        "phone": "415-391-1188",
+        "website": "https://www.chsa.org",
+        "neighborhood": "Chinatown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chinese Culture Center of San Francisco",
+        "venueGroup": "Museums & Cultural",
+        "type": "Cultural center and art gallery",
+        "description": "Chinatown cultural center on the third floor of the Hilton San Francisco Union Square offering rotating art exhibitions and educational programs on Chinese and Chinese-American culture.",
+        "address": "750 Kearny St, 3rd Floor",
+        "phone": "415-986-1822",
+        "website": "https://www.cccsf.us",
+        "neighborhood": "Chinatown",
+        "notable": ""
+      },
+      {
+        "name": "Gefen Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery",
+        "description": "Nob Hill gallery showcasing exclusive work from internationally acclaimed and emerging contemporary artists across multiple exhibition rooms.",
+        "address": "77 Geary St",
+        "phone": "415-984-0090",
+        "website": "https://www.gefinegalleries.com",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      },
+      {
+        "name": "Top of the Mark",
+        "venueGroup": "Music Venues",
+        "type": "Rooftop cocktail lounge",
+        "description": "Legendary 19th-floor cocktail lounge atop the InterContinental Mark Hopkins celebrating its centennial with a revived 100-Martini program and sweeping views of the Golden Gate, Alcatraz, and downtown.",
+        "address": "999 California St",
+        "phone": "415-392-3434",
+        "website": "https://www.topofthemark.com",
+        "neighborhood": "Nob Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Pacific Heritage Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "History and art museum",
+        "description": "Free Chinatown museum in the historic U.S. Sub-Treasury building presenting rotating exhibits on the art and culture of Pacific Rim nations.",
+        "address": "608 Commercial St",
+        "phone": "415-399-1124",
+        "website": "https://www.bankofthewest.com/pacificheritagemuseum",
+        "neighborhood": "Chinatown",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Crunch Fitness – Polk St",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "Full-service gym on Polk Street in Russian Hill offering strength equipment, cardio machines, cycling classes, and a range of group fitness programs.",
+        "address": "2330 Polk St",
+        "phone": "415-409-3610",
+        "website": "https://www.crunch.com",
+        "neighborhood": "Russian Hill",
+        "notable": ""
+      },
+      {
+        "name": "Mighty Pilates Russian Hill",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Reformer Pilates studio",
+        "description": "Women-owned Polk Street Pilates studio offering reformer-based group classes including Power Re:Form and Booty & Core, with recent sessions in June 2026.",
+        "address": "2022 Polk St",
+        "phone": "415-725-0577",
+        "website": "https://www.mightypilates.com",
+        "neighborhood": "Polk Gulch",
+        "notable": ""
+      },
+      {
+        "name": "Nob Hill Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga and Pilates studio",
+        "description": "Intimate Nob Hill studio with highly rated full-body flow and Pilates classes and a welcoming, neighborhood-focused community.",
+        "address": "1106 Pacific Ave",
+        "phone": "415-674-2478",
+        "website": "https://www.nobhillyoga.com",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      },
+      {
+        "name": "Live Fit Gym – Polk Street",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service neighborhood gym",
+        "description": "Family-owned gym on Polk Street in the Polk Gulch corridor offering certified personal training, squat racks, TRX, boxing, yoga, HIIT, and Pilates classes.",
+        "address": "1455 Polk St",
+        "phone": "415-829-5480",
+        "website": "https://www.livefitgym.com",
+        "neighborhood": "Polk Gulch",
+        "notable": ""
+      },
+      {
+        "name": "Orangetheory Fitness Russian Hill",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Heart-rate-based interval training studio",
+        "description": "Science-backed group fitness studio in Russian Hill blending treadmill, rowing, and weight-floor intervals into coach-led 60-minute sessions.",
+        "address": "2200 Polk St",
+        "phone": "415-889-9064",
+        "website": "https://www.orangetheory.com",
+        "neighborhood": "Russian Hill",
+        "notable": ""
+      },
+      {
+        "name": "MoveSF",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Boutique fitness studio",
+        "description": "Highly rated Nob Hill boutique gym offering varied group fitness classes with an emphasis on community and personalized coaching.",
+        "address": "1354 Bush St",
+        "phone": "415-673-6683",
+        "website": "https://www.movesf.com",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      },
+      {
+        "name": "Alice Marble Tennis Courts",
+        "venueGroup": "Sports & Courts",
+        "type": "Public tennis courts",
+        "description": "Four free public tennis courts atop Russian Hill with panoramic views of the Golden Gate Bridge and the Bay, operated by SF Rec & Park.",
+        "address": "1000 Macondray Ln",
+        "phone": "415-831-2700",
+        "website": "https://www.sfrecpark.org",
+        "neighborhood": "Russian Hill",
+        "notable": ""
+      },
+      {
+        "name": "Ina Coolbrith Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood park",
+        "description": "Terraced Russian Hill hilltop park with spectacular views of the Bay, Telegraph Hill, and Coit Tower — a favorite spot for morning walks and picnics.",
+        "address": "Taylor St & Vallejo St",
+        "phone": "415-831-2700",
+        "website": "https://www.sfrecpark.org",
+        "neighborhood": "Russian Hill",
+        "notable": ""
+      },
+      {
+        "name": "Huntington Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public park",
+        "description": "Serene Nob Hill square at the top of California Street, anchored by the Fountain of the Tortoises and surrounded by Grace Cathedral and the city's grandest hotels.",
+        "address": "1 Taylor St",
+        "phone": "415-831-2700",
+        "website": "https://www.sfrecpark.org",
+        "neighborhood": "Nob Hill",
+        "notable": ""
+      },
+      {
+        "name": "Nob Hill Spa",
+        "venueGroup": "Pools & Aquatics",
+        "type": "Luxury spa with pool",
+        "description": "Newly renovated three-level destination spa inside the Huntington Hotel, featuring an indoor pool with city views, 12 treatment rooms, saunas, steam rooms, and a fitness center.",
+        "address": "1075 California St",
+        "phone": "415-345-2888",
+        "website": "https://www.thehuntington.com/nob-hill-spa",
+        "neighborhood": "Nob Hill",
+        "notable": "New"
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-10-23",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-10-23",
+        "high": 64,
+        "low": 53,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-24",
+        "high": 67,
+        "low": 52,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-25",
+        "high": 66,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-26",
+        "high": 63,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 1
+      },
+      {
+        "date": "2026-10-27",
+        "high": 61,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 1
+      },
+      {
+        "date": "2026-10-28",
+        "high": 61,
+        "low": 55,
+        "summary": "Patchy Fog then Partly Sunny",
+        "condition": "fog",
+        "precip": 2
+      },
+      {
+        "date": "2026-10-29",
+        "high": 60,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 2
+      }
+    ]
+  }
+}
