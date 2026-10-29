@@ -36,6 +36,10 @@ on:
         description: 'Ignore the first-Friday check (manual runs only)'
         type: boolean
         default: false
+      full_rebuild:
+        description: 'Rebuild the whole directory instead of updating it (costs several times more)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -105,6 +109,9 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DRY_RUN: ${{ github.event.inputs.dry_run }}
+          # Scheduled runs update (changes only). A rebuild is a deliberate,
+          # manual choice: see the update/rebuild note in generate-directory.js.
+          DIRECTORY_MODE: ${{ github.event.inputs.full_rebuild == 'true' && 'full' || 'update' }}
         run: node pipeline/generate-directory.js --cluster ${{ matrix.edition }}
 
       - name: Stage output

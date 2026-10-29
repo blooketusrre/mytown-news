@@ -166,13 +166,13 @@ function scheduledSendAt() {
  *  edition's log shows what it spent. Prices are Sonnet list prices per
  *  million tokens and per search; an estimate for comparing runs, not a bill. */
 const PRICE = { inputPerM: 3, outputPerM: 15, perSearch: 0.01 };
-function logUsage(u) {
+function logUsage(u, cap = MAX_SEARCHES) {
   if (!u) return;
   const searches = (u.server_tool_use && u.server_tool_use.web_search_requests) || 0;
   const input = (u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) + (u.cache_read_input_tokens || 0);
   const output = u.output_tokens || 0;
   const cost = input / 1e6 * PRICE.inputPerM + output / 1e6 * PRICE.outputPerM + searches * PRICE.perSearch;
-  console.log(`     usage: ${searches} search(es) of ${MAX_SEARCHES} max · ` +
+  console.log(`     usage: ${searches} search(es)${cap ? ` of ${cap} max` : ""} · ` +
     `${Math.round(input / 1000)}K in / ${Math.round(output / 1000)}K out · ≈ $${cost.toFixed(2)}`);
 }
 
@@ -210,7 +210,8 @@ async function callClaude(systemPrompt, messages, tools = []) {
           try {
             const parsed = JSON.parse(data);
             if (parsed.error) return reject(new Error(parsed.error.message));
-            logUsage(parsed.usage);
+            const ws = tools.find((t) => t && t.name === "web_search");
+            logUsage(parsed.usage, ws && ws.max_uses);
             resolve(parsed);
           } catch (e) {
             reject(e);
@@ -1855,6 +1856,9 @@ module.exports = {
   stripClosedVenues,
   addPendingVenues,
   venueKey,
+  DIRECTORY_VERIFICATION_RULE,
+  DIRECTORY_SCHEMA,
+  DIRECTORY_GUIDANCE,
   outDirFor,
   scheduledSendAt,
   SEND_AT_UTC,
