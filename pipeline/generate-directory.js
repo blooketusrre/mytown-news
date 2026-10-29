@@ -44,7 +44,12 @@ const {
   closedVenuesFor,
   stripClosedVenues,
   addPendingVenues,
+  venueKey,
+  DIRECTORY_VERIFICATION_RULE,
+  DIRECTORY_SCHEMA,
+  DIRECTORY_GUIDANCE,
 } = require("./generate-issue.js");
+const { applyDirectoryDiff } = require("../lib/directory-diff");
 
 const ROOT          = path.resolve(__dirname, "..");
 const CLUSTERS_FILE = path.join(ROOT, "src", "_data", "clusters.json");
@@ -68,6 +73,23 @@ const STARTED_AT   = Date.now();
 const BUDGET_MIN   = Number(process.env.DIRECTORY_TIME_BUDGET_MIN || 20);
 
 const SECTIONS = ["restaurants", "hotels", "shops", "artEntertainment", "gymsRecreation"];
+
+/* ── Update, or rebuild ──────────────────────────────────────────────────
+ * "update" (the default since October 2026) sends the edition's current
+ * directory and asks only for what changed: closures, notable new openings,
+ * corrected address/phone/website. lib/directory-diff.js checks and applies
+ * them. It needs far fewer searches and returns a few hundred words rather
+ * than the whole directory, which made the quarterly refresh the single
+ * largest cost of the month.
+ *
+ * "full" is the original behaviour: research and write the whole directory
+ * again. Use it for an edition whose directory has drifted badly, with
+ * --full or DIRECTORY_MODE=full.
+ */
+const MODE = (args.includes("--full") || String(process.env.DIRECTORY_MODE || "").trim().toLowerCase() === "full")
+  ? "full" : "update";
+const MAX_SEARCHES = Math.max(1, parseInt(
+  process.env.MAX_DIRECTORY_SEARCHES || (MODE === "full" ? "20" : "8"), 10) || 8);
 
 if (!process.env.ANTHROPIC_API_KEY) {
   console.error("Missing ANTHROPIC_API_KEY");
@@ -105,6 +127,46 @@ function isPlausibleReplacement(fresh, existing) {
   return { ok: true, fresh: f, existing: e };
 }
 
+/** System prompt for an update: rules for what counts as a change, and the
+ *  shape to return. The verification rule applies to every venue added. */
+function updateSystemPrompt(cluster, closedVenues) {
+  const known = closedVenues.length
+    ? `\nAlready known to be closed (never add these): ${closedVenues.map((v) => v.name).join("; ")}.\n`
+    : "";
+  return `You are the research editor for My Town News, updating the local business directory for ${cluster.name} (${cluster.neighborhoods.join(", ")}).
+
+The directory already exists. Your job is to find what has CHANGED since it was written, not to rebuild it. Report only:
+1. CLOSED: venues in the current list that have closed permanently or left the area. Each needs a source URL that reports it.
+2. ADDED: notable venues that opened in roughly the last six months and are missing from the list. At most 3 per section; quality over quantity. Each must follow the verification rule below and use the venue fields from the schema below, with "notable": "New".
+3. UPDATED: a changed address, phone number or website for a listed venue, with a source URL. No other fields.
+
+Search efficiently: a search such as "${cluster.name} restaurant closed 2026" or "new businesses opening ${cluster.name}" covers many venues at once. Do not search venue by venue to confirm that unchanged places are still open. If you find nothing reliable, return empty lists: no change is a perfectly good answer.
+${known}
+${DIRECTORY_VERIFICATION_RULE}
+${DIRECTORY_GUIDANCE}
+Venue fields, as in the full directory:
+{
+${DIRECTORY_SCHEMA}
+}
+
+Return only this JSON, with no preamble or markdown fences:
+{
+  "closed":  [ { "section": "restaurants", "name": "exact name from the list", "evidence": "https://..." } ],
+  "added":   { "restaurants": [ { venue fields } ], "shops": [], "hotels": [], "artEntertainment": [], "gymsRecreation": [] },
+  "updated": [ { "section": "shops", "name": "exact name from the list", "changes": { "phone": "..." }, "source": "https://..." } ]
+}`;
+}
+
+/** The current directory, compactly: one line per venue, by section. */
+function updateUserMessage(cluster, directory) {
+  const lines = SECTIONS.map((k) => {
+    const list = (directory && directory[k]) || [];
+    return `${k} (${list.length}):\n` + list.map((v) => `- ${v.name} — ${v.address || "no address"}`).join("\n");
+  }).join("\n\n");
+  return `Here is the current directory for ${cluster.name}. Find what has changed. ` +
+    `You have at most ${MAX_SEARCHES} web searches.\n\n${lines}`;
+}
+
 async function refreshDirectory(cluster) {
   console.log(`\n📒 Directory: ${cluster.name}`);
 
@@ -120,21 +182,22 @@ async function refreshDirectory(cluster) {
   console.log(`  Target: ${path.relative(ROOT, issueFile)} (week of ${issue.weekOf})`);
   console.log(`  Current directory: ${countVenues(issue.directory)} venues`);
 
-  // Capped like the weekly run (see MAX_SEARCHES in generate-issue.js). A
-  // directory covers five categories of venues, so it gets more room.
-  const maxSearches = Math.max(1, parseInt(process.env.MAX_DIRECTORY_SEARCHES || "20", 10) || 20);
-  const webSearchTool = { type: "web_search_20250305", name: "web_search", max_uses: maxSearches };
+  // Capped like the weekly run (see MAX_SEARCHES in generate-issue.js).
+  const webSearchTool = { type: "web_search_20250305", name: "web_search", max_uses: MAX_SEARCHES };
   const closedVenues  = closedVenuesFor(cluster.slug);
-  const systemPrompt  = buildSystemPrompt(cluster, null, closedVenues, {
-    includeNews: false,
-    includeDirectory: true,
-  });
+  const updating      = MODE === "update" && countVenues(issue.directory) > 0;
+  console.log(`  Mode: ${updating ? "update (changes only)" : "full rebuild"} · at most ${MAX_SEARCHES} searches`);
 
-  const userMessage =
-    `Research and return the current business directory for ${cluster.name} ` +
-    `(${cluster.neighborhoods.join(", ")}). Verify every venue is still open, ` +
-    `following the directory verification rule. Return only valid JSON ` +
-    `matching the schema in your instructions.`;
+  const systemPrompt = updating
+    ? updateSystemPrompt(cluster, closedVenues)
+    : buildSystemPrompt(cluster, null, closedVenues, { includeNews: false, includeDirectory: true });
+
+  const userMessage = updating
+    ? updateUserMessage(cluster, issue.directory)
+    : `Research and return the current business directory for ${cluster.name} ` +
+      `(${cluster.neighborhoods.join(", ")}). Verify every venue is still open, ` +
+      `following the directory verification rule. You have at most ${MAX_SEARCHES} ` +
+      `web searches. Return only valid JSON matching the schema in your instructions.`;
 
   // Same paused-turn handling as the weekly run: server-side web search returns
   // pause_turn when it needs another round, and a run that treated that as an
@@ -173,15 +236,25 @@ async function refreshDirectory(cluster) {
     }
   }
 
-  if (!fresh.directory) throw new Error("response contained no directory");
-
-  // Only the five known sections, so an invented one cannot reach the page.
-  const next = {};
-  SECTIONS.forEach((k) => { if (Array.isArray(fresh.directory[k])) next[k] = fresh.directory[k]; });
-
-  const verdict = isPlausibleReplacement(next, issue.directory);
-  if (!verdict.ok) {
-    throw new Error(`refusing to replace the directory: ${verdict.why}`);
+  let next;
+  if (updating) {
+    // The model proposes changes; lib/directory-diff.js decides which apply.
+    const { directory, log } = applyDirectoryDiff(issue.directory, fresh, venueKey);
+    log.closed.forEach((x)  => console.log(`  − Closed: ${x}`));
+    log.added.forEach((x)   => console.log(`  ＋ Added: ${x}`));
+    log.updated.forEach((x) => console.log(`  ✎ Corrected: ${x}`));
+    log.ignored.forEach((x) => console.log(`  · Ignored: ${x}`));
+    if (!log.closed.length && !log.added.length && !log.updated.length) console.log("  No changes found.");
+    next = directory;
+  } else {
+    if (!fresh.directory) throw new Error("response contained no directory");
+    // Only the five known sections, so an invented one cannot reach the page.
+    next = {};
+    SECTIONS.forEach((k) => { if (Array.isArray(fresh.directory[k])) next[k] = fresh.directory[k]; });
+    const verdict = isPlausibleReplacement(next, issue.directory);
+    if (!verdict.ok) {
+      throw new Error(`refusing to replace the directory: ${verdict.why}`);
+    }
   }
 
   // Run the closure strip over the new directory, exactly as the weekly does.
@@ -233,6 +306,7 @@ async function main() {
   }
 
   console.log("My Town News — Quarterly Directory Refresh");
+  console.log(`Mode: ${MODE === "full" ? "full rebuild" : "update (changes only)"}, at most ${MAX_SEARCHES} searches per edition`);
   console.log(DRY_RUN
     ? "Mode: 🧪 DRY RUN — issue files will not be modified"
     : "Mode: 🚀 LIVE — the latest issue file will be rewritten in place");
