@@ -1,0 +1,632 @@
+{
+  "clusterSlug": "bayview-excelsior",
+  "clusterName": "Bayview & Excelsior",
+  "weekOf": "2026-10-30",
+  "topStories": [
+    {
+      "headline": "Three Days to Go: District 10's Supervisor Race Comes Down to Data Centers, Surveillance, and Who Pays the Price",
+      "dek": "With Election Day on November 3, the contest to replace termed-out Supervisor Shamann Walton has crystallized around what Bayview-Hunters Point owes San Francisco's AI economy.",
+      "body": "Voters in District 10 — which covers Bayview-Hunters Point, Visitacion Valley, Dogpatch, and Potrero Hill — head to the polls on Tuesday, November 3 to choose a new supervisor for the first time since Shamann Walton won the seat in 2018. Walton terms out in January. Mission Local's ongoing Meet the Candidates series, updated this week, has focused the contest on three frontrunners: Theo Ellington, Dion-Jay \"DJ\" Brookter, and J.R. Eppler.\n\nThe race has turned substantially on the question of AI data centers. On October 6, the full Board of Supervisors passed Walton's 45-day moratorium on new data center construction, freezing a planned expansion of the NOVVA facility at 400 Paul Avenue in south-central Bayview. Five large data center campuses already operate on or near Paul Avenue, directly across from residential blocks. The San Francisco Planning Commission now has 45 days to assess whether those facilities pose an environmental threat to nearby residents.\n\nAll three leading candidates have backed the moratorium, but they differ on how far to go. Brookter, endorsed by Walton, has called for a permanent ban. Ellington told Mission Local this month that he now supports an all-out ban on new data centers — a harder line than his earlier moratorium-with-conditions position — and said he would not renew SFPD's contract with Flock Safety, the company whose AI-enhanced license-plate cameras blanket Hunters Point. Eppler has also backed the moratorium.\n\nEllington received a $500,000 contribution in September from Ripple co-founder Chris Larsen, reported to be the largest outside donation in a San Francisco supervisor's race in recent memory. Ellington has said the donor does not speak for his campaign. By Ethics Commission figures, Ellington's own fundraising stands at roughly $488,000; Eppler raised about $182,000; and Brookter about $179,000.\n\nFor Bayview residents, the issues are immediate. Hunters Point Community Biomonitoring published a pilot proposal in October calling for a one-year program to track residents' bodily exposure to pollution, noise, and heat from the Paul Avenue campus — arguing that no comprehensive monitoring system currently exists even as the first phase of NOVVA's planned 36-megawatt complex has been operating since this summer.",
+      "sourceUrl": "https://missionlocal.org/2026/10/meet-the-candidates-san-franciscos-district-10-supervisor-race/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "election",
+        "District 10",
+        "data centers",
+        "Bayview-Hunters Point",
+        "Visitacion Valley",
+        "surveillance"
+      ]
+    },
+    {
+      "headline": "SFPD Closes Two Separate Bayview Homicide Cases With Arrests on the Same Morning",
+      "dek": "On October 20, police announced homicide arrests in two unrelated cases — one involving a 44-year-old San Francisco man, the other a juvenile — both tied to shootings in Bayview earlier this month.",
+      "body": "San Francisco police announced on the morning of October 20 that investigators had made arrests in two separate Bayview homicide cases, posting the news to the SFPD Bayview Station page within 30 minutes of each other.\n\nIn the first case (SFPD Case #260-577-378), officers arrested Jorge Alberto Mendoza-Hernandez, 44, of San Francisco, on suspicion of killing a man near the 1100 block of Thomas Avenue on October 1 — a largely industrial street bordering the Yosemite Slough waterfront in Hunters Point. The victim was transported to Zuckerberg San Francisco General Hospital, where he died from his injuries. Detectives obtained a Ramey warrant and arrested Mendoza-Hernandez on the 600 block of Gilman Avenue in Bayview on October 16. He was booked on a homicide charge.\n\nIn the second case (SFPD Case #260-611-578), police arrested a juvenile male in connection with the fatal shooting of a man on the 1100 block of Wisconsin Street on October 16 at approximately 8:38 p.m. Officers found the victim suffering from multiple gunshot wounds; he died at the scene despite paramedics' efforts. Investigators served a search warrant on the 1800 block of 25th Street on October 17, where they arrested the suspect and seized evidence. Because the suspect is a minor, SFPD did not release his name or age. He was transported to the Juvenile Justice Center and booked for homicide under California Penal Code 187(a).\n\nBoth investigations remain open and active. Anyone with information is asked to contact SFPD at 415-575-4444 or text a tip to TIP411, beginning the message with SFPD.",
+      "sourceUrl": "https://www.sanfranciscopolice.org/stations/bayview-station",
+      "sourceName": "SFPD Bayview Station",
+      "tags": [
+        "public safety",
+        "homicide",
+        "SFPD",
+        "Bayview-Hunters Point"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Therapy Pets at Excelsior Branch Library",
+      "startDate": "2026-10-30",
+      "date": "Friday, October 30",
+      "time": "3:00 PM",
+      "location": "Excelsior Branch Library, Excelsior",
+      "description": "Certified therapy animals visit the branch for a free, drop-in afternoon session. All ages welcome.",
+      "sourceUrl": "https://www.inglesidelight.com/treacherous-french-halloween-bash-and-other-greater-ingleside-events-for-oct-27-nov-9-2026/",
+      "sourceName": "Ingleside Light"
+    },
+    {
+      "title": "Ocean Avenue Halloween Block Party at Unity Plaza",
+      "startDate": "2026-10-31",
+      "date": "Saturday, October 31",
+      "time": "12:00 PM–3:00 PM",
+      "location": "Unity Plaza, Ocean Avenue, Ingleside",
+      "description": "A free outdoor Halloween celebration for the whole neighborhood on Ocean Avenue at Unity Plaza.",
+      "sourceUrl": "https://www.inglesidelight.com/treacherous-french-halloween-bash-and-other-greater-ingleside-events-for-oct-27-nov-9-2026/",
+      "sourceName": "Ingleside Light"
+    },
+    {
+      "title": "Vis Valley Halloween Harvest 2026",
+      "startDate": "2026-10-31",
+      "date": "Saturday, October 31",
+      "time": "Various times",
+      "location": "Visitacion Valley",
+      "description": "The neighborhood's annual Halloween Harvest celebration — check local Nextdoor posts for the confirmed time and gathering spot.",
+      "sourceUrl": "https://nextdoor.com/neighborhood/visitacionvalley--san-francisco--ca/",
+      "sourceName": "Nextdoor – Visitacion Valley"
+    },
+    {
+      "title": "Zumbi Festival",
+      "startDate": "2026-11-08",
+      "date": "Sunday, November 8",
+      "time": "3:00 PM",
+      "location": "Ruth Williams Bayview Opera House, Bayview",
+      "description": "A free community gathering celebrating Black consciousness and honoring Zumbi dos Palmares and other community leaders, with live performances including Bloco do Sol San José.",
+      "sourceUrl": "https://rwoh.org/",
+      "sourceName": "Ruth Williams Opera House"
+    },
+    {
+      "title": "42nd Annual Great Dickens Christmas Fair",
+      "startDate": "2026-11-21",
+      "date": "Through December 20",
+      "time": "Various times",
+      "location": "Cow Palace, Visitacion Valley / Daly City border",
+      "description": "The Cow Palace becomes a Victorian London market every weekend from November 21 through December 20, with costumed performers, food stalls, and holiday shopping.",
+      "sourceUrl": "https://sf.funcheap.com/city-guide/november-street-fairs-festivals/",
+      "sourceName": "SF Funcheap"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Biomonitoring Group Calls for Health Tracking Study at Bayview's Paul Avenue Data Center Campus",
+      "body": "Hunters Point Community Biomonitoring published a pilot proposal on October 12 calling for a one-year program to measure residents' exposure to pollution, noise, dirty air, and heat generated by the AI data center campus on Paul Avenue in south-central Bayview. The group argues that no comprehensive monitoring system currently exists, even as the NOVVA facility — part of a planned 36-megawatt build-out — brought its initial 9-megawatt phase online this summer. The San Francisco Bay View reported that the proposal aims to document a health baseline for residents before the costs of the city's AI expansion become irreversible.",
+      "sourceUrl": "https://sfbayview.com/2026/10/hp-biomonitoring-launches-pilot-proposal-for-comprehensive-monitoring-of-the-paul-avenue-ai-data-center-campus-located-in-south-central-bayview-hunters-point/",
+      "sourceName": "San Francisco Bay View",
+      "tags": [
+        "public health",
+        "environment",
+        "data centers",
+        "Bayview-Hunters Point"
+      ]
+    },
+    {
+      "headline": "Crocker Amazon Ballfield Overhaul Still Awaiting Board of Supervisors Vote",
+      "body": "As of Mission Local's September 25 report, the San Francisco Board of Supervisors had not yet scheduled a vote on the proposed $28 million grant from the San Francisco Giants Community Fund to rebuild the ballfields at Crocker Amazon Park. The Recreation and Park Commission voted unanimously in April 2026 to recommend the board accept the grant, which would fund synthetic turf on five of six renovated fields and require removing about 128 mature trees. Opponents organized as Keep Crocker Real have continued pressing the mayor and supervisors to revise the design. Rec & Park has said a further round of community review must be completed before any final approval, with groundbreaking not expected before 2027 or 2028 at the earliest.",
+      "sourceUrl": "https://native.us/blog/who-filled-the-empty-windows-on-mission-street-and-why-october-is-their-month",
+      "sourceName": "Native",
+      "tags": [
+        "parks",
+        "Crocker Amazon",
+        "recreation",
+        "Excelsior"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Meet the Candidates: San Francisco's District 10 supervisor race",
+      "url": "https://missionlocal.org/2026/10/meet-the-candidates-san-franciscos-district-10-supervisor-race/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Theo Ellington, District 10 frontrunner backed by billionaire, says he'd restrict billionaire funding",
+      "url": "https://missionlocal.org/2026/10/san-francisco-theo-ellington-district-10-forum-flock-billionaires/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "San Francisco supervisors pass 45-day data-center moratorium",
+      "url": "https://missionlocal.org/2026/10/sf-supervisors-pass-data-center-moratorium/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Your Guide to San Francisco's 2026 Board of Supervisors Races",
+      "url": "https://thesunreporter.com/your-guide-to-san-franciscos-2026-board-of-supervisors-races/",
+      "publication": "The Sun Reporter"
+    },
+    {
+      "title": "SFPD Arrests Bayview District Homicide Suspect #26-130(a)",
+      "url": "https://www.sanfranciscopolice.org/news/sfpd-arrests-bayview-district-homicide-suspect-26-130a",
+      "publication": "San Francisco Police Department"
+    },
+    {
+      "title": "SFPD Arrests Bayview District Homicide Suspect #26-119(a)",
+      "url": "https://www.sanfranciscopolice.org/news/sfpd-arrests-bayview-district-homicide-suspect-26-119a",
+      "publication": "San Francisco Police Department"
+    },
+    {
+      "title": "SFPD arrests teen in connection to fatal Bayview shooting",
+      "url": "https://www.kron4.com/news/bay-area/sfpd-arrests-teen-in-connection-to-fatal-bayview-shooting/",
+      "publication": "KRON4"
+    },
+    {
+      "title": "HP Biomonitoring Launches Pilot Proposal for Comprehensive Monitoring of the Paul Avenue AI Data Center Campus",
+      "url": "https://sfbayview.com/2026/10/hp-biomonitoring-launches-pilot-proposal-for-comprehensive-monitoring-of-the-paul-avenue-ai-data-center-campus-located-in-south-central-bayview-hunters-point/",
+      "publication": "San Francisco Bay View"
+    },
+    {
+      "title": "San Francisco Weighs 45-Day Freeze on Data Centers as Bayview Feels the Heat",
+      "url": "https://hoodline.com/2026/09/san-francisco-weighs-45-day-freeze-on-data-centers-as-bayview-feels-the-heat/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "Who Filled the Empty Windows on Mission Street, and Why October Is Their Month",
+      "url": "https://native.us/blog/who-filled-the-empty-windows-on-mission-street-and-why-october-is-their-month",
+      "publication": "Native"
+    },
+    {
+      "title": "Treacherous French Halloween Bash and Other Greater Ingleside Events for Oct. 27–Nov. 9, 2026",
+      "url": "https://www.inglesidelight.com/treacherous-french-halloween-bash-and-other-greater-ingleside-events-for-oct-27-nov-9-2026/",
+      "publication": "Ingleside Light"
+    },
+    {
+      "title": "Zumbi Festival – November 8, 2026",
+      "url": "https://rwoh.org/",
+      "publication": "Ruth Williams Opera House"
+    },
+    {
+      "title": "San Francisco November Festivals and Street Fairs (2026)",
+      "url": "https://sf.funcheap.com/city-guide/november-street-fairs-festivals/",
+      "publication": "SF Funcheap"
+    },
+    {
+      "title": "Vis Valley Halloween Harvest 2026",
+      "url": "https://nextdoor.com/neighborhood/visitacionvalley--san-francisco--ca/",
+      "publication": "Nextdoor – Visitacion Valley"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Old Skool Cafe",
+        "cuisineGroup": "Seafood & American",
+        "type": "Youth-run supper club",
+        "description": "A 1920s jazz-themed supper club and violence-prevention nonprofit employing at-risk youth ages 16–22, serving Southern soul food with live jazz Wed–Sat evenings.",
+        "address": "1429 Mendell St, San Francisco, CA 94124",
+        "phone": "415-822-8531",
+        "website": "https://www.oldskoolcafe.org",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Gumbo Social",
+        "cuisineGroup": "Seafood & American",
+        "type": "Soul food / Cajun-Creole restaurant",
+        "description": "Build-your-own gumbo, po'boys, and Cajun-Creole small plates from chef-owner Dontaye Ball, one of Bayview's Third Street anchors; reopened August 17 after a planned summer refresh.",
+        "address": "5176 3rd St, San Francisco, CA 94124",
+        "phone": "415-655-9195",
+        "website": "https://www.gumbosocial.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Smoke Soul Kitchen",
+        "cuisineGroup": "Seafood & American",
+        "type": "Soul food brunch spot",
+        "description": "Black- and woman-owned brunch counter in the former Auntie April's space serving fried chicken, waffles, shrimp and grits, and house-made biscuits Wed–Sun.",
+        "address": "4618 3rd St, San Francisco, CA 94124",
+        "phone": "415-900-6093",
+        "website": "https://www.smokesoulkitchen.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Frank Grizzly's",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Cali-Mexican taqueria",
+        "description": "Family-owned taqueria celebrated for birria tacos, duck tacos, and quesabirria, now settled into its own Bayview brick-and-mortar after launching at Anchor Brewing.",
+        "address": "5698 3rd St, San Francisco, CA 94124",
+        "phone": "415-605-9991",
+        "website": "https://www.frankgrizzly.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "The Old Clam House",
+        "cuisineGroup": "Seafood & American",
+        "type": "Historic seafood restaurant",
+        "description": "San Francisco's oldest restaurant in its original location (est. 1861), serving steamed clams, cioppino, Dungeness crab, and house-made pastas under the Florese family since 2022.",
+        "address": "299 Bayshore Blvd, San Francisco, CA 94124",
+        "phone": "415-695-2866",
+        "website": "http://www.theoldclamhouse.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "All Good Pizza",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Neapolitan pizza beer garden",
+        "description": "Brick-oven Neapolitan pizzas, organic salads, and paninis served in a 7,000-sq-ft Bayview beer garden using locally sourced, seasonal ingredients.",
+        "address": "1605 Jerrold Ave, San Francisco, CA 94124",
+        "phone": "415-933-9384",
+        "website": "https://www.allgoodpizza.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Cafe Alma",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Community café and event space",
+        "description": "Waterfront café in a 5,000-sq-ft India Basin warehouse serving locally sourced breakfast and lunch Tue–Sat, doubling as a community event, workshop, and live-music venue.",
+        "address": "888 Innes Ave, San Francisco, CA 94124",
+        "phone": "415-336-3286",
+        "website": "https://www.cafealmasf.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Gratta Wines",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Urban winery and wine bar",
+        "description": "Bayview's own garage winery producing hand-crafted Dry Creek wines since 2006, with a tasting room, wine bar, and Italian specialty market on Third Street.",
+        "address": "5273 3rd St, San Francisco, CA 94124",
+        "phone": "415-872-9791",
+        "website": "https://www.grattawines.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Yvonne's Southern Sweets",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Southern bakery",
+        "description": "Beloved Bayview institution (est. 2002) selling small-batch pecan pralines, red velvet cupcakes, lemon meringue pies, and butter pecan cookies; reopened this fall and celebrates 20 years on Oct. 4.",
+        "address": "5128 3rd St, San Francisco, CA 94124",
+        "phone": "415-368-7900",
+        "website": "https://www.yvonnessouthernsweets.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Drew's Barbecue",
+        "cuisineGroup": "Seafood & American",
+        "type": "Backyard BBQ joint",
+        "description": "Tucked-away Visitacion Valley destination widely praised as the best BBQ in San Francisco, serving ribs, chicken, hot links, and sides Thu–Sat.",
+        "address": "101 Hahn St, San Francisco, CA 94134",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Visitacion Valley",
+        "notable": ""
+      },
+      {
+        "name": "La Joya Café",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Family-run Mexican breakfast café",
+        "description": "Visitacion Valley neighborhood staple on Leland Avenue serving fresh chilaquiles, breakfast burritos, handmade tacos, and espresso drinks made to order daily.",
+        "address": "28 Leland Ave, San Francisco, CA 94134",
+        "phone": "415-508-9192",
+        "website": "https://www.la-joya-cafe.com",
+        "neighborhood": "Visitacion Valley",
+        "notable": ""
+      },
+      {
+        "name": "Pho Luen Fat",
+        "cuisineGroup": "Asian",
+        "type": "Chinese-Vietnamese restaurant",
+        "description": "Long-running Leland Avenue standby serving Vietnamese pho, ho fun, Chinese BBQ plates, and Cantonese noodles at affordable neighborhood prices.",
+        "address": "110 Leland Ave, San Francisco, CA 94134",
+        "phone": "415-585-1167",
+        "website": "",
+        "neighborhood": "Visitacion Valley",
+        "notable": ""
+      },
+      {
+        "name": "Calabria Brothers",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian deli counter",
+        "description": "Excelsior Italian deli beloved for enormous, generously stuffed sandwiches and charcuterie at lunch-counter prices.",
+        "address": "4763 Mission St, San Francisco, CA 94112",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ty Sandwich",
+        "cuisineGroup": "Asian",
+        "type": "Vietnamese sandwich shop",
+        "description": "Excelsior go-to for fresh bánh mì packed with quality ingredients and fast, friendly service at very affordable prices.",
+        "address": "4829 Mission St, San Francisco, CA 94112",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Don Chuy's Mexi-Mercado",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Corner-store taqueria",
+        "description": "Excelsior corner market with a small kitchen turning out carnitas burritos, quesadillas, and enchiladas that regulars rank among the neighborhood's best.",
+        "address": "544 Excelsior Ave, San Francisco, CA 94112",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Pho Golden",
+        "cuisineGroup": "Asian",
+        "type": "Vietnamese restaurant",
+        "description": "Highly rated Excelsior restaurant for fragrant pho, noodle soups, and Vietnamese comfort dishes at everyday prices.",
+        "address": "4683 Mission St, San Francisco, CA 94112",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Tala Wine",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Natural wine bar",
+        "description": "Boutique Excelsior wine bar founded by Tala Drzewiecki, curating low-intervention natural wines from small French, Spanish, and Italian producers, with snack plates and tea service.",
+        "address": "4625 Mission St, San Francisco, CA 94112",
+        "phone": "415-740-8494",
+        "website": "https://www.tala.wine",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "The Halfway Club",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood bar and restaurant",
+        "description": "Midwestern-inspired Crocker-Amazon bar and restaurant with cult-status chili cheese fries, stiff cocktails, and movie nights — a James Beard Best New Bar semifinalist.",
+        "address": "1166 Geneva Ave, San Francisco, CA 94112",
+        "phone": "628-377-0020",
+        "website": "https://www.halfwayclub.com",
+        "neighborhood": "Crocker Amazon",
+        "notable": ""
+      },
+      {
+        "name": "Restaurante Familiar",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Salvadoran-Mexican restaurant",
+        "description": "Casual Excelsior sit-down restaurant specializing in pupusas, Salvadoran entrées, and Mexican plates in a family-friendly setting.",
+        "address": "4499 Mission St, San Francisco, CA 94112",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Hawaiian Drive Inn",
+        "cuisineGroup": "Other",
+        "type": "Hawaiian plate lunch counter",
+        "description": "Fast, affordable Hawaiian plate lunch spot on Mission Street serving kalua pork, teriyaki chicken, and loco moco to Excelsior regulars.",
+        "address": "4827 Mission St, San Francisco, CA 94112",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Super Star Restaurant",
+        "cuisineGroup": "Asian",
+        "type": "Filipino-Chinese takeout counter",
+        "description": "Long-established Excelsior takeout staple serving Filipino and Chinese home-cooked lunch plates at some of the lowest prices on Mission Street.",
+        "address": "4919 Mission St, San Francisco, CA 94112",
+        "phone": "415-585-4360",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": "Landmark"
+      }
+    ],
+    "hotels": [],
+    "shops": [
+      {
+        "name": "JOY Gallery & JOY Shop",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Community art gallery and vintage shop",
+        "description": "Bootstrap art gallery and experimental event space in Bayview-Hunters Point hosting rotating shows, film nights, and a Friday–Saturday vintage clothing pop-up.",
+        "address": "4921 3rd St, San Francisco, CA 94124",
+        "phone": "415-894-9821",
+        "website": "https://www.joygallerysf.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Mi Rancho Supermarket",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Full-service Mexican grocery",
+        "description": "Family-owned Mexican grocery chain's first San Francisco location, open daily 7 a.m.–8 p.m. with fresh produce, a butcher counter, Mexican bakery, and a hot food station.",
+        "address": "5900 3rd St, San Francisco, CA 94124",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Gratta Wines Italian Market",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Italian specialty market and bottle shop",
+        "description": "The retail arm of Gratta Wines carrying house-produced Dry Creek wines alongside Italian pantry staples, cheeses, and artisan products.",
+        "address": "5299 3rd St, San Francisco, CA 94124",
+        "phone": "415-872-9791",
+        "website": "https://www.grattawines.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Oxbridge Market",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Neighborhood deli and market",
+        "description": "Excelsior corner market highly rated by locals for its generously filled house sandwiches and well-stocked deli case.",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Tala Wine Co.",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Natural wine retail shop",
+        "description": "Boutique wine shop carrying 275+ natural, organic, and biodynamic wines from small European producers, with an online shop and regular in-store tasting events.",
+        "address": "4625 Mission St, San Francisco, CA 94112",
+        "phone": "415-740-8494",
+        "website": "https://www.tala.wine",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Hunters Point Shipyard Artists",
+        "venueGroup": "Art Galleries",
+        "type": "Working artists' studio community",
+        "description": "The largest artists' community in the United States — over 130 working studios in a historic WWII naval shipyard, with Fall Open Studios Oct. 17–18, 2026 (free) and the CRANE light-art installation running Oct. 10–25.",
+        "address": "451 Galvez Ave, San Francisco, CA 94124",
+        "phone": "",
+        "website": "https://www.shipyardartists.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Midway",
+        "venueGroup": "Music Venues",
+        "type": "Multi-room arts and music venue",
+        "description": "Sprawling 40,000-sq-ft Bayview venue hosting EDM concerts, queer parties, and live events, with upcoming shows including Chief Keef (Oct. 23) and Valentino Khan (Nov. 13).",
+        "address": "900 Marin St, San Francisco, CA 94124",
+        "phone": "415-301-4355",
+        "website": "https://www.themidwaysf.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "JOY Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Experimental art and event space",
+        "description": "Community-rooted Bayview gallery presenting rotating art shows, film screenings, and Sunday garden events, open Saturdays.",
+        "address": "4921 3rd St, San Francisco, CA 94124",
+        "phone": "415-894-9821",
+        "website": "https://www.joygallerysf.com",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Bayview Hunters Point YMCA",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service community YMCA",
+        "description": "Bayview's main community fitness hub with a gymnasium, fitness room, basketball court, aquatics, and youth after-school services, open Mon–Fri 7 a.m.–7 p.m. and Sat until 3 p.m.",
+        "address": "1601 Lane St, San Francisco, CA 94124",
+        "phone": "415-822-7728",
+        "website": "https://www.ymcasf.org/location/bayview-hunters-point-ymca/",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "Martin Luther King Jr. Pool",
+        "venueGroup": "Pools & Aquatics",
+        "type": "SF Rec & Park indoor swimming pool",
+        "description": "City-run indoor 25-yard × 25-meter pool in Bayview offering lap swim, senior swim, and family swim programs Tue–Sat, with a separate wading pool for young children.",
+        "address": "5701 3rd St, San Francisco, CA 94124",
+        "phone": "415-822-2807",
+        "website": "https://www.sfrecpark.org",
+        "neighborhood": "Bayview–Hunters Point",
+        "notable": ""
+      },
+      {
+        "name": "EXCELSIOR Martial Arts Academy",
+        "venueGroup": "Martial Arts",
+        "type": "Brazilian jiu-jitsu and martial arts gym",
+        "description": "Family-run Excelsior gym led by IBJJF Black Belt World Champions offering Brazilian jiu-jitsu, Filipino martial arts, wrestling, and personal training for all ages and skill levels.",
+        "address": "1178 Geneva Ave, San Francisco, CA 94112",
+        "phone": "415-692-1245",
+        "website": "https://www.excelsiorjj.com",
+        "neighborhood": "Excelsior",
+        "notable": ""
+      },
+      {
+        "name": "Korean Martial Arts Center (KMAC)",
+        "venueGroup": "Martial Arts",
+        "type": "Traditional Korean martial arts school",
+        "description": "Ingleside dojo established in 1984 and certified by Kukkiwon, offering Taekwondo, Hapkido, Judo, Tai Chi, and Filipino stick fighting for children and adults.",
+        "address": "1414 Ocean Ave, San Francisco, CA 94112",
+        "phone": "415-333-1050",
+        "website": "https://www.kmaclife.com",
+        "neighborhood": "Ingleside",
+        "notable": "Landmark"
+      },
+      {
+        "name": "McLaren Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "City park with trails and recreation facilities",
+        "description": "San Francisco's second-largest park at 317 acres, spanning Visitacion Valley, Excelsior, and Crocker Amazon with hiking trails, tennis courts, a disc golf course, and the Jerry Garcia Amphitheater.",
+        "address": "John F. Shelley Dr, San Francisco, CA 94134",
+        "phone": "415-831-2700",
+        "website": "https://www.sfrecpark.org",
+        "neighborhood": "Visitacion Valley",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-10-30",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-10-30",
+        "high": 66,
+        "low": 53,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-31",
+        "high": 63,
+        "low": 52,
+        "summary": "Chance Rain Showers then Slight Chance Light Rain",
+        "condition": "rain",
+        "precip": 19
+      },
+      {
+        "date": "2026-11-01",
+        "high": 64,
+        "low": 52,
+        "summary": "Chance Rain Showers then Sunny",
+        "condition": "rain",
+        "precip": 8
+      },
+      {
+        "date": "2026-11-02",
+        "high": 66,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-03",
+        "high": 63,
+        "low": 54,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 25
+      },
+      {
+        "date": "2026-11-04",
+        "high": 62,
+        "low": 54,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 35
+      },
+      {
+        "date": "2026-11-05",
+        "high": 62,
+        "low": 53,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 32
+      }
+    ]
+  }
+}

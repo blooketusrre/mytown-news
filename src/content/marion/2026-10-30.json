@@ -1,0 +1,797 @@
+{
+  "clusterSlug": "marion",
+  "clusterName": "Marion",
+  "weekOf": "2026-10-30",
+  "topStories": [
+    {
+      "headline": "Marion County Heads to the Polls Tuesday — Here's What's on Your Ballot",
+      "dek": "Election Day is November 3, with two Marion County school-levy renewals, four county races, a statewide voter-ID amendment, and a U.S. Senate special election all on the Marion County ballot.",
+      "body": "Marion County voters have a full ballot waiting for them when polls open Tuesday, November 3. At the top of the ticket is a competitive U.S. Senate special election alongside Ohio's governor's race and five other statewide offices. Locally, Marion County residents will choose among candidates for County Auditor, County Commission, County Coroner, and a Family Division Common Pleas judge.\n\nThe statewide measure drawing the most attention is Issue 3, a legislative constitutional amendment that would require voters to present a government-issued photo ID to vote in person, with a photo ID or a signed alternative identifier required for absentee ballots. A majority yes vote would enshrine the requirement in the Ohio Constitution.\n\nTwo school-levy renewals appear on Marion County ballots. Ridgedale Local Schools is asking voters to renew a 2.44-mill levy for five years, and Elgin Local Schools has a 2.88-mill renewal on the ballot for the same period. Both are renewals, not new taxes. Voters can confirm which questions appear in their specific precinct by contacting the Marion County Board of Elections at 222 W. Center St.\n\nIn-person absentee voting continues today, Friday October 30, from 7:30 a.m. to 7:30 p.m., then on Saturday October 31 from 8 a.m. to 4 p.m. and Sunday November 1 from 1 to 5 p.m. On Election Day itself, polls open at 6:30 a.m. and close at 7:30 p.m. Absentee ballots must be received by the board no later than 7:30 p.m. on November 3.",
+      "sourceUrl": "https://www.boe.ohio.gov/marion/election-info/early-voting-hours/",
+      "sourceName": "Marion County Board of Elections",
+      "tags": [
+        "election",
+        "voting",
+        "Marion County",
+        "Issue 3",
+        "school levy"
+      ]
+    },
+    {
+      "headline": "OSU Marion Launches Free Three-Part Storytelling Workshop Open to All Community Members",
+      "dek": "Ohio State Marion announced this week a no-cost community workshop called 'Your Story, Well Told,' with applications due November 6 and the first session set for November 16.",
+      "body": "The Ohio State University at Marion announced on October 28 that it is offering a free three-part storytelling workshop open to any community member who wants to discover, develop, and share their own personal narrative. The program, titled 'Your Story, Well Told,' is funded by the Marion Community Foundation and is part of the America 250 celebration marking the nation's 250th anniversary.\n\nThe workshop will be led by Dr. Jennifer Schlueter, Dean and Director of Ohio State Marion. Applications are due November 6, with the first session starting November 16. Community members interested in participating can find details at osumarion.osu.edu.\n\nThe program builds on a thread of community storytelling work at the campus. Earlier this spring, Ohio State Marion hosted 'Who We Are Now: A Celebration of Marion, OH,' a live performance that wove together stories from local residents. Organizers noted at the time that memories gathered during that event would inform a larger performance planned for the Marion Palace Theatre in December 2026.",
+      "sourceUrl": "https://osumarion.osu.edu/",
+      "sourceName": "Ohio State University at Marion",
+      "tags": [
+        "education",
+        "community",
+        "Ohio State Marion",
+        "America 250",
+        "arts"
+      ]
+    },
+    {
+      "headline": "Bucci's Italian Scratch Kitchen Named 2026 Heritage Ohio Main Street Business of the Year",
+      "dek": "The downtown Marion restaurant occupying a historic 1920s trolley depot has earned the state's top Main Street business honor for 2026.",
+      "body": "Bucci's Italian Scratch Kitchen, the scratch-made Italian restaurant at 320 W. Center St. in downtown Marion, has been named the 2026 Heritage Ohio Main Street Business of the Year, according to Downtown Marion, Inc. The award is among the most prestigious recognitions available to businesses in Ohio's Main Street program network.\n\nBucci's operates out of the former Columbus, Delaware and Marion Electric Railway freight and passenger depot, a 1920s building that had fallen dormant before the restaurant opened. Chef John Paul Iacobucci built the menu around authentic family recipes with a strict made-from-scratch approach, covering soups, entrees, house-made sauces, and desserts. The restaurant also operates an event and wedding venue within the same historic space.\n\nThe Heritage Ohio honor follows another major recognition from earlier in the year: the U.S. Chamber of Commerce named Bucci's one of the top 100 small businesses in the entire country in its 2026 CO—100 list, chosen from more than 12,000 applicants nationwide. Bucci's is open Tuesday through Thursday 11:30 a.m. to 9 p.m., Friday 11:30 a.m. to 10 p.m., and Saturday 4 to 10 p.m.",
+      "sourceUrl": "https://www.downtownmarion.com/",
+      "sourceName": "Downtown Marion, Inc.",
+      "tags": [
+        "business",
+        "downtown Marion",
+        "award",
+        "restaurant",
+        "Heritage Ohio"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Trick-or-Treat in the City of Marion",
+      "startDate": "2026-10-31",
+      "date": "Saturday, October 31",
+      "time": "5:30 PM – 7:30 PM",
+      "location": "City of Marion (citywide)",
+      "description": "The City of Marion holds trick-or-treat on October 31 each year by ordinance, running 5:30 to 7:30 p.m. The event is free and covers all city neighborhoods.",
+      "sourceUrl": "https://www.marionohio.us/",
+      "sourceName": "City of Marion"
+    },
+    {
+      "title": "Ohio Valley Craft Show",
+      "startDate": "2026-11-01",
+      "date": "Sunday, November 1",
+      "time": "10:00 AM – 4:00 PM",
+      "location": "Marion County Fairgrounds, Veteran's Memorial Coliseum, 220 E. Fairground St., Marion",
+      "description": "The Ohio Valley Craft Show fills the Veteran's Memorial Coliseum with artisan vendors and handmade goods for a full day of seasonal shopping.",
+      "sourceUrl": "https://www.marioncountyfairgrounds.com/events",
+      "sourceName": "Marion County Fairgrounds"
+    },
+    {
+      "title": "General Election Day — Marion County",
+      "startDate": "2026-11-03",
+      "date": "Tuesday, November 3",
+      "time": "6:30 AM – 7:30 PM",
+      "location": "Marion County polling locations; Board of Elections at 222 W. Center St., Marion",
+      "description": "Marion County voters decide the governor's race, a U.S. Senate special election, local county offices, two school-levy renewals (Ridgedale and Elgin), and statewide Issue 3 on photo voter ID.",
+      "sourceUrl": "https://www.boe.ohio.gov/marion/",
+      "sourceName": "Marion County Board of Elections"
+    },
+    {
+      "title": "Holiday Happenings Craft Show",
+      "startDate": "2026-11-14",
+      "date": "Saturday–Sunday, November 14–15",
+      "time": "9:00 AM – 4:00 PM",
+      "location": "Marion County Fairgrounds, Veteran's Memorial Coliseum, 220 E. Fairground St., Marion",
+      "description": "The Holiday Happenings Craft Show brings seasonal handmade gifts, holiday décor, and artisan vendors to the Veteran's Memorial Coliseum across two full days.",
+      "sourceUrl": "https://www.marioncountyfairgrounds.com/events",
+      "sourceName": "Marion County Fairgrounds"
+    },
+    {
+      "title": "Sara Evans: We Got The Beat Tour — Marion Palace Theatre",
+      "startDate": "2026-11-20",
+      "date": "Friday, November 20",
+      "time": "7:30 PM",
+      "location": "Marion Palace Theatre, 276 W. Center St., Marion",
+      "description": "Multi-platinum country artist Sara Evans brings her tour to the historic Palace stage. Tickets run $36–$65 plus a $3 per-ticket restoration fee; a VIP meet-and-greet package is also available.",
+      "sourceUrl": "https://www.marionpalace.org/sara-evans",
+      "sourceName": "Marion Palace Theatre"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "PUCO Winter Reconnect Order in Effect Through November 1",
+      "body": "The Public Utilities Commission of Ohio's annual Special Reconnect Order is currently active, allowing Ohio utility customers who are behind on bills to restore service for a capped reconnect fee. The City of Marion posted notice of the order on October 6, 2026. The SRO expires November 1; residents with questions should contact their utility provider or visit marionohio.us.",
+      "sourceUrl": "https://www.marionohio.us/m/newsflash/Home/Detail/62",
+      "sourceName": "City of Marion",
+      "tags": [
+        "utilities",
+        "public notice",
+        "PUCO"
+      ]
+    },
+    {
+      "headline": "Marion Public Library 'Reading Marion Monuments' Program Launched Oct. 26",
+      "body": "The Marion Public Library began a two-session public program called 'Reading Marion Monuments' on October 26, meeting at Marion Veterans Park to help participants interpret the symbols, scale, materials, and placement of war memorials and public monuments. A second session follows in early November. Registration details are available at the library's main desk, 445 E. Church St.",
+      "sourceUrl": "https://marion-main-oh.whofi.com/",
+      "sourceName": "Marion Public Library",
+      "tags": [
+        "library",
+        "local history",
+        "community program"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Early Voting Hours — November 3, 2026 General Election",
+      "url": "https://www.boe.ohio.gov/marion/election-info/early-voting-hours/",
+      "publication": "Marion County Board of Elections"
+    },
+    {
+      "title": "Marion County Board of Elections",
+      "url": "https://www.boe.ohio.gov/marion/",
+      "publication": "Marion County Board of Elections"
+    },
+    {
+      "title": "Marion County, OH Sample Ballot 2026",
+      "url": "https://www.sway.co/voter-guide/ohio/marion-county",
+      "publication": "Sway Voter Guide"
+    },
+    {
+      "title": "2026 Ohio Midterm Election Guide: Key deadlines, races on the ballot",
+      "url": "https://www.10tv.com/article/news/politics/elections/2026-ohio-midterm-election-voter-guide/530-681b6a6c-7f37-4bde-8e02-a8cbcd46e090",
+      "publication": "10TV WBNS"
+    },
+    {
+      "title": "Ohio State Marion — Your Story, Well Told storytelling workshop",
+      "url": "https://osumarion.osu.edu/",
+      "publication": "Ohio State University at Marion"
+    },
+    {
+      "title": "Ohio State Marion to host 'Who We Are Now' festival and performance",
+      "url": "https://crawfordcountynow.com/local/ohio-state-marion-to-host-who-we-are-now-festival-and-performance/",
+      "publication": "Crawford County Now"
+    },
+    {
+      "title": "Bucci's Italian Scratch Kitchen Named 2026 Heritage Ohio Main Street Business of the Year",
+      "url": "https://www.downtownmarion.com/",
+      "publication": "Downtown Marion, Inc."
+    },
+    {
+      "title": "The Brickyard on Main (Bucci's) — U.S. Chamber CO-100",
+      "url": "https://www.uschamber.com/co/profiles/the-brickyard-on-main",
+      "publication": "U.S. Chamber of Commerce"
+    },
+    {
+      "title": "Trick-or-Treat in the City of Marion",
+      "url": "https://www.marionohio.us/",
+      "publication": "City of Marion"
+    },
+    {
+      "title": "2026 Trick-or-Treat Dates and Times — Central Ohio",
+      "url": "https://www.nbc4i.com/news/local-news/central-ohio-news/trick-or-treat-schedule-central-ohio/",
+      "publication": "NBC4 Columbus"
+    },
+    {
+      "title": "Marion County Fairgrounds Events",
+      "url": "https://www.marioncountyfairgrounds.com/events",
+      "publication": "Marion County Fairgrounds"
+    },
+    {
+      "title": "Sara Evans — Marion Palace Theatre",
+      "url": "https://www.marionpalace.org/sara-evans",
+      "publication": "Marion Palace Theatre"
+    },
+    {
+      "title": "Music Events in Marion",
+      "url": "https://allevents.in/marion/music",
+      "publication": "All Events"
+    },
+    {
+      "title": "Special Reconnect Order Notice",
+      "url": "https://www.marionohio.us/m/newsflash/Home/Detail/62",
+      "publication": "City of Marion"
+    },
+    {
+      "title": "Marion Public Library Event Calendar",
+      "url": "https://marion-main-oh.whofi.com/",
+      "publication": "Marion Public Library"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "AttaBoys Comfort Cuisine",
+        "cuisineGroup": "Seafood & American",
+        "type": "Southern soul food restaurant",
+        "description": "Downtown Marion comfort-food destination known for Southern fried chicken, seafood gumbo, and filet mignon, located across from the Marion Palace Theatre.",
+        "address": "289 W Center St, Marion, OH 43302",
+        "phone": "(740) 914-4914",
+        "website": "https://attaboys.goto-restaurants.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Sansotta's Fresh Italian",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Casual Italian restaurant",
+        "description": "Build-your-own-bowl Italian spot near the Harding Memorial, serving fresh pasta, pizza, salads, and catering with a pet-friendly patio.",
+        "address": "1292 Delaware Ave, Marion, OH 43302",
+        "phone": "(740) 751-6596",
+        "website": "https://www.sansottasitalian.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Bucci's Italian Scratch Kitchen",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Scratch Italian restaurant & event venue",
+        "description": "Housed in the historic 1928 CD&M Interurban Station on Center Street, serving freshly made pastas, signature pizzas, and chef-driven specials with a popular brunch series.",
+        "address": "320 W Center St, Marion, OH 43302",
+        "phone": "(740) 751-4724",
+        "website": "https://www.buccisitalian.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Eat Greek – Marion",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Family-run Greek restaurant",
+        "description": "Locally owned family restaurant bringing authentic gyros, falafel, Greek-style fries, and baklava to Marion from scratch-made recipes.",
+        "address": "151 Edgefield Blvd, Marion, OH 43302",
+        "phone": "(740) 751-4767",
+        "website": "https://www.eatgreekohio.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Lazeez Grill",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Fast-casual Mediterranean restaurant",
+        "description": "Downtown Marion build-your-own bowl and pita wrap spot featuring hummus, falafel, gyro, and baklava with bar-like seating and outdoor option.",
+        "address": "121 E Church St, Marion, OH 43302",
+        "phone": "(614) 943-1383",
+        "website": "https://www.lazeezgrillohio.com",
+        "neighborhood": "Marion",
+        "notable": "New"
+      },
+      {
+        "name": "Baires Deli",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Argentinian-Italian lunch deli",
+        "description": "Downtown deli and café on S. Main Street specializing in Argentinian and Italian dishes, open weekdays for breakfast and lunch with Friday dinner service.",
+        "address": "131 S Main St, Marion, OH 43302",
+        "phone": "(740) 383-3999",
+        "website": "https://www.facebook.com/BariesRestaurant",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Carlyle's Restaurant",
+        "cuisineGroup": "Seafood & American",
+        "type": "American comfort food lunch spot",
+        "description": "Small weekday lunch destination known for specialty sandwiches, daily home-cooked specials, and made-from-scratch pies.",
+        "address": "1116 Mt Vernon Ave, Marion, OH 43302",
+        "phone": "(740) 386-6333",
+        "website": "https://carlyles.food94.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Iron Chef Steakhouse",
+        "cuisineGroup": "Asian",
+        "type": "Japanese hibachi steakhouse & sushi bar",
+        "description": "Traditional hibachi restaurant offering tableside teppanyaki, a full sushi menu, and a full-service bar on Mt. Vernon Avenue.",
+        "address": "1418 Mt Vernon Ave, Marion, OH 43302",
+        "phone": "(740) 223-3777",
+        "website": "https://www.facebook.com/IronChefMarion",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Shovel City Drinkery",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Upscale cocktail and bourbon bar",
+        "description": "Historic Hughs & Cleary building on N. Main Street pours over 350 whiskies (280+ bourbons), craft cocktails, and hosts rotating food trucks and live jazz and blues.",
+        "address": "181 N Main St, Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.shovelcitydrinkery.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "G & R Tavern",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood tavern",
+        "description": "Cash-only Waldo institution established in 1962, famous for its fried bologna sandwich, homemade pies, pizza, and salads in a classic sports-bar setting.",
+        "address": "103 N Marion St, Waldo, OH 43356",
+        "phone": "(740) 726-9685",
+        "website": "https://www.gandrtavern.com",
+        "neighborhood": "Waldo",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Waldo Sports Bar & Grill",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Sports bar and grill",
+        "description": "Neighborhood sports bar in Waldo serving classic bar food and drinks, open daily with late-night hours.",
+        "address": "306 S Marion St, Waldo, OH 43356",
+        "phone": "(740) 726-4016",
+        "website": "",
+        "neighborhood": "Waldo",
+        "notable": ""
+      },
+      {
+        "name": "House of Hunan",
+        "cuisineGroup": "Asian",
+        "type": "Chinese restaurant",
+        "description": "Long-running Chinese restaurant on Marion Waldo Road offering Hunan and Cantonese dishes for lunch and dinner.",
+        "address": "1583 Marion Waldo Rd, Marion, OH 43302",
+        "phone": "(740) 387-0032",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Taco Central Bar",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Taco bar and cantina",
+        "description": "New downtown Marion taco joint praised for its wings and dips, with a bar and late-evening hours.",
+        "address": "Marion, OH 43302",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": "New"
+      },
+      {
+        "name": "Steve's Dakota Grill",
+        "cuisineGroup": "Seafood & American",
+        "type": "American steakhouse and grill",
+        "description": "Full-service American steakhouse and grill in Marion offering steak, seafood, and hearty comfort entrees.",
+        "address": "Marion, OH 43302",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Tackett's Southern Bar-B-Que",
+        "cuisineGroup": "Seafood & American",
+        "type": "Southern barbecue restaurant",
+        "description": "Marion barbecue spot serving slow-smoked Southern BBQ dishes.",
+        "address": "Marion, OH 43302",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Holiday Inn Express & Suites Marion by IHG",
+        "type": "Chain hotel with pool",
+        "description": "Recently remodeled mid-scale hotel near the Marion County Fairgrounds with an indoor pool and hot tub, a short drive from the Harding Home.",
+        "address": "1842 Marion Mount Gilead Rd, Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.ihg.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Country Inn & Suites by Radisson, Marion, OH",
+        "type": "Chain hotel with pool",
+        "description": "Consistently well-reviewed hotel offering an indoor pool, 24-hour business center, and free breakfast near the south side of Marion.",
+        "address": "2091 Marion Mount Gilead Rd, Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.radissonhotels.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Wingate by Wyndham Marion",
+        "type": "Chain hotel with pool",
+        "description": "Comfortable hotel with an indoor pool, 24-hour gym, and free WiFi on James Way near major Marion employers.",
+        "address": "227 James Way, Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.wyndhamhotels.com/wingate",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Comfort Inn Marion",
+        "type": "Chain hotel with pool",
+        "description": "Well-rated mid-scale hotel with indoor pool and hot tub, free breakfast, and convenient freeway access.",
+        "address": "256 James Way, Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.choicehotels.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Baymont by Wyndham Marion, OH",
+        "type": "Chain hotel",
+        "description": "Budget-friendly hotel with free breakfast included, convenient for travelers passing through on US-30.",
+        "address": "Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.wyndhamhotels.com/baymont",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "My Place Hotel–Marion, OH",
+        "type": "Extended-stay hotel",
+        "description": "Highly rated extended-stay hotel with kitchenettes in every room, popular for both short and long-term stays.",
+        "address": "Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.myplacehotels.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "The Haven on Vine Bed & Breakfast and Retreat Center",
+        "type": "Historic bed and breakfast",
+        "description": "An 1842 Victorian home that served as an Underground Railroad station, offering three themed guest rooms with homemade breakfast, walking distance from downtown and the Harding Home.",
+        "address": "202 S Vine St, Marion, OH 43302",
+        "phone": "(740) 223-8260",
+        "website": "https://www.thehavenonvine.com",
+        "neighborhood": "Marion",
+        "notable": "Landmark"
+      }
+    ],
+    "shops": [
+      {
+        "name": "Spruce and Sparrow",
+        "shopGroup": "Home & Gifts",
+        "type": "Downtown boutique",
+        "description": "Woman-owned downtown Marion boutique carrying curated clothing, jewelry, home décor, candles, and books — opened in 2022 as part of the downtown revitalization.",
+        "address": "194 W Center St, Marion, OH 43302",
+        "phone": "(740) 566-5898",
+        "website": "https://www.spruceandsparrowmarion.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Elena Renee",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Gourmet food and kitchenware shop",
+        "description": "Sister store to Spruce and Sparrow on S. Main Street, specializing in gourmet food items, mixes, and functional kitchenware.",
+        "address": "130 S Main St, Marion, OH 43302",
+        "phone": "(740) 566-5898",
+        "website": "https://www.spruceandsparrowmarion.com/elena-renee",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Shirk's Homemade Candies",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Family candy shop",
+        "description": "Third-generation confectionery in business since 1932, hand-dipping chocolates and making candies from a converted Prospect Street residence.",
+        "address": "1235 S Prospect St, Marion, OH 43302",
+        "phone": "(740) 387-8177",
+        "website": "https://www.shirkscandies.com",
+        "neighborhood": "Marion",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Way We Were Antiques",
+        "shopGroup": "Home & Gifts",
+        "type": "Antique shop",
+        "description": "Well-regarded Marion antique destination carrying historical photographs, quilts, and a broad range of collectibles.",
+        "address": "Marion, OH 43302",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Rothman Art and Antiques",
+        "shopGroup": "Home & Gifts",
+        "type": "Art and antiques gallery shop",
+        "description": "Marion shop combining antiques and original art, listed among the top shopping destinations in the area on TripAdvisor.",
+        "address": "Marion, OH 43302",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Birchouse Workshop",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Arts and education workshop",
+        "description": "Arts, culture, and recreation workshop space located in Prospect, supporting community arts and education programming.",
+        "address": "705 E Water St, Prospect, OH 43342",
+        "phone": "(740) 785-0204",
+        "website": "",
+        "neighborhood": "Prospect",
+        "notable": ""
+      },
+      {
+        "name": "Ashley HomeStore",
+        "shopGroup": "Home & Gifts",
+        "type": "Home furnishings and mattress store",
+        "description": "Quality family-owned home furnishings and decorator store offering brand-name furniture and mattresses on Marion Mount Gilead Road.",
+        "address": "2074 Marion Mount Gilead Rd, Marion, OH 43302",
+        "phone": "(740) 386-2333",
+        "website": "https://www.ashleyfurniture.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Ollie's Bargain Outlet",
+        "shopGroup": "Other",
+        "type": "Discount retail store",
+        "description": "Budget-friendly closeout retailer offering name-brand merchandise at up to 70% off in Marion.",
+        "address": "Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.ollies.us",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Willy + Wade Supply",
+        "shopGroup": "Home & Gifts",
+        "type": "Specialty gift shop",
+        "description": "Marion specialty and gift shop noted among the top shopping destinations in the area.",
+        "address": "Marion, OH 43302",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Kohl's",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Department store",
+        "description": "Full-service national department store offering apparel, home goods, and accessories for the whole family.",
+        "address": "400 McMahan Blvd, Marion, OH 43302",
+        "phone": "(740) 389-6782",
+        "website": "https://www.kohls.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Marion Palace Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Historic performing arts center",
+        "description": "Built in 1928 by architect John Eberson in Spanish Revival style, this National Register landmark presents live theater, concerts, family performances, and cinema with 1,436 seats and upcoming October shows.",
+        "address": "276 W Center St, Marion, OH 43302",
+        "phone": "(740) 383-2101",
+        "website": "https://www.marionpalace.org",
+        "neighborhood": "Marion",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Marion Art Center (The MAC)",
+        "venueGroup": "Theater & Comedy",
+        "type": "Community arts center and gallery",
+        "description": "Non-profit arts center in Marion's historic building presenting gallery exhibitions, theater productions, workshops, and concerts — current show is 'Color, Form, and Place' through October 30.",
+        "address": "Marion, OH",
+        "phone": "",
+        "website": "https://www.marionartcenter.org",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Harding Presidential Sites",
+        "venueGroup": "Museums & Cultural",
+        "type": "Presidential library, museum, and historic home",
+        "description": "Comprises the Warren G. Harding Presidential Library & Museum, the restored Harding Home, and the Press House at 380 Mt. Vernon Ave., plus the Harding Memorial a mile away — open Wednesday–Sunday.",
+        "address": "380 Mt Vernon Ave, Marion, OH 43302",
+        "phone": "(800) 600-6894",
+        "website": "https://www.hardingpresidentialsites.org",
+        "neighborhood": "Marion",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Wyandot Popcorn Museum at Heritage Hall",
+        "venueGroup": "Museums & Cultural",
+        "type": "Specialty museum",
+        "description": "World's largest collection of antique popcorn wagons — including a Paul Newman-owned cart from Central Park — housed inside the former Marion Post Office alongside Marion County Historical Society exhibits; open Wednesday–Sunday 1–4 PM through October.",
+        "address": "169 E Church St, Marion, OH 43302",
+        "phone": "(740) 387-4255",
+        "website": "https://www.marionhistory.com",
+        "neighborhood": "Marion",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Marion Public Library",
+        "venueGroup": "Museums & Cultural",
+        "type": "Public library",
+        "description": "Marion County's public library at 445 E. Church St. offering books, digital resources, programs, and community events, open Monday–Wednesday until 7 PM and Thursday–Saturday until 5 PM or 3 PM.",
+        "address": "445 E Church St, Marion, OH 43302",
+        "phone": "(740) 387-0992",
+        "website": "https://www.marionlibrary.org",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Bluefusion Fun Center",
+        "venueGroup": "Theater & Comedy",
+        "type": "Family entertainment center",
+        "description": "Marion's family fun destination featuring bowling, arcade games, laser tag, and Poppy's Sports Pub & Grille inside.",
+        "address": "Marion, OH 43302",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Buckeye Telephone Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Specialty museum",
+        "description": "Niche museum in Marion preserving the history of telephone technology, ranked among the top attractions in the area.",
+        "address": "Marion, OH 43302",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Cider House Farms",
+        "venueGroup": "Museums & Cultural",
+        "type": "Farm market and seasonal attraction",
+        "description": "Marion-area farm market and agritourism destination, ranked as the top shopping/attraction in the area on TripAdvisor.",
+        "address": "Marion County, OH",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Marion Family YMCA",
+        "venueGroup": "Pools & Aquatics",
+        "type": "Full-service YMCA",
+        "description": "Full-service community YMCA on Barks Road East offering a wellness center with 24/7 member access, group fitness, pickleball, aquatic classes, and childcare — building open Mon–Thu 5 AM–9 PM, Fri 5 AM–7 PM, Sat 8 AM–4 PM.",
+        "address": "645 Barks Rd E, Marion, OH 43302",
+        "phone": "(740) 725-9622",
+        "website": "https://www.marionymca.com",
+        "neighborhood": "Marion",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Marion Fitness Club",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "Well-reviewed independent gym on Harding Highway East offering extensive weights, cardio equipment, group fitness classes, and personal training, open from 4:30 AM weekdays.",
+        "address": "1295 Harding Hwy E, Marion, OH 43302",
+        "phone": "(740) 382-8257",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Planet Fitness",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "National gym chain",
+        "description": "Judgment-Free Zone gym with 24-hour weekday access, selectorized equipment, free weights, cardio machines, massage chairs, and tanning at a low monthly rate.",
+        "address": "1292 Mt Vernon Ave, Marion, OH 43302",
+        "phone": "(740) 361-8298",
+        "website": "https://www.planetfitness.com/gyms/marion-oh",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Narrow Road CrossFit",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "CrossFit gym (box)",
+        "description": "Marion CrossFit affiliate on Marion Bucyrus Road known for a welcoming community and coached group fitness classes, open weekday mornings and evenings.",
+        "address": "2009 Marion Bucyrus Rd, Marion, OH 43302",
+        "phone": "(740) 225-5407",
+        "website": "https://www.narrowroadcrossfit.com",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Phase 6 Strength and Performance",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Strength and performance training facility",
+        "description": "Marion's premier training facility for women's fitness, men's fitness, and athlete performance training on S. Prospect Street.",
+        "address": "1001 S Prospect St Suite 103, Marion, OH 43302",
+        "phone": "",
+        "website": "https://www.phase6strengthandperformance.net",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Downtown Athletic Club",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Downtown fitness center",
+        "description": "Fitness center located in downtown Marion, listed consistently among the top gyms in the area.",
+        "address": "Marion, OH 43302",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "OSU Marion Campus Recreation",
+        "venueGroup": "Sports & Courts",
+        "type": "Campus recreation center",
+        "description": "The Ohio State University at Marion's Alber Student Center recreation program offers basketball, pickleball, volleyball, futsal, indoor lacrosse, and fitness classes for students and the community.",
+        "address": "1465 Mount Vernon Ave, Marion, OH 43302",
+        "phone": "",
+        "website": "https://osumarion.osu.edu/current-students/student-life/recreation",
+        "neighborhood": "Marion",
+        "notable": ""
+      },
+      {
+        "name": "Hickory Grove Lake RV Park & Campground",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "RV park and campground",
+        "description": "Marion County campground and RV park offering lakeside outdoor recreation and camping.",
+        "address": "Marion County, OH",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Marion",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-10-30",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-10-30",
+        "high": 66,
+        "low": 43,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-31",
+        "high": 64,
+        "low": 51,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-01",
+        "high": 68,
+        "low": 52,
+        "summary": "Mostly Cloudy",
+        "condition": "cloudy",
+        "precip": 13
+      },
+      {
+        "date": "2026-11-02",
+        "high": 68,
+        "low": 54,
+        "summary": "Slight Chance Rain Showers",
+        "condition": "rain",
+        "precip": 24
+      },
+      {
+        "date": "2026-11-03",
+        "high": 73,
+        "low": 55,
+        "summary": "Slight Chance Rain Showers",
+        "condition": "rain",
+        "precip": 17
+      },
+      {
+        "date": "2026-11-04",
+        "high": 71,
+        "low": 53,
+        "summary": "Chance Rain Showers",
+        "condition": "rain",
+        "precip": 45
+      },
+      {
+        "date": "2026-11-05",
+        "high": 66,
+        "low": 45,
+        "summary": "Chance Rain Showers",
+        "condition": "rain",
+        "precip": 46
+      }
+    ]
+  }
+}

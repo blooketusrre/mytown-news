@@ -1,0 +1,692 @@
+{
+  "clusterSlug": "presidio-richmond",
+  "clusterName": "Presidio & Richmond",
+  "weekOf": "2026-10-30",
+  "topStories": [
+    {
+      "headline": "Clement Street's Quieter End Is Filling Up Fast — but an Appeal Looms Over the Corridor",
+      "dek": "A wave of new businesses is transforming the lower stretch of Clement Street near Arguello, even as the Therapy Stores planning fight may not be finished.",
+      "body": "The block of Clement Street running from Arguello Boulevard to Sixth Avenue is in the middle of a striking commercial makeover, with five new businesses either open or announced for addresses that were recently empty. A pilates and wellness studio called MNT Studio held a preview week at 35 Clement beginning October 19 and moved to its regular schedule on October 26. Kitchen Commons — a cookware shop and cafe backed by Liholiho Yacht Club co-owner Jeff Hanak and former Nopalito chef Connor Bruce — has been announced for 130 Clement this fall. Two cafe concepts, Evermore at 200 Clement and a fifth Cafe Réveille location at 324 Clement, are also in the pipeline for later this year.\n\nThe burst of activity comes in the wake of San Francisco's Planning Commission voting unanimously on September 24 to grant Therapy Stores a conditional use permit to open at 32 Clement, near Second Avenue. Therapy, a Bay Area gift-shop chain owned by Jing Chen, triggered the city's formula retail rules because planning code counted it as having 11 locations when it applied. The Clement Street Merchants Association, which posted 'No formula retail on Clement Street' fliers up and down the corridor and gathered roughly 400 signatures against the application, indicated it was actively considering an appeal to the Board of Supervisors within the 30-day window following the ruling.\n\nWith Clement Street's vacancy rate sitting below five percent — low even by citywide standards — the corridor is one of the healthiest retail strips on San Francisco's west side. Whether the Therapy Stores permit survives a potential supervisorial appeal, and how the new daytime-focused businesses reshape foot traffic on the block, will be the story to watch through the end of the year.",
+      "sourceUrl": "https://adelaidamejiasf.com/blog/clement-streets-arguello-end-is-turning-into-a-daytime-street",
+      "sourceName": "Adelaide Mejia SF",
+      "tags": [
+        "Clement Street",
+        "retail",
+        "Inner Richmond",
+        "planning"
+      ]
+    },
+    {
+      "headline": "Two Months After a Devastating Break-In, Modern Relics Won't Reopen as a Jewelry Store",
+      "dek": "Inner Richmond jeweler Alix Blüh, whose Cabrillo Street shop was ransacked in August, is now considering turning the space into a community gallery — and no arrests have been made.",
+      "body": "For two decades, Modern Relics occupied a quiet residential stretch of Cabrillo Street near Ninth Avenue, where owner and jewelry designer Alix Blüh made and sold bespoke pieces from a loft studio above an antique-filled ground-floor gallery. On the morning of August 13, Blüh walked from her nearby home to find the front door pried open, display cases smashed, and the metal locker holding her most valuable work emptied. She estimates total losses — including finished jewelry, gold and gemstone raw materials, antique display cases, and property damage — at between $200,000 and $300,000.\n\nThe Richmond Review reported on October 26 that no arrests have been made. The San Francisco Police Department's Richmond Station responded to the shop that morning, and the investigation remains open. Blüh has said the business she built over 20 years will not return in its current form as a high-end jewelry store. She has indicated publicly that she hopes to reopen the Cabrillo Street space as early as 2027 as a gallery for other artists, potentially centered on a clay studio. 'What I'm really excited to do is turn this space and repurpose it for the community,' she told Mission Local in September.",
+      "sourceUrl": "https://richmondsunsetnews.com/2026/10/26/more-than-200k-stolen-from-cabrillo-street-jeweler-modern-relics/",
+      "sourceName": "Richmond Review/Sunset Beacon",
+      "tags": [
+        "crime",
+        "Inner Richmond",
+        "small business",
+        "SFPD"
+      ]
+    },
+    {
+      "headline": "Clement Street Trick-or-Treats Saturday; Outer Balboa Celebrates Día de Muertos on Sunday",
+      "dek": "Merchants on two Richmond corridors are anchoring a neighborhood-wide Halloween and Día de Muertos weekend, with the Balboa Theater adding a mystery movie marathon for good measure.",
+      "body": "The Richmond is packing its Halloween and Día de Muertos observances into back-to-back days this weekend. On Saturday, October 31, the Clement Street Merchants Association is organizing a daytime trick-or-treating crawl along the Inner Richmond corridor, with participating businesses stocked with candy for families and children. At Fifth Avenue off Clement, neighbors have constructed a pop-up fan shrine to the Golden State Warriors, cheekily christened 'Boohalla,' adding a local flourish to the route.\n\nOn Sunday, November 1, Outer Balboa Street between 35th and 36th Avenues hosts a Día de Muertos celebration from noon to 4 p.m. The event is a joint production of Outer Richmond merchants — including Chino's, Simple Pleasures cafe, Noise Records, and the Eye & Hand Society — alongside the Richmond Neighborhood Center and Supervisor Connie Chan's office. Organizers plan community altars for the dead, cultural performances, and family-friendly activities throughout the afternoon.\n\nFor those who prefer their scares on screen, the Balboa Theater is running a Halloween-day mystery movie marathon quadruple feature on October 31, with tickets priced at $13.",
+      "sourceUrl": "https://missionlocal.org/2026/10/richmond-buzz-muertos-balboa-clement/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "Halloween",
+        "Día de Muertos",
+        "Clement Street",
+        "Outer Richmond",
+        "Balboa Street",
+        "events"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Clement Street Halloween Trick-or-Treat Crawl",
+      "startDate": "2026-10-31",
+      "date": "Saturday, October 31",
+      "time": "Various times",
+      "location": "Clement Street, Inner Richmond",
+      "description": "Participating businesses along Clement Street will hand out candy to trick-or-treaters, organized by the Clement Street Merchants Association. Family-friendly and free.",
+      "sourceUrl": "https://missionlocal.org/2026/10/richmond-buzz-muertos-balboa-clement/",
+      "sourceName": "Mission Local"
+    },
+    {
+      "title": "12th Annual BalBOOa Street Fright Fest",
+      "startDate": "2026-10-31",
+      "date": "Saturday, October 31",
+      "time": "11:00 AM–4:00 PM",
+      "location": "Balboa Street between 33rd and 41st Avenues, Outer Richmond",
+      "description": "The annual Outer Richmond Halloween crawl features trick-or-treating at participating businesses, a scavenger hunt, pumpkin painting, hot chocolate, and costume activities. Free and all ages.",
+      "sourceUrl": "https://sf.funcheap.com/city-guide/bay-areas-halloween-party-guide/",
+      "sourceName": "SF Funcheap"
+    },
+    {
+      "title": "Día de Muertos on Outer Balboa Street",
+      "startDate": "2026-11-01",
+      "date": "Sunday, November 1",
+      "time": "12:00 PM–4:00 PM",
+      "location": "Outer Balboa Street between 35th and 36th Avenues, Outer Richmond",
+      "description": "A neighborhood Día de Muertos celebration organized by Outer Richmond merchants and the Richmond Neighborhood Center, featuring community altars, cultural performances, and family-friendly activities. Free.",
+      "sourceUrl": "https://missionlocal.org/2026/10/richmond-buzz-muertos-balboa-clement/",
+      "sourceName": "Mission Local"
+    },
+    {
+      "title": "Presidio B.A.R.K. Ranger End-of-Year Celebration",
+      "startDate": "2026-11-07",
+      "date": "Saturday, November 7",
+      "time": "11:00 AM–12:00 PM",
+      "location": "Fort Winfield Scott, Presidio of San Francisco",
+      "description": "The Presidio's canine ambassador program hosts its annual end-of-year celebration for B.A.R.K. Rangers and their dogs at Fort Winfield Scott. Free and open to the public.",
+      "sourceUrl": "https://www.parksconservancy.org/parks/presidio-san-francisco",
+      "sourceName": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "Richmond Library Cleanup with RefuseRefuse",
+      "startDate": "2026-11-10",
+      "date": "Tuesday, November 10",
+      "time": "3:30 PM",
+      "location": "Richmond/Senator Milton Marks Branch Library, 351 9th Avenue, Inner Richmond",
+      "description": "The Richmond Branch Library teams up with RefuseRefuse for a friendly neighborhood cleanup around the library and surrounding blocks. Free; all are welcome.",
+      "sourceUrl": "https://www.eventbrite.com/d/ca--san-francisco/free--events/library-events/",
+      "sourceName": "Eventbrite / SFPL"
+    },
+    {
+      "title": "Fort Point History Talks — Daily",
+      "date": "Ongoing",
+      "time": "11:30 AM",
+      "location": "Fort Point National Historic Site, Presidio of San Francisco",
+      "description": "National Park Service rangers lead short daily history talks at the entrance to Fort Point beneath the Golden Gate Bridge. Free; no reservation required.",
+      "sourceUrl": "https://www.parksconservancy.org/parks/presidio-san-francisco",
+      "sourceName": "Golden Gate National Parks Conservancy"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Governor's El Niño Emergency Declaration Puts Richmond and Presidio Residents on Notice",
+      "body": "District 1 Supervisor Connie Chan's October 26 column in the Richmond Review flagged Governor Gavin Newsom's September 21 state of emergency declaration aimed at boosting preparedness for a forecast strong El Niño winter storm season. For residents of the Richmond and Presidio neighborhoods — where low-lying avenues can be vulnerable to runoff — the declaration is a timely prompt to review home drainage and check city flood-preparedness resources before the rains arrive.",
+      "sourceUrl": "https://richmondsunsetnews.com/2026/10/26/city-hall-connie-chan-68/",
+      "sourceName": "Richmond Review/Sunset Beacon",
+      "tags": [
+        "weather",
+        "emergency preparedness",
+        "Richmond District",
+        "Presidio"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Clement Street's Arguello End Is Turning Into a Daytime Street",
+      "url": "https://adelaidamejiasf.com/blog/clement-streets-arguello-end-is-turning-into-a-daytime-street",
+      "publication": "Adelaide Mejia SF"
+    },
+    {
+      "title": "More Than $200K Stolen From Cabrillo Street Jeweler, Modern Relics",
+      "url": "https://richmondsunsetnews.com/2026/10/26/more-than-200k-stolen-from-cabrillo-street-jeweler-modern-relics/",
+      "publication": "Richmond Review/Sunset Beacon"
+    },
+    {
+      "title": "Richmond Buzz: Muertos on Balboa, Skeletons off Clement, and Geary's just plain scary",
+      "url": "https://missionlocal.org/2026/10/richmond-buzz-muertos-balboa-clement/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Clement Street Splits Over 11th Therapy Stores Outlet Approved By SF Planners",
+      "url": "https://hoodline.com/2026/09/clement-street-splits-over-11th-therapy-stores-outlet-approved-by-sf-planners/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "Despite resistance, S.F. approves Therapy Stores on Clement",
+      "url": "https://missionlocal.org/2026/09/merchants-clement-therapy-stores-planning/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Bay Area Halloween Party Guide 2026",
+      "url": "https://sf.funcheap.com/city-guide/bay-areas-halloween-party-guide/",
+      "publication": "SF Funcheap"
+    },
+    {
+      "title": "Presidio of San Francisco Events",
+      "url": "https://www.parksconservancy.org/parks/presidio-san-francisco",
+      "publication": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "Richmond Library Cleanup — Eventbrite/SFPL",
+      "url": "https://www.eventbrite.com/d/ca--san-francisco/free--events/library-events/",
+      "publication": "Eventbrite / SFPL"
+    },
+    {
+      "title": "City Hall: Connie Chan — October 2026",
+      "url": "https://richmondsunsetnews.com/2026/10/26/city-hall-connie-chan-68/",
+      "publication": "Richmond Review/Sunset Beacon"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Burma Superstar",
+        "cuisineGroup": "Asian",
+        "type": "Burmese restaurant",
+        "description": "The original 1992 Inner Richmond location that popularized Burmese cuisine in San Francisco, famous for its tea leaf salad and perpetual lines.",
+        "address": "309 Clement St",
+        "phone": "(415) 387-2147",
+        "website": "https://www.burmasuperstar.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Mandalay Restaurant",
+        "cuisineGroup": "Asian",
+        "type": "Burmese restaurant",
+        "description": "San Francisco's oldest running Burmese restaurant, open since 1984 and named a James Beard America's Classic in 2024.",
+        "address": "4348 California St",
+        "phone": "(415) 386-3896",
+        "website": "https://www.mandalaysf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Dalida",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Eastern Mediterranean restaurant",
+        "description": "Upscale Eastern Mediterranean dining in the Presidio's Main Post, with a porch overlooking the parade lawn stretching toward Alcatraz.",
+        "address": "101 Montgomery St, Ste 100",
+        "phone": "(415) 237-1999",
+        "website": "https://www.dalidasf.com",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Kitchen Istanbul",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Turkish restaurant and wine bar",
+        "description": "A beloved Inner Richmond Turkish restaurant celebrated by sommeliers for its impeccable natural wine list and Eastern Mediterranean cooking.",
+        "address": "349 Clement St",
+        "phone": "(415) 753-9479",
+        "website": "https://www.kitchenistanbulsf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lokma",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "California-Turkish restaurant",
+        "description": "Cozy Outer Richmond spot serving a modern California-Turkish menu of shared plates in a brick-walled dining room with excellent brunch on weekends.",
+        "address": "1801 Clement St",
+        "phone": "(415) 702-6263",
+        "website": "https://www.lokmasf.com",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Aziza",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Moroccan restaurant",
+        "description": "Acclaimed Moroccan restaurant on Geary Boulevard serving inventive contemporary Moroccan cuisine in an elegant, warmly lit setting.",
+        "address": "5800 Geary Blvd",
+        "phone": "(415) 682-4196",
+        "website": "https://www.azizasf.com",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bella Trattoria",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Southern Italian trattoria",
+        "description": "Long-running Inner Richmond Italian restaurant specializing in cucina napolitana, with housemade pastas and a loyal neighborhood following since 1996.",
+        "address": "3854 Geary Blvd",
+        "phone": "(415) 221-0305",
+        "website": "https://www.bellatrattoriasf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Fiorella",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Wood-fired pizza restaurant",
+        "description": "Neighborhood Italian wine bar and pizzeria known for blistered wood-fired pies and a lively Outer Richmond dining room.",
+        "address": "2339 Clement St",
+        "phone": "(415) 340-3049",
+        "website": "https://www.fiorella-sf.com",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Rose Pizzeria",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Cal-Ital pizzeria",
+        "description": "Berkeley's nationally acclaimed pizzeria opened its first San Francisco outpost at the east end of Clement Street in April 2026, serving Neapolitan and Roman-style pies daily.",
+        "address": "1 Clement St",
+        "phone": "",
+        "website": "https://www.rosepizzeria.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "New"
+      },
+      {
+        "name": "Pizzetta 211",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Artisan pizza restaurant",
+        "description": "Small, much-loved Outer Richmond pizzeria serving a short rotating menu of thin-crust seasonal pies in an intimate space with outdoor parklet seating.",
+        "address": "211 23rd Ave",
+        "phone": "(415) 379-9880",
+        "website": "https://www.pizzetta211.com",
+        "neighborhood": "Outer Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "B Star",
+        "cuisineGroup": "Asian",
+        "type": "Burmese fusion restaurant",
+        "description": "Burma Superstar's sister restaurant offering a more eclectic, fusion-forward Burmese menu in a slightly more relaxed setting on Clement Street.",
+        "address": "127 Clement St",
+        "phone": "(415) 933-9900",
+        "website": "https://www.bstarbar.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Mamahuhu",
+        "cuisineGroup": "Asian",
+        "type": "Chinese-American fast casual",
+        "description": "Bright and popular Clement Street spot serving approachable, flavor-forward Chinese-American dishes including mapo tofu and mala cucumbers.",
+        "address": "401 Clement St",
+        "phone": "(415) 742-5805",
+        "website": "https://www.mamahuhu.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Hokkaido Sashimi Marketplace",
+        "cuisineGroup": "Seafood & American",
+        "type": "Japanese sashimi and sushi counter",
+        "description": "Inner Richmond counter serving fresh sashimi and to-go sushi rolls, a popular stop before a picnic in Golden Gate Park.",
+        "address": "429 Clement St",
+        "phone": "(415) 379-8380",
+        "website": "https://www.hokkaidosashimimarketplace.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Hard Knox Cafe",
+        "cuisineGroup": "Seafood & American",
+        "type": "Southern comfort food diner",
+        "description": "Casual Outer Richmond diner serving Southern staples—fried chicken, cornbread muffins, and daily brunch until 3 p.m.—at honest prices.",
+        "address": "2448 Clement St",
+        "phone": "(415) 404-5765",
+        "website": "https://www.hardknoxcafe.com",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Kissaten Hi-Fi",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Japanese-style kissaten café",
+        "description": "New Inner Richmond café rooted in the Japanese kissaten tradition, serving single-cultivar matcha and Filipino-inspired coffee in a slow, intentional setting.",
+        "address": "189 Sixth Ave",
+        "phone": "",
+        "website": "https://www.kissatenhifi.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "New"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Inn at the Presidio",
+        "type": "Historic boutique inn",
+        "description": "The first hotel to open inside the Presidio national park site, housed in a beautifully restored 1903 Georgian Revival building with bay-view suites, complimentary breakfast, and evening wine receptions.",
+        "address": "42 Moraga Ave",
+        "phone": "(415) 800-7356",
+        "website": "https://www.innatthepresidio.com",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lodge at the Presidio",
+        "type": "Boutique hotel",
+        "description": "Historic barracks building converted into a contemporary 42-room hotel on the Presidio's Main Post, offering free breakfast, forest and bay views, and a shuttle downtown.",
+        "address": "105 Montgomery St",
+        "phone": "(415) 561-1234",
+        "website": "https://www.lodgeatthepresidio.com",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Geary Parkway Motel",
+        "type": "Motel",
+        "description": "Renovated 20-room motel on Geary Boulevard offering free to-go breakfast and on-site parking within walking distance of Golden Gate Park.",
+        "address": "4750 Geary Blvd",
+        "phone": "(415) 752-4406",
+        "website": "https://www.gearyparkwaymotel.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Green Apple Books",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Iconic Richmond District bookstore founded in 1967, stocking new and used titles across 8,000 square feet at the corner of Clement and Sixth Avenue.",
+        "address": "506 Clement St",
+        "phone": "(415) 387-2272",
+        "website": "https://www.greenapplebooks.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Park Life",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Design store and art gallery",
+        "description": "Inner Richmond design store and rotating gallery selling art books, locally made goods, prints, apparel, and limited-edition artist collaborations.",
+        "address": "220 Clement St",
+        "phone": "(415) 386-7275",
+        "website": "https://www.parklifestore.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Foggy Notion",
+        "shopGroup": "Home & Gifts",
+        "type": "Gift and home décor boutique",
+        "description": "Inviting Clement Street boutique selling handcrafted ceramics, stationery, and locally made gifts with a warm, artisan-focused curation.",
+        "address": "124 Clement St",
+        "phone": "(415) 933-6750",
+        "website": "https://www.foggynotionsf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Gaslight & Shadows Antiques",
+        "shopGroup": "Home & Gifts",
+        "type": "Antique shop",
+        "description": "Outer Richmond antique shop on Clement Street with a passionately curated selection of vintage objects and collectibles.",
+        "address": "2459 Clement St",
+        "phone": "(415) 387-0633",
+        "website": "https://www.gaslightandshadows.com",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Nijiya Market",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Japanese grocery market",
+        "description": "Well-stocked Japanese supermarket carrying fresh sushi-grade fish, Japanese pantry staples, and prepared foods popular with the neighborhood's Japanese community.",
+        "address": "1737 Post St",
+        "phone": "(415) 563-5901",
+        "website": "https://www.nijiya.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "New May Wah Supermarket",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Asian grocery supermarket",
+        "description": "Large Asian grocery destination on Clement Street with an extensive range of Chinese, Southeast Asian, and other imported pantry items.",
+        "address": "719 Clement St",
+        "phone": "(415) 221-9826",
+        "website": "https://www.newmaywah.com",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Jane Consignment",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Consignment clothing boutique",
+        "description": "Outer Richmond consignment shop on Clement Street carrying quality pre-owned women's clothing and accessories.",
+        "address": "2483 Clement St",
+        "phone": "(415) 750-0878",
+        "website": "https://www.janeconsignment.com",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Love Street Vintage",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Vintage clothing boutique",
+        "description": "Curated vintage clothing boutique on Clement Street carrying a wide selection of women's vintage apparel and accessories.",
+        "address": "2468 Clement St",
+        "phone": "(415) 752-1200",
+        "website": "https://www.lovestreetvintageclothing.com",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Walt Disney Family Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Biographical art and history museum",
+        "description": "Forty-thousand-square-foot museum in the Presidio dedicated to the life and legacy of Walt Disney, with ten interactive galleries, Disney film screenings, and a new exhibition opening October 23 tracing artist Eyvind Earle's career.",
+        "address": "104 Montgomery St",
+        "phone": "(415) 345-6800",
+        "website": "https://www.waltdisney.org",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Legion of Honor",
+        "venueGroup": "Museums & Cultural",
+        "type": "Fine arts museum",
+        "description": "Beaux-Arts museum in Lincoln Park founded in 1924, housing 6,000 years of European art, over 70 Rodin sculptures, and one of the largest prints-and-drawings collections in the country.",
+        "address": "100 34th Ave",
+        "phone": "(415) 750-3600",
+        "website": "https://legionofhonor.famsf.org",
+        "neighborhood": "Sea Cliff / Lincoln Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Park Life Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery and design store",
+        "description": "Inner Richmond gallery space behind the Park Life store mounting rotating exhibitions of local and national artists, with about ten shows per year.",
+        "address": "220 Clement St",
+        "phone": "(415) 386-7275",
+        "website": "https://www.parklifestore.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Avenue 12 Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery",
+        "description": "Small Inner Richmond gallery active in the Bay Area arts community, exhibiting local artists and Bay Area subject matter.",
+        "address": "1175 12th Ave",
+        "phone": "(415) 564-1200",
+        "website": "https://www.avenue12gallery.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Andy Goldsworthy Sculpture Trail",
+        "venueGroup": "Art Galleries",
+        "type": "Outdoor site-specific sculpture collection",
+        "description": "Four permanent works by British sculptor Andy Goldsworthy installed across the Presidio—Wood Line, Spire, Earth Wall, and Tree Fall—all freely accessible on foot.",
+        "address": "Presidio of San Francisco",
+        "phone": "(415) 561-4323",
+        "website": "https://presidio.gov",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Presidio Officers' Club",
+        "venueGroup": "Museums & Cultural",
+        "type": "History museum and cultural center",
+        "description": "One of the oldest buildings in San Francisco, the adobe-walled Officers' Club on the Presidio's Main Post houses free museum galleries exploring the site's 250-year history.",
+        "address": "50 Moraga Ave",
+        "phone": "(415) 561-4400",
+        "website": "https://presidio.gov/explore/attractions/presidio-officers-club",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Richmond District YMCA",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service community gym",
+        "description": "Full-service YMCA branch in the Inner Richmond offering cardio equipment, weight rooms, yoga classes, and youth programs for the neighborhood.",
+        "address": "360 18th Ave",
+        "phone": "(415) 666-9622",
+        "website": "https://www.ymcasf.org/location/richmond-district-ymca",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Presidio Community YMCA",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Community gym and aquatics center",
+        "description": "YMCA branch inside the Presidio offering fitness classes, youth programs, and access to the Letterman Aquatics Center pool.",
+        "address": "63 Funston Ave",
+        "phone": "(415) 447-9622",
+        "website": "https://www.ymcasf.org/location/presidio-community-ymca",
+        "neighborhood": "Presidio",
+        "notable": ""
+      },
+      {
+        "name": "Folk Yoga Richmond",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Community yoga studio",
+        "description": "Intimate yoga studio at 182 Sixth Avenue offering vinyasa flow, power flow, prenatal yoga, and $15 community classes as part of San Francisco's largest locally owned yoga network.",
+        "address": "182 6th Ave",
+        "phone": "(415) 742-5880",
+        "website": "https://www.folksf.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Hot Yoga Plus",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Hot yoga and pilates studio",
+        "description": "Outer Richmond studio on Geary Boulevard specializing in Bikram 26&2 yoga and Inferno Hot Pilates in a heated environment.",
+        "address": "5644 Geary Blvd",
+        "phone": "(415) 831-8889",
+        "website": "https://www.hotyogaplus.com",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "The Yoga Shala SF – Balboa Street",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Heated vinyasa yoga studio",
+        "description": "Richmond-area heated vinyasa yoga studio on Balboa Street, created for practitioners to thrive through consistent, community-oriented practice.",
+        "address": "2010 Balboa St",
+        "phone": "(415) 800-8464",
+        "website": "https://www.theyogashalasf.com",
+        "neighborhood": "Outer Richmond",
+        "notable": ""
+      },
+      {
+        "name": "F45 Training",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "High-intensity functional training gym",
+        "description": "Franchise functional fitness studio on Geary Boulevard offering fast-paced group circuit workouts with attentive form coaching.",
+        "address": "2675 Geary Blvd",
+        "phone": "(415) 813-5545",
+        "website": "https://f45training.com/sanfranciscorichmond",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Live Fit Gym – Inner Richmond",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Independent gym with group fitness",
+        "description": "Community gym at Arguello Boulevard offering strength training, power flow yoga, and fitness classes led by instructors including a licensed doctor of physical therapy.",
+        "address": "403 Arguello Blvd",
+        "phone": "(415) 702-7003",
+        "website": "https://www.livefitgym.com",
+        "neighborhood": "Inner Richmond",
+        "notable": ""
+      },
+      {
+        "name": "Presidio Golf Course",
+        "venueGroup": "Sports & Courts",
+        "type": "Public golf course",
+        "description": "Consistently ranked among the nation's top public courses, this 18-hole championship layout winds through eucalyptus and Monterey pine in the Presidio national park.",
+        "address": "300 Finley Rd",
+        "phone": "(415) 561-4661",
+        "website": "https://www.presidiogolf.com",
+        "neighborhood": "Presidio",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Golden Gate Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban park",
+        "description": "More than 1,000 acres of meadows, trails, sports courts, and cultural institutions bordering the Richmond neighborhoods, used daily for running, cycling, tennis, and lawn sports.",
+        "address": "501 Stanyan St",
+        "phone": "(415) 831-2700",
+        "website": "https://www.sfrecpark.org/parks-open-spaces/golden-gate-park",
+        "neighborhood": "Inner Richmond",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-10-30",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-10-30",
+        "high": 62,
+        "low": 53,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-31",
+        "high": 60,
+        "low": 52,
+        "summary": "Chance Rain Showers then Slight Chance Light Rain",
+        "condition": "rain",
+        "precip": 20
+      },
+      {
+        "date": "2026-11-01",
+        "high": 60,
+        "low": 52,
+        "summary": "Chance Rain Showers then Mostly Sunny",
+        "condition": "rain",
+        "precip": 8
+      },
+      {
+        "date": "2026-11-02",
+        "high": 62,
+        "low": 54,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-03",
+        "high": 61,
+        "low": 54,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 25
+      },
+      {
+        "date": "2026-11-04",
+        "high": 60,
+        "low": 54,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 35
+      },
+      {
+        "date": "2026-11-05",
+        "high": 60,
+        "low": 54,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 32
+      }
+    ]
+  }
+}

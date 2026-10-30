@@ -1,0 +1,824 @@
+{
+  "clusterSlug": "hayes-valley-alamo-square",
+  "clusterName": "Hayes Valley & Alamo Square",
+  "weekOf": "2026-10-30",
+  "topStories": [
+    {
+      "headline": "Che Fico Is Back on Divisadero, and Diners Are Returning",
+      "dek": "The beloved NoPa Italian restaurant reopened October 18 after a four-month closure caused by a June chimney fire, and early guests say the room feels like itself again.",
+      "body": "Che Fico, the California-Italian restaurant at 838 Divisadero Street, reopened on October 18 — roughly four months after a chimney fire on June 11 gutted part of the building and forced an abrupt closure. Co-owners David Nayfeld and Matt Brewer announced the date in early October, with Nayfeld urging regulars to book tables and private events to help the restaurant regain its footing, and saying the outpouring of community support during the long closure had been extraordinary.\n\nThe restaurant opened in 2018 and became one of the most prominent dining destinations on the Divisadero corridor, known for handmade pasta, wood-fired pizza, house-made salumi, and a California interpretation of rustic Italian cooking. No injuries were reported in the June fire, but the rear of the building sustained significant damage that required extensive repairs before the doors could reopen.\n\nOpenTable reviewers who dined in the days after the October 18 opening were vocal about being glad to have the flagship back. Nayfeld and Brewer also operate a second Che Fico in Menlo Park and a Che Fico Pizzeria at Chase Center, but the Divisadero original has always been the neighborhood anchor.\n\nFor the NoPa stretch of Divisadero — which has also seen construction activity pick up at the former car wash site south of Oak Street — the return of one of its best-known restaurants is a tangible sign of the corridor's resilience.",
+      "sourceUrl": "https://hoodline.com/2026/10/nopa-s-che-fico-sets-october-18-reopening-after-devastating-divisadero-fire/",
+      "sourceName": "Hoodline",
+      "tags": [
+        "restaurants",
+        "NoPa",
+        "Divisadero",
+        "food"
+      ]
+    },
+    {
+      "headline": "Halloween Takes Over Hayes Street Tonight",
+      "dek": "A free trick-or-treat trail winds through Hayes Valley shops and the Promenade starting at 4 p.m., capping with an outdoor movie — all produced by the Merchants Council and Neighborhood Association.",
+      "body": "Hayes Valley is going full Halloween on Friday, October 30, with a free trick-or-treat trail running from 4 to 10 p.m. Families can follow ghost window clings posted at participating shops throughout the neighborhood, along the Hayes Promenade, and at PROXY at 432 Octavia Street, with merchants handing out treats along the way. A free outdoor movie screening rounds out the evening.\n\nThe event is produced jointly by the Hayes Valley Merchants Council and the Hayes Valley Neighborhood Association. A map of participating merchants is available at explorehayesvalley.org.\n\nThe Hayes Promenade stretch of Hayes Street between Gough and Octavia will be closed to traffic during the event, consistent with the Friday closures already in effect under the ongoing Shared Spaces program. Muni is rerouting the outbound 6 Hayes/Parnassus line north onto Grove Street during those hours. The street closure and Entertainment Zone designation also mean to-go alcoholic beverages are permitted outdoors along the Promenade — a perk that runs every Friday and Saturday through November 28.",
+      "sourceUrl": "https://www.explorehayesvalley.org/",
+      "sourceName": "Explore Hayes Valley / Hayes Valley Merchants Council",
+      "tags": [
+        "events",
+        "Hayes Valley",
+        "Halloween",
+        "family"
+      ]
+    },
+    {
+      "headline": "107 Affordable Apartments Targeted for Divisadero and Grove as Construction Window Arrives",
+      "dek": "A fully affordable, ten-story building one block from Alamo Square has cleared its major planning and funding hurdles and is aiming to break ground before year's end.",
+      "body": "A 107-unit, 100-percent-affordable apartment building is moving toward a groundbreaking at 650 Divisadero Street, on the corner of Divisadero and Grove — one block from Alamo Square. The project, developed by Jonathan Rose Companies and Young Community Developers in partnership with the Mayor's Office of Housing and Community Development, would replace a single-story commercial building with a ten-story, 98-foot structure designed by Mithun in collaboration with Saida + Sullivan Design Partners.\n\nThe unit mix is weighted heavily toward families: 27 studios, 26 one-bedrooms, 27 two-bedrooms, and 27 three-bedrooms. Twenty-seven of those units are reserved for families experiencing homelessness, with the remainder available to households earning up to 60 percent of the area median income. Ground-floor community amenities, 72 bicycle parking spaces, and a landscaped courtyard are included in the design.\n\nThe project secured planning approval in 2025 using state streamlining tools under Senate Bill 330 and Assembly Bill 2011. The city's Affordable Housing Loan Committee approved a $6.25 million preliminary gap loan in April 2025, adding to more than $15 million in MOHCD funds already committed. Total construction cost is estimated at approximately $101 million. Building permits were filed in August 2026 and listed as under review as of late May. Multiple city and developer documents list fall 2026 as the construction-start target, with occupancy projected for 2028.\n\nThe site is one of five properties acquired citywide by MOHCD in late 2023 to enable affordable construction. For the Divisadero corridor — which is also seeing Greystar's 203-unit market-rate project rise on the former car wash site to the south — the 650 Divisadero building would be the largest all-affordable development the stretch has seen.",
+      "sourceUrl": "https://sfyimby.com/2026/05/new-rendering-for-650-divisadero-street-san-francisco.html",
+      "sourceName": "SF YIMBY",
+      "tags": [
+        "housing",
+        "affordable housing",
+        "Divisadero",
+        "Alamo Square",
+        "development"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Halloween on Hayes: Trick-or-Treat Trail & Outdoor Movie",
+      "startDate": "2026-10-30",
+      "date": "Friday, October 30",
+      "time": "4:00 PM",
+      "location": "Hayes Valley — Hayes Promenade & PROXY, 432 Octavia St",
+      "description": "Free, family-friendly Halloween trail through Hayes Valley shops and the Promenade, with ghost window-cling markers guiding families to candy-handing merchants and a free outdoor movie to close the night. Produced by the Hayes Valley Merchants Council and HVNA.",
+      "sourceUrl": "https://www.explorehayesvalley.org/",
+      "sourceName": "Explore Hayes Valley"
+    },
+    {
+      "title": "Hayes Valley Community Cleanup",
+      "startDate": "2026-11-01",
+      "date": "Every Saturday through December 26",
+      "time": "10:00 AM",
+      "location": "Gambit Lounge, 581 Hayes Street (starting point)",
+      "description": "Weekly neighborhood cleanup organized by the Hayes Valley Neighborhood Association, the Civic Joy Fund, SF Public Works, Refuse Refuse, Shine On, and TogetherSF. Open to all volunteers.",
+      "sourceUrl": "https://hayespromenade.org/events",
+      "sourceName": "Hayes Promenade / Hayes Valley Neighborhood Association"
+    },
+    {
+      "title": "Hayes Valley Farmers' Market",
+      "startDate": "2026-11-01",
+      "date": "Every Saturday through December 26",
+      "time": "10:00 AM",
+      "location": "450–485 Hayes Street, Hayes Valley",
+      "description": "The weekly Saturday market, operated by the Pacific Coast Farmers' Market Association in partnership with the Hayes Valley Merchants Council and HVNA, launched June 6, 2026 and runs every Saturday through year's end.",
+      "sourceUrl": "https://www.explorehayesvalley.org/",
+      "sourceName": "Explore Hayes Valley"
+    },
+    {
+      "title": "Head West Marketplace",
+      "startDate": "2026-11-08",
+      "date": "Sunday, November 8",
+      "time": "11:00 AM",
+      "location": "485 Hayes Street at Patricia's Green, Hayes Valley",
+      "description": "A curated outdoor marketplace on the Hayes Promenade featuring independent vendors and makers. Free to browse.",
+      "sourceUrl": "https://hayespromenade.org/events",
+      "sourceName": "Hayes Promenade"
+    },
+    {
+      "title": "TEDxHayesValley Salon",
+      "startDate": "2026-11-14",
+      "date": "Saturday, November 14",
+      "time": "2:00 PM",
+      "location": "Unity San Francisco, 240 Page Street, Hayes Valley",
+      "description": "The inaugural TEDxHayesValley Salon gathers neighbors around curated TED Talks, open conversation, and a preview of the full TEDxHayesValley event planned for February 2027. Free to attend.",
+      "sourceUrl": "https://www.tedxhayesvalley.com/events",
+      "sourceName": "TEDxHayesValley"
+    },
+    {
+      "title": "Hayes Valley Entertainment Zone",
+      "startDate": "2026-10-30",
+      "date": "Through November 28",
+      "time": "Fridays 4:00–10:00 PM, Saturdays 12:00–10:00 PM",
+      "location": "Hayes Promenade, Hayes Street between Gough and Octavia",
+      "description": "San Francisco's designated Entertainment Zone on Hayes Street permits to-go alcoholic beverages outdoors on Fridays and Saturdays through November 28, with live music and open-air programming from participating bars and restaurants along the Promenade.",
+      "sourceUrl": "https://hayespromenade.org/events/hayes-valley-entertainment-zone",
+      "sourceName": "Hayes Promenade"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "ASNA Reaffirms Long-Term Commitment to Planting Trees in Alamo Square Park",
+      "body": "The Alamo Square Neighborhood Association published a note on September 30 reaffirming its long-standing practice of purchasing trees for Alamo Square Park, describing the effort as a sustained commitment to the park's urban forest that supplements city resources. The association has supported tree planting in the park for years as part of its community stewardship role. More information is available at alamosquare.org.",
+      "sourceUrl": "https://alamosquare.org/",
+      "sourceName": "Alamo Square Neighborhood Association",
+      "tags": [
+        "parks",
+        "Alamo Square",
+        "environment"
+      ]
+    },
+    {
+      "headline": "Bethel AME Food Bank Runs Every Friday on Golden Gate Avenue Through December",
+      "body": "Bethel AME Church at Golden Gate Avenue and Laguna Street is distributing food every Friday from 8:30 a.m. to 1 p.m. through December 25, according to the Hayes Valley Neighborhood Association calendar. Volunteers are welcome; sign-up details are posted at hayesvalleysf.org.",
+      "sourceUrl": "https://hayesvalleysf.org/calendar/",
+      "sourceName": "Hayes Valley Neighborhood Association",
+      "tags": [
+        "community",
+        "food security",
+        "Hayes Valley"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "NoPa's Che Fico Sets October 18 Reopening After Devastating Divisadero Fire",
+      "url": "https://hoodline.com/2026/10/nopa-s-che-fico-sets-october-18-reopening-after-devastating-divisadero-fire/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "San Francisco's Che Fico restaurant sets reopening date after devastating fire",
+      "url": "https://www.sfchronicle.com/food/restaurants/article/che-fico-reopening-divisadero-22460703.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "This Week In Food: Bentornato, Che Fico",
+      "url": "https://sfist.com/2026/10/09/this-week-in-food-bentornato-che-fico/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Explore Hayes Valley — Halloween on Hayes",
+      "url": "https://www.explorehayesvalley.org/",
+      "publication": "Explore Hayes Valley / Hayes Valley Merchants Council"
+    },
+    {
+      "title": "Hayes Valley Farmers Market & Shared Spaces: October 2026",
+      "url": "https://www.sfmta.com/travel-updates/hayes-valley-farmers-market-shared-spaces-fridays-saturdays-october-2026",
+      "publication": "SFMTA"
+    },
+    {
+      "title": "Hayes Valley Neighborhood Association Calendar",
+      "url": "https://hayesvalleysf.org/calendar/",
+      "publication": "Hayes Valley Neighborhood Association"
+    },
+    {
+      "title": "Hayes Promenade Events",
+      "url": "https://hayespromenade.org/events",
+      "publication": "Hayes Promenade"
+    },
+    {
+      "title": "Hayes Valley Entertainment Zone",
+      "url": "https://hayespromenade.org/events/hayes-valley-entertainment-zone",
+      "publication": "Hayes Promenade"
+    },
+    {
+      "title": "New Rendering For 650 Divisadero Street, San Francisco",
+      "url": "https://sfyimby.com/2026/05/new-rendering-for-650-divisadero-street-san-francisco.html",
+      "publication": "SF YIMBY"
+    },
+    {
+      "title": "Affordable Housing Approved For 650 Divisadero Street, San Francisco",
+      "url": "https://sfyimby.com/2025/08/affordable-housing-approved-for-650-divisadero-street-san-francisco.html",
+      "publication": "SF YIMBY"
+    },
+    {
+      "title": "650 Divisadero Street Family Preliminary Gap Loan Evaluation",
+      "url": "https://media.api.sf.gov/documents/Approved-650_Divisadero_St_Preliminary_Gap_Request_Loan_Evaluation_-_LC_4-4-2025.pdf",
+      "publication": "City of San Francisco / MOHCD"
+    },
+    {
+      "title": "TEDxHayesValley Salon — November 14, 2026",
+      "url": "https://www.tedxhayesvalley.com/events",
+      "publication": "TEDxHayesValley"
+    },
+    {
+      "title": "Alamo Square Neighborhood Association",
+      "url": "https://alamosquare.org/",
+      "publication": "Alamo Square Neighborhood Association"
+    },
+    {
+      "title": "Hayes Valley's Glowing Halloween Trick-or-Treat Trail + Free Outdoor Movie 2026",
+      "url": "https://sf.funcheap.com/hayes-valleys-glowing-halloween-trickortreat-trail-free-outdoor-movie-2026/",
+      "publication": "SF Funcheap"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Rich Table",
+        "cuisineGroup": "Seafood & American",
+        "type": "New American restaurant",
+        "description": "Husband-and-wife chefs Evan and Sarah Rich serve hyper-seasonal, inventive California cuisine in a lively Hayes Valley dining room — one of SF's toughest reservations since 2012.",
+        "address": "199 Gough St, San Francisco, CA 94102",
+        "phone": "415-355-9085",
+        "website": "https://www.richtablesf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "RT Bistro",
+        "cuisineGroup": "Seafood & American",
+        "type": "Casual American bistro",
+        "description": "The more casual, 37-seat sister spot to Rich Table — opened early 2026 next door — featuring the RT Bistro burger, one-layer lasagna, and a crowd-pleasing bistro menu.",
+        "address": "101 Oak St, San Francisco, CA 94102",
+        "phone": "415-355-9085",
+        "website": "https://www.richtablesf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "New"
+      },
+      {
+        "name": "RT Rotisserie",
+        "cuisineGroup": "Seafood & American",
+        "type": "Casual rotisserie restaurant",
+        "description": "The Rich Table team's fast-casual offshoot focused on rotisserie chicken and home-style seasonal dishes, open daily in Hayes Valley.",
+        "address": "101 Oak St, San Francisco, CA 94102",
+        "phone": "415-355-9085",
+        "website": "https://www.richtablesf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "New"
+      },
+      {
+        "name": "Nightbird",
+        "cuisineGroup": "Seafood & American",
+        "type": "Fine-dining tasting menu restaurant",
+        "description": "Chef Kim Alter's intimate, Michelin-recognized Hayes Valley restaurant offers a seasonal tasting menu behind a carved-owl wooden door on Gough Street.",
+        "address": "330 Gough St, San Francisco, CA 94102",
+        "phone": "415-829-7565",
+        "website": "https://www.nightbirdrestaurant.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Absinthe Brasserie & Bar",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "French brasserie and cocktail bar",
+        "description": "A Hayes Valley institution since 1998, serving upscale French brasserie fare and craft cocktails in a Belle Époque-inspired room steps from SF's performing arts venues.",
+        "address": "398 Hayes St, San Francisco, CA 94102",
+        "phone": "415-551-1590",
+        "website": "https://www.absinthe.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Zuni Café",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "California-French landmark restaurant",
+        "description": "A San Francisco institution since 1979, Zuni occupies a triangular Market Street building and is legendary for its wood-fired roast chicken and brick-oven cooking.",
+        "address": "1658 Market St, San Francisco, CA 94102",
+        "phone": "415-552-2522",
+        "website": "https://www.zunicafe.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Suppenküche",
+        "cuisineGroup": "Other",
+        "type": "German beer hall restaurant",
+        "description": "Hayes Valley's beloved Bavarian Wirthaus since 1993, offering hearty German classics like schnitzel, pretzels, and an exceptional specialty beer list.",
+        "address": "525 Laguna St, San Francisco, CA 94102",
+        "phone": "415-252-9289",
+        "website": "https://www.suppenkuche.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Dumpling Home",
+        "cuisineGroup": "Asian",
+        "type": "Chinese dumpling restaurant",
+        "description": "Michelin Bib Gourmand-recognized Hayes Valley spot serving hand-folded xiao long bao (soup dumplings), pan-fried buns, and other Chinese classics.",
+        "address": "298 Gough St, San Francisco, CA 94102",
+        "phone": "415-503-1666",
+        "website": "https://www.dumplinghomesf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Hazie's",
+        "cuisineGroup": "Seafood & American",
+        "type": "Contemporary American restaurant and bar",
+        "description": "A stylish Hayes Valley restaurant praised for its cocktails, happy hour, and modern American dinner menu in a comfortable neighborhood setting.",
+        "address": "299 Ivy St, San Francisco, CA 94102",
+        "phone": "415-814-2920",
+        "website": "https://www.haziessf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Souvla",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Greek fast-casual restaurant",
+        "description": "The original Hayes Valley location of this beloved Greek fast-casual chain, known for rotisserie meats, big salads, and a sunny backyard patio.",
+        "address": "517 Hayes St, San Francisco, CA 94102",
+        "phone": "415-400-5458",
+        "website": "https://www.souvla.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chez Maman West",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "French bistro",
+        "description": "A cozy Hayes Valley French bistro serving classics like steak frites, mussels, and crêpes in a lively street-side setting.",
+        "address": "401 Gough St, San Francisco, CA 94102",
+        "phone": "415-771-7771",
+        "website": "https://www.chezmamansf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Smuggler's Cove",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Tiki bar",
+        "description": "A three-story Hayes Valley tiki bar with more than 1,300 varieties of rum — the largest selection of any bar in the US — and a 80-cocktail menu of tiki classics and originals.",
+        "address": "650 Gough St, San Francisco, CA 94102",
+        "phone": "415-869-1900",
+        "website": "https://www.smugglerscovesf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Nopa",
+        "cuisineGroup": "Seafood & American",
+        "type": "New American wood-fired restaurant",
+        "description": "The neighborhood namesake at 560 Divisadero has served organic wood-fired California cuisine with a daily-changing menu since 2006, remaining one of SF's most beloved dining rooms.",
+        "address": "560 Divisadero St, San Francisco, CA 94117",
+        "phone": "415-864-8643",
+        "website": "https://www.nopasf.com",
+        "neighborhood": "NoPa",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bar Crudo",
+        "cuisineGroup": "Seafood & American",
+        "type": "Oyster and seafood raw bar",
+        "description": "A vibrant NoPa raw bar specializing in creative crudo, fresh oysters, and sustainably sourced seafood, with a popular happy hour running Monday through Saturday.",
+        "address": "655 Divisadero St, San Francisco, CA 94117",
+        "phone": "415-409-0679",
+        "website": "https://www.barcrudo.com",
+        "neighborhood": "NoPa",
+        "notable": ""
+      },
+      {
+        "name": "Horsefeather",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Cocktail bar and New American restaurant",
+        "description": "A reliably good NoPa cocktail bar and restaurant with inventive drinks, fried chicken, duck fat fries, and a warm Arts-and-Crafts-inspired interior open late nightly.",
+        "address": "528 Divisadero St, San Francisco, CA 94117",
+        "phone": "415-817-1939",
+        "website": "https://www.horsefeather.com",
+        "neighborhood": "NoPa",
+        "notable": ""
+      },
+      {
+        "name": "Brenda's Meat & Three",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Southern comfort food diner",
+        "description": "New Orleans–born chef Brenda Buenviaje's NoPa diner lets diners choose one meat and three sides from a rotating array of down-home Southern classics, with a legendary breakfast menu.",
+        "address": "919 Divisadero St, San Francisco, CA 94115",
+        "phone": "415-926-8657",
+        "website": "https://www.brendasmeatandthree.com",
+        "neighborhood": "NoPa",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Nopalito",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "From-scratch Mexican restaurant",
+        "description": "Chef Gonzalo Guzmán's original Broderick Street location — open since 2009 — serving blue-corn tacos, carnitas, and seasonal Mexican dishes rooted in Veracruz family cooking.",
+        "address": "306 Broderick St, San Francisco, CA 94117",
+        "phone": "415-437-0303",
+        "website": "https://www.nopalitosf.com",
+        "neighborhood": "NoPa",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Altamirano Restaurant & Bar",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Peruvian restaurant and bar",
+        "description": "A spacious NoPa Peruvian restaurant with an exhibition kitchen, a lively bar, and an outdoor courtyard with a fire pit for dining al fresco.",
+        "address": "1031 Divisadero St, San Francisco, CA 94115",
+        "phone": "415-449-0100",
+        "website": "https://www.altamiranosf.com",
+        "neighborhood": "NoPa",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hayes Valley Inn",
+        "type": "Budget inn",
+        "description": "A well-located, affordable 2-star inn on Gough Street in the heart of Hayes Valley, offering easy access to the neighborhood's restaurants, shops, and performing arts venues.",
+        "address": "417 Gough St, San Francisco, CA 94102",
+        "phone": "415-431-9131",
+        "website": "https://www.hayesvalleyinn.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "The Grove Inn",
+        "type": "Victorian inn",
+        "description": "A family-owned Italianate-Victorian style inn in the heart of the Alamo Square Historic District, operating for over four decades and continuing a legacy dating to 1865.",
+        "address": "890 Grove St, San Francisco, CA 94117",
+        "phone": "415-929-0780",
+        "website": "https://www.groveinnsf.com",
+        "neighborhood": "Alamo Square",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Symphony Inn",
+        "type": "Budget motel",
+        "description": "A well-maintained budget motel in Hayes Valley, conveniently located near City Hall and the performing arts district with easy access to neighborhood restaurants.",
+        "address": "233 Franklin St, San Francisco, CA 94102",
+        "phone": "415-626-0275",
+        "website": "https://www.symphonyinn.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Inn at the Opera",
+        "type": "Boutique hotel",
+        "description": "An intimate boutique hotel ideally located in the Performing Arts District near Hayes Valley, catering to opera, symphony, and ballet patrons.",
+        "address": "333 Fulton St, San Francisco, CA 94102",
+        "phone": "415-863-8400",
+        "website": "https://www.innattheopera.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Casa Loma Hotel",
+        "type": "Budget hotel",
+        "description": "A European-style budget hotel near Hayes Valley offering affordable accommodation with easy access to public transit and the neighborhood's dining scene.",
+        "address": "610 Fillmore St, San Francisco, CA 94117",
+        "phone": "415-552-7100",
+        "website": "https://www.casalomahotel.com",
+        "neighborhood": "Alamo Square",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "MAC (Modern Appealing Clothing)",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Independent fashion boutique",
+        "description": "A long-running Hayes Valley fixture carrying local and independent labels — including Dries Van Noten and Junya Watanabe — curated by owners with encyclopedic knowledge of upscale, quirky fashion.",
+        "address": "387 Grove St, San Francisco, CA 94102",
+        "phone": "415-863-3011",
+        "website": "https://www.macsf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Métier",
+        "shopGroup": "Home & Gifts",
+        "type": "Fine jewelry boutique",
+        "description": "An intimate Hayes Valley jewelry salon specializing in one-of-a-kind estate and contemporary pieces by artists including Gabriella Kiss, Harwell Godfrey, and Gillian Conroy.",
+        "address": "575 Hayes St, San Francisco, CA 94102",
+        "phone": "415-590-2998",
+        "website": "https://www.metiersf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "AETHER Apparel",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Technical outerwear shop",
+        "description": "A striking Hayes Valley store built from three stacked shipping containers, carrying the brand's full line of technical outerwear and travel-ready layers.",
+        "address": "489 Hayes St, San Francisco, CA 94102",
+        "phone": "415-829-2219",
+        "website": "https://www.aetherapparel.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Cotton Sheep",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Japanese apparel and goods boutique",
+        "description": "A family-run Hayes Valley boutique specializing in rare Japanese denim labels like Kapital, jewelry from Masato, crafted bags from Porter, and curated home goods.",
+        "address": "572 Hayes St, San Francisco, CA 94102",
+        "phone": "415-551-9980",
+        "website": "https://www.cottonsheepsf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Marine Layer",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Casual clothing boutique",
+        "description": "Hayes Valley outpost of the popular SF-founded brand, offering signature soft knits, sweatshirts, and tees made from cotton-modal blends.",
+        "address": "498 Hayes St, San Francisco, CA 94102",
+        "phone": "415-549-6020",
+        "website": "https://www.marinelayer.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Peak Design",
+        "shopGroup": "Home & Gifts",
+        "type": "Camera and travel gear flagship store",
+        "description": "The flagship Hayes Valley store for the SF-based Peak Design, selling bags, camera straps, tripods, and everyday carry gear in a beautifully designed retail space.",
+        "address": "521 Hayes St, San Francisco, CA 94102",
+        "phone": "415-738-3737",
+        "website": "https://www.peakdesign.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "The Epicurean Trader",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Specialty food and wine shop",
+        "description": "A curated Hayes Valley shop stocking artisan provisions, craft beer, wine, and spirits alongside an in-house coffee bar.",
+        "address": "401 Cortland Ave, San Francisco, CA 94110",
+        "phone": "415-648-3224",
+        "website": "https://www.theepicureantrader.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Fiddlesticks",
+        "shopGroup": "Home & Gifts",
+        "type": "Children's boutique",
+        "description": "A cheerful Hayes Street children's boutique stocked with colorful clothing, toys, and books, blending playful design with durable quality.",
+        "address": "540 Hayes St, San Francisco, CA 94102",
+        "phone": "415-252-9929",
+        "website": "https://www.fiddlesticksf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Bulo Shoes",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Independent shoe boutique",
+        "description": "A well-regarded Hayes Street shoe boutique carrying a carefully edited selection of European and independent footwear brands.",
+        "address": "418 Hayes St, San Francisco, CA 94102",
+        "phone": "415-255-4939",
+        "website": "https://www.buloshoes.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "minimal",
+        "shopGroup": "Home & Gifts",
+        "type": "Scandinavian home goods shop",
+        "description": "A carefully curated Hayes Valley shop offering Scandinavian-inspired rugs, furniture, lighting, ceramics, and textiles including a large selection of sustainable Swedish rugs.",
+        "address": "450 Hayes St C-1, San Francisco, CA 94102",
+        "phone": "415-487-9950",
+        "website": "https://www.minimalsf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Azil Boutique",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Independent jewelry and accessories boutique",
+        "description": "A charming Hayes Valley boutique known for its distinctive jewelry selection and dainty accessories at accessible price points.",
+        "address": "411 Hayes St, San Francisco, CA 94102",
+        "phone": "415-551-9998",
+        "website": "https://www.azilboutique.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Todd Snyder",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Men's apparel boutique",
+        "description": "The Hayes Valley outpost of the upscale American menswear brand, offering curated clothing, footwear, in-house tailoring, and private appointments.",
+        "address": "590 Hayes St, San Francisco, CA 94102",
+        "phone": "415-800-1313",
+        "website": "https://www.toddsnyder.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "SFJAZZ Center",
+        "venueGroup": "Music Venues",
+        "type": "Jazz and world music concert hall",
+        "description": "The first stand-alone structure in the US built specifically for jazz, SFJAZZ presents more than 100 concerts a year in the Robert N. Miner Auditorium and the 100-seat Joe Henderson Lab at the corner of Franklin and Fell streets.",
+        "address": "201 Franklin St, San Francisco, CA 94102",
+        "phone": "866-920-5299",
+        "website": "https://www.sfjazz.org",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Orpheum Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Broadway touring theater",
+        "description": "A 2,197-seat San Francisco landmark theater dating to 1926, operated by ATG Entertainment (BroadwaySF), hosting major Broadway touring productions on Market Street.",
+        "address": "1192 Market St, San Francisco, CA 94102",
+        "phone": "888-746-1799",
+        "website": "https://us.atgtickets.com/venues/orpheum-theatre",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Haight Street Art Center",
+        "venueGroup": "Art Galleries",
+        "type": "Nonprofit poster art gallery and printmaking studio",
+        "description": "Opened in 2017, this nonprofit gallery and printmaking studio at 215 Haight Street celebrates the history and cultural impact of poster art, with free rotating exhibitions open Thursday–Sunday.",
+        "address": "215 Haight St, San Francisco, CA 94102",
+        "phone": "415-900-4106",
+        "website": "https://haightstreetart.org",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Hayes Valley Art Works",
+        "venueGroup": "Art Galleries",
+        "type": "Community art space and gallery",
+        "description": "A converted shipping-container gallery at Oak and Octavia operated by the Hayes Valley Neighborhood Association, hosting exhibitions, monthly Jazz Jams, weekend workshops, and a community garden.",
+        "address": "295 Oak St, San Francisco, CA 94102",
+        "phone": "",
+        "website": "https://hayesvalleyartworks.org",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Alamo Square Park",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic hilltop park",
+        "description": "The iconic hilltop park famous for the \"Painted Ladies\" Victorian row houses along Steiner Street, offering panoramic views of the San Francisco skyline and a beloved gathering space for locals.",
+        "address": "Hayes St & Steiner St, San Francisco, CA 94117",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Alamo Square",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Madrone Art Bar",
+        "venueGroup": "Music Venues",
+        "type": "Art bar and live music venue",
+        "description": "A distinctive Divisadero bar where local artists display work on the walls, friendly neighborhood clientele mingles amid eclectic décor, and live music fills the room on select nights.",
+        "address": "500 Divisadero St, San Francisco, CA 94117",
+        "phone": "415-241-0202",
+        "website": "https://www.madroneartbar.com",
+        "neighborhood": "NoPa",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Patricia's Green",
+        "venueGroup": "Museums & Cultural",
+        "type": "Public art park",
+        "description": "The social heart of Hayes Valley: a pocket park on Octavia Boulevard featuring rotating Burning Man–inspired sculpture installations and picnic space created after the Central Freeway was removed.",
+        "address": "Octavia Blvd & Hayes St, San Francisco, CA 94102",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Hayes Valley",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Folk Yoga NoPa",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Community yoga studio",
+        "description": "One of San Francisco's oldest locally-owned yoga studios — operating since 1998 — in a charming Victorian on Divisadero Street, offering hot, power, prenatal, restorative, and yin yoga classes.",
+        "address": "286 Divisadero St, San Francisco, CA 94117",
+        "phone": "415-552-9644",
+        "website": "https://www.folksf.com",
+        "neighborhood": "NoPa",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Live Fit Gym – Hayes Valley",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Boutique personal training gym",
+        "description": "A family-owned, highly rated Hayes Valley gym on Octavia Street offering personalized training, chiropractic, massage, and small-group fitness classes.",
+        "address": "323 Octavia St, San Francisco, CA 94102",
+        "phone": "415-829-4765",
+        "website": "https://www.livefitgym.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "Perform For Life SF",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Fitness and personal training studio",
+        "description": "A top-rated Hayes Valley studio offering group fitness classes, personal training, and performance coaching in a supportive, community-focused environment.",
+        "address": "555 Fulton St, San Francisco, CA 94102",
+        "phone": "415-484-4094",
+        "website": "https://www.performforlifesf.com",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "CorePower Yoga – NoPa",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Hot yoga and sculpt studio",
+        "description": "A modern heated studio on Divisadero Street offering hot yoga, yoga sculpt, power vinyasa, functional strength training, and restorative recovery classes for all levels.",
+        "address": "619 Divisadero St, San Francisco, CA 94117",
+        "phone": "415-913-4949",
+        "website": "https://www.corepoweryoga.com/yoga-studios/ca/san-francisco/nopa",
+        "neighborhood": "NoPa",
+        "notable": ""
+      },
+      {
+        "name": "Club Pilates – NoPa",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Reformer Pilates studio",
+        "description": "A NoPa reformer-based Pilates studio on Fulton Street offering full-body group workout classes designed to increase mobility, balance, and strength.",
+        "address": "1720 Fulton St, San Francisco, CA 94117",
+        "phone": "415-992-6620",
+        "website": "https://www.clubpilates.com",
+        "neighborhood": "NoPa",
+        "notable": ""
+      },
+      {
+        "name": "LuxFit – Hayes Valley",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Outdoor personal training gym",
+        "description": "A premier outdoor gym on Octavia Street in Hayes Valley offering personal training, small-group outdoor workouts, and open gym memberships.",
+        "address": "432 Octavia St, San Francisco, CA 94102",
+        "phone": "415-799-5891",
+        "website": "https://luxfitsf.com/locations/hayes-valley",
+        "neighborhood": "Hayes Valley",
+        "notable": ""
+      },
+      {
+        "name": "FITNESS SF – Fillmore",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "A well-priced, full-service gym in the Western Addition open until midnight on most nights, offering cardio equipment, free weights, and group fitness classes.",
+        "address": "1455 Fillmore St, San Francisco, CA 94115",
+        "phone": "415-440-9390",
+        "website": "https://www.fitnesssf.com",
+        "neighborhood": "NoPa",
+        "notable": ""
+      },
+      {
+        "name": "Panhandle Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Linear park and recreation corridor",
+        "description": "The long, tree-lined Panhandle strip connecting the NoPa neighborhood to Golden Gate Park is a beloved outdoor space for running, cycling, dog-walking, and informal recreation.",
+        "address": "Fell St & Stanyan St, San Francisco, CA 94117",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "NoPa",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-10-30",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-10-30",
+        "high": 64,
+        "low": 53,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-31",
+        "high": 61,
+        "low": 51,
+        "summary": "Chance Rain Showers then Slight Chance Light Rain",
+        "condition": "rain",
+        "precip": 20
+      },
+      {
+        "date": "2026-11-01",
+        "high": 62,
+        "low": 51,
+        "summary": "Chance Rain Showers then Sunny",
+        "condition": "rain",
+        "precip": 8
+      },
+      {
+        "date": "2026-11-02",
+        "high": 64,
+        "low": 53,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-03",
+        "high": 63,
+        "low": 52,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 25
+      },
+      {
+        "date": "2026-11-04",
+        "high": 62,
+        "low": 53,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 35
+      },
+      {
+        "date": "2026-11-05",
+        "high": 62,
+        "low": 52,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 32
+      }
+    ]
+  }
+}

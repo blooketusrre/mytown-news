@@ -1,0 +1,919 @@
+{
+  "clusterSlug": "the-sunset",
+  "clusterName": "The Sunset",
+  "weekOf": "2026-10-30",
+  "topStories": [
+    {
+      "headline": "Prop G Puts Sunset Dunes Back on the Ballot — For the Third Time in Four Years",
+      "dek": "San Francisco voters decide November 3 whether to reopen the Upper Great Highway to weekday car traffic, with the Sunset neighborhood once again at the center of the fight.",
+      "body": "For the third time in four years, San Franciscans will vote on the future of the two-mile oceanfront stretch that is now Sunset Dunes Park. Proposition G, on the November 3 ballot, would reopen the Upper Great Highway to private vehicles on weekdays while preserving portions of the existing park. A no vote would keep the road closed to cars at all times, as it has been since voters approved Prop K in November 2024 by a 55-to-45 margin and the city converted the roadway into Sunset Dunes in 2025.\n\nThe park has logged more than 1.7 million visits since opening in April 2025, according to San Francisco Recreation and Parks, ranking it the city's third-most popular park. Opponents of Prop G — including Senator Scott Wiener and five city supervisors — note that roughly 60 percent of those visits occur on weekdays, exactly the hours the measure would hand back to cars. They argue that passing Prop G would force the removal of park amenities already installed along the promenade.\n\nProponents counter that the full highway closure has pushed traffic into Sunset residential streets and worsened injury rates in the neighborhood. They frame the measure as a return to the weekend-only closure arrangement that held from 2021 to 2024. The San Francisco Controller's Office estimates reopening the road would cost $9.8 million upfront and as much as $1.9 million each year to maintain.\n\nProp G was placed on the ballot after organizers gathered roughly 10,600 signatures — about two percent of registered voters — certified by the Department of Elections on July 23, 2026. The SF Chronicle editorial board, which backed Prop K in 2024, recommended a no vote this cycle. SPUR also recommended voting no. Polls open November 3.",
+      "sourceUrl": "https://sfstandard.com/2026/10/22/great-highway-prop-g-sunset-dunes-forever-war/",
+      "sourceName": "The San Francisco Standard",
+      "tags": [
+        "Prop G",
+        "Sunset Dunes",
+        "Great Highway",
+        "election 2026",
+        "Outer Sunset"
+      ]
+    },
+    {
+      "headline": "Great Hauntway Fills Sunset Dunes With Costumes and Candy for Sixth Year Running",
+      "dek": "Last Sunday's free Halloween festival on the oceanfront promenade drew families from across the city, cementing the park's role as a neighborhood anchor even as voters prepare to decide its future.",
+      "body": "The sixth annual Great Hauntway took over Sunset Dunes on Sunday, October 25, filling the promenade between Judah and Taraval streets with trick-or-treating, bounce houses, live performers, and music from 1 to 4 p.m. The event — presented by Friends of Sunset Dunes in partnership with San Francisco Recreation and Parks — featured more than a mile of candy stations along the upper Great Highway promenade, plus pumpkin decorating and big bubbles for younger children. Organizers describe it as the city's largest free Halloween event.\n\nSan Francisco Recreation and Parks ran a special edition of the Golden Gate Shuttle for Hauntway attendees, connecting the Judah Street entrance at Lower Great Highway to the Blue Heron Lake Boathouse and Transverse Drive inside Golden Gate Park — a car-free route in from the east that also served as a quiet reminder of what is at stake in Tuesday's Prop G vote.\n\nThe Shipwreck Cove playground, which opened at Sunset Dunes in September 2026, drew families on the day as well. Friends of Sunset Dunes continues its free programming on the promenade through the fall, with the 2nd Sunday Serenades on November 8 and a Zumba session on November 14 both on the calendar.",
+      "sourceUrl": "https://hoodline.com/2026/10/sunset-dunes-turns-spooky-today-as-great-hauntway-returns-for-sixth-year/",
+      "sourceName": "Hoodline",
+      "tags": [
+        "Great Hauntway",
+        "Sunset Dunes",
+        "Halloween",
+        "Outer Sunset",
+        "Friends of Sunset Dunes"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Halloween Bonfire Night at Ocean Beach — Final Fire Until March 2027",
+      "startDate": "2026-10-31",
+      "date": "Saturday, October 31",
+      "time": "3:00 PM",
+      "location": "Ocean Beach Fire Pits, between Stairwells 15 and 20, San Francisco",
+      "description": "October 31 is the last day bonfires are permitted at Ocean Beach until March 1, 2027. Fire rings are first come, first served; groups larger than 25 need a permit by calling (415) 561-4700.",
+      "sourceUrl": "https://sf.funcheap.com/final-ocean-beach-bonfire-night-of-2023-until-march-1st/",
+      "sourceName": "Funcheap SF / National Park Service"
+    },
+    {
+      "title": "Full Moon Sunset Ocean Dance",
+      "startDate": "2026-11-01",
+      "date": "Sunday, November 1",
+      "time": "4:30 PM – 6:00 PM",
+      "location": "Ocean Beach, between Stairwells 3 & 4 near Balboa Street, San Francisco",
+      "description": "An open-air silent-disco movement event on the sand, led by local DJs and movement guide Magalí Clazón, timed to the full moon rising over the Pacific. Wireless headphones provided; dress in layers.",
+      "sourceUrl": "https://www.eventbrite.com/e/full-moon-sunset-ocean-dance-tickets-2001711223153",
+      "sourceName": "Eventbrite / Ocean Dance"
+    },
+    {
+      "title": "Tchaikovsky's 1812 Overture with the SF Philharmonic at Sunset Dunes",
+      "startDate": "2026-11-01",
+      "date": "Sunday, November 1",
+      "time": "5:00 PM – 5:30 PM",
+      "location": "Sunset Dunes, Ocean Beach promenade, San Francisco",
+      "description": "A free outdoor performance of Tchaikovsky's 1812 Overture by the SF Philharmonic on the Sunset Dunes oceanfront promenade, presented by Friends of Sunset Dunes.",
+      "sourceUrl": "https://sunsetdunes.org/",
+      "sourceName": "Friends of Sunset Dunes"
+    },
+    {
+      "title": "Ocean Beach Monthly Volunteer Cleanup",
+      "startDate": "2026-11-07",
+      "date": "Saturday, November 7",
+      "time": "10:00 AM – 1:00 PM",
+      "location": "Ocean Beach, Stairwell 17, San Francisco",
+      "description": "Monthly litter pickup organized by the Golden Gate National Parks Conservancy. No registration required; meet at Stairwell 17.",
+      "sourceUrl": "https://www.parksconservancy.org/parks/ocean-beach",
+      "sourceName": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "Inner Sunset Flea Market — 2026 Season Finale",
+      "startDate": "2026-11-08",
+      "date": "Sunday, November 8",
+      "time": "10:00 AM – 4:00 PM",
+      "location": "Irving Street between 9th and 11th Avenues, Inner Sunset",
+      "description": "The closer of the flea market's 11th season features two blocks of vintage vendors, artists, makers, and community organizations, plus the annual Pie Contest and Big Lunch. Free admission; no ticket required.",
+      "sourceUrl": "https://www.eventbrite.com/e/inner-sunset-flea-market-season-finale-tickets-2003088872740",
+      "sourceName": "Eventbrite / Sunset Mercantile"
+    },
+    {
+      "title": "2nd Sunday Serenades at Sunset Dunes",
+      "startDate": "2026-11-08",
+      "date": "Sunday, November 8",
+      "time": "12:00 PM – 2:00 PM",
+      "location": "Sunset Dunes, Ocean Beach promenade, San Francisco",
+      "description": "The monthly free live music series on the Sunset Dunes promenade, presented by Friends of Sunset Dunes. Open to all.",
+      "sourceUrl": "https://sunsetdunes.org/",
+      "sourceName": "Friends of Sunset Dunes"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Profile: The Story Behind Irving Street's Texas-Chinese BBQ Joint, Smokin D's",
+      "body": "The Sunset Beacon published a feature on Smokin D's BBQ on October 18, 2026, telling the story of the Outer Sunset restaurant at 2181 Irving St. that has built a loyal following since opening its brick-and-mortar in August 2024. Owner Daniel Ramirez, who grew up in Houston, started the business running pop-ups at Bay Area farmers markets before settling into the Irving Street corridor with his wife Lareina Chu, a Sunset native. The menu blends Texas-style smoked brisket, pulled pork, and spare ribs with Chinese-inspired bao buns, with bao available on weekends only. The restaurant is open Friday through Sunday.",
+      "sourceUrl": "https://richmondsunsetnews.com/2026/10/18/smokin-ds-houston-barbecue-meets-chinese-inspiration-on-irving-street/",
+      "sourceName": "Richmond Review / Sunset Beacon",
+      "tags": [
+        "Irving Street",
+        "restaurant",
+        "Outer Sunset",
+        "barbecue"
+      ]
+    },
+    {
+      "headline": "District 4 Supervisor Race Goes to the November 3 General Election",
+      "body": "Incumbent Supervisor Alan Wong, who won a June 2026 special election to fill the seat vacated by recalled Supervisor Joel Engardio, must win again on November 3 to hold the position for a full four-year term. His opponent is Jeremy Greco, a school campus coordinator, according to Axios San Francisco's voter guide published October 13. District 4 covers the Outer Sunset and Parkside neighborhoods. The SF Chronicle editorial board endorsed Wong this week, noting the district has been deeply divided over the Great Highway and Sunset Dunes for the past two years.",
+      "sourceUrl": "https://www.axios.com/local/san-francisco/2026/10/13/san-francisco-election-2026-november",
+      "sourceName": "Axios San Francisco",
+      "tags": [
+        "District 4",
+        "Alan Wong",
+        "election 2026",
+        "Outer Sunset",
+        "Parkside"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "San Francisco's forever war: Sunset Dunes goes to the ballot for a 3rd time",
+      "url": "https://sfstandard.com/2026/10/22/great-highway-prop-g-sunset-dunes-forever-war/",
+      "publication": "The San Francisco Standard"
+    },
+    {
+      "title": "Proposition G Reopens the Great Highway Debate",
+      "url": "https://www.sfpublicpress.org/proposition-g-reopens-the-great-highway-debate/",
+      "publication": "SF Public Press"
+    },
+    {
+      "title": "GrowSF Voter Guide: Prop G — Allowing Private Vehicles on the Great Highway in Sunset Dunes Park",
+      "url": "https://growsf.org/voter-guide/san-francisco-voter-guide-november-2026-election/measures/prop-g/",
+      "publication": "GrowSF"
+    },
+    {
+      "title": "SPUR November 2026 Voter Guide",
+      "url": "https://www.spur.org/voter-guide/2026-11",
+      "publication": "SPUR"
+    },
+    {
+      "title": "S.F. Chronicle Endorsements for the 2026 California Election",
+      "url": "https://www.sfchronicle.com/projects/2026/california-sf-election-endorsements/",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Great Hauntway 2026 Returns to Sunset Dunes",
+      "url": "https://hoodline.com/2026/10/sunset-dunes-turns-spooky-today-as-great-hauntway-returns-for-sixth-year/",
+      "publication": "Hoodline"
+    },
+    {
+      "title": "The Great Hauntway 2026 — Friends of Sunset Dunes",
+      "url": "https://sunsetdunes.org/hauntway",
+      "publication": "Friends of Sunset Dunes"
+    },
+    {
+      "title": "6th Annual Hauntway at Sunset Dunes",
+      "url": "https://dothebay.com/events/2026/10/25/6th-annual-hauntway-tickets",
+      "publication": "Do the Bay"
+    },
+    {
+      "title": "Ocean Beach Halloween Bonfire Night — Final Bonfire Until March 1, 2027",
+      "url": "https://sf.funcheap.com/final-ocean-beach-bonfire-night-of-2023-until-march-1st/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Full Moon Sunset Ocean Dance — November 1, 2026",
+      "url": "https://www.eventbrite.com/e/full-moon-sunset-ocean-dance-tickets-2001711223153",
+      "publication": "Eventbrite / Ocean Dance"
+    },
+    {
+      "title": "Sunset Dunes Events — November 2026",
+      "url": "https://sunsetdunes.org/",
+      "publication": "Friends of Sunset Dunes"
+    },
+    {
+      "title": "Ocean Beach Cleanups — November 7, 2026",
+      "url": "https://www.parksconservancy.org/parks/ocean-beach",
+      "publication": "Golden Gate National Parks Conservancy"
+    },
+    {
+      "title": "Inner Sunset Flea Market Season Finale — November 8, 2026",
+      "url": "https://www.eventbrite.com/e/inner-sunset-flea-market-season-finale-tickets-2003088872740",
+      "publication": "Eventbrite / Sunset Mercantile"
+    },
+    {
+      "title": "Smokin D's: Houston Barbecue Meets Chinese Inspiration on Irving Street",
+      "url": "https://richmondsunsetnews.com/2026/10/18/smokin-ds-houston-barbecue-meets-chinese-inspiration-on-irving-street/",
+      "publication": "Richmond Review / Sunset Beacon"
+    },
+    {
+      "title": "San Francisco voter guide 2026: Propositions, candidates and races",
+      "url": "https://www.axios.com/local/san-francisco/2026/10/13/san-francisco-election-2026-november",
+      "publication": "Axios San Francisco"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Savor",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Vegetarian Mediterranean café",
+        "description": "Chef Mohamed Aboghanem's vegetarian café on Irving serves modern Arabic cuisine — mezze plates, shawarma, and seasonal specials — in a warmly decorated space.",
+        "address": "401 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.savorsf.com",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Tadaima",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Japanese café",
+        "description": "Minimalist Japanese café on Irving with a calming green-toned interior, specialty matcha drinks, and unique lattes with a devoted neighborhood following.",
+        "address": "730 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Ushi Taro Ramen",
+        "cuisineGroup": "Asian",
+        "type": "Ramen restaurant",
+        "description": "Cozy ramen shop near 9th and Irving praised for its rich Traditional Paitan broth and one of the Sunset's best vegan ramen bowls.",
+        "address": "417 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Ebisu",
+        "cuisineGroup": "Asian",
+        "type": "Japanese sushi restaurant",
+        "description": "A neighborhood sushi institution for over 40 years, known for fresh nigiri, handrolls, miso-glazed eggplant, and agedashi tofu one block from Golden Gate Park.",
+        "address": "1283 9th Ave, San Francisco, CA 94122",
+        "phone": "415-566-1770",
+        "website": "https://www.ebisusushi.com",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Marnee Thai (9th Ave)",
+        "cuisineGroup": "Asian",
+        "type": "Thai restaurant",
+        "description": "Family-owned Thai restaurant since 1985, celebrating its 40th anniversary and winner of SFGate Best Thai Food 2026, with Thai Select certification for authentic flavors.",
+        "address": "1243 9th Ave, San Francisco, CA 94122",
+        "phone": "415-731-9999",
+        "website": "https://www.marneethai.com",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Marnee Thai (Irving St)",
+        "cuisineGroup": "Asian",
+        "type": "Thai restaurant",
+        "description": "The Outer Sunset branch of the beloved family-owned Thai institution, serving bold traditional flavors on Irving Street for over four decades.",
+        "address": "2225 Irving St, San Francisco, CA 94122",
+        "phone": "415-665-9500",
+        "website": "https://www.marneethai.com",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Tung",
+        "cuisineGroup": "Asian",
+        "type": "Northern Chinese restaurant",
+        "description": "Beloved neighborhood institution famous for dry-fried chicken wings and handmade northern Chinese noodles, with lines still forming out the door on open days.",
+        "address": "1031 Irving St, San Francisco, CA 94122",
+        "phone": "415-242-0828",
+        "website": "https://www.santungsf.com",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lavash",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Persian restaurant",
+        "description": "Authentic Persian cuisine served in a charming parklet decorated with greenery and fresh flowers on Irving Street.",
+        "address": "511 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Mezze and Mooore II",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Lebanese restaurant",
+        "description": "Opened February 2025, this modern Lebanese spot serves made-from-scratch mezze plates, shawarma, and kebabs in a chic setting on Irving Street.",
+        "address": "627 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Perilla",
+        "cuisineGroup": "Asian",
+        "type": "Vietnamese restaurant",
+        "description": "Widely regarded as the best-value Vietnamese food in the Inner Sunset, with generous portions and a loyal neighborhood following.",
+        "address": "885 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Manna",
+        "cuisineGroup": "Asian",
+        "type": "Korean restaurant",
+        "description": "A small mom-and-pop Korean spot on Irving dishing out bibimbap, tofu stew, spicy noodles, and kimchi-braised pork.",
+        "address": "845 Irving St, San Francisco, CA 94122",
+        "phone": "415-665-5969",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Maggie & Mac's",
+        "cuisineGroup": "Seafood & American",
+        "type": "American bar and restaurant",
+        "description": "A lively full-bar American restaurant in the former Social Kitchen space at 9th and Irving, drawing early praise for its French dip, meatloaf, and cocktails.",
+        "address": "1326 9th Ave, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Arizmendi Bakery",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Worker-owned cooperative bakery",
+        "description": "Worker-owned cooperative since 2000 serving rotating daily pizzas, artisan breads, pastries, and organic coffee just two blocks from Golden Gate Park.",
+        "address": "1331 9th Ave, San Francisco, CA 94122",
+        "phone": "415-566-3117",
+        "website": "https://www.arizmendibakery.com",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Red Tail",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Wine bar",
+        "description": "Stylish wine bar on Irving Street open until 11 p.m., filling a long-standing gap in the neighborhood's after-dinner scene.",
+        "address": "718 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Yancy's Saloon",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Dive sports bar",
+        "description": "Old-school dive bar with dart boards, multiple TV screens for sports, and a spacious interior beloved by neighborhood regulars for decades.",
+        "address": "734 Irving St, San Francisco, CA 94122",
+        "phone": "415-665-6551",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Outerlands",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "California cuisine restaurant",
+        "description": "A landmark Outer Sunset restaurant near Ocean Beach known for fresh-baked bread, Dutch baby pancakes, and inventive seasonal fare under current owner Riley Bartlett.",
+        "address": "4001 Judah St, San Francisco, CA 94122",
+        "phone": "415-661-6140",
+        "website": "https://www.outerlandssf.com",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hook Fish Co.",
+        "cuisineGroup": "Seafood & American",
+        "type": "Sustainable seafood counter",
+        "description": "Sustainably sourced seafood served as burritos, tacos, poke, and fish-and-chips two blocks from Ocean Beach, with a popular outdoor parklet.",
+        "address": "4542 Irving St, San Francisco, CA 94122",
+        "phone": "415-569-4984",
+        "website": "https://www.hookfishco.com",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Two Pitchers Brewing",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft brewery taproom",
+        "description": "Outer Sunset craft brewery sharing space with Maillards Smash Burgers, with a parklet patio and a convivial neighborhood atmosphere.",
+        "address": "3833 Noriega St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      },
+      {
+        "name": "Sunset Cantina",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican restaurant and bar",
+        "description": "Lively corner spot with ample indoor and outdoor seating, happy hour specials, deep-fried avocado tacos, and mezcal margaritas.",
+        "address": "3895 Noriega St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Andytown Coffee Roasters",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Specialty coffee roaster and café",
+        "description": "Founded in 2014 on Lawton Street, this Outer Sunset institution roasts small-batch coffee in-house and is famous for its signature Snowy Plover espresso drink.",
+        "address": "3655 Lawton St, San Francisco, CA 94122",
+        "phone": "415-753-9775",
+        "website": "https://www.andytownsf.com",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Dumpling Kitchen",
+        "cuisineGroup": "Asian",
+        "type": "Chinese dumpling restaurant",
+        "description": "Beloved Parkside dumpling institution on Taraval with consistently long waits for its fresh, flavorful handmade dumplings.",
+        "address": "1935 Taraval St, San Francisco, CA 94116",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Parkside",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Golden Boy Pizza",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Sicilian-style pizza takeout",
+        "description": "Parkside outpost of the legendary 1978 North Beach pizzeria, serving thick focaccia-based square slices with toppings like garlic-clam and pesto vegetable.",
+        "address": "1447 Taraval St, San Francisco, CA 94116",
+        "phone": "",
+        "website": "https://www.goldenboypizza.com",
+        "neighborhood": "Parkside",
+        "notable": ""
+      },
+      {
+        "name": "Galinette",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "French-Mediterranean restaurant",
+        "description": "Well-regarded neighborhood restaurant on Taraval with French and Mediterranean influences, drawing diners from across the city.",
+        "address": "1101 Taraval St, San Francisco, CA 94116",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Parkside",
+        "notable": ""
+      },
+      {
+        "name": "House of Pancakes",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Chinese breakfast and brunch restaurant",
+        "description": "Popular Taraval Street spot for Chinese-style savory pancakes and casual all-day breakfast fare, consistently packed through midday.",
+        "address": "937 Taraval St, San Francisco, CA 94116",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Parkside",
+        "notable": ""
+      },
+      {
+        "name": "New Taraval Cafe",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "American diner",
+        "description": "A reliable neighborhood diner on Taraval Street serving hearty breakfasts and lunches with a loyal local following.",
+        "address": "1054 Taraval St, San Francisco, CA 94116",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Parkside",
+        "notable": "Landmark"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Ocean Park Motel",
+        "type": "Art Deco boutique motel",
+        "description": "San Francisco's oldest motel, built in 1937 in Streamline Moderne style with a nautical theme, portholes, a hot-tub courtyard, free parking, and ocean air two blocks from the beach.",
+        "address": "2690 46th Ave, San Francisco, CA 94116",
+        "phone": "415-566-7020",
+        "website": "https://www.oceanparkmotel.com",
+        "neighborhood": "Parkside",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Seal Rock Inn",
+        "type": "Coastal inn with restaurant",
+        "description": "A San Francisco fixture since 1959 perched at Point Lobos overlooking Sutro Baths and the Pacific Ocean, with a recently reopened French-bistro restaurant under chef Alfred Schilling.",
+        "address": "545 Point Lobos Ave, San Francisco, CA 94121",
+        "phone": "415-752-8000",
+        "website": "https://www.sealrockinn.com",
+        "neighborhood": "Outer Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The SeaScape Inn",
+        "type": "Budget motel",
+        "description": "A modestly updated budget motel at the western end of the N-Judah line, steps from Ocean Beach and the Sunset Dunes park.",
+        "address": "176 Balboa St, San Francisco, CA 94118",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Ocean Inn",
+        "type": "Budget motel",
+        "description": "Straightforward budget accommodations in the Outer Sunset within easy reach of Ocean Beach and the N-Judah streetcar.",
+        "address": "1010 Point Lobos Ave, San Francisco, CA 94121",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Motel 6 San Francisco – Great Highway",
+        "type": "Budget motel",
+        "description": "No-frills motel on the Great Highway steps from Ocean Beach and adjacent to the Sunset Dunes linear park opened in 2025.",
+        "address": "2280 Great Hwy, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.motel6.com",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Green Apple Books on the Park",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "A well-curated satellite of the beloved Green Apple Books, stocking fiction, non-fiction, and children's titles alongside author events on 9th Avenue at Golden Gate Park.",
+        "address": "1231 9th Ave, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.greenapplebooks.com",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Black Bird Bookstore and Café",
+        "shopGroup": "Books & Literature",
+        "type": "Community bookstore and café",
+        "description": "Mission-driven independent bookstore and café open daily in the Outer Sunset, with a children's reading nook, garden, and regular open-mic nights and author events.",
+        "address": "4541 Irving St, San Francisco, CA 94122",
+        "phone": "415-742-5203",
+        "website": "https://www.blackbirdbooksf.com",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Amazing Fantasy",
+        "shopGroup": "Books & Literature",
+        "type": "Comic book and graphic novel store",
+        "description": "Inner Sunset comic shop with over 1,000 graphic novels and new issues arriving every Wednesday.",
+        "address": "650 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Harvest Books and Gifts",
+        "shopGroup": "Books & Literature",
+        "type": "Christian bookstore and gift shop",
+        "description": "One of the few remaining Christian bookstores in San Francisco, offering books, gifts, and spiritual resources in the Outer Sunset.",
+        "address": "4622 Noriega St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Case For Making",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Watercolor and art supply studio",
+        "description": "Outer Sunset creative supply shop specializing in custom watercolor supplies and hands-on process-based workshops for all ages.",
+        "address": "4037 Judah St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Ambiance",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's clothing boutique",
+        "description": "One-stop shop for trendy women's apparel and accessories on Irving Street, a reliable neighborhood fashion destination.",
+        "address": "756 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.ambiancesf.com",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "San Franpsycho",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Locally designed streetwear shop",
+        "description": "Inner Sunset boutique selling locally designed and screen-printed clothing celebrating San Francisco street culture.",
+        "address": "1256 9th Ave, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.sanfranpsycho.com",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Pepperjack Provisions",
+        "shopGroup": "Home & Gifts",
+        "type": "Modern neighborhood general store",
+        "description": "Curated neighborhood general store on 9th Avenue carrying cool gifts, home goods, and local finds.",
+        "address": "1232 9th Ave, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Mercantile Emporium",
+        "shopGroup": "Home & Gifts",
+        "type": "Makers-and-merchants collective",
+        "description": "A community hub on Irving Street bringing together vintage finds, crafts, plants, and pet supplies from local makers and merchants.",
+        "address": "653 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Fung Tai Framing & Gallery",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Custom framing and art gallery",
+        "description": "Parkside framing shop and gallery with a strong community reputation for quality, affordability, and attentive service.",
+        "address": "1537 Taraval St, San Francisco, CA 94116",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Parkside",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Marrow Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery",
+        "description": "Inner Sunset gallery founded in 2015 presenting monthly rotating exhibitions by local, national, and international artists; current show by Deborah Brown runs through October 10, 2026.",
+        "address": "548 Irving St, San Francisco, CA 94122",
+        "phone": "415-463-2055",
+        "website": "https://www.marrowgallery.com",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "San Francisco Women Artists Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Artist-run gallery",
+        "description": "Long-running Irving Street gallery promoting equity in the arts by showcasing paintings, photography, and sculpture by Bay Area women artists.",
+        "address": "647 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.sfwomenartists.org",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Great Highway Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery and printing studio",
+        "description": "Founded in 2011, this Outer Sunset gallery and printing studio focuses on fine art by artists connected to the Northern California coastline.",
+        "address": "3649 Lawton St, San Francisco, CA 94122",
+        "phone": "415-680-3891",
+        "website": "https://www.thegreathighway.com",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Sealevel",
+        "venueGroup": "Art Galleries",
+        "type": "Community art space",
+        "description": "A 450-square-foot artist-run gallery at Irving and 45th Avenue hosting group exhibitions, open mics, poetry readings, and a Grammy-nominated songwriter circle.",
+        "address": "4500 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "The Honey Hive Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Multipurpose art gallery and music venue",
+        "description": "Outer Sunset community art gallery and intimate live-music space on Judah Street open until 10 p.m.",
+        "address": "4117 Judah St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "FOG – Far Out Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Local artist gallery",
+        "description": "Parkside gallery championing local artists in a welcoming, community-oriented space.",
+        "address": "1 Funston Ave, San Francisco, CA 94129",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Parkside",
+        "notable": ""
+      },
+      {
+        "name": "Blackthorn Tavern",
+        "venueGroup": "Music Venues",
+        "type": "Irish pub and live-music bar",
+        "description": "Inner Sunset Irish pub with regular live music, a long bar, and a neighborhood-tavern atmosphere going strong for decades.",
+        "address": "834 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sunset Commons",
+        "venueGroup": "Museums & Cultural",
+        "type": "Arts and community gathering space",
+        "description": "Inner Sunset community venue and art space on Irving Street hosting creative workshops, social events, and neighborhood programming.",
+        "address": "1600 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Dunes (Ocean Beach Linear Park)",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public coastal park",
+        "description": "San Francisco's largest pedestrianization project — 77 acres opened April 2025 along the former Great Highway — with walking and cycling paths, art installations, exercise equipment, and a skate park.",
+        "address": "Great Hwy between Lincoln Way and Sloat Blvd, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Outer Sunset",
+        "notable": "New"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "yogabeach",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Outer Sunset studio at Irving and 45th blending beach-town energy with vinyasa flow and multi-level yoga classes steps from Ocean Beach.",
+        "address": "4501 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.yogabeachsf.com",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Studio By Live Better",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Mind-body boutique studio",
+        "description": "Outer Sunset boutique studio two blocks from Ocean Beach offering yoga, Pilates, meditation, and cardio dance with capped class sizes for personalized attention.",
+        "address": "3927 Noriega St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.studiobylivebetter.com",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Yoga by the Beach",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Parkside yoga studio offering group fitness classes for all levels in a welcoming neighborhood space near the beach.",
+        "address": "2390 27th Ave, San Francisco, CA 94116",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Parkside",
+        "notable": ""
+      },
+      {
+        "name": "The Yoga Shala",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Inner Sunset yoga studio offering traditional and contemporary yoga practices in an intimate neighborhood setting.",
+        "address": "3947 Judah St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Inner Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Fit Local Fit (fitSUNSETfit)",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Neighborhood gym",
+        "description": "Compact, well-equipped Outer Sunset gym on Irving Street open from 5 a.m. for early-rising neighborhood residents.",
+        "address": "3738 Irving St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://fitlocalfit.com",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Muscle Beach Gym",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Independent gym",
+        "description": "Highly rated neighborhood gym in the Outer Sunset with friendly staff and equipment maintained in top condition.",
+        "address": "3900 Noriega St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Raise The Bar Fitness",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Fitness gym with spin classes",
+        "description": "Parkside gym with personal trainers and popular spin classes open from 5 a.m., praised by members who have trained there for years.",
+        "address": "3000 Taraval St, San Francisco, CA 94116",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Parkside",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Recreation Center",
+        "venueGroup": "Sports & Courts",
+        "type": "City recreation center",
+        "description": "SF Recreation & Parks community center in the Outer Sunset offering drop-in basketball, women's volleyball leagues, and youth programming through December 2026.",
+        "address": "28th Ave & Lawton St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://sfrecpark.org/706/Sunset-Recreation-Center",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "Ralph Gracie Sunset Jiu Jitsu",
+        "venueGroup": "Martial Arts",
+        "type": "Brazilian jiu-jitsu school",
+        "description": "Outer Sunset affiliate of the renowned Ralph Gracie lineage, offering Brazilian jiu-jitsu instruction for all skill levels.",
+        "address": "4019 Judah St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Outer Sunset",
+        "notable": ""
+      },
+      {
+        "name": "San Francisco Botanical Garden",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public botanical garden",
+        "description": "Fifty-five acres of curated gardens from around the world at the Inner Sunset's doorstep inside Golden Gate Park, free for San Francisco residents.",
+        "address": "1199 9th Ave, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.sfbg.org",
+        "neighborhood": "Inner Sunset",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-10-30",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-10-30",
+        "high": 61,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-10-31",
+        "high": 60,
+        "low": 52,
+        "summary": "Chance Rain Showers then Slight Chance Light Rain",
+        "condition": "rain",
+        "precip": 20
+      },
+      {
+        "date": "2026-11-01",
+        "high": 60,
+        "low": 52,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 9
+      },
+      {
+        "date": "2026-11-02",
+        "high": 62,
+        "low": 54,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-03",
+        "high": 61,
+        "low": 53,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 25
+      },
+      {
+        "date": "2026-11-04",
+        "high": 60,
+        "low": 54,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 36
+      },
+      {
+        "date": "2026-11-05",
+        "high": 60,
+        "low": 53,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 33
+      }
+    ]
+  }
+}
