@@ -1141,6 +1141,37 @@ ul, ol { list-style: none; }
 }
 .dir-entry__website:hover { color: var(--accent); }
 
+/* ── Condensed: groups flow in columns ──────────────────────────────────
+   Each sub-group (Coffee & Cafés, Italian & Deli…) used to be a full-width
+   block with its own grid of cards. A group of one or two places filled a
+   quarter or half of its row and left the rest blank, and most groups are
+   that small, so an open category was mostly empty space. On design advice
+   (30 October 2026) the groups now flow down newspaper columns instead: a
+   short group sits beside the next rather than taking a whole row.
+
+   Columns are at least 220px, so a phone gets one, a tablet two or three, a
+   desktop four, with no media queries. A group heading never ends a column on its
+   own, and no entry is split across two. */
+.dir-section__body:not(.is-collapsed) {
+  columns: 4 220px;
+  column-gap: var(--sp-8);
+}
+.dir-section__body .dir-group { margin-bottom: var(--sp-5); }
+.dir-section__body .dir-group__heading {
+  break-after: avoid;
+  margin-bottom: var(--sp-3);
+}
+.dir-section__body .dir-group__entries { display: block; }
+.dir-section__body .dir-entry {
+  break-inside: avoid;
+  padding-bottom: var(--sp-3);
+  margin-bottom: var(--sp-3);
+}
+.dir-section__body .dir-entry:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: none; }
+/* Notes and the empty-state line span every column rather than squeezing into one. */
+.dir-section__body .dir-empty,
+.dir-section__body .dir-correction { column-span: all; }
+
 .dir-correction {
   margin-top: var(--sp-6);
   padding-top: var(--sp-5);
@@ -1561,6 +1592,78 @@ ul, ol { list-style: none; }
 }
 .us-map__state::before { content: ", "; }
 
+/* ── Rollovers ─────────────────────────────────────────────────────────
+   What each pin covers, on hover or keyboard focus: the editions in a
+   multi-edition city, the neighborhoods of a single-edition town. Replaced
+   the list of city boxes under the map (30 October 2026). Anchored to the
+   left or right near the map's edges so the tip never runs off the page. */
+.us-map__pin:hover, .us-map__pin:focus-visible { z-index: 5; }
+.us-map__pin:focus-visible { outline: none; }
+.us-map__pin:focus-visible .us-map__dot { outline: 2px solid var(--navy); outline-offset: 2px; }
+
+.us-map__tip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  width: 260px;
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--navy);
+  color: var(--white);
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  white-space: normal;
+  border-radius: 4px;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.12s ease;
+  pointer-events: none;
+}
+.us-map__tip--center { left: 50%; translate: -50% 0; }
+.us-map__tip--left   { left: -8px; }
+.us-map__tip--right  { right: -8px; }
+.us-map__pin:hover .us-map__tip,
+.us-map__pin:focus-visible .us-map__tip { opacity: 1; visibility: visible; }
+
+.us-map__tip-head {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ── Coming soon ───────────────────────────────────────────────────────
+   A hollow dot and a quieter label: visibly on the map, visibly not yet a
+   place you can go. Not a link. Only the state shows until hover, so five
+   more labels do not crowd the five that are live. */
+.us-map__pin--soon { cursor: default; }
+.us-map__dot--soon,
+.us-map__pin--soon .us-map__dot {
+  background: var(--white);
+  border: 2px solid var(--gold);
+  box-shadow: none;
+}
+.us-map__pin--soon .us-map__label { background: rgb(255 255 255 / 0.7); font-weight: 500; color: var(--muted); }
+.us-map__pin--soon .us-map__name { display: none; }
+.us-map__pin--soon .us-map__state::before { content: none; }
+
+.us-map__legend {
+  display: flex;
+  justify-content: center;
+  gap: var(--sp-6);
+  margin: var(--sp-4) 0 0;
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--muted);
+}
+.us-map__legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.us-map__legend .us-map__dot { width: 11px; height: 11px; display: inline-block; }
+
 /* The list is the navigation. On a phone it is the whole feature: a map of the
    United States at 340px wide with five dots on it is a picture, not a
    control, and the lesson from the neighborhood map is that a decorative map
@@ -1763,51 +1866,6 @@ ul, ol { list-style: none; }
   margin-bottom: var(--sp-2);
 }
 
-.us-map-list {
-  list-style: none;
-  margin: var(--sp-8) 0 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--sp-3);
-}
-
-.us-map-list a {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  padding: var(--sp-3) var(--sp-4);
-  border: 1px solid var(--rule);
-  border-radius: 4px;
-  text-decoration: none;
-  background: var(--cream);
-}
-
-.us-map-list a:hover,
-.us-map-list a:focus-visible {
-  border-color: var(--gold);
-}
-
-.us-map-list__name {
-  font-family: var(--font-ui);
-  font-size: var(--text-sm);
-  font-weight: 600;
-  color: var(--navy);
-}
-
-.us-map-list__state {
-  color: var(--muted);
-  font-weight: 500;
-}
-.us-map-list__state::before { content: ", "; }
-
-.us-map-list__tag {
-  font-family: var(--font-ui);
-  font-size: var(--text-xs);
-  color: var(--muted);
-}
-
 /* On a phone the national map stays, with its labels cut to the state.
    It used to be hidden below 700px, on the argument that a map of the
    country at phone width is a picture rather than a control. That is true,
@@ -1828,8 +1886,7 @@ ul, ol { list-style: none; }
   .us-map__state { color: var(--navy); font-weight: 700; }
   .us-map__label { font-size: 10px; padding: 0 4px; }
   .us-map__dot { width: 11px; height: 11px; }
-  .us-map-list { margin-top: 0; }
-  .us-map-list a { width: 100%; }
+  .us-map__tip { font-size: 11px; width: 200px; }
 }
 
 /* ── Cluster Map Section ───────────────────────────────────────────── */

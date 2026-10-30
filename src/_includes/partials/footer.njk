@@ -17,23 +17,10 @@
         </p>
       </div>
 
-      <div>
-        {# Grouped by city, and live editions only.
-
-           This footer appears on every page, and it used to loop every edition
-           in clusters.json regardless of city or status — so the moment a Utah
-           town was added, "Heber City — coming soon" appeared at the bottom of
-           every San Francisco page. An unlaunched town has nothing to offer a
-           reader and announcing it costs the surprise of launching it. #}
-        {% for city in cities %}{% if city.live %}
-        <div class="site-footer__cluster-links">
-          <p class="site-footer__cluster-links-head">{{ city.name }}</p>
-          {% for c in clusters | editionsInCity(city.slug) %}
-            <a href="{{ c | editionPath(clusters) }}">{{ c.name }}</a>
-          {% endfor %}
-        </div>
-        {% endif %}{% endfor %}
-      </div>
+      {# The list of every edition, grouped by city, used to fill this column.
+         Removed 30 October 2026 on design advice: at twenty editions it was
+         the longest thing on the page and the least used. Readers reach other
+         editions through the map, the ZIP lookup and the city pages. #}
     </div>
     <hr class="footer-divider">
     <p style="font-family:var(--font-ui);font-size:0.5625rem;color:rgba(255,255,255,0.18);letter-spacing:0.04em;">

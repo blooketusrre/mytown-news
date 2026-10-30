@@ -1,0 +1,7 @@
+[
+  { "name": "North Platte", "state": "NE", "population": 23390, "populationNote": "2020 census", "map": { "lat": 41.1239, "lng": -100.7654 } },
+  { "name": "Kingman",      "state": "AZ", "population": 32689, "populationNote": "2020 census", "map": { "lat": 35.1894, "lng": -114.0530 } },
+  { "name": "Selma",        "state": "AL", "population": 17971, "populationNote": "2020 census", "map": { "lat": 32.4074, "lng": -87.0211 } },
+  { "name": "Lake City",    "state": "FL", "population": 12329, "populationNote": "2020 census", "map": { "lat": 30.1897, "lng": -82.6393 } },
+  { "name": "Waterville",   "state": "ME", "population": 16823, "populationNote": "2023 Census estimate", "map": { "lat": 44.5520, "lng": -69.6317 } }
+]

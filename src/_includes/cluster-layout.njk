@@ -107,9 +107,9 @@ layout: base.njk
     <span class="site-nav__label">{{ issue.clusterName if issue else clusterName }}</span>
     <ul class="site-nav__links" role="list">
       <li><a href="#top-stories">Top Stories</a></li>
+      <li><a href="#more-news">More News</a></li>
       {% if issue and issue.weather %}<li><a href="#weather">Weather</a></li>{% endif %}
       <li><a href="#events">Events</a></li>
-      <li><a href="#more-news">More News</a></li>
       <li><a href="#directory">Directory</a></li>
       <li><a href="#sources">Sources</a></li>
     </ul>
@@ -162,6 +162,64 @@ layout: base.njk
         </article>
         {% endif %}{% endfor %}
 
+      </div>
+    </section>
+
+    {# Order, from 30 October 2026 on design advice: the news first and
+       together (top stories, then the briefs and police reports directly
+       beneath), then the week's weather, then what's on. Kept as two sections
+       rather than one six-story grid: top stories are full cards, the briefs
+       are short items with the police card, and merging them would shrink one
+       or inflate the other. #}
+    {# More News #}
+    <section id="more-news" aria-labelledby="more-news-heading">
+      <div class="section-head">
+        <h2 class="section-head__label" id="more-news-heading">More from the Community</h2>
+        <span class="section-head__line" aria-hidden="true"></span>
+      </div>
+
+      {# The grid widens with the number of briefs so the police card always
+         has a column and never lands alone on a second row. Ten of fourteen
+         editions run one or two briefs, which used to leave a third of the row
+         empty; three briefs now narrow slightly to make room rather than
+         pushing the card down. #}
+      {% set briefCount = issue.moreNews | length %}
+      <div class="more-news-grid" data-briefs="{{ briefCount }}"
+           {% if issue.blotter %}data-has-blotter="true"{% endif %}>
+        {% for s in issue.moreNews %}
+        <article class="news-card">
+          {{ storyHead(s) }}
+          {{ storyBody(s, 50) }}
+        </article>
+        {% endfor %}
+
+        {% if issue.blotter %}
+        {# Counts and a trend, never individual incidents. These are initial
+           reports — allegations, not convictions — and at street level a
+           single unverified one sits next to somebody's address. The link is
+           the point: a reader can run the same query. #}
+        <aside class="blotter-card" aria-labelledby="blotter-heading">
+          <p class="blotter-card__kicker" id="blotter-heading">Police reports</p>
+          <p class="blotter-card__lede">
+            <strong>{{ issue.blotter.total }}</strong> reported in the week to
+            {{ issue.blotter.to | date_short }}{% if issue.blotter.priorAvg %},
+            against a four-week average of {{ issue.blotter.priorAvg }}{% endif %}.
+          </p>
+          {% if issue.blotter.top.length %}
+          <ul class="blotter-card__list" role="list">
+            {% for row in issue.blotter.top %}
+            <li><span>{{ row.category }}</span><span>{{ row.count }}</span></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          <p class="blotter-card__note">
+            Initial reports to SFPD, excluding administrative records. Reports
+            are unverified and are not convictions.
+          </p>
+          <a class="blotter-card__link" href="{{ issue.blotter.sourceUrl }}"
+             target="_blank" rel="noopener noreferrer">See every report →</a>
+        </aside>
+        {% endif %}
       </div>
     </section>
 
@@ -267,58 +325,6 @@ layout: base.njk
           </div>
           {% endfor %}
         </div>
-      </div>
-    </section>
-
-    {# More News #}
-    <section id="more-news" aria-labelledby="more-news-heading">
-      <div class="section-head">
-        <h2 class="section-head__label" id="more-news-heading">More from the Community</h2>
-        <span class="section-head__line" aria-hidden="true"></span>
-      </div>
-
-      {# The grid widens with the number of briefs so the police card always
-         has a column and never lands alone on a second row. Ten of fourteen
-         editions run one or two briefs, which used to leave a third of the row
-         empty; three briefs now narrow slightly to make room rather than
-         pushing the card down. #}
-      {% set briefCount = issue.moreNews | length %}
-      <div class="more-news-grid" data-briefs="{{ briefCount }}"
-           {% if issue.blotter %}data-has-blotter="true"{% endif %}>
-        {% for s in issue.moreNews %}
-        <article class="news-card">
-          {{ storyHead(s) }}
-          {{ storyBody(s, 50) }}
-        </article>
-        {% endfor %}
-
-        {% if issue.blotter %}
-        {# Counts and a trend, never individual incidents. These are initial
-           reports — allegations, not convictions — and at street level a
-           single unverified one sits next to somebody's address. The link is
-           the point: a reader can run the same query. #}
-        <aside class="blotter-card" aria-labelledby="blotter-heading">
-          <p class="blotter-card__kicker" id="blotter-heading">Police reports</p>
-          <p class="blotter-card__lede">
-            <strong>{{ issue.blotter.total }}</strong> reported in the week to
-            {{ issue.blotter.to | date_short }}{% if issue.blotter.priorAvg %},
-            against a four-week average of {{ issue.blotter.priorAvg }}{% endif %}.
-          </p>
-          {% if issue.blotter.top.length %}
-          <ul class="blotter-card__list" role="list">
-            {% for row in issue.blotter.top %}
-            <li><span>{{ row.category }}</span><span>{{ row.count }}</span></li>
-            {% endfor %}
-          </ul>
-          {% endif %}
-          <p class="blotter-card__note">
-            Initial reports to SFPD, excluding administrative records. Reports
-            are unverified and are not convictions.
-          </p>
-          <a class="blotter-card__link" href="{{ issue.blotter.sourceUrl }}"
-             target="_blank" rel="noopener noreferrer">See every report →</a>
-        </aside>
-        {% endif %}
       </div>
     </section>
 
@@ -605,6 +611,37 @@ layout: base.njk
       </div>
     </section>
 
+  </div>{# /container #}
+
+  {# Newsletter #}
+  <div class="container">
+    <div class="newsletter">
+      <p class="newsletter__eyebrow">Stay connected</p>
+      <h2 class="newsletter__headline">Get the {{ issue.clusterName }}<br>delivered every Friday</h2>
+      <p class="newsletter__sub">The week's local news, events, and community directory — straight to your inbox. Free.</p>
+      {# Native form post — Buttondown's embed endpoint only supports real form
+         submissions. A fetch() cannot hand the subscriber over for CAPTCHA or
+         validation, and with mode:'no-cors' the response is unreadable, so the
+         old version reported success even when the signup silently failed. #}
+      <form class="newsletter__form embeddable-buttondown-form"
+            action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondownUser }}"
+            method="post"
+            aria-label="Newsletter signup">
+        <input type="hidden" name="tag" value="{{ clusterSlug }}">
+        <input type="hidden" name="embed" value="1">
+        <label class="visually-hidden" for="nl-email-{{ clusterSlug }}">Email address</label>
+        <input class="newsletter__input" id="nl-email-{{ clusterSlug }}"
+               type="email" name="email" placeholder="your@email.com"
+               required autocomplete="email">
+        <button class="newsletter__btn" type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter__note" id="cluster-nl-note">We&rsquo;ll email you a link to confirm &mdash; check spam if it doesn&rsquo;t arrive. &nbsp;·&nbsp; <a href="/subscribe/?edition={{ clusterSlug }}" style="color:var(--accent);font-weight:700">Subscribe to more editions →</a></p>
+    </div>
+  </div>
+
+  {# Sources after the signup: a reader who has read this far is choosing
+     whether to subscribe, and the editorial notes are reference material. #}
+  <div class="container">
     {# Sources #}
     <section id="sources" aria-labelledby="sources-heading">
       <div class="sources-section">
@@ -637,32 +674,6 @@ layout: base.njk
       </div>
     </section>
 
-  </div>{# /container #}
-
-  {# Newsletter #}
-  <div class="container">
-    <div class="newsletter">
-      <p class="newsletter__eyebrow">Stay connected</p>
-      <h2 class="newsletter__headline">Get the {{ issue.clusterName }}<br>delivered every Friday</h2>
-      <p class="newsletter__sub">The week's local news, events, and community directory — straight to your inbox. Free.</p>
-      {# Native form post — Buttondown's embed endpoint only supports real form
-         submissions. A fetch() cannot hand the subscriber over for CAPTCHA or
-         validation, and with mode:'no-cors' the response is unreadable, so the
-         old version reported success even when the signup silently failed. #}
-      <form class="newsletter__form embeddable-buttondown-form"
-            action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondownUser }}"
-            method="post"
-            aria-label="Newsletter signup">
-        <input type="hidden" name="tag" value="{{ clusterSlug }}">
-        <input type="hidden" name="embed" value="1">
-        <label class="visually-hidden" for="nl-email-{{ clusterSlug }}">Email address</label>
-        <input class="newsletter__input" id="nl-email-{{ clusterSlug }}"
-               type="email" name="email" placeholder="your@email.com"
-               required autocomplete="email">
-        <button class="newsletter__btn" type="submit">Subscribe</button>
-      </form>
-      <p class="newsletter__note" id="cluster-nl-note">We&rsquo;ll email you a link to confirm &mdash; check spam if it doesn&rsquo;t arrive. &nbsp;·&nbsp; <a href="/subscribe/?edition={{ clusterSlug }}" style="color:var(--accent);font-weight:700">Subscribe to more editions →</a></p>
-    </div>
   </div>
 
   {% endif %}
