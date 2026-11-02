@@ -165,6 +165,10 @@ module.exports = function (eleventyConfig) {
   // Returns null for a city outside the United States, which the template
   // treats as "do not draw" rather than writing NaN% into a style attribute.
   const { projectPercent } = require("./lib/us-projection");
+  // One field from each item: editions | pluck("name"). Nunjucks has no map().
+  eleventyConfig.addFilter("pluck", (list, field) =>
+    (Array.isArray(list) ? list : []).map((x) => x && x[field]).filter((v) => v != null && v !== ""));
+
   eleventyConfig.addFilter("usPoint", (city) => {
     if (!city || !city.map) return null;
     const { lat, lng } = city.map;

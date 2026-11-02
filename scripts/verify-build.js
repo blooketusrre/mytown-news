@@ -1394,6 +1394,73 @@ try {
     );
   }
 
+  /* ── The redesign of 30 October 2026 ──────────────────────────────────
+   * On design advice: the map is the navigation, with what each pin covers
+   * on hover; "coming soon" towns appear on the map only, never as links and
+   * never anywhere that lists editions; the footer no longer lists every
+   * edition; and an edition page reads news first, signup before sources. */
+  {
+    if (/class="us-map-list"/.test(homeHtml2)) {
+      errors.push("the city boxes under the national map are back — the map pins and their rollovers replaced them");
+    }
+    const tips = (homeHtml2.match(/class="us-map__tip /g) || []).length;
+    if (liveCities.length > 1 && tips < liveCities.length) {
+      errors.push(`only ${tips} map pins have a rollover — every live city should say what it covers`);
+    }
+    let soon = [];
+    try { soon = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "comingSoon.json"), "utf8")); } catch {}
+    const soonPins = homeHtml2.match(/<[a-z]+ class="us-map__pin us-map__pin--soon"/g) || [];
+    if (soonPins.some((t) => t.startsWith("<a "))) {
+      errors.push("a \"coming soon\" pin is a link — there is nothing to go to yet");
+    }
+    if (soon.length && soonPins.length !== soon.length) {
+      errors.push(`comingSoon.json lists ${soon.length} towns but the map shows ${soonPins.length}`);
+    }
+    const liveNames = new Set(cities.map((c) => c.name));
+    soon.filter((t) => liveNames.has(t.name)).forEach((t) =>
+      errors.push(`${t.name} is in both cities.json and comingSoon.json — remove it from comingSoon.json once it launches`));
+
+    // The footer is shared; check it on the homepage and on one edition.
+    const footerOf = (h) => (h.split(/<footer\b/i)[1] || "");
+    let anEdition = "";
+    try {
+      const eds = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "clusters.json"), "utf8")).filter((c) => c.live);
+      for (const c of eds) {
+        for (const rel of [`${c.citySlug}/${c.slug}`, c.slug, c.citySlug]) {
+          const f = path.join(OUT, rel || "", "index.html");
+          if (rel && fs.existsSync(f)) {
+            const h = fs.readFileSync(f, "utf8");
+            if (h.includes('id="top-stories"')) { anEdition = h; break; }
+          }
+        }
+        if (anEdition) break;
+      }
+    } catch {}
+    if (!anEdition) errors.push("could not find a built edition page to check its layout");
+    [["the homepage", homeHtml2], ["an edition page", anEdition]].forEach(([where, h]) => {
+      if (h && /site-footer__cluster-links/.test(footerOf(h))) {
+        errors.push(`the footer on ${where} lists every edition again — it was removed as clutter`);
+      }
+    });
+
+    if (anEdition) {
+      const at = (m) => anEdition.indexOf(m);
+      const order = [["top stories", 'id="top-stories"'], ["more from the community", 'id="more-news"'],
+                     ["events", 'id="events"'], ["directory", 'id="directory"'],
+                     ["the signup", 'class="newsletter"'], ["sources", 'id="sources"']]
+        .filter(([, m]) => at(m) !== -1);
+      for (let i = 1; i < order.length; i++) {
+        if (at(order[i][1]) < at(order[i - 1][1])) {
+          errors.push(`edition page order: ${order[i][0]} now comes before ${order[i - 1][0]}`);
+          break;
+        }
+      }
+      if (at('id="weather"') !== -1 && at('id="weather"') < at('id="more-news"')) {
+        errors.push("edition page order: the weather sits between the top stories and the rest of the news");
+      }
+    }
+  }
+
   /* ── The ZIP lookup ──────────────────────────────────────────────────────
    * It was San Francisco's, sitting under San Francisco's edition list. It is
    * now the first control on a national page, which changes what "correct"

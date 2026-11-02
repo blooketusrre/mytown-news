@@ -84,33 +84,54 @@ pageDesc: "Community news and events for towns and neighborhoods across the coun
       {% include "partials/zip-lookup.njk" %}
 
       {% if liveCities | length > 1 %}
-      {# Decorative on its own: the list below is the navigation, and it is the
-         only version that exists on a phone. A US map at 340px with five dots
-         on it is a picture, not a control. #}
-      <div class="us-map" aria-hidden="true">
+      {# The map is the navigation now. The list of city boxes that sat under it
+         was removed on 30 October 2026 on design advice: a reader already
+         knows the name of their own town, so what helps is what each pin
+         covers, shown on hover or focus.
+
+         Live pins link to their city. "Coming soon" pins come from
+         comingSoon.json, deliberately not from cities.json, so they cannot
+         reach the footer, the subscribe page or the ZIP lookup; they are not
+         links, and they say plainly that nothing publishes there yet. #}
+      <div class="us-map">
         <img class="us-map__outline" src="/assets/img/us-outline.svg" alt="" width="1025" height="604" loading="lazy" decoding="async">
         {% for city in liveCities %}
         {% set pt = city | usPoint %}
         {% if pt %}
-        <a class="us-map__pin" href="{{ city.slug | cityPath }}" tabindex="-1"
-           style="left:{{ pt.left | round(2) }}%;top:{{ pt.top | round(2) }}%">
+        {% set eds = clusters | editionsInCity(city.slug) %}
+        {% if eds | length > 1 %}{% set covers = eds | pluck("name") %}{% else %}{% set covers = eds[0].neighborhoods %}{% endif %}
+        <a class="us-map__pin" href="{{ city.slug | cityPath }}"
+           style="left:{{ pt.left | round(2) }}%;top:{{ pt.top | round(2) }}%"
+           aria-label="{{ city.name }}, {{ city.state }}: {{ covers | join(', ') }}">
           <span class="us-map__dot"></span>
           <span class="us-map__label"><span class="us-map__name">{{ city.name }}</span><span class="us-map__state">{{ city.state }}</span></span>
+          <span class="us-map__tip us-map__tip--{{ 'left' if pt.left < 22 else ('right' if pt.left > 78 else 'center') }}" aria-hidden="true">
+            <span class="us-map__tip-head">{{ eds | length }} edition{{ '' if eds | length == 1 else 's' }}</span>
+            {{ covers | join(' · ') }}
+          </span>
         </a>
         {% endif %}
         {% endfor %}
-      </div>
-
-      <ul class="us-map-list" role="list">
-        {% for city in liveCities %}
-        <li>
-          <a href="{{ city.slug | cityPath }}">
-            <span class="us-map-list__name">{{ city.name }}<span class="us-map-list__state">{{ city.state }}</span></span>
-            <span class="us-map-list__tag">{{ city.tagline }}</span>
-          </a>
-        </li>
+        {% for town in comingSoon %}
+        {% set pt = town | usPoint %}
+        {% if pt %}
+        <span class="us-map__pin us-map__pin--soon" tabindex="0"
+              style="left:{{ pt.left | round(2) }}%;top:{{ pt.top | round(2) }}%"
+              aria-label="{{ town.name }}, {{ town.state }}: coming soon">
+          <span class="us-map__dot"></span>
+          <span class="us-map__label"><span class="us-map__name">{{ town.name }}</span><span class="us-map__state">{{ town.state }}</span></span>
+          <span class="us-map__tip us-map__tip--{{ 'left' if pt.left < 22 else ('right' if pt.left > 78 else 'center') }}" aria-hidden="true">
+            <span class="us-map__tip-head">Coming soon</span>
+            A weekly edition for {{ town.name }} is in the works.
+          </span>
+        </span>
+        {% endif %}
         {% endfor %}
-      </ul>
+      </div>
+      <p class="us-map__legend">
+        <span class="us-map__legend-item"><span class="us-map__dot"></span> Publishing now</span>
+        <span class="us-map__legend-item"><span class="us-map__dot us-map__dot--soon"></span> Coming soon</span>
+      </p>
       {% endif %}
     </div>
   </section>
