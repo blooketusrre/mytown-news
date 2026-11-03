@@ -125,19 +125,43 @@ const ring = (pts) => "M" + pts.map(([lng, lat]) => lower48([lng, lat]).map((v) 
 const lakes = LAKES.map(ring).join("");
 const islands = ISLANDS.map(ring).join("");
 
-/* Alaska and Hawaii are insets. On a map that now has neighbours they sit on
- * top of the Pacific and northern Mexico, so each gets a small box of open
- * water, as insets do on printed maps. */
-const box = (fips, pad) => {
+/* Alaska and Hawaii are insets, each in a box of open water in the lower-left
+ * corner of the map (November 2026, from design review): flush to the corner
+ * so no stray tip of Baja shows beneath them, Alaska enlarged 15%, and each
+ * box outlined in the same white as the state borders.
+ *
+ * geoAlbersUsa places the two states itself, mid-Pacific; here they are drawn
+ * on their own and moved. No edition is in either, so no pin depends on where
+ * they sit, and the lower 48 — which the pins do depend on — is untouched. */
+const isInset = (f) => ["02", "15"].includes(String(f.id));
+const lower48Feats = { type: "FeatureCollection", features: states.features.filter((f) => !isInset(f)) };
+const CORNER = 6, GAP = 8;
+const placeInset = (fips, scale, pad, at) => {
   const f = states.features.find((x) => String(x.id) === fips);
   const [[x0, y0], [x1, y1]] = geoPath(reference).bounds(f);
-  // Kept inside the view, with a small margin, so no box runs off the edge.
-  const bx0 = Math.max(x0 - pad, VX + 6), by0 = Math.max(y0 - pad, VY + 6);
-  const bx1 = Math.min(x1 + pad, VX + VW - 6), by1 = Math.min(y1 + pad, VY + VH - 6);
-  return { x: Math.round(bx0), y: Math.round(by0), w: Math.round(bx1 - bx0), h: Math.round(by1 - by0) };
+  const w = (x1 - x0) * scale + 2 * pad, h = (y1 - y0) * scale + 2 * pad;
+  const bx = at.x, by = VY + VH - CORNER - h;
+  const tx = bx + pad - x0 * scale, ty = by + pad - y0 * scale;
+  return { id: fips, d: render(f), box: { x: Math.round(bx), y: Math.round(by), w: Math.round(w), h: Math.round(h) },
+           transform: `translate(${tx.toFixed(1)} ${ty.toFixed(1)}) scale(${scale})`, scale };
 };
-const insets = [box("02", 14), box("15", 12)];
-const insetRects = insets.map((b) => `<rect x="${b.x}" y="${b.y}" width="${b.w}" height="${b.h}" rx="10"/>`).join("");
+const alaska = placeInset("02", 1.15, 12, { x: VX + CORNER });
+const hawaii = placeInset("15", 1.0, 10, { x: alaska.box.x + alaska.box.w + GAP });
+const insetSvg = [alaska, hawaii].map((t) => {
+  const r = `x="${t.box.x}" y="${t.box.y}" width="${t.box.w}" height="${t.box.h}" rx="8"`;
+  // Texture filters are written in map units; inside a scaled group the
+  // stroke and blur are divided by the scale so Alaska matches the rest.
+  return `<clipPath id="clip-${t.id}"><rect ${r}/></clipPath>
+<rect ${r} fill="#d6e8f2"/>
+<g clip-path="url(#clip-${t.id})"><g transform="${t.transform}">
+<defs><path id="inset-${t.id}" d="${t.d}"/></defs>
+<use href="#inset-${t.id}" fill="none" stroke="#86bfe0" stroke-width="${(30 / t.scale).toFixed(1)}" stroke-linejoin="round" filter="url(#coast-blur)" opacity="0.8"/>
+<use href="#inset-${t.id}" fill="#e3e9d2"/>
+<use href="#inset-${t.id}" fill="#000" filter="url(#patches)" opacity="0.16"/>
+<use href="#inset-${t.id}" fill="#000" filter="url(#highlights)" opacity="0.22"/>
+</g></g>
+<rect ${r} fill="none" stroke="#ffffff" stroke-width="1.2"/>`;
+}).join("\n");
 
 // The projection parameters are recorded in the file itself. The agreement
 // check above proves the two implementations compute the same *formula*, but
@@ -147,11 +171,13 @@ const insetRects = insets.map((b) => `<rect x="${b.x}" y="${b.y}" width="${b.w}"
 // scripts/verify-build.js compares this attribute against the module.
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${ours.VIEWBOX}" aria-hidden="true" data-projection="albersUsa ${WIDTH}x${HEIGHT}@${SCALE} view ${ours.VIEWBOX}">
 <defs>
-<path id="land-shape" d="${render(states)}"/>
+<path id="land-shape" d="${render(lower48Feats)}"/>
 <path id="neighbours" d="${neighbours}"/>
-<clipPath id="inset-water">${insetRects}</clipPath>
 <!-- Texture on the United States only: three or four close greens in soft
-     patches, with no regional meaning, and a faint grain. -->
+     patches, with no regional meaning, and a faint grain. The light
+     "highlights" are small and faint (November 2026): at a larger scale and
+     twice the strength they made big pale ovals that looked artificial, and
+     the palest of them, on the Olympic Peninsula, matched Canada. -->
 <filter id="patches" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
 <feTurbulence type="fractalNoise" baseFrequency="0.007 0.009" numOctaves="3" seed="23" result="n"/>
 <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.66  0 0 0 0 0.45  1 0 0 0 0" result="c"/>
@@ -159,7 +185,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${ours.VIEWBOX}" a
 <feComposite in="q" in2="SourceGraphic" operator="in"/>
 </filter>
 <filter id="highlights" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
-<feTurbulence type="fractalNoise" baseFrequency="0.011 0.014" numOctaves="2" seed="5" result="n"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.026 0.032" numOctaves="3" seed="5" result="n"/>
 <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.96  0 0 0 0 0.97  0 0 0 0 0.90  1 0 0 0 0" result="c"/>
 <feComponentTransfer in="c" result="q"><feFuncA type="discrete" tableValues="0 0 0 1"/></feComponentTransfer>
 <feComposite in="q" in2="SourceGraphic" operator="in"/>
@@ -180,11 +206,10 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${ours.VIEWBOX}" a
 <use href="#neighbours" fill="#edf0e6"/>
 <path d="${lakes}" fill="#b3d6eb"/>
 <path d="${islands}" fill="#edf0e6"/>
-<g fill="#d6e8f2" stroke="#c4dcea" stroke-width="1">${insetRects}</g>
-<g clip-path="url(#inset-water)"><use href="#land-shape" fill="none" stroke="#86bfe0" stroke-width="30" stroke-linejoin="round" filter="url(#coast-blur)" opacity="0.8"/></g>
+${insetSvg}
 <use href="#land-shape" fill="#e3e9d2"/>
 <use href="#land-shape" fill="#000" filter="url(#patches)" opacity="0.16"/>
-<use href="#land-shape" fill="#000" filter="url(#highlights)" opacity="0.45"/>
+<use href="#land-shape" fill="#000" filter="url(#highlights)" opacity="0.22"/>
 <use href="#land-shape" fill="#000" filter="url(#grain)" opacity="0.10"/>
 <path d="${render(borders)}" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-linejoin="round"/>
 </svg>

@@ -711,6 +711,31 @@ try {
     }
   }
 
+  /* The homepage slide show. Every photo must exist, and carry the credit and
+   * licence the caption shows: the Creative Commons ones are only ours to use
+   * with that credit visible. A photo added without them is a licence breach
+   * waiting to happen, so it fails the build. */
+  {
+    let slides = [];
+    try { slides = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "heroSlides.json"), "utf8")); }
+    catch (e) { errors.push(`heroSlides.json is unreadable: ${e.message}`); }
+    slides.forEach((s, i) => {
+      const where = `heroSlides.json #${i + 1} (${s.place || s.file || "?"})`;
+      if (!s.file || !fs.existsSync(path.join(OUT, "assets", "img", "slides", s.file))) errors.push(`${where}: image ${s.file} is not in the built site`);
+      ["place", "photographer", "license", "source"].forEach((k) => { if (!s[k]) errors.push(`${where}: missing ${k}`); });
+      if (/^CC BY/i.test(s.license || "") && !/^https:\/\/creativecommons\.org\/licenses\//.test(s.licenseUrl || "")) {
+        errors.push(`${where}: ${s.license} needs a link to the licence`);
+      }
+    });
+    const home = fs.existsSync(path.join(OUT, "index.html")) ? fs.readFileSync(path.join(OUT, "index.html"), "utf8") : "";
+    if (slides.length && (home.match(/class="home-banner__credit/g) || []).length !== slides.length) {
+      errors.push("the homepage banner does not show a credit line for every slide");
+    }
+    if (slides.length > 1 && !/home-banner__pause/.test(home)) {
+      errors.push("the homepage slide show has no pause button — moving content needs a way to stop it (WCAG 2.2.2)");
+    }
+  }
+
   // "Buttondown" means nothing to a reader; the address they will see does.
   {
     const done = fs.existsSync(path.join(OUT, "subscribed", "index.html"))
