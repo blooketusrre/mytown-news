@@ -21,11 +21,13 @@
 <feColorMatrix in="g" type="matrix" values="0 0 0 0 0.40  0 0 0 0 0.48  0 0 0 0 0.34  1.2 0 0 0 -0.5" result="gs"/>
 <feComposite in="gs" in2="SourceGraphic" operator="in"/>
 </filter>
-<!-- The deeper blue just off the West Coast, fading out to sea. -->
-<filter id="coast-blur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="9"/></filter>
-<filter id="feather" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="26"/></filter><mask id="west-coast" maskUnits="userSpaceOnUse" x="-70" y="3" width="1025" height="604"><rect x="-110" y="40" width="300" height="355" fill="#fff" filter="url(#feather)"/></mask>
+<!-- A band of deeper blue along every coast, the same on all of them, fading out
+     to sea; masked off the land borders with Canada and Mexico, which are not coasts.
+     Mask polygons computed from lib/us-projection.js along the border. -->
+<filter id="coast-blur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="8"/></filter>
+<filter id="feather" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter><mask id="coasts" maskUnits="userSpaceOnUse" x="-70" y="3" width="1025" height="604"><rect x="-70" y="3" width="1025" height="604" fill="#fff"/><g filter="url(#feather)"><polygon points="83.6,3.0 83.6,16.2 90.9,18.3 98.2,20.4 105.5,22.4 112.8,24.4 120.1,26.4 127.4,28.3 134.8,30.2 142.1,32.1 149.5,33.9 156.9,35.6 164.3,37.4 171.6,39.1 179.0,40.7 186.5,42.4 193.9,43.9 201.3,45.5 208.7,47.0 216.2,48.4 223.6,49.9 231.1,51.2 238.5,52.6 246.0,53.9 253.5,55.2 261.0,56.4 268.5,57.6 276.0,58.7 283.5,59.8 291.0,60.9 298.5,61.9 306.0,62.9 313.5,63.9 321.0,64.8 328.6,65.7 336.1,66.5 343.7,67.3 351.2,68.0 358.8,68.8 366.3,69.4 373.9,70.1 381.4,70.7 389.0,71.2 396.6,71.7 404.1,72.2 411.7,72.6 419.3,73.0 426.8,73.4 434.4,73.7 442.0,74.0 449.6,74.2 457.2,74.4 464.7,74.6 472.3,74.7 479.9,74.8 487.5,74.8 495.1,74.8 502.7,74.7 502.7,81.5 536.4,87.5 575.1,92.6 589.0,94.0 589.0,3.0" fill="#000"/><polygon points="807.5,3.0 807.5,148.4 821.5,129.0 830.0,122.5 851.9,117.3 879.9,110.2 885.9,101.6 890.0,74.6 898.9,48.6 915.9,45.9 924.2,59.9 928.8,75.1 938.2,86.5 968.2,86.5 968.2,3.0" fill="#000"/><polygon points="124.1,468.5 138.3,542.4 154.5,549.4 163.4,542.1 174.4,551.2 192.8,563.4 232.8,563.4 214.4,551.2 203.4,542.1 194.5,549.4 178.3,542.4 164.1,468.5" fill="#000"/><polygon points="91.3,389.1 139.2,395.8 136.4,399.9 201.1,439.4 256.4,447.4 257.8,436.1 290.1,440.0 318.0,470.3 325.7,493.8 348.1,509.3 365.1,492.3 384.7,493.6 399.4,514.8 420.0,547.4 427.3,572.5 449.6,579.8 461.8,584.5 461.8,624.5 449.6,619.8 427.3,612.5 420.0,587.4 399.4,554.8 384.7,533.6 365.1,532.3 348.1,549.3 325.7,533.8 318.0,510.3 290.1,480.0 257.8,476.1 256.4,487.4 201.1,479.4 136.4,439.9 139.2,435.8 91.3,429.1" fill="#000"/></g></mask>
 </defs>
-<g mask="url(#west-coast)"><use href="#land-shape" fill="none" stroke="#79b4da" stroke-width="34" stroke-linejoin="round" filter="url(#coast-blur)" opacity="0.85"/></g>
+<g mask="url(#coasts)"><use href="#land-shape" fill="none" stroke="#86bfe0" stroke-width="30" stroke-linejoin="round" filter="url(#coast-blur)" opacity="0.8"/></g>
 <use href="#land-shape" fill="#e3e9d2"/>
 <use href="#land-shape" fill="#000" filter="url(#patches)" opacity="0.16"/>
 <use href="#land-shape" fill="#000" filter="url(#highlights)" opacity="0.45"/>
