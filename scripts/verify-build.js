@@ -118,15 +118,12 @@ if (fs.existsSync(homepage)) {
   if (!/id="editions"/.test(html)) {
     errors.push('index.html is missing the "#editions" section');
   }
-  // One card per live city, which is what the homepage lists now. It used to
-  // count San Francisco's edition cards, and kept doing so after that list
-  // moved to /san-francisco/ — so it reported "0 of 14" on every single build.
-  //
-  // A warning that is permanently wrong is worse than no warning: it is the
-  // thing that teaches you to skim past the warnings that are not.
-  const cityCards = (html.match(/class="city-pick"/g) || []).length;
-  if (liveCityCount && cityCards < liveCityCount) {
-    warnings.push(`index.html shows ${cityCards} city cards but ${liveCityCount} cities are live`);
+  // The per-city "Editor's Picks" cards were removed in the November 2026
+  // redesign (a Heber City reader has no use for a San Francisco lead story),
+  // so there is no longer a card count to check. The map, below, is what
+  // lists every live city now, and its own checks cover that.
+  if (/class="city-pick"/.test(html)) {
+    errors.push("the per-city Editor's Picks cards are back on the homepage — removed in the November 2026 redesign");
   }
 }
 

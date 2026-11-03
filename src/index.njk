@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 pageTitle: "My Town News — Local News for Your Town, Every Friday"
-pageDesc: "Community news and events for towns and neighborhoods across the country, delivered to your inbox every Friday. Free and independent."
+pageDesc: "Independent local news, built around the events, people and places that make a community. Free, every Friday."
 ---
 
 {# The national homepage.
@@ -17,82 +17,94 @@ pageDesc: "Community news and events for towns and neighborhoods across the coun
    same treatment as it grows past one edition. #}
 {% set liveCities = cities | selectattr("live") | list %}
 
-{# ── Hero ──────────────────────────────────────────────────────────────── #}
-<header class="masthead home-hero" role="banner">
-  <div class="container">
-    <p class="home-hero__eyebrow">Free &amp; Independent · Every Friday</p>
-    <h1 class="home-hero__title">My Town <em>News<sup class="tm" aria-label="trademark">™</sup></em></h1>
-    {# Deliberately says nothing about how many towns there are, and nothing
-       about closed papers. The count goes stale the week a town is added, and
-       "where the old one stopped" is not true everywhere — San Francisco has
-       several outlets, Ennis has a living weekly. Copy that has to be revisited
-       every launch is copy that will eventually be wrong on the front page. #}
-    <p class="home-hero__desc">
-      Community news and events, delivered to your inbox every Friday.
-    </p>
-  </div>
-  <div class="gold-rule"></div>
-</header>
+{# ── The national homepage, redesigned November 2026 ────────────────────────
+   From a mock-up by a former IDEO creative director, keeping the site's navy
+   and gold: one compact header, a banner, "find your edition" beside a
+   "bring us to your town" card, the coverage map with its own text, and a
+   single subscribe band. The per-city "Editor's Picks" cards were removed:
+   a reader in Heber City has no use for a San Francisco lead story, and they
+   were most of the page's height. #}
 
-{# ── Sticky nav ────────────────────────────────────────────────────────── #}
-<nav class="site-nav" aria-label="Site navigation">
-  <div class="site-nav__inner container">
-    <a class="site-nav__logo" href="/" aria-label="My Town News home">{% inlineMark %}</a>
-    <span class="site-nav__label">My Town News</span>
-    <ul class="site-nav__links" role="list">
-      <li><a href="#editions">Editions</a></li>
-      <li><a href="#this-week">This Week</a></li>
-      <li><a href="#newsletter">Newsletter</a></li>
-    </ul>
-    <div class="site-nav__right">
-      <a class="site-nav__aux" href="/about/">About</a>
-      <a class="site-nav__subscribe-btn" href="/subscribe/">Subscribe</a>
-    </div>
+{# ── Header: the logo, the name and the navigation in one bar ───────────── #}
+<header class="home-header" role="banner">
+  <div class="container home-header__inner">
+    <a class="home-brand" href="/" aria-label="My Town News home">
+      <span class="home-brand__mark">{% inlineMark %}</span>
+      <span class="home-brand__text">
+        <span class="home-brand__name">My Town <em>News<sup class="tm" aria-label="trademark">™</sup></em></span>
+        <span class="home-brand__tag">Free &amp; Independent · Every Friday</span>
+      </span>
+    </a>
+    <nav class="home-nav" aria-label="Site navigation">
+      <a href="#editions">Editions</a>
+      <a href="#where">Map</a>
+      <a href="/about/">About</a>
+      <a class="home-nav__subscribe" href="/subscribe/">Subscribe</a>
+    </nav>
   </div>
-</nav>
+</header>
 
 <main id="main">
 
-  {# ── National map ────────────────────────────────────────────────────────
-     Where My Town News publishes, nationally. Live cities only: the footer
-     rule that unlaunched editions must not be advertised applies here too,
-     and a map is a worse place to break it than a footer, because a dot
-     reads as a promise.
+  {# ── Banner ─────────────────────────────────────────────────────────────
+     The street is an original illustration (scripts/build-main-street.py),
+     not a photograph: nothing to license, a few kilobytes, and drawn in the
+     site's own colours. It fades into the navy behind the headline. #}
+  <section class="home-banner" aria-labelledby="home-banner-title">
+    <div class="home-banner__art" aria-hidden="true"></div>
+    <div class="container home-banner__inner">
+      <h1 class="home-banner__title" id="home-banner-title">Your town. Your stories.<br>Your <em>community.</em></h1>
+      <p class="home-banner__sub">Independent local news, built around the events, people and places that make a community.</p>
+    </div>
+  </section>
 
-     It appears only once there are at least two live cities. A map of the
-     United States with a single dot on it argues against the thing it is
-     meant to argue for, and hiding it until it earns its place means nobody
-     has to remember to switch it on — it switches itself on with the second
-     launch.
-
-     No Leaflet, no tile server, no API key. The outline is one cached SVG
-     generated by scripts/build-us-outline.js and the dots are absolutely
-     positioned at percentages computed at build time by lib/us-projection.js.
-     After CARTO started watermarking our tiles in August and a missing
-     leaflet.css turned the neighborhood map into a column of images in
-     September, a map with no third-party runtime dependency at all is worth
-     more than an interactive one. #}
-  <section id="editions" class="us-map-section" aria-labelledby="us-map-heading">
-    <div class="container">
-      <div class="us-map-section__intro">
-        <h2 class="us-map-section__title" id="us-map-heading">Find Your Edition</h2>
-        <p class="us-map-section__sub">
-          Enter your ZIP code and we'll take you to your edition.
-        </p>
+  {# ── Find an edition, and bring one to your town ───────────────────── #}
+  <section id="editions" class="home-find" aria-labelledby="find-heading">
+    <div class="container home-find__inner">
+      <div class="home-find__main">
+        <p class="home-eyebrow">Explore our editions</p>
+        <h2 class="home-find__title" id="find-heading">Find a community we cover</h2>
+        <p class="home-find__sub">Enter your ZIP code to see if we cover your area, or browse our current editions below.</p>
+        {% set zipVariant = "hero" %}
+        {% include "partials/zip-lookup.njk" %}
+        <p class="home-find__or" aria-hidden="true"><span>or</span></p>
+        <a class="home-find__browse" href="#where">View all current editions <span aria-hidden="true">&rarr;</span></a>
       </div>
 
-      {% include "partials/zip-lookup.njk" %}
+      <aside class="home-cta" aria-labelledby="cta-heading">
+        <svg class="home-cta__icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"><circle cx="128" cy="78" r="26"/><circle cx="58" cy="106" r="21"/><circle cx="198" cy="106" r="21"/><path d="M84 206v-26a44 44 0 0 1 88 0v26"/><path d="M22 206v-18a36 36 0 0 1 58-28"/><path d="M234 206v-18a36 36 0 0 0-58-28"/></g></svg>
+        <h2 class="home-cta__title" id="cta-heading">Bring My Town News to your town</h2>
+        <p class="home-cta__text">Interested in a local edition? We&rsquo;re always looking for new communities, local journalists and partners.</p>
+        {# An email for now; a form later. #}
+        <a class="home-cta__link" href="mailto:{{ site.email }}?subject=Bring%20My%20Town%20News%20to%20my%20town">Let&rsquo;s talk <span aria-hidden="true">&rarr;</span></a>
+      </aside>
+    </div>
+  </section>
 
-      {% if liveCities | length > 1 %}
-      {# The map is the navigation now. The list of city boxes that sat under it
-         was removed on 30 October 2026 on design advice: a reader already
-         knows the name of their own town, so what helps is what each pin
-         covers, shown on hover or focus.
+  {# ── Where we publish ────────────────────────────────────────────────────
+     The map is the navigation: live pins link to their city and show what
+     they cover on hover or focus; "coming soon" towns come from
+     comingSoon.json, never cities.json, so they cannot reach the footer, the
+     subscribe page or the ZIP lookup, and they are not links.
 
-         Live pins link to their city. "Coming soon" pins come from
-         comingSoon.json, deliberately not from cities.json, so they cannot
-         reach the footer, the subscribe page or the ZIP lookup; they are not
-         links, and they say plainly that nothing publishes there yet. #}
+     Drawn only once at least two cities are live: a map of the United States
+     with one dot argues against the point it is making. No tile server and
+     no third-party script: one cached SVG outline, recoloured green land on
+     blue water in scripts/build-us-outline.js, with pins placed at build time
+     by lib/us-projection.js. #}
+  {% if liveCities | length > 1 %}
+  <section id="where" class="home-where" aria-labelledby="where-heading">
+    <div class="home-where__inner">
+      <div class="home-where__text">
+        <p class="home-eyebrow">Our current editions</p>
+        <h2 class="home-where__title" id="where-heading">Where we&rsquo;re already local</h2>
+        <p class="home-where__sub">We currently publish in a select number of communities, with more on the way.<span class="home-where__hint"> Hover over a town to see what it covers.</span></p>
+        <ul class="home-where__legend" role="list">
+          <li><span class="us-map__dot" aria-hidden="true"></span> Active edition</li>
+          <li><span class="us-map__dot us-map__dot--soon" aria-hidden="true"></span> Coming soon</li>
+        </ul>
+      </div>
+      <div class="home-where__map">
       <div class="us-map">
         <img class="us-map__outline" src="/assets/img/us-outline.svg" alt="" width="1025" height="604" loading="lazy" decoding="async">
         {% for city in liveCities %}
@@ -128,84 +140,22 @@ pageDesc: "Community news and events for towns and neighborhoods across the coun
         {% endif %}
         {% endfor %}
       </div>
-      <p class="us-map__legend">
-        <span class="us-map__legend-item"><span class="us-map__dot"></span> Publishing now</span>
-        <span class="us-map__legend-item"><span class="us-map__dot us-map__dot--soon"></span> Coming soon</span>
-      </p>
-      {% endif %}
+      </div>
     </div>
   </section>
+  {% endif %}
 
-  {# ── This Week — Editor's Picks ──────────────────────────────────────── #}
-  <section id="this-week" class="editors-picks" aria-labelledby="picks-heading">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-head__label" id="picks-heading">This Week — Editor's Picks</h2>
-        <span class="section-head__line" aria-hidden="true"></span>
-      </div>
-
-      {# One card per live city: the lead story from whichever of that city's
-         editions published most recently.
-
-         This was a single hardcoded North Waterfront story with an "All SF
-         Neighborhoods" grid beneath it — both written when San Francisco was
-         the only city, and the grid pointed exclusively at SF editions.
-
-         A city with no issue yet is shown without a story rather than hidden.
-         Every city spends its first week in exactly that state, and a homepage
-         that quietly omits a town we have announced is worse than one that
-         says the first issue is coming. #}
-      <div class="city-picks">
-        {% for city in liveCities %}
-        {% set lead = city.slug | cityLead(clusters) %}
-        <article class="city-pick">
-          <div class="city-pick__head">
-            <h3 class="city-pick__city">
-              <a href="{{ city.slug | cityPath }}">{{ city.name }}<span class="city-pick__state">{{ city.state }}</span></a>
-            </h3>
-            {% if lead %}<span class="city-pick__week">{{ lead.issue.weekOf | date_short }}</span>{% endif %}
-          </div>
-
-          {% if lead %}
-          <span class="nbadge" style="--accent:{{ lead.edition.accent }};border-color:{{ lead.edition.accent }};color:{{ lead.edition.accent }}">{{ lead.edition.name }}</span>
-          <h4 class="city-pick__headline">{{ lead.story.headline }}</h4>
-          {% if lead.story.dek %}<p class="city-pick__dek">{{ lead.story.dek }}</p>{% endif %}
-          <p class="city-pick__body">{{ (lead.story.body or "") | excerpt(45) }}</p>
-          <a class="city-pick__link" style="color:{{ lead.edition.accent }};border-color:{{ lead.edition.accent }}"
-             href="{{ lead.edition | editionPath(clusters) }}">Read {{ lead.edition.name }} &rarr;</a>
-          {% else %}
-          <p class="city-pick__body">{{ city.tagline }}</p>
-          <p class="city-pick__soon">First issue coming Friday.</p>
-          {% endif %}
-        </article>
-        {% endfor %}
-      </div>
-
-    </div>
-  </section>
-
-  {# ── Newsletter ───────────────────────────────────────────────────────── #}
-  <section id="newsletter" aria-labelledby="newsletter-heading">
-    <div class="container">
-      <div class="newsletter">
-        <p class="newsletter__eyebrow">Free. Independent. Weekly.</p>
-        <h2 class="newsletter__headline" id="newsletter-heading">Get My Town News<br>every Friday morning</h2>
-        <p class="newsletter__sub">
-          Local news, events, and your community directory — every edition, every week.
-        </p>
-        {# This was a form with no action attribute and no JavaScript behind it.
-           Typing an address and pressing Subscribe reloaded the page with a
-           query string and subscribed nobody — on the most-visited page on the
-           site, silently, for as long as it has existed. Every edition page has
-           posted to Buttondown correctly the whole time.
-
-           It cannot simply be pointed at Buttondown: a national page has no one
-           tag to apply, and an untagged subscribe mails the person every edition
-           in the country. So it goes to /subscribe/, where they choose — which
-           is also the page that now groups editions by city. A button that works
-           beats a form that does not. #}
-        <a class="newsletter__cta" href="/subscribe/">Choose your editions &rarr;</a>
-        <p class="newsletter__note">Free. No spam. Unsubscribe from any edition anytime.</p>
+  {# ── Subscribe band ─────────────────────────────────────────────────────
+     Goes to /subscribe/, where a reader chooses editions: a national page
+     has no single tag to apply, and an untagged signup would mail someone
+     every edition in the country. #}
+  <section id="newsletter" class="home-band" aria-labelledby="band-heading">
+    <div class="container home-band__inner">
+      <svg class="home-band__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"><rect x="10" y="10" width="44" height="44" rx="3"/><path d="M4 18v32a4 4 0 0 0 4 4h2"/><rect x="18" y="18" width="14" height="12"/><path d="M38 20h10M38 26h10M18 38h30M18 45h30"/></g></svg>
+      <h2 class="home-band__title" id="band-heading">Local news makes stronger communities.</h2>
+      <div class="home-band__action">
+        <a class="home-band__btn" href="/subscribe/">Subscribe <span aria-hidden="true">&rarr;</span></a>
+        <p class="home-band__note">Free &amp; Independent · Every Friday</p>
       </div>
     </div>
   </section>
@@ -213,4 +163,3 @@ pageDesc: "Community news and events for towns and neighborhoods across the coun
 </main>
 
 {% include "partials/footer.njk" %}
-

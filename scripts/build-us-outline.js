@@ -85,8 +85,8 @@ const render = geoPath(reference).digits(0);
 // correct outline drawn at the old scale under dots placed at the new one.
 // scripts/verify-build.js compares this attribute against the module.
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${ours.VIEWBOX}" aria-hidden="true" data-projection="albersUsa ${WIDTH}x${HEIGHT}@${SCALE} view ${ours.VIEWBOX}">
-<path d="${render(states)}" fill="#e5e0d8"/>
-<path d="${render(borders)}" fill="none" stroke="#faf8f5" stroke-width="1.2" stroke-linejoin="round"/>
+<path d="${render(states)}" fill="#e2ead2"/>
+<path d="${render(borders)}" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-linejoin="round"/>
 </svg>
 `;
 
