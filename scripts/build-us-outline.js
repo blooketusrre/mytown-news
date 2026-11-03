@@ -4,7 +4,7 @@
  * Run it with `node scripts/build-us-outline.js` after installing the dev
  * dependencies it needs:
  *
- *     npm install --no-save us-atlas@3 topojson-client@3 d3-geo@3
+ *     npm install --no-save us-atlas@3 world-atlas@2 topojson-client@3 d3-geo@3
  *
  * It rewrites src/assets/img/us-outline.svg. It is deliberately NOT part of
  * the site build. us-atlas is several megabytes of source geometry the site
@@ -26,7 +26,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const { geoPath, geoAlbersUsa } = require("d3-geo");
+const { geoPath, geoAlbersUsa, geoAlbers } = require("d3-geo");
 const topojson = require("topojson-client");
 const ours = require("../lib/us-projection");
 
@@ -78,6 +78,67 @@ const borders = topojson.mesh(us, us.objects.states, (a, b) => a !== b);
 // visible and costs about half the file size.
 const render = geoPath(reference).digits(0);
 
+/* ── The neighbours ─────────────────────────────────────────────────────────
+ * Since November 2026 the map shows Canada, Mexico and the Caribbean as plain
+ * land around a textured United States, as in the design mock-up, so the
+ * coasts and borders read the way a reader expects.
+ *
+ * Natural Earth land (world-atlas, public domain), drawn with the plain
+ * Albers projection that geoAlbersUsa uses for the lower 48 — the same scale
+ * and translate — so it lines up with the states exactly. Clipped well
+ * outside the view so the coastal band is never drawn along a clip edge. */
+const [VX, VY, VW, VH] = ours.VIEWBOX.split(" ").map(Number);
+const M = 90;
+const lower48 = geoAlbers().scale(SCALE).translate([WIDTH / 2, HEIGHT / 2])
+  .clipExtent([[VX - M, VY - M], [VX + VW + M, VY + VH + M]]);
+const world = require("world-atlas/land-50m.json");
+const neighbours = geoPath(lower48).digits(0)(topojson.feature(world, world.objects.land));
+
+/* Natural Earth's land layer fills the Great Lakes in. These are the lakes,
+ * traced by hand from coordinates. Only their Canadian shores show: the
+ * United States is drawn on top with its own exact shoreline, so on the US
+ * side each outline simply runs through land. Manitoulin Island is put back
+ * over Lake Huron. */
+const LAKES = [
+  // Superior: Canadian north shore, then back through Michigan and Wisconsin.
+  [[-89.6, 48.0], [-89.2, 48.4], [-88.3, 48.75], [-87.3, 48.8], [-86.4, 48.72], [-85.9, 48.1], [-84.9, 47.95],
+   [-84.7, 47.4], [-84.6, 46.9], [-84.4, 46.5], [-84.6, 46.35], [-87.0, 46.2], [-90.0, 46.3], [-92.2, 46.62], [-90.9, 47.3]],
+  // Michigan: wholly in the US, which shows its own shoreline.
+  [[-87.9, 41.55], [-87.4, 41.55], [-86.5, 42.2], [-86.2, 43.0], [-86.45, 44.0], [-85.6, 45.0], [-84.8, 45.85],
+   [-86.5, 46.0], [-87.7, 45.3], [-88.0, 44.5], [-87.6, 43.5], [-87.95, 42.5]],
+  // Huron with Georgian Bay and the North Channel.
+  [[-84.2, 46.42], [-83.5, 46.28], [-82.3, 46.22], [-81.3, 46.1], [-80.6, 45.92], [-80.3, 45.45], [-79.9, 44.9],
+   [-80.6, 44.55], [-80.95, 44.6], [-81.3, 45.0], [-81.65, 45.26], [-81.35, 44.95], [-81.6, 44.6], [-81.7, 44.15],
+   [-81.75, 43.6], [-82.0, 43.2], [-82.4, 43.0], [-83.0, 43.5], [-84.0, 44.0], [-84.4, 45.4], [-84.6, 46.0]],
+  // Erie.
+  [[-83.15, 42.05], [-82.6, 41.95], [-82.5, 41.9], [-81.8, 42.27], [-81.0, 42.66], [-80.2, 42.6], [-80.15, 42.53],
+   [-79.5, 42.86], [-79.0, 42.92], [-78.85, 42.75], [-80.0, 42.1], [-81.5, 41.4], [-83.45, 41.7]],
+  // Ontario.
+  [[-79.1, 43.26], [-79.85, 43.3], [-79.4, 43.64], [-78.5, 43.92], [-77.6, 44.02], [-77.0, 43.88], [-76.9, 44.1],
+   [-76.5, 44.22], [-76.2, 44.1], [-76.3, 43.5], [-77.6, 43.25]],
+];
+const ISLANDS = [
+  // Manitoulin.
+  [[-83.0, 45.95], [-82.0, 46.0], [-81.65, 45.85], [-81.75, 45.65], [-82.5, 45.55], [-82.9, 45.75]],
+];
+const ring = (pts) => "M" + pts.map(([lng, lat]) => lower48([lng, lat]).map((v) => Math.round(v)).join(",")).join("L") + "Z";
+const lakes = LAKES.map(ring).join("");
+const islands = ISLANDS.map(ring).join("");
+
+/* Alaska and Hawaii are insets. On a map that now has neighbours they sit on
+ * top of the Pacific and northern Mexico, so each gets a small box of open
+ * water, as insets do on printed maps. */
+const box = (fips, pad) => {
+  const f = states.features.find((x) => String(x.id) === fips);
+  const [[x0, y0], [x1, y1]] = geoPath(reference).bounds(f);
+  // Kept inside the view, with a small margin, so no box runs off the edge.
+  const bx0 = Math.max(x0 - pad, VX + 6), by0 = Math.max(y0 - pad, VY + 6);
+  const bx1 = Math.min(x1 + pad, VX + VW - 6), by1 = Math.min(y1 + pad, VY + VH - 6);
+  return { x: Math.round(bx0), y: Math.round(by0), w: Math.round(bx1 - bx0), h: Math.round(by1 - by0) };
+};
+const insets = [box("02", 14), box("15", 12)];
+const insetRects = insets.map((b) => `<rect x="${b.x}" y="${b.y}" width="${b.w}" height="${b.h}" rx="10"/>`).join("");
+
 // The projection parameters are recorded in the file itself. The agreement
 // check above proves the two implementations compute the same *formula*, but
 // it cannot catch the other failure: changing WIDTH, HEIGHT or SCALE in
@@ -87,9 +148,10 @@ const render = geoPath(reference).digits(0);
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${ours.VIEWBOX}" aria-hidden="true" data-projection="albersUsa ${WIDTH}x${HEIGHT}@${SCALE} view ${ours.VIEWBOX}">
 <defs>
 <path id="land-shape" d="${render(states)}"/>
-<!-- Texture: three or four close greens in soft patches, with no regional
-     meaning. Noise is quantised into a few steps so it reads as tones, not
-     as a gradient or as topography. -->
+<path id="neighbours" d="${neighbours}"/>
+<clipPath id="inset-water">${insetRects}</clipPath>
+<!-- Texture on the United States only: three or four close greens in soft
+     patches, with no regional meaning, and a faint grain. -->
 <filter id="patches" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
 <feTurbulence type="fractalNoise" baseFrequency="0.007 0.009" numOctaves="3" seed="23" result="n"/>
 <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.66  0 0 0 0 0.45  1 0 0 0 0" result="c"/>
@@ -107,13 +169,19 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${ours.VIEWBOX}" a
 <feColorMatrix in="g" type="matrix" values="0 0 0 0 0.40  0 0 0 0 0.48  0 0 0 0 0.34  1.2 0 0 0 -0.5" result="gs"/>
 <feComposite in="gs" in2="SourceGraphic" operator="in"/>
 </filter>
-<!-- A band of deeper blue along every coast, the same on all of them, fading out
-     to sea; masked off the land borders with Canada and Mexico, which are not coasts.
-     Mask polygons computed from lib/us-projection.js along the border. -->
+<!-- A band of deeper blue along every coast, fading out to sea: a blurred
+     stroke of all the land, drawn underneath it. Land borders are inside
+     the land now, so the band only ever shows on water. -->
 <filter id="coast-blur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="8"/></filter>
-<filter id="feather" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter><mask id="coasts" maskUnits="userSpaceOnUse" x="-70" y="3" width="1025" height="604"><rect x="-70" y="3" width="1025" height="604" fill="#fff"/><g filter="url(#feather)"><polygon points="83.6,3.0 83.6,16.2 90.9,18.3 98.2,20.4 105.5,22.4 112.8,24.4 120.1,26.4 127.4,28.3 134.8,30.2 142.1,32.1 149.5,33.9 156.9,35.6 164.3,37.4 171.6,39.1 179.0,40.7 186.5,42.4 193.9,43.9 201.3,45.5 208.7,47.0 216.2,48.4 223.6,49.9 231.1,51.2 238.5,52.6 246.0,53.9 253.5,55.2 261.0,56.4 268.5,57.6 276.0,58.7 283.5,59.8 291.0,60.9 298.5,61.9 306.0,62.9 313.5,63.9 321.0,64.8 328.6,65.7 336.1,66.5 343.7,67.3 351.2,68.0 358.8,68.8 366.3,69.4 373.9,70.1 381.4,70.7 389.0,71.2 396.6,71.7 404.1,72.2 411.7,72.6 419.3,73.0 426.8,73.4 434.4,73.7 442.0,74.0 449.6,74.2 457.2,74.4 464.7,74.6 472.3,74.7 479.9,74.8 487.5,74.8 495.1,74.8 502.7,74.7 502.7,81.5 536.4,87.5 575.1,92.6 589.0,94.0 589.0,3.0" fill="#000"/><polygon points="807.5,3.0 807.5,148.4 821.5,129.0 830.0,122.5 851.9,117.3 879.9,110.2 885.9,101.6 890.0,74.6 898.9,48.6 915.9,45.9 924.2,59.9 928.8,75.1 938.2,86.5 968.2,86.5 968.2,3.0" fill="#000"/><polygon points="124.1,468.5 138.3,542.4 154.5,549.4 163.4,542.1 174.4,551.2 192.8,563.4 232.8,563.4 214.4,551.2 203.4,542.1 194.5,549.4 178.3,542.4 164.1,468.5" fill="#000"/><polygon points="91.3,389.1 139.2,395.8 136.4,399.9 201.1,439.4 256.4,447.4 257.8,436.1 290.1,440.0 318.0,470.3 325.7,493.8 348.1,509.3 365.1,492.3 384.7,493.6 399.4,514.8 420.0,547.4 427.3,572.5 449.6,579.8 461.8,584.5 461.8,624.5 449.6,619.8 427.3,612.5 420.0,587.4 399.4,554.8 384.7,533.6 365.1,532.3 348.1,549.3 325.7,533.8 318.0,510.3 290.1,480.0 257.8,476.1 256.4,487.4 201.1,479.4 136.4,439.9 139.2,435.8 91.3,429.1" fill="#000"/></g></mask>
 </defs>
-<g mask="url(#coasts)"><use href="#land-shape" fill="none" stroke="#86bfe0" stroke-width="30" stroke-linejoin="round" filter="url(#coast-blur)" opacity="0.8"/></g>
+<g fill="none" stroke="#86bfe0" stroke-width="30" stroke-linejoin="round" filter="url(#coast-blur)" opacity="0.8">
+<use href="#neighbours"/><use href="#land-shape"/>
+</g>
+<use href="#neighbours" fill="#edf0e6"/>
+<path d="${lakes}" fill="#b3d6eb"/>
+<path d="${islands}" fill="#edf0e6"/>
+<g fill="#d6e8f2" stroke="#c4dcea" stroke-width="1">${insetRects}</g>
+<g clip-path="url(#inset-water)"><use href="#land-shape" fill="none" stroke="#86bfe0" stroke-width="30" stroke-linejoin="round" filter="url(#coast-blur)" opacity="0.8"/></g>
 <use href="#land-shape" fill="#e3e9d2"/>
 <use href="#land-shape" fill="#000" filter="url(#patches)" opacity="0.16"/>
 <use href="#land-shape" fill="#000" filter="url(#highlights)" opacity="0.45"/>

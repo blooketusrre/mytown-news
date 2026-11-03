@@ -2946,6 +2946,18 @@ hr.divider {
 }
 .home-where__legend li { display: flex; align-items: center; gap: var(--sp-3); }
 .home-where .us-map { max-width: none; }
+/* The map's own edges fade out (top, right and bottom), so Canada, the
+   Atlantic and Mexico dissolve into the section rather than stopping at a
+   hard rectangle, as in the mock-up. The left edge already fades through
+   the section's cream-to-blue background. */
+.home-where .us-map__outline {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 10%, #000 95%, transparent 100%),
+                      linear-gradient(to left, transparent 0, #000 7%);
+  -webkit-mask-composite: source-in;
+          mask-image: linear-gradient(to bottom, transparent 0, #000 10%, #000 95%, transparent 100%),
+                      linear-gradient(to left, transparent 0, #000 7%);
+          mask-composite: intersect;
+}
 /* Phones cannot hover; a tap on a live town goes straight to it. */
 @media (hover: none) { .home-where__hint { display: none; } }
 
