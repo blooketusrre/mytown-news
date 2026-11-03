@@ -25,13 +25,19 @@
    ZIP — on the Ellis County page. On a hub, use that city's first edition's
    first ZIP; on the national page, San Francisco's stays as a neutral example. #}
 {% set zipExample = cityEditions[0].zipCodes[0] if (cityEditions and cityEditions.length and cityEditions[0].zipCodes and cityEditions[0].zipCodes.length) else "94133" %}
-<div class="zip-lookup zip-lookup--national">
-      <label class="zip-lookup__label" for="zip-input">Find your edition by ZIP code</label>
+{# zipVariant "hero" (the homepage since November 2026): a larger field with
+   a location icon and a "Find My Edition" button, under a heading that
+   already says what the box is for — so its own label is visually hidden.
+   City hubs pass nothing and keep the compact version. #}
+{% set zipHero = (zipVariant == "hero") %}
+<div class="zip-lookup zip-lookup--national{% if zipHero %} zip-lookup--hero{% endif %}">
+      <label class="zip-lookup__label{% if zipHero %} visually-hidden{% endif %}" for="zip-input">Find your edition by ZIP code</label>
       <div class="zip-lookup__row">
+        {% if zipHero %}<span class="zip-lookup__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>{% endif %}
         <input class="zip-lookup__input" id="zip-input" type="text"
                inputmode="numeric" pattern="[0-9]{5}"
-               maxlength="5" placeholder="e.g. {{ zipExample }}" aria-label="Enter your ZIP code">
-        <button class="zip-lookup__btn" id="zip-btn" type="button">Go</button>
+               maxlength="5" placeholder="{{ 'Enter your ZIP code' if zipHero else ('e.g. ' + zipExample) }}" aria-label="Enter your ZIP code">
+        <button class="zip-lookup__btn" id="zip-btn" type="button">{{ 'Find My Edition' if zipHero else 'Go' }}</button>
       </div>
       <div class="zip-lookup__result" id="zip-result" role="status" aria-live="polite"></div>
 

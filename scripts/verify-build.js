@@ -118,15 +118,12 @@ if (fs.existsSync(homepage)) {
   if (!/id="editions"/.test(html)) {
     errors.push('index.html is missing the "#editions" section');
   }
-  // One card per live city, which is what the homepage lists now. It used to
-  // count San Francisco's edition cards, and kept doing so after that list
-  // moved to /san-francisco/ — so it reported "0 of 14" on every single build.
-  //
-  // A warning that is permanently wrong is worse than no warning: it is the
-  // thing that teaches you to skim past the warnings that are not.
-  const cityCards = (html.match(/class="city-pick"/g) || []).length;
-  if (liveCityCount && cityCards < liveCityCount) {
-    warnings.push(`index.html shows ${cityCards} city cards but ${liveCityCount} cities are live`);
+  // The per-city "Editor's Picks" cards were removed in the November 2026
+  // redesign (a Heber City reader has no use for a San Francisco lead story),
+  // so there is no longer a card count to check. The map, below, is what
+  // lists every live city now, and its own checks cover that.
+  if (/class="city-pick"/.test(html)) {
+    errors.push("the per-city Editor's Picks cards are back on the homepage — removed in the November 2026 redesign");
   }
 }
 
@@ -1348,8 +1345,8 @@ try {
   // published positions of two real cities a long way apart, so any change to
   // the projection or the viewBox moves at least one of them.
   const golden = [
-    ["San Francisco", -122.4194, 37.7749, 9.51, 41.98],
-    ["Staunton",       -79.0717, 38.1496, 83.67, 46.87],
+    ["San Francisco", -122.4194, 37.7749, 13.71, 43.38],
+    ["Staunton",       -79.0717, 38.1496, 84.47, 47.42],
   ];
   golden.forEach(([name, lng, lat, left, top]) => {
     const p = proj.projectPercent(lng, lat);
