@@ -1345,8 +1345,8 @@ try {
   // published positions of two real cities a long way apart, so any change to
   // the projection or the viewBox moves at least one of them.
   const golden = [
-    ["San Francisco", -122.4194, 37.7749, 9.51, 41.98],
-    ["Staunton",       -79.0717, 38.1496, 83.67, 46.87],
+    ["San Francisco", -122.4194, 37.7749, 13.71, 43.38],
+    ["Staunton",       -79.0717, 38.1496, 84.47, 47.42],
   ];
   golden.forEach(([name, lng, lat, left, top]) => {
     const p = proj.projectPercent(lng, lat);

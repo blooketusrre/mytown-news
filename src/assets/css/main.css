@@ -1536,10 +1536,10 @@ ul, ol { list-style: none; }
   position: relative;
   max-width: 860px;
   margin-inline: auto;
-  /* Matches the generated viewBox (-70 3 1025 604). If the generator's
+  /* Matches the generated viewBox (-120 -62 1075 734). If the generator's
      viewBox changes and this does not, every dot drifts — which is why
      verify-build.js checks the two against each other. */
-  aspect-ratio: 1025 / 604;
+  aspect-ratio: 1075 / 734;
 }
 
 .us-map__outline {
@@ -2908,17 +2908,24 @@ hr.divider {
    two blended by a gradient as in the mock-up. */
 .home-where {
   background: linear-gradient(90deg, var(--cream) 0%, var(--cream) 24%, #dcebf3 52%, #cfe3ef 100%);
-  padding-block: var(--sp-12);
+  overflow: hidden;
 }
+/* Text in the page's container on the left; the map from there to the
+   right-hand edge of the window, and from the top of the section to the
+   bottom. */
 .home-where__inner {
-  max-width: 1320px;
-  margin-inline: auto;
-  padding-inline: var(--gap);
   display: grid;
-  grid-template-columns: minmax(240px, 0.9fr) minmax(0, 2.6fr);
-  gap: var(--sp-8);
-  align-items: center;
+  grid-template-columns: minmax(280px, calc((100vw - var(--container)) / 2 + 390px)) minmax(0, 1fr);
+  align-items: stretch;
 }
+.home-where__text {
+  align-self: center;
+  padding-block: var(--sp-12);
+  padding-left: max(var(--gap), calc((100vw - var(--container)) / 2 + var(--gap)));
+  padding-right: var(--sp-6);
+}
+.home-where__map { display: flex; }
+.home-where__map .us-map { width: 100%; margin: 0; }
 .home-where__title {
   font-family: var(--font-head);
   font-size: clamp(2rem, 3.6vw, 2.75rem);
@@ -2946,17 +2953,12 @@ hr.divider {
 }
 .home-where__legend li { display: flex; align-items: center; gap: var(--sp-3); }
 .home-where .us-map { max-width: none; }
-/* The map's own edges fade out (top, right and bottom), so Canada, the
-   Atlantic and Mexico dissolve into the section rather than stopping at a
-   hard rectangle, as in the mock-up. The left edge already fades through
-   the section's cream-to-blue background. */
+/* The map runs flush to the top and bottom of its section: Canada meets the
+   section above and Mexico meets the subscribe band, with no fade, as in the
+   mock-up. Only the left edge fades, into the cream behind the text. */
 .home-where .us-map__outline {
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 10%, #000 95%, transparent 100%),
-                      linear-gradient(to left, transparent 0, #000 7%);
-  -webkit-mask-composite: source-in;
-          mask-image: linear-gradient(to bottom, transparent 0, #000 10%, #000 95%, transparent 100%),
-                      linear-gradient(to left, transparent 0, #000 7%);
-          mask-composite: intersect;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 13%);
+          mask-image: linear-gradient(to right, transparent 0, #000 13%);
 }
 /* Phones cannot hover; a tap on a live town goes straight to it. */
 @media (hover: none) { .home-where__hint { display: none; } }
@@ -3041,6 +3043,7 @@ hr.divider {
 @media (max-width: 900px) {
   .home-find__inner { grid-template-columns: 1fr; }
   .home-where__inner { grid-template-columns: 1fr; }
+  .home-where__text { padding: var(--sp-10) var(--gap) var(--sp-6); }
   .home-where { background: linear-gradient(180deg, var(--cream) 0%, var(--cream) 30%, #d6e8f1 60%, #cfe3ef 100%); }
 }
 @media (max-width: 700px) {
