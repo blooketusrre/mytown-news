@@ -85,7 +85,33 @@ const render = geoPath(reference).digits(0);
 // correct outline drawn at the old scale under dots placed at the new one.
 // scripts/verify-build.js compares this attribute against the module.
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${ours.VIEWBOX}" aria-hidden="true" data-projection="albersUsa ${WIDTH}x${HEIGHT}@${SCALE} view ${ours.VIEWBOX}">
-<path d="${render(states)}" fill="#e2ead2"/>
+<defs>
+<path id="land-shape" d="${render(states)}"/>
+<!-- Drier tan in the west, greener in the east, as a land-use map shades it. -->
+<linearGradient id="land" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#e3e4c8"/><stop offset="0.3" stop-color="#e8e3c6"/><stop offset="0.5" stop-color="#e3e9cd"/><stop offset="1" stop-color="#d3e4c2"/>
+</linearGradient>
+<!-- Relief: soft darker bands where the Rockies and the Appalachians run. -->
+<linearGradient id="relief" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0.08" stop-color="#6f7a52" stop-opacity="0.10"/><stop offset="0.2" stop-color="#6f7a52" stop-opacity="0.22"/><stop offset="0.33" stop-color="#6f7a52" stop-opacity="0.14"/><stop offset="0.45" stop-color="#6f7a52" stop-opacity="0"/><stop offset="0.78" stop-color="#6f7a52" stop-opacity="0"/><stop offset="0.86" stop-color="#6f7a52" stop-opacity="0.13"/><stop offset="0.93" stop-color="#6f7a52" stop-opacity="0.04"/>
+</linearGradient>
+<!-- Terrain: broad mottling, like elevation or cover seen from above. -->
+<filter id="terrain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.006 0.009" numOctaves="5" seed="11" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.36  0 0 0 0 0.45  0 0 0 0 0.27  1.6 0 0 0 -0.62" result="shade"/>
+<feComposite in="shade" in2="SourceGraphic" operator="in"/>
+</filter>
+<!-- Grain: a fine field-and-farm texture on top. -->
+<filter id="grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.09" numOctaves="2" seed="4" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0.30  0 0 0 0 0.36  0 0 0 0 0.22  1.2 0 0 0 -0.45" result="gs"/>
+<feComposite in="gs" in2="SourceGraphic" operator="in"/>
+</filter>
+</defs>
+<use href="#land-shape" fill="url(#land)"/>
+<use href="#land-shape" fill="url(#relief)"/>
+<use href="#land-shape" fill="#000" filter="url(#terrain)" opacity="0.32"/>
+<use href="#land-shape" fill="#000" filter="url(#grain)" opacity="0.16"/>
 <path d="${render(borders)}" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-linejoin="round"/>
 </svg>
 `;

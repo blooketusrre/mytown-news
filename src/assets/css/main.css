@@ -2951,9 +2951,10 @@ hr.divider {
 
 /* Map pins as markers rather than dots, as in the mock-up: gold for a live
    edition, white with a gold ring for one that is coming. */
+/* An active edition is the bigger marker: it is a place you can go now. */
 .home-where .us-map__dot {
-  width: 18px;
-  height: 18px;
+  width: 26px;
+  height: 26px;
   border-radius: 50% 50% 50% 0;
   rotate: -45deg;
   background: var(--gold);
@@ -2966,24 +2967,29 @@ hr.divider {
   position: absolute;
   inset: 0;
   margin: auto;
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: var(--white);
 }
 .home-where .us-map__dot--soon,
 .home-where .us-map__pin--soon .us-map__dot {
+  width: 15px;
+  height: 15px;
   background: var(--white);
   border: 2px solid var(--gold);
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
 }
 .home-where .us-map__dot--soon::after,
-.home-where .us-map__pin--soon .us-map__dot::after { background: var(--gold); }
+.home-where .us-map__pin--soon .us-map__dot::after { background: var(--gold); width: 4px; height: 4px; }
+/* The legend shows the two at the same relative sizes as the map. */
+.home-where__legend li { min-height: 28px; }
 
 /* ── Subscribe band ─────────────────────────────────────────────────────── */
 .home-band { background: var(--navy); padding-block: var(--sp-12); }
 .home-band__inner { display: flex; align-items: center; gap: var(--sp-10); }
-.home-band__icon { width: 68px; height: 68px; color: var(--gold); flex: none; }
+.home-band__icon { color: var(--gold); flex: none; display: inline-flex; }
+.home-band__icon svg { width: 72px; height: 72px; }
 .home-band__title {
   flex: 1;
   font-family: var(--font-head);
@@ -3042,4 +3048,6 @@ hr.divider {
   .zip-lookup--hero .zip-lookup__btn { padding: 12px 14px; font-size: 0.85rem; }
   .home-band__inner { flex-direction: column; text-align: center; gap: var(--sp-6); }
   .home-band__title { padding-left: 0; border-left: none; }
+  .home-where .us-map__dot { width: 21px; height: 21px; }
+  .home-where .us-map__pin--soon .us-map__dot { width: 13px; height: 13px; }
 }
