@@ -87,31 +87,35 @@ const render = geoPath(reference).digits(0);
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${ours.VIEWBOX}" aria-hidden="true" data-projection="albersUsa ${WIDTH}x${HEIGHT}@${SCALE} view ${ours.VIEWBOX}">
 <defs>
 <path id="land-shape" d="${render(states)}"/>
-<!-- Drier tan in the west, greener in the east, as a land-use map shades it. -->
-<linearGradient id="land" x1="0" y1="0" x2="1" y2="0">
-<stop offset="0" stop-color="#e3e4c8"/><stop offset="0.3" stop-color="#e8e3c6"/><stop offset="0.5" stop-color="#e3e9cd"/><stop offset="1" stop-color="#d3e4c2"/>
-</linearGradient>
-<!-- Relief: soft darker bands where the Rockies and the Appalachians run. -->
-<linearGradient id="relief" x1="0" y1="0" x2="1" y2="0">
-<stop offset="0.08" stop-color="#6f7a52" stop-opacity="0.10"/><stop offset="0.2" stop-color="#6f7a52" stop-opacity="0.22"/><stop offset="0.33" stop-color="#6f7a52" stop-opacity="0.14"/><stop offset="0.45" stop-color="#6f7a52" stop-opacity="0"/><stop offset="0.78" stop-color="#6f7a52" stop-opacity="0"/><stop offset="0.86" stop-color="#6f7a52" stop-opacity="0.13"/><stop offset="0.93" stop-color="#6f7a52" stop-opacity="0.04"/>
-</linearGradient>
-<!-- Terrain: broad mottling, like elevation or cover seen from above. -->
-<filter id="terrain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
-<feTurbulence type="fractalNoise" baseFrequency="0.006 0.009" numOctaves="5" seed="11" result="n"/>
-<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.36  0 0 0 0 0.45  0 0 0 0 0.27  1.6 0 0 0 -0.62" result="shade"/>
-<feComposite in="shade" in2="SourceGraphic" operator="in"/>
+<!-- Texture: three or four close greens in soft patches, with no regional
+     meaning. Noise is quantised into a few steps so it reads as tones, not
+     as a gradient or as topography. -->
+<filter id="patches" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.007 0.009" numOctaves="3" seed="23" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.66  0 0 0 0 0.45  1 0 0 0 0" result="c"/>
+<feComponentTransfer in="c" result="q"><feFuncA type="discrete" tableValues="0 0 0.5 1"/></feComponentTransfer>
+<feComposite in="q" in2="SourceGraphic" operator="in"/>
 </filter>
-<!-- Grain: a fine field-and-farm texture on top. -->
+<filter id="highlights" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency="0.011 0.014" numOctaves="2" seed="5" result="n"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0.96  0 0 0 0 0.97  0 0 0 0 0.90  1 0 0 0 0" result="c"/>
+<feComponentTransfer in="c" result="q"><feFuncA type="discrete" tableValues="0 0 0 1"/></feComponentTransfer>
+<feComposite in="q" in2="SourceGraphic" operator="in"/>
+</filter>
 <filter id="grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
-<feTurbulence type="fractalNoise" baseFrequency="0.09" numOctaves="2" seed="4" result="g"/>
-<feColorMatrix in="g" type="matrix" values="0 0 0 0 0.30  0 0 0 0 0.36  0 0 0 0 0.22  1.2 0 0 0 -0.45" result="gs"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.12" numOctaves="2" seed="4" result="g"/>
+<feColorMatrix in="g" type="matrix" values="0 0 0 0 0.40  0 0 0 0 0.48  0 0 0 0 0.34  1.2 0 0 0 -0.5" result="gs"/>
 <feComposite in="gs" in2="SourceGraphic" operator="in"/>
 </filter>
+<!-- The deeper blue just off the West Coast, fading out to sea. -->
+<filter id="coast-blur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="9"/></filter>
+<filter id="feather" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="26"/></filter><mask id="west-coast" maskUnits="userSpaceOnUse" x="-70" y="3" width="1025" height="604"><rect x="-110" y="40" width="300" height="355" fill="#fff" filter="url(#feather)"/></mask>
 </defs>
-<use href="#land-shape" fill="url(#land)"/>
-<use href="#land-shape" fill="url(#relief)"/>
-<use href="#land-shape" fill="#000" filter="url(#terrain)" opacity="0.32"/>
-<use href="#land-shape" fill="#000" filter="url(#grain)" opacity="0.16"/>
+<g mask="url(#west-coast)"><use href="#land-shape" fill="none" stroke="#79b4da" stroke-width="34" stroke-linejoin="round" filter="url(#coast-blur)" opacity="0.85"/></g>
+<use href="#land-shape" fill="#e3e9d2"/>
+<use href="#land-shape" fill="#000" filter="url(#patches)" opacity="0.16"/>
+<use href="#land-shape" fill="#000" filter="url(#highlights)" opacity="0.45"/>
+<use href="#land-shape" fill="#000" filter="url(#grain)" opacity="0.10"/>
 <path d="${render(borders)}" fill="none" stroke="#ffffff" stroke-width="1.2" stroke-linejoin="round"/>
 </svg>
 `;
