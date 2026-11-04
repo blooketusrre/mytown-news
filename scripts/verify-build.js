@@ -731,6 +731,10 @@ try {
     if (slides.length && (home.match(/class="home-banner__credit/g) || []).length !== slides.length) {
       errors.push("the homepage banner does not show a credit line for every slide");
     }
+    // Every Creative Commons licence must actually appear in its caption.
+    slides.filter((s) => /^CC BY/i.test(s.license || "")).forEach((s) => {
+      if (!home.includes(`>${s.license}</a>`)) errors.push(`the ${s.place} caption does not name its licence (${s.license}) — the licence requires it`);
+    });
     if (slides.length > 1 && !/home-banner__pause/.test(home)) {
       errors.push("the homepage slide show has no pause button — moving content needs a way to stop it (WCAG 2.2.2)");
     }

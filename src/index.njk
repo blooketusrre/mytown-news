@@ -81,8 +81,11 @@ pageDesc: "Independent local news, built around the events, people and places th
       {% for s in heroSlides %}
       <p class="home-banner__credit{% if loop.first %} is-active{% endif %}">
         <span class="home-banner__place">{{ s.place }}</span>
-        · Photo: <a href="{{ s.source }}" rel="noopener">{{ s.photographer }}</a>,
-        <a href="{{ s.licenseUrl }}" rel="noopener license">{{ s.license }}</a>{% if s.cropped %} (cropped){% endif %}
+        · Photo: <a href="{{ s.source }}" rel="noopener">{{ s.photographer }}</a>
+        {#- Public-domain and CC0 photos need no licence notice, so none is
+            shown; the photographer's name stays as a courtesy. Creative
+            Commons BY / BY-SA photos must name their licence, so they do. #}
+        {%- if s.license != "Public domain" %}, <a href="{{ s.licenseUrl }}" rel="noopener license">{{ s.license }}</a>{% if s.cropped %} (cropped){% endif %}{% endif %}
       </p>
       {% endfor %}
     </div>
