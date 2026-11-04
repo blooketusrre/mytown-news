@@ -47,16 +47,94 @@ pageDesc: "Independent local news, built around the events, people and places th
 <main id="main">
 
   {# ── Banner ─────────────────────────────────────────────────────────────
-     The street is an original illustration (scripts/build-main-street.py),
-     not a photograph: nothing to license, a few kilobytes, and drawn in the
-     site's own colours. It fades into the navy behind the headline. #}
-  <section class="home-banner" aria-labelledby="home-banner-title">
-    <div class="home-banner__art" aria-hidden="true"></div>
+     A slow slide show of main streets from different parts of the country,
+     fading into the navy behind the headline: San Francisco's North Beach,
+     San Luis Obispo, Northeast Harbor, Fernandina Beach, Fowler, Portsmouth
+     and Dowagiac. Many communities, without saying so in words.
+
+     Photos and credits live in _data/heroSlides.json. Every one is public
+     domain or Creative Commons; the CC ones require the credit and licence
+     shown in the caption, which is why the caption is always visible.
+
+     Only the first photo is in the page; the script loads each later one
+     just before it appears. With reduced motion requested, or without
+     JavaScript, the first photo simply stays. Anything that moves on its own
+     for more than five seconds needs a way to stop it (WCAG 2.2.2), hence
+     the pause button. #}
+  {% set first = heroSlides[0] %}
+  <section class="home-banner" aria-labelledby="home-banner-title" data-slideshow>
+    <div class="home-banner__art" aria-hidden="true">
+      {% for s in heroSlides %}
+      <div class="home-slide{% if loop.first %} is-active{% endif %}"
+           {% if loop.first %}style="background-image:url('/assets/img/slides/{{ s.file }}');background-position:{{ s.position }}"
+           {% else %}data-src="/assets/img/slides/{{ s.file }}" style="background-position:{{ s.position }}"{% endif %}></div>
+      {% endfor %}
+    </div>
     <div class="container home-banner__inner">
       <h1 class="home-banner__title" id="home-banner-title">Your town. Your stories.<br>Your <em>community.</em></h1>
       <p class="home-banner__sub">Independent local news, built around the events, people and places that make a community.</p>
     </div>
+    <div class="home-banner__caption">
+      <button class="home-banner__pause" type="button" aria-pressed="false" aria-label="Pause the slide show" hidden>
+        <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path class="i-pause" fill="currentColor" d="M4 2h3v12H4zM9 2h3v12H9z"/><path class="i-play" fill="currentColor" d="M4 2l10 6-10 6z"/></svg>
+      </button>
+      {% for s in heroSlides %}
+      <p class="home-banner__credit{% if loop.first %} is-active{% endif %}">
+        <span class="home-banner__place">{{ s.place }}</span>
+        · Photo: <a href="{{ s.source }}" rel="noopener">{{ s.photographer }}</a>,
+        <a href="{{ s.licenseUrl }}" rel="noopener license">{{ s.license }}</a>{% if s.cropped %} (cropped){% endif %}
+      </p>
+      {% endfor %}
+    </div>
   </section>
+
+<script>
+(function () {
+  var root = document.querySelector("[data-slideshow]");
+  if (!root) return;
+  var slides = root.querySelectorAll(".home-slide");
+  var credits = root.querySelectorAll(".home-banner__credit");
+  var btn = root.querySelector(".home-banner__pause");
+  if (slides.length < 2) return;
+  if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  var INTERVAL = 7000, i = 0, timer = null, paused = false;
+  function load(el, done) {
+    var src = el.getAttribute("data-src");
+    if (!src) { done && done(); return; }
+    var img = new Image();
+    img.onload = img.onerror = function () {
+      el.style.backgroundImage = "url('" + src + "')";
+      el.removeAttribute("data-src");
+      done && done();
+    };
+    img.src = src;
+  }
+  function show(n) {
+    slides[i].classList.remove("is-active"); credits[i].classList.remove("is-active");
+    i = n;
+    slides[i].classList.add("is-active"); credits[i].classList.add("is-active");
+    load(slides[(i + 1) % slides.length]);          // fetch the next one now
+  }
+  function next() { var n = (i + 1) % slides.length; load(slides[n], function () { show(n); }); }
+  function start() { stop(); timer = setInterval(next, INTERVAL); }
+  function stop() { if (timer) clearInterval(timer); timer = null; }
+
+  btn.hidden = false;
+  btn.addEventListener("click", function () {
+    paused = !paused;
+    btn.setAttribute("aria-pressed", String(paused));
+    btn.setAttribute("aria-label", paused ? "Play the slide show" : "Pause the slide show");
+    root.classList.toggle("is-paused", paused);
+    paused ? stop() : start();
+  });
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden) stop(); else if (!paused) start();
+  });
+  load(slides[1]);
+  start();
+})();
+</script>
 
   {# ── Find an edition, and bring one to your town ───────────────────── #}
   <section id="editions" class="home-find" aria-labelledby="find-heading">

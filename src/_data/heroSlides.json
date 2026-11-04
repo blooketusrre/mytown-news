@@ -1,0 +1,72 @@
+[
+  {
+    "file": "north-beach.jpg",
+    "place": "North Beach, San Francisco",
+    "photographer": "Weegee010",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Green_Street,_North_Beach,_San_Francisco,_looking_west_towards_Columbus_Avenue.JPG",
+    "cropped": true,
+    "position": "center 55%"
+  },
+  {
+    "file": "san-luis-obispo.jpg",
+    "place": "San Luis Obispo, California",
+    "photographer": "MARELBU",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Downtown_Historic_District,_San_Luis_Obispo,_CA,_USA_-_panoramio.jpg",
+    "cropped": true,
+    "position": "center 60%"
+  },
+  {
+    "file": "northeast-harbor.jpg",
+    "place": "Northeast Harbor, Maine",
+    "photographer": "Daderot",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Main_Street_-_Northeast_Harbor,_Maine_-_DSC03426.jpg",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  {
+    "file": "fernandina-beach.jpg",
+    "place": "Fernandina Beach, Florida",
+    "photographer": "Ebyabe",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Fernandina_Beach_FL_HD_Centre_Street03.jpg",
+    "cropped": true,
+    "position": "center 55%"
+  },
+  {
+    "file": "fowler.jpg",
+    "place": "Fowler, Colorado",
+    "photographer": "Carol M. Highsmith, Library of Congress",
+    "license": "Public domain",
+    "licenseUrl": "https://www.loc.gov/rr/print/res/482_high.html",
+    "source": "https://commons.wikimedia.org/wiki/File:Main_Street_in_Fowler,_Colorado_LCCN2015632778.tif",
+    "cropped": false,
+    "position": "center 60%"
+  },
+  {
+    "file": "portsmouth.jpg",
+    "place": "Portsmouth, New Hampshire",
+    "photographer": "Daderot",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Portsmouth,_NH_-_Market_Square.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Portsmouth,_NH_-_Market_Square.JPG",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  {
+    "file": "dowagiac.jpg",
+    "place": "Dowagiac, Michigan",
+    "photographer": "Carol M. Highsmith, Library of Congress",
+    "license": "Public domain",
+    "licenseUrl": "https://www.loc.gov/rr/print/res/482_high.html",
+    "source": "https://commons.wikimedia.org/wiki/File:Downtown_block_in_Dowagiac,_Michigan,_2020.tif",
+    "cropped": false,
+    "position": "center 50%"
+  }
+]

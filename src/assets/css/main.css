@@ -2759,13 +2759,70 @@ hr.divider {
 .home-banner__art {
   position: absolute;
   inset: 0;
-  /* Anchored past the right edge so the clock tower clears the headline. */
-  background: url("/assets/img/main-street.svg") right -90px bottom / auto 100% no-repeat;
+  /* Holds the slide show (see index.njk); each slide covers this box. */
   /* The fade: the street dissolves into the navy behind the headline. */
   -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 42%, #000 80%);
           mask-image: linear-gradient(to right, transparent 0%, transparent 42%, #000 80%);
 }
+.home-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.6s ease;
+}
+.home-slide.is-active { opacity: 1; }
+/* A light navy wash so every photo, bright noon or night, sits in the same
+   tone as the page and the white headline always reads. */
+.home-banner__art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(26 39 68 / 0.55) 0%, rgb(26 39 68 / 0.15) 60%, rgb(26 39 68 / 0.25) 100%);
+}
 .home-banner__inner { position: relative; padding-block: 76px 84px; }
+.home-banner { min-height: 380px; }
+.home-banner__caption {
+  position: absolute;
+  right: var(--sp-4);
+  bottom: var(--sp-3);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  max-width: calc(100% - 2 * var(--sp-4));
+}
+.home-banner__credit {
+  display: none;
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  color: rgb(255 255 255 / 0.92);
+  background: rgb(10 16 32 / 0.55);
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+.home-banner__credit.is-active { display: block; }
+.home-banner__credit a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.home-banner__place { font-weight: 600; }
+.home-banner__pause {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  background: rgb(10 16 32 / 0.55);
+  color: var(--white);
+  cursor: pointer;
+}
+.home-banner__pause[hidden] { display: none; }
+.home-banner__pause:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.home-banner__pause .i-play { display: none; }
+.home-banner.is-paused .home-banner__pause .i-pause { display: none; }
+.home-banner.is-paused .home-banner__pause .i-play { display: inline; }
 .home-banner__title {
   font-family: var(--font-head);
   font-size: clamp(2.25rem, 5vw, 3.9rem);
@@ -2955,10 +3012,16 @@ hr.divider {
 .home-where .us-map { max-width: none; }
 /* The map runs flush to the top and bottom of its section: Canada meets the
    section above and Mexico meets the subscribe band, with no fade, as in the
-   mock-up. Only the left edge fades, into the cream behind the text. */
+   mock-up. Only the left edge fades, into the cream behind the text — except
+   along the bottom, where the Alaska and Hawaii boxes sit in the corner and
+   must show whole. 71.8% is the top of the Alaska box (71.8% of the
+   viewBox, set in scripts/build-us-outline.js); update both together. Two mask layers add up:
+   visible wherever either one is. */
 .home-where .us-map__outline {
-  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 13%);
-          mask-image: linear-gradient(to right, transparent 0, #000 13%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 13%),
+                      linear-gradient(to bottom, transparent 0, transparent 71.3%, #000 71.8%);
+          mask-image: linear-gradient(to right, transparent 0, #000 13%),
+                      linear-gradient(to bottom, transparent 0, transparent 71.3%, #000 71.8%);
 }
 /* Phones cannot hover; a tap on a live town goes straight to it. */
 @media (hover: none) { .home-where__hint { display: none; } }
@@ -3053,9 +3116,8 @@ hr.divider {
   .home-nav a { font-size: 0.68rem; letter-spacing: 0.12em; }
   .home-nav .home-nav__subscribe { padding: 9px 14px; }
   .home-banner__art {
-    background-size: auto 62%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 20%, #000 70%);
-            mask-image: linear-gradient(to bottom, transparent 20%, #000 70%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 34%, #000 78%);
+            mask-image: linear-gradient(to bottom, transparent 34%, #000 78%);
   }
   .home-banner__inner { padding-block: 44px 150px; }
   .home-banner__sub { font-size: 1rem; }
