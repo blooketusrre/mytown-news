@@ -127,7 +127,7 @@ const islands = ISLANDS.map(ring).join("");
 
 /* Alaska and Hawaii are insets, each in a box of open water in the lower-left
  * corner of the map (November 2026, from design review): flush to the corner
- * so no stray tip of Baja shows beneath them, Alaska enlarged 15%, and each
+ * so no stray tip of Baja shows beneath them, Alaska enlarged about 26%, and each
  * box outlined in the same white as the state borders.
  *
  * geoAlbersUsa places the two states itself, mid-Pacific; here they are drawn
@@ -135,7 +135,7 @@ const islands = ISLANDS.map(ring).join("");
  * they sit, and the lower 48 — which the pins do depend on — is untouched. */
 const isInset = (f) => ["02", "15"].includes(String(f.id));
 const lower48Feats = { type: "FeatureCollection", features: states.features.filter((f) => !isInset(f)) };
-const CORNER = 6, GAP = 8;
+const CORNER = 6;
 const placeInset = (fips, scale, pad, at) => {
   const f = states.features.find((x) => String(x.id) === fips);
   const [[x0, y0], [x1, y1]] = geoPath(reference).bounds(f);
@@ -145,8 +145,12 @@ const placeInset = (fips, scale, pad, at) => {
   return { id: fips, d: render(f), box: { x: Math.round(bx), y: Math.round(by), w: Math.round(w), h: Math.round(h) },
            transform: `translate(${tx.toFixed(1)} ${ty.toFixed(1)}) scale(${scale})`, scale };
 };
-const alaska = placeInset("02", 1.15, 12, { x: VX + CORNER });
-const hawaii = placeInset("15", 1.0, 10, { x: alaska.box.x + alaska.box.w + GAP });
+// Alaska at 1.265 (15% and then another 10%). Hawaii's box overlaps the
+// right edge of Alaska's slightly and is drawn on top, so no strip of open
+// water, or of the Mexican coast behind it, shows between the two.
+const OVERLAP = 10;
+const alaska = placeInset("02", 1.265, 12, { x: VX + CORNER });
+const hawaii = placeInset("15", 1.0, 10, { x: alaska.box.x + alaska.box.w - OVERLAP });
 const insetSvg = [alaska, hawaii].map((t) => {
   const r = `x="${t.box.x}" y="${t.box.y}" width="${t.box.w}" height="${t.box.h}" rx="8"`;
   // Texture filters are written in map units; inside a scaled group the

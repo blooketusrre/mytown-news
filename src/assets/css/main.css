@@ -3014,14 +3014,14 @@ hr.divider {
    section above and Mexico meets the subscribe band, with no fade, as in the
    mock-up. Only the left edge fades, into the cream behind the text — except
    along the bottom, where the Alaska and Hawaii boxes sit in the corner and
-   must show whole. 73.5% is just above the top of the Alaska box (73.98% of
-   the viewBox, set in scripts/build-us-outline.js). Two mask layers add up:
+   must show whole. 71.8% is the top of the Alaska box (71.8% of the
+   viewBox, set in scripts/build-us-outline.js); update both together. Two mask layers add up:
    visible wherever either one is. */
 .home-where .us-map__outline {
   -webkit-mask-image: linear-gradient(to right, transparent 0, #000 13%),
-                      linear-gradient(to bottom, transparent 0, transparent 73%, #000 73.5%);
+                      linear-gradient(to bottom, transparent 0, transparent 71.3%, #000 71.8%);
           mask-image: linear-gradient(to right, transparent 0, #000 13%),
-                      linear-gradient(to bottom, transparent 0, transparent 73%, #000 73.5%);
+                      linear-gradient(to bottom, transparent 0, transparent 71.3%, #000 71.8%);
 }
 /* Phones cannot hover; a tap on a live town goes straight to it. */
 @media (hover: none) { .home-where__hint { display: none; } }
