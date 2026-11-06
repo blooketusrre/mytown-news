@@ -740,6 +740,45 @@ try {
     }
   }
 
+  /* Edition banner photos (November 2026). Each must exist and carry the
+   * credit its licence needs, and the page must show it. And the date bar
+   * must name the edition's own city: it said "San Francisco, CA" on every
+   * edition in Utah, Virginia, Ohio and Texas until this check existed. */
+  {
+    let photos = {};
+    try { photos = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "editionPhotos.json"), "utf8")); }
+    catch (e) { errors.push(`editionPhotos.json is unreadable: ${e.message}`); }
+    const all = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "clusters.json"), "utf8"));
+    const cityList = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "cities.json"), "utf8"));
+    const pageFor = (c) => {
+      for (const rel of [`${c.citySlug}/${c.slug}`, c.slug, c.citySlug]) {
+        const f = path.join(OUT, rel || "", "index.html");
+        if (rel && fs.existsSync(f)) { const h = fs.readFileSync(f, "utf8"); if (h.includes("masthead--edition")) return h; }
+      }
+      return "";
+    };
+    Object.entries(photos).forEach(([slug, p]) => {
+      const where = `editionPhotos.json "${slug}"`;
+      if (!all.some((c) => c.slug === slug)) errors.push(`${where}: no edition has that slug`);
+      if (!p.file || !fs.existsSync(path.join(OUT, "assets", "img", "editions", p.file))) errors.push(`${where}: image ${p.file} is not in the built site`);
+      ["subject", "photographer", "license", "source"].forEach((k) => { if (!p[k]) errors.push(`${where}: missing ${k}`); });
+      if (/^CC BY/i.test(p.license || "") && !/^https:\/\/creativecommons\.org\/licenses\//.test(p.licenseUrl || "")) {
+        errors.push(`${where}: ${p.license} needs a link to the licence`);
+      }
+    });
+    all.filter((c) => c.live).forEach((c) => {
+      const h = pageFor(c);
+      if (!h) return;
+      const p = photos[c.slug];
+      if (p && !h.includes(`/assets/img/editions/${p.file}`)) errors.push(`${c.name}: its banner photo is not on the page`);
+      if (p && /^CC BY/i.test(p.license) && !h.includes(`>${p.license}</a>`)) errors.push(`${c.name}: the banner credit does not name its licence (${p.license})`);
+      const city = cityList.find((x) => x.slug === c.citySlug);
+      if (city && !h.includes(`${city.name}, ${city.state} &nbsp;·&nbsp; Free`)) {
+        errors.push(`${c.name}: the date bar does not name ${city.name}, ${city.state}`);
+      }
+    });
+  }
+
   // "Buttondown" means nothing to a reader; the address they will see does.
   {
     const done = fs.existsSync(path.join(OUT, "subscribed", "index.html"))

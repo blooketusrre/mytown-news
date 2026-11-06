@@ -50,7 +50,17 @@ layout: base.njk
 </div>
 
 {# ── Masthead ──────────────────────────────────────────────────────────── #}
-<header class="masthead" role="banner">
+{# Edition banner (November 2026): left-aligned like the homepage banner,
+   with a photo of the place fading in from the right where we have one.
+   Photos and their credits are in _data/editionPhotos.json; Creative Commons
+   ones must show their licence, public-domain ones need none. An edition
+   without a photo (Bayview & Excelsior, for now) keeps the plain navy. #}
+{% set photo = editionPhotos[clusterSlug] %}
+<header class="masthead masthead--edition{% if photo %} masthead--photo{% endif %}" role="banner">
+  {% if photo %}
+  <div class="masthead__art" aria-hidden="true"
+       style="background-image:url('/assets/img/editions/{{ photo.file }}');background-position:{{ photo.position }}"></div>
+  {% endif %}
   <div class="masthead__inner container">
     <p class="masthead__eyebrow">{{ site.tagline }}</p>
     <h1 class="masthead__title">My Town <em>News<sup class="tm" aria-label="trademark">™</sup></em><br>{{ issue.clusterName if issue else clusterName }}</h1>
@@ -77,12 +87,20 @@ layout: base.njk
       {{ edition.neighborhoods | join(' · ') }}
     </p>
     {% endif %}
+    {% if photo %}
+    <p class="masthead__credit">
+      {{ photo.subject }} · Photo: <a href="{{ photo.source }}" rel="noopener">{{ photo.photographer }}</a>
+      {%- if photo.license != "Public domain" %}, <a href="{{ photo.licenseUrl }}" rel="noopener license">{{ photo.license }}</a>{% if photo.cropped %} (cropped){% endif %}{% endif %}
+    </p>
+    {% endif %}
   </div>
   <div class="masthead__bar">
     <div class="masthead__bar-inner container">
       {% if issue %}<span class="masthead__bar-date">Week of <strong>{{ issue.weekOf | date_short }}</strong></span>{% else %}<span class="masthead__bar-date">Coming Friday</span>{% endif %}
       <a href="{{ site.url }}" class="masthead__bar-url">{{ site.url | replace("https://","") }}</a>
-      <span>{{ site.city }} &nbsp;·&nbsp; Free &amp; Independent</span>
+      {# The edition's own city. This was {{ site.city }}, which said "San
+         Francisco, CA" on every edition in Utah, Virginia, Ohio and Texas. #}
+      <span>{{ (thisCity.name + ", " + thisCity.state) if thisCity else site.city }} &nbsp;·&nbsp; Free &amp; Independent</span>
     </div>
   </div>
 </header>

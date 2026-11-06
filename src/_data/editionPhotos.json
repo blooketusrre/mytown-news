@@ -1,0 +1,192 @@
+{
+  "heber-city": {
+    "file": "heber-city.jpg",
+    "photographer": "Tricia Simpson",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Wasatch_Saloon_Heber_City_Utah.jpeg",
+    "subject": "Wasatch Saloon, Main Street",
+    "cropped": true,
+    "position": "center 55%"
+  },
+  "staunton": {
+    "file": "staunton.jpg",
+    "photographer": "Weatherdude",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Coffee_on_the_Corner_building,_Staunton,_Virginia.jpg",
+    "subject": "Downtown Staunton",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  "marion": {
+    "file": "marion.jpg",
+    "photographer": "Nyttend",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Palace_Theater,_Marion.jpg",
+    "subject": "Palace Theatre",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  "midlothian-red-oak": {
+    "file": "midlothian-red-oak.jpg",
+    "photographer": "Renelibrary",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Downtown_Midlothian_1_Wiki_(1_of_1).jpg",
+    "subject": "Downtown Midlothian",
+    "cropped": true,
+    "position": "center 55%"
+  },
+  "waxahachie": {
+    "file": "waxahachie.jpg",
+    "photographer": "Carol M. Highsmith, Library of Congress",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:The_1897_Ellis_County_Courthouse_in_Waxahachie,_Texas,_south_of_Dallas_LCCN2014632669.tif",
+    "subject": "Ellis County Courthouse",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  "ennis": {
+    "file": "ennis.jpg",
+    "photographer": "Renelibrary",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:EnnisTexas_(1_of_1).jpg",
+    "subject": "Downtown Ennis",
+    "cropped": true,
+    "position": "center 55%"
+  },
+  "marina-pacific-heights": {
+    "file": "marina-pacific-heights.jpg",
+    "photographer": "Carol M. Highsmith, Library of Congress",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Palace_of_Fine_Arts,_San_Francisco,_California.jpg",
+    "subject": "Palace of Fine Arts",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  "presidio-richmond": {
+    "file": "presidio-richmond.jpg",
+    "photographer": "Carol M. Highsmith, Library of Congress",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge,_San_Francisco,_California_LCCN2013630252.tif",
+    "subject": "Golden Gate Bridge from the Presidio",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  "russian-hill-nob-hill": {
+    "file": "russian-hill-nob-hill.jpg",
+    "photographer": "Carol M. Highsmith, Library of Congress",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Cable_car_on_Hyde_Street,_San_Francisco,_California_LCCN2013630202.tif",
+    "subject": "Cable car on Hyde Street",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  "downtown-embarcadero": {
+    "file": "downtown-embarcadero.jpg",
+    "photographer": "Carol M. Highsmith, Library of Congress",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:The_San_Francisco_Ferry_Building,_San_Francisco,_California_LCCN2013630364.tif",
+    "subject": "Ferry Building",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  "civic-center-tenderloin": {
+    "file": "civic-center-tenderloin.jpg",
+    "photographer": "Carol M. Highsmith, Library of Congress",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:San_Francisco_City_Hall,_San_Francisco,_California_LCCN2013630463.tif",
+    "subject": "City Hall",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  "hayes-valley-alamo-square": {
+    "file": "hayes-valley-alamo-square.jpg",
+    "photographer": "Carol M. Highsmith, Library of Congress",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:%22Painted_Ladies%22_row_of_Victorian_houses_located_at_710_to_720_Steiner_Street,_across_from_Alamo_Square_Park,_San_Francisco,_California_LCCN2013630350.tif",
+    "subject": "The Painted Ladies, Alamo Square",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  "soma-mission-bay": {
+    "file": "soma-mission-bay.jpg",
+    "photographer": "Carol M. Highsmith, Library of Congress",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Yerba_Buena_Gardens,_built_atop_Moscone_Convention_Center,_San_Francisco,_California_LCCN2011635401.tif",
+    "subject": "Yerba Buena Gardens",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  "haight-cole-valley": {
+    "file": "haight-cole-valley.jpg",
+    "photographer": "Carol M. Highsmith, Library of Congress",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Haight-Ashbury_neighborhood,_San_Francisco,_California_LCCN2013630066.tif",
+    "subject": "Haight Street",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  "castro-noe-valley": {
+    "file": "castro-noe-valley.jpg",
+    "photographer": "Carol M. Highsmith, Library of Congress",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Castro_District,_a_neighborhood_in_Eureka_Valley_in_San_Francisco,_California_LCCN2013630345.tif",
+    "subject": "Castro Theatre",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  "mission-bernal-heights": {
+    "file": "mission-bernal-heights.jpg",
+    "photographer": "Carol M. Highsmith, Library of Congress",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Mural,_Mission_District,_San_Francisco,_California_LCCN2010630200.tif",
+    "subject": "Mission District mural",
+    "cropped": false,
+    "position": "center 55%"
+  },
+  "the-sunset": {
+    "file": "the-sunset.jpg",
+    "photographer": "Joe Mabel",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:San_Francisco_-_Rexall_at_9th_and_Irving.jpg",
+    "subject": "9th Avenue & Irving Street",
+    "cropped": true,
+    "position": "center 55%"
+  },
+  "west-portal-lakeside": {
+    "file": "west-portal-lakeside.jpg",
+    "photographer": "Pi.1415926535",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Outbound_train_at_West_Portal_and_14th,_December_2017.JPG",
+    "subject": "West Portal Avenue",
+    "cropped": true,
+    "position": "center 55%"
+  },
+  "north-waterfront": {
+    "file": "north-waterfront.jpg",
+    "photographer": "Daderot",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Saints_Peter_and_Paul_Catholic_Church_from_Washington_Square_-_San_Francisco,_CA_-_DSC02640.jpg",
+    "subject": "Washington Square, North Beach",
+    "cropped": false,
+    "position": "center 55%"
+  }
+}
