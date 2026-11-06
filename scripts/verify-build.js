@@ -761,6 +761,11 @@ try {
       const where = `editionPhotos.json "${slug}"`;
       if (!all.some((c) => c.slug === slug)) errors.push(`${where}: no edition has that slug`);
       if (!p.file || !fs.existsSync(path.join(OUT, "assets", "img", "editions", p.file))) errors.push(`${where}: image ${p.file} is not in the built site`);
+      // The newsletter uses a pre-composed banner per photo; a new or changed
+      // photo needs \`python3 scripts/build-email-banners.py\` re-run.
+      if (!fs.existsSync(path.join(OUT, "assets", "img", "email-banners", `${slug}.jpg`))) {
+        errors.push(`${where}: no newsletter banner — run python3 scripts/build-email-banners.py`);
+      }
       ["subject", "photographer", "license", "source"].forEach((k) => { if (!p[k]) errors.push(`${where}: missing ${k}`); });
       if (/^CC BY/i.test(p.license || "") && !/^https:\/\/creativecommons\.org\/licenses\//.test(p.licenseUrl || "")) {
         errors.push(`${where}: ${p.license} needs a link to the licence`);

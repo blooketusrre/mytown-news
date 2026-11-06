@@ -102,6 +102,14 @@ const ANTHROPIC_KEY   = process.env.ANTHROPIC_API_KEY;
 const BUTTONDOWN_KEY  = process.env.BUTTONDOWN_API_KEY;
 const SITE_URL        = "https://mytown.news";
 
+// Edition photos and their credits, shared with the website's banners. The
+// newsletter uses a pre-composed version of each (photo faded into navy),
+// built by scripts/build-email-banners.py, because email clients cannot fade.
+const EDITION_PHOTOS = (() => {
+  try { return JSON.parse(fs.readFileSync(path.join(__dirname, "..", "src", "_data", "editionPhotos.json"), "utf8")); }
+  catch { return {}; }
+})();
+
 // ── When the newsletter lands ──────────────────────────────────────────────
 // The target is the arrival time, not the run time. Issues used to be created
 // with status "about_to_send", so delivery happened whenever generation
@@ -1209,6 +1217,17 @@ function buildEmailHtml(issue, cluster) {
   // knows their own neighborhood but not which edition covers it. Taken from
   // the edition definition, never from the generated issue.
   const hoods    = (cluster.neighborhoods || []).join(" · ");
+  const photo    = EDITION_PHOTOS[cluster.slug] || null;
+  const banner   = photo ? `${SITE_URL}/assets/img/email-banners/${cluster.slug}.jpg` : "";
+  // The edition's own city, not a San Francisco default: the eyebrow said
+  // "San Francisco" on the Utah, Virginia, Ohio and Texas newsletters.
+  const placeLabel = (() => {
+    try {
+      const cities = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "src", "_data", "cities.json"), "utf8"));
+      const c = cities.find((x) => x.slug === cluster.citySlug);
+      return c ? c.name : (cluster.city || "");
+    } catch { return cluster.city || ""; }
+  })();
   // Fixed, and matching cluster-layout.njk exactly. The email and the web
   // page are rendered by two different pieces of code from the same issue, so
   // a heading that differs between them is a real possibility and reads as
@@ -1364,46 +1383,37 @@ function buildEmailHtml(issue, cluster) {
 
   <!-- Masthead -->
   <!--
-    Three ways to reach the full edition, all above the fold. The only link
-    used to be the button at the very bottom, which assumes the reader
-    scrolls the whole newsletter before deciding to — and many treat the
-    email as a reminder to go and read, not as the reading itself.
+    Matches the website's edition banner (November 2026): "My Town News" and
+    the edition name large and left-aligned, over the edition's photo fading
+    in from the right. The fade is baked into one image per edition
+    (scripts/build-email-banners.py), set as the cell's background, because
+    no email client can do the website's masks. Positioned 40% across:
+    at 600px the image fits the cell almost exactly, and on a phone, where
+    the cell is narrow, the text stays on navy with the photo just showing
+    at the right, rather than the title sitting over the photo. Everything on it is live
+    text, so with images blocked the masthead still reads, on plain navy;
+    Outlook for Windows ignores background images and shows exactly that.
 
-    The mark is a hosted PNG, not inline SVG: no email client can be relied
-    on to render inline SVG, and a data: URI is stripped by Gmail. Images
-    are blocked by default in most clients, so it carries alt text and sits
-    above a wordmark that is live text — with images off the header still
-    says "My Town News" in Georgia and still links through. The image is
-    branding, never the only thing carrying the meaning.
-
-    Centred rather than in the corner because the masthead is centred; a
-    left-aligned mark needs a two-column table to avoid looking dropped in,
-    and every nested table in an email is another thing Outlook can break.
+    Three ways to reach the full edition stay above the fold: the mark, the
+    wordmark, and the explicit "See the full edition" link, which is the one
+    that actually gets clicked.
   -->
-  <tr><td style="background:#1a2744;padding:28px 40px 24px;text-align:center;">
+  <tr><td bgcolor="#1a2744"${banner ? ` background="${banner}"` : ""} style="background-color:#1a2744;${banner ? `background-image:url('${banner}');background-repeat:no-repeat;background-position:40% center;background-size:cover;` : ""}padding:28px 32px 20px;text-align:left;">
     <a href="${issueUrl}" style="text-decoration:none;display:inline-block;">
-      <img src="${SITE_URL}/assets/img/mark-email.png" width="44" height="44" alt="My Town News"
-           style="display:block;margin:0 auto 10px auto;border:0;outline:none;width:44px;height:44px;">
+      <img src="${SITE_URL}/assets/img/mark-email.png" width="40" height="40" alt="My Town News"
+           style="display:block;margin:0 0 12px 0;border:0;outline:none;width:40px;height:40px;">
     </a>
-    <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:${onDark};">${cluster.city || "San Francisco"} · Free &amp; Independent · Every Friday</p>
-    <h1 style="margin:0 0 6px 0;font-family:Georgia,'Times New Roman',serif;font-size:36px;font-weight:900;letter-spacing:-1px;">
-      <a href="${issueUrl}" style="color:#ffffff;text-decoration:none;">My Town <span style="color:${onDark};">News<sup style="font-size:14px;line-height:0;vertical-align:super;font-weight:400;letter-spacing:0;">&trade;</sup></span></a>
+    <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:${onDark};">${esc(placeLabel)} · Free &amp; Independent · Every Friday</p>
+    <h1 style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:34px;font-weight:900;line-height:1.1;letter-spacing:-0.5px;">
+      <a href="${issueUrl}" style="color:#ffffff;text-decoration:none;">My Town <span style="color:${onDark};">News<sup style="font-size:13px;line-height:0;vertical-align:super;font-weight:400;letter-spacing:0;">&trade;</sup></span></a><br>
+      <span style="color:#ffffff;">${esc(issue.clusterName || cluster.name)}</span>
     </h1>
-    <!-- The town's own name, which is the thing a reader recognises, was 14px
-         Arial at 65% white — smaller than the "My Town News" above it and in a
-         different family from the whole rest of the brand. It is now 26px in
-         the same serif as the wordmark and the site's headings, at full white.
-         Georgia rather than Playfair Display because email clients cannot be
-         given a webfont; Georgia is what the site itself falls back to. -->
-    <p style="margin:10px 0 0 0;font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:700;line-height:1.15;color:#ffffff;">${esc(issue.clusterName || cluster.name)}</p>
-    ${hoods ? `<p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.78);">${esc(hoods)}</p>` : ""}
-    ${formatWeek(issue.weekOf) ? `<p style="margin:5px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.72);">Week of ${esc(formatWeek(issue.weekOf))}</p>` : ""}
-    <!-- The explicit one. A linked logo and a linked wordmark are both
-         invisible affordances — nobody hovers a masthead to find out. This
-         is the link that actually gets clicked. -->
-    <p style="margin:14px 0 0 0;">
+    ${hoods ? `<p style="margin:12px 0 0 0;max-width:340px;font-family:Arial,sans-serif;font-size:10px;line-height:1.6;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.85);">${esc(hoods)}</p>` : ""}
+    ${formatWeek(issue.weekOf) ? `<p style="margin:8px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.8);">Week of ${esc(formatWeek(issue.weekOf))}</p>` : ""}
+    <p style="margin:16px 0 0 0;">
       <a href="${issueUrl}" style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:${onDark};text-decoration:none;border-bottom:1px solid ${onDark};padding-bottom:2px;">See the full edition →</a>
     </p>
+    ${photo ? `<p style="margin:18px 0 0 0;text-align:right;font-family:Arial,sans-serif;font-size:9px;line-height:1.4;color:rgba(255,255,255,0.75);">${esc(photo.subject)} · Photo: <a href="${esc(photo.source)}" style="color:rgba(255,255,255,0.75);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.5);">${esc(photo.photographer)}</a>${photo.license !== "Public domain" ? `, <a href="${esc(photo.licenseUrl)}" style="color:rgba(255,255,255,0.75);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.5);">${esc(photo.license)}</a>${photo.cropped ? " (cropped)" : ""}` : ""}</p>` : ""}
   </td></tr>
   <tr><td style="height:3px;background:${onDark};"></td></tr>
 
