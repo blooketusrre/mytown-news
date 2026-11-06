@@ -1,11 +1,11 @@
 {
   "heber-city": {
     "file": "heber-city.jpg",
-    "photographer": "Tricia Simpson",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "source": "https://commons.wikimedia.org/wiki/File:Wasatch_Saloon_Heber_City_Utah.jpeg",
-    "subject": "Wasatch Saloon, Main Street",
+    "photographer": "An Errant Knight",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:West_at_Heber_Valley_Railroad%27s_Heber_City_station,_Apr_16.jpg",
+    "subject": "Heber Valley Railroad depot",
     "cropped": true,
     "position": "center 55%"
   },

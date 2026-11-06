@@ -26,17 +26,17 @@
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="stylesheet" href="/assets/css/main.css">
 
-  {# ── Per-edition accent tokens, generated from src/_data/clusters.json ──
-     Four tokens per edition, because one hue cannot stay legible on both a
-     white card and the navy events band. Generated rather than hand-written
-     so the stylesheet stops being a second source of edition data. Every
-     pair is contrast-checked by scripts/verify-build.js, which fails the
-     build below 4.5:1 — ten of the original twelve editions failed that
-     threshold when the values were chosen by eye. #}
+  {# ── Edition accent tokens ────────────────────────────────────────────
+     Every edition uses the same white-and-gold scheme (November 2026). With
+     twenty editions, a green, a purple and a teal each identified nothing
+     and made the set look less like one publication. Each edition's own
+     colour in clusters.json still marks it on the maps and city pages.
+
+     Two golds, because one cannot do both jobs: the brand gold on the navy
+     banner and buttons, and a deeper gold for text on white, where the
+     brand gold is 2.6:1 and hard to read. The deeper one is 4.9:1. #}
   <style>
-  {%- for c in clusters %}
-  [data-cluster="{{ c.slug }}"]{--accent:{{ c.accent }};--accent-on-dark:{{ c.accentOnDark }};--accent-btn:{{ c.accentBtn }};--accent-ink:{{ c.accentInk }}}
-  {%- endfor %}
+  [data-cluster]{--accent:#8f6420;--accent-on-dark:#c8943a;--accent-btn:#c8943a;--accent-ink:#1a2744}
   </style>
 
   {# ── Icons ──────────────────────────────────────────────────────────────
