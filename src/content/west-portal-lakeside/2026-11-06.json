@@ -1,0 +1,839 @@
+{
+  "clusterSlug": "west-portal-lakeside",
+  "clusterName": "West Portal & Lakeside",
+  "weekOf": "2026-11-06",
+  "topStories": [
+    {
+      "headline": "Voters Pass Prop H in a Landslide, Securing Muni Funding — and the M-Ocean View Line",
+      "dek": "San Francisco's parcel-tax measure for Muni passed with roughly 73% of the vote on Tuesday, pulling the agency back from the edge of deep service cuts that would have hit M-line riders hardest.",
+      "body": "San Francisco voters gave Muni an overwhelming financial lifeline on Election Day, November 3, approving Proposition H by roughly 73% to 27% in preliminary results. The measure — which still requires certification by the Department of Elections on December 3 — creates an annual parcel tax expected to generate approximately $177 million a year for Muni operations over the next 15 years.\n\nFor residents of West Portal, Stonestown, and Lakeshore who depend on the M-Ocean View line, the stakes were unusually direct. The SFMTA had warned that without new revenue it would be forced to eliminate up to 20 Muni routes and double wait times on Metro lines, potentially ending or severely curtailing M-line service through the Twin Peaks Tunnel.\n\nMost single-family homeowners in the neighborhoods will see an annual increase of about $129 on their property tax bills, with multifamily parcels starting at $249 and commercial properties at $799. A companion regional measure, RTM, which would raise sales taxes across five Bay Area counties to shore up BART and other regional transit, also carried San Francisco with more than 78% support.\n\nThe double victory surprised some transit advocates who had feared voter fatigue with tax measures. Backers framed both measures as essential for a transit system they called a lifeline for workers, seniors, and students throughout the city's west side.",
+      "sourceUrl": "https://missionlocal.org/2026/11/san-francisco-election-results-transit-proposition-h-rtm/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "Muni",
+        "Proposition H",
+        "election",
+        "transit",
+        "West Portal",
+        "Stonestown"
+      ]
+    },
+    {
+      "headline": "SFSU Braces for Possible Faculty Strike as Union Vote Runs Through November 19",
+      "dek": "The California Faculty Association is in the middle of a strike-authorization vote that could shut down San Francisco State — and 22 other CSU campuses — before the semester ends.",
+      "body": "A strike-authorization vote that could upend the fall semester at San Francisco State University is under way, with ballots open from October 26 through November 19. The California Faculty Association, which represents roughly 29,000 professors, lecturers, librarians, and counselors across the California State University system, launched the vote after declaring a bargaining impasse in July following 16 months of stalled negotiations.\n\nAt SFSU's campus in Lakeshore, faculty and students have already rallied publicly. On October 29, union members from multiple campus unions marched to the administration building and announced they were preparing to shut down the university if a strike were called. Students who joined the action said the quality of their own education is directly linked to the conditions their instructors work under.\n\nThe CFA's main demands include meaningful salary increases — faculty have gone without a raise since 2024 and the union's contract expired at the end of last year — along with caps on class sizes, stronger job security for lecturers, and explicit protections governing the university's use of artificial intelligence in instruction. The CSU system has reached tentative agreements with three smaller unions covering about 14,000 employees, but those deals have not resolved the core dispute with the faculty union.\n\nIf a majority of voting members authorize a strike, CFA leadership will have the power to call a work stoppage at any point. No date has been set, and talks could resume before the vote closes. Students are advised to monitor SFSU communications for any changes to their class schedules.",
+      "sourceUrl": "https://goldengatexpress.org/115993/news/campus/we-are-a-school-with-a-bureaucracy-attached-sfsu-braces-for-possible-faculty-strike/",
+      "sourceName": "Golden Gate Xpress",
+      "tags": [
+        "SFSU",
+        "faculty strike",
+        "CFA",
+        "CSU",
+        "Lakeshore",
+        "higher education"
+      ]
+    },
+    {
+      "headline": "Sbarro Is Coming Back to Stonestown — and Blondie's Pizza Is Out After an Eviction Fight",
+      "dek": "The national chain will return to Stonestown Galleria's food court in early 2027, four years after Blondie's Pizza took its spot, following a dispute over more than $74,000 in unpaid rent.",
+      "body": "Stonestown Galleria confirmed this week that Sbarro will return to the mall's food court in the first quarter of 2027, ending a four-year absence that began when local chain Blondie's Pizza moved in after the national brand departed. The swap is coming by way of a legal dispute: the mall's operator sued Blondie's earlier this year, alleging the restaurant owed more than $74,000 in unpaid rent. The SF Standard reported the mall had issued a default notice and later a pay-or-vacate order before the closure was finalized.\n\nThe announcement quickly stirred a wave of nostalgia on social media among shoppers who remembered Sbarro as a staple of the Stonestown food court experience. The mall has continued adding tenants even as downtown San Francisco's retail sector has struggled, and the return of a recognizable brand fits a broader pattern of Stonestown extending its reach as a neighborhood commercial anchor on the city's west side.\n\nStonestown's redevelopment plan — approved by the Planning Commission in 2024 and envisions transforming the surface parking lots into thousands of new homes and additional retail space — continues to move through the pipeline, though no construction start date for the residential towers has been announced.",
+      "sourceUrl": "https://www.sfchronicle.com/food/restaurants/article/sbarro-returning-stonestown-galleria-22484924.php",
+      "sourceName": "San Francisco Chronicle",
+      "tags": [
+        "Stonestown Galleria",
+        "retail",
+        "food court",
+        "Sbarro",
+        "Blondie's Pizza"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "West Portal Branch: Neighborhood Speaker Series — Business",
+      "startDate": "2026-11-19",
+      "date": "Thursday, November 19",
+      "time": "6:00 PM",
+      "location": "West Portal Branch Library, 190 Lenox Way, West Portal",
+      "description": "Local professionals share insights on running a small business in the final installment of the West Portal Library's Fall Speaker Series. Presenters include attorneys, an insurance agent, an accountant, and an IT specialist. Free; all adults welcome.",
+      "sourceUrl": "https://sfpl.org/events/2026/11/19/presentation-west-portal-neighborhood-speaker-series-business",
+      "sourceName": "San Francisco Public Library"
+    },
+    {
+      "title": "West Portal Branch: Book Club for Boys",
+      "startDate": "2026-11-06",
+      "date": "Thursday, November 6",
+      "time": "6:45 PM",
+      "location": "West Portal Branch Library, 190 Lenox Way, West Portal",
+      "description": "Monthly reading group for boys ages 9–12 accompanied by a favorite adult, meeting on the first Thursday of each month at the West Portal Library. Free.",
+      "sourceUrl": "https://sfpl.org/locations/west-portal",
+      "sourceName": "San Francisco Public Library"
+    },
+    {
+      "title": "CFA Strike Authorization Vote — SFSU Campus",
+      "startDate": "2026-11-06",
+      "date": "Through November 19",
+      "time": "",
+      "location": "San Francisco State University, Lakeshore",
+      "description": "The California Faculty Association's systemwide strike-authorization ballot remains open through November 19; a 'yes' majority would empower union leadership to call a work stoppage at SFSU and other CSU campuses. Students can monitor sfsu.edu for schedule updates.",
+      "sourceUrl": "https://goldengatexpress.org/115993/news/campus/we-are-a-school-with-a-bureaucracy-attached-sfsu-braces-for-possible-faculty-strike/",
+      "sourceName": "Golden Gate Xpress"
+    },
+    {
+      "title": "Great Dickens Christmas Fair — 42nd Season",
+      "startDate": "2026-11-21",
+      "date": "Through December 20",
+      "time": "10:00 AM – 6:00 PM",
+      "location": "Cow Palace Exhibition Halls, 2600 Geneva Ave, Daly City (near Lakeshore/Excelsior border)",
+      "description": "The annual Victorian immersion event returns for five weekends, plus the Friday after Thanksgiving, transforming over 140,000 square feet of the Cow Palace into Dickens' London with live theatre, holiday shopping, music, food, and costumed characters. Tickets from $35; active-duty military admitted free the first two weekends.",
+      "sourceUrl": "https://dickensfair.com/",
+      "sourceName": "Great Dickens Christmas Fair (official site)"
+    },
+    {
+      "title": "SF International Hip Hop DanceFest",
+      "startDate": "2026-11-14",
+      "date": "Friday–Saturday, November 14–15",
+      "time": "Various times",
+      "location": "Palace of Fine Arts Theater, San Francisco",
+      "description": "The 28th annual festival presents internationally acclaimed hip-hop dance companies on a proscenium stage, showcasing breaking, popping, locking, waacking, krump, house, and more. Tickets required; details at the Palace of Fine Arts box office.",
+      "sourceUrl": "https://binningsteam.com/blog/november-2026-events-in-san-francisco-and-marin-county",
+      "sourceName": "Binnings Team / SF Events"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "SFSU to Launch 'Study Abroad @ San Francisco' Program in Spring 2027",
+      "body": "San Francisco State University announced in October 2026 that it will launch a new program called Study Abroad @ San Francisco beginning in Spring 2027. The program is designed to bring international students to the Lakeshore campus for immersive study, adding a new international enrollment stream as the university navigates ongoing budget pressures.",
+      "sourceUrl": "https://cpage.sfsu.edu/news",
+      "sourceName": "SFSU College of Professional & Global Education",
+      "tags": [
+        "SFSU",
+        "international students",
+        "Lakeshore"
+      ]
+    },
+    {
+      "headline": "SFSU Closed Wednesday, November 11 for Veterans Day",
+      "body": "San Francisco State University will be closed on Wednesday, November 11, in observance of Veterans Day. All classes and administrative offices will be shut for the holiday; students should check their course pages for any instructor-specific guidance about assignments due around the holiday.",
+      "sourceUrl": "https://cpage.sfsu.edu/news",
+      "sourceName": "SFSU College of Professional & Global Education",
+      "tags": [
+        "SFSU",
+        "Veterans Day",
+        "campus closure"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Measures to rescue BART, Muni from financial ruin winning with unexpected ease",
+      "url": "https://missionlocal.org/2026/11/san-francisco-election-results-transit-proposition-h-rtm/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "SF's 'Stronger Muni for All' Prop H parcel tax appears headed for victory",
+      "url": "https://localnewsmatters.org/2026/11/04/san-francisco-proposition-h-election-results/",
+      "publication": "Local News Matters"
+    },
+    {
+      "title": "2026 Election Results for San Francisco Proposition H",
+      "url": "https://www.kqed.org/elections/results/sanfrancisco/proposition-h",
+      "publication": "KQED"
+    },
+    {
+      "title": "San Francisco Election Results: Nov. 3, 2026",
+      "url": "https://www.sfpublicpress.org/san-francisco-election-results-nov-3-2026/",
+      "publication": "San Francisco Public Press"
+    },
+    {
+      "title": "'We are a school with a bureaucracy attached': SFSU braces for possible faculty strike",
+      "url": "https://goldengatexpress.org/115993/news/campus/we-are-a-school-with-a-bureaucracy-attached-sfsu-braces-for-possible-faculty-strike/",
+      "publication": "Golden Gate Xpress"
+    },
+    {
+      "title": "California State University faculty union prepares to strike",
+      "url": "https://www.kalw.org/bay-area-news/2026-10-26/california-state-university-faculty-union-prepares-to-strike",
+      "publication": "KALW"
+    },
+    {
+      "title": "California State University workers rally as 29,000 faculty vote on strike authorization",
+      "url": "https://www.wsws.org/en/articles/2026/11/03/zeen-n03.html",
+      "publication": "World Socialist Web Site"
+    },
+    {
+      "title": "Sbarro is returning to San Francisco's Stonestown Galleria",
+      "url": "https://www.sfchronicle.com/food/restaurants/article/sbarro-returning-stonestown-galleria-22484924.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Presentation: West Portal Neighborhood Speaker Series, Business",
+      "url": "https://sfpl.org/events/2026/11/19/presentation-west-portal-neighborhood-speaker-series-business",
+      "publication": "San Francisco Public Library"
+    },
+    {
+      "title": "West Portal Branch Library",
+      "url": "https://sfpl.org/locations/west-portal",
+      "publication": "San Francisco Public Library"
+    },
+    {
+      "title": "Great Dickens Christmas Fair — Official Website",
+      "url": "https://dickensfair.com/",
+      "publication": "Great Dickens Christmas Fair / Red Barn Productions"
+    },
+    {
+      "title": "November 2026 Events in San Francisco and Marin County",
+      "url": "https://binningsteam.com/blog/november-2026-events-in-san-francisco-and-marin-county",
+      "publication": "Binnings Team"
+    },
+    {
+      "title": "SFSU News Listing — College of Professional & Global Education",
+      "url": "https://cpage.sfsu.edu/news",
+      "publication": "San Francisco State University"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Khao Tiew",
+        "cuisineGroup": "Asian",
+        "type": "Modern Thai restaurant",
+        "description": "Buzzy West Portal Thai spot drawing nightly crowds with tom yum hotpot, duck curry, and Kaya toast rooted in family tradition.",
+        "address": "272 Claremont Blvd, San Francisco, CA 94127",
+        "phone": "(415) 996-1919",
+        "website": "https://khao-tiew.online",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Tur",
+        "cuisineGroup": "Asian",
+        "type": "Thai brunch restaurant",
+        "description": "From the owners of Khao Tiew, this daytime-only Thai brunch spot took over the former Squat & Gobble corner, serving seven kinds of jook, honeycomb French toast, and confit duck.",
+        "address": "1 W Portal Ave, San Francisco, CA 94127",
+        "phone": "(415) 569-1919",
+        "website": "https://www.instagram.com/tur__sf/",
+        "neighborhood": "West Portal",
+        "notable": "New"
+      },
+      {
+        "name": "Elena's Mexican Restaurant",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Upscale Mexican restaurant",
+        "description": "From the family behind Original Joe's, Elena's serves California-inspired Mexican-American dishes — spicy margaritas, sizzling fajitas — under candlelight and live trees.",
+        "address": "255 W Portal Ave, San Francisco, CA 94127",
+        "phone": "(415) 622-4440",
+        "website": "https://www.elenasmexican.com",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Binu Bonu",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Italian wine bar and bottle shop",
+        "description": "From the original owners of La Ciccia, this intimate West Portal wine bar pours around 100 sustainable Italian wines by the glass or bottle alongside Sardinian cicchetti.",
+        "address": "230 W Portal Ave, San Francisco, CA 94127",
+        "phone": "(415) 742-4322",
+        "website": "https://binubonu.com",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Hardware Coffee",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "All-day café with beer, wine, and florist",
+        "description": "Opened May 2026 in the historic Papenhausen Hardware space, this all-day café serves premium coffee, food, beer, and wine with a full-service florist and event space.",
+        "address": "32 W Portal Ave, San Francisco, CA 94127",
+        "phone": "(415) 742-4255",
+        "website": "https://hardwarecoffee.co/pages/west-portal",
+        "neighborhood": "West Portal",
+        "notable": "New"
+      },
+      {
+        "name": "George's Donuts & Merriment",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Artisan donut café",
+        "description": "European-inspired café in a soaring Art Deco space on West Portal Avenue, turning out Valrhona-glazed crullers and avocado toast from a pastry chef with Michelin-starred kitchen experience.",
+        "address": "163 W Portal Ave, San Francisco, CA 94127",
+        "phone": "(415) 571-8021",
+        "website": "https://www.georgessf.com",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Bursa",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Turkish Mediterranean restaurant",
+        "description": "West Portal's go-to for falafel, kebabs, and a tight Mediterranean menu with an affordable wine list; a neighborhood staple since 2003.",
+        "address": "60 W Portal Ave, San Francisco, CA 94127",
+        "phone": "(415) 564-4006",
+        "website": "https://bursasf.com",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Little Original Joe's",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Italian-American market and pizzeria",
+        "description": "A hybrid Italian market and casual restaurant from the Original Joe's family, beloved for its thin-crust pizza, rotisserie chicken, and neighborhood warmth.",
+        "address": "393 W Portal Ave, San Francisco, CA 94127",
+        "phone": "(415) 759-1155",
+        "website": "https://www.littleoriginaljoes.com",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Trattoria da Vittorio",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian trattoria",
+        "description": "Warm neighborhood Italian with solid pasta, a welcoming dining room, and reliable lunch and dinner service on West Portal Avenue.",
+        "address": "257 W Portal Ave, San Francisco, CA 94127",
+        "phone": "(415) 665-6300",
+        "website": "https://www.trattoriadavittoriosf.com",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Lion West Portal",
+        "cuisineGroup": "Asian",
+        "type": "Modern Japanese and vegan sushi restaurant",
+        "description": "Sleek dinner-only spot on West Portal Avenue offering seasonal and vegan-friendly Japanese sushi and small plates in a contemporary setting.",
+        "address": "301 W Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "https://lionwestportal.com",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Snow Bliss Cafe",
+        "cuisineGroup": "Asian",
+        "type": "Korean-Chinese café",
+        "description": "Family-owned West Portal gem known for generously portioned bingsu shaved ice, beef chow fun, and late-night kitchen hours.",
+        "address": "360 W Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Franco's Latin Table",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Peruvian restaurant",
+        "description": "Neighborhood Peruvian spot in West Portal serving solid ceviche, lomo saltado, and other Latin staples in large portions.",
+        "address": "310 W Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Spiazzo Ristorante",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "Long-running Italian restaurant on West Portal Avenue serving pasta, pizza, and classic Italian dishes for lunch and dinner.",
+        "address": "200 W Portal Ave, San Francisco, CA 94127",
+        "phone": "(415) 564-2888",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Submarine Center",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Sandwich shop",
+        "description": "West Portal's beloved deli counter serving generously loaded hot-pressed subs — pastrami, Italiano, and the Atomic — for over four decades.",
+        "address": "820 Ulloa St, San Francisco, CA 94127",
+        "phone": "(415) 661-2577",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ballast Coffee",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Neighborhood coffee shop",
+        "description": "Easygoing West Portal café with great coffee, tasty treats, and a garden patio for relaxed sipping.",
+        "address": "329 W Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "https://www.ballastcoffee.com",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Noe Valley Bakery — West Portal",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Neighborhood bakery",
+        "description": "West Portal outpost of the beloved Noe Valley Bakery, offering excellent pastries, croissants, and coffee daily.",
+        "address": "225 W Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "https://www.noevalleybakery.com",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Philosopher's Club",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood dive bar",
+        "description": "West Portal dive bar operating under the same name since 1960, run by twin brothers Josh and Justin Fritsch, with a jukebox, sports TVs, and deep community ties.",
+        "address": "824 Ulloa St, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Kizuki Ramen & Izakaya",
+        "cuisineGroup": "Asian",
+        "type": "Japanese ramen restaurant",
+        "description": "Popular Stonestown Galleria ramen spot with a bamboo-inspired interior and a menu of rich tonkotsu and other Japanese ramen styles.",
+        "address": "3251 20th Ave (Stonestown Galleria), San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://kizuki.com",
+        "neighborhood": "Stonestown",
+        "notable": ""
+      },
+      {
+        "name": "Supreme Dumplings",
+        "cuisineGroup": "Asian",
+        "type": "Dumpling restaurant",
+        "description": "Stonestown Galleria food court standout with a devoted following for its handmade soup dumplings and other Northern Chinese dim sum.",
+        "address": "3251 20th Ave (Stonestown Galleria), San Francisco, CA 94132",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Stonestown",
+        "notable": ""
+      },
+      {
+        "name": "Le Soleil",
+        "cuisineGroup": "Asian",
+        "type": "Vietnamese restaurant",
+        "description": "Locally and family-owned Vietnamese restaurant in Stonestown Galleria with an elegant modern setting and dishes such as crispy lattice rolls and house pho.",
+        "address": "3251 20th Ave (Stonestown Galleria), San Francisco, CA 94132",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Stonestown",
+        "notable": ""
+      },
+      {
+        "name": "Marugame Udon",
+        "cuisineGroup": "Asian",
+        "type": "Japanese udon restaurant",
+        "description": "Fast-casual Stonestown Galleria udon shop where diners choose fresh-cooked noodles and top them with tempura and other sides.",
+        "address": "3251 20th Ave (Stonestown Galleria), San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://marugameudon.com",
+        "neighborhood": "Stonestown",
+        "notable": ""
+      },
+      {
+        "name": "Mumu Hot Pot",
+        "cuisineGroup": "Asian",
+        "type": "Chinese hot pot restaurant",
+        "description": "Casual Parkmerced neighborhood hot pot spot with individual personal pots, quality meats, and a clean, welcoming dining room.",
+        "address": "470 Serrano Dr, San Francisco, CA 94132",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Parkmerced",
+        "notable": ""
+      },
+      {
+        "name": "85°C Bakery Café",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Taiwanese bakery café",
+        "description": "Stonestown outpost of the Taiwanese chain known for its sea salt coffee, fresh-baked breads, and pastries around the clock.",
+        "address": "3251 20th Ave (Stonestown Galleria), San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://85cbakerycafe.com",
+        "neighborhood": "Stonestown",
+        "notable": ""
+      }
+    ],
+    "hotels": [],
+    "shops": [
+      {
+        "name": "Bookshop West Portal",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Locally owned general-interest bookstore open since 2006, hosting author events, community gatherings, and book clubs on West Portal Avenue.",
+        "address": "80 W Portal Ave, San Francisco, CA 94127",
+        "phone": "(415) 564-8080",
+        "website": "https://bookshopwestportal.com",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Shaws San Francisco",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Candy store and ice cream shop",
+        "description": "West Portal institution founded in 1931 and recently revived under new ownership, selling gourmet chocolates, homemade fudge, old-fashioned candy, and Mitchell's Ice Cream.",
+        "address": "122 W Portal Ave, San Francisco, CA 94127",
+        "phone": "(415) 683-5626",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Music Store",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Musical instruments and accessories shop",
+        "description": "Independent music shop on West Portal Avenue carrying instruments, accessories, and sheet music for local musicians.",
+        "address": "66 W Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Siren Boutique",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's clothing boutique",
+        "description": "West Portal boutique offering curated women's fashion and personalized shopping experiences.",
+        "address": "160 W Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Curiosities",
+        "shopGroup": "Home & Gifts",
+        "type": "Gift and curiosity shop",
+        "description": "Rotating collection of new and interesting objects, gifts, and novelties on West Portal Avenue.",
+        "address": "350 W Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Simply Bella",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's clothing boutique",
+        "description": "Personalized-service women's clothing boutique on West Portal Avenue, known for knowledgeable styling help.",
+        "address": "234 W Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "GG's Boutique & Gift Shop",
+        "shopGroup": "Home & Gifts",
+        "type": "Boutique and gift shop",
+        "description": "Packed West Portal boutique offering clothing and gifts with a wide-ranging, eclectic selection.",
+        "address": "125 W Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Stonestown Galleria",
+        "shopGroup": "Other",
+        "type": "Indoor shopping mall",
+        "description": "Active enclosed mall near SF State anchored by Target, Trader Joe's, and Whole Foods, with the most Asia-Pacific-oriented food and retail mix of any SF mall.",
+        "address": "3251 20th Ave, San Francisco, CA 94132",
+        "phone": "(415) 564-8848",
+        "website": "https://www.stonestowngalleria.com",
+        "neighborhood": "Stonestown",
+        "notable": ""
+      },
+      {
+        "name": "Trader Joe's — Stonestown",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Specialty grocery store",
+        "description": "Popular Stonestown Galleria Trader Joe's, one of two premium grocery anchors that drive frequent visits to the mall.",
+        "address": "3251 20th Ave (Stonestown Galleria), San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://www.traderjoes.com",
+        "neighborhood": "Stonestown",
+        "notable": ""
+      },
+      {
+        "name": "Whole Foods Market — Stonestown",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Natural and organic grocery store",
+        "description": "Stonestown Galleria Whole Foods, co-anchoring the mall's grocery wing alongside Trader Joe's.",
+        "address": "3251 20th Ave (Stonestown Galleria), San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://www.wholefoodsmarket.com",
+        "neighborhood": "Stonestown",
+        "notable": ""
+      },
+      {
+        "name": "Daiso — Stonestown",
+        "shopGroup": "Home & Gifts",
+        "type": "Japanese variety store",
+        "description": "Stonestown branch of the Japanese discount variety retailer, offering a wide range of household goods, stationery, and novelties.",
+        "address": "3251 20th Ave (Stonestown Galleria), San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://www.daisojapan.com",
+        "neighborhood": "Stonestown",
+        "notable": ""
+      },
+      {
+        "name": "West Portal Gallery",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Art gallery and retail",
+        "description": "West Portal Avenue gallery space showcasing local and regional visual art, included on the SF Chamber of Commerce September 2026 Merchant Walk.",
+        "address": "320 W Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Regal Stonestown Galleria ScreenX, 4DX & RPX",
+        "venueGroup": "Cinema",
+        "type": "12-screen multiplex cinema",
+        "description": "Modern 12-screen Regal multiplex opened 2021 inside Stonestown Galleria, featuring recliner seating, ScreenX, 4DX, and RPX premium formats.",
+        "address": "3251 20th Ave, San Francisco, CA 94132",
+        "phone": "(844) 462-7342",
+        "website": "https://www.regmovies.com/theatres/regal-stonestown-galleria-1464",
+        "neighborhood": "Stonestown",
+        "notable": ""
+      },
+      {
+        "name": "Stern Grove Festival",
+        "venueGroup": "Music Venues",
+        "type": "Outdoor concert amphitheater",
+        "description": "Natural eucalyptus-lined amphitheater hosting the long-running free summer concert series featuring the SF Symphony, major artists, and community performances.",
+        "address": "19th Ave & Sloat Blvd, San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://www.sterngrove.org",
+        "neighborhood": "Lakeshore",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Forest Hill Association Clubhouse",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic neighborhood clubhouse and event venue",
+        "description": "Lovingly maintained historic clubhouse with garden terrace in the quiet Forest Hill neighborhood, available for community events and private gatherings.",
+        "address": "381 Magellan Ave, San Francisco, CA 94116",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Forest Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "West Portal Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Community art gallery",
+        "description": "West Portal Avenue gallery space featuring rotating exhibitions of local visual art, visited on the September 2026 SF Chamber Merchant Walk.",
+        "address": "320 W Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Round 1 Arcade",
+        "venueGroup": "Theater & Comedy",
+        "type": "Bowling and arcade entertainment center",
+        "description": "Large multi-level entertainment venue inside Stonestown Galleria offering bowling, arcade games, karaoke, and billiards.",
+        "address": "3251 20th Ave (Stonestown Galleria), San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://www.round1usa.com",
+        "neighborhood": "Stonestown",
+        "notable": ""
+      },
+      {
+        "name": "Immersive Gamebox — Stonestown",
+        "venueGroup": "Theater & Comedy",
+        "type": "Immersive gaming venue",
+        "description": "Technology-driven group entertainment venue inside Stonestown Galleria featuring fully immersive room-scale game experiences.",
+        "address": "3251 20th Ave (Stonestown Galleria), San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://www.immersivegamebox.com",
+        "neighborhood": "Stonestown",
+        "notable": ""
+      },
+      {
+        "name": "Miraloma Tiled Steps",
+        "venueGroup": "Museums & Cultural",
+        "type": "Public mosaic art installation",
+        "description": "Community-created mosaic tile stairway on the slopes of Mount Davidson in Miraloma Park, a neighborhood landmark and outdoor art attraction.",
+        "address": "Juanita Way at Molimo Dr, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Miraloma Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "15th Avenue Steps Park",
+        "venueGroup": "Museums & Cultural",
+        "type": "Mosaic staircase and park",
+        "description": "Scenic mosaic-tiled staircase park on the western slope of Twin Peaks, popular with hikers and visitors seeking neighborhood art and views.",
+        "address": "15th Ave & Moraga St, San Francisco, CA 94122",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Forest Hill",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Stonestown Family YMCA",
+        "venueGroup": "Pools & Aquatics",
+        "type": "Full-service community fitness center with pool",
+        "description": "Comprehensive YMCA facility serving the west side of SF since 1954, recently renovated, with a pool, yoga, Pilates, cycling, Zumba, group fitness, and youth programs.",
+        "address": "333 Eucalyptus Dr, San Francisco, CA 94132",
+        "phone": "(415) 242-7100",
+        "website": "https://www.ymcasf.org/location/stonestown-family-ymca/",
+        "neighborhood": "Stonestown",
+        "notable": "Landmark"
+      },
+      {
+        "name": "West Portal Pilates",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Classical Pilates studio",
+        "description": "Small classical Pilates studio on 14th Avenue offering private lessons, small group reformer and apparatus classes, and beginner series for all ages.",
+        "address": "2811 14th Ave, San Francisco, CA 94127",
+        "phone": "(415) 425-1896",
+        "website": "https://westportalpilates.com",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Pure Barre — West Portal",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Barre fitness studio",
+        "description": "Boutique barre studio near West Portal offering low-impact, full-body ballet-inspired workouts in multiple class formats.",
+        "address": "185 W Portal Ave, San Francisco, CA 94127",
+        "phone": "",
+        "website": "https://www.purebarre.com",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "City Sports Club — Stonestown",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "Large multi-amenity gym in the Stonestown area with cardio equipment, free weights, group fitness classes, and access to multiple Bay Area locations.",
+        "address": "260 Stonestown Mall, San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://www.citysportsclub.com",
+        "neighborhood": "Stonestown",
+        "notable": ""
+      },
+      {
+        "name": "Stern Grove Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public park and natural amphitheater",
+        "description": "Beloved 33-acre park with eucalyptus groves, walking trails, and the natural amphitheater that hosts the annual free Stern Grove Festival concert series.",
+        "address": "19th Ave & Sloat Blvd, San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://www.sfrecpark.org",
+        "neighborhood": "Lakeshore",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lake Merced",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Lakeside park and recreation area",
+        "description": "SF's largest freshwater lake offering a 4.5-mile paved loop for running and cycling, plus fishing, rowing, and wildlife watching adjacent to Parkmerced.",
+        "address": "Lake Merced Blvd, San Francisco, CA 94132",
+        "phone": "",
+        "website": "https://www.sfrecpark.org",
+        "neighborhood": "Lakeshore",
+        "notable": "Landmark"
+      },
+      {
+        "name": "West Portal Playground",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood park and playground",
+        "description": "Community park at the heart of West Portal with playground equipment, open green space, and a recreation center.",
+        "address": "W Portal Ave & Lenox Way, San Francisco, CA 94127",
+        "phone": "",
+        "website": "https://www.sfrecpark.org",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Colhado Brazilian Jiu-Jitsu Academy",
+        "venueGroup": "Martial Arts",
+        "type": "Brazilian jiu-jitsu gym",
+        "description": "West Portal–area BJJ academy led by Black Belt Professor Colhado, offering practical and competition jiu-jitsu classes for all levels.",
+        "address": "735 Ulloa St, San Francisco, CA 94127",
+        "phone": "",
+        "website": "",
+        "neighborhood": "West Portal",
+        "notable": ""
+      },
+      {
+        "name": "Sunset Dunes (Great Highway Park)",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Coastal linear park",
+        "description": "SF's newest major park — opened April 2025 — converting 77 acres of former Great Highway roadway into separated walking and cycling paths, art installations, and coastal dune habitat along Ocean Beach.",
+        "address": "Great Hwy between Lincoln Way & Sloat Blvd, San Francisco, CA 94122",
+        "phone": "",
+        "website": "https://www.sfrecpark.org",
+        "neighborhood": "Lakeshore",
+        "notable": "New"
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-11-06",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-11-06",
+        "high": 68,
+        "low": 52,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 1
+      },
+      {
+        "date": "2026-11-07",
+        "high": 69,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-08",
+        "high": 68,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-09",
+        "high": 68,
+        "low": 54,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-10",
+        "high": 69,
+        "low": 54,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-11",
+        "high": 69,
+        "low": 55,
+        "summary": "Partly Sunny then Slight Chance Light Rain",
+        "condition": "rain",
+        "precip": 15
+      },
+      {
+        "date": "2026-11-12",
+        "high": 67,
+        "low": 54,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 33
+      }
+    ]
+  }
+}

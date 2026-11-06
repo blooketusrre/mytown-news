@@ -1,0 +1,936 @@
+{
+  "clusterSlug": "north-waterfront",
+  "clusterName": "North Waterfront",
+  "weekOf": "2026-11-06",
+  "topStories": [
+    {
+      "headline": "State Commission to Finally Hear North Beach Historic District Case November 12–13",
+      "dek": "After two postponements and years of neighborhood conflict, the State Historic Resources Commission takes up the North Beach National Register nomination in Sacramento this week.",
+      "body": "The long-delayed question of whether North Beach should become a federally recognized historic district reaches a critical milestone this week when the State Historic Resources Commission (SHRC) convenes its quarterly meeting November 12–13 at the California State Railroad Museum in Sacramento. The North Beach National Register Historic District nomination — covering roughly 800 properties in a 20-block area bounded by Chestnut, Mason, Sansome, and Washington streets — has been pulled from the SHRC agenda twice before, first at Mayor Daniel Lurie's request and then due to a notification dispute.\n\nThe nomination, submitted by architectural historian Katherine Petrin on behalf of the Northeast San Francisco Conservancy, identifies 631 historic-district contributors including 625 buildings. Supporters say designation would benefit property owners seeking federal tax incentives for rehabilitation work and would protect the neighborhood's Italian American and Beat-era character. SF Heritage, which has backed the nomination throughout, is urging community members to attend or watch via Zoom and to submit public testimony.\n\nOpposition has come from an unexpected corner: Supervisor Danny Sauter, who represents the district, has proposed a competing local historic district he says would preserve key buildings while leaving more parcels available for housing development. Sauter and Mayor Lurie argue that a National Register designation could block developers from using state housing streamlining laws within the district boundaries — a concern the conservancy disputes. Both a national and a local district could ultimately coexist, according to city planners, but the SHRC's action this week will shape what comes next. The public comment deadline is seven days before each hearing date; written comments submitted in advance remain on the record.",
+      "sourceUrl": "https://www.sfheritage.org/advocacy/north-beach-and-ingleside-terraces-finally-get-their-hearing/",
+      "sourceName": "SF Heritage",
+      "tags": [
+        "historic preservation",
+        "North Beach",
+        "housing",
+        "planning"
+      ]
+    },
+    {
+      "headline": "Man Detained After Shooting Near Muni Bus in North Beach",
+      "dek": "San Francisco police detained a suspect following a shooting that occurred near a Muni bus in the North Beach neighborhood this week.",
+      "body": "San Francisco police detained a man after a shooting occurred near a Muni bus in North Beach, the San Francisco Chronicle reported on November 6. Details about injuries and the precise location within the neighborhood were not immediately available in early reports, and police had not released further information about charges as of publication time.\n\nThe incident adds to ongoing concerns about public safety along the Muni corridors serving North Beach and the northern waterfront. SFPD asks anyone with information about the incident to contact the department's tip line.",
+      "sourceUrl": "https://www.sfchronicle.com/",
+      "sourceName": "San Francisco Chronicle",
+      "tags": [
+        "public safety",
+        "North Beach",
+        "Muni",
+        "SFPD"
+      ]
+    },
+    {
+      "headline": "Sneaker Waves and High Tides Threaten Fisherman's Wharf Waterfront Through the Weekend",
+      "dek": "The National Weather Service extended a beach hazards statement through Monday, warning visitors to stay off piers and jetties along the northern waterfront.",
+      "body": "A beach hazards statement issued by the National Weather Service remained in effect from Thursday morning through Monday evening, covering San Francisco's coastal areas including the Fisherman's Wharf waterfront. Forecasters warned of breaking waves up to 12 to 26 feet at Pacific-facing beaches, with an elevated risk of sneaker waves and strong rip currents.\n\nA separate coastal flood advisory, in effect through next week, reflects unusually high tides driven in part by El Niño-related ocean warming and the approach of a new moon on Sunday. The NWS urged visitors to stay out of the water and off jetties, piers, rocks, and other waterfront infrastructure throughout the advisory period. Fisherman's Wharf regulars, including visitors to San Francisco on Ice and the SkyStar Wheel on Jefferson Street, are advised to heed barriers and warning signs near the water's edge. Coastal flood advisories are expected to recur roughly every other week through at least February, coinciding with new and full moon phases.",
+      "sourceUrl": "https://www.cbsnews.com/sanfrancisco/news/bay-area-beach-hazards-statement-november-2026-sneaker-waves-coastal-flood-advisory/",
+      "sourceName": "CBS San Francisco / National Weather Service",
+      "tags": [
+        "weather",
+        "Fisherman's Wharf",
+        "coastal flooding",
+        "public safety"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "State Historic Resources Commission Hearing: North Beach District",
+      "startDate": "2026-11-12",
+      "date": "Thu–Fri, November 12–13",
+      "time": "9:00 AM",
+      "location": "California State Railroad Museum, 125 I Street, Sacramento (also via Zoom)",
+      "description": "The SHRC takes up the North Beach National Register Historic District nomination at its quarterly meeting. Members of the public may attend in person in Sacramento or register to testify remotely via Zoom.",
+      "sourceUrl": "https://ohp.parks.ca.gov/pending/",
+      "sourceName": "California Office of Historic Preservation"
+    },
+    {
+      "title": "San Francisco on Ice at Fisherman's Wharf",
+      "startDate": "2026-11-04",
+      "date": "Through January 18, 2027",
+      "time": "10:00 AM–11:00 PM daily",
+      "location": "80 Jefferson St., Fisherman's Wharf (beside the SkyStar Wheel)",
+      "description": "The city's newest and largest outdoor holiday ice rink — 6,300 square feet — opened November 4 along the waterfront. The rink is operated by On Ice Rinks LLC and will host community programs, special events, and holiday celebrations throughout its 76-day run.",
+      "sourceUrl": "https://www.kron4.com/news/bay-area/something-truly-special-sfs-newest-largest-holiday-ice-rink-is-coming-to-this-iconic-landmark/",
+      "sourceName": "KRON4 / Port of San Francisco"
+    },
+    {
+      "title": "MerryTime Market at the Wharf",
+      "startDate": "2026-11-28",
+      "date": "Nov 28–29 and Dec 5–6",
+      "time": "1:00 PM–6:00 PM",
+      "location": "Fisherman's Wharf",
+      "description": "The Fisherman's Wharf Community Benefit District's holiday pop-up market features chalets with handcrafted gifts, local makers, and seasonal treats across the waterfront from Pier 39 to Ghirardelli Square.",
+      "sourceUrl": "https://www.fishermanswharf.org/events/holidays-at-the-wharf/",
+      "sourceName": "Fisherman's Wharf Association"
+    },
+    {
+      "title": "PIER 39 Holiday Season Opens",
+      "startDate": "2026-11-23",
+      "date": "From November 23",
+      "time": "Various times",
+      "location": "PIER 39, Fisherman's Wharf",
+      "description": "PIER 39 kicks off its holiday celebration on November 23, running through January 10, anchored by the display of one of the Bay Area's largest live Christmas trees in the Entrance Plaza.",
+      "sourceUrl": "https://www.pier39.com/upcoming-events/",
+      "sourceName": "PIER 39"
+    },
+    {
+      "title": "Alcatraz Thanksgiving Indigenous Peoples' Sunrise Ceremony",
+      "startDate": "2026-11-26",
+      "date": "Thursday, November 26",
+      "time": "4:15 AM–8:00 AM",
+      "location": "Alcatraz Island (ferry departs from Fisherman's Wharf area)",
+      "description": "Organized by the International Indian Treaty Council to commemorate the 1969–71 occupation of Alcatraz by the Indians of All Tribes. Boat tickets are $12 for adults; free for children under 5.",
+      "sourceUrl": "https://sf.funcheap.com/region/fishermans-wharf-san-francisco/",
+      "sourceName": "Funcheap SF / International Indian Treaty Council"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Ripley's Believe It or Not Sets December 1 as Final Day at Fisherman's Wharf",
+      "body": "After nearly 60 years at 175 Jefferson Street, Ripley's Believe It or Not confirmed on October 15 that its San Francisco Odditorium will close on December 1, 2026. To mark the occasion, the attraction will charge $1.50 for adult admission and 75 cents for children on its final day — a callback to the prices it charged when it opened on February 2, 1967. A silent auction of select exhibits and artifacts will also run through closing day. The building is already being marketed for lease, leaving the future of the Jefferson Street space an open question as the Wharf continues its broader commercial reshuffling.",
+      "sourceUrl": "https://www.sfchronicle.com/entertainment/article/ripleys-san-francisco-closing-22478963.php",
+      "sourceName": "San Francisco Chronicle",
+      "tags": [
+        "Fisherman's Wharf",
+        "business closure",
+        "Ripley's"
+      ]
+    },
+    {
+      "headline": "Julius' Castle Is Open Again on Telegraph Hill After Nearly Two Decades Dark",
+      "body": "Julius' Castle, the century-old landmark at 302 Greenwich Street on the cliffs of Telegraph Hill below Coit Tower, reopened for dinner service in September 2026 — the first time it has served guests since it closed in 2007. Owner Paul Scott, who purchased the building in a 2012 bankruptcy sale, spent years navigating permits, legal challenges, and structural renovation work before the restaurant began accepting reservations. The castle-shaped building has been a San Francisco Landmark (No. 121) since 1980.",
+      "sourceUrl": "https://sfist.com/2026/07/09/julius-castle-the-long-shuttered/",
+      "sourceName": "SFist",
+      "tags": [
+        "Telegraph Hill",
+        "restaurant",
+        "historic preservation"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "North Beach and Ingleside Terraces Finally Get Their Hearing",
+      "url": "https://www.sfheritage.org/advocacy/north-beach-and-ingleside-terraces-finally-get-their-hearing/",
+      "publication": "SF Heritage"
+    },
+    {
+      "title": "Pending Nominations — November 12–13, 2026 SHRC Meeting",
+      "url": "https://ohp.parks.ca.gov/pending/",
+      "publication": "California Office of Historic Preservation"
+    },
+    {
+      "title": "Battle over North Beach's historic district takes new turn — with separate plans",
+      "url": "https://www.yahoo.com/news/us/articles/battle-over-north-beachs-historic-005138970.html",
+      "publication": "San Francisco Chronicle / Yahoo News"
+    },
+    {
+      "title": "Man detained after shooting near Muni bus in S.F.'s North Beach, police say",
+      "url": "https://www.sfchronicle.com/",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Hazardous beach conditions for Bay Area through weekend; 12 to 16 foot waves possible",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/bay-area-beach-hazards-statement-november-2026-sneaker-waves-coastal-flood-advisory/",
+      "publication": "CBS San Francisco"
+    },
+    {
+      "title": "SF Bay Area gets another coastal flood advisory for quite high tides",
+      "url": "https://www.sfchronicle.com/weather/article/coastal-flood-high-tides-22509817.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "'Something truly special': SF's newest, largest holiday ice rink is coming to this iconic landmark",
+      "url": "https://www.kron4.com/news/bay-area/something-truly-special-sfs-newest-largest-holiday-ice-rink-is-coming-to-this-iconic-landmark/",
+      "publication": "KRON4"
+    },
+    {
+      "title": "MerryTime at the Wharf / Holidays at the Wharf",
+      "url": "https://www.fishermanswharf.org/events/holidays-at-the-wharf/",
+      "publication": "Fisherman's Wharf Association"
+    },
+    {
+      "title": "Upcoming 2026 Events at PIER 39",
+      "url": "https://www.pier39.com/upcoming-events/",
+      "publication": "PIER 39"
+    },
+    {
+      "title": "Alcatraz Thanksgiving Indigenous Peoples' Sunrise Ceremony",
+      "url": "https://sf.funcheap.com/region/fishermans-wharf-san-francisco/",
+      "publication": "Funcheap SF"
+    },
+    {
+      "title": "Ripley's sets closing date for San Francisco attraction with $1.50 admission",
+      "url": "https://www.sfchronicle.com/entertainment/article/ripleys-san-francisco-closing-22478963.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "Julius' Castle, the Long-Shuttered Cliffside Telegraph Hill Restaurant, Readies for Fall Reopening",
+      "url": "https://sfist.com/2026/07/09/julius-castle-the-long-shuttered/",
+      "publication": "SFist"
+    },
+    {
+      "title": "Julius' Castle Returns to Telegraph Hill After Nearly 20 Years",
+      "url": "https://transparent.city/c/san-francisco/stories/GEuyQugm",
+      "publication": "Transparent City"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Caffe Trieste",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Historic espresso café",
+        "description": "Founded in 1956 as the first espresso house on the West Coast, this North Beach landmark — where Francis Ford Coppola drafted The Godfather — still serves espresso, pastries, paninis, and live music, celebrating its 70th anniversary in 2026.",
+        "address": "601 Vallejo St",
+        "phone": "415-392-6739",
+        "website": "https://caffetrieste.com",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Vesuvio Cafe",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Historic Beat-era bar",
+        "description": "Open since 1948 at 255 Columbus Avenue across from City Lights, this two-floor saloon remains a North Beach institution beloved by writers, tourists, and locals for its Beat-era memorabilia and full bar.",
+        "address": "255 Columbus Ave",
+        "phone": "415-595-9313",
+        "website": "https://vesuvio.com",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Mama's on Washington Square",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Breakfast and brunch café",
+        "description": "A family-run North Beach institution since 1964, serving legendary breakfasts and housemade pastries overlooking Washington Square Park, open Tuesday through Sunday.",
+        "address": "1701 Stockton St",
+        "phone": "415-362-6421",
+        "website": "https://mamas-sf.com",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Tony's Pizza Napoletana",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Artisan pizzeria",
+        "description": "13-time World Pizza Champion Tony Gemignani's flagship North Beach pizzeria, open since 2009, fires a dozen pizza styles across seven different ovens alongside antipasti, pasta, and a full bar.",
+        "address": "1570 Stockton St",
+        "phone": "415-835-9888",
+        "website": "https://tonyspizzanapoletana.com",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hilda and Jesse",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Michelin-starred brunch restaurant",
+        "description": "A queer-owned, Michelin-starred North Beach dining room specializing in creative brunch and dinner with a playful modern-luxury approach, retaining its star in 2025 and 2026.",
+        "address": "701 Union St",
+        "phone": "415-872-9186",
+        "website": "https://hildaandjessesf.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Sotto Mare Oysteria & Seafood",
+        "cuisineGroup": "Seafood & American",
+        "type": "Italian seafood restaurant",
+        "description": "A beloved North Beach oyster bar and seafood trattoria specializing in house cioppino, fresh oysters, and simply-prepared fish; family-owned and open daily.",
+        "address": "552 Green St",
+        "phone": "415-398-3181",
+        "website": "https://sottomaresf.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "North Beach Restaurant",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "A North Beach cornerstone since 1970, renowned for traditional Tuscan-influenced Italian cuisine served in a warm, full-bar dining room on Columbus Avenue.",
+        "address": "1512 Stockton St",
+        "phone": "415-392-1700",
+        "website": "https://northbeachrestaurant.com",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Fior d'Italia",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian fine dining",
+        "description": "One of America's oldest Italian restaurants, Fior d'Italia offers fine Italian dining with an elegant atmosphere in lively North Beach.",
+        "address": "2237 Mason St",
+        "phone": "415-986-1886",
+        "website": "https://fior.com",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Flour + Water Pizzeria – North Beach",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Neapolitan pizzeria",
+        "description": "The North Beach flagship of Flour + Water Hospitality Group, rooted in the neighborhood's Italian heritage and serving wood-fired pizza on Columbus Avenue.",
+        "address": "532 Columbus Ave",
+        "phone": "",
+        "website": "https://fwpizzeria.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Caffe Sport",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Sicilian-Italian restaurant",
+        "description": "A flamboyantly decorated North Beach fixture serving robust Sicilian-influenced pastas, seafood, and garlic-forward sauces in a kitschy interior beloved by longtime regulars.",
+        "address": "574 Green St",
+        "phone": "415-981-1251",
+        "website": "https://caffesport.com",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Original Joe's",
+        "cuisineGroup": "Seafood & American",
+        "type": "Classic American Italian chophouse",
+        "description": "A North Beach institution famous for its open kitchen, hearty Italian-American plates, steaks, and full bar drawing locals and visitors alike.",
+        "address": "601 Union St",
+        "phone": "415-775-4877",
+        "website": "https://originaljoes.com",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ideale Restaurant & Bar",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "A warmly-regarded North Beach Italian with Zagat praise and San Francisco Chronicle recognition for its housemade pasta.",
+        "address": "1315 Grant Ave",
+        "phone": "415-391-4129",
+        "website": "https://idealesf.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Bocconcino",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "A well-reviewed North Beach Italian spot drawing regulars for its pasta and convivial atmosphere.",
+        "address": "814 Columbus Ave",
+        "phone": "415-525-4415",
+        "website": "https://bocconcinosf.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Scoma's Restaurant",
+        "cuisineGroup": "Seafood & American",
+        "type": "Waterfront seafood restaurant",
+        "description": "A Fisherman's Wharf classic since 1965, Scoma's sits on its own working pier at Pier 47, sourcing Dungeness crab, clam chowder, and sustainable seafood directly from local fishermen pier-to-plate.",
+        "address": "1965 Al Scoma Way, Pier 47",
+        "phone": "415-771-4383",
+        "website": "https://scomas.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Restaurant Gary Danko",
+        "cuisineGroup": "Seafood & American",
+        "type": "Fine dining — contemporary French/American",
+        "description": "Open since 1999, this multi-award-winning Fisherman's Wharf destination offers a prix-fixe experience combining classic French technique with local California ingredients, earning consistent Michelin recognition.",
+        "address": "800 N Point St",
+        "phone": "415-749-2060",
+        "website": "https://garydanko.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Fog Harbor Fish House",
+        "cuisineGroup": "Seafood & American",
+        "type": "Seafood restaurant",
+        "description": "A family-owned full-bar seafood house on Pier 39 with sweeping Bay views, consistently ranked among the top Fisherman's Wharf restaurants.",
+        "address": "Pier 39",
+        "phone": "415-421-2442",
+        "website": "https://fogharbor.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Boudin Bakery & Café",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Sourdough bakery and café",
+        "description": "San Francisco's original sourdough bakery, Boudin serves its famous clam chowder in bread bowls alongside sandwiches and pastries at its flagship Fisherman's Wharf location.",
+        "address": "160 Jefferson St",
+        "phone": "415-928-1849",
+        "website": "https://boudinbakery.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Eagle Cafe",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Classic American diner and bar",
+        "description": "A Pier 39 fixture for over 90 years, Eagle Cafe serves hearty American breakfasts and full-bar lunches with an old-wharf feel beloved by early risers and tourists alike.",
+        "address": "Pier 39, Level 2",
+        "phone": "415-433-3689",
+        "website": "https://eaglecafe.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Codmother Fish & Chips",
+        "cuisineGroup": "Seafood & American",
+        "type": "Fish and chips cart",
+        "description": "A beloved Fisherman's Wharf food-truck stand widely praised for some of the best British-style fish and chips in the city.",
+        "address": "496 Beach St",
+        "phone": "415-606-9349",
+        "website": "https://thecodmother.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Surisan",
+        "cuisineGroup": "Asian",
+        "type": "Korean fusion brunch restaurant",
+        "description": "A hip, locally-owned Korean fusion brunch spot at Fisherman's Wharf known for its seafood pancakes and modern takes on Korean-American brunch dishes.",
+        "address": "300 Jefferson St",
+        "phone": "415-440-1975",
+        "website": "https://surisansf.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Crab House at Pier 39",
+        "cuisineGroup": "Seafood & American",
+        "type": "Seafood restaurant",
+        "description": "A family-owned Pier 39 seafood restaurant in its 23rd year, specializing in Dungeness crab and Bay shellfish.",
+        "address": "Pier 39",
+        "phone": "415-434-2722",
+        "website": "https://crabhouse39.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Pier Market Seafood Restaurant",
+        "cuisineGroup": "Seafood & American",
+        "type": "Waterfront seafood restaurant",
+        "description": "A family-owned waterfront seafood house on the Fisherman's Wharf promenade offering outdoor seating and classic Bay Area seafood dishes.",
+        "address": "Pier 39, The Embarcadero",
+        "phone": "415-989-7437",
+        "website": "https://piermarket.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "ABACÁ",
+        "cuisineGroup": "Asian",
+        "type": "Modern Filipino restaurant",
+        "description": "A celebrated Filipino-American restaurant at Fisherman's Wharf drawing consistent praise for its creative, seasonal take on Philippine culinary traditions.",
+        "address": "2100 The Embarcadero",
+        "phone": "415-865-9292",
+        "website": "https://abacasf.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "North Beach Cantina",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican restaurant",
+        "description": "A Mexican cantina that took over the Stockton Street space in 2022 and has won the neighborhood over with street tacos, fish tacos, and California-style burritos.",
+        "address": "1548 Stockton St",
+        "phone": "",
+        "website": "https://northbeachcantina.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Julius' Castle",
+        "cuisineGroup": "Seafood & American",
+        "type": "Historic cliffside restaurant",
+        "description": "The 1924 Telegraph Hill landmark below Coit Tower, reopening after nearly two decades closed following a restoration of its fire-damaged turret and original wood panelling.",
+        "address": "1541 Montgomery St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Telegraph Hill",
+        "notable": "Coming Soon",
+        "_added": true
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Argonaut Hotel",
+        "type": "Boutique waterfront hotel",
+        "description": "A Noble House hotel occupying a 1907 brick cannery building on the waterfront, steps from Ghirardelli Square and Pier 39, consistently rated a top Fisherman's Wharf choice.",
+        "address": "495 Jefferson St",
+        "phone": "415-563-0800",
+        "website": "https://argonauthotel.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hotel Zephyr San Francisco",
+        "type": "Boutique waterfront hotel",
+        "description": "A playfully designed Fisherman's Wharf hotel with an outdoor courtyard, fire pits, and games, popular for its fun nautical atmosphere and central location.",
+        "address": "250 Beach St",
+        "phone": "415-617-6565",
+        "website": "https://hotelzephyrsf.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Hotel Zoe Fisherman's Wharf",
+        "type": "Boutique hotel",
+        "description": "A cozy boutique hotel steps from Pier 39, offering comfortable rooms and an on-site restaurant, Pescatore Trattoria.",
+        "address": "425 North Point St",
+        "phone": "415-561-1100",
+        "website": "https://hotelzoesf.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Hotel Caza Fisherman's Wharf",
+        "type": "Full-service hotel",
+        "description": "A well-located 4-star property at the heart of Fisherman's Wharf with a fitness center, pet-friendly rooms, and easy access to the waterfront attractions.",
+        "address": "2780 Taylor St",
+        "phone": "415-776-8200",
+        "website": "https://hotelcaza.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Hotel Riu Plaza Fisherman's Wharf",
+        "type": "Full-service hotel",
+        "description": "A 4-star eco-conscious hotel near Pier 39 featuring an outdoor pool, complimentary breakfast buffet, and panoramic city views.",
+        "address": "2500 Mason St",
+        "phone": "415-561-1100",
+        "website": "https://riuhotels.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Kimpton Alton Hotel",
+        "type": "Boutique hotel",
+        "description": "An IHG boutique hotel with a stylish lobby, pet-friendly policy, and free Wi-Fi, rated highly for its location and service at Fisherman's Wharf.",
+        "address": "2750 Leavenworth St",
+        "phone": "415-409-7000",
+        "website": "https://altonhotelsf.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "San Francisco Marriott Fisherman's Wharf",
+        "type": "Full-service hotel",
+        "description": "A 4-star Marriott with an on-site restaurant, fitness center, and meeting rooms, conveniently located a short walk from the wharf and Ghirardelli Square.",
+        "address": "1250 Columbus Ave",
+        "phone": "415-775-7555",
+        "website": "https://marriott.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Holiday Inn Express & Suites San Francisco Fishermans Wharf",
+        "type": "Limited-service hotel",
+        "description": "An IHG property offering complimentary breakfast, fitness center, and a central Fisherman's Wharf location within walking distance of major attractions.",
+        "address": "550 North Point St",
+        "phone": "415-409-5000",
+        "website": "https://ihg.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Washington Square Inn",
+        "type": "European-style boutique inn",
+        "description": "A 15-room European-style bed-and-breakfast inn on the edge of Washington Square Park, offering rooms with views of Coit Tower and Saints Peter and Paul Church.",
+        "address": "1660 Stockton St",
+        "phone": "415-783-9916",
+        "website": "https://washingtonsquareinn.com",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hotel Boheme",
+        "type": "Boutique hotel",
+        "description": "A charming 15-room boutique hotel on Columbus Avenue capturing the bohemian flair of North Beach in the 1950s and 60s, within steps of City Lights and Vesuvio.",
+        "address": "444 Columbus Ave",
+        "phone": "415-433-9111",
+        "website": "https://hotelboheme.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "City Lights Booksellers & Publishers",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore-publisher",
+        "description": "Founded in 1953 by Lawrence Ferlinghetti, this legendary Beat Generation bookstore and publisher specializes in world literature, progressive politics, and poetry, and is a designated San Francisco landmark at 261 Columbus Ave.",
+        "address": "261 Columbus Ave",
+        "phone": "415-362-8193",
+        "website": "https://citylights.com",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Molinari Delicatessen",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Italian delicatessen",
+        "description": "Established in 1896, this is San Francisco's oldest Italian deli, famous for its house-made salami sold nationwide, Dutch crunch sandwiches, imported cheeses, and Italian grocery staples.",
+        "address": "373 Columbus Ave",
+        "phone": "415-421-2337",
+        "website": "https://themolinarideli.com",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Little Vine",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Wine shop and deli",
+        "description": "A cozy North Beach wine shop beloved for its curated bottle selection, housemade sandwiches, and Thursday-evening wine nights.",
+        "address": "1541 Grant Ave",
+        "phone": "415-522-2462",
+        "website": "https://littlevineshop.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Libreria Pino",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "A charming independent bookstore and cultural gem tucked into North Beach, earning five-star reviews from its small but devoted following.",
+        "address": "424 Columbus Ave",
+        "phone": "",
+        "website": "https://libreriapinosf.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Cantina Records",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Independent record store",
+        "description": "A North Beach record shop with an eclectic selection of vinyl and an affectionately noted Star Wars figurine collection throughout the space.",
+        "address": "1000 Grant Ave",
+        "phone": "415-869-2750",
+        "website": "",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Macchiarini Creative Design",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Jewelry studio and shop",
+        "description": "A North Beach institution offering handcrafted jewelry and metalsmithing classes in a working studio open to the public.",
+        "address": "1544 Grant Ave",
+        "phone": "415-982-2229",
+        "website": "https://macchiarini.com",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "AB Fits",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Denim and casual clothing boutique",
+        "description": "A well-loved North Beach boutique specializing in premium denim and casual wear with a loyal local following.",
+        "address": "1519 Grant Ave",
+        "phone": "415-982-5726",
+        "website": "https://abfits.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "KWAK",
+        "shopGroup": "Home & Gifts",
+        "type": "Specialty rubber duck shop",
+        "description": "A one-of-a-kind Pier 39 novelty shop stocking over 600 varieties of rubber ducks, selling more than 50,000 annually and drawing a devoted following.",
+        "address": "Pier 39",
+        "phone": "",
+        "website": "https://kwaksf.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "The Shell Cellar",
+        "shopGroup": "Home & Gifts",
+        "type": "Sea-themed gift shop",
+        "description": "A Pier 39 shop with a broad selection of shells, nautical gifts, and sea-themed souvenirs, consistently praised by visitors for its unique inventory.",
+        "address": "Pier 39",
+        "phone": "",
+        "website": "https://pier39.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Houdini's Magic Shop",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Magic and novelty shop",
+        "description": "A Pier 39 magic shop where staff perform live sleight-of-hand demonstrations and sell tricks, novelties, and illusions for all ages.",
+        "address": "Pier 39",
+        "phone": "415-398-3900",
+        "website": "https://houdinis.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Coit Tower",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic landmark and observation tower",
+        "description": "The 210-foot 1933 Art Deco tower atop Telegraph Hill features New Deal murals depicting California life, a free-access base, and a paid elevator to a panoramic observation deck with views of Alcatraz, the Golden Gate, and the Bay.",
+        "address": "1 Telegraph Hill Blvd",
+        "phone": "415-412-0382",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Telegraph Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "City Lights Booksellers & Publishers",
+        "venueGroup": "Museums & Cultural",
+        "type": "Literary landmark",
+        "description": "Beyond its role as a bookstore, City Lights is a San Francisco Designated Landmark (No. 228) and publisher, hosting readings and serving as a living monument to the Beat Generation.",
+        "address": "261 Columbus Ave",
+        "phone": "415-362-8193",
+        "website": "https://citylights.com",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Musée Mécanique",
+        "venueGroup": "Museums & Cultural",
+        "type": "Interactive antique arcade museum",
+        "description": "One of the world's largest privately-owned collections of coin-operated mechanical instruments, with over 300 working antique arcade games, player pianos, and automata at Pier 45 — free admission, open 365 days a year.",
+        "address": "Pier 45, Fisherman's Wharf",
+        "phone": "415-346-2000",
+        "website": "https://museemecanique.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Aquarium of the Bay",
+        "venueGroup": "Museums & Cultural",
+        "type": "Public aquarium",
+        "description": "Located at Pier 39, this nonprofit aquarium houses more than 20,000 marine animals native to San Francisco Bay, including sharks, rays, river otters, and jellyfish in 300 feet of glass tunnels.",
+        "address": "Pier 39, Embarcadero & Beach St",
+        "phone": "415-623-5300",
+        "website": "https://aquariumofthebay.org",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "PIER 39",
+        "venueGroup": "Museums & Cultural",
+        "type": "Waterfront entertainment and shopping complex",
+        "description": "San Francisco's most iconic waterfront destination, featuring two levels of dining, shopping, and attractions alongside the famous free sea-lion colony on K-Dock, with reviews from September 2026 confirming it is in full operation.",
+        "address": "The Embarcadero & Beach St",
+        "phone": "415-705-5500",
+        "website": "https://pier39.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Live Worms Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery",
+        "description": "An eclectic North Beach gallery on Grant Avenue giving emerging artists space to exhibit work across diverse media in the heart of the neighborhood.",
+        "address": "1345 Grant Ave",
+        "phone": "415-297-5931",
+        "website": "https://sflivewormsgallery.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Paul Thiebaud Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Fine art gallery",
+        "description": "A respected North Beach fine-art gallery representing notable Bay Area artists and hosting rotating exhibitions.",
+        "address": "645 Chestnut St",
+        "phone": "415-392-8096",
+        "website": "https://paulthiebaudgallery.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Sweetie's Art Bar",
+        "venueGroup": "Art Galleries",
+        "type": "Art bar",
+        "description": "A North Beach neighborhood bar doubling as a gallery space, with local artists' work covering the walls in a relaxed, creative setting.",
+        "address": "475 Francisco St",
+        "phone": "415-433-2343",
+        "website": "",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Telegraph Hill Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery",
+        "description": "A gallery focused on representing contemporary artists and fostering the visual-arts community in the Telegraph Hill neighborhood.",
+        "address": "461 Greenwich St",
+        "phone": "415-767-9794",
+        "website": "https://telegraphhillgallery.com",
+        "neighborhood": "Telegraph Hill",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Bay Club San Francisco",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service athletic club",
+        "description": "Open since 1977 as the nation's first co-ed gym, this North Beach flagship offers basketball, squash, pools, yoga, Pilates, and cutting-edge fitness facilities following a recently completed 15,000-square-foot renovation.",
+        "address": "150 Greenwich St",
+        "phone": "415-433-2200",
+        "website": "https://bayclubs.com/clubs/sanfrancisco",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Glow Yoga & Wellness",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga, barre, and wellness studio",
+        "description": "A North Beach holistic studio near Washington Square offering yoga, Pilates, barre, kettlebells, yin yoga, sound baths, and an on-site spa with facials, massage, and red light therapy.",
+        "address": "1548 Stockton St, 2nd Floor",
+        "phone": "415-874-9141",
+        "website": "https://glowyogasf.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Orangetheory Fitness – North Beach",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "HIIT fitness studio",
+        "description": "A science-backed total-body interval training studio on Columbus Avenue combining strength and cardio workouts led by expert coaches.",
+        "address": "1255 Columbus Ave",
+        "phone": "415-604-0211",
+        "website": "https://orangetheory.com",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "F45 Training North Beach",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Functional fitness studio",
+        "description": "A group functional training studio at Northpoint Centre in Fisherman's Wharf offering 45-minute team-based workouts.",
+        "address": "Northpoint Centre, 2211 Fillmore St",
+        "phone": "",
+        "website": "https://f45training.com",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      },
+      {
+        "name": "Fit Life Training Studio",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Personal training studio",
+        "description": "A five-star-rated North Beach boutique training studio with a devoted clientele, praised as an alternative to chain-gym personal training.",
+        "address": "1501 Grant Ave",
+        "phone": "",
+        "website": "",
+        "neighborhood": "North Beach",
+        "notable": ""
+      },
+      {
+        "name": "Washington Square Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood park",
+        "description": "The green heart of North Beach, Washington Square Park hosts morning tai chi, pick-up sports, bocce, and community gatherings surrounded by Saints Peter and Paul Church and neighborhood cafés.",
+        "address": "Filbert St & Stockton St",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "North Beach",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Coit Tower / Pioneer Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public park and observation point",
+        "description": "The 4.82-acre park crowning Telegraph Hill is free and open daily from 5 a.m. to midnight, offering some of the city's best panoramic views and access to the parrot-inhabited slopes.",
+        "address": "1 Telegraph Hill Blvd",
+        "phone": "415-412-0382",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Telegraph Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Northpoint Health Club",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Health club",
+        "description": "A Fisherman's Wharf area health club offering gym facilities and fitness classes to local residents and hotel guests.",
+        "address": "2310 Powell St",
+        "phone": "415-776-2200",
+        "website": "",
+        "neighborhood": "Fisherman's Wharf",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-11-06",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-11-06",
+        "high": 67,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 1
+      },
+      {
+        "date": "2026-11-07",
+        "high": 68,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-08",
+        "high": 67,
+        "low": 55,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-09",
+        "high": 67,
+        "low": 57,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-10",
+        "high": 66,
+        "low": 57,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-11",
+        "high": 66,
+        "low": 57,
+        "summary": "Partly Sunny then Slight Chance Light Rain",
+        "condition": "rain",
+        "precip": 15
+      },
+      {
+        "date": "2026-11-12",
+        "high": 65,
+        "low": 57,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 32
+      }
+    ]
+  }
+}

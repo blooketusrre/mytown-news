@@ -1,0 +1,708 @@
+{
+  "clusterSlug": "ennis",
+  "clusterName": "Ennis",
+  "weekOf": "2026-11-06",
+  "topStories": [
+    {
+      "headline": "H-E-B to Build a New Ennis Store More Than Twice the Size of the Current One",
+      "dek": "The grocer announced plans for a 112,000-square-foot store at Sonoma Trail and Ennis Avenue, with construction beginning in mid-2027 and an opening projected for late 2028.",
+      "body": "H-E-B confirmed last week that it will replace its longtime Ennis store with a dramatically larger supermarket at the corner of North Sonoma Trail and East Ennis Avenue. The new building will cover approximately 112,000 square feet — more than double the footprint of the current location at 101 S. Clay Street, which has served the community for more than 50 years.\n\nAccording to H-E-B, plans are moving through the permitting process, with construction expected to begin in mid-2027 and the store to open by late 2028. The existing downtown location will remain fully operational until the new store is ready, and no decisions have been made yet about what will happen to the Clay Street property afterward.\n\nThe new store will include a full-service pharmacy with a drive-through lane, curbside pickup with dedicated parking, home delivery, and an in-store South Flo Pizza counter. H-E-B also said the building's design will reflect the character and personality of Ennis.\n\nEnnis, which the U.S. Census Bureau estimated at roughly 26,000 residents as of mid-2025 — an increase of more than 25 percent since April 2020 — has grown substantially since the current H-E-B first opened. Current store employees will have the opportunity to transition to the new location, with additional job postings to follow as the opening approaches.",
+      "sourceUrl": "https://theshelbyreport.com/2026/10/27/h-e-b-reveals-plans-for-larger-store-in-ennis-texas/",
+      "sourceName": "The Shelby Report",
+      "tags": [
+        "business",
+        "retail",
+        "development"
+      ]
+    },
+    {
+      "headline": "Ennis Voters Back Street Repair Sales Tax 72% to 28%",
+      "dek": "With all precincts reporting from the November 3 special election, Ennis Proposition A passed by a wide margin, keeping the quarter-cent street maintenance tax alive through at least 2030.",
+      "body": "Ennis voters approved the reauthorization of the city's quarter-cent street maintenance and repair sales tax by a decisive margin of 72.05 percent to 27.95 percent on Election Day, November 3. With all precincts counted, 3,751 votes were cast in favor of Proposition A and 1,455 against, according to NBC DFW's results tracker.\n\nThe tax, which amounts to 25 cents on a $100 purchase, had been scheduled to expire on March 31, 2027. Reauthorization locks it in for another four years from the date of the election and does not raise the overall city sales tax rate, which remains at 2.0 percent. Had the measure failed, the combined city local rate would have dropped to 1.75 percent.\n\nSince the tax first went into effect in April 2015, it has generated more than $13.9 million for street and sidewalk maintenance, including $1.47 million in fiscal year 2025–2026, according to city records. The special election was ordered by the City Commission in August under Ordinance No. 26-0804-B2.",
+      "sourceUrl": "https://www.nbcdfw.com/news/politics/lone-star-politics/ennis-voters-weigh-reauthorizing-street-repair-sales-tax/4093035/",
+      "sourceName": "NBC DFW",
+      "tags": [
+        "election",
+        "taxes",
+        "infrastructure"
+      ]
+    },
+    {
+      "headline": "Ennis ISD Brings in Interim Superintendent and Names New Deputy Leader",
+      "dek": "The school district announced two leadership changes in the same week: Keith Boles joins as interim superintendent starting November 4, and Trent Dowd comes aboard as deputy superintendent.",
+      "body": "Ennis ISD Board of Trustees President Bill Chapman announced on October 28 that Keith Boles would serve as interim superintendent, with Boles beginning work on November 4. The Ennis Daily News described Boles as a respected leader in education, though the district has not yet publicly detailed the circumstances that created the opening.\n\nSeparately, the district announced the appointment of Trent Dowd as the new deputy superintendent. Dowd brings more than 20 years of experience in education to the role, according to the district's website, and is featured prominently in current headlines on the Ennis ISD homepage.\n\nThe two appointments represent significant leadership movement at the top of the district heading into the second semester. Ennis ISD serves approximately 6,621 students across 12 campuses, according to the Texas Education Agency's most recent school report card data.",
+      "sourceUrl": "https://www.ennisdailynews.com/",
+      "sourceName": "Ennis Daily News",
+      "tags": [
+        "education",
+        "Ennis ISD",
+        "leadership"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Texas Truck Invasion at Texas Motorplex",
+      "startDate": "2026-11-07",
+      "date": "Saturday, November 7",
+      "time": "Various times",
+      "location": "Texas Motorplex, Ennis",
+      "description": "The Texas Motorplex hosts its annual Texas Truck Invasion, one of several family-friendly motorsports events on the facility's November schedule.",
+      "sourceUrl": "https://www.texasmotorplex.com/blog/diverse-family-friendly-events-fill-2026-texas-motorplex-schedule",
+      "sourceName": "Texas Motorplex"
+    },
+    {
+      "title": "Import Face Off at Texas Motorplex",
+      "startDate": "2026-11-08",
+      "date": "Sunday, November 8",
+      "time": "Various times",
+      "location": "Texas Motorplex, Ennis",
+      "description": "Import performance vehicles take the track for Import Face Off, the second of back-to-back weekend events at the Motorplex in early November.",
+      "sourceUrl": "https://www.texasmotorplex.com/blog/diverse-family-friendly-events-fill-2026-texas-motorplex-schedule",
+      "sourceName": "Texas Motorplex"
+    },
+    {
+      "title": "Ennis Public Library Advisory Board Meeting",
+      "startDate": "2026-11-10",
+      "date": "Tuesday, November 10",
+      "time": "6:00 PM",
+      "location": "Ennis Public Library, 501 W Ennis Avenue",
+      "description": "The Library Advisory Board meets in its regular public session. The agenda packet is posted on the city's meeting dashboard.",
+      "sourceUrl": "https://www.ennistx.gov/events/102228/",
+      "sourceName": "City of Ennis"
+    },
+    {
+      "title": "Ennis City Commission Special Meeting",
+      "startDate": "2026-11-13",
+      "date": "Friday, November 13",
+      "time": "4:00 PM",
+      "location": "Ennis City Hall, 107 N Sherman St",
+      "description": "The City Commission holds a special session; the agenda and packet are available on the city's meeting dashboard.",
+      "sourceUrl": "https://www.ennistx.gov/events/102384/",
+      "sourceName": "City of Ennis"
+    },
+    {
+      "title": "GT-R Festival USA at Texas Motorplex",
+      "startDate": "2026-11-13",
+      "date": "Friday–Sunday, November 13–15",
+      "time": "Various times",
+      "location": "Texas Motorplex, Ennis",
+      "description": "The GT-R Festival USA brings Nissan GT-R enthusiasts and performance competitors to the Motorplex for a multi-day event.",
+      "sourceUrl": "https://www.texasmotorplex.com/blog/diverse-family-friendly-events-fill-2026-texas-motorplex-schedule",
+      "sourceName": "Texas Motorplex"
+    },
+    {
+      "title": "Ennis ISD Thanksgiving Break",
+      "startDate": "2026-11-23",
+      "date": "Monday–Friday, November 23–27",
+      "time": "",
+      "location": "Ennis ISD campuses",
+      "description": "All Ennis ISD campuses are closed for Thanksgiving break November 23 through 27, with students returning Monday, November 30.",
+      "sourceUrl": "https://www.ennis.k12.tx.us/",
+      "sourceName": "Ennis ISD"
+    },
+    {
+      "title": "Shop Small Weekend",
+      "startDate": "2026-11-27",
+      "date": "Friday–Saturday, November 27–28",
+      "time": "Various times",
+      "location": "Ennis local businesses",
+      "description": "The Ennis Chamber of Commerce encourages shoppers to visit local Ennis businesses on the Friday and Saturday following Thanksgiving.",
+      "sourceUrl": "https://www.ennischamber.com/festivals-and-more",
+      "sourceName": "Ennis Chamber of Commerce"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Ellis County Lifts Countywide Burn Ban",
+      "body": "The Ellis County Commissioners' Court voted to rescind the countywide burn ban at its regular meeting on October 13, 2026. The ban, which had been in place since July, is now lifted effective immediately, according to the county's official news flash.",
+      "sourceUrl": "https://www.elliscountytx.gov/m/NewsFlash",
+      "sourceName": "Ellis County, TX",
+      "tags": [
+        "Ellis County",
+        "public safety"
+      ]
+    },
+    {
+      "headline": "Free Meals for All Ennis ISD Students This School Year",
+      "body": "All students enrolled in Ennis ISD are receiving free breakfast and lunch during the 2026–2027 school year through the federal Community Eligibility Program (CEP), the district announced on its website. The benefit applies to all 12 campuses and roughly 6,621 enrolled students.",
+      "sourceUrl": "https://www.ennis.k12.tx.us/",
+      "sourceName": "Ennis ISD",
+      "tags": [
+        "education",
+        "Ennis ISD",
+        "food"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "H-E-B Reveals Plans For Larger Store In Ennis, Texas",
+      "url": "https://theshelbyreport.com/2026/10/27/h-e-b-reveals-plans-for-larger-store-in-ennis-texas/",
+      "publication": "The Shelby Report"
+    },
+    {
+      "title": "H-E-B plans to bring bigger store to North Texas city",
+      "url": "https://www.dallasnews.com/business/retail/article/h-e-b-looking-bring-bigger-store-city-north-texas-22495346.php",
+      "publication": "Dallas Morning News"
+    },
+    {
+      "title": "HEB reveals new store plans",
+      "url": "https://www.ennisdailynews.com/news/heb-reveals-new-store-plans",
+      "publication": "Ennis Daily News"
+    },
+    {
+      "title": "Ennis voters weigh reauthorizing street repair sales tax",
+      "url": "https://www.nbcdfw.com/news/politics/lone-star-politics/ennis-voters-weigh-reauthorizing-street-repair-sales-tax/4093035/",
+      "publication": "NBC DFW"
+    },
+    {
+      "title": "2026 Special Election – City of Ennis",
+      "url": "https://www.ennistx.gov/november32026specialelection",
+      "publication": "City of Ennis"
+    },
+    {
+      "title": "Ennis Daily News – Home",
+      "url": "https://www.ennisdailynews.com/",
+      "publication": "Ennis Daily News"
+    },
+    {
+      "title": "Ennis ISD – Home",
+      "url": "https://www.ennis.k12.tx.us/",
+      "publication": "Ennis ISD"
+    },
+    {
+      "title": "City Commission Special Meeting – November 13, 2026",
+      "url": "https://www.ennistx.gov/events/102384/",
+      "publication": "City of Ennis"
+    },
+    {
+      "title": "Ennis Public Library Advisory Board Meeting – November 10, 2026",
+      "url": "https://www.ennistx.gov/events/102228/",
+      "publication": "City of Ennis"
+    },
+    {
+      "title": "Diverse, Family Friendly Events Fill 2026 Texas Motorplex Schedule",
+      "url": "https://www.texasmotorplex.com/blog/diverse-family-friendly-events-fill-2026-texas-motorplex-schedule",
+      "publication": "Texas Motorplex"
+    },
+    {
+      "title": "Festivals and More – Ennis Chamber of Commerce",
+      "url": "https://www.ennischamber.com/festivals-and-more",
+      "publication": "Ennis Chamber of Commerce"
+    },
+    {
+      "title": "Ellis County NewsFlash",
+      "url": "https://www.elliscountytx.gov/m/NewsFlash",
+      "publication": "Ellis County, TX"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Bubba's BBQ & Steakhouse",
+        "cuisineGroup": "Seafood & American",
+        "type": "Barbecue and steakhouse",
+        "description": "Family-owned Texas BBQ landmark established in 1988, serving hand-cut steaks, brisket, prime rib, and a full salad bar just off I-45.",
+        "address": "210 S Interstate Hwy 45, Ennis, TX 75119",
+        "phone": "(972) 875-0036",
+        "website": "https://bubbasbbqandsteakhouse.com",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Fern In The Wild",
+        "cuisineGroup": "Seafood & American",
+        "type": "Modern American restaurant and retail",
+        "description": "Contemporary farm-to-table restaurant and retail shop in historic downtown Ennis, serving lunch, dinner, brunch, craft cocktails, and specialty coffees.",
+        "address": "211 W Knox St, Ennis, TX 75119",
+        "phone": "(972) 878-6868",
+        "website": "https://ferninthewild.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Ruston Cattle Company",
+        "cuisineGroup": "Seafood & American",
+        "type": "Steakhouse",
+        "description": "Upscale steakhouse known for locally raised Wagyu, irresistible sides, and a whiskey-focused bar, open for dinner Tuesday through Sunday.",
+        "address": "3701 N I-45 Frontage Rd, Ennis, TX 75119",
+        "phone": "(469) 218-6280",
+        "website": "https://rustoncattlecompany.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Ashleigh's Downtown Kitchen + Bar",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Pizzeria and full bar",
+        "description": "Downtown Ennis pizzeria and cocktail bar serving handmade meatballs, wood-fired pizzas, craft cocktails, and wines in a lively atmosphere.",
+        "address": "119 S Dallas St, Ennis, TX 75119",
+        "phone": "(469) 881-1040",
+        "website": "https://ashleighsdowntown.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Bella Italia",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant and bar",
+        "description": "Long-running Ennis Italian restaurant serving pasta, pizza, and grill dishes with a full bar, open Tuesday through Sunday.",
+        "address": "105 S Kaufman St, Ennis, TX 75119",
+        "phone": "(972) 875-7571",
+        "website": "https://bellaitaliaennistx.com",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Cotton Patch Cafe",
+        "cuisineGroup": "Seafood & American",
+        "type": "Southern comfort food chain",
+        "description": "Texas-born family chain serving scratch-made comfort food, chicken fried steak, and hearty Southern plates, open daily off I-45.",
+        "address": "706 N I-45, Ennis, TX 75119",
+        "phone": "(972) 875-8591",
+        "website": "https://cottonpatch.com/locations/tx/ennis/706-n-i-45",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Bluebonnet City Grill",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "American diner and grill",
+        "description": "Home-style Texas diner two blocks from historic downtown, known for chicken fried steak, homemade pies, and breakfast plates.",
+        "address": "305 SW Main St, Suite C, Ennis, TX 75119",
+        "phone": "(469) 881-1812",
+        "website": "https://bluebonnetcitygrill.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Fiesta Grill",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Tex-Mex restaurant",
+        "description": "Family-owned Tex-Mex staple in Ennis since 1997, serving enchiladas, fajitas, margaritas, and tortilla soup.",
+        "address": "309 S Kaufman St, Ennis, TX 75119",
+        "phone": "(972) 875-7620",
+        "website": "https://fiestagrilltx.com",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hilda's Kitchen",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Mexican breakfast and lunch cafe",
+        "description": "Casual Mexican cafe open early morning through afternoon, celebrated for homemade tortillas, breakfast burritos, and Tex-Mex plates.",
+        "address": "509 E Ennis Ave, Ennis, TX 75119",
+        "phone": "(972) 875-2370",
+        "website": "https://hildaskitchen.biz",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Watami Sushi Hibachi",
+        "cuisineGroup": "Asian",
+        "type": "Japanese sushi and hibachi restaurant",
+        "description": "Ennis's Japanese dining destination serving sushi rolls, hibachi entrées, and ramen, with a trendy atmosphere.",
+        "address": "1012 E Ennis Ave, Suite A, Ennis, TX 75119",
+        "phone": "(972) 876-4056",
+        "website": "https://watamisushiennis.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Tequila Y Tacos Cantina & Taqueria",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican cantina and taqueria",
+        "description": "Lively downtown cantina serving specialty tacos, cantina wings, and margaritas, open daily with extended late-night hours on weekends.",
+        "address": "301 W Ennis Ave, Suite A, Ennis, TX 75119",
+        "phone": "(469) 456-0300",
+        "website": "https://tequilaytacoscantinataqueriatx.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "The Backyard",
+        "cuisineGroup": "Other",
+        "type": "Food truck park",
+        "description": "Outdoor food truck park in historic downtown Ennis hosting a rotating lineup of local vendors, open Monday through Saturday.",
+        "address": "115 SW Main St, Ennis, TX 75119",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Kolache Depot Bakery",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Czech-Texas bakery",
+        "description": "Early-morning Czech kolache bakery open daily from 5 AM, serving fresh pastries, savory kolaches, sandwiches, and salads.",
+        "address": "1103 E Ennis Ave, Ennis, TX 75119",
+        "phone": "(972) 875-8364",
+        "website": "https://kolachedepotbakery.com",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sugar Ridge Winery",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Family winery and tasting room",
+        "description": "Laid-back rural winery outside Ennis offering sweet and fruit-forward wines, tastings, and a covered patio with fireplace, open Saturdays and Sundays.",
+        "address": "353 Sugar Ridge Rd, Ennis, TX 75119",
+        "phone": "(469) 716-8961",
+        "website": "https://guide.txwinelover.com/texas/ennis/texas-wineries/sugar-ridge-winery",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "La Zacatecana",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Authentic Mexican restaurant",
+        "description": "Casual, affordable Mexican restaurant in downtown Ferris, known for birria ramen, tacos, mulitas, and generous portions of authentic Mexican fare.",
+        "address": "220 W 5th St, Ferris, TX 75125",
+        "phone": "(972) 544-2530",
+        "website": "https://lazacatecanatexas.com",
+        "neighborhood": "Ferris",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "La Quinta Inn & Suites by Wyndham Ennis",
+        "type": "Mid-scale hotel",
+        "description": "Highly-rated mid-scale hotel off I-45 offering free breakfast, outdoor pool, fitness center, and pet-friendly rooms.",
+        "address": "110 S Sonoma Trail, Ennis, TX 75119",
+        "phone": "(972) 875-4000",
+        "website": "https://www.wyndhamhotels.com/laquinta/ennis-texas/la-quinta-ennis/overview",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Quality Inn Ennis",
+        "type": "Motor inn",
+        "description": "Award-winning family-owned motor inn off I-45 offering free hot breakfast, outdoor pool, hot tub, and free WiFi.",
+        "address": "107 Chamber of Commerce Dr, Ennis, TX 75119",
+        "phone": "(469) 256-8240",
+        "website": "https://www.choicehotels.com/texas/ennis/quality-inn-hotels/tx079",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Comfort Suites Ennis",
+        "type": "All-suite hotel",
+        "description": "Suite-only hotel near Bardwell Lake offering free breakfast, outdoor pool, free WiFi, and proximity to the Texas Motorplex.",
+        "address": "400 South I-45, Ennis, TX 75119",
+        "phone": "(972) 330-2404",
+        "website": "https://www.choicehotels.com/texas/ennis/comfort-suites-hotels/txa54",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Holiday Inn Express & Suites Ennis by IHG",
+        "type": "Upper-midscale hotel",
+        "description": "Modern four-story hotel on I-45 offering free hot breakfast, indoor pool, free WiFi, and a fitness center.",
+        "address": "601 N Sonoma Trail, Ennis, TX 75119",
+        "phone": "(972) 872-2829",
+        "website": "https://www.ihg.com/holidayinnexpress/hotels/us/en/ennis/dfwen/hoteldetail",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Days Inn by Wyndham Ennis",
+        "type": "Budget motel",
+        "description": "Budget-friendly motel conveniently off I-45 with free WiFi, picnic area, barbecue grills, and pet-friendly rooms.",
+        "address": "600 N I-45, Ennis, TX 75119",
+        "phone": "(972) 875-6990",
+        "website": "https://www.wyndhamhotels.com/days-inn/ennis-texas/days-inn-ennis/overview",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Motel 6 Ennis",
+        "type": "Budget motel",
+        "description": "Family-operated budget motel on I-45 with free WiFi, microfridge in all rooms, outdoor pool, and truck parking.",
+        "address": "100 S I-45, Ennis, TX 75119",
+        "phone": "(972) 875-3390",
+        "website": "https://www.motel6.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Felcman's Ladies Shop & Gifts",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Ladies apparel and gift shop",
+        "description": "Downtown Ennis landmark in business since 1919, offering women's fashions, jewelry, gourmet foods, home décor, custom gift baskets, and dry-cleaning services.",
+        "address": "111 W Knox St, Ennis, TX 75119",
+        "phone": "(972) 875-7341",
+        "website": "https://felcmansshop.com",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Village Shops",
+        "shopGroup": "Home & Gifts",
+        "type": "Vendor mall",
+        "description": "Boutique vendor mall in historic downtown Ennis featuring local merchants, gifts, handmade goods, and keepsakes.",
+        "address": "113 NW Main St, Ennis, TX 75119",
+        "phone": "(360) 593-2882",
+        "website": "https://the-village-shops.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Chic Boutique & Gift Emporium",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's boutique",
+        "description": "Ennis women's boutique with a varied selection of comfortable, flattering styles and accessories in a range of sizes.",
+        "address": "Ennis, TX 75119",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Hibbett Sports",
+        "shopGroup": "Other",
+        "type": "Athletic footwear and apparel store",
+        "description": "Athletic shoe and activewear store carrying Nike, Jordan, adidas, New Balance, and more, with in-store pickup available.",
+        "address": "201 S Interstate 45, Ennis, TX 75119",
+        "phone": "(972) 878-6233",
+        "website": "https://www.hibbett.com/storedetails/TX/Ennis/572",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "H-E-B Ennis",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Full-service grocery and pharmacy",
+        "description": "Full-service Texas supermarket featuring curbside pickup, grocery delivery, drive-thru pharmacy, and a gas station.",
+        "address": "101 S Clay St, Ennis, TX 75119",
+        "phone": "(972) 875-7720",
+        "website": "https://www.heb.com/heb-store/US/tx/ennis/ennis-h-e-b-107",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Soul's Harbor Thrift Store",
+        "shopGroup": "Other",
+        "type": "Thrift store",
+        "description": "Large-format thrift store in Ennis carrying a wide selection of clothing, furniture, housewares, and miscellaneous goods.",
+        "address": "Ennis, TX 75119",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Czech Heritage Tours",
+        "shopGroup": "Home & Gifts",
+        "type": "Gift shop and tour operator",
+        "description": "Distinctive downtown Ennis shop offering home furnishings, gifts, and organized Czech heritage tours of Europe.",
+        "address": "Ennis, TX 75119",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Walmart Supercenter",
+        "shopGroup": "Other",
+        "type": "Supercenter",
+        "description": "Full-service Walmart Supercenter offering groceries, pharmacy, electronics, clothing, and general merchandise, open late daily.",
+        "address": "Ennis, TX 75119",
+        "phone": "",
+        "website": "https://walmart.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Texas Motorplex",
+        "venueGroup": "Music Venues",
+        "type": "Drag racing facility and events venue",
+        "description": "NHRA-sanctioned quarter-mile drag strip south of Dallas hosting the annual Texas NHRA FallNationals, the Stars of Texas country music festival (Oct 9–11), and the Stampede of Speed (Oct 9–18, 2026).",
+        "address": "7500 US-287, Ennis, TX 75119",
+        "phone": "",
+        "website": "https://www.texasmotorplex.com",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Galaxy Drive-In Theatre",
+        "venueGroup": "Cinema",
+        "type": "Drive-in movie theater",
+        "description": "One of the largest drive-in theaters in Texas with seven screens, open 365 nights a year from dusk, with double features and both FM radio and vintage speaker audio.",
+        "address": "5301 N Interstate Hwy 45, Ennis, TX 75119",
+        "phone": "(972) 875-5505",
+        "website": "https://galaxydriveintheatre.com",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ennis Public Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Community theater",
+        "description": "Not-for-profit black-box theater in historic downtown Ennis producing plays, musicals, and children's theater productions throughout the year.",
+        "address": "113 N Dallas St, Ennis, TX 75119",
+        "phone": "(972) 878-7529",
+        "website": "https://ennispublictheatre.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Ennis Railroad and Cultural Heritage Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Railroad and local history museum",
+        "description": "City-operated museum in a restored 1915 depot building chronicling the railroad heritage of Ennis and Ellis County, open Tuesday through Saturday and Sunday afternoons.",
+        "address": "105 NE Main St, Ennis, TX 75119",
+        "phone": "(972) 875-1901",
+        "website": "https://www.ennistx.gov/Museum",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Lonestar Fitness Center",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "24-hour fitness center",
+        "description": "Ennis-based 24-hour gym established in 1990 offering cardio equipment, free weights, tanning, Zumba, aerobics, and Judo/Jiu-Jitsu classes.",
+        "address": "2405 Yorkstown Dr, Ennis, TX 75119",
+        "phone": "(469) 881-1919",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Planet Fitness",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Fitness gym",
+        "description": "Judgment-free zone gym in Ennis with cardio machines, free weights, and certified trainers, open six days a week from 4 AM.",
+        "address": "701 W Ennis Ave, Ennis, TX 75119",
+        "phone": "(469) 256-8488",
+        "website": "https://www.planetfitness.com/gyms/ennis-tx",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Anytime Fitness",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "24-hour fitness gym",
+        "description": "24/7 membership gym offering cardio equipment, free weights, strength machines, personal training, and group fitness classes.",
+        "address": "200 W Ennis Ave, Ennis, TX 75119",
+        "phone": "(972) 875-8400",
+        "website": "https://www.anytimefitness.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "CrossFit Quo Vadis",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "CrossFit and strength conditioning gym",
+        "description": "Small-group strength and conditioning facility in Ennis praised for attentive coaching, quality equipment, and a welcoming community atmosphere.",
+        "address": "108 S Mulberry St, Ennis, TX 75119",
+        "phone": "(214) 980-8961",
+        "website": "https://crossfitquovadis.com",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "HOTWORX Ennis",
+        "venueGroup": "Yoga & Pilates",
+        "type": "24-hour infrared fitness studio",
+        "description": "Infrared sauna fitness studio offering hot yoga, hot Pilates, hot barre, HIIT, and cycling workouts available to members 24 hours a day.",
+        "address": "402 N I-45 Suite 110, Ennis, TX 75119",
+        "phone": "(214) 884-6332",
+        "website": "https://www.hotworx.net/studio/ennis",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Yoga Nation Ennis",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Ennis yoga studio offering classes focused on safety, energy, and well-being for students of varied experience levels.",
+        "address": "Ennis, TX 75119",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Ennis",
+        "notable": ""
+      },
+      {
+        "name": "Lake Bardwell",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Reservoir and recreation area",
+        "description": "U.S. Army Corps of Engineers reservoir southwest of Ennis offering fishing, boating, camping, and trail access across more than 3,500 acres.",
+        "address": "4000 Observation Dr, Ennis, TX 75119",
+        "phone": "",
+        "website": "https://www.swf-wc.usace.army.mil/bardwell",
+        "neighborhood": "Ennis",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-11-06",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-11-06",
+        "high": 74,
+        "low": 55,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-07",
+        "high": 71,
+        "low": 52,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-08",
+        "high": 70,
+        "low": 50,
+        "summary": "Mostly Cloudy",
+        "condition": "cloudy",
+        "precip": 1
+      },
+      {
+        "date": "2026-11-09",
+        "high": 72,
+        "low": 51,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 4
+      },
+      {
+        "date": "2026-11-10",
+        "high": 75,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 2
+      },
+      {
+        "date": "2026-11-11",
+        "high": 78,
+        "low": 54,
+        "summary": "Slight Chance Rain Showers",
+        "condition": "rain",
+        "precip": 15
+      },
+      {
+        "date": "2026-11-12",
+        "high": 77,
+        "low": 51,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 2
+      }
+    ]
+  }
+}

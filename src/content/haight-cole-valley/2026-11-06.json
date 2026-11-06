@@ -1,0 +1,750 @@
+{
+  "clusterSlug": "haight-cole-valley",
+  "clusterName": "Haight & Cole Valley",
+  "weekOf": "2026-11-06",
+  "topStories": [
+    {
+      "headline": "Voters Back Muni Funding and Housing — But Reject Bid to Reopen the Great Highway",
+      "dek": "San Francisco's November 3 election delivered wins for transit and housing measures while firmly turning back a bid to restore weekday car traffic to the Great Highway.",
+      "body": "San Francisco voters handed Mayor Daniel Lurie a mostly favorable night on November 3, passing seven of ten local ballot measures while rejecting one of the more contentious land-use questions on the ballot. For residents of Haight-Ashbury, the Lower Haight, Cole Valley, and the Panhandle — neighborhoods served by the N Judah, the 7 Haight/Noriega, and Muni's crosstown routes — the transit results were the most consequential.\n\nProposition H, the Muni parcel tax, cleared with roughly 72 percent support in early returns, providing a critical revenue backstop for a transit agency facing what officials have described as the largest structural deficit in its history. The regional transit measure, Prop RTM, passed by an even wider margin — about 78 percent among San Francisco voters — locking in a regional funding stream for both Muni and BART. Prop C, which increases city contributions to the affordable housing trust fund, passed with about 80 percent.\n\nProposition G — which would have reopened the Great Highway coastal road to cars on weekdays, undoing the Sunset Dunes park conversion — was rejected for the third time, with roughly 65 percent opposed. Prop D, which quadrupled the signature threshold required to place citizen initiatives on the ballot, passed with about 58 percent; the Haight Ashbury Neighborhood Council had opposed that measure, arguing it would restrict grassroots democracy.\n\nThe Prop B public bank measure — a HANC-endorsed item — was in a tighter race as of early counts, with more ballots still being tallied. Full certified results are not expected until late November.",
+      "sourceUrl": "https://sfstandard.com/2026/11/03/san-francisco-election-results-november-2026/",
+      "sourceName": "SF Standard",
+      "tags": [
+        "election",
+        "Muni",
+        "ballot-measures",
+        "housing",
+        "transportation"
+      ]
+    },
+    {
+      "headline": "Otra to Close in December, Clearing the Way for Hadeem at 682 Haight",
+      "dek": "The Lower Haight's quietly beloved Otra serves its final weeks of tacos and mezcal margaritas before chef Spencer Horovitz's California-Jewish pop-up Hadeem takes the space in 2027.",
+      "body": "Otra, the upscale Mexican restaurant that has anchored 682 Haight Street in the Lower Haight since May 2021, will close in early December, owners Nick Cobarruvias and Anna Sager Cobarruvias confirmed to the SF Standard. The restaurant built a devoted neighborhood following for its fresh corn-tortilla tacos, mezcal margaritas, and a rotating menu of ambitious dishes, and was widely credited with helping raise the Lower Haight's culinary profile.\n\nIn the weeks before closing, the team plans to revisit standout dishes from past menus — greatest hits and one-time specials alike — giving regulars a final chance to revisit what made Otra matter. Cobarruvias has said publicly that he is pleased with who is taking over the space.\n\nThat incoming operator is chef Spencer Horovitz, whose California-Jewish pop-up Hadeem has spent three years building a following through temporary kitchens around the city. Reports published in mid-September 2026 confirmed that Hadeem will make 682 Haight Street its permanent home, targeting a first-half 2027 opening. The concept draws on Horovitz's California training and Jewish culinary traditions in a way food writers have noted fills a genuine gap in the Bay Area dining scene. The transition means the address should remain an active restaurant destination on a corridor that has been gaining momentum.",
+      "sourceUrl": "https://sfstandard.com/2026/09/09/otra-mexican-restaurant-closing/",
+      "sourceName": "SF Standard",
+      "tags": [
+        "restaurants",
+        "Lower Haight",
+        "food",
+        "business"
+      ]
+    },
+    {
+      "headline": "HANC Holds Annual Board Election at November 12 Meeting",
+      "dek": "The Haight Ashbury Neighborhood Council convenes its annual vote for officers and board members this Thursday at the Park Branch Library — new terms begin in December.",
+      "body": "The Haight Ashbury Neighborhood Council holds its November general membership meeting this Thursday, November 12, at 7 p.m. at the Park Branch Library, 1833 Page Street, between Cole and Shrader. The November gathering is the organization's annual meeting, at which HANC members elect officers and board members for the coming year; new terms run from December 2026 through November 2027.\n\nNominations have been open since early October. Under HANC's bylaws, only members in good standing for at least three months are eligible to run for or hold a board position, and no one may serve more than two consecutive terms in the same role — with exceptions for a handful of standing chairs. Members who wish to nominate a candidate, or be nominated themselves, may do so at the meeting before the vote.\n\nThe meeting is open to the public, free to attend, and runs in hybrid format — accessible in person in the library's downstairs meeting room and online via Zoom. The agenda is expected to include discussion of the November 3 election results and what they mean for District 5. Meeting details are posted on HANC's website at hanc-sf.org.",
+      "sourceUrl": "https://hanc-sf.org/",
+      "sourceName": "Haight Ashbury Neighborhood Council",
+      "tags": [
+        "HANC",
+        "neighborhood-council",
+        "civic",
+        "Haight-Ashbury"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Golden Gate Bandshell: Friday Happy Hour",
+      "startDate": "2026-11-06",
+      "date": "Friday, November 6",
+      "time": "4:30 PM–7:30 PM",
+      "location": "Golden Gate Bandshell, Music Concourse Drive, Golden Gate Park",
+      "description": "Free outdoor music at the bandshell to close out the week. Part of SF Rec & Park's ongoing Bandshell concert series.",
+      "sourceUrl": "https://sfrecpark.org/Calendar.aspx",
+      "sourceName": "SF Recreation & Parks"
+    },
+    {
+      "title": "Golden Gate Bandshell: Saturday at the Bandshell",
+      "startDate": "2026-11-07",
+      "date": "Saturday, November 7",
+      "time": "12:00 PM–4:00 PM",
+      "location": "Golden Gate Bandshell, Music Concourse Drive, Golden Gate Park",
+      "description": "Free midday live music at the Music Concourse — one of the park's weekly open-air concert anchors.",
+      "sourceUrl": "https://sfrecpark.org/Calendar.aspx",
+      "sourceName": "SF Recreation & Parks"
+    },
+    {
+      "title": "Golden Gate Bandshell: Crucial Reggae Sunday",
+      "startDate": "2026-11-08",
+      "date": "Sunday, November 8",
+      "time": "12:00 PM–7:30 PM",
+      "location": "Golden Gate Bandshell, Music Concourse Drive, Golden Gate Park",
+      "description": "An extended free afternoon of reggae at the park bandshell, open to all ages.",
+      "sourceUrl": "https://sfrecpark.org/Calendar.aspx",
+      "sourceName": "SF Recreation & Parks"
+    },
+    {
+      "title": "Feathered Friends: Birdwatching & Nature Art for Families",
+      "startDate": "2026-11-15",
+      "date": "Sunday, November 15",
+      "time": "8:30 AM",
+      "location": "San Francisco Botanical Garden, Main Gate, Golden Gate Park",
+      "description": "A family morning combining birdwatching in the garden with nature-inspired art activities. Tickets are $40 per adult-and-child pair.",
+      "sourceUrl": "https://projectsf.com/san-francisco-events-november-2026/",
+      "sourceName": "ProjectSF"
+    },
+    {
+      "title": "Lightscape at San Francisco Botanical Garden",
+      "startDate": "2026-11-20",
+      "date": "Through January 3",
+      "time": "Various times",
+      "location": "San Francisco Botanical Garden, Golden Gate Park",
+      "description": "The annual after-dark light spectacular opens November 20 and runs select nights through January 3, featuring a mile-long illuminated trail, art installations, and festive music. Tickets from $20 for children, $32 for adults.",
+      "sourceUrl": "https://gggp.org/events-calendar/",
+      "sourceName": "Gardens of Golden Gate Park"
+    },
+    {
+      "title": "Fall Holiday Chocolate Salon & Festival",
+      "startDate": "2026-11-22",
+      "date": "Sunday, November 22",
+      "time": "11:00 AM–4:30 PM",
+      "location": "San Francisco County Fair Building / Hall of Flowers, 1199 9th Ave at Lincoln Way, Golden Gate Park",
+      "description": "The 15th annual holiday chocolate showcase gathers more than 30 artisan chocolatiers and confectioners for tastings, demos, and gift shopping. Admission is $20 in advance or $25 at the door for adults; children ages 6–12 are $11.50.",
+      "sourceUrl": "https://www.fallchocolatesalon.com/",
+      "sourceName": "Fall Chocolate Salon"
+    },
+    {
+      "title": "Cole Valley Holiday Nights Street Market",
+      "startDate": "2026-12-10",
+      "date": "Thursday, December 10",
+      "time": "4:00 PM–9:00 PM",
+      "location": "Cole Street between Carl Street and Parnassus Avenue, Cole Valley",
+      "description": "The Cole Valley Merchants Association returns with a free evening market featuring local makers, food vendors, and live music inside the neighborhood's designated Entertainment Zone, where to-go drinks from local bars and restaurants are permitted. Best reached via N Judah at Carl and Cole.",
+      "sourceUrl": "https://www.nomadlawyer.org/san-francisco-neighborhood-christmas-markets-cole-valley-dogpatch-2026",
+      "sourceName": "NomadLawyer.org"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Great Highway Measure Fails for the Third Time — Sunset Dunes Stays a Park",
+      "body": "San Francisco voters rejected Proposition G on November 3, turning back yet another bid to reopen the Great Highway coastal road to weekday car traffic. It was the third consecutive time the city has voted against restoring vehicles to the stretch, now operating as the Sunset Dunes park. The measure lost by roughly 65 to 35 percent in early returns. While the highway itself is in the Outer Sunset, the sustained fight over car-free public space has long influenced parallel conversations in these neighborhoods about traffic calming on Fell and Oak streets along the Panhandle.",
+      "sourceUrl": "https://missionlocal.org/2026/11/san-francisco-november-2026-election-results/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "election",
+        "Great Highway",
+        "parks",
+        "transportation"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "2026 San Francisco live election results",
+      "url": "https://sfstandard.com/2026/11/03/san-francisco-election-results-november-2026/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "San Francisco election results: Live updates",
+      "url": "https://missionlocal.org/2026/11/san-francisco-november-2026-election-results/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Election Day 2026: San Francisco lefties lose, let loose",
+      "url": "https://missionlocal.org/2026/11/san-francisco-november-election-2026-updates/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "See San Francisco County election results from 2026 midterms",
+      "url": "https://www.nbcbayarea.com/news/local/san-francisco-county-november-2026-election-results/4164769/",
+      "publication": "NBC Bay Area"
+    },
+    {
+      "title": "San Francisco Election Results: Nov. 3, 2026",
+      "url": "https://www.sfpublicpress.org/san-francisco-election-results-nov-3-2026/",
+      "publication": "SF Public Press"
+    },
+    {
+      "title": "San Francisco ballot measures: Here are the latest election results",
+      "url": "https://www.sfchronicle.com/election/article/sf-ballot-measures-november-election-22501554.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "A cult-favorite Mexican restaurant on Haight Street is closing",
+      "url": "https://sfstandard.com/2026/09/09/otra-mexican-restaurant-closing/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "Hadeem SF Restaurant to Open in Lower Haight in 2027",
+      "url": "https://www.sfbayareatimes.com/articles/hadeem-sf-restaurant-opening",
+      "publication": "SF Bay Area Times"
+    },
+    {
+      "title": "HANC Officer and Board Nominations are Open",
+      "url": "https://hanc-sf.org/",
+      "publication": "Haight Ashbury Neighborhood Council"
+    },
+    {
+      "title": "Golden Gate Bandshell Concerts Calendar",
+      "url": "https://sfrecpark.org/Calendar.aspx",
+      "publication": "SF Recreation & Parks"
+    },
+    {
+      "title": "Events Calendar — Gardens of Golden Gate Park",
+      "url": "https://gggp.org/events-calendar/",
+      "publication": "Gardens of Golden Gate Park"
+    },
+    {
+      "title": "Fall Holiday Chocolate Salon 2026",
+      "url": "https://www.fallchocolatesalon.com/",
+      "publication": "Fall Chocolate Salon"
+    },
+    {
+      "title": "San Francisco's Neighborhood Holiday Shift: Cole Valley Holiday Nights",
+      "url": "https://www.nomadlawyer.org/san-francisco-neighborhood-christmas-markets-cole-valley-dogpatch-2026",
+      "publication": "NomadLawyer.org"
+    },
+    {
+      "title": "San Francisco Events in November 2026",
+      "url": "https://projectsf.com/san-francisco-events-november-2026/",
+      "publication": "ProjectSF"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Cha Cha Cha",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Caribbean tapas bar",
+        "description": "Haight Street institution since 1984 serving Caribbean tapas, paella, jerk chicken, and pitchers of house sangria in a lively, colorful dining room.",
+        "address": "1801 Haight St",
+        "phone": "415-386-7670",
+        "website": "https://www.chachachasf.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Parada 22",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Puerto Rican restaurant",
+        "description": "Veteran-owned neighborhood spot serving home-cooked Puerto Rican comfort food — mofongo, pernil asado, tostones, and rice and beans — daily from 10am.",
+        "address": "1805 Haight St",
+        "phone": "415-750-1111",
+        "website": "https://www.parada22.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": ""
+      },
+      {
+        "name": "Magnolia Brewing – Haight",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Brewpub",
+        "description": "Haight Street's landmark craft brewery and gastropub, reopened in late 2024 under new local ownership with a refreshed taproom, house-brewed beers, and elevated pub food.",
+        "address": "1398 Haight St",
+        "phone": "415-864-7468",
+        "website": "https://magnoliabrewing.com/haight",
+        "neighborhood": "Haight-Ashbury",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Alembic",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft cocktail bar and restaurant",
+        "description": "Inventive American cocktail bar and restaurant on Haight Street with 100-plus bourbons and scotches, farm-driven small plates, and a cozy, dimly lit interior.",
+        "address": "1725 Haight St",
+        "phone": "415-666-0822",
+        "website": "https://www.alembicbar.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": ""
+      },
+      {
+        "name": "Pork Store Cafe",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "American breakfast and brunch café",
+        "description": "Much-loved Haight Street diner serving enormous portions of scratch-made breakfast and brunch at affordable prices since 1989.",
+        "address": "1451 Haight St",
+        "phone": "415-864-6981",
+        "website": "https://www.porkstorecafe.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Escape From New York Pizza",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "New York-style pizza by the slice",
+        "description": "San Francisco Legacy Business since 1986, slinging hot New York-style slices with creative toppings late into the night on Haight Street.",
+        "address": "1737 Haight St",
+        "phone": "415-668-5577",
+        "website": "https://www.escapefromnewyorkpizza.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Zam Zam",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Classic cocktail bar",
+        "description": "One of the Haight's most storied dive bars, with Persian-themed décor, a circular bar, and perfectly made martinis in a setting unchanged for decades.",
+        "address": "1633 Haight St",
+        "phone": "415-861-2545",
+        "website": "https://zamzamsf.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Zazie",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "French bistro",
+        "description": "Beloved Cole Valley French bistro open since 1992, famous for its weekend brunch with Provençal-inspired eggs, crêpes, and a sunny back patio.",
+        "address": "941 Cole St",
+        "phone": "415-564-5332",
+        "website": "https://www.zaziesf.com",
+        "neighborhood": "Cole Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Beit Rima",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Palestinian-Jordanian restaurant",
+        "description": "Award-winning Cole Valley spot serving Arabic comfort food — hand-kneaded bread, crispy falafel, chicken skewers, and za'atar-dusted pita — with a devoted neighborhood following.",
+        "address": "86 Carl St",
+        "phone": "415-566-1274",
+        "website": "https://www.beitrimasf.com",
+        "neighborhood": "Cole Valley",
+        "notable": ""
+      },
+      {
+        "name": "Cole Valley Tavern",
+        "cuisineGroup": "Seafood & American",
+        "type": "American bar and restaurant",
+        "description": "Neighborhood go-to American bar with a warm dining room, rotating food specials, and an ice cream window that draws lines on warm evenings.",
+        "address": "780 Cole St",
+        "phone": "415-742-5813",
+        "website": "https://www.colevalleytavern.com",
+        "neighborhood": "Cole Valley",
+        "notable": ""
+      },
+      {
+        "name": "InoVino",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Italian wine bar",
+        "description": "Intimate Cole Valley wine bar with an excellent selection of Italian bottles, solid pastas, and charcuterie-and-cheese boards in a cozy setting.",
+        "address": "108B Carl St",
+        "phone": "415-681-3770",
+        "website": "https://www.inovinosanfrancisco.com",
+        "neighborhood": "Cole Valley",
+        "notable": ""
+      },
+      {
+        "name": "Crepes On Cole",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Crêperie and casual diner",
+        "description": "Casual Cole Valley standby open late most nights, offering sweet and savory crêpes, burgers, and beer in a relaxed neighbourhood setting.",
+        "address": "100 Carl St",
+        "phone": "415-664-1800",
+        "website": "https://www.crepesoncole.com",
+        "neighborhood": "Cole Valley",
+        "notable": ""
+      },
+      {
+        "name": "Toronado",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft beer bar",
+        "description": "Lower Haight craft-beer pilgrimage site with 50 taps of rare and sought-after brews, sticker-plastered walls, and a cash-only, no-nonsense vibe — now under new local ownership as of June 2026.",
+        "address": "547 Haight St",
+        "phone": "415-863-2276",
+        "website": "https://toronado.com",
+        "neighborhood": "Lower Haight",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bar Jabroni",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Natural wine bar",
+        "description": "Lively Lower Haight wine bar pouring chilled reds and orange wines alongside small plates like beef tartare with Szechuan peppercorns and house-made focaccia.",
+        "address": "585 Haight St",
+        "phone": "415-400-5760",
+        "website": "https://www.barjabroni.com",
+        "neighborhood": "Lower Haight",
+        "notable": ""
+      },
+      {
+        "name": "Nopalito",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Modern Mexican restaurant",
+        "description": "Organic, from-scratch Mexican cooking from the Nopa team, plating blue-corn tacos, carnitas, and mole made with local and sustainable ingredients.",
+        "address": "306 Broderick St",
+        "phone": "415-437-0303",
+        "website": "https://www.nopalitosf.com",
+        "neighborhood": "Lower Haight",
+        "notable": ""
+      },
+      {
+        "name": "Noc Noc",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Dive bar",
+        "description": "Lower Haight bar with trippy, Tim Burton-esque décor that is a neighbourhood fixture — only in San Francisco.",
+        "address": "557 Haight St",
+        "phone": "415-861-5811",
+        "website": "https://nocnocsf.com",
+        "neighborhood": "Lower Haight",
+        "notable": ""
+      },
+      {
+        "name": "Danny Coyle's",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Irish pub",
+        "description": "Friendly Lower Haight Irish bar open until 2am, with a great tap selection, sports on TV, and a loyal neighbourhood crowd.",
+        "address": "668 Haight St",
+        "phone": "415-558-8908",
+        "website": "https://www.dannycoyles.com",
+        "neighborhood": "Lower Haight",
+        "notable": ""
+      },
+      {
+        "name": "Woods Lowside",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Beer and wine bar",
+        "description": "Casual Lower Haight bar with crisp, dry house beers, natural wines, Detroit-style pizza from Joyride Pizza on site, and a heated back patio.",
+        "address": "701 Haight St",
+        "phone": "415-400-8182",
+        "website": "https://www.woodsbeer.com",
+        "neighborhood": "Lower Haight",
+        "notable": ""
+      },
+      {
+        "name": "Bambino's Ristorante",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "Charming old-school Italian restaurant in Cole Valley with hearty classic pastas and a warm, neighbourhood trattoria feel.",
+        "address": "1905 Cole St",
+        "phone": "415-731-9867",
+        "website": "https://www.bambinoristorante.com",
+        "neighborhood": "Cole Valley",
+        "notable": ""
+      },
+      {
+        "name": "Double Black",
+        "cuisineGroup": "Coffee & Cafés",
+        "type": "Coffee shop",
+        "description": "New Cole Valley coffee shop inside the Yardsale outdoor apparel store, drawing queues for iced hojicha lattes with black-sesame cold foam.",
+        "address": "879 Cole St",
+        "phone": "",
+        "website": "https://www.yardsalesf.com",
+        "neighborhood": "Cole Valley",
+        "notable": "New"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Stanyan Park Hotel",
+        "type": "Historic boutique hotel",
+        "description": "Listed on the National Register of Historic Places, this 1904 Beaux Arts Victorian hotel sits across from Golden Gate Park and includes a daily continental breakfast and weekday wine-and-cheese reception.",
+        "address": "750 Stanyan St",
+        "phone": "415-751-1000",
+        "website": "https://www.stanyanpark.com",
+        "neighborhood": "Cole Valley / Haight-Ashbury",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Metro Hotel",
+        "type": "Boutique hotel",
+        "description": "Family-owned 23-room boutique hotel on Divisadero with original artwork throughout, a private garden, and a welcoming eco-conscious ethos steps from Haight-Ashbury.",
+        "address": "319 Divisadero St",
+        "phone": "415-861-5364",
+        "website": "https://www.metrohotelsf.com",
+        "neighborhood": "Lower Haight",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Booksmith",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Haight Street's landmark independent bookstore since 1976, offering a wide selection of new titles and hosting more than 200 author events per year.",
+        "address": "1727 Haight St",
+        "phone": "415-863-8688",
+        "website": "https://www.booksmith.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Amoeba Music",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Independent record store",
+        "description": "Enormous independent music store claiming the world's largest selection of new and used vinyl, CDs, DVDs, and posters — a pilgrimage site for music fans since 1990.",
+        "address": "1855 Haight St",
+        "phone": "415-831-1200",
+        "website": "https://www.amoeba.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Love on Haight",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Tie-dye and artisan clothing boutique",
+        "description": "SF Legacy Business since 1989 selling vibrant tie-dye clothing and accessories by more than 175 local and international artists, keeping the Haight's countercultural spirit alive.",
+        "address": "1400 Haight St",
+        "phone": "415-431-3877",
+        "website": "https://www.loveonhaightsf.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Wasteland",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Curated vintage and designer resale",
+        "description": "Glamorous Haight Street vintage and resale boutique with a carefully curated mix of high-end secondhand fashion and designer pieces — buy, sell, or trade.",
+        "address": "1660 Haight St",
+        "phone": "415-863-3150",
+        "website": "https://www.shopwasteland.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": ""
+      },
+      {
+        "name": "Piedmont Boutique",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Costume and festival wear boutique",
+        "description": "An unofficial Haight landmark identifiable by the giant fishnet-stocking legs hanging from the second-floor window, selling costumes, festival wear, and dramatic accessories.",
+        "address": "1452 Haight St",
+        "phone": "415-864-8075",
+        "website": "https://www.piedmontboutique.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Relic Vintage",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Curated vintage clothing shop",
+        "description": "Go-to Haight Street vintage shop since 2012, housing carefully selected garments from the 1920s through the 1980s and a strong collection of statement accessories.",
+        "address": "1535 Haight St",
+        "phone": "415-255-7460",
+        "website": "https://www.relicvintage.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": ""
+      },
+      {
+        "name": "Say Cheese",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Specialty cheese and deli shop",
+        "description": "Cole Valley institution since 1976 offering an extensive world cheese selection alongside charcuterie, wines, olives, artisanal snacks, and loaded deli sandwiches.",
+        "address": "856 Cole St",
+        "phone": "415-665-5020",
+        "website": "https://www.saycheesesf.com",
+        "neighborhood": "Cole Valley",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Francisco Mercantile",
+        "shopGroup": "Home & Gifts",
+        "type": "SF gifts and keepsakes shop",
+        "description": "Haight Street retail shop partnered with San Francisco Heritage, selling locally made gifts, detailed neighborhood maps, art, and keepsakes by Bay Area artists.",
+        "address": "1698 Haight St",
+        "phone": "415-374-7244",
+        "website": "https://www.shopsfmercantile.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": ""
+      },
+      {
+        "name": "Woot Bear",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Designer toy store and art gallery",
+        "description": "Haight Street collectible toy boutique and gallery hosting monthly art shows alongside a floor-to-ceiling selection of designer figures from Tokidoki, Pop Mart, Kidrobot, and more.",
+        "address": "1512 Haight St",
+        "phone": "415-487-9000",
+        "website": "https://www.wootbear.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": ""
+      },
+      {
+        "name": "Pipe Dreams",
+        "shopGroup": "Other",
+        "type": "Smoke shop and counterculture boutique",
+        "description": "SF Legacy Business at 1376 Haight Street and a touchstone of the neighbourhood's countercultural roots since the 1960s.",
+        "address": "1376 Haight St",
+        "phone": "415-431-3553",
+        "website": "https://www.pipedreamssf.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Cole Hardware",
+        "shopGroup": "Hardware & Services",
+        "type": "Independent hardware and home goods store",
+        "description": "Beloved Cole Valley institution and local alternative to big-box hardware stores, stocking household essentials, plants, and an eclectic range of gifts.",
+        "address": "956 Cole St",
+        "phone": "415-753-2653",
+        "website": "https://www.colehardware.com",
+        "neighborhood": "Cole Valley",
+        "notable": "Landmark"
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "The DeLuxe",
+        "venueGroup": "Music Venues",
+        "type": "Jazz and live music bar",
+        "description": "Beloved Haight Street jazz venue reborn in June 2026 after a three-year closure: restored Art Deco interior, rebuilt stage, upgraded sound, craft cocktails, and live music seven nights a week.",
+        "address": "1511 Haight St",
+        "phone": "415-552-6949",
+        "website": "https://www.thedeluxesf.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": "New"
+      },
+      {
+        "name": "Haight Street Art Center",
+        "venueGroup": "Art Galleries",
+        "type": "Non-profit poster art gallery and printmaking studio",
+        "description": "Non-profit gallery and printmaking studio in Lower Haight dedicated to the history and culture of poster art, with free rotating exhibitions open Thursday through Sunday noon–6pm.",
+        "address": "215 Haight St",
+        "phone": "415-900-4106",
+        "website": "https://haightstreetart.org",
+        "neighborhood": "Lower Haight",
+        "notable": ""
+      },
+      {
+        "name": "Woot Bear Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Designer toy and contemporary art gallery",
+        "description": "Monthly rotating art exhibitions alongside a curated selection of collectible designer toys, featuring artists from around the world in a compact Haight Street space.",
+        "address": "1512 Haight St",
+        "phone": "415-487-9000",
+        "website": "https://www.wootbear.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": ""
+      },
+      {
+        "name": "Amoeba Music (Live Events)",
+        "venueGroup": "Music Venues",
+        "type": "In-store live music and events venue",
+        "description": "The Haight Street record store regularly hosts free in-store performances and release events across genres, making it a casual live-music destination in its own right.",
+        "address": "1855 Haight St",
+        "phone": "415-831-1200",
+        "website": "https://www.amoeba.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Kezar Stadium",
+        "venueGroup": "Museums & Cultural",
+        "type": "Historic outdoor athletics stadium",
+        "description": "Century-old stadium in the southeast corner of Golden Gate Park, the original home of the San Francisco 49ers, now hosting amateur sports leagues, track workouts, high school events, and FC City matches.",
+        "address": "670 Kezar Dr",
+        "phone": "415-831-2700",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Panhandle / Golden Gate Park",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "HAUM Studios – Haight-Ashbury",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Award-winning, LGBTQ+-owned yoga studio at Stanyan Street offering Vinyasa, Hatha, Slow Flow, Restorative Yoga, soundbaths, and breathwork classes for all levels, seven days a week.",
+        "address": "780 Stanyan St",
+        "phone": "415-592-8127",
+        "website": "https://www.haumstudios.com",
+        "neighborhood": "Haight-Ashbury",
+        "notable": ""
+      },
+      {
+        "name": "Folk Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Community-centred yoga and fitness studio on Divisadero offering a wide range of class styles including Flow, Restore, and prenatal yoga with highly rated instructors.",
+        "address": "286 Divisadero St",
+        "phone": "415-800-6848",
+        "website": "https://www.folkyoga.com",
+        "neighborhood": "Lower Haight",
+        "notable": ""
+      },
+      {
+        "name": "Kezar Pavilion",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Indoor recreation arena",
+        "description": "1924 indoor arena adjacent to Kezar Stadium managed by SF Recreation and Parks, hosting basketball, volleyball, roller derby, and the Pro-Am Summer Basketball League.",
+        "address": "755 Stanyan St",
+        "phone": "415-753-7033",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Panhandle / Golden Gate Park",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Golden Gate Park Panhandle",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban park and running corridor",
+        "description": "The slim, tree-lined Panhandle strip extending east from Golden Gate Park is a beloved daily running, cycling, and dog-walking green space anchoring the neighbourhood.",
+        "address": "Fell St & Stanyan St",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Panhandle",
+        "notable": ""
+      },
+      {
+        "name": "Buena Vista Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Urban hilltop park",
+        "description": "San Francisco's oldest public park, offering wooded trails, sweeping city views, and a popular off-leash dog area on a forested hill above Haight-Ashbury.",
+        "address": "Buena Vista Ave W & Haight St",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Haight-Ashbury",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-11-06",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-11-06",
+        "high": 69,
+        "low": 53,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 1
+      },
+      {
+        "date": "2026-11-07",
+        "high": 70,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-08",
+        "high": 69,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-09",
+        "high": 69,
+        "low": 54,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-10",
+        "high": 70,
+        "low": 54,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-11",
+        "high": 69,
+        "low": 55,
+        "summary": "Partly Sunny then Slight Chance Light Rain",
+        "condition": "rain",
+        "precip": 15
+      },
+      {
+        "date": "2026-11-12",
+        "high": 68,
+        "low": 54,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 32
+      }
+    ]
+  }
+}

@@ -1,0 +1,869 @@
+{
+  "clusterSlug": "marina-pacific-heights",
+  "clusterName": "Marina & Pacific Heights",
+  "weekOf": "2026-11-06",
+  "topStories": [
+    {
+      "headline": "Sherrill Wins District 2 in a Landslide, Securing His First Full Term",
+      "dek": "The incumbent supervisor carried more than 84 percent of first-choice votes Tuesday, turning what had looked like a symbolic rubber-stamp into one of the most lopsided Board of Supervisors results in recent memory.",
+      "body": "Supervisor Stephen Sherrill won Tuesday's District 2 race with 84 percent of first-choice ballots cast, according to unofficial results released by the San Francisco Department of Elections on November 4. After ranked-choice elimination, his final tally reached roughly 91 percent of votes counted — an 82-percentage-point margin over his closest remaining challenger, Monthanus Ratanapakdee.\n\nSherrill had first entered office in late 2024 when former Mayor London Breed appointed him to fill the seat vacated by Catherine Stefani, who had won a State Assembly seat. He then prevailed in a June 2026 special election against Lori Brooke, the Cow Hollow Association president, by a 70-30 margin. Tuesday's general election, contested against Ratanapakdee, Nicholas Berg, and Guy McCoy, delivered a verdict that leaves little ambiguity about where District 2 voters stand.\n\nThe district covers the Marina, Pacific Heights, Cow Hollow, and Presidio Heights — neighborhoods that have been central to contentious debates over housing density, including the ongoing fight over the proposed Marina Safeway redevelopment. Sherrill has aligned himself with Mayor Daniel Lurie's moderate coalition, and Mission Local noted that all three moderate incumbents running Tuesday — Sherrill in D2, Alan Wong in D4, and Matt Dorsey in D6 — prevailed, preserving the Board's moderate majority.\n\nFull unofficial results are posted at sfelections.org.",
+      "sourceUrl": "https://www.sfelections.org/results/20261103/data/20261104/d2/d2_detail.pdf",
+      "sourceName": "SF Department of Elections",
+      "tags": [
+        "election",
+        "District 2",
+        "Stephen Sherrill",
+        "Pacific Heights",
+        "Marina District"
+      ]
+    },
+    {
+      "headline": "Opponents File Federal Lawsuit to Block Marina Safeway Towers — Developer Seeks Dismissal",
+      "dek": "A newly formed nonprofit and four Marina residents sued Align Real Estate in federal court over the 848-unit housing proposal; the developer's lawyers last week asked a judge to throw the case out.",
+      "body": "The legal fight over the proposed redevelopment of the Marina District Safeway has moved into federal court. A lawsuit filed by the YesAnd Foundation, Neighborhoods United San Francisco, and four Marina residents targets developer Align Real Estate, the City of San Francisco, its Planning and Public Health Departments, PG&E, and Safeway parent company Albertsons. The case was filed in the U.S. District Court for the Northern District of California.\n\nThe plaintiffs contend that the project does not qualify for fast-track approval under state housing streamlining laws and that city planners approved it without adequate community input. Their complaint reaches for an unusual legal hook: Section 1983 of the Civil Rights Act of 1871, a Reconstruction-era statute. Last week, Align's lawyers asked the court to dismiss the suit, calling the tactic an abuse of a law originally designed to protect Black Americans from Klan violence, according to reporting by HousingWire.\n\nThe project itself calls for replacing the 1950s-era Safeway at 15 Marina Boulevard with two residential towers — 22 and 18 stories �� rising above a rebuilt ground-floor grocery store. Updated plans filed in July 2026 put the total at 848 apartments, including 86 units deed-restricted for lower-income households. The site, bounded by Marina Boulevard, Laguna, North Point, and Buchanan Streets, is currently zoned for 40 feet.\n\nThe lawsuit is the latest escalation in a months-long campaign. More than 300 residents packed a community meeting in July, and the Marina Community Association has repeatedly sent letters to Albertsons expressing opposition. The SF Chronicle reported in August that the Planning Department had already cleared a key eligibility hurdle, allowing the project to continue under state law despite Supervisor Sherrill's earlier attempt to halt it.",
+      "sourceUrl": "https://www.housingwire.com/articles/marina-safeway-san-franscisco-housing-fight/",
+      "sourceName": "HousingWire",
+      "tags": [
+        "Marina Safeway",
+        "housing",
+        "lawsuit",
+        "development",
+        "Marina District"
+      ]
+    },
+    {
+      "headline": "City Calls Marina and Pacific Heights Families to a Listening Session This Saturday",
+      "dek": "San Francisco's first citywide Community Needs Assessment comes to District 2 on November 7, with free food and childcare at Marina Middle School.",
+      "body": "The City and County of San Francisco is holding the District 2 leg of its \"This Is Your City: 2026 Family Listening Series\" this Saturday, November 7, from 11 a.m. to 1:30 p.m. at Marina Middle School, 3500 Fillmore Street.\n\nThe event is part of a 14-summit series organized by the city's Our Children Our Families Initiative (OCOFI) as part of San Francisco's first formal Citywide Community Needs Assessment. City officials are asking families, caregivers, young people, and residents to share their experiences and priorities so the city can direct services and programs accordingly. The District 2 summit covers Marina, Cow Hollow, Pacific Heights, Presidio Heights, and several adjacent neighborhoods.\n\nAttendance is free and open to all San Francisco residents, not just District 2 households. Free food and childcare will be provided. Interpretation services are available for those who request them at least 48 hours in advance. Supervisor Stephen Sherrill is listed as a co-host on the city's event page.",
+      "sourceUrl": "https://www.sf.gov/event-20261107-district-2-family-summit",
+      "sourceName": "SF.gov",
+      "tags": [
+        "community",
+        "District 2",
+        "families",
+        "Marina District",
+        "Pacific Heights"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Fort Mason Night Market — November Edition",
+      "startDate": "2026-11-06",
+      "date": "Friday, November 6",
+      "time": "5:00 PM–10:00 PM",
+      "location": "Fort Mason Center for Arts & Culture, 2 Marina Blvd, Marina District",
+      "description": "The penultimate night market of the season brings 50+ craft vendors curated by West Coast Craft, 25+ food vendors curated by Off the Grid, and live music programmed by Stern Grove Festival — this month featuring Anna Hillburg and DJ Cole Odin. Free and all ages; the final edition of the year follows on December 18.",
+      "sourceUrl": "https://www.westcoastcraft.com/fort-mason-night-market-attend",
+      "sourceName": "West Coast Craft"
+    },
+    {
+      "title": "District 2 Marina Family Summit",
+      "startDate": "2026-11-07",
+      "date": "Saturday, November 7",
+      "time": "11:00 AM–1:30 PM",
+      "location": "Marina Middle School, 3500 Fillmore Street, Marina District",
+      "description": "San Francisco's citywide Community Needs Assessment comes to District 2 — residents from Marina, Pacific Heights, Cow Hollow, and Presidio Heights are invited to share their family stories and priorities with city leaders. Free; food and childcare provided.",
+      "sourceUrl": "https://www.sf.gov/event-20261107-district-2-family-summit",
+      "sourceName": "SF.gov"
+    },
+    {
+      "title": "Renegade Craft Holiday Fair at Fort Mason",
+      "startDate": "2026-11-14",
+      "date": "Saturday–Sunday, November 14–15",
+      "time": "11:00 AM–5:00 PM",
+      "location": "Fort Mason Center, Festival Pavilion, 2 Marina Blvd, Marina District",
+      "description": "The indie craft fair's holiday edition returns to Fort Mason, spotlighting independent makers and designers selling handmade gifts. A good opening salvo for holiday shopping season.",
+      "sourceUrl": "https://sfgirlchronicle.substack.com/p/45-events-in-san-francisco-and-the",
+      "sourceName": "SF Girl Chronicle"
+    },
+    {
+      "title": "Magic Theatre World Premiere: a Rashomon",
+      "startDate": "2026-11-18",
+      "date": "Wednesday, November 18 through Sunday, December 6",
+      "time": "Various times",
+      "location": "African American Art & Culture Complex, 762 Fulton Street, San Francisco",
+      "description": "Magic Theatre, whose home base is Fort Mason's Landmark Building D, opens the world premiere of Ashley Smiley's a Rashomon — conceived by Joan Osato and inspired by Akira Kurosawa's film — transplanting the story to Market Street and exploring a Black dancer's anonymous death in his own city. Tickets at magictheatre.org.",
+      "sourceUrl": "https://magictheatre.org/calendar/a-rashomon",
+      "sourceName": "Magic Theatre"
+    },
+    {
+      "title": "West Coast Craft Winter '26",
+      "startDate": "2026-11-21",
+      "date": "Saturday–Sunday, November 21–22",
+      "time": "10:00 AM–6:00 PM",
+      "location": "Fort Mason Center, Festival Pavilion, 2 Marina Blvd, Marina District",
+      "description": "One of the Bay Area's premier craft fairs, featuring 275+ independent artists and designer craftspeople indoors at the Festival Pavilion. Ideal timing for holiday gift-buying.",
+      "sourceUrl": "https://www.westcoastcraft.com/attendee-calendar",
+      "sourceName": "West Coast Craft"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Marina Yacht Harbor Channel Open After Dredging; Next Dredge Pushed to Fall 2027",
+      "body": "The SF Recreation and Parks Department's November 5 weekly update for the Marina Small Craft Harbor reports the main channel is open but advises boaters to navigate with caution, particularly near the north entrance side at low tide where sand continues to shift. The channel currently measures approximately 75 feet wide at a tide height of 6.9 feet. With the fall 2026 dredging cycle now complete and conditions stabilized, the harbor does not expect its next dredge until fall 2027. The harbor publishes channel-sounding updates every Thursday at sfrecpark.org.",
+      "sourceUrl": "https://sfrecpark.org/1228/Marina-Yacht-Harbor",
+      "sourceName": "SF Recreation and Parks Department",
+      "tags": [
+        "Marina Yacht Harbor",
+        "boating",
+        "Marina District"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "RCV Detail Report — District 2, November 3 2026 General Election",
+      "url": "https://www.sfelections.org/results/20261103/data/20261104/d2/d2_detail.pdf",
+      "publication": "SF Department of Elections"
+    },
+    {
+      "title": "2026 San Francisco live election results",
+      "url": "https://sfstandard.com/2026/11/03/san-francisco-election-results-november-2026/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "Three incumbent S.F. supervisors on track to easily win reelection",
+      "url": "https://missionlocal.org/2026/11/three-incumbent-sf-supervisors-win-reelection/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "NIMBYs cite a 155-year-old law to thwart a San Francisco project",
+      "url": "https://www.housingwire.com/articles/marina-safeway-san-franscisco-housing-fight/",
+      "publication": "HousingWire"
+    },
+    {
+      "title": "New S.F. group launches legal fight over Marina Safeway project",
+      "url": "https://www.sfchronicle.com/realestate/article/marina-safeway-lawsuit-22431770.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "S.F.'s Marina Safeway project clears key hurdle, moves closer to approval",
+      "url": "https://www.sfchronicle.com/sf/article/marina-safeway-tower-approved-22387853.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "District 2 Marina Family Summit",
+      "url": "https://www.sf.gov/event-20261107-district-2-family-summit",
+      "publication": "SF.gov"
+    },
+    {
+      "title": "San Francisco Launches This is Your City: 2026 Family Listening Series",
+      "url": "https://www.sf.gov/news-san-francisco-launches-this-is-your-city-2026-family-listening-series",
+      "publication": "SF.gov"
+    },
+    {
+      "title": "Fort Mason Night Market 2026 — November",
+      "url": "https://www.westcoastcraft.com/fort-mason-night-market-attend",
+      "publication": "West Coast Craft"
+    },
+    {
+      "title": "Fort Mason Night Market 2026",
+      "url": "https://fortmason.org/event/fort-mason-night-market-2026-2/2026-12-18/",
+      "publication": "Fort Mason Center for Arts & Culture"
+    },
+    {
+      "title": "Magic World Premiere a Rashomon by Ashley Smiley",
+      "url": "https://magictheatre.org/calendar/a-rashomon",
+      "publication": "Magic Theatre"
+    },
+    {
+      "title": "West Coast Craft Winter '26 Attendee Calendar",
+      "url": "https://www.westcoastcraft.com/attendee-calendar",
+      "publication": "West Coast Craft"
+    },
+    {
+      "title": "Marina Yacht Harbor Weekly Update — November 5, 2026",
+      "url": "https://sfrecpark.org/1228/Marina-Yacht-Harbor",
+      "publication": "SF Recreation and Parks Department"
+    },
+    {
+      "title": "2026 San Francisco Board of Supervisors election",
+      "url": "https://en.wikipedia.org/wiki/2026_San_Francisco_Board_of_Supervisors_election",
+      "publication": "Wikipedia"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "A16",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Southern Italian restaurant and pizzeria",
+        "description": "MICHELIN Bib Gourmand 2026 destination on Chestnut Street, named after the Campanian highway, famous for wood-fired Neapolitan pizza, housemade pasta, and an award-winning Italian wine list.",
+        "address": "2355 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-771-2216",
+        "website": "https://www.a16pizza.com",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Delarosa",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Roman-style pizzeria and bar",
+        "description": "Beloved all-day casual dining destination on Chestnut Street serving Roman-style pizza, small plates, and craft cocktails from a heated parklet.",
+        "address": "2175 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-673-7100",
+        "website": "https://www.delarosasf.com",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Causwells",
+        "cuisineGroup": "Seafood & American",
+        "type": "American bistro and bar",
+        "description": "Marina District staple since 2014 celebrated for its smash-style Americana cheeseburger, seasonal California cooking, and weekend brunch.",
+        "address": "2346 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-447-6081",
+        "website": "https://www.causwells.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Popi's Oysterette",
+        "cuisineGroup": "Seafood & American",
+        "type": "Neighborhood oyster bar",
+        "description": "Bustling raw bar on Chestnut Street serving fresh oysters, Dungeness crab rolls, and clam chowder with a daily 3–5 pm happy hour.",
+        "address": "2095 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-993-5338",
+        "website": "https://www.popisoysterette.com",
+        "neighborhood": "Marina District",
+        "notable": "New"
+      },
+      {
+        "name": "Atelier Crenn",
+        "cuisineGroup": "Other",
+        "type": "Three-Michelin-star French fine dining",
+        "description": "Chef Dominique Crenn's three-Michelin-star flagship in Cow Hollow offering a poetic tasting menu of French-Californian cuisine focused on sustainable, seasonal sourcing.",
+        "address": "3127 Fillmore St, San Francisco, CA 94123",
+        "phone": "415-440-0460",
+        "website": "https://www.ateliercrenn.com",
+        "neighborhood": "Cow Hollow",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Radhaus",
+        "cuisineGroup": "Other",
+        "type": "Bavarian beer hall and restaurant",
+        "description": "Alpine-style beer hall at Fort Mason Center with panoramic Golden Gate Bridge views, serving a California-inflected Bavarian menu of schnitzel, pretzels, and German beers.",
+        "address": "2 Marina Blvd, Bldg A, San Francisco, CA 94123",
+        "phone": "415-445-4556",
+        "website": "https://www.radhaussf.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Greens Restaurant",
+        "cuisineGroup": "Vegetarian & Vegan",
+        "type": "Landmark vegetarian restaurant",
+        "description": "Pioneer vegetarian destination at Fort Mason since 1979, celebrated by the New York Times as the restaurant that established vegetarian cuisine in America, with sweeping bay views.",
+        "address": "2 Marina Blvd, Bldg A, Fort Mason, San Francisco, CA 94123",
+        "phone": "415-771-6222",
+        "website": "https://www.greensrestaurant.com",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Izzy's Steaks & Chops",
+        "cuisineGroup": "Seafood & American",
+        "type": "Classic American steakhouse",
+        "description": "Family-owned Marina steakhouse since 1987, recently reopened after a full renovation with a refreshed menu of prime rib, strip steaks, and local seafood.",
+        "address": "3345 Steiner St, San Francisco, CA 94123",
+        "phone": "415-563-0487",
+        "website": "https://www.izzyssanfrancisco.com",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Roma Antica",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "Highly rated Italian restaurant in the Marina and Cow Hollow area known for locally sourced ingredients, fresh pastas, and a late-night kitchen.",
+        "address": "1401 Lombard St, San Francisco, CA 94123",
+        "phone": "415-932-3207",
+        "website": "https://www.romaanticasf.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Lucca Delicatessen",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian delicatessen",
+        "description": "Family-owned Italian deli operating on Chestnut Street since 1929, known for giant hand-crafted sandwiches, fresh housemade ravioli, imported Italian goods, and aged cheese wheels.",
+        "address": "2120 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-921-7873",
+        "website": "https://www.luccadeli.com",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Tacolicious",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Cal-Mex restaurant and bar",
+        "description": "Lively Marina neighborhood staple serving creative Cal-Mex tacos, margaritas, and a curated tequila selection since 2010.",
+        "address": "2250 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-346-1966",
+        "website": "https://www.tacolicious.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Balboa Cafe",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "American bar and grill",
+        "description": "Buzzy Cow Hollow see-and-be-seen institution serving classic American fare, burgers, and cocktails in a vibrant neighborhood bar setting.",
+        "address": "3199 Fillmore St, San Francisco, CA 94123",
+        "phone": "415-921-3944",
+        "website": "https://www.balboasf.com",
+        "neighborhood": "Cow Hollow",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Flores",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican restaurant and bar",
+        "description": "Contemporary Mexican restaurant and bar on Union Street drawing crowds with inventive cocktails and modern interpretations of regional Mexican dishes.",
+        "address": "2030 Union St, San Francisco, CA 94123",
+        "phone": "415-796-3288",
+        "website": "https://www.floressf.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Morella",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian-Argentine restaurant",
+        "description": "Chestnut Street restaurant blending Argentine and Italian culinary traditions with steaks, empanadas, and a late-night DJ experience on weekends.",
+        "address": "2001 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-373-5700",
+        "website": "https://www.morellasf.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Blackwood",
+        "cuisineGroup": "Asian",
+        "type": "Thai-American fusion restaurant",
+        "description": "Locally owned Marina and Cow Hollow favorite combining American and Thai flavors in a lively setting on Chestnut Street.",
+        "address": "2150 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-931-9663",
+        "website": "https://www.blackwoodsf.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Brazen Head",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "American gastropub",
+        "description": "Intimate late-night Cow Hollow neighborhood haunt hidden on Buchanan Street, renowned for quality burgers, local flavors, and a welcoming neighborhood atmosphere.",
+        "address": "3166 Buchanan St, San Francisco, CA 94123",
+        "phone": "415-921-7600",
+        "website": "https://www.brazenheadsf.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "La Méditerranée",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Mediterranean restaurant",
+        "description": "Cozy, long-running Pacific Heights restaurant offering Eastern Mediterranean and Middle Eastern cuisine including halal saffron dishes, mezze, and a welcoming brunch.",
+        "address": "2210 Fillmore St, San Francisco, CA 94115",
+        "phone": "415-921-2956",
+        "website": "https://www.cafelamed.com",
+        "neighborhood": "Pacific Heights",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Pizzeria Delfina",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Neapolitan pizzeria",
+        "description": "Pacific Heights outpost of the acclaimed SF pizza brand, serving hand-stretched Neapolitan-style pies with blistered crusts and inventive seasonal toppings.",
+        "address": "2406 California St, San Francisco, CA 94115",
+        "phone": "415-440-1189",
+        "website": "https://www.pizzeriadelfina.com",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "Dumpling Story",
+        "cuisineGroup": "Asian",
+        "type": "Chinese dumpling restaurant",
+        "description": "Popular Pacific Heights lunch and dinner spot presenting a creative menu of steamed and pan-fried dumplings in a stylishly designed space.",
+        "address": "2117 Fillmore St, San Francisco, CA 94115",
+        "phone": "415-896-2888",
+        "website": "https://www.dumplingstory.com",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "Scopo Divino",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Wine bar",
+        "description": "Bay Area-voted wine bar of the year for eight-plus consecutive years, also celebrated for one of the best burgers in the Bay, open daily for dinner.",
+        "address": "2800 California St, San Francisco, CA 94115",
+        "phone": "415-928-3728",
+        "website": "https://www.scopodivino.com",
+        "neighborhood": "Pacific Heights",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Viva Goa",
+        "cuisineGroup": "Asian",
+        "type": "Indian restaurant",
+        "description": "Top-rated Indian restaurant in the Marina serving coastal Goan and South Indian cuisine in a warm, neighborhood-friendly setting.",
+        "address": "2420 Lombard St, San Francisco, CA 94123",
+        "phone": "415-440-2600",
+        "website": "https://www.vivagoarestaurant.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Pacific Catch",
+        "cuisineGroup": "Seafood & American",
+        "type": "Seafood restaurant with Pacific Rim influences",
+        "description": "Casual, family-friendly seafood restaurant on Chestnut Street offering Pacific Rim-influenced dishes from sushi to fish tacos to poke bowls.",
+        "address": "2027 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-440-1950",
+        "website": "https://www.pacificcatch.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Cow Hollow Inn & Suites",
+        "type": "Boutique inn and suites",
+        "description": "Top-rated Marina District hotel offering spacious rooms and suites in an ideal location for exploring Chestnut and Union Streets.",
+        "address": "2190 Lombard St, San Francisco, CA 94123",
+        "phone": "415-921-5800",
+        "website": "https://www.cowhollowinnsf.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Hotel Del Sol",
+        "type": "Boutique hotel",
+        "description": "Colorful retro 1950s motor lodge reinvented as a boutique hotel in the Marina District, built around a palm-lined courtyard with a heated saltwater pool and hammocks.",
+        "address": "3100 Webster St, San Francisco, CA 94123",
+        "phone": "415-921-5520",
+        "website": "https://www.hoteldelsolsf.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Marina Motel",
+        "type": "Independent motel",
+        "description": "Charming independent motel in the Marina District set around a European-style courtyard with highly rated guest service and easy access to the Palace of Fine Arts.",
+        "address": "2576 Lombard St, San Francisco, CA 94123",
+        "phone": "415-921-9406",
+        "website": "https://www.marinamotel.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Infinity Hotel San Francisco, Tapestry Collection by Hilton",
+        "type": "Full-service hotel",
+        "description": "Hilton Tapestry Collection property in the Marina District offering contemporary rooms and easy access to the neighborhood's restaurants and waterfront.",
+        "address": "1450 Lombard St, San Francisco, CA 94123",
+        "phone": "415-673-0691",
+        "website": "https://www.infinityhotelsf.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Signature Inn San Francisco Marina District",
+        "type": "Budget motel",
+        "description": "Budget-friendly Sonesta-branded motel on Lombard Street in the Marina District, well placed for sightseeing near the Presidio and Fisherman's Wharf.",
+        "address": "2440 Lombard St, San Francisco, CA 94123",
+        "phone": "415-921-5162",
+        "website": "https://www.sonesta.com/signature-inn/ca/san-francisco/signature-inn-san-francisco-marina-district",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Travelodge by Wyndham Presidio San Francisco",
+        "type": "Budget motel",
+        "description": "Conveniently located Wyndham property near the Presidio and Marina District, offering accessible rates and reliable amenities for visitors.",
+        "address": "2755 Lombard St, San Francisco, CA 94123",
+        "phone": "415-931-8581",
+        "website": "https://www.wyndhamhotels.com/travelodge/san-francisco-california/travelodge-san-francisco-presidio/overview",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Days Inn by Wyndham San Francisco – Lombard",
+        "type": "Budget hotel",
+        "description": "Affordable Wyndham-branded hotel on Lombard Street with breakfast included, well situated for the Marina and Cow Hollow neighborhoods.",
+        "address": "2358 Lombard St, San Francisco, CA 94123",
+        "phone": "415-922-2010",
+        "website": "https://www.wyndhamhotels.com/days-inn/san-francisco-california/days-inn-san-francisco-lombard/overview",
+        "neighborhood": "Marina District",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Browser Books",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Beloved independent bookstore on Fillmore Street in Pacific Heights since 1976, now operated by Green Apple Books, offering carefully curated titles in a welcoming atmosphere open daily.",
+        "address": "2195 Fillmore St, San Francisco, CA 94115",
+        "phone": "415-567-8027",
+        "website": "https://www.greenapplebooks.com/store/3",
+        "neighborhood": "Pacific Heights",
+        "notable": "Landmark"
+      },
+      {
+        "name": "California Wine Merchant",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Wine shop and bar",
+        "description": "Highly rated specialty wine shop in the Marina District with a knowledgeable staff and a curated selection of California and international wines available for purchase or by the glass.",
+        "address": "2113 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-567-0646",
+        "website": "https://www.californiawinebars.com",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lucca Delicatessen",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Italian specialty food market",
+        "description": "Third-generation family-run Italian deli open since 1929, stocking housemade fresh pasta, imported Italian goods, aged cheeses, and artisan sandwiches.",
+        "address": "2120 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-921-7873",
+        "website": "https://www.luccadeli.com",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Topdrawer",
+        "shopGroup": "Home & Gifts",
+        "type": "Japanese lifestyle boutique",
+        "description": "Charming Japanese lifestyle boutique on Union Street offering a curated selection of design objects, stationery, and home accessories sourced from Japan.",
+        "address": "1954 Union St, San Francisco, CA 94123",
+        "phone": "415-563-1007",
+        "website": "https://www.topdrawersf.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Annabel The Shop",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's clothing boutique",
+        "description": "Marina boutique showcasing emerging brands and independent labels that balance current trends with timeless wearability.",
+        "address": "2120 Union St, San Francisco, CA 94123",
+        "phone": "415-400-4444",
+        "website": "https://www.annabeltheshop.com",
+        "neighborhood": "Cow Hollow",
+        "notable": "New"
+      },
+      {
+        "name": "West Coast Leather",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Leather goods boutique",
+        "description": "Cow Hollow specialty store offering a wide selection of leather jackets and accessories for men and women.",
+        "address": "1922 Union St, San Francisco, CA 94123",
+        "phone": "415-922-7636",
+        "website": "https://www.westcoastleather.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Sue Fisher King",
+        "shopGroup": "Home & Gifts",
+        "type": "Home furnishings and gift boutique",
+        "description": "Pacific Heights institution for distinctive home furnishings, tableware, and gifts with a reputation for beautiful, individually chosen pieces.",
+        "address": "3067 Sacramento St, San Francisco, CA 94115",
+        "phone": "415-922-7276",
+        "website": "https://www.suefisherking.com",
+        "neighborhood": "Presidio Heights",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Marine Layer",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Bay Area apparel brand flagship",
+        "description": "Bay Area-born clothing brand flagship on Chestnut Street known for impossibly soft fabrics and casual, sustainable everyday wear.",
+        "address": "2106 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-400-5260",
+        "website": "https://www.marinelayer.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "Atys",
+        "shopGroup": "Home & Gifts",
+        "type": "Design home accessories boutique",
+        "description": "Unique courtyard shop on Union Street importing modern gadgets and home accessories from Europe and Japan, including distinctive design objects and gifts.",
+        "address": "2149B Union St, San Francisco, CA 94123",
+        "phone": "415-441-9220",
+        "website": "https://www.atysdesign.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "George",
+        "shopGroup": "Home & Gifts",
+        "type": "Pet accessories and gifts boutique",
+        "description": "Charming Pacific Heights specialty boutique on Fillmore Street offering unique cat and dog treats, toys, and accessories for pet-loving households.",
+        "address": "2411 Fillmore St, San Francisco, CA 94115",
+        "phone": "415-441-0564",
+        "website": "https://www.georgesf.com",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Palace of Fine Arts Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Historic performing arts venue",
+        "description": "San Francisco landmark theatre inside the iconic 1915 Beaux-Arts rotunda, hosting a full season of live performances including comedy, dance, and music through October 2026 and beyond.",
+        "address": "3301 Lyon St, San Francisco, CA 94123",
+        "phone": "415-563-6504",
+        "website": "https://www.palaceoffinearts.org",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Magic Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "New plays theater company",
+        "description": "Pioneering new-works theater company at Fort Mason Center since 1967 — a San Francisco Legacy Business — with a fall 2026 season including the world premiere of 'a Rashomon' opening November 18.",
+        "address": "2 Marina Blvd, Bldg D, 3rd Floor, San Francisco, CA 94123",
+        "phone": "415-441-8822",
+        "website": "https://www.magictheatre.org",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Fort Mason Center for Arts & Culture",
+        "venueGroup": "Museums & Cultural",
+        "type": "Multi-venue arts and cultural center",
+        "description": "Historic former Army base on the northern waterfront transformed into San Francisco's largest arts campus, home to Magic Theatre, Greens, Radhaus, and a year-round calendar of art fairs, festivals, and exhibitions.",
+        "address": "2 Marina Blvd, San Francisco, CA 94123",
+        "phone": "415-345-7500",
+        "website": "https://www.fortmason.org",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Walt Disney Family Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Biography and animation museum",
+        "description": "40,000-square-foot museum in the Presidio chronicling the life and legacy of Walt Disney through interactive galleries, original sketches, and a Disneyland model; open Thursday–Sunday.",
+        "address": "104 Montgomery St, Presidio, San Francisco, CA 94129",
+        "phone": "415-345-6800",
+        "website": "https://www.waltdisney.org",
+        "neighborhood": "Presidio Heights",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Neomodern Photography Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Photography gallery",
+        "description": "Contemporary photography gallery on Union Street in Cow Hollow dedicated to exhibiting the work of emerging and established photographers.",
+        "address": "1982 Union St, San Francisco, CA 94123",
+        "phone": "415-800-7785",
+        "website": "https://www.neomoderngallery.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Tokaido Arts",
+        "venueGroup": "Art Galleries",
+        "type": "Japanese woodblock print gallery",
+        "description": "Pacific Heights gallery near Japantown specializing in authentic Ukiyo-e woodblock prints and fine Japanese artwork for collectors and enthusiasts.",
+        "address": "22 Peace Plaza, Suite 540, San Francisco, CA 94115",
+        "phone": "415-922-8765",
+        "website": "https://www.tokaidoarts.com",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "Museum of Russian Culture",
+        "venueGroup": "Museums & Cultural",
+        "type": "Cultural history museum",
+        "description": "Non-profit museum in Lower Pacific Heights preserving and exhibiting the history, art, and culture of the Russian diaspora in the United States.",
+        "address": "2450 Sutter St, San Francisco, CA 94115",
+        "phone": "415-921-4082",
+        "website": "https://www.russianmuseum.com",
+        "neighborhood": "Pacific Heights",
+        "notable": ""
+      },
+      {
+        "name": "The Interval at Long Now",
+        "venueGroup": "Museums & Cultural",
+        "type": "Bar, library, and cultural salon",
+        "description": "Unique combination bar, library, and salon at Fort Mason operated by the Long Now Foundation, featuring a curated library, rotating exhibitions, and ongoing intellectual programming.",
+        "address": "2 Marina Blvd, Bldg A, San Francisco, CA 94123",
+        "phone": "415-795-7594",
+        "website": "https://theinterval.org",
+        "neighborhood": "Marina District",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Yoga Flow SF – Union Street",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Heated vinyasa yoga studio",
+        "description": "Family-owned studio established in 2008 on the second floor of Union Street with floor-to-ceiling windows and far-infrared radiant heat, offering vinyasa flow, slow flow, and workshops.",
+        "address": "1892 Union St, San Francisco, CA 94123",
+        "phone": "415-567-1825",
+        "website": "https://www.yogaflowsf.com",
+        "neighborhood": "Cow Hollow",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Body Temp Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Highly rated Marina-area yoga studio with a devoted local following, known for intensive heated classes and a strong community atmosphere.",
+        "address": "3019 Fillmore St, San Francisco, CA 94123",
+        "phone": "415-614-9062",
+        "website": "https://www.bodytempyoga.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "CorePower Yoga – The Marina",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Marina-area location of the national yoga brand offering a full schedule of heated yoga and sculpt classes daily.",
+        "address": "2142 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-931-3800",
+        "website": "https://www.corepoweryoga.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "CorePower Yoga – Cow Hollow",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Spacious Cow Hollow CorePower location on Union Street with a full slate of heated vinyasa and sculpt classes for all levels.",
+        "address": "1775 Union St, San Francisco, CA 94123",
+        "phone": "415-673-2300",
+        "website": "https://www.corepoweryoga.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Hot 8 Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Hot yoga studio",
+        "description": "LGBTQ-friendly, family-owned hot yoga studio in the Marina offering a range of heated yoga formats in a spotless, modern facility.",
+        "address": "2211 Fillmore St, San Francisco, CA 94115",
+        "phone": "415-872-8378",
+        "website": "https://www.hot8yoga.com",
+        "neighborhood": "Pacific Heights",
+        "notable": "New"
+      },
+      {
+        "name": "Bodyrok",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Reformer Pilates studio",
+        "description": "Marina-area boutique fitness studio offering reformer-based Pilates-inspired group classes on a popular booking schedule.",
+        "address": "2145 Chestnut St, San Francisco, CA 94123",
+        "phone": "415-872-1100",
+        "website": "https://www.bodyrok.com",
+        "neighborhood": "Marina District",
+        "notable": ""
+      },
+      {
+        "name": "The Pad Studios",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga and Pilates studio",
+        "description": "Well-reviewed multi-format yoga and Pilates studio in Cow Hollow offering beginner to advanced classes in a welcoming community setting.",
+        "address": "1845 Union St, San Francisco, CA 94123",
+        "phone": "415-400-4480",
+        "website": "https://www.thepadstudios.com",
+        "neighborhood": "Cow Hollow",
+        "notable": ""
+      },
+      {
+        "name": "Marina Green",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Waterfront park and recreation area",
+        "description": "Beloved 74-acre waterfront greenbelt along the bay between the Marina and Fort Mason, popular year-round for running, kite-flying, cycling, windsurfing, and stunning Golden Gate Bridge views.",
+        "address": "Marina Blvd, San Francisco, CA 94123",
+        "phone": "",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Crissy Field",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "National Recreation Area park",
+        "description": "Restored tidal marsh and beachfront park within the Golden Gate National Recreation Area, offering trails, beach access, kiteboarding, and unobstructed Golden Gate Bridge views.",
+        "address": "1199 E Beach, San Francisco, CA 94129",
+        "phone": "415-561-4700",
+        "website": "https://www.nps.gov/goga/planyourvisit/crissyfield.htm",
+        "neighborhood": "Marina District",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-11-06",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-11-06",
+        "high": 67,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 1
+      },
+      {
+        "date": "2026-11-07",
+        "high": 68,
+        "low": 54,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-08",
+        "high": 68,
+        "low": 55,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-09",
+        "high": 68,
+        "low": 56,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-10",
+        "high": 67,
+        "low": 56,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-11",
+        "high": 67,
+        "low": 56,
+        "summary": "Partly Sunny then Slight Chance Light Rain",
+        "condition": "rain",
+        "precip": 15
+      },
+      {
+        "date": "2026-11-12",
+        "high": 65,
+        "low": 56,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 32
+      }
+    ]
+  }
+}
