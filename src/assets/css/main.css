@@ -3128,3 +3128,78 @@ hr.divider {
   .home-where .us-map__dot { width: 21px; height: 21px; }
   .home-where .us-map__pin--soon .us-map__dot { width: 13px; height: 13px; }
 }
+
+
+/* ══ Edition banner, November 2026 ═════════════════════════════════════════
+   Each edition's masthead follows the homepage banner: "My Town News" and the
+   edition name large and left-aligned, and, where we have one, a photo of
+   the place occupying the right two-thirds and fading out toward the text.
+   The photo box starts a third of the way across so its subject lands in the
+   visible part rather than under the fade; only its height is cropped, at
+   the per-photo position in editionPhotos.json. */
+.masthead--edition { position: relative; overflow: hidden; }
+.masthead--edition .masthead__inner {
+  position: relative;
+  text-align: left;
+  padding-block: 52px 56px;
+}
+.masthead--edition .masthead__title {
+  font-size: clamp(2.25rem, 5vw, 3.9rem);
+  line-height: 1.07;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 18px rgb(10 16 32 / 0.45);
+}
+.masthead--edition .masthead__title em { font-style: normal; }
+.masthead--edition .masthead__ornament { justify-content: flex-start; }
+.masthead--edition .masthead__subtitle {
+  margin: 12px 0 0;
+  max-width: 34rem;
+  font-size: 0.6875rem;
+  color: rgb(255 255 255 / 0.82);
+  text-shadow: 0 1px 8px rgb(10 16 32 / 0.6);
+}
+.masthead__art {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 32%;
+  right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 42%);
+          mask-image: linear-gradient(to right, transparent 0%, #000 42%);
+}
+.masthead__art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(26 39 68 / 0.35) 0%, rgb(26 39 68 / 0.1) 60%, rgb(26 39 68 / 0.2) 100%);
+}
+.masthead__credit {
+  position: absolute;
+  /* Inside the banner's text box, so it can never slip under the date bar,
+     which stacks to three lines on a phone. */
+  right: var(--gap);
+  bottom: var(--sp-3);
+  margin: 0;
+  max-width: calc(100% - 2 * var(--sp-4));
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  color: rgb(255 255 255 / 0.92);
+  background: rgb(10 16 32 / 0.55);
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+.masthead__credit a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.masthead--edition .masthead__bar { position: relative; background: #141f38; }
+
+@media (max-width: 700px) {
+  .masthead__art {
+    left: 0;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 30%, #000 75%);
+            mask-image: linear-gradient(to bottom, transparent 30%, #000 75%);
+  }
+  .masthead--photo .masthead__inner { padding-block: 36px 150px; }
+  .masthead__credit { font-size: 0.625rem; }
+}

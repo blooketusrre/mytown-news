@@ -1199,8 +1199,11 @@ function buildEmailHtml(issue, cluster) {
   // effectively unreadable. clusters.json has carried accentOnDark for
   // exactly this since the contrast pass in August; the newsletter simply
   // never used it. Every edition clears 5:1 with it.
-  const accent   = cluster.accent || "#c8943a";              // on white
-  const onDark   = cluster.accentOnDark || accent;           // on navy
+  // One scheme for every edition (November 2026), matching the site: the
+  // brand gold on navy, and a deeper gold for text on white, where the brand
+  // gold is too faint to read. Each edition's own colour is for maps only.
+  const accent   = "#8f6420";                                // on white
+  const onDark   = "#c8943a";                                // on navy
   // Named neighborhoods under the edition title, for the same reason the web
   // masthead carries them: a forwarded issue lands in front of someone who
   // knows their own neighborhood but not which edition covers it. Taken from
