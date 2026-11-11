@@ -52,13 +52,15 @@ layout: base.njk
 {# ── Masthead ──────────────────────────────────────────────────────────── #}
 {# Edition banner (November 2026): left-aligned like the homepage banner,
    with a photo of the place fading in from the right where we have one.
-   Photos and their credits are in _data/editionPhotos.json; Creative Commons
+   Photos and their credits are in _data/editionPhotos.json ("fit": "height"
+   shows a tall subject whole, spire to steps, instead of cropping it to the
+   banner's width); Creative Commons
    ones must show their licence, public-domain ones need none. An edition
    without a photo (Bayview & Excelsior, for now) keeps the plain navy. #}
 {% set photo = editionPhotos[clusterSlug] %}
 <header class="masthead masthead--edition{% if photo %} masthead--photo{% endif %}" role="banner">
   {% if photo %}
-  <div class="masthead__art" aria-hidden="true"
+  <div class="masthead__art{% if photo.fit == 'height' %} masthead__art--fit-height{% endif %}" aria-hidden="true"
        style="background-image:url('/assets/img/editions/{{ photo.file }}');background-position:{{ photo.position }}"></div>
   {% endif %}
   <div class="masthead__inner container">
