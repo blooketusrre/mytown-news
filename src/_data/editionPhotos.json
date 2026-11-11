@@ -188,5 +188,15 @@
     "subject": "Washington Square, North Beach",
     "cropped": false,
     "position": "center 55%"
+  },
+  "bayview-excelsior": {
+    "file": "bayview-excelsior.jpg",
+    "photographer": "Minette Lontsie",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Bayview_south_San_Francisco.jpg",
+    "subject": "All Hallows Chapel",
+    "cropped": true,
+    "position": "center 32%"
   }
 }
