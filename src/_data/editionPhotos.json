@@ -197,6 +197,7 @@
     "source": "https://commons.wikimedia.org/wiki/File:Bayview_south_San_Francisco.jpg",
     "subject": "All Hallows Chapel",
     "cropped": true,
-    "position": "center 32%"
+    "position": "right center",
+    "fit": "height"
   }
 }

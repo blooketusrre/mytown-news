@@ -3169,6 +3169,13 @@ hr.divider {
   -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 42%);
           mask-image: linear-gradient(to right, transparent 0%, #000 42%);
 }
+/* A tall subject shown whole: the photo box takes the photo's own 3:2 shape
+   at the banner's height, against the right edge, so the fade falls across
+   the photo itself rather than leaving a hard edge where it begins. */
+.masthead__art--fit-height {
+  left: auto;
+  aspect-ratio: 3 / 2;
+}
 .masthead__art::after {
   content: "";
   position: absolute;
@@ -3195,8 +3202,10 @@ hr.divider {
 .masthead--edition .masthead__bar { position: relative; background: #141f38; }
 
 @media (max-width: 700px) {
-  .masthead__art {
+  .masthead__art,
+  .masthead__art--fit-height {
     left: 0;
+    aspect-ratio: auto;
     -webkit-mask-image: linear-gradient(to bottom, transparent 30%, #000 75%);
             mask-image: linear-gradient(to bottom, transparent 30%, #000 75%);
   }
