@@ -865,12 +865,16 @@ try {
     const f = path.join(OUT, city.slug, "index.html");
     if (!fs.existsSync(f)) return;
     const html = fs.readFileSync(f, "utf8");
+    // Since November 2026 the ZIP lookup sits under the edition list, as a
+    // smaller "Find by ZIP code", with the map on the left.
     const zipAt = html.indexOf('id="zip-input"');
-    const mapAt = html.indexOf('cluster-map-wrap');
+    const listAt = html.indexOf('class="cluster-list"');
     if (zipAt === -1) {
       errors.push(`the ${city.name} hub has no ZIP lookup — it is the fastest route to an edition`);
-    } else if (mapAt !== -1 && zipAt > mapAt) {
-      errors.push(`the ${city.name} hub renders the ZIP lookup below the map — it belongs above`);
+    } else if (listAt === -1 || zipAt < listAt) {
+      errors.push(`the ${city.name} hub must show the ZIP lookup under the edition list`);
+    } else if (!/Find by ZIP code/.test(html)) {
+      errors.push(`the ${city.name} hub's ZIP lookup should be the compact "Find by ZIP code"`);
     }
     if (!/site-nav__logo/.test(html)) {
       errors.push(`the ${city.name} hub has no brand mark or link home — nothing says it belongs to this publication`);
@@ -1993,6 +1997,31 @@ console.log(`  Pages:    ${actual}/${expected}`);
 console.log(`  Clusters: ${liveCount} live`);
 
 warnings.forEach((w) => console.log(`  ⚠ ${w}`));
+
+// ── November 2026 design round ─────────────────────────────────────────────
+{
+  const read = (rel) => { const f = path.join(OUT, rel); return fs.existsSync(f) ? fs.readFileSync(f, "utf8") : ""; };
+  const home = read("index.html");
+  // "Let's talk" once opened a mailto:, which does nothing on a computer with
+  // no mail app and looks like a dead link. It goes to the contact section.
+  const talk = /<a class="home-cta__link" href="([^"]+)"/.exec(home);
+  if (!talk || /^mailto:/.test(talk[1])) errors.push(`"Let's talk" must link to the contact section, not a mailto:`);
+  const css = read("assets/css/main.css");
+  if (!/--link:\s*#c2410c/i.test(css) || !/--link-on-dark:\s*#f47a4e/i.test(css))
+    errors.push("the red-orange text-link colours (--link, --link-on-dark) are missing from main.css");
+  // One edition page with events: flip cards with both faces, sources folded.
+  const ed = read("san-francisco/bayview-excelsior/index.html");
+  if (ed) {
+    if (/class="event-card"/.test(ed) && !/event-card__back/.test(ed))
+      errors.push("the event cards have no back face — the flip cards are gone");
+    if (/class="event-card__back"[^>]*\binert\b/.test(ed))
+      errors.push("an event card's back is inert in the HTML — without JavaScript it must stay readable");
+    if (!/<details class="sources-list"/.test(ed)) errors.push("the source list must fold behind a Sources toggle");
+    if (/class="source-item__title"/.test(ed)) errors.push("the source list should show links only, not headlines");
+    if (!/class="editorial-note"/.test(ed)) errors.push("the editorial disclaimer must stay visible");
+    if (!/masthead__brand[\s\S]{0,400}masthead__place/.test(ed)) errors.push("the edition banner lost its two-size title");
+  }
+}
 
 if (errors.length) {
   console.error("");

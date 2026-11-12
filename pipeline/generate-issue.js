@@ -1212,6 +1212,14 @@ function buildEmailHtml(issue, cluster) {
   // gold is too faint to read. Each edition's own colour is for maps only.
   const accent   = "#8f6420";                                // on white
   const onDark   = "#c8943a";                                // on navy
+  // Text links: the site's third colour (November 2026), red-orange, in
+  // the two shades that pass contrast on white and on navy. Underlined with
+  // a border, not text-decoration: Buttondown forces every <a> to its own
+  // blue, and a text-decoration underline takes the <a>'s colour.
+  const link       = "#c2410c";                              // on white
+  const linkOnDark = "#f47a4e";                              // on navy
+  const ul   = `color:${link};text-decoration:none;border-bottom:1px solid ${link};`;
+  const ulDk = `color:${linkOnDark};text-decoration:none;border-bottom:1px solid ${linkOnDark};`;
   // Named neighborhoods under the edition title, for the same reason the web
   // masthead carries them: a forwarded issue lands in front of someone who
   // knows their own neighborhood but not which edition covers it. Taken from
@@ -1256,7 +1264,7 @@ function buildEmailHtml(issue, cluster) {
       ${s.dek ? `<p style="margin:0 0 10px 0;font-family:Georgia,serif;font-size:15px;font-style:italic;line-height:1.5;color:#6b6560;">${esc(s.dek)}</p>` : ""}
       ${meta ? `<p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">${esc(meta)}</p>` : ""}
       <p style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:15px;line-height:1.68;color:#1c1c1e;">${esc(emailExcerpt(s.body, 90))}</p>
-      ${storyHref ? `<a href="${esc(storyHref)}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">Read the full story: ${esc(s.sourceName || "source")} →</a>` : ""}
+      ${storyHref ? `<a href="${esc(storyHref)}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;${ul}">Read the full story: ${esc(s.sourceName || "source")} →</a>` : ""}
     </td></tr>
     <tr><td style="height:24px;"></td></tr>
   `;
@@ -1278,7 +1286,7 @@ function buildEmailHtml(issue, cluster) {
     // the thing being checked.
     const href = safeUrl(ev.sourceUrl);
     const verify = !href ? "" :
-      ` · <a href="${esc(href)}" style="color:#6b6560;text-decoration:underline;">Verify${ev.sourceName ? " · " + esc(ev.sourceName) : ""}</a>`;
+      ` · <a href="${esc(href)}" style="${ul}">Verify${ev.sourceName ? " · " + esc(ev.sourceName) : ""}</a>`;
     return `
     <tr><td style="padding:12px 0;border-bottom:1px solid #d8d2c8;">
       ${ev.date ? `<p style="margin:0 0 2px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${accent};">${esc(ev.date)}</p>` : ""}
@@ -1317,8 +1325,8 @@ function buildEmailHtml(issue, cluster) {
       // "Restaurants & Cafés (18)" is a reason to click.
       return `
       <tr><td style="padding:5px 0;">
-        <a href="${issueUrl}#${anchor}" style="font-family:Arial,sans-serif;font-size:13px;color:#1a2744;text-decoration:none;">
-          ${emoji} <span style="text-decoration:underline;">${label}</span>
+        <a href="${issueUrl}#${anchor}" style="font-family:Arial,sans-serif;font-size:13px;color:${link};text-decoration:none;">
+          ${emoji} <span style="border-bottom:1px solid ${link};">${label}</span>
           <span style="color:#6b6560;text-decoration:none;">(${n})</span>
         </a>
       </td></tr>`;
@@ -1349,7 +1357,7 @@ function buildEmailHtml(issue, cluster) {
         <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#1a2744;">Police reports</p>
         <p style="margin:0 0 10px 0;font-family:Georgia,serif;font-size:15px;line-height:1.5;color:#1c1c1e;"><strong>${b.total}</strong> reported in the week to ${esc(b.to)}${b.priorAvg ? `, against a four-week average of ${b.priorAvg}` : ""}.${b.top && b.top.length ? ` Most often ${b.top.slice(0, 3).map(r => `${esc(r.category.toLowerCase())} (${r.count})`).join(", ")}.` : ""}</p>
         <p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:10px;line-height:1.5;color:#6b6560;">Initial reports to SFPD, excluding administrative records. Reports are unverified and are not convictions.</p>
-        <a href="${b.sourceUrl}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:#1a2744;text-decoration:none;">See every report →</a>
+        <a href="${b.sourceUrl}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;${ul}">See every report →</a>
       </td></tr>
     </table>
   </td></tr>`;
@@ -1363,7 +1371,7 @@ function buildEmailHtml(issue, cluster) {
     <tr><td style="padding:10px 0;border-bottom:1px solid #e8e3da;">
       <p style="margin:0 0 4px 0;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#1a2744;">${esc(s.headline)}</p>
       <p style="margin:0;font-family:Arial,sans-serif;font-size:12px;line-height:1.55;color:#6b6560;">${esc(s.dek || emailExcerpt(s.body, 32))}</p>
-      ${href ? `<a href="${esc(href)}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;color:${accent};text-decoration:none;">${esc(s.sourceName || "Read more")} →</a>` : ""}
+      ${href ? `<a href="${esc(href)}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;${ul}">${esc(s.sourceName || "Read more")} →</a>` : ""}
     </td></tr>
   `;
   }).join("");
@@ -1411,7 +1419,7 @@ function buildEmailHtml(issue, cluster) {
     ${hoods ? `<p style="margin:12px 0 0 0;max-width:340px;font-family:Arial,sans-serif;font-size:10px;line-height:1.6;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.85);">${esc(hoods)}</p>` : ""}
     ${formatWeek(issue.weekOf) ? `<p style="margin:8px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.8);">Week of ${esc(formatWeek(issue.weekOf))}</p>` : ""}
     <p style="margin:16px 0 0 0;">
-      <a href="${issueUrl}" style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:${onDark};text-decoration:none;border-bottom:1px solid ${onDark};padding-bottom:2px;">See the full edition →</a>
+      <a href="${issueUrl}" style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;${ulDk}padding-bottom:2px;">See the full edition →</a>
     </p>
     ${photo ? `<p style="margin:18px 0 0 0;text-align:right;font-family:Arial,sans-serif;font-size:9px;line-height:1.4;color:rgba(255,255,255,0.75);">${esc(photo.subject)} · Photo: <a href="${esc(photo.source)}" style="color:rgba(255,255,255,0.75);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.5);">${esc(photo.photographer)}</a>${photo.license !== "Public domain" ? `, <a href="${esc(photo.licenseUrl)}" style="color:rgba(255,255,255,0.75);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.5);">${esc(photo.license)}</a>${photo.cropped ? " (cropped)" : ""}` : ""}</p>` : ""}
   </td></tr>

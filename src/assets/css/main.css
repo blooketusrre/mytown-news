@@ -3212,3 +3212,290 @@ hr.divider {
   .masthead--photo .masthead__inner { padding-block: 36px 150px; }
   .masthead__credit { font-size: 0.625rem; }
 }
+
+
+/* ══ Text links, November 2026 ═════════════════════════════════════════════
+   A third colour, used only for underlined text links: red-orange, so a
+   link never looks like a heading (navy) or a button (gold with navy text).
+   Two shades of the one colour, because no single red-orange reaches WCAG AA
+   contrast on both cream and navy: --link on light backgrounds (5.2:1 on
+   white, 4.8:1 on cream), --link-on-dark on the navy bands (5.5:1).
+   Buttons keep gold; navigation (top bars, footer) keeps its own style.
+   The email uses the same two values; see pipeline/generate-issue.js. */
+:root {
+  --link:          #c2410c;
+  --link-hover:    #9a3412;
+  --link-on-dark:  #f47a4e;
+  --link-on-dark-hover: #ffa47f;
+}
+
+.text-link,
+.prose a,
+.source-link,
+.blotter-card__link,
+.dir-entry__website,
+.dir-correction__link,
+.home-find__browse,
+.home-cta__link,
+.city-pick__link,
+.zip-lookup__result--multi a,
+.sub-confirm__tip a,
+.sub-note a,
+.source-item a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  border-bottom: none;
+  padding-bottom: 0;
+  transition: color var(--ease);
+}
+.home-find__browse,
+.home-cta__link { text-decoration-thickness: 2px; text-underline-offset: 5px; }
+
+.text-link:hover,
+.prose a:hover,
+.source-link:hover,
+.blotter-card__link:hover,
+.dir-entry__website:hover,
+.dir-correction__link:hover,
+.home-find__browse:hover,
+.home-cta__link:hover,
+.city-pick__link:hover,
+.zip-lookup__result--multi a:hover,
+.sub-confirm__tip a:hover,
+.sub-note a:hover,
+.source-item a:hover { color: var(--link-hover); }
+
+/* On the navy bands. */
+.newsletter__note a,
+.event-card__front .event-card__source {
+  color: var(--link-on-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.newsletter__note a:hover,
+.event-card__front .event-card__source:hover { color: var(--link-on-dark-hover); }
+.newsletter__note { color: rgba(255,255,255,0.7); font-size: var(--text-xs); }
+
+/* ══ Homepage map dots, November 2026 ══════════════════════════════════════
+   Active editions in the link colour, coming-soon towns as gold outlines:
+   the two used to be gold and gold-ringed white, too alike at a glance. */
+.home-where .us-map__dot { background: var(--link); }
+.home-where .us-map__pin:hover .us-map__dot,
+.home-where .us-map__pin:focus-visible .us-map__dot { background: var(--link-hover); }
+.home-where .us-map__dot--soon,
+.home-where .us-map__pin--soon .us-map__dot { background: var(--white); border-color: var(--gold); }
+
+/* ══ Footer and subscribe band legibility, November 2026 ═══════════════════
+   The tagline, links and small print were 9–11px at 18–45% white: present,
+   but not readable. Larger, and light enough to pass AA on the dark ground. */
+.site-footer { color: rgba(255,255,255,0.72); }
+.site-footer__tagline { font-size: var(--text-sm); color: rgba(255,255,255,0.78); }
+.site-footer__links { font-size: 0.9375rem; gap: var(--sp-2) var(--sp-5); }
+.site-footer__links a { color: rgba(255,255,255,0.88); }
+.site-footer__links a:hover { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+.site-footer__copy { font-size: var(--text-sm); color: rgba(255,255,255,0.65); }
+.site-footer__copy a { color: rgba(255,255,255,0.8); }
+.site-footer__disclaimer {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.01em;
+  max-width: 820px;
+}
+.home-band__note { font-size: 0.8125rem; color: rgba(255,255,255,0.88); }
+
+/* ══ Banner titles, November 2026 ══════════════════════════════════════════
+   City and edition banners: "My Town News" a step smaller than the place,
+   on its own line with room beneath, both flush left. */
+.masthead__title--stack .masthead__brand,
+.masthead__title--stack .masthead__place { display: block; }
+.masthead--edition .masthead__title--stack .masthead__brand {
+  font-size: clamp(1.35rem, 2.7vw, 2.05rem);
+  line-height: 1.1;
+  margin-bottom: clamp(10px, 1.4vw, 18px);
+}
+.masthead--edition .masthead__title--stack .masthead__place {
+  font-size: clamp(2.25rem, 5vw, 3.9rem);
+  line-height: 1.04;
+}
+.masthead--city .masthead__inner { padding-block: 48px 44px; }
+.masthead__desc {
+  margin: var(--sp-4) 0 0;
+  max-width: 34rem;
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  line-height: 1.55;
+  color: rgb(255 255 255 / 0.85);
+}
+
+/* ══ City pages, November 2026 ═════════════════════════════════════════════
+   Map flush left, the edition list on the right, a small ZIP lookup under
+   the list. */
+@media (min-width: 1025px) { .cluster-map-wrap { grid-template-columns: minmax(0, 1fr) 340px; gap: var(--sp-8); } }
+.cluster-list__heading {
+  font-family: var(--font-head);
+  font-size: var(--text-xl);
+  font-weight: 800;
+  color: var(--navy);
+  margin: 0 0 var(--sp-3);
+}
+.cluster-list__item:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+.cluster-list__item.is-active { border-color: var(--navy); }
+.zip-lookup--compact { margin-top: var(--sp-5); padding: var(--sp-4); }
+.zip-lookup--compact .zip-lookup__label { font-size: 0.6875rem; margin-bottom: var(--sp-2); }
+.zip-lookup--compact .zip-lookup__input,
+.zip-lookup--compact .zip-lookup__btn { padding-block: 7px; }
+
+/* ══ Event flip cards, November 2026 ═══════════════════════════════════════
+   Both faces sit in one grid cell, so a card is as tall as its taller face
+   and the row stays even. Until the script adds .is-flippable (no JS), the
+   faces simply stack. */
+.event-card { padding: 0; background: none; border: none; display: block; perspective: 1200px; }
+.event-card__inner { display: grid; height: 100%; }
+.event-card__face {
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-5);
+  border-radius: var(--radius);
+}
+.event-card__front {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.event-card__back {
+  background: var(--cream);
+  color: var(--navy);
+  border: 1px solid var(--cream);
+}
+.event-card__back .event-card__desc { color: var(--text); font-size: var(--text-sm); flex: 1 1 auto; margin-bottom: var(--sp-3); }
+.event-card__back .event-card__meta { color: #4a4744; }
+.event-card__back .event-icon { color: var(--link); }
+.event-card__back .event-card__source {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.event-card__back .event-card__source:hover { color: var(--link-hover); }
+.event-card__foot {
+  margin-top: auto;
+  padding-top: var(--sp-3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+}
+.event-card__foot .event-card__source { margin-top: 0; }
+.event-card__flip {
+  margin-left: auto;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.9);
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.event-card__flip[hidden] { display: none; }
+.event-card__flip--back { border-color: var(--rule); color: var(--navy); }
+.event-card__flip:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.event-card__flip--back:focus-visible { outline-color: var(--navy); }
+
+/* No script: the back follows the front. */
+.events-grid:not(.is-flippable) .event-card__inner { gap: var(--sp-2); }
+
+.is-flippable .event-card { cursor: pointer; }
+.is-flippable .event-card__inner {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+.is-flippable .event-card__face {
+  grid-area: 1 / 1;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.is-flippable .event-card__back { transform: rotateY(180deg); }
+.is-flippable .event-card.is-flipped .event-card__inner { transform: rotateY(180deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  /* No turning: the faces swap in place. */
+  .is-flippable .event-card__inner { transition: none; transform: none !important; }
+  .is-flippable .event-card__back { transform: none; visibility: hidden; }
+  .is-flippable .event-card.is-flipped .event-card__back { visibility: visible; }
+  .is-flippable .event-card.is-flipped .event-card__front { visibility: hidden; }
+}
+@media print {
+  .is-flippable .event-card__inner { transform: none !important; }
+  .is-flippable .event-card__face { grid-area: auto; backface-visibility: visible; }
+  .is-flippable .event-card__back { transform: none; }
+  .event-card__flip { display: none !important; }
+}
+
+/* ══ Sources, folded, November 2026 ════════════════════════════════════════ */
+.sources-list { border-top: 1px solid var(--rule); }
+.sources-list__toggle {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-4) 0 var(--sp-2);
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+.sources-list__toggle::-webkit-details-marker { display: none; }
+.sources-list__toggle:focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
+.sources-list__count {
+  font-size: 0.6875rem;
+  letter-spacing: 0;
+  background: var(--bg-light);
+  color: var(--muted);
+  padding: 0 8px;
+  border-radius: 20px;
+}
+.sources-list__chevron { width: 18px; height: 18px; color: var(--muted); transition: transform var(--ease); }
+.sources-list[open] .sources-list__chevron { transform: rotate(180deg); }
+.sources-list__items {
+  list-style: decimal;
+  padding-left: 1.6em;
+  columns: 2 280px;
+  column-gap: var(--sp-8);
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--muted);
+}
+.sources-list__items li { break-inside: avoid; padding-block: 5px; }
+.sources-list__items a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; }
+.sources-list__items a:hover { color: var(--link-hover); }
+.sources-list__host {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.editorial-note { margin-bottom: var(--sp-4); }
+@media print { .sources-list:not([open]) .sources-list__items { display: block; } }
+
+/* ══ Weather icons in colour, November 2026 ════════════════════════════════
+   The colours are in the SVG itself (.eleventy.js); a little larger so they
+   read as pictures, not glyphs. */
+.weather-day__icon svg { width: 30px; height: 30px; }
+/* The map stays in view while the reader runs down the list, so the dot an
+   edition lights up is always on screen. */
+.cluster-map-wrap { margin-top: 0; }
+@media (min-width: 1025px) {
+  .cluster-map-wrap__map { position: sticky; top: calc(var(--nav-h) + var(--sp-4)); }
+}
