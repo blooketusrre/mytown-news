@@ -1226,6 +1226,38 @@ function buildEmailHtml(issue, cluster) {
   // the edition definition, never from the generated issue.
   const hoods    = (cluster.neighborhoods || []).join(" · ");
   const photo    = EDITION_PHOTOS[cluster.slug] || null;
+
+  // The week's weather, between the stories and the events: the forecast
+  // is what makes an outdoor event on Saturday worth the trip (November
+  // 2026). Seven columns, one per day, with the site's colour icons as PNGs
+  // — Gmail and Outlook do not draw inline SVG. Skipped when the forecast
+  // could not be fetched, as on the site.
+  const wx = issue.weather && Array.isArray(issue.weather.days) ? issue.weather.days.slice(0, 7) : [];
+  const wxDay = (iso) => {
+    const d = new Date(`${String(iso).slice(0, 10)}T12:00:00Z`);
+    return Number.isNaN(d.getTime()) ? "" : d.toLocaleDateString("en-US", { weekday: "short", timeZone: "UTC" });
+  };
+  const wxIcon = (c) => (["sunny", "partly", "cloudy", "fog", "rain", "storm"].includes(c) ? c : "cloudy");
+  const wxWidth = wx.length ? Math.floor(100 / wx.length) : 0;
+  const weatherHtml = !wx.length ? "" : `
+  <!-- Weather -->
+  <tr><td style="background:#ffffff;padding:8px 40px 28px;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr><td style="padding:0 0 4px 0;border-bottom:2px solid #1a2744;">
+        <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a2744;">The Week Ahead</p>
+      </td></tr>
+      <tr><td style="padding:14px 0 0 0;">
+        <table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr>
+          ${wx.map((d) => `<td width="${wxWidth}%" align="center" valign="top" style="padding:0 2px;font-family:Arial,sans-serif;">
+            <p style="margin:0 0 4px 0;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#6b6560;">${esc(wxDay(d.date))}</p>
+            <img src="${SITE_URL}/assets/img/weather/${wxIcon(d.condition)}.png" width="32" height="32" alt="${esc(d.summary || d.condition || "")}" style="display:block;margin:0 auto;border:0;">
+            <p style="margin:4px 0 0 0;font-size:14px;font-weight:700;color:#1a2744;">${d.high != null ? esc(String(d.high)) + "°" : "–"}<span style="font-size:11px;font-weight:400;color:#6b6560;">${d.low != null ? " " + esc(String(d.low)) + "°" : ""}</span></p>
+          </td>`).join("")}
+        </tr></table>
+      </td></tr>
+      ${issue.weather.issuedOn ? `<tr><td style="padding:10px 0 0 0;font-family:Arial,sans-serif;font-size:10px;color:#6b6560;">Forecast issued ${esc(formatWeek(issue.weather.issuedOn) || issue.weather.issuedOn)} · ${esc(issue.weather.source || "National Weather Service")}</td></tr>` : ""}
+    </table>
+  </td></tr>`;
   const banner   = photo ? `${SITE_URL}/assets/img/email-banners/${cluster.slug}.jpg` : "";
   // The edition's own city, not a San Francisco default: the eyebrow said
   // "San Francisco" on the Utah, Virginia, Ohio and Texas newsletters.
@@ -1435,6 +1467,8 @@ function buildEmailHtml(issue, cluster) {
       ${storiesHtml}
     </table>
   </td></tr>
+
+  ${weatherHtml}
 
   ${eventsHtml ? `
   <!-- Events -->
