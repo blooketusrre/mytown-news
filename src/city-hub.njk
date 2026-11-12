@@ -4,19 +4,21 @@
    it directly at /<town>/ instead.
    Configuration lives in city-hub.11tydata.js. #}
 
-<header class="masthead home-hero" role="banner" style="padding-bottom:var(--sp-8)">
-  <div class="container">
-    <p class="home-hero__eyebrow">{{ city.name }}, {{ city.stateName }} · Free &amp; Independent · Every Friday</p>
-    <h1 class="home-hero__title">My Town <em>News<sup class="tm" aria-label="trademark">™</sup></em><br>{{ city.name }}</h1>
+{# Left-aligned like the homepage and edition banners (November 2026):
+   "My Town News" a step smaller, the city name large beneath it. #}
+<header class="masthead masthead--edition masthead--city" role="banner">
+  <div class="masthead__inner container">
+    <p class="masthead__eyebrow">{{ city.name }}, {{ city.stateName }} · Free &amp; Independent · Every Friday</p>
+    <h1 class="masthead__title masthead__title--stack"><span class="masthead__brand">My Town <em>News<sup class="tm" aria-label="trademark">™</sup></em></span> <span class="masthead__place">{{ city.name }}</span></h1>
     <div class="masthead__ornament" aria-hidden="true">
       <span class="masthead__ornament-rule"></span>
       <span class="masthead__ornament-diamond"></span>
       <span class="masthead__ornament-rule"></span>
     </div>
-    <p class="home-hero__desc" style="max-width:560px">{{ city.tagline }}</p>
+    <p class="masthead__desc">{{ city.tagline }}</p>
   </div>
-  <div class="gold-rule"></div>
 </header>
+<div class="gold-rule"></div>
 
 {# ── Sticky nav ────────────────────────────────────────────────────────────
    This page had no navigation at all — no brand mark, no link back to the
@@ -41,15 +43,6 @@
   <div class="container">
 
     <section id="editions" aria-labelledby="editions-heading">
-      <h2 class="section-head" id="editions-heading">
-        <span class="section-head__text">Choose your edition</span>
-      </h2>
-
-      {# Above the map, matching the homepage. It used to sit in one line of
-         small print below everything, which is a strange place for the
-         fastest way to the answer. #}
-      {% include "partials/zip-lookup.njk" %}
-
       <div class="cluster-map-wrap">
         {# ── Real Leaflet Map (OpenStreetMap) ────────────────────────── #}
         <div class="cluster-map-wrap__map">
@@ -67,7 +60,7 @@
              Serving it ourselves removes the failure mode rather than
              handling it. #}
           <link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css">
-          <div id="city-map" style="height:480px;border-radius:6px;border:1px solid var(--rule);overflow:hidden;" aria-label="{{ city.name }} map"></div>
+          <div id="city-map" style="height:min(620px, 78vh);border-radius:6px;border:1px solid var(--rule);overflow:hidden;" aria-label="{{ city.name }} map"></div>
           <script src="/assets/vendor/leaflet/leaflet.js"></script>
           <script>
           (function() {
@@ -130,6 +123,28 @@
               {%- endfor %}
             ];
 
+            var markers = {};
+            function listItem(slug) {
+              return document.querySelector('.cluster-list__item[data-cluster="' + slug + '"]');
+            }
+            function highlight(slug, on) {
+              var m = markers[slug];
+              if (m) {
+                m.setStyle(on ? { radius: m._base + 5, weight: 4, color: '#1a2744' }
+                              : { radius: m._base, weight: 2, color: '#fff' });
+                if (on) m.bringToFront();
+              }
+              var li = listItem(slug);
+              if (li) li.classList.toggle('is-active', on);
+            }
+            document.querySelectorAll('.cluster-list__item').forEach(function (li) {
+              var slug = li.getAttribute('data-cluster');
+              li.addEventListener('mouseenter', function () { highlight(slug, true); });
+              li.addEventListener('mouseleave', function () { highlight(slug, false); });
+              li.addEventListener('focus',      function () { highlight(slug, true); });
+              li.addEventListener('blur',       function () { highlight(slug, false); });
+            });
+
             clusters.forEach(function(c) {
               var radius = c.live ? 16 : 11;
               var marker = L.circleMarker([c.lat, c.lng], {
@@ -140,6 +155,10 @@
                 opacity: 1,
                 fillOpacity: c.live ? 0.92 : 0.55
               }).addTo(map);
+              marker._base = radius;
+              markers[c.slug] = marker;
+              marker.on('mouseover', function () { highlight(c.slug, true); });
+              marker.on('mouseout',  function () { highlight(c.slug, false); });
 
               var label = '<strong>' + c.name + '</strong><br><span style="font-size:0.8em;color:#666">' + c.hoods + '</span>';
               if (!c.live) label += '<br><em style="font-size:0.75em;color:#999">Coming soon</em>';
@@ -218,7 +237,11 @@
           </script>
         </div>
 
+        {# The list on the right, the map on the left; the ZIP lookup, smaller,
+           under the list (November 2026). Hovering or focusing an edition
+           here lights its dot on the map, and the reverse. #}
         <div class="cluster-map-wrap__list">
+      <h2 class="cluster-list__heading" id="editions-heading">Choose your edition</h2>
       <nav class="cluster-list" aria-label="{{ city.name }} editions">
         {% for c in cityEditions %}
         <a class="cluster-list__item" href="{{ c | editionPath(clusters) }}"
@@ -233,12 +256,14 @@
         </a>
         {% endfor %}
       </nav>
+      {% set zipVariant = "compact" %}
+      {% include "partials/zip-lookup.njk" %}
         </div>
       </div>
 
       <p style="margin-top:var(--sp-6);font-family:var(--font-ui);font-size:var(--text-sm);color:var(--muted)">
-        <a href="/subscribe/?city={{ city.slug }}" style="color:var(--navy);font-weight:700">Subscribe to several at once</a>
-        or <a href="/" style="color:var(--navy);font-weight:700">see every town we cover</a>.
+        <a class="text-link" href="/subscribe/?city={{ city.slug }}">Subscribe to several at once</a>
+        or <a class="text-link" href="/">see every town we cover</a>.
       </p>
     </section>
 

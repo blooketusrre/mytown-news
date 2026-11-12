@@ -30,8 +30,9 @@
    already says what the box is for — so its own label is visually hidden.
    City hubs pass nothing and keep the compact version. #}
 {% set zipHero = (zipVariant == "hero") %}
-<div class="zip-lookup zip-lookup--national{% if zipHero %} zip-lookup--hero{% endif %}">
-      <label class="zip-lookup__label{% if zipHero %} visually-hidden{% endif %}" for="zip-input">Find your edition by ZIP code</label>
+{% set zipCompact = (zipVariant == "compact") %}
+<div class="zip-lookup zip-lookup--national{% if zipHero %} zip-lookup--hero{% endif %}{% if zipCompact %} zip-lookup--compact{% endif %}">
+      <label class="zip-lookup__label{% if zipHero %} visually-hidden{% endif %}" for="zip-input">{{ 'Find by ZIP code' if zipCompact else 'Find your edition by ZIP code' }}</label>
       <div class="zip-lookup__row">
         {% if zipHero %}<span class="zip-lookup__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>{% endif %}
         <input class="zip-lookup__input" id="zip-input" type="text"

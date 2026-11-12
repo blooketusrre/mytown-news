@@ -156,8 +156,10 @@ pageDesc: "Independent local news, built around the events, people and places th
         <svg class="home-cta__icon" viewBox="0 0 256 256" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"><circle cx="128" cy="78" r="26"/><circle cx="58" cy="106" r="21"/><circle cx="198" cy="106" r="21"/><path d="M84 206v-26a44 44 0 0 1 88 0v26"/><path d="M22 206v-18a36 36 0 0 1 58-28"/><path d="M234 206v-18a36 36 0 0 0-58-28"/></g></svg>
         <h2 class="home-cta__title" id="cta-heading">Bring My Town News to your town</h2>
         <p class="home-cta__text">Interested in a local edition? We&rsquo;re always looking for new communities, local journalists and partners.</p>
-        {# An email for now; a form later. #}
-        <a class="home-cta__link" href="mailto:{{ site.email }}?subject=Bring%20My%20Town%20News%20to%20my%20town">Let&rsquo;s talk <span aria-hidden="true">&rarr;</span></a>
+        {# The contact section, not a mailto: link. On a computer with no mail
+           app set up, a mailto: does nothing at all and the link looks dead
+           (November 2026). The contact section has the address to copy. #}
+        <a class="home-cta__link" href="/about/#contact">Let&rsquo;s talk <span aria-hidden="true">&rarr;</span></a>
       </aside>
     </div>
   </section>
