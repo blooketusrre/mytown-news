@@ -116,6 +116,30 @@ for (const c of clusters.filter((x) => x.live)) {
   assert.ok(/My Town <span style="color:[^"]+">News<sup[^>]*>&trade;<\/sup><\/span>/.test(html),
     `${c.slug}: the ™ is not inside "News" — it would take the white of "My Town"`);
 }
+/* ── 3. The weather strip: between the stories and the events ────────── */
+{
+  const { WEATHER_ICONS } = require("../lib/weather-icons");
+  for (const k of Object.keys(WEATHER_ICONS))
+    assert.ok(fs.existsSync(path.join(ROOT, "src/assets/img/weather", `${k}.png`)),
+      `no email icon for "${k}" — run node scripts/build-weather-icons.js`);
+  let seen = 0;
+  for (const c of clusters.filter((x) => x.live)) {
+    const dir = path.join(ROOT, "src/content", c.slug);
+    if (!fs.existsSync(dir)) continue;
+    const latest = fs.readdirSync(dir).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().pop();
+    if (!latest) continue;
+    const issue = JSON.parse(fs.readFileSync(path.join(dir, latest), "utf8"));
+    if (!issue.weather || !(issue.weather.days || []).length) continue;
+    const html = buildEmailHtml(issue, c);
+    const w = html.indexOf("The Week Ahead"), st = html.indexOf("This Week's Top Stories"), ev = html.indexOf("Upcoming Events");
+    assert.ok(w > st, `${c.slug}: the email's weather strip is missing or above the stories`);
+    if (ev !== -1) assert.ok(w < ev, `${c.slug}: the email's weather strip must come before the events`);
+    assert.ok(!/<svg/i.test(html), `${c.slug}: inline SVG in the email — Gmail and Outlook will not draw it`);
+    seen++;
+  }
+  assert.ok(seen > 0, "no edition with a forecast was checked");
+  console.log(`  ✓ ${seen} emails show the week's weather between the stories and the events`);
+}
 assert.ok(checked > 100, `only ${checked} links checked — the test is not seeing the emails`);
 console.log(`  ✓ ${checked} links across every live edition keep their colors under Buttondown's stylesheet`);
-console.log("Email links: 2 tests passed");
+console.log("Email links: 3 tests passed");
