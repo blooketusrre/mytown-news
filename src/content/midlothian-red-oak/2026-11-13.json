@@ -1,0 +1,939 @@
+{
+  "clusterSlug": "midlothian-red-oak",
+  "clusterName": "Midlothian & Red Oak",
+  "weekOf": "2026-11-13",
+  "topStories": [
+    {
+      "headline": "Hawks Face Harker Heights Tonight in First 6A Bi-District Playoff Game",
+      "dek": "The Red Oak Hawks (6-4) make their 6A playoff debut this evening against Killeen Harker Heights at Leo Buckley Stadium.",
+      "body": "Red Oak High School's football team tips off its first-ever Class 6A Division II bi-district playoff appearance tonight, Friday, November 13, when the Hawks (6-4) travel to Killeen to face Harker Heights (7-3) at Leo Buckley Stadium, with kickoff set for 7 p.m.\n\nThe matchup caps a historic regular season for a Red Oak program navigating its first year at the 6A level. The Hawks finished the regular season fourth in their district after dropping their final tune-up game, 62-3, at North Crowley on November 5. Despite the lopsided loss, the team qualified for the postseason bracket released by UIL on November 8.\n\nScouting reports published ahead of the game flag Harker Heights' run game as a potential factor, with the Knights entering as the higher seed. The winner advances to the area round, scheduled for November 19-21, and would face a playoff survivor from the Longview-Rowlett bracket.\n\nTickets are available through GoFan. Fans who cannot travel to Killeen are encouraged to follow live updates through MaxPreps and the Red Oak ISD athletics page.",
+      "sourceUrl": "https://www.maxpreps.com/tx/red-oak/red-oak-hawks/football/",
+      "sourceName": "MaxPreps",
+      "tags": [
+        "football",
+        "playoffs",
+        "Red Oak ISD",
+        "Red Oak"
+      ]
+    },
+    {
+      "headline": "FBI Raids Midlothian Oil and Gas Firm Facing Fraud Allegations",
+      "dek": "Federal agents descended on three homes and a business in Midlothian on November 6 as part of a multi-agency investigation into West Texas Crude Energy, LLC.",
+      "body": "On the morning of November 6, FBI agents and other law enforcement officials executed simultaneous search warrants at three residences and a business in Midlothian, all connected to an oil and gas development company called West Texas Crude Energy, LLC, located on 9th Street. The FBI confirmed its involvement in the raids, which were part of a broader investigation. Midlothian police issued a statement saying there was no active threat to the public.\n\nThe company has faced multiple civil fraud lawsuits. Texas Railroad Commission records cited in one of those suits reportedly show no active production for any well on which West Texas Crude Energy is listed as the operator — a detail that has fueled allegations that investors may have been misled about the firm's actual operations.\n\nAs of this writing, no criminal charges have been publicly filed, and the investigation is ongoing. The FBI has not disclosed the full scope of what agents were seeking. My Town News will continue to follow the case as federal investigators and prosecutors make further information available.",
+      "sourceUrl": "https://www.fox4news.com/news/midlothian-raid-targets-four-locations-multi-agency-investigation",
+      "sourceName": "FOX 4 News",
+      "tags": [
+        "FBI",
+        "crime",
+        "Midlothian",
+        "Ellis County"
+      ]
+    },
+    {
+      "headline": "Red Oak Data Center Lawsuit Remains Active as State Permit Freeze Continues",
+      "dek": "A lawsuit challenging the city's approval of an 830-acre Compass Datacenters rezoning is still pending in Ellis County court, with no ruling reported as of early November.",
+      "body": "Two Red Oak property owners — Elda Jazmin Villegas and Kathleen Estelle Heifrin — filed suit on September 1 in the 40th Judicial District Court in Ellis County, naming the City of Red Oak, Mayor Mark L. Stanfill, and five council members as defendants. The plaintiffs, who own property within 200 feet of the disputed land, allege that the ordinance rezoning roughly 830 acres of agricultural land for Compass DataCenters' planned campus was not lawfully adopted. The case was still pending with no ruling reported as of early November 2026.\n\nThe rezoning itself cleared the Red Oak City Council by a 4-1 vote in May 2026, over strong opposition from residents who packed City Hall for a meeting that stretched past midnight. Critics cited noise, traffic, water demand, and the effect on the community's residential character. City officials argued the project — one of seven data center sites now operating or planned within Red Oak's 16 square miles — could generate a projected $13 billion in investment and significantly expand the tax base without raising residential taxes.\n\nAt the state level, Governor Greg Abbott in September directed the Texas Commission on Environmental Quality to stop issuing permits sought by data centers pending an ERCOT audit of every facility in its interconnection queue. That freeze adds an additional layer of uncertainty for the Compass campus, though the governor's order does not directly resolve the local legal dispute. Residents' groups have separately petitioned for a statewide moratorium on new construction. The Ellis County court case remains the most direct avenue for neighbors seeking to block the project.",
+      "sourceUrl": "https://www.modemguides.com/blogs/ai-news/red-oak-texas-data-center-lawsuit",
+      "sourceName": "ModemGuides / Dallas Morning News",
+      "tags": [
+        "data centers",
+        "zoning",
+        "Red Oak",
+        "Ellis County",
+        "Compass DataCenters"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Red Oak Hawks 6A Bi-District Playoff vs. Harker Heights",
+      "startDate": "2026-11-13",
+      "date": "Friday, November 13",
+      "time": "7:00 PM",
+      "location": "Leo Buckley Stadium, Killeen, TX",
+      "description": "Red Oak High School's varsity football team plays Killeen Harker Heights in the Class 6A Division II bi-district round of the UIL state playoffs. Tickets available through GoFan.",
+      "sourceUrl": "https://www.maxpreps.com/tx/red-oak/red-oak-hawks/football/",
+      "sourceName": "MaxPreps"
+    },
+    {
+      "title": "Red Oak City Council & Planning and Zoning Commission Meeting",
+      "startDate": "2026-11-17",
+      "date": "Tuesday, November 17",
+      "time": "Various times",
+      "location": "Red Oak City Hall, Red Oak, TX",
+      "description": "The Red Oak Planning and Zoning Commission and City Council hold their regular November session. Check the city website for agenda details and start times.",
+      "sourceUrl": "https://www.redoaktx.org/",
+      "sourceName": "City of Red Oak"
+    },
+    {
+      "title": "Red Oak Red Oak Area Chamber November Luncheon",
+      "startDate": "2026-11-18",
+      "date": "Tuesday, November 18",
+      "time": "",
+      "location": "Red Oak, TX",
+      "description": "The Red Oak Area Chamber of Commerce hosts its November monthly luncheon featuring speaker Clint Woodward. Details and registration available through the chamber.",
+      "sourceUrl": "http://redoakchamber.chambermaster.com/events/calendar",
+      "sourceName": "Red Oak Area Chamber of Commerce"
+    },
+    {
+      "title": "Midlothian Christmas Tree-Lighter Contest Deadline",
+      "startDate": "2026-11-23",
+      "date": "Monday, November 23",
+      "time": "",
+      "location": "Midlothian, TX",
+      "description": "Entries for Midlothian Parks & Recreation's Christmas Tree-Lighter Contest must be submitted by November 23 to be considered for the December 1 Tree Lighting Ceremony.",
+      "sourceUrl": "https://www.midlothian.tx.us/628/Special-Events",
+      "sourceName": "City of Midlothian Parks & Recreation"
+    },
+    {
+      "title": "Red Oak ISD School Board Meeting",
+      "startDate": "2026-11-16",
+      "date": "Monday, November 16",
+      "time": "6:00 PM",
+      "location": "Red Oak ISD Education Service Center, 109 W. Red Oak Rd., Red Oak, TX",
+      "description": "The Red Oak ISD Board of Trustees holds its regular monthly meeting. Agendas are posted on the district website ahead of the meeting.",
+      "sourceUrl": "https://www.redoakisd.org/district-calendars",
+      "sourceName": "Red Oak ISD"
+    },
+    {
+      "title": "Midlothian Christmas Tree Lighting Ceremony",
+      "startDate": "2026-12-01",
+      "date": "Tuesday, December 1",
+      "time": "6:00 PM",
+      "location": "Downtown Midlothian",
+      "description": "The city kicks off the holiday season with its annual Christmas Tree Lighting Ceremony in downtown Midlothian, followed later in the month by the Christmas Glow Light-Up Parade on December 5.",
+      "sourceUrl": "https://www.midlothian.tx.us/628/Special-Events",
+      "sourceName": "City of Midlothian Parks & Recreation"
+    },
+    {
+      "title": "Christmas in Red Oak",
+      "startDate": "2026-12-05",
+      "date": "Saturday, December 5",
+      "time": "10:00 AM",
+      "location": "Watkins Park, Red Oak, TX",
+      "description": "Red Oak's annual holiday celebration runs from 10 a.m. to 1 p.m. and features a community parade, photos with Santa, holiday crafts, s'mores, hot chocolate, and inflatables for all ages.",
+      "sourceUrl": "https://www.redoaktx.org/422/Christmas-in-Red-Oak",
+      "sourceName": "City of Red Oak"
+    },
+    {
+      "title": "Midlothian Christmas Glow Light-Up Parade",
+      "startDate": "2026-12-05",
+      "date": "Saturday, December 5",
+      "time": "6:00 PM",
+      "location": "Downtown Midlothian",
+      "description": "Midlothian's annual holiday parade lights up downtown streets at 6 p.m. Groups and organizations can register parade entries through the city's special events page by November 23.",
+      "sourceUrl": "https://www.midlothian.tx.us/628/Special-Events",
+      "sourceName": "City of Midlothian Parks & Recreation"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "MISD's Ninth Elementary School Design Moving Forward in Goodland",
+      "body": "Midlothian ISD's Bond 2025 program continued to advance this month, with the Midlothian Mirror reporting on November 4 that behind-the-scenes design work on Elementary School No. 9 — to be built in the Goodland area of the district — is progressing. Trustees received a project update at the October 19 school board meeting. The school was the cornerstone of Proposition A in the November 2025 bond election, which voters approved. An oversight committee formed in April 2026 is tracking all Bond 2025 projects, including the new elementary, a future Career and Technical Education center, and renovations at Midlothian High School and Frank Seale Middle School.",
+      "sourceUrl": "https://www.midlothianmirror.com/category/newsletter-early-week/",
+      "sourceName": "Midlothian Mirror",
+      "tags": [
+        "MISD",
+        "schools",
+        "Bond 2025",
+        "Midlothian"
+      ]
+    },
+    {
+      "headline": "Red Oak ISD Named a CTE District of Distinction by State Association",
+      "body": "Red Oak ISD announced it has been selected as a Career and Technical Education (CTE) District of Distinction by the Career and Technical Association of Texas (CTAT). The recognition, posted on the district's website, celebrates districts that demonstrate exemplary leadership and innovation in CTE programs. No date for the official award presentation was listed on the district's news page.",
+      "sourceUrl": "https://www.redoakisd.org/district-85/district-news",
+      "sourceName": "Red Oak ISD",
+      "tags": [
+        "Red Oak ISD",
+        "education",
+        "CTE"
+      ]
+    },
+    {
+      "headline": "TxDOT Lane and Ramp Closures on I-35E at Ovilla Road Through Mid-November",
+      "body": "The Texas Department of Transportation has scheduled overnight and daytime construction closures along southbound I-35E near Ovilla and Red Oak through at least November 15. Affected areas include the southbound Ovilla Road off-ramp (closed nightly 9 p.m.–9 a.m., November 13–15), southbound I-35E main lanes from the Ovilla off-ramp to Plaza Drive (9 p.m.–5 a.m.), and southbound lanes between Norton Road and Plaza Drive during daytime hours through November 9–December 14. Traffic is being diverted to frontage roads. Drivers are advised to allow extra travel time or use alternate routes.",
+      "sourceUrl": "https://nextdoor.com/city/red-oak--tx/",
+      "sourceName": "Nextdoor / City of Red Oak",
+      "tags": [
+        "traffic",
+        "TxDOT",
+        "Red Oak",
+        "Ovilla",
+        "I-35E"
+      ]
+    },
+    {
+      "headline": "Red Oak Ribbon Cutting Set for The Till Academy on November 13",
+      "body": "The Red Oak Area Chamber of Commerce has a ribbon cutting scheduled for The Till Academy on Friday, November 13, according to the chamber's November events calendar. No address or further details were listed on the calendar page. Contact the Red Oak Area Chamber for more information.",
+      "sourceUrl": "http://redoakchamber.chambermaster.com/events/calendar",
+      "sourceName": "Red Oak Area Chamber of Commerce",
+      "tags": [
+        "business",
+        "Red Oak",
+        "ribbon cutting"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "FBI raids Midlothian oil and gas business facing multiple fraud lawsuits",
+      "url": "https://www.fox4news.com/news/midlothian-raid-targets-four-locations-multi-agency-investigation",
+      "publication": "FOX 4 News"
+    },
+    {
+      "title": "Red Oak Texas Residents Sue Over an 830-Acre Compass Data Center Rezoning",
+      "url": "https://www.modemguides.com/blogs/ai-news/red-oak-texas-data-center-lawsuit",
+      "publication": "ModemGuides"
+    },
+    {
+      "title": "Red Oak residents sue city, officials in effort to stop data center development",
+      "url": "https://www.dallasnews.com/news/courts/article/red-oak-data-center-lawsuit-22415755.php",
+      "publication": "Dallas Morning News"
+    },
+    {
+      "title": "Red Oak Data Center Dispute Moves To Ellis County Court",
+      "url": "https://glennheightsfuture.com/red-oak-data-center-lawsuit/",
+      "publication": "Glenn Heights Future"
+    },
+    {
+      "title": "Red Oak High School Football – 2026 Season",
+      "url": "https://www.maxpreps.com/tx/red-oak/red-oak-hawks/football/",
+      "publication": "MaxPreps"
+    },
+    {
+      "title": "2026 statewide Texas high school football playoff pairings",
+      "url": "https://sports.yahoo.com/articles/2026-statewide-texas-high-school-052726525.html",
+      "publication": "Yahoo Sports / Dallas Morning News"
+    },
+    {
+      "title": "MISD Newsletter Early Week – Elementary No. 9 Design",
+      "url": "https://www.midlothianmirror.com/category/newsletter-early-week/",
+      "publication": "Midlothian Mirror"
+    },
+    {
+      "title": "Bond 2025 Election – Midlothian ISD",
+      "url": "https://www.midlothianisd.org/about/bond2025",
+      "publication": "Midlothian ISD"
+    },
+    {
+      "title": "ROISD Recognized as a CTE District of Distinction",
+      "url": "https://www.redoakisd.org/district-85/district-news",
+      "publication": "Red Oak ISD"
+    },
+    {
+      "title": "Red Oak ISD District Calendar",
+      "url": "https://www.redoakisd.org/district-calendars",
+      "publication": "Red Oak ISD"
+    },
+    {
+      "title": "City of Red Oak – November 2026 Events",
+      "url": "https://www.redoaktx.org/",
+      "publication": "City of Red Oak"
+    },
+    {
+      "title": "Red Oak Public Library Events Calendar",
+      "url": "https://www.redoaktx.org/calendar.aspx?CID=24",
+      "publication": "City of Red Oak"
+    },
+    {
+      "title": "Christmas in Red Oak",
+      "url": "https://www.redoaktx.org/422/Christmas-in-Red-Oak",
+      "publication": "City of Red Oak"
+    },
+    {
+      "title": "Red Oak Area Chamber of Commerce – November Events Calendar",
+      "url": "http://redoakchamber.chambermaster.com/events/calendar",
+      "publication": "Red Oak Area Chamber of Commerce"
+    },
+    {
+      "title": "City of Midlothian – Special Events",
+      "url": "https://www.midlothian.tx.us/628/Special-Events",
+      "publication": "City of Midlothian"
+    },
+    {
+      "title": "City of Midlothian – Official Website",
+      "url": "https://www.midlothian.tx.us/",
+      "publication": "City of Midlothian"
+    },
+    {
+      "title": "TxDOT lane closures near Ovilla Road / Red Oak",
+      "url": "https://nextdoor.com/city/red-oak--tx/",
+      "publication": "Nextdoor / City of Red Oak"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "The Porch Pour",
+        "cuisineGroup": "Seafood & American",
+        "type": "Farm-to-table restaurant & bar",
+        "description": "Farm-to-table American fare, craft cocktails, Texas beers, and fine wine served in a restored 1893 Victorian house on Founders Row.",
+        "address": "319 E Avenue G, Midlothian, TX 76065",
+        "phone": "(469) 672-6528",
+        "website": "https://theporchpour.com",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Wilson's Seafood & Grill",
+        "cuisineGroup": "Seafood & American",
+        "type": "Cajun/Creole seafood restaurant",
+        "description": "Cajun-influenced fresh seafood and Southern sides served inside a beautifully restored historic church building on Founders Row.",
+        "address": "322 E Avenue F, Midlothian, TX 76065",
+        "phone": "(469) 672-6133",
+        "website": "https://wilsonsseafood.com",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Bearded Ax Brewery",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft brewery & gathering hall",
+        "description": "Family-owned craft brewery and full-service restaurant brewing beer on-site in the heart of downtown Midlothian, with a dog-friendly patio.",
+        "address": "301 W Main St, Ste 126, Midlothian, TX 76065",
+        "phone": "(972) 535-6960",
+        "website": "https://beardedaxbrewery.com",
+        "neighborhood": "Midlothian",
+        "notable": "New"
+      },
+      {
+        "name": "Twisted Sisters Tap House",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Craft beer bar & brick-oven pizza",
+        "description": "Family-owned tap house specializing in artisan brick-oven pizzas and 30-plus rotating American craft beers in downtown Midlothian.",
+        "address": "138 N 8th St, Midlothian, TX 76065",
+        "phone": "(469) 672-6124",
+        "website": "https://twistedsisterstap.com",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Penn To Paper",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Brunch & American bistro",
+        "description": "Popular brunch and all-day American bistro known for a covered patio with TVs and a standout beef brisket and bourbon selection.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Villa Italiana",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Family-owned Italian restaurant & pizzeria",
+        "description": "Long-standing family-owned Italian restaurant serving classic pasta, pizza, and Italian entrées in downtown Midlothian.",
+        "address": "202 W Main St, Midlothian, TX 76065",
+        "phone": "(972) 775-3892",
+        "website": "https://midlothianitalian.com",
+        "neighborhood": "Midlothian",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Mo and Hari's Neighborhood Bistro",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Neighborhood bistro",
+        "description": "Intimate neighborhood bistro off US-287 offering Italian-influenced American dishes and a rotating menu in a relaxed setting.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Ale's Kitchen",
+        "cuisineGroup": "Seafood & American",
+        "type": "American comfort food restaurant",
+        "description": "Contemporary comfort-food kitchen known for consistently well-executed homestyle American dishes and a welcoming atmosphere.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Mi Casa Mexican Cuisine",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Family-owned Mexican restaurant",
+        "description": "Family-owned Tex-Mex spot in downtown Midlothian serving authentic enchiladas, fajitas, and fresh guacamole at everyday prices.",
+        "address": "300 N 8th St, Ste 104, Midlothian, TX 76065",
+        "phone": "(214) 817-8072",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "It's Nacho Average Bar & Grill",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Bar & grill",
+        "description": "Casual bar and grill in Midlothian offering Tex-Mex plates, loaded nachos, and late-night service.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Eggsquisite Cafe",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Breakfast & brunch café",
+        "description": "A highly rated all-day breakfast and brunch café drawing fans from across the Midlothian area for creative egg-forward dishes.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "HideOut Burgers",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Burger joint",
+        "description": "Locally owned quick-service burger shop known for fresh-cut fries, house-made patties, and personable owners.",
+        "address": "100 N 8th St, Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Fire-Spice Chicken & Cocktails",
+        "cuisineGroup": "Seafood & American",
+        "type": "Chicken & cocktail bar",
+        "description": "Trendy chicken-forward restaurant and cocktail bar that has quickly become one of Midlothian's most-talked-about new spots.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": "New"
+      },
+      {
+        "name": "Blue Mint Thai & Asian Cuisine",
+        "cuisineGroup": "Asian",
+        "type": "Thai & Asian restaurant",
+        "description": "Thai and pan-Asian restaurant in Midlothian serving traditional curries, noodle dishes, and stir-fries.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Veracruz Cafe",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican café",
+        "description": "Casual Midlothian Mexican café known for fresh al pastor tacos, house salsas, and an approachable everyday menu.",
+        "address": "151 Walton Way, Ste 110, Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Presto Continuous Italian",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "New Italian restaurant in Red Oak earning early praise for a thoughtfully designed interior and owner-driven passion for the cuisine.",
+        "address": "Red Oak, TX 75154",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Red Oak",
+        "notable": "New"
+      },
+      {
+        "name": "Zucchs",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian comfort restaurant",
+        "description": "Red Oak favorite known for fried zucchini, fresh-baked bread, and a lively atmosphere with live music on weekends.",
+        "address": "Red Oak, TX 75154",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Red Oak",
+        "notable": ""
+      },
+      {
+        "name": "Te'Jun The Texas Cajun",
+        "cuisineGroup": "Seafood & American",
+        "type": "Cajun seafood restaurant",
+        "description": "Red Oak Cajun boil house serving shrimp, crawfish, crab, fried alligator, and a well-regarded chicken Po'Boy.",
+        "address": "Red Oak, TX 75154",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Red Oak",
+        "notable": ""
+      },
+      {
+        "name": "The Lonestar Burger Bar",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Burger bar",
+        "description": "Well-liked Red Oak burger bar with an extensive menu, beer and wine service, and a loyal neighborhood following.",
+        "address": "Red Oak, TX 75154",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Red Oak",
+        "notable": ""
+      },
+      {
+        "name": "Hugo's Mexican Grill and Cantina",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican grill & cantina",
+        "description": "Lively Red Oak cantina earning consistent praise for bold, flavorful Mexican food, attentive service, and a festive atmosphere.",
+        "address": "Red Oak, TX 75154",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Red Oak",
+        "notable": ""
+      },
+      {
+        "name": "Fujiya Ramen Sushi Bar",
+        "cuisineGroup": "Asian",
+        "type": "Ramen & sushi bar",
+        "description": "Japanese ramen and sushi bar in Red Oak with a small cocktail bar and a relaxed sit-down atmosphere.",
+        "address": "Red Oak, TX 75154",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Red Oak",
+        "notable": ""
+      },
+      {
+        "name": "Best Thing Flopping",
+        "cuisineGroup": "Seafood & American",
+        "type": "Southern fried catfish restaurant",
+        "description": "Red Oak institution celebrated for superbly seasoned, flaky fried catfish that draws diners from across Ellis County.",
+        "address": "Red Oak, TX 75154",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Red Oak",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Pho Nhu Y Vietnamese Kitchen",
+        "cuisineGroup": "Asian",
+        "type": "Vietnamese restaurant",
+        "description": "Highly rated Vietnamese kitchen in Red Oak known for exceptional pho, smoked bánh mì, and standout service.",
+        "address": "Red Oak, TX 75154",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Red Oak",
+        "notable": ""
+      },
+      {
+        "name": "Wicked Good Chicken",
+        "cuisineGroup": "Seafood & American",
+        "type": "Chicken restaurant",
+        "description": "Fast-growing Red Oak chicken spot gaining a buzz for bold seasoning and a menu that keeps regulars coming back.",
+        "address": "Red Oak, TX 75154",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Red Oak",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Courtyard by Marriott Dallas Midlothian at Midlothian Conference Center",
+        "type": "Full-service hotel",
+        "description": "Three-star Marriott property adjacent to the Midlothian Conference Center, offering 102 rooms, an outdoor pool, restaurant, full bar, and fitness center.",
+        "address": "3 Community Circle Dr, Midlothian, TX 76065",
+        "phone": "(469) 672-8760",
+        "website": "https://www.marriott.com/en-us/hotels/dalcd-courtyard-dallas-midlothian-at-midlothian-conference-center/overview/",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Americas Best Value Inn Midlothian Cedar Hill",
+        "type": "Budget motel",
+        "description": "Budget-friendly 40-room motel on US-67 offering free Wi-Fi, complimentary continental breakfast, outdoor pool, and fitness center.",
+        "address": "220 N Highway 67, Midlothian, TX 76065",
+        "phone": "(972) 775-1891",
+        "website": "https://www.sonesta.com/americas-best-value-inn/tx/midlothian/americas-best-value-inn-midlothian-cedar-hill",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "La Quinta Inn & Suites by Wyndham Red Oak TX IH-35E",
+        "type": "Mid-scale hotel",
+        "description": "Contemporary three-star highway hotel with 85 rooms, outdoor pool, hot tub, fitness center, and complimentary breakfast, built in 2020.",
+        "address": "508 N I-35E, Red Oak, TX 75154",
+        "phone": "(469) 820-9800",
+        "website": "https://www.wyndhamhotels.com/laquinta/red-oak-texas/la-quinta-inn-and-suites-red-oak-tx-ih-35e/overview",
+        "neighborhood": "Red Oak",
+        "notable": "New"
+      },
+      {
+        "name": "Comfort Inn & Suites Red Oak – Dallas Area",
+        "type": "Mid-scale hotel",
+        "description": "Newly renovated 97-room hotel off I-35E offering free hot breakfast, free Wi-Fi, outdoor pool, and fitness room.",
+        "address": "404 North I-35 East, Red Oak, TX 75154",
+        "phone": "(972) 617-7797",
+        "website": "https://www.choicehotels.com/texas/red-oak/comfort-inn-hotels/tx950",
+        "neighborhood": "Red Oak",
+        "notable": ""
+      },
+      {
+        "name": "Motel 6 Red Oak, TX – Dallas",
+        "type": "Economy motel",
+        "description": "Economy motel on I-35 South offering straightforward rooms with free Wi-Fi and 24-hour front desk service.",
+        "address": "202 S Interstate 35 Service Rd, Red Oak, TX 75154",
+        "phone": "",
+        "website": "https://www.motel6.com",
+        "neighborhood": "Red Oak",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Pistols & Pearls",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's boutique",
+        "description": "Midlothian women's boutique carrying clothing, accessories, and gifts with a Western-influenced aesthetic.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Gemini Moon Boutique",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's clothing boutique",
+        "description": "Independently owned boutique in Midlothian offering trendy women's clothing curated by a hands-on owner.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Games Unplugged",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Board game & hobby shop",
+        "description": "Well-organized Midlothian hobby shop stocking board games, tabletop games, and card games, with knowledgeable staff.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "The Outlet Thrift Store",
+        "shopGroup": "Home & Gifts",
+        "type": "Thrift store",
+        "description": "Highly regarded Midlothian thrift store stocking clothing, home décor, and collectibles at bargain prices.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Heaven's Attic",
+        "shopGroup": "Home & Gifts",
+        "type": "Upscale resale shop",
+        "description": "Midlothian upscale resale shop offering quality secondhand furniture, décor, and gifts where proceeds support a charitable mission.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "The Flower Shoppe By Jane",
+        "shopGroup": "Home & Gifts",
+        "type": "Florist & gift shop",
+        "description": "Local Midlothian florist carrying fresh arrangements alongside gift items and home décor.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Relic + Root",
+        "shopGroup": "Home & Gifts",
+        "type": "Antiques & home goods shop",
+        "description": "Midlothian shop blending antiques, vintage finds, and curated home goods in a browsable retail setting.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Tina's Southern Charm",
+        "shopGroup": "Home & Gifts",
+        "type": "Gift & décor boutique",
+        "description": "Ovilla-based Southern-themed gift and home décor boutique offering a curated selection of gifts and keepsakes.",
+        "address": "Ovilla, TX",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Ovilla",
+        "notable": ""
+      },
+      {
+        "name": "Ross Dress for Less",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Off-price department store",
+        "description": "National off-price retailer at Midlothian Towne Crossing offering discounted clothing, home goods, and accessories.",
+        "address": "2000 FM 663, Midlothian, TX 76065",
+        "phone": "(972) 775-5629",
+        "website": "https://www.rossstores.com",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Tom Thumb",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Full-service grocery store",
+        "description": "New 59,000-square-foot Tom Thumb supermarket at FM 1387 featuring a full deli, bakery, pharmacy with drive-thru, and an in-store Starbucks.",
+        "address": "FM 1387 & N Walnut Grove Rd, Midlothian, TX 76065",
+        "phone": "",
+        "website": "https://www.tomthumb.com",
+        "neighborhood": "Midlothian",
+        "notable": "New"
+      },
+      {
+        "name": "Walmart Supercenter",
+        "shopGroup": "Other",
+        "type": "Supercenter",
+        "description": "Full-service Walmart Supercenter on US-67 offering groceries, electronics, pharmacy, vision center, and garden center.",
+        "address": "400 N Highway 67, Midlothian, TX 76065",
+        "phone": "(972) 775-6755",
+        "website": "https://www.walmart.com/store/4279-midlothian-tx",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "B&B Theatres Red Oak 12",
+        "venueGroup": "Cinema",
+        "type": "Luxury cinema & entertainment complex",
+        "description": "Twelve-screen luxury entertainment complex opened 2024 featuring 4DX, ScreenX, Grand Screen, B-Roll Bowling, the Outtakes Arcade, and outdoor pickleball courts.",
+        "address": "615 N Interstate 35 E Rd, Red Oak, TX 75154",
+        "phone": "(469) 373-7473",
+        "website": "https://www.bbtheatres.com/our-theatres/g01w1-bandb-red-oak-12/",
+        "neighborhood": "Red Oak",
+        "notable": "New"
+      },
+      {
+        "name": "Midlothian Conference Center",
+        "venueGroup": "Theater & Comedy",
+        "type": "Conference & event center",
+        "description": "City-owned 39,000-square-foot event facility accommodating groups from a handful to over 1,000, hosting civic luncheons, corporate events, and community gatherings.",
+        "address": "1 Community Circle Dr, Midlothian, TX 76065",
+        "phone": "(972) 775-7125",
+        "website": "https://www.midlothiancenter.com",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "The Oasis Bar and Grill",
+        "venueGroup": "Music Venues",
+        "type": "Bar & live music venue",
+        "description": "Cozy Midlothian bar with pool tables, a small dance floor, and a rotating calendar of live music performances throughout the year.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Union 28 Taphouse",
+        "venueGroup": "Music Venues",
+        "type": "Bar & music venue",
+        "description": "Late-night taphouse and music venue on Highlander Avenue hosting live performances and offering American bar food.",
+        "address": "651 Highlander Ave, Midlothian, TX 76065",
+        "phone": "(972) 928-6466",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Red Oak Opry",
+        "venueGroup": "Music Venues",
+        "type": "Classic country & gospel music show",
+        "description": "Monthly classic country and gospel music show held the second Saturday of each month at Lone Star Cowboy Church, bringing Ellis County together since 2008.",
+        "address": "1011 E Ovilla Rd, Red Oak, TX 75154",
+        "phone": "",
+        "website": "https://www.redoakopry.com",
+        "neighborhood": "Red Oak",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Galaxy Drive-In Theatre",
+        "venueGroup": "Cinema",
+        "type": "Drive-in movie theater",
+        "description": "Beloved Ellis County drive-in theater in nearby Ennis offering double features under the stars, a childhood staple for area families.",
+        "address": "Ennis, TX 75119",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Red Oak",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Main Street Gym",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "State-of-the-art facility on E. Main Street offering personal training, unlimited fitness classes (spinning, yoga, kickboxing, Zumba), childcare, and massage therapy.",
+        "address": "1000 E Main St, Ste 205, Midlothian, TX 76065",
+        "phone": "(972) 544-4205",
+        "website": "",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Anytime Fitness",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "24-hour gym",
+        "description": "Twenty-four-hour access gym on FM 663 offering strength and cardio equipment, personalized fitness plans, and global network access.",
+        "address": "2410 FM 663, Ste 700, Midlothian, TX 76065",
+        "phone": "(945) 345-5855",
+        "website": "https://www.anytimefitness.com/locations/midlothian-texas-1293",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Crescent Yoga Studio & Eco-Boutique",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio & eco-boutique",
+        "description": "Downtown Midlothian yoga studio open since 2010 offering a full class schedule of hatha, vinyasa, and heated yoga, plus Reiki, FAR infrared sauna, and an eco-friendly boutique.",
+        "address": "306 W Avenue F, Midlothian, TX 76065",
+        "phone": "(972) 971-9286",
+        "website": "https://crescentyogastudio.com",
+        "neighborhood": "Midlothian",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Club Pilates Midlothian South",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Reformer Pilates studio",
+        "description": "Boutique reformer Pilates studio in south Midlothian offering fusion classes for all ages and fitness levels using state-of-the-art equipment.",
+        "address": "320 Harvest Hill Dr, Ste 240, Midlothian, TX 76065",
+        "phone": "(469) 672-6154",
+        "website": "https://www.clubpilates.com/midlothiansouth",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "F45 Training Midlothian",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Functional group fitness studio",
+        "description": "Coach-led 45-minute group fitness studio combining strength, cardio, and functional training in a structured daily-changing class format, opened 2025.",
+        "address": "550 Hawkins Run Rd, Ste 400, Midlothian, TX 76065",
+        "phone": "(817) 928-3140",
+        "website": "https://f45training.com/studio/midlothiantx/",
+        "neighborhood": "Midlothian",
+        "notable": "New"
+      },
+      {
+        "name": "CrossFit Midlothian",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "CrossFit gym",
+        "description": "Community-driven CrossFit affiliate on FM 663 known for experienced coaching and a tight-knit membership that doubles as family.",
+        "address": "3271 FM 663, Ste C, Midlothian, TX 76065",
+        "phone": "(469) 214-6682",
+        "website": "https://www.crossfitmidlothian.com",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "HOTWORX Midlothian",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Infrared fitness studio",
+        "description": "Twenty-four-hour infrared fitness studio offering virtually instructed hot yoga, Pilates, cycling, and HIIT workouts in private heated sessions.",
+        "address": "Midlothian, TX 76065",
+        "phone": "",
+        "website": "https://www.hotworx.net",
+        "neighborhood": "Midlothian",
+        "notable": ""
+      },
+      {
+        "name": "Anytime Fitness Red Oak",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "24-hour gym",
+        "description": "Twenty-four-hour gym in Red Oak praised for a consistently clean facility and a welcoming atmosphere for members.",
+        "address": "Red Oak, TX 75154",
+        "phone": "",
+        "website": "https://www.anytimefitness.com",
+        "neighborhood": "Red Oak",
+        "notable": ""
+      },
+      {
+        "name": "Red Oak Base/Softball Complex – Mutz Park",
+        "venueGroup": "Sports & Courts",
+        "type": "Multi-field sports complex",
+        "description": "Municipal baseball and softball complex in Red Oak hosting youth tournaments and recreational leagues throughout the year.",
+        "address": "Mutz Park, Red Oak, TX 75154",
+        "phone": "",
+        "website": "https://www.redoaktx.org",
+        "neighborhood": "Red Oak",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-11-13",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-11-13",
+        "high": 68,
+        "low": 46,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-14",
+        "high": 64,
+        "low": 45,
+        "summary": "Mostly Cloudy then Slight Chance Rain Showers",
+        "condition": "rain",
+        "precip": 19
+      },
+      {
+        "date": "2026-11-15",
+        "high": 51,
+        "low": 44,
+        "summary": "Showers And Thunderstorms",
+        "condition": "storm",
+        "precip": 98
+      },
+      {
+        "date": "2026-11-16",
+        "high": 55,
+        "low": 45,
+        "summary": "Chance Rain Showers",
+        "condition": "rain",
+        "precip": 11
+      },
+      {
+        "date": "2026-11-17",
+        "high": 61,
+        "low": 48,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-18",
+        "high": 65,
+        "low": 55,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 6
+      },
+      {
+        "date": "2026-11-19",
+        "high": 69,
+        "low": 57,
+        "summary": "Chance Showers And Thunderstorms then Slight Chance Showers And Thunderstorms",
+        "condition": "storm",
+        "precip": 27
+      }
+    ]
+  }
+}
