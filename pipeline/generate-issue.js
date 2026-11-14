@@ -1212,12 +1212,12 @@ function buildEmailHtml(issue, cluster) {
   // gold is too faint to read. Each edition's own colour is for maps only.
   const accent   = "#8f6420";                                // on white
   const onDark   = "#c8943a";                                // on navy
-  // Text links: the site's third colour (November 2026), red-orange, in
+  // Text links: the site's third colour (gold since 13 November 2026), in
   // the two shades that pass contrast on white and on navy. Underlined with
   // a border, not text-decoration: Buttondown forces every <a> to its own
   // blue, and a text-decoration underline takes the <a>'s colour.
-  const link       = "#c2410c";                              // on white
-  const linkOnDark = "#f47a4e";                              // on navy
+  const link       = "#9a6200";                              // on white
+  const linkOnDark = "#f2b51d";                              // on navy
   const ul   = `color:${link};text-decoration:none;border-bottom:1px solid ${link};`;
   const ulDk = `color:${linkOnDark};text-decoration:none;border-bottom:1px solid ${linkOnDark};`;
   // Named neighborhoods under the edition title, for the same reason the web
