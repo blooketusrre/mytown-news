@@ -102,13 +102,6 @@ const ANTHROPIC_KEY   = process.env.ANTHROPIC_API_KEY;
 const BUTTONDOWN_KEY  = process.env.BUTTONDOWN_API_KEY;
 const SITE_URL        = "https://mytown.news";
 
-// Edition photos and their credits, shared with the website's banners. The
-// newsletter uses a pre-composed version of each (photo faded into navy),
-// built by scripts/build-email-banners.py, because email clients cannot fade.
-const EDITION_PHOTOS = (() => {
-  try { return JSON.parse(fs.readFileSync(path.join(__dirname, "..", "src", "_data", "editionPhotos.json"), "utf8")); }
-  catch { return {}; }
-})();
 
 // ── When the newsletter lands ──────────────────────────────────────────────
 // The target is the arrival time, not the run time. Issues used to be created
@@ -1225,7 +1218,6 @@ function buildEmailHtml(issue, cluster) {
   // knows their own neighborhood but not which edition covers it. Taken from
   // the edition definition, never from the generated issue.
   const hoods    = (cluster.neighborhoods || []).join(" · ");
-  const photo    = EDITION_PHOTOS[cluster.slug] || null;
 
   // The week's weather, between the stories and the events: the forecast
   // is what makes an outdoor event on Saturday worth the trip (November
@@ -1258,16 +1250,6 @@ function buildEmailHtml(issue, cluster) {
       ${issue.weather.issuedOn ? `<tr><td style="padding:10px 0 0 0;font-family:Arial,sans-serif;font-size:10px;color:#6b6560;">Forecast issued ${esc(formatWeek(issue.weather.issuedOn) || issue.weather.issuedOn)} · ${esc(issue.weather.source || "National Weather Service")}</td></tr>` : ""}
     </table>
   </td></tr>`;
-  const banner   = photo ? `${SITE_URL}/assets/img/email-banners/${cluster.slug}.jpg` : "";
-  // The edition's own city, not a San Francisco default: the eyebrow said
-  // "San Francisco" on the Utah, Virginia, Ohio and Texas newsletters.
-  const placeLabel = (() => {
-    try {
-      const cities = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "src", "_data", "cities.json"), "utf8"));
-      const c = cities.find((x) => x.slug === cluster.citySlug);
-      return c ? c.name : (cluster.city || "");
-    } catch { return cluster.city || ""; }
-  })();
   // Fixed, and matching cluster-layout.njk exactly. The email and the web
   // page are rendered by two different pieces of code from the same issue, so
   // a heading that differs between them is a real possibility and reads as
@@ -1280,7 +1262,7 @@ function buildEmailHtml(issue, cluster) {
   // Tolerates both the old schema (tag/byline/date) and the current one
   // (tags[]/dek); anything absent is omitted rather than left as an
   // orphaned separator.
-  const storiesHtml = (issue.topStories || []).map(s => {
+  const storiesHtml = (issue.topStories || []).map((s, i) => {
     const kicker = (s.tags && s.tags.length ? s.tags[0] : s.tag) || "";
     const meta   = [s.byline, s.date].filter(Boolean).join(" · ");
     // Was `${s.sourceUrl || "#"}`: a model-supplied string dropped straight
@@ -1289,17 +1271,20 @@ function buildEmailHtml(issue, cluster) {
     // belt and braces — but it is the one place in the email where untrusted
     // text became a destination rather than a caption.
     const storyHref = safeUrl(s.sourceUrl);
-    return `
-    <tr><td style="padding:0 0 28px 0;border-bottom:1px solid #e8e3da;">
+    // Side by side in a wide window, one above another on a phone
+    // (13 November 2026): each story is an inline-block up to half the
+    // width, so two fit across a desktop email and they stack when there is
+    // no room. The lead story always takes the full width.
+    const lead = i === 0;
+    return `<div class="mtn-col" style="display:inline-block;vertical-align:top;width:100%;max-width:${lead ? "100%" : "438px"};font-size:16px;line-height:normal;text-align:left;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td style="padding:22px ${lead ? "0" : "20px"} 22px 0;border-bottom:1px solid #e8e3da;">
       ${kicker ? `<p style="margin:0 0 6px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:${accent};">${esc(kicker)}</p>` : ""}
-      <h2 style="margin:0 0 8px 0;font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:900;line-height:1.2;color:#1a2744;">${esc(s.headline)}</h2>
+      <h2 style="margin:0 0 8px 0;font-family:Georgia,'Times New Roman',serif;font-size:${lead ? 23 : 19}px;font-weight:900;line-height:1.2;color:#1a2744;">${esc(s.headline)}</h2>
       ${s.dek ? `<p style="margin:0 0 10px 0;font-family:Georgia,serif;font-size:15px;font-style:italic;line-height:1.5;color:#6b6560;">${esc(s.dek)}</p>` : ""}
       ${meta ? `<p style="margin:0 0 10px 0;font-family:Arial,sans-serif;font-size:11px;color:#6b6560;">${esc(meta)}</p>` : ""}
-      <p style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:15px;line-height:1.68;color:#1c1c1e;">${esc(emailExcerpt(s.body, 90))}</p>
+      <p style="margin:0 0 12px 0;font-family:Georgia,serif;font-size:15px;line-height:1.65;color:#1c1c1e;">${esc(emailExcerpt(s.body, lead ? 90 : 60))}</p>
       ${storyHref ? `<a href="${esc(storyHref)}" style="font-family:Arial,sans-serif;font-size:11px;font-weight:700;${ul}">Read the full story: ${esc(s.sourceName || "source")} →</a>` : ""}
-    </td></tr>
-    <tr><td style="height:24px;"></td></tr>
-  `;
+    </td></tr></table></div>`;
   }).join("");
 
   // Emoji rather than the SVG icons used on the web — inline SVG support is
@@ -1409,51 +1394,55 @@ function buildEmailHtml(issue, cluster) {
   }).join("");
 
   // Every link's color survives Buttondown's template: lib/pin-link-colors.js.
-  return pinLinkColors(`<!DOCTYPE html>
+  return padClasses(pinLinkColors(`<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${issue.clusterName} — My Town News</title>
+<style>
+  /* Phones: stories full width, and less side padding. */
+  @media only screen and (max-width: 640px) {
+    .mtn-col { max-width: 100% !important; }
+    .mtn-col td { padding-right: 0 !important; }
+    .mtn-pad { padding-left: 18px !important; padding-right: 18px !important; }
+  }
+</style>
 </head>
 <body style="margin:0;padding:0;background:#faf8f3;">
 <table width="100%" cellpadding="0" cellspacing="0" style="background:#faf8f3;">
-<tr><td align="center" style="padding:24px 16px;">
-<table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+<tr><td align="center" style="padding:16px 8px;">
+<!-- Up to 960px wide (was a fixed 600): in a wide window the stories sit two
+     across, which shortens the email; on a phone it is the phone's width. -->
+<!--[if mso]><table role="presentation" width="640" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+<table width="100%" cellpadding="0" cellspacing="0" style="max-width:960px;width:100%;">
 
   <!-- Masthead -->
   <!--
-    Matches the website's edition banner (November 2026): "My Town News" and
-    the edition name large and left-aligned, over the edition's photo fading
-    in from the right. The fade is baked into one image per edition
-    (scripts/build-email-banners.py), set as the cell's background, because
-    no email client can do the website's masks. Positioned 40% across:
-    at 600px the image fits the cell almost exactly, and on a phone, where
-    the cell is narrow, the text stays on navy with the photo just showing
-    at the right, rather than the title sitting over the photo. Everything on it is live
-    text, so with images blocked the masthead still reads, on plain navy;
-    Outlook for Windows ignores background images and shows exactly that.
-
-    Three ways to reach the full edition stay above the fold: the mark, the
-    wordmark, and the explicit "See the full edition" link, which is the one
-    that actually gets clicked.
+    Compact since 13 November 2026: the mark, "My Town News", the edition
+    and the week, on navy, with no photo. The photo banner repeated the same
+    three things at the size of a phone screen, so a reader scrolled past it
+    to reach the first story. All live text: it reads the same with images
+    blocked.
   -->
-  <tr><td bgcolor="#1a2744"${banner ? ` background="${banner}"` : ""} style="background-color:#1a2744;${banner ? `background-image:url('${banner}');background-repeat:no-repeat;background-position:40% center;background-size:cover;` : ""}padding:28px 32px 20px;text-align:left;">
-    <a href="${issueUrl}" style="text-decoration:none;display:inline-block;">
-      <img src="${SITE_URL}/assets/img/mark-email.png" width="40" height="40" alt="My Town News"
-           style="display:block;margin:0 0 12px 0;border:0;outline:none;width:40px;height:40px;">
-    </a>
-    <p style="margin:0 0 8px 0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:${onDark};">${esc(placeLabel)} · Free &amp; Independent · Every Friday</p>
-    <h1 style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:34px;font-weight:900;line-height:1.1;letter-spacing:-0.5px;">
-      <a href="${issueUrl}" style="color:#ffffff;text-decoration:none;">My Town <span style="color:${onDark};">News<sup style="font-size:13px;line-height:0;vertical-align:super;font-weight:400;letter-spacing:0;">&trade;</sup></span></a><br>
-      <span style="color:#ffffff;">${esc(issue.clusterName || cluster.name)}</span>
-    </h1>
-    ${hoods ? `<p style="margin:12px 0 0 0;max-width:340px;font-family:Arial,sans-serif;font-size:10px;line-height:1.6;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,0.85);">${esc(hoods)}</p>` : ""}
-    ${formatWeek(issue.weekOf) ? `<p style="margin:8px 0 0 0;font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.8);">Week of ${esc(formatWeek(issue.weekOf))}</p>` : ""}
-    <p style="margin:16px 0 0 0;">
-      <a href="${issueUrl}" style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;${ulDk}padding-bottom:2px;">See the full edition →</a>
+  <tr><td class="mtn-pad" bgcolor="#1a2744" style="background-color:#1a2744;padding:18px 40px 16px;text-align:left;">
+    <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+      <td valign="middle" style="padding:0 14px 0 0;">
+        <a href="${issueUrl}" style="text-decoration:none;display:inline-block;">
+          <img src="${SITE_URL}/assets/img/mark-email.png" width="40" height="40" alt="My Town News"
+               style="display:block;border:0;outline:none;width:40px;height:40px;">
+        </a>
+      </td>
+      <td valign="middle">
+        <p style="margin:0;font-family:Georgia,'Times New Roman',serif;font-size:16px;font-weight:900;line-height:1.2;">
+          <a href="${issueUrl}" style="color:#ffffff;text-decoration:none;">My Town <span style="color:${onDark};">News<sup style="font-size:9px;line-height:0;vertical-align:super;font-weight:400;">&trade;</sup></span></a>
+        </p>
+        <h1 style="margin:2px 0 0 0;font-family:Georgia,'Times New Roman',serif;font-size:25px;font-weight:900;line-height:1.15;color:#ffffff;">${esc(issue.clusterName || cluster.name)}</h1>
+      </td>
+    </tr></table>
+    <p style="margin:12px 0 0 0;font-family:Arial,sans-serif;font-size:12px;line-height:1.5;color:rgba(255,255,255,0.85);">
+      ${formatWeek(issue.weekOf) ? `Week of ${esc(formatWeek(issue.weekOf))} &nbsp;·&nbsp; ` : ""}<a href="${issueUrl}" style="font-family:Arial,sans-serif;font-size:12px;font-weight:700;${ulDk}">See the full edition →</a>
     </p>
-    ${photo ? `<p style="margin:18px 0 0 0;text-align:right;font-family:Arial,sans-serif;font-size:9px;line-height:1.4;color:rgba(255,255,255,0.75);">${esc(photo.subject)} · Photo: <a href="${esc(photo.source)}" style="color:rgba(255,255,255,0.75);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.5);">${esc(photo.photographer)}</a>${photo.license !== "Public domain" ? `, <a href="${esc(photo.licenseUrl)}" style="color:rgba(255,255,255,0.75);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.5);">${esc(photo.license)}</a>${photo.cropped ? " (cropped)" : ""}` : ""}</p>` : ""}
   </td></tr>
   <tr><td style="height:3px;background:${onDark};"></td></tr>
 
@@ -1463,8 +1452,7 @@ function buildEmailHtml(issue, cluster) {
       <tr><td style="padding:0 0 20px 0;border-bottom:2px solid #1a2744;">
         <p style="margin:0;font-family:Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#1a2744;">This Week's Top Stories</p>
       </td></tr>
-      <tr><td style="height:24px;"></td></tr>
-      ${storiesHtml}
+      <tr><td style="font-size:0;line-height:0;">${storiesHtml}</td></tr>
     </table>
   </td></tr>
 
@@ -1510,10 +1498,17 @@ function buildEmailHtml(issue, cluster) {
   </td></tr>
 
 </table>
+<!--[if mso]></td></tr></table><![endif]-->
 </td></tr>
 </table>
 </body>
-</html>`);
+</html>`));
+}
+
+// Sections padded 40px each side get .mtn-pad, which the phone media query
+// narrows to 18px.
+function padClasses(html) {
+  return html.replace(/<td style="([^"]*?padding:\s*\d+px 40px[^"]*)"/g, '<td class="mtn-pad" style="$1"');
 }
 
 // ─── Buttondown sender ───────────────────────────────────────────────────────
@@ -1555,15 +1550,12 @@ async function fetchButtondownTagIds() {
 /** Subject line. Extracted so the dry-run preview cannot drift from the
  *  real send — a rehearsal that renders a different subject is worthless. */
 function emailSubject(cluster) {
-  // Name the city only when it adds something. Built as name + city, this
-  // rendered "My Town News — Heber City Heber City" for every town whose
-  // single edition *is* the city — which, on this market read, is most of
-  // them. San Francisco editions still get their city, because "North
-  // Waterfront" alone does not place itself in an inbox.
-  const city = (cluster.city || "").trim();
+  // Built as name + city, this once rendered "My Town News — Heber City
+  // Heber City" for every town whose single edition *is* the city.
+  // The edition's name alone (13 November 2026): "North Waterfront, San
+  // Francisco" told a North Waterfront reader nothing they did not know.
   const name = (cluster.name || "").trim();
-  const suffix = city && city.toLowerCase() !== name.toLowerCase() ? `, ${city}` : "";
-  return `My Town News — ${name}${suffix}`;
+  return `My Town News — ${name}`;
 }
 
 /** Audience filter: send only to subscribers tagged with this cluster.

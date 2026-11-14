@@ -6,7 +6,19 @@
 
 {# Left-aligned like the homepage and edition banners (November 2026):
    "My Town News" a step smaller, the city name large beneath it. #}
-<header class="masthead masthead--edition masthead--city" role="banner">
+{# A slide show of the place, as on the homepage (November 2026). Photos and
+   credits in _data/citySlides.json; Creative Commons ones show their licence. #}
+{% set slides = citySlides[city.slug] %}
+<header class="masthead masthead--edition masthead--city{% if slides %} masthead--photo{% endif %}" role="banner"{% if slides and slides.length > 1 %} data-slideshow{% endif %}>
+  {% if slides %}
+  <div class="masthead__art" aria-hidden="true">
+    {% for s in slides %}
+    <div class="home-slide{% if loop.first %} is-active{% endif %}"
+         {% if loop.first %}style="background-image:url('/assets/img/cities/{{ s.file }}');background-position:{{ s.position }}"
+         {% else %}data-src="/assets/img/cities/{{ s.file }}" style="background-position:{{ s.position }}"{% endif %}></div>
+    {% endfor %}
+  </div>
+  {% endif %}
   <div class="masthead__inner container">
     <p class="masthead__eyebrow">{{ city.name }}, {{ city.stateName }} · Free &amp; Independent · Every Friday</p>
     <h1 class="masthead__title masthead__title--stack"><span class="masthead__brand">My Town <em>News<sup class="tm" aria-label="trademark">™</sup></em></span> <span class="masthead__place">{{ city.name }}</span></h1>
@@ -17,7 +29,22 @@
     </div>
     <p class="masthead__desc">{{ city.tagline }}</p>
   </div>
+  {% if slides %}
+  <div class="home-banner__caption">
+    <button class="home-banner__pause" type="button" aria-pressed="false" aria-label="Pause the slide show" hidden>
+      <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path class="i-pause" fill="currentColor" d="M4 2h3v12H4zM9 2h3v12H9z"/><path class="i-play" fill="currentColor" d="M4 2l10 6-10 6z"/></svg>
+    </button>
+    {% for s in slides %}
+    <p class="home-banner__credit{% if loop.first %} is-active{% endif %}">
+      <span class="home-banner__place">{{ s.place }}</span>
+      · Photo: <a href="{{ s.source }}" rel="noopener">{{ s.photographer }}</a>
+      {%- if s.license != "Public domain" %}, <a href="{{ s.licenseUrl }}" rel="noopener license">{{ s.license }}</a>{% if s.cropped %} (cropped){% endif %}{% endif %}
+    </p>
+    {% endfor %}
+  </div>
+  {% endif %}
 </header>
+{% if slides and slides.length > 1 %}{% include "partials/slideshow-script.njk" %}{% endif %}
 <div class="gold-rule"></div>
 
 {# ── Sticky nav ────────────────────────────────────────────────────────────
