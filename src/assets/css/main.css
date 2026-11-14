@@ -3215,18 +3215,19 @@ hr.divider {
 
 
 /* ══ Text links, November 2026 ═════════════════════════════════════════════
-   A third colour, used only for underlined text links: red-orange, so a
-   link never looks like a heading (navy) or a button (gold with navy text).
-   Two shades of the one colour, because no single red-orange reaches WCAG AA
-   contrast on both cream and navy: --link on light backgrounds (5.2:1 on
-   white, 4.8:1 on cream), --link-on-dark on the navy bands (5.5:1).
+   A third colour, used only for underlined text links. Red-orange at first;
+   gold since 13 November 2026, which sits better with the navy-and-gold
+   scheme — the underline is what marks a link. Two shades, because no single
+   gold reaches WCAG AA contrast on both cream and navy: a dark amber on light
+   backgrounds (5.1:1 on white, 4.8:1 on cream), a bright yellow-gold on the
+   navy bands (8.0:1).
    Buttons keep gold; navigation (top bars, footer) keeps its own style.
    The email uses the same two values; see pipeline/generate-issue.js. */
 :root {
-  --link:          #c2410c;
-  --link-hover:    #9a3412;
-  --link-on-dark:  #f47a4e;
-  --link-on-dark-hover: #ffa47f;
+  --link:          #9a6200;
+  --link-hover:    #6f4700;
+  --link-on-dark:  #f2b51d;
+  --link-on-dark-hover: #ffd062;
 }
 
 .text-link,
@@ -3280,11 +3281,11 @@ hr.divider {
 .newsletter__note { color: rgba(255,255,255,0.7); font-size: var(--text-xs); }
 
 /* ══ Homepage map dots, November 2026 ══════════════════════════════════════
-   Active editions in the link colour, coming-soon towns as gold outlines:
-   the two used to be gold and gold-ringed white, too alike at a glance. */
-.home-where .us-map__dot { background: var(--link); }
+   Active editions in the bright yellow-gold of the links on navy;
+   coming-soon towns as white with a gold outline. */
+.home-where .us-map__dot { background: var(--link-on-dark); }
 .home-where .us-map__pin:hover .us-map__dot,
-.home-where .us-map__pin:focus-visible .us-map__dot { background: var(--link-hover); }
+.home-where .us-map__pin:focus-visible .us-map__dot { background: #e09a00; }
 .home-where .us-map__dot--soon,
 .home-where .us-map__pin--soon .us-map__dot { background: var(--white); border-color: var(--gold); }
 

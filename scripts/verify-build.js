@@ -2007,8 +2007,8 @@ warnings.forEach((w) => console.log(`  ⚠ ${w}`));
   const talk = /<a class="home-cta__link" href="([^"]+)"/.exec(home);
   if (!talk || /^mailto:/.test(talk[1])) errors.push(`"Let's talk" must link to the contact section, not a mailto:`);
   const css = read("assets/css/main.css");
-  if (!/--link:\s*#c2410c/i.test(css) || !/--link-on-dark:\s*#f47a4e/i.test(css))
-    errors.push("the red-orange text-link colours (--link, --link-on-dark) are missing from main.css");
+  if (!/--link:\s*#9a6200/i.test(css) || !/--link-on-dark:\s*#f2b51d/i.test(css))
+    errors.push("the gold text-link colours (--link, --link-on-dark) are missing from main.css");
   // One edition page with events: flip cards with both faces, sources folded.
   const ed = read("san-francisco/bayview-excelsior/index.html");
   if (ed) {
