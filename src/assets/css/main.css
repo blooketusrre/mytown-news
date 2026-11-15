@@ -1536,10 +1536,10 @@ ul, ol { list-style: none; }
   position: relative;
   max-width: 860px;
   margin-inline: auto;
-  /* Matches the generated viewBox (-120 -62 1075 734). If the generator's
+  /* Matches the generated viewBox (-120 -62 1135 734). If the generator's
      viewBox changes and this does not, every dot drifts — which is why
      verify-build.js checks the two against each other. */
-  aspect-ratio: 1075 / 734;
+  aspect-ratio: 1135 / 734;
 }
 
 .us-map__outline {
@@ -3499,4 +3499,43 @@ hr.divider {
 .cluster-map-wrap { margin-top: 0; }
 @media (min-width: 1025px) {
   .cluster-map-wrap__map { position: sticky; top: calc(var(--nav-h) + var(--sp-4)); }
+}
+
+/* ══ Map section, centred (13 November 2026) ═══════════════════════════════
+   The map used to run from the text to the right-hand edge of the window,
+   so on a wide screen it grew and slid right while everything else on the
+   page stayed in the centred column. Now text and map sit in the same
+   centred column as the rest of the page; the cream-to-blue background still
+   runs the full width, and the map fades out at both sides into it. */
+@media (min-width: 901px) {
+  .home-where {
+    background: linear-gradient(90deg,
+      var(--cream) 0%, var(--cream) calc(50% - 330px),
+      #dcebf3 calc(50% - 60px), #cfe3ef 100%);
+  }
+  .home-where__inner {
+    max-width: var(--container);
+    margin-inline: auto;
+    grid-template-columns: 360px minmax(0, 1fr);
+  }
+  .home-where__text { padding-left: var(--gap); padding-right: var(--sp-4); }
+  .home-where .us-map__outline {
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 13%, #000 94%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, transparent 71.3%, #000 71.8%);
+            mask-image: linear-gradient(to right, transparent 0, #000 13%, #000 94%, transparent 100%),
+                        linear-gradient(to bottom, transparent 0, transparent 71.3%, #000 71.8%);
+  }
+}
+
+/* ══ City page slide show, 13 November 2026 ════════════════════════════════
+   The homepage's slides inside the city banner. The photo box spans the
+   banner and fades in from the left, behind the title. */
+.masthead--city .masthead__art { left: 28%; }
+.masthead--city.masthead--photo .masthead__inner { padding-block: 64px 72px; }
+.masthead--city .masthead__desc { text-shadow: 0 1px 10px rgb(10 16 32 / 0.6); }
+[data-slideshow].is-paused .home-banner__pause .i-pause { display: none; }
+[data-slideshow].is-paused .home-banner__pause .i-play { display: inline; }
+@media (max-width: 700px) {
+  .masthead--city.masthead--photo .masthead__inner { padding-block: 36px 150px; }
+  .masthead--city .masthead__art { left: 0; }
 }

@@ -761,11 +761,6 @@ try {
       const where = `editionPhotos.json "${slug}"`;
       if (!all.some((c) => c.slug === slug)) errors.push(`${where}: no edition has that slug`);
       if (!p.file || !fs.existsSync(path.join(OUT, "assets", "img", "editions", p.file))) errors.push(`${where}: image ${p.file} is not in the built site`);
-      // The newsletter uses a pre-composed banner per photo; a new or changed
-      // photo needs \`python3 scripts/build-email-banners.py\` re-run.
-      if (!fs.existsSync(path.join(OUT, "assets", "img", "email-banners", `${slug}.jpg`))) {
-        errors.push(`${where}: no newsletter banner — run python3 scripts/build-email-banners.py`);
-      }
       ["subject", "photographer", "license", "source"].forEach((k) => { if (!p[k]) errors.push(`${where}: missing ${k}`); });
       if (/^CC BY/i.test(p.license || "") && !/^https:\/\/creativecommons\.org\/licenses\//.test(p.licenseUrl || "")) {
         errors.push(`${where}: ${p.license} needs a link to the licence`);
@@ -1422,8 +1417,8 @@ try {
   // published positions of two real cities a long way apart, so any change to
   // the projection or the viewBox moves at least one of them.
   const golden = [
-    ["San Francisco", -122.4194, 37.7749, 13.71, 43.38],
-    ["Staunton",       -79.0717, 38.1496, 84.47, 47.42],
+    ["San Francisco", -122.4194, 37.7749, 12.98, 43.38],
+    ["Staunton",       -79.0717, 38.1496, 80.00, 47.42],
   ];
   golden.forEach(([name, lng, lat, left, top]) => {
     const p = proj.projectPercent(lng, lat);
@@ -2021,6 +2016,33 @@ warnings.forEach((w) => console.log(`  ⚠ ${w}`));
     if (!/class="editorial-note"/.test(ed)) errors.push("the editorial disclaimer must stay visible");
     if (!/masthead__brand[\s\S]{0,400}masthead__place/.test(ed)) errors.push("the edition banner lost its two-size title");
   }
+}
+
+// ── 13 November 2026 round ────────────────────────────────────────────────
+{
+  const read = (rel) => { const f = path.join(OUT, rel); return fs.existsSync(f) ? fs.readFileSync(f, "utf8") : ""; };
+  // City slide shows: every photo present, every CC photo credited with its
+  // licence on the page.
+  let slides = {};
+  try { slides = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "_data", "citySlides.json"), "utf8")); }
+  catch (e) { errors.push(`citySlides.json is unreadable: ${e.message}`); }
+  for (const [city, list] of Object.entries(slides)) {
+    const page = read(path.join(city, "index.html"));
+    if (!page) continue;
+    for (const sl of list) {
+      const where = `citySlides.json "${city}" ${sl.file}`;
+      if (!fs.existsSync(path.join(OUT, "assets", "img", "cities", sl.file))) errors.push(`${where}: image not in the built site`);
+      ["place", "photographer", "license", "source"].forEach((k) => { if (!sl[k]) errors.push(`${where}: missing ${k}`); });
+      if (/^CC/.test(sl.license) && !page.includes(sl.licenseUrl)) errors.push(`${where}: the ${sl.license} licence is not linked on the page`);
+    }
+    if (list.length > 1 && !/data-slideshow/.test(page)) errors.push(`the ${city} page has photos but no slide show`);
+  }
+  // The newsletter: compact masthead, no photo banner, subject without city.
+  const gen = fs.readFileSync(path.join(ROOT, "pipeline", "generate-issue.js"), "utf8");
+  if (/email-banners\//.test(gen)) errors.push("the newsletter uses the photo banner again — it was removed for a compact masthead");
+  if (/return `My Town News — \$\{name\}\$\{suffix\}`/.test(gen)) errors.push("the subject line names the city again");
+  const home = read("index.html");
+  if (!/Find your community edition/.test(home) || !/Where we cover/.test(home)) errors.push("the homepage headings changed back");
 }
 
 if (errors.length) {

@@ -1,0 +1,106 @@
+{
+  "san-francisco": [
+    {
+      "file": "sf-golden-gate.jpg",
+      "place": "Golden Gate Bridge and the city from Hawk Hill",
+      "photographer": "Daniel L. Lu",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_and_San_Francisco_skyline_from_Hawk_Hill_at_Blue_Hour_dllu_(cropped).jpg",
+      "cropped": true,
+      "position": "center 50%"
+    },
+    {
+      "file": "sf-painted-ladies.jpg",
+      "place": "Alamo Square",
+      "photographer": "King of Hearts",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Painted_Ladies_San_Francisco_January_2013_panorama_2.jpg",
+      "cropped": true,
+      "position": "center 50%"
+    },
+    {
+      "file": "sf-twin-peaks.jpg",
+      "place": "Market Street from Twin Peaks",
+      "photographer": "King of Hearts",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:San_Francisco_from_Twin_Peaks_September_2013_panorama_5_edit.jpg",
+      "cropped": true,
+      "position": "center 50%"
+    },
+    {
+      "file": "sf-pier-7.jpg",
+      "place": "The Embarcadero from Pier 7",
+      "photographer": "King of Hearts",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:San_Francisco_from_Pier_7_September_2013_panorama_edit.jpg",
+      "cropped": true,
+      "position": "center 50%"
+    },
+    {
+      "file": "sf-skyline.jpg",
+      "place": "Downtown from the Golden Gate Bridge",
+      "photographer": "Mariordo (Mario Roberto Durán Ortiz)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:San_Francisco_skyline_from_Golden_Gate_Bridge,_09_2017.jpg",
+      "cropped": true,
+      "position": "center 50%"
+    }
+  ],
+  "ellis-county": [
+    {
+      "file": "ellis-waxahachie-texas-theater.jpg",
+      "place": "Downtown Waxahachie",
+      "photographer": "Carol M. Highsmith, Library of Congress",
+      "license": "Public domain",
+      "licenseUrl": "https://www.loc.gov/rr/print/res/482_high.html",
+      "source": "https://commons.wikimedia.org/wiki/File:A_downtown_block_that_includes_the_old_Texas_Theater_in_Waxahachie,_Texas,_a_Dallas_southern_suburb_LCCN2014632027.tif",
+      "cropped": true,
+      "position": "center 50%"
+    },
+    {
+      "file": "ellis-cotton.jpg",
+      "place": "Cotton near Waxahachie",
+      "photographer": "Carol M. Highsmith, Library of Congress",
+      "license": "Public domain",
+      "licenseUrl": "https://www.loc.gov/rr/print/res/482_high.html",
+      "source": "https://commons.wikimedia.org/wiki/File:Cotton_field_in_Ellis_County,_Texas,_near_Waxahatchie_LCCN2015631003.tif",
+      "cropped": true,
+      "position": "center 50%"
+    },
+    {
+      "file": "ellis-rogers-hotel.jpg",
+      "place": "Rogers Hotel, Waxahachie",
+      "photographer": "w_lemay",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Rogers_Hotel,_Main_Street_and_College_Street,_Waxahachie,_TX.jpg",
+      "cropped": true,
+      "position": "center 50%"
+    },
+    {
+      "file": "ellis-midlothian-hawkins.jpg",
+      "place": "Hawkins House, Midlothian",
+      "photographer": "Renelibrary",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Hawkins_House_Midlothian_Texas(1_of_1).jpg",
+      "cropped": true,
+      "position": "center 50%"
+    },
+    {
+      "file": "ellis-ennis-bluebonnet-park.jpg",
+      "place": "Bluebonnet Park, Ennis",
+      "photographer": "Michael Barera",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Ennis_September_2017_32_(Bluebonnet_Park).jpg",
+      "cropped": true,
+      "position": "center 50%"
+    }
+  ]
+}

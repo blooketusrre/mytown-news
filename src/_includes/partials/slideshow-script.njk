@@ -1,0 +1,53 @@
+{# The banner slide show, shared by the homepage and the city pages. Drives
+   the one [data-slideshow] element on the page: .home-slide backgrounds,
+   one .home-banner__credit per slide, and a .home-banner__pause button.
+   Without JavaScript, or with reduced motion requested, the first photo
+   simply stays (WCAG 2.2.2 asks for a pause control on anything that moves
+   for more than five seconds). #}
+<script>
+(function () {
+  var root = document.querySelector("[data-slideshow]");
+  if (!root) return;
+  var slides = root.querySelectorAll(".home-slide");
+  var credits = root.querySelectorAll(".home-banner__credit");
+  var btn = root.querySelector(".home-banner__pause");
+  if (slides.length < 2) return;
+  if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  var INTERVAL = 7000, i = 0, timer = null, paused = false;
+  function load(el, done) {
+    var src = el.getAttribute("data-src");
+    if (!src) { done && done(); return; }
+    var img = new Image();
+    img.onload = img.onerror = function () {
+      el.style.backgroundImage = "url('" + src + "')";
+      el.removeAttribute("data-src");
+      done && done();
+    };
+    img.src = src;
+  }
+  function show(n) {
+    slides[i].classList.remove("is-active"); credits[i].classList.remove("is-active");
+    i = n;
+    slides[i].classList.add("is-active"); credits[i].classList.add("is-active");
+    load(slides[(i + 1) % slides.length]);          // fetch the next one now
+  }
+  function next() { var n = (i + 1) % slides.length; load(slides[n], function () { show(n); }); }
+  function start() { stop(); timer = setInterval(next, INTERVAL); }
+  function stop() { if (timer) clearInterval(timer); timer = null; }
+
+  btn.hidden = false;
+  btn.addEventListener("click", function () {
+    paused = !paused;
+    btn.setAttribute("aria-pressed", String(paused));
+    btn.setAttribute("aria-label", paused ? "Play the slide show" : "Pause the slide show");
+    root.classList.toggle("is-paused", paused);
+    paused ? stop() : start();
+  });
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden) stop(); else if (!paused) start();
+  });
+  load(slides[1]);
+  start();
+})();
+</script>

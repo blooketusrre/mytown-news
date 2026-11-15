@@ -91,60 +91,14 @@ pageDesc: "Independent local news, built around the events, people and places th
     </div>
   </section>
 
-<script>
-(function () {
-  var root = document.querySelector("[data-slideshow]");
-  if (!root) return;
-  var slides = root.querySelectorAll(".home-slide");
-  var credits = root.querySelectorAll(".home-banner__credit");
-  var btn = root.querySelector(".home-banner__pause");
-  if (slides.length < 2) return;
-  if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-  var INTERVAL = 7000, i = 0, timer = null, paused = false;
-  function load(el, done) {
-    var src = el.getAttribute("data-src");
-    if (!src) { done && done(); return; }
-    var img = new Image();
-    img.onload = img.onerror = function () {
-      el.style.backgroundImage = "url('" + src + "')";
-      el.removeAttribute("data-src");
-      done && done();
-    };
-    img.src = src;
-  }
-  function show(n) {
-    slides[i].classList.remove("is-active"); credits[i].classList.remove("is-active");
-    i = n;
-    slides[i].classList.add("is-active"); credits[i].classList.add("is-active");
-    load(slides[(i + 1) % slides.length]);          // fetch the next one now
-  }
-  function next() { var n = (i + 1) % slides.length; load(slides[n], function () { show(n); }); }
-  function start() { stop(); timer = setInterval(next, INTERVAL); }
-  function stop() { if (timer) clearInterval(timer); timer = null; }
-
-  btn.hidden = false;
-  btn.addEventListener("click", function () {
-    paused = !paused;
-    btn.setAttribute("aria-pressed", String(paused));
-    btn.setAttribute("aria-label", paused ? "Play the slide show" : "Pause the slide show");
-    root.classList.toggle("is-paused", paused);
-    paused ? stop() : start();
-  });
-  document.addEventListener("visibilitychange", function () {
-    if (document.hidden) stop(); else if (!paused) start();
-  });
-  load(slides[1]);
-  start();
-})();
-</script>
+{% include "partials/slideshow-script.njk" %}
 
   {# ── Find an edition, and bring one to your town ───────────────────── #}
   <section id="editions" class="home-find" aria-labelledby="find-heading">
     <div class="container home-find__inner">
       <div class="home-find__main">
         <p class="home-eyebrow">Explore our editions</p>
-        <h2 class="home-find__title" id="find-heading">Find a community we cover</h2>
+        <h2 class="home-find__title" id="find-heading">Find your community edition</h2>
         <p class="home-find__sub">Enter your ZIP code to see if we cover your area, or browse our current editions below.</p>
         {% set zipVariant = "hero" %}
         {% include "partials/zip-lookup.njk" %}
@@ -180,7 +134,7 @@ pageDesc: "Independent local news, built around the events, people and places th
     <div class="home-where__inner">
       <div class="home-where__text">
         <p class="home-eyebrow">Our current editions</p>
-        <h2 class="home-where__title" id="where-heading">Where we&rsquo;re already local</h2>
+        <h2 class="home-where__title" id="where-heading">Where we cover</h2>
         <p class="home-where__sub">We currently publish in a select number of communities, with more on the way.<span class="home-where__hint"> Hover over a town to see what it covers.</span></p>
         <ul class="home-where__legend" role="list">
           <li><span class="us-map__dot" aria-hidden="true"></span> Active edition</li>
@@ -189,7 +143,7 @@ pageDesc: "Independent local news, built around the events, people and places th
       </div>
       <div class="home-where__map">
       <div class="us-map">
-        <img class="us-map__outline" src="/assets/img/us-outline.svg" alt="" width="1075" height="734" loading="lazy" decoding="async">
+        <img class="us-map__outline" src="/assets/img/us-outline.svg" alt="" width="1135" height="734" loading="lazy" decoding="async">
         {% for city in liveCities %}
         {% set pt = city | usPoint %}
         {% if pt %}
