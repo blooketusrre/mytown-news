@@ -43,7 +43,7 @@ assert.strictEqual(taco.phone, "740-555-0100");
 assert.strictEqual(taco.website, "https://d.example");
 assert.strictEqual(taco.description, undefined);
 assert.strictEqual(r.directory.restaurants.find((v) => v.name === "Cafe Uno").phone, "3");
-ok("a correction changes only address, phone or website, needs a source, and needs a real URL for website");
+ok("a correction changes only listed fields, needs a source, and needs a real URL for website");
 
 // Additions
 r = applyDirectoryDiff(base(), { added: {
@@ -66,5 +66,26 @@ assert.deepStrictEqual(r.directory, base());
 r.directory.restaurants.pop();
 assert.strictEqual(original.restaurants.length, 4);
 ok("an empty update changes nothing, and the input directory is never modified");
+
+// Reservations and openings (November 2026)
+r = applyDirectoryDiff(base(), { updated: [
+  { name: "Cafe Uno", changes: { reservations: "https://www.opentable.com/r/cafe-uno-heber" }, source: "https://src.example" },
+  { name: "Taco Dos", changes: { reservations: "https://www.opentable.com/s?term=taco" }, source: "https://src.example" },
+  { name: "The Old Mill", changes: { reservations: "https://www.oldmill.example/book" }, source: "https://src.example" },
+] });
+assert.strictEqual(r.directory.restaurants.find((v) => v.name === "Cafe Uno").reservations, "https://www.opentable.com/r/cafe-uno-heber");
+assert.strictEqual(r.directory.restaurants.find((v) => v.name === "Taco Dos").reservations, undefined);
+assert.strictEqual(r.directory.restaurants.find((v) => v.name === "The Old Mill").reservations, undefined);
+ok("a reservations link is accepted only when it is a booking page, not a search or the restaurant's own site");
+
+const soon = base(); soon.restaurants[2].notable = "Coming Soon";
+r = applyDirectoryDiff(soon, { updated: [
+  { name: "Cafe Uno", changes: { notable: "New", website: "https://cafeuno.example" }, source: "https://news.example/open" },
+  { name: "Taco Dos", changes: { notable: "Landmark" }, source: "https://news.example" },
+] });
+assert.strictEqual(r.directory.restaurants[2].notable, "New");
+assert.strictEqual(r.directory.restaurants[2].website, "https://cafeuno.example");
+assert.strictEqual(r.directory.restaurants[3].notable, undefined);
+ok("a Coming Soon listing can be marked New once it opens; notable cannot otherwise be changed");
 
 console.log(`Directory updates: ${n} tests passed`);

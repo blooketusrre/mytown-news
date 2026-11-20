@@ -3,7 +3,7 @@
     "Venues to add to a directory without waiting for the quarterly refresh.",
     "",
     "The mirror of closed-venues.json. That file removes places the research",
-    "would wrongly list; this one adds places it cannot find \u2014 usually because",
+    "would wrongly list; this one adds places it cannot find — usually because",
     "they have not opened, so nothing is written about them in the present tense",
     "and a search returns a plan rather than a restaurant.",
     "",
@@ -20,8 +20,11 @@
     "something is described as open before it is.",
     "",
     "With no 'openingFrom', an explicit notable of 'Coming Soon' stays Coming",
-    "Soon until edited \u2014 the right state when an opening is expected but the date",
+    "Soon until edited — the right state when an opening is expected but the date",
     "is genuinely unknown.",
+    "",
+    "'reservations' (restaurants, optional): the booking page on OpenTable, Resy,",
+    "Tock, SevenRooms or Yelp Reservations. Anything else is dropped.",
     "",
     "An entry is skipped automatically once the quarterly refresh finds the venue",
     "on its own, and the run says so, which is the signal to delete it here."
@@ -32,13 +35,15 @@
       "name": "Julius' Castle",
       "cuisineGroup": "Seafood & American",
       "type": "Historic cliffside restaurant",
-      "description": "The 1924 Telegraph Hill landmark below Coit Tower, reopening after nearly two decades closed following a restoration of its fire-damaged turret and original wood panelling.",
-      "address": "1541 Montgomery St",
-      "phone": "",
-      "website": "",
+      "description": "The 1924 Telegraph Hill landmark below Coit Tower, reopened in November 2026 after nearly two decades closed and a restoration of its turret and original wood panelling.",
+      "address": "302 Greenwich St",
+      "phone": "(415) 399-9000",
+      "website": "https://www.juliuscastle.com/",
+      "reservations": "https://www.opentable.com/restaurant/profile/1538173/reserve?restref=1538173",
       "neighborhood": "Telegraph Hill",
-      "notable": "Coming Soon",
-      "_note": "Not open as of 30 August 2026. Owner Paul Scott told reporters in July that it would reopen in September serving dinner; Brian expects October or November. No openingFrom is set precisely because the date is unknown \u2014 it stays Coming Soon until someone adds a date or changes notable to New. Delete this entry once the quarterly refresh lists it on its own."
+      "notable": "New",
+      "openingFrom": "2026-11-12",
+      "_note": "Reopened 12 November 2026 (AFAR). Address, phone, hours and the OpenTable link are from juliuscastle.com, checked 20 November 2026. Delete this entry once the quarterly refresh lists it on its own."
     }
   ]
 }
