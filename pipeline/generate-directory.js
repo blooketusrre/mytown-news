@@ -138,7 +138,9 @@ function updateSystemPrompt(cluster, closedVenues) {
 The directory already exists. Your job is to find what has CHANGED since it was written, not to rebuild it. Report only:
 1. CLOSED: venues in the current list that have closed permanently or left the area. Each needs a source URL that reports it.
 2. ADDED: notable venues that opened in roughly the last six months and are missing from the list. At most 3 per section; quality over quantity. Each must follow the verification rule below and use the venue fields from the schema below, with "notable": "New".
-3. UPDATED: a changed address, phone number or website for a listed venue, with a source URL. No other fields.
+3. UPDATED: a changed address, phone number or website for a listed venue, with a source URL. No other fields, except:
+   - "reservations": a restaurant's direct booking page on OpenTable, Resy, Tock, SevenRooms or Yelp Reservations, when you come across one. Only a page where you can book that restaurant; never a search page, and never guessed.
+   - "notable": "New" for a venue the list marks (Coming Soon) that has now opened, with a source that says it is open. Add its website, phone and reservations in the same update if you find them.
 
 Search efficiently: a search such as "${cluster.name} restaurant closed 2026" or "new businesses opening ${cluster.name}" covers many venues at once. Do not search venue by venue to confirm that unchanged places are still open. If you find nothing reliable, return empty lists: no change is a perfectly good answer.
 ${known}
@@ -161,7 +163,8 @@ Return only this JSON, with no preamble or markdown fences:
 function updateUserMessage(cluster, directory) {
   const lines = SECTIONS.map((k) => {
     const list = (directory && directory[k]) || [];
-    return `${k} (${list.length}):\n` + list.map((v) => `- ${v.name} — ${v.address || "no address"}`).join("\n");
+    return `${k} (${list.length}):\n` + list.map((v) =>
+      `- ${v.name} — ${v.address || "no address"}${v.notable === "Coming Soon" ? " (Coming Soon)" : ""}`).join("\n");
   }).join("\n\n");
   return `Here is the current directory for ${cluster.name}. Find what has changed. ` +
     `You have at most ${MAX_SEARCHES} web searches.\n\n${lines}`;

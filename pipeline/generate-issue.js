@@ -478,6 +478,7 @@ const DIRECTORY_SCHEMA = `  "directory": {
         "address": "373 Columbus Ave",
         "phone": "415-421-2337",
         "website": "https://...",
+        "reservations": "https://www.opentable.com/r/... or \"\"",
         "neighborhood": "North Beach",
         "notable": "Landmark"
       }
@@ -542,6 +543,7 @@ const DIRECTORY_GUIDANCE = `DIRECTORY GROUPING GUIDANCE:
 - venueGroup (art): "Art Galleries", "Theater & Comedy", "Music Venues", "Cinema", "Museums & Cultural"
 - venueGroup (gyms): "Yoga & Pilates", "Gyms & CrossFit", "Sports & Courts", "Cycling & Rowing", "Martial Arts", "Pools & Aquatics", "Parks & Outdoor Recreation"
 - notable field: "Landmark" for long-established institutions, "New" for opened in the last year, or "" for standard listings
+- reservations (restaurants): the restaurant's own booking page on OpenTable, Resy, Tock, SevenRooms or Yelp Reservations, if it takes reservations there and you found the page; otherwise "". Never a search page, never guessed.
 
 `;
 
@@ -697,10 +699,10 @@ const ADDED_VENUES = (() => {
  */
 function addPendingVenues(issue, clusterSlug, today = new Date()) {
   const entries = ADDED_VENUES[clusterSlug];
-  if (!Array.isArray(entries) || !entries.length) return { added: [], skipped: [], stale: [] };
+  if (!Array.isArray(entries) || !entries.length) return { added: [], skipped: [], stale: [], undated: [] };
 
   issue.directory = issue.directory || {};
-  const added = [], skipped = [], stale = [];
+  const added = [], skipped = [], stale = [], undated = [];
 
   entries.forEach((entry) => {
     const section = entry.section;
@@ -723,11 +725,23 @@ function addPendingVenues(issue, clusterSlug, today = new Date()) {
     // Marking what we add lets the two cases be told apart: replace ours,
     // defer to theirs.
     const existing = list.findIndex((v) => venueKey(v.name) === venueKey(entry.name));
+    // What a refresh has since learned about our copy — a website, a phone
+    // number, a reservations link, or that it is open — must survive the
+    // weekly re-add. Until November 2026 the hand-written entry replaced our
+    // copy wholesale every Friday, blanks and all, so a correction could
+    // never stick: Julius' Castle opened on 12 November and still showed as
+    // Coming Soon with no website.
+    let learned = {};
     if (existing !== -1) {
       if (!list[existing]._added) {
         skipped.push(entry.name);       // research found it — ours is redundant
         return;
       }
+      const prior = list[existing];
+      ["website", "phone", "reservations", "address"].forEach((k) => {
+        if (prior[k] && !entry[k]) learned[k] = prior[k];
+      });
+      if (prior.notable === "New" && entry.notable === "Coming Soon" && !entry.openingFrom) learned.opened = true;
       list.splice(existing, 1);         // ours, carried forward — replace it
     }
 
@@ -736,12 +750,16 @@ function addPendingVenues(issue, clusterSlug, today = new Date()) {
     // opening date is genuinely unknown must not be described as open because
     // no date was supplied.
     const opens  = entry.openingFrom ? new Date(`${entry.openingFrom}T00:00:00Z`) : null;
-    const isOpen = opens ? today >= opens : entry.notable !== "Coming Soon";
+    const isOpen = opens ? today >= opens : (entry.notable !== "Coming Soon" || learned.opened === true);
+    // An opening with no date is the case that goes stale silently: say so
+    // on every run, so it is fixed when it opens rather than noticed later.
+    if (!opens && !isOpen) undated.push(entry.name);
 
     const venue = { ...entry };
     delete venue.section;
     delete venue.openingFrom;
     Object.keys(venue).forEach((k) => { if (k.startsWith("_")) delete venue[k]; });
+    ["website", "phone", "reservations", "address"].forEach((k) => { if (learned[k]) venue[k] = learned[k]; });
     // Once open, "Coming Soon" must not survive as the entry's own notable —
     // that is the pre-opening state, not a preference to preserve. Any other
     // label the entry carries (typically "Landmark") is kept.
@@ -759,7 +777,7 @@ function addPendingVenues(issue, clusterSlug, today = new Date()) {
     if (opens && today - opens > 180 * 864e5) stale.push(entry.name);
   });
 
-  return { added, skipped, stale };
+  return { added, skipped, stale, undated };
 }
 
 function storyKeys(story) {
@@ -1101,6 +1119,7 @@ async function generateCluster(clusterConfig) {
   pending.added.forEach((n)   => console.log(`  ＋ Added from added-venues.json: ${n}`));
   pending.skipped.forEach((n) => console.log(`  ✓ ${n} is now in the directory on its own — remove it from added-venues.json`));
   pending.stale.forEach((n)   => console.warn(`  ⚠ ${n} opened over six months ago and is still hand-listed — the refresh is not finding it`));
+  (pending.undated || []).forEach((n) => console.warn(`  ⚠ ${n} is hand-listed as Coming Soon with no opening date — check whether it has opened (pipeline/added-venues.json)`));
 
   const removedClosed = stripClosedVenues(issue, clusterConfig.slug);
   removedClosed.forEach(r => {

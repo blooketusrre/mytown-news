@@ -27,6 +27,8 @@ module.exports = function (eleventyConfig) {
   // every platform and at sizes we cannot control, and a forecast row wants
   // one consistent visual weight.
   const { weatherSvg } = require("./lib/weather-icons");
+  const { bookingUrl } = require("./lib/booking-url");
+  eleventyConfig.addFilter("bookingUrl", (u) => bookingUrl(u));
   eleventyConfig.addShortcode("weatherIcon", (cond) => weatherSvg(cond));
 
   // ── Filters ─────────────────────────────────────────────────────────

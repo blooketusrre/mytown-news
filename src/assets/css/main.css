@@ -3539,3 +3539,24 @@ hr.divider {
   .masthead--city.masthead--photo .masthead__inner { padding-block: 36px 150px; }
   .masthead--city .masthead__art { left: 0; }
 }
+
+/* ══ Directory: reservations, November 2026 ════════════════════════════════
+   "Reservations" before "Visit website", on one line; both are text links. */
+.dir-entry__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px var(--sp-4);
+  margin-top: var(--sp-1);
+}
+.dir-entry__links .dir-entry__website { margin-top: 0; }
+.dir-entry__reserve {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.dir-entry__reserve:hover { color: var(--link-hover); }

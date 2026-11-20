@@ -463,13 +463,14 @@
         "name": "Julius' Castle",
         "cuisineGroup": "Seafood & American",
         "type": "Historic cliffside restaurant",
-        "description": "The 1924 Telegraph Hill landmark below Coit Tower, reopening after nearly two decades closed following a restoration of its fire-damaged turret and original wood panelling.",
-        "address": "1541 Montgomery St",
-        "phone": "",
-        "website": "",
+        "description": "The 1924 Telegraph Hill landmark below Coit Tower, reopened in November 2026 after nearly two decades closed and a restoration of its turret and original wood panelling.",
+        "address": "302 Greenwich St",
+        "phone": "(415) 399-9000",
+        "website": "https://www.juliuscastle.com/",
         "neighborhood": "Telegraph Hill",
-        "notable": "Coming Soon",
-        "_added": true
+        "notable": "New",
+        "_added": true,
+        "reservations": "https://www.opentable.com/restaurant/profile/1538173/reserve?restref=1538173"
       }
     ],
     "hotels": [
