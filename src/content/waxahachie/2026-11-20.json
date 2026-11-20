@@ -1,0 +1,822 @@
+{
+  "clusterSlug": "waxahachie",
+  "clusterName": "Waxahachie",
+  "weekOf": "2026-11-20",
+  "topStories": [
+    {
+      "headline": "City Puts New Rules on E-Bikes, Scooters and Pocket Bikes",
+      "dek": "The Waxahachie City Council approved an ordinance at its November 17 meeting governing electronic bicycles, electric scooters, and pocket bikes throughout the city.",
+      "body": "After months of public complaints and safety discussions, the Waxahachie City Council voted at its Monday, November 17 regular meeting to adopt an ordinance regulating electronic bicycles, electric scooters, and pocket bikes — sometimes called mini motorbikes — within city limits.\n\nMayor Billie Wallace had flagged the issue publicly earlier this fall, saying she had asked the city manager and Police Chief Joe Wiser to draft a framework similar to those already on the books in several other North Texas cities. The concern driving the effort centered on riders — many of them minors — operating the vehicles on streets and sidewalks without helmets, sometimes carrying multiple passengers, and routinely disregarding traffic signals.\n\nThe council first discussed the proposed ordinance at its November 10 work session, then approved the final language at the November 17 meeting. The ordinance covers all three vehicle categories under a single set of rules. Residents with questions about the new requirements can contact Waxahachie City Hall or the police department for details on enforcement and effective dates.",
+      "sourceUrl": "https://www.waxahachietx.com/2026/11/16/news/h1-council-approves-e-bike-ordinance-h1/",
+      "sourceName": "Waxahachie Daily Light",
+      "tags": [
+        "city council",
+        "transportation",
+        "public safety"
+      ]
+    },
+    {
+      "headline": "WISD Weighs Switch to Traditional Bell Schedule at Waxahachie High School",
+      "dek": "Waxahachie ISD is considering dropping its current block schedule at the high school in favor of a traditional period-by-period day, potentially starting in the 2027-28 school year.",
+      "body": "Waxahachie ISD administrators brought a significant structural proposal before the school board this month: replacing the high school's existing A/B block schedule — in which students attend four long class periods on alternating days — with a more conventional bell schedule in which all classes meet daily for shorter periods. The change, if approved, would take effect no earlier than the 2027-28 school year.\n\nThe idea surfaced publicly on November 13 when reporting from the Waxahachie Daily Light described a board discussion of the proposal. The current block format, reflected in the school's existing schedule of roughly 90-minute class periods, has been in use for some time and is used by many larger Texas high schools. Advocates of a traditional schedule often argue it keeps students engaged with material more frequently and benefits courses that require cumulative practice, such as foreign language and math.\n\nNo formal vote has been taken. The WISD Board of Trustees is next scheduled to meet on November 30 at 5 p.m. Residents who want to weigh in can attend that meeting or submit comments through the district website at wisd.org.",
+      "sourceUrl": "https://www.waxahachietx.com/2026/11/13/news/h1-wisd-considers-change-to-high-school-bell-schedule-h1/",
+      "sourceName": "Waxahachie Daily Light",
+      "tags": [
+        "education",
+        "Waxahachie ISD",
+        "Waxahachie High School"
+      ]
+    },
+    {
+      "headline": "Residents File Petition Seeking Citywide Vote on License Plate Reader Ban",
+      "dek": "A petition was submitted to the City of Waxahachie on November 19 asking that voters decide whether to prohibit the use of automated license plate readers within the city.",
+      "body": "Residents opposing the city's use of automated license plate readers submitted a formal petition to the City of Waxahachie on November 19, 2026, seeking to place a ban on the technology before voters.\n\nLicense plate readers — camera systems that automatically photograph and log the plates of passing vehicles — have been adopted by law enforcement agencies across Texas to track vehicles of interest and assist in investigations. Critics argue the systems amount to mass surveillance of residents who have committed no crime, with data stored in ways that extend well beyond any single case.\n\nThe petition filing was reported by the Waxahachie Daily Light on November 19. The city has not yet indicated when or whether the petition will be certified, or what the threshold for placement on a ballot would be. Waxahachie City Council meets on the first and third Monday of each month at 7 p.m. at the Waxahachie Civic Center, 2000 Civic Center Lane.",
+      "sourceUrl": "https://www.waxahachietx.com/2026/11/19/news/h1-petition-for-vote-on-license-plate-reader-ban-submitted-to-city-h1/",
+      "sourceName": "Waxahachie Daily Light",
+      "tags": [
+        "city government",
+        "public safety",
+        "civil liberties"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "WISD Board of Trustees Meeting",
+      "startDate": "2026-11-30",
+      "date": "Monday, November 30",
+      "time": "5:00 PM",
+      "location": "Waxahachie ISD Administration Building, 411 N. Gibson St., Waxahachie",
+      "description": "Regular monthly meeting of the Waxahachie ISD Board of Trustees. The proposed high school bell schedule change is among topics expected to continue in discussion.",
+      "sourceUrl": "https://www.wisd.org/explore/calendars",
+      "sourceName": "Waxahachie ISD"
+    },
+    {
+      "title": "Ellis County Turkey Trot — 4th Annual (5K, 10K & 8-Miler)",
+      "startDate": "2026-11-26",
+      "date": "Thursday, November 26",
+      "time": "6:45 AM",
+      "location": "Getzendaner Park Trail, 400 S. Grand Ave., Waxahachie",
+      "description": "The fourth annual Thanksgiving-morning race offers 5K, 10K, and 8-mile distances along the Getzendaner Park Trail; every registered participant receives a commemorative shirt and medal.",
+      "sourceUrl": "https://findarace.com/us/events/ellis-county-turkey-trot",
+      "sourceName": "Find a Race"
+    },
+    {
+      "title": "Waxahachie Christmas Parade & Community Tree Lighting",
+      "startDate": "2026-12-01",
+      "date": "Tuesday, December 1",
+      "time": "6:00 PM",
+      "location": "Downtown Waxahachie; tree lighting at Ellis County Courthouse lawn",
+      "description": "Family-friendly activities begin at 6 p.m. downtown, the lighted parade steps off at 6:30 p.m., and the evening concludes with a community tree lighting on the lawn of the historic Ellis County Courthouse.",
+      "sourceUrl": "https://www.waxahachiecvb.com/events/2026/christmas-parade--community-tree-lighting2222",
+      "sourceName": "Waxahachie Convention & Visitors Bureau"
+    },
+    {
+      "title": "Historic Waxahachie Christmas Tour of Homes — 8th Annual",
+      "startDate": "2026-12-12",
+      "date": "Saturday–Sunday, December 12–13",
+      "time": "1:00 PM – 7:00 PM",
+      "location": "Various historic homes, starting at 305 University Ave., Waxahachie",
+      "description": "Historic Waxahachie, Inc. opens multiple beautifully decorated historic residences for a self-guided holiday tour; proceeds support the organization's preservation work, and tickets include a collector's edition tour guide book.",
+      "sourceUrl": "https://www.waxahachiecvb.com/events/2026/historic-waxahachie-christmas-tour-of-homes222",
+      "sourceName": "Waxahachie Convention & Visitors Bureau"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Council Approves Updated YMCA Expansion Plan Adding Putting Green and Bocce Courts",
+      "body": "The Waxahachie City Council approved an amendment to the Waxahachie Family YMCA's planned development at its November 17 meeting. The revision adds a putting green and two bocce ball courts to the outdoor component of the YMCA's larger expansion project, which had already been recommended by the city's Planning and Zoning Commission on November 10. The original expansion envisions significant new indoor and outdoor recreational space at the facility.",
+      "sourceUrl": "https://www.waxahachietx.com/2026/11/17/news/h1-amendment-to-ymca-expansion-plan-approved-h1-2/",
+      "sourceName": "Waxahachie Daily Light",
+      "tags": [
+        "parks and recreation",
+        "city council",
+        "YMCA"
+      ]
+    },
+    {
+      "headline": "Kratom Sales Ban Vote Pushed to January",
+      "body": "The Waxahachie City Council's consideration of a proposed ban on kratom sales within the city was postponed at the November 17 meeting; a vote is now expected no earlier than January 2027. The council had been weighing the proposal since at least early November, when it first appeared on the agenda. Kratom is a botanical supplement derived from a Southeast Asian plant; several Texas cities have moved to restrict or ban its retail sale amid concerns about its psychoactive compounds.",
+      "sourceUrl": "https://www.waxahachietx.com/2026/11/17/news/vote-on-kratom-ban-postponed-until-january/",
+      "sourceName": "Waxahachie Daily Light",
+      "tags": [
+        "city council",
+        "public health"
+      ]
+    },
+    {
+      "headline": "HILCO Electric Awards Community Grants Through Operation Round Up",
+      "body": "HILCO Electric Cooperative announced on November 19 that it had distributed funds to five organizations in its service area through its Operation Round Up program, which rounds up member electric bills to the nearest dollar and pools the difference for community grants. The specific recipient organizations and award amounts were reported by the Waxahachie Daily Light; HILCO's service territory includes portions of Ellis County.",
+      "sourceUrl": "https://www.waxahachietx.com/2026/11/19/news/h1-hilco-announces-operation-round-up-awards-h1/",
+      "sourceName": "Waxahachie Daily Light",
+      "tags": [
+        "community",
+        "nonprofits",
+        "Ellis County"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Waxahachie council approves ordinance to regulate e-bikes, e-scooters",
+      "url": "https://www.waxahachietx.com/2026/11/16/news/h1-council-approves-e-bike-ordinance-h1/",
+      "publication": "Waxahachie Daily Light"
+    },
+    {
+      "title": "E-bike enthusiast provides input on potential ordinance",
+      "url": "https://www.waxahachiesun.com/news/e-bike-enthusiast-provides-input-on-potential-ordinance/article_30ebff5b-a8dc-45f1-80b8-ec23ec7052e1.html",
+      "publication": "Waxahachie Sun"
+    },
+    {
+      "title": "WISD considers change to high school bell schedule",
+      "url": "https://www.waxahachietx.com/2026/11/13/news/h1-wisd-considers-change-to-high-school-bell-schedule-h1/",
+      "publication": "Waxahachie Daily Light"
+    },
+    {
+      "title": "Petition for vote on license plate reader ban submitted to city",
+      "url": "https://www.waxahachietx.com/2026/11/19/news/h1-petition-for-vote-on-license-plate-reader-ban-submitted-to-city-h1/",
+      "publication": "Waxahachie Daily Light"
+    },
+    {
+      "title": "Amendment to YMCA expansion plan approved",
+      "url": "https://www.waxahachietx.com/2026/11/17/news/h1-amendment-to-ymca-expansion-plan-approved-h1-2/",
+      "publication": "Waxahachie Daily Light"
+    },
+    {
+      "title": "Vote on kratom ban postponed until January",
+      "url": "https://www.waxahachietx.com/2026/11/17/news/vote-on-kratom-ban-postponed-until-january/",
+      "publication": "Waxahachie Daily Light"
+    },
+    {
+      "title": "HILCO announces Operation Round Up awards",
+      "url": "https://www.waxahachietx.com/2026/11/19/news/h1-hilco-announces-operation-round-up-awards-h1/",
+      "publication": "Waxahachie Daily Light"
+    },
+    {
+      "title": "Area briefs: Christmas parade, grease roundup and more",
+      "url": "https://www.waxahachietx.com/2026/11/18/news/h1-b-area-briefs-b-br-christmas-parade-tree-lighting-set-for-dec-1-h1/",
+      "publication": "Waxahachie Daily Light"
+    },
+    {
+      "title": "Ellis County Turkey Trot 2026",
+      "url": "https://findarace.com/us/events/ellis-county-turkey-trot",
+      "publication": "Find a Race"
+    },
+    {
+      "title": "2026 Waxahachie Christmas Parade & Community Tree Lighting",
+      "url": "https://www.waxahachiecvb.com/events/2026/christmas-parade--community-tree-lighting2222",
+      "publication": "Waxahachie Convention & Visitors Bureau"
+    },
+    {
+      "title": "Historic Waxahachie Christmas Tour of Homes 2026",
+      "url": "https://www.waxahachiecvb.com/events/2026/historic-waxahachie-christmas-tour-of-homes222",
+      "publication": "Waxahachie Convention & Visitors Bureau"
+    },
+    {
+      "title": "WISD District Calendar",
+      "url": "https://www.wisd.org/explore/calendars",
+      "publication": "Waxahachie ISD"
+    },
+    {
+      "title": "City of Waxahachie Event Calendar",
+      "url": "https://www.waxahachietx.gov/812/Event-Calendar",
+      "publication": "City of Waxahachie"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "College Street Pub",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "British-style pub",
+        "description": "A cozy British-style pub with a Texas flair in the heart of downtown Waxahachie, serving classic pub fare, draught beers, and local favorites with indoor and garden seating.",
+        "address": "210 N College St, Waxahachie, TX 75165",
+        "phone": "(972) 938-2062",
+        "website": "https://collegestreetpub.com",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Dove's Nest",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "New Southern café & gift shop",
+        "description": "A beloved Waxahachie institution in the original 1913 hardware store building, serving New Southern cuisine including famous white chili, chicken apricot salad, and gourmet sandwiches at lunch.",
+        "address": "105 W Jefferson St, Waxahachie, TX 75165",
+        "phone": "(972) 938-3683",
+        "website": "https://dovesnest.us",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Tuscan Slice",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant & pizzeria",
+        "description": "New York-rooted Italian restaurant serving wood-fired pizza, homemade pasta, steaks, and fresh seafood from an authentic wood-burning oven since 2010.",
+        "address": "401 N Hwy 77, Ste 15, Waxahachie, TX 75165",
+        "phone": "(972) 937-6770",
+        "website": "https://tuscanslice.com",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Atkins Seafood",
+        "cuisineGroup": "Seafood & American",
+        "type": "Family-owned seafood market & restaurant",
+        "description": "A family-owned seafood market and casual restaurant sourcing fresh catches directly from their own fleet of boats out of Galveston since 2004.",
+        "address": "400 W Main St, Waxahachie, TX 75165",
+        "phone": "(214) 463-5490",
+        "website": "https://atkinsseafood.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Ohana Sushi Ramen Poke",
+        "cuisineGroup": "Asian",
+        "type": "Japanese restaurant",
+        "description": "A highly rated Japanese restaurant offering a full sushi bar, creative ramen, poke bowls, and a full liquor bar in a welcoming atmosphere.",
+        "address": "1101 US-287 Bypass, Waxahachie, TX 75165",
+        "phone": "(972) 937-8818",
+        "website": "https://ohanasushiramen.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Southern Roots Brewing Company",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft brewery & pizza kitchen",
+        "description": "A family-owned craft brewery and pizza kitchen in a restored early-1900s freight depot, pouring house-brewed beers alongside scratch-made pizzas and pub food.",
+        "address": "421 S College St, Waxahachie, TX 75165",
+        "phone": "(214) 980-1056",
+        "website": "https://southernrootsbrewingco.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Panza's Tapping Italy",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian specialty bistro",
+        "description": "A locally beloved Italian bistro near the courthouse square offering house-made bruschettas, pizzettas, Roman-style stuffed Taglio bread, light pastas, and in-house desserts using fresh, local ingredients.",
+        "address": "107 N Rogers St, Waxahachie, TX 75165",
+        "phone": "(214) 869-1269",
+        "website": "https://panzaswaxahachie.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "D Restaurant Latin Cuisine",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Latin American restaurant",
+        "description": "A vibrant, locally owned Latin American restaurant tucked just off the historic downtown square, blending culinary traditions of El Salvador, Mexico, and Central and South America.",
+        "address": "500 W Madison St, Suite A1, Waxahachie, TX 75165",
+        "phone": "(469) 550-1234",
+        "website": "https://drestaurantlatincuisine.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Farm Luck Soda Fountain & Dry Goods",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "Old-fashioned soda fountain & sandwich shop",
+        "description": "An independently owned soda fountain inside the historic 1913 Waxahachie Bank & Trust building on the courthouse square, serving house-made malts, cream sodas, banana splits, soups, and sandwiches.",
+        "address": "109 W Franklin St, Ste 119, Waxahachie, TX 75165",
+        "phone": "(214) 903-8021",
+        "website": "https://farmlucksodafountain.com",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Roma's Italian Restaurant",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "A neighborhood Italian restaurant with a broad menu of classic dishes including lasagna, chicken alfredo, stuffed mushrooms, and garlic rolls.",
+        "address": "2760 Venture Way, Suite 100, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Big Al's Down The Hatch",
+        "cuisineGroup": "Seafood & American",
+        "type": "Bar & grill with outdoor patio",
+        "description": "A casual bar and grill with a large patio, known for affordable food, live entertainment including musical bingo, and a lively local crowd.",
+        "address": "1000 N Hwy 77, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Mariscos Muelle 77",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican seafood restaurant",
+        "description": "A highly rated Mexican seafood restaurant open until midnight, celebrated for flavorful, fresh preparations and standout service.",
+        "address": "Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": "New"
+      },
+      {
+        "name": "The Burger Spot",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Burger restaurant",
+        "description": "A locally popular burger spot with consistently high ratings, open for lunch and dinner.",
+        "address": "Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Cajun Bros",
+        "cuisineGroup": "Seafood & American",
+        "type": "Cajun seafood restaurant",
+        "description": "A Cajun-style restaurant serving boiled and fried seafood with affordable drinks in a casual, festive setting.",
+        "address": "Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Two Amigos Taqueria",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican taqueria",
+        "description": "A beloved local taqueria rated 4.4 on TripAdvisor, consistently recommended for its authentic Mexican food at wallet-friendly prices.",
+        "address": "Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Chaska House Bed & Breakfast",
+        "type": "Historic bed & breakfast",
+        "description": "A landmark 1900 Revival-style Victorian home on Main Street walking distance to the historic square, with uniquely decorated guest rooms named after authors and optional guest cottages across the street.",
+        "address": "716 W Main St, Waxahachie, TX 75165",
+        "phone": "(214) 213-5837",
+        "website": "https://chaskabb.com",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The English Merchant's Inn",
+        "type": "Boutique bed & breakfast",
+        "description": "A restored English-style 1916 historic home on picturesque Main Street offering refined boutique accommodations, free breakfast, and personalized hospitality just minutes from the courthouse square.",
+        "address": "717 W Main St, Waxahachie, TX 75165",
+        "phone": "(214) 668-1762",
+        "website": "https://theenglishmerchantsinn.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Residence Inn by Marriott Waxahachie",
+        "type": "Extended-stay hotel",
+        "description": "A recently opened extended-stay hotel offering suites with full amenities, complimentary breakfast, and highly rated service.",
+        "address": "Waxahachie, TX 75165",
+        "phone": "",
+        "website": "https://marriott.com",
+        "neighborhood": "Waxahachie",
+        "notable": "New"
+      },
+      {
+        "name": "Hampton Inn & Suites Waxahachie",
+        "type": "Full-service hotel",
+        "description": "A full-service hotel offering comfortable rooms, free hot breakfast, and a pool, convenient to major highways and local attractions.",
+        "address": "2001 N Hwy 77, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "https://hilton.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Best Western Plus Waxahachie Inn & Suites",
+        "type": "Hotel",
+        "description": "A well-regarded hotel offering complimentary breakfast, clean rooms, and friendly staff, popular with repeat visitors to Waxahachie.",
+        "address": "200 Marriott Dr, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "https://bestwestern.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "La Quinta Inn & Suites by Wyndham Waxahachie",
+        "type": "Hotel",
+        "description": "A comfortable hotel at 311 Stadium Drive offering free breakfast, a pool, and free Wi-Fi within easy reach of Waxahachie's attractions.",
+        "address": "311 Stadium Dr, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "https://wyndhamhotels.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Fairfield by Marriott Inn & Suites Dallas Waxahachie",
+        "type": "Hotel",
+        "description": "A Marriott-brand hotel offering a good breakfast, fitness center, and modern rooms convenient to I-35E.",
+        "address": "Waxahachie, TX 75165",
+        "phone": "",
+        "website": "https://marriott.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Holiday Inn Express & Suites Waxahachie",
+        "type": "Hotel",
+        "description": "An IHG property offering modern, well-appointed rooms and complimentary breakfast, praised for standout staff hospitality.",
+        "address": "984 W US Hwy 287 Bypass, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "https://ihg.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Comfort Suites Waxahachie – Dallas",
+        "type": "Hotel",
+        "description": "A well-rated all-suites hotel at 131 RVG Plaza offering free breakfast, a pool, and spacious rooms.",
+        "address": "131 RVG Plaza, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "https://choicehotels.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Motel 6 Waxahachie",
+        "type": "Budget motel",
+        "description": "A budget-friendly, pet-welcoming motel with a pool along I-35E offering no-frills, clean accommodations.",
+        "address": "200 N I-35E, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "https://motel6.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Gingerbread Antiques",
+        "shopGroup": "Home & Gifts",
+        "type": "Antique shop",
+        "description": "A large, beloved antique store on the downtown square established in 1995, packed with authentic furniture, dish sets, paintings, and home décor across every nook and cranny.",
+        "address": "Downtown Square, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Atelier Antiques & Fine Art",
+        "shopGroup": "Home & Gifts",
+        "type": "Antique mall & fine art gallery",
+        "description": "A destination antique mall and gallery where shoppers can browse unique treasures, relax in a French lounge, or browse the attached book shop.",
+        "address": "Downtown Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Copper Rose Boutique",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's clothing boutique",
+        "description": "A mother-daughter boutique blending trendy styles with timeless staples and a signature Western flair, stocking a wide range of women's clothing, shoes, and accessories with frequent new arrivals.",
+        "address": "210 W Franklin St, Waxahachie, TX 75165",
+        "phone": "(214) 546-8023",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "The Velvet Angel Boutique",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's boutique",
+        "description": "A downtown boutique celebrated for unique, interesting clothing and an exceptionally helpful and warm staff.",
+        "address": "Downtown Square, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Kimmy's Boutique",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's clothing boutique",
+        "description": "A popular downtown boutique offering sizes S–3X with a carefully curated selection of clothing suited for any occasion.",
+        "address": "209 S College St, Waxahachie, TX 75165",
+        "phone": "(214) 903-5550",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "CB & CO Boutique & Salon",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Women's boutique, salon & coffee shop",
+        "description": "A unique concept combining a women's fashion boutique, hair salon, and coffee shop under one roof in historic downtown Waxahachie.",
+        "address": "210 N Monroe St, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "https://cb-co-boutique.myshopify.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Sweet Peas Boutique",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Boutique & vendor marketplace",
+        "description": "A downtown boutique offering fashion, unique gifts, home décor, and rotating vendor booths at 101 S College Street.",
+        "address": "101 S College St, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Cheyenne Ranch Boutique",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Western-style boutique",
+        "description": "A Western-flair retailer at the heart of Waxahachie's Historic Square offering cowboy-inspired clothing and accessories.",
+        "address": "Downtown Historic Square, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Waxahachie Architectural Salvage",
+        "shopGroup": "Home & Gifts",
+        "type": "Architectural salvage & antique shop",
+        "description": "A specialty shop dealing in rescued architectural elements, antiques, and reclaimed pieces for home renovation and décor.",
+        "address": "Downtown Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Farmhouse",
+        "shopGroup": "Home & Gifts",
+        "type": "Vintage & upcycled furniture shop",
+        "description": "An eclectic shop selling vintage, farmhouse-style, DIY, and upcycled furniture, with workshops available for those who want to create their own pieces.",
+        "address": "Downtown Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Meat Church",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "BBQ rubs & specialty food shop",
+        "description": "The retail shop of the nationally recognized Meat Church brand, offering BBQ rubs, seasonings, and grilling supplies.",
+        "address": "Downtown Waxahachie, TX 75165",
+        "phone": "",
+        "website": "https://meatchurch.com",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Webb Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Folk art & antiques gallery",
+        "description": "One of the largest folk art galleries in Texas, established in 1987 and operating in a 5,000-sq-ft original 1902 building, featuring rotating exhibits of self-taught art, fraternal antiques, vintage carnival banners, and vernacular photography.",
+        "address": "209 W Franklin St, Waxahachie, TX 75165",
+        "phone": "(972) 938-8085",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ellis County Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Local history museum",
+        "description": "A free nonprofit museum housed in an 1889 building across from the Ellis County Courthouse, preserving and presenting over 130 years of Ellis County history with rotating exhibits, guided tours, and children's activities.",
+        "address": "201 S College St, Waxahachie, TX 75165",
+        "phone": "(972) 937-0681",
+        "website": "https://elliscountymuseum.org",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Waxahachie Community Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Community theater company",
+        "description": "A nonprofit community theater company producing theatrical and musical performances for Ellis County audiences since 1979, with 2026 season shows at University Church in Waxahachie.",
+        "address": "221 Solon Rd, Waxahachie, TX 75165",
+        "phone": "(972) 646-1050",
+        "website": "https://waxahachiecommunitytheatre.com",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chautauqua Auditorium",
+        "venueGroup": "Music Venues",
+        "type": "Historic performance hall",
+        "description": "A National Register-listed 1902 octagonal auditorium seating 2,500 in Getzendaner Park, hosting the Fort Worth Symphony Orchestra, country music performances, community theater, and major civic events.",
+        "address": "400 S Grand Ave (Getzendaner Park), Waxahachie, TX 75165",
+        "phone": "(469) 309-4270",
+        "website": "https://waxahachietx.gov",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ellis County Art Association & Museum",
+        "venueGroup": "Art Galleries",
+        "type": "Community art gallery & association",
+        "description": "A nonprofit promoting visual arts in Ellis County, hosting member shows and exhibitions including the annual Sizzling Summer Art Show at the Beaudry Art Gallery on the downtown square.",
+        "address": "880 Garden Valley Pkwy, Waxahachie, TX 75165",
+        "phone": "(972) 937-3414",
+        "website": "https://elliscountyart.net",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Scarborough Renaissance Festival",
+        "venueGroup": "Theater & Comedy",
+        "type": "Renaissance festival grounds",
+        "description": "A sprawling Renaissance-themed festival grounds hosting one of the largest annual Renaissance fairs in the country each spring, with jousting, artisans, period entertainment, and an immersive living-history atmosphere.",
+        "address": "2511 FM 66, Waxahachie, TX 75167",
+        "phone": "",
+        "website": "https://srfestival.com",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Mosaic Madness",
+        "venueGroup": "Art Galleries",
+        "type": "Mosaic art studio & class venue",
+        "description": "A highly rated hands-on art studio offering mosaic classes and creative workshops in a fun, social setting.",
+        "address": "Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Texas Motorplex",
+        "venueGroup": "Music Venues",
+        "type": "Drag racing & events facility",
+        "description": "The world's first all-concrete drag racing facility, built in 1986 and hosting the annual NHRA Texas FallNationals each October, plus car shows, concerts, the Stampede of Speed, and catered events year-round.",
+        "address": "7500 US Hwy 287, Ennis, TX 75119",
+        "phone": "(972) 878-2641",
+        "website": "https://texasmotorplex.com",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Waxahachie Family YMCA",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service community recreation center",
+        "description": "A full-service YMCA offering a gym, outdoor pool, basketball and pickleball courts, volleyball, group fitness classes, youth programs, athletic fields, and childcare — the only gym in Ellis County offering childcare.",
+        "address": "100 YMCA Dr, Waxahachie, TX 75165",
+        "phone": "(972) 937-9622",
+        "website": "https://ymcadallas.org/locations/waxahachie-family-ymca",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Gold's Gym Waxahachie",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "A full-service Gold's Gym location offering free weights, cardio equipment, group fitness classes including Zumba, BodyPump, and cycling, open Monday–Friday 5 AM–11 PM.",
+        "address": "505 N Hwy 77, Suite 616, Waxahachie, TX 75165",
+        "phone": "(972) 268-7828",
+        "website": "https://goldsgym.com/locations/tx/waxahachie",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Anytime Fitness",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "24-hour gym",
+        "description": "A 24/7 gym offering a welcoming, laid-back atmosphere with a variety of equipment and personalized fitness plans, with access to over 5,800 locations worldwide.",
+        "address": "1011 N Hwy 77, Ste 103, Waxahachie, TX 75165",
+        "phone": "(972) 923-2171",
+        "website": "https://anytimefitness.com/locations/waxahachie-texas-983",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "CrossFit Waxahachie",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "CrossFit gym",
+        "description": "A top-rated CrossFit box in Waxahachie known for a motivated community atmosphere that makes members want to participate.",
+        "address": "Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "HOTWORX Waxahachie",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Infrared fitness studio",
+        "description": "An infrared sauna-based workout studio offering quick, effective isometric and HIIT sessions including their signature ISO yoga and cycling classes.",
+        "address": "Waxahachie Marketplace, Waxahachie, TX 75165",
+        "phone": "",
+        "website": "https://hotworx.net",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Getzendaner Memorial Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "City park & recreation area",
+        "description": "A historic 33-acre city park established in 1889 along Waxahachie Creek, featuring multiple playgrounds including an ADA-accessible space, pavilions, shade trees, hiking and biking trails, and access to the city's trail system.",
+        "address": "400 S Grand Ave, Waxahachie, TX 75165",
+        "phone": "(469) 309-4270",
+        "website": "https://waxahachietx.gov/643/Getzendaner-Park",
+        "neighborhood": "Waxahachie",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Waxahachie Country Club",
+        "venueGroup": "Sports & Courts",
+        "type": "Golf club & country club",
+        "description": "A private country club and golf course recently praised for improved ownership, management, and a friendly, welcoming staff that recalls the club's best days.",
+        "address": "Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      },
+      {
+        "name": "Buffalo Creek CrossFit",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "CrossFit gym",
+        "description": "A Waxahachie CrossFit affiliate offering group fitness classes and open gym with evening hours.",
+        "address": "Waxahachie, TX 75165",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Waxahachie",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-11-20",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-11-20",
+        "high": 74,
+        "low": 55,
+        "summary": "Patchy Fog then Mostly Sunny",
+        "condition": "fog",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-21",
+        "high": 75,
+        "low": 57,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-22",
+        "high": 66,
+        "low": 43,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 1
+      },
+      {
+        "date": "2026-11-23",
+        "high": 61,
+        "low": 41,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 0
+      },
+      {
+        "date": "2026-11-24",
+        "high": 57,
+        "low": 39,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 4
+      },
+      {
+        "date": "2026-11-25",
+        "high": 55,
+        "low": 37,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 1
+      },
+      {
+        "date": "2026-11-26",
+        "high": 56,
+        "low": 40,
+        "summary": "Sunny",
+        "condition": "sunny",
+        "precip": 2
+      }
+    ]
+  }
+}

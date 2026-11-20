@@ -1,0 +1,712 @@
+{
+  "clusterSlug": "civic-center-tenderloin",
+  "clusterName": "Civic Center & Tenderloin",
+  "weekOf": "2026-11-20",
+  "topStories": [
+    {
+      "headline": "Doctors and Nurses Demand UC Keep ICE Out of San Francisco Hospitals",
+      "dek": "Resident physicians and nurses rallied outside a UC Board of Regents meeting this week, calling for formal systemwide policies to protect patients in immigration custody.",
+      "body": "On November 17, a coalition of resident physicians, nurses, and community advocates gathered outside a University of California Board of Regents meeting in San Francisco to demand that ICE agents be barred from UC hospitals. The demonstrators, organized by the resident physicians' union alongside the California Nurses Association and UAW 4811, say existing UC policies do not adequately cover situations where immigration agents accompany patients who are already in federal custody — as opposed to entering hospitals to search for someone.\n\nFrontline doctors described specific incidents in which ICE agents refused to leave examination rooms during medical evaluations, blocked patients from reaching family members or attorneys, and pressured clinical staff to discharge patients before safe medical plans were in place. UCSF resident physician Francesco Sergi, speaking to reporters, said that without clearer institutional rules, staff are left uncertain about what they are legally and ethically permitted to do in those moments.\n\nThe resident physicians' union has drafted a proposed eight-page model policy that would require hospital staff to ask agents to leave during exams, guarantee patients confidential communication with relatives and lawyers, and prohibit agents from influencing medical decisions. Hundreds of emails pushing similar demands were sent to the Board of Regents and UC President James B. Milliken in advance of the rally.\n\nUCSF resident physicians who participated say that, collectively, they have cared for roughly ten patients in ICE custody at San Francisco hospitals over the past year. The coalition is pressing UC leadership to adopt binding, enforceable standards across the entire system rather than leaving individual hospitals to set their own protocols.",
+      "sourceUrl": "https://missionlocal.org/2026/11/uc-doctors-and-nurses-rally-to-demand-protections-against-ice-in-hospitals/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "immigration",
+        "healthcare",
+        "UCSF",
+        "ICE",
+        "Civic Center"
+      ]
+    },
+    {
+      "headline": "Board of Supervisors Unanimously Extends Data Center Freeze Through Next Fall",
+      "dek": "City Hall voted 11–0 on November 17 to hold the line on new data center construction until September 2027, citing a Planning Department warning that San Francisco's power grid is already near capacity.",
+      "body": "The San Francisco Board of Supervisors voted unanimously on Tuesday, November 17, to extend the city's zoning moratorium on new data centers by an additional ten months and fifteen days, pushing the freeze to September 2027. The extension gives city staff time to complete a fuller environmental review of data centers' effects on San Francisco's electrical grid, air quality, and housing development pipeline.\n\nThe vote came one week after the city's Planning Department released a report concluding that the power grid is operating near its limits even without any new data center construction. A single large data center — one drawing around fifty megawatts — could consume electricity equivalent to about 25,000 homes, according to the department's analysis. Officials expressed concern that approving new facilities could crowd out capacity needed for housing and other development.\n\nSupervisor Shamann Walton, the moratorium's lead sponsor, said before the vote that the city still lacks basic knowledge about how data centers affect surrounding communities. The proposal was co-sponsored by Supervisors Jackie Fielder, Chyanne Chen, and Connie Chan. The extension takes effect ten days after passage unless Mayor Daniel Lurie acts sooner; the Board could override any veto with a four-fifths majority.\n\nDevelopers have been exploring potential data center sites in the city, including the former SF Centre mall on Market Street in Mid-Market, putting the moratorium's reach squarely in the neighborhoods surrounding City Hall. The vote is among the final major actions before Walton and Board President Rafael Mandelman leave office in January.",
+      "sourceUrl": "https://sfstandard.com/2026/11/17/data-center-moratorium-september-2027/",
+      "sourceName": "SF Standard",
+      "tags": [
+        "Board of Supervisors",
+        "data centers",
+        "City Hall",
+        "environment",
+        "Mid-Market"
+      ]
+    },
+    {
+      "headline": "Tenderloin Rec Center Asks Families to Rate Its New Playground",
+      "dek": "San Francisco Recreation and Parks has opened a public survey on the redesigned children's play area at the Tenderloin Recreation Center, with responses accepted through November 30.",
+      "body": "San Francisco Recreation and Parks is asking families who have used the newly renovated children's play area at the Tenderloin Recreation Center to share their feedback before the end of the month. The community survey — available online through November 30, 2026 — is part of the department's effort to gauge how well the redesigned space is serving one of the city's densest and most underserved neighborhoods.\n\nThe overhaul transformed what had been a largely asphalt-covered yard. The updated space now includes more than sixteen new trees, over 1,000 square feet of new planted areas, and a range of new seating — from terraced benches at the soccer pitch to a contemplative area with boulders and seatbacks. Existing public art sculptures were refurbished and repositioned in partnership with the San Francisco Arts Commission.\n\nThe Recreation and Park Commission approved the redesign in January 2025. The project was supported by Wu Yee Children's Services and community members who argued that quality outdoor space is especially critical for children growing up in the Tenderloin, where private yards are rare and sidewalk conditions can make outdoor play difficult. Families can find the survey through the SF Recreation and Parks department website.",
+      "sourceUrl": "https://sfrecpark.org/m/newsflash?cat=177",
+      "sourceName": "SF Recreation and Parks",
+      "tags": [
+        "Tenderloin",
+        "parks",
+        "children",
+        "community"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Moving San Francisco: SFMTA Photos 1903–Now",
+      "startDate": "2026-11-01",
+      "date": "Through November 25",
+      "time": "",
+      "location": "SF Civic Center area — check sfciviccenter.org for venue details",
+      "description": "A photo exhibition tracing the history of Muni and San Francisco transit from the early twentieth century to the present day. Free and open to the public through November 25.",
+      "sourceUrl": "https://sfciviccenter.org/events/",
+      "sourceName": "SF Civic Center"
+    },
+    {
+      "title": "SF Opera End of Year Public Market",
+      "startDate": "2026-11-29",
+      "date": "Sunday, November 29",
+      "time": "11:30 AM–4:00 PM",
+      "location": "San Francisco Opera, 301 Van Ness Ave, Civic Center",
+      "description": "The San Francisco Opera hosts a seasonal market featuring local artisans, visual artists, and food vendors. Open to the public.",
+      "sourceUrl": "https://sfciviccenter.org/events/",
+      "sourceName": "SF Civic Center"
+    },
+    {
+      "title": "City Hall Holiday Pop-up Shop",
+      "startDate": "2026-12-01",
+      "date": "Tuesday, December 1",
+      "time": "11:00 AM–6:00 PM",
+      "location": "San Francisco City Hall, 1 Dr. Carlton B. Goodlett Place, Civic Center",
+      "description": "Local makers and vendors set up shop under City Hall's rotunda dome for a one-day holiday market. Free to browse.",
+      "sourceUrl": "https://sfciviccenter.org/events/",
+      "sourceName": "SF Civic Center"
+    },
+    {
+      "title": "Civic Center Plaza Holiday Tree Lighting 2026",
+      "startDate": "2026-12-02",
+      "date": "Wednesday, December 2",
+      "time": "4:00–7:00 PM",
+      "location": "Civic Center Plaza, 335 McAllister St, Civic Center",
+      "description": "The annual free, family-friendly tree lighting ceremony features live performances by the San Francisco Boys Chorus, the Tap Dancing Christmas Trees, the Festivus Band, appearances by Santa and the Grinch, simulated snow flurries, a book giveaway from the San Francisco Public Library, and holiday activities in the Makers Village. The 50-foot noble fir is lit at 5:30 PM, rain or shine.",
+      "sourceUrl": "https://sfciviccenter.org/event/civic-center-plaza-tree-lighting-2026/",
+      "sourceName": "SF Civic Center"
+    },
+    {
+      "title": "Asian Art Museum Free First Sundays",
+      "startDate": "2026-12-06",
+      "date": "Sunday, December 6",
+      "time": "Various times",
+      "location": "Asian Art Museum, 200 Larkin St, Civic Center",
+      "description": "The Asian Art Museum offers free general admission on the first Sunday of each month. December's edition falls on December 6.",
+      "sourceUrl": "https://sfciviccenter.org/events/list/",
+      "sourceName": "SF Civic Center"
+    },
+    {
+      "title": "Zumba in Civic Center Plaza",
+      "startDate": "2026-11-21",
+      "date": "Ongoing — Sundays, Wednesdays & Fridays",
+      "time": "Various times",
+      "location": "Civic Center Plaza, Civic Center",
+      "description": "Instructor Matt Ziegler leads free outdoor Zumba classes in Civic Center Plaza three days a week, weather permitting.",
+      "sourceUrl": "https://sfciviccenter.org/events/list/",
+      "sourceName": "SF Civic Center"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Supervisors' Data Center Vote Puts Mid-Market Site in Play",
+      "body": "Among the locations developers have scouted for potential data centers is the shuttered SF Centre mall on Market Street, squarely in Mid-Market. The Board of Supervisors' November 17 unanimous vote to extend the citywide moratorium through September 2027 means any such proposal will remain on hold while Planning Department staff study grid capacity, generator emissions, noise, and cumulative environmental burdens. The moratorium's ten-day clock before it takes effect gives Mayor Lurie a brief window to act, though a veto would require an 11-vote supermajority to override.",
+      "sourceUrl": "https://sfist.com/2026/11/17/sf-supervisors-extend-data-center-moratorium-citing-gaps-in-environmental-impact-report/",
+      "sourceName": "SFist",
+      "tags": [
+        "Mid-Market",
+        "data centers",
+        "zoning",
+        "Board of Supervisors"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "UC doctors and nurses rally to demand protections against ICE in hospitals",
+      "url": "https://missionlocal.org/2026/11/uc-doctors-and-nurses-rally-to-demand-protections-against-ice-in-hospitals/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "UC doctors, nurses, and community allies rally to demand ICE out of UC hospitals",
+      "url": "https://www.nationalnursesunited.org/press/uc-doctors-nurses-and-community-allies-rally-to-demand-ice-out-of-uc-hospitals",
+      "publication": "National Nurses United"
+    },
+    {
+      "title": "UCSF Doctors Rally for Stronger Policies to Protect Patients in ICE Custody",
+      "url": "https://www.archyde.com/ucsf-doctors-rally-for-stronger-policies-to-protect-patients-in-ice-custody/",
+      "publication": "Archyde / Mission Local"
+    },
+    {
+      "title": "San Francisco leaders approve extending data center moratorium to next fall",
+      "url": "https://sfstandard.com/2026/11/17/data-center-moratorium-september-2027/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "SF Extends Data Center Moratorium, Citing Gaps in Environmental Impact Report",
+      "url": "https://sfist.com/2026/11/17/sf-supervisors-extend-data-center-moratorium-citing-gaps-in-environmental-impact-report/",
+      "publication": "SFist"
+    },
+    {
+      "title": "S.F. supervisors vote to extend pause on data centers for 10 months",
+      "url": "https://missionlocal.org/2026/11/san-francisco-data-center-moratorium-extended/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "SF data center boom may 'crowd out' city housing development",
+      "url": "https://www.kron4.com/news/bay-area/sf-data-center-boom-may-crowd-out-city-housing-development/",
+      "publication": "KRON4"
+    },
+    {
+      "title": "Rec Park Improvements: Tenderloin Recreation Center",
+      "url": "https://sfrecpark.org/m/newsflash?cat=177",
+      "publication": "SF Recreation and Parks"
+    },
+    {
+      "title": "Civic Center Plaza Tree Lighting 2026",
+      "url": "https://sfciviccenter.org/event/civic-center-plaza-tree-lighting-2026/",
+      "publication": "SF Civic Center"
+    },
+    {
+      "title": "Upcoming Events — SF Civic Center",
+      "url": "https://sfciviccenter.org/events/",
+      "publication": "SF Civic Center"
+    },
+    {
+      "title": "Civic Center Plaza Holiday Tree Lighting 2026 — Eventbrite",
+      "url": "https://www.eventbrite.com/e/civic-center-plaza-holiday-tree-lighting-2026-tickets-2003836847954",
+      "publication": "Eventbrite / Civic Center CBD"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Brenda's French Soul Food",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Creole & Southern brunch restaurant",
+        "description": "The Bay Area's most-reviewed restaurant, serving New Orleans–inspired beignets, fried chicken, and Creole-accented plates from morning through dinner.",
+        "address": "652 Polk St",
+        "phone": "415-345-8100",
+        "website": "https://frenchsoulfood.com",
+        "neighborhood": "Tenderloin",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Zuni Café",
+        "cuisineGroup": "Seafood & American",
+        "type": "California seasonal café-restaurant",
+        "description": "James Beard Award–winning Market Street landmark celebrated for its wood-roasted chicken for two and impeccably sourced California-Italian menu.",
+        "address": "1658 Market St",
+        "phone": "415-552-2522",
+        "website": "https://zunicafe.com",
+        "neighborhood": "Mid-Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Absinthe Brasserie & Bar",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "French brasserie and cocktail bar",
+        "description": "Hayes Valley brasserie serving upscale French and Northern Italian cuisine with a lively bar scene beloved by pre-symphony and pre-opera crowds.",
+        "address": "398 Hayes St",
+        "phone": "415-551-1590",
+        "website": "https://absinthe.com",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chao Pescao",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Cuban-Colombian casual restaurant",
+        "description": "Bright, colorful Latin Caribbean spot directly across from City Hall, known for arepas, empanadas, and tostones, open Tuesday through Saturday.",
+        "address": "272 McAllister St",
+        "phone": "415-621-2200",
+        "website": "https://chaopescaosf.com",
+        "neighborhood": "Civic Center",
+        "notable": ""
+      },
+      {
+        "name": "Son & Garden",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "New American brunch and dinner restaurant",
+        "description": "Lush, Thai-inflected New American restaurant from the Farmhouse Kitchen family, serving colorful brunch plates and a dinner menu in an Instagram-beloved setting.",
+        "address": "700 Polk St",
+        "phone": "415-913-7404",
+        "website": "https://sonandgarden.com",
+        "neighborhood": "Tenderloin",
+        "notable": ""
+      },
+      {
+        "name": "Saigon Sandwich",
+        "cuisineGroup": "Asian",
+        "type": "Vietnamese bánh mì shop",
+        "description": "Cash-only Tenderloin institution serving the city's most celebrated bánh mì, stuffed with roast pork, pâté, and fresh herbs, for over 40 years.",
+        "address": "560 Larkin St",
+        "phone": "415-474-5698",
+        "website": "https://saigonsandwich.com",
+        "neighborhood": "Tenderloin",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sungho",
+        "cuisineGroup": "Asian",
+        "type": "Korean soul food restaurant",
+        "description": "Michelin Guide–recognized Tenderloin gem specializing in 24-hour-simmered gukbap (bone broth with rice), savory pancakes, and marinated raw crab.",
+        "address": "250 Hyde St",
+        "phone": "415-971-2283",
+        "website": "https://sunghosf.com",
+        "neighborhood": "Tenderloin",
+        "notable": ""
+      },
+      {
+        "name": "Tadu Ethiopian Kitchen",
+        "cuisineGroup": "Other",
+        "type": "Ethiopian restaurant",
+        "description": "Tenderloin original serving authentic injera-based Ethiopian dishes in an open-kitchen setting, open Wednesday through Monday for dinner.",
+        "address": "484 Ellis St",
+        "phone": "415-409-6649",
+        "website": "https://taduethiopiankitchen.com",
+        "neighborhood": "Tenderloin",
+        "notable": ""
+      },
+      {
+        "name": "Golden Era Vegan Restaurant",
+        "cuisineGroup": "Vegetarian & Vegan",
+        "type": "Vietnamese vegan restaurant",
+        "description": "Long-running Civic Center plant-based kitchen serving a wide menu of Vietnamese and pan-Asian vegan comfort dishes, including pho, claypot rice, and banh xeo.",
+        "address": "395 Golden Gate Ave",
+        "phone": "415-487-8687",
+        "website": "https://goldeneravegan.com",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Arsicault Bakery – Civic Center",
+        "cuisineGroup": "Bakeries & Desserts",
+        "type": "French-style bakery",
+        "description": "Civic Center outpost of the Bon Appétit–crowned best bakery in America, with a spacious open kitchen turning out croissants, kouign amanns, and café drinks daily.",
+        "address": "87 McAllister St",
+        "phone": "415-926-5155",
+        "website": "https://arsicault-bakery.com",
+        "neighborhood": "Civic Center",
+        "notable": ""
+      },
+      {
+        "name": "Villon",
+        "cuisineGroup": "Seafood & American",
+        "type": "California cuisine hotel restaurant",
+        "description": "Kelly Wearstler–designed dining room inside the San Francisco Proper Hotel, serving seed-oil-free California farm-to-table breakfasts and lunches daily.",
+        "address": "1100 Market St (San Francisco Proper Hotel)",
+        "phone": "628-895-2039",
+        "website": "https://properhotel.com/san-francisco/restaurants-bars/villon/",
+        "neighborhood": "Mid-Market",
+        "notable": ""
+      },
+      {
+        "name": "Charmaine's",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Rooftop cocktail bar",
+        "description": "Stunning rooftop bar atop the San Francisco Proper Hotel, offering panoramic city views, curated cocktails, and an indoor-outdoor terrace designed by Kelly Wearstler.",
+        "address": "1100 Market St (San Francisco Proper Hotel)",
+        "phone": "628-895-2039",
+        "website": "https://properhotel.com/san-francisco/restaurants-bars/",
+        "neighborhood": "Mid-Market",
+        "notable": ""
+      },
+      {
+        "name": "Sam's American Eatery",
+        "cuisineGroup": "Seafood & American",
+        "type": "American-Korean casual restaurant",
+        "description": "Civic Center neighborhood staple steps from City Hall, drawing office workers and performing-arts visitors with a broad American and Korean-inflected menu.",
+        "address": "686 McAllister St",
+        "phone": "415-621-5555",
+        "website": "https://samsamericaneatery.com",
+        "neighborhood": "Civic Center",
+        "notable": ""
+      },
+      {
+        "name": "Bar Jamon",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Spanish small-plates bar",
+        "description": "Civic Center tapas bar open from late afternoon, popular with post-theater crowds from nearby Herbst and Davies Hall for its Iberian wines and cured meats.",
+        "address": "24 Grove St",
+        "phone": "415-829-2230",
+        "website": "https://barjamonsf.com",
+        "neighborhood": "Civic Center",
+        "notable": ""
+      },
+      {
+        "name": "Cantoo Latin Asian Rotisserie",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Venezuelan-Chinese fusion restaurant",
+        "description": "Tenderloin standout blending Venezuelan and Chinese culinary traditions, earning a loyal following for its rotisserie meats and flavors that tell the story of its owners' heritage.",
+        "address": "611 Larkin St",
+        "phone": "415-360-3339",
+        "website": "https://cantoo.com",
+        "neighborhood": "Tenderloin",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "San Francisco Proper Hotel",
+        "type": "Boutique design hotel",
+        "description": "Mid-Market landmark in a 1904 Beaux-Arts flatiron building, featuring 131 artfully designed rooms by Kelly Wearstler, Villon restaurant, and the rooftop Charmaine's bar.",
+        "address": "45 McAllister St",
+        "phone": "415-735-7777",
+        "website": "https://properhotel.com/san-francisco/",
+        "neighborhood": "Mid-Market",
+        "notable": ""
+      },
+      {
+        "name": "Phoenix Hotel",
+        "type": "Boutique motor lodge",
+        "description": "Legendary Tenderloin rock-and-roll motor lodge that has hosted touring musicians from David Bowie to Kurt Cobain; under new ownership since early 2026 and committed to continuing its poolside concert traditions.",
+        "address": "601 Eddy St",
+        "phone": "415-776-1380",
+        "website": "https://phoenixsf.com",
+        "neighborhood": "Tenderloin",
+        "notable": "Landmark"
+      },
+      {
+        "name": "YOTEL San Francisco",
+        "type": "Tech-forward boutique hotel",
+        "description": "Mid-Market hotel in the historic Grant Building offering 203 cleverly designed cabins with self-check-in kiosks, 24-hour gym, and co-working public areas.",
+        "address": "1095 Market St",
+        "phone": "415-829-0000",
+        "website": "https://yotel.com/en/hotels/san-francisco",
+        "neighborhood": "Mid-Market",
+        "notable": ""
+      },
+      {
+        "name": "Courtyard by Marriott San Francisco Downtown/Van Ness Ave",
+        "type": "Business hotel",
+        "description": "Full-service Marriott property on Van Ness Avenue in the Tenderloin, convenient to Civic Center, City Hall, and performing arts venues, with walkable restaurant access.",
+        "address": "1050 Van Ness Ave",
+        "phone": "415-441-5500",
+        "website": "https://marriott.com/en-us/hotels/sfocv-courtyard-san-francisco-downtown-van-ness-ave/overview/",
+        "neighborhood": "Tenderloin",
+        "notable": ""
+      },
+      {
+        "name": "Tilden Hotel",
+        "type": "Independent boutique hotel",
+        "description": "Independently operated Tenderloin hotel on Taylor Street with a 24-hour gym, on-site restaurant and bar, and a welcoming staff noted by recent guests.",
+        "address": "345 Taylor St",
+        "phone": "415-673-2332",
+        "website": "https://tildenhotel.com",
+        "neighborhood": "Tenderloin",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Niebla",
+        "shopGroup": "Books & Literature",
+        "type": "Latino-owned bookstore and coffee shop",
+        "description": "Brand-new Tenderloin hybrid bookstore and café specializing in Latin American literature — about 60% of titles in Spanish — alongside espresso drinks and pan dulce; officially opened September 17, 2026 with city Storefront Opportunity Grant support.",
+        "address": "374 Golden Gate Ave",
+        "phone": "",
+        "website": "https://nieblasf.com",
+        "neighborhood": "Tenderloin",
+        "notable": "New"
+      },
+      {
+        "name": "Readers Bookstore at the Main Library",
+        "shopGroup": "Books & Literature",
+        "type": "Non-profit used bookstore",
+        "description": "Beloved San Francisco Public Library gift shop and used bookstore inside the Main Library building, with a wide selection across subjects at accessible prices.",
+        "address": "100 Larkin St (SF Main Library)",
+        "phone": "415-557-4277",
+        "website": "https://sfpl.org/locations/main-library",
+        "neighborhood": "Civic Center",
+        "notable": ""
+      },
+      {
+        "name": "Sheba",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Middle Eastern clothing and specialty goods shop",
+        "description": "New Tenderloin shop opened September 18, 2026 via city Storefront Opportunity Grant, stocking Middle Eastern clothing and prepackaged specialty food items.",
+        "address": "318 Turk St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Tenderloin",
+        "notable": "New"
+      },
+      {
+        "name": "SF Arts Commission Gallery",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Public contemporary art gallery",
+        "description": "Free City-run gallery at 401 Van Ness Ave supporting Bay Area visual artists through rotating curated exhibitions, with additional displays at City Hall and the Veterans Building café.",
+        "address": "401 Van Ness Ave",
+        "phone": "415-252-2560",
+        "website": "https://sfartscommission.org/experience-art/programs/gallery",
+        "neighborhood": "Civic Center",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Asian Art Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Major art museum",
+        "description": "World-class museum in the historic Civic Center with more than 20,000 works spanning 6,000 years of Asian art; currently showing a Ha Chong-Hyun retrospective and Garuda in Bali through the fall.",
+        "address": "200 Larkin St",
+        "phone": "415-581-3500",
+        "website": "https://asianart.org",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      },
+      {
+        "name": "SFJAZZ Center",
+        "venueGroup": "Music Venues",
+        "type": "Dedicated jazz performance center",
+        "description": "The nation's first freestanding venue built for jazz, with the 700-seat Miner Auditorium and 100-seat Joe Henderson Lab; offering 350+ concerts this season including Hiromi and Lila Downs in October.",
+        "address": "201 Franklin St",
+        "phone": "415-788-7353",
+        "website": "https://sfjazz.org",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      },
+      {
+        "name": "War Memorial Opera House",
+        "venueGroup": "Music Venues",
+        "type": "Opera and ballet house",
+        "description": "Magnificent 1932 Beaux-Arts hall, home to the San Francisco Opera and San Francisco Ballet, and a Civic Center architectural landmark where the United Nations Charter was drafted in 1945.",
+        "address": "301 Van Ness Ave",
+        "phone": "415-621-6600",
+        "website": "https://sfwmpac.org",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Louise M. Davies Symphony Hall",
+        "venueGroup": "Music Venues",
+        "type": "Symphony concert hall",
+        "description": "Home of the San Francisco Symphony, the modern glass-and-steel hall seats 2,743 and anchors the Civic Center performing arts campus alongside the Opera House and Herbst Theatre.",
+        "address": "201 Van Ness Ave",
+        "phone": "415-864-6000",
+        "website": "https://sfsymphony.org",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Herbst Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Intimate performance hall",
+        "description": "Elegant 928-seat hall inside the War Memorial Veterans Building, hosting chamber concerts, lectures, and City Arts events in a space where the UN Charter was signed in 1945.",
+        "address": "401 Van Ness Ave",
+        "phone": "415-621-6600",
+        "website": "https://sfwmpac.org/venues/herbst-theatre/",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Orpheum Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Broadway touring house",
+        "description": "Ornate 2,200-seat 1926 Market Street theater operated by SHN, presenting major Broadway touring productions year-round in the heart of the Theater District.",
+        "address": "1192 Market St",
+        "phone": "888-746-1799",
+        "website": "https://shnsf.com",
+        "neighborhood": "Tenderloin",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Golden Gate Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Broadway touring house",
+        "description": "BroadwaySF's premier 2,300-seat Market Street venue presenting top-tier touring Broadway productions, sister house to the Orpheum.",
+        "address": "1 Taylor St",
+        "phone": "888-746-1799",
+        "website": "https://shnsf.com",
+        "neighborhood": "Tenderloin",
+        "notable": "Landmark"
+      },
+      {
+        "name": "American Conservatory Theater (ACT)",
+        "venueGroup": "Theater & Comedy",
+        "type": "Resident professional theater company",
+        "description": "Award-winning San Francisco theater institution operating the Geary Theater and The Strand, known for innovative productions and actor training programs.",
+        "address": "415 Geary St",
+        "phone": "415-749-2228",
+        "website": "https://act-sf.org",
+        "neighborhood": "Tenderloin",
+        "notable": "Landmark"
+      },
+      {
+        "name": "The Warfield",
+        "venueGroup": "Music Venues",
+        "type": "Historic mid-size concert hall",
+        "description": "Beloved 2,300-capacity Market Street music hall presenting rock, pop, and indie acts in an ornate historic building at the center of a proposed Theater Arts District on Market Street.",
+        "address": "982 Market St",
+        "phone": "415-345-0900",
+        "website": "https://thewarfieldtheatre.com",
+        "neighborhood": "Tenderloin",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Great American Music Hall",
+        "venueGroup": "Music Venues",
+        "type": "Historic concert hall",
+        "description": "Ornate 1907 Tenderloin venue — with its original frescoes, columns, and balconies — presenting rock, folk, jazz, and indie acts for 700 guests; shows booked through November 2026.",
+        "address": "859 O'Farrell St",
+        "phone": "415-885-0750",
+        "website": "https://gamh.com",
+        "neighborhood": "Tenderloin",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Bill Graham Civic Auditorium",
+        "venueGroup": "Music Venues",
+        "type": "Large civic concert hall",
+        "description": "Massive 8,500-capacity Civic Center venue hosting major concerts, events, and conventions in an early-twentieth-century Beaux-Arts building directly on Civic Center Plaza.",
+        "address": "99 Grove St",
+        "phone": "415-974-4060",
+        "website": "https://billgrahamcivic.com",
+        "neighborhood": "Civic Center",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "FITNESS SF – Mid-Market",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service gym",
+        "description": "Largest gym in the Mid-Market area at 1 10th Street, with a private Performance Training Center featuring power racks and Olympic lifting platforms, plus a barnwood yoga studio and group fitness classes.",
+        "address": "1 10th St",
+        "phone": "415-863-1983",
+        "website": "https://fitnesssf.com/location/mid-market",
+        "neighborhood": "Mid-Market",
+        "notable": ""
+      },
+      {
+        "name": "Orangetheory Fitness – Mid-Market",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Heart-rate interval training studio",
+        "description": "Science-backed group fitness studio near Civic Center offering treadmill, rowing, and weight-training interval classes, popular with neighborhood workers.",
+        "address": "1 10th St, Suite 100",
+        "phone": "415-795-2200",
+        "website": "https://orangetheory.com",
+        "neighborhood": "Mid-Market",
+        "notable": ""
+      },
+      {
+        "name": "Federal Fitness Center",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Government building gym",
+        "description": "Well-equipped fitness center in the Civic Center federal building area, known for unlimited towels, friendly staff, and kettlebell classes — open to eligible members.",
+        "address": "450 Golden Gate Ave",
+        "phone": "415-436-6970",
+        "website": "",
+        "neighborhood": "Civic Center",
+        "notable": ""
+      },
+      {
+        "name": "UN Plaza Fitness Court",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Free outdoor fitness facility",
+        "description": "SF Recreation and Park's free open-air Fitness Court at United Nations Plaza, featuring the 7-minute full-body workout system alongside free Zumba and yoga classes by Rae Studios.",
+        "address": "United Nations Plaza, Market St & 7th St",
+        "phone": "415-831-2700",
+        "website": "https://sfrecpark.org/1739/Civic-Center-Plazas",
+        "neighborhood": "Civic Center",
+        "notable": ""
+      },
+      {
+        "name": "Boeddeker Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Neighborhood park",
+        "description": "Renovated Tenderloin neighborhood park on Eddy Street featuring a children's play area, basketball courts, and a community garden, with periodic free outdoor concerts.",
+        "address": "240 Eddy St",
+        "phone": "415-831-2700",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Tenderloin",
+        "notable": ""
+      },
+      {
+        "name": "SunLight Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Small Civic Center yoga studio offering gentle and adaptive classes valued by beginners and practitioners of all fitness levels.",
+        "address": "Civic Center",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Civic Center",
+        "notable": ""
+      },
+      {
+        "name": "Alchemy Springs",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga, meditation, and dance studio",
+        "description": "Post Street studio near the Tenderloin offering an eclectic mix of yoga, meditation, sound bath, and dance classes in a spiritually grounding environment.",
+        "address": "939 Post St",
+        "phone": "",
+        "website": "https://alchemysprings.com",
+        "neighborhood": "Tenderloin",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-11-20",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-11-20",
+        "high": 57,
+        "low": 49,
+        "summary": "Light Rain then Mostly Sunny",
+        "condition": "rain",
+        "precip": 91
+      },
+      {
+        "date": "2026-11-21",
+        "high": 57,
+        "low": 48,
+        "summary": "Cloudy then Light Rain",
+        "condition": "rain",
+        "precip": 92
+      },
+      {
+        "date": "2026-11-22",
+        "high": 56,
+        "low": 47,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 54
+      },
+      {
+        "date": "2026-11-23",
+        "high": 59,
+        "low": 51,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 13
+      },
+      {
+        "date": "2026-11-24",
+        "high": 61,
+        "low": 54,
+        "summary": "Rain",
+        "condition": "rain",
+        "precip": 84
+      },
+      {
+        "date": "2026-11-25",
+        "high": 62,
+        "low": 54,
+        "summary": "Light Rain Likely",
+        "condition": "rain",
+        "precip": 65
+      },
+      {
+        "date": "2026-11-26",
+        "high": 63,
+        "low": null,
+        "summary": "Slight Chance Light Rain then Partly Sunny",
+        "condition": "rain",
+        "precip": 15
+      }
+    ]
+  }
+}

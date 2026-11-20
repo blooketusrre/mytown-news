@@ -1,0 +1,879 @@
+{
+  "clusterSlug": "soma-mission-bay",
+  "clusterName": "SoMa & Mission Bay",
+  "weekOf": "2026-11-20",
+  "topStories": [
+    {
+      "headline": "Board Votes to Extend Data Center Ban Another 10 Months — SoMa and Dogpatch Sites Directly in Scope",
+      "dek": "San Francisco supervisors voted unanimously on November 17 to freeze new data center construction through September 2027, citing a power grid that is already close to its capacity ceiling.",
+      "body": "The San Francisco Board of Supervisors voted on Tuesday, November 17, to extend the city's moratorium on new data centers by roughly ten and a half months, keeping the freeze in place through September 2027. The original 45-day pause was set to expire at the end of November; Tuesday's vote prevents any new stand-alone facility from breaking ground while city planners complete a fuller study of land-use and environmental impacts.\n\nThe vote carries direct consequences for South of Market and Dogpatch. According to SFist, developers have already scouted potential data center projects at the shuttered San Francisco Centre mall downtown as well as sites in both SoMa and Dogpatch. A Planning Department report released ahead of the vote found that the city's power transmission is approaching its 1,000-megawatt ceiling even without any new data center construction — and estimated that a single 50-megawatt facility could consume as much electricity as 25,000 homes.\n\nSupervisor Shamann Walton, who originally sponsored the 45-day pause, also sponsored the extension. The measure was co-sponsored by Supervisors Jackie Fielder, Chyanne Chen, and Connie Chan. It passed without dissent; Supervisor Chan was the only absentee. Under city rules, the extension takes effect in ten days unless Mayor Daniel Lurie returns it, though any veto could be overridden by a four-fifths vote of the board.\n\nThe moratorium reflects a broader tension the city is navigating between its ambitions as an AI hub and the hard limits of its electrical infrastructure. Planners are now tasked with answering open questions about whether to cap total data center power consumption, how to update the zoning code, and what to do about diesel backup generators that kick in during outages.",
+      "sourceUrl": "https://sfist.com/2026/11/17/sf-supervisors-extend-data-center-moratorium-citing-gaps-in-environmental-impact-report/",
+      "sourceName": "SFist",
+      "tags": [
+        "data centers",
+        "SoMa",
+        "Dogpatch",
+        "Board of Supervisors",
+        "energy",
+        "land use"
+      ]
+    },
+    {
+      "headline": "Mission Bay Neighbors Push Back on Amazon's Delivery Depot, Want Housing Instead",
+      "dek": "The Housing Action Coalition and the Mission Bay Neighborhood Association have formally asked the Planning Department to reconsider letting Amazon build a 710,000-square-foot delivery warehouse at 900 Seventh Street.",
+      "body": "A coalition of Mission Bay residents and housing advocates is making a fresh push this month to redirect a full city block near the Caltrain corridor away from Amazon's proposed delivery depot and toward housing. The Housing Action Coalition and the Mission Bay Neighborhood Association asked the San Francisco Planning Department last summer to consider the site at 900 Seventh Street for housing rather than Amazon's planned 710,000-square-foot fulfillment center; their November report in the Potrero View signals that opposition has not faded.\n\nAmazon purchased the six-acre parcel — formerly used as a Recology work yard — in December 2020 for approximately $202 million, putting an end to earlier plans for up to a thousand residential units on the site. The proposed facility, known internally as DOT9, would be three stories tall and dispatch as many as 200 delivery vans into surrounding neighborhoods every day. It has not broken ground, and critics say its location between the emerging Showplace Square district and Mission Bay actively works against the urban fabric the city has spent years trying to stitch together.\n\nThe Sierra Club's San Francisco Group also formally opposes the project. Peter Belden, a Potrero Hill resident and the group's political chair, cited concerns about overconsumption, air pollution, and reduced street safety. Planning Department communications director Patrick Hannan noted that before Amazon can obtain a building permit, it will need to demonstrate the facility can handle its expected energy demand — a threshold that may prove more complicated in light of the city's newly extended data center and power-grid concerns.",
+      "sourceUrl": "https://www.potreroview.net/mission-bay-residents-prefer-housing-over-amazon-delivery-depot/",
+      "sourceName": "Potrero View",
+      "tags": [
+        "Mission Bay",
+        "Amazon",
+        "housing",
+        "land use",
+        "Showplace Square",
+        "Planning Department"
+      ]
+    },
+    {
+      "headline": "Potrero Hill's Jackson Park Gets Its $48 Million Renovation — but the Tennis Court Is Going Away",
+      "dek": "The long-planned overhaul of Jackson Playground received a $10 million state grant this fall, locking in construction for late 2027 — and confirming that the park's lone tennis court will not survive the redesign.",
+      "body": "Jackson Playground on Potrero Hill cleared a major funding hurdle this autumn when the state awarded $10 million toward a planned $48 million renovation of the 4.4-acre park. The San Francisco Recreation and Park Department said the grant — which still requires approval from the Board of Supervisors — will help finance new playgrounds, a dedicated dog run, reconfigured ballfields, a community garden, and a new outdoor multi-use court. Construction is expected to begin in late 2027 and finish in 2029.\n\nThe project has been a decade in the making, driven by the Friends of Jackson Park and shaped through extensive community input. The redesign will also expand the park's clubhouse by roughly 1,850 square feet, adding a kitchen, restrooms, and a stage to support after-school programs and community events. About $6 million in total funding still needs to be raised.\n\nOne element of the plan is drawing pointed concern from regular park users: the renovation will eliminate the park's existing tennis court and replace it with a single backboard as part of the multi-use court. Tennis coach Tommy Purcell, who works at the park, told the Potrero View that the court is heavily used and that combining basketball, futsal, pickleball, climbing, and a tennis wall in one shared space will create competition and conflict. Recreation and Park responded that the decision was not made out of indifference to tennis, and noted that players will need to use other courts in the city once demolition begins. Officials pointed to recent improvements at McLaren Park as one alternative.",
+      "sourceUrl": "https://www.potreroview.net/jackson-park-renovation-moves-forward-but-tennis-players-raise-concerns/",
+      "sourceName": "Potrero View",
+      "tags": [
+        "Potrero Hill",
+        "Jackson Park",
+        "parks",
+        "Recreation and Park",
+        "renovation"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Jonas Brothers: The Burning Up Tour All Over Again",
+      "startDate": "2026-11-21",
+      "date": "Saturday, November 21",
+      "time": "7:30 PM",
+      "location": "Chase Center, 1 Warriors Way, Mission Bay",
+      "description": "The Jonas Brothers bring their reunion tour back to the Bay at Chase Center in Mission Bay. Tickets required.",
+      "sourceUrl": "https://projectsf.com/san-francisco-events-november-2026/",
+      "sourceName": "ProjectSF"
+    },
+    {
+      "title": "The Velveteen Rabbit — ODC/Dance",
+      "startDate": "2026-11-28",
+      "date": "Through December 6",
+      "time": "Various times",
+      "location": "Blue Shield of California Theater at YBCA, SoMa",
+      "description": "ODC/Dance presents its annual holiday production of The Velveteen Rabbit at the Yerba Buena Center for the Arts theater in SoMa. Tickets $30–$125.",
+      "sourceUrl": "https://projectsf.com/san-francisco-events-november-2026/",
+      "sourceName": "ProjectSF"
+    },
+    {
+      "title": "\"Graciela Iturbide: Between Two Worlds\" at SFMOMA",
+      "startDate": "2026-11-20",
+      "date": "Through November 29",
+      "time": "Various times",
+      "location": "SFMOMA, 151 Third Street, SoMa",
+      "description": "The final days of SFMOMA's exhibition of Mexican photographer Graciela Iturbide, whose career spans five decades and two cultures. Free with museum admission.",
+      "sourceUrl": "https://missionlocal.org/2026/11/whats-on-now-at-san-francisco-museums-november-2026/",
+      "sourceName": "Mission Local"
+    },
+    {
+      "title": "\"In Their Name: Día de Los Muertos 2026\" — Last Day at SOMArts",
+      "startDate": "2026-11-20",
+      "date": "Thursday, November 20",
+      "time": "Various times",
+      "location": "SOMArts Cultural Center, SoMa",
+      "description": "Today is the final day for SOMArts' Día de Los Muertos group exhibition before it closes. Free admission.",
+      "sourceUrl": "https://missionlocal.org/2026/11/whats-on-now-at-san-francisco-museums-november-2026/",
+      "sourceName": "Mission Local"
+    },
+    {
+      "title": "\"Another Lamp Show\" at 500 Capp Street",
+      "startDate": "2026-11-20",
+      "date": "Through November 28",
+      "time": "Various times",
+      "location": "500 Capp Street, Mission",
+      "description": "The lamp-focused group exhibition at 500 Capp Street — the historic David Ireland House on the edge of SoMa — runs through the week before closing November 28.",
+      "sourceUrl": "https://missionlocal.org/2026/11/whats-on-now-at-san-francisco-museums-november-2026/",
+      "sourceName": "Mission Local"
+    },
+    {
+      "title": "SF's 42nd Annual Great Dickens Christmas Fair",
+      "startDate": "2026-11-21",
+      "date": "November 21 – December 20",
+      "time": "Various times",
+      "location": "Cow Palace, Daly City (near SoMa transit connections)",
+      "description": "The Bay Area's beloved Victorian holiday market returns for its 42nd year, with costumed characters, food, and shopping across six weekends. Tickets required.",
+      "sourceUrl": "https://sf.funcheap.com/events/",
+      "sourceName": "SF Funcheap"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "SF Port Has a New Executive Director — and He Already Calls the City Home",
+      "body": "Michael Martin was appointed Executive Director of the Port of San Francisco in November 2026, according to the Potrero View. Martin, a Boston native and George Washington University Law School graduate, moved to San Francisco in 2000 intending to stay for a year and never left. He spent his career in public sector and municipal development work in the city. The Port oversees the waterfront from Fisherman's Wharf to the southern end of Dogpatch and plays a central role in ongoing development at Pier 70 and the Mission Bay shoreline.",
+      "sourceUrl": "https://www.potreroview.net/new-waterfront-leadership/",
+      "sourceName": "Potrero View",
+      "tags": [
+        "Port of San Francisco",
+        "Dogpatch",
+        "waterfront",
+        "appointments"
+      ]
+    },
+    {
+      "headline": "Dogpatch Biotech Revel Pharmaceuticals Published Anti-Aging Enzyme Findings in Nature Communications",
+      "body": "Revel Pharmaceuticals, a longevity startup based in Dogpatch, published peer-reviewed findings in Nature Communications in July showing that its engineered enzyme CMLase can reverse a form of protein damage — known as CML glycation — that accumulates in human tissue over decades and was long considered permanent. In tests on preserved arterial and skin samples, the enzyme eliminated more than 70 percent of CML damage in arterial tissue from a 75-year-old donor and reversed markers in aged skin to levels typical of a 31-year-old. The research, conducted with Calico Life Sciences and the University of Colorado, opens potential paths to therapies for inflammatory conditions tied to aging including heart and kidney disease, skin stiffening, and cataracts. The Potrero View covered the breakthrough in its October 2026 issue.",
+      "sourceUrl": "https://www.potreroview.net/dogpatch-startup-revel-pharmaceuticals-makes-anti-aging-breakthrough/",
+      "sourceName": "Potrero View",
+      "tags": [
+        "Dogpatch",
+        "biotech",
+        "Revel Pharmaceuticals",
+        "aging",
+        "science"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "SF Extends Data Center Moratorium, Citing Gaps in Environmental Impact Report",
+      "url": "https://sfist.com/2026/11/17/sf-supervisors-extend-data-center-moratorium-citing-gaps-in-environmental-impact-report/",
+      "publication": "SFist"
+    },
+    {
+      "title": "SF to Consider Extending Data Center Moratorium as Oakland Approves 10-Month Extension",
+      "url": "https://sfist.com/2026/11/11/sf-to-consider-extending-data-center-moratorium-as-oakland-approves-10-month-extension/",
+      "publication": "SFist"
+    },
+    {
+      "title": "San Francisco's power grid is nearly maxed out. Will data centers push it over the edge?",
+      "url": "https://sfstandard.com/2026/11/16/data-center-moratorium-power-grid/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "S.F. supervisors vote to extend pause on data centers for 10 months",
+      "url": "https://missionlocal.org/2026/11/san-francisco-data-center-moratorium-extended/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Mission Bay Residents Prefer Housing Over Amazon Delivery Depot",
+      "url": "https://www.potreroview.net/mission-bay-residents-prefer-housing-over-amazon-delivery-depot/",
+      "publication": "Potrero View"
+    },
+    {
+      "title": "Jackson Park Renovation Moves Forward, but Tennis Players Raise Concerns",
+      "url": "https://www.potreroview.net/jackson-park-renovation-moves-forward-but-tennis-players-raise-concerns/",
+      "publication": "Potrero View"
+    },
+    {
+      "title": "Multi-million dollar renovation of Potrero Hill Park draws near",
+      "url": "https://www.kalw.org/bay-area-news/2026-10-05/multi-million-dollar-renovation-of-potrero-hill-park-draws-near",
+      "publication": "KALW"
+    },
+    {
+      "title": "New Waterfront Leadership",
+      "url": "https://www.potreroview.net/new-waterfront-leadership/",
+      "publication": "Potrero View"
+    },
+    {
+      "title": "Dogpatch Startup Revel Pharmaceuticals Makes Anti-Aging Breakthrough",
+      "url": "https://www.potreroview.net/dogpatch-startup-revel-pharmaceuticals-makes-anti-aging-breakthrough/",
+      "publication": "Potrero View"
+    },
+    {
+      "title": "Revel Pharmaceuticals and Collaborators Report Enzymatic Reversal of a Chemical Hallmark of Aging in Human Tissue",
+      "url": "https://www.businesswire.com/news/home/20260714631421/en/Revel-Pharmaceuticals-and-Collaborators-Report-Enzymatic-Reversal-of-a-Chemical-Hallmark-of-Aging-in-Human-Tissue",
+      "publication": "Business Wire"
+    },
+    {
+      "title": "What's on now at San Francisco museums, November 2026",
+      "url": "https://missionlocal.org/2026/11/whats-on-now-at-san-francisco-museums-november-2026/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "San Francisco Events in November 2026",
+      "url": "https://projectsf.com/san-francisco-events-november-2026/",
+      "publication": "ProjectSF"
+    },
+    {
+      "title": "Most Popular Upcoming Events — SF Funcheap",
+      "url": "https://sf.funcheap.com/events/",
+      "publication": "SF Funcheap"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Californios",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Fine-dining Mexican tasting menu",
+        "description": "The world's first three-Michelin-star Mexican restaurant, helmed by chef Val M. Cantú, serving an inventive tasting menu rooted in Mexican and Northern California ingredients.",
+        "address": "355 11th St, San Francisco, CA 94103",
+        "phone": "415-757-0994",
+        "website": "https://www.californiossf.com",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Benu",
+        "cuisineGroup": "Asian",
+        "type": "Contemporary Asian fine dining",
+        "description": "Chef Corey Lee's three-Michelin-star flagship, ranked among the world's 50 best restaurants, serving an Asian-inspired tasting menu in an intimate SoMa setting.",
+        "address": "22 Hawthorne St, San Francisco, CA 94105",
+        "phone": "415-685-4860",
+        "website": "https://www.benusf.com",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Montesacro SOMA",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Roman pinseria and wine bar",
+        "description": "Beloved SoMa pinseria serving Rome's ancient oval flatbread — pinsa — made from a blend of wheat, rice, and soy flour, with an excellent Italian wine list.",
+        "address": "510 Stevenson St, San Francisco, CA 94103",
+        "phone": "415-795-3040",
+        "website": "https://www.montesacrosf.com",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Plow",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Neighborhood breakfast and brunch café",
+        "description": "A beloved Potrero Hill corner café open since 2010, drawing loyal queues for its lemon ricotta pancakes, crispy potatoes, and locally sourced egg plates.",
+        "address": "1299 18th St, San Francisco, CA 94107",
+        "phone": "415-821-7569",
+        "website": "https://www.eatatplow.com",
+        "neighborhood": "Potrero Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Chez Maman East",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "French bistro",
+        "description": "A casual Potrero Hill French bistro serving classic bistro fare — moules frites, croque-monsieur, and steak frites — in a warm, neighborhood setting.",
+        "address": "1401 18th St, San Francisco, CA 94107",
+        "phone": "415-824-7166",
+        "website": "https://www.chezmamansf.com",
+        "neighborhood": "Potrero Hill",
+        "notable": ""
+      },
+      {
+        "name": "Marcella's Lasagneria",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian lasagna restaurant",
+        "description": "A cozy Potrero Hill/Dogpatch spot specializing in inventive baked lasagnas, from classic Bolognese to creative seasonal variations, with a homey indoor-outdoor feel.",
+        "address": "2344 3rd St, San Francisco, CA 94107",
+        "phone": "415-872-9786",
+        "website": "https://www.marcellaslasagneria.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Wooly Pig",
+        "cuisineGroup": "Asian",
+        "type": "Asian-fusion café and sandwich shop",
+        "description": "A popular Dogpatch neighborhood spot known for bold, Asian-influenced sandwiches, plates, and fresh seasonal ingredients in a relaxed setting.",
+        "address": "2295 3rd St, San Francisco, CA 94107",
+        "phone": "415-872-9430",
+        "website": "https://www.woolypigsf.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Long Bridge Pizza",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Neighborhood pizzeria",
+        "description": "A Dogpatch favorite known for thoughtfully topped, well-priced pies and a casual, community-minded atmosphere near the waterfront.",
+        "address": "2347 3rd St, San Francisco, CA 94107",
+        "phone": "415-695-1111",
+        "website": "https://www.longbridgepizza.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Piccino Restaurant",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Cal-Italian café and pizzeria",
+        "description": "A Dogpatch-adjacent Cal-Italian hangout with thin-crust pizzas, milk-braised pork ragù, walk-up bar seating, and a covered parklet ideal for daytime dining.",
+        "address": "1001 Minnesota St, San Francisco, CA 94107",
+        "phone": "415-824-4224",
+        "website": "https://www.piccinocafe.com",
+        "neighborhood": "Dogpatch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Sohn",
+        "cuisineGroup": "Asian",
+        "type": "Korean-inspired café and bar",
+        "description": "A spacious Dogpatch warehouse conversion with Korean-inflected dishes — popcorn chicken, cold noodles, taco bar — and a low-key vibe suited for weekday dates or weekend crowds.",
+        "address": "2301 3rd St, San Francisco, CA 94107",
+        "phone": "415-872-9770",
+        "website": "https://www.sohnsf.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Ungrafted",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Wine bar and restaurant",
+        "description": "Founded by Master Sommelier Rebecca Fineman, Ungrafted pairs an impressive, approachable wine list with thoughtfully crafted food in a relaxed Dogpatch setting.",
+        "address": "2306 3rd St, San Francisco, CA 94107",
+        "phone": "415-282-7100",
+        "website": "https://www.ungraftedsf.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Mission Rock Resort",
+        "cuisineGroup": "Seafood & American",
+        "type": "Waterfront bar and restaurant",
+        "description": "A beloved SF Legacy Business at the water's edge near Oracle Park, serving fresh Dungeness crab deviled eggs, clam chowder, and $1 oysters at happy hour.",
+        "address": "817 Terry Francois Blvd, San Francisco, CA 94158",
+        "phone": "415-701-7625",
+        "website": "https://www.missionrockresort.com",
+        "neighborhood": "Mission Bay",
+        "notable": "Landmark"
+      },
+      {
+        "name": "ATwater Tavern",
+        "cuisineGroup": "Seafood & American",
+        "type": "Waterfront bar and restaurant",
+        "description": "A Mission Bay waterfront tavern popular on Giants game days, offering American pub fare and a broad drink menu steps from Oracle Park.",
+        "address": "395 Berry St, San Francisco, CA 94158",
+        "phone": "415-369-6135",
+        "website": "https://www.atwaterstavern.com",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "Burma Love",
+        "cuisineGroup": "Asian",
+        "type": "Burmese restaurant",
+        "description": "A Mission Bay outpost of the popular Burma Love brand, serving Burmese staples including tea leaf salad, rainbow salad, and coconut noodle dishes near Thrive City.",
+        "address": "3 Mission Rock St, San Francisco, CA 94158",
+        "phone": "415-872-9431",
+        "website": "https://www.burmalove.com",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "Dabao Singapore",
+        "cuisineGroup": "Asian",
+        "type": "Singaporean hawker-style restaurant",
+        "description": "A five-year SoMa institution serving authentic Singaporean classics — five-spice Hainanese chicken rice, Char Kway Teow noodles — in an unfussy, minority-owned setting.",
+        "address": "214 Fremont St, San Francisco, CA 94105",
+        "phone": "415-872-9410",
+        "website": "https://www.dabaosf.com",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "SF Kebab",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Mediterranean grill",
+        "description": "A reliable Mission Bay family restaurant offering Mediterranean kebabs, rice, and salads with indoor and outdoor seating, popular with UCSF campus visitors.",
+        "address": "1615 3rd St, San Francisco, CA 94158",
+        "phone": "415-872-9795",
+        "website": "https://sfkebab.com",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "Dogpatch Saloon",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Neighborhood bar",
+        "description": "A beloved Dogpatch dive bar with a loyal dog-friendly following, craft cocktails, and late-night hours — open daily from 2 p.m. through 2 a.m.",
+        "address": "2496 3rd St, San Francisco, CA 94107",
+        "phone": "415-643-8592",
+        "website": "https://www.dogpatchsaloon.com",
+        "neighborhood": "Dogpatch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Third Rail",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft cocktail bar",
+        "description": "A Dogpatch cocktail bar known for creative drinks alongside housemade beef and candy jerky, with shot-beer-jerky combos that keep regulars coming back.",
+        "address": "628 20th St, San Francisco, CA 94107",
+        "phone": "415-655-9914",
+        "website": "https://www.thirdrailsf.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Bar Piccino",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft cocktail lounge",
+        "description": "A refined Dogpatch cocktail bar with a full Negroni menu, creative non-alcoholic cocktails, mezcal flights, and Oyster Sundays in an intimate setting.",
+        "address": "1003 Minnesota St, San Francisco, CA 94107",
+        "phone": "415-824-4224",
+        "website": "https://www.barpiccino.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Giuliana's Just for You Café",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "New American breakfast and brunch café",
+        "description": "A cheerful Potrero Hill/Dogpatch café serving New American brunch with fresh-baked bread, locally sourced ingredients, and unforgettable beignets.",
+        "address": "1453 18th St, San Francisco, CA 94107",
+        "phone": "415-861-6833",
+        "website": "https://www.justforyoucafe.com",
+        "neighborhood": "Potrero Hill",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "The St. Regis San Francisco",
+        "type": "Forbes Five-Star luxury hotel",
+        "description": "A 260-room Forbes Five-Star luxury hotel in the heart of SoMa, directly adjacent to SFMOMA and Yerba Buena Gardens, with the Museum of the African Diaspora housed within the property.",
+        "address": "125 Third St, San Francisco, CA 94103",
+        "phone": "415-284-4000",
+        "website": "https://www.marriott.com/hotels/travel/sfoxr-the-st-regis-san-francisco/",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Hyatt Regency San Francisco Downtown SoMa",
+        "type": "Full-service upscale hotel",
+        "description": "A 686-room, 36-story SoMa tower comprehensively renovated in 2022, two blocks from Moscone Center, with on-site restaurant La Societe and one of the city's largest hotel fitness studios.",
+        "address": "50 Third St, San Francisco, CA 94103",
+        "phone": "415-974-6400",
+        "website": "https://www.hyatt.com/hyatt-regency/en-US/sford-hyatt-regency-san-francisco-downtown-soma",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "InterContinental San Francisco",
+        "type": "Full-service upscale hotel",
+        "description": "A 550-room SoMa hotel with an indoor pool, restaurant, and bar, convenient to Moscone Convention Center and the Yerba Buena arts district.",
+        "address": "888 Howard St, San Francisco, CA 94103",
+        "phone": "415-616-6500",
+        "website": "https://www.ihg.com/intercontinental/hotels/us/en/san-francisco/sfohb/hoteldetail",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Hotel Via",
+        "type": "Boutique hotel",
+        "description": "A modern 159-room boutique hotel directly across the street from Oracle Park in Mission Bay, featuring a rooftop terrace bar with sweeping views of the Bay.",
+        "address": "138 King St, San Francisco, CA 94107",
+        "phone": "415-200-4977",
+        "website": "https://www.hotelviasf.com",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "Canopy by Hilton San Francisco SoMa",
+        "type": "Lifestyle hotel",
+        "description": "A 4-star lifestyle hotel on 4th Street in SoMa, minutes from Yerba Buena Gardens and Moscone Center, known for its welcoming staff and locally inspired design.",
+        "address": "250 4th St, San Francisco, CA 94103",
+        "phone": "415-738-7000",
+        "website": "https://www.hilton.com/en/hotels/sfocnpy-canopy-san-francisco-soma/",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "SoMa House",
+        "type": "Budget-friendly independent hotel",
+        "description": "A newly renovated independent hotel at 7th and Market offering a heated rooftop pool, valet parking, and the soon-to-open SoMa Social gastropub, steps from Moscone Center.",
+        "address": "121 7th St, San Francisco, CA 94103",
+        "phone": "415-626-0200",
+        "website": "https://www.somahousesf.com",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "LUMA Hotel San Francisco",
+        "type": "Boutique hotel",
+        "description": "A sleek boutique hotel in Mission Bay's South Beach district, a seven-minute walk from Oracle Park, with a fitness center, restaurant, and bar.",
+        "address": "100 Channel St, San Francisco, CA 94158",
+        "phone": "415-872-9300",
+        "website": "https://www.lumahotel.com/san-francisco",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "SFMOMA Museum Store",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Museum gift and design store",
+        "description": "The West Coast's finest selection of modern and contemporary art books, design objects, jewelry, stationery, and exclusive SFMOMA signature products, open to museum visitors and the public.",
+        "address": "151 3rd St, San Francisco, CA 94103",
+        "phone": "415-357-4035",
+        "website": "https://museumstore.sfmoma.org",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Christopher's Books",
+        "shopGroup": "Books & Literature",
+        "type": "Independent neighborhood bookstore",
+        "description": "A beloved independent bookstore tucked into a corner in Potrero Hill, offering a curated selection of fiction, nonfiction, and local-interest titles with a warm community feel.",
+        "address": "1400 18th St, San Francisco, CA 94107",
+        "phone": "415-255-8802",
+        "website": "https://www.christophersbooks.com",
+        "neighborhood": "Potrero Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Cole Hardware – SoMa",
+        "shopGroup": "Hardware & Services",
+        "type": "Independent hardware store",
+        "description": "A locally owned 6,000-square-foot hardware and home store at 9th and Folsom, stocking everything from tools and paint to housewares and garden supplies.",
+        "address": "345 9th St, San Francisco, CA 94103",
+        "phone": "415-200-2154",
+        "website": "https://www.colehardware.com/stores/soma-store/",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "San Francisco Flower Market",
+        "shopGroup": "Home & Gifts",
+        "type": "Wholesale and retail flower market",
+        "description": "One of the nation's largest cut-flower wholesale markets, open to the public from early morning, with dozens of vendors offering fresh-cut blooms, plants, and floral supplies.",
+        "address": "640 Brannan St, San Francisco, CA 94107",
+        "phone": "415-392-7944",
+        "website": "https://www.sfflmart.com",
+        "neighborhood": "Potrero Hill",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Revel Shop",
+        "shopGroup": "Home & Gifts",
+        "type": "Women-owned neighborhood gift and lifestyle shop",
+        "description": "A charming, locally and women-owned Dogpatch boutique carrying curated gifts, home goods, stationery, and lifestyle items for the neighborhood community.",
+        "address": "2366 3rd St, San Francisco, CA 94107",
+        "phone": "415-872-9401",
+        "website": "https://www.revelshopsf.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "Dogpatch Games",
+        "shopGroup": "Art Supplies & Hobby",
+        "type": "Board game shop and event space",
+        "description": "A neighborhood-loved Potrero Hill game shop and event space stocking tabletop games, card games, and RPGs, with regular game nights and community events.",
+        "address": "1351 18th St, San Francisco, CA 94107",
+        "phone": "415-872-9820",
+        "website": "https://www.dogpatchgames.com",
+        "neighborhood": "Potrero Hill",
+        "notable": ""
+      },
+      {
+        "name": "Nicolehollis Collection",
+        "shopGroup": "Home & Gifts",
+        "type": "Luxury design objects gallery and shop",
+        "description": "Interior designer Nicole Hollis's first brick-and-mortar shop at Minnesota Street Project, selling 200-plus limited-edition artisan pieces — decor, textiles, tabletop, and scents — drawn from 25 years of private-client sourcing.",
+        "address": "1275 Minnesota St, San Francisco, CA 94107",
+        "phone": "415-278-9457",
+        "website": "https://www.nicoleholliscollection.com",
+        "neighborhood": "Dogpatch",
+        "notable": "New"
+      },
+      {
+        "name": "DECANTsf",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Independent wine bottle shop",
+        "description": "A carefully curated SoMa wine shop on Folsom Street focused on small-production and artisan wines, offering knowledgeable staff and a welcoming neighborhood atmosphere.",
+        "address": "1168 Folsom St, San Francisco, CA 94103",
+        "phone": "415-913-7256",
+        "website": "https://www.decantbottleshop.com",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Mainstay Markets",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Community natural grocery market",
+        "description": "A Dogpatch market committed to healthy eating and local businesses, stocking locally sourced produce, specialty grocery items, and pantry staples.",
+        "address": "2320 3rd St, San Francisco, CA 94107",
+        "phone": "415-872-9880",
+        "website": "https://www.mainstaymarkets.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "The Box SF",
+        "shopGroup": "Other",
+        "type": "Vintage and consignment marketplace",
+        "description": "A beloved SoMa multi-vendor vintage and consignment space housed in a historic print shop, drawing shoppers with its maze-like layout and eclectic selection.",
+        "address": "1069 Mission St, San Francisco, CA 94103",
+        "phone": "415-872-9600",
+        "website": "https://www.theboxsf.com",
+        "neighborhood": "South of Market",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "San Francisco Museum of Modern Art (SFMOMA)",
+        "venueGroup": "Museums & Cultural",
+        "type": "Modern and contemporary art museum",
+        "description": "The largest modern art museum in the United States, with seven floors of galleries and 33,000+ works; the new RM x SFMOMA exhibition opens October 3, 2026 and runs through February 2027.",
+        "address": "151 3rd St, San Francisco, CA 94103",
+        "phone": "415-357-4000",
+        "website": "https://www.sfmoma.org",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Yerba Buena Center for the Arts (YBCA)",
+        "venueGroup": "Museums & Cultural",
+        "type": "Multidisciplinary contemporary arts center",
+        "description": "SoMa's 33-year-old cultural anchor presenting contemporary art, performance, and film across two landmark buildings, with current exhibitions including GaHee Park: Behind the Curtain (through January 3, 2027) and Dread Scott: The Body Politic (through January 31, 2027); open Wed–Sun, with free Wednesdays extended to 8 p.m.",
+        "address": "701 Mission St, San Francisco, CA 94103",
+        "phone": "415-978-2700",
+        "website": "https://www.ybca.org",
+        "neighborhood": "South of Market",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Minnesota Street Project",
+        "venueGroup": "Art Galleries",
+        "type": "Multi-gallery contemporary art campus",
+        "description": "A flagship Dogpatch arts campus housing multiple contemporary galleries, studios, and the newly opened Ruth Asawa Lanier, Inc. gallery — the first permanent public home for Ruth Asawa's wire sculptures, drawings, and community projects.",
+        "address": "1275 Minnesota St, San Francisco, CA 94107",
+        "phone": "415-243-0825",
+        "website": "https://www.minnesotastreetproject.com",
+        "neighborhood": "Dogpatch",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Museum of the African Diaspora (MoAD)",
+        "venueGroup": "Museums & Cultural",
+        "type": "Cultural art museum",
+        "description": "A SoMa museum housed within the St. Regis Hotel dedicated to the art, history, and culture of the African Diaspora, with rotating exhibitions and community programming.",
+        "address": "685 Mission St, San Francisco, CA 94105",
+        "phone": "415-358-7200",
+        "website": "https://www.moadsf.org",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Children's Creativity Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Interactive children's arts and technology museum",
+        "description": "A hands-on Yerba Buena museum for children up to age 12, featuring a stop-animation studio, digital media lab, and interactive exhibits at the edge of Yerba Buena Gardens.",
+        "address": "221 4th St, San Francisco, CA 94103",
+        "phone": "415-820-3320",
+        "website": "https://www.creativity.org",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "111 Minna Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery and events space",
+        "description": "A SoMa gallery and event venue showcasing rotating works by local and international contemporary artists in an intimate urban space near Yerba Buena.",
+        "address": "111 Minna St, San Francisco, CA 94105",
+        "phone": "415-974-1719",
+        "website": "https://www.111minnagallery.com",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "SOMArts Cultural Center",
+        "venueGroup": "Museums & Cultural",
+        "type": "Community arts center and gallery",
+        "description": "A city-funded SoMa arts center supporting diverse Bay Area artists through gallery exhibitions, education, and residency programs, with year-round community programming.",
+        "address": "934 Brannan St, San Francisco, CA 94103",
+        "phone": "415-863-1414",
+        "website": "https://www.somarts.org",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Oracle Park",
+        "venueGroup": "Music Venues",
+        "type": "Major league baseball stadium and live events venue",
+        "description": "Home of the San Francisco Giants since 2000, Oracle Park is a premier waterfront stadium in Mission Bay hosting baseball, concerts, and special events, with the 2026 MLB season underway.",
+        "address": "24 Willie Mays Plaza, San Francisco, CA 94107",
+        "phone": "415-972-2000",
+        "website": "https://www.mlb.com/giants/ballpark",
+        "neighborhood": "Mission Bay",
+        "notable": "Landmark"
+      },
+      {
+        "name": "American Bookbinders Museum",
+        "venueGroup": "Museums & Cultural",
+        "type": "Specialty bookbinding and printing history museum",
+        "description": "A unique SoMa museum preserving the history of the bookbinding trade through rare presses, tools, and beautifully bound book displays, with a charming gift shop.",
+        "address": "355 Clementina St, San Francisco, CA 94103",
+        "phone": "415-828-5902",
+        "website": "https://www.bookbindersmuseum.org",
+        "neighborhood": "South of Market",
+        "notable": ""
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Dogpatch Boulders",
+        "venueGroup": "Sports & Courts",
+        "type": "Indoor bouldering gym",
+        "description": "Northern California's premier bouldering-only facility, with 20,500 square feet of climbing terrain, 300+ boulder problems, world-class routesetting, and yoga and fitness classes for all levels.",
+        "address": "2573 3rd St, San Francisco, CA 94107",
+        "phone": "415-800-8121",
+        "website": "https://touchstoneclimbing.com/dogpatch-boulders/",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "FITNESS SF – SoMa",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service neighborhood gym",
+        "description": "A sprawling full-block SoMa fitness center open until midnight on weekdays, offering cardio, free weights, strength conditioning, and group fitness classes.",
+        "address": "1001 Brannan St, San Francisco, CA 94103",
+        "phone": "415-348-6377",
+        "website": "https://fitnesssf.com/soma/",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Ritual Hot Yoga – SoMa",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Hot yoga studio",
+        "description": "A highly rated SoMa hot yoga studio offering hot power fusion, Yin yoga, and heated flow classes in a clean, well-equipped, community-focused environment.",
+        "address": "180 Jessie St, San Francisco, CA 94105",
+        "phone": "415-872-9701",
+        "website": "https://ritualhotyoga.com/soma/",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "CorePower Yoga – Mission Bay",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Heated yoga studio",
+        "description": "A modern heated yoga studio on 4th Street serving Mission Bay and SoMa, combining yoga with cardio conditioning and strength training for results-driven mind-body fitness.",
+        "address": "1200 4th St, San Francisco, CA 94158",
+        "phone": "415-872-9750",
+        "website": "https://www.corepoweryoga.com/yoga-studios/ca/san-francisco/mission-bay",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "3rd Street Boxing Gym",
+        "venueGroup": "Martial Arts",
+        "type": "Boxing gym",
+        "description": "A Dogpatch boxing institution founded by Gold Gloves champion Wade, offering boxing training and fitness classes for all levels in an authentic gym environment.",
+        "address": "2576 3rd St, San Francisco, CA 94107",
+        "phone": "415-550-8269",
+        "website": "https://www.3rdstreetboxing.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      },
+      {
+        "name": "LuxFit Mission Rock",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Boutique fitness gym",
+        "description": "A highly rated Mission Bay boutique gym with modern equipment and a welcoming, community-minded atmosphere convenient to the Chase Center and Oracle Park.",
+        "address": "1 Mission Rock St, San Francisco, CA 94158",
+        "phone": "415-872-9900",
+        "website": "https://luxfitmissionrock.com",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "Bakar Fitness & Recreation Center",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "University fitness and recreation center",
+        "description": "A UCSF Mission Bay campus fitness center open to community members, offering gym equipment, group fitness classes, and recreation facilities in the heart of Mission Bay.",
+        "address": "1675 Owens St, San Francisco, CA 94158",
+        "phone": "415-476-1115",
+        "website": "https://campuslifeservices.ucsf.edu/recreation/services/bakar_fitness_and_recreation_center",
+        "neighborhood": "Mission Bay",
+        "notable": ""
+      },
+      {
+        "name": "Yerba Buena Ice Skating and Bowling Center",
+        "venueGroup": "Sports & Courts",
+        "type": "Ice skating rink and bowling alley",
+        "description": "A family-friendly SoMa recreation center at the edge of Yerba Buena Gardens offering year-round indoor ice skating and a bowling center in the heart of the cultural district.",
+        "address": "750 Folsom St, San Francisco, CA 94107",
+        "phone": "415-820-3532",
+        "website": "https://www.skatebowl.com",
+        "neighborhood": "South of Market",
+        "notable": ""
+      },
+      {
+        "name": "Bay Padel Dogpatch",
+        "venueGroup": "Sports & Courts",
+        "type": "Padel tennis courts",
+        "description": "A Dogpatch padel facility offering court rentals and instruction for San Francisco's growing padel community, steps from the 3rd Street corridor.",
+        "address": "2600 3rd St, San Francisco, CA 94107",
+        "phone": "415-872-9880",
+        "website": "https://www.baypadelclub.com",
+        "neighborhood": "Dogpatch",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-11-20",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-11-20",
+        "high": 56,
+        "low": 47,
+        "summary": "Rain then Mostly Sunny",
+        "condition": "rain",
+        "precip": 91
+      },
+      {
+        "date": "2026-11-21",
+        "high": 57,
+        "low": 52,
+        "summary": "Cloudy then Light Rain",
+        "condition": "rain",
+        "precip": 92
+      },
+      {
+        "date": "2026-11-22",
+        "high": 55,
+        "low": 49,
+        "summary": "Chance Light Rain",
+        "condition": "rain",
+        "precip": 54
+      },
+      {
+        "date": "2026-11-23",
+        "high": 58,
+        "low": 53,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 12
+      },
+      {
+        "date": "2026-11-24",
+        "high": 61,
+        "low": 56,
+        "summary": "Rain",
+        "condition": "rain",
+        "precip": 84
+      },
+      {
+        "date": "2026-11-25",
+        "high": 62,
+        "low": 56,
+        "summary": "Light Rain Likely",
+        "condition": "rain",
+        "precip": 64
+      },
+      {
+        "date": "2026-11-26",
+        "high": 62,
+        "low": 55,
+        "summary": "Slight Chance Light Rain then Partly Sunny",
+        "condition": "rain",
+        "precip": 15
+      }
+    ]
+  }
+}

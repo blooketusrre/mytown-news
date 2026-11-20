@@ -1,0 +1,808 @@
+{
+  "clusterSlug": "heber-city",
+  "clusterName": "Heber City",
+  "weekOf": "2026-11-20",
+  "topStories": [
+    {
+      "headline": "Heber City Renews IT Contract as October Cyberattack Investigation Continues",
+      "dek": "The City Council unanimously voted to extend its deal with Executech for $174,000 a year while the FBI's forensic probe of an October breach remains open.",
+      "body": "At its November 17 meeting, the Heber City Council unanimously approved a one-year contract renewal with Executech, a Utah-based cybersecurity firm, at $14,500 per month — $174,000 annually. The city has worked with Executech for more than a decade, and city Public Information Officer Ryan Bunnell said the arrangement may be more cost-effective than hiring a dedicated full-time IT employee depending on workload.\n\nThe renewal comes as Heber City continues to investigate a cyberattack that breached its municipal IT network on October 10. The city's separately hosted website was not affected, and officials have said residents can use online bill pay and other services at heberut.gov with confidence. Police Department records were also stored separately and were not compromised.\n\nThe FBI is assisting with a forensic investigation. Bunnell said in a written statement to the Park Record that the city will disclose whether any truly sensitive information — such as personal data — was accessed once the full picture becomes clear. 'Thank you for your patience as Heber City, assisted by Executech, sifts through the data and cleans up the mess that this threat actor inflicted upon us,' Bunnell said.",
+      "sourceUrl": "https://www.parkrecord.com/2026/11/17/heber-city-re-signs-it-contract-investigation-ongoing/",
+      "sourceName": "Park Record",
+      "tags": [
+        "cybersecurity",
+        "city government",
+        "Heber City"
+      ]
+    },
+    {
+      "headline": "Newly Elected Wasatch County Councilmembers Put Brakes on Dense Development",
+      "dek": "Republicans Rachel Kahler, Erik Rowland, and Michael Murphy won all three contested council seats in the November 3 election and say limiting dense growth is a top priority.",
+      "body": "With 64 percent voter turnout and more than 14,000 ballots cast, Wasatch County elected three Republicans to its council in the November 3 general election. Rachel Kahler took Seat A — a countywide seat — while Erik Rowland and Michael Murphy won their respective districts. All three candidates have signaled that curbing high-density residential development will be among their first priorities when they take office.\n\nKahler, the executive director of Community Alliance for Main Street and a former Heber City councilmember, said her focus will be ensuring the county is adequately prepared for growth, including having the right water and waste management systems in place. She specifically said she will oppose high-density projects pursued through SB258, the 2024 preliminary municipality law that the Wasatch and Summit county councils have both called on the Legislature to repeal.\n\nMurphy, whose district includes Hideout, Timber Lakes, and eastern Wasatch County, also listed limiting dense development as a priority. The results cement Republican control of the council heading into 2027, a year that will bring significant land-use decisions as the valley continues to attract interest from developers.",
+      "sourceUrl": "https://www.kpcw.org/wasatch-county/2026-11-17/newly-elected-wasatch-county-councilmembers-to-tackle-development-issues",
+      "sourceName": "KPCW",
+      "tags": [
+        "election",
+        "Wasatch County",
+        "development",
+        "land use"
+      ]
+    },
+    {
+      "headline": "Wasatch County's Proposed 2027 Budget Holds the Line — No Tax Increase",
+      "dek": "County leaders reviewed a $130.8 million tentative budget on November 18 that keeps the property tax rate flat while adding six new staff positions.",
+      "body": "The Wasatch County Council reviewed its tentative 2027 budget at a November 18 meeting, and the bottom line is essentially unchanged from 2026: the proposed budget of $130.8 million is about $66,000 less than the current year's $130.9 million figure. Crucially, the draft does not include a property tax rate increase. Any additional property tax revenue in the budget comes from new growth, not a higher rate.\n\nThe general fund, at $55.2 million, is up from $52.4 million in 2026. It includes six new positions, among them a code enforcement role in the county attorney's office. Assistant County Manager Heber Lefgren said changes to the county's IT department structure would reduce internal service fees charged to other departments, and the county also plans to extend the useful life of certain fleet vehicles from five years to seven.\n\nCouncil members continued to debate potential additional spending cuts, with at least one councilmember questioning whether residents' financial pressures would justify cuts large enough to reduce services. Additional budget discussions are planned throughout the rest of November before a final vote.",
+      "sourceUrl": "https://www.kpcw.org/wasatch-county/2026-11-19/wasatch-county-wont-raise-property-taxes-2027-budget-to-remain-flat",
+      "sourceName": "KPCW",
+      "tags": [
+        "budget",
+        "Wasatch County",
+        "property tax",
+        "county government"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "North Pole Express Christmas Train — Heber Valley Railroad",
+      "startDate": "2026-11-19",
+      "date": "Through December 30",
+      "time": "Various times",
+      "location": "Heber Valley Railroad, 450 S 600 W, Heber City",
+      "description": "The Heber Valley Railroad's annual holiday train runs Monday through Saturday through December 30, with Santa, cookies, and holiday cheer on board. Coach tickets start at $70 for adults; booking in advance is recommended.",
+      "sourceUrl": "https://www.gohebervalley.com/",
+      "sourceName": "Go Heber Valley"
+    },
+    {
+      "title": "The Forgotten Carols Musical",
+      "startDate": "2026-11-25",
+      "date": "Wednesday, November 25",
+      "time": "7:30 PM",
+      "location": "Wasatch High School, Heber City",
+      "description": "A single-night performance of the beloved holiday musical The Forgotten Carols comes to Wasatch High School the Wednesday before Thanksgiving. Tickets available via Eventbrite.",
+      "sourceUrl": "https://www.eventbrite.com/d/ut--midway/heber-valley/",
+      "sourceName": "Eventbrite"
+    },
+    {
+      "title": "Midway Tree Lighting and Christmas on the Square",
+      "startDate": "2026-11-28",
+      "date": "Saturday, November 28",
+      "time": "12:00 PM – 8:00 PM (tree lighting at 6:00 PM)",
+      "location": "Midway Town Square, 100 N Main Street, Midway",
+      "description": "Midway kicks off its Christmas season with a full day of activities, culminating in the traditional tree lighting at 6 p.m. Expect live entertainment, Santa visits, live reindeer, fireworks, and the famous Midway City treat bags. Free admission.",
+      "sourceUrl": "https://www.midwaycityut.gov/visit/featured-events/city-christmas-lighting/",
+      "sourceName": "City of Midway"
+    },
+    {
+      "title": "Midway Christmas Tree Stroll",
+      "startDate": "2026-11-28",
+      "date": "Through December 31",
+      "time": "Various times",
+      "location": "Participating businesses, Midway",
+      "description": "Starting November 28, visitors can stroll through Midway discovering beautifully decorated trees at local businesses. Participants who visit 10 trees can enter the Christmas Star Hunt for a chance to win a special prize.",
+      "sourceUrl": "https://www.midwaycityut.gov/events/christmas-tree-stroll/",
+      "sourceName": "City of Midway"
+    },
+    {
+      "title": "Simple Treasures Heber Valley Holiday Market",
+      "startDate": "2026-12-02",
+      "date": "Wednesday, December 2 – Saturday, December 5",
+      "time": "10:00 AM",
+      "location": "Wasatch County Events Center, Heber City",
+      "description": "The annual Simple Treasures holiday shopping market returns to the Wasatch County Events Center for four days of local vendors, gifts, and seasonal goods.",
+      "sourceUrl": "https://allevents.in/heber-city/all",
+      "sourceName": "AllEvents.in"
+    },
+    {
+      "title": "Heber City Tree Lighting and Old Fashioned Christmas",
+      "startDate": "2026-12-04",
+      "date": "Friday, December 4",
+      "time": "Various times",
+      "location": "Downtown Heber City",
+      "description": "Heber City's annual tree lighting celebration brings the community together for an old-fashioned holiday evening in downtown. Check gohebervalley.com for the full schedule as the date approaches.",
+      "sourceUrl": "https://www.gohebervalley.com/",
+      "sourceName": "Go Heber Valley"
+    },
+    {
+      "title": "14th Annual Live Nativity Christmas Celebration",
+      "startDate": "2026-12-09",
+      "date": "Wednesday, December 9",
+      "time": "6:00 PM",
+      "location": "Wasatch County Event Center, Heber City",
+      "description": "The community's long-running live nativity event returns for its 14th year at the Wasatch County Event Center. Admission is free.",
+      "sourceUrl": "https://allevents.in/heber-city/all",
+      "sourceName": "AllEvents.in"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Après Dermatology Opens Second Location in Heber City",
+      "body": "The Heber Valley Chamber of Commerce held a ribbon-cutting ceremony this week for Après Dermatology and Cosmetic Center's new Heber City location, the practice's second office after its established Park City clinic. The practice is owned and operated by Dr. Timothy C. Michaelis, MD, FAAD. The clinic is currently accepting new patients and most insurance for both dermatological and cosmetic services.",
+      "sourceUrl": "https://www.utahbusiness.com/press-releases/2026/11/19/heber-valley-chamber-celebrates-with-a-ribbon-cutting-for-apres-dermatology/",
+      "sourceName": "Utah Business / Heber Valley Chamber",
+      "tags": [
+        "business",
+        "health care",
+        "Heber City"
+      ]
+    },
+    {
+      "headline": "Christian Center Distributes Free Turkeys at Heber Valley Pantry Ahead of Thanksgiving",
+      "body": "On Thursday, November 19, the Christian Center of Park City distributed free turkeys at its Heber Valley Food Pantry at 55 East Center Street — part of an 1,800-turkey giveaway funded by the Park City Board of Realtors Philanthropic Foundation. The distribution follows the closure earlier this fall of the Community Action Services and Food Bank pantry in Heber City, which had served roughly 60 families a week for more than eight years. The Christian Center has responded by increasing client visits at its Heber location from two to three times per month. Holiday meal bag donations are being collected through December at drop-off bins located at Wasatch High School, Heber Valley Hospital, the Heber City Administration Building, Midway City offices, and other locations.",
+      "sourceUrl": "https://www.parkrecord.com/2026/11/18/heres-where-you-can-get-a-free-thanksgiving-dinner-in-the-wasatch-back/",
+      "sourceName": "Park Record",
+      "tags": [
+        "food pantry",
+        "hunger",
+        "community services"
+      ]
+    },
+    {
+      "headline": "Winter Parking Restrictions Now in Effect on Heber City and County Roads",
+      "body": "As of November 15, Heber City's winter parking ban is in effect: no vehicles may be parked on the paved portion of city streets or within five feet of pavement under City Code 10.16.040. The rule runs through April 1. Wasatch County adopted a parallel seasonal ordinance prohibiting parking on paved county roads between 11 p.m. and 6 a.m., and whenever snow is falling, is on the ground, or roads have not yet been plowed. Both rules are aimed at keeping roads clear for snow-removal crews during storms.",
+      "sourceUrl": "https://www.ci.heber.ut.us/m/newsflash",
+      "sourceName": "Heber City News Flash",
+      "tags": [
+        "winter",
+        "parking",
+        "public works"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Heber City re-signs IT contract as cybersecurity investigation is ongoing",
+      "url": "https://www.parkrecord.com/2026/11/17/heber-city-re-signs-it-contract-investigation-ongoing/",
+      "publication": "Park Record"
+    },
+    {
+      "title": "Newly elected Wasatch County councilmembers to tackle development issues",
+      "url": "https://www.kpcw.org/wasatch-county/2026-11-17/newly-elected-wasatch-county-councilmembers-to-tackle-development-issues",
+      "publication": "KPCW"
+    },
+    {
+      "title": "Wasatch County won't raise property taxes; 2027 budget to remain flat",
+      "url": "https://www.kpcw.org/wasatch-county/2026-11-19/wasatch-county-wont-raise-property-taxes-2027-budget-to-remain-flat",
+      "publication": "KPCW"
+    },
+    {
+      "title": "Heber Valley Chamber celebrates with a ribbon cutting for Après Dermatology",
+      "url": "https://www.utahbusiness.com/press-releases/2026/11/19/heber-valley-chamber-celebrates-with-a-ribbon-cutting-for-apres-dermatology/",
+      "publication": "Utah Business"
+    },
+    {
+      "title": "Here's where you can get a free Thanksgiving dinner in the Wasatch Back",
+      "url": "https://www.parkrecord.com/2026/11/18/heres-where-you-can-get-a-free-thanksgiving-dinner-in-the-wasatch-back/",
+      "publication": "Park Record"
+    },
+    {
+      "title": "Christian Center of Park City steps up as Wasatch Back food pantries are shuttered",
+      "url": "https://www.parkrecord.com/2026/11/03/christian-center-of-park-city-steps-up-as-wasatch-back-food-pantries-are-shuttered/",
+      "publication": "Park Record"
+    },
+    {
+      "title": "Heber City News Flash — Winter Parking Restrictions",
+      "url": "https://www.ci.heber.ut.us/m/newsflash",
+      "publication": "Heber City, UT"
+    },
+    {
+      "title": "Wasatch County News Flash — Seasonal Parking & 2027 Budget",
+      "url": "https://www.wasatchcounty.gov/m/newsflash",
+      "publication": "Wasatch County, UT"
+    },
+    {
+      "title": "North Pole Express Christmas Train — Heber Valley Railroad",
+      "url": "https://www.gohebervalley.com/",
+      "publication": "Go Heber Valley"
+    },
+    {
+      "title": "Christmas on the Square — City of Midway",
+      "url": "https://www.midwaycityut.gov/visit/featured-events/city-christmas-lighting/",
+      "publication": "City of Midway"
+    },
+    {
+      "title": "Midway Christmas Tree Stroll",
+      "url": "https://www.midwaycityut.gov/events/christmas-tree-stroll/",
+      "publication": "City of Midway"
+    },
+    {
+      "title": "Upcoming Events in Heber City",
+      "url": "https://allevents.in/heber-city/all",
+      "publication": "AllEvents.in"
+    },
+    {
+      "title": "Cyberattack targets, breaches Heber City's system",
+      "url": "https://kutv.com/news/local/cyberattack-targets-breaches-heber-citys-system",
+      "publication": "KUTV"
+    },
+    {
+      "title": "Heber City working with FBI to resolve cyberattack",
+      "url": "https://www.parkrecord.com/2026/10/16/heber-city-working-with-fbi-to-resolve-cyberattack/",
+      "publication": "Park Record"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "Back 40 Ranch House Grill",
+        "cuisineGroup": "Seafood & American",
+        "type": "Farm-to-table American grill",
+        "description": "Local farm-to-table landmark serving fresh, locally sourced meats and produce with sweeping mountain and valley views from its patio.",
+        "address": "1223 N Highway 40, Heber City, UT 84032",
+        "phone": "(435) 654-3070",
+        "website": "https://www.back40utah.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Galeano's Ristorante Italiano",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "Upscale Italian ristorante on Main Street offering handmade pasta, traditional antipasti, and an open kitchen bar counter for a lively dining experience.",
+        "address": "494 S Main St #110, Heber City, UT 84032",
+        "phone": "(435) 328-3276",
+        "website": "https://www.galeanosheber.com",
+        "neighborhood": "Heber City",
+        "notable": "New"
+      },
+      {
+        "name": "Taqueria Los Cuñados",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican cantina",
+        "description": "Family-owned cantina on Main Street serving chef-driven, authentic Mexican tacos, burritos, and seasonal specialties with house-made chips and salsa for dine-in.",
+        "address": "110 S Main St, Heber City, UT 84032",
+        "phone": "(650) 771-7399",
+        "website": "https://www.gohebervalley.com/taqueria-los-cunados",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Dairy Keen – Home of the Train",
+        "cuisineGroup": "Seafood & American",
+        "type": "Classic American burger joint",
+        "description": "A Heber institution since 1946, this family-owned train-themed diner serves award-winning shakes, quarter-pound burgers, and house-made soups — four generations strong.",
+        "address": "199 S Main St, Heber City, UT 84032",
+        "phone": "(435) 654-5336",
+        "website": "https://www.dairykeen.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Melvin's Public House",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Sports bar and restaurant",
+        "description": "Lively sports bar and full-service restaurant on Main Street offering diverse burgers, bar food, and an extensive beer menu, with live entertainment on select nights.",
+        "address": "75 S Main St, Heber City, UT 84032",
+        "phone": "(435) 657-0888",
+        "website": "https://www.gohebervalley.com/melvins-public-house",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Day N Nite",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "All-day brunch café",
+        "description": "Highly-rated all-day café known for creative brunch dishes including a standout Crispy Polenta Skillet, open daily through the evening.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/day-n-nite-heber-city",
+        "neighborhood": "Heber City",
+        "notable": "New"
+      },
+      {
+        "name": "Preemo's Restaurant and Bar",
+        "cuisineGroup": "Seafood & American",
+        "type": "American bar and restaurant",
+        "description": "Newly opened Heber City spot with a varied menu spanning bowls to pasta to burgers and pizza, plus a covered outdoor dining area.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/preemos-restaurant-and-bar-heber-city",
+        "neighborhood": "Heber City",
+        "notable": "New"
+      },
+      {
+        "name": "Tacos El Guero #1 – Heber City",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican taqueria",
+        "description": "Popular taqueria open on Sundays when many Heber options are closed, serving traditional Mexican street-style tacos and plates.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/tacos-el-guero-1-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Quesabirrias",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Birria taqueria",
+        "description": "Beloved birria taqueria serving quesabirria tacos, mexi-birria fries, and consommé, open on Sundays and drawing strong local and visitor crowds.",
+        "address": "550 W 100 S, Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/quesabirrias-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Cucina Rustico",
+        "cuisineGroup": "Pizza & Sandwiches",
+        "type": "Wood-fired Italian food truck",
+        "description": "Heber Valley wood-fired food truck owned by Frank and Jamie Fortino, dishing out handmade pizzas, fresh pastas, breads, and desserts using locally sourced ingredients, parked Wednesday–Saturday.",
+        "address": "75 N Main St, Heber City, UT 84032",
+        "phone": "(801) 635-9977",
+        "website": "https://cucinarustico.com",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Meg's Timberline Cafe",
+        "cuisineGroup": "Brunch & Breakfast",
+        "type": "Breakfast and lunch café",
+        "description": "Small, high-quality café celebrated for its fresh breakfast burritos, generously sized menu, and excellent ingredients, open daily from early morning.",
+        "address": "737 S Main St Suite B, Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/megs-timberline-cafe-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Blue Boar Inn & Restaurant",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Fine dining inn restaurant",
+        "description": "Old World European hunting-lodge inn in the Midway foothills offering American contemporary fine dining with Mediterranean influence, including a seasonal five-course Sunday brunch and weekly chef's tasting menu.",
+        "address": "1235 N Warm Springs Rd, Midway, UT 84049",
+        "phone": "(435) 654-1400",
+        "website": "https://www.theblueboarinn.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Midway Mercantile",
+        "cuisineGroup": "Seafood & American",
+        "type": "New American hearth-to-table restaurant",
+        "description": "Chef-owned New American restaurant set in a beautifully restored 1874 brick building, featuring seasonal, locally sourced cuisine anchored by a wood-burning hearth, artisan pizzas, and an extensive wine list.",
+        "address": "99 E Main St, Midway, UT 84049",
+        "phone": "(435) 222-8003",
+        "website": "https://www.midwaymercantile.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Lola's Street Kitchen",
+        "cuisineGroup": "Seafood & American",
+        "type": "Artisan street food restaurant",
+        "description": "Midway's artisan street food favorite crafting gourmet sandwiches, burgers, fish tacos, organic salads, and world-famous handmade churros from scratch with locally sourced ingredients.",
+        "address": "24 E Main St, Midway, UT 84049",
+        "phone": "(435) 671-3970",
+        "website": "https://lolasstreetkitchen.store",
+        "neighborhood": "Midway",
+        "notable": ""
+      },
+      {
+        "name": "Harvest",
+        "cuisineGroup": "Seafood & American",
+        "type": "Casual American dining",
+        "description": "Midway dining spot with a farm-fresh focus, offering a welcoming atmosphere and a menu that shifts with the seasons.",
+        "address": "Midway, UT 84049",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/harvest-midway",
+        "neighborhood": "Midway",
+        "notable": ""
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Best Western Plus Heber Valley Hotel",
+        "type": "Upper-midscale hotel",
+        "description": "Modern 82-room hotel in the heart of Heber City offering a Grand Pool Complex with indoor pool and hot tub, free full breakfast daily, and easy access to valley attractions.",
+        "address": "1227 S US Highway 40, Heber City, UT 84032",
+        "phone": "(435) 657-6500",
+        "website": "https://www.bestwestern.com",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Holiday Inn Express Heber City by IHG",
+        "type": "Mid-scale hotel",
+        "description": "IHG-branded 75-room hotel with indoor pool, hot tub, complimentary Express Start Breakfast Bar, and convenient Main Street location close to restaurants and shops.",
+        "address": "1268 S Main St, Heber City, UT 84032",
+        "phone": "(435) 654-9990",
+        "website": "https://www.ihg.com/holidayinnexpress/hotels/us/en/heber-city/hbcut/hoteldetail",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Swiss Alps Inn",
+        "type": "Swiss-themed motel",
+        "description": "Family-owned Swiss-themed motel on Main Street, operating since 1946, with mountain views, an outdoor swimming pool, and pet-friendly rooms in a central Heber City location.",
+        "address": "167 S Main St, Heber City, UT 84032",
+        "phone": "(435) 654-0722",
+        "website": "https://www.swissalpsinn.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Homestead Midway Utah",
+        "type": "Resort",
+        "description": "Historic 123-room resort on 190 acres currently undergoing a multi-year transformation under Davidson Resorts management, with its iconic geothermal Crater, six outdoor pools, and the Milk House dairy dining concept all open to guests.",
+        "address": "700 N Homestead Dr, Midway, UT 84049",
+        "phone": "(435) 654-1102",
+        "website": "https://homesteadmidwayutah.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Zermatt Utah Resort & Spa, Trademark Collection by Wyndham",
+        "type": "Swiss-themed resort and spa",
+        "description": "Swiss Alpine-inspired 300-room luxury resort spanning 18 acres in Midway, featuring a full-service spa, multiple restaurants, pools, and event spaces in an authentic alpine village setting.",
+        "address": "784 W Resort Dr, Midway, UT 84049",
+        "phone": "(435) 657-0180",
+        "website": "https://zermattresort.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Blue Boar Inn",
+        "type": "Boutique inn",
+        "description": "European-style boutique inn and fine dining destination nestled in the Midway foothills, offering intimate accommodations with an old-world hunting-lodge aesthetic and acclaimed on-site restaurant.",
+        "address": "1235 N Warm Springs Rd, Midway, UT 84049",
+        "phone": "(435) 654-1400",
+        "website": "https://www.theblueboarinn.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Daniels Summit Lodge",
+        "type": "Mountain lodge",
+        "description": "Rustic log-cabin-style lodge perched at 8,000 feet at Daniels Summit Pass in the Uinta-Wasatch-Cache National Forest, offering on-site dining, snowmobile rentals, and year-round mountain adventure access.",
+        "address": "17000 US-40, Heber City, UT 84032",
+        "phone": "(435) 548-2300",
+        "website": "https://www.danielssummit.com",
+        "neighborhood": "Daniel",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Ballerina Farm Store",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Farm store and bakery",
+        "description": "Social-media-famous Neeleman family farm store tucked behind Café Galleria on Midway's Main Street, stocking Ballerina Farm products alongside curated local and international specialty foods, fresh-baked goods, and soft-serve ice cream.",
+        "address": "101 W Main St, Ste 102, Midway, UT 84049",
+        "phone": "",
+        "website": "https://ballerinafarm.com",
+        "neighborhood": "Midway",
+        "notable": "New"
+      },
+      {
+        "name": "Water From the Moon",
+        "shopGroup": "Home & Gifts",
+        "type": "Gift and children's boutique",
+        "description": "Charming Heber City boutique stocking unique gifts, home décor, and delightful children's books and stuffed animals.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/water-from-the-moon-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Fernweh Lifestyle",
+        "shopGroup": "Fashion & Clothing",
+        "type": "Lifestyle and jewelry boutique",
+        "description": "Midway boutique offering a unique curated selection of jewelry, lifestyle goods, and accessories for women.",
+        "address": "Midway, UT 84049",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/fernweh-lifestyle-midway",
+        "neighborhood": "Midway",
+        "notable": ""
+      },
+      {
+        "name": "The Dainty Pear",
+        "shopGroup": "Home & Gifts",
+        "type": "Curated lifestyle boutique",
+        "description": "Beautifully curated Midway boutique carrying an upscale collection of home goods and gifts that feel like they belong in a big-city shop.",
+        "address": "Midway, UT 84049",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/the-dainty-pear-midway",
+        "neighborhood": "Midway",
+        "notable": ""
+      },
+      {
+        "name": "Aspen Grove Rustics",
+        "shopGroup": "Home & Gifts",
+        "type": "Rustic home décor and gift shop",
+        "description": "Heber City shop packed with rustic treasures, vintage finds, and charming home décor pieces.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/aspen-grove-rustics-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Sportsman's Warehouse",
+        "shopGroup": "Hardware & Services",
+        "type": "Outdoor sporting goods retailer",
+        "description": "Full-service outdoor sporting goods store open since 2015, ideally located near the Uintah Mountains, Strawberry Reservoir, and Deer Creek Reservoir for all fishing, hunting, and camping needs.",
+        "address": "1276 S US-189, Heber City, UT 84032",
+        "phone": "(435) 654-5600",
+        "website": "https://stores.sportsmans.com/sportsmans-warehouse/us/ut/heber-city/1276-s-us-189",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Tractor Supply Co.",
+        "shopGroup": "Hardware & Services",
+        "type": "Farm and ranch supply store",
+        "description": "The valley's primary source for farm, ranch, pet, and home goods, serving Heber City's agricultural community and rural residents.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.tractorsupply.com",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Heber Valley Thrift",
+        "shopGroup": "Other",
+        "type": "Thrift and resale shop",
+        "description": "Community thrift store offering a rotating selection of clothing, household items, and furniture at budget-friendly prices.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/heber-valley-thrift-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "St. Lawrence Thrift Store",
+        "shopGroup": "Other",
+        "type": "Thrift shop",
+        "description": "Clean, well-organized Heber City thrift store stocking a fun and frequently changing assortment of clothing, books, and household goods.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/st-lawrence-thrift-store-heber-city",
+        "neighborhood": "Heber City",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "Heber Valley Railroad",
+        "venueGroup": "Museums & Cultural",
+        "type": "Heritage scenic railroad",
+        "description": "Utah's flagship heritage tourist railroad operating since 1899, running 90-minute excursions from Heber City through the valley and along Deer Creek Reservoir, with themed events including the Pumpkin Train, Halloween Express, and North Pole Express filling the fall and winter calendar.",
+        "address": "450 S 600 W, Heber City, UT 84032",
+        "phone": "(435) 654-5601",
+        "website": "https://www.hebertrain.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Timpanogos Valley Theatre",
+        "venueGroup": "Theater & Comedy",
+        "type": "Community theater",
+        "description": "Downtown Heber City's premier community theater company since 2004, housed in the 1908 Heber Amusement Hall, currently presenting the Heber City Historic Ghost Tours through October 22 and taking auditions for a War of the Worlds radio drama.",
+        "address": "90 N 100 W, Heber City, UT 84032",
+        "phone": "",
+        "website": "https://timpvalleytheatre.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Avon Theatre",
+        "venueGroup": "Cinema",
+        "type": "Historic movie theater",
+        "description": "Beloved single-screen 400-seat movie house on Main Street undergoing a retro-style makeover under the Heber Valley Entertainment umbrella, screening first-run films alongside live concerts and tribute shows.",
+        "address": "94 S Main St, Heber City, UT 84032",
+        "phone": "(435) 776-5177",
+        "website": "https://www.hebervalleyentertainment.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Ideal Playhouse",
+        "venueGroup": "Theater & Comedy",
+        "type": "Historic performing arts theater",
+        "description": "Utah's oldest working theater on Heber's Main Street, renovated and reopened in 2024, now hosting touring concerts, semi-professional musical theater, and film screenings under the Heber Valley Entertainment banner.",
+        "address": "113 N Main St, Heber City, UT 84032",
+        "phone": "(435) 776-5177",
+        "website": "https://www.hebervalleyentertainment.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Soldier Hollow Nordic Center",
+        "venueGroup": "Music Venues",
+        "type": "Olympic heritage outdoor recreation venue",
+        "description": "The 2002 Winter Olympics biathlon and cross-country skiing venue in Wasatch Mountain State Park offers year-round recreation including mountain biking and biathlon this fall, with winter tubing and cross-country skiing tickets going on sale in early October for the 2026–27 season.",
+        "address": "2002 Soldier Hollow Ln, Midway, UT 84049",
+        "phone": "(435) 654-2002",
+        "website": "https://utaholympiclegacy.org/location/soldier-hollow",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "High Valley Arts",
+        "venueGroup": "Theater & Comedy",
+        "type": "Professional theater company",
+        "description": "Professional theater company that has entertained over 106,000 patrons in the Heber Valley since 2009, currently seeking a permanent home with a proposed 600-seat performing arts center in Heber City.",
+        "address": "Midway, UT 84049",
+        "phone": "",
+        "website": "https://www.gohebervalley.com/arts-culture-music",
+        "neighborhood": "Midway",
+        "notable": ""
+      },
+      {
+        "name": "Wasatch County Arts Council",
+        "venueGroup": "Museums & Cultural",
+        "type": "Regional arts council",
+        "description": "The county's central arts organization advancing visual arts, performance, and community programming throughout the Heber Valley, and leading fundraising for the planned Heber Valley Arts Center campus.",
+        "address": "Heber City, UT 84032",
+        "phone": "",
+        "website": "https://www.gohebervalley.com/arts-culture-music",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "The Crater at Homestead",
+        "venueGroup": "Museums & Cultural",
+        "type": "Geothermal natural landmark and recreational site",
+        "description": "A 400-foot-wide, 55-foot-tall ancient geothermal crater on the Homestead Midway Utah resort property, open year-round for soaking and scuba diving in its 90°F mineral waters.",
+        "address": "700 N Homestead Dr, Midway, UT 84049",
+        "phone": "",
+        "website": "https://www.utahcrater.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Fit Stop Health Club & Physical Therapy",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service health club",
+        "description": "Heber City's most comprehensive fitness facility, offering 60+ weekly group classes including yoga, pilates, cycling, Tai Chi, and water aerobics, plus an indoor climbing wall, physical therapy, and Silver Sneakers programming for seniors.",
+        "address": "345 W 600 S, Ste 200, Heber City, UT 84032",
+        "phone": "(435) 654-2131",
+        "website": "https://fitstophealthclub.com",
+        "neighborhood": "Heber City",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Anytime Fitness",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "24-hour gym",
+        "description": "Locally owned and operated 24/7 gym on Main Street with functional training equipment, a large turf area, and personalized coaching — open to members around the clock with access to 6,000+ locations worldwide.",
+        "address": "1099 S Main St, Ste 160, Heber City, UT 84032",
+        "phone": "(435) 222-5151",
+        "website": "https://www.anytimefitness.com/locations/heber-city-utah-5611",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "The Studio: Spinning · Hot Yoga · Barre",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Boutique fitness studio",
+        "description": "Heber City boutique studio offering indoor cycling, hot yoga, barre, HIIT, restorative yoga, and teen classes, open six days a week starting at 5:30 AM.",
+        "address": "55 E Center St #140, Heber City, UT 84032",
+        "phone": "(435) 657-9652",
+        "website": "https://www.gohebervalley.com/the-studio",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Utah Yoga and Wellness",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Highly-rated Midway yoga studio offering a varied schedule of classes in a beautiful, well-maintained facility, with easy online registration.",
+        "address": "Midway, UT 84049",
+        "phone": "",
+        "website": "https://www.yelp.com/biz/utah-yoga-and-wellness-midway",
+        "neighborhood": "Midway",
+        "notable": ""
+      },
+      {
+        "name": "The Mountain Gym",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Functional fitness gym",
+        "description": "Premier functional fitness and CrossFit-style training facility in downtown Heber City, offering daily coached classes for all fitness levels with teen programming and affordable drop-in rates.",
+        "address": "151 N Main St, Heber City, UT 84032",
+        "phone": "(435) 671-5185",
+        "website": "https://mtngymheber.com",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Wasatch Mountain State Park Golf",
+        "venueGroup": "Sports & Courts",
+        "type": "Public golf complex",
+        "description": "Utah's most popular public golf destination, featuring 36 holes across the scenic Mountain and Lake courses set against the backdrop of the Wasatch Range, open daily from dawn.",
+        "address": "975 W Golf Course Dr, Midway, UT 84049",
+        "phone": "(435) 654-0532",
+        "website": "https://wasatchgolfcourse.com",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Wasatch Aquatic Center",
+        "venueGroup": "Pools & Aquatics",
+        "type": "Public indoor aquatic center",
+        "description": "State-of-the-art community aquatic facility featuring a 10-lane competition pool, a family activity pool with inflatables and a splash pad, a therapy pool, and water fitness classes — open Monday through Saturday year-round.",
+        "address": "744 S 200 E, Heber City, UT 84032",
+        "phone": "(435) 654-3450",
+        "website": "https://www.gohebervalley.com/wasatch-aquatic-center",
+        "neighborhood": "Heber City",
+        "notable": ""
+      },
+      {
+        "name": "Wasatch Mountain State Park",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "State park",
+        "description": "Utah's most developed state park, spanning 21,592 acres adjacent to Midway and offering year-round golf, hiking, mountain biking, camping, horseback riding, cross-country skiing, and snowshoeing.",
+        "address": "1281 Warm Springs Rd, Midway, UT 84049",
+        "phone": "(435) 654-1791",
+        "website": "https://stateparks.utah.gov/parks/wasatch-mountain",
+        "neighborhood": "Midway",
+        "notable": "Landmark"
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-11-20",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-11-20",
+        "high": 38,
+        "low": 17,
+        "summary": "Light Snow",
+        "condition": "cloudy",
+        "precip": 90
+      },
+      {
+        "date": "2026-11-21",
+        "high": 38,
+        "low": 13,
+        "summary": "Slight Chance Light Snow then Mostly Sunny",
+        "condition": "sunny",
+        "precip": 15
+      },
+      {
+        "date": "2026-11-22",
+        "high": 46,
+        "low": 19,
+        "summary": "Partly Sunny",
+        "condition": "partly",
+        "precip": 4
+      },
+      {
+        "date": "2026-11-23",
+        "high": 41,
+        "low": 14,
+        "summary": "Chance Light Snow",
+        "condition": "cloudy",
+        "precip": 50
+      },
+      {
+        "date": "2026-11-24",
+        "high": 45,
+        "low": 19,
+        "summary": "Mostly Sunny",
+        "condition": "sunny",
+        "precip": 2
+      },
+      {
+        "date": "2026-11-25",
+        "high": 47,
+        "low": 21,
+        "summary": "Chance Rain And Snow",
+        "condition": "rain",
+        "precip": 37
+      },
+      {
+        "date": "2026-11-26",
+        "high": 44,
+        "low": 20,
+        "summary": "Chance Light Snow",
+        "condition": "cloudy",
+        "precip": 35
+      }
+    ]
+  }
+}

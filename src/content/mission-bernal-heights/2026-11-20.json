@@ -1,0 +1,902 @@
+{
+  "clusterSlug": "mission-bernal-heights",
+  "clusterName": "Mission & Bernal Heights",
+  "weekOf": "2026-11-20",
+  "topStories": [
+    {
+      "headline": "Super El Niño Storm Swamps the Mission, Leaves Restaurants and Residents Reeling",
+      "dek": "An atmospheric river broke a 108-year rainfall record on November 18, flooding streets, garages, and businesses across the Mission District — and sending raw sewage up through floor drains.",
+      "body": "A powerful storm swept San Francisco on Wednesday, November 18, dropping 2.28 inches of rain in a single day — a record for that date going back to 1918, according to the San Francisco Chronicle. In the Mission District, Folsom Street between 14th and 18th Streets was transformed into a lake, with water pooling several feet deep at the worst points and manhole covers floating loose in flooded intersections.\n\nThe damage hit hardest in low-lying blocks built over historic creek beds. Businesses including Pink Onion Pizza, Rainbow Grocery, and Bageletto — a bagel shop that had opened less than two years ago — were all forced to close Thursday for cleanup. The flooding at many sites came not from the street but from below: sewage surged up through toilets, sinks, and floor drains, overwhelming even the floodgates that some owners had installed at significant cost. Bageletto owner Rich D'Aloia told CBS San Francisco that his shop ended up under about a foot of contaminated water, destroying thousands of dollars of food and equipment.\n\nA dialysis center in the Mission also had to cancel kidney treatments after its ground floor flooded, according to a 311 complaint reviewed by the SF Standard. Mayor Daniel Lurie visited affected businesses on Thursday and acknowledged the damage. He told Mission Local he is working with the Board of Supervisors to determine whether compensation for flood-damaged businesses is possible, though no commitment has been made.\n\nResidents and business owners said they want the city to explain how flooding this severe happened — and to present a plan before the next wave of El Niño storms arrives. The National Weather Service had warned that more rain is expected over the coming week.",
+      "sourceUrl": "https://missionlocal.org/2026/11/san-francisco-a-disheveled-craziness-mission-restaurants-get-a-taste-of-super-el-nino/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "flooding",
+        "weather",
+        "Mission District",
+        "El Niño",
+        "small business"
+      ]
+    },
+    {
+      "headline": "SFUSD Can't Produce Basic Records on Bernal Preschool It Plans to Shut Down",
+      "dek": "The district quietly notified parents in September that Junipero Serra Annex Early Education School in Bernal Heights will close in July 2027 — but it has yet to provide the school's official enrollment code or explain how the decision was made.",
+      "body": "San Francisco Unified School District notified parents at Junipero Serra Annex Early Education School in mid-September that the Bernal Heights site would close in July 2027 and their roughly 80 preschool and transitional kindergarten students would be reassigned to two other district campuses. Parents say they were blindsided, having received the news just weeks into the school year.\n\nMission Local reported this week that the district has been unable — or unwilling — to produce its own internal records about the school. After repeated requests beginning November 10, SFUSD had not provided the school's California Data System code, which is needed to look up its official enrollment figures online. The district's spokesperson asked for more time.\n\nThe dispute matters because how the Annex is officially classified determines what procedural rights parents have. If the Annex is treated as an independent school, the closure would trigger a lengthy public process including board hearings. SFUSD School Board President Phil Kim has said the board need not vote on the closure because the Annex is simply an extension of the adjacent Junipero Serra Elementary School. Parents disagree, noting that the two schools operate separately at different addresses.\n\nThe school is located at 155 Appleton Avenue, a stone's throw from Holly Park. The district held only one community meeting — on October 29, more than 40 days after parents first received the closure notice, according to Mission Local.",
+      "sourceUrl": "https://missionlocal.org/2026/11/school-daze-sfusd-cant-produce-vital-information-regarding-soon-to-be-closed-bernal-school/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "SFUSD",
+        "education",
+        "Bernal Heights",
+        "school closure",
+        "early education"
+      ]
+    },
+    {
+      "headline": "A Shuttered Mission Walgreens Will Finally Become a Child Care Center for SF General Workers",
+      "dek": "After nearly 40 years of advocacy by hospital employees and their union, the city has begun permitting a child care facility at 1189 Potrero Avenue — the former Walgreens that closed in early 2025.",
+      "body": "The vacant Walgreens storefront at 1189 Potrero Avenue, at the corner of 24th Street, is set to become a child care center for employees of Zuckerberg San Francisco General Hospital — a goal that nurses and hospital workers have been fighting for since the late 1980s. Mission Local reported the development on November 18.\n\nThe facility will serve up to 53 infants, toddlers, and preschoolers up to age 5. Priority will go to hospital employees and other city workers, with neighborhood families also eligible. The city agreed in principle to build a child care center for hospital employees as far back as 1993, and again in 2007 as part of a union contract. A new seven-story hospital building was completed in 2016 without one. The permitting process for the conversion finally began in August 2026, according to SFist.\n\nThe Walgreens at that address closed in February 2025. It had been the only full-service pharmacy within walking distance of the hospital, and its closure drew criticism from community members and local elected officials. The building now has a new purpose — though permitting and construction mean the child care center is still some time away from opening.",
+      "sourceUrl": "https://missionlocal.org/2026/11/shuttered-walgreens-to-become-sf-general-child-care-center/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "SF General Hospital",
+        "child care",
+        "Mission District",
+        "labor",
+        "city services"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "title": "Alemany Farm Volunteer Day",
+      "startDate": "2026-11-21",
+      "date": "Saturday, November 21",
+      "time": "3:00 PM",
+      "location": "Alemany Farm, Bernal Heights",
+      "description": "Weekly volunteer session at the city-run Alemany Farm in Bernal Heights. No experience needed; all are welcome to help tend the urban farm.",
+      "sourceUrl": "https://bernalconnect.com/bernal-heights-calendar/",
+      "sourceName": "Bernal Connect"
+    },
+    {
+      "title": "Dirty Works Jazz at Progressive Grounds",
+      "startDate": "2026-11-21",
+      "date": "Saturday, November 21",
+      "time": "11:45 AM",
+      "location": "Progressive Grounds, Bernal Heights",
+      "description": "Live jazz at the Bernal Heights neighborhood coffee shop, running approximately 45 minutes.",
+      "sourceUrl": "https://bernalconnect.com/bernal-heights-calendar/",
+      "sourceName": "Bernal Connect"
+    },
+    {
+      "title": "Bernal Chess Club",
+      "startDate": "2026-11-23",
+      "date": "Monday, November 23",
+      "time": "5:00 PM",
+      "location": "Bernal Heights (venue per Bernal Connect calendar)",
+      "description": "Weekly casual chess night open to players of all levels in Bernal Heights, running until 8:00 PM.",
+      "sourceUrl": "https://bernalconnect.com/bernal-heights-calendar/",
+      "sourceName": "Bernal Connect"
+    },
+    {
+      "title": "MAPP: Free Art, Poetry & Concert Crawl in the Mission",
+      "startDate": "2026-12-05",
+      "date": "Saturday, December 5",
+      "time": "6:00 PM",
+      "location": "Mission District (multiple venues along Mission St.)",
+      "description": "MAPP is a free, self-guided evening crawl through Mission District galleries, studios, and performance spaces featuring visual art, live music, and spoken word. The event runs until midnight.",
+      "sourceUrl": "https://sf.funcheap.com/region/mission-district/",
+      "sourceName": "Funcheap SF"
+    },
+    {
+      "title": "Ogden Tree Lighting — 4th Annual",
+      "startDate": "2026-12-06",
+      "date": "Sunday, December 6",
+      "time": "Various times",
+      "location": "Ogden Avenue Gardens, Bernal Heights",
+      "description": "Bernal Heights neighbors gather for the fourth annual Ogden Avenue tree lighting ceremony, a community-organized celebration to kick off the holiday season on the hill.",
+      "sourceUrl": "https://bernalconnect.com/bernal-heights-calendar/",
+      "sourceName": "Bernal Connect"
+    },
+    {
+      "title": "Howard Zinn Book Fair",
+      "startDate": "2026-12-06",
+      "date": "Sunday, December 6",
+      "time": "10:00 AM",
+      "location": "City College of San Francisco, Mission Campus",
+      "description": "The annual free book fair features 40 panels with authors and activists. The Mission Campus location makes this a neighborhood-accessible event; it runs until 6:00 PM.",
+      "sourceUrl": "https://sf.funcheap.com/region/mission-district/",
+      "sourceName": "Funcheap SF"
+    },
+    {
+      "title": "Bernal Heights Library Winter Open House",
+      "startDate": "2026-12-13",
+      "date": "Sunday, December 13",
+      "time": "Various times",
+      "location": "Bernal Heights Branch Library, 500 Cortland Avenue",
+      "description": "End-of-year celebration at the Bernal Heights library featuring live jazz, face painting, and local crafts. Free and open to the community.",
+      "sourceUrl": "https://bernalconnect.com/bernal-heights-calendar/",
+      "sourceName": "Bernal Connect"
+    }
+  ],
+  "moreNews": [
+    {
+      "headline": "Mission Branch Library Reopens After Six-Year Closure",
+      "body": "San Francisco's Mission Branch Library at 3359 24th Street reopened to the public on Saturday, November 14, with a free grand reopening celebration from noon to 1 p.m. The landmark building — one of seven city libraries designated as San Francisco landmarks — had been closed for a lengthy renovation. The reopening had been delayed multiple times, most recently in May 2026, before the doors finally opened last weekend.",
+      "sourceUrl": "https://missionlocal.org/2026/11/heres-a-peek-inside-the-renovated-mission-branch-library/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "library",
+        "Mission District",
+        "24th Street",
+        "SFPL"
+      ]
+    },
+    {
+      "headline": "Radio Habana to Add Daytime Cafe at Its Valencia Street Space",
+      "body": "Radio Habana Social Club, the long-running Cuban bar and community gathering spot at 1109 Valencia Street, announced in its November 11 Mission Buzz column that it will begin operating as a coffee shop during daytime hours starting later this month. Regulars Aziz Saeed and Sarah Zeidat will manage the new Radio Habana Cafe, sharing the space with the existing evening bar operation. The venue has been a Mission District fixture since 1998.",
+      "sourceUrl": "https://missionlocal.org/2026/11/supes-vote-to-rename-cesar-chavez-st/",
+      "sourceName": "Mission Local",
+      "tags": [
+        "Mission District",
+        "Valencia Street",
+        "small business",
+        "food and drink"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Super El Niño floods neighborhoods across San Francisco",
+      "url": "https://missionlocal.org/2026/11/super-el-nino-floods-san-francisco-video/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "'It's just a disheveled craziness': Mission restaurants get a taste of Super El Niño",
+      "url": "https://missionlocal.org/2026/11/san-francisco-a-disheveled-craziness-mission-restaurants-get-a-taste-of-super-el-nino/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "After the flood: Businesses wonder how they'll survive El Niño",
+      "url": "https://sfstandard.com/2026/11/19/sf-businesses-flooded-el-nino/",
+      "publication": "SF Standard"
+    },
+    {
+      "title": "San Francisco residents, businesses face costly cleanup after storm sends sewage-tainted water into buildings",
+      "url": "https://www.cbsnews.com/sanfrancisco/news/san-francisco-residents-businesses-face-costly-cleanup-after-storm-sends-sewage-tainted-water-into-buildings/",
+      "publication": "CBS San Francisco"
+    },
+    {
+      "title": "Bay Area storm: S.F. sees new rainfall record",
+      "url": "https://www.sfchronicle.com/weather/article/live-storm-updates-22536019.php",
+      "publication": "San Francisco Chronicle"
+    },
+    {
+      "title": "School daze: SFUSD can't produce vital information regarding soon-to-be-closed Bernal school",
+      "url": "https://missionlocal.org/2026/11/school-daze-sfusd-cant-produce-vital-information-regarding-soon-to-be-closed-bernal-school/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Bernal Heights early education school to close in 2027",
+      "url": "https://missionlocal.org/2026/11/junipero-serra-annex-school-closure-sfusd-san-francisco/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Shuttered Mission Walgreens to become San Francisco General Hospital child care center",
+      "url": "https://missionlocal.org/2026/11/shuttered-walgreens-to-become-sf-general-child-care-center/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "SF General Hospital to Open Child Care Center for Workers After Decades of Delays",
+      "url": "https://sfist.com/2026/11/18/sf-general-hospital-to-open-child-care-center-for-workers-after-decades-of-delays/",
+      "publication": "SFist"
+    },
+    {
+      "title": "The Mission District's library will reopen this weekend",
+      "url": "https://missionlocal.org/2026/11/heres-a-peek-inside-the-renovated-mission-branch-library/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Mission Buzz: Radio Habana to open as a cafe during the day",
+      "url": "https://missionlocal.org/2026/11/supes-vote-to-rename-cesar-chavez-st/",
+      "publication": "Mission Local"
+    },
+    {
+      "title": "Bernal Heights Calendar",
+      "url": "https://bernalconnect.com/bernal-heights-calendar/",
+      "publication": "Bernal Connect"
+    },
+    {
+      "title": "Mission District Events",
+      "url": "https://sf.funcheap.com/region/mission-district/",
+      "publication": "Funcheap SF"
+    }
+  ],
+  "directory": {
+    "restaurants": [
+      {
+        "name": "La Taqueria",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Taqueria",
+        "description": "Michelin-recognized Mission institution since 1973, widely considered one of the best taquerias in the United States.",
+        "address": "2889 Mission St",
+        "phone": "415-285-7117",
+        "website": "https://www.lataqueriasf.net",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Flour + Water",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "Acclaimed Mission pasta and pizza destination open since 2009, serving a daily-changing menu of handmade regional Italian pasta and Neapolitan pizzas from a wood-fired oven.",
+        "address": "2401 Harrison St",
+        "phone": "415-826-7000",
+        "website": "https://www.flourandwater.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Delfina",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Cal-Italian restaurant",
+        "description": "James Beard Award-winning Mission trattoria founded in 1998 by Annie and Craig Stoll, serving Cal-Italian cuisine with a full bar after a landmark renovation reopening in 2022.",
+        "address": "3621 18th St",
+        "phone": "415-552-4055",
+        "website": "https://www.delfinasf.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Foreign Cinema",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "California-Mediterranean restaurant",
+        "description": "Mission landmark since 1999 combining eclectic California-Mediterranean cuisine with outdoor film projections in a courtyard, open for dinner nightly and weekend brunch.",
+        "address": "2534 Mission St",
+        "phone": "415-648-7600",
+        "website": "https://www.foreigncinema.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "San Ho Won",
+        "cuisineGroup": "Asian",
+        "type": "Korean charcoal BBQ restaurant",
+        "description": "Upscale, Michelin-recognized Korean charcoal BBQ restaurant from chef Corey Lee and Jeong-In Hwang, offering both à la carte and a set house menu.",
+        "address": "2170 Bryant St",
+        "phone": "415-868-4479",
+        "website": "https://www.sanhowon.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Lolinda",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Argentine steakhouse",
+        "description": "Lively Argentine-inspired steakhouse on Mission Street with a rooftop bar, known as one of the area's top happy hour and special occasion destinations.",
+        "address": "2518 Mission St",
+        "phone": "415-550-6970",
+        "website": "https://www.lolindasf.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Farmhouse Kitchen Thai Cuisine",
+        "cuisineGroup": "Asian",
+        "type": "Modern Thai restaurant",
+        "description": "Colorful, destination Thai restaurant in the Mission serving modern Thai dishes inspired by family recipes from northern Thailand.",
+        "address": "710 Florida St",
+        "phone": "415-814-2920",
+        "website": "https://www.farmhousekitchenthai.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Loló",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican restaurant",
+        "description": "Fun, vibrant Mexican restaurant on Valencia Street with inventive cocktails and an indoor-outdoor patio popular for dates and group dinners.",
+        "address": "974 Valencia St",
+        "phone": "415-643-5656",
+        "website": "https://www.lolosf.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Bottega SF",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant and bar",
+        "description": "Locally owned Italian restaurant and bar on Valencia Street, consistently rated among the Mission's best and noted for its pasta and lively atmosphere.",
+        "address": "522 Valencia St",
+        "phone": "415-553-9985",
+        "website": "https://www.bottegasf.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "El Farolito",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Taqueria",
+        "description": "Beloved late-night Mission taqueria open until nearly 3 a.m. and celebrated for generously loaded burritos and tacos.",
+        "address": "2779 Mission St",
+        "phone": "415-824-7877",
+        "website": "https://www.elfarolitosf.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Itria",
+        "cuisineGroup": "Italian & Deli",
+        "type": "Italian restaurant",
+        "description": "Dimly lit, refined Italian spot near 24th St. Mission BART from a veteran of the Mission dining scene, serving handmade pasta in a rustic-chic setting.",
+        "address": "3266 24th St",
+        "phone": "415-814-2920",
+        "website": "https://www.itriasf.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Ernest",
+        "cuisineGroup": "Seafood & American",
+        "type": "American seafood restaurant",
+        "description": "One of San Francisco's most praised contemporary dining destinations, serving inventive American and seafood dishes in a relaxed Mission setting.",
+        "address": "1890 Bryant St",
+        "phone": "415-530-6434",
+        "website": "https://www.ernestsf.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "True Laurel",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Craft cocktail bar with food",
+        "description": "Acclaimed cocktail bar and restaurant on Alabama Street from the Lazy Bear team, serving creative drinks alongside an adventurous seasonal food menu.",
+        "address": "753 Alabama St",
+        "phone": "415-341-0020",
+        "website": "https://www.truelaurelsf.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Arcana",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Wine bar",
+        "description": "Popular wine bar in the Mission District with an excellent rotating selection of natural wines and small bites in a cozy setting.",
+        "address": "904 Valencia St",
+        "phone": "415-529-5021",
+        "website": "https://www.arcanasf.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Taqueria Cancún",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Taqueria",
+        "description": "Classic Mission taqueria celebrated for super burritos and consistently fresh, no-frills Mexican food.",
+        "address": "2288 Mission St",
+        "phone": "415-252-9560",
+        "website": "https://www.taqueriacancunsf.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "El Buen Comer",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican home-cooking restaurant",
+        "description": "Michelin-mentioned Mission-Bernal neighborhood gem serving authentic Mexico City home cooking including moles, guisados, and seasonal specials from a La Cocina alumna.",
+        "address": "3435 Mission St",
+        "phone": "415-817-1542",
+        "website": "https://www.elbuencomersf.com",
+        "neighborhood": "Outer Mission / Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "3rd Cousin",
+        "cuisineGroup": "Seafood & American",
+        "type": "American fusion restaurant",
+        "description": "Locally owned Bernal Heights restaurant offering refined American dishes in a space that works equally well for weeknight dinners and special occasions.",
+        "address": "3rd Cousin, Bernal Heights",
+        "phone": "",
+        "website": "https://www.3rdcousinsf.com",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "The Front Porch",
+        "cuisineGroup": "Seafood & American",
+        "type": "Southern American restaurant",
+        "description": "Bernal Heights neighborhood favorite serving Southern-influenced comfort food including fried chicken and burgers in a welcoming, casual setting.",
+        "address": "65 29th St",
+        "phone": "415-695-7800",
+        "website": "https://www.thefrontporchsf.com",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "United Dumplings",
+        "cuisineGroup": "Asian",
+        "type": "Dumpling restaurant",
+        "description": "Women-owned Bernal Heights spot earning strong praise for its soup dumplings and potstickers, with an outdoor seating area.",
+        "address": "3407 22nd St",
+        "phone": "415-829-8998",
+        "website": "https://www.uniteddumplingssf.com",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "Cocina Mamá Cholita",
+        "cuisineGroup": "Mexican & Latin American",
+        "type": "Mexican restaurant",
+        "description": "Highly rated Bernal Heights newcomer serving Mexican cuisine for lunch and dinner with an outstanding 4.8-star rating on Yelp.",
+        "address": "3321 Mission St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Bernal Heights",
+        "notable": "New"
+      },
+      {
+        "name": "Shokudou",
+        "cuisineGroup": "Asian",
+        "type": "Japanese restaurant and sushi bar",
+        "description": "Hidden gem in Bernal Heights serving beautiful sushi and Japanese dishes in a serene, locally owned setting.",
+        "address": "1326 Cortland Ave",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "Seafood Station",
+        "cuisineGroup": "Seafood & American",
+        "type": "Seafood boil restaurant",
+        "description": "Family-owned Bernal Heights seafood boil spot drawing strong reviews for fresh, well-seasoned boils served in a casual atmosphere.",
+        "address": "3359 Mission St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "Souvla",
+        "cuisineGroup": "Mediterranean & Middle Eastern",
+        "type": "Greek fast-casual restaurant",
+        "description": "Fast-casual Greek restaurant on Valencia Street serving rotisserie meats, salads, and frozen yogurt from a counter-service format.",
+        "address": "517 Valencia St",
+        "phone": "415-400-5458",
+        "website": "https://www.souvla.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "The Morris",
+        "cuisineGroup": "Bars & Wine Bars",
+        "type": "Modern American restaurant and wine bar",
+        "description": "Intimate dinner spot on Mariposa Street with a serious natural wine list and creative modern American small plates in a warm, candlelit room.",
+        "address": "2501 Mariposa St",
+        "phone": "415-612-8480",
+        "website": "https://www.themorris.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Blue Plate",
+        "cuisineGroup": "Seafood & American",
+        "type": "American comfort food restaurant",
+        "description": "Long-running Bernal Heights neighborhood restaurant serving consistent American comfort classics like meatloaf and fried chicken in a casual setting.",
+        "address": "3218 Mission St",
+        "phone": "415-282-6777",
+        "website": "https://www.blueplatesf.com",
+        "neighborhood": "Bernal Heights",
+        "notable": "Landmark"
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Noe's Nest Bed and Breakfast",
+        "type": "Victorian B&B",
+        "description": "Ornately decorated Victorian B&B in the Mission-Noe Valley border area, offering colorful rooms, a Mediterranean garden with fountains, and a daily buffet breakfast.",
+        "address": "1257 Guerrero St",
+        "phone": "415-821-0751",
+        "website": "https://www.noesnest.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "1906 Mission",
+        "type": "Boutique hotel",
+        "description": "Intimate 30-room boutique hotel in a post-earthquake building renovated in 2014, offering self-check-in, shared kitchen, a garden patio, and easy BART access.",
+        "address": "1906 Mission St",
+        "phone": "415-783-9914",
+        "website": "https://www.1906mission.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      }
+    ],
+    "shops": [
+      {
+        "name": "Dog Eared Books",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Female-owned Mission District institution since 1992, carrying an eclectic mix of new and used books, cards, games, and magazines at 900 Valencia Street.",
+        "address": "900 Valencia St",
+        "phone": "415-282-1901",
+        "website": "https://www.dogearedbooks.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Adobe Books & Arts Cooperative",
+        "shopGroup": "Books & Literature",
+        "type": "Cooperative used bookstore and gallery",
+        "description": "Volunteer-run nonprofit book cooperative and gallery on 24th Street, a Mission cultural institution since 1989 now operating as a community-owned arts space.",
+        "address": "3130 24th St",
+        "phone": "415-864-3936",
+        "website": "https://www.adobebooks.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Medicine for Nightmares",
+        "shopGroup": "Books & Literature",
+        "type": "Independent bookstore",
+        "description": "Community-focused independent bookstore on 24th Street known for a thoughtfully curated selection and regular author events.",
+        "address": "3036 24th St",
+        "phone": "",
+        "website": "https://www.medicine4nightmares.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "La Mejor Bakery",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Mexican bakery",
+        "description": "San Francisco legacy business since 1993 baking traditional pan dulce and Mexican pastries from a family-owned shop at 3329 24th Street.",
+        "address": "3329 24th St",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Silver Sprocket",
+        "shopGroup": "Books & Literature",
+        "type": "Comic book store and publisher",
+        "description": "Independent comics shop and small press publisher on Valencia Street specializing in alternative and underground comics and zines.",
+        "address": "1018 Valencia St",
+        "phone": "",
+        "website": "https://www.silversprocket.net",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Mission: Comics & Art",
+        "shopGroup": "Books & Literature",
+        "type": "Comic book store",
+        "description": "Independent comic book store on Mission Street serving the neighborhood's comic and art enthusiasts with new releases and back issues.",
+        "address": "2250 Mission St",
+        "phone": "415-695-1545",
+        "website": "https://www.missioncomics.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Bolerium Books",
+        "shopGroup": "Books & Literature",
+        "type": "Specialty used and rare bookstore",
+        "description": "Mission District specialist in rare and scholarly books focused on labor movements, civil rights, LGBTQ history, and social justice literature.",
+        "address": "2141 Mission St, Suite 300",
+        "phone": "415-255-6400",
+        "website": "https://www.bolerium.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Avedano's Holly Park Market",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Artisan butcher and market",
+        "description": "Neighborhood butcher shop and deli in Bernal Heights praised for its steak sandwiches and quality local meats, open until 6 p.m.",
+        "address": "235 Cortland Ave",
+        "phone": "415-285-6328",
+        "website": "https://www.avedanos.com",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "Mitchell's Ice Cream",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Ice cream shop",
+        "description": "Family-owned Bernal Heights institution since 1953, celebrated for its extraordinary range of flavors including Filipino-inspired tropical varieties.",
+        "address": "688 San Jose Ave",
+        "phone": "415-648-2300",
+        "website": "https://www.mitchellsicecream.com",
+        "neighborhood": "Bernal Heights",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Fort Point Beer – Valencia",
+        "shopGroup": "Specialty Food & Wine",
+        "type": "Craft beer taproom",
+        "description": "Taproom and bottle shop from San Francisco's Fort Point Beer Company on Valencia Street, pouring a rotating selection of Bay Area craft beers.",
+        "address": "742 Valencia St",
+        "phone": "415-796-9412",
+        "website": "https://www.fortpointbeer.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      }
+    ],
+    "artEntertainment": [
+      {
+        "name": "The Chapel",
+        "venueGroup": "Music Venues",
+        "type": "Music venue and bar",
+        "description": "Historic 1914 chapel converted into one of San Francisco's most beloved mid-sized music venues on Valencia Street, hosting a diverse national and local acts calendar.",
+        "address": "777 Valencia St",
+        "phone": "415-551-5157",
+        "website": "https://www.thechapelsf.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Brava Theater Center",
+        "venueGroup": "Theater & Comedy",
+        "type": "Performing arts theater",
+        "description": "Mission District theater founded in 1986 and dedicated to presenting work by women, LGBTQ artists, and artists of color, with a packed calendar of performances through fall 2026.",
+        "address": "2781 24th St",
+        "phone": "415-641-7657",
+        "website": "https://www.brava.org",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Creativity Explored",
+        "venueGroup": "Art Galleries",
+        "type": "Art gallery and nonprofit studio",
+        "description": "Longstanding nonprofit Mission District gallery and studio supporting artists with developmental disabilities, open Thursday–Saturday with ongoing exhibitions through 2026.",
+        "address": "3245 16th St",
+        "phone": "415-863-2108",
+        "website": "https://www.creativityexplored.org",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "Dance Mission Theater",
+        "venueGroup": "Theater & Comedy",
+        "type": "Dance theater and school",
+        "description": "Feminist and multicultural dance theater in the Mission operating since 1998, hosting around 1,500 students weekly across approximately 50 classes and regular performances.",
+        "address": "3316 24th St",
+        "phone": "415-826-4441",
+        "website": "https://www.dancemission.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      },
+      {
+        "name": "500 Capp Street Foundation",
+        "venueGroup": "Museums & Cultural",
+        "type": "Art house museum",
+        "description": "The preserved Mission District home and artwork of late conceptual artist David Ireland, open for small-group tours as a singular experience in conceptual art.",
+        "address": "500 Capp St",
+        "phone": "415-872-9240",
+        "website": "https://www.500cappstreet.org",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Voss Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Contemporary art gallery",
+        "description": "Mission District gallery founded in 2019 featuring a dynamic exhibition program of emerging and mid-career artists.",
+        "address": "2232 Mission St",
+        "phone": "",
+        "website": "https://www.vossgallery.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Brick & Mortar Music Hall",
+        "venueGroup": "Music Venues",
+        "type": "Small music venue",
+        "description": "Intimate Mission Street music hall presenting an eclectic calendar of funk, soul, jazz, rock, and hip-hop in an open, standing-room space.",
+        "address": "1710 Mission St",
+        "phone": "415-800-8782",
+        "website": "https://www.brickandmortarsf.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Adobe Books Backroom Gallery",
+        "venueGroup": "Art Galleries",
+        "type": "Backroom art gallery",
+        "description": "Community gallery embedded in the Adobe Books cooperative, operating since 2001 as an important venue for emerging Bay Area artists.",
+        "address": "3130 24th St",
+        "phone": "415-864-3936",
+        "website": "https://www.adobebooks.com/gallery",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "El Rio",
+        "venueGroup": "Music Venues",
+        "type": "LGBTQ+ bar and music venue",
+        "description": "LGBTQ+ community bar and live music venue on Mission Street since 1978, committed to supporting local artists and social change.",
+        "address": "3158 Mission St",
+        "phone": "415-282-3325",
+        "website": "https://www.elriosf.com",
+        "neighborhood": "Mission District",
+        "notable": "Landmark"
+      }
+    ],
+    "gymsRecreation": [
+      {
+        "name": "Fit Bernal Fit",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Neighborhood gym",
+        "description": "Welcoming Bernal Heights flagship gym on Cortland Avenue offering open-gym weightlifting, cardio equipment, personal training, and small-group conditioning.",
+        "address": "701 Cortland Ave",
+        "phone": "",
+        "website": "https://www.fitbernalfit.com",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "City CrossFit",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "CrossFit gym",
+        "description": "Bernal Heights CrossFit gym focused on functional fitness through scalable daily workouts, accommodating beginners and experienced athletes alike.",
+        "address": "2 Brook St",
+        "phone": "",
+        "website": "https://www.citycrossfit.com",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "Mission YMCA",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Full-service YMCA",
+        "description": "Community YMCA serving the Mission District and Bernal Heights with gym facilities, fitness classes, and youth programs.",
+        "address": "4080 Mission St",
+        "phone": "415-586-9622",
+        "website": "https://www.ymcasf.org",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "Live Fit Gym – Mission",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "Family-owned gym",
+        "description": "Well-equipped family-owned Mission District gym with a positive, community-minded atmosphere and certified personal trainers, open until 11 p.m.",
+        "address": "1001 Guerrero St",
+        "phone": "415-437-3292",
+        "website": "https://www.livefitgym.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Fog City CF",
+        "venueGroup": "Gyms & CrossFit",
+        "type": "CrossFit gym",
+        "description": "Newly renovated CrossFit-style gym at 1649 Valencia Street with 3,600 square feet of open training space, 26-foot ceilings, and premium Rogue equipment.",
+        "address": "1649 Valencia St",
+        "phone": "",
+        "website": "https://www.fogcitycf.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Mission Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Community-oriented Mission District yoga studio praised for its friendly, neighborhood atmosphere and knowledgeable teachers.",
+        "address": "3876 17th St",
+        "phone": "415-503-1788",
+        "website": "https://www.missionyogasf.com",
+        "neighborhood": "Mission District",
+        "notable": ""
+      },
+      {
+        "name": "Synced Pilates",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Pilates studio",
+        "description": "Calm, focused reformer and mat Pilates studio on Mission Street offering small-group classes and private sessions in a quiet, welcoming environment.",
+        "address": "3180 Mission St",
+        "phone": "",
+        "website": "https://www.syncedpilates.com",
+        "neighborhood": "Outer Mission",
+        "notable": ""
+      },
+      {
+        "name": "Sunporch Yoga",
+        "venueGroup": "Yoga & Pilates",
+        "type": "Yoga studio",
+        "description": "Light-filled Bernal Heights yoga studio on Cortland Avenue offering yoga and Pilates in private and semi-private sessions in a calm, supportive environment.",
+        "address": "908 Cortland Ave",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "Bernal Heights Recreation Center",
+        "venueGroup": "Parks & Outdoor Recreation",
+        "type": "Public recreation center",
+        "description": "City-operated recreation center with an indoor gymnasium and outdoor basketball courts, open to the public for pickup games and community sports.",
+        "address": "500 Moultrie St",
+        "phone": "415-695-5007",
+        "website": "https://sfrecpark.org",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      },
+      {
+        "name": "FTK Martial Arts Studio",
+        "venueGroup": "Martial Arts",
+        "type": "Martial arts and movement studio",
+        "description": "Minority women-owned community studio on Cortland Avenue offering Shaolin Kenpo Karate for youth alongside adult yoga, Pilates, and Qigong classes.",
+        "address": "402 Cortland Ave",
+        "phone": "",
+        "website": "",
+        "neighborhood": "Bernal Heights",
+        "notable": ""
+      }
+    ]
+  },
+  "weather": {
+    "issuedOn": "2026-11-20",
+    "source": "National Weather Service",
+    "days": [
+      {
+        "date": "2026-11-20",
+        "high": 57,
+        "low": 44,
+        "summary": "Light Rain then Mostly Sunny",
+        "condition": "rain",
+        "precip": 92
+      },
+      {
+        "date": "2026-11-21",
+        "high": 57,
+        "low": 47,
+        "summary": "Cloudy then Light Rain",
+        "condition": "rain",
+        "precip": 93
+      },
+      {
+        "date": "2026-11-22",
+        "high": 56,
+        "low": 45,
+        "summary": "Light Rain Likely",
+        "condition": "rain",
+        "precip": 55
+      },
+      {
+        "date": "2026-11-23",
+        "high": 58,
+        "low": 49,
+        "summary": "Slight Chance Light Rain then Partly Sunny",
+        "condition": "rain",
+        "precip": 15
+      },
+      {
+        "date": "2026-11-24",
+        "high": 62,
+        "low": 52,
+        "summary": "Rain",
+        "condition": "rain",
+        "precip": 84
+      },
+      {
+        "date": "2026-11-25",
+        "high": 63,
+        "low": 51,
+        "summary": "Light Rain Likely",
+        "condition": "rain",
+        "precip": 65
+      },
+      {
+        "date": "2026-11-26",
+        "high": 64,
+        "low": 50,
+        "summary": "Slight Chance Light Rain then Partly Sunny",
+        "condition": "rain",
+        "precip": 15
+      }
+    ]
+  }
+}
